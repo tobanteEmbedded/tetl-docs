@@ -881,7 +881,7 @@ Finds the smallest and greatest element in the range `[first, last)`.
 
 -----
 
-### Function `etl::all_of`
+### Function `etl::all_of` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename Predicate>
@@ -894,7 +894,7 @@ Checks if unary predicate p returns true for all elements in the range `[first, 
 
 -----
 
-### Function `etl::any_of`
+### Function `etl::any_of` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename Predicate>
@@ -907,7 +907,7 @@ Checks if unary predicate p returns true for at least one element in the range `
 
 -----
 
-### Function `etl::none_of`
+### Function `etl::none_of` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename Predicate>
@@ -920,18 +920,18 @@ Checks if unary predicate p returns true for no elements in the range `[first, l
 
 -----
 
-### Function `etl::reverse`
+### Function `etl::reverse` \[Algorithm\]
 
 ``` cpp
 template <typename BidirIt>
 constexpr void reverse(BidirIt first, BidirIt last);
 ```
 
-Reverses the order of the elements in the range `[first, last)`. Behaves as if applying iter\_swap to every pair of iterators first+i, (last-i) - 1 for each non-negative i \< (last-first)/2.
+Reverses the order of the elements in the range `[first, last)`. Behaves as if applying iter\_swap to every pair of iterators `first + i`, `(last-i) - 1` for each non-negative `i < (last - first) / 2`.
 
 -----
 
-### Function `etl::reverse_copy`
+### Function `etl::reverse_copy` \[Algorithm\]
 
 ``` cpp
 template <typename BidirIt, typename OutputIt>
@@ -944,7 +944,7 @@ If the source and destination ranges (that is, `[first, last)` and \[d\_first, d
 
 -----
 
-### Function `etl::rotate`
+### Function `etl::rotate` \[Algorithm\]
 
 ``` cpp
 template <typename ForwardIt>
@@ -986,7 +986,7 @@ Elements are compared using the given binary predicate pred. The behavior is und
 
 -----
 
-### Function `etl::partition`
+### Function `etl::partition` \[Algorithm\]
 
 ``` cpp
 template <typename ForwardIt, typename Predicate>
@@ -997,7 +997,7 @@ Reorders the elements in the range `[first, last)` in such a way that all elemen
 
 -----
 
-### Function `etl::partition_copy`
+### Function `etl::partition_copy` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename OutputIt1, typename OutputIt2, typename Predicate>
@@ -1010,7 +1010,7 @@ The behavior is undefined if the input range overlaps either of the output range
 
 -----
 
-### Function `etl::is_partitioned`
+### Function `etl::is_partitioned` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename Predicate>
@@ -1023,7 +1023,7 @@ Returns true if all elements in the range `[first, last)` that satisfy the predi
 
 -----
 
-### Function `etl::partition_point`
+### Function `etl::partition_point` \[Algorithm\]
 
 ``` cpp
 template <typename ForwardIt, typename Predicate>
@@ -1034,7 +1034,7 @@ Examines the partitioned (as if by partition) range \[first, last) and locates t
 
 -----
 
-### Function `etl::stable_partition`
+### Function `etl::stable_partition` \[Algorithm\]
 
 ``` cpp
 template <typename BidirIt, typename Predicate>
@@ -1063,46 +1063,46 @@ Copies all elements in the range `[first, last)` starting from first and proceed
 
 -----
 
-### Function `etl::copy_n`
+### Function `etl::copy_n` \[Algorithm\]
 
 ``` cpp
 template <typename InputIt, typename Size, typename OutputIt>
 constexpr OutputIt copy_n(InputIt first, Size count, OutputIt result);
 ```
 
-Copies exactly count values from the range beginning at first to the range beginning at result. Formally, for each integer 0 ≤ i \< count, performs \*(result + i) = \*(first + i). Overlap of ranges is formally permitted, but leads to unpredictable ordering of the results.
+Copies exactly count values from the range beginning at first to the range beginning at result. Formally, for each integer `0 <= i < count`, performs `*(result + i) = *(first + i)`. Overlap of ranges is formally permitted, but leads to unpredictable ordering of the results.
 
 *Return values:* Iterator in the destination range, pointing past the last element copied if count\>0 or result otherwise.
 
 -----
 
-### Function `etl::copy_backward`
+### Function `etl::copy_backward` \[Algorithm\]
 
 ``` cpp
 template <typename BidirIt1, typename BidirIt2>
 constexpr BidirIt2 copy_backward(BidirIt1 first, BidirIt1 last, BidirIt2 dLast);
 ```
 
-Copies the elements from the range, defined by `[first, last)`, to another range ending at d\_last. The elements are copied in reverse order (the last element is copied first), but their relative order is preserved.
+Copies the elements from the range, defined by `[first, last)`, to another range ending at `dLast`. The elements are copied in reverse order (the last element is copied first), but their relative order is preserved.
 
 *Return values:* Iterator to the last element copied.
 
-The behavior is undefined if d\_last is within (first, last\]. copy must be used instead of copy\_backward in that case.
+The behavior is undefined if `dLast` is within `(first, last]`. copy must be used instead of copy\_backward in that case.
 
 -----
 
-### Function `etl::rotate_copy`
+### Function `etl::rotate_copy` \[Algorithm\]
 
 ``` cpp
 template <typename ForwardIt, typename OutputIt>
 constexpr OutputIt rotate_copy(ForwardIt first, ForwardIt nFirst, ForwardIt last, OutputIt destination);
 ```
 
-Copies the elements from the range \[first, last), to another range beginning at destination in such a way, that the element n\_first becomes the first element of the new range and n\_first - 1 becomes the last element.
+Copies the elements from the range `[first, last)`, to another range beginning at destination in such a way, that the element `nFirst` becomes the first element of the new range and `nFirst - 1` becomes the last element.
 
 -----
 
-### Function `etl::fill`
+### Function `etl::fill` \[Algorithm\]
 
 ``` cpp
 template <typename ForwardIt, typename T>
@@ -1113,16 +1113,16 @@ Assigns the given value to the elements in the range `[first, last)`.
 
 -----
 
-### Function `etl::fill_n`
+### Function `etl::fill_n` \[Algorithm\]
 
 ``` cpp
 template <typename OutputIt, typename Size, typename T>
 constexpr OutputIt fill_n(OutputIt first, Size count, T const& value);
 ```
 
-Assigns the given value to the first count elements in the range beginning at first if count \> 0. Does nothing otherwise.
+Assigns the given value to the first count elements in the range beginning at `first` if `count > 0`. Does nothing otherwise.
 
-*Return values:* Iterator one past the last element assigned if count \> 0, first otherwise.
+*Return values:* Iterator one past the last element assigned if `count > 0`, `first` otherwise.
 
 -----
 
@@ -1142,7 +1142,7 @@ constexpr bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 
 constexpr bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2);
 ```
 
-Returns true if the range `[first1, last1)` is equal to the range \[first2, first2 + (last1 - first1)), and false otherwise.
+Returns true if the range `[first1, last1)` is equal to the range `[first2, first2 + (last1 - first1))`, and false otherwise.
 
 -----
 
