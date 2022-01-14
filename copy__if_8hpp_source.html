@@ -95,23 +95,23 @@ $(document).ready(function(){initNavTree('copy__if_8hpp_source.html',''); initRe
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InIt, <span class="keyword">typename</span> OutIt, <span class="keyword">typename</span> Pred&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">copy_if</a>(InIt first, InIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">while</span> (first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> (pred(*first)) { *dFirst++ = *first; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ++first;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> dFirst;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InIt, <span class="keyword">typename</span> OutIt, <span class="keyword">typename</span> Pred&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">   21</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">copy_if</a>(InIt first, InIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">while</span> (first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span> (pred(*first)) { *dFirst++ = *first; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ++first;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> dFirst;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_COPY_IF_HPP</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_COPY_IF_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__algorithm-header_html_ga31799054ecdf344760efe76af7987776"><div class="ttname"><a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">etl::copy_if</a></div><div class="ttdeci">constexpr auto copy_if(InIt first, InIt last, OutIt dFirst, Pred pred) -&gt; OutIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition:</b> copy_if.hpp:23</div></div>
+<div class="ttc" id="agroup__algorithm-header_html_ga31799054ecdf344760efe76af7987776"><div class="ttname"><a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">etl::copy_if</a></div><div class="ttdeci">constexpr auto copy_if(InIt first, InIt last, OutIt dFirst, Pred pred) -&gt; OutIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition:</b> copy_if.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
 <!-- start footer part -->

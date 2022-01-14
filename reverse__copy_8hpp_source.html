@@ -94,20 +94,20 @@ $(document).ready(function(){initNavTree('reverse__copy_8hpp_source.html',''); i
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> B<span class="keywordtype">id</span>irIt, <span class="keyword">typename</span> OutputIt&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">reverse_copy</a>(BidirIt first, BidirIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination) -&gt; OutputIt</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++destination) { *(destination) = *(--<a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>); }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> destination;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> B<span class="keywordtype">id</span>irIt, <span class="keyword">typename</span> OutputIt&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">reverse_copy</a>(BidirIt first, BidirIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination) -&gt; OutputIt</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++destination) { *(destination) = *(--<a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>); }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> destination;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_REVERSE_COPY_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_REVERSE_COPY_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_ae0246fc85a8996116ecfe4be33cd1495"><div class="ttname"><a href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">etl::reverse_copy</a></div><div class="ttdeci">constexpr auto reverse_copy(BidirIt first, BidirIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements from the range [first, last) to another range beginning at d_first in such a way ...</div><div class="ttdef"><b>Definition:</b> reverse_copy.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_ae0246fc85a8996116ecfe4be33cd1495"><div class="ttname"><a href="namespaceetl.html#ae0246fc85a8996116ecfe4be33cd1495">etl::reverse_copy</a></div><div class="ttdeci">constexpr auto reverse_copy(BidirIt first, BidirIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements from the range [first, last) to another range beginning at d_first in such a way ...</div><div class="ttdef"><b>Definition:</b> reverse_copy.hpp:17</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

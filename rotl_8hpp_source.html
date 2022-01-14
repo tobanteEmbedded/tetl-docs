@@ -98,22 +98,22 @@ $(document).ready(function(){initNavTree('rotl_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">rotl</a>(T t, <span class="keywordtype">int</span> s) noexcept -&gt; T</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> c = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(s);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> d = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(<a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::digits</a>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> ((c % d) == 0U) { <span class="keywordflow">return</span> t; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>((t &lt;&lt; (c % d)) | (t &gt;&gt; (d - (c % d))));</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // TETL_BIT_ROTL_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">rotl</a>(T t, <span class="keywordtype">int</span> s) noexcept -&gt; T</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> c = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(s);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> d = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(<a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::digits</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> ((c % d) == 0U) { <span class="keywordflow">return</span> t; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>((t &lt;&lt; (c % d)) | (t &gt;&gt; (d - (c % d))));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // TETL_BIT_ROTL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_acf864bfa77c9d0a72cd51ad6acb63fc6"><div class="ttname"><a href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">etl::rotl</a></div><div class="ttdeci">constexpr auto rotl(T t, int s) noexcept -&gt; T</div><div class="ttdoc">Computes the result of bitwise left-rotating the value of x by s positions. This operation is also kn...</div><div class="ttdef"><b>Definition:</b> rotl.hpp:18</div></div>
+<div class="ttc" id="anamespaceetl_html_acf864bfa77c9d0a72cd51ad6acb63fc6"><div class="ttname"><a href="namespaceetl.html#acf864bfa77c9d0a72cd51ad6acb63fc6">etl::rotl</a></div><div class="ttdeci">constexpr auto rotl(T t, int s) noexcept -&gt; T</div><div class="ttdoc">Computes the result of bitwise left-rotating the value of x by s positions. This operation is also kn...</div><div class="ttdef"><b>Definition:</b> rotl.hpp:17</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aenable__if_8hpp_html"><div class="ttname"><a href="enable__if_8hpp.html">enable_if.hpp</a></div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>

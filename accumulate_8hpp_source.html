@@ -95,30 +95,30 @@ $(document).ready(function(){initNavTree('accumulate_8hpp_source.html',''); init
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">accumulate</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Type init) noexcept -&gt; Type</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++first) { init = <a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(init) + *first; }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> init;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> Type, <span class="keyword">typename</span> BinaryOperation&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9413959b7ee39d393e7c35ad2cd78294">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">accumulate</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Type init, BinaryOperation op) noexcept -&gt; Type</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++first) { init = op(<a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(init), *first); }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> init;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // TETL_NUMERIC_ACCUMULATE_HPP</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">accumulate</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Type init) noexcept -&gt; Type</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++first) { init = <a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(init) + *first; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> init;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> Type, <span class="keyword">typename</span> BinaryOperation&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9413959b7ee39d393e7c35ad2cd78294">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">accumulate</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Type init, BinaryOperation op) noexcept -&gt; Type</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++first) { init = op(<a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(init), *first); }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> init;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // TETL_NUMERIC_ACCUMULATE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_afe443a26a34b79fc921c4583df576333"><div class="ttname"><a href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">etl::accumulate</a></div><div class="ttdeci">constexpr auto accumulate(InputIt first, InputIt last, Type init) noexcept -&gt; Type</div><div class="ttdoc">Computes the sum of the given value init and the elements in the range [first, last)....</div><div class="ttdef"><b>Definition:</b> accumulate.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_afe443a26a34b79fc921c4583df576333"><div class="ttname"><a href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">etl::accumulate</a></div><div class="ttdeci">constexpr auto accumulate(InputIt first, InputIt last, Type init) noexcept -&gt; Type</div><div class="ttdoc">Computes the sum of the given value init and the elements in the range [first, last)....</div><div class="ttdef"><b>Definition:</b> accumulate.hpp:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

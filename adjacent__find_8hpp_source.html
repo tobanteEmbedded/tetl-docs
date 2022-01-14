@@ -96,39 +96,39 @@ $(document).ready(function(){initNavTree('adjacent__find_8hpp_source.html',''); 
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Predicate pred) -&gt; ForwardIt</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (first == <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) { <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> = first;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ++<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span> (; <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>, (void)++first) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (pred(*first, *<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>)) { <span class="keywordflow">return</span> first; }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4">   41</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) -&gt; ForwardIt</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">   24</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Predicate pred) -&gt; ForwardIt</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (first == <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) { <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> = first;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ++<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (; <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>; ++<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>, (void)++first) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (pred(*first, *<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>)) { <span class="keywordflow">return</span> first; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4">   39</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) -&gt; ForwardIt</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">adjacent_find</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_ADJACENT_FIND_HPP</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_ADJACENT_FIND_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructetl_1_1equal__to_html"><div class="ttname"><a href="structetl_1_1equal__to.html">etl::equal_to&lt;&gt;</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it. \module Iterator.</div><div class="ttdef"><b>Definition:</b> next.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition:</b> next.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
 <div class="ttc" id="aequal__to_8hpp_html"><div class="ttname"><a href="equal__to_8hpp.html">equal_to.hpp</a></div></div>
-<div class="ttc" id="agroup__algorithm-header_html_ga09c5b412c05c58fb89e569a2d72ed17e"><div class="ttname"><a href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">etl::adjacent_find</a></div><div class="ttdeci">constexpr auto adjacent_find(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt</div><div class="ttdoc">Searches the range [first, last) for two consecutive equal elements. Elements are compared using the ...</div><div class="ttdef"><b>Definition:</b> adjacent_find.hpp:25</div></div>
+<div class="ttc" id="agroup__algorithm-header_html_ga09c5b412c05c58fb89e569a2d72ed17e"><div class="ttname"><a href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">etl::adjacent_find</a></div><div class="ttdeci">constexpr auto adjacent_find(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt</div><div class="ttdoc">Searches the range [first, last) for two consecutive equal elements. Elements are compared using the ...</div><div class="ttdef"><b>Definition:</b> adjacent_find.hpp:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

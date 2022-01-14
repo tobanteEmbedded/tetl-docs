@@ -96,20 +96,20 @@ $(document).ready(function(){initNavTree('wcsstr_8hpp_source.html',''); initResi
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">   19</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">wcsstr</a>(<span class="keywordtype">wchar_t</span>* haystack, <span class="keywordtype">wchar_t</span>* needle) noexcept -&gt; <span class="keywordtype">wchar_t</span>*</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> detail::strstr_impl&lt;wchar_t&gt;(haystack, needle);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceetl.html#a074c0611a936348d0a6ca7ddc93df74a">   31</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">wcsstr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* haystack, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* needle) noexcept -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> detail::strstr_impl&lt;wchar_t const&gt;(haystack, needle);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // TETL_CWCHAR_WCSSTR_HPP</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">wcsstr</a>(<span class="keywordtype">wchar_t</span>* haystack, <span class="keywordtype">wchar_t</span>* needle) noexcept -&gt; <span class="keywordtype">wchar_t</span>*</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> detail::strstr_impl&lt;wchar_t&gt;(haystack, needle);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a074c0611a936348d0a6ca7ddc93df74a">   27</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">wcsstr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* haystack, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* needle) noexcept -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> detail::strstr_impl&lt;wchar_t const&gt;(haystack, needle);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // TETL_CWCHAR_WCSSTR_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a32485447cbd1674e0686656279ec028c"><div class="ttname"><a href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">etl::wcsstr</a></div><div class="ttdeci">constexpr auto wcsstr(wchar_t *haystack, wchar_t *needle) noexcept -&gt; wchar_t *</div><div class="ttdoc">Finds the first occurrence of the wide string needle in the wide string pointed to by haystack....</div><div class="ttdef"><b>Definition:</b> wcsstr.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_a32485447cbd1674e0686656279ec028c"><div class="ttname"><a href="namespaceetl.html#a32485447cbd1674e0686656279ec028c">etl::wcsstr</a></div><div class="ttdeci">constexpr auto wcsstr(wchar_t *haystack, wchar_t *needle) noexcept -&gt; wchar_t *</div><div class="ttdoc">Finds the first occurrence of the wide string needle in the wide string pointed to by haystack....</div><div class="ttdef"><b>Definition:</b> wcsstr.hpp:17</div></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <!-- start footer part -->

@@ -105,29 +105,29 @@ $(document).ready(function(){initNavTree('is__function_8hpp_source.html',''); in
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #pragma warning(disable : 4180)</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">struct </span>is_function : <a class="code" href="namespaceetl.html#aa19ff9e7939158584698cee4260e4471">bool_constant</a>&lt;!is_const_v&lt;T const&gt; &amp;&amp; !is_reference_v&lt;T&gt;&gt; {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(TETL_MSVC)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Qualifier applied to function has no meaning</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    #pragma warning(default : 4180)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">   40</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">is_function_v</a> = <a class="code" href="structetl_1_1is__function.html">is_function&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">struct </span>is_function : <a class="code" href="namespaceetl.html#aa19ff9e7939158584698cee4260e4471">bool_constant</a>&lt;!is_const_v&lt;T const&gt; &amp;&amp; !is_reference_v&lt;T&gt;&gt; {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(TETL_MSVC)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Qualifier applied to function has no meaning</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    #pragma warning(default : 4180)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">   38</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">is_function_v</a> = <a class="code" href="structetl_1_1is__function.html">is_function&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_FUNCTION_HPP</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_FUNCTION_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ais__reference_8hpp_html"><div class="ttname"><a href="is__reference_8hpp.html">is_reference.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html_aa19ff9e7939158584698cee4260e4471"><div class="ttname"><a href="namespaceetl.html#aa19ff9e7939158584698cee4260e4471">etl::bool_constant</a></div><div class="ttdeci">integral_constant&lt; bool, B &gt; bool_constant</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_aec3b44fa05f956c1efc4f34af98bd1f0"><div class="ttname"><a href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">etl::is_function_v</a></div><div class="ttdeci">constexpr bool is_function_v</div><div class="ttdoc">Checks whether T is a function type. Types like etl::function, lambdas, classes with overloaded opera...</div><div class="ttdef"><b>Definition:</b> is_function.hpp:40</div></div>
+<div class="ttc" id="anamespaceetl_html_aec3b44fa05f956c1efc4f34af98bd1f0"><div class="ttname"><a href="namespaceetl.html#aec3b44fa05f956c1efc4f34af98bd1f0">etl::is_function_v</a></div><div class="ttdeci">constexpr bool is_function_v</div><div class="ttdoc">Checks whether T is a function type. Types like etl::function, lambdas, classes with overloaded opera...</div><div class="ttdef"><b>Definition:</b> is_function.hpp:38</div></div>
 <div class="ttc" id="ais__const_8hpp_html"><div class="ttname"><a href="is__const_8hpp.html">is_const.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1is__function_html"><div class="ttname"><a href="structetl_1_1is__function.html">etl::is_function</a></div><div class="ttdoc">\group is_function</div><div class="ttdef"><b>Definition:</b> decl.hpp:37</div></div>
+<div class="ttc" id="astructetl_1_1is__function_html"><div class="ttname"><a href="structetl_1_1is__function.html">etl::is_function</a></div><div class="ttdef"><b>Definition:</b> decl.hpp:37</div></div>
 <div class="ttc" id="a__type__traits_2bool__constant_8hpp_html"><div class="ttname"><a href="__type__traits_2bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <!-- start footer part -->

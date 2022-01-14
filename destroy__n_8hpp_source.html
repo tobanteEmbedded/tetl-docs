@@ -97,24 +97,24 @@ $(document).ready(function(){initNavTree('destroy__n_8hpp_source.html',''); init
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Size&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">destroy_n</a>(ForwardIt first, Size n) -&gt; ForwardIt</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (; n &gt; 0; (void)++first, --n) { <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a>(<a class="code" href="namespaceetl.html#ac0d31e2525825183a8360ff109993679">etl::addressof</a>(*first)); }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> first;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // TETL_MEMORY_DESTROY_N_HPP</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Size&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">   15</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">destroy_n</a>(ForwardIt first, Size n) -&gt; ForwardIt</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (; n &gt; 0; (void)++first, --n) { <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a>(<a class="code" href="namespaceetl.html#ac0d31e2525825183a8360ff109993679">etl::addressof</a>(*first)); }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // TETL_MEMORY_DESTROY_N_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_ac0d31e2525825183a8360ff109993679"><div class="ttname"><a href="namespaceetl.html#ac0d31e2525825183a8360ff109993679">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;....</div><div class="ttdef"><b>Definition:</b> addressof.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_ac0d31e2525825183a8360ff109993679"><div class="ttname"><a href="namespaceetl.html#ac0d31e2525825183a8360ff109993679">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition:</b> addressof.hpp:18</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_a1709580f4bcc18d6efb2b7e4d5c1b728"><div class="ttname"><a href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a></div><div class="ttdeci">constexpr auto destroy_at(T *p) -&gt; void</div><div class="ttdoc">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T()....</div><div class="ttdef"><b>Definition:</b> destroy_at.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_a1709580f4bcc18d6efb2b7e4d5c1b728"><div class="ttname"><a href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a></div><div class="ttdeci">constexpr auto destroy_at(T *p) -&gt; void</div><div class="ttdoc">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T()....</div><div class="ttdef"><b>Definition:</b> destroy_at.hpp:18</div></div>
 <div class="ttc" id="aaddressof_8hpp_html"><div class="ttname"><a href="addressof_8hpp.html">addressof.hpp</a></div></div>
 <div class="ttc" id="adestroy__at_8hpp_html"><div class="ttname"><a href="destroy__at_8hpp.html">destroy_at.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a440d38af8f9b00df3d5c1369450ba44a"><div class="ttname"><a href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">etl::destroy_n</a></div><div class="ttdeci">constexpr auto destroy_n(ForwardIt first, Size n) -&gt; ForwardIt</div><div class="ttdoc">Destroys the n objects in the range starting at first. \group destroy.</div><div class="ttdef"><b>Definition:</b> destroy_n.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_a440d38af8f9b00df3d5c1369450ba44a"><div class="ttname"><a href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">etl::destroy_n</a></div><div class="ttdeci">constexpr auto destroy_n(ForwardIt first, Size n) -&gt; ForwardIt</div><div class="ttdoc">Destroys the n objects in the range starting at first.</div><div class="ttdef"><b>Definition:</b> destroy_n.hpp:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

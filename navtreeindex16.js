@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"structetl_1_1chrono_1_1duration.html#a5f313a50f28996821accdd89d5f83093":[5,0,0,0,1,3],
+"structetl_1_1chrono_1_1duration.html#a5f899c5d5a129cfcb599e84bcc215e3b":[5,0,0,0,1,12],
+"structetl_1_1chrono_1_1duration.html#a860b5b05bd68506e448941e274951d72":[5,0,0,0,1,7],
 "structetl_1_1chrono_1_1duration.html#a929c09f7ea37d3befc17701a231030ec":[5,0,0,0,1,22],
 "structetl_1_1chrono_1_1duration.html#a9a32704336d1400bedca7f9e87313d3c":[5,0,0,0,1,17],
 "structetl_1_1chrono_1_1duration.html#a9d9c26a589c05dc896a175d15deec8a6":[5,0,0,0,1,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#ae5c1b821322edf0d15c6035a840bf62b":[5,0,0,1,2,1,2,7],
 "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#af28e54318d80b6d6b3cbea738bae29b6":[5,0,0,1,2,1,2,6],
 "structetl_1_1experimental_1_1meta_1_1type.html":[5,0,0,1,3,0],
-"structetl_1_1experimental_1_1meta_1_1type.html#a5acbb85d60ce659d02572f74f2389c97":[5,0,0,1,3,0,0],
-"structetl_1_1experimental_1_1net_1_1const__buffer.html":[5,0,0,1,4,0],
-"structetl_1_1experimental_1_1net_1_1const__buffer.html#a176839abc5458ca6b2456e4a06b19f1a":[5,0,0,1,4,0,5],
-"structetl_1_1experimental_1_1net_1_1const__buffer.html#a439fd85408fb8060b6d1c2eed4320bcc":[5,0,0,1,4,0,6]
+"structetl_1_1experimental_1_1meta_1_1type.html#a5acbb85d60ce659d02572f74f2389c97":[5,0,0,1,3,0,0]
 };

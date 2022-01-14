@@ -96,40 +96,40 @@ $(document).ready(function(){initNavTree('partial__sum_8hpp_source.html',''); in
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> BinaryOperation&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">   26</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (first == <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) { <span class="keywordflow">return</span> destination; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> sum     = *first;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    *destination = sum;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (++first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        sum            = op(<a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a>(sum), *first);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        *++destination = sum;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> ++destination;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8d274a25ea5a88eb47898c8832795e3e">   43</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination) -&gt; OutputIt</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, destination, <a class="code" href="structetl_1_1plus.html">etl::plus&lt;&gt;</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // TETL_NUMERIC_PARTIAL_SUM_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> BinaryOperation&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">   24</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (first == <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) { <span class="keywordflow">return</span> destination; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> sum     = *first;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    *destination = sum;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">while</span> (++first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        sum            = op(<a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a>(sum), *first);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        *++destination = sum;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> ++destination;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8d274a25ea5a88eb47898c8832795e3e">   40</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(InputIt first, InputIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, OutputIt destination) -&gt; OutputIt</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, destination, <a class="code" href="structetl_1_1plus.html">etl::plus&lt;&gt;</a>());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // TETL_NUMERIC_PARTIAL_SUM_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:28</div></div>
-<div class="ttc" id="astructetl_1_1plus_html"><div class="ttname"><a href="structetl_1_1plus.html">etl::plus</a></div><div class="ttdoc">Function object for performing addition. Effectively calls operator+ on two instances of type T....</div><div class="ttdef"><b>Definition:</b> plus.hpp:18</div></div>
+<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:26</div></div>
+<div class="ttc" id="astructetl_1_1plus_html"><div class="ttname"><a href="structetl_1_1plus.html">etl::plus</a></div><div class="ttdoc">Function object for performing addition. Effectively calls operator+ on two instances of type T....</div><div class="ttdef"><b>Definition:</b> plus.hpp:16</div></div>
 <div class="ttc" id="aplus_8hpp_html"><div class="ttname"><a href="plus_8hpp.html">plus.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_a717726a2fed08cececaa93b504419300"><div class="ttname"><a href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a></div><div class="ttdeci">constexpr auto partial_sum(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div><div class="ttdoc">Computes the partial sums of the elements in the subranges of the range [first, last) and writes them...</div><div class="ttdef"><b>Definition:</b> partial_sum.hpp:26</div></div>
+<div class="ttc" id="anamespaceetl_html_a717726a2fed08cececaa93b504419300"><div class="ttname"><a href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a></div><div class="ttdeci">constexpr auto partial_sum(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div><div class="ttdoc">Computes the partial sums of the elements in the subranges of the range [first, last) and writes them...</div><div class="ttdef"><b>Definition:</b> partial_sum.hpp:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

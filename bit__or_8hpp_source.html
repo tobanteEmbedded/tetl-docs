@@ -96,34 +96,34 @@ $(document).ready(function(){initNavTree('bit__or_8hpp_source.html',''); initRes
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1bit__or.html">bit_or</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">   21</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">operator()</a>(T <span class="keyword">const</span>&amp; lhs, T <span class="keyword">const</span>&amp; rhs) <span class="keyword">const</span> -&gt; T { <span class="keywordflow">return</span> lhs | rhs; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1bit__or.html">bit_or</a>&lt;void&gt; {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">   27</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">is_transparent</a> = void;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">   30</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">operator()</a>(T&amp;&amp; lhs, U&amp;&amp; rhs) <span class="keyword">const</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        noexcept(noexcept(forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs))) -&gt; decltype(forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs))</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // TETL_FUNCTIONAL_BIT_OR_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1bit__or.html">bit_or</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">   18</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">operator()</a>(T <span class="keyword">const</span>&amp; lhs, T <span class="keyword">const</span>&amp; rhs) <span class="keyword">const</span> -&gt; T { <span class="keywordflow">return</span> lhs | rhs; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1bit__or.html">bit_or</a>&lt;void&gt; {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">   23</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">is_transparent</a> = void;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">   26</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">operator()</a>(T&amp;&amp; lhs, U&amp;&amp; rhs) <span class="keyword">const</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        noexcept(noexcept(forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs))) -&gt; decltype(forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs))</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> forward&lt;T&gt;(lhs) | forward&lt;U&gt;(rhs);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // TETL_FUNCTIONAL_BIT_OR_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructetl_1_1bit__or_3_01void_01_4_html_a9dcadd1339fbad0a6704469193519bd8"><div class="ttname"><a href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">etl::bit_or&lt; void &gt;::is_transparent</a></div><div class="ttdeci">void is_transparent</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:27</div></div>
-<div class="ttc" id="astructetl_1_1bit__or_html"><div class="ttname"><a href="structetl_1_1bit__or.html">etl::bit_or</a></div><div class="ttdoc">Function object for performing bitwise OR. Effectively calls operator| on type T.</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:20</div></div>
-<div class="ttc" id="astructetl_1_1bit__or_html_a53756b7f345c1505b6dd5097e0fc4493"><div class="ttname"><a href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">etl::bit_or::operator()</a></div><div class="ttdeci">constexpr auto operator()(T const &amp;lhs, T const &amp;rhs) const -&gt; T</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:21</div></div>
+<div class="ttc" id="astructetl_1_1bit__or_3_01void_01_4_html_a9dcadd1339fbad0a6704469193519bd8"><div class="ttname"><a href="structetl_1_1bit__or_3_01void_01_4.html#a9dcadd1339fbad0a6704469193519bd8">etl::bit_or&lt; void &gt;::is_transparent</a></div><div class="ttdeci">void is_transparent</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:23</div></div>
+<div class="ttc" id="astructetl_1_1bit__or_html"><div class="ttname"><a href="structetl_1_1bit__or.html">etl::bit_or</a></div><div class="ttdoc">Function object for performing bitwise OR. Effectively calls operator| on type T.</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1bit__or_html_a53756b7f345c1505b6dd5097e0fc4493"><div class="ttname"><a href="structetl_1_1bit__or.html#a53756b7f345c1505b6dd5097e0fc4493">etl::bit_or::operator()</a></div><div class="ttdeci">constexpr auto operator()(T const &amp;lhs, T const &amp;rhs) const -&gt; T</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:18</div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="astructetl_1_1bit__or_3_01void_01_4_html_a1458a410a5cad81f2aaccd06e4dfe710"><div class="ttname"><a href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">etl::bit_or&lt; void &gt;::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;lhs, U &amp;&amp;rhs) const noexcept(noexcept(forward&lt; T &gt;(lhs)|forward&lt; U &gt;(rhs))) -&gt; decltype(forward&lt; T &gt;(lhs)|forward&lt; U &gt;(rhs))</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:30</div></div>
+<div class="ttc" id="astructetl_1_1bit__or_3_01void_01_4_html_a1458a410a5cad81f2aaccd06e4dfe710"><div class="ttname"><a href="structetl_1_1bit__or_3_01void_01_4.html#a1458a410a5cad81f2aaccd06e4dfe710">etl::bit_or&lt; void &gt;::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;lhs, U &amp;&amp;rhs) const noexcept(noexcept(forward&lt; T &gt;(lhs)|forward&lt; U &gt;(rhs))) -&gt; decltype(forward&lt; T &gt;(lhs)|forward&lt; U &gt;(rhs))</div><div class="ttdef"><b>Definition:</b> bit_or.hpp:26</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

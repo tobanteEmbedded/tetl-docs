@@ -96,48 +96,48 @@ $(document).ready(function(){initNavTree('mismatch_8hpp_source.html',''); initRe
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">   28</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, Predicate pred)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (; first1 != last1; ++first1, (void)++first2) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (!pred(*first1, *first2)) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, Predicate pred)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (; first1 != last1; ++first1, (void)++first2) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (!pred(*first1, *first2)) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a>(first1, first2);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a>(first1, first2);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae399b1c12f42fcf2365021710f1e1667">   40</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2) -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(first1, last1, first2, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespaceetl.html#a85be5a2493fc37bb07bab46871d7732b">   47</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Predicate pred)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (; first1 != last1 &amp;&amp; first2 != last2; ++first1, (void)++first2) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (!pred(*first1, *first2)) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a>(first1, first2);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8936cbbb27640ce6d9411dd5bc4859b3">   59</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(first1, last1, first2, last2, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_MISMATCH_HPP</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae399b1c12f42fcf2365021710f1e1667">   36</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2) -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(first1, last1, first2, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespaceetl.html#a85be5a2493fc37bb07bab46871d7732b">   42</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Predicate pred)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (; first1 != last1 &amp;&amp; first2 != last2; ++first1, (void)++first2) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (!pred(*first1, *first2)) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a>(first1, first2);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8936cbbb27640ce6d9411dd5bc4859b3">   53</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">mismatch</a>(first1, last1, first2, last2, <a class="code" href="structetl_1_1equal__to.html">equal_to&lt;&gt;</a> {});</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_MISMATCH_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructetl_1_1equal__to_html"><div class="ttname"><a href="structetl_1_1equal__to.html">etl::equal_to&lt;&gt;</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a5674e86a91ac9cb808d365aa09d5d07f"><div class="ttname"><a href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">etl::mismatch</a></div><div class="ttdeci">constexpr auto mismatch(InputIt1 first1, InputIt1 last1, InputIt2 first2, Predicate pred) -&gt; pair&lt; InputIt1, InputIt2 &gt;</div><div class="ttdoc">Returns the first mismatching pair of elements from two ranges: one defined by [first1,...</div><div class="ttdef"><b>Definition:</b> mismatch.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html_a5674e86a91ac9cb808d365aa09d5d07f"><div class="ttname"><a href="namespaceetl.html#a5674e86a91ac9cb808d365aa09d5d07f">etl::mismatch</a></div><div class="ttdeci">constexpr auto mismatch(InputIt1 first1, InputIt1 last1, InputIt2 first2, Predicate pred) -&gt; pair&lt; InputIt1, InputIt2 &gt;</div><div class="ttdoc">Returns the first mismatching pair of elements from two ranges: one defined by [first1,...</div><div class="ttdef"><b>Definition:</b> mismatch.hpp:25</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="astructetl_1_1pair_html"><div class="ttname"><a href="structetl_1_1pair.html">etl::pair</a></div><div class="ttdoc">etl::pair is a class template that provides a way to store two heterogeneous objects as a single unit...</div><div class="ttdef"><b>Definition:</b> pair.hpp:92</div></div>
 <div class="ttc" id="apair_8hpp_html"><div class="ttname"><a href="pair_8hpp.html">pair.hpp</a></div></div>

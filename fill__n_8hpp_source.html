@@ -94,23 +94,23 @@ $(document).ready(function(){initNavTree('fill__n_8hpp_source.html',''); initRes
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> Size, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a>(OutputIt first, Size <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, T <span class="keyword">const</span>&amp; value) -&gt; OutputIt</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = Size { 0 }; i &lt; <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>; ++i) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        *first = value;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        ++first;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> first;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> Size, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a>(OutputIt first, Size <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, T <span class="keyword">const</span>&amp; value) -&gt; OutputIt</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = Size { 0 }; i &lt; <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>; ++i) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        *first = value;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ++first;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_FILL_N_HPP</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_FILL_N_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_ad5ac240345a96ad39668967bf8bdf76f"><div class="ttname"><a href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">etl::fill_n</a></div><div class="ttdeci">constexpr auto fill_n(OutputIt first, Size count, T const &amp;value) -&gt; OutputIt</div><div class="ttdoc">Assigns the given value to the first count elements in the range beginning at first if count &gt; 0....</div><div class="ttdef"><b>Definition:</b> fill_n.hpp:18</div></div>
-<div class="ttc" id="anamespaceetl_html_a3f9162720047d01bb438874bf56df5d2"><div class="ttname"><a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition:</b> count.hpp:27</div></div>
+<div class="ttc" id="anamespaceetl_html_ad5ac240345a96ad39668967bf8bdf76f"><div class="ttname"><a href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">etl::fill_n</a></div><div class="ttdeci">constexpr auto fill_n(OutputIt first, Size count, T const &amp;value) -&gt; OutputIt</div><div class="ttdoc">Assigns the given value to the first count elements in the range beginning at first if count &gt; 0....</div><div class="ttdef"><b>Definition:</b> fill_n.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_a3f9162720047d01bb438874bf56df5d2"><div class="ttname"><a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition:</b> count.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

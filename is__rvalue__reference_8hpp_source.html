@@ -96,24 +96,24 @@ $(document).ready(function(){initNavTree('is__rvalue__reference_8hpp_source.html
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct </span>is_rvalue_reference : <a class="code" href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">false_type</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__rvalue__reference.html">is_rvalue_reference</a>&lt;T&amp;&amp;&gt; : <a class="code" href="structetl_1_1integral__constant.html">true_type</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">   27</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">is_rvalue_reference_v</a> = <a class="code" href="structetl_1_1is__rvalue__reference.html">is_rvalue_reference&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span>is_rvalue_reference : <a class="code" href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">false_type</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__rvalue__reference.html">is_rvalue_reference</a>&lt;T&amp;&amp;&gt; : <a class="code" href="structetl_1_1integral__constant.html">true_type</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">   25</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">is_rvalue_reference_v</a> = <a class="code" href="structetl_1_1is__rvalue__reference.html">is_rvalue_reference&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_RVALUE_REFERENCE_HPP</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_RVALUE_REFERENCE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceetl_html_a466dc202e27dec8fa05a9fcc6ef47e27"><div class="ttname"><a href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_af2cba0c4e29fbd91ba77cbf6b9744ebc"><div class="ttname"><a href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">etl::is_rvalue_reference_v</a></div><div class="ttdeci">constexpr bool is_rvalue_reference_v</div><div class="ttdoc">\group is_rvalue_reference</div><div class="ttdef"><b>Definition:</b> is_rvalue_reference.hpp:27</div></div>
+<div class="ttc" id="anamespaceetl_html_af2cba0c4e29fbd91ba77cbf6b9744ebc"><div class="ttname"><a href="namespaceetl.html#af2cba0c4e29fbd91ba77cbf6b9744ebc">etl::is_rvalue_reference_v</a></div><div class="ttdeci">constexpr bool is_rvalue_reference_v</div><div class="ttdef"><b>Definition:</b> is_rvalue_reference.hpp:25</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1is__rvalue__reference_html"><div class="ttname"><a href="structetl_1_1is__rvalue__reference.html">etl::is_rvalue_reference</a></div><div class="ttdoc">Checks whether T is a rvalue reference type. Provides the member constant value which is equal to tru...</div><div class="ttdef"><b>Definition:</b> decl.hpp:25</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>

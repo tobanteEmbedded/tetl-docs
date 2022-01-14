@@ -97,30 +97,30 @@ $(document).ready(function(){initNavTree('is__array_8hpp_source.html',''); initR
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span>is_array : <a class="code" href="structetl_1_1integral__constant.html">etl::false_type</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1is__array_3_01T_0f_0e_4.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__array.html">is_array</a>&lt;T[]&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::true_type</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structetl_1_1is__array_3_01T_0fN_0e_4.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__array.html">is_array</a>&lt;T[N]&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::true_type</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">   35</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">is_array_v</a> = <a class="code" href="structetl_1_1is__array.html">etl::is_array&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>is_array : <a class="code" href="structetl_1_1integral__constant.html">etl::false_type</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1is__array_3_01T_0f_0e_4.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__array.html">is_array</a>&lt;T[]&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::true_type</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structetl_1_1is__array_3_01T_0fN_0e_4.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__array.html">is_array</a>&lt;T[N]&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::true_type</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">   33</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">is_array_v</a> = <a class="code" href="structetl_1_1is__array.html">etl::is_array&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_ARRAY_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_ARRAY_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1is__array_html"><div class="ttname"><a href="structetl_1_1is__array.html">etl::is_array</a></div><div class="ttdoc">Checks whether T is an array type. Provides the member constant value which is equal to true,...</div><div class="ttdef"><b>Definition:</b> decl.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="anamespaceetl_html_afaa46050181985a6156a6c800c86a7d8"><div class="ttname"><a href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">etl::is_array_v</a></div><div class="ttdeci">constexpr bool is_array_v</div><div class="ttdoc">\group is_array</div><div class="ttdef"><b>Definition:</b> is_array.hpp:35</div></div>
+<div class="ttc" id="anamespaceetl_html_afaa46050181985a6156a6c800c86a7d8"><div class="ttname"><a href="namespaceetl.html#afaa46050181985a6156a6c800c86a7d8">etl::is_array_v</a></div><div class="ttdeci">constexpr bool is_array_v</div><div class="ttdef"><b>Definition:</b> is_array.hpp:33</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="a__type__traits_2bool__constant_8hpp_html"><div class="ttname"><a href="__type__traits_2bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <!-- start footer part -->

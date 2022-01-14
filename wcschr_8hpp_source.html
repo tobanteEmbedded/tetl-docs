@@ -95,18 +95,18 @@ $(document).ready(function(){initNavTree('wcschr_8hpp_source.html',''); initResi
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">wcschr</a>(<span class="keywordtype">wchar_t</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span>* { <span class="keywordflow">return</span> detail::strchr_impl&lt;wchar_t&gt;(str, ch); }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#afcc2ac1163d4f8e69b06785a16903b92">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">wcschr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> detail::strchr_impl&lt;wchar_t const&gt;(str, ch);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // TETL_CWCHAR_WCSCHR_HPP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">wcschr</a>(<span class="keywordtype">wchar_t</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span>* { <span class="keywordflow">return</span> detail::strchr_impl&lt;wchar_t&gt;(str, ch); }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#afcc2ac1163d4f8e69b06785a16903b92">   21</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">wcschr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> detail::strchr_impl&lt;wchar_t const&gt;(str, ch);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // TETL_CWCHAR_WCSCHR_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_ab4f3717d1befc65ded1e73b0dc19405b"><div class="ttname"><a href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">etl::wcschr</a></div><div class="ttdeci">constexpr auto wcschr(wchar_t *str, int ch) -&gt; wchar_t *</div><div class="ttdoc">Finds the first occurrence of the wide character ch in the wide string pointed to by str.</div><div class="ttdef"><b>Definition:</b> wcschr.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_ab4f3717d1befc65ded1e73b0dc19405b"><div class="ttname"><a href="namespaceetl.html#ab4f3717d1befc65ded1e73b0dc19405b">etl::wcschr</a></div><div class="ttdeci">constexpr auto wcschr(wchar_t *str, int ch) -&gt; wchar_t *</div><div class="ttdoc">Finds the first occurrence of the wide character ch in the wide string pointed to by str.</div><div class="ttdef"><b>Definition:</b> wcschr.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

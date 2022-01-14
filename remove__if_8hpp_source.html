@@ -97,32 +97,32 @@ $(document).ready(function(){initNavTree('remove__if_8hpp_source.html',''); init
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">   19</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">remove_if</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Predicate pred) -&gt; ForwardIt</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    first = <a class="code" href="namespaceetl.html#a9c802502e6a81c3b77d98dbcaf030c19">find_if</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, pred);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = first; ++i != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>;) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (!pred(*i)) { *first++ = <a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(*i); }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> first;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">remove_if</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Predicate pred) -&gt; ForwardIt</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    first = <a class="code" href="namespaceetl.html#a9c802502e6a81c3b77d98dbcaf030c19">find_if</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, pred);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (first != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = first; ++i != <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>;) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (!pred(*i)) { *first++ = <a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(*i); }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_REMOVE_IF_HPP</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_REMOVE_IF_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="afind__if_8hpp_html"><div class="ttname"><a href="find__if_8hpp.html">find_if.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_a5dc5f42480a4033b9a58cb5c7236fbee"><div class="ttname"><a href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">etl::remove_if</a></div><div class="ttdeci">constexpr auto remove_if(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt</div><div class="ttdoc">Removes all elements satisfying specific criteria from the range [first, last) and returns a past-the...</div><div class="ttdef"><b>Definition:</b> remove_if.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_a9c802502e6a81c3b77d98dbcaf030c19"><div class="ttname"><a href="namespaceetl.html#a9c802502e6a81c3b77d98dbcaf030c19">etl::find_if</a></div><div class="ttdeci">constexpr auto find_if(InputIt first, InputIt last, Predicate pred) noexcept -&gt; InputIt</div><div class="ttdoc">Searches for an element for which predicate p returns true.</div><div class="ttdef"><b>Definition:</b> find_if.hpp:21</div></div>
+<div class="ttc" id="anamespaceetl_html_a5dc5f42480a4033b9a58cb5c7236fbee"><div class="ttname"><a href="namespaceetl.html#a5dc5f42480a4033b9a58cb5c7236fbee">etl::remove_if</a></div><div class="ttdeci">constexpr auto remove_if(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt</div><div class="ttdoc">Removes all elements satisfying specific criteria from the range [first, last) and returns a past-the...</div><div class="ttdef"><b>Definition:</b> remove_if.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_a9c802502e6a81c3b77d98dbcaf030c19"><div class="ttname"><a href="namespaceetl.html#a9c802502e6a81c3b77d98dbcaf030c19">etl::find_if</a></div><div class="ttdeci">constexpr auto find_if(InputIt first, InputIt last, Predicate pred) noexcept -&gt; InputIt</div><div class="ttdoc">Searches for an element for which predicate p returns true.</div><div class="ttdef"><b>Definition:</b> find_if.hpp:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

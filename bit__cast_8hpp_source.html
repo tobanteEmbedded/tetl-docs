@@ -112,31 +112,31 @@ $(document).ready(function(){initNavTree('bit__cast_8hpp_source.html',''); initR
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// clang-format on</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From, enable_if_t&lt;detail::bit_castable_types&lt;To, From&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">   43</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">bit_cast</a>(From <span class="keyword">const</span>&amp; src) noexcept -&gt; To</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if __has_builtin(__builtin_bit_cast)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> __builtin_bit_cast(To, src);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// This implementation additionally requires destination type to be</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// trivially constructible</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    static_assert(is_trivially_constructible_v&lt;To&gt;);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    To dst {};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    detail::memcpy_impl&lt;char, etl::size_t&gt;(&amp;dst, &amp;src, <span class="keyword">sizeof</span>(To));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> dst;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From, enable_if_t&lt;detail::bit_castable_types&lt;To, From&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">   41</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">bit_cast</a>(From <span class="keyword">const</span>&amp; src) noexcept -&gt; To</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if __has_builtin(__builtin_bit_cast)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> __builtin_bit_cast(To, src);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// This implementation additionally requires destination type to be</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// trivially constructible</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    static_assert(is_trivially_constructible_v&lt;To&gt;);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    To dst {};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    detail::memcpy_impl&lt;char, etl::size_t&gt;(&amp;dst, &amp;src, <span class="keyword">sizeof</span>(To));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // TETL_BIT_BIT_CAST_HPP</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // TETL_BIT_BIT_CAST_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__copyable_8hpp_html"><div class="ttname"><a href="is__trivially__copyable_8hpp.html">is_trivially_copyable.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a1a160c02d9209623716ad5c6d152462a"><div class="ttname"><a href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition:</b> bit_cast.hpp:43</div></div>
+<div class="ttc" id="anamespaceetl_html_a1a160c02d9209623716ad5c6d152462a"><div class="ttname"><a href="namespaceetl.html#a1a160c02d9209623716ad5c6d152462a">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition:</b> bit_cast.hpp:41</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aenable__if_8hpp_html"><div class="ttname"><a href="enable__if_8hpp.html">enable_if.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__constructible_8hpp_html"><div class="ttname"><a href="is__trivially__constructible_8hpp.html">is_trivially_constructible.hpp</a></div></div>

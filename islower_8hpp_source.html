@@ -96,20 +96,20 @@ $(document).ready(function(){initNavTree('islower_8hpp_source.html',''); initRes
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">   23</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">islower</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;z&#39;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_ISLOWER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">   21</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">islower</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; ch &lt;= <span class="charliteral">&#39;z&#39;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_ISLOWER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a334ab4709b4cf8c1f5053016825c3bd7"><div class="ttname"><a href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">etl::islower</a></div><div class="ttdeci">constexpr auto islower(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is classified as a lowercase character according to the default C local...</div><div class="ttdef"><b>Definition:</b> islower.hpp:23</div></div>
+<div class="ttc" id="anamespaceetl_html_a334ab4709b4cf8c1f5053016825c3bd7"><div class="ttname"><a href="namespaceetl.html#a334ab4709b4cf8c1f5053016825c3bd7">etl::islower</a></div><div class="ttdeci">constexpr auto islower(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is classified as a lowercase character according to the default C local...</div><div class="ttdef"><b>Definition:</b> islower.hpp:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -98,19 +98,19 @@ $(document).ready(function(){initNavTree('bit__floor_8hpp_source.html',''); init
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">bit_floor</a>(T x) noexcept -&gt; T</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (x != 0) { <span class="keywordflow">return</span> T { 1U } &lt;&lt; (<a class="code" href="namespaceetl.html#a21008d0b3fc5592c70cb4e453ae6f1e8">bit_width</a>(x) - 1U); }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // TETL_BIT_BIT_FLOOR_HPP</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">   24</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">bit_floor</a>(T x) noexcept -&gt; T</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (x != 0) { <span class="keywordflow">return</span> T { 1U } &lt;&lt; (<a class="code" href="namespaceetl.html#a21008d0b3fc5592c70cb4e453ae6f1e8">bit_width</a>(x) - 1U); }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // TETL_BIT_BIT_FLOOR_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a21008d0b3fc5592c70cb4e453ae6f1e8"><div class="ttname"><a href="namespaceetl.html#a21008d0b3fc5592c70cb4e453ae6f1e8">etl::bit_width</a></div><div class="ttdeci">constexpr auto bit_width(T x) noexcept -&gt; int</div><div class="ttdoc">If x is not zero, calculates the number of bits needed to store the value x, that is,...</div><div class="ttdef"><b>Definition:</b> bit_width.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_a4425c1363513d1c09bb85195ba8ceec7"><div class="ttname"><a href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">etl::bit_floor</a></div><div class="ttdeci">constexpr auto bit_floor(T x) noexcept -&gt; T</div><div class="ttdoc">If x is not zero, calculates the largest integral power of two that is not greater than x....</div><div class="ttdef"><b>Definition:</b> bit_floor.hpp:25</div></div>
+<div class="ttc" id="anamespaceetl_html_a21008d0b3fc5592c70cb4e453ae6f1e8"><div class="ttname"><a href="namespaceetl.html#a21008d0b3fc5592c70cb4e453ae6f1e8">etl::bit_width</a></div><div class="ttdeci">constexpr auto bit_width(T x) noexcept -&gt; int</div><div class="ttdoc">If x is not zero, calculates the number of bits needed to store the value x, that is,...</div><div class="ttdef"><b>Definition:</b> bit_width.hpp:22</div></div>
+<div class="ttc" id="anamespaceetl_html_a4425c1363513d1c09bb85195ba8ceec7"><div class="ttname"><a href="namespaceetl.html#a4425c1363513d1c09bb85195ba8ceec7">etl::bit_floor</a></div><div class="ttdeci">constexpr auto bit_floor(T x) noexcept -&gt; T</div><div class="ttdoc">If x is not zero, calculates the largest integral power of two that is not greater than x....</div><div class="ttdef"><b>Definition:</b> bit_floor.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aenable__if_8hpp_html"><div class="ttname"><a href="enable__if_8hpp.html">enable_if.hpp</a></div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>

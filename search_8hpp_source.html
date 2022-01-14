@@ -110,35 +110,35 @@ $(document).ready(function(){initNavTree('search_8hpp_source.html',''); initResi
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt1, <span class="keyword">typename</span> ForwardIt2, <span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">   41</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ForwardIt1 first, ForwardIt1 <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate pred) -&gt; ForwardIt1</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> detail::search_impl(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, sFirst, sLast, pred);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt1, <span class="keyword">typename</span> ForwardIt2&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3095f3192fced474d1a13d55d9773286">   49</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(ForwardIt1 first, ForwardIt1 <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, ForwardIt2 sFirst, ForwardIt2 sLast)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    -&gt; ForwardIt1</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> eq = [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; l, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r) { <span class="keywordflow">return</span> l == r; };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, sFirst, sLast, eq);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Searcher&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab64aef4221828b167fad5f450a3b570c">   58</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Searcher <span class="keyword">const</span>&amp; searcher) -&gt; ForwardIt</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> searcher(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>).first;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_SEARCH_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt1, <span class="keyword">typename</span> ForwardIt2, <span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">   38</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ForwardIt1 first, ForwardIt1 <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate pred) -&gt; ForwardIt1</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> detail::search_impl(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, sFirst, sLast, pred);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt1, <span class="keyword">typename</span> ForwardIt2&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3095f3192fced474d1a13d55d9773286">   45</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(ForwardIt1 first, ForwardIt1 <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, ForwardIt2 sFirst, ForwardIt2 sLast)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    -&gt; ForwardIt1</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> eq = [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; l, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r) { <span class="keywordflow">return</span> l == r; };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, sFirst, sLast, eq);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Searcher&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab64aef4221828b167fad5f450a3b570c">   53</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">search</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Searcher <span class="keyword">const</span>&amp; searcher) -&gt; ForwardIt</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> searcher(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>).first;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_SEARCH_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_abea624668b5556e24b5c86a89a4df428"><div class="ttname"><a href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">etl::search</a></div><div class="ttdeci">constexpr auto search(ForwardIt1 first, ForwardIt1 last, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate pred) -&gt; ForwardIt1</div><div class="ttdoc">Searches for the first occurrence of the sequence of elements [sFirst, sLast) in the range [first,...</div><div class="ttdef"><b>Definition:</b> search.hpp:41</div></div>
+<div class="ttc" id="anamespaceetl_html_abea624668b5556e24b5c86a89a4df428"><div class="ttname"><a href="namespaceetl.html#abea624668b5556e24b5c86a89a4df428">etl::search</a></div><div class="ttdeci">constexpr auto search(ForwardIt1 first, ForwardIt1 last, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate pred) -&gt; ForwardIt1</div><div class="ttdoc">Searches for the first occurrence of the sequence of elements [sFirst, sLast) in the range [first,...</div><div class="ttdef"><b>Definition:</b> search.hpp:38</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

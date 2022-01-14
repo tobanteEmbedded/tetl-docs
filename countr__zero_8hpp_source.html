@@ -98,27 +98,27 @@ $(document).ready(function(){initNavTree('countr__zero_8hpp_source.html',''); in
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#a396002924497149e89f7bd528988d41f">   26</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a396002924497149e89f7bd528988d41f">countr_zero</a>(T x) noexcept -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> isBitSet = [](<span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a132b1a40a5bcf2304ca6253eb2e1c619">val</a>, <span class="keywordtype">int</span> pos) -&gt; <span class="keywordtype">bool</span> { <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a132b1a40a5bcf2304ca6253eb2e1c619">val</a> &amp; (T { 1 } &lt;&lt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(pos)); };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> totalBits = <a class="code" href="structetl_1_1numeric__limits.html">numeric_limits&lt;T&gt;::digits</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span> result    = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">while</span> (result != totalBits) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (isBitSet(x, result)) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        ++result;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, enable_if_t&lt;detail::bit_u<span class="keywordtype">int</span>_v&lt;T&gt;, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a396002924497149e89f7bd528988d41f">   24</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a396002924497149e89f7bd528988d41f">countr_zero</a>(T x) noexcept -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> isBitSet = [](<span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a132b1a40a5bcf2304ca6253eb2e1c619">val</a>, <span class="keywordtype">int</span> pos) -&gt; <span class="keywordtype">bool</span> { <span class="keywordflow">return</span> <a class="code" href="namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a132b1a40a5bcf2304ca6253eb2e1c619">val</a> &amp; (T { 1 } &lt;&lt; <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(pos)); };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> totalBits = <a class="code" href="structetl_1_1numeric__limits.html">numeric_limits&lt;T&gt;::digits</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> result    = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">while</span> (result != totalBits) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (isBitSet(x, result)) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ++result;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // TETL_BIT_COUNTR_ZERO_HPP</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // TETL_BIT_COUNTR_ZERO_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_a396002924497149e89f7bd528988d41f"><div class="ttname"><a href="namespaceetl.html#a396002924497149e89f7bd528988d41f">etl::countr_zero</a></div><div class="ttdeci">constexpr auto countr_zero(T x) noexcept -&gt; int</div><div class="ttdoc">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit (...</div><div class="ttdef"><b>Definition:</b> countr_zero.hpp:26</div></div>
+<div class="ttc" id="anamespaceetl_html_a396002924497149e89f7bd528988d41f"><div class="ttname"><a href="namespaceetl.html#a396002924497149e89f7bd528988d41f">etl::countr_zero</a></div><div class="ttdeci">constexpr auto countr_zero(T x) noexcept -&gt; int</div><div class="ttdoc">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit (...</div><div class="ttdef"><b>Definition:</b> countr_zero.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aenable__if_8hpp_html"><div class="ttname"><a href="enable__if_8hpp.html">enable_if.hpp</a></div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>

@@ -105,24 +105,24 @@ $(document).ready(function(){initNavTree('add__pointer_8hpp_source.html',''); in
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1add__pointer.html">add_pointer</a> : decltype(detail::try_add_pointer&lt;T&gt;(0)) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">   35</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1add__pointer.html">etl::add_pointer&lt;T&gt;::type</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1add__pointer.html">add_pointer</a> : decltype(detail::try_add_pointer&lt;T&gt;(0)) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">   33</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1add__pointer.html">etl::add_pointer&lt;T&gt;::type</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_ADD_POINTER_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_ADD_POINTER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="astructetl_1_1type__identity_html"><div class="ttname"><a href="structetl_1_1type__identity.html">etl::type_identity</a></div><div class="ttdef"><b>Definition:</b> type_identity.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1add__pointer_html"><div class="ttname"><a href="structetl_1_1add__pointer.html">etl::add_pointer</a></div><div class="ttdoc">If T is a reference type, then provides the member typedef type which is a pointer to the referred ty...</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:30</div></div>
+<div class="ttc" id="astructetl_1_1add__pointer_html"><div class="ttname"><a href="structetl_1_1add__pointer.html">etl::add_pointer</a></div><div class="ttdoc">If T is a reference type, then provides the member typedef type which is a pointer to the referred ty...</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:29</div></div>
 <div class="ttc" id="atype__identity_8hpp_html"><div class="ttname"><a href="type__identity_8hpp.html">type_identity.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a2ab42b86be16dbdbaa744a2caaca7e80"><div class="ttname"><a href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a></div><div class="ttdeci">typename etl::add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdoc">\group add_pointer</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:35</div></div>
+<div class="ttc" id="anamespaceetl_html_a2ab42b86be16dbdbaa744a2caaca7e80"><div class="ttname"><a href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a></div><div class="ttdeci">typename etl::add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

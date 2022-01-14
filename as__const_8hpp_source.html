@@ -95,25 +95,25 @@ $(document).ready(function(){initNavTree('as__const_8hpp_source.html',''); initR
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="add__const_8hpp.html">etl/_type_traits/add_const.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">   14</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T&amp; t) noexcept -&gt; <a class="code" href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">add_const_t&lt;T&gt;</a>&amp;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> t;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T <span class="keyword">const</span>&amp;&amp;) -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">   13</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T&amp; t) noexcept -&gt; <a class="code" href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">add_const_t&lt;T&gt;</a>&amp;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T <span class="keyword">const</span>&amp;&amp;) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // TETL_UTILITY_AS_CONST_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // TETL_UTILITY_AS_CONST_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a06fe98569e6409cac789c54e1e563996"><div class="ttname"><a href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">etl::add_const_t</a></div><div class="ttdeci">T const add_const_t</div><div class="ttdoc">\group add_const</div><div class="ttdef"><b>Definition:</b> add_const.hpp:12</div></div>
+<div class="ttc" id="anamespaceetl_html_a06fe98569e6409cac789c54e1e563996"><div class="ttname"><a href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">etl::add_const_t</a></div><div class="ttdeci">T const add_const_t</div><div class="ttdef"><b>Definition:</b> add_const.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aadd__const_8hpp_html"><div class="ttname"><a href="add__const_8hpp.html">add_const.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_aa180d468fdf2378d57e100ab2bd37ccc"><div class="ttname"><a href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">etl::as_const</a></div><div class="ttdeci">constexpr auto as_const(T &amp;t) noexcept -&gt; add_const_t&lt; T &gt; &amp;</div><div class="ttdoc">Forms lvalue reference to const type of t. \group as_const.</div><div class="ttdef"><b>Definition:</b> as_const.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_aa180d468fdf2378d57e100ab2bd37ccc"><div class="ttname"><a href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">etl::as_const</a></div><div class="ttdeci">constexpr auto as_const(T &amp;t) noexcept -&gt; add_const_t&lt; T &gt; &amp;</div><div class="ttdoc">Forms lvalue reference to const type of t.</div><div class="ttdef"><b>Definition:</b> as_const.hpp:13</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -97,32 +97,32 @@ $(document).ready(function(){initNavTree('partial__sort_8hpp_source.html',''); i
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">partial_sort</a>(RandomIt first, RandomIt middle, RandomIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Compare comp) -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// TODO: Improve. Currently forwards to regular sort.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(middle);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, comp);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespaceetl.html#adf059ef9f744ed7d731faa69834ddc9a">   32</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">partial_sort</a>(RandomIt first, RandomIt middle, RandomIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(middle);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_PARTIAL_SORT_HPP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt, <span class="keyword">typename</span> Compare&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">   20</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">partial_sort</a>(RandomIt first, RandomIt middle, RandomIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, Compare comp) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// TODO: Improve. Currently forwards to regular sort.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(middle);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>, comp);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#adf059ef9f744ed7d731faa69834ddc9a">   28</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">partial_sort</a>(RandomIt first, RandomIt middle, RandomIt <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(middle);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a>(first, <a class="code" href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">last</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_PARTIAL_SORT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aignore__unused_8hpp_html"><div class="ttname"><a href="ignore__unused_8hpp.html">ignore_unused.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_adda62f64ad31faeb43dab1bbe8b2a664"><div class="ttname"><a href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a></div><div class="ttdeci">constexpr auto sort(RandomIt first, RandomIt last, Compare comp) -&gt; void</div><div class="ttdoc">Sorts the elements in the range [first, last) in non-descending order. The order of equal elements is...</div><div class="ttdef"><b>Definition:</b> sort.hpp:21</div></div>
+<div class="ttc" id="anamespaceetl_html_adda62f64ad31faeb43dab1bbe8b2a664"><div class="ttname"><a href="namespaceetl.html#adda62f64ad31faeb43dab1bbe8b2a664">etl::sort</a></div><div class="ttdeci">constexpr auto sort(RandomIt first, RandomIt last, Compare comp) -&gt; void</div><div class="ttdoc">Sorts the elements in the range [first, last) in non-descending order. The order of equal elements is...</div><div class="ttdef"><b>Definition:</b> sort.hpp:18</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_abb0c4e651fc78688ee9dc70efcdbae56"><div class="ttname"><a href="namespaceetl_1_1chrono.html#abb0c4e651fc78688ee9dc70efcdbae56">etl::chrono::last</a></div><div class="ttdeci">constexpr auto last</div><div class="ttdef"><b>Definition:</b> last_spec.hpp:23</div></div>
 <div class="ttc" id="asort_8hpp_html"><div class="ttname"><a href="sort_8hpp.html">sort.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a61d1bed984c0aceff254e912cf251c6e"><div class="ttname"><a href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">etl::partial_sort</a></div><div class="ttdeci">constexpr auto partial_sort(RandomIt first, RandomIt middle, RandomIt last, Compare comp) -&gt; void</div><div class="ttdoc">Rearranges elements such that the range [first, middle) contains the sorted middle - first smallest e...</div><div class="ttdef"><b>Definition:</b> partial_sort.hpp:23</div></div>
+<div class="ttc" id="anamespaceetl_html_a61d1bed984c0aceff254e912cf251c6e"><div class="ttname"><a href="namespaceetl.html#a61d1bed984c0aceff254e912cf251c6e">etl::partial_sort</a></div><div class="ttdeci">constexpr auto partial_sort(RandomIt first, RandomIt middle, RandomIt last, Compare comp) -&gt; void</div><div class="ttdoc">Rearranges elements such that the range [first, middle) contains the sorted middle - first smallest e...</div><div class="ttdef"><b>Definition:</b> partial_sort.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html_acce870bde6a96dc0634f235573439dd1"><div class="ttname"><a href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition:</b> ignore_unused.hpp:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

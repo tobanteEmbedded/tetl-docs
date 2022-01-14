@@ -94,24 +94,24 @@ $(document).ready(function(){initNavTree('__algorithm_2min_8hpp_source.html','')
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#adae1500815312b248e453896d5439b63">   14</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>(Type <span class="keyword">const</span>&amp; a, Type <span class="keyword">const</span>&amp; b) noexcept -&gt; Type <span class="keyword">const</span>&amp;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> (b &lt; a) ? b : a;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a479c4a8315ae3ef2d1128858d723afc2">   23</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>(Type <span class="keyword">const</span>&amp; a, Type <span class="keyword">const</span>&amp; b, Compare comp) noexcept -&gt; Type <span class="keyword">const</span>&amp;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> (comp(b, a)) ? b : a;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_MIN_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#adae1500815312b248e453896d5439b63">   12</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>(Type <span class="keyword">const</span>&amp; a, Type <span class="keyword">const</span>&amp; b) noexcept -&gt; Type <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> (b &lt; a) ? b : a;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Compare&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a479c4a8315ae3ef2d1128858d723afc2">   19</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>(Type <span class="keyword">const</span>&amp; a, Type <span class="keyword">const</span>&amp; b, Compare comp) noexcept -&gt; Type <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> (comp(b, a)) ? b : a;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // TETL_ALGORITHM_MIN_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_adae1500815312b248e453896d5439b63"><div class="ttname"><a href="namespaceetl.html#adae1500815312b248e453896d5439b63">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b. \group min \module Algorithm.</div><div class="ttdef"><b>Definition:</b> min.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_adae1500815312b248e453896d5439b63"><div class="ttname"><a href="namespaceetl.html#adae1500815312b248e453896d5439b63">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b.</div><div class="ttdef"><b>Definition:</b> min.hpp:12</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

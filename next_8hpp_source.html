@@ -97,22 +97,22 @@ $(document).ready(function(){initNavTree('next_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">   16</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(InputIt it, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits&lt;InputIt&gt;::difference_type</a> n = 1) -&gt; InputIt</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a>(it, n);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> it;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // TETL_ITERATOR_NEXT_HPP</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(InputIt it, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits&lt;InputIt&gt;::difference_type</a> n = 1) -&gt; InputIt</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a>(it, n);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> it;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // TETL_ITERATOR_NEXT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_ac45065b143a47fb9249bda8d57ccca63"><div class="ttname"><a href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a></div><div class="ttdeci">constexpr auto advance(It &amp;it, Distance n) -&gt; void</div><div class="ttdoc">Increments given iterator it by n elements. If n is negative, the iterator is decremented....</div><div class="ttdef"><b>Definition:</b> advance.hpp:22</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:52</div></div>
-<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it. \module Iterator.</div><div class="ttdef"><b>Definition:</b> next.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_ac45065b143a47fb9249bda8d57ccca63"><div class="ttname"><a href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a></div><div class="ttdeci">constexpr auto advance(It &amp;it, Distance n) -&gt; void</div><div class="ttdoc">Increments given iterator it by n elements. If n is negative, the iterator is decremented....</div><div class="ttdef"><b>Definition:</b> advance.hpp:20</div></div>
+<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:49</div></div>
+<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition:</b> next.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aadvance_8hpp_html"><div class="ttname"><a href="advance_8hpp.html">advance.hpp</a></div></div>
 <!-- start footer part -->

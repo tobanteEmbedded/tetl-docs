@@ -97,23 +97,23 @@ $(document).ready(function(){initNavTree('isprint_8hpp_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="isgraph_8hpp.html">etl/_cctype/isgraph.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">   24</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">isprint</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="namespaceetl.html#a3fcb7b22dcd166bd67a94b6b7f7da42e">etl::isgraph</a>(ch) != 0 || ch == <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_ISPRINT_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">isprint</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="namespaceetl.html#a3fcb7b22dcd166bd67a94b6b7f7da42e">etl::isgraph</a>(ch) != 0 || ch == <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_ISPRINT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aisgraph_8hpp_html"><div class="ttname"><a href="isgraph_8hpp.html">isgraph.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_a3fcb7b22dcd166bd67a94b6b7f7da42e"><div class="ttname"><a href="namespaceetl.html#a3fcb7b22dcd166bd67a94b6b7f7da42e">etl::isgraph</a></div><div class="ttdeci">constexpr auto isgraph(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is graphic (has a graphical representation) as classified by the defaul...</div><div class="ttdef"><b>Definition:</b> isgraph.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html_a3fcb7b22dcd166bd67a94b6b7f7da42e"><div class="ttname"><a href="namespaceetl.html#a3fcb7b22dcd166bd67a94b6b7f7da42e">etl::isgraph</a></div><div class="ttdeci">constexpr auto isgraph(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is graphic (has a graphical representation) as classified by the defaul...</div><div class="ttdef"><b>Definition:</b> isgraph.hpp:26</div></div>
 <div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a8da49fe7c1e61918bbf7dd210e655d8c"><div class="ttname"><a href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">etl::isprint</a></div><div class="ttdeci">constexpr auto isprint(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if ch is a printable character as classified by the default C locale.</div><div class="ttdef"><b>Definition:</b> isprint.hpp:24</div></div>
+<div class="ttc" id="anamespaceetl_html_a8da49fe7c1e61918bbf7dd210e655d8c"><div class="ttname"><a href="namespaceetl.html#a8da49fe7c1e61918bbf7dd210e655d8c">etl::isprint</a></div><div class="ttdeci">constexpr auto isprint(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if ch is a printable character as classified by the default C locale.</div><div class="ttdef"><b>Definition:</b> isprint.hpp:22</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

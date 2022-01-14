@@ -97,21 +97,21 @@ $(document).ready(function(){initNavTree('tolower_8hpp_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">   29</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">tolower</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceetl.html#a2b1e3ecf65c20a6bd5f0b06139694269">isupper</a>(ch) != 0) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch + 32); }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_TOLOWER_HPP</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">   27</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">tolower</a>(<span class="keywordtype">int</span> ch) noexcept -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// ch must de representable as a unsigned char</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    TETL_ASSERT(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch) == ch);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceetl.html#a2b1e3ecf65c20a6bd5f0b06139694269">isupper</a>(ch) != 0) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch + 32); }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // TETL_CCTYPE_TOLOWER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceetl_html_a25b969e80e81b5a412d56884fc5bfcf2"><div class="ttname"><a href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">etl::tolower</a></div><div class="ttdeci">constexpr auto tolower(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to lowercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition:</b> tolower.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_a2b1e3ecf65c20a6bd5f0b06139694269"><div class="ttname"><a href="namespaceetl.html#a2b1e3ecf65c20a6bd5f0b06139694269">etl::isupper</a></div><div class="ttdeci">constexpr auto isupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is classified as a uppercase character according to the default C local...</div><div class="ttdef"><b>Definition:</b> isupper.hpp:23</div></div>
+<div class="ttc" id="anamespaceetl_html_a25b969e80e81b5a412d56884fc5bfcf2"><div class="ttname"><a href="namespaceetl.html#a25b969e80e81b5a412d56884fc5bfcf2">etl::tolower</a></div><div class="ttdeci">constexpr auto tolower(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to lowercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition:</b> tolower.hpp:27</div></div>
+<div class="ttc" id="anamespaceetl_html_a2b1e3ecf65c20a6bd5f0b06139694269"><div class="ttname"><a href="namespaceetl.html#a2b1e3ecf65c20a6bd5f0b06139694269">etl::isupper</a></div><div class="ttdeci">constexpr auto isupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is classified as a uppercase character according to the default C local...</div><div class="ttdef"><b>Definition:</b> isupper.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
 <div class="ttc" id="aisupper_8hpp_html"><div class="ttname"><a href="isupper_8hpp.html">isupper.hpp</a></div></div>
 <div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>

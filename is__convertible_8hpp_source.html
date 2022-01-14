@@ -114,29 +114,29 @@ $(document).ready(function(){initNavTree('is__convertible_8hpp_source.html','');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structetl_1_1is__convertible.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__convertible.html">is_convertible</a> : <a class="code" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;(decltype(detail::test_returnable&lt;To&gt;(0))::value</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                          &amp;&amp; decltype(detail::test_nonvoid_convertible&lt;From, To&gt;(0))::value)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                      || (is_void_v&lt;From&gt; &amp;&amp; is_void_v&lt;To&gt;)&gt; {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">   49</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">is_convertible_v</a> = <a class="code" href="structetl_1_1is__convertible.html">is_convertible&lt;From, To&gt;::value</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structetl_1_1is__convertible.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__convertible.html">is_convertible</a> : <a class="code" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;(decltype(detail::test_returnable&lt;To&gt;(0))::value</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                          &amp;&amp; decltype(detail::test_nonvoid_convertible&lt;From, To&gt;(0))::value)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      || (is_void_v&lt;From&gt; &amp;&amp; is_void_v&lt;To&gt;)&gt; {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">   47</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">is_convertible_v</a> = <a class="code" href="structetl_1_1is__convertible.html">is_convertible&lt;From, To&gt;::value</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_CONVERTIBLE_HPP</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // TETL_TYPE_TRAITS_IS_CONVERTIBLE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespaceetl_html_a466dc202e27dec8fa05a9fcc6ef47e27"><div class="ttname"><a href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:16</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_aa15279e84c7ec40ef8a2d460b81b7fb7"><div class="ttname"><a href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdoc">\group is_convertible</div><div class="ttdef"><b>Definition:</b> is_convertible.hpp:49</div></div>
+<div class="ttc" id="anamespaceetl_html_aa15279e84c7ec40ef8a2d460b81b7fb7"><div class="ttname"><a href="namespaceetl.html#aa15279e84c7ec40ef8a2d460b81b7fb7">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition:</b> is_convertible.hpp:47</div></div>
 <div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html_aa107a29afbb5288d6dceb9fae86b07b8"><div class="ttname"><a href="namespaceetl.html#aa107a29afbb5288d6dceb9fae86b07b8">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:15</div></div>
 <div class="ttc" id="a__type__traits_2bool__constant_8hpp_html"><div class="ttname"><a href="__type__traits_2bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1is__convertible_html"><div class="ttname"><a href="structetl_1_1is__convertible.html">etl::is_convertible</a></div><div class="ttdoc">If the imaginary function definition To test() { return etl::declval&lt;From&gt;(); } is well-formed,...</div><div class="ttdef"><b>Definition:</b> is_convertible.hpp:42</div></div>
+<div class="ttc" id="astructetl_1_1is__convertible_html"><div class="ttname"><a href="structetl_1_1is__convertible.html">etl::is_convertible</a></div><div class="ttdoc">If the imaginary function definition To test() { return etl::declval&lt;From&gt;(); } is well-formed,...</div><div class="ttdef"><b>Definition:</b> is_convertible.hpp:41</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

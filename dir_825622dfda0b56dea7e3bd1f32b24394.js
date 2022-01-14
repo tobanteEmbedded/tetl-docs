@@ -65,6 +65,7 @@ var dir_825622dfda0b56dea7e3bd1f32b24394 =
     [ "set_symmetric_difference.hpp", "set__symmetric__difference_8hpp.html", "set__symmetric__difference_8hpp" ],
     [ "set_union.hpp", "set__union_8hpp.html", "set__union_8hpp" ],
     [ "shift_left.hpp", "shift__left_8hpp.html", "shift__left_8hpp" ],
+    [ "shift_right.hpp", "shift__right_8hpp.html", "shift__right_8hpp" ],
     [ "sort.hpp", "sort_8hpp.html", "sort_8hpp" ],
     [ "stable_partition.hpp", "stable__partition_8hpp.html", "stable__partition_8hpp" ],
     [ "stable_sort.hpp", "stable__sort_8hpp.html", "stable__sort_8hpp" ],
