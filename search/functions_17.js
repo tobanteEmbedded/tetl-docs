@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['xmessagebuffercreate_4832',['xMessageBufferCreate',['../stubs_8hpp.html#aefa58eeb0fd73ae0b3163c20b76c8877',1,'stubs.hpp']]],
+  ['xqueuecreate_4833',['xQueueCreate',['../stubs_8hpp.html#a7c5315105f23801132728e024140cd31',1,'stubs.hpp']]],
+  ['xqueuereceive_4834',['xQueueReceive',['../stubs_8hpp.html#a85c263b463343f814e9c309145c2c47a',1,'stubs.hpp']]],
+  ['xqueuereset_4835',['xQueueReset',['../stubs_8hpp.html#a6cf057715e1654852136750ba640db3a',1,'stubs.hpp']]],
+  ['xqueuesend_4836',['xQueueSend',['../stubs_8hpp.html#ad92b841c3bcd4ffce261c5cc0a8c59d4',1,'stubs.hpp']]],
+  ['xstreambufferbytesavailable_4837',['xStreamBufferBytesAvailable',['../stubs_8hpp.html#a9e400fc398920a2a2c4f82fe559971fa',1,'stubs.hpp']]],
+  ['xstreambuffercreate_4838',['xStreamBufferCreate',['../stubs_8hpp.html#a91d7f180588baf450b593a990c3b6d3e',1,'stubs.hpp']]],
+  ['xstreambufferisempty_4839',['xStreamBufferIsEmpty',['../stubs_8hpp.html#a31dada5d722c82b3519e32a5ea5c4496',1,'stubs.hpp']]],
+  ['xstreambufferisfull_4840',['xStreamBufferIsFull',['../stubs_8hpp.html#a8a9ee2c16c5d2bcca1a5832046d61411',1,'stubs.hpp']]],
+  ['xstreambufferreceive_4841',['xStreamBufferReceive',['../stubs_8hpp.html#a12ad2fb1459d0ba218f82ae1778e03d2',1,'stubs.hpp']]],
+  ['xstreambufferreceivefromisr_4842',['xStreamBufferReceiveFromISR',['../stubs_8hpp.html#acd18c050ce84822f9e197e16666dba67',1,'stubs.hpp']]],
+  ['xstreambufferreset_4843',['xStreamBufferReset',['../stubs_8hpp.html#a45bf3067efdb364f6c1a7af43e4c05aa',1,'stubs.hpp']]],
+  ['xstreambuffersend_4844',['xStreamBufferSend',['../stubs_8hpp.html#af7842132cd0b4d686ef1f08198c0b865',1,'stubs.hpp']]],
+  ['xstreambuffersendfromisr_4845',['xStreamBufferSendFromISR',['../stubs_8hpp.html#a9ba68cb518b45c77f035f5cc5c56e9ae',1,'stubs.hpp']]],
+  ['xstreambuffersettriggerlevel_4846',['xStreamBufferSetTriggerLevel',['../stubs_8hpp.html#ae2adf511e26bd43c219365571a1dd2b1',1,'stubs.hpp']]],
+  ['xstreambufferspacesavailable_4847',['xStreamBufferSpacesAvailable',['../stubs_8hpp.html#a1cb30ff4527e7d9d17f34fe8239810c9',1,'stubs.hpp']]],
+  ['xtaskcreate_4848',['xTaskCreate',['../stubs_8hpp.html#a67085ebec4816a034cc8d6740611ac03',1,'stubs.hpp']]]
+];
