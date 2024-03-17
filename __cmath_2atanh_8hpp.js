@@ -5,5 +5,5 @@ var __cmath_2atanh_8hpp =
     [ "atanh", "__cmath_2atanh_8hpp.html#aabb11729ba246f5a4098bc553a292295", null ],
     [ "atanh", "__cmath_2atanh_8hpp.html#a6def40d7b11e3e930b6bc1927d8aff69", null ],
     [ "atanhl", "__cmath_2atanh_8hpp.html#a6e6c389cab358ec81ddee4010aa8f450", null ],
-    [ "atanh", "__cmath_2atanh_8hpp.html#a5a4fa7755b15f10076ae276acb784a87", null ]
+    [ "atanh", "__cmath_2atanh_8hpp.html#a0dbab5667618a4498791559fed34db3b", null ]
 ];

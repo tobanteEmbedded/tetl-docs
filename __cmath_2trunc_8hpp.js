@@ -5,5 +5,5 @@ var __cmath_2trunc_8hpp =
     [ "trunc", "__cmath_2trunc_8hpp.html#aa8316f5c97f691318a53cf91fd135894", null ],
     [ "trunc", "__cmath_2trunc_8hpp.html#aa33b0697205c635cb1e294cfecbcfd46", null ],
     [ "truncl", "__cmath_2trunc_8hpp.html#aa86cd183532a15f7fb8fa893a9db7d44", null ],
-    [ "trunc", "__cmath_2trunc_8hpp.html#a5cee6ecbab1b372a218649094ad573fa", null ]
+    [ "trunc", "__cmath_2trunc_8hpp.html#af9896e22ccd29baf6a2bca31d48f6e4b", null ]
 ];

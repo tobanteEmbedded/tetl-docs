@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['va_5flist_5419',['va_list',['../namespaceetl.html#a13b49c9bfe0b7089150bfa8b0a5bd436',1,'etl']]],
-  ['value_5fcompare_5420',['value_compare',['../structetl_1_1flat__set.html#ab7d84509fe9116ce1b89aeb55c2f591c',1,'etl::flat_set::value_compare()'],['../structetl_1_1static__set.html#a31b2c9e5c7ca1a5dba099162a6051410',1,'etl::static_set::value_compare()']]],
-  ['value_5ftype_5421',['value_type',['../structetl_1_1array.html#a8bc76893d5fbdc7105a60b7f624f36c7',1,'etl::array::value_type()'],['../structetl_1_1complex.html#a9b0e0ce1a84a915098ecab49d3490429',1,'etl::complex::value_type()'],['../structetl_1_1back__insert__iterator.html#a900882e0f016acede57b1812e222fda7',1,'etl::back_insert_iterator::value_type()'],['../structetl_1_1front__insert__iterator.html#a2069e28d1217a6314d59afaf13b21199',1,'etl::front_insert_iterator::value_type()'],['../structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a00f5ab73808711c182a3f32254bd0b2c',1,'etl::iterator_traits&lt; T * &gt;::value_type()'],['../structetl_1_1reverse__iterator.html#af6f9bb032ab8acdd3dc832b098848446',1,'etl::reverse_iterator::value_type()'],['../structetl_1_1optional.html#af35ed95616fd47387fae1354a0dd2b1f',1,'etl::optional::value_type()'],['../structetl_1_1flat__set.html#a089b84db424c0782ac591c90bc98c95f',1,'etl::flat_set::value_type()'],['../structetl_1_1static__set.html#a0f6ca773e70e71c4e12b273dccccb55d',1,'etl::static_set::value_type()'],['../structetl_1_1span.html#afaec5c35c07712422af6970ce942b613',1,'etl::span::value_type()'],['../structetl_1_1stack.html#ae5fb4716b30a9c6e7ccb94e0f9955a1e',1,'etl::stack::value_type()'],['../structetl_1_1basic__static__string.html#af5266af4b37be80abfa710900c7a6cda',1,'etl::basic_static_string::value_type()'],['../structetl_1_1basic__string__view.html#a8a71c9f3e57db2ecbecc038f38539d71',1,'etl::basic_string_view::value_type()'],['../structetl_1_1integral__constant.html#a2f8bb02b7f0c75a9b8dbe73c240fc731',1,'etl::integral_constant::value_type()'],['../structetl_1_1integer__sequence.html#ae525938cb9a3b62837ff56ecd5527a84',1,'etl::integer_sequence::value_type()'],['../structetl_1_1static__vector.html#add2b76e9faf0a39c1c4916446a1c0b66',1,'etl::static_vector::value_type()'],['../structetl_1_1experimental_1_1freertos_1_1queue.html#ad0a6d74b2207071470e16a1df826d0ed',1,'etl::experimental::freertos::queue::value_type()'],['../structetl_1_1experimental_1_1strong__type.html#aa9eb729d5831c8c81ab51addc4feb887',1,'etl::experimental::strong_type::value_type()']]],
-  ['variant_5falternative_5ft_5422',['variant_alternative_t',['../namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed',1,'etl']]],
-  ['vector_5ft_5423',['vector_t',['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html#ad05dfcfe5cbce3e04c52cf385ff2cd83',1,'etl::experimental::hardware::stm32::isr']]],
-  ['void_5ft_5424',['void_t',['../namespaceetl.html#a8f76cc2621d7373b79e2fc034f160ee0',1,'etl']]]
+  ['ubasetype_5ft_6054',['UBaseType_t',['../stubs_8hpp.html#a563abef10e129fcb74fefbbb40b88c5a',1,'stubs.hpp']]],
+  ['uint16_5ft_6055',['uint16_t',['../namespaceetl.html#a07faf2c6165a6ec08c1d7ce7b59c70f9',1,'etl']]],
+  ['uint32_5ft_6056',['uint32_t',['../namespaceetl.html#a45cd8f569fbe5bbe1bc46988b146bf43',1,'etl']]],
+  ['uint64_5ft_6057',['uint64_t',['../namespaceetl.html#a75da701473a787f887fa0c35cb173588',1,'etl']]],
+  ['uint8_5ft_6058',['uint8_t',['../namespaceetl.html#ae4884330ffa7c8d259566d1344e12209',1,'etl']]],
+  ['uint_5ffast16_5ft_6059',['uint_fast16_t',['../namespaceetl.html#a6412e0b86f8258a67d0cf3efc27f29ca',1,'etl']]],
+  ['uint_5ffast32_5ft_6060',['uint_fast32_t',['../namespaceetl.html#aae8231f2a890b4a057d999a9a7d88cf9',1,'etl']]],
+  ['uint_5ffast64_5ft_6061',['uint_fast64_t',['../namespaceetl.html#a26f7c13233dafa5cc0f8a3d49093ee1d',1,'etl']]],
+  ['uint_5ffast8_5ft_6062',['uint_fast8_t',['../namespaceetl.html#ad77926b7a11780aa2676fc552c574ae7',1,'etl']]],
+  ['uint_5fleast16_5ft_6063',['uint_least16_t',['../namespaceetl.html#a2694291a7c796beec5cfe0c006f185e1',1,'etl']]],
+  ['uint_5fleast32_5ft_6064',['uint_least32_t',['../namespaceetl.html#a7b343e0347d929b0ff4d34d643f9cf9e',1,'etl']]],
+  ['uint_5fleast64_5ft_6065',['uint_least64_t',['../namespaceetl.html#af9447a983a1474ce60b01aa33610d45e',1,'etl']]],
+  ['uint_5fleast8_5ft_6066',['uint_least8_t',['../namespaceetl.html#a9db9185a6357a3e71a91491298e8690c',1,'etl']]],
+  ['uintmax_5ft_6067',['uintmax_t',['../namespaceetl.html#a91bd6bc49488600867f3af14e73936ff',1,'etl']]],
+  ['uintptr_5ft_6068',['uintptr_t',['../namespaceetl.html#aef1bda2cf8742dabfe32527f518cf5ac',1,'etl']]],
+  ['underlying_5ftype_5ft_6069',['underlying_type_t',['../namespaceetl.html#a49061e75c4b48962719493fb046259e2',1,'etl']]],
+  ['unexpected_5ftype_6070',['unexpected_type',['../structetl_1_1expected.html#a7f1ef11b67f5ae30d1ba1f4db9b79f71',1,'etl::expected']]],
+  ['unwrap_5fref_5fdecay_5ft_6071',['unwrap_ref_decay_t',['../namespaceetl.html#a944255034d5f023db7654f5d8dbc9701',1,'etl']]]
 ];

@@ -1,10 +1,12 @@
 var language__standard_8hpp =
 [
+    [ "TETL_CPP_STANDARD_FULL", "language__standard_8hpp.html#a592b17f207bb7f7574d3fee9816cebb4", null ],
     [ "TETL_CPP_STANDARD", "language__standard_8hpp.html#acfc11e9d97684ee873d4ea5403c78596", null ],
     [ "language_standard", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53", [
       [ "cpp_17", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53a6289bbfa378818f7066ccad5847da5a2", null ],
       [ "cpp_20", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53a4c7aabdc3eb0d845c62edfb822b0fe5a", null ],
-      [ "cpp_23", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53af7d98f68372c9de30cc2d571b75b19d7", null ]
+      [ "cpp_23", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53af7d98f68372c9de30cc2d571b75b19d7", null ],
+      [ "cpp_26", "language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53af94629088b2e56f93753526b629a62ff", null ]
     ] ],
     [ "operator==", "language__standard_8hpp.html#a7b353c6f122b14a8e9b78c453d8fa381", null ],
     [ "operator!=", "language__standard_8hpp.html#a0be806bd6b96b20e9313a7e398cc5783", null ],

@@ -1,5 +1,5 @@
 var strtoul_8hpp =
 [
-    [ "strtoul", "strtoul_8hpp.html#ad04e709610bd67261affd4e383babcc7", null ],
-    [ "strtoull", "strtoul_8hpp.html#aa57a575d78f1b3304cea324ea18dba1e", null ]
+    [ "strtoul", "strtoul_8hpp.html#a4e80359aae6a19c6d0dc9aee1ba6fcb5", null ],
+    [ "strtoull", "strtoul_8hpp.html#a760b4a7bd2816e64811c98ac8e21e5c3", null ]
 ];

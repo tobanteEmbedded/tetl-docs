@@ -4,9 +4,8 @@ var structetl_1_1chrono_1_1duration =
     [ "period", "structetl_1_1chrono_1_1duration.html#a20b28b10b276e74eac566d0a6bf062a1", null ],
     [ "duration", "structetl_1_1chrono_1_1duration.html#a5c8e2a8648cf827e1c2c98963ede148f", null ],
     [ "duration", "structetl_1_1chrono_1_1duration.html#a5f313a50f28996821accdd89d5f83093", null ],
-    [ "duration", "structetl_1_1chrono_1_1duration.html#aa1233ce7089db299729b7c303c4ac5bf", null ],
-    [ "duration", "structetl_1_1chrono_1_1duration.html#ab70b08dacfacd7e7b5bf25fe6dbc890b", null ],
-    [ "operator=", "structetl_1_1chrono_1_1duration.html#a3bb269e4442ce23a1cae6652995797bb", null ],
+    [ "requires", "structetl_1_1chrono_1_1duration.html#ad224b9e622611c8319de5421fb5baabb", null ],
+    [ "requires", "structetl_1_1chrono_1_1duration.html#a8edbbcb18b0a6296debabae8f605356e", null ],
     [ "count", "structetl_1_1chrono_1_1duration.html#a860b5b05bd68506e448941e274951d72", null ],
     [ "zero", "structetl_1_1chrono_1_1duration.html#ab2b6c54721a74198b7a3622d39a9ef12", null ],
     [ "min", "structetl_1_1chrono_1_1duration.html#a27dc27a2bc455d7af5a0d27c37824de7", null ],
@@ -22,5 +21,6 @@ var structetl_1_1chrono_1_1duration =
     [ "operator*=", "structetl_1_1chrono_1_1duration.html#a9d9c26a589c05dc896a175d15deec8a6", null ],
     [ "operator/=", "structetl_1_1chrono_1_1duration.html#a55dee67ff5cbb4f0a061a39b65f29fde", null ],
     [ "operator%=", "structetl_1_1chrono_1_1duration.html#abf4bf86304d7a0335a4822eb8a2784e6", null ],
-    [ "operator%=", "structetl_1_1chrono_1_1duration.html#a929c09f7ea37d3befc17701a231030ec", null ]
+    [ "operator%=", "structetl_1_1chrono_1_1duration.html#a929c09f7ea37d3befc17701a231030ec", null ],
+    [ "noexcept", "structetl_1_1chrono_1_1duration.html#abdeaea32dbe21dd462de30e7bf5a12d6", null ]
 ];

@@ -1,12 +1,18 @@
 var searchData=
 [
-  ['name_5332',['name',['../structetl_1_1experimental_1_1meta_1_1type.html#a5acbb85d60ce659d02572f74f2389c97',1,'etl::experimental::meta::type']]],
-  ['nano_5333',['nano',['../namespaceetl.html#ab16ea857b72e93345fcd6fb255f7fe86',1,'etl']]],
-  ['nanoseconds_5334',['nanoseconds',['../namespaceetl_1_1chrono.html#aa3585417d44a48afd2a2afc119cdcb4a',1,'etl::chrono']]],
-  ['native_5335',['native',['../namespaceetl_1_1simd__abi.html#a664169f76f5d289c9e3f660ca981680a',1,'etl::simd_abi']]],
-  ['native_5fsimd_5336',['native_simd',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a4e38d2f33b3c21b76a554e5432315faf',1,'etl::experimental::parallelism_v2::native_simd()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a4e38d2f33b3c21b76a554e5432315faf',1,'etl::experimental::native_simd()']]],
-  ['native_5fsimd_5fmask_5337',['native_simd_mask',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a891ce5805bd707da9e2adc433957aa82',1,'etl::experimental::native_simd_mask()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a891ce5805bd707da9e2adc433957aa82',1,'etl::experimental::parallelism_v2::native_simd_mask()']]],
-  ['new_5fhandler_5338',['new_handler',['../namespaceetl.html#a8937b566b6510cbe3ede298d8b128f2b',1,'etl']]],
-  ['non_5fconst_5339',['non_const',['../structetl_1_1pointer__like__traits_3_01const_01T_01_4.html#a34d61404425da9922b5ceb2a0eca31df',1,'etl::pointer_like_traits&lt; const T &gt;::non_const()'],['../structetl_1_1pointer__like__traits_3_01const_01T_01_5_01_4.html#a93c4d6e8417ee84784e5a8f204f3a016',1,'etl::pointer_like_traits&lt; const T * &gt;::non_const()']]],
-  ['nullptr_5ft_5340',['nullptr_t',['../namespaceetl.html#adf4272f3f16bf2234ac8248db615f133',1,'etl']]]
+  ['make_5findex_5fsequence_5959',['make_index_sequence',['../namespaceetl.html#acca681165e818e6caaf5e237e8125ae8',1,'etl']]],
+  ['make_5finteger_5fsequence_5960',['make_integer_sequence',['../namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d',1,'etl']]],
+  ['make_5fsigned_5ft_5961',['make_signed_t',['../namespaceetl.html#abffe34c79351f871acb3e0438b2ad488',1,'etl']]],
+  ['make_5funsigned_5ft_5962',['make_unsigned_t',['../namespaceetl.html#acb2df53f4e399975501cf8300d451814',1,'etl']]],
+  ['mapping_5ftype_5963',['mapping_type',['../structetl_1_1mdspan.html#a528bc6e177add533bc9d1711907e5911',1,'etl::mdspan::mapping_type()'],['../structetl_1_1mdarray.html#aac82bf8005ff5e25b3936da3f55c2334',1,'etl::mdarray::mapping_type()']]],
+  ['mdspan_5ftype_5964',['mdspan_type',['../structetl_1_1mdarray.html#a0861fac5016b90aac464c44102d62d00',1,'etl::mdarray']]],
+  ['mega_5965',['mega',['../namespaceetl.html#afb8b8f156e99d25877de869998eca882',1,'etl']]],
+  ['messagebufferhandle_5ft_5966',['MessageBufferHandle_t',['../stubs_8hpp.html#a038ffa6ec9463e49b8527a96fbabcd1c',1,'stubs.hpp']]],
+  ['micro_5967',['micro',['../namespaceetl.html#a56ee5013d725632677b4d1d93204c07b',1,'etl']]],
+  ['microseconds_5968',['microseconds',['../namespaceetl_1_1chrono.html#a88d49ec5589d6896acd1f1f79ee6e122',1,'etl::chrono']]],
+  ['milli_5969',['milli',['../namespaceetl.html#afc43923bf9757db3bbaa5a6e4d36a3c6',1,'etl']]],
+  ['milliseconds_5970',['milliseconds',['../namespaceetl_1_1chrono.html#acdcd4aacfedf19ab2aa22fbf7dee3399',1,'etl::chrono']]],
+  ['minutes_5971',['minutes',['../namespaceetl_1_1chrono.html#a5e9ae03c99fe1e3993f5658053537043',1,'etl::chrono']]],
+  ['months_5972',['months',['../namespaceetl_1_1chrono.html#aa45c7dd6d8a3764fdaa0d01d2c563fac',1,'etl::chrono']]],
+  ['mutex_5ftype_5973',['mutex_type',['../structetl_1_1unique__lock.html#ae3613854432f6d42c9c37c348d85b8d1',1,'etl::unique_lock::mutex_type()'],['../structetl_1_1lock__guard.html#a194e74bde9a726d5d03d52705b00e01f',1,'etl::lock_guard::mutex_type()']]]
 ];

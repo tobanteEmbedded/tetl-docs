@@ -5,5 +5,5 @@ var __cmath_2lgamma_8hpp =
     [ "lgamma", "__cmath_2lgamma_8hpp.html#a4ea2c01b0ca8e4e672c7797bc873547e", null ],
     [ "lgamma", "__cmath_2lgamma_8hpp.html#a6af7825a746fbacdf9c207c50b52328d", null ],
     [ "lgammal", "__cmath_2lgamma_8hpp.html#a9644a8b5362db2ea680cbe5c99b06b1c", null ],
-    [ "lgamma", "__cmath_2lgamma_8hpp.html#a356b3469bc59c9628f1c692761f2a712", null ]
+    [ "lgamma", "__cmath_2lgamma_8hpp.html#a0343114e62c2670e654d329ab0e1bdd0", null ]
 ];

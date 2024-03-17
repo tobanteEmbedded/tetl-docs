@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['make_5findex_5fsequence_5319',['make_index_sequence',['../namespaceetl.html#acca681165e818e6caaf5e237e8125ae8',1,'etl']]],
-  ['make_5finteger_5fsequence_5320',['make_integer_sequence',['../namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d',1,'etl']]],
-  ['make_5fsigned_5ft_5321',['make_signed_t',['../namespaceetl.html#abffe34c79351f871acb3e0438b2ad488',1,'etl']]],
-  ['make_5funsigned_5ft_5322',['make_unsigned_t',['../namespaceetl.html#acb2df53f4e399975501cf8300d451814',1,'etl']]],
-  ['mega_5323',['mega',['../namespaceetl.html#afb8b8f156e99d25877de869998eca882',1,'etl']]],
-  ['messagebufferhandle_5ft_5324',['MessageBufferHandle_t',['../stubs_8hpp.html#a038ffa6ec9463e49b8527a96fbabcd1c',1,'stubs.hpp']]],
-  ['micro_5325',['micro',['../namespaceetl.html#a56ee5013d725632677b4d1d93204c07b',1,'etl']]],
-  ['microseconds_5326',['microseconds',['../namespaceetl_1_1chrono.html#a527a6db1ef39acd25d8aad03a3ccc094',1,'etl::chrono']]],
-  ['milli_5327',['milli',['../namespaceetl.html#afc43923bf9757db3bbaa5a6e4d36a3c6',1,'etl']]],
-  ['milliseconds_5328',['milliseconds',['../namespaceetl_1_1chrono.html#a18aa5e88bd2113fd32e68d658be6c1e6',1,'etl::chrono']]],
-  ['minutes_5329',['minutes',['../namespaceetl_1_1chrono.html#a54c6651d6dcd9d21c1028e954c29feb7',1,'etl::chrono']]],
-  ['months_5330',['months',['../namespaceetl_1_1chrono.html#aa680917daed1ff60f4f3722e9bd72799',1,'etl::chrono']]],
-  ['mutex_5ftype_5331',['mutex_type',['../structetl_1_1lock__guard.html#a194e74bde9a726d5d03d52705b00e01f',1,'etl::lock_guard::mutex_type()'],['../structetl_1_1unique__lock.html#ae3613854432f6d42c9c37c348d85b8d1',1,'etl::unique_lock::mutex_type()']]]
+  ['layout_5ftype_5955',['layout_type',['../structetl_1_1mdarray.html#a443ba1d143d85bc9c019c51ed96a3261',1,'etl::mdarray::layout_type()'],['../structetl_1_1layout__left_1_1mapping.html#a8707d7596b3508392cbb468684172837',1,'etl::layout_left::mapping::layout_type()'],['../structetl_1_1layout__right_1_1mapping.html#a42e1bb3d47f4fc18cc8b79ebe4001231',1,'etl::layout_right::mapping::layout_type()'],['../structetl_1_1mdspan.html#a5ee2039fb1efed913ce5d9e3596a1307',1,'etl::mdspan::layout_type()']]],
+  ['local_5fdays_5956',['local_days',['../namespaceetl_1_1chrono.html#a2e9ce97bd6b20df7b31c737ffdc373c3',1,'etl::chrono']]],
+  ['local_5fseconds_5957',['local_seconds',['../namespaceetl_1_1chrono.html#a9868fe07a179bb189072783d7caa8dbe',1,'etl::chrono']]],
+  ['local_5ftime_5958',['local_time',['../namespaceetl_1_1chrono.html#ae648ff3d27db079033f590bfcd590b40',1,'etl::chrono']]]
 ];

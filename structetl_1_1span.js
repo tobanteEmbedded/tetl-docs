@@ -8,15 +8,10 @@ var structetl_1_1span =
     [ "const_pointer", "structetl_1_1span.html#aab337e9f7efd4e94889a496d642fb90a", null ],
     [ "reference", "structetl_1_1span.html#a75fada4dc46efee6a4701273694a56ea", null ],
     [ "const_reference", "structetl_1_1span.html#afb5fb3e7344dbe77f1b330c599323bfd", null ],
-    [ "iterator", "structetl_1_1span.html#a5d04cc0bc7cc697c19163221819bae3d", null ],
+    [ "iterator", "structetl_1_1span.html#a6bf422afd88deb8293731dcdb8c06d3c", null ],
     [ "reverse_iterator", "structetl_1_1span.html#a75e9022d5959d6a63e286426695992e3", null ],
-    [ "span", "structetl_1_1span.html#acf2618260c951e813d8b691f919a26a9", null ],
-    [ "span", "structetl_1_1span.html#a130caefca2fa62603113dee3d0ae5050", null ],
-    [ "span", "structetl_1_1span.html#ae43df9ec22b0eec582622354d3aeaa1c", null ],
-    [ "span", "structetl_1_1span.html#ab5492c37562e955e368d611fd54d54ed", null ],
-    [ "span", "structetl_1_1span.html#aca6ba2d79688cdcf6e8f1981f44601fc", null ],
-    [ "span", "structetl_1_1span.html#afcd6d64a7b3be081431579ca48b21bfd", null ],
-    [ "span", "structetl_1_1span.html#a627a2c8cfd00b4780cc36b8fd19a9509", null ],
+    [ "span", "structetl_1_1span.html#a930efa3667aa2a0df9c80837021c68a9", null ],
+    [ "explicit", "structetl_1_1span.html#a0309a789389c32beb95ffce0e784c88e", null ],
     [ "begin", "structetl_1_1span.html#a19552b21081a93efc803236413b9c559", null ],
     [ "end", "structetl_1_1span.html#a67fa4632156b842915857669bf9bf8cb", null ],
     [ "rbegin", "structetl_1_1span.html#a0ea1ffff74ab692b7e559802c5c7398b", null ],
@@ -34,5 +29,7 @@ var structetl_1_1span =
     [ "last", "structetl_1_1span.html#a4d198c0f05c074f624e9f66626ad81cd", null ],
     [ "subspan", "structetl_1_1span.html#a1ab40a494b04a9eda78c1984b791c379", null ],
     [ "subspan", "structetl_1_1span.html#ab849e0f0631754028ec22dbbb39a71dd", null ],
-    [ "extent", "structetl_1_1span.html#a8185ca9b34d216439a1646aceef4de64", null ]
+    [ "extent", "structetl_1_1span.html#a8185ca9b34d216439a1646aceef4de64", null ],
+    [ "count", "structetl_1_1span.html#a134bb90f1e2b7b3b296748791f24ee40", null ],
+    [ "_size", "structetl_1_1span.html#aba0d8ec7106c1108aea43103f19ca27a", null ]
 ];

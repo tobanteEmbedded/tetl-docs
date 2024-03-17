@@ -4,6 +4,7 @@ var preprocessor_8hpp =
     [ "__has_extension", "preprocessor_8hpp.html#ae1ce1a4353334dd8968a94a98b4bf1dd", null ],
     [ "__has_attribute", "preprocessor_8hpp.html#a54d2d7742701f3f112afbcd8d4f9ccdb", null ],
     [ "__has_builtin", "preprocessor_8hpp.html#a447121dcab4275b7839a56082b7a1ab8", null ],
+    [ "__has_constexpr_builtin", "preprocessor_8hpp.html#ac5d66ad49a131ba240ee41ca80c48e27", null ],
     [ "TETL_PP_EMPTY", "preprocessor_8hpp.html#a276c494a997c732ec500f9a5f62ea57b", null ],
     [ "TETL_PP_DEFER", "preprocessor_8hpp.html#aaae970ee463c89520173ff649c64b10a", null ],
     [ "TETL_PP_EXPAND", "preprocessor_8hpp.html#a42ea68e3e7920acdc34b0c0756089d23", null ],

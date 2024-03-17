@@ -34,10 +34,13 @@ var searchData=
   ['_5f9_32',['_9',['../namespaceetl_1_1placeholders.html#af2882edf57bce4f3b9a5fe4b56877496',1,'etl::placeholders']]],
   ['_5f_5fhas_5fattribute_33',['__has_attribute',['../preprocessor_8hpp.html#a54d2d7742701f3f112afbcd8d4f9ccdb',1,'preprocessor.hpp']]],
   ['_5f_5fhas_5fbuiltin_34',['__has_builtin',['../preprocessor_8hpp.html#a447121dcab4275b7839a56082b7a1ab8',1,'preprocessor.hpp']]],
-  ['_5f_5fhas_5fextension_35',['__has_extension',['../preprocessor_8hpp.html#ae1ce1a4353334dd8968a94a98b4bf1dd',1,'preprocessor.hpp']]],
-  ['_5f_5fhas_5ffeature_36',['__has_feature',['../preprocessor_8hpp.html#af989845e24678c452b9222afdac95e7f',1,'preprocessor.hpp']]],
-  ['_5fimpl_37',['_impl',['../structetl_1_1variant.html#ad11f4b223cd8df9f0a8c4aa150818e5f',1,'etl::variant::_impl() const noexcept'],['../structetl_1_1variant.html#a1fa5d23615ef0c96b5a968d72568691f',1,'etl::variant::_impl() noexcept']]],
-  ['_5fswap_5fno_5fthrow_38',['_swap_no_throw',['../structetl_1_1__swap__no__throw.html',1,'etl']]],
-  ['_5fswappable_5fwith_5fhelper_39',['_swappable_with_helper',['../structetl_1_1__swappable__with__helper.html',1,'etl']]],
-  ['_5fswappable_5fwith_5fhelper_3c_20t_2c_20u_2c_20void_5ft_3c_20decltype_28swap_28declval_3c_20t_20_3e_28_29_2c_20declval_3c_20u_20_3e_28_29_29_29_3e_20_3e_40',['_swappable_with_helper&lt; T, U, void_t&lt; decltype(swap(declval&lt; T &gt;(), declval&lt; U &gt;()))&gt; &gt;',['../structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html',1,'etl']]]
+  ['_5f_5fhas_5fconstexpr_5fbuiltin_35',['__has_constexpr_builtin',['../preprocessor_8hpp.html#ac5d66ad49a131ba240ee41ca80c48e27',1,'preprocessor.hpp']]],
+  ['_5f_5fhas_5fextension_36',['__has_extension',['../preprocessor_8hpp.html#ae1ce1a4353334dd8968a94a98b4bf1dd',1,'preprocessor.hpp']]],
+  ['_5f_5fhas_5ffeature_37',['__has_feature',['../preprocessor_8hpp.html#af989845e24678c452b9222afdac95e7f',1,'preprocessor.hpp']]],
+  ['_5fimpl_38',['_impl',['../structetl_1_1variant.html#a1fe41e99f743af44c78d5a784b4c14e4',1,'etl::variant::_impl() noexcept'],['../structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11',1,'etl::variant::_impl() const noexcept']]],
+  ['_5fptr_39',['_ptr',['../structetl_1_1mdspan.html#af6950db2d4950ce724417dc91134d9e7',1,'etl::mdspan::_ptr(TETL_MOVE(ptr))'],['../structetl_1_1mdspan.html#af36e1583f990eee7a698b7584e16a1e5',1,'etl::mdspan::_ptr(TETL_MOVE(ptr))']]],
+  ['_5fsize_40',['_size',['../structetl_1_1span.html#aba0d8ec7106c1108aea43103f19ca27a',1,'etl::span']]],
+  ['_5fswap_5fno_5fthrow_41',['_swap_no_throw',['../structetl_1_1__swap__no__throw.html',1,'etl']]],
+  ['_5fswappable_5fwith_5fhelper_42',['_swappable_with_helper',['../structetl_1_1__swappable__with__helper.html',1,'etl']]],
+  ['_5fswappable_5fwith_5fhelper_3c_20t_2c_20u_2c_20void_5ft_3c_20decltype_28swap_28declval_3c_20t_20_3e_28_29_2c_20declval_3c_20u_20_3e_28_29_29_29_3e_20_3e_43',['_swappable_with_helper&lt; T, U, void_t&lt; decltype(swap(declval&lt; T &gt;(), declval&lt; U &gt;()))&gt; &gt;',['../structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html',1,'etl']]]
 ];

@@ -1,14 +1,16 @@
 var structetl_1_1variant =
 [
-    [ "variant", "structetl_1_1variant.html#ac3434d858c1afa01600521f8b73b7417", null ],
-    [ "variant", "structetl_1_1variant.html#a8157ef11f791e3a7dba4ddd4cf31e4e1", null ],
-    [ "variant", "structetl_1_1variant.html#a8f8c2edfff5aebdf3aaa0623d9bac8d4", null ],
-    [ "variant", "structetl_1_1variant.html#a0f86904a24983a36436443eb38d01ec5", null ],
-    [ "~variant", "structetl_1_1variant.html#afbfb91310c6581e57b564e182ed6db0d", null ],
-    [ "operator=", "structetl_1_1variant.html#af8984e99b37c368416464447cefc9821", null ],
-    [ "index", "structetl_1_1variant.html#a52ed1f762cc5943df775085389c23c64", null ],
-    [ "valueless_by_exception", "structetl_1_1variant.html#a6343bf22c7351f4634c3b7a5ba0a1a97", null ],
-    [ "swap", "structetl_1_1variant.html#a714743b9c6e7c2858421fc713abb60b1", null ],
-    [ "_impl", "structetl_1_1variant.html#ad11f4b223cd8df9f0a8c4aa150818e5f", null ],
-    [ "_impl", "structetl_1_1variant.html#a1fa5d23615ef0c96b5a968d72568691f", null ]
+    [ "variant", "structetl_1_1variant.html#a705d717c89c68039e7feefabc06d60d1", null ],
+    [ "variant", "structetl_1_1variant.html#a2a6ffbd20bfd77fea1f88e872a78358b", null ],
+    [ "~variant", "structetl_1_1variant.html#a280d851c3d4794c82bc6bd9c45e9725f", null ],
+    [ "requires", "structetl_1_1variant.html#a4f856854446b04c89e73b647d6424b37", null ],
+    [ "requires", "structetl_1_1variant.html#afb96ce3d12b12412c386307a4fb3131c", null ],
+    [ "operator=", "structetl_1_1variant.html#a872a1224e855ea838278cad1b8a37a9e", null ],
+    [ "requires", "structetl_1_1variant.html#acc4cfa799daa25e54e6bbd2063cc16f2", null ],
+    [ "emplace", "structetl_1_1variant.html#acd541c0b1af1d34a34fbb0698682b667", null ],
+    [ "index", "structetl_1_1variant.html#a7885245495a00b860647fbb5ddeb5767", null ],
+    [ "valueless_by_exception", "structetl_1_1variant.html#ac40fb38b2b5282c3b6f00b3e8535fc6e", null ],
+    [ "swap", "structetl_1_1variant.html#a2210b97c22a13f595e68f73a5cab3de6", null ],
+    [ "_impl", "structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11", null ],
+    [ "_impl", "structetl_1_1variant.html#a1fe41e99f743af44c78d5a784b4c14e4", null ]
 ];

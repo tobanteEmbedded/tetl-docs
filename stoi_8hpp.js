@@ -1,8 +1,8 @@
 var stoi_8hpp =
 [
-    [ "stoi", "stoi_8hpp.html#a5e667d6197d6d3a16a671d594f63b761", null ],
-    [ "stol", "stoi_8hpp.html#ad5a9f0bb6e2c8fcb43663ec154602e70", null ],
-    [ "stoll", "stoi_8hpp.html#a97a2f4594d400ada43b1b176614cbfa8", null ],
-    [ "stoul", "stoi_8hpp.html#aa3b0f99aa80a0bdf573ad3c468423d0a", null ],
-    [ "stoull", "stoi_8hpp.html#a5f8f3140cb9d6ff850c76a90c77ba5b6", null ]
+    [ "stoi", "stoi_8hpp.html#ad67d02a60ed99d7b4f7caa47c456418c", null ],
+    [ "stol", "stoi_8hpp.html#ac5e713476eeb2d06c599abb03b3c81da", null ],
+    [ "stoll", "stoi_8hpp.html#a3e6979ddaeccf0df75fc74642fad0938", null ],
+    [ "stoul", "stoi_8hpp.html#aab5ca51303826f354fffce9e40115186", null ],
+    [ "stoull", "stoi_8hpp.html#a5fff36f8d372c069a8335afa15afab5d", null ]
 ];

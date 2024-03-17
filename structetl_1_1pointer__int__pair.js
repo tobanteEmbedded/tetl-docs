@@ -17,7 +17,7 @@ var structetl_1_1pointer__int__pair =
     [ "get_opaque_value", "structetl_1_1pointer__int__pair.html#ac42aeb451d423889afdb231c269df09e", null ],
     [ "set_from_opaque_value", "structetl_1_1pointer__int__pair.html#a211813fcc07ff9fae7c116da57a6cb09", null ],
     [ "get_from_opaque_value", "structetl_1_1pointer__int__pair.html#a69fb4a94b9e31119e0ed32be6069ef1c", null ],
-    [ "get_from_opaque_value", "structetl_1_1pointer__int__pair.html#ac22c1ce4a532930fede7c19d28165c3c", null ],
+    [ "get_from_opaque_value", "structetl_1_1pointer__int__pair.html#a59308de5b4579ca41a6a450990bd46d8", null ],
     [ "operator==", "structetl_1_1pointer__int__pair.html#af5f82e0972217002393cbbb20abff281", null ],
     [ "operator!=", "structetl_1_1pointer__int__pair.html#ade349f8a96c772146f6fc54ce58cca32", null ],
     [ "operator<", "structetl_1_1pointer__int__pair.html#a8c27b79b59f66166d03d045df4e1bd39", null ],

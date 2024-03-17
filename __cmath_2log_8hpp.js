@@ -5,5 +5,5 @@ var __cmath_2log_8hpp =
     [ "log", "__cmath_2log_8hpp.html#a572772bba893a4526620c49993f0ebfc", null ],
     [ "log", "__cmath_2log_8hpp.html#a82265667a848fe03195c421e0d9fc14f", null ],
     [ "logl", "__cmath_2log_8hpp.html#a2e443c1bfefaffc909930e82ad506e9c", null ],
-    [ "log", "__cmath_2log_8hpp.html#a094c07de4b386ece6628efc38aee3b18", null ]
+    [ "log", "__cmath_2log_8hpp.html#a901ea4277603b09bc1fd59c203d1a5bb", null ]
 ];

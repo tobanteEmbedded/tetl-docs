@@ -32,5 +32,11 @@ var structetl_1_1optional =
     [ "operator*", "structetl_1_1optional.html#a29f94364bd60ce3a914a621f23efc5d1", null ],
     [ "operator*", "structetl_1_1optional.html#ac924b382c70a8153e2cac278400d0b3f", null ],
     [ "swap", "structetl_1_1optional.html#a03fba5cebea7cb2ef5666412ecf53141", null ],
-    [ "emplace", "structetl_1_1optional.html#aa26d3e74c47030660b5a2179b7fbbc8c", null ]
+    [ "emplace", "structetl_1_1optional.html#aa26d3e74c47030660b5a2179b7fbbc8c", null ],
+    [ "and_then", "structetl_1_1optional.html#ae6cb06c37abbddb1a6c629a7df759dff", null ],
+    [ "and_then", "structetl_1_1optional.html#a26a703c4b169435eab75a5d5ca32dd94", null ],
+    [ "and_then", "structetl_1_1optional.html#ac495b1be7cfa43980fe65875ab73fe6a", null ],
+    [ "and_then", "structetl_1_1optional.html#a4b37ab7105baedde72864e959d2462f7", null ],
+    [ "requires", "structetl_1_1optional.html#a538bf095882954e8a2443f371c86ca24", null ],
+    [ "requires", "structetl_1_1optional.html#ada70d6925f1bdc2c36a183424e0ac360", null ]
 ];

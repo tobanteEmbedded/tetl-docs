@@ -14,6 +14,5 @@ var builtin__functions_8hpp =
     [ "TETL_BUILTIN_HUGE_VALF", "builtin__functions_8hpp.html#aa71a4b0d0a9b2b439c8168217b903a29", null ],
     [ "TETL_BUILTIN_HUGE_VAL", "builtin__functions_8hpp.html#ac40d3ed7ddb47d6afa7f8c0b5aa2a7ef", null ],
     [ "TETL_BUILTIN_HUGE_VALL", "builtin__functions_8hpp.html#a5387b78c275d80eb49437ab84974cce6", null ],
-    [ "TETL_BUILTIN_VA_LIST", "builtin__functions_8hpp.html#a869a6578ea05f5e1853fdda83157e6a4", null ],
     [ "TETL_BUILTIN_INT_SEQ", "builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb", null ]
 ];

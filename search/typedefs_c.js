@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['off_5ftype_5341',['off_type',['../structetl_1_1basic__streambuf.html#a5c5d502f336fd2e540cab06924d2a00b',1,'etl::basic_streambuf::off_type()'],['../structetl_1_1char__traits_3_01char_01_4.html#aa3789287df9c2cbf14f3eb139e96369e',1,'etl::char_traits&lt; char &gt;::off_type()'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#aa45c5f5754fac78b660ac526f1fa13a3',1,'etl::char_traits&lt; wchar_t &gt;::off_type()']]],
-  ['once_5342',['once',['../namespaceetl_1_1experimental_1_1freertos.html#acc873ef2bc8c10908c3b4472164df55e',1,'etl::experimental::freertos']]],
-  ['openmode_5343',['openmode',['../structetl_1_1ios__base.html#af145ff57d9e705ab66ce76adaae96223',1,'etl::ios_base']]]
+  ['nano_5974',['nano',['../namespaceetl.html#ab16ea857b72e93345fcd6fb255f7fe86',1,'etl']]],
+  ['nanoseconds_5975',['nanoseconds',['../namespaceetl_1_1chrono.html#aa36b65d23c7b89bf766171af823f1f69',1,'etl::chrono']]],
+  ['native_5976',['native',['../namespaceetl_1_1simd__abi.html#a664169f76f5d289c9e3f660ca981680a',1,'etl::simd_abi']]],
+  ['native_5fsimd_5977',['native_simd',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a4e38d2f33b3c21b76a554e5432315faf',1,'etl::experimental::native_simd()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a4e38d2f33b3c21b76a554e5432315faf',1,'etl::experimental::parallelism_v2::native_simd()']]],
+  ['native_5fsimd_5fmask_5978',['native_simd_mask',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a891ce5805bd707da9e2adc433957aa82',1,'etl::experimental::native_simd_mask()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a891ce5805bd707da9e2adc433957aa82',1,'etl::experimental::parallelism_v2::native_simd_mask()']]],
+  ['new_5fhandler_5979',['new_handler',['../namespaceetl.html#a8937b566b6510cbe3ede298d8b128f2b',1,'etl']]],
+  ['non_5fconst_5980',['non_const',['../structetl_1_1pointer__like__traits_3_01T_01const_01_4.html#a8c5995614696c53232f4e4a42e661cfa',1,'etl::pointer_like_traits&lt; T const &gt;::non_const()'],['../structetl_1_1pointer__like__traits_3_01T_01const_01_5_01_4.html#abce778296bd5e54869fb8830c0a4b9d5',1,'etl::pointer_like_traits&lt; T const * &gt;::non_const()']]],
+  ['nullptr_5ft_5981',['nullptr_t',['../namespaceetl.html#adf4272f3f16bf2234ac8248db615f133',1,'etl']]]
 ];

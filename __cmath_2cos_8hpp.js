@@ -5,5 +5,5 @@ var __cmath_2cos_8hpp =
     [ "cos", "__cmath_2cos_8hpp.html#aab6c7ef0dbdd2323343636f79a74f8af", null ],
     [ "cos", "__cmath_2cos_8hpp.html#a07734dc481f156ef3959fb891782b58f", null ],
     [ "cosl", "__cmath_2cos_8hpp.html#aed9df8dfe51ba4bb2b189f503a7cdd75", null ],
-    [ "cos", "__cmath_2cos_8hpp.html#a3743509c6f5c03a3b1497ebf45603db4", null ]
+    [ "cos", "__cmath_2cos_8hpp.html#af4e34ec5e84f9fb625cf7ee93df783c4", null ]
 ];

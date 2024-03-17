@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5631',['get',['../structetl_1_1tuple.html#a269147d298c3aa6a03e92ec8d6fc6cf6',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#a177f84674435a52daa6ace911225d3ea',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#afc3a5fe67802308eec862abd771332fc',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#a34d5957d4c13518d0dc341dd71e8fc3a',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#a269147d298c3aa6a03e92ec8d6fc6cf6',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#a177f84674435a52daa6ace911225d3ea',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#afc3a5fe67802308eec862abd771332fc',1,'etl::tuple::get()'],['../structetl_1_1tuple.html#a34d5957d4c13518d0dc341dd71e8fc3a',1,'etl::tuple::get()']]]
+  ['basic_5fformat_5farg_3c_20context_20_3e_6287',['basic_format_arg&lt; Context &gt;',['../structetl_1_1basic__format__arg_1_1handle.html#af15859366e88a7b5c6cc6f130a12a278',1,'etl::basic_format_arg::handle']]]
 ];

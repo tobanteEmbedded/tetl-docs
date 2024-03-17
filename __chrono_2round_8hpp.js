@@ -1,5 +1,5 @@
 var __chrono_2round_8hpp =
 [
-    [ "round", "__chrono_2round_8hpp.html#a6e84d151322c459d9fefe81f2e0e074c", null ],
-    [ "round", "__chrono_2round_8hpp.html#a6c887948d01754035246b2e427dce93a", null ]
+    [ "requires", "__chrono_2round_8hpp.html#a9aaec16b343f4d126d10da542a451521", null ],
+    [ "noexcept", "__chrono_2round_8hpp.html#a9926196e2f9ebe1c0affe210e6ab9e66", null ]
 ];

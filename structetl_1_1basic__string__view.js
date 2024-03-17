@@ -17,8 +17,9 @@ var structetl_1_1basic__string__view =
     [ "basic_string_view", "structetl_1_1basic__string__view.html#a2c742950084a38cbaae5c3a60feb1400", null ],
     [ "basic_string_view", "structetl_1_1basic__string__view.html#ad5acf3f09659da157899ca91d5f1e147", null ],
     [ "basic_string_view", "structetl_1_1basic__string__view.html#a49711ecfa8df421dc316917db7590f8c", null ],
-    [ "basic_string_view", "structetl_1_1basic__string__view.html#ad0f6deaa9b385dc40e4765b6a9a80a4a", null ],
     [ "~basic_string_view", "structetl_1_1basic__string__view.html#a3be7c860941f6d2083039e72175165f6", null ],
+    [ "requires", "structetl_1_1basic__string__view.html#a1172e7f623362c8e7fcfc19f61a6dbfd", null ],
+    [ "static_cast", "structetl_1_1basic__string__view.html#a9eca0eca681e38c1ba88a715bb9100e0", null ],
     [ "operator=", "structetl_1_1basic__string__view.html#a6d91d5f4fc61a2b66e58bbea0107f31d", null ],
     [ "begin", "structetl_1_1basic__string__view.html#a727971fbd511ce4b60a0ada7c94cddf2", null ],
     [ "cbegin", "structetl_1_1basic__string__view.html#a1ceae0faaaa38d46c418bdecaa5c47cc", null ],
@@ -80,5 +81,6 @@ var structetl_1_1basic__string__view =
     [ "contains", "structetl_1_1basic__string__view.html#ab5e7236d8cb2d5ac85f7d326e6c9163e", null ],
     [ "contains", "structetl_1_1basic__string__view.html#ad202f0a2de818e9a95de98c84b3d16c7", null ],
     [ "contains", "structetl_1_1basic__string__view.html#a09a34005b8e66ad4c3f967b4b807f465", null ],
+    [ "last", "structetl_1_1basic__string__view.html#a4bbe1f46149c19a1b4112d0e2f2b689f", null ],
     [ "npos", "structetl_1_1basic__string__view.html#a973435d2216ba5bc63663c5c4eee7405", null ]
 ];

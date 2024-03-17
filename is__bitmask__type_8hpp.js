@@ -1,12 +1,13 @@
 var is__bitmask__type_8hpp =
 [
     [ "is_bitmask_type", "structetl_1_1is__bitmask__type.html", null ],
-    [ "operator&", "is__bitmask__type_8hpp.html#a20b6ef89420ce3ac5ecabb672ce85562", null ],
-    [ "operator|", "is__bitmask__type_8hpp.html#ae515a3f31bcb2e95ec78b8638b5680d0", null ],
-    [ "operator^", "is__bitmask__type_8hpp.html#a40d1a1352b6bc4d05b03fa26ed856995", null ],
-    [ "operator~", "is__bitmask__type_8hpp.html#a55196ebd48d952bf65db310ab355614a", null ],
-    [ "operator|=", "is__bitmask__type_8hpp.html#aabb93eccb5a9930b5b942a513db9dfcd", null ],
-    [ "operator&=", "is__bitmask__type_8hpp.html#a38a2ce8be9f8d29c5ce850e122dcccb0", null ],
-    [ "operator^=", "is__bitmask__type_8hpp.html#aa8b506322998972b13ee5d6e8a4e4dbb", null ],
-    [ "is_bitmask_type_v", "is__bitmask__type_8hpp.html#aedb63d88f3219c350ab03af8bd0adb5a", null ]
+    [ "operator&", "is__bitmask__type_8hpp.html#a6ec2a511f8b5137e02416b9e4e8dc237", null ],
+    [ "operator|", "is__bitmask__type_8hpp.html#ac3cb02b81d1ba34fc33b94555749fa92", null ],
+    [ "operator^", "is__bitmask__type_8hpp.html#af622835231ee77bf2d29dd490bcbb2bf", null ],
+    [ "operator~", "is__bitmask__type_8hpp.html#a92caafb1e73d48a1d1847f64093be44c", null ],
+    [ "operator|=", "is__bitmask__type_8hpp.html#ad2e027dfa37f613a9d94fe1ee90e7517", null ],
+    [ "operator&=", "is__bitmask__type_8hpp.html#abc72777ea30905ff52e4ce6d3448b3e8", null ],
+    [ "operator^=", "is__bitmask__type_8hpp.html#a79f94aefe628a0474274befd3437bf64", null ],
+    [ "is_bitmask_type_v", "is__bitmask__type_8hpp.html#aedb63d88f3219c350ab03af8bd0adb5a", null ],
+    [ "bitmask_type", "is__bitmask__type_8hpp.html#aef47ac360905d8fac28fb87847a855ec", null ]
 ];
