@@ -1,6 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"weekday_8hpp.html#a66b9be964153a07637362b2cf1a3ae1c":[9,0,1,0,9,20,7],
 "weekday_8hpp.html#a776e268d58e50e81f3eac0ad69746345":[9,0,1,0,9,20,9],
 "weekday_8hpp.html#a78bc534ce78f4a5c39c9339aef470103":[9,0,1,0,9,20,4],
 "weekday_8hpp.html#a8cc7e1c28078fb6451582fd718635a55":[9,0,1,0,9,20,5],

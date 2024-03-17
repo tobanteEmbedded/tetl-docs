@@ -1,6 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"structetl_1_1chrono_1_1year.html#abc02fb2a37669b757a1b15a842a226d8":[8,0,0,0,17,0],
 "structetl_1_1chrono_1_1year.html#aca20d3669855d6624c85e6c72672ad3d":[8,0,0,0,17,1],
 "structetl_1_1chrono_1_1year.html#acf03541ecf4f7180caf782474098e7d6":[8,0,0,0,17,14],
 "structetl_1_1chrono_1_1year.html#ade269f6315a51f0f929167d78f14ce3c":[8,0,0,0,17,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX25 =
 "structetl_1_1experimental_1_1freertos_1_1queue.html#a41004d9ccba98cdcc628c915f51f4843":[8,0,0,1,0,0,10],
 "structetl_1_1experimental_1_1freertos_1_1queue.html#a43509dea9fa9246f899d2c4a365469b6":[8,0,0,1,0,0,2],
 "structetl_1_1experimental_1_1freertos_1_1queue.html#a5cf810468149c2d368318d0eda552eca":[8,0,0,1,0,0,6],
-"structetl_1_1experimental_1_1freertos_1_1queue.html#a7cd309f49aa3d37892c03f33f24ff3da":[8,0,0,1,0,0,5]
+"structetl_1_1experimental_1_1freertos_1_1queue.html#a7cd309f49aa3d37892c03f33f24ff3da":[8,0,0,1,0,0,5],
+"structetl_1_1experimental_1_1freertos_1_1queue.html#a8bef33a955fda1e571b3ae2ec13e48cf":[8,0,0,1,0,0,12]
 };

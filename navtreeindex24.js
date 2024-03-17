@@ -1,6 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"structetl_1_1bernoulli__distribution.html":[8,0,0,210],
 "structetl_1_1bernoulli__distribution.html#a185f1c8546df7c3f133e6b23f2815711":[8,0,0,210,3],
 "structetl_1_1bernoulli__distribution.html#a3e7102311722ff20a3e6beec5ef2bd52":[8,0,0,210,10],
 "structetl_1_1bernoulli__distribution.html#a431874d1ac331bce7dbb8e3702698235":[8,0,0,210,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX24 =
 "structetl_1_1chrono_1_1year.html#a64eb2ebea42de62176132aa8ac82b83b":[8,0,0,0,17,10],
 "structetl_1_1chrono_1_1year.html#a6f093c6f8570ed1e4423317f9f1e8ce5":[8,0,0,0,17,11],
 "structetl_1_1chrono_1_1year.html#a81377af964d34e36984bc053bcf620a7":[8,0,0,0,17,12],
-"structetl_1_1chrono_1_1year.html#a87b37d8b52a0af2b1cfe94cd8b8d7374":[8,0,0,0,17,4]
+"structetl_1_1chrono_1_1year.html#a87b37d8b52a0af2b1cfe94cd8b8d7374":[8,0,0,0,17,4],
+"structetl_1_1chrono_1_1year.html#abc02fb2a37669b757a1b15a842a226d8":[8,0,0,0,17,0]
 };

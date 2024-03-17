@@ -1,6 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"structetl_1_1is__placeholder.html":[8,0,0,124],
 "structetl_1_1is__placeholder_3_01T_01const_01_4.html":[8,0,0,125],
 "structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html":[8,0,0,127],
 "structetl_1_1is__placeholder_3_01T_01volatile_01_4.html":[8,0,0,126],
@@ -249,5 +248,6 @@ var NAVTREEINDEX28 =
 "structetl_1_1mdspan.html#ae27120b6047304675c63f3186b5ad521":[8,0,0,179,29],
 "structetl_1_1mdspan.html#aef6791498b0200afebc7d0ca3182b768":[8,0,0,179,0],
 "structetl_1_1mdspan.html#af028f502ac1b25798be3b1c5d2be360c":[8,0,0,179,9],
-"structetl_1_1mdspan.html#af314a39e936327b1a77df72dc6bef82a":[8,0,0,179,15]
+"structetl_1_1mdspan.html#af314a39e936327b1a77df72dc6bef82a":[8,0,0,179,15],
+"structetl_1_1mdspan.html#af36e1583f990eee7a698b7584e16a1e5":[8,0,0,179,22]
 };

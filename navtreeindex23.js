@@ -1,6 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"structetl_1_1allocator__traits.html#a2281be94b720ffeb20ad56e63083bead":[8,0,0,183,4],
 "structetl_1_1allocator__traits.html#a27923b0ea5c064da70de677dd198242e":[8,0,0,183,2],
 "structetl_1_1allocator__traits.html#a2e5e3669fd5219581d9aa480203fa73e":[8,0,0,183,5],
 "structetl_1_1allocator__traits.html#a5e88cfcf4216f21c7e5730a06704bbe1":[8,0,0,183,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX23 =
 "structetl_1_1basic__stringbuf.html":[8,0,0,132],
 "structetl_1_1basic__stringbuf.html#a278e8c0d11a9a474e247b2b2ba1fbdae":[8,0,0,132,2],
 "structetl_1_1basic__stringbuf.html#a937c0ce9020f4654b4177560fecb84f6":[8,0,0,132,0],
-"structetl_1_1basic__stringbuf.html#acb6f9beeab900d0874a5d38452ec53b6":[8,0,0,132,1]
+"structetl_1_1basic__stringbuf.html#acb6f9beeab900d0874a5d38452ec53b6":[8,0,0,132,1],
+"structetl_1_1bernoulli__distribution.html":[8,0,0,210]
 };

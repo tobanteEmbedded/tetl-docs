@@ -1,6 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"scope__guard_8hpp_source.html":[9,0,1,0,46,1],
 "search_8hpp.html":[9,0,1,0,1,64],
 "search_8hpp.html#a21a90d9aad4e00eb080d9dce99472a40":[9,0,1,0,1,64,2],
 "search_8hpp.html#a5e8c774a650ce6535a79e6a11dd90fdf":[9,0,1,0,1,64,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX22 =
 "structetl_1_1allocator__arg__t.html":[8,0,0,182],
 "structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2":[8,0,0,182,0],
 "structetl_1_1allocator__traits.html":[8,0,0,183],
-"structetl_1_1allocator__traits.html#a047d62744c9d726c2cbab83ce20aa99a":[8,0,0,183,8]
+"structetl_1_1allocator__traits.html#a047d62744c9d726c2cbab83ce20aa99a":[8,0,0,183,8],
+"structetl_1_1allocator__traits.html#a2281be94b720ffeb20ad56e63083bead":[8,0,0,183,4]
 };

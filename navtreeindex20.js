@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"namespaceetl_1_1simd__abi.html#ababf41768ab504817bbb003125b1ed15":[7,0,0,8,2],
 "namespaceliterals.html":[7,0,1],
 "namespaceliterals.html#a595f457c32d45aa28d16c9665afc3a21":[7,0,1,0],
 "namespaceliterals.html#a5b0b99b23cb7a632313680560625253c":[7,0,1,1],
@@ -18,8 +17,8 @@ var NAVTREEINDEX20 =
 "namespacemembers_enum.html":[7,1,4],
 "namespacemembers_eval.html":[7,1,5],
 "namespacemembers_f.html":[7,1,0,6],
-"namespacemembers_func.html":[7,1,1],
 "namespacemembers_func.html":[7,1,1,0],
+"namespacemembers_func.html":[7,1,1],
 "namespacemembers_func_b.html":[7,1,1,1],
 "namespacemembers_func_c.html":[7,1,1,2],
 "namespacemembers_func_d.html":[7,1,1,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "polar_8hpp.html":[9,0,1,0,13,10],
 "polar_8hpp.html#a408755ab767193cae4b002c03906843a":[9,0,1,0,13,10,0],
 "polar_8hpp_source.html":[9,0,1,0,13,10],
-"popcount_8hpp.html":[9,0,1,0,3,15]
+"popcount_8hpp.html":[9,0,1,0,3,15],
+"popcount_8hpp.html#ad20e151ff4e32a44903aefeee75ec6ba":[9,0,1,0,3,15,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"popcount_8hpp.html#ad20e151ff4e32a44903aefeee75ec6ba":[9,0,1,0,3,15,0],
 "popcount_8hpp_source.html":[9,0,1,0,3,15],
 "pow__integral_8hpp.html":[9,0,1,0,0,0,0,49],
 "pow__integral_8hpp_source.html":[9,0,1,0,0,0,0,49],
@@ -249,5 +248,6 @@ var NAVTREEINDEX21 =
 "scope__exit_8hpp.html":[9,0,1,0,46,0],
 "scope__exit_8hpp.html#ab25b6713e904e47178a1a000a373097a":[9,0,1,0,46,0,1],
 "scope__exit_8hpp_source.html":[9,0,1,0,46,0],
-"scope__guard_8hpp.html":[9,0,1,0,46,1]
+"scope__guard_8hpp.html":[9,0,1,0,46,1],
+"scope__guard_8hpp_source.html":[9,0,1,0,46,1]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"structetl_1_1front__insert__iterator.html#a19063b89270a6ce738d977c99951cd40":[8,0,0,136,5],
 "structetl_1_1front__insert__iterator.html#a2069e28d1217a6314d59afaf13b21199":[8,0,0,136,1],
 "structetl_1_1front__insert__iterator.html#a35b4771c79a690889b16865650196d32":[8,0,0,136,4],
 "structetl_1_1front__insert__iterator.html#a3ed877d15695696cfd356b8481ab4a63":[8,0,0,136,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX27 =
 "structetl_1_1is__nothrow__swappable.html":[8,0,0,358],
 "structetl_1_1is__nothrow__swappable__with.html":[8,0,0,360],
 "structetl_1_1is__null__pointer.html":[8,0,0,283],
-"structetl_1_1is__object.html":[8,0,0,299]
+"structetl_1_1is__object.html":[8,0,0,299],
+"structetl_1_1is__placeholder.html":[8,0,0,124]
 };
