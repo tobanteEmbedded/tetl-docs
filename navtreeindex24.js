@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structetl_1_1basic__string__view.html#ac4441138ee2ac5fe3c8c18a637682f48":[8,0,0,246,38],
 "structetl_1_1basic__string__view.html#acb80947ac59f5af96df012ac5b70ead2":[8,0,0,246,46],
 "structetl_1_1basic__string__view.html#ad202f0a2de818e9a95de98c84b3d16c7":[8,0,0,246,79],
 "structetl_1_1basic__string__view.html#ad4542ea77cc6043fee1cd51b93c81d8d":[8,0,0,246,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structetl_1_1chrono_1_1weekday.html#ad24d8f9a3742590d355e584442d48800":[8,0,0,0,14,2],
 "structetl_1_1chrono_1_1weekday.html#adace72da590ceecdb3feb3daf3e3e347":[8,0,0,0,14,8],
 "structetl_1_1chrono_1_1weekday.html#af064d57c6ac23bcb26836921d3d39fbf":[8,0,0,0,14,5],
-"structetl_1_1chrono_1_1weekday__indexed.html":[8,0,0,0,15],
-"structetl_1_1chrono_1_1weekday__indexed.html#a340693c0987e867037577f1144059566":[8,0,0,0,15,3]
+"structetl_1_1chrono_1_1weekday__indexed.html":[8,0,0,0,15]
 };

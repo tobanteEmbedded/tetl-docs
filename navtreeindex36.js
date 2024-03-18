@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"wcsrchr_8hpp.html":[9,0,1,0,23,10],
 "wcsrchr_8hpp.html#a1b66e9eebb616eadbab0b3001b1e9660":[9,0,1,0,23,10,1],
 "wcsrchr_8hpp.html#a5cde920ef4c8b78dad83887cf67520dd":[9,0,1,0,23,10,0],
 "wcsrchr_8hpp_source.html":[9,0,1,0,23,10],

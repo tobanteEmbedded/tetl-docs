@@ -223,6 +223,7 @@ var NAVTREEINDEX11 =
 "md_docs_progress.html":[3],
 "md_docs_progress.html#autotoc_md90":[3,0],
 "md_docs_progress.html#autotoc_md91":[3,1],
+"md_docs_progress.html#autotoc_md92":[3,2],
 "mdarray_8hpp.html":[9,0,1,0,97],
 "mdarray_8hpp_source.html":[9,0,1,0,97],
 "mdspan_8hpp.html":[9,0,1,0,98],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "merge_8hpp.html#a9ee09e4768fc381002cd7dc14e8e561b":[9,0,1,0,1,39,0],
 "merge_8hpp_source.html":[9,0,1,0,1,39],
 "merge__sort_8hpp.html":[9,0,1,0,1,40],
-"merge__sort_8hpp.html#a4da0fcb091026bf11e56eb257e9d3bc5":[9,0,1,0,1,40,1],
-"merge__sort_8hpp.html#a5bffa34e9bd6075ec150aa9e30153950":[9,0,1,0,1,40,0]
+"merge__sort_8hpp.html#a4da0fcb091026bf11e56eb257e9d3bc5":[9,0,1,0,1,40,1]
 };

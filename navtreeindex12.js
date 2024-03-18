@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"merge__sort_8hpp.html#a5bffa34e9bd6075ec150aa9e30153950":[9,0,1,0,1,40,0],
 "merge__sort_8hpp_source.html":[9,0,1,0,1,40],
 "midpoint_8hpp.html":[9,0,1,0,41,8],
 "midpoint_8hpp.html#a2e2e8cf3fb3b9b4fe2e13ae866510ced":[9,0,1,0,41,8,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "namespaceetl.html#a1c0cdef8cb8f1fb054c43f8aadb43d36":[7,0,0,693],
 "namespaceetl.html#a1c10ac76760cacb70cb4b275041c1609":[7,0,0,746],
 "namespaceetl.html#a1c179dea2a5063201728cd0823d49e4f":[7,0,0,1701],
-"namespaceetl.html#a1c1ffcebf3ee4f04cf5987def83d0070":[7,0,0,779],
-"namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae":[7,0,0,605]
+"namespaceetl.html#a1c1ffcebf3ee4f04cf5987def83d0070":[7,0,0,779]
 };
