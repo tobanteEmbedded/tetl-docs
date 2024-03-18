@@ -1,5 +1,11 @@
 var NAVTREEINDEX27 =
 {
+"structetl_1_1formatter_3_01etl_1_1static__string_3_01Capacity_01_4_00_01char_01_4.html#a6780d9a3115103b51c9b37dd42f9c7fe":[8,0,0,50,0],
+"structetl_1_1formatter_3_01etl_1_1string__view_00_01char_01_4.html":[8,0,0,49],
+"structetl_1_1formatter_3_01etl_1_1string__view_00_01char_01_4.html#a5f94e5c8c65d5bd9f50f576222a2ecf6":[8,0,0,49,0],
+"structetl_1_1formatter_3_01int_00_01char_01_4.html":[8,0,0,52],
+"structetl_1_1formatter_3_01int_00_01char_01_4.html#a0e83e8d4520dfaf6a5c08ddcfe1f2cfe":[8,0,0,52,0],
+"structetl_1_1formatter_3_01long_00_01char_01_4.html":[8,0,0,53],
 "structetl_1_1formatter_3_01long_00_01char_01_4.html#a4d6ebf8cd559924d94d0eef09f5c1f30":[8,0,0,53,0],
 "structetl_1_1formatter_3_01long_01long_00_01char_01_4.html":[8,0,0,54],
 "structetl_1_1formatter_3_01long_01long_00_01char_01_4.html#af8678806232ea357ad4e4caa49102de0":[8,0,0,54,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX27 =
 "structetl_1_1is__implicit__default__constructible.html":[8,0,0,336],
 "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html":[8,0,0,338],
 "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html":[8,0,0,337],
-"structetl_1_1is__integer.html":[8,0,0,339],
-"structetl_1_1is__integral.html":[8,0,0,284],
-"structetl_1_1is__invocable.html":[8,0,0,340],
-"structetl_1_1is__invocable__r.html":[8,0,0,341],
-"structetl_1_1is__lvalue__reference.html":[8,0,0,288],
-"structetl_1_1is__lvalue__reference_3_01T_01_6_01_4.html":[8,0,0,342],
-"structetl_1_1is__member__function__pointer.html":[8,0,0,291]
+"structetl_1_1is__integral.html":[8,0,0,284]
 };

@@ -220,7 +220,7 @@ var NAVTREEINDEX3 =
 "bit__cast_8hpp.html#a2836fac65c2a00e47c70508d8d837b3e":[9,0,1,0,3,0,0],
 "bit__cast_8hpp_source.html":[9,0,1,0,3,0],
 "bit__ceil_8hpp.html":[9,0,1,0,3,1],
-"bit__ceil_8hpp.html#a2487b4e8ff29c5071ad51d8248fe5ef4":[9,0,1,0,3,1,0],
+"bit__ceil_8hpp.html#aa397d9f8380425b5e72d55d7f7f16b10":[9,0,1,0,3,1,0],
 "bit__ceil_8hpp_source.html":[9,0,1,0,3,1],
 "bit__floor_8hpp.html":[9,0,1,0,3,2],
 "bit__floor_8hpp.html#a344157c15560dd640719de8ecf9a311a":[9,0,1,0,3,2,0],
@@ -229,11 +229,9 @@ var NAVTREEINDEX3 =
 "bit__not_8hpp_source.html":[9,0,1,0,29,2],
 "bit__or_8hpp.html":[9,0,1,0,29,3],
 "bit__or_8hpp_source.html":[9,0,1,0,29,3],
-"bit__uint_8hpp.html":[9,0,1,0,3,3],
-"bit__uint_8hpp_source.html":[9,0,1,0,3,3],
-"bit__width_8hpp.html":[9,0,1,0,3,4],
-"bit__width_8hpp.html#ab310698aec2484624ad250fe01854b3c":[9,0,1,0,3,4,0],
-"bit__width_8hpp_source.html":[9,0,1,0,3,4],
+"bit__width_8hpp.html":[9,0,1,0,3,3],
+"bit__width_8hpp.html#a7f9cca4b68917b48f46849a03007d9a9":[9,0,1,0,3,3,0],
+"bit__width_8hpp_source.html":[9,0,1,0,3,3],
 "bit__xor_8hpp.html":[9,0,1,0,29,4],
 "bit__xor_8hpp_source.html":[9,0,1,0,29,4],
 "bitset_8cpp-example.html":[10,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "blas1__add_8hpp_source.html":[9,0,1,0,33,2],
 "blas1__copy_8hpp.html":[9,0,1,0,33,3],
 "blas1__copy_8hpp.html#a531a4e2db82e878ef88a165ff3b44a01":[9,0,1,0,33,3,0],
-"blas1__copy_8hpp.html#a9a5e0a6a16dabe30cdcdad69831da6dc":[9,0,1,0,33,3,2]
+"blas1__copy_8hpp.html#a9a5e0a6a16dabe30cdcdad69831da6dc":[9,0,1,0,33,3,2],
+"blas1__copy_8hpp.html#aad5a559fa4a38a0676c032f2a0e4f7c1":[9,0,1,0,33,3,1],
+"blas1__copy_8hpp_source.html":[9,0,1,0,33,3]
 };

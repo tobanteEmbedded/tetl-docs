@@ -94,8 +94,8 @@ $(document).ready(function(){initNavTree('add__sat_8hpp_source.html',''); initRe
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_NUMERIC_ADD_SAT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="clamp_8hpp.html">etl/_algorithm/clamp.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integer_8hpp.html">etl/_concepts/integer.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="same__as_8hpp.html">etl/_concepts/same_as.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="same__as_8hpp.html">etl/_concepts/same_as.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="standard__integer_8hpp.html">etl/_concepts/standard_integer.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="int__t_8hpp.html">etl/_cstdint/int_t.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__t_8hpp.html">etl/_cstdint/uint_t.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="numeric__limits_8hpp.html">etl/_limits/numeric_limits.hpp</a>&gt;</span></div>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('add__sat_8hpp_source.html',''); initRe
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>eger Int&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">int</span>eger Int&gt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> add_sat_fallback(<a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> x, <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = <a class="code" href="structetl_1_1numeric__limits.html#a02e82e26bae1f085a65d80f478935c8d">etl::numeric_limits&lt;Int&gt;::min</a>();</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('add__sat_8hpp_source.html',''); initRe
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>eger Int&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">int</span>eger Int&gt;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8090c84a226cdc13d3b2a1420e1d8e4f">   55</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a8090c84a226cdc13d3b2a1420e1d8e4f">add_sat</a>(<a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> x, <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if defined(__GNUC__) or defined(__clang__)</span></div>
@@ -171,7 +171,6 @@ $(document).ready(function(){initNavTree('add__sat_8hpp_source.html',''); initRe
 <div class="ttc" id="aclamp_8hpp_html"><div class="ttname"><a href="clamp_8hpp.html">clamp.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm-header_html_gaf90379160c94dc0396b5f32204c790bf"><div class="ttname"><a href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">etl::clamp</a></div><div class="ttdeci">constexpr auto clamp(Type const &amp;v, Type const &amp;lo, Type const &amp;hi) noexcept -&gt; Type const &amp;</div><div class="ttdoc">If v compares less than lo, returns lo; otherwise if hi compares less than v, returns hi; otherwise r...</div><div class="ttdef"><b>Definition:</b> clamp.hpp:17</div></div>
 <div class="ttc" id="aint__t_8hpp_html"><div class="ttname"><a href="int__t_8hpp.html">int_t.hpp</a></div></div>
-<div class="ttc" id="ainteger_8hpp_html"><div class="ttname"><a href="integer_8hpp.html">integer.hpp</a></div></div>
 <div class="ttc" id="ais__signed_8hpp_html"><div class="ttname"><a href="is__signed_8hpp.html">is_signed.hpp</a></div></div>
 <div class="ttc" id="ais__unsigned_8hpp_html"><div class="ttname"><a href="is__unsigned_8hpp.html">is_unsigned.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
@@ -188,6 +187,7 @@ $(document).ready(function(){initNavTree('add__sat_8hpp_source.html',''); initRe
 <div class="ttc" id="anamespaceetl_html_af4f837bf0258547b23e4f04e4d03e6d1"><div class="ttname"><a href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">etl::Int</a></div><div class="ttdeci">Int b noexcept Int</div><div class="ttdef"><b>Definition:</b> midpoint.hpp:27</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="asame__as_8hpp_html"><div class="ttname"><a href="same__as_8hpp.html">same_as.hpp</a></div></div>
+<div class="ttc" id="astandard__integer_8hpp_html"><div class="ttname"><a href="standard__integer_8hpp.html">standard_integer.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html_a02e82e26bae1f085a65d80f478935c8d"><div class="ttname"><a href="structetl_1_1numeric__limits.html#a02e82e26bae1f085a65d80f478935c8d">etl::numeric_limits::min</a></div><div class="ttdeci">static constexpr auto min() noexcept</div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html_ae2bebfd066269e2afafb3a916a2d6760"><div class="ttname"><a href="structetl_1_1numeric__limits.html#ae2bebfd066269e2afafb3a916a2d6760">etl::numeric_limits::max</a></div><div class="ttdeci">static constexpr auto max() noexcept</div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:23</div></div>
 <div class="ttc" id="auint__t_8hpp_html"><div class="ttname"><a href="uint__t_8hpp.html">uint_t.hpp</a></div></div>

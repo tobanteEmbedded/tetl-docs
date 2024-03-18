@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"globals_e.html":[9,1,0,5],
-"globals_f.html":[9,1,0,6],
 "globals_func.html":[9,1,1],
 "globals_g.html":[9,1,0,7],
 "globals_h.html":[9,1,0,8],
@@ -92,9 +90,9 @@ var NAVTREEINDEX8 =
 "hardware__interference__size_8hpp.html#aa953892fe644febd033c1e533d29ac47":[9,0,1,0,39,2,0],
 "hardware__interference__size_8hpp.html#abc217ae19afd481b0993696cbb1729bf":[9,0,1,0,39,2,2],
 "hardware__interference__size_8hpp_source.html":[9,0,1,0,39,2],
-"has__single__bit_8hpp.html":[9,0,1,0,3,13],
-"has__single__bit_8hpp.html#a717ec0cf497b87c141165fb3b0a46fb0":[9,0,1,0,3,13,0],
-"has__single__bit_8hpp_source.html":[9,0,1,0,3,13],
+"has__single__bit_8hpp.html":[9,0,1,0,3,12],
+"has__single__bit_8hpp.html#af064bf9681c55a5f04915eeceb13348a":[9,0,1,0,3,12,0],
+"has__single__bit_8hpp_source.html":[9,0,1,0,3,12],
 "has__unique__object__representations_8hpp.html":[9,0,1,0,58,21],
 "has__unique__object__representations_8hpp.html#a66a60e01980cd945b387ffc47f44eccf":[9,0,1,0,58,21,1],
 "has__unique__object__representations_8hpp_source.html":[9,0,1,0,58,21],
@@ -249,5 +247,7 @@ var NAVTREEINDEX8 =
 "index.html#autotoc_md72":[0,5,55],
 "index.html#autotoc_md73":[0,5,56],
 "index.html#autotoc_md74":[0,5,57],
-"index.html#autotoc_md8":[0,2,0,0]
+"index.html#autotoc_md8":[0,2,0,0],
+"index.html#autotoc_md9":[0,2,1],
+"index_8hpp.html":[9,0,1,0,16,0]
 };

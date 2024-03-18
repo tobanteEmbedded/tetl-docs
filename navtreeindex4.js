@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"blas1__copy_8hpp.html#aad5a559fa4a38a0676c032f2a0e4f7c1":[9,0,1,0,33,3,1],
-"blas1__copy_8hpp_source.html":[9,0,1,0,33,3],
 "blas1__matrix__frob__norm_8hpp.html":[9,0,1,0,33,4],
 "blas1__matrix__frob__norm_8hpp.html#a0ab17163fe0d356c7bcb88058f37ad8e":[9,0,1,0,33,4,1],
 "blas1__matrix__frob__norm_8hpp.html#acb658bb6ab891527da57f89a2c056b9b":[9,0,1,0,33,4,0],
@@ -120,9 +118,9 @@ var NAVTREEINDEX4 =
 "byte__order_8hpp.html#ad5e1ada4c692fa4315458771dd9df948":[9,0,1,0,64,2,3,10],
 "byte__order_8hpp.html#ad7f417999eeed1280bffb5e41431616e":[9,0,1,0,64,2,3,2],
 "byte__order_8hpp_source.html":[9,0,1,0,64,2,3],
-"byteswap_8hpp.html":[9,0,1,0,3,5],
-"byteswap_8hpp.html#ad4adeee8eaea36f5d0716abfe81148ba":[9,0,1,0,3,5,0],
-"byteswap_8hpp_source.html":[9,0,1,0,3,5],
+"byteswap_8hpp.html":[9,0,1,0,3,4],
+"byteswap_8hpp.html#ad4adeee8eaea36f5d0716abfe81148ba":[9,0,1,0,3,4,0],
+"byteswap_8hpp_source.html":[9,0,1,0,3,4],
 "c__array_8hpp.html":[9,0,1,0,2,1],
 "c__array_8hpp.html#a568b4df04642a2e727b3a8b201f2e450":[9,0,1,0,2,1,1],
 "c__array_8hpp_source.html":[9,0,1,0,2,1],
@@ -157,9 +155,9 @@ var NAVTREEINDEX4 =
 "clamp_8hpp.html#gaf90379160c94dc0396b5f32204c790bf":[9,0,1,0,1,5,0],
 "clamp_8hpp_source.html":[9,0,1,0,1,5],
 "classes.html":[8,1],
-"clear__bit_8hpp.html":[9,0,1,0,3,6],
-"clear__bit_8hpp.html#a06cafcbc1708c3efc298fd93d9079500":[9,0,1,0,3,6,0],
-"clear__bit_8hpp_source.html":[9,0,1,0,3,6],
+"clear__bit_8hpp.html":[9,0,1,0,3,5],
+"clear__bit_8hpp.html#a06cafcbc1708c3efc298fd93d9079500":[9,0,1,0,3,5,0],
+"clear__bit_8hpp_source.html":[9,0,1,0,3,5],
 "climits_8hpp.html":[9,0,1,0,74],
 "climits_8hpp_source.html":[9,0,1,0,74],
 "clock__t_8hpp.html":[9,0,1,0,22,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "constants_8hpp.html#a4b4a1b90333844f91a168b6aa215d07c":[9,0,1,0,40,0,27],
 "constants_8hpp.html#a552daccb0aa893abfee0ac6f83d68286":[9,0,1,0,40,0,11],
 "constants_8hpp.html#a5be99a4894c574642df520ecf42b1cac":[9,0,1,0,40,0,47],
-"constants_8hpp.html#a5ec8c8f73621f83dc793d8c8163fbac0":[9,0,1,0,40,0,28]
+"constants_8hpp.html#a5ec8c8f73621f83dc793d8c8163fbac0":[9,0,1,0,40,0,28],
+"constants_8hpp.html#a5f416912cee65d3dcc6d234f23022ecd":[9,0,1,0,40,0,49],
+"constants_8hpp.html#a63b3ca4125aa9485378d0149b1f3b900":[9,0,1,0,40,0,34]
 };
