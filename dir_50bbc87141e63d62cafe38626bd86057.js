@@ -15,6 +15,7 @@ var dir_50bbc87141e63d62cafe38626bd86057 =
     [ "equality_comparable.hpp", "equality__comparable_8hpp.html", "equality__comparable_8hpp" ],
     [ "equivalence_relation.hpp", "equivalence__relation_8hpp.html", "equivalence__relation_8hpp" ],
     [ "floating_point.hpp", "floating__point_8hpp.html", "floating__point_8hpp" ],
+    [ "integer.hpp", "integer_8hpp.html", "integer_8hpp" ],
     [ "integral.hpp", "integral_8hpp.html", "integral_8hpp" ],
     [ "invocable.hpp", "invocable_8hpp.html", "invocable_8hpp" ],
     [ "movable.hpp", "movable_8hpp.html", "movable_8hpp" ],

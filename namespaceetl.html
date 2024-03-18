@@ -940,6 +940,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html">is_implicit_default_constructible&lt; T, decltype(test_implicit_default_constructible&lt; T const &amp; &gt;({})), false_type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__integer.html">is_integer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__invocable.html">is_invocable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__invocable__r.html">is_invocable_r</a></td></tr>
@@ -1017,6 +1019,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__signed.html">is_signed</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is an arithmetic type, provides the member constant value equal to true if T(-1) &lt; T(0): this results in true for the floating-point types and the signed integer types, and in false for the unsigned integer types and the type bool. For any other type, value is false.  <a href="structetl_1_1is__signed.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__signed__integer.html">is_signed_integer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__specialized.html">is_specialized</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__specialized_3_01Template_00_01T_00_01etl_1_1void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html">is_specialized&lt; Template, T, etl::void_t&lt; decltype(Template&lt; T &gt;{})&gt; &gt;</a></td></tr>
@@ -1076,6 +1080,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__unsigned_3_01T_01volatile_01_4.html">is_unsigned&lt; T volatile &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__unsigned_3_01T_01const_01volatile_01_4.html">is_unsigned&lt; T const volatile &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__unsigned__integer.html">is_unsigned_integer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__volatile.html">is_volatile</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3957,6 +3963,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9413959b7ee39d393e7c35ad2cd78294"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Type , typename BinaryOperation &gt; </td></tr>
 <tr class="memitem:a9413959b7ee39d393e7c35ad2cd78294"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9413959b7ee39d393e7c35ad2cd78294">accumulate</a> (InputIt first, InputIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Type init, BinaryOperation op) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; Type</td></tr>
 <tr class="separator:a9413959b7ee39d393e7c35ad2cd78294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8090c84a226cdc13d3b2a1420e1d8e4f"><td class="memTemplParams" colspan="2">template&lt;etl::integer Int&gt; </td></tr>
+<tr class="memitem:a8090c84a226cdc13d3b2a1420e1d8e4f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a8090c84a226cdc13d3b2a1420e1d8e4f">add_sat</a> (<a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> x, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> y) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a></td></tr>
+<tr class="separator:a8090c84a226cdc13d3b2a1420e1d8e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdf06dcb6cdb229ddf2f001f7063d82"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt , typename BinaryOperation &gt; </td></tr>
 <tr class="memitem:a4cdf06dcb6cdb229ddf2f001f7063d82"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a4cdf06dcb6cdb229ddf2f001f7063d82">adjacent_difference</a> (InputIt first, InputIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, OutputIt destination, BinaryOperation op) -&gt; OutputIt</td></tr>
 <tr class="memdesc:a4cdf06dcb6cdb229ddf2f001f7063d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the differences between the second and the first of each adjacent pair of elements of the range [first, last) and writes them to the range beginning at destination + 1. An unmodified copy of *first is written to *destination.  <a href="namespaceetl.html#a4cdf06dcb6cdb229ddf2f001f7063d82">More...</a><br /></td></tr>
@@ -4906,6 +4915,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a7db737b5a4dfad876c197c1aca7c5139"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a7db737b5a4dfad876c197c1aca7c5139">floating_point</a> = <a class="el" href="namespaceetl.html#a5cf273d19443134cffcd66310d027ae4">is_floating_point_v</a>&lt;T&gt;</td></tr>
 <tr class="memdesc:a7db737b5a4dfad876c197c1aca7c5139"><td class="mdescLeft">&#160;</td><td class="mdescRight">The concept floating_point&lt;T&gt; is satisfied if and only if T is a floating-point type.  <a href="namespaceetl.html#a7db737b5a4dfad876c197c1aca7c5139">More...</a><br /></td></tr>
 <tr class="separator:a7db737b5a4dfad876c197c1aca7c5139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895d2f7d8e15454d465bcd60e89d8e8e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a895d2f7d8e15454d465bcd60e89d8e8e"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a895d2f7d8e15454d465bcd60e89d8e8e">integer</a> = <a class="el" href="namespaceetl.html#a724c164ff343ed6024aa45e870ece27a">is_integer_v</a>&lt;T&gt;</td></tr>
+<tr class="separator:a895d2f7d8e15454d465bcd60e89d8e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4daf60f1f070c94586efbcf55d6e84f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac4daf60f1f070c94586efbcf55d6e84f"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac4daf60f1f070c94586efbcf55d6e84f">integral</a> = <a class="el" href="namespaceetl.html#a0ef2a50a29c8803d461abedd7437effd">is_integral_v</a>&lt;T&gt;</td></tr>
 <tr class="memdesc:ac4daf60f1f070c94586efbcf55d6e84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The concept integral&lt;T&gt; is satisfied if and only if T is an integral type.  <a href="namespaceetl.html#ac4daf60f1f070c94586efbcf55d6e84f">More...</a><br /></td></tr>
@@ -5166,6 +5178,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a750d61c5b9f6964af8d9465794b92953"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a750d61c5b9f6964af8d9465794b92953"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">is_implicit_default_constructible_v</a> = <a class="el" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a>&lt;T&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td></tr>
 <tr class="separator:a750d61c5b9f6964af8d9465794b92953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724c164ff343ed6024aa45e870ece27a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a724c164ff343ed6024aa45e870ece27a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a724c164ff343ed6024aa45e870ece27a">is_integer_v</a> = <a class="el" href="namespaceetl.html#a73a431a6240052cdf0da7bd3dd98c50e">is_unsigned_integer_v</a>&lt;T&gt; or <a class="el" href="namespaceetl.html#ab37fcc13f8d595113c293a4755a03079">is_signed_integer_v</a>&lt;T&gt;</td></tr>
+<tr class="separator:a724c164ff343ed6024aa45e870ece27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef2a50a29c8803d461abedd7437effd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0ef2a50a29c8803d461abedd7437effd"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a0ef2a50a29c8803d461abedd7437effd">is_integral_v</a></td></tr>
 <tr class="separator:a0ef2a50a29c8803d461abedd7437effd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5263,6 +5278,9 @@ Variables</h2></td></tr>
 <tr class="memitem:aff3fadd2a1e349c45f524ab5444220ff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aff3fadd2a1e349c45f524ab5444220ff"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aff3fadd2a1e349c45f524ab5444220ff">is_signed_v</a> = <a class="el" href="structetl_1_1is__signed.html">is_signed</a>&lt;T&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td></tr>
 <tr class="separator:aff3fadd2a1e349c45f524ab5444220ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37fcc13f8d595113c293a4755a03079"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab37fcc13f8d595113c293a4755a03079"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ab37fcc13f8d595113c293a4755a03079">is_signed_integer_v</a> = <a class="el" href="namespaceetl.html#ad0de9ab0c91e46602a77993e77ec8a6d">is_any_of_v</a>&lt;<a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t</a>&lt;T&gt;, signed char, short, int, long, long long&gt;</td></tr>
+<tr class="separator:ab37fcc13f8d595113c293a4755a03079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68efadb1ffae420e853d78309b080bb5"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; typename Template, typename T , typename Tag  = void&gt; </td></tr>
 <tr class="memitem:a68efadb1ffae420e853d78309b080bb5"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a68efadb1ffae420e853d78309b080bb5">is_specialized_v</a> = <a class="el" href="structetl_1_1is__specialized.html">etl::is_specialized</a>&lt;Template, T, Tag&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td></tr>
 <tr class="separator:a68efadb1ffae420e853d78309b080bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5316,6 +5334,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a3bbd05dc09b68b19c63d7b4fbf6f1108"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3bbd05dc09b68b19c63d7b4fbf6f1108"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a3bbd05dc09b68b19c63d7b4fbf6f1108">is_unsigned_v</a> = <a class="el" href="structetl_1_1is__unsigned.html">etl::is_unsigned</a>&lt;T&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td></tr>
 <tr class="separator:a3bbd05dc09b68b19c63d7b4fbf6f1108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a431a6240052cdf0da7bd3dd98c50e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a73a431a6240052cdf0da7bd3dd98c50e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a73a431a6240052cdf0da7bd3dd98c50e">is_unsigned_integer_v</a> = <a class="el" href="namespaceetl.html#ad0de9ab0c91e46602a77993e77ec8a6d">is_any_of_v</a>&lt;<a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t</a>&lt;T&gt;, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long&gt;</td></tr>
+<tr class="separator:a73a431a6240052cdf0da7bd3dd98c50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a149f8ba4063995f2c8ed7248d93a4d9e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a149f8ba4063995f2c8ed7248d93a4d9e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a149f8ba4063995f2c8ed7248d93a4d9e">is_void_v</a> = <a class="el" href="namespaceetl.html#a3f74da2365a9a6f68d472686fd0f1666">etl::is_same_v</a>&lt;void, <a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">etl::remove_cv_t</a>&lt;T&gt;&gt;</td></tr>
 <tr class="separator:a149f8ba4063995f2c8ed7248d93a4d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -32253,6 +32274,45 @@ template&lt;typename InputIt , typename Type , typename BinaryOperation &gt; </d
 
 </div>
 </div>
+<a id="a8090c84a226cdc13d3b2a1420e1d8e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8090c84a226cdc13d3b2a1420e1d8e4f">&#9670;&nbsp;</a></span>add_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::integer Int&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::add_sat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4cdf06dcb6cdb229ddf2f001f7063d82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cdf06dcb6cdb229ddf2f001f7063d82">&#9670;&nbsp;</a></span>adjacent_difference() <span class="overload">[1/2]</span></h2>
 
@@ -41197,6 +41257,22 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a895d2f7d8e15454d465bcd60e89d8e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895d2f7d8e15454d465bcd60e89d8e8e">&#9670;&nbsp;</a></span>integer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept etl::integer = <a class="el" href="namespaceetl.html#a724c164ff343ed6024aa45e870ece27a">is_integer_v</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac4daf60f1f070c94586efbcf55d6e84f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4daf60f1f070c94586efbcf55d6e84f">&#9670;&nbsp;</a></span>integral</h2>
 
@@ -43115,6 +43191,30 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a724c164ff343ed6024aa45e870ece27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a724c164ff343ed6024aa45e870ece27a">&#9670;&nbsp;</a></span>is_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::is_integer_v = <a class="el" href="namespaceetl.html#a73a431a6240052cdf0da7bd3dd98c50e">is_unsigned_integer_v</a>&lt;T&gt; or <a class="el" href="namespaceetl.html#ab37fcc13f8d595113c293a4755a03079">is_signed_integer_v</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0ef2a50a29c8803d461abedd7437effd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ef2a50a29c8803d461abedd7437effd">&#9670;&nbsp;</a></span>is_integral_v</h2>
 
@@ -43904,6 +44004,30 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ab37fcc13f8d595113c293a4755a03079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37fcc13f8d595113c293a4755a03079">&#9670;&nbsp;</a></span>is_signed_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::is_signed_integer_v = <a class="el" href="namespaceetl.html#ad0de9ab0c91e46602a77993e77ec8a6d">is_any_of_v</a>&lt;<a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t</a>&lt;T&gt;, signed char, short, int, long, long long&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a68efadb1ffae420e853d78309b080bb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68efadb1ffae420e853d78309b080bb5">&#9670;&nbsp;</a></span>is_specialized_v</h2>
 
@@ -44319,6 +44443,30 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr bool etl::is_unsigned_v = <a class="el" href="structetl_1_1is__unsigned.html">etl::is_unsigned</a>&lt;T&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73a431a6240052cdf0da7bd3dd98c50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a431a6240052cdf0da7bd3dd98c50e">&#9670;&nbsp;</a></span>is_unsigned_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::is_unsigned_integer_v = <a class="el" href="namespaceetl.html#ad0de9ab0c91e46602a77993e77ec8a6d">is_any_of_v</a>&lt;<a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t</a>&lt;T&gt;, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long&gt;</td>
         </tr>
       </table>
   </td>
