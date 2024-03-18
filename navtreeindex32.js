@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"structetl_1_1remove__pointer_3_01T_01_5const_01volatile_01_4.html":[8,0,0,419],
 "structetl_1_1remove__pointer_3_01T_01_5const_01volatile_01_4.html#adcf146aeee4170e1989435624732328e":[8,0,0,419,0],
 "structetl_1_1remove__pointer_3_01T_01_5volatile_01_4.html":[8,0,0,418],
 "structetl_1_1remove__pointer_3_01T_01_5volatile_01_4.html#a015aad0b47e8ae80d4a4055b9a581bf9":[8,0,0,418,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "structetl_1_1static__vector.html#ae5930590e37d6e1bd7b0a1175ccaef71":[8,0,0,457,33],
 "structetl_1_1static__vector.html#aeb585c7cd019a1fea8d5ff62608cb54d":[8,0,0,457,58],
 "structetl_1_1static__vector.html#aeb8b667de477afadae4a03786c7f90ec":[8,0,0,457,10],
-"structetl_1_1static__vector.html#aef5032ee73612add9beaa687e954fc9a":[8,0,0,457,5],
-"structetl_1_1static__vector.html#af71057853749c26c9464baf762127916":[8,0,0,457,39]
+"structetl_1_1static__vector.html#aef5032ee73612add9beaa687e954fc9a":[8,0,0,457,5]
 };
