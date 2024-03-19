@@ -17,6 +17,7 @@ var dir_689b60d76b22c4808620afee17da211b =
       [ "numeric_limits< unsigned long >", "structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html", "structetl_1_1numeric__limits_3_01unsigned_01long_01_4" ],
       [ "numeric_limits< float >", "structetl_1_1numeric__limits_3_01float_01_4.html", "structetl_1_1numeric__limits_3_01float_01_4" ],
       [ "numeric_limits< double >", "structetl_1_1numeric__limits_3_01double_01_4.html", "structetl_1_1numeric__limits_3_01double_01_4" ],
+      [ "numeric_limits< long double >", "structetl_1_1numeric__limits_3_01long_01double_01_4.html", "structetl_1_1numeric__limits_3_01long_01double_01_4" ],
       [ "numeric_limits< T const >", "structetl_1_1numeric__limits_3_01T_01const_01_4.html", null ],
       [ "numeric_limits< T volatile >", "structetl_1_1numeric__limits_3_01T_01volatile_01_4.html", null ],
       [ "numeric_limits< T const volatile >", "structetl_1_1numeric__limits_3_01T_01const_01volatile_01_4.html", null ]

@@ -501,6 +501,7 @@ var hierarchy =
     [ "etl::numeric_limits< float >", "structetl_1_1numeric__limits_3_01float_01_4.html", null ],
     [ "etl::numeric_limits< int >", "structetl_1_1numeric__limits_3_01int_01_4.html", null ],
     [ "etl::numeric_limits< long >", "structetl_1_1numeric__limits_3_01long_01_4.html", null ],
+    [ "etl::numeric_limits< long double >", "structetl_1_1numeric__limits_3_01long_01double_01_4.html", null ],
     [ "etl::numeric_limits< short >", "structetl_1_1numeric__limits_3_01short_01_4.html", null ],
     [ "etl::numeric_limits< signed char >", "structetl_1_1numeric__limits_3_01signed_01char_01_4.html", null ],
     [ "etl::numeric_limits< unsigned char >", "structetl_1_1numeric__limits_3_01unsigned_01char_01_4.html", null ],
