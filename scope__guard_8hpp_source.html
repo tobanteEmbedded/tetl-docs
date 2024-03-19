@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('scope__guard_8hpp_source.html',''); in
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    constexpr scope_guard(scope_guard&amp;&amp; rhs) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> : _func{<a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(rhs._func)}, _policy{<a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(rhs._policy)} { }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ~scope_guard()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    constexpr ~scope_guard()</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">if</span> (_policy) {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            _func();</div>

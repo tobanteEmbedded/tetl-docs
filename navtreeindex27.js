@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structetl_1_1formatter.html#adae89dd4fa8aabf787760937e9014b4a":[8,0,0,41,2],
 "structetl_1_1formatter.html#aef433432e02d0f754e91df0ab7432b60":[8,0,0,41,0],
 "structetl_1_1formatter_3_01char_00_01char_01_4.html":[8,0,0,46],
 "structetl_1_1formatter_3_01char_00_01char_01_4.html#aaae7befb5b35227476329a7446c2cd99":[8,0,0,46,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "structetl_1_1is__destructible_3_01void_01_4.html":[8,0,0,334],
 "structetl_1_1is__empty.html":[8,0,0,335],
 "structetl_1_1is__enum.html":[8,0,0,293],
-"structetl_1_1is__error__condition__enum.html":[8,0,0,249],
-"structetl_1_1is__error__condition__enum_3_01errc_01_4.html":[8,0,0,248]
+"structetl_1_1is__error__condition__enum.html":[8,0,0,249]
 };

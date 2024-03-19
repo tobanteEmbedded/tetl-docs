@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structetl_1_1expected.html#a4c1b5b1f9ed3d2d584153330f79605a9":[8,0,0,34,11],
 "structetl_1_1expected.html#a4e11e1e583b06d8ac87882408d9855e5":[8,0,0,34,8],
 "structetl_1_1expected.html#a5141d67ddf3599f19068268604ed8fe5":[8,0,0,34,1],
 "structetl_1_1expected.html#a52cf200d9ec2dbb19ef80cd45fc8a2b3":[8,0,0,34,30],
@@ -146,8 +147,8 @@ var NAVTREEINDEX26 =
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html":[8,0,0,1,17],
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html":[8,0,0,1,3,8],
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html":[8,0,0,1,12],
-"structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html":[8,0,0,1,3,2],
 "structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html":[8,0,0,1,6],
+"structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html":[8,0,0,1,3,2],
 "structetl_1_1experimental_1_1parallelism__v2_1_1where__expression.html":[8,0,0,1,3,15],
 "structetl_1_1experimental_1_1parallelism__v2_1_1where__expression.html":[8,0,0,1,19],
 "structetl_1_1extent.html":[8,0,0,307],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structetl_1_1format__to__n__result.html#a1f0b7d725b8b4eafe1588eeff1fe26d8":[8,0,0,45,0],
 "structetl_1_1format__to__n__result.html#a21ef77e0435ea6f8568706c30bf8691e":[8,0,0,45,1],
 "structetl_1_1formatter.html":[8,0,0,41],
-"structetl_1_1formatter.html#a6c920cb79fd28bbf7cdd59ac14972943":[8,0,0,41,1],
-"structetl_1_1formatter.html#adae89dd4fa8aabf787760937e9014b4a":[8,0,0,41,2]
+"structetl_1_1formatter.html#a6c920cb79fd28bbf7cdd59ac14972943":[8,0,0,41,1]
 };

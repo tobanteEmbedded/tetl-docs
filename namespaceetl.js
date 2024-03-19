@@ -717,7 +717,6 @@ var namespaceetl =
       [ "hex", "namespaceetl.html#af524d0acb625979997f7a2dd1c0ea944ab8d1b43eae73587ba56baef574709ecb", null ],
       [ "general", "namespaceetl.html#af524d0acb625979997f7a2dd1c0ea944a958153f1b8b96ec4c4eb2147429105d9", null ]
     ] ],
-    [ "byte", "namespaceetl.html#a72ef6ff0708af7ff8ec8e2fb02b1d688", null ],
     [ "float_denorm_style", "namespaceetl.html#ad4892bd9af0bd3ad759fb95ab241247c", [
       [ "denorm_indeterminate", "namespaceetl.html#ad4892bd9af0bd3ad759fb95ab241247cadc095ee49d9e6884cd67bc20a4c73287", null ],
       [ "denorm_absent", "namespaceetl.html#ad4892bd9af0bd3ad759fb95ab241247caf254439f29ec6166a1a6fb7b09efd141", null ],
@@ -1799,6 +1798,7 @@ var namespaceetl =
     [ "swappable", "namespaceetl.html#abc3d55874cfd650688465099bef5a51c", null ],
     [ "unsigned_integral", "namespaceetl.html#a41dae8aa2c733dd84d9b8f15d79528bb", null ],
     [ "weakly_equality_comparable_with", "namespaceetl.html#ada002bf896bcbba39f049225a8d45aef", null ],
+    [ "byte", "namespaceetl.html#a1d957fa8529e9617c445e42519518e5e", null ],
     [ "unexpect", "namespaceetl.html#a2932a67109d86a3d3414866785f19613", null ],
     [ "sorted_unique", "namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515", null ],
     [ "is_placeholder_v", "namespaceetl.html#ad5ecf4e1b001cdba463b17849f4b55e4", null ],

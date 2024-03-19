@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"variant__fwd_8hpp.html#aeffc9f0ae12737a221731fd43249e944":[9,0,1,0,60,6,0],
 "variant__fwd_8hpp_source.html":[9,0,1,0,60,6],
 "variant__size_8hpp.html":[9,0,1,0,60,7],
 "variant__size_8hpp.html#a9289432c6100af2ec8b2563959f2c261":[9,0,1,0,60,7,4],

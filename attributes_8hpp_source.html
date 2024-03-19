@@ -134,7 +134,13 @@ $(document).ready(function(){initNavTree('attributes_8hpp_source.html',''); init
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">   44</a></span>&#160;<span class="preprocessor">    #define TETL_NO_UNIQUE_ADDRESS [[no_unique_address]]</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_ATTRIBUTES_HPP</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if defined(__GNUC__) or defined(__clang__)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #define TETL_MAY_ALIAS [[gnu::may_alias]]</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a6cf990edeb7f9f6f1b5928471cef5e56">   50</a></span>&#160;<span class="preprocessor">    #define TETL_MAY_ALIAS</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_ATTRIBUTES_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

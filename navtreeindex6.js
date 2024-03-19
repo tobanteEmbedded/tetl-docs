@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"dir_fc655ba7b5f9f1961939440acc4f0c6f.html":[9,0,1,0,5],
 "dir_fd29e5e14f45c24528c588877bb619a1.html":[9,0,1,0,16],
 "dir_fe9f96db0bbf428111fd687fd105db69.html":[9,0,1,0,21],
 "disable__sized__range_8hpp.html":[9,0,1,0,44,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "find__whole_8hpp.html":[9,0,1,0,0,0,0,22],
 "find__whole_8hpp_source.html":[9,0,1,0,0,0,0,22],
 "flat__set_8hpp.html":[9,0,1,0,90],
-"flat__set_8hpp_source.html":[9,0,1,0,90],
-"flip__bit_8hpp.html":[9,0,1,0,3,10]
+"flat__set_8hpp_source.html":[9,0,1,0,90]
 };
