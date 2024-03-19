@@ -2,8 +2,8 @@ var searchData=
 [
   ['n_1928',['n',['../structetl_1_1basic__static__string.html#a745206d97f99d76f0dc29496e097f8a5',1,'etl::basic_static_string']]],
   ['named_5ffunctions_2ehpp_1929',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
-  ['nan_1930',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
-  ['nan_1931',['nan',['../namespaceetl.html#a7e0c6b512cfa1423e392e02430121c44',1,'etl']]],
+  ['nan_1930',['nan',['../namespaceetl.html#a7e0c6b512cfa1423e392e02430121c44',1,'etl']]],
+  ['nan_1931',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
   ['nan_2ehpp_1932',['nan.hpp',['../nan_8hpp.html',1,'']]],
   ['nanf_1933',['nanf',['../namespaceetl.html#a21120c1b64cbc4c4d446f0859a011d82',1,'etl']]],
   ['nanl_1934',['nanl',['../namespaceetl.html#ae289a4c91b473e5e1302aa1b0142b48d',1,'etl']]],
