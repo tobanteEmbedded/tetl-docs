@@ -1,5 +1,12 @@
 var NAVTREEINDEX24 =
 {
+"structetl_1_1basic__string__view.html#a9be1e8f658453c4fd8a5beb9079500ca":[8,0,0,246,37],
+"structetl_1_1basic__string__view.html#a9eca0eca681e38c1ba88a715bb9100e0":[8,0,0,246,19],
+"structetl_1_1basic__string__view.html#aa5fd616d4fef058984e226c00444e162":[8,0,0,246,13],
+"structetl_1_1basic__string__view.html#aa7d1553d9664821f681b24666d796542":[8,0,0,246,71],
+"structetl_1_1basic__string__view.html#aa8787169636e06525e6777efaf93a471":[8,0,0,246,12],
+"structetl_1_1basic__string__view.html#aacd57b92c478d688e472e0a0548d0134":[8,0,0,246,73],
+"structetl_1_1basic__string__view.html#aad74f25a091fe2a0220fb1f1670f5721":[8,0,0,246,24],
 "structetl_1_1basic__string__view.html#aae10f0ac5a02534f67626e60268d5233":[8,0,0,246,67],
 "structetl_1_1basic__string__view.html#ab2e496158cbe9a6228fa5793996b8511":[8,0,0,246,49],
 "structetl_1_1basic__string__view.html#ab5e7236d8cb2d5ac85f7d326e6c9163e":[8,0,0,246,78],
@@ -242,12 +249,5 @@ var NAVTREEINDEX24 =
 "structetl_1_1chrono_1_1time__point.html#ae2e7676d861e00790129c4c909a47090":[8,0,0,0,12,8],
 "structetl_1_1chrono_1_1time__point.html#afd4ac4eed19fb3a1baff19f0588300c7":[8,0,0,0,12,14],
 "structetl_1_1chrono_1_1time__point.html#aff5daabe2bcd7f632b63c3b65b8193a7":[8,0,0,0,12,12],
-"structetl_1_1chrono_1_1treat__as__floating__point.html":[8,0,0,0,13],
-"structetl_1_1chrono_1_1weekday.html":[8,0,0,0,14],
-"structetl_1_1chrono_1_1weekday.html#a17ef6ab402267a965b534b4e55db69f1":[8,0,0,0,14,7],
-"structetl_1_1chrono_1_1weekday.html#a1b72d40f95745e25d2fca506561ea93e":[8,0,0,0,14,11],
-"structetl_1_1chrono_1_1weekday.html#a37231720cad2010fcd8071471cd9f399":[8,0,0,0,14,10],
-"structetl_1_1chrono_1_1weekday.html#a51a38f26e0fb605db59529393f979510":[8,0,0,0,14,6],
-"structetl_1_1chrono_1_1weekday.html#a55346691d62c21cf616e25efd74f50be":[8,0,0,0,14,3],
-"structetl_1_1chrono_1_1weekday.html#a7bd615a964c1fda31973b3ea6d1cfcf0":[8,0,0,0,14,9]
+"structetl_1_1chrono_1_1treat__as__floating__point.html":[8,0,0,0,13]
 };

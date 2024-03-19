@@ -7,7 +7,7 @@ var searchData=
   ['tanhl_5292',['tanhl',['../namespaceetl.html#a770ad213930a5de35a7e4d8efbb65c16',1,'etl']]],
   ['tanl_5293',['tanl',['../namespaceetl.html#a8821d6a54a089020394afeddd92eb20c',1,'etl']]],
   ['test_5294',['test',['../structetl_1_1bitset.html#a5715df3ac129f941f3d8bcaa6a0fa7ea',1,'etl::bitset']]],
-  ['test_5fbit_5295',['test_bit',['../namespaceetl.html#a6446130881cadc4edfba7f0ec4b01d5f',1,'etl']]],
+  ['test_5fbit_5295',['test_bit',['../namespaceetl.html#a6446130881cadc4edfba7f0ec4b01d5f',1,'etl::test_bit(UInt val, UInt bit) noexcept -&gt; bool'],['../namespaceetl.html#a4d062f57d0edbd6d850d13e600e385ee',1,'etl::test_bit(UInt val) noexcept -&gt; bool']]],
   ['test_5fimplicit_5fdefault_5fconstructible_5296',['test_implicit_default_constructible',['../namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa',1,'etl']]],
   ['tetl_5fdebug_5ftrap_5297',['TETL_DEBUG_TRAP',['../debug__trap_8hpp.html#a4d7e7ffd29f6dbcb188abc5c19fadbe0',1,'debug_trap.hpp']]],
   ['tgamma_5298',['tgamma',['../__3rd__party_2gcem_2gcem__incl_2tgamma_8hpp.html#aff8bdc35048b211e859d9749859c3c9f',1,'tgamma():&#160;tgamma.hpp'],['../namespaceetl.html#a304d035a3a2740c7fef43426fcf3b9cb',1,'etl::tgamma(float arg) noexcept -&gt; float'],['../namespaceetl.html#a8d14d3d27f8694d9d4b771100bd4c74e',1,'etl::tgamma(double arg) noexcept -&gt; double'],['../namespaceetl.html#a7455e948ac61779dbd3be0c44190e569',1,'etl::tgamma(long double arg) noexcept -&gt; long double'],['../namespaceetl.html#ae31c7fddeeebae7fde466c96fafadd4c',1,'etl::tgamma(T arg) noexcept -&gt; double']]],
