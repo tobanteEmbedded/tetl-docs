@@ -93,37 +93,37 @@ $(document).ready(function(){initNavTree('countr__zero_8hpp_source.html',''); in
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_BIT_COUNTR_ZERO_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_BIT_COUNTR_ZERO_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="standard__unsigned__integer_8hpp.html">etl/_concepts/standard_unsigned_integer.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="numeric__limits_8hpp.html">etl/_limits/numeric_limits.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">   21</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">countr_zero</a>(UInt x) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> isBitSet = [](<span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>, <span class="keywordtype">int</span> pos) -&gt; <span class="keywordtype">bool</span> { <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a> &amp; (UInt{1} &lt;&lt; <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(pos)); };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> totalBits = <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;UInt&gt;::digits</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> result    = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">while</span> (result != totalBits) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (isBitSet(x, result)) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        ++result;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_COUNTR_ZERO_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="test__bit_8hpp.html">etl/_bit/test_bit.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="standard__unsigned__integer_8hpp.html">etl/_concepts/standard_unsigned_integer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="numeric__limits_8hpp.html">etl/_limits/numeric_limits.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">countr_zero</a>(UInt x) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">auto</span> totalBits = <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;UInt&gt;::digits</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> result    = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span> (result != totalBits) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceetl.html#a6446130881cadc4edfba7f0ec4b01d5f">etl::test_bit</a>(x, <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(result))) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        ++result;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_COUNTR_ZERO_HPP</span></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a9a5490ba02f948e6f27acbe515d47eab"><div class="ttname"><a href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">etl::countr_zero</a></div><div class="ttdeci">constexpr auto countr_zero(UInt x) noexcept -&gt; int</div><div class="ttdoc">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit (...</div><div class="ttdef"><b>Definition:</b> countr_zero.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_aa2a7c3cbcd306c97b268134f54e90d2d"><div class="ttname"><a href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">etl::val</a></div><div class="ttdeci">char T val</div><div class="ttdef"><b>Definition:</b> to_chars.hpp:36</div></div>
+<div class="ttc" id="anamespaceetl_html_a6446130881cadc4edfba7f0ec4b01d5f"><div class="ttname"><a href="namespaceetl.html#a6446130881cadc4edfba7f0ec4b01d5f">etl::test_bit</a></div><div class="ttdeci">constexpr auto test_bit(UInt val, UInt bit) noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> test_bit.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_a9a5490ba02f948e6f27acbe515d47eab"><div class="ttname"><a href="namespaceetl.html#a9a5490ba02f948e6f27acbe515d47eab">etl::countr_zero</a></div><div class="ttdeci">constexpr auto countr_zero(UInt x) noexcept -&gt; int</div><div class="ttdoc">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit (...</div><div class="ttdef"><b>Definition:</b> countr_zero.hpp:22</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="astandard__unsigned__integer_8hpp_html"><div class="ttname"><a href="standard__unsigned__integer_8hpp.html">standard_unsigned_integer.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
+<div class="ttc" id="atest__bit_8hpp_html"><div class="ttname"><a href="test__bit_8hpp.html">test_bit.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
