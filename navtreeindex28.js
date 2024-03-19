@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structetl_1_1is__integral.html":[8,0,0,284],
 "structetl_1_1is__invocable.html":[8,0,0,339],
 "structetl_1_1is__invocable__r.html":[8,0,0,340],
 "structetl_1_1is__lvalue__reference.html":[8,0,0,288],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structetl_1_1mdspan.html#a29192c1408a6b7d6d14f395533b807ca":[8,0,0,179,4],
 "structetl_1_1mdspan.html#a2fff2d80934382b821307ed1423f12db":[8,0,0,179,2],
 "structetl_1_1mdspan.html#a35f0b66458a1b6cc96d58eaf6534a86a":[8,0,0,179,34],
-"structetl_1_1mdspan.html#a3d146428477f755b41a2f7e195789639":[8,0,0,179,32],
-"structetl_1_1mdspan.html#a4b9622c7dc19a714487a6b87b76ede49":[8,0,0,179,19]
+"structetl_1_1mdspan.html#a3d146428477f755b41a2f7e195789639":[8,0,0,179,32]
 };

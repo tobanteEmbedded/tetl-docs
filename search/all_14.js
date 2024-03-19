@@ -33,7 +33,7 @@ var searchData=
   ['september_2462',['September',['../namespaceetl_1_1chrono.html#a2e0961f3fc2714a3402708ff7f6e1dda',1,'etl::chrono']]],
   ['set_2463',['set',['../structetl_1_1bitset.html#aaa79cf88b9c321f94a2d0650cd3ba3a6',1,'etl::bitset::set() noexcept -&gt; bitset&lt; N &gt; &amp;'],['../structetl_1_1bitset.html#a4ede14f6624f31d2adfc672aa3138212',1,'etl::bitset::set(etl::size_t pos, bool value=true) -&gt; bitset&lt; N &gt; &amp;'],['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a82262b618df0ab979ca393fe840525bdacdaeeeba9b4a4c5ebf042c0215a7bb0e',1,'etl::experimental::hardware::stm32::set()']]],
   ['set_2ehpp_2464',['set.hpp',['../set_8hpp.html',1,'']]],
-  ['set_5fbit_2465',['set_bit',['../namespaceetl.html#a57ef6c14d940b0a4dbffde7444e364f1',1,'etl']]],
+  ['set_5fbit_2465',['set_bit',['../namespaceetl.html#af8da66a736f8e15a2cf4dd681f6ab863',1,'etl']]],
   ['set_5fbit_2ehpp_2466',['set_bit.hpp',['../set__bit_8hpp.html',1,'']]],
   ['set_5fdifference_2467',['set_difference',['../namespaceetl.html#a50c804f0766a786779b7c17886e601a2',1,'etl::set_difference(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination) -&gt; OutputIt'],['../namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5',1,'etl::set_difference(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination, Compare comp) -&gt; OutputIt']]],
   ['set_5fdifference_2ehpp_2468',['set_difference.hpp',['../set__difference_8hpp.html',1,'']]],
