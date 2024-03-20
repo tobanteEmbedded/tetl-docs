@@ -102,11 +102,14 @@ $(document).ready(function(){initNavTree('all_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="debug__trap_8hpp.html">etl/_config/debug_trap.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__config_2version_8hpp.html">etl/_config/version.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="workarounds_8hpp.html">etl/_config/workarounds.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="user_8hpp.html">etl/_config/user.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// clang-format on</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_ALL_HPP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="user_8hpp.html">etl/_config/user.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if __has_include(&lt;version&gt;)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #include &lt;version&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_ALL_HPP</span></div>
 <div class="ttc" id="a__config_2version_8hpp_html"><div class="ttname"><a href="__config_2version_8hpp.html">version.hpp</a></div></div>
 <div class="ttc" id="aattributes_8hpp_html"><div class="ttname"><a href="attributes_8hpp.html">attributes.hpp</a></div></div>
 <div class="ttc" id="abuiltin__functions_8hpp_html"><div class="ttname"><a href="builtin__functions_8hpp.html">builtin_functions.hpp</a></div></div>
