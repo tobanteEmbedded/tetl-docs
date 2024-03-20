@@ -121,11 +121,10 @@ var NAVTREE =
       [ "CMake Presets", "md_docs_development.html#autotoc_md88", null ]
     ] ],
     [ "Progress", "md_docs_progress.html", [
-      [ "Standard", "md_docs_progress.html#autotoc_md90", [
-        [ "C++26", "md_docs_progress.html#autotoc_md91", null ],
-        [ "C++23", "md_docs_progress.html#autotoc_md92", null ],
-        [ "C++20", "md_docs_progress.html#autotoc_md93", null ]
-      ] ]
+      [ "Proposal", "md_docs_progress.html#autotoc_md90", null ],
+      [ "C++26", "md_docs_progress.html#autotoc_md91", null ],
+      [ "C++23", "md_docs_progress.html#autotoc_md92", null ],
+      [ "C++20", "md_docs_progress.html#autotoc_md93", null ]
     ] ],
     [ "Bug List", "bug.html", null ],
     [ "Todo List", "todo.html", null ],
@@ -201,11 +200,11 @@ var NAVTREEINDEX =
 "structetl_1_1mdarray.html#af8dad611762466f97515d84c5d8066a5",
 "structetl_1_1numeric__limits_3_01float_01_4.html",
 "structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html#a7db1d866567db7645b2e576c9ce73a98",
-"structetl_1_1range__error.html#a504653fe90cb108bc34c0c1d3bafc1a5",
-"structetl_1_1static__vector.html#a1ea4e3cee0a96ff28338e865d7daa4a9",
-"structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11",
-"synopsis_8hpp.html#ab822b201a01c294cd471a730b9961b9f",
-"variant__fwd_8hpp.html#aeffc9f0ae12737a221731fd43249e944"
+"structetl_1_1pointer__traits.html#a16293302bce3c8c868ab3b54efdcce8e",
+"structetl_1_1static__vector.html",
+"structetl_1_1unique__lock.html#af79b65a1350f979d5efefd5870ef28e1",
+"synopsis_8hpp.html#a8c315088aacf8d03742a60bd7ed703eb",
+"uses__allocator_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

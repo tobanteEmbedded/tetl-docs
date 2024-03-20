@@ -1,6 +1,7 @@
 var __optional_2optional_8hpp =
 [
     [ "optional", "structetl_1_1optional.html", "structetl_1_1optional" ],
+    [ "optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", "structetl_1_1optional_3_01T_01_6_01_4" ],
     [ "hash< etl::optional< T > >", "structetl_1_1hash_3_01etl_1_1optional_3_01T_01_4_01_4.html", "structetl_1_1hash_3_01etl_1_1optional_3_01T_01_4_01_4" ],
     [ "optional", "__optional_2optional_8hpp.html#ae75cac911cf6d9b9b3b37254bc227e53", null ],
     [ "requires", "__optional_2optional_8hpp.html#a292197c3724e916aa8255a622fac6917", null ],

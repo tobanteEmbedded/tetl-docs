@@ -508,6 +508,7 @@ var hierarchy =
     [ "etl::numeric_limits< unsigned int >", "structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html", null ],
     [ "etl::numeric_limits< unsigned long >", "structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html", null ],
     [ "etl::numeric_limits< unsigned short >", "structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html", null ],
+    [ "etl::optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", null ],
     [ "etl::detail::optional_destruct_base< T, bool >", null, [
       [ "etl::detail::optional_storage_base< T, bool >", null, [
         [ "etl::detail::optional_copy_base< T, bool >", null, [

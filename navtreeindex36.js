@@ -1,5 +1,18 @@
 var NAVTREEINDEX36 =
 {
+"uses__allocator_8hpp_source.html":[9,0,1,0,37,18],
+"utility_8cpp-example.html":[10,13],
+"utility_8hpp.html":[9,0,1,0,120],
+"utility_8hpp_source.html":[9,0,1,0,120],
+"variadic__union_8hpp.html":[9,0,1,0,60,3],
+"variadic__union_8hpp_source.html":[9,0,1,0,60,3],
+"variant_8hpp.html":[9,0,1,0,121],
+"variant_8hpp_source.html":[9,0,1,0,121],
+"variant__alternative_8hpp.html":[9,0,1,0,60,5],
+"variant__alternative_8hpp.html#aef7110ca07ee5b481d99d9ae57a977ed":[9,0,1,0,60,5,4],
+"variant__alternative_8hpp_source.html":[9,0,1,0,60,5],
+"variant__fwd_8hpp.html":[9,0,1,0,60,6],
+"variant__fwd_8hpp.html#a32dbeed267147923b02448b493be930d":[9,0,1,0,60,6,1],
 "variant__fwd_8hpp.html#aeffc9f0ae12737a221731fd43249e944":[9,0,1,0,60,6,0],
 "variant__fwd_8hpp_source.html":[9,0,1,0,60,6],
 "variant__size_8hpp.html":[9,0,1,0,60,7],

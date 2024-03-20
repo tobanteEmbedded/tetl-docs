@@ -310,6 +310,7 @@ var annotated_dup =
       [ "bad_optional_access", "structetl_1_1bad__optional__access.html", "structetl_1_1bad__optional__access" ],
       [ "nullopt_t", "structetl_1_1nullopt__t.html", "structetl_1_1nullopt__t" ],
       [ "optional", "structetl_1_1optional.html", "structetl_1_1optional" ],
+      [ "optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", "structetl_1_1optional_3_01T_01_6_01_4" ],
       [ "hash< etl::optional< T > >", "structetl_1_1hash_3_01etl_1_1optional_3_01T_01_4_01_4.html", "structetl_1_1hash_3_01etl_1_1optional_3_01T_01_4_01_4" ],
       [ "bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", "structetl_1_1bernoulli__distribution" ],
       [ "uniform_int_distribution", "structetl_1_1uniform__int__distribution.html", "structetl_1_1uniform__int__distribution" ],
