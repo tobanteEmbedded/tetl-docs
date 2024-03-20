@@ -136,6 +136,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1dynamic__array.html">dynamic_array</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1uninitialized__array.html">uninitialized_array</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__bitmask__type.html">is_bitmask_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1bitset.html">bitset</a></td></tr>
@@ -1239,7 +1241,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a568b4df04642a2e727b3a8b201f2e450"><td class="memTemplParams" colspan="2">template&lt;typename ValueType , etl::size_t Size&gt; </td></tr>
-<tr class="memitem:a568b4df04642a2e727b3a8b201f2e450"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">c_array</a> = ValueType[Size]</td></tr>
+<tr class="memitem:a568b4df04642a2e727b3a8b201f2e450"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">c_array</a> = ValueType[<a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>]</td></tr>
 <tr class="separator:a568b4df04642a2e727b3a8b201f2e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04532556e568bb7cc276440befc7f441"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a04532556e568bb7cc276440befc7f441">float_t</a> = float</td></tr>
 <tr class="memdesc:a04532556e568bb7cc276440befc7f441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Most efficient floating-point type at least as wide as float.  <a href="namespaceetl.html#a04532556e568bb7cc276440befc7f441">More...</a><br /></td></tr>
@@ -1576,13 +1578,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4271478b9ac53d8758a27dc93d55aa8f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a4271478b9ac53d8758a27dc93d55aa8f">index_sequence</a> = <a class="el" href="structetl_1_1integer__sequence.html">etl::integer_sequence</a>&lt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>, Ints... &gt;</td></tr>
 <tr class="separator:a4271478b9ac53d8758a27dc93d55aa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acca681165e818e6caaf5e237e8125ae8"><td class="memTemplParams" colspan="2">template&lt;etl::size_t Size&gt; </td></tr>
-<tr class="memitem:acca681165e818e6caaf5e237e8125ae8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">make_index_sequence</a> = <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a>&lt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>, Size &gt;</td></tr>
+<tr class="memitem:acca681165e818e6caaf5e237e8125ae8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">make_index_sequence</a> = <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a>&lt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt;</td></tr>
 <tr class="separator:acca681165e818e6caaf5e237e8125ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a131ba515ad6cb810a2d722fefb0a6325"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:a131ba515ad6cb810a2d722fefb0a6325"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a131ba515ad6cb810a2d722fefb0a6325">index_sequence_for</a> = <a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">etl::make_index_sequence</a>&lt; sizeof...(T)&gt;</td></tr>
 <tr class="separator:a131ba515ad6cb810a2d722fefb0a6325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5bd86337786fcf4b5b9ff86cdb9674d"><td class="memTemplParams" colspan="2">template&lt;typename T , T Size&gt; </td></tr>
-<tr class="memitem:ac5bd86337786fcf4b5b9ff86cdb9674d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">make_integer_sequence</a> = <a class="el" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">TETL_BUILTIN_INT_SEQ</a>(T, Size)</td></tr>
+<tr class="memitem:ac5bd86337786fcf4b5b9ff86cdb9674d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">make_integer_sequence</a> = <a class="el" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">TETL_BUILTIN_INT_SEQ</a>(T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>)</td></tr>
 <tr class="separator:ac5bd86337786fcf4b5b9ff86cdb9674d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7110ca07ee5b481d99d9ae57a977ed"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename T &gt; </td></tr>
 <tr class="memitem:aef7110ca07ee5b481d99d9ae57a977ed"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed">variant_alternative_t</a> = typename <a class="el" href="structetl_1_1variant__alternative.html">variant_alternative</a>&lt; I, T &gt;::type</td></tr>
@@ -1780,7 +1782,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa11bb84e871a5db6b2a230e5ef065234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the given value to the elements in the range <code>[first, last)</code>.  <a href="namespaceetl.html#aa11bb84e871a5db6b2a230e5ef065234">More...</a><br /></td></tr>
 <tr class="separator:aa11bb84e871a5db6b2a230e5ef065234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ac240345a96ad39668967bf8bdf76f"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , typename Size , typename T &gt; </td></tr>
-<tr class="memitem:ad5ac240345a96ad39668967bf8bdf76f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a> (OutputIt first, Size <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, T const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; OutputIt</td></tr>
+<tr class="memitem:ad5ac240345a96ad39668967bf8bdf76f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a> (OutputIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, T const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; OutputIt</td></tr>
 <tr class="memdesc:ad5ac240345a96ad39668967bf8bdf76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the given value to the first count elements in the range beginning at <code>first</code> if <code>count &gt; 0</code>. Does nothing otherwise.  <a href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">More...</a><br /></td></tr>
 <tr class="separator:ad5ac240345a96ad39668967bf8bdf76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074d4da4cb7d3a678c5ae1fce471ddfb"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename T &gt; </td></tr>
@@ -1815,7 +1817,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3ad01de69ea01da886464fc3ef1390cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given function object f to the result of dereferencing every iterator in the range <code>[first, last)</code> in order.  <a href="namespaceetl.html#a3ad01de69ea01da886464fc3ef1390cc">More...</a><br /></td></tr>
 <tr class="separator:a3ad01de69ea01da886464fc3ef1390cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9839f986201c53e618b3435d27ad43a"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Size , typename UnaryFunc &gt; </td></tr>
-<tr class="memitem:ab9839f986201c53e618b3435d27ad43a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ab9839f986201c53e618b3435d27ad43a">for_each_n</a> (InputIt first, Size n, UnaryFunc f) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; InputIt</td></tr>
+<tr class="memitem:ab9839f986201c53e618b3435d27ad43a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ab9839f986201c53e618b3435d27ad43a">for_each_n</a> (InputIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> n, UnaryFunc f) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; InputIt</td></tr>
 <tr class="memdesc:ab9839f986201c53e618b3435d27ad43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given function object f to the result of dereferencing every iterator in the range <code>[first, first + n]</code> in order.  <a href="namespaceetl.html#ab9839f986201c53e618b3435d27ad43a">More...</a><br /></td></tr>
 <tr class="separator:ab9839f986201c53e618b3435d27ad43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b963791bdb1da038a64b23555f245c4"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Generator &gt; </td></tr>
@@ -2061,11 +2063,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a21a90d9aad4e00eb080d9dce99472a40"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a21a90d9aad4e00eb080d9dce99472a40">search</a> (FwdIt first, FwdIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Searcher const &amp;searcher) -&gt; FwdIt</td></tr>
 <tr class="separator:a21a90d9aad4e00eb080d9dce99472a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047bb8dc9dd92624ad901db1d27e5d83"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Size , typename ValueT , typename Predicate &gt; </td></tr>
-<tr class="memitem:a047bb8dc9dd92624ad901db1d27e5d83"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a047bb8dc9dd92624ad901db1d27e5d83">search_n</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Size <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, ValueT const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>, Predicate pred) -&gt; ForwardIt</td></tr>
+<tr class="memitem:a047bb8dc9dd92624ad901db1d27e5d83"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a047bb8dc9dd92624ad901db1d27e5d83">search_n</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, ValueT const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>, Predicate pred) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:a047bb8dc9dd92624ad901db1d27e5d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the range <code>[first, last)</code> for the first sequence of count identical elements, each equal to the given value.  <a href="namespaceetl.html#a047bb8dc9dd92624ad901db1d27e5d83">More...</a><br /></td></tr>
 <tr class="separator:a047bb8dc9dd92624ad901db1d27e5d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8fcaf19422ff5c92791797f6373260"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Size , typename ValueT &gt; </td></tr>
-<tr class="memitem:a6c8fcaf19422ff5c92791797f6373260"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6c8fcaf19422ff5c92791797f6373260">search_n</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Size <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, ValueT const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; ForwardIt</td></tr>
+<tr class="memitem:a6c8fcaf19422ff5c92791797f6373260"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6c8fcaf19422ff5c92791797f6373260">search_n</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, ValueT const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; ForwardIt</td></tr>
 <tr class="separator:a6c8fcaf19422ff5c92791797f6373260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a563244b70e444026e7ddee3ad609b4a5"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 , typename OutputIt , typename Compare &gt; </td></tr>
 <tr class="memitem:a563244b70e444026e7ddee3ad609b4a5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination, Compare comp) -&gt; OutputIt</td></tr>
@@ -2183,17 +2185,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a39feefa1e12cd8485e5ac5b1cf25ca5a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a39feefa1e12cd8485e5ac5b1cf25ca5a">operator&gt;=</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, N &gt; const &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a>&lt; T, N &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="separator:a39feefa1e12cd8485e5ac5b1cf25ca5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b7094f524bee0b6d0e32e83e6d18e2"><td class="memTemplParams" colspan="2">template&lt;size_t Index, typename T , size_t Size&gt; </td></tr>
-<tr class="memitem:a86b7094f524bee0b6d0e32e83e6d18e2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a86b7094f524bee0b6d0e32e83e6d18e2">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; &amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T &amp;</td></tr>
+<tr class="memitem:a86b7094f524bee0b6d0e32e83e6d18e2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a86b7094f524bee0b6d0e32e83e6d18e2">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T &amp;</td></tr>
 <tr class="memdesc:a86b7094f524bee0b6d0e32e83e6d18e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to at() or operator[].  <a href="namespaceetl.html#a86b7094f524bee0b6d0e32e83e6d18e2">More...</a><br /></td></tr>
 <tr class="separator:a86b7094f524bee0b6d0e32e83e6d18e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a288e79c781974b0178e21cc9cc012"><td class="memTemplParams" colspan="2">template&lt;size_t Index, typename T , size_t Size&gt; </td></tr>
-<tr class="memitem:a55a288e79c781974b0178e21cc9cc012"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a55a288e79c781974b0178e21cc9cc012">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; const &amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T const &amp;</td></tr>
+<tr class="memitem:a55a288e79c781974b0178e21cc9cc012"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a55a288e79c781974b0178e21cc9cc012">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T const &amp;</td></tr>
 <tr class="separator:a55a288e79c781974b0178e21cc9cc012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac584a8e745af05dc346a19d0395a878b"><td class="memTemplParams" colspan="2">template&lt;size_t Index, typename T , size_t Size&gt; </td></tr>
-<tr class="memitem:ac584a8e745af05dc346a19d0395a878b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac584a8e745af05dc346a19d0395a878b">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T &amp;&amp;</td></tr>
+<tr class="memitem:ac584a8e745af05dc346a19d0395a878b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac584a8e745af05dc346a19d0395a878b">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T &amp;&amp;</td></tr>
 <tr class="separator:ac584a8e745af05dc346a19d0395a878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a631f38db521ab83ff5467fb29405d74a"><td class="memTemplParams" colspan="2">template&lt;size_t Index, typename T , size_t Size&gt; </td></tr>
-<tr class="memitem:a631f38db521ab83ff5467fb29405d74a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a631f38db521ab83ff5467fb29405d74a">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; const &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T const &amp;&amp;</td></tr>
+<tr class="memitem:a631f38db521ab83ff5467fb29405d74a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a631f38db521ab83ff5467fb29405d74a">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T const &amp;&amp;</td></tr>
 <tr class="separator:a631f38db521ab83ff5467fb29405d74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac52800519f8ed99c7279ac0e850ab049"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:ac52800519f8ed99c7279ac0e850ab049"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac52800519f8ed99c7279ac0e850ab049">to_array</a> (T(&amp;a)[N]) -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t</a>&lt; T &gt;, N &gt;</td></tr>
@@ -2202,6 +2204,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa365aab3fcf0745f5ea688b372f3aca7"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:aa365aab3fcf0745f5ea688b372f3aca7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa365aab3fcf0745f5ea688b372f3aca7">to_array</a> (T(&amp;&amp;a)[N])</td></tr>
 <tr class="separator:aa365aab3fcf0745f5ea688b372f3aca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877cfa73ea6690339843c3f5b79ca3a7"><td class="memTemplParams" colspan="2">template&lt;etl::detail::sufficiently_trivial T, etl::size_t Size&gt; </td></tr>
+<tr class="memitem:a877cfa73ea6690339843c3f5b79ca3a7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a877cfa73ea6690339843c3f5b79ca3a7">requires</a> (<a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> !=0) struct <a class="el" href="structetl_1_1uninitialized__array.html">uninitialized_array</a>&lt; T</td></tr>
+<tr class="separator:a877cfa73ea6690339843c3f5b79ca3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321af167e669a0c72a867748fffff377"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a321af167e669a0c72a867748fffff377">uninitialized_array</a> ()=default</td></tr>
+<tr class="separator:a321af167e669a0c72a867748fffff377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c0bdae2655a0ed9121aeca58640e9a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ab6c0bdae2655a0ed9121aeca58640e9a">data</a> () const <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T const *</td></tr>
+<tr class="separator:ab6c0bdae2655a0ed9121aeca58640e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db1ad433c808f8aabe48a2061e633dc"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a0db1ad433c808f8aabe48a2061e633dc">size</a> () <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a></td></tr>
+<tr class="separator:a0db1ad433c808f8aabe48a2061e633dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2836fac65c2a00e47c70508d8d837b3e"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; </td></tr>
 <tr class="memitem:a2836fac65c2a00e47c70508d8d837b3e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a2836fac65c2a00e47c70508d8d837b3e">requires</a> (detail::bit_castable_types&lt; To, From &gt;) const expr auto bit_cast(From const &amp;src) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; To</td></tr>
 <tr class="memdesc:a2836fac65c2a00e47c70508d8d837b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <a href="namespaceetl.html#a2836fac65c2a00e47c70508d8d837b3e">More...</a><br /></td></tr>
@@ -3930,7 +3941,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a13856fe74510e89b04a2310cbc9bde59"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a13856fe74510e89b04a2310cbc9bde59"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">addressof</a> (T const &amp;&amp;)=delete</td></tr>
 <tr class="separator:a13856fe74510e89b04a2310cbc9bde59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3d4ba5bde672b48bdaa4fd9eec249e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afb3d4ba5bde672b48bdaa4fd9eec249e">align</a> (<a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> alignment, <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> <a class="el" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>, void *&amp;ptr, <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> &amp;space) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; void *</td></tr>
+<tr class="memitem:afb3d4ba5bde672b48bdaa4fd9eec249e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afb3d4ba5bde672b48bdaa4fd9eec249e">align</a> (<a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> alignment, <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> <a class="el" href="namespaceetl.html#a0db1ad433c808f8aabe48a2061e633dc">size</a>, void *&amp;ptr, <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> &amp;space) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; void *</td></tr>
 <tr class="memdesc:afb3d4ba5bde672b48bdaa4fd9eec249e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a pointer ptr to a buffer of size space, returns a pointer aligned by the specified alignment for size number of bytes and decreases space argument by the number of bytes used for alignment. The first aligned address is returned.  <a href="namespaceetl.html#afb3d4ba5bde672b48bdaa4fd9eec249e">More...</a><br /></td></tr>
 <tr class="separator:afb3d4ba5bde672b48bdaa4fd9eec249e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe56da868069c04217458df6422d084"><td class="memTemplParams" colspan="2">template&lt;etl::size_t N, typename T &gt; </td></tr>
@@ -3950,7 +3961,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1709580f4bcc18d6efb2b7e4d5c1b728"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T(). If T is an array type, recursively destroys elements of *p in order, as if by calling destroy(begin(*p), end(*p)).  <a href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">More...</a><br /></td></tr>
 <tr class="separator:a1709580f4bcc18d6efb2b7e4d5c1b728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a440d38af8f9b00df3d5c1369450ba44a"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Size &gt; </td></tr>
-<tr class="memitem:a440d38af8f9b00df3d5c1369450ba44a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">destroy_n</a> (ForwardIt first, Size n) -&gt; ForwardIt</td></tr>
+<tr class="memitem:a440d38af8f9b00df3d5c1369450ba44a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">destroy_n</a> (ForwardIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> n) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:a440d38af8f9b00df3d5c1369450ba44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the n objects in the range starting at first.  <a href="namespaceetl.html#a440d38af8f9b00df3d5c1369450ba44a">More...</a><br /></td></tr>
 <tr class="separator:a440d38af8f9b00df3d5c1369450ba44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa686fb94d6fbf9538a40cf4040a6ac81"><td class="memTemplParams" colspan="2">template&lt;typename Ptr &gt; </td></tr>
@@ -4225,10 +4236,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a0da3a02a79034271cbc560bc94dbe2cd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a0da3a02a79034271cbc560bc94dbe2cd">span</a> (Type(&amp;)[Extent]) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Type, Extent &gt;</td></tr>
 <tr class="separator:a0da3a02a79034271cbc560bc94dbe2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ab2c6a5bc678d0ca3f5137c4004543"><td class="memTemplParams" colspan="2">template&lt;typename Type , etl::size_t Size&gt; </td></tr>
-<tr class="memitem:ac6ab2c6a5bc678d0ca3f5137c4004543"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac6ab2c6a5bc678d0ca3f5137c4004543">span</a> (<a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, Size &gt; &amp;) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Type, Size &gt;</td></tr>
+<tr class="memitem:ac6ab2c6a5bc678d0ca3f5137c4004543"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac6ab2c6a5bc678d0ca3f5137c4004543">span</a> (<a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt;</td></tr>
 <tr class="separator:ac6ab2c6a5bc678d0ca3f5137c4004543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5667307c6ae6ae51fa6d1488fbab93b"><td class="memTemplParams" colspan="2">template&lt;typename Type , etl::size_t Size&gt; </td></tr>
-<tr class="memitem:aa5667307c6ae6ae51fa6d1488fbab93b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa5667307c6ae6ae51fa6d1488fbab93b">span</a> (<a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, Size &gt; const &amp;) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Type const, Size &gt;</td></tr>
+<tr class="memitem:aa5667307c6ae6ae51fa6d1488fbab93b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa5667307c6ae6ae51fa6d1488fbab93b">span</a> (<a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Type const, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt;</td></tr>
 <tr class="separator:aa5667307c6ae6ae51fa6d1488fbab93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e186959b2d5132ab142843576d30048"><td class="memTemplParams" colspan="2">template&lt;typename Container , typename Element  = etl::remove_pointer_t&lt;decltype(etl::declval&lt;Container&amp;&gt;().data())&gt;&gt; </td></tr>
 <tr class="memitem:a9e186959b2d5132ab142843576d30048"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9e186959b2d5132ab142843576d30048">span</a> (Container &amp;) -&gt; <a class="el" href="structetl_1_1span.html">span</a>&lt; Element &gt;</td></tr>
@@ -4849,7 +4860,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga31799054ecdf344760efe76af7987776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Size , typename OutputIt &gt; </td></tr>
-<tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">copy_n</a> (InputIt first, Size <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, OutputIt result) -&gt; OutputIt</td></tr>
+<tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">copy_n</a> (InputIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, OutputIt result) -&gt; OutputIt</td></tr>
 <tr class="memdesc:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies exactly count values from the range beginning at first to the range beginning at result. Formally, for each integer <code>0 &lt;= i &lt; count</code>, performs <code>*(result + i) = *(first + i)</code>. Overlap of ranges is formally permitted, but leads to unpredictable ordering of the results.  <a href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">More...</a><br /></td></tr>
 <tr class="separator:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -4860,6 +4871,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:af9b15653958e67cfe944d92826719780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a></td></tr>
+<tr class="separator:af9b15653958e67cfe944d92826719780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb63d88f3219c350ab03af8bd0adb5a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aedb63d88f3219c350ab03af8bd0adb5a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">is_bitmask_type_v</a> = <a class="el" href="structetl_1_1is__bitmask__type.html">is_bitmask_type</a>&lt;T&gt;::<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a></td></tr>
 <tr class="separator:aedb63d88f3219c350ab03af8bd0adb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5410,7 +5423,7 @@ Variables</h2></td></tr>
 template&lt;typename ValueType , etl::size_t Size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">etl::c_array</a> = typedef ValueType[Size]</td>
+          <td class="memname">using <a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">etl::c_array</a> = typedef ValueType[<a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7285,7 +7298,7 @@ template&lt;etl::size_t... Ints&gt; </div>
 template&lt;etl::size_t Size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">etl::make_index_sequence</a> = typedef <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a>&lt;<a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>, Size&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">etl::make_index_sequence</a> = typedef <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a>&lt;<a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7317,7 +7330,7 @@ template&lt;typename... T&gt; </div>
 template&lt;typename T , T Size&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a> = typedef <a class="el" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">TETL_BUILTIN_INT_SEQ</a>(T, Size)</td>
+          <td class="memname">using <a class="el" href="namespaceetl.html#ac5bd86337786fcf4b5b9ff86cdb9674d">etl::make_integer_sequence</a> = typedef <a class="el" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">TETL_BUILTIN_INT_SEQ</a>(T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8226,7 +8239,7 @@ template&lt;typename OutputIt , typename Size , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Size&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
@@ -8756,7 +8769,7 @@ template&lt;typename InputIt , typename Size , typename UnaryFunc &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Size&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -12025,7 +12038,7 @@ template&lt;typename ForwardIt , typename Size , typename ValueT , typename Pred
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Size&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
@@ -12084,7 +12097,7 @@ template&lt;typename ForwardIt , typename Size , typename ValueT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Size&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
@@ -13713,7 +13726,7 @@ template&lt;size_t Index, typename T , size_t Size&gt; </div>
         <tr>
           <td class="memname">constexpr auto etl::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td> -&gt; T&amp;
 </td>
@@ -13744,7 +13757,7 @@ template&lt;size_t Index, typename T , size_t Size&gt; </div>
         <tr>
           <td class="memname">constexpr auto etl::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td> -&gt; T const&amp;
 </td>
@@ -13773,7 +13786,7 @@ template&lt;size_t Index, typename T , size_t Size&gt; </div>
         <tr>
           <td class="memname">constexpr auto etl::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td> -&gt; T&amp;&amp;
 </td>
@@ -13802,7 +13815,7 @@ template&lt;size_t Index, typename T , size_t Size&gt; </div>
         <tr>
           <td class="memname">constexpr auto etl::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; const &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;&amp;&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td> -&gt; T const&amp;&amp;
 </td>
@@ -13876,8 +13889,107 @@ template&lt;typename T , size_t N&gt; </div>
 
 </div>
 </div>
+<a id="a877cfa73ea6690339843c3f5b79ca3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a877cfa73ea6690339843c3f5b79ca3a7">&#9670;&nbsp;</a></span>requires() <span class="overload">[1/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::detail::sufficiently_trivial T, etl::size_t Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">etl::requires </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> !&#160;</td>
+          <td class="paramname"> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a321af167e669a0c72a867748fffff377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321af167e669a0c72a867748fffff377">&#9670;&nbsp;</a></span>uninitialized_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structetl_1_1uninitialized__array.html">etl::uninitialized_array</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c0bdae2655a0ed9121aeca58640e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c0bdae2655a0ed9121aeca58640e9a">&#9670;&nbsp;</a></span>data() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; T const* </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="numeric_8cpp-example.html#a4">numeric.cpp</a>, and <a class="el" href="set_8cpp-example.html#a4">set.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a0db1ad433c808f8aabe48a2061e633dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db1ad433c808f8aabe48a2061e633dc">&#9670;&nbsp;</a></span>size() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto etl::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="numeric_8cpp-example.html#a10">numeric.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="a2836fac65c2a00e47c70508d8d837b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2836fac65c2a00e47c70508d8d837b3e">&#9670;&nbsp;</a></span>requires() <span class="overload">[1/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2836fac65c2a00e47c70508d8d837b3e">&#9670;&nbsp;</a></span>requires() <span class="overload">[2/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15656,7 +15768,7 @@ template&lt;etl::size_t N&gt; </div>
 </div>
 </div>
 <a id="a3af75f924fd190d7f6d474cb87ef402f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3af75f924fd190d7f6d474cb87ef402f">&#9670;&nbsp;</a></span>requires() <span class="overload">[2/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af75f924fd190d7f6d474cb87ef402f">&#9670;&nbsp;</a></span>requires() <span class="overload">[3/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -15678,7 +15790,7 @@ template&lt;integral Int&gt; </div>
 </div>
 </div>
 <a id="a452f2e21f389de11e116d5ebf191b039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452f2e21f389de11e116d5ebf191b039">&#9670;&nbsp;</a></span>requires() <span class="overload">[3/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a452f2e21f389de11e116d5ebf191b039">&#9670;&nbsp;</a></span>requires() <span class="overload">[4/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -23862,7 +23974,7 @@ template&lt;typename Integer &gt; </div>
 </div>
 </div>
 <a id="aa2348f97d6b5181e2a119bafbde11ba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2348f97d6b5181e2a119bafbde11ba2">&#9670;&nbsp;</a></span>requires() <span class="overload">[4/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2348f97d6b5181e2a119bafbde11ba2">&#9670;&nbsp;</a></span>requires() <span class="overload">[5/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -29555,7 +29667,7 @@ template&lt;typename F , typename... Args&gt; </div>
 </div>
 </div>
 <a id="a098cf0c6342ba8a4438b83a411d96c11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a098cf0c6342ba8a4438b83a411d96c11">&#9670;&nbsp;</a></span>requires() <span class="overload">[5/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a098cf0c6342ba8a4438b83a411d96c11">&#9670;&nbsp;</a></span>requires() <span class="overload">[6/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -29996,7 +30108,7 @@ template&lt;typename C &gt; </div>
 </div>
 </div>
 <a id="a259846a061a975e4b40bc6f370701ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a259846a061a975e4b40bc6f370701ac6">&#9670;&nbsp;</a></span>data() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a259846a061a975e4b40bc6f370701ac6">&#9670;&nbsp;</a></span>data() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -30023,13 +30135,11 @@ template&lt;typename C &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a pointer to the block of memory containing the elements of the container. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="numeric_8cpp-example.html#a4">numeric.cpp</a>, and <a class="el" href="set_8cpp-example.html#a4">set.cpp</a>.</dd>
-</dl>
 
 </div>
 </div>
 <a id="a76360f238bdab5ae903a7b8b987ab5ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76360f238bdab5ae903a7b8b987ab5ac">&#9670;&nbsp;</a></span>data() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a76360f238bdab5ae903a7b8b987ab5ac">&#9670;&nbsp;</a></span>data() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -30058,7 +30168,7 @@ template&lt;typename C &gt; </div>
 </div>
 </div>
 <a id="ad94411a453e2a44d4e6b6bf3160b4cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad94411a453e2a44d4e6b6bf3160b4cf0">&#9670;&nbsp;</a></span>data() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94411a453e2a44d4e6b6bf3160b4cf0">&#9670;&nbsp;</a></span>data() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -30398,7 +30508,7 @@ template&lt;typename T , size_t N&gt; </div>
 </div>
 </div>
 <a id="a5eceb5be7f1b46a92d50cb5790ef23fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eceb5be7f1b46a92d50cb5790ef23fa">&#9670;&nbsp;</a></span>requires() <span class="overload">[6/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eceb5be7f1b46a92d50cb5790ef23fa">&#9670;&nbsp;</a></span>requires() <span class="overload">[7/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31099,7 +31209,7 @@ template&lt;typename Iterator1 , typename Iterator2 &gt; </div>
 </div>
 </div>
 <a id="af3008e042f920b06e2a67b1aa31a1803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3008e042f920b06e2a67b1aa31a1803">&#9670;&nbsp;</a></span>size() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3008e042f920b06e2a67b1aa31a1803">&#9670;&nbsp;</a></span>size() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31126,13 +31236,11 @@ template&lt;typename C &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the size of the given container c or array array. Returns c.size(), converted to the return type if necessary. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="numeric_8cpp-example.html#a10">numeric.cpp</a>.</dd>
-</dl>
 
 </div>
 </div>
 <a id="ab2e3325c99005cfa2cad0752fe472c61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2e3325c99005cfa2cad0752fe472c61">&#9670;&nbsp;</a></span>size() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e3325c99005cfa2cad0752fe472c61">&#9670;&nbsp;</a></span>size() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31604,7 +31712,7 @@ template&lt;auto Base&gt; </div>
 </div>
 </div>
 <a id="a07f47998ffec36802839b7fed6d45cfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f47998ffec36802839b7fed6d45cfa">&#9670;&nbsp;</a></span>requires() <span class="overload">[7/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f47998ffec36802839b7fed6d45cfa">&#9670;&nbsp;</a></span>requires() <span class="overload">[8/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31624,7 +31732,7 @@ template&lt;typename... Integrals&gt; </div>
 </div>
 </div>
 <a id="a7c58fbe86b83c9dcf5d5f8b2782586c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c58fbe86b83c9dcf5d5f8b2782586c5">&#9670;&nbsp;</a></span>requires() <span class="overload">[8/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c58fbe86b83c9dcf5d5f8b2782586c5">&#9670;&nbsp;</a></span>requires() <span class="overload">[9/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31644,7 +31752,7 @@ template&lt;typename CArray &gt; </div>
 </div>
 </div>
 <a id="af302385ee3f32bd28048db514b905a0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af302385ee3f32bd28048db514b905a0c">&#9670;&nbsp;</a></span>requires() <span class="overload">[9/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af302385ee3f32bd28048db514b905a0c">&#9670;&nbsp;</a></span>requires() <span class="overload">[10/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31664,7 +31772,7 @@ template&lt;typename Pointer &gt; </div>
 </div>
 </div>
 <a id="a8efcf240a782c1116a4eb4782739d7f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efcf240a782c1116a4eb4782739d7f9">&#9670;&nbsp;</a></span>requires() <span class="overload">[10/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efcf240a782c1116a4eb4782739d7f9">&#9670;&nbsp;</a></span>requires() <span class="overload">[11/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31826,7 +31934,7 @@ template&lt;typename OffsetType , typename ExtentType , typename StrideType &gt;
 </div>
 </div>
 <a id="a7c233c3cfa75e4228eaaa7664506dbc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c233c3cfa75e4228eaaa7664506dbc7">&#9670;&nbsp;</a></span>requires() <span class="overload">[11/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c233c3cfa75e4228eaaa7664506dbc7">&#9670;&nbsp;</a></span>requires() <span class="overload">[12/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -31857,7 +31965,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ab3edffa6af6cd6422babaa5014a3edfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3edffa6af6cd6422babaa5014a3edfe">&#9670;&nbsp;</a></span>requires() <span class="overload">[12/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3edffa6af6cd6422babaa5014a3edfe">&#9670;&nbsp;</a></span>requires() <span class="overload">[13/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -32132,7 +32240,7 @@ template&lt;typename ForwardIt , typename Size &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Size&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -32185,7 +32293,7 @@ template&lt;typename Ptr &gt; </div>
 </div>
 </div>
 <a id="a5f9c482d4902a3f7e3af12f0e66963ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f9c482d4902a3f7e3af12f0e66963ed">&#9670;&nbsp;</a></span>requires() <span class="overload">[13/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9c482d4902a3f7e3af12f0e66963ed">&#9670;&nbsp;</a></span>requires() <span class="overload">[14/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -32767,7 +32875,7 @@ template&lt;typename ForwardIt , typename T &gt; </div>
 </div>
 </div>
 <a id="aef7559b6c18305a231bf5af00443a906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7559b6c18305a231bf5af00443a906">&#9670;&nbsp;</a></span>requires() <span class="overload">[14/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7559b6c18305a231bf5af00443a906">&#9670;&nbsp;</a></span>requires() <span class="overload">[15/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -32790,7 +32898,7 @@ template&lt;typename M , typename N &gt; </div>
 </div>
 </div>
 <a id="ad78c67d300e374415b47132bd5343d85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad78c67d300e374415b47132bd5343d85">&#9670;&nbsp;</a></span>requires() <span class="overload">[15/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78c67d300e374415b47132bd5343d85">&#9670;&nbsp;</a></span>requires() <span class="overload">[16/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -33234,7 +33342,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a292197c3724e916aa8255a622fac6917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a292197c3724e916aa8255a622fac6917">&#9670;&nbsp;</a></span>requires() <span class="overload">[16/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a292197c3724e916aa8255a622fac6917">&#9670;&nbsp;</a></span>requires() <span class="overload">[17/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -34923,7 +35031,7 @@ template&lt;typename T , size_t N&gt; </div>
 </div>
 </div>
 <a id="a214ed44ede7f5b18e511d0a699b5af18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a214ed44ede7f5b18e511d0a699b5af18">&#9670;&nbsp;</a></span>requires() <span class="overload">[17/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a214ed44ede7f5b18e511d0a699b5af18">&#9670;&nbsp;</a></span>requires() <span class="overload">[18/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -34976,9 +35084,9 @@ template&lt;typename Type , etl::size_t Size&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1span.html">etl::span</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, Size &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="structetl_1_1span.html">span</a>&lt; Type, Size &gt;</td>
+          <td> -&gt;  <a class="el" href="structetl_1_1span.html">span</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -34996,9 +35104,9 @@ template&lt;typename Type , etl::size_t Size&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1span.html">etl::span</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, Size &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">etl::array</a>&lt; Type, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="structetl_1_1span.html">span</a>&lt; Type const, Size &gt;</td>
+          <td> -&gt;  <a class="el" href="structetl_1_1span.html">span</a>&lt; Type const, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -35066,7 +35174,7 @@ template&lt;typename Container &gt; </div>
 </div>
 </div>
 <a id="a335349cd6aae9e810496caeba2c8c7cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335349cd6aae9e810496caeba2c8c7cd">&#9670;&nbsp;</a></span>requires() <span class="overload">[18/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a335349cd6aae9e810496caeba2c8c7cd">&#9670;&nbsp;</a></span>requires() <span class="overload">[19/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -38195,7 +38303,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a904a2454aba7d55b9ff9918d3ca2bc23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904a2454aba7d55b9ff9918d3ca2bc23">&#9670;&nbsp;</a></span>requires() <span class="overload">[19/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a904a2454aba7d55b9ff9918d3ca2bc23">&#9670;&nbsp;</a></span>requires() <span class="overload">[20/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -38233,7 +38341,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a53ba91687b857ba136bf8979ce65352b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ba91687b857ba136bf8979ce65352b">&#9670;&nbsp;</a></span>requires() <span class="overload">[20/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ba91687b857ba136bf8979ce65352b">&#9670;&nbsp;</a></span>requires() <span class="overload">[21/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -39253,7 +39361,7 @@ template&lt;size_t I, typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="a039de8a03db5998c4a426dcb8a99768b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a039de8a03db5998c4a426dcb8a99768b">&#9670;&nbsp;</a></span>requires() <span class="overload">[21/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a039de8a03db5998c4a426dcb8a99768b">&#9670;&nbsp;</a></span>requires() <span class="overload">[22/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -39295,7 +39403,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a9bb415a657944fa6c433f795fdb3a0b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bb415a657944fa6c433f795fdb3a0b6">&#9670;&nbsp;</a></span>requires() <span class="overload">[22/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb415a657944fa6c433f795fdb3a0b6">&#9670;&nbsp;</a></span>requires() <span class="overload">[23/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -39621,7 +39729,7 @@ template&lt;typename... Functor&gt; </div>
 </div>
 </div>
 <a id="a127a9420152769a476a9e4820580c807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a127a9420152769a476a9e4820580c807">&#9670;&nbsp;</a></span>requires() <span class="overload">[23/23]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a127a9420152769a476a9e4820580c807">&#9670;&nbsp;</a></span>requires() <span class="overload">[24/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40940,6 +41048,22 @@ template&lt;typename... Types&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="af9b15653958e67cfe944d92826719780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b15653958e67cfe944d92826719780">&#9670;&nbsp;</a></span>Size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">etl::Size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="keyword">using</span> value_type = T</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="aedb63d88f3219c350ab03af8bd0adb5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedb63d88f3219c350ab03af8bd0adb5a">&#9670;&nbsp;</a></span>is_bitmask_type_v</h2>
 

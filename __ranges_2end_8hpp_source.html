@@ -121,9 +121,9 @@ $(document).ready(function(){initNavTree('__ranges_2end_8hpp_source.html',''); i
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct </span>fn {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(<span class="keyword">sizeof</span>(T) &gt;= 0) <span class="comment">// NOLINT(bugprone-sizeof-expression)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> operator()(T (&amp;t)[Size]) <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> operator()(T (&amp;t)[<a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>]) <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> t + Size;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> t + <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;has_member_end T&gt;</div>
@@ -159,6 +159,7 @@ $(document).ready(function(){initNavTree('__ranges_2end_8hpp_source.html',''); i
 <div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
 <div class="ttc" id="anamespaceetl_html_a2b146153934880dc3e2994a848584226"><div class="ttname"><a href="namespaceetl.html#a2b146153934880dc3e2994a848584226">etl::decay_copy</a></div><div class="ttdeci">constexpr auto decay_copy(T &amp;&amp;t) noexcept(is_nothrow_convertible_v&lt; T, decay_t&lt; T &gt;&gt;) -&gt; decay_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> decay_copy.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html_af9b15653958e67cfe944d92826719780"><div class="ttname"><a href="namespaceetl.html#af9b15653958e67cfe944d92826719780">etl::Size</a></div><div class="ttdeci">Size</div><div class="ttdef"><b>Definition:</b> uninitialized_array.hpp:40</div></div>
 <div class="ttc" id="asentinel__for_8hpp_html"><div class="ttname"><a href="sentinel__for_8hpp.html">sentinel_for.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

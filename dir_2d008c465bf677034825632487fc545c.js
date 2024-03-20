@@ -5,5 +5,6 @@ var dir_2d008c465bf677034825632487fc545c =
     [ "dynamic_array.hpp", "dynamic__array_8hpp.html", [
       [ "dynamic_array", "structetl_1_1dynamic__array.html", "structetl_1_1dynamic__array" ]
     ] ],
-    [ "to_array.hpp", "to__array_8hpp.html", "to__array_8hpp" ]
+    [ "to_array.hpp", "to__array_8hpp.html", "to__array_8hpp" ],
+    [ "uninitialized_array.hpp", "uninitialized__array_8hpp.html", "uninitialized__array_8hpp" ]
 ];

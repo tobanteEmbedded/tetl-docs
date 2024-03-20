@@ -103,6 +103,7 @@ var annotated_dup =
       [ "tuple_element< I, array< T, N > >", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4" ],
       [ "empty_c_array", "structetl_1_1empty__c__array.html", null ],
       [ "dynamic_array", "structetl_1_1dynamic__array.html", "structetl_1_1dynamic__array" ],
+      [ "uninitialized_array", "structetl_1_1uninitialized__array.html", "structetl_1_1uninitialized__array" ],
       [ "is_bitmask_type", "structetl_1_1is__bitmask__type.html", null ],
       [ "bitset", "structetl_1_1bitset.html", "structetl_1_1bitset" ],
       [ "assert_msg", "structetl_1_1assert__msg.html", "structetl_1_1assert__msg" ],

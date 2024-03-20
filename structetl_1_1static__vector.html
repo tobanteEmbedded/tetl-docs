@@ -197,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a10573fc86fc603ef5ccb61a9d9df9fef"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a10573fc86fc603ef5ccb61a9d9df9fef">static_vector</a> (Source) <a class="el" href="structetl_1_1static__vector.html#a1ea4e3cee0a96ff28338e865d7daa4a9">noexcept</a></td></tr>
 <tr class="separator:a10573fc86fc603ef5ccb61a9d9df9fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71057853749c26c9464baf762127916"><td class="memTemplParams" colspan="2">template&lt;etl::size_t Size&gt; </td></tr>
-<tr class="memitem:af71057853749c26c9464baf762127916"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#af71057853749c26c9464baf762127916">requires</a> (Size&lt;=Capacity) const expr <a class="el" href="structetl_1_1static__vector.html">static_vector</a>(<a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">c_array</a>&lt; T</td></tr>
+<tr class="memitem:af71057853749c26c9464baf762127916"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#af71057853749c26c9464baf762127916">requires</a> (<a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&lt;=Capacity) const expr <a class="el" href="structetl_1_1static__vector.html">static_vector</a>(<a class="el" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">c_array</a>&lt; T</td></tr>
 <tr class="separator:af71057853749c26c9464baf762127916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63325e80fd0e28f39e1b0f61f91c289f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a63325e80fd0e28f39e1b0f61f91c289f">static_vector</a> (<a class="el" href="structetl_1_1static__vector.html">static_vector</a> const &amp;other) <a class="el" href="structetl_1_1static__vector.html#a1ea4e3cee0a96ff28338e865d7daa4a9">noexcept</a>(<a class="el" href="structetl_1_1static__vector.html#a1ea4e3cee0a96ff28338e865d7daa4a9">noexcept</a>(<a class="el" href="structetl_1_1static__vector.html#a6a127a41e07b102ce768a7cf00787392">insert</a>(<a class="el" href="structetl_1_1static__vector.html#a9a3d33d04701a490e1c56d6b69f9ea4c">begin</a>(), other.begin(), other.end())))</td></tr>
 <tr class="memdesc:a63325e80fd0e28f39e1b0f61f91c289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="structetl_1_1static__vector.html#a63325e80fd0e28f39e1b0f61f91c289f">More...</a><br /></td></tr>
@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4cc72bbb12fe24db1b9a77ba895ee3be"><td class="memItemLeft" align="right" valign="top">InIt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a4cc72bbb12fe24db1b9a77ba895ee3be">first</a></td></tr>
 <tr class="separator:a4cc72bbb12fe24db1b9a77ba895ee3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5121b24f85e44c624ede8f00e5d5e6c5"><td class="memItemLeft" align="right" valign="top">Size &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a5121b24f85e44c624ede8f00e5d5e6c5">source</a></td></tr>
+<tr class="memitem:a5121b24f85e44c624ede8f00e5d5e6c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a5121b24f85e44c624ede8f00e5d5e6c5">source</a></td></tr>
 <tr class="separator:a5121b24f85e44c624ede8f00e5d5e6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e9f0eea2bc5e480387c634abdaecac7"><td class="memItemLeft" align="right" valign="top">InputIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1static__vector.html#a5e9f0eea2bc5e480387c634abdaecac7">last</a></td></tr>
 <tr class="separator:a5e9f0eea2bc5e480387c634abdaecac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1421,7 +1421,7 @@ template&lt;etl::size_t Size&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1static__vector.html">etl::static_vector</a>&lt; T, Capacity &gt;::requires </td>
           <td>(</td>
-          <td class="paramtype">Size&lt;=&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&lt;=&#160;</td>
           <td class="paramname"><em>Capacity</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2073,7 +2073,7 @@ template&lt;typename T , size_t Capacity&gt; </div>
 template&lt;typename T , size_t Capacity&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Size&amp;&amp; <a class="el" href="structetl_1_1static__vector.html">etl::static_vector</a>&lt; T, Capacity &gt;::source</td>
+          <td class="memname"><a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>&amp;&amp; <a class="el" href="structetl_1_1static__vector.html">etl::static_vector</a>&lt; T, Capacity &gt;::source</td>
         </tr>
       </table>
 </div><div class="memdoc">

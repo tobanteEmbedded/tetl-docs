@@ -675,6 +675,7 @@ var hierarchy =
     [ "etl::unexpected< E >", "structetl_1_1unexpected.html", null ],
     [ "etl::uniform_int_distribution< IntType >", "structetl_1_1uniform__int__distribution.html", null ],
     [ "etl::uniform_real_distribution< RealType >", "structetl_1_1uniform__real__distribution.html", null ],
+    [ "etl::uninitialized_array< T, Size >", "structetl_1_1uninitialized__array.html", null ],
     [ "etl::uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
     [ "etl::unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
     [ "etl::unwrap_reference< T >", "structetl_1_1unwrap__reference.html", null ],

@@ -124,13 +124,13 @@ $(document).ready(function(){initNavTree('__ranges_2size_8hpp_source.html',''); 
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> operator()(<a class="code" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">etl::c_array&lt;T, Size&gt;</a>&amp; <span class="comment">/*t*/</span>) <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> Size;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> operator()(<a class="code" href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">etl::c_array&lt;T, Size&gt;</a>&amp;&amp; <span class="comment">/*t*/</span>) const <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> Size;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">template</span> &lt;has_member_size T&gt;</div>
@@ -169,6 +169,7 @@ $(document).ready(function(){initNavTree('__ranges_2size_8hpp_source.html',''); 
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_a568b4df04642a2e727b3a8b201f2e450"><div class="ttname"><a href="namespaceetl.html#a568b4df04642a2e727b3a8b201f2e450">etl::c_array</a></div><div class="ttdeci">ValueType[Size] c_array</div><div class="ttdef"><b>Definition:</b> c_array.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_html_ac4daf60f1f070c94586efbcf55d6e84f"><div class="ttname"><a href="namespaceetl.html#ac4daf60f1f070c94586efbcf55d6e84f">etl::integral</a></div><div class="ttdeci">concept integral</div><div class="ttdoc">The concept integral&lt;T&gt; is satisfied if and only if T is an integral type.</div><div class="ttdef"><b>Definition:</b> integral.hpp:13</div></div>
+<div class="ttc" id="anamespaceetl_html_af9b15653958e67cfe944d92826719780"><div class="ttname"><a href="namespaceetl.html#af9b15653958e67cfe944d92826719780">etl::Size</a></div><div class="ttdeci">Size</div><div class="ttdef"><b>Definition:</b> uninitialized_array.hpp:40</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
