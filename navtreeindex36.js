@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"uses__allocator_8hpp.html":[9,0,1,0,37,18],
+"uses__allocator_8hpp.html#a16cf19d8af06969d839fa909ad6e184f":[9,0,1,0,37,18,1],
 "uses__allocator_8hpp_source.html":[9,0,1,0,37,18],
 "utility_8cpp-example.html":[10,13],
 "utility_8hpp.html":[9,0,1,0,120],

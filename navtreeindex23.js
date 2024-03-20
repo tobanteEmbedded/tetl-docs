@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"strtof_8hpp_source.html":[9,0,1,0,20,12],
+"strtol_8hpp.html":[9,0,1,0,20,13],
 "strtol_8hpp.html#a4892f7bf3b9db8e5a5b3476de9f04c07":[9,0,1,0,20,13,0],
 "strtol_8hpp.html#a53416ace17ca278512fca91c7ba514a9":[9,0,1,0,20,13,1],
 "strtol_8hpp_source.html":[9,0,1,0,20,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "structetl_1_1basic__string__view.html#a828875ca257a1aabe971e27765c28000":[8,0,0,248,43],
 "structetl_1_1basic__string__view.html#a894fd58e4ecf82055726bc5799c85e1b":[8,0,0,248,23],
 "structetl_1_1basic__string__view.html#a8a71c9f3e57db2ecbecc038f38539d71":[8,0,0,248,1],
-"structetl_1_1basic__string__view.html#a8ca2da966a7da334adead6d0e35fc539":[8,0,0,248,26],
-"structetl_1_1basic__string__view.html#a8eaa231bdcfe7171442cce9ad9b49697":[8,0,0,248,52],
-"structetl_1_1basic__string__view.html#a973435d2216ba5bc63663c5c4eee7405":[8,0,0,248,82]
+"structetl_1_1basic__string__view.html#a8ca2da966a7da334adead6d0e35fc539":[8,0,0,248,26]
 };

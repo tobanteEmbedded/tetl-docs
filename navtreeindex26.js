@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structetl_1_1expected.html#a3c080fda38762694a4672a0a18231daa":[8,0,0,34,4],
+"structetl_1_1expected.html#a3c6b9c358d2e4be35041d7d08e2b91d2":[8,0,0,34,22],
 "structetl_1_1expected.html#a4c1b5b1f9ed3d2d584153330f79605a9":[8,0,0,34,11],
 "structetl_1_1expected.html#a4e11e1e583b06d8ac87882408d9855e5":[8,0,0,34,8],
 "structetl_1_1expected.html#a5141d67ddf3599f19068268604ed8fe5":[8,0,0,34,1],
@@ -125,12 +127,12 @@ var NAVTREEINDEX26 =
 "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__flag__type.html":[8,0,0,1,11],
 "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__mask.html":[8,0,0,1,3,6],
 "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__mask.html":[8,0,0,1,10],
-"structetl_1_1experimental_1_1parallelism__v2_1_1memory__alignment.html":[8,0,0,1,13],
 "structetl_1_1experimental_1_1parallelism__v2_1_1memory__alignment.html":[8,0,0,1,3,9],
+"structetl_1_1experimental_1_1parallelism__v2_1_1memory__alignment.html":[8,0,0,1,13],
 "structetl_1_1experimental_1_1parallelism__v2_1_1overaligned__tag.html":[8,0,0,1,3,3],
 "structetl_1_1experimental_1_1parallelism__v2_1_1overaligned__tag.html":[8,0,0,1,7],
-"structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html":[8,0,0,1,14],
 "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html":[8,0,0,1,3,10],
+"structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html":[8,0,0,1,14],
 "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html#a4d307a44fc4b3dab21d8db610dd74a0a":[8,0,0,1,3,10,0],
 "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html#a4d307a44fc4b3dab21d8db610dd74a0a":[8,0,0,1,14,0],
 "structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html":[8,0,0,1,3,11],
@@ -145,8 +147,8 @@ var NAVTREEINDEX26 =
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__abi_1_1deduce.html#a792e5a04dc089977d1af88707b189b0d":[8,0,0,1,4,0,0],
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html":[8,0,0,1,3,13],
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html":[8,0,0,1,17],
-"structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html":[8,0,0,1,3,8],
 "structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html":[8,0,0,1,12],
+"structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html":[8,0,0,1,3,8],
 "structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html":[8,0,0,1,3,2],
 "structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html":[8,0,0,1,6],
 "structetl_1_1experimental_1_1parallelism__v2_1_1where__expression.html":[8,0,0,1,3,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structetl_1_1flat__set.html#af2f253e3d7647c73094a5974b9ed95f7":[8,0,0,37,32],
 "structetl_1_1format__to__n__result.html":[8,0,0,45],
 "structetl_1_1format__to__n__result.html#a1f0b7d725b8b4eafe1588eeff1fe26d8":[8,0,0,45,0],
-"structetl_1_1format__to__n__result.html#a21ef77e0435ea6f8568706c30bf8691e":[8,0,0,45,1],
-"structetl_1_1formatter.html":[8,0,0,41],
-"structetl_1_1formatter.html#a6c920cb79fd28bbf7cdd59ac14972943":[8,0,0,41,1]
+"structetl_1_1format__to__n__result.html#a21ef77e0435ea6f8568706c30bf8691e":[8,0,0,45,1]
 };

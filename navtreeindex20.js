@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"namespaceetl_1_1placeholders.html#af2882edf57bce4f3b9a5fe4b56877496":[7,0,0,6,8],
+"namespaceetl_1_1ranges.html":[7,0,0,7],
 "namespaceetl_1_1ranges.html#a07d93a32453f6f71af9749099236bf87":[7,0,0,7,6],
 "namespaceetl_1_1ranges.html#a109806e71c68af6e9a90350dd5051aa9":[7,0,0,7,13],
 "namespaceetl_1_1ranges.html#a1811ff006304c16c290c13573752a099":[7,0,0,7,8],
@@ -30,8 +32,8 @@ var NAVTREEINDEX20 =
 "namespaceliterals.html#a9f3cdd0967ba4da1fdba5ed283e3bdf9":[7,0,1,4],
 "namespaceliterals.html#ac17200b86056a4050b8b69dd4db6ae00":[7,0,1,2],
 "namespaceliterals.html#ae41e5eaf40b62be3932f4a3cd4ca0a6c":[7,0,1,5],
-"namespacemembers.html":[7,1,0,0],
 "namespacemembers.html":[7,1,0],
+"namespacemembers.html":[7,1,0,0],
 "namespacemembers_a.html":[7,1,0,1],
 "namespacemembers_b.html":[7,1,0,2],
 "namespacemembers_c.html":[7,1,0,3],
@@ -40,8 +42,8 @@ var NAVTREEINDEX20 =
 "namespacemembers_enum.html":[7,1,4],
 "namespacemembers_eval.html":[7,1,5],
 "namespacemembers_f.html":[7,1,0,6],
-"namespacemembers_func.html":[7,1,1],
 "namespacemembers_func.html":[7,1,1,0],
+"namespacemembers_func.html":[7,1,1],
 "namespacemembers_func_b.html":[7,1,1,1],
 "namespacemembers_func_c.html":[7,1,1,2],
 "namespacemembers_func_d.html":[7,1,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "placeholder_8hpp.html#a8536cb404bb7b9cb02781db038531a4f":[9,0,1,0,29,28,35],
 "placeholder_8hpp.html#a9ea920ac1565a2af8ac8624c92dd36bc":[9,0,1,0,29,28,28],
 "placeholder_8hpp.html#aa10fa334a959cad791ee6037f16b1ecb":[9,0,1,0,29,28,7],
-"placeholder_8hpp.html#aaccde6a40aa04f0d175cab4d316521e0":[9,0,1,0,29,28,15],
-"placeholder_8hpp.html#aba646ecdf37f3cba5fa69e0919043d88":[9,0,1,0,29,28,10],
-"placeholder_8hpp.html#abca6a863879f4b7b009d7547e2974e7d":[9,0,1,0,29,28,27]
+"placeholder_8hpp.html#aaccde6a40aa04f0d175cab4d316521e0":[9,0,1,0,29,28,15]
 };
