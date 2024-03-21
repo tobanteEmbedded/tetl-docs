@@ -200,6 +200,7 @@ var hierarchy =
     [ "etl::inplace_function< Signature, Capacity, Alignment >", "structetl_1_1inplace__function.html", null ],
     [ "etl::inplace_function< R(Args...), Capacity, Alignment >", "structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html", null ],
     [ "etl::inplace_vector< T, Capacity >", "structetl_1_1inplace__vector.html", null ],
+    [ "etl::inplace_vector< T, 0 >", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html", null ],
     [ "etl::input_iterator_tag", "structetl_1_1input__iterator__tag.html", [
       [ "etl::forward_iterator_tag", "structetl_1_1forward__iterator__tag.html", [
         [ "etl::bidirectional_iterator_tag", "structetl_1_1bidirectional__iterator__tag.html", [
