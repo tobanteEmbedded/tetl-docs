@@ -199,6 +199,7 @@ var hierarchy =
     [ "etl::indirectly_readable_traits< I >", "structetl_1_1indirectly__readable__traits_3_01I_01_4.html", null ],
     [ "etl::inplace_function< Signature, Capacity, Alignment >", "structetl_1_1inplace__function.html", null ],
     [ "etl::inplace_function< R(Args...), Capacity, Alignment >", "structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html", null ],
+    [ "etl::inplace_vector< T, Capacity >", "structetl_1_1inplace__vector.html", null ],
     [ "etl::input_iterator_tag", "structetl_1_1input__iterator__tag.html", [
       [ "etl::forward_iterator_tag", "structetl_1_1forward__iterator__tag.html", [
         [ "etl::bidirectional_iterator_tag", "structetl_1_1bidirectional__iterator__tag.html", [
@@ -676,6 +677,7 @@ var hierarchy =
     [ "etl::uniform_int_distribution< IntType >", "structetl_1_1uniform__int__distribution.html", null ],
     [ "etl::uniform_real_distribution< RealType >", "structetl_1_1uniform__real__distribution.html", null ],
     [ "etl::uninitialized_array< T, Size >", "structetl_1_1uninitialized__array.html", null ],
+    [ "etl::uninitialized_array< T, Capacity >", "structetl_1_1uninitialized__array.html", null ],
     [ "etl::uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
     [ "etl::unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
     [ "etl::unwrap_reference< T >", "structetl_1_1unwrap__reference.html", null ],

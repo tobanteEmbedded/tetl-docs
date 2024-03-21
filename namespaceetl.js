@@ -247,6 +247,7 @@ var namespaceetl =
     [ "plus", "structetl_1_1plus.html", "structetl_1_1plus" ],
     [ "plus< void >", "structetl_1_1plus_3_01void_01_4.html", "structetl_1_1plus_3_01void_01_4" ],
     [ "reference_wrapper", "structetl_1_1reference__wrapper.html", "structetl_1_1reference__wrapper" ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html", "structetl_1_1inplace__vector" ],
     [ "basic_streambuf", "structetl_1_1basic__streambuf.html", "structetl_1_1basic__streambuf" ],
     [ "basic_stringbuf", "structetl_1_1basic__stringbuf.html", "structetl_1_1basic__stringbuf" ],
     [ "ios_base", "structetl_1_1ios__base.html", "structetl_1_1ios__base" ],

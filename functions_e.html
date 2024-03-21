@@ -115,6 +115,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="structetl_1_1basic__string__view.html#a3e81279af8f68faec94759d96b317ce7">etl::basic_string_view&lt; CharType, Traits &gt;</a>
 , <a class="el" href="structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#ab67041a34f6cc2d2be387b695c3267d5">etl::experimental::freertos::stream_buffer</a>
 , <a class="el" href="structetl_1_1flat__set.html#a4c1b4e7cf6651629bd7f66b5d7040152">etl::flat_set&lt; Key, Container, Compare &gt;</a>
+, <a class="el" href="structetl_1_1inplace__vector.html#acb8561978d7354d3e17198fecbf5a10a">etl::inplace_vector&lt; T, Capacity &gt;</a>
 , <a class="el" href="structetl_1_1mdspan.html#a8d1d94d53057ac5e888a44c3d8308d3a">etl::mdspan&lt; ElementType, Extents, LayoutPolicy, AccessorPolicy &gt;</a>
 , <a class="el" href="structetl_1_1span.html#afab8496dde141f7cfa992d6808dd634f">etl::span&lt; ElementType, Extent &gt;</a>
 , <a class="el" href="structetl_1_1stack.html#a0779b3c0c0afb8cfb304e6b4e1d1efb9">etl::stack&lt; T, Container &gt;</a>
@@ -127,9 +128,10 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="structetl_1_1basic__string__view.html#a894fd58e4ecf82055726bc5799c85e1b">etl::basic_string_view&lt; CharType, Traits &gt;</a>
 , <a class="el" href="structetl_1_1dynamic__array.html#af7d4d0db243ffb4f69377a7e1661abfe">etl::dynamic_array&lt; T, Allocator &gt;</a>
 , <a class="el" href="structetl_1_1flat__set.html#a06ce3eed2e6ee1488d7b932923bae3bc">etl::flat_set&lt; Key, Container, Compare &gt;</a>
+, <a class="el" href="structetl_1_1inplace__vector.html#a29b97bf32330cf7f1aa1476b2aa1cecd">etl::inplace_vector&lt; T, Capacity &gt;</a>
 , <a class="el" href="structetl_1_1ios__base.html#a5683b6b4391a755f0b040ac97be9878d">etl::ios_base</a>
 , <a class="el" href="structetl_1_1span.html#a67fa4632156b842915857669bf9bf8cb">etl::span&lt; ElementType, Extent &gt;</a>
-, <a class="el" href="structetl_1_1static__set.html#ad9c74bb359a7678aab9af9306e468b1b">etl::static_set&lt; Key, Capacity, Compare &gt;</a>
+, <a class="el" href="structetl_1_1static__set.html#a3e84d33eaf9c3c6151a9725229f7cb2c">etl::static_set&lt; Key, Capacity, Compare &gt;</a>
 , <a class="el" href="structetl_1_1static__vector.html#a50211eb15d9af6981ab12e4ea0a0c8e2">etl::static_vector&lt; T, Capacity &gt;</a>
 , <a class="el" href="structetl_1_1string__constant.html#a87041a01e24e1170dd22e0e324803be3">etl::string_constant&lt; CharT, Chars &gt;</a>
 , <a class="el" href="structetl_1_1vector.html#ab7f19fe76066b874bc520009d4fd45ae">etl::vector&lt; T, Allocator &gt;</a>
@@ -173,7 +175,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="structetl_1_1strong__ordering.html#acf4cb14b8d16c91cac7b7d3d88a53681">etl::strong_ordering</a>
 </li>
 <li>equal_range()
-: <a class="el" href="structetl_1_1flat__set.html#aa96b4052f2d3aefd703f882bb5de109f">etl::flat_set&lt; Key, Container, Compare &gt;</a>
+: <a class="el" href="structetl_1_1flat__set.html#abd06c4ebcc050aa79417ef177c8dfbcf">etl::flat_set&lt; Key, Container, Compare &gt;</a>
 , <a class="el" href="structetl_1_1static__set.html#ac7ab8b97c95f0798b4dc08f20721a1a3">etl::static_set&lt; Key, Capacity, Compare &gt;</a>
 </li>
 <li>equivalent
@@ -183,8 +185,8 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 </li>
 <li>erase()
 : <a class="el" href="structetl_1_1flat__set.html#a61ee153569cf2ceff7aa55eb863eb27f">etl::flat_set&lt; Key, Container, Compare &gt;</a>
-, <a class="el" href="structetl_1_1static__set.html#a05f2a9cfe69b9418622c9d3ad2fbe468">etl::static_set&lt; Key, Capacity, Compare &gt;</a>
-, <a class="el" href="structetl_1_1static__vector.html#aa8bb25496553fc5064f042c153d74ff7">etl::static_vector&lt; T, Capacity &gt;</a>
+, <a class="el" href="structetl_1_1static__set.html#a3620b27ba365e5995b9a4b832313eb82">etl::static_set&lt; Key, Capacity, Compare &gt;</a>
+, <a class="el" href="structetl_1_1static__vector.html#a47e611615838ab68be8f059c9bc87fa1">etl::static_vector&lt; T, Capacity &gt;</a>
 </li>
 <li>error()
 : <a class="el" href="structetl_1_1expected.html#afe8c69817170c119a39119be11776c19">etl::expected&lt; T, E &gt;</a>
@@ -197,7 +199,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 : <a class="el" href="structetl_1_1exception.html#ad9be0ccb466f53fa1962ab4569a00316">etl::exception</a>
 </li>
 <li>expected()
-: <a class="el" href="structetl_1_1expected.html#a3c080fda38762694a4672a0a18231daa">etl::expected&lt; T, E &gt;</a>
+: <a class="el" href="structetl_1_1expected.html#a95eaa6bc73b886e15f9b8de218ba3d2d">etl::expected&lt; T, E &gt;</a>
 </li>
 <li>explicit()
 : <a class="el" href="structetl_1_1extents.html#ab2bb63a0b08954743cc9c49f3d46fe35">etl::extents&lt; IndexType, Extents &gt;</a>
@@ -205,7 +207,7 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 , <a class="el" href="structetl_1_1layout__right_1_1mapping.html#aea8c13ebc19f23d2bdfeae3f1b6cae5d">etl::layout_right::mapping&lt; Extents &gt;</a>
 , <a class="el" href="structetl_1_1pair.html#aba6e01c8456ce5196e19e1d7bbfbed2d">etl::pair&lt; T1, T2 &gt;</a>
 , <a class="el" href="structetl_1_1span.html#a0309a789389c32beb95ffce0e784c88e">etl::span&lt; ElementType, Extent &gt;</a>
-, <a class="el" href="structetl_1_1tuple.html#a07b30db6b5e3f1535c4c3b0452669ca1">etl::tuple&lt; Ts &gt;</a>
+, <a class="el" href="structetl_1_1tuple.html#aa54e43f10e394bd601fd97a1d8d6d5fa">etl::tuple&lt; Ts &gt;</a>
 </li>
 <li>explicit_diagonal_t()
 : <a class="el" href="structetl_1_1linalg_1_1explicit__diagonal__t.html#a3cf9ad4b1e2d4fcc0718a0b1587ea273">etl::linalg::explicit_diagonal_t</a>
