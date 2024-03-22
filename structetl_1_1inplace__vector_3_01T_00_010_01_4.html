@@ -151,9 +151,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7314c6b4c662d21f3acba258b0a26d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3676fab54708131e8f54e2d1cd73d32"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ad3676fab54708131e8f54e2d1cd73d32">operator[]</a> (<a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a4c6dcee0215fc6444e09f56e68b85ddf">size_type</a>) const -&gt; <a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a770e79228e82fb1c4b8d338b986452c2">const_reference</a></td></tr>
 <tr class="separator:ad3676fab54708131e8f54e2d1cd73d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbca85feccb1169d6653c8550aaa9790"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#adbca85feccb1169d6653c8550aaa9790">try_push_back</a> (T const &amp;) -&gt; T *</td></tr>
+<tr class="separator:adbca85feccb1169d6653c8550aaa9790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa655c727235907957c55437783267c4e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#aa655c727235907957c55437783267c4e">try_push_back</a> (T &amp;&amp;) -&gt; T *</td></tr>
+<tr class="separator:aa655c727235907957c55437783267c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50945ec57f5ef47806eee51409920e44"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a50945ec57f5ef47806eee51409920e44"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a50945ec57f5ef47806eee51409920e44">try_emplace_back</a> (Args &amp;&amp;...) -&gt; T *</td></tr>
 <tr class="separator:a50945ec57f5ef47806eee51409920e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df8cef5eb462d2966fa0500a6358740"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a0df8cef5eb462d2966fa0500a6358740">unchecked_push_back</a> (T const &amp;) -&gt; T &amp;</td></tr>
+<tr class="separator:a0df8cef5eb462d2966fa0500a6358740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd4a247ba122896e586fd5e4204fd7d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a6fd4a247ba122896e586fd5e4204fd7d">unchecked_push_back</a> (T &amp;&amp;) -&gt; T &amp;</td></tr>
+<tr class="separator:a6fd4a247ba122896e586fd5e4204fd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38546b80708e673d3ef7609611b21ad5"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a38546b80708e673d3ef7609611b21ad5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a38546b80708e673d3ef7609611b21ad5">unchecked_emplace_back</a> (Args &amp;&amp;...) -&gt; T &amp;</td></tr>
+<tr class="separator:a38546b80708e673d3ef7609611b21ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3644dc8af7d2278213900ab6e7d983"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a0f3644dc8af7d2278213900ab6e7d983">pop_back</a> () -&gt; void</td></tr>
+<tr class="separator:a0f3644dc8af7d2278213900ab6e7d983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -802,6 +815,62 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="adbca85feccb1169d6653c8550aaa9790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbca85feccb1169d6653c8550aaa9790">&#9670;&nbsp;</a></span>try_push_back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::try_push_back </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; T* </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa655c727235907957c55437783267c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa655c727235907957c55437783267c4e">&#9670;&nbsp;</a></span>try_push_back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::try_push_back </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; T* </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a50945ec57f5ef47806eee51409920e44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50945ec57f5ef47806eee51409920e44">&#9670;&nbsp;</a></span>try_emplace_back()</h2>
 
@@ -822,6 +891,120 @@ template&lt;typename... Args&gt; </div>
           <td class="paramname"><em>...</em></td><td>)</td>
           <td> -&gt; T*
     </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0df8cef5eb462d2966fa0500a6358740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df8cef5eb462d2966fa0500a6358740">&#9670;&nbsp;</a></span>unchecked_push_back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::unchecked_push_back </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; T&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fd4a247ba122896e586fd5e4204fd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd4a247ba122896e586fd5e4204fd7d">&#9670;&nbsp;</a></span>unchecked_push_back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::unchecked_push_back </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; T&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38546b80708e673d3ef7609611b21ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38546b80708e673d3ef7609611b21ad5">&#9670;&nbsp;</a></span>unchecked_emplace_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::unchecked_emplace_back </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td> -&gt; T&amp;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f3644dc8af7d2278213900ab6e7d983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3644dc8af7d2278213900ab6e7d983">&#9670;&nbsp;</a></span>pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structetl_1_1inplace__vector.html">etl::inplace_vector</a>&lt; T, 0 &gt;::pop_back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; void </td>
         </tr>
       </table>
   </td>

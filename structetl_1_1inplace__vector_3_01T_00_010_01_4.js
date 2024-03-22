@@ -28,5 +28,11 @@ var structetl_1_1inplace__vector_3_01T_00_010_01_4 =
     [ "back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ab6132c8998efa5849a32770a35cd488b", null ],
     [ "operator[]", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a7314c6b4c662d21f3acba258b0a26d0f", null ],
     [ "operator[]", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ad3676fab54708131e8f54e2d1cd73d32", null ],
-    [ "try_emplace_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a50945ec57f5ef47806eee51409920e44", null ]
+    [ "try_push_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#adbca85feccb1169d6653c8550aaa9790", null ],
+    [ "try_push_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#aa655c727235907957c55437783267c4e", null ],
+    [ "try_emplace_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a50945ec57f5ef47806eee51409920e44", null ],
+    [ "unchecked_push_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a0df8cef5eb462d2966fa0500a6358740", null ],
+    [ "unchecked_push_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a6fd4a247ba122896e586fd5e4204fd7d", null ],
+    [ "unchecked_emplace_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a38546b80708e673d3ef7609611b21ad5", null ],
+    [ "pop_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a0f3644dc8af7d2278213900ab6e7d983", null ]
 ];

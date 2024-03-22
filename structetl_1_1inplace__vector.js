@@ -12,7 +12,7 @@ var structetl_1_1inplace__vector =
     [ "reverse_iterator", "structetl_1_1inplace__vector.html#ad84bc132e9e3a17bbb4c96de6df01b61", null ],
     [ "const_reverse_iterator", "structetl_1_1inplace__vector.html#ae8119750c696dcd0834ec0fafe723cd9", null ],
     [ "inplace_vector", "structetl_1_1inplace__vector.html#a82610bd21752339da330225cafa5953e", null ],
-    [ "~inplace_vector", "structetl_1_1inplace__vector.html#a0c4c19eb2222c146db10f0e03a5a93b3", null ],
+    [ "~inplace_vector", "structetl_1_1inplace__vector.html#a0a683ce7c5c2e6583b3bbf08d0609a13", null ],
     [ "begin", "structetl_1_1inplace__vector.html#a845504f5a0e2a74c45428714390f1efa", null ],
     [ "begin", "structetl_1_1inplace__vector.html#ae7429b9edf5fcfdbe96604dab1e051ac", null ],
     [ "end", "structetl_1_1inplace__vector.html#a014431145b85bcf0fe1daa5456b8e121", null ],
@@ -30,6 +30,12 @@ var structetl_1_1inplace__vector =
     [ "operator[]", "structetl_1_1inplace__vector.html#ab9006bae29a2a3b3a2fe80b863491854", null ],
     [ "operator[]", "structetl_1_1inplace__vector.html#a50c32d10fc7bc97d4e1da0ada1c50d6d", null ],
     [ "try_emplace_back", "structetl_1_1inplace__vector.html#a8ed74f7b593037224ffd922cb6d99c7b", null ],
-    [ "inplace_vector", "structetl_1_1inplace__vector.html#ac8d4beebc2221bf28f5198ad7f5b21ec", null ],
-    [ "inplace_vector", "structetl_1_1inplace__vector.html#a94b6399e5326796a83e5620f625a80ea", null ]
+    [ "try_push_back", "structetl_1_1inplace__vector.html#ac9f25876feeedfaf6daa7668d7714f7d", null ],
+    [ "try_push_back", "structetl_1_1inplace__vector.html#aded4450ac0e55a7bed8980fe30a8e16e", null ],
+    [ "unchecked_emplace_back", "structetl_1_1inplace__vector.html#a5a88dc4133998269307a974b7d7fbd3c", null ],
+    [ "unchecked_push_back", "structetl_1_1inplace__vector.html#acef808ed1ad64c115bd0e8bc80b21942", null ],
+    [ "unchecked_push_back", "structetl_1_1inplace__vector.html#a00cb59093811a8a92850e8cdb9bd4d43", null ],
+    [ "pop_back", "structetl_1_1inplace__vector.html#ad5bf12bb18b09e9ea37d4592a04e4d97", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#a39e450188aac2a8184abf5874abf696c", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#ad14016954370c50ca545bc08e930c5a0", null ]
 ];
