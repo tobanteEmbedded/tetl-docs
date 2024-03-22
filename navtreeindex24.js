@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"structetl_1_1basic__string__view.html#a5ef7f776b57bed68c10ae7d19c7b653e":[8,0,0,251,4],
+"structetl_1_1basic__string__view.html#a6424e2c2157de30fbdadd4079868f38a":[8,0,0,251,33],
+"structetl_1_1basic__string__view.html#a672d353ac7ef35d6ae3d32df31fa10fe":[8,0,0,251,53],
 "structetl_1_1basic__string__view.html#a6b5f02a1cd2779c27b9d45a9624859e3":[8,0,0,251,42],
 "structetl_1_1basic__string__view.html#a6d91d5f4fc61a2b66e58bbea0107f31d":[8,0,0,251,20],
 "structetl_1_1basic__string__view.html#a727971fbd511ce4b60a0ada7c94cddf2":[8,0,0,251,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "structetl_1_1chrono_1_1system__clock.html#a56146a9a2ddb45f948333bd2acd76396":[8,0,0,0,11,4],
 "structetl_1_1chrono_1_1system__clock.html#a6183846b50903bf40bd0657639441b51":[8,0,0,0,11,5],
 "structetl_1_1chrono_1_1system__clock.html#ac7af8f5d204c4c07f65b290e858b0f0b":[8,0,0,0,11,7],
-"structetl_1_1chrono_1_1system__clock.html#ae6e940766a8b52b980db0251e6607522":[8,0,0,0,11,6],
-"structetl_1_1chrono_1_1time__point.html":[8,0,0,0,12],
-"structetl_1_1chrono_1_1time__point.html#a108260bb8ca546b00a0fae24b9333064":[8,0,0,0,12,5],
-"structetl_1_1chrono_1_1time__point.html#a26b50978ca6c45674de5293715f6ba3c":[8,0,0,0,12,1]
+"structetl_1_1chrono_1_1system__clock.html#ae6e940766a8b52b980db0251e6607522":[8,0,0,0,11,6]
 };

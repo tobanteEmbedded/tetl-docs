@@ -3952,7 +3952,7 @@ Functions</h2></td></tr>
 <tr class="memitem:abfe56da868069c04217458df6422d084"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abfe56da868069c04217458df6422d084">assume_aligned</a> (T *ptr) -&gt; T *</td></tr>
 <tr class="memdesc:abfe56da868069c04217458df6422d084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the implementation that the object ptr points to is aligned to at least N. The implementation may use this information to generate more efficient code, but it might only make this assumption if the object is accessed via the return value of assume_aligned.  <a href="namespaceetl.html#abfe56da868069c04217458df6422d084">More...</a><br /></td></tr>
 <tr class="separator:abfe56da868069c04217458df6422d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85baa0db208bd4de142559c20735f41"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args, typename  = decltype(::new(declval&lt;void*&gt;()) T(declval&lt;Args&gt;()...))&gt; </td></tr>
+<tr class="memitem:aa85baa0db208bd4de142559c20735f41"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args, typename  = decltype(::new(etl::declval&lt;void*&gt;()) T(etl::declval&lt;Args&gt;()...))&gt; </td></tr>
 <tr class="memitem:aa85baa0db208bd4de142559c20735f41"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa85baa0db208bd4de142559c20735f41">construct_at</a> (T *p, Args &amp;&amp;... args) -&gt; T *</td></tr>
 <tr class="memdesc:aa85baa0db208bd4de142559c20735f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a T object initialized with arguments args... at given address p.  <a href="namespaceetl.html#aa85baa0db208bd4de142559c20735f41">More...</a><br /></td></tr>
 <tr class="separator:aa85baa0db208bd4de142559c20735f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -32117,7 +32117,7 @@ template&lt;etl::size_t N, typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename... Args, typename  = decltype(::new(declval&lt;void*&gt;()) T(declval&lt;Args&gt;()...))&gt; </div>
+template&lt;typename T , typename... Args, typename  = decltype(::new(etl::declval&lt;void*&gt;()) T(etl::declval&lt;Args&gt;()...))&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

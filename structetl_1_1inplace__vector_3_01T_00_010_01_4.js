@@ -21,5 +21,12 @@ var structetl_1_1inplace__vector_3_01T_00_010_01_4 =
     [ "empty", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ae9efafe520d3f125b309bb5e3ecbe90d", null ],
     [ "size", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a28cf549bb4dd00f221be97ce9ef6cdfd", null ],
     [ "capacity", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#aadfbcdfc4342d8f044833176ff5e6acb", null ],
-    [ "max_size", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a82cc983922e68172b08da541aeb2b38d", null ]
+    [ "max_size", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a82cc983922e68172b08da541aeb2b38d", null ],
+    [ "front", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ae2a6fc8b8636b2ef456aff04e4b811a5", null ],
+    [ "front", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a4d54cd83ca33ed861db505d406e464ec", null ],
+    [ "back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ace3469076b29d22e3d35d10d441f7706", null ],
+    [ "back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ab6132c8998efa5849a32770a35cd488b", null ],
+    [ "operator[]", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a7314c6b4c662d21f3acba258b0a26d0f", null ],
+    [ "operator[]", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#ad3676fab54708131e8f54e2d1cd73d32", null ],
+    [ "try_emplace_back", "structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a50945ec57f5ef47806eee51409920e44", null ]
 ];

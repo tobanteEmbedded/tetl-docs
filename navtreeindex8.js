@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"globals_defs.html":[9,1,4],
 "globals_e.html":[9,1,0,5],
 "globals_f.html":[9,1,0,6],
 "globals_func.html":[9,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "index.html#autotoc_md71":[0,5,54],
 "index.html#autotoc_md72":[0,5,55],
 "index.html#autotoc_md73":[0,5,56],
-"index.html#autotoc_md74":[0,5,57],
-"index.html#autotoc_md8":[0,2,0,0]
+"index.html#autotoc_md74":[0,5,57]
 };
