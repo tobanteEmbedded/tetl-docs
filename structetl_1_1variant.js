@@ -11,6 +11,6 @@ var structetl_1_1variant =
     [ "index", "structetl_1_1variant.html#a7885245495a00b860647fbb5ddeb5767", null ],
     [ "valueless_by_exception", "structetl_1_1variant.html#ac40fb38b2b5282c3b6f00b3e8535fc6e", null ],
     [ "swap", "structetl_1_1variant.html#a2210b97c22a13f595e68f73a5cab3de6", null ],
-    [ "_impl", "structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11", null ],
-    [ "_impl", "structetl_1_1variant.html#a1fe41e99f743af44c78d5a784b4c14e4", null ]
+    [ "impl", "structetl_1_1variant.html#a6245f6c98ffb970fa2024d2b12871235", null ],
+    [ "impl", "structetl_1_1variant.html#a0716612965eaf10735b1fdfbca3ea263", null ]
 ];

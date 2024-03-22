@@ -494,9 +494,9 @@ $(document).ready(function(){initNavTree('__variant_2variant_8hpp_source.html','
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    }</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">/// \todo Remove &amp; replace with friendship for get_if.</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11">  399</a></span>&#160;    [[<a class="code" href="structetl_1_1variant.html">nodiscard</a>]] <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html#a602ccbade4fc5f9173dc2a66e41ede11">_impl</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> &amp;_data; } <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#a6245f6c98ffb970fa2024d2b12871235">  399</a></span>&#160;    [[<a class="code" href="structetl_1_1variant.html">nodiscard</a>]] <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html#a6245f6c98ffb970fa2024d2b12871235">impl</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> &amp;_data; } <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#a1fe41e99f743af44c78d5a784b4c14e4">  401</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html#a1fe41e99f743af44c78d5a784b4c14e4">_impl</a>() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> &amp;_data; } <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#a0716612965eaf10735b1fdfbca3ea263">  401</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html#a0716612965eaf10735b1fdfbca3ea263">impl</a>() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> &amp;_data; } <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    etl::detail::variant_storage_for&lt;Ts...&gt; _data;</div>
@@ -645,210 +645,240 @@ $(document).ready(function(){initNavTree('__variant_2variant_8hpp_source.html','
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
 <div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="namespaceetl.html#aaf81f6c62201f50e40031c362915e191">  548</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aaf81f6c62201f50e40031c362915e191">holds_alternative</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;{</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">using</span> index_t = <span class="keyword">decltype</span>(v._impl()-&gt;get_index(declval&lt;T&gt;()));</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">using</span> index_t = <span class="keyword">decltype</span>(v.impl()-&gt;get_index(declval&lt;T&gt;()));</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">return</span> index_t::value == v.index();</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;}</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160; </div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">/// \brief Index-based non-throwing accessor: If pv is not a null pointer and</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">/// pv-&gt;index() == I, returns a pointer to the value stored in the variant</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">/// pointed to by pv. Otherwise, returns a null pointer value. The call is</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">/// ill-formed if I is not a valid index in the variant.</span></div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00559"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">  559</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&gt;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;{</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keyword">using</span> alternative_t = variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keywordflow">return</span> get_if&lt;alternative_t&gt;(pv);</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;}</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">/// \brief Index-based non-throwing accessor: If pv is not a null pointer and</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="comment">/// pv-&gt;index() == I, returns a pointer to the value stored in the variant</span></div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="comment">/// pointed to by pv. Otherwise, returns a null pointer value. The call is</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="comment">/// ill-formed if I is not a valid index in the variant.</span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00570"></a><span class="lineno"><a class="line" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">  570</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>* pv</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&gt;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;{</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">using</span> alternative_t = variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordflow">return</span> get_if&lt;alternative_t&gt;(pv);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;}</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="comment">/// \brief Type-based non-throwing accessor: The call is ill-formed if T is not</span></div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment">/// a unique element of Ts....</span></div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aeffc9f0ae12737a221731fd43249e944">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;* v) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T&gt;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;{</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keyword">using</span> idx = <span class="keyword">decltype</span>((*v)._impl()-&gt;get_index(declval&lt;T&gt;()));</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(*v)) {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">return</span> &amp;(v-&gt;_impl()-&gt;get_value(index_c&lt;idx::value&gt;));</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">nullptr</span>;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;}</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="comment">/// \brief Type-based non-throwing accessor: The call is ill-formed if T is not</span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="comment">/// a unique element of Ts....</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32dbeed267147923b02448b493be930d">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>* v) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T <span class="keyword">const</span>&gt;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keyword">using</span> idx = <span class="keyword">decltype</span>((*v)._impl()-&gt;get_index(declval&lt;T <span class="keyword">const</span>&gt;()));</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(*v)) {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">return</span> &amp;(v-&gt;_impl()-&gt;get_value(index_c&lt;idx::value&gt;));</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">nullptr</span>;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;}</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00609"></a><span class="lineno"><a class="line" href="namespaceetl.html#a77a6d812774670ddf34c1d44f62e14ea">  609</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a77a6d812774670ddf34c1d44f62e14ea">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;I&gt;(&amp;v);</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    }</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;}</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00626"></a><span class="lineno"><a class="line" href="namespaceetl.html#a666956f74e899e9b7e1dbc505dbabfa1">  626</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a666956f74e899e9b7e1dbc505dbabfa1">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;&amp;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;{</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;I&gt;(&amp;v));</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;}</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">/// \brief Returns a reference to the object stored in the variant.</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">/// \pre v.index() == I</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00557"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6544198711bd2b85aa37504b6c724d9e">  557</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a6544198711bd2b85aa37504b6c724d9e">unchecked_get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;{</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordflow">return</span> v.impl()-&gt;get_value(index_c&lt;I&gt;);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;}</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="comment">/// \brief Returns a reference to the object stored in the variant.</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">/// \pre v.index() == I</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00565"></a><span class="lineno"><a class="line" href="namespaceetl.html#a31064c41a6b712791cc11764907fbf53">  565</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a31064c41a6b712791cc11764907fbf53">unchecked_get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;{</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordflow">return</span> v.impl()-&gt;get_value(index_c&lt;I&gt;);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;}</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment">/// \brief Returns a reference to the object stored in the variant.</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment">/// \pre v.index() == I</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00573"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac05f30335ff678e3767c193c53ec7217">  573</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac05f30335ff678e3767c193c53ec7217">unchecked_get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;&amp;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;{</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordflow">return</span> TETL_MOVE(v.impl()-&gt;get_value(index_c&lt;I&gt;));</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;}</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment">/// \brief Returns a reference to the object stored in the variant.</span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="comment">/// \pre v.index() == I</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00581"></a><span class="lineno"><a class="line" href="namespaceetl.html#aaa2ecce2c5f75b65c4fdd4654a39dd79">  581</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aaa2ecce2c5f75b65c4fdd4654a39dd79">unchecked_get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;&amp;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;{</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">return</span> TETL_MOVE(v.impl()-&gt;get_value(index_c&lt;I&gt;));</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">/// \brief Index-based non-throwing accessor: If pv is not a null pointer and</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">/// pv-&gt;index() == I, returns a pointer to the value stored in the variant</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment">/// pointed to by pv. Otherwise, returns a null pointer value. The call is</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="comment">/// ill-formed if I is not a valid index in the variant.</span></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00591"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">  591</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&gt;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;{</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordflow">if</span> (pv-&gt;index() != I) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    }</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordflow">return</span> etl::addressof(etl::unchecked_get&lt;I&gt;(*pv));</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">/// \brief Index-based non-throwing accessor: If pv is not a null pointer and</span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">/// pv-&gt;index() == I, returns a pointer to the value stored in the variant</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="comment">/// pointed to by pv. Otherwise, returns a null pointer value. The call is</span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="comment">/// ill-formed if I is not a valid index in the variant.</span></div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00604"></a><span class="lineno"><a class="line" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">  604</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>* pv</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&gt;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;{</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keywordflow">if</span> (pv-&gt;index() != I) {</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    }</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordflow">return</span> etl::addressof(etl::unchecked_get&lt;I&gt;(*pv));</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;}</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="comment">/// \brief Type-based non-throwing accessor: The call is ill-formed if T is not</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="comment">/// a unique element of Ts....</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aeffc9f0ae12737a221731fd43249e944">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T&gt;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keyword">using</span> index = <span class="keyword">decltype</span>(pv-&gt;impl()-&gt;get_index(etl::declval&lt;T&gt;()));</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keywordflow">return</span> etl::get_if&lt;index::value&gt;(pv);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;}</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="comment">/// \brief Type-based non-throwing accessor: The call is ill-formed if T is not</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;<span class="comment">/// a unique element of Ts....</span></div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32dbeed267147923b02448b493be930d">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T <span class="keyword">const</span>&gt;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;{</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keyword">using</span> index = <span class="keyword">decltype</span>(pv-&gt;impl()-&gt;get_index(etl::declval&lt;T&gt;()));</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">return</span> etl::get_if&lt;index::value&gt;(pv);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;}</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160; </div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00643"></a><span class="lineno"><a class="line" href="namespaceetl.html#a31721b496f003097daaae13eed0e05a9">  643</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a31721b496f003097daaae13eed0e05a9">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;{</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;I&gt;(&amp;v);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    }</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;}</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00639"></a><span class="lineno"><a class="line" href="namespaceetl.html#a77a6d812774670ddf34c1d44f62e14ea">  639</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a77a6d812774670ddf34c1d44f62e14ea">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;{</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">return</span> etl::unchecked_get&lt;I&gt;(v);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    }</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;}</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00660"></a><span class="lineno"><a class="line" href="namespaceetl.html#afe303a47b99addb10aa27283e98e34e5">  660</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe303a47b99addb10aa27283e98e34e5">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;&amp;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;{</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;I&gt;(&amp;v));</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    }</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;}</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160; </div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00656"></a><span class="lineno"><a class="line" href="namespaceetl.html#a666956f74e899e9b7e1dbc505dbabfa1">  656</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a666956f74e899e9b7e1dbc505dbabfa1">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt;&amp;&amp;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;{</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keywordflow">return</span> etl::unchecked_get&lt;I&gt;(TETL_MOVE(v));</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    }</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;}</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp; v) -&gt; T&amp;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;{</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;T&gt;(&amp;v);</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    }</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;}</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160; </div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp;&amp; v) -&gt; T&amp;&amp;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;{</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;T&gt;(&amp;v));</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    }</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;}</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160; </div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) -&gt; T <span class="keyword">const</span>&amp;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;{</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;T&gt;(&amp;v);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    }</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp;&amp; v) -&gt; T <span class="keyword">const</span>&amp;&amp;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;{</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;T&gt;(&amp;v));</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    }</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;}</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160; </div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#acd541c0b1af1d34a34fbb0698682b667">  735</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;::emplace(Args&amp;&amp;... args) -&gt; T&amp;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;{</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">auto</span> v = <a class="code" href="structetl_1_1variant.html">variant</a>(etl::in_place_type&lt;T&gt;, TETL_FORWARD(args)...);</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    v.swap(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordflow">return</span> *etl::get_if&lt;T&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;}</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;::<a class="code" href="structetl_1_1variant.html#acd541c0b1af1d34a34fbb0698682b667">emplace</a>(Args&amp;&amp;... args) -&gt; etl::variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&gt;&amp;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;{</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keyword">auto</span> v = <a class="code" href="structetl_1_1variant.html">variant</a>(etl::in_place_index&lt;I&gt;, TETL_FORWARD(args)...);</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    v.swap(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keywordflow">return</span> *etl::get_if&lt;I&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;}</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160; </div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_VARIANT_VARIANT_HPP</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00673"></a><span class="lineno"><a class="line" href="namespaceetl.html#a31721b496f003097daaae13eed0e05a9">  673</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a31721b496f003097daaae13eed0e05a9">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;{</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">return</span> etl::unchecked_get&lt;I&gt;(v);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    }</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;<span class="comment">/// \brief Index-based value accessor</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment">/// \details If v.index() == I, returns a reference to the value stored in v.</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment">/// Otherwise, raises a bad_variant_access. The call is ill-formed if I is</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="comment">/// not a valid index in the variant.</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00690"></a><span class="lineno"><a class="line" href="namespaceetl.html#afe303a47b99addb10aa27283e98e34e5">  690</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#afe303a47b99addb10aa27283e98e34e5">get</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp;&amp; v) -&gt; variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&gt; <span class="keyword">const</span>&amp;&amp;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;{</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="keyword">static_assert</span>(I &lt; <span class="keyword">sizeof</span>...(Ts));</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordflow">if</span> (v.index() == I) {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">return</span> etl::unchecked_get&lt;I&gt;(TETL_MOVE(v));</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;}</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160; </div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp; v) -&gt; T&amp;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;{</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;T&gt;(&amp;v);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    }</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;}</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;&amp;&amp; v) -&gt; T&amp;&amp;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;{</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;T&gt;(&amp;v));</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;}</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp; v) -&gt; T <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">return</span> *get_if&lt;T&gt;(&amp;v);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    }</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;}</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160; </div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">/// \brief Type-based value accessor</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">/// \details If v holds the alternative T, returns a reference to the value</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">/// stored in v. Otherwise, throws bad_variant_access. The call is</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">/// ill-formed if T is not a unique element of Ts....</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/variant/get</span></div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> get(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt; <span class="keyword">const</span>&amp;&amp; v) -&gt; T <span class="keyword">const</span>&amp;&amp;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;{</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordflow">if</span> (holds_alternative&lt;T&gt;(v)) {</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordflow">return</span> TETL_MOVE(*get_if&lt;T&gt;(&amp;v));</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    }</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">raise</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&lt;</a>etl<a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">::</a><a class="code" href="structetl_1_1bad__variant__access.html">bad_variant_access</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">&gt;</a><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">(</a><span class="stringliteral">&quot;&quot;</span><a class="code" href="namespaceetl.html#aaf97f58690e1661fa4c536e2a89c9b52">)</a>;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;}</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00765"></a><span class="lineno"><a class="line" href="structetl_1_1variant.html#acd541c0b1af1d34a34fbb0698682b667">  765</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;::emplace(Args&amp;&amp;... args) -&gt; T&amp;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;{</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keyword">auto</span> v = <a class="code" href="structetl_1_1variant.html">variant</a>(etl::in_place_type&lt;T&gt;, TETL_FORWARD(args)...);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    v.swap(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">return</span> *etl::get_if&lt;T&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;}</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="keyword">template</span> &lt;etl::size_t I, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Ts...&gt;::<a class="code" href="structetl_1_1variant.html#acd541c0b1af1d34a34fbb0698682b667">emplace</a>(Args&amp;&amp;... args) -&gt; etl::variant_alternative_t&lt;I, <a class="code" href="structetl_1_1variant.html">variant</a>&gt;&amp;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;{</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <span class="keyword">auto</span> v = <a class="code" href="structetl_1_1variant.html">variant</a>(etl::in_place_index&lt;I&gt;, TETL_FORWARD(args)...);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    v.swap(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="keywordflow">return</span> *etl::get_if&lt;I&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;}</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160; </div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_VARIANT_VARIANT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

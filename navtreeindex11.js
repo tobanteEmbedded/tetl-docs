@@ -1,5 +1,9 @@
 var NAVTREEINDEX11 =
 {
+"iter__swap_8hpp.html#aa18b878794474881fce640e7a163abf3":[9,0,1,0,1,34,0],
+"iter__swap_8hpp_source.html":[9,0,1,0,1,34],
+"iter__value__t_8hpp.html":[9,0,1,0,32,17],
+"iter__value__t_8hpp.html#a7c22455efb7e072deb03e78241405e56":[9,0,1,0,32,17,0],
 "iter__value__t_8hpp_source.html":[9,0,1,0,32,17],
 "iterator_8hpp.html":[9,0,1,0,96],
 "iterator_8hpp_source.html":[9,0,1,0,96],
@@ -211,13 +215,13 @@ var NAVTREEINDEX11 =
 "mcp23017_8hpp.html#ae2dfdafbcff106ed4635ae08dbb1ffaba92eb5ffee6ae2fec3ad71c777531578f":[9,0,1,0,65,1,0,0,1,1],
 "mcp23017_8hpp_source.html":[9,0,1,0,65,1,0,0],
 "md_CONTRIBUTING.html":[1],
-"md_CONTRIBUTING.html#autotoc_md1":[1,0],
-"md_CONTRIBUTING.html#autotoc_md2":[1,0,0],
-"md_CONTRIBUTING.html#autotoc_md3":[1,1],
-"md_CONTRIBUTING.html#autotoc_md4":[1,2],
-"md_CONTRIBUTING.html#autotoc_md5":[1,2,0],
-"md_CONTRIBUTING.html#autotoc_md6":[1,2,1],
-"md_CONTRIBUTING.html#autotoc_md7":[1,2,2],
+"md_CONTRIBUTING.html#autotoc_md2":[1,0],
+"md_CONTRIBUTING.html#autotoc_md3":[1,0,0],
+"md_CONTRIBUTING.html#autotoc_md4":[1,1],
+"md_CONTRIBUTING.html#autotoc_md5":[1,2],
+"md_CONTRIBUTING.html#autotoc_md6":[1,2,0],
+"md_CONTRIBUTING.html#autotoc_md7":[1,2,1],
+"md_CONTRIBUTING.html#autotoc_md8":[1,2,2],
 "md_docs_development.html":[2],
 "md_docs_development.html#autotoc_md88":[2,0],
 "md_docs_progress.html":[3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX11 =
 "memory_8hpp.html":[9,0,1,0,101],
 "memory_8hpp_source.html":[9,0,1,0,101],
 "memset_8hpp.html":[9,0,1,0,21,3],
-"memset_8hpp.html#a055dc327ea35a394f661ca98bf2b08ad":[9,0,1,0,21,3,0],
-"memset_8hpp_source.html":[9,0,1,0,21,3],
-"merge_8hpp.html":[9,0,1,0,1,39],
-"merge_8hpp.html#a6d0face2f5fe06333854b6b120bd6bad":[9,0,1,0,1,39,1],
-"merge_8hpp.html#a9ee09e4768fc381002cd7dc14e8e561b":[9,0,1,0,1,39,0]
+"memset_8hpp.html#a055dc327ea35a394f661ca98bf2b08ad":[9,0,1,0,21,3,0]
 };

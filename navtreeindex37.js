@@ -1,5 +1,13 @@
 var NAVTREEINDEX37 =
 {
+"wmemcmp_8hpp.html":[9,0,1,0,23,15],
+"wmemcmp_8hpp.html#a379cf75ba2d4c066193884e36556cf04":[9,0,1,0,23,15,0],
+"wmemcmp_8hpp_source.html":[9,0,1,0,23,15],
+"wmemcpy_8hpp.html":[9,0,1,0,23,16],
+"wmemcpy_8hpp.html#a1d687ebc1e3e94aa01302127c3eb8400":[9,0,1,0,23,16,0],
+"wmemcpy_8hpp_source.html":[9,0,1,0,23,16],
+"wmemmove_8hpp.html":[9,0,1,0,23,17],
+"wmemmove_8hpp.html#a87cdeb9c67af4a7dfe7cc7ab4c88e390":[9,0,1,0,23,17,0],
 "wmemmove_8hpp_source.html":[9,0,1,0,23,17],
 "wmemset_8hpp.html":[9,0,1,0,23,18],
 "wmemset_8hpp.html#a24a108d16f8cd8006676972370a2b2ed":[9,0,1,0,23,18,0],

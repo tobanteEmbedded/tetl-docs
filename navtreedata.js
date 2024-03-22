@@ -107,14 +107,14 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md3", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md5", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md7", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md4", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md7", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md8", null ]
       ] ]
     ] ],
     [ "Development", "md_docs_development.html", [
@@ -173,41 +173,41 @@ var NAVTREEINDEX =
 "001__avr__macros_8hpp.html",
 "__cmath_2atan2_8hpp.html#a037863b294d960041c163520b22381e1",
 "__complex_2cos_8hpp.html#a270bd6f09628db22fe5bd8b51dd0b715",
-"accumulate_8hpp_source.html",
-"blas1__copy_8hpp.html#a9a5e0a6a16dabe30cdcdad69831da6dc",
-"constants_8hpp.html#a6bae5ad48daabc2d0117c90f734fabed",
-"dir_f25a8a4ec1c10c8b73f88dd881d1f689.html",
-"find__whole_8hpp.html",
-"globals_defs.html",
-"index.html#autotoc_md82",
-"is__nothrow__copy__assignable_8hpp_source.html",
-"iter__value__t_8hpp_source.html",
-"merge_8hpp_source.html",
-"namespaceetl.html#a1c0cdef8cb8f1fb054c43f8aadb43d36",
-"namespaceetl.html#a4da0fcb091026bf11e56eb257e9d3bc5",
-"namespaceetl.html#a83a59b23e259ef7140b324f681aa07dd",
-"namespaceetl.html#ab7e970cc5b5992d8eb7ac649c247c62c",
-"namespaceetl.html#ad9ace77006d897bb11f9e75fc01c6d54",
-"namespaceetl_1_1chrono.html#a99c6c8db9b04b9bae18a8aa73b4eac09",
-"namespaceetl_1_1experimental_1_1parallelism__v2.html#a9b4ebfe31f033e71b9354036b21c5d35",
-"namespaceetl_1_1placeholders.html#a70878f78036cdb3aa4f8a4cc5169c66f",
-"placeholder_8hpp.html#a48bf0995060b4acad3c0882859cea489",
-"replace__if_8hpp_source.html",
-"strncmp_8hpp.html#a86ea9bb99dc7df1c93691e27036d4e4c",
-"structetl_1_1basic__string__view.html#a3e81279af8f68faec94759d96b317ce7",
-"structetl_1_1chrono_1_1month__weekday__last.html#a45448e94c21645c88139a80ff53655a4",
-"structetl_1_1dynamic__array.html#adb5d33b17655e1b68bfaa50b12cbc156",
-"structetl_1_1flat__set.html#ab7d84509fe9116ce1b89aeb55c2f591c",
-"structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a8c59c8292f1e94dc71fb718dbf6cbb3a",
-"structetl_1_1ldiv__t.html#a14fccb6794bb9d0f8f978ced66077584",
-"structetl_1_1numeric__limits_3_01bool_01_4.html#af3f0ae1ec5d4b36683f88fdc9b9c2f3d",
-"structetl_1_1numeric__limits_3_01short_01_4.html#a6cb6db0f0d1aaecb3b0aa6d022a6cb07",
-"structetl_1_1pair.html#a28ef81180e9d7238017a3562e55c6586",
-"structetl_1_1span.html#a831d3f9d211e49ea8cd1791765e8fe92",
-"structetl_1_1tuple__element.html",
-"structetl_1_1xoshiro128plusplus.html#a2acf41c24a3c579a02a1ddae4bbd6535",
-"towupper_8hpp_source.html",
-"wmemmove_8hpp_source.html"
+"accessor__scaled_8hpp_source.html",
+"blas1__add_8hpp.html#ae5e5a704d3af7936bba51f65579024cf",
+"constants_8hpp.html#a5be99a4894c574642df520ecf42b1cac",
+"dir_d69ab73450592e32cd99f600d9f27140.html",
+"find__if_8hpp_source.html",
+"globals_a.html",
+"index.html#autotoc_md78",
+"is__nothrow__convertible_8hpp.html#a2efb1cd1aad111e64a98e89322815a8f",
+"iter__swap_8hpp.html#aa18b878794474881fce640e7a163abf3",
+"memset_8hpp_source.html",
+"namespaceetl.html#a1b1dae41b3151e867f898e88be2e250b",
+"namespaceetl.html#a4cbefc5ea76f13ee1827d6ece5530ddf",
+"namespaceetl.html#a82931442d5539449fd23546e25bb86ae",
+"namespaceetl.html#ab6bf99267593c4eb629576e903080e90",
+"namespaceetl.html#ad78c67d300e374415b47132bd5343d85",
+"namespaceetl_1_1chrono.html#a95dac9c7a9bc167484feb445411a2264",
+"namespaceetl_1_1experimental_1_1parallelism__v2.html#a918862e9e472362dd9a16890992a3a68",
+"namespaceetl_1_1placeholders.html#a5c55175a60b12b3cdb56a5d7fa040777",
+"piecewise__construct_8hpp_source.html",
+"rend_8hpp.html#a75830ae03ce26ca2ea7289cc7d83a761",
+"string__view_8hpp_source.html",
+"structetl_1_1basic__string__view.html#a2905bd473d13e030d0d1eb8846920a87",
+"structetl_1_1chrono_1_1month__day__last.html#ab4515311528c27d19ec28d70b4e2c7d3",
+"structetl_1_1dynamic__array.html#a8e102eac36dc687b9e72fcc59eb3c8fa",
+"structetl_1_1flat__set.html#a92e01d87b208da40d13515e4e58c529f",
+"structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a4d54cd83ca33ed861db505d406e464ec",
+"structetl_1_1layout__right_1_1mapping.html#ade0ff0096e418385cf2564fa22bc3d61",
+"structetl_1_1numeric__limits_3_01bool_01_4.html#a7bcc79ac5de44ec235362dd9a6dc4c6d",
+"structetl_1_1numeric__limits_3_01short_01_4.html#a097aaabc45ee165c76a39f3ec0b239c7",
+"structetl_1_1overflow__error.html",
+"structetl_1_1span.html#a37e77fa3991589aaa7a0f0529cb44145",
+"structetl_1_1tuple.html#a67af4d005669c86e4e05f06fc247e3b5",
+"structetl_1_1xoshiro128plus.html#a662a8920f9dee8fe384e3e19589e6e9a",
+"toupper_8hpp.html",
+"wmemcmp_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
