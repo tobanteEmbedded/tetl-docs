@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,64 +98,52 @@ $(document).ready(function(){initNavTree('__iterator_2size_8hpp_source.html','')
 <div class="contents">
 <a href="__iterator_2size_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ITERATOR_SIZE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_SIZE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_SIZE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_SIZE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ptrdiff__t_8hpp.html">etl/_cstddef/ptrdiff_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common__type_8hpp.html">etl/_type_traits/common_type.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="make__signed_8hpp.html">etl/_type_traits/make_signed.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ignore__unused_8hpp.html">etl/_warning/ignore_unused.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">ptrdiff_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">common_type</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">make_signed</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_warning</span><span class="preprocessor">/</span><span class="preprocessor">ignore_unused</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \brief Returns the size of the given container c or array array. Returns</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// c.size(), converted to the return type if necessary.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a0db1ad433c808f8aabe48a2061e633dc">size</a>(C <span class="keyword">const</span>&amp; c) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(c.size())) -&gt; decltype(c.size())</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">   17</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>(C <span class="keyword">const</span>&amp; c) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">c</a>.<a class="code" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>())) -&gt; <span class="keyword">decltype</span>(c.size())</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> c.size();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab2e3325c99005cfa2cad0752fe472c61">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a0db1ad433c808f8aabe48a2061e633dc">size</a>(T <span class="keyword">const</span> (&amp;<a class="code" href="structetl_1_1array.html">array</a>)[N]) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, size_t N&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab2e3325c99005cfa2cad0752fe472c61">   23</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab2e3325c99005cfa2cad0752fe472c61">size</a>(T <span class="keyword">const</span> (&amp;array)[N]) <span class="keyword">noexcept</span> -&gt; size_t</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(&amp;<a class="code" href="structetl_1_1array.html">array</a>[0]);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    etl::ignore_unused(&amp;array[0]);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> N;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">   30</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">ssize</a>(C <span class="keyword">const</span>&amp; c) -&gt; <a class="code" href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">common_type_t</a>&lt;<a class="code" href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">ptrdiff_t</a>, <a class="code" href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">make_signed_t</a>&lt;decltype(c.size())&gt;&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">   30</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">ssize</a>(C <span class="keyword">const</span>&amp; c) -&gt; common_type_t&lt;ptrdiff_t, make_signed_t&lt;<span class="keyword">decltype</span>(c.size())&gt;&gt;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> R = <a class="code" href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">common_type_t</a>&lt;<a class="code" href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">ptrdiff_t</a>, <a class="code" href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">make_signed_t</a>&lt;decltype(c.size())&gt;&gt;;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>R<span class="keyword">&gt;</span>(c.size());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> R = common_type_t&lt;ptrdiff_t, make_signed_t&lt;<span class="keyword">decltype</span>(c.size())&gt;&gt;;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;R&gt;(c.size());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, ptrdiff_t N&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceetl.html#abdfe3fbc79d8c1cf42b007bed4267257">   37</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">ssize</a>(T <span class="keyword">const</span> (&amp;<a class="code" href="structetl_1_1array.html">array</a>)[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(N)]) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">ptrdiff_t</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceetl.html#abdfe3fbc79d8c1cf42b007bed4267257">   37</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abdfe3fbc79d8c1cf42b007bed4267257">ssize</a>(T <span class="keyword">const</span> (&amp;array)[<span class="keyword">static_cast</span>&lt;size_t&gt;(N)]) <span class="keyword">noexcept</span> -&gt; ptrdiff_t</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// The static_cast&lt;size_t&gt;(N) inside the array parameter is to keep gcc&#39;s</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// sign-conversion warnings happy. Array sizes are of type size_t which</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// triggers a signed to unsigned conversion in this case.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(&amp;<a class="code" href="structetl_1_1array.html">array</a>[0]);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    etl::ignore_unused(&amp;array[0]);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> N;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_SIZE_HPP</span></div>
-<div class="ttc" id="acommon__type_8hpp_html"><div class="ttname"><a href="common__type_8hpp.html">common_type.hpp</a></div></div>
-<div class="ttc" id="aignore__unused_8hpp_html"><div class="ttname"><a href="ignore__unused_8hpp.html">ignore_unused.hpp</a></div></div>
-<div class="ttc" id="amake__signed_8hpp_html"><div class="ttname"><a href="make__signed_8hpp.html">make_signed.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a0db1ad433c808f8aabe48a2061e633dc"><div class="ttname"><a href="namespaceetl.html#a0db1ad433c808f8aabe48a2061e633dc">etl::size</a></div><div class="ttdeci">static constexpr auto size() noexcept -&gt; etl::size_t</div><div class="ttdef"><b>Definition:</b> uninitialized_array.hpp:49</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a81bf10a91479176562a6e66eda74a85f"><div class="ttname"><a href="namespaceetl.html#a81bf10a91479176562a6e66eda74a85f">etl::ssize</a></div><div class="ttdeci">constexpr auto ssize(C const &amp;c) -&gt; common_type_t&lt; ptrdiff_t, make_signed_t&lt; decltype(c.size())&gt;&gt;</div><div class="ttdef"><b>Definition:</b> size.hpp:30</div></div>
-<div class="ttc" id="anamespaceetl_html_a955e0d5a5e84e9e394bf38a95c8ce380"><div class="ttname"><a href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition:</b> ptrdiff_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_aa474dd82a788a57735f0603b85954c37"><div class="ttname"><a href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">etl::common_type_t</a></div><div class="ttdeci">typename etl::common_type&lt; T... &gt;::type common_type_t</div><div class="ttdef"><b>Definition:</b> common_type.hpp:50</div></div>
-<div class="ttc" id="anamespaceetl_html_abffe34c79351f871acb3e0438b2ad488"><div class="ttname"><a href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">etl::make_signed_t</a></div><div class="ttdeci">typename make_signed&lt; T &gt;::type make_signed_t</div><div class="ttdef"><b>Definition:</b> make_signed.hpp:80</div></div>
-<div class="ttc" id="anamespaceetl_html_acce870bde6a96dc0634f235573439dd1"><div class="ttname"><a href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition:</b> ignore_unused.hpp:16</div></div>
-<div class="ttc" id="aptrdiff__t_8hpp_html"><div class="ttname"><a href="ptrdiff__t_8hpp.html">ptrdiff_t.hpp</a></div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">array is a container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition:</b> array.hpp:35</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_SIZE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

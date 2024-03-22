@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,32 +98,26 @@ $(document).ready(function(){initNavTree('destroy_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="destroy_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MEMORY_DESTROY_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MEMORY_DESTROY_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MEMORY_DESTROY_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MEMORY_DESTROY_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="addressof_8hpp.html">etl/_memory/addressof.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="destroy__at_8hpp.html">etl/_memory/destroy_at.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_memory</span><span class="preprocessor">/</span><span class="preprocessor">addressof</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_memory</span><span class="preprocessor">/</span><span class="preprocessor">destroy_at</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Destroys the objects in the range [first, last).</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab44bc4884adc1e9dc20ddf2363f3da66">   13</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab44bc4884adc1e9dc20ddf2363f3da66">destroy</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab44bc4884adc1e9dc20ddf2363f3da66">   13</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab44bc4884adc1e9dc20ddf2363f3da66">destroy</a>(ForwardIt first, ForwardIt last) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span> (; first != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>; ++first) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a>(<a class="code" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">etl::addressof</a>(*first));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span> (; first != last; ++first) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        etl::destroy_at(etl::addressof(*first));</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_DESTROY_HPP</span></div>
-<div class="ttc" id="aaddressof_8hpp_html"><div class="ttname"><a href="addressof_8hpp.html">addressof.hpp</a></div></div>
-<div class="ttc" id="adestroy__at_8hpp_html"><div class="ttname"><a href="destroy__at_8hpp.html">destroy_at.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a13856fe74510e89b04a2310cbc9bde59"><div class="ttname"><a href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">etl::addressof</a></div><div class="ttdeci">auto addressof(T const &amp;&amp;)=delete</div></div>
-<div class="ttc" id="anamespaceetl_html_a1709580f4bcc18d6efb2b7e4d5c1b728"><div class="ttname"><a href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a></div><div class="ttdeci">constexpr auto destroy_at(T *p) -&gt; void</div><div class="ttdoc">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T()....</div><div class="ttdef"><b>Definition:</b> destroy_at.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_ab44bc4884adc1e9dc20ddf2363f3da66"><div class="ttname"><a href="namespaceetl.html#ab44bc4884adc1e9dc20ddf2363f3da66">etl::destroy</a></div><div class="ttdeci">constexpr auto destroy(ForwardIt first, ForwardIt last) -&gt; void</div><div class="ttdoc">Destroys the objects in the range [first, last).</div><div class="ttdef"><b>Definition:</b> destroy.hpp:13</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MEMORY_DESTROY_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

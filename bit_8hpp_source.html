@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,52 +98,33 @@ $(document).ready(function(){initNavTree('bit_8hpp_source.html',''); initResizab
 <div class="contents">
 <a href="bit_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_BIT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_BIT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_BIT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_BIT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="all_8hpp.html">etl/_config/all.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_config</span><span class="preprocessor">/</span><span class="preprocessor">all</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bit__cast_8hpp.html">etl/_bit/bit_cast.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bit__ceil_8hpp.html">etl/_bit/bit_ceil.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bit__floor_8hpp.html">etl/_bit/bit_floor.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bit__width_8hpp.html">etl/_bit/bit_width.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="byteswap_8hpp.html">etl/_bit/byteswap.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="countl__one_8hpp.html">etl/_bit/countl_one.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="countl__zero_8hpp.html">etl/_bit/countl_zero.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="countr__one_8hpp.html">etl/_bit/countr_one.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="countr__zero_8hpp.html">etl/_bit/countr_zero.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="endian_8hpp.html">etl/_bit/endian.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="has__single__bit_8hpp.html">etl/_bit/has_single_bit.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="popcount_8hpp.html">etl/_bit/popcount.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rotl_8hpp.html">etl/_bit/rotl.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rotr_8hpp.html">etl/_bit/rotr.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">bit_cast</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">bit_ceil</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">bit_floor</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">bit_width</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">byteswap</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">countl_one</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">countl_zero</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">countr_one</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">countr_zero</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">endian</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">has_single_bit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">popcount</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">rotl</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">rotr</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Non-standard extensions</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="flip__bit_8hpp.html">etl/_bit/flip_bit.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="reset__bit_8hpp.html">etl/_bit/reset_bit.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="set__bit_8hpp.html">etl/_bit/set_bit.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="test__bit_8hpp.html">etl/_bit/test_bit.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">flip_bit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">reset_bit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">set_bit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_bit</span><span class="preprocessor">/</span><span class="preprocessor">test_bit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_HPP</span></div>
-<div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
-<div class="ttc" id="abit__cast_8hpp_html"><div class="ttname"><a href="bit__cast_8hpp.html">bit_cast.hpp</a></div></div>
-<div class="ttc" id="abit__ceil_8hpp_html"><div class="ttname"><a href="bit__ceil_8hpp.html">bit_ceil.hpp</a></div></div>
-<div class="ttc" id="abit__floor_8hpp_html"><div class="ttname"><a href="bit__floor_8hpp.html">bit_floor.hpp</a></div></div>
-<div class="ttc" id="abit__width_8hpp_html"><div class="ttname"><a href="bit__width_8hpp.html">bit_width.hpp</a></div></div>
-<div class="ttc" id="abyteswap_8hpp_html"><div class="ttname"><a href="byteswap_8hpp.html">byteswap.hpp</a></div></div>
-<div class="ttc" id="acountl__one_8hpp_html"><div class="ttname"><a href="countl__one_8hpp.html">countl_one.hpp</a></div></div>
-<div class="ttc" id="acountl__zero_8hpp_html"><div class="ttname"><a href="countl__zero_8hpp.html">countl_zero.hpp</a></div></div>
-<div class="ttc" id="acountr__one_8hpp_html"><div class="ttname"><a href="countr__one_8hpp.html">countr_one.hpp</a></div></div>
-<div class="ttc" id="acountr__zero_8hpp_html"><div class="ttname"><a href="countr__zero_8hpp.html">countr_zero.hpp</a></div></div>
-<div class="ttc" id="aendian_8hpp_html"><div class="ttname"><a href="endian_8hpp.html">endian.hpp</a></div></div>
-<div class="ttc" id="aflip__bit_8hpp_html"><div class="ttname"><a href="flip__bit_8hpp.html">flip_bit.hpp</a></div></div>
-<div class="ttc" id="ahas__single__bit_8hpp_html"><div class="ttname"><a href="has__single__bit_8hpp.html">has_single_bit.hpp</a></div></div>
-<div class="ttc" id="apopcount_8hpp_html"><div class="ttname"><a href="popcount_8hpp.html">popcount.hpp</a></div></div>
-<div class="ttc" id="areset__bit_8hpp_html"><div class="ttname"><a href="reset__bit_8hpp.html">reset_bit.hpp</a></div></div>
-<div class="ttc" id="arotl_8hpp_html"><div class="ttname"><a href="rotl_8hpp.html">rotl.hpp</a></div></div>
-<div class="ttc" id="arotr_8hpp_html"><div class="ttname"><a href="rotr_8hpp.html">rotr.hpp</a></div></div>
-<div class="ttc" id="aset__bit_8hpp_html"><div class="ttname"><a href="set__bit_8hpp.html">set_bit.hpp</a></div></div>
-<div class="ttc" id="atest__bit_8hpp_html"><div class="ttname"><a href="test__bit_8hpp.html">test_bit.hpp</a></div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_BIT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

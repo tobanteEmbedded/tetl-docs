@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,43 +98,38 @@ $(document).ready(function(){initNavTree('plus_8hpp_source.html',''); initResiza
 <div class="contents">
 <a href="plus_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_FUNCTIONAL_PLUS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_FUNCTIONAL_PLUS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_FUNCTIONAL_PLUS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FUNCTIONAL_PLUS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="forward_8hpp.html">etl/_utility/forward.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">forward</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Function object for performing addition. Effectively calls operator+</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// on two instances of type T.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/utility/functional/plus</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1plus.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1plus.html">plus</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1plus.html#ad9a16f5a6badc4e395f06b7771358586">   16</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1plus.html#ad9a16f5a6badc4e395f06b7771358586">operator()</a>(T <span class="keyword">const</span>&amp; <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, T <span class="keyword">const</span>&amp; rhs) <span class="keyword">const</span> -&gt; T { <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a> + rhs; }</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1plus.html">   14</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1plus.html">plus</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">/// \brief Returns the sum of lhs and rhs.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1plus.html#ad9a16f5a6badc4e395f06b7771358586">   16</a></span>&#160;    [[<a class="code" href="structetl_1_1plus.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1plus.html#ad9a16f5a6badc4e395f06b7771358586">operator</a>()(T <span class="keyword">const</span>&amp; lhs, T <span class="keyword">const</span>&amp; rhs) <span class="keyword">const</span> -&gt; T { <span class="keywordflow">return</span> lhs + rhs; }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1plus.html">plus</a>&lt;<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">void</a>&gt; {</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html#ac24b99c23084b1380393a3e5544902bb">   21</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1plus_3_01void_01_4.html#ac24b99c23084b1380393a3e5544902bb">is_transparent</a> = <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">void</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html">   20</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1plus.html">plus</a>&lt;<span class="keywordtype">void</span>&gt; {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html#ac24b99c23084b1380393a3e5544902bb">   21</a></span>&#160;    <span class="keyword">using</span> is_transparent = <span class="keywordtype">void</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">/// \brief Returns the sum of lhs and rhs.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">   25</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">operator()</a>(T&amp;&amp; <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, U&amp;&amp; rhs) <span class="keyword">const</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>) + <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(rhs))) -&gt; decltype(<a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>) + <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(rhs))</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">   25</a></span>&#160;    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">operator</a>()(T&amp;&amp; lhs, U&amp;&amp; rhs) <span class="keyword">const</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">TETL_FORWARD</a>(<a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">lhs</a>) + <a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">TETL_FORWARD</a>(<a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">rhs</a>))) -&gt; <span class="keyword">decltype</span>(<a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">TETL_FORWARD</a>(lhs) + TETL_FORWARD(<a class="code" href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">rhs</a>))</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>) + <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(rhs);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> TETL_FORWARD(lhs) + TETL_FORWARD(rhs);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_FUNCTIONAL_PLUS_HPP</span></div>
-<div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition:</b> forward.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a6b739e3edd217012215ee928ca208532"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">etl::linalg::void</a></div><div class="ttdeci">InObj2 OutObj z void</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a90533d8a4222a3a68dfc34fcd9b9e3a1"><div class="ttname"><a href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">etl::lhs</a></div><div class="ttdeci">C &amp; lhs</div><div class="ttdef"><b>Definition:</b> stack.hpp:178</div></div>
-<div class="ttc" id="astructetl_1_1plus_3_01void_01_4_html_a6516d951520b0832bfb3d905c8f59363"><div class="ttname"><a href="structetl_1_1plus_3_01void_01_4.html#a6516d951520b0832bfb3d905c8f59363">etl::plus&lt; void &gt;::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;lhs, U &amp;&amp;rhs) const noexcept(noexcept(TETL_FORWARD(lhs)+TETL_FORWARD(rhs))) -&gt; decltype(TETL_FORWARD(lhs)+TETL_FORWARD(rhs))</div><div class="ttdoc">Returns the sum of lhs and rhs.</div><div class="ttdef"><b>Definition:</b> plus.hpp:25</div></div>
-<div class="ttc" id="astructetl_1_1plus_3_01void_01_4_html_ac24b99c23084b1380393a3e5544902bb"><div class="ttname"><a href="structetl_1_1plus_3_01void_01_4.html#ac24b99c23084b1380393a3e5544902bb">etl::plus&lt; void &gt;::is_transparent</a></div><div class="ttdeci">void is_transparent</div><div class="ttdef"><b>Definition:</b> plus.hpp:21</div></div>
-<div class="ttc" id="astructetl_1_1plus_html"><div class="ttname"><a href="structetl_1_1plus.html">etl::plus</a></div><div class="ttdoc">Function object for performing addition. Effectively calls operator+ on two instances of type T....</div><div class="ttdef"><b>Definition:</b> plus.hpp:14</div></div>
-<div class="ttc" id="astructetl_1_1plus_html_ad9a16f5a6badc4e395f06b7771358586"><div class="ttname"><a href="structetl_1_1plus.html#ad9a16f5a6badc4e395f06b7771358586">etl::plus::operator()</a></div><div class="ttdeci">constexpr auto operator()(T const &amp;lhs, T const &amp;rhs) const -&gt; T</div><div class="ttdoc">Returns the sum of lhs and rhs.</div><div class="ttdef"><b>Definition:</b> plus.hpp:16</div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_FUNCTIONAL_PLUS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

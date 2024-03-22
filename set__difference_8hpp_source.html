@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,22 +98,26 @@ $(document).ready(function(){initNavTree('set__difference_8hpp_source.html','');
 <div class="contents">
 <a href="set__difference_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="copy_8hpp.html">etl/_algorithm/copy.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="less_8hpp.html">etl/_functional/less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_algorithm</span><span class="preprocessor">/</span><span class="preprocessor">copy</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Copies the elements from the sorted range `[first1, last1)` which are</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// not found in the sorted range `[first2, last2)` to the range beginning at</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// destination. Elements are compared using the given binary comparison</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// function `comp` and the ranges must be sorted with respect to the same.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;constexpr <span class="keyword">auto</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">   17</a></span>&#160;<a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination, Compare comp)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    -&gt; OutputIt</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span> (first1 != last1) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (first2 == last2) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(first1, last1, destination);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> copy(first1, last1, destination);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (comp(*first1, *first2)) {</div>
@@ -121,21 +133,15 @@ $(document).ready(function(){initNavTree('set__difference_8hpp_source.html','');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> OutputIt&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;constexpr <span class="keyword">auto</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceetl.html#a50c804f0766a786779b7c17886e601a2">   39</a></span>&#160;<a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination) -&gt; OutputIt</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceetl.html#a50c804f0766a786779b7c17886e601a2">   39</a></span>&#160;<a class="code" href="namespaceetl.html#a50c804f0766a786779b7c17886e601a2">set_difference</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination) -&gt; OutputIt</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a>(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">less</a>{});</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> set_difference(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">less</a>{});</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
-<div class="ttc" id="acopy_8hpp_html"><div class="ttname"><a href="copy_8hpp.html">copy.hpp</a></div></div>
-<div class="ttc" id="agroup__algorithm-header_html_gad3271ee1abafc543f4bf69cc20b01ded"><div class="ttname"><a href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition:</b> copy.hpp:20</div></div>
-<div class="ttc" id="aless_8hpp_html"><div class="ttname"><a href="less_8hpp.html">less.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a563244b70e444026e7ddee3ad609b4a5"><div class="ttname"><a href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">etl::set_difference</a></div><div class="ttdeci">constexpr auto set_difference(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination, Compare comp) -&gt; OutputIt</div><div class="ttdoc">Copies the elements from the sorted range [first1, last1) which are not found in the sorted range [fi...</div><div class="ttdef"><b>Definition:</b> set_difference.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1less_html"><div class="ttname"><a href="structetl_1_1less.html">etl::less</a></div><div class="ttdoc">Function object for performing comparisons. Unless specialised, invokes operator&lt; on type T....</div><div class="ttdef"><b>Definition:</b> less.hpp:14</div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_SET_DIFFERENCE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

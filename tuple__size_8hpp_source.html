@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,41 +98,35 @@ $(document).ready(function(){initNavTree('tuple__size_8hpp_source.html',''); ini
 <div class="contents">
 <a href="tuple__size_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integral__constant_8hpp.html">etl/_type_traits/integral_constant.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">integral_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct </span>tuple;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1tuple.html">tuple</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1tuple__size.html">tuple_size</a>; <span class="comment">/*undefined*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size.html">   15</a></span>&#160;<span class="keyword">struct</span> tuple_size; <span class="comment">/*undefined*/</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01const_01_4.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1tuple__size.html">tuple_size</a>&lt;T const&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01const_01_4.html">   18</a></span>&#160;<span class="keyword">struct</span> tuple_size&lt;T <span class="keyword">const</span>&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01volatile_01_4.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1tuple__size.html">tuple_size</a>&lt;T volatile&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01volatile_01_4.html">   21</a></span>&#160;<span class="keyword">struct</span> tuple_size&lt;T <span class="keyword">volatile</span>&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01const_01volatile_01_4.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1tuple__size.html">tuple_size</a>&lt;T const volatile&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1tuple__size_3_01T_01const_01volatile_01_4.html">   24</a></span>&#160;<span class="keyword">struct</span> tuple_size&lt;T <span class="keyword">const</span> <span class="keyword">volatile</span>&gt; : <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, tuple_size&lt;T&gt;::value&gt; { };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">   27</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">tuple_size_v</a> = <a class="code" href="structetl_1_1tuple__size.html">tuple_size&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">T</a>&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">   27</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">tuple_size_v</a> = <a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">tuple_size</a>&lt;<a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">T</a>&gt;::<a class="code" href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">value</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
-<div class="ttc" id="aintegral__constant_8hpp_html"><div class="ttname"><a href="integral__constant_8hpp.html">integral_constant.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a93d0a5fb70cb82c336299812b04498f8"><div class="ttname"><a href="namespaceetl.html#a93d0a5fb70cb82c336299812b04498f8">etl::tuple_size_v</a></div><div class="ttdeci">constexpr auto tuple_size_v</div><div class="ttdef"><b>Definition:</b> tuple_size.hpp:27</div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1tuple__size_html"><div class="ttname"><a href="structetl_1_1tuple__size.html">etl::tuple_size</a></div><div class="ttdef"><b>Definition:</b> tuple_size.hpp:15</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TUPLE_TUPLE_SIZE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

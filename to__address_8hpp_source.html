@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,40 +98,45 @@ $(document).ready(function(){initNavTree('to__address_8hpp_source.html',''); ini
 <div class="contents">
 <a href="to__address_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MEMORY_TO_ADDRESS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MEMORY_TO_ADDRESS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MEMORY_TO_ADDRESS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MEMORY_TO_ADDRESS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pointer__traits_8hpp.html">etl/_memory/pointer_traits.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__function_8hpp.html">etl/_type_traits/is_function.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_memory</span><span class="preprocessor">/</span><span class="preprocessor">pointer_traits</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_function</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Obtain the address represented by p without forming a reference to</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// the object pointed to by p.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \details Fancy pointer overload: If the expression</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// pointer_traits&lt;Ptr&gt;::to_address(p) is well-formed, returns the result of</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// that expression. Otherwise, returns to_address(p.operator-&gt;()).</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Ptr&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">to_address</a>(Ptr <span class="keyword">const</span>&amp; ptr) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">   18</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">to_address</a>(Ptr <span class="keyword">const</span>&amp; ptr) <span class="keyword">noexcept</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> constexpr (<a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a> { <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">pointer_traits&lt;Ptr&gt;::to_address</a>(ptr); }) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">pointer_traits&lt;Ptr&gt;::to_address</a>(ptr);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<span class="keyword">requires</span> { pointer_traits&lt;Ptr&gt;::to_address(ptr); }) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1pointer__traits.html">pointer_traits</a>&lt;Ptr&gt;::to_address(ptr);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">to_address</a>(ptr.operator-&gt;());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> to_address(ptr.operator-&gt;());</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/// \brief Obtain the address represented by p without forming a reference to</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/// the object pointed to by p.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/// \details Raw pointer overload: If T is a function type, the program is</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/// ill-formed. Otherwise, returns p unmodified.</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5f9c482d4902a3f7e3af12f0e66963ed">   33</a></span>&#160;    <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(not is_function_v&lt;T&gt;)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">to_address</a>(T* ptr) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T*</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5f9c482d4902a3f7e3af12f0e66963ed">   33</a></span>&#160;    <span class="keyword">requires</span>(<span class="keyword">not</span> <a class="code" href="namespaceetl.html#a5f9c482d4902a3f7e3af12f0e66963ed">is_function_v</a>&lt;<a class="code" href="namespaceetl.html#a5f9c482d4902a3f7e3af12f0e66963ed">T</a>&gt;)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5f9c482d4902a3f7e3af12f0e66963ed">to_address</a>(T* ptr) <span class="keyword">noexcept</span> -&gt; T*</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> ptr;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_TO_ADDRESS_HPP</span></div>
-<div class="ttc" id="ais__function_8hpp_html"><div class="ttname"><a href="is__function_8hpp.html">is_function.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_aa686fb94d6fbf9538a40cf4040a6ac81"><div class="ttname"><a href="namespaceetl.html#aa686fb94d6fbf9538a40cf4040a6ac81">etl::to_address</a></div><div class="ttdeci">constexpr auto to_address(Ptr const &amp;ptr) noexcept</div><div class="ttdoc">Obtain the address represented by p without forming a reference to the object pointed to by p.</div><div class="ttdef"><b>Definition:</b> to_address.hpp:18</div></div>
-<div class="ttc" id="apointer__traits_8hpp_html"><div class="ttname"><a href="pointer__traits_8hpp.html">pointer_traits.hpp</a></div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MEMORY_TO_ADDRESS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,57 +98,48 @@ $(document).ready(function(){initNavTree('variant__fwd_8hpp_source.html',''); in
 <div class="contents">
 <a href="variant__fwd_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_VARIANT_VARIANT_FWD_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_VARIANT_VARIANT_FWD_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_VARIANT_VARIANT_FWD_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_VARIANT_VARIANT_FWD_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__const_8hpp.html">etl/_type_traits/add_const.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__cv_8hpp.html">etl/_type_traits/add_cv.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__pointer_8hpp.html">etl/_type_traits/add_pointer.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__volatile_8hpp.html">etl/_type_traits/add_volatile.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_const</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_cv</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_pointer</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_volatile</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Types&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span>variant;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1variant.html">variant</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1variant__size.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1variant__size.html">variant_size</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1variant__size.html">   18</a></span>&#160;<span class="keyword">struct</span> variant_size;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1variant__alternative.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1variant__alternative.html">variant_alternative</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// \brief Provides compile-time indexed access to the types of the alternatives</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/// of the possibly cv-qualified variant, combining cv-qualifications of the</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/// variant (if any) with the cv-qualifications of the alternative.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1variant__alternative.html">   24</a></span>&#160;<span class="keyword">struct</span> variant_alternative;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Types&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#aeffc9f0ae12737a221731fd43249e944">   27</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant&lt;Types...&gt;</a>* pv) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t&lt;T&gt;</a>; <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#aeffc9f0ae12737a221731fd43249e944">   27</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aeffc9f0ae12737a221731fd43249e944">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T&gt;; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Types&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a32dbeed267147923b02448b493be930d">   30</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant&lt;Types...&gt;</a> <span class="keyword">const</span>* pv) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t&lt;T const&gt;</a>; <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a32dbeed267147923b02448b493be930d">   30</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a32dbeed267147923b02448b493be930d">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt; <span class="keyword">const</span>* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;T <span class="keyword">const</span>&gt;; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span>... Types&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant&lt;Types...&gt;</a>* pv) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t</a>&lt;<span class="keyword">typename</span> <a class="code" href="structetl_1_1variant__alternative.html">variant_alternative</a>&lt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Types&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;<span class="keyword">typename</span> variant_alternative&lt;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                          I,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                          <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;&gt;::type&gt;; <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                          <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;&gt;::<a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">type</a>&gt;; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span>... Types&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant&lt;Types...&gt;</a> <span class="keyword">const</span>* pv) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">add_pointer_t</a>&lt;<span class="keyword">typename</span> <a class="code" href="structetl_1_1variant__alternative.html">variant_alternative</a>&lt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;size_t I, <span class="keyword">typename</span>... Types&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">get_if</a>(<a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt; <span class="keyword">const</span>* pv) <span class="keyword">noexcept</span> -&gt; add_pointer_t&lt;<span class="keyword">typename</span> variant_alternative&lt;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                I,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;&gt;::type <span class="keyword">const</span>&gt;; <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                <a class="code" href="structetl_1_1variant.html">variant</a>&lt;Types...&gt;&gt;::<a class="code" href="namespaceetl.html#a72842431b135e51894f5c6a7752cf12a">type</a> <span class="keyword">const</span>&gt;; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_VARIANT_VARIANT_FWD_HPP</span></div>
-<div class="ttc" id="aadd__const_8hpp_html"><div class="ttname"><a href="add__const_8hpp.html">add_const.hpp</a></div></div>
-<div class="ttc" id="aadd__cv_8hpp_html"><div class="ttname"><a href="add__cv_8hpp.html">add_cv.hpp</a></div></div>
-<div class="ttc" id="aadd__pointer_8hpp_html"><div class="ttname"><a href="add__pointer_8hpp.html">add_pointer.hpp</a></div></div>
-<div class="ttc" id="aadd__volatile_8hpp_html"><div class="ttname"><a href="add__volatile_8hpp.html">add_volatile.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a2ab42b86be16dbdbaa744a2caaca7e80"><div class="ttname"><a href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a></div><div class="ttdeci">typename etl::add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a5756e54810f927e033e5cce195c7501e"><div class="ttname"><a href="namespaceetl.html#a5756e54810f927e033e5cce195c7501e">etl::get_if</a></div><div class="ttdeci">constexpr auto get_if(variant&lt; Ts... &gt; *pv) noexcept -&gt; add_pointer_t&lt; variant_alternative_t&lt; I, variant&lt; Ts... &gt;&gt;&gt;</div><div class="ttdoc">Index-based non-throwing accessor: If pv is not a null pointer and pv-&gt;index() == I,...</div><div class="ttdef"><b>Definition:</b> variant.hpp:559</div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1variant__alternative_html"><div class="ttname"><a href="structetl_1_1variant__alternative.html">etl::variant_alternative</a></div><div class="ttdoc">Provides compile-time indexed access to the types of the alternatives of the possibly cv-qualified va...</div><div class="ttdef"><b>Definition:</b> variant_fwd.hpp:24</div></div>
-<div class="ttc" id="astructetl_1_1variant__size_html"><div class="ttname"><a href="structetl_1_1variant__size.html">etl::variant_size</a></div><div class="ttdef"><b>Definition:</b> variant_fwd.hpp:18</div></div>
-<div class="ttc" id="astructetl_1_1variant_html"><div class="ttname"><a href="structetl_1_1variant.html">etl::variant</a></div><div class="ttdoc">The class template variant represents a type-safe union. An instance of variant at any given time eit...</div><div class="ttdef"><b>Definition:</b> variant.hpp:271</div></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_VARIANT_VARIANT_FWD_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

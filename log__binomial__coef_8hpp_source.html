@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -108,34 +116,42 @@ $(document).ready(function(){initNavTree('log__binomial__coef_8hpp_source.html',
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_log_binomial_coef_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_log_binomial_coef_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_log_binomial_coef_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_log_binomial_coef_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace</span> internal {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;constexpr <span class="keyword">auto</span> log_binomial_coef_compute(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) noexcept -&gt; T</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> log_binomial_coef_compute(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(n + 1) - (<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(k + 1) + <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(n - k + 1)));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> (lgamma(n + 1) - (lgamma(k + 1) + lgamma(n - k + 1)));</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> TC = common_return_t&lt;T1, T2&gt;&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;constexpr <span class="keyword">auto</span> log_binomial_coef_type_check(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) noexcept -&gt; TC</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> log_binomial_coef_type_check(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) <span class="keyword">noexcept</span> -&gt; TC</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> log_binomial_coef_compute(<span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(n), <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(k));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> log_binomial_coef_compute(<span class="keyword">static_cast</span>&lt;TC&gt;(n), <span class="keyword">static_cast</span>&lt;TC&gt;(k));</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * Compile-time log binomial coefficient</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * @param n integral-valued input.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * @param k integral-valued input.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @return computes the log Binomial coefficient</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * \f[ \ln \frac{n!}{k!(n-k)!} = \ln \Gamma(n+1) - [ \ln \Gamma(k+1) + \ln</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * \Gamma(n-k+1) ] \f]</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">   51</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">log_binomial_coef</a>(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) noexcept -&gt; common_return_t&lt;T1, T2&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">   51</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">log_binomial_coef</a>(<span class="keyword">const</span> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">T1</a> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">n</a>, <span class="keyword">const</span> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">T2</a> <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">k</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">common_return_t</a>&lt;<a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">T1</a>, <a class="code" href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">T2</a>&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> internal::log_binomial_coef_type_check(n, k);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp_html_a14a513449fbcbd357c584be73eff1189"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a></div><div class="ttdeci">constexpr auto lgamma(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> lgamma.hpp:113</div></div>
-<div class="ttc" id="alog__binomial__coef_8hpp_html_a961d6a40e3a48abdbe728349d648c473"><div class="ttname"><a href="log__binomial__coef_8hpp.html#a961d6a40e3a48abdbe728349d648c473">log_binomial_coef</a></div><div class="ttdeci">constexpr auto log_binomial_coef(const T1 n, const T2 k) noexcept -&gt; common_return_t&lt; T1, T2 &gt;</div><div class="ttdef"><b>Definition:</b> log_binomial_coef.hpp:51</div></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,41 +98,34 @@ $(document).ready(function(){initNavTree('is__implicit__default__constructible_8
 <div class="contents">
 <a href="is__implicit__default__constructible_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__default__constructible_8hpp.html">etl/_type_traits/is_default_constructible.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_default_constructible</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa">test_implicit_default_constructible</a>(T);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;template &lt;typename T, typename = void, typename = typename etl::is_default_constructible&lt;T&gt;::type&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a> : <a class="code" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>, <span class="keyword">typename</span> = <span class="keyword">typename</span> etl::<a class="code" href="structetl_1_1is__default__constructible.html">is_default_constructible</a>&lt;T&gt;::type&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible.html">   15</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a> : false_type { };</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a>&lt;T, decltype(<a class="code" href="namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa">test_implicit_default_constructible</a>&lt;T const&amp;&gt;({})), <a class="code" href="structetl_1_1integral__constant.html">true_type</a>&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    : <a class="code" href="structetl_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html">   18</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a>&lt;T, <span class="keyword">decltype</span>(test_implicit_default_constructible&lt;T <span class="keyword">const</span>&amp;&gt;({})), true_type&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    : true_type { };</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a>&lt;T, decltype(<a class="code" href="namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa">test_implicit_default_constructible</a>&lt;T const&amp;&gt;({})), <a class="code" href="structetl_1_1integral__constant.html">false_type</a>&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <a class="code" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html">   22</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible</a>&lt;T, <span class="keyword">decltype</span>(test_implicit_default_constructible&lt;T <span class="keyword">const</span>&amp;&gt;({})), false_type&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : false_type { };</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">   26</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">is_implicit_default_constructible_v</a> = <a class="code" href="structetl_1_1is__implicit__default__constructible.html">is_implicit_default_constructible&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">T</a>&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">   26</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">is_implicit_default_constructible_v</a> = <a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">is_implicit_default_constructible</a>&lt;<a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">T</a>&gt;::<a class="code" href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">value</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
-<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="ais__default__constructible_8hpp_html"><div class="ttname"><a href="is__default__constructible_8hpp.html">is_default_constructible.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d2a8839b0088ceabc861e39e5a15daa"><div class="ttname"><a href="namespaceetl.html#a5d2a8839b0088ceabc861e39e5a15daa">etl::test_implicit_default_constructible</a></div><div class="ttdeci">void test_implicit_default_constructible(T)</div></div>
-<div class="ttc" id="anamespaceetl_html_a750d61c5b9f6964af8d9465794b92953"><div class="ttname"><a href="namespaceetl.html#a750d61c5b9f6964af8d9465794b92953">etl::is_implicit_default_constructible_v</a></div><div class="ttdeci">constexpr auto is_implicit_default_constructible_v</div><div class="ttdef"><b>Definition:</b> is_implicit_default_constructible.hpp:26</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1is__implicit__default__constructible_html"><div class="ttname"><a href="structetl_1_1is__implicit__default__constructible.html">etl::is_implicit_default_constructible</a></div><div class="ttdef"><b>Definition:</b> is_implicit_default_constructible.hpp:15</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_IS_IMPLICIT_DEFAULT_CONSTRUCTIBLE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

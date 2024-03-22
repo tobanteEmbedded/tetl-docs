@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,27 +98,30 @@ $(document).ready(function(){initNavTree('in__place_8hpp_source.html',''); initR
 <div class="contents">
 <a href="in__place_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_UTILITY_IN_PLACE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_UTILITY_IN_PLACE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_UTILITY_IN_PLACE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_UTILITY_IN_PLACE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1in__place__t.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1in__place__t.html">in_place_t</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Disambiguation tags that can be passed to the constructors of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// `optional`, `variant`, and `any` to indicate that the contained</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// object should be constructed in-place, and (for the latter two) the type of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// the object to be constructed.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// The corresponding type/type templates `in_place_t`, `in_place_type_t`</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// and `in_place_index_t` can be used in the constructor&#39;s parameter list to</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// match the intended tag.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1in__place__t.html">   18</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1in__place__t.html">in_place_t</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1in__place__t.html#af289f5a35c155c12812493f119cbc859">   19</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structetl_1_1in__place__t.html#af289f5a35c155c12812493f119cbc859">in_place_t</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea">   22</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea">in_place</a> = <a class="code" href="structetl_1_1in__place__t.html">in_place_t</a>{};</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea">   22</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea">in_place</a> = <a class="code" href="structetl_1_1in__place__t.html">in_place_t</a><a class="code" href="structetl_1_1in__place__t.html#af289f5a35c155c12812493f119cbc859">{</a><a class="code" href="structetl_1_1in__place__t.html#af289f5a35c155c12812493f119cbc859">}</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_UTILITY_IN_PLACE_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a4e2e748d9aa9eee89e9ae27c1783dbea"><div class="ttname"><a href="namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea">etl::in_place</a></div><div class="ttdeci">constexpr auto in_place</div><div class="ttdef"><b>Definition:</b> in_place.hpp:22</div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1in__place__t_html"><div class="ttname"><a href="structetl_1_1in__place__t.html">etl::in_place_t</a></div><div class="ttdoc">Disambiguation tags that can be passed to the constructors of optional, variant, and any to indicate ...</div><div class="ttdef"><b>Definition:</b> in_place.hpp:18</div></div>
-<div class="ttc" id="astructetl_1_1in__place__t_html_af289f5a35c155c12812493f119cbc859"><div class="ttname"><a href="structetl_1_1in__place__t.html#af289f5a35c155c12812493f119cbc859">etl::in_place_t::in_place_t</a></div><div class="ttdeci">in_place_t()=default</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_UTILITY_IN_PLACE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

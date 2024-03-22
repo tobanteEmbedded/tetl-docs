@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -115,10 +123,10 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2lgamma
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * http://my.fit.edu/~gabdo/gamma.txt</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef GCEM_lgamma_HPP</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define GCEM_lgamma_HPP</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_lgamma_HPP</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_lgamma_HPP</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace</span> internal {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// P. Godfrey&#39;s coefficients:</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//</span></div>
@@ -138,7 +146,7 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2lgamma
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//   -.26190838401581408670e-4</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//    .36899182659531622704e-5</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;constexpr <span class="keyword">auto</span> lgamma_coef_term(<span class="keywordtype">long</span> <span class="keywordtype">double</span> <span class="keyword">const</span> x) noexcept -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lgamma_coef_term(<span class="keywordtype">long</span> <span class="keywordtype">double</span> <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> (</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        0.99999999999999709182L + 57.156235665862923517L / (x + 1) - 59.597960355475491248L / (x + 2)</div>
@@ -152,31 +160,31 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2lgamma
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;constexpr <span class="keyword">auto</span> lgamma_term_2(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lgamma_term_2(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{ <span class="comment">//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> (T(<a class="code" href="gcem__options_8hpp.html#aaa1f6092f162ac6cba1bd6cd54129269">GCEM_LOG_SQRT_2PI</a>) + <a class="code" href="__3rd__party_2gcem_2gcem__incl_2log_8hpp.html#aca532f2d37882b6705b2ede26019fe7a">log</a>(T(lgamma_coef_term(x))));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> (T(GCEM_LOG_SQRT_2PI) + log(T(lgamma_coef_term(x))));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;constexpr <span class="keyword">auto</span> lgamma_term_1(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lgamma_term_1(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{ <span class="comment">// note: 607/128 + 0.5 = 5.2421875</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> ((x + T(0.5)) * <a class="code" href="__3rd__party_2gcem_2gcem__incl_2log_8hpp.html#aca532f2d37882b6705b2ede26019fe7a">log</a>(x + T(5.2421875L)) - (x + T(5.2421875L)));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> ((x + T(0.5)) * log(x + T(5.2421875L)) - (x + T(5.2421875L)));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;constexpr <span class="keyword">auto</span> lgamma_begin(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lgamma_begin(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="comment">// returns lngamma(x+1)</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> (lgamma_term_1(x) + lgamma_term_2(x));</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;constexpr <span class="keyword">auto</span> lgamma_check(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lgamma_check(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// NaN check</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        is_nan(x) ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::quiet_NaN</a>() :</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        is_nan(x) ? etl::numeric_limits&lt;T&gt;::quiet_NaN() :</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                  <span class="comment">// indistinguishable from one or &lt;= zero</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::epsilon</a>() &gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a>(x - T(1)) ? T(0)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        : <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::epsilon</a>() &gt; x               ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::infinity</a>()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            etl::numeric_limits&lt;T&gt;::epsilon() &gt; abs(x - T(1)) ? T(0)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        : etl::numeric_limits&lt;T&gt;::epsilon() &gt; x               ? etl::numeric_limits&lt;T&gt;::infinity()</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                              :</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                <span class="comment">// else</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            lgamma_begin(x - T(1))</div>
@@ -185,18 +193,27 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2lgamma
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * Compile-time log-gamma function</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> * @param x a real-valued input.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * @return computes the log-gamma function</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> * \f[ \ln \Gamma(x) = \ln \int_0^\infty y^{x-1} \exp(-y) dy \f]</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> * using a polynomial form:</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> * \f[ \Gamma(x+1) \approx (x+g+0.5)^{x+0.5} \exp(-x-g-0.5) \sqrt{2 \pi} \left[</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> * c_0 + \frac{c_1}{x+1} + \frac{c_2}{x+2} + \cdots + \frac{c_n}{x+n} \right]</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * \f] where the value \f$ g \f$ and the coefficients \f$ (c_0, c_1, \ldots,</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * c_n) \f$ are taken from Paul Godfrey, whose note can be found here:</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * http://my.fit.edu/~gabdo/gamma.txt</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">  113</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(T <span class="keyword">const</span> x) noexcept -&gt; return_t&lt;T&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">  113</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">T</a> <span class="keyword">const</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">x</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">return_t</a>&lt;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">T</a>&gt;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> internal::lgamma_check(<span class="keyword">static_cast&lt;</span>return_t&lt;T&gt;<span class="keyword">&gt;</span>(x));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> internal::lgamma_check(<span class="keyword">static_cast</span>&lt;return_t&lt;T&gt;&gt;(x));</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2abs_8hpp_html_af74c8bcf60a130ea74d416ac0e454f74"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a></div><div class="ttdeci">constexpr auto abs(T const x) noexcept -&gt; T</div><div class="ttdef"><b>Definition:</b> abs.hpp:32</div></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp_html_a14a513449fbcbd357c584be73eff1189"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a></div><div class="ttdeci">constexpr auto lgamma(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> lgamma.hpp:113</div></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2log_8hpp_html_aca532f2d37882b6705b2ede26019fe7a"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2log_8hpp.html#aca532f2d37882b6705b2ede26019fe7a">log</a></div><div class="ttdeci">constexpr auto log(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> log.hpp:126</div></div>
-<div class="ttc" id="agcem__options_8hpp_html_aaa1f6092f162ac6cba1bd6cd54129269"><div class="ttname"><a href="gcem__options_8hpp.html#aaa1f6092f162ac6cba1bd6cd54129269">GCEM_LOG_SQRT_2PI</a></div><div class="ttdeci">#define GCEM_LOG_SQRT_2PI</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:81</div></div>
-<div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

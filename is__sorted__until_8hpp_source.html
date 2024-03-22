@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -89,43 +97,40 @@ $(document).ready(function(){initNavTree('is__sorted__until_8hpp_source.html',''
 </div><!--header-->
 <div class="contents">
 <a href="is__sorted__until_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="less_8hpp.html">etl/_functional/less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">   10</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; ForwardIt</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">   10</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(ForwardIt first, ForwardIt last, Compare comp) -&gt; ForwardIt</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (first != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        ForwardIt <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> = first;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">while</span> (++<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a> != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (comp(*<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>, *first)) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (first != last) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        ForwardIt next = first;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">while</span> (++next != last) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (comp(*next, *first)) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">return</span> next;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            first = <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            first = next;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> last;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/// \brief Examines the range `[first, last)` and finds the largest range</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/// beginning at `first` in which the elements are sorted in non-descending</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/// order.</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#a04cca9919e02704d1dd11db707e679ee">   28</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; ForwardIt</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#a04cca9919e02704d1dd11db707e679ee">   28</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a04cca9919e02704d1dd11db707e679ee">is_sorted_until</a>(ForwardIt first, ForwardIt last) -&gt; ForwardIt</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="code" href="structetl_1_1less.html">less&lt;&gt;</a>());</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> is_sorted_until(first, last, <a class="code" href="structetl_1_1less.html">less</a>&lt;&gt;());</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
-<div class="ttc" id="aless_8hpp_html"><div class="ttname"><a href="less_8hpp.html">less.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a26cb4df55d0b061279b599134e294f22"><div class="ttname"><a href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">etl::is_sorted_until</a></div><div class="ttdeci">constexpr auto is_sorted_until(ForwardIt first, ForwardIt last, Compare comp) -&gt; ForwardIt</div><div class="ttdef"><b>Definition:</b> is_sorted_until.hpp:10</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition:</b> next.hpp:13</div></div>
-<div class="ttc" id="astructetl_1_1less_html"><div class="ttname"><a href="structetl_1_1less.html">etl::less</a></div><div class="ttdoc">Function object for performing comparisons. Unless specialised, invokes operator&lt; on type T....</div><div class="ttdef"><b>Definition:</b> less.hpp:14</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_IS_SORTED_UNTIL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

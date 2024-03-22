@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,30 +98,25 @@ $(document).ready(function(){initNavTree('next_8hpp_source.html',''); initResiza
 <div class="contents">
 <a href="next_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ITERATOR_NEXT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_NEXT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_NEXT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_NEXT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="advance_8hpp.html">etl/_iterator/advance.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iterator__traits_8hpp.html">etl/_iterator/iterator_traits.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">advance</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">iterator_traits</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Return the nth successor of iterator it.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">   13</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(InputIt it, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits&lt;InputIt&gt;::difference_type</a> n = 1) -&gt; InputIt</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">   13</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(InputIt it, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;InputIt&gt;::difference_type n = 1) -&gt; InputIt</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a>(it, n);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    etl::advance(it, n);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> it;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_NEXT_HPP</span></div>
-<div class="ttc" id="aadvance_8hpp_html"><div class="ttname"><a href="advance_8hpp.html">advance.hpp</a></div></div>
-<div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition:</b> next.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_ac45065b143a47fb9249bda8d57ccca63"><div class="ttname"><a href="namespaceetl.html#ac45065b143a47fb9249bda8d57ccca63">etl::advance</a></div><div class="ttdeci">constexpr auto advance(It &amp;it, Distance n) -&gt; void</div><div class="ttdoc">Increments given iterator it by n elements. If n is negative, the iterator is decremented....</div><div class="ttdef"><b>Definition:</b> advance.hpp:18</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:47</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_NEXT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

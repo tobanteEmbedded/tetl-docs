@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -112,37 +120,41 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2sinh_8
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * compile-time hyperbolic sine function</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef GCEM_sinh_HPP</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define GCEM_sinh_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_sinh_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_sinh_HPP</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace</span> internal {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;constexpr <span class="keyword">auto</span> sinh_check(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> sinh_check(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// NaN check</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        is_nan(x) ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::quiet_NaN</a>() :</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        is_nan(x) ? etl::numeric_limits&lt;T&gt;::quiet_NaN() :</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                  <span class="comment">// indistinguishable from zero</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::epsilon</a>() &gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a>(x) ? T(0)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            etl::numeric_limits&lt;T&gt;::epsilon() &gt; abs(x) ? T(0)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                       :</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                       <span class="comment">// else</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            (<a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a>(x) - <a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a>(-x)) / T(2)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            (exp(x) - exp(-x)) / T(2)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    );</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * Compile-time hyperbolic sine function</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @param x a real-valued input.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @return the hyperbolic sine function using \f[ \sinh(x) = \frac{\exp(x) -</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * \exp(-x)}{2} \f]</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">   54</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">sinh</a>(T <span class="keyword">const</span> x) noexcept -&gt; return_t&lt;T&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">   54</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">sinh</a>(<a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">T</a> <span class="keyword">const</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">x</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">return_t</a>&lt;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">T</a>&gt;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> internal::sinh_check(<span class="keyword">static_cast&lt;</span>return_t&lt;T&gt;<span class="keyword">&gt;</span>(x));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> internal::sinh_check(<span class="keyword">static_cast</span>&lt;return_t&lt;T&gt;&gt;(x));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2abs_8hpp_html_af74c8bcf60a130ea74d416ac0e454f74"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a></div><div class="ttdeci">constexpr auto abs(T const x) noexcept -&gt; T</div><div class="ttdef"><b>Definition:</b> abs.hpp:32</div></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2exp_8hpp_html_ab5518a8d1b54af5e8675171f95a30de4"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a></div><div class="ttdeci">constexpr auto exp(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> exp.hpp:82</div></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2sinh_8hpp_html_a104fe9971232fcdda7684fab7fd216ca"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html#a104fe9971232fcdda7684fab7fd216ca">sinh</a></div><div class="ttdeci">constexpr auto sinh(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> sinh.hpp:54</div></div>
-<div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

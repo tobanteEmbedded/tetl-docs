@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,28 +98,22 @@ $(document).ready(function(){initNavTree('movable_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="movable_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONCEPTS_MOVABLE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONCEPTS_MOVABLE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONCEPTS_MOVABLE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONCEPTS_MOVABLE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="assignable__from_8hpp.html">etl/_concepts/assignable_from.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="move__constructible_8hpp.html">etl/_concepts/move_constructible.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="swappable_8hpp.html">etl/_concepts/swappable.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__object_8hpp.html">etl/_type_traits/is_object.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">assignable_from</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">move_constructible</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">swappable</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_object</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">   14</a></span>&#160;concept <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">movable</a> = is_object_v&lt;T&gt; and move_constructible&lt;T&gt; and assignable_from&lt;T&amp;, T&gt; and swappable&lt;T&gt;;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">   14</a></span>&#160;<span class="keyword">concept</span> <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">movable</a> = <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">is_object_v</a>&lt;<a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&gt; <span class="keyword">and</span> <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">move_constructible</a>&lt;<a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&gt; <span class="keyword">and</span> <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">assignable_from</a>&lt;<a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&amp;, <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&gt; <span class="keyword">and</span> <a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">swappable</a>&lt;<a class="code" href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">T</a>&gt;;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_MOVABLE_HPP</span></div>
-<div class="ttc" id="aassignable__from_8hpp_html"><div class="ttname"><a href="assignable__from_8hpp.html">assignable_from.hpp</a></div></div>
-<div class="ttc" id="ais__object_8hpp_html"><div class="ttname"><a href="is__object_8hpp.html">is_object.hpp</a></div></div>
-<div class="ttc" id="amove__constructible_8hpp_html"><div class="ttname"><a href="move__constructible_8hpp.html">move_constructible.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a4f6b96f07b8ee5033e7e669fd72e5494"><div class="ttname"><a href="namespaceetl.html#a4f6b96f07b8ee5033e7e669fd72e5494">etl::movable</a></div><div class="ttdeci">concept movable</div><div class="ttdef"><b>Definition:</b> movable.hpp:14</div></div>
-<div class="ttc" id="aswappable_8hpp_html"><div class="ttname"><a href="swappable_8hpp.html">swappable.hpp</a></div></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONCEPTS_MOVABLE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

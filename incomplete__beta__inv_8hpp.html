@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -151,17 +159,17 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Computes the inverse incomplete beta function, a value <img class="formulaInl" alt="$ x $" src="form_17.png"/> such that <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f(x) := \frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)} - p \]" src="form_40.png"/>
+<dl class="section return"><dt>Returns</dt><dd>Computes the inverse incomplete beta function, a value \( x \) such that <p class="formulaDsp">
+\[ f(x) := \frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)} - p \]
 </p>
  equal to zero, for a given <code>p</code>. GCE-Math finds this root using Halley's method: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x_{n+1} = x_n - \frac{f(x_n)/f'(x_n)}{1 - 0.5 \frac{f(x_n)}{f'(x_n)} \frac{f''(x_n)}{f'(x_n)} } \]" src="form_19.png"/>
+\[ x_{n+1} = x_n - \frac{f(x_n)/f&#39;(x_n)}{1 - 0.5 \frac{f(x_n)}{f&#39;(x_n)} \frac{f&#39;&#39;(x_n)}{f&#39;(x_n)} } \]
 </p>
  where <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \frac{\partial}{\partial x} \left(\frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)}\right) = \frac{1}{\text{B}(\alpha,\beta)} x^{\alpha-1} (1-x)^{\beta-1} \]" src="form_41.png"/>
+\[ \frac{\partial}{\partial x} \left(\frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)}\right) = \frac{1}{\text{B}(\alpha,\beta)} x^{\alpha-1} (1-x)^{\beta-1} \]
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \frac{\partial^2}{\partial x^2} \left(\frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)}\right) = \frac{1}{\text{B}(\alpha,\beta)} x^{\alpha-1} (1-x)^{\beta-1} \left( \frac{\alpha-1}{x} - \frac{\beta-1}{1 - x} \right) \]" src="form_42.png"/>
+\[ \frac{\partial^2}{\partial x^2} \left(\frac{\text{B}(x;\alpha,\beta)}{\text{B}(\alpha,\beta)}\right) = \frac{1}{\text{B}(\alpha,\beta)} x^{\alpha-1} (1-x)^{\beta-1} \left( \frac{\alpha-1}{x} - \frac{\beta-1}{1 - x} \right) \]
 </p>
  </dd></dl>
 

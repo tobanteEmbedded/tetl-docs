@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -133,10 +141,10 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$ \exp(x) $" src="form_21.png"/> using <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \exp(x) = \dfrac{1}{1-\dfrac{x}{1+x-\dfrac{\frac{1}{2}x}{1 + \frac{1}{2}x - \dfrac{\frac{1}{3}x}{1 + \frac{1}{3}x - \ddots}}}} \]" src="form_22.png"/>
+<dl class="section return"><dt>Returns</dt><dd>\( \exp(x) \) using <p class="formulaDsp">
+\[ \exp(x) = \dfrac{1}{1-\dfrac{x}{1+x-\dfrac{\frac{1}{2}x}{1 + \frac{1}{2}x - \dfrac{\frac{1}{3}x}{1 + \frac{1}{3}x - \ddots}}}} \]
 </p>
- The continued fraction argument is split into two parts: <img class="formulaInl" alt="$ x = n + r $" src="form_23.png"/>, where <img class="formulaInl" alt="$ n $" src="form_24.png"/> is an integer and <img class="formulaInl" alt="$ r \in [-0.5,0.5] $" src="form_25.png"/>. </dd></dl>
+ The continued fraction argument is split into two parts: \( x = n + r \), where \( n \) is an integer and \( r \in [-0.5,0.5] \). </dd></dl>
 
 </div>
 </div>

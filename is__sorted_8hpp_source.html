@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,33 +98,30 @@ $(document).ready(function(){initNavTree('is__sorted_8hpp_source.html',''); init
 <div class="contents">
 <a href="is__sorted_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_IS_SORTED_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_IS_SORTED_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_IS_SORTED_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_IS_SORTED_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__sorted__until_8hpp.html">etl/_algorithm/is_sorted_until.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_algorithm</span><span class="preprocessor">/</span><span class="preprocessor">is_sorted_until</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Checks if the elements in range `[first, last)` are sorted in</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// non-descending order.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">   13</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">is_sorted</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">   13</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">is_sorted</a>(ForwardIt first, ForwardIt last) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> is_sorted_until(first, last) == last;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab728b1a920fd45e985ed73b9874fcb7d">   19</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">is_sorted</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab728b1a920fd45e985ed73b9874fcb7d">   19</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab728b1a920fd45e985ed73b9874fcb7d">is_sorted</a>(ForwardIt first, ForwardIt last, Compare comp) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">is_sorted_until</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, comp) == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> is_sorted_until(first, last, comp) == last;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_IS_SORTED_HPP</span></div>
-<div class="ttc" id="ais__sorted__until_8hpp_html"><div class="ttname"><a href="is__sorted__until_8hpp.html">is_sorted_until.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a26cb4df55d0b061279b599134e294f22"><div class="ttname"><a href="namespaceetl.html#a26cb4df55d0b061279b599134e294f22">etl::is_sorted_until</a></div><div class="ttdeci">constexpr auto is_sorted_until(ForwardIt first, ForwardIt last, Compare comp) -&gt; ForwardIt</div><div class="ttdef"><b>Definition:</b> is_sorted_until.hpp:10</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_a671187bf1a3dd1a99a1acfada1927fcf"><div class="ttname"><a href="namespaceetl.html#a671187bf1a3dd1a99a1acfada1927fcf">etl::is_sorted</a></div><div class="ttdeci">constexpr auto is_sorted(ForwardIt first, ForwardIt last) -&gt; bool</div><div class="ttdoc">Checks if the elements in range [first, last) are sorted in non-descending order.</div><div class="ttdef"><b>Definition:</b> is_sorted.hpp:13</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_IS_SORTED_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

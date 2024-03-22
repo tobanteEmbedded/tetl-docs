@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,29 +98,22 @@ $(document).ready(function(){initNavTree('overflow__error_8hpp_source.html','');
 <div class="contents">
 <a href="overflow__error_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="runtime__error_8hpp.html">etl/_stdexcept/runtime_error.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_stdexcept</span><span class="preprocessor">/</span><span class="preprocessor">runtime_error</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1overflow__error.html">overflow_error</a> : <a class="code" href="structetl_1_1runtime__error.html">runtime_error</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html#ac5537b088cf616a137297a7a5998a3a0">   11</a></span>&#160;    constexpr <a class="code" href="structetl_1_1overflow__error.html#ac5537b088cf616a137297a7a5998a3a0">overflow_error</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html">   10</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1overflow__error.html">overflow_error</a> : <a class="code" href="structetl_1_1runtime__error.html">runtime_error</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html#ac5537b088cf616a137297a7a5998a3a0">   11</a></span>&#160;    <span class="keyword">constexpr</span> <a class="code" href="structetl_1_1overflow__error.html#ac5537b088cf616a137297a7a5998a3a0">overflow_error</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html#a533d788764ed2ecdbd0f544d985b61d3">   13</a></span>&#160;    constexpr <span class="keyword">explicit</span> <a class="code" href="structetl_1_1overflow__error.html#a533d788764ed2ecdbd0f544d985b61d3">overflow_error</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code" href="structetl_1_1exception.html#aa1b6b69525b4ea3f6916001ca358d244">what</a>) : <a class="code" href="structetl_1_1runtime__error.html">runtime_error</a>{<a class="code" href="structetl_1_1exception.html#aa1b6b69525b4ea3f6916001ca358d244">what</a>} { }</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1overflow__error.html#a533d788764ed2ecdbd0f544d985b61d3">   13</a></span>&#160;    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code" href="structetl_1_1overflow__error.html#a533d788764ed2ecdbd0f544d985b61d3">overflow_error</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* what) : <a class="code" href="structetl_1_1runtime__error.html">runtime_error</a><a class="code" href="structetl_1_1runtime__error.html#a693b30cf01bc865b97c655acd9247d89">{</a>what<a class="code" href="structetl_1_1runtime__error.html#a693b30cf01bc865b97c655acd9247d89">}</a> { }</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="aruntime__error_8hpp_html"><div class="ttname"><a href="runtime__error_8hpp.html">runtime_error.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1exception_html_aa1b6b69525b4ea3f6916001ca358d244"><div class="ttname"><a href="structetl_1_1exception.html#aa1b6b69525b4ea3f6916001ca358d244">etl::exception::what</a></div><div class="ttdeci">constexpr auto what() const noexcept -&gt; char const *</div><div class="ttdef"><b>Definition:</b> exception.hpp:13</div></div>
-<div class="ttc" id="astructetl_1_1overflow__error_html"><div class="ttname"><a href="structetl_1_1overflow__error.html">etl::overflow_error</a></div><div class="ttdef"><b>Definition:</b> overflow_error.hpp:10</div></div>
-<div class="ttc" id="astructetl_1_1overflow__error_html_a533d788764ed2ecdbd0f544d985b61d3"><div class="ttname"><a href="structetl_1_1overflow__error.html#a533d788764ed2ecdbd0f544d985b61d3">etl::overflow_error::overflow_error</a></div><div class="ttdeci">constexpr overflow_error(char const *what)</div><div class="ttdef"><b>Definition:</b> overflow_error.hpp:13</div></div>
-<div class="ttc" id="astructetl_1_1overflow__error_html_ac5537b088cf616a137297a7a5998a3a0"><div class="ttname"><a href="structetl_1_1overflow__error.html#ac5537b088cf616a137297a7a5998a3a0">etl::overflow_error::overflow_error</a></div><div class="ttdeci">constexpr overflow_error()=default</div></div>
-<div class="ttc" id="astructetl_1_1runtime__error_html"><div class="ttname"><a href="structetl_1_1runtime__error.html">etl::runtime_error</a></div><div class="ttdef"><b>Definition:</b> runtime_error.hpp:10</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_STDEXCEPT_OVERFLOW_ERROR_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

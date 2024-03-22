@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,26 +98,25 @@ $(document).ready(function(){initNavTree('add__cv_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="add__cv_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespaceetl.html#a97ebe7b76517ccaa9b434dbd1db3d992">    9</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#a97ebe7b76517ccaa9b434dbd1db3d992">add_cv_t</a> = T <span class="keyword">const</span> <span class="keyword">volatile</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespaceetl.html#a97ebe7b76517ccaa9b434dbd1db3d992">    9</a></span>&#160;<span class="keyword">using</span> add_cv_t = T <span class="keyword">const</span> <span class="keyword">volatile</span>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Provides the member typedef type which is the same as T, except it</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// has a cv-qualifier added (unless T is a function, a reference, or already</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// has this cv-qualifier). Adds both const and volatile.</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1add__cv.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1add__cv.html">add_cv</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1add__cv.html#a987c046e8d93edce5e819ef31d52ff69">   16</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1add__cv.html#a987c046e8d93edce5e819ef31d52ff69">type</a> = <a class="code" href="namespaceetl.html#a97ebe7b76517ccaa9b434dbd1db3d992">add_cv_t&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1add__cv.html">   15</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1add__cv.html">add_cv</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1add__cv.html#a987c046e8d93edce5e819ef31d52ff69">   16</a></span>&#160;    <span class="keyword">using</span> type = add_cv_t&lt;T&gt;;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a97ebe7b76517ccaa9b434dbd1db3d992"><div class="ttname"><a href="namespaceetl.html#a97ebe7b76517ccaa9b434dbd1db3d992">etl::add_cv_t</a></div><div class="ttdeci">T const volatile add_cv_t</div><div class="ttdef"><b>Definition:</b> add_cv.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1add__cv_html"><div class="ttname"><a href="structetl_1_1add__cv.html">etl::add_cv</a></div><div class="ttdoc">Provides the member typedef type which is the same as T, except it has a cv-qualifier added (unless T...</div><div class="ttdef"><b>Definition:</b> add_cv.hpp:15</div></div>
-<div class="ttc" id="astructetl_1_1add__cv_html_a987c046e8d93edce5e819ef31d52ff69"><div class="ttname"><a href="structetl_1_1add__cv.html#a987c046e8d93edce5e819ef31d52ff69">etl::add_cv::type</a></div><div class="ttdeci">add_cv_t&lt; T &gt; type</div><div class="ttdef"><b>Definition:</b> add_cv.hpp:16</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ADD_CV_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,27 +98,31 @@ $(document).ready(function(){initNavTree('__config_2version_8hpp_source.html',''
 <div class="contents">
 <a href="__config_2version_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONFIG_VERSION_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONFIG_VERSION_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONFIG_VERSION_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONFIG_VERSION_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/// \brief The major release version</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// NOLINTNEXTLINE(modernize-macro-to-enum)</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a794fae99c7a1f088f200c1b7ebf76733">    8</a></span>&#160;<span class="preprocessor">#define TETL_VERSION_MAJOR 0</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a794fae99c7a1f088f200c1b7ebf76733">    8</a></span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_VERSION_MAJOR</span> 0</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief The minor release version</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// NOLINTNEXTLINE(modernize-macro-to-enum)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a6e7f90a652459af5326c50f9c937e5fc">   12</a></span>&#160;<span class="preprocessor">#define TETL_VERSION_MINOR 1</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a6e7f90a652459af5326c50f9c937e5fc">   12</a></span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_VERSION_MINOR</span> 1</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \brief The patch release version</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// NOLINTNEXTLINE(modernize-macro-to-enum)</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#af04aab66e291c7edca770f414595a538">   16</a></span>&#160;<span class="preprocessor">#define TETL_VERSION_PATCH 0</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#af04aab66e291c7edca770f414595a538">   16</a></span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_VERSION_PATCH</span> 0</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8">   19</a></span>&#160;<span class="preprocessor">#define TETL_VERSION_STRING &quot;0.1.0&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/// \brief The library version as a string literal</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8">   19</a></span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_VERSION_STRING</span> <span class="stringliteral">&quot;0.1.0&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#if defined(__STDC_HOSTED__)</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">    #define TETL_HOSTED</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a6a8426c401c625ce0ad884fdbb3e36df">   24</a></span>&#160;<span class="preprocessor">    #define TETL_FREESTANDING</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__STDC_HOSTED__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_HOSTED</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="__config_2version_8hpp.html#a6a8426c401c625ce0ad884fdbb3e36df">   24</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FREESTANDING</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_VERSION_HPP</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONFIG_VERSION_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

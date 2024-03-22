@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,24 +98,24 @@ $(document).ready(function(){initNavTree('compiler_8hpp_source.html',''); initRe
 <div class="contents">
 <a href="compiler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONFIG_COMPILER_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONFIG_COMPILER_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONFIG_COMPILER_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONFIG_COMPILER_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">    #define TETL_CLANG 1</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#elif defined(__GNUC__)</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define TETL_GCC 1</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER)</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #define TETL_MSVC 1</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#elif defined(__INTEL_COMPILER)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #define TETL_INTEL 1</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#elif defined(__EMSCRIPTEN__)</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #define TETL_EMSCRIPTEN 1</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #error &quot;unknown compiler&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CLANG</span> 1</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__GNUC__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_GCC</span> 1</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MSVC</span> 1</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__INTEL_COMPILER</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_INTEL</span> 1</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__EMSCRIPTEN__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_EMSCRIPTEN</span> 1</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">error</span> <span class="stringliteral">&quot;unknown compiler&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_COMPILER_HPP</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONFIG_COMPILER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

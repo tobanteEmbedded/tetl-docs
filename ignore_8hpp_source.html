@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,26 +98,25 @@ $(document).ready(function(){initNavTree('ignore_8hpp_source.html',''); initResi
 <div class="contents">
 <a href="ignore_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TUPLE_IGNORE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TUPLE_IGNORE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TUPLE_IGNORE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TUPLE_IGNORE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1ignore.html">   11</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">struct </span><a class="code" href="structetl_1_1ignore.html">ignore</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief An object of unspecified type such that any value can be assigned to</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// it with no effect. Intended for use with etl::tie when unpacking a</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// etl::tuple, as a placeholder for the arguments that are not used.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1ignore.html">   11</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">struct</span> <a class="code" href="structetl_1_1ignore.html">ignore</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1ignore.html#a950a3bd8900c1af05744345a8b29f258">   13</a></span>&#160;    constexpr <span class="keyword">auto</span> <a class="code" href="structetl_1_1ignore.html#a950a3bd8900c1af05744345a8b29f258">operator=</a>(T <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>) <span class="keyword">const</span> -&gt; <span class="keyword">auto</span> <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1ignore.html#a950a3bd8900c1af05744345a8b29f258">   13</a></span>&#160;    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="structetl_1_1ignore.html#a950a3bd8900c1af05744345a8b29f258">operator</a>=(T <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>) <span class="keyword">const</span> -&gt; <span class="keyword">auto</span> <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad8a0374b0fe975ab01bcc129d60f5d03">   17</a></span>&#160;} <a class="code" href="namespaceetl.html#ad8a0374b0fe975ab01bcc129d60f5d03">ignore</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad8a0374b0fe975ab01bcc129d60f5d03">   17</a></span>&#160;} ignore;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TUPLE_IGNORE_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_ad8a0374b0fe975ab01bcc129d60f5d03"><div class="ttname"><a href="namespaceetl.html#ad8a0374b0fe975ab01bcc129d60f5d03">etl::ignore</a></div><div class="ttdeci">constexpr struct etl::ignore ignore</div></div>
-<div class="ttc" id="astructetl_1_1ignore_html"><div class="ttname"><a href="structetl_1_1ignore.html">etl::ignore</a></div><div class="ttdoc">An object of unspecified type such that any value can be assigned to it with no effect....</div><div class="ttdef"><b>Definition:</b> ignore.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1ignore_html_a950a3bd8900c1af05744345a8b29f258"><div class="ttname"><a href="structetl_1_1ignore.html#a950a3bd8900c1af05744345a8b29f258">etl::ignore::operator=</a></div><div class="ttdeci">constexpr auto operator=(T const &amp;) const -&gt; auto const &amp;</div><div class="ttdef"><b>Definition:</b> ignore.hpp:13</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TUPLE_IGNORE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

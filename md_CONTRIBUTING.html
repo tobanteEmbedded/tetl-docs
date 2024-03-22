@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -88,12 +96,12 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 <div class="title">Contributing </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md76"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
 Quick Start</h1>
 <div class="fragment"><div class="line">cmake -S . -B build -G &quot;Ninja Multi-Config&quot;</div>
 <div class="line">cmake --build build --config Release</div>
 <div class="line">ctest --test-dir build -C Release --output-on-failure</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md77"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 Project Layout</h2>
 <div class="fragment"><div class="line">├── benchmarks  # Compile-time benchmarks</div>
 <div class="line">├── cmake       # Compiler config</div>
@@ -103,7 +111,7 @@ Project Layout</h2>
 <div class="line">├── include     # Source code</div>
 <div class="line">├── scripts     # Coverage &amp; clang-tidy</div>
 <div class="line">└── tests       # Unit tests</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md78"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Coding Style</h1>
 <ul>
 <li>Trailing return type is used everywhere. Including if type is <code>void</code><ul>
@@ -120,18 +128,18 @@ Coding Style</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Tools</h1>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 clang-tidy</h2>
 <div class="fragment"><div class="line">cmake -S . -B cmake-build-tidy -G &quot;Unix Makefiles&quot; -D CMAKE_BUILD_TYPE=Debug</div>
 <div class="line">cmake --build cmake-build-tidy --parallel 8</div>
 <div class="line">run-clang-tidy -fix -j 8 -quiet -p cmake-build-tidy -header-filter $(realpath .) $(realpath .)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md81"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 pre-commit</h2>
 <div class="fragment"><div class="line">pre-commit install</div>
 <div class="line">pre-commit run -a</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md82"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 doxygen</h2>
 <div class="fragment"><div class="line">git clone https://github.com/jothepro/doxygen-awesome-css.git 3rd_party/doxygen-awesome-css</div>
 <div class="line">doxygen Doxyfile</div>

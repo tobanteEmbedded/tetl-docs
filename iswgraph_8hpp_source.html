@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,42 +98,40 @@ $(document).ready(function(){initNavTree('iswgraph_8hpp_source.html',''); initRe
 <div class="contents">
 <a href="iswgraph_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="macro_8hpp.html">etl/_cassert/macro.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cassert</span><span class="preprocessor">/</span><span class="preprocessor">macro</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iswdigit_8hpp.html">etl/_cwctype/iswdigit.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iswlower_8hpp.html">etl/_cwctype/iswlower.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iswpunct_8hpp.html">etl/_cwctype/iswpunct.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iswupper_8hpp.html">etl/_cwctype/iswupper.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cwctype</span><span class="preprocessor">/</span><span class="preprocessor">iswdigit</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cwctype</span><span class="preprocessor">/</span><span class="preprocessor">iswlower</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cwctype</span><span class="preprocessor">/</span><span class="preprocessor">iswpunct</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cwctype</span><span class="preprocessor">/</span><span class="preprocessor">iswupper</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#af1f830b2cf289299d90d426cdec407ee">   26</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af1f830b2cf289299d90d426cdec407ee">iswgraph</a>(<a class="code" href="namespaceetl.html#a242f9848c8ce5c281284bf133ce1bc94">wint_t</a> ch) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// \brief Checks if the given wide character has a graphical representation,</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// i.e. it is either a number (0123456789), an uppercase letter</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/// (abcdefghijklmnopqrstuvwxyz), a punctuation</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/// character(!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~) or any graphical character</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// specific to the current C locale.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/// \details If the value of ch is neither representable as a wchar_t nor equal</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/// to the value of the macro WEOF, the behavior is undefined.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/string/wide/iswgraph</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#af1f830b2cf289299d90d426cdec407ee">   26</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af1f830b2cf289299d90d426cdec407ee">iswgraph</a>(wint_t ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isDigit = <a class="code" href="namespaceetl.html#a91a984673da6b8253c14ef105d4ecabe">iswdigit</a>(ch) != 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isUpper = <a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">iswupper</a>(ch) != 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isLower = <a class="code" href="namespaceetl.html#a18eb7b15acffae2d169a7eaed66d9ba8">iswlower</a>(ch) != 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isPunct = <a class="code" href="namespaceetl.html#ace0e85b2a576c543e973d860e1c1295f">iswpunct</a>(ch) != 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(isDigit || isLower || isUpper || isPunct);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isDigit = <a class="code" href="namespaceetl.html#a91a984673da6b8253c14ef105d4ecabe">iswdigit</a><a class="code" href="namespaceetl.html#a91a984673da6b8253c14ef105d4ecabe">(</a>ch<a class="code" href="namespaceetl.html#a91a984673da6b8253c14ef105d4ecabe">)</a> != 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isUpper = <a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">iswupper</a><a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">(</a>ch<a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">)</a> != 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isLower = <a class="code" href="namespaceetl.html#a18eb7b15acffae2d169a7eaed66d9ba8">iswlower</a><a class="code" href="namespaceetl.html#a18eb7b15acffae2d169a7eaed66d9ba8">(</a>ch<a class="code" href="namespaceetl.html#a18eb7b15acffae2d169a7eaed66d9ba8">)</a> != 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> isPunct = <a class="code" href="namespaceetl.html#ace0e85b2a576c543e973d860e1c1295f">iswpunct</a><a class="code" href="namespaceetl.html#ace0e85b2a576c543e973d860e1c1295f">(</a>ch<a class="code" href="namespaceetl.html#ace0e85b2a576c543e973d860e1c1295f">)</a> != 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(isDigit || isLower || isUpper || isPunct);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
-<div class="ttc" id="aiswdigit_8hpp_html"><div class="ttname"><a href="iswdigit_8hpp.html">iswdigit.hpp</a></div></div>
-<div class="ttc" id="aiswlower_8hpp_html"><div class="ttname"><a href="iswlower_8hpp.html">iswlower.hpp</a></div></div>
-<div class="ttc" id="aiswpunct_8hpp_html"><div class="ttname"><a href="iswpunct_8hpp.html">iswpunct.hpp</a></div></div>
-<div class="ttc" id="aiswupper_8hpp_html"><div class="ttname"><a href="iswupper_8hpp.html">iswupper.hpp</a></div></div>
-<div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a18eb7b15acffae2d169a7eaed66d9ba8"><div class="ttname"><a href="namespaceetl.html#a18eb7b15acffae2d169a7eaed66d9ba8">etl::iswlower</a></div><div class="ttdeci">constexpr auto iswlower(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character is a lowercase letter, i.e. one of abcdefghijklmnopqrstuvwxyz or a...</div><div class="ttdef"><b>Definition:</b> iswlower.hpp:18</div></div>
-<div class="ttc" id="anamespaceetl_html_a242f9848c8ce5c281284bf133ce1bc94"><div class="ttname"><a href="namespaceetl.html#a242f9848c8ce5c281284bf133ce1bc94">etl::wint_t</a></div><div class="ttdeci">unsigned int wint_t</div><div class="ttdef"><b>Definition:</b> wint_t.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a91a984673da6b8253c14ef105d4ecabe"><div class="ttname"><a href="namespaceetl.html#a91a984673da6b8253c14ef105d4ecabe">etl::iswdigit</a></div><div class="ttdeci">constexpr auto iswdigit(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character corresponds (if narrowed) to one of the ten decimal digit characte...</div><div class="ttdef"><b>Definition:</b> iswdigit.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_ace0e85b2a576c543e973d860e1c1295f"><div class="ttname"><a href="namespaceetl.html#ace0e85b2a576c543e973d860e1c1295f">etl::iswpunct</a></div><div class="ttdeci">constexpr auto iswpunct(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character is a punctuation character, i.e. it is one of !...</div><div class="ttdef"><b>Definition:</b> iswpunct.hpp:18</div></div>
-<div class="ttc" id="anamespaceetl_html_ae31f677c72798a1e14ebb84dc2672e21"><div class="ttname"><a href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">etl::iswupper</a></div><div class="ttdeci">constexpr auto iswupper(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character is an uppercase letter, i.e. one of ABCDEFGHIJKLMNOPQRSTUVWXYZ or ...</div><div class="ttdef"><b>Definition:</b> iswupper.hpp:18</div></div>
-<div class="ttc" id="anamespaceetl_html_af1f830b2cf289299d90d426cdec407ee"><div class="ttname"><a href="namespaceetl.html#af1f830b2cf289299d90d426cdec407ee">etl::iswgraph</a></div><div class="ttdeci">constexpr auto iswgraph(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character has a graphical representation, i.e. it is either a number (012345...</div><div class="ttdef"><b>Definition:</b> iswgraph.hpp:26</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CWCTYPE_ISWGRAPH_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,49 +98,38 @@ $(document).ready(function(){initNavTree('common__with_8hpp_source.html',''); in
 <div class="contents">
 <a href="common__with_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="same__as_8hpp.html">etl/_concepts/same_as.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__lvalue__reference_8hpp.html">etl/_type_traits/add_lvalue_reference.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common__reference_8hpp.html">etl/_type_traits/common_reference.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common__type_8hpp.html">etl/_type_traits/common_type.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="declval_8hpp.html">etl/_type_traits/declval.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">same_as</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_lvalue_reference</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">common_reference</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">common_type</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">declval</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// clang-format off</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a53091ecead3b4c698545fce2f1e73625">   16</a></span>&#160;concept <a class="code" href="namespaceetl.html#a53091ecead3b4c698545fce2f1e73625">common_with</a> =</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  same_as&lt;common_type_t&lt;T, U&gt;, <a class="code" href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">common_type_t&lt;U, T&gt;</a>&gt; &amp;&amp;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">common_type_t&lt;T, U&gt;</a><span class="keyword">&gt;</span>(declval&lt;T&gt;());</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">common_type_t&lt;T, U&gt;</a><span class="keyword">&gt;</span>(declval&lt;U&gt;());</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a53091ecead3b4c698545fce2f1e73625">   16</a></span>&#160;<span class="keyword">concept</span> common_with =</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  same_as&lt;common_type_t&lt;T, U&gt;, common_type_t&lt;U, T&gt;&gt; &amp;&amp;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">requires</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static_cast</span>&lt;common_type_t&lt;T, U&gt;&gt;(declval&lt;T&gt;());</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static_cast</span>&lt;common_type_t&lt;T, U&gt;&gt;(declval&lt;U&gt;());</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  } &amp;&amp;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">common_reference_with</a>&lt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    add_lvalue_reference_t&lt;T const&gt;,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    add_lvalue_reference_t&lt;U const&gt;&gt; &amp;&amp;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">common_reference_with</a>&lt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  common_reference_with&lt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    add_lvalue_reference_t&lt;T <span class="keyword">const</span>&gt;,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    add_lvalue_reference_t&lt;U <span class="keyword">const</span>&gt;&gt; &amp;&amp;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  common_reference_with&lt;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    add_lvalue_reference_t&lt;common_type_t&lt;T, U&gt;&gt;,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">common_reference_t</a>&lt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      add_lvalue_reference_t&lt;T const&gt;,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      add_lvalue_reference_t&lt;U const&gt;&gt;&gt;;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    common_reference_t&lt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      add_lvalue_reference_t&lt;T <span class="keyword">const</span>&gt;,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      add_lvalue_reference_t&lt;U <span class="keyword">const</span>&gt;&gt;&gt;;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// clang-format on</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
-<div class="ttc" id="aadd__lvalue__reference_8hpp_html"><div class="ttname"><a href="add__lvalue__reference_8hpp.html">add_lvalue_reference.hpp</a></div></div>
-<div class="ttc" id="acommon__reference_8hpp_html"><div class="ttname"><a href="common__reference_8hpp.html">common_reference.hpp</a></div></div>
-<div class="ttc" id="acommon__type_8hpp_html"><div class="ttname"><a href="common__type_8hpp.html">common_type.hpp</a></div></div>
-<div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a07e107a90f5ce06cb6af9b383b8012da"><div class="ttname"><a href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">etl::common_reference_with</a></div><div class="ttdeci">concept common_reference_with</div><div class="ttdef"><b>Definition:</b> common_reference_with.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a53091ecead3b4c698545fce2f1e73625"><div class="ttname"><a href="namespaceetl.html#a53091ecead3b4c698545fce2f1e73625">etl::common_with</a></div><div class="ttdeci">concept common_with</div><div class="ttdef"><b>Definition:</b> common_with.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_aa474dd82a788a57735f0603b85954c37"><div class="ttname"><a href="namespaceetl.html#aa474dd82a788a57735f0603b85954c37">etl::common_type_t</a></div><div class="ttdeci">typename etl::common_type&lt; T... &gt;::type common_type_t</div><div class="ttdef"><b>Definition:</b> common_type.hpp:50</div></div>
-<div class="ttc" id="anamespaceetl_html_aadad4ea85004a040c0e6e70341e2d221"><div class="ttname"><a href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition:</b> common_reference.hpp:43</div></div>
-<div class="ttc" id="asame__as_8hpp_html"><div class="ttname"><a href="same__as_8hpp.html">same_as.hpp</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

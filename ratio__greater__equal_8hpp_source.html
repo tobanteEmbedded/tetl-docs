@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,29 +98,26 @@ $(document).ready(function(){initNavTree('ratio__greater__equal_8hpp_source.html
 <div class="contents">
 <a href="ratio__greater__equal_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_RATIO_GREATER_EQUAL_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_RATIO_GREATER_EQUAL_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_RATIO_GREATER_EQUAL_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_RATIO_GREATER_EQUAL_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__ratio_2ratio_8hpp.html">etl/_ratio/ratio.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ratio</span><span class="preprocessor">/</span><span class="preprocessor">ratio</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Compares two ratio objects for equality at compile-time. If the ratio</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// R1 is greater than or equal to the ratio R2, provides the member constant</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// value equal true. Otherwise, value is false.</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1ratio__greater__equal.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal</a> : <a class="code" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;(R1::num * R2::den &gt;= R2::num * R1::den)&gt; { };</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1ratio__greater__equal.html">   15</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal</a> : bool_constant&lt;(R1::num * R2::den &gt;= R2::num * R1::den)&gt; { };</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">   18</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">ratio_greater_equal_v</a> = <a class="code" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal&lt;R1, R2&gt;::value</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">R1</a>, <span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">R2</a>&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">   18</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">ratio_greater_equal_v</a> = <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">ratio_greater_equal</a>&lt;<a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">R1</a>, <a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">R2</a>&gt;::<a class="code" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">value</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_RATIO_GREATER_EQUAL_HPP</span></div>
-<div class="ttc" id="a__ratio_2ratio_8hpp_html"><div class="ttname"><a href="__ratio_2ratio_8hpp.html">ratio.hpp</a></div></div>
-<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1ed208c9b18aabc1288d0721225be488"><div class="ttname"><a href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">etl::ratio_greater_equal_v</a></div><div class="ttdeci">constexpr bool ratio_greater_equal_v</div><div class="ttdef"><b>Definition:</b> ratio_greater_equal.hpp:18</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1ratio__greater__equal_html"><div class="ttname"><a href="structetl_1_1ratio__greater__equal.html">etl::ratio_greater_equal</a></div><div class="ttdoc">Compares two ratio objects for equality at compile-time. If the ratio R1 is greater than or equal to ...</div><div class="ttdef"><b>Definition:</b> ratio_greater_equal.hpp:15</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_RATIO_GREATER_EQUAL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

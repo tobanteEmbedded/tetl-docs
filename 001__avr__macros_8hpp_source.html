@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,45 +98,48 @@ $(document).ready(function(){initNavTree('001__avr__macros_8hpp_source.html','')
 <div class="contents">
 <a href="001__avr__macros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/// \file This header needs to be included after every include of a standard C</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/// header. AVR defines the macros listed below. It doesn&#39;t have any include</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/// guards on purpose.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if defined(__AVR__)</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">    #undef abs</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #undef acosf</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #undef asinf</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #undef atan2f</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #undef atanf</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #undef cbrtf</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #undef ceilf</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #undef copysignf</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #undef cosf</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #undef coshf</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #undef expf</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #undef fabsf</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    #undef fdimf</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #undef floorf</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">    #undef fmaf</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    #undef fmaxf</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #undef fminf</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    #undef fmodf</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    #undef frexpf</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    #undef hypotf</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    #undef isfinitef</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">    #undef isinff</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    #undef ldexpf</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    #undef log10f</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">    #undef logf</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    #undef lrintf</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    #undef lroundf</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    #undef powf</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    #undef roundf</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    #undef signbitf</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    #undef sinf</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #undef sinhf</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    #undef squaref</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    #undef tanf</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #undef tanhf</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    #undef truncf</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__AVR__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">abs</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">acosf</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">asinf</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">atan2f</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">atanf</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">cbrtf</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">ceilf</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">copysignf</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">cosf</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">coshf</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">expf</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fabsf</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fdimf</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">floorf</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fmaf</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fmaxf</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fminf</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">fmodf</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">frexpf</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">hypotf</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">isfinitef</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">isinff</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">ldexpf</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">log10f</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">logf</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">lrintf</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">lroundf</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">powf</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">roundf</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">signbitf</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">sinf</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">sinhf</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">squaref</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">tanf</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">tanhf</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">undef</span> <span class="preprocessor">truncf</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

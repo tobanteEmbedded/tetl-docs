@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -89,42 +97,47 @@ $(document).ready(function(){initNavTree('stod_8hpp_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="stod_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef TETL_STRING_STOD_HPP</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TETL_STRING_STOD_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_STRING_STOD_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_STRING_STOD_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="static__string_8hpp.html">etl/_string/static_string.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="conversion_8hpp.html">etl/_strings/conversion.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_string</span><span class="preprocessor">/</span><span class="preprocessor">static_string</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_strings</span><span class="preprocessor">/</span><span class="preprocessor">conversion</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7b5346fd1e1c69c9da34adc6ba0d875b">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7b5346fd1e1c69c9da34adc6ba0d875b">stof</a>(<a class="code" href="structetl_1_1basic__static__string.html">static_string&lt;Capacity&gt;</a> <span class="keyword">const</span>&amp; str, <span class="keywordtype">size_t</span>* pos = <span class="keyword">nullptr</span>) -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Interprets a floating point value in a string str.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \param str The string to convert.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \param pos Pointer to integer to store the number of characters used.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// \returns The string converted to the specified floating point type.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;size_t Capacity&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7b5346fd1e1c69c9da34adc6ba0d875b">   15</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7b5346fd1e1c69c9da34adc6ba0d875b">stof</a>(static_string&lt;Capacity&gt; <span class="keyword">const</span>&amp; str, size_t* pos = <span class="keywordtype">nullptr</span>) -&gt; <span class="keywordtype">float</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;float&gt;(str, pos);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;<span class="keywordtype">float</span>&gt;(str, pos);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a03247c5be7114ad3402fea1ac09a5323">   25</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a03247c5be7114ad3402fea1ac09a5323">stod</a>(<a class="code" href="structetl_1_1basic__static__string.html">static_string&lt;Capacity&gt;</a> <span class="keyword">const</span>&amp; str, <span class="keywordtype">size_t</span>* pos = <span class="keyword">nullptr</span>) -&gt; <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// \brief Interprets a floating point value in a string str.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/// \param str The string to convert.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/// \param pos Pointer to integer to store the number of characters used.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/// \returns The string converted to the specified floating point type.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;size_t Capacity&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a03247c5be7114ad3402fea1ac09a5323">   25</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a03247c5be7114ad3402fea1ac09a5323">stod</a>(static_string&lt;Capacity&gt; <span class="keyword">const</span>&amp; str, size_t* pos = <span class="keywordtype">nullptr</span>) -&gt; <span class="keywordtype">double</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;double&gt;(str, pos);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;<span class="keywordtype">double</span>&gt;(str, pos);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad2d8c5321a6401ffca589167c2f5200c">   35</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad2d8c5321a6401ffca589167c2f5200c">stold</a>(<a class="code" href="structetl_1_1basic__static__string.html">static_string&lt;Capacity&gt;</a> <span class="keyword">const</span>&amp; str, <span class="keywordtype">size_t</span>* pos = <span class="keyword">nullptr</span>) -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/// \brief Interprets a floating point value in a string str.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/// \param str The string to convert.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/// \param pos Pointer to integer to store the number of characters used.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/// \returns The string converted to the specified floating point type.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;size_t Capacity&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad2d8c5321a6401ffca589167c2f5200c">   35</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad2d8c5321a6401ffca589167c2f5200c">stold</a>(static_string&lt;Capacity&gt; <span class="keyword">const</span>&amp; str, size_t* pos = <span class="keywordtype">nullptr</span>) -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;long double&gt;(str, pos);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> detail::string_to_floating_point&lt;<span class="keywordtype">long</span> <span class="keywordtype">double</span>&gt;(str, pos);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_STRING_STOD_HPP</span></div>
-<div class="ttc" id="aconversion_8hpp_html"><div class="ttname"><a href="conversion_8hpp.html">conversion.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a03247c5be7114ad3402fea1ac09a5323"><div class="ttname"><a href="namespaceetl.html#a03247c5be7114ad3402fea1ac09a5323">etl::stod</a></div><div class="ttdeci">constexpr auto stod(static_string&lt; Capacity &gt; const &amp;str, size_t *pos=nullptr) -&gt; double</div><div class="ttdoc">Interprets a floating point value in a string str.</div><div class="ttdef"><b>Definition:</b> stod.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a7b5346fd1e1c69c9da34adc6ba0d875b"><div class="ttname"><a href="namespaceetl.html#a7b5346fd1e1c69c9da34adc6ba0d875b">etl::stof</a></div><div class="ttdeci">constexpr auto stof(static_string&lt; Capacity &gt; const &amp;str, size_t *pos=nullptr) -&gt; float</div><div class="ttdoc">Interprets a floating point value in a string str.</div><div class="ttdef"><b>Definition:</b> stod.hpp:15</div></div>
-<div class="ttc" id="anamespaceetl_html_ad2d8c5321a6401ffca589167c2f5200c"><div class="ttname"><a href="namespaceetl.html#ad2d8c5321a6401ffca589167c2f5200c">etl::stold</a></div><div class="ttdeci">constexpr auto stold(static_string&lt; Capacity &gt; const &amp;str, size_t *pos=nullptr) -&gt; long double</div><div class="ttdoc">Interprets a floating point value in a string str.</div><div class="ttdef"><b>Definition:</b> stod.hpp:35</div></div>
-<div class="ttc" id="astatic__string_8hpp_html"><div class="ttname"><a href="static__string_8hpp.html">static_string.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1basic__static__string_html"><div class="ttname"><a href="structetl_1_1basic__static__string.html">etl::basic_static_string</a></div><div class="ttdoc">basic_static_string class with fixed size capacity.</div><div class="ttdef"><b>Definition:</b> basic_static_string.hpp:39</div></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_STRING_STOD_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

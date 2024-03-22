@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -112,16 +120,16 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2exp_8h
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * compile-time exponential function</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef GCEM_exp_HPP</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define GCEM_exp_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_exp_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_exp_HPP</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace</span> internal {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;constexpr <span class="keyword">auto</span> exp_cf_recur(T <span class="keyword">const</span> x, <span class="keywordtype">int</span> <span class="keyword">const</span> depth) noexcept -&gt; T</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> exp_cf_recur(T <span class="keyword">const</span> x, <span class="keywordtype">int</span> <span class="keyword">const</span> depth) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> (</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        depth &lt; <a class="code" href="gcem__options_8hpp.html#a20acef643780caa219a9d2e7e9b32b53">GCEM_EXP_MAX_ITER_SMALL</a> ? <span class="comment">// if</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        depth &lt; GCEM_EXP_MAX_ITER_SMALL ? <span class="comment">// if</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            depth == 1 ? T(1) - x / exp_cf_recur(x, depth + 1)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                       : T(1) + x / T(depth - 1) - x / depth / exp_cf_recur(x, depth + 1)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                        :</div>
@@ -131,45 +139,50 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2exp_8h
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;constexpr <span class="keyword">auto</span> exp_cf(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> exp_cf(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(T(1) / exp_cf_recur(x, 1));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;T&gt;(T(1) / exp_cf_recur(x, 1));</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;constexpr <span class="keyword">auto</span> exp_split(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> exp_split(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(pow_integral(<a class="code" href="namespaceetl_1_1numbers.html#ae4d49f174527085f60967b272d8f96c0">etl::numbers::e</a>, find_whole(x)) * exp_cf(find_fraction(x)));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;T&gt;(pow_integral(etl::numbers::e, find_whole(x)) * exp_cf(find_fraction(x)));</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;constexpr <span class="keyword">auto</span> exp_check(T <span class="keyword">const</span> x) noexcept -&gt; T</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> exp_check(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        is_nan(x)                                    ? <a class="code" href="structetl_1_1numeric__limits.html#a7f133b5fd7364229b1aa0bc4e9c09afc">etl::numeric_limits&lt;T&gt;::quiet_NaN</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;T&gt;(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        is_nan(x)                                    ? etl::numeric_limits&lt;T&gt;::quiet_NaN()</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : is_neginf(x)                               ? T(0)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        : <a class="code" href="namespaceetl.html">etl</a>::numeric_limits&lt;T&gt;::epsilon() &gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a>(x) ? T(1)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        : is_posinf(x)                               ? <a class="code" href="namespaceetl.html">etl</a>::numeric_limits&lt;T&gt;::infinity()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        : <a class="code" href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a>(x) &lt; T(2)                              ? exp_cf(x)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        : etl::numeric_limits&lt;T&gt;::epsilon() &gt; abs(x) ? T(1)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        : is_posinf(x)                               ? etl::numeric_limits&lt;T&gt;::infinity()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        : abs(x) &lt; T(2)                              ? exp_cf(x)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                     : exp_split(x)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    );</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * Compile-time exponential function</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * @param x a real-valued input.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * @return \f$ \exp(x) \f$ using \f[ \exp(x) =</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * \dfrac{1}{1-\dfrac{x}{1+x-\dfrac{\frac{1}{2}x}{1 + \frac{1}{2}x -</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * \dfrac{\frac{1}{3}x}{1 + \frac{1}{3}x - \ddots}}}} \f] The continued fraction</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * argument is split into two parts: \f$ x = n + r \f$, where \f$ n \f$ is an</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * integer and \f$ r \in [-0.5,0.5] \f$.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">   82</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a>(T <span class="keyword">const</span> x) noexcept -&gt; return_t&lt;T&gt;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">   82</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a>(<a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">T</a> <span class="keyword">const</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">x</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">return_t</a>&lt;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">T</a>&gt;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> internal::exp_check(<span class="keyword">static_cast&lt;</span>return_t&lt;T&gt;<span class="keyword">&gt;</span>(x));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> internal::exp_check(<span class="keyword">static_cast</span>&lt;return_t&lt;T&gt;&gt;(x));</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2abs_8hpp_html_af74c8bcf60a130ea74d416ac0e454f74"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html#af74c8bcf60a130ea74d416ac0e454f74">abs</a></div><div class="ttdeci">constexpr auto abs(T const x) noexcept -&gt; T</div><div class="ttdef"><b>Definition:</b> abs.hpp:32</div></div>
-<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2exp_8hpp_html_ab5518a8d1b54af5e8675171f95a30de4"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html#ab5518a8d1b54af5e8675171f95a30de4">exp</a></div><div class="ttdeci">constexpr auto exp(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> exp.hpp:82</div></div>
-<div class="ttc" id="agcem__options_8hpp_html_a20acef643780caa219a9d2e7e9b32b53"><div class="ttname"><a href="gcem__options_8hpp.html#a20acef643780caa219a9d2e7e9b32b53">GCEM_EXP_MAX_ITER_SMALL</a></div><div class="ttdeci">#define GCEM_EXP_MAX_ITER_SMALL</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:116</div></div>
-<div class="ttc" id="anamespaceetl_1_1numbers_html_ae4d49f174527085f60967b272d8f96c0"><div class="ttname"><a href="namespaceetl_1_1numbers.html#ae4d49f174527085f60967b272d8f96c0">etl::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> constants.hpp:40</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="astructetl_1_1numeric__limits_html_a7f133b5fd7364229b1aa0bc4e9c09afc"><div class="ttname"><a href="structetl_1_1numeric__limits.html#a7f133b5fd7364229b1aa0bc4e9c09afc">etl::numeric_limits::quiet_NaN</a></div><div class="ttdeci">static constexpr auto quiet_NaN() noexcept -&gt; T</div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:49</div></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

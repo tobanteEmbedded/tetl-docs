@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -129,12 +137,12 @@ template&lt;typename T &gt; </div>
 <p>Compile-time arcsine function</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>a real-valued input, where <img class="formulaInl" alt="$ x \in [-1,1] $" src="form_1.png"/>. </td></tr>
+    <tr><td class="paramname">x</td><td>a real-valued input, where \( x \in [-1,1] \). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the inverse sine function using <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{asin}(x) = \text{atan} \left( \frac{x}{\sqrt{1-x^2}} \right) \]" src="form_4.png"/>
+\[ \text{asin}(x) = \text{atan} \left( \frac{x}{\sqrt{1-x^2}} \right) \]
 </p>
  </dd></dl>
 

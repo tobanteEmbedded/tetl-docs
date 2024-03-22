@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,30 +98,23 @@ $(document).ready(function(){initNavTree('__complex_2log10_8hpp_source.html','')
 <div class="contents">
 <a href="__complex_2log10_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_COMPLEX_LOG10_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_COMPLEX_LOG10_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_COMPLEX_LOG10_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_COMPLEX_LOG10_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__complex_2complex_8hpp.html">etl/_complex/complex.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__complex_2log_8hpp.html">etl/_complex/log.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_complex</span><span class="preprocessor">/</span><span class="preprocessor">complex</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_complex</span><span class="preprocessor">/</span><span class="preprocessor">log</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#abb87c5a1d5623bb01299fd23324b1565">   12</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7f12f27fcd6d0d687061563bf72ff1a1">log10</a>(<a class="code" href="structetl_1_1complex.html">complex&lt;T&gt;</a> <span class="keyword">const</span>&amp; z) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="structetl_1_1complex.html">complex&lt;T&gt;</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#abb87c5a1d5623bb01299fd23324b1565">   12</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abb87c5a1d5623bb01299fd23324b1565">log10</a>(<a class="code" href="structetl_1_1complex.html">complex</a>&lt;T&gt; <span class="keyword">const</span>&amp; z) <span class="keyword">noexcept</span> -&gt; <a class="code" href="structetl_1_1complex.html">complex</a>&lt;T&gt;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a4a169fd90c749bd105c7ed917785c555">etl::log</a>(z) / <a class="code" href="namespaceetl.html#a4a169fd90c749bd105c7ed917785c555">etl::log</a>(T(10));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> etl::log(z) / etl::log(T(10));</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_COMPLEX_LOG10_HPP</span></div>
-<div class="ttc" id="a__complex_2complex_8hpp_html"><div class="ttname"><a href="__complex_2complex_8hpp.html">complex.hpp</a></div></div>
-<div class="ttc" id="a__complex_2log_8hpp_html"><div class="ttname"><a href="__complex_2log_8hpp.html">log.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a4a169fd90c749bd105c7ed917785c555"><div class="ttname"><a href="namespaceetl.html#a4a169fd90c749bd105c7ed917785c555">etl::log</a></div><div class="ttdeci">constexpr auto log(float v) noexcept -&gt; float</div><div class="ttdoc">Computes the natural (base e) logarithm of arg.</div><div class="ttdef"><b>Definition:</b> log.hpp:17</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a7f12f27fcd6d0d687061563bf72ff1a1"><div class="ttname"><a href="namespaceetl.html#a7f12f27fcd6d0d687061563bf72ff1a1">etl::log10</a></div><div class="ttdeci">constexpr auto log10(float arg) noexcept -&gt; float</div><div class="ttdoc">Computes the binary (base-10) logarithm of arg. https://en.cppreference.com/w/cpp/numeric/math/log10.</div><div class="ttdef"><b>Definition:</b> log10.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1complex_html"><div class="ttname"><a href="structetl_1_1complex.html">etl::complex</a></div><div class="ttdoc">A complex number.</div><div class="ttdef"><b>Definition:</b> complex.hpp:17</div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_COMPLEX_LOG10_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

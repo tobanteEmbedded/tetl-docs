@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,29 +98,26 @@ $(document).ready(function(){initNavTree('replace_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="replace_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_REPLACE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_REPLACE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_REPLACE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_REPLACE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="replace__if_8hpp.html">etl/_algorithm/replace_if.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;etl/_algorithm/replace_if.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Replaces all elements satisfying specific criteria with new_value in</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// the range [first, last). Replaces all elements that are equal to</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// old_value.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab115e24caa45f16f79bb770a6e3cbbab">   14</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab115e24caa45f16f79bb770a6e3cbbab">replace</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, T <span class="keyword">const</span>&amp; oldValue, T <span class="keyword">const</span>&amp; newValue) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab115e24caa45f16f79bb770a6e3cbbab">   14</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab115e24caa45f16f79bb770a6e3cbbab">replace</a>(ForwardIt first, ForwardIt last, T <span class="keyword">const</span>&amp; oldValue, T <span class="keyword">const</span>&amp; newValue) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3cf1991d2ce684016a8e3a756021fa38">predicate</a> = [&amp;oldValue](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; item) { <span class="keywordflow">return</span> item == oldValue; };</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespaceetl.html#a290953b933269399f045b7e2b37d97b7">replace_if</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="code" href="namespaceetl.html#a3cf1991d2ce684016a8e3a756021fa38">predicate</a>, newValue);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> predicate = [&amp;oldValue](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; item) { <span class="keywordflow">return</span> item == oldValue; };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    replace_if(first, last, predicate, newValue);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_REPLACE_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a290953b933269399f045b7e2b37d97b7"><div class="ttname"><a href="namespaceetl.html#a290953b933269399f045b7e2b37d97b7">etl::replace_if</a></div><div class="ttdeci">constexpr auto replace_if(ForwardIt first, ForwardIt last, Predicate p, T const &amp;newValue) -&gt; void</div><div class="ttdoc">Replaces all elements satisfying specific criteria with new_value in the range [first,...</div><div class="ttdef"><b>Definition:</b> replace_if.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_html_a3cf1991d2ce684016a8e3a756021fa38"><div class="ttname"><a href="namespaceetl.html#a3cf1991d2ce684016a8e3a756021fa38">etl::predicate</a></div><div class="ttdeci">concept predicate</div><div class="ttdef"><b>Definition:</b> predicate.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_ab115e24caa45f16f79bb770a6e3cbbab"><div class="ttname"><a href="namespaceetl.html#ab115e24caa45f16f79bb770a6e3cbbab">etl::replace</a></div><div class="ttdeci">constexpr auto replace(ForwardIt first, ForwardIt last, T const &amp;oldValue, T const &amp;newValue) -&gt; void</div><div class="ttdoc">Replaces all elements satisfying specific criteria with new_value in the range [first,...</div><div class="ttdef"><b>Definition:</b> replace.hpp:14</div></div>
-<div class="ttc" id="areplace__if_8hpp_html"><div class="ttname"><a href="replace__if_8hpp.html">replace_if.hpp</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_REPLACE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

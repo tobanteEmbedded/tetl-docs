@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,111 +98,100 @@ $(document).ready(function(){initNavTree('bind__front_8hpp_source.html',''); ini
 <div class="contents">
 <a href="bind__front_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="invoke_8hpp.html">etl/_functional/invoke.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="apply_8hpp.html">etl/_tuple/apply.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__tuple_2tuple_8hpp.html">etl/_tuple/tuple.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="decay_8hpp.html">etl/_type_traits/decay.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="invoke__result_8hpp.html">etl/_type_traits/invoke_result.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__base__of_8hpp.html">etl/_type_traits/is_base_of.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="unwrap__reference_8hpp.html">etl/_type_traits/unwrap_reference.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="forward_8hpp.html">etl/_utility/forward.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__utility_2move_8hpp.html">etl/_utility/move.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">invoke</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_tuple</span><span class="preprocessor">/</span><span class="preprocessor">apply</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_tuple</span><span class="preprocessor">/</span><span class="preprocessor">tuple</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">decay</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">invoke_result</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_base_of</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">unwrap_reference</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">forward</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">move</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace</span> detail {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func, <span class="keyword">typename</span> BoundArgsTuple, <span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;constexpr <span class="keyword">auto</span> bind_front_caller(Func&amp;&amp; func, BoundArgsTuple&amp;&amp; boundArgsTuple, CallArgs&amp;&amp;... callArgs) -&gt; decltype(<span class="keyword">auto</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> bind_front_caller(Func&amp;&amp; func, BoundArgsTuple&amp;&amp; boundArgsTuple, CallArgs&amp;&amp;... callArgs) -&gt; <span class="keyword">decltype</span>(<span class="keyword">auto</span>)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a974fb6faa222ecb40a59180647ccb79d">apply</a>([&amp;func, &amp;callArgs...](<span class="keyword">auto</span>&amp;&amp;... boundArgs) -&gt; decltype(<span class="keyword">auto</span>) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a0bd726a99d25fb6e96ef3527de8a0164">invoke</a>(<a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(func), <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(boundArgs)..., <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(callArgs)...);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }, <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(boundArgsTuple));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> apply([&amp;func, &amp;callArgs...](<span class="keyword">auto</span>&amp;&amp;... boundArgs) -&gt; <span class="keyword">decltype</span>(<span class="keyword">auto</span>) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> invoke(TETL_FORWARD(func), TETL_FORWARD(boundArgs)..., TETL_FORWARD(callArgs)...);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }, TETL_FORWARD(boundArgsTuple));</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func, <span class="keyword">typename</span>... BoundArgs&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>bind_front_t {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class</span> bind_front_t {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F, <span class="keyword">typename</span>... BA&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(!(<span class="keyword">sizeof</span>...(BA) == 0 &amp;&amp; <a class="code" href="namespaceetl.html#af00bab8d0b02bcb2974969b9d69639bb">is_base_of_v</a>&lt;bind_front_t, decay_t&lt;F&gt;&gt;))</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    explicit bind_front_t(F&amp;&amp; f, BA&amp;&amp;... ba) : _func(<a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(f))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                             , _boundArgs(<a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(ba)...)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">requires</span>(!(<span class="keyword">sizeof</span>...(BA) == 0 &amp;&amp; is_base_of_v&lt;bind_front_t, decay_t&lt;F&gt;&gt;))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">explicit</span> bind_front_t(F&amp;&amp; f, BA&amp;&amp;... ba) : _func(TETL_FORWARD(f))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                             , _boundArgs(TETL_FORWARD(ba)...)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// TODO: Add noexcept(is_nothrow_invocable_v&lt;Func&amp;, BoundArgs&amp;...,</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// CallArgs...&gt;)</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) &amp; -&gt; <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">invoke_result_t</a>&lt;Func&amp;, BoundArgs&amp;..., CallArgs...&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) &amp; -&gt; invoke_result_t&lt;Func&amp;, BoundArgs&amp;..., CallArgs...&gt;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(_func, _boundArgs, <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(callArgs)...);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(_func, _boundArgs, TETL_FORWARD(callArgs)...);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// TODO: Add noexcept(is_nothrow_invocable_v&lt;Func const&amp;, BoundArgs</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// const&amp;...,CallArgs...&gt;)</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) <span class="keyword">const</span>&amp; -&gt; <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">invoke_result_t</a>&lt;Func <span class="keyword">const</span>&amp;, BoundArgs <span class="keyword">const</span>&amp;..., CallArgs...&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) <span class="keyword">const</span>&amp; -&gt; invoke_result_t&lt;Func <span class="keyword">const</span>&amp;, BoundArgs <span class="keyword">const</span>&amp;..., CallArgs...&gt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(_func, _boundArgs, <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(callArgs)...);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(_func, _boundArgs, TETL_FORWARD(callArgs)...);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// TODO: Add  noexcept(is_nothrow_invocable_v&lt;Func, BoundArgs...,</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// CallArgs...&gt;)</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) &amp;&amp; -&gt; <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">invoke_result_t</a>&lt;Func, BoundArgs..., CallArgs...&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) &amp;&amp; -&gt; invoke_result_t&lt;Func, BoundArgs..., CallArgs...&gt;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(<a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(_func), <a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(_boundArgs), <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(callArgs)...);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(TETL_MOVE(_func), TETL_MOVE(_boundArgs), TETL_FORWARD(callArgs)...);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// TODO: noexcept(is_nothrow_invocable_v&lt;Func const, BoundArgs</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// const...,CallArgs...&gt;)</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) <span class="keyword">const</span>&amp;&amp; -&gt; <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">invoke_result_t</a>&lt;Func <span class="keyword">const</span>, BoundArgs <span class="keyword">const</span>..., CallArgs...&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> operator()(CallArgs&amp;&amp;... callArgs) <span class="keyword">const</span>&amp;&amp; -&gt; invoke_result_t&lt;Func <span class="keyword">const</span>, BoundArgs <span class="keyword">const</span>..., CallArgs...&gt;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(<a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(_func), <a class="code" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(_boundArgs), <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(callArgs)...);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> bind_front_caller(TETL_MOVE(_func), TETL_MOVE(_boundArgs), TETL_FORWARD(callArgs)...);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Func _func;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    tuple&lt;BoundArgs...&gt; _boundArgs;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="structetl_1_1tuple.html">tuple</a>&lt;BoundArgs...&gt; _boundArgs;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/// \brief The function template bind_front generates a forwarding call wrapper</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/// for f. Calling this wrapper is equivalent to invoking f with its first</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/// sizeof...(Args) parameters bound to args. In other words, bind_front(f,</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/// bound_args...)(call_args...) is equivalent to invoke(f, bound_args...,</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/// call_args....).</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/// \details Copied implementation from paper:</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0356r5.html</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func, <span class="keyword">typename</span>... BoundArgs&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespaceetl.html#a817e57a985d0eab0156aa074d1928761">   86</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a817e57a985d0eab0156aa074d1928761">bind_front</a>(Func&amp;&amp; func, BoundArgs&amp;&amp;... boundArgs)</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespaceetl.html#a817e57a985d0eab0156aa074d1928761">   86</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a817e57a985d0eab0156aa074d1928761">bind_front</a>(Func&amp;&amp; func, BoundArgs&amp;&amp;... boundArgs)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> detail::bind_front_t&lt;decay_t&lt;Func&gt;, <a class="code" href="namespaceetl.html#a944255034d5f023db7654f5d8dbc9701">unwrap_ref_decay_t&lt;BoundArgs&gt;</a>...&gt;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(func),</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(boundArgs)...</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> detail::bind_front_t&lt;decay_t&lt;Func&gt;, unwrap_ref_decay_t&lt;BoundArgs&gt;...&gt;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        TETL_FORWARD(func),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        TETL_FORWARD(boundArgs)...</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    };</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
-<div class="ttc" id="a__tuple_2tuple_8hpp_html"><div class="ttname"><a href="__tuple_2tuple_8hpp.html">tuple.hpp</a></div></div>
-<div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="a__utility_2move_8hpp_html_afb338536d7767b0fd9392f796b908073"><div class="ttname"><a href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a></div><div class="ttdeci">#define TETL_MOVE(...)</div><div class="ttdef"><b>Definition:</b> move.hpp:26</div></div>
-<div class="ttc" id="aapply_8hpp_html"><div class="ttname"><a href="apply_8hpp.html">apply.hpp</a></div></div>
-<div class="ttc" id="adecay_8hpp_html"><div class="ttname"><a href="decay_8hpp.html">decay.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition:</b> forward.hpp:32</div></div>
-<div class="ttc" id="ainvoke_8hpp_html"><div class="ttname"><a href="invoke_8hpp.html">invoke.hpp</a></div></div>
-<div class="ttc" id="ainvoke__result_8hpp_html"><div class="ttname"><a href="invoke__result_8hpp.html">invoke_result.hpp</a></div></div>
-<div class="ttc" id="ais__base__of_8hpp_html"><div class="ttname"><a href="is__base__of_8hpp.html">is_base_of.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a0bd726a99d25fb6e96ef3527de8a0164"><div class="ttname"><a href="namespaceetl.html#a0bd726a99d25fb6e96ef3527de8a0164">etl::invoke</a></div><div class="ttdeci">constexpr auto invoke(F &amp;&amp;f, Args &amp;&amp;... args) -&gt; etl::invoke_result_t&lt; F, Args... &gt;</div><div class="ttdef"><b>Definition:</b> invoke.hpp:45</div></div>
-<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a817e57a985d0eab0156aa074d1928761"><div class="ttname"><a href="namespaceetl.html#a817e57a985d0eab0156aa074d1928761">etl::bind_front</a></div><div class="ttdeci">constexpr auto bind_front(Func &amp;&amp;func, BoundArgs &amp;&amp;... boundArgs)</div><div class="ttdoc">The function template bind_front generates a forwarding call wrapper for f. Calling this wrapper is e...</div><div class="ttdef"><b>Definition:</b> bind_front.hpp:86</div></div>
-<div class="ttc" id="anamespaceetl_html_a93ed3feabd9624cf09aa604f49155cc2"><div class="ttname"><a href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t</a></div><div class="ttdeci">typename etl::invoke_result&lt; F, ArgTypes... &gt;::type invoke_result_t</div><div class="ttdef"><b>Definition:</b> invoke_result.hpp:70</div></div>
-<div class="ttc" id="anamespaceetl_html_a944255034d5f023db7654f5d8dbc9701"><div class="ttname"><a href="namespaceetl.html#a944255034d5f023db7654f5d8dbc9701">etl::unwrap_ref_decay_t</a></div><div class="ttdeci">typename etl::unwrap_ref_decay&lt; T &gt;::type unwrap_ref_decay_t</div><div class="ttdef"><b>Definition:</b> unwrap_reference.hpp:28</div></div>
-<div class="ttc" id="anamespaceetl_html_a974fb6faa222ecb40a59180647ccb79d"><div class="ttname"><a href="namespaceetl.html#a974fb6faa222ecb40a59180647ccb79d">etl::apply</a></div><div class="ttdeci">constexpr auto apply(F &amp;&amp;f, Tuple &amp;&amp;t) -&gt; decltype(auto)</div><div class="ttdef"><b>Definition:</b> apply.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_af00bab8d0b02bcb2974969b9d69639bb"><div class="ttname"><a href="namespaceetl.html#af00bab8d0b02bcb2974969b9d69639bb">etl::is_base_of_v</a></div><div class="ttdeci">constexpr bool is_base_of_v</div><div class="ttdef"><b>Definition:</b> is_base_of.hpp:44</div></div>
-<div class="ttc" id="aunwrap__reference_8hpp_html"><div class="ttname"><a href="unwrap__reference_8hpp.html">unwrap_reference.hpp</a></div></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_FUNCTIONAL_BIND_FRONT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

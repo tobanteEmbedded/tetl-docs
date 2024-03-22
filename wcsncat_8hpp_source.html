@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,30 +98,34 @@ $(document).ready(function(){initNavTree('wcsncat_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="wcsncat_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CWCHAR_WCSNCAT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CWCHAR_WCSNCAT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CWCHAR_WCSNCAT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CWCHAR_WCSNCAT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="macro_8hpp.html">etl/_cassert/macro.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cassert</span><span class="preprocessor">/</span><span class="preprocessor">macro</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_strings</span><span class="preprocessor">/</span><span class="preprocessor">cstr_algorithm</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a31d334b345c8ec3b4df9ed3017e1a0e9">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a31d334b345c8ec3b4df9ed3017e1a0e9">wcsncat</a>(<span class="keywordtype">wchar_t</span>* dest, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* src, <a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>) -&gt; <span class="keywordtype">wchar_t</span>*</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \brief Appends at most count wide characters from the wide string pointed to</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// by src to the end of the character string pointed to by dest, stopping if</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// the null terminator is copied. The wide character src[0] replaces the null</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// terminator at the end of dest. The null terminator is always appended in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// end (so the maximum number of wide characters the function may write is</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// count+1).</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/// \details The destination byte string must have enough space for the contents</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// of both dest and src plus the terminating null character, except that the</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/// size of src is limited to count. The behavior is undefined if the strings</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/// overlap.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a31d334b345c8ec3b4df9ed3017e1a0e9">   23</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a31d334b345c8ec3b4df9ed3017e1a0e9">wcsncat</a>(<span class="keywordtype">wchar_t</span>* dest, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* src, etl::size_t <span class="keyword">const</span> count) -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> detail::strncat_impl&lt;wchar_t, etl::size_t&gt;(dest, src, <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> detail::strncat_impl&lt;<span class="keywordtype">wchar_t</span>, etl::size_t&gt;(dest, src, count);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CWCHAR_WCSNCAT_HPP</span></div>
-<div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
-<div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a31d334b345c8ec3b4df9ed3017e1a0e9"><div class="ttname"><a href="namespaceetl.html#a31d334b345c8ec3b4df9ed3017e1a0e9">etl::wcsncat</a></div><div class="ttdeci">constexpr auto wcsncat(wchar_t *dest, wchar_t const *src, etl::size_t const count) -&gt; wchar_t *</div><div class="ttdoc">Appends at most count wide characters from the wide string pointed to by src to the end of the charac...</div><div class="ttdef"><b>Definition:</b> wcsncat.hpp:23</div></div>
-<div class="ttc" id="anamespaceetl_html_a3f9162720047d01bb438874bf56df5d2"><div class="ttname"><a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition:</b> count.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_a9671046b2e5aea5a45a7f12fecc9f911"><div class="ttname"><a href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition:</b> size_t.hpp:14</div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CWCHAR_WCSNCAT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,12 +98,12 @@ $(document).ready(function(){initNavTree('tm_8hpp_source.html',''); initResizabl
 <div class="contents">
 <a href="tm_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CSTDDEF_TM_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CSTDDEF_TM_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CSTDDEF_TM_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CSTDDEF_TM_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structetl_1_1tm.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1tm.html">tm</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structetl_1_1tm.html">    8</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1tm.html">tm</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1tm.html#a2a755713e7828c25c22a25bf2d067839">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structetl_1_1tm.html#a2a755713e7828c25c22a25bf2d067839">tm_sec</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1tm.html#a95a20c81d7039c5e31bef95164a5fd0d">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structetl_1_1tm.html#a95a20c81d7039c5e31bef95164a5fd0d">tm_min</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1tm.html#ad4c40b7f7b319adf6f6bd19df748904a">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structetl_1_1tm.html#ad4c40b7f7b319adf6f6bd19df748904a">tm_hour</a>;</div>
@@ -109,18 +117,7 @@ $(document).ready(function(){initNavTree('tm_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CSTDDEF_TM_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="astructetl_1_1tm_html"><div class="ttname"><a href="structetl_1_1tm.html">etl::tm</a></div><div class="ttdef"><b>Definition:</b> tm.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a0518ee64a66d0ce08c7fcf94339cffe5"><div class="ttname"><a href="structetl_1_1tm.html#a0518ee64a66d0ce08c7fcf94339cffe5">etl::tm::tm_yday</a></div><div class="ttdeci">int tm_yday</div><div class="ttdef"><b>Definition:</b> tm.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a077d12c5de4552b77966eb309dc154b6"><div class="ttname"><a href="structetl_1_1tm.html#a077d12c5de4552b77966eb309dc154b6">etl::tm::tm_mon</a></div><div class="ttdeci">int tm_mon</div><div class="ttdef"><b>Definition:</b> tm.hpp:13</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a2a755713e7828c25c22a25bf2d067839"><div class="ttname"><a href="structetl_1_1tm.html#a2a755713e7828c25c22a25bf2d067839">etl::tm::tm_sec</a></div><div class="ttdeci">int tm_sec</div><div class="ttdef"><b>Definition:</b> tm.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a36da1e0e0e6a3dd1fabfe2016984624b"><div class="ttname"><a href="structetl_1_1tm.html#a36da1e0e0e6a3dd1fabfe2016984624b">etl::tm::tm_mday</a></div><div class="ttdeci">int tm_mday</div><div class="ttdef"><b>Definition:</b> tm.hpp:12</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a5c8fdd0c48edeb86a511eb3d92adcc14"><div class="ttname"><a href="structetl_1_1tm.html#a5c8fdd0c48edeb86a511eb3d92adcc14">etl::tm::tm_year</a></div><div class="ttdeci">int tm_year</div><div class="ttdef"><b>Definition:</b> tm.hpp:14</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a8efc74983bf406508bd31264d24f4a2c"><div class="ttname"><a href="structetl_1_1tm.html#a8efc74983bf406508bd31264d24f4a2c">etl::tm::tm_wday</a></div><div class="ttdeci">int tm_wday</div><div class="ttdef"><b>Definition:</b> tm.hpp:15</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_a95a20c81d7039c5e31bef95164a5fd0d"><div class="ttname"><a href="structetl_1_1tm.html#a95a20c81d7039c5e31bef95164a5fd0d">etl::tm::tm_min</a></div><div class="ttdeci">int tm_min</div><div class="ttdef"><b>Definition:</b> tm.hpp:10</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_ad4c40b7f7b319adf6f6bd19df748904a"><div class="ttname"><a href="structetl_1_1tm.html#ad4c40b7f7b319adf6f6bd19df748904a">etl::tm::tm_hour</a></div><div class="ttdeci">int tm_hour</div><div class="ttdef"><b>Definition:</b> tm.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1tm_html_adebebecc6d6e3e2bcb98e685f32fef46"><div class="ttname"><a href="structetl_1_1tm.html#adebebecc6d6e3e2bcb98e685f32fef46">etl::tm::tm_isdst</a></div><div class="ttdeci">int tm_isdst</div><div class="ttdef"><b>Definition:</b> tm.hpp:17</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CSTDDEF_TM_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

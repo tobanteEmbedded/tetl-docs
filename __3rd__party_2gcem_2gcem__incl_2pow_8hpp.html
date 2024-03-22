@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -144,7 +152,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Computes <code>base</code> raised to the power <code>exp_term</code>. In the case where <code>exp_term</code> is integral-valued, recursion by squaring is used, otherwise <img class="formulaInl" alt="$ \text{base}^{\text{exp\_term}} = e^{\text{exp\_term} \log(\text{base})} $" src="form_72.png"/> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Computes <code>base</code> raised to the power <code>exp_term</code>. In the case where <code>exp_term</code> is integral-valued, recursion by squaring is used, otherwise \( \text{base}^{\text{exp\_term}} = e^{\text{exp\_term} \log(\text{base})} \) </dd></dl>
 
 </div>
 </div>

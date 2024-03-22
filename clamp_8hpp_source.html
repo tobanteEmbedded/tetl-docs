@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,35 +98,36 @@ $(document).ready(function(){initNavTree('clamp_8hpp_source.html',''); initResiz
 <div class="contents">
 <a href="clamp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_CLAMP_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_CLAMP_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_CLAMP_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_CLAMP_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="less_8hpp.html">etl/_functional/less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \ingroup algorithm-header</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// @{</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// \brief If v compares less than lo, returns lo; otherwise if hi compares less</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// than v, returns hi; otherwise returns v. Uses operator&lt; to compare the</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// values.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">clamp</a>(Type <span class="keyword">const</span>&amp; v, Type <span class="keyword">const</span>&amp; lo, Type <span class="keyword">const</span>&amp; hi) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; Type <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">   17</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">clamp</a>(Type <span class="keyword">const</span>&amp; v, Type <span class="keyword">const</span>&amp; lo, Type <span class="keyword">const</span>&amp; hi) <span class="keyword">noexcept</span> -&gt; Type <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">clamp</a>(v, lo, hi, <a class="code" href="structetl_1_1less.html">less&lt;Type&gt;</a>());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> clamp(v, lo, hi, <a class="code" href="structetl_1_1less.html">less</a>&lt;Type&gt;());</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gabfa416a307b0bb33666d34845c42ba2b">   23</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">clamp</a>(Type <span class="keyword">const</span>&amp; v, Type <span class="keyword">const</span>&amp; lo, Type <span class="keyword">const</span>&amp; hi, Compare comp) -&gt; Type <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gabfa416a307b0bb33666d34845c42ba2b">   23</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gabfa416a307b0bb33666d34845c42ba2b">clamp</a>(Type <span class="keyword">const</span>&amp; v, Type <span class="keyword">const</span>&amp; lo, Type <span class="keyword">const</span>&amp; hi, Compare comp) -&gt; Type <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> comp(v, lo) ? lo : comp(hi, v) ? hi : v;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/// @}</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_CLAMP_HPP</span></div>
-<div class="ttc" id="agroup__algorithm-header_html_gaf90379160c94dc0396b5f32204c790bf"><div class="ttname"><a href="group__algorithm-header.html#gaf90379160c94dc0396b5f32204c790bf">etl::clamp</a></div><div class="ttdeci">constexpr auto clamp(Type const &amp;v, Type const &amp;lo, Type const &amp;hi) noexcept -&gt; Type const &amp;</div><div class="ttdoc">If v compares less than lo, returns lo; otherwise if hi compares less than v, returns hi; otherwise r...</div><div class="ttdef"><b>Definition:</b> clamp.hpp:17</div></div>
-<div class="ttc" id="aless_8hpp_html"><div class="ttname"><a href="less_8hpp.html">less.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="astructetl_1_1less_html"><div class="ttname"><a href="structetl_1_1less.html">etl::less</a></div><div class="ttdoc">Function object for performing comparisons. Unless specialised, invokes operator&lt; on type T....</div><div class="ttdef"><b>Definition:</b> less.hpp:14</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_CLAMP_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

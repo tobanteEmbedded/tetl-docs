@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,32 +98,31 @@ $(document).ready(function(){initNavTree('remove__const_8hpp_source.html',''); i
 <div class="contents">
 <a href="remove__const_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief Provides the member typedef type which is the same as T, except that</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// its topmost cv-qualifiers are removed. Removes the topmost const.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \details The behavior of a program that adds specializations for any of the</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// templates described on this page is undefined.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1remove__const.html">remove_const</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const.html#af64c086854ab923393803981c1e74552">   14</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1remove__const.html#af64c086854ab923393803981c1e74552">type</a> = Type;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const.html">   13</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1remove__const.html">remove_const</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const.html#af64c086854ab923393803981c1e74552">   14</a></span>&#160;    <span class="keyword">using</span> type = Type;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const_3_01Type_01const_01_4.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1remove__const.html">remove_const</a>&lt;Type const&gt; {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const_3_01Type_01const_01_4.html#aa383302eebed45986fc5b37e0d54e762">   19</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1remove__const_3_01Type_01const_01_4.html#aa383302eebed45986fc5b37e0d54e762">type</a> = Type;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const_3_01Type_01const_01_4.html">   18</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1remove__const.html">remove_const</a>&lt;Type <span class="keyword">const</span>&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1remove__const_3_01Type_01const_01_4.html#aa383302eebed45986fc5b37e0d54e762">   19</a></span>&#160;    <span class="keyword">using</span> type = Type;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6ceeb1a17bd47c943002a1c687be53c1">   23</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#a6ceeb1a17bd47c943002a1c687be53c1">remove_const_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1remove__const.html#af64c086854ab923393803981c1e74552">etl::remove_const&lt;T&gt;::type</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6ceeb1a17bd47c943002a1c687be53c1">   23</a></span>&#160;<span class="keyword">using</span> remove_const_t = <span class="keyword">typename</span> etl::<a class="code" href="structetl_1_1remove__const.html">remove_const</a>&lt;T&gt;::type;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a6ceeb1a17bd47c943002a1c687be53c1"><div class="ttname"><a href="namespaceetl.html#a6ceeb1a17bd47c943002a1c687be53c1">etl::remove_const_t</a></div><div class="ttdeci">typename etl::remove_const&lt; T &gt;::type remove_const_t</div><div class="ttdef"><b>Definition:</b> remove_const.hpp:23</div></div>
-<div class="ttc" id="astructetl_1_1remove__const_3_01Type_01const_01_4_html_aa383302eebed45986fc5b37e0d54e762"><div class="ttname"><a href="structetl_1_1remove__const_3_01Type_01const_01_4.html#aa383302eebed45986fc5b37e0d54e762">etl::remove_const&lt; Type const &gt;::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition:</b> remove_const.hpp:19</div></div>
-<div class="ttc" id="astructetl_1_1remove__const_html"><div class="ttname"><a href="structetl_1_1remove__const.html">etl::remove_const</a></div><div class="ttdoc">Provides the member typedef type which is the same as T, except that its topmost cv-qualifiers are re...</div><div class="ttdef"><b>Definition:</b> remove_const.hpp:13</div></div>
-<div class="ttc" id="astructetl_1_1remove__const_html_af64c086854ab923393803981c1e74552"><div class="ttname"><a href="structetl_1_1remove__const.html#af64c086854ab923393803981c1e74552">etl::remove_const::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition:</b> remove_const.hpp:14</div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_REMOVE_CONST_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

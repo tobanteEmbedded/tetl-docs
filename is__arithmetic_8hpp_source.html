@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,31 +98,29 @@ $(document).ready(function(){initNavTree('is__arithmetic_8hpp_source.html',''); 
 <div class="contents">
 <a href="is__arithmetic_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__floating__point_8hpp.html">etl/_type_traits/is_floating_point.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__integral_8hpp.html">etl/_type_traits/is_integral.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_floating_point</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_integral</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \brief If T is an arithmetic type (that is, an integral type or a</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// floating-point type) or a cv-qualified version thereof, provides the member</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// constant value equal true. For any other type, value is false. The behavior</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// of a program that adds specializations for is_arithmetic or is_arithmetic_v</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// (since C++17) is undefined.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1is__arithmetic.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__arithmetic.html">is_arithmetic</a> : <a class="code" href="structetl_1_1integral__constant.html">etl::bool_constant</a>&lt;etl::is_integral_v&lt;T&gt; or etl::is_floating_point_v&lt;T&gt;&gt; { };</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1is__arithmetic.html">   18</a></span>&#160;<span class="keyword">struct</span> is_arithmetic : etl::bool_constant&lt;etl::is_integral_v&lt;T&gt; <span class="keyword">or</span> etl::is_floating_point_v&lt;T&gt;&gt; { };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">   21</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">is_arithmetic_v</a> = etl::is_integral_v&lt;T&gt; or etl::is_floating_point_v&lt;T&gt;;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">T</a>&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">   21</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">is_arithmetic_v</a> = <a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">etl</a>::<a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">is_integral_v</a>&lt;<a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">T</a>&gt; <span class="keyword">or</span> <a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">etl</a>::<a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">is_floating_point_v</a>&lt;<a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">T</a>&gt;;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
-<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="ais__floating__point_8hpp_html"><div class="ttname"><a href="is__floating__point_8hpp.html">is_floating_point.hpp</a></div></div>
-<div class="ttc" id="ais__integral_8hpp_html"><div class="ttname"><a href="is__integral_8hpp.html">is_integral.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a105e2a5ac8fc634dcc71675e27e3f95e"><div class="ttname"><a href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">etl::is_arithmetic_v</a></div><div class="ttdeci">constexpr bool is_arithmetic_v</div><div class="ttdef"><b>Definition:</b> is_arithmetic.hpp:21</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1is__arithmetic_html"><div class="ttname"><a href="structetl_1_1is__arithmetic.html">etl::is_arithmetic</a></div><div class="ttdoc">If T is an arithmetic type (that is, an integral type or a floating-point type) or a cv-qualified ver...</div><div class="ttdef"><b>Definition:</b> is_arithmetic.hpp:18</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_IS_ARITHMETIC_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

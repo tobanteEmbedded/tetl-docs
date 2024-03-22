@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -134,12 +142,12 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>computes the &lsquo;true&rsquo; gamma function <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \Gamma(x) = \int_0^\infty y^{x-1} \exp(-y) dy \]" src="form_83.png"/>
+\[ \Gamma(x) = \int_0^\infty y^{x-1} \exp(-y) dy \]
 </p>
  using a polynomial form: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \Gamma(x+1) \approx (x+g+0.5)^{x+0.5} \exp(-x-g-0.5) \sqrt{2 \pi} \left[ c_0 + \frac{c_1}{x+1} + \frac{c_2}{x+2} + \cdots + \frac{c_n}{x+n} \right] \]" src="form_58.png"/>
+\[ \Gamma(x+1) \approx (x+g+0.5)^{x+0.5} \exp(-x-g-0.5) \sqrt{2 \pi} \left[ c_0 + \frac{c_1}{x+1} + \frac{c_2}{x+2} + \cdots + \frac{c_n}{x+n} \right] \]
 </p>
- where the value <img class="formulaInl" alt="$ g $" src="form_59.png"/> and the coefficients <img class="formulaInl" alt="$ (c_0, c_1, \ldots, c_n) $" src="form_60.png"/> are taken from Paul Godfrey, whose note can be found here: <a href="http://my.fit.edu/~gabdo/gamma.txt">http://my.fit.edu/~gabdo/gamma.txt</a> </dd></dl>
+ where the value \( g \) and the coefficients \( (c_0, c_1, \ldots, c_n) \) are taken from Paul Godfrey, whose note can be found here: <a href="http://my.fit.edu/~gabdo/gamma.txt">http://my.fit.edu/~gabdo/gamma.txt</a> </dd></dl>
 
 </div>
 </div>

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,69 +98,69 @@ $(document).ready(function(){initNavTree('submdspan__extents_8hpp_source.html','
 <div class="contents">
 <a href="submdspan__extents_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extents_8hpp.html">etl/_mdspan/extents.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="full__extent_8hpp.html">etl/_mdspan/full_extent.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integral__constant__like_8hpp.html">etl/_mdspan/integral_constant_like.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="strided__slice_8hpp.html">etl/_mdspan/strided_slice.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dynamic__extent_8hpp.html">etl/_span/dynamic_extent.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tuple__element_8hpp.html">etl/_tuple/tuple_element.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="always__false_8hpp.html">etl/_type_traits/always_false.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__convertible_8hpp.html">etl/_type_traits/is_convertible.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_mdspan</span><span class="preprocessor">/</span><span class="preprocessor">extents</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_mdspan</span><span class="preprocessor">/</span><span class="preprocessor">full_extent</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_mdspan</span><span class="preprocessor">/</span><span class="preprocessor">integral_constant_like</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_mdspan</span><span class="preprocessor">/</span><span class="preprocessor">strided_slice</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_span</span><span class="preprocessor">/</span><span class="preprocessor">dynamic_extent</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_tuple</span><span class="preprocessor">/</span><span class="preprocessor">tuple_element</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">always_false</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_convertible</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace</span> detail {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> K, <span class="keyword">typename</span> Extent, <span class="keyword">typename</span> Sk&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;constexpr <span class="keyword">auto</span> submdspan_static_extent()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;etl::size_t K, <span class="keyword">typename</span> Extent, <span class="keyword">typename</span> Sk&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> submdspan_static_extent()</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">using</span> IndexT = <span class="keyword">typename</span> Extent::index_type;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> constexpr (Extent::static_extent(Extent::rank() - K) != <a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">etl::dynamic_extent</a>) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> constexpr (etl::is_convertible_v&lt;Sk, etl::full_extent_t&gt;) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Extent::static_extent(Extent::rank() - K) != etl<a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">::</a><a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">dynamic_extent</a>) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_convertible_v&lt;Sk, etl::<a class="code" href="structetl_1_1full__extent__t.html">full_extent_t</a>&gt;) {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">return</span> Extent::static_extent(Extent::rank() - K);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (index_pair_like&lt;Sk, IndexT&gt;) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">using</span> FirstT  = <a class="code" href="namespaceetl.html#a700f0f867c8a351c79de3b290004521e">etl::tuple_element_t&lt;0, Sk&gt;</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keyword">using</span> SecondT = <a class="code" href="namespaceetl.html#a700f0f867c8a351c79de3b290004521e">etl::tuple_element_t&lt;1, Sk&gt;</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> constexpr (integral_constant_like&lt;FirstT&gt; and integral_constant_like&lt;SecondT&gt;) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">return</span> de_ice(<a class="code" href="namespaceetl.html#a700f0f867c8a351c79de3b290004521e">etl::tuple_element_t&lt;1, Sk&gt;</a>()) - de_ice(<a class="code" href="namespaceetl.html#a700f0f867c8a351c79de3b290004521e">etl::tuple_element_t&lt;0, Sk&gt;</a>());</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (index_pair_like&lt;Sk, IndexT&gt;) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">using</span> FirstT  = etl::tuple_element_t&lt;0, Sk&gt;;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keyword">using</span> SecondT = etl::tuple_element_t&lt;1, Sk&gt;;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (integral_constant_like&lt;FirstT&gt; <span class="keyword">and</span> integral_constant_like&lt;SecondT&gt;) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">return</span> de_ice(etl::tuple_element_t&lt;1, Sk&gt;()) - de_ice(etl::tuple_element_t&lt;0, Sk&gt;());</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (is_strided_slice&lt;Sk&gt;) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_strided_slice&lt;Sk&gt;) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">using</span> ExtT    = <span class="keyword">typename</span> Sk::extent_type;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">using</span> StrideT = <span class="keyword">typename</span> Sk::stride_type;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> constexpr (integral_constant_like&lt;ExtT&gt; and not integral_constant_like&lt;StrideT&gt; and ExtT() == 0) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (integral_constant_like&lt;ExtT&gt; <span class="keyword">and</span> <span class="keyword">not</span> integral_constant_like&lt;StrideT&gt; <span class="keyword">and</span> ExtT() == 0) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (integral_constant_like&lt;ExtT&gt; and integral_constant_like&lt;StrideT&gt;) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (integral_constant_like&lt;ExtT&gt; <span class="keyword">and</span> integral_constant_like&lt;StrideT&gt;) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">return</span> 1 + (de_ice(ExtT()) - 1) / de_ice(StrideT());</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">etl::dynamic_extent</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> etl<a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">::</a><a class="code" href="namespaceetl.html#ae174223df490e6263d4648a86326c902">dynamic_extent</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> K, <span class="keyword">typename</span> Extents, <span class="keywordtype">size_t</span>... NewExtents&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span>submdspan_extents_builder {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;etl::size_t K, <span class="keyword">typename</span> Extents, size_t... NewExtents&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct</span> submdspan_extents_builder {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Slice, <span class="keyword">typename</span>... SlicesAndExtents&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(Extents <span class="keyword">const</span>&amp; ext, Slice <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>, SlicesAndExtents... slicesAndExtents)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> next(Extents <span class="keyword">const</span>&amp; ext, Slice <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>, SlicesAndExtents... slicesAndExtents)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> constexpr (etl::is_convertible_v&lt;Slice, etl::full_extent_t&gt;) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_convertible_v&lt;Slice, etl::<a class="code" href="structetl_1_1full__extent__t.html">full_extent_t</a>&gt;) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> submdspan_extents_builder&lt;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                K - 1,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                Extents,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                Extents::static_extent(Extents::rank() - K),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                NewExtents...&gt;<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">::next</a>(ext, slicesAndExtents..., ext.extent(Extents::rank() - K));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (etl::is_convertible_v&lt;Slice, etl::size_t&gt;) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">submdspan_extents_builder&lt;K - 1, Extents, NewExtents...&gt;::next</a>(ext, slicesAndExtents...);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (is_strided_slice&lt;Slice&gt;) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            static_assert(etl::always_false&lt;Slice&gt;);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                NewExtents...&gt;::next(ext, slicesAndExtents..., ext.extent(Extents::rank() - K));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_convertible_v&lt;Slice, etl::size_t&gt;) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> submdspan_extents_builder&lt;K - 1, Extents, NewExtents...&gt;::next(ext, slicesAndExtents...);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_strided_slice&lt;Slice&gt;) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keyword">static_assert</span>(etl::always_false&lt;Slice&gt;);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            constexpr <span class="keyword">auto</span> newStaticExt = submdspan_static_extent&lt;K, Extents, Slice&gt;();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">submdspan_extents_builder&lt;K - 1, Extents, newStaticExt, NewExtents...&gt;::next</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">constexpr</span> <span class="keyword">auto</span> newStaticExt = submdspan_static_extent&lt;K, Extents, Slice&gt;();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> submdspan_extents_builder&lt;K - 1, Extents, newStaticExt, NewExtents...&gt;::next(</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                ext,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                slicesAndExtents...</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            );</div>
@@ -160,45 +168,29 @@ $(document).ready(function(){initNavTree('submdspan__extents_8hpp_source.html','
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Extents, <span class="keywordtype">size_t</span>... NewStaticExtents&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">struct </span>submdspan_extents_builder&lt;0, Extents, NewStaticExtents...&gt; {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Extents, size_t... NewStaticExtents&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">struct</span> submdspan_extents_builder&lt;0, Extents, NewStaticExtents...&gt; {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... NewExtents&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">next</a>(Extents <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>, NewExtents... newExts)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> next(Extents <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>, NewExtents... newExts)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1extents.html">etl::extents</a>&lt;<span class="keyword">typename</span> Extents::index_type, NewStaticExtents...&gt;(newExts...);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> etl::<a class="code" href="structetl_1_1extents.html">extents</a>&lt;<span class="keyword">typename</span> Extents::index_type, NewStaticExtents...&gt;(newExts...);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IndexT, <a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a>... Extents, <span class="keyword">typename</span>... SliceSpecifiers&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> submdspan_extents(<a class="code" href="structetl_1_1extents.html">etl::extents&lt;IndexT, Extents...&gt;</a> <span class="keyword">const</span>&amp; ext, SliceSpecifiers... slices)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(<span class="keyword">sizeof</span>...(slices) == <a class="code" href="structetl_1_1extents.html">etl::extents&lt;IndexT, Extents...&gt;::rank</a>())</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IndexT, etl::size_t... Extents, <span class="keyword">typename</span>... SliceSpecifiers&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> submdspan_extents(etl::<a class="code" href="structetl_1_1extents.html">extents</a>&lt;IndexT, Extents...&gt; <span class="keyword">const</span>&amp; ext, SliceSpecifiers... slices)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">requires</span>(<span class="keyword">sizeof</span>...(slices) == etl::extents&lt;IndexT, Extents...&gt;::rank())</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">using</span> ext_t = <a class="code" href="structetl_1_1extents.html">etl::extents</a>&lt;IndexT, Extents...&gt;;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> detail::submdspan_extents_builder&lt;ext_t::rank(), ext_t&gt;<a class="code" href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">::next</a>(ext, slices...);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">using</span> ext_t = etl::<a class="code" href="structetl_1_1extents.html">extents</a>&lt;IndexT, Extents...&gt;;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> detail::submdspan_extents_builder&lt;ext_t::rank(), ext_t&gt;::next(ext, slices...);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
-<div class="ttc" id="aalways__false_8hpp_html"><div class="ttname"><a href="always__false_8hpp.html">always_false.hpp</a></div></div>
-<div class="ttc" id="adynamic__extent_8hpp_html"><div class="ttname"><a href="dynamic__extent_8hpp.html">dynamic_extent.hpp</a></div></div>
-<div class="ttc" id="aextents_8hpp_html"><div class="ttname"><a href="extents_8hpp.html">extents.hpp</a></div></div>
-<div class="ttc" id="afull__extent_8hpp_html"><div class="ttname"><a href="full__extent_8hpp.html">full_extent.hpp</a></div></div>
-<div class="ttc" id="aintegral__constant__like_8hpp_html"><div class="ttname"><a href="integral__constant__like_8hpp.html">integral_constant_like.hpp</a></div></div>
-<div class="ttc" id="ais__convertible_8hpp_html"><div class="ttname"><a href="is__convertible_8hpp.html">is_convertible.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a700f0f867c8a351c79de3b290004521e"><div class="ttname"><a href="namespaceetl.html#a700f0f867c8a351c79de3b290004521e">etl::tuple_element_t</a></div><div class="ttdeci">typename tuple_element&lt; I, T &gt;::type tuple_element_t</div><div class="ttdef"><b>Definition:</b> tuple_element.hpp:20</div></div>
-<div class="ttc" id="anamespaceetl_html_a7891ee1f2ce336c151274551bef111d1"><div class="ttname"><a href="namespaceetl.html#a7891ee1f2ce336c151274551bef111d1">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition:</b> next.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a9671046b2e5aea5a45a7f12fecc9f911"><div class="ttname"><a href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition:</b> size_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_ae174223df490e6263d4648a86326c902"><div class="ttname"><a href="namespaceetl.html#ae174223df490e6263d4648a86326c902">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition:</b> dynamic_extent.hpp:13</div></div>
-<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astrided__slice_8hpp_html"><div class="ttname"><a href="strided__slice_8hpp.html">strided_slice.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1extents_html"><div class="ttname"><a href="structetl_1_1extents.html">etl::extents</a></div><div class="ttdef"><b>Definition:</b> extents.hpp:22</div></div>
-<div class="ttc" id="atuple__element_8hpp_html"><div class="ttname"><a href="tuple__element_8hpp.html">tuple_element.hpp</a></div></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MDSPAN_SUBMDSPAN_EXTENTS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

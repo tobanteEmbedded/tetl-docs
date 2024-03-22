@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,29 +98,29 @@ $(document).ready(function(){initNavTree('iterator__traits_8hpp_source.html','')
 <div class="contents">
 <a href="iterator__traits_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ptrdiff__t_8hpp.html">etl/_cstddef/ptrdiff_t.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__iterator_2tags_8hpp.html">etl/_iterator/tags.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="remove__cv_8hpp.html">etl/_type_traits/remove_cv.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="void__t_8hpp.html">etl/_type_traits/void_t.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">ptrdiff_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">tags</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">remove_cv</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">void_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>detail {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter, <span class="keyword">typename</span> = etl::<span class="keywordtype">void</span>_t&lt;&gt;&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span>iterator_traits_impl { };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace</span> detail {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter, <span class="keyword">typename</span> = etl::void_t&lt;&gt;&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct</span> iterator_traits_impl { };</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">struct </span>iterator_traits_impl&lt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">struct</span> iterator_traits_impl&lt;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Iter,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="namespaceetl.html">etl</a>::<a class="code" href="namespaceetl.html#a8f76cc2621d7373b79e2fc034f160ee0">void_t</a>&lt;                          <span class="comment">//</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        typename Iter::iterator_category, <span class="comment">//</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        typename Iter::value_type,        <span class="comment">//</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        typename Iter::difference_type,   <span class="comment">//</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        typename Iter::pointer,           <span class="comment">//</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        typename Iter::reference          <span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    etl::void_t&lt;                          <span class="comment">//</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">typename</span> Iter::iterator_category, <span class="comment">//</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">typename</span> Iter::value_type,        <span class="comment">//</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">typename</span> Iter::difference_type,   <span class="comment">//</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typename</span> Iter::pointer,           <span class="comment">//</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">typename</span> Iter::reference          <span class="comment">//</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        &gt;                                 <span class="comment">//</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    &gt; {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">using</span> iterator_category = <span class="keyword">typename</span> Iter::iterator_category;</div>
@@ -124,37 +132,31 @@ $(document).ready(function(){initNavTree('iterator__traits_8hpp_source.html','')
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/// \brief iterator_traits is the type trait class that provides uniform</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/// interface to the properties of LegacyIterator types. This makes it possible</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/// to implement algorithms only in terms of iterators.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/// \details The template can be specialized for user-defined iterators so that</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/// the information about the iterator can be retrieved even if the type does</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/// not provide the usual typedefs.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/iterator/iterator_traits</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a> : detail::iterator_traits_impl&lt;Iter&gt; { };</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits.html">   47</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a> : detail::iterator_traits_impl&lt;Iter&gt; { };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;T*&gt; {</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a3e4b11ff83596f8f77338181209acbe4">   51</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1contiguous__iterator__tag.html">iterator_concept</a>  = <a class="code" href="structetl_1_1contiguous__iterator__tag.html">contiguous_iterator_tag</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#aa11fd04f0d0c926f6feda40757d66a00">   52</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1random__access__iterator__tag.html">iterator_category</a> = <a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a00f5ab73808711c182a3f32254bd0b2c">   53</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a00f5ab73808711c182a3f32254bd0b2c">value_type</a>        = <a class="code" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t&lt;T&gt;</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a94a226e398622e0f0c2af82f2151c94b">   54</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a94a226e398622e0f0c2af82f2151c94b">difference_type</a>   = <a class="code" href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">ptrdiff_t</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a5d52ae45002ddca5357a8e65e4aff7f3">   55</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a5d52ae45002ddca5357a8e65e4aff7f3">pointer</a>           = T*;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#ac38493e2e513ea37e0df70b926f8760f">   56</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#ac38493e2e513ea37e0df70b926f8760f">reference</a>         = T&amp;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html">   50</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;T*&gt; {</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a3e4b11ff83596f8f77338181209acbe4">   51</a></span>&#160;    <span class="keyword">using</span> iterator_concept  = <a class="code" href="structetl_1_1contiguous__iterator__tag.html">contiguous_iterator_tag</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#aa11fd04f0d0c926f6feda40757d66a00">   52</a></span>&#160;    <span class="keyword">using</span> iterator_category = <a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a00f5ab73808711c182a3f32254bd0b2c">   53</a></span>&#160;    <span class="keyword">using</span> value_type        = remove_cv_t&lt;T&gt;;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a94a226e398622e0f0c2af82f2151c94b">   54</a></span>&#160;    <span class="keyword">using</span> difference_type   = ptrdiff_t;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a5d52ae45002ddca5357a8e65e4aff7f3">   55</a></span>&#160;    <span class="keyword">using</span> pointer           = T*;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#ac38493e2e513ea37e0df70b926f8760f">   56</a></span>&#160;    <span class="keyword">using</span> reference         = T&amp;;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
-<div class="ttc" id="a__iterator_2tags_8hpp_html"><div class="ttname"><a href="__iterator_2tags_8hpp.html">tags.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a8f76cc2621d7373b79e2fc034f160ee0"><div class="ttname"><a href="namespaceetl.html#a8f76cc2621d7373b79e2fc034f160ee0">etl::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition:</b> void_t.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_html_a955e0d5a5e84e9e394bf38a95c8ce380"><div class="ttname"><a href="namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition:</b> ptrdiff_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_abd0aad8fae1237db2f92705fe80729cf"><div class="ttname"><a href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">etl::remove_cv_t</a></div><div class="ttdeci">etl::remove_const_t&lt; etl::remove_volatile_t&lt; T &gt; &gt; remove_cv_t</div><div class="ttdef"><b>Definition:</b> remove_cv.hpp:22</div></div>
-<div class="ttc" id="aptrdiff__t_8hpp_html"><div class="ttname"><a href="ptrdiff__t_8hpp.html">ptrdiff_t.hpp</a></div></div>
-<div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1contiguous__iterator__tag_html"><div class="ttname"><a href="structetl_1_1contiguous__iterator__tag.html">etl::contiguous_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:36</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_3_01T_01_5_01_4_html_a00f5ab73808711c182a3f32254bd0b2c"><div class="ttname"><a href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a00f5ab73808711c182a3f32254bd0b2c">etl::iterator_traits&lt; T * &gt;::value_type</a></div><div class="ttdeci">remove_cv_t&lt; T &gt; value_type</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:53</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_3_01T_01_5_01_4_html_a5d52ae45002ddca5357a8e65e4aff7f3"><div class="ttname"><a href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a5d52ae45002ddca5357a8e65e4aff7f3">etl::iterator_traits&lt; T * &gt;::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:55</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_3_01T_01_5_01_4_html_a94a226e398622e0f0c2af82f2151c94b"><div class="ttname"><a href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a94a226e398622e0f0c2af82f2151c94b">etl::iterator_traits&lt; T * &gt;::difference_type</a></div><div class="ttdeci">ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:54</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_3_01T_01_5_01_4_html_ac38493e2e513ea37e0df70b926f8760f"><div class="ttname"><a href="structetl_1_1iterator__traits_3_01T_01_5_01_4.html#ac38493e2e513ea37e0df70b926f8760f">etl::iterator_traits&lt; T * &gt;::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:56</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:47</div></div>
-<div class="ttc" id="astructetl_1_1random__access__iterator__tag_html"><div class="ttname"><a href="structetl_1_1random__access__iterator__tag.html">etl::random_access_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:31</div></div>
-<div class="ttc" id="avoid__t_8hpp_html"><div class="ttname"><a href="void__t_8hpp.html">void_t.hpp</a></div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_ITERATOR_TRAITS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

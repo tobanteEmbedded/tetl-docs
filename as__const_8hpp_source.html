@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,29 +98,25 @@ $(document).ready(function(){initNavTree('as__const_8hpp_source.html',''); initR
 <div class="contents">
 <a href="as__const_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_UTILITY_AS_CONST_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_UTILITY_AS_CONST_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_UTILITY_AS_CONST_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_UTILITY_AS_CONST_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="add__const_8hpp.html">etl/_type_traits/add_const.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">add_const</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// \brief Forms lvalue reference to const type of t.</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">   11</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T&amp; t) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">add_const_t&lt;T&gt;</a>&amp;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">   11</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T&amp; t) <span class="keyword">noexcept</span> -&gt; add_const_t&lt;T&gt;&amp;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> t;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a467b2ed1f8f9d51ceb6786d6f6cd2c1d">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">as_const</a>(T <span class="keyword">const</span>&amp;&amp;) -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a467b2ed1f8f9d51ceb6786d6f6cd2c1d">   17</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a467b2ed1f8f9d51ceb6786d6f6cd2c1d">as_const</a>(T <span class="keyword">const</span>&amp;&amp;) -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_UTILITY_AS_CONST_HPP</span></div>
-<div class="ttc" id="aadd__const_8hpp_html"><div class="ttname"><a href="add__const_8hpp.html">add_const.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a06fe98569e6409cac789c54e1e563996"><div class="ttname"><a href="namespaceetl.html#a06fe98569e6409cac789c54e1e563996">etl::add_const_t</a></div><div class="ttdeci">T const add_const_t</div><div class="ttdef"><b>Definition:</b> add_const.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_aa180d468fdf2378d57e100ab2bd37ccc"><div class="ttname"><a href="namespaceetl.html#aa180d468fdf2378d57e100ab2bd37ccc">etl::as_const</a></div><div class="ttdeci">constexpr auto as_const(T &amp;t) noexcept -&gt; add_const_t&lt; T &gt; &amp;</div><div class="ttdoc">Forms lvalue reference to const type of t.</div><div class="ttdef"><b>Definition:</b> as_const.hpp:11</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_UTILITY_AS_CONST_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,23 +98,26 @@ $(document).ready(function(){initNavTree('iswupper_8hpp_source.html',''); initRe
 <div class="contents">
 <a href="iswupper_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CWCTYPE_ISWUPPER_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CWCTYPE_ISWUPPER_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CWCTYPE_ISWUPPER_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CWCTYPE_ISWUPPER_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="wint__t_8hpp.html">etl/_cwchar/wint_t.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cwchar</span><span class="preprocessor">/</span><span class="preprocessor">wint_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">   18</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">iswupper</a>(<a class="code" href="namespaceetl.html#a242f9848c8ce5c281284bf133ce1bc94">wint_t</a> ch) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ch &gt;= L<span class="charliteral">&#39;A&#39;</span> &amp;&amp; ch &lt;= L<span class="charliteral">&#39;Z&#39;</span>); }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Checks if the given wide character is an uppercase letter, i.e. one</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// of ABCDEFGHIJKLMNOPQRSTUVWXYZ or any uppercase letter specific to the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// current locale.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \details If the value of ch is neither representable as a wchar_t nor equal</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// to the value of the macro WEOF, the behavior is undefined.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/string/wide/iswupper</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">   18</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">iswupper</a>(wint_t ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(ch &gt;= L&#39;A&#39; &amp;&amp; ch &lt;= L&#39;Z&#39;); }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CWCTYPE_ISWUPPER_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a242f9848c8ce5c281284bf133ce1bc94"><div class="ttname"><a href="namespaceetl.html#a242f9848c8ce5c281284bf133ce1bc94">etl::wint_t</a></div><div class="ttdeci">unsigned int wint_t</div><div class="ttdef"><b>Definition:</b> wint_t.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_ae31f677c72798a1e14ebb84dc2672e21"><div class="ttname"><a href="namespaceetl.html#ae31f677c72798a1e14ebb84dc2672e21">etl::iswupper</a></div><div class="ttdeci">constexpr auto iswupper(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character is an uppercase letter, i.e. one of ABCDEFGHIJKLMNOPQRSTUVWXYZ or ...</div><div class="ttdef"><b>Definition:</b> iswupper.hpp:18</div></div>
-<div class="ttc" id="awint__t_8hpp_html"><div class="ttname"><a href="wint__t_8hpp.html">wint_t.hpp</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CWCTYPE_ISWUPPER_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -133,10 +141,10 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl" alt="$ \log_e(x) $" src="form_63.png"/> using <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \log\left(\frac{1+x}{1-x}\right) = \dfrac{2x}{1-\dfrac{x^2}{3-\dfrac{4x^2}{5 - \dfrac{9x^3}{7 - \ddots}}}}, \ \ x \in [-1,1] \]" src="form_64.png"/>
+<dl class="section return"><dt>Returns</dt><dd>\( \log_e(x) \) using <p class="formulaDsp">
+\[ \log\left(\frac{1+x}{1-x}\right) = \dfrac{2x}{1-\dfrac{x^2}{3-\dfrac{4x^2}{5 - \dfrac{9x^3}{7 - \ddots}}}}, \ \ x \in [-1,1] \]
 </p>
- The continued fraction argument is split into two parts: <img class="formulaInl" alt="$ x = a \times 10^c $" src="form_65.png"/>, where <img class="formulaInl" alt="$ c $" src="form_66.png"/> is an integer. </dd></dl>
+ The continued fraction argument is split into two parts: \( x = a \times 10^c \), where \( c \) is an integer. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="source_location_8cpp-example.html#a0">source_location.cpp</a>.</dd>
 </dl>
 

@@ -26,95 +26,95 @@ var NAVTREE =
 [
   [ "tetl", "index.html", [
     [ "TETL - Embedded Template Library", "index.html", [
-      [ "Quick Start", "index.html#autotoc_md1", null ],
-      [ "Status", "index.html#autotoc_md2", [
-        [ "Hosted", "index.html#autotoc_md3", null ],
-        [ "Freestanding", "index.html#autotoc_md4", null ],
-        [ "Analysis", "index.html#autotoc_md5", null ]
+      [ "Quick Start", "index.html#autotoc_md9", null ],
+      [ "Status", "index.html#autotoc_md10", [
+        [ "Hosted", "index.html#autotoc_md11", null ],
+        [ "Freestanding", "index.html#autotoc_md12", null ],
+        [ "Analysis", "index.html#autotoc_md13", null ]
       ] ],
-      [ "Design Goals", "index.html#autotoc_md6", [
-        [ "Error Handling", "index.html#autotoc_md7", [
-          [ "TODO", "index.html#autotoc_md8", null ]
+      [ "Design Goals", "index.html#autotoc_md14", [
+        [ "Error Handling", "index.html#autotoc_md15", [
+          [ "TODO", "index.html#autotoc_md16", null ]
         ] ],
-        [ "Near Future", "index.html#autotoc_md9", null ],
-        [ "Far Future", "index.html#autotoc_md10", null ]
+        [ "Near Future", "index.html#autotoc_md17", null ],
+        [ "Far Future", "index.html#autotoc_md18", null ]
       ] ],
-      [ "Project Integration", "index.html#autotoc_md11", [
-        [ "Command Line", "index.html#autotoc_md12", null ],
-        [ "CMake", "index.html#autotoc_md13", null ],
-        [ "PlatformIO", "index.html#autotoc_md14", null ]
+      [ "Project Integration", "index.html#autotoc_md19", [
+        [ "Command Line", "index.html#autotoc_md20", null ],
+        [ "CMake", "index.html#autotoc_md21", null ],
+        [ "PlatformIO", "index.html#autotoc_md22", null ]
       ] ],
-      [ "Header Overview", "index.html#autotoc_md15", null ],
-      [ "Header Detail", "index.html#autotoc_md16", [
-        [ "algorithm", "index.html#autotoc_md17", null ],
-        [ "array", "index.html#autotoc_md18", null ],
-        [ "bit", "index.html#autotoc_md19", null ],
-        [ "bitset", "index.html#autotoc_md20", null ],
-        [ "cassert", "index.html#autotoc_md21", null ],
-        [ "cctype", "index.html#autotoc_md22", null ],
-        [ "cfloat", "index.html#autotoc_md23", null ],
-        [ "charconv", "index.html#autotoc_md24", null ],
-        [ "chrono", "index.html#autotoc_md25", null ],
-        [ "climits", "index.html#autotoc_md26", null ],
-        [ "cmath", "index.html#autotoc_md27", null ],
-        [ "compare", "index.html#autotoc_md28", null ],
-        [ "complex", "index.html#autotoc_md29", null ],
-        [ "concepts", "index.html#autotoc_md30", null ],
-        [ "cstddef", "index.html#autotoc_md31", null ],
-        [ "cstdint", "index.html#autotoc_md32", null ],
-        [ "cstdio", "index.html#autotoc_md33", null ],
-        [ "cstdlib", "index.html#autotoc_md34", null ],
-        [ "cstring", "index.html#autotoc_md35", null ],
-        [ "ctime", "index.html#autotoc_md36", null ],
-        [ "cwchar", "index.html#autotoc_md37", null ],
-        [ "cwctype", "index.html#autotoc_md38", null ],
-        [ "exception", "index.html#autotoc_md39", null ],
-        [ "expected", "index.html#autotoc_md40", null ],
-        [ "flat_set", "index.html#autotoc_md41", null ],
-        [ "flat_map", "index.html#autotoc_md42", null ],
-        [ "format", "index.html#autotoc_md43", null ],
-        [ "functional", "index.html#autotoc_md44", null ],
-        [ "ios", "index.html#autotoc_md45", null ],
-        [ "iterator", "index.html#autotoc_md46", null ],
-        [ "limits", "index.html#autotoc_md47", null ],
-        [ "linalg", "index.html#autotoc_md48", null ],
-        [ "mdspan", "index.html#autotoc_md49", null ],
-        [ "memory", "index.html#autotoc_md50", null ],
-        [ "mutex", "index.html#autotoc_md51", null ],
-        [ "new", "index.html#autotoc_md52", null ],
-        [ "numbers", "index.html#autotoc_md53", null ],
-        [ "numeric", "index.html#autotoc_md54", null ],
-        [ "optional", "index.html#autotoc_md55", null ],
-        [ "random", "index.html#autotoc_md56", null ],
-        [ "ranges", "index.html#autotoc_md57", null ],
-        [ "ratio", "index.html#autotoc_md58", null ],
-        [ "scope", "index.html#autotoc_md59", null ],
-        [ "source_location", "index.html#autotoc_md60", null ],
-        [ "set", "index.html#autotoc_md61", null ],
-        [ "span", "index.html#autotoc_md62", null ],
-        [ "stack", "index.html#autotoc_md63", null ],
-        [ "stdexcept", "index.html#autotoc_md64", null ],
-        [ "string", "index.html#autotoc_md65", null ],
-        [ "string_view", "index.html#autotoc_md66", null ],
-        [ "system_error", "index.html#autotoc_md67", null ],
-        [ "tuple", "index.html#autotoc_md68", null ],
-        [ "type_traits", "index.html#autotoc_md69", null ],
-        [ "utility", "index.html#autotoc_md70", null ],
-        [ "variant", "index.html#autotoc_md71", null ],
-        [ "vector", "index.html#autotoc_md72", null ],
-        [ "version", "index.html#autotoc_md73", null ],
-        [ "warning", "index.html#autotoc_md74", null ]
+      [ "Header Overview", "index.html#autotoc_md23", null ],
+      [ "Header Detail", "index.html#autotoc_md24", [
+        [ "algorithm", "index.html#autotoc_md25", null ],
+        [ "array", "index.html#autotoc_md26", null ],
+        [ "bit", "index.html#autotoc_md27", null ],
+        [ "bitset", "index.html#autotoc_md28", null ],
+        [ "cassert", "index.html#autotoc_md29", null ],
+        [ "cctype", "index.html#autotoc_md30", null ],
+        [ "cfloat", "index.html#autotoc_md31", null ],
+        [ "charconv", "index.html#autotoc_md32", null ],
+        [ "chrono", "index.html#autotoc_md33", null ],
+        [ "climits", "index.html#autotoc_md34", null ],
+        [ "cmath", "index.html#autotoc_md35", null ],
+        [ "compare", "index.html#autotoc_md36", null ],
+        [ "complex", "index.html#autotoc_md37", null ],
+        [ "concepts", "index.html#autotoc_md38", null ],
+        [ "cstddef", "index.html#autotoc_md39", null ],
+        [ "cstdint", "index.html#autotoc_md40", null ],
+        [ "cstdio", "index.html#autotoc_md41", null ],
+        [ "cstdlib", "index.html#autotoc_md42", null ],
+        [ "cstring", "index.html#autotoc_md43", null ],
+        [ "ctime", "index.html#autotoc_md44", null ],
+        [ "cwchar", "index.html#autotoc_md45", null ],
+        [ "cwctype", "index.html#autotoc_md46", null ],
+        [ "exception", "index.html#autotoc_md47", null ],
+        [ "expected", "index.html#autotoc_md48", null ],
+        [ "flat_set", "index.html#autotoc_md49", null ],
+        [ "flat_map", "index.html#autotoc_md50", null ],
+        [ "format", "index.html#autotoc_md51", null ],
+        [ "functional", "index.html#autotoc_md52", null ],
+        [ "ios", "index.html#autotoc_md53", null ],
+        [ "iterator", "index.html#autotoc_md54", null ],
+        [ "limits", "index.html#autotoc_md55", null ],
+        [ "linalg", "index.html#autotoc_md56", null ],
+        [ "mdspan", "index.html#autotoc_md57", null ],
+        [ "memory", "index.html#autotoc_md58", null ],
+        [ "mutex", "index.html#autotoc_md59", null ],
+        [ "new", "index.html#autotoc_md60", null ],
+        [ "numbers", "index.html#autotoc_md61", null ],
+        [ "numeric", "index.html#autotoc_md62", null ],
+        [ "optional", "index.html#autotoc_md63", null ],
+        [ "random", "index.html#autotoc_md64", null ],
+        [ "ranges", "index.html#autotoc_md65", null ],
+        [ "ratio", "index.html#autotoc_md66", null ],
+        [ "scope", "index.html#autotoc_md67", null ],
+        [ "source_location", "index.html#autotoc_md68", null ],
+        [ "set", "index.html#autotoc_md69", null ],
+        [ "span", "index.html#autotoc_md70", null ],
+        [ "stack", "index.html#autotoc_md71", null ],
+        [ "stdexcept", "index.html#autotoc_md72", null ],
+        [ "string", "index.html#autotoc_md73", null ],
+        [ "string_view", "index.html#autotoc_md74", null ],
+        [ "system_error", "index.html#autotoc_md75", null ],
+        [ "tuple", "index.html#autotoc_md76", null ],
+        [ "type_traits", "index.html#autotoc_md77", null ],
+        [ "utility", "index.html#autotoc_md78", null ],
+        [ "variant", "index.html#autotoc_md79", null ],
+        [ "vector", "index.html#autotoc_md80", null ],
+        [ "version", "index.html#autotoc_md81", null ],
+        [ "warning", "index.html#autotoc_md82", null ]
       ] ]
     ] ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md76", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md77", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md78", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md79", [
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md80", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md81", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md82", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md3", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md7", null ]
       ] ]
     ] ],
     [ "Development", "md_docs_development.html", [
@@ -179,7 +179,7 @@ var NAVTREEINDEX =
 "dir_f25a8a4ec1c10c8b73f88dd881d1f689.html",
 "find__whole_8hpp.html",
 "globals_defs.html",
-"index.html#autotoc_md8",
+"index.html#autotoc_md82",
 "is__nothrow__copy__assignable_8hpp_source.html",
 "iter__value__t_8hpp_source.html",
 "merge_8hpp_source.html",

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,30 +98,30 @@ $(document).ready(function(){initNavTree('conjugated_8hpp_source.html',''); init
 <div class="contents">
 <a href="conjugated_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_LINALG_CONJUGATED_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_LINALG_CONJUGATED_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_LINALG_CONJUGATED_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LINALG_CONJUGATED_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="accessor__conjugate_8hpp.html">etl/_linalg/accessor_conjugate.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__linalg_2concepts_8hpp.html">etl/_linalg/concepts.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__arithmetic_8hpp.html">etl/_type_traits/is_arithmetic.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="remove__cv_8hpp.html">etl/_type_traits/remove_cv.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_linalg</span><span class="preprocessor">/</span><span class="preprocessor">accessor_conjugate</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_linalg</span><span class="preprocessor">/</span><span class="preprocessor">concepts</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_arithmetic</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">remove_cv</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1linalg.html">etl::linalg</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace</span> etl::<a class="code" href="namespaceetl_1_1linalg.html">linalg</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ElementType, <span class="keyword">typename</span> Extents, <span class="keyword">typename</span> Layout, <span class="keyword">typename</span> Accessor&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">   14</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">conjugated</a>(<a class="code" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a> a)</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">   14</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">conjugated</a>(<a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;ElementType, Extents, Layout, Accessor&gt; a)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> constexpr (<a class="code" href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">is_arithmetic_v</a>&lt;<a class="code" href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">remove_cv_t&lt;ElementType&gt;</a>&gt;) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_arithmetic_v&lt;remove_cv_t&lt;ElementType&gt;&gt;) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;ElementType, Extents, Layout, Accessor&gt;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            a.data_handle(),</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            a.mapping(),</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            a.accessor(),</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">using</span> element_type  = <span class="keyword">typename</span> <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html#a54bdfbc4b9cf9e55f46382a1fc1a09ab">accessor_conjugate&lt;Accessor&gt;::element_type</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> accessor_type = <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate&lt;Accessor&gt;</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">using</span> element_type  = <span class="keyword">typename</span> <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt;Accessor&gt;::element_type;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">using</span> accessor_type = <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt;Accessor&gt;;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;element_type, Extents, Layout, accessor_type&gt;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            a.data_handle(),</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            a.mapping(),</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            accessor_type(a.accessor()),</div>
@@ -122,12 +130,12 @@ $(document).ready(function(){initNavTree('conjugated_8hpp_source.html',''); init
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ElementType, <span class="keyword">typename</span> Extents, <span class="keyword">typename</span> Layout, <span class="keyword">typename</span> NestedAccessor&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a8cecf409eb058e7c8492dd3207fb3832">   35</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">conjugated</a>(<a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;ElementType, Extents, Layout, <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate&lt;NestedAccessor&gt;</a>&gt; a)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a8cecf409eb058e7c8492dd3207fb3832">   35</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a8cecf409eb058e7c8492dd3207fb3832">conjugated</a>(<a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;ElementType, Extents, Layout, <a class="code" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt;NestedAccessor&gt;&gt; a)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">using</span> element_type  = <span class="keyword">typename</span> NestedAccessor::element_type;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">using</span> accessor_type = NestedAccessor;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structetl_1_1mdspan.html">mdspan</a>&lt;element_type, Extents, Layout, accessor_type&gt;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        a.data_handle(),</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        a.mapping(),</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        a.accessor().nested_accessor(),</div>
@@ -136,18 +144,7 @@ $(document).ready(function(){initNavTree('conjugated_8hpp_source.html',''); init
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace etl::linalg</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_CONJUGATED_HPP</span></div>
-<div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
-<div class="ttc" id="aaccessor__conjugate_8hpp_html"><div class="ttname"><a href="accessor__conjugate_8hpp.html">accessor_conjugate.hpp</a></div></div>
-<div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition:</b> accessor_conjugate.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a45d808b75bb20523b55c9666fd8eff47"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a45d808b75bb20523b55c9666fd8eff47">etl::linalg::conjugated</a></div><div class="ttdeci">constexpr auto conjugated(mdspan&lt; ElementType, Extents, Layout, Accessor &gt; a)</div><div class="ttdef"><b>Definition:</b> conjugated.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_a105e2a5ac8fc634dcc71675e27e3f95e"><div class="ttname"><a href="namespaceetl.html#a105e2a5ac8fc634dcc71675e27e3f95e">etl::is_arithmetic_v</a></div><div class="ttdeci">constexpr bool is_arithmetic_v</div><div class="ttdef"><b>Definition:</b> is_arithmetic.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_abd0aad8fae1237db2f92705fe80729cf"><div class="ttname"><a href="namespaceetl.html#abd0aad8fae1237db2f92705fe80729cf">etl::remove_cv_t</a></div><div class="ttdeci">etl::remove_const_t&lt; etl::remove_volatile_t&lt; T &gt; &gt; remove_cv_t</div><div class="ttdef"><b>Definition:</b> remove_cv.hpp:22</div></div>
-<div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html">etl::linalg::accessor_conjugate</a></div><div class="ttdef"><b>Definition:</b> accessor_conjugate.hpp:15</div></div>
-<div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html_a54bdfbc4b9cf9e55f46382a1fc1a09ab"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html#a54bdfbc4b9cf9e55f46382a1fc1a09ab">etl::linalg::accessor_conjugate::element_type</a></div><div class="ttdeci">add_const_t&lt; conditional_t&lt; is_arithmetic_v&lt; remove_cv_t&lt; typename Accessor::element_type &gt; &gt;, typename Accessor::element_type, typename reference::value_type &gt; &gt; element_type</div><div class="ttdef"><b>Definition:</b> accessor_conjugate.hpp:23</div></div>
-<div class="ttc" id="astructetl_1_1mdspan_html"><div class="ttname"><a href="structetl_1_1mdspan.html">etl::mdspan</a></div><div class="ttdef"><b>Definition:</b> mdspan.hpp:33</div></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_LINALG_CONJUGATED_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

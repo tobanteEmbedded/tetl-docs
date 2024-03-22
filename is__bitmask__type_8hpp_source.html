@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -92,87 +100,70 @@ $(document).ready(function(){initNavTree('is__bitmask__type_8hpp_source.html',''
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="underlying__type_8hpp.html">etl/_type_traits/underlying_type.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">underlying_type</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1is__bitmask__type.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__bitmask__type.html">is_bitmask_type</a> : <a class="code" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1is__bitmask__type.html">   13</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__bitmask__type.html">is_bitmask_type</a> : false_type { };</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">   16</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">is_bitmask_type_v</a> = <a class="code" href="structetl_1_1is__bitmask__type.html">is_bitmask_type&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">T</a>&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">   16</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">is_bitmask_type_v</a> = <a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">is_bitmask_type</a>&lt;<a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">T</a>&gt;::<a class="code" href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">value</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">   19</a></span>&#160;concept <a class="code" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">bitmask_type</a> = is_bitmask_type_v&lt;T&gt;;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">T</a>&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">   19</a></span>&#160;<span class="keyword">concept</span> <a class="code" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">bitmask_type</a> = <a class="code" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">is_bitmask_type_v</a>&lt;<a class="code" href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">T</a>&gt;;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6ec2a511f8b5137e02416b9e4e8dc237">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a6ec2a511f8b5137e02416b9e4e8dc237">operator&amp;</a>(T x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) -&gt; T</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6ec2a511f8b5137e02416b9e4e8dc237">   22</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a6ec2a511f8b5137e02416b9e4e8dc237">operator</a>&amp;(T x, T y) -&gt; T</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">using</span> type = <a class="code" href="namespaceetl.html#a49061e75c4b48962719493fb046259e2">underlying_type_t&lt;T&gt;</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(x) &amp; <span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>))};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">using</span> type = underlying_type_t&lt;T&gt;;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast</span>&lt;type&gt;(<span class="keyword">static_cast</span>&lt;type&gt;(x) &amp; <span class="keyword">static_cast</span>&lt;type&gt;(y))};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac3cb02b81d1ba34fc33b94555749fa92">   29</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac3cb02b81d1ba34fc33b94555749fa92">operator|</a>(T x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) -&gt; T</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac3cb02b81d1ba34fc33b94555749fa92">   29</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac3cb02b81d1ba34fc33b94555749fa92">operator</a>|(T x, T y) -&gt; T</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> type = <a class="code" href="namespaceetl.html#a49061e75c4b48962719493fb046259e2">underlying_type_t&lt;T&gt;</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(x) | <span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>))};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> type = underlying_type_t&lt;T&gt;;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast</span>&lt;type&gt;(<span class="keyword">static_cast</span>&lt;type&gt;(x) | <span class="keyword">static_cast</span>&lt;type&gt;(y))};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceetl.html#af622835231ee77bf2d29dd490bcbb2bf">   36</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af622835231ee77bf2d29dd490bcbb2bf">operator^</a>(T x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) -&gt; T</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceetl.html#af622835231ee77bf2d29dd490bcbb2bf">   36</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af622835231ee77bf2d29dd490bcbb2bf">operator</a>^(T x, T y) -&gt; T</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">using</span> type = <a class="code" href="namespaceetl.html#a49061e75c4b48962719493fb046259e2">underlying_type_t&lt;T&gt;</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(x) ^ <span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>))};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">using</span> type = underlying_type_t&lt;T&gt;;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast</span>&lt;type&gt;(<span class="keyword">static_cast</span>&lt;type&gt;(x) ^ <span class="keyword">static_cast</span>&lt;type&gt;(y))};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceetl.html#a92caafb1e73d48a1d1847f64093be44c">   43</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a92caafb1e73d48a1d1847f64093be44c">operator~</a>(T x) -&gt; T</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceetl.html#a92caafb1e73d48a1d1847f64093be44c">   43</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a92caafb1e73d48a1d1847f64093be44c">operator</a>~(T x) -&gt; T</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">using</span> type = <a class="code" href="namespaceetl.html#a49061e75c4b48962719493fb046259e2">underlying_type_t&lt;T&gt;</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast&lt;</span>type<span class="keyword">&gt;</span>(~static_cast&lt;type&gt;(x))};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">using</span> type = underlying_type_t&lt;T&gt;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> T{<span class="keyword">static_cast</span>&lt;type&gt;(~<span class="keyword">static_cast</span>&lt;type&gt;(x))};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad2e027dfa37f613a9d94fe1ee90e7517">   50</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad2e027dfa37f613a9d94fe1ee90e7517">operator|=</a>(T&amp; x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad2e027dfa37f613a9d94fe1ee90e7517">   50</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad2e027dfa37f613a9d94fe1ee90e7517">operator</a>|=(T&amp; x, T y) <span class="keyword">noexcept</span> -&gt; T <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> x = x | <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> x = x | y;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespaceetl.html#abc72777ea30905ff52e4ce6d3448b3e8">   56</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abc72777ea30905ff52e4ce6d3448b3e8">operator&amp;=</a>(T&amp; x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespaceetl.html#abc72777ea30905ff52e4ce6d3448b3e8">   56</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#abc72777ea30905ff52e4ce6d3448b3e8">operator</a>&amp;=(T&amp; x, T y) <span class="keyword">noexcept</span> -&gt; T <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> x = x &amp; <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> x = x &amp; y;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;bitmask_type T&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceetl.html#a79f94aefe628a0474274befd3437bf64">   62</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a79f94aefe628a0474274befd3437bf64">operator^=</a>(T&amp; x, T <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T <span class="keyword">const</span>&amp;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceetl.html#a79f94aefe628a0474274befd3437bf64">   62</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a79f94aefe628a0474274befd3437bf64">operator</a>^=(T&amp; x, T y) <span class="keyword">noexcept</span> -&gt; T <span class="keyword">const</span>&amp;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> x = x ^ <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> x = x ^ y;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
-<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a49061e75c4b48962719493fb046259e2"><div class="ttname"><a href="namespaceetl.html#a49061e75c4b48962719493fb046259e2">etl::underlying_type_t</a></div><div class="ttdeci">typename etl::underlying_type&lt; T &gt;::type underlying_type_t</div><div class="ttdef"><b>Definition:</b> underlying_type.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a6ec2a511f8b5137e02416b9e4e8dc237"><div class="ttname"><a href="namespaceetl.html#a6ec2a511f8b5137e02416b9e4e8dc237">etl::operator&amp;</a></div><div class="ttdeci">constexpr auto operator&amp;(T x, T y) -&gt; T</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:22</div></div>
-<div class="ttc" id="anamespaceetl_html_a79f94aefe628a0474274befd3437bf64"><div class="ttname"><a href="namespaceetl.html#a79f94aefe628a0474274befd3437bf64">etl::operator^=</a></div><div class="ttdeci">constexpr auto operator^=(T &amp;x, T y) noexcept -&gt; T const &amp;</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:62</div></div>
-<div class="ttc" id="anamespaceetl_html_a92caafb1e73d48a1d1847f64093be44c"><div class="ttname"><a href="namespaceetl.html#a92caafb1e73d48a1d1847f64093be44c">etl::operator~</a></div><div class="ttdeci">constexpr auto operator~(T x) -&gt; T</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:43</div></div>
-<div class="ttc" id="anamespaceetl_html_abc72777ea30905ff52e4ce6d3448b3e8"><div class="ttname"><a href="namespaceetl.html#abc72777ea30905ff52e4ce6d3448b3e8">etl::operator&amp;=</a></div><div class="ttdeci">constexpr auto operator&amp;=(T &amp;x, T y) noexcept -&gt; T const &amp;</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:56</div></div>
-<div class="ttc" id="anamespaceetl_html_ac3cb02b81d1ba34fc33b94555749fa92"><div class="ttname"><a href="namespaceetl.html#ac3cb02b81d1ba34fc33b94555749fa92">etl::operator|</a></div><div class="ttdeci">constexpr auto operator|(T x, T y) -&gt; T</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_ad2e027dfa37f613a9d94fe1ee90e7517"><div class="ttname"><a href="namespaceetl.html#ad2e027dfa37f613a9d94fe1ee90e7517">etl::operator|=</a></div><div class="ttdeci">constexpr auto operator|=(T &amp;x, T y) noexcept -&gt; T const &amp;</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:50</div></div>
-<div class="ttc" id="anamespaceetl_html_aedb63d88f3219c350ab03af8bd0adb5a"><div class="ttname"><a href="namespaceetl.html#aedb63d88f3219c350ab03af8bd0adb5a">etl::is_bitmask_type_v</a></div><div class="ttdeci">constexpr auto is_bitmask_type_v</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_aef47ac360905d8fac28fb87847a855ec"><div class="ttname"><a href="namespaceetl.html#aef47ac360905d8fac28fb87847a855ec">etl::bitmask_type</a></div><div class="ttdeci">concept bitmask_type</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_af622835231ee77bf2d29dd490bcbb2bf"><div class="ttname"><a href="namespaceetl.html#af622835231ee77bf2d29dd490bcbb2bf">etl::operator^</a></div><div class="ttdeci">constexpr auto operator^(T x, T y) -&gt; T</div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:36</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1is__bitmask__type_html"><div class="ttname"><a href="structetl_1_1is__bitmask__type.html">etl::is_bitmask_type</a></div><div class="ttdef"><b>Definition:</b> is_bitmask_type.hpp:13</div></div>
-<div class="ttc" id="aunderlying__type_8hpp_html"><div class="ttname"><a href="underlying__type_8hpp.html">underlying_type.hpp</a></div></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_BIT_IS_BITMASK_TYPE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

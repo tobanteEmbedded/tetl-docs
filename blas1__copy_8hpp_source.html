@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,31 +98,31 @@ $(document).ready(function(){initNavTree('blas1__copy_8hpp_source.html',''); ini
 <div class="contents">
 <a href="blas1__copy_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_LINALG_BLAS1_COPY_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_LINALG_BLAS1_COPY_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_LINALG_BLAS1_COPY_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LINALG_BLAS1_COPY_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__linalg_2concepts_8hpp.html">etl/_linalg/concepts.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmp__less_8hpp.html">etl/_utility/cmp_less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_linalg</span><span class="preprocessor">/</span><span class="preprocessor">concepts</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">cmp_less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1linalg.html">etl::linalg</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl::<a class="code" href="namespaceetl_1_1linalg.html">linalg</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;in_<span class="keywordtype">object</span> InObj, out_<span class="keywordtype">object</span> OutObj&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">   12</a></span>&#160;    <a class="code" href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">requires</a>(InObj::rank() == OutObj::rank())</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;constexpr auto <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(InObj x, OutObj <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;in_object InObj, out_object OutObj&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">   12</a></span>&#160;    <span class="keyword">requires</span>(<a class="code" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">InObj</a>::<a class="code" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">rank</a>() == <a class="code" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">OutObj</a>::<a class="code" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">rank</a>())</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a531a4e2db82e878ef88a165ff3b44a01">copy</a>(InObj x, OutObj y) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// PRECONDITION(x.extents() == y.extents());</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">using</span> size_type = detail::common_size_type_t&lt;InObj, OutObj&gt;;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#aad5a559fa4a38a0676c032f2a0e4f7c1">   19</a></span>&#160;    <span class="keywordflow">if</span> constexpr (InObj::rank() == 1) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (size_type i{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(i, x.extent(0)); ++i) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>(i) = x(i);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#aad5a559fa4a38a0676c032f2a0e4f7c1">   19</a></span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (InObj::rank() == 1) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (size_type i{0}; etl::cmp_less(i, x.extent(0)); ++i) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            y(i) = x(i);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        static_assert(InObj::rank() == 2);</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a9a5e0a6a16dabe30cdcdad69831da6dc">   25</a></span>&#160;        <span class="keywordflow">for</span> (size_type i{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(i, x.extent(0)); ++i) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">for</span> (size_type j{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(j, x.extent(1)); ++j) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>(i, j) = x(i, j);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static_assert</span>(InObj::rank() == 2);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a9a5e0a6a16dabe30cdcdad69831da6dc">   25</a></span>&#160;        <span class="keywordflow">for</span> (size_type i{0}; etl::cmp_less(i, x.extent(0)); ++i) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">for</span> (size_type j{0}; etl::cmp_less(j, x.extent(1)); ++j) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                y(i, j) = x(i, j);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
@@ -122,14 +130,7 @@ $(document).ready(function(){initNavTree('blas1__copy_8hpp_source.html',''); ini
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace etl::linalg</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_BLAS1_COPY_HPP</span></div>
-<div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
-<div class="ttc" id="acmp__less_8hpp_html"><div class="ttname"><a href="cmp__less_8hpp.html">cmp_less.hpp</a></div></div>
-<div class="ttc" id="agroup__algorithm-header_html_gad3271ee1abafc543f4bf69cc20b01ded"><div class="ttname"><a href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition:</b> copy.hpp:20</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition:</b> accessor_conjugate.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a06fc87cb0b9090727f9f86cb6438c515"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">etl::linalg::requires</a></div><div class="ttdeci">requires(is_copy_constructible_v&lt; typename Accessor::reference &gt;) struct accessor_scaled</div><div class="ttdef"><b>Definition:</b> accessor_scaled.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a8d4f3be26a45d1c5877e4b4bbfafe7e1"><div class="ttname"><a href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a></div><div class="ttdeci">requires constexpr etl::detail::comparable_integers&lt; T, U &gt; auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition:</b> cmp_less.hpp:23</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_LINALG_BLAS1_COPY_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

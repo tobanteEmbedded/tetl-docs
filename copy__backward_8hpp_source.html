@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,27 +98,35 @@ $(document).ready(function(){initNavTree('copy__backward_8hpp_source.html',''); 
 <div class="contents">
 <a href="copy__backward_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/// \ingroup algorithm-header</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// @{</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> B<span class="keywordtype">id</span>irIt1, <span class="keyword">typename</span> B<span class="keywordtype">id</span>irIt2&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">copy_backward</a>(BidirIt1 first, BidirIt1 <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, BidirIt2 dLast) -&gt; BidirIt2</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Copies the elements from the range, defined by `[first, last)`, to</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// another range ending at `dLast`. The elements are copied in reverse order</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// (the last element is copied first), but their relative order is preserved.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \details The behavior is undefined if `dLast` is within `(first, last]`.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// copy must be used instead of copy_backward in that case.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// \returns Iterator to the last element copied.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> BidirIt1, <span class="keyword">typename</span> BidirIt2&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">   19</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">copy_backward</a>(BidirIt1 first, BidirIt1 last, BidirIt2 dLast) -&gt; BidirIt2</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">while</span> (first != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        *(--dLast) = *(--<a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">while</span> (first != last) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        *(--dLast) = *(--last);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> dLast;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/// @}</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
-<div class="ttc" id="agroup__algorithm-header_html_gaf5caeb0f954aff0eb31c350558f7e827"><div class="ttname"><a href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">etl::copy_backward</a></div><div class="ttdeci">constexpr auto copy_backward(BidirIt1 first, BidirIt1 last, BidirIt2 dLast) -&gt; BidirIt2</div><div class="ttdoc">Copies the elements from the range, defined by [first, last), to another range ending at dLast....</div><div class="ttdef"><b>Definition:</b> copy_backward.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_COPY_BACKWARD_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

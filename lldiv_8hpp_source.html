@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,31 +98,30 @@ $(document).ready(function(){initNavTree('lldiv_8hpp_source.html',''); initResiz
 <div class="contents">
 <a href="lldiv_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CSTDLIB_LLDIV_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CSTDLIB_LLDIV_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CSTDLIB_LLDIV_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CSTDLIB_LLDIV_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1lldiv__t.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief Return type for div, ldiv, lldiv &amp; imaxdiv.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1lldiv__t.html">    9</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1lldiv__t.html#ac21a67adc843602b0c26c470670e104d">   10</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="structetl_1_1lldiv__t.html#ac21a67adc843602b0c26c470670e104d">quot</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1lldiv__t.html#afd28a2f29b7e566945e07da33ab74de3">   11</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="structetl_1_1lldiv__t.html#afd28a2f29b7e566945e07da33ab74de3">rem</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3ea0cf9ba86f1635030cb6a8f03c88b0">   17</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1ac545280f6ddc88082f02e4a7db6736">div</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> x, <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> { <span class="keywordflow">return</span> {x / <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>, x % <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>}; }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \brief Computes both the quotient and the remainder of the division of the</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// numerator x by the denominator y. The quotient is the result of the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// expression x/y. The remainder is the result of the expression x%y.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3ea0cf9ba86f1635030cb6a8f03c88b0">   17</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3ea0cf9ba86f1635030cb6a8f03c88b0">div</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> x, <span class="keywordtype">long</span> <span class="keywordtype">long</span> y) <span class="keyword">noexcept</span> -&gt; <a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> { <span class="keywordflow">return</span> {x / y, x % y}; }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac6958cfa96164c754c7859d22d8e5a95">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac6958cfa96164c754c7859d22d8e5a95">lldiv</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> x, <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> { <span class="keywordflow">return</span> {x / <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>, x % <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>}; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/// \brief Computes both the quotient and the remainder of the division of the</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// numerator x by the denominator y. The quotient is the result of the</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/// expression x/y. The remainder is the result of the expression x%y.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac6958cfa96164c754c7859d22d8e5a95">   22</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac6958cfa96164c754c7859d22d8e5a95">lldiv</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> x, <span class="keywordtype">long</span> <span class="keywordtype">long</span> y) <span class="keyword">noexcept</span> -&gt; <a class="code" href="structetl_1_1lldiv__t.html">lldiv_t</a> { <span class="keywordflow">return</span> {x / y, x % y}; }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CSTDLIB_LLDIV_HPP</span></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1ac545280f6ddc88082f02e4a7db6736"><div class="ttname"><a href="namespaceetl.html#a1ac545280f6ddc88082f02e4a7db6736">etl::div</a></div><div class="ttdeci">constexpr auto div(int x, int y) noexcept -&gt; div_t</div><div class="ttdoc">Computes both the quotient and the remainder of the division of the numerator x by the denominator y....</div><div class="ttdef"><b>Definition:</b> div.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_ac6958cfa96164c754c7859d22d8e5a95"><div class="ttname"><a href="namespaceetl.html#ac6958cfa96164c754c7859d22d8e5a95">etl::lldiv</a></div><div class="ttdeci">constexpr auto lldiv(long long x, long long y) noexcept -&gt; lldiv_t</div><div class="ttdoc">Computes both the quotient and the remainder of the division of the numerator x by the denominator y....</div><div class="ttdef"><b>Definition:</b> lldiv.hpp:22</div></div>
-<div class="ttc" id="astructetl_1_1lldiv__t_html"><div class="ttname"><a href="structetl_1_1lldiv__t.html">etl::lldiv_t</a></div><div class="ttdoc">Return type for div, ldiv, lldiv &amp; imaxdiv.</div><div class="ttdef"><b>Definition:</b> lldiv.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1lldiv__t_html_ac21a67adc843602b0c26c470670e104d"><div class="ttname"><a href="structetl_1_1lldiv__t.html#ac21a67adc843602b0c26c470670e104d">etl::lldiv_t::quot</a></div><div class="ttdeci">long long quot</div><div class="ttdef"><b>Definition:</b> lldiv.hpp:10</div></div>
-<div class="ttc" id="astructetl_1_1lldiv__t_html_afd28a2f29b7e566945e07da33ab74de3"><div class="ttname"><a href="structetl_1_1lldiv__t.html#afd28a2f29b7e566945e07da33ab74de3">etl::lldiv_t::rem</a></div><div class="ttdeci">long long rem</div><div class="ttdef"><b>Definition:</b> lldiv.hpp:11</div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CSTDLIB_LLDIV_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

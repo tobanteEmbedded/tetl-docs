@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,41 +98,28 @@ $(document).ready(function(){initNavTree('__complex_2cos_8hpp_source.html',''); 
 <div class="contents">
 <a href="__complex_2cos_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_COMPLEX_COS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_COMPLEX_COS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_COMPLEX_COS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_COMPLEX_COS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__cmath_2cos_8hpp.html">etl/_cmath/cos.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__cmath_2cosh_8hpp.html">etl/_cmath/cosh.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__cmath_2sin_8hpp.html">etl/_cmath/sin.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__cmath_2sinh_8hpp.html">etl/_cmath/sinh.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__complex_2complex_8hpp.html">etl/_complex/complex.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cmath</span><span class="preprocessor">/</span><span class="preprocessor">cos</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cmath</span><span class="preprocessor">/</span><span class="preprocessor">cosh</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cmath</span><span class="preprocessor">/</span><span class="preprocessor">sin</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cmath</span><span class="preprocessor">/</span><span class="preprocessor">sinh</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_complex</span><span class="preprocessor">/</span><span class="preprocessor">complex</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a270bd6f09628db22fe5bd8b51dd0b715">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a4906f1caf2586cc2563fc0faf2f7ea30">cos</a>(<a class="code" href="structetl_1_1complex.html">complex&lt;T&gt;</a> <span class="keyword">const</span>&amp; z) -&gt; <a class="code" href="structetl_1_1complex.html">complex&lt;T&gt;</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a270bd6f09628db22fe5bd8b51dd0b715">   15</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a270bd6f09628db22fe5bd8b51dd0b715">cos</a>(<a class="code" href="structetl_1_1complex.html">complex</a>&lt;T&gt; <span class="keyword">const</span>&amp; z) -&gt; <a class="code" href="structetl_1_1complex.html">complex</a>&lt;T&gt;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> x = z.<a class="code" href="structetl_1_1complex.html#a97aebd99d28e9b5b288668e364abdcf1">real</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a> = z.imag();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="namespaceetl.html#a4906f1caf2586cc2563fc0faf2f7ea30">cos</a>(x) * <a class="code" href="namespaceetl.html#ab03b4314a7a0c72385ecb062322e815a">cosh</a>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>), -<a class="code" href="namespaceetl.html#ae3992e7303a218d44e01d6aae6b18a92">sin</a>(x) * <a class="code" href="namespaceetl.html#a81ea280e9468d3bccca526a7cbc73651">sinh</a>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>)};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> x = z.real();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> y = z.imag();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> {cos(x) * cosh(y), -sin(x) * sinh(y)};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_COMPLEX_COS_HPP</span></div>
-<div class="ttc" id="a__cmath_2cos_8hpp_html"><div class="ttname"><a href="__cmath_2cos_8hpp.html">cos.hpp</a></div></div>
-<div class="ttc" id="a__cmath_2cosh_8hpp_html"><div class="ttname"><a href="__cmath_2cosh_8hpp.html">cosh.hpp</a></div></div>
-<div class="ttc" id="a__cmath_2sin_8hpp_html"><div class="ttname"><a href="__cmath_2sin_8hpp.html">sin.hpp</a></div></div>
-<div class="ttc" id="a__cmath_2sinh_8hpp_html"><div class="ttname"><a href="__cmath_2sinh_8hpp.html">sinh.hpp</a></div></div>
-<div class="ttc" id="a__complex_2complex_8hpp_html"><div class="ttname"><a href="__complex_2complex_8hpp.html">complex.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a4906f1caf2586cc2563fc0faf2f7ea30"><div class="ttname"><a href="namespaceetl.html#a4906f1caf2586cc2563fc0faf2f7ea30">etl::cos</a></div><div class="ttdeci">constexpr auto cos(float arg) noexcept -&gt; float</div><div class="ttdoc">Computes the cosine of arg (measured in radians). https://en.cppreference.com/w/cpp/numeric/math/cos.</div><div class="ttdef"><b>Definition:</b> cos.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_a81ea280e9468d3bccca526a7cbc73651"><div class="ttname"><a href="namespaceetl.html#a81ea280e9468d3bccca526a7cbc73651">etl::sinh</a></div><div class="ttdeci">constexpr auto sinh(float arg) noexcept -&gt; float</div><div class="ttdoc">Computes the hyperbolic sine of arg https://en.cppreference.com/w/cpp/numeric/math/sinh.</div><div class="ttdef"><b>Definition:</b> sinh.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_ab03b4314a7a0c72385ecb062322e815a"><div class="ttname"><a href="namespaceetl.html#ab03b4314a7a0c72385ecb062322e815a">etl::cosh</a></div><div class="ttdeci">constexpr auto cosh(float arg) noexcept -&gt; float</div><div class="ttdoc">Computes the hyperbolic cosine of arg https://en.cppreference.com/w/cpp/numeric/math/cosh.</div><div class="ttdef"><b>Definition:</b> cosh.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_ae3992e7303a218d44e01d6aae6b18a92"><div class="ttname"><a href="namespaceetl.html#ae3992e7303a218d44e01d6aae6b18a92">etl::sin</a></div><div class="ttdeci">constexpr auto sin(float arg) noexcept -&gt; float</div><div class="ttdoc">Computes the osine of arg (measured in radians). https://en.cppreference.com/w/cpp/numeric/math/sin.</div><div class="ttdef"><b>Definition:</b> sin.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1complex_html"><div class="ttname"><a href="structetl_1_1complex.html">etl::complex</a></div><div class="ttdoc">A complex number.</div><div class="ttdef"><b>Definition:</b> complex.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1complex_html_a97aebd99d28e9b5b288668e364abdcf1"><div class="ttname"><a href="structetl_1_1complex.html#a97aebd99d28e9b5b288668e364abdcf1">etl::complex::real</a></div><div class="ttdeci">constexpr auto real() const -&gt; T</div><div class="ttdef"><b>Definition:</b> complex.hpp:95</div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_COMPLEX_COS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

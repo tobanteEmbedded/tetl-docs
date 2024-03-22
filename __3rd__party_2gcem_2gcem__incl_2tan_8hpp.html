@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -134,12 +142,12 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the tangent function using <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \tan(x) = \dfrac{x}{1 - \dfrac{x^2}{3 - \dfrac{x^2}{5 - \ddots}}} \]" src="form_78.png"/>
+\[ \tan(x) = \dfrac{x}{1 - \dfrac{x^2}{3 - \dfrac{x^2}{5 - \ddots}}} \]
 </p>
- To deal with a singularity at <img class="formulaInl" alt="$ \pi / 2 $" src="form_79.png"/>, the following expansion is employed: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \tan(x) = - \frac{1}{x-\pi/2} - \sum_{k=1}^\infty \frac{(-1)^k 2^{2k} B_{2k}}{(2k)!} (x - \pi/2)^{2k - 1} \]" src="form_80.png"/>
+ To deal with a singularity at \( \pi / 2 \), the following expansion is employed: <p class="formulaDsp">
+\[ \tan(x) = - \frac{1}{x-\pi/2} - \sum_{k=1}^\infty \frac{(-1)^k 2^{2k} B_{2k}}{(2k)!} (x - \pi/2)^{2k - 1} \]
 </p>
- where <img class="formulaInl" alt="$ B_n $" src="form_81.png"/> is the n-th Bernoulli number. </dd></dl>
+ where \( B_n \) is the n-th Bernoulli number. </dd></dl>
 
 </div>
 </div>

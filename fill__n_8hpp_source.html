@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,16 +98,21 @@ $(document).ready(function(){initNavTree('fill__n_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="fill__n_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_FILL_N_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_FILL_N_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_FILL_N_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_FILL_N_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief Assigns the given value to the first count elements in the range</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// beginning at `first` if `count &gt; 0`. Does nothing otherwise.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \returns Iterator one past the last element assigned if `count &gt; 0`, `first`</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// otherwise.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> Size, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">   14</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a>(OutputIt first, <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, T <span class="keyword">const</span>&amp; <a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; OutputIt</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">   14</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">fill_n</a>(OutputIt first, Size count, T <span class="keyword">const</span>&amp; value) -&gt; OutputIt</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a>{0}; i &lt; <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>; ++i) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        *first = <a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = Size{0}; i &lt; count; ++i) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        *first = value;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        ++first;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> first;</div>
@@ -107,12 +120,7 @@ $(document).ready(function(){initNavTree('fill__n_8hpp_source.html',''); initRes
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_FILL_N_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a3f9162720047d01bb438874bf56df5d2"><div class="ttname"><a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition:</b> count.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_a51c15a5d5f4ab487941035d024cad9d7"><div class="ttname"><a href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">etl::value</a></div><div class="ttdeci">char const Int &amp; value</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_ad5ac240345a96ad39668967bf8bdf76f"><div class="ttname"><a href="namespaceetl.html#ad5ac240345a96ad39668967bf8bdf76f">etl::fill_n</a></div><div class="ttdeci">constexpr auto fill_n(OutputIt first, Size count, T const &amp;value) -&gt; OutputIt</div><div class="ttdoc">Assigns the given value to the first count elements in the range beginning at first if count &gt; 0....</div><div class="ttdef"><b>Definition:</b> fill_n.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_af9b15653958e67cfe944d92826719780"><div class="ttname"><a href="namespaceetl.html#af9b15653958e67cfe944d92826719780">etl::Size</a></div><div class="ttdeci">Size</div><div class="ttdef"><b>Definition:</b> uninitialized_array.hpp:40</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_FILL_N_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

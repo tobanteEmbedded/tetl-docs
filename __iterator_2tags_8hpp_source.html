@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,33 +98,44 @@ $(document).ready(function(){initNavTree('__iterator_2tags_8hpp_source.html','')
 <div class="contents">
 <a href="__iterator_2tags_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ITERATOR_TAGS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_TAGS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_TAGS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_TAGS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1input__iterator__tag.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1input__iterator__tag.html">input_iterator_tag</a> { };</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1input__iterator__tag.html">   11</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1input__iterator__tag.html">input_iterator_tag</a> { };</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1output__iterator__tag.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1output__iterator__tag.html">output_iterator_tag</a> { };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1output__iterator__tag.html">   16</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1output__iterator__tag.html">output_iterator_tag</a> { };</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1forward__iterator__tag.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1forward__iterator__tag.html">forward_iterator_tag</a> : <a class="code" href="structetl_1_1input__iterator__tag.html">input_iterator_tag</a> { };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1forward__iterator__tag.html">   21</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1forward__iterator__tag.html">forward_iterator_tag</a> : <a class="code" href="structetl_1_1input__iterator__tag.html">input_iterator_tag</a> { };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structetl_1_1bidirectional__iterator__tag.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a> : <a class="code" href="structetl_1_1forward__iterator__tag.html">forward_iterator_tag</a> { };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structetl_1_1bidirectional__iterator__tag.html">   26</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a> : <a class="code" href="structetl_1_1forward__iterator__tag.html">forward_iterator_tag</a> { };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structetl_1_1random__access__iterator__tag.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a> : <a class="code" href="structetl_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a> { };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structetl_1_1random__access__iterator__tag.html">   31</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a> : <a class="code" href="structetl_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a> { };</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structetl_1_1contiguous__iterator__tag.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1contiguous__iterator__tag.html">contiguous_iterator_tag</a> : <a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a> { };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/// \brief Defines the category of an iterator. Each tag is an empty type and</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/// corresponds to one of the five (until C++20) six (since C++20) iterator</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/// categories.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structetl_1_1contiguous__iterator__tag.html">   36</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1contiguous__iterator__tag.html">contiguous_iterator_tag</a> : <a class="code" href="structetl_1_1random__access__iterator__tag.html">random_access_iterator_tag</a> { };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_TAGS_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="astructetl_1_1bidirectional__iterator__tag_html"><div class="ttname"><a href="structetl_1_1bidirectional__iterator__tag.html">etl::bidirectional_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:26</div></div>
-<div class="ttc" id="astructetl_1_1contiguous__iterator__tag_html"><div class="ttname"><a href="structetl_1_1contiguous__iterator__tag.html">etl::contiguous_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:36</div></div>
-<div class="ttc" id="astructetl_1_1forward__iterator__tag_html"><div class="ttname"><a href="structetl_1_1forward__iterator__tag.html">etl::forward_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:21</div></div>
-<div class="ttc" id="astructetl_1_1input__iterator__tag_html"><div class="ttname"><a href="structetl_1_1input__iterator__tag.html">etl::input_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1output__iterator__tag_html"><div class="ttname"><a href="structetl_1_1output__iterator__tag.html">etl::output_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1random__access__iterator__tag_html"><div class="ttname"><a href="structetl_1_1random__access__iterator__tag.html">etl::random_access_iterator_tag</a></div><div class="ttdoc">Defines the category of an iterator. Each tag is an empty type and corresponds to one of the five (un...</div><div class="ttdef"><b>Definition:</b> tags.hpp:31</div></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_TAGS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

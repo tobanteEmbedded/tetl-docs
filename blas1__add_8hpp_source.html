@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,31 +98,31 @@ $(document).ready(function(){initNavTree('blas1__add_8hpp_source.html',''); init
 <div class="contents">
 <a href="blas1__add_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_LINALG_BLAS1_ADD_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_LINALG_BLAS1_ADD_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_LINALG_BLAS1_ADD_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LINALG_BLAS1_ADD_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__linalg_2concepts_8hpp.html">etl/_linalg/concepts.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmp__less_8hpp.html">etl/_utility/cmp_less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_linalg</span><span class="preprocessor">/</span><span class="preprocessor">concepts</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">cmp_less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1linalg.html">etl::linalg</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl::<a class="code" href="namespaceetl_1_1linalg.html">linalg</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;in_<span class="keywordtype">object</span> InObj1, in_<span class="keywordtype">object</span> InObj2, out_<span class="keywordtype">object</span> OutObj&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a57d3b63e1b9536ad4ceae43889891963">   12</a></span>&#160;    <a class="code" href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">requires</a>(InObj1::rank() == OutObj::rank() and InObj2::rank() == OutObj::rank())</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">   13</a></span>&#160;constexpr auto add(InObj1 x, InObj2 <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>, OutObj z) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;in_object InObj1, in_object InObj2, out_object OutObj&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a57d3b63e1b9536ad4ceae43889891963">   12</a></span>&#160;    <span class="keyword">requires</span>(<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">InObj1</a>::<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">rank</a>() == <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">OutObj</a>::<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">rank</a>() <span class="keyword">and</span> <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">InObj2</a>::<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">rank</a>() == <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">OutObj</a>::<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">rank</a>())</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">   13</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">add</a>(InObj1 x, InObj2 <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>, OutObj z) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// PRECONDITION(x.extents() == y.extents());</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">using</span> size_type = detail::common_size_type_t&lt;InObj1, InObj2, OutObj&gt;;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#ac621a6f2621417b7762c987e98988483">   19</a></span>&#160;    <span class="keywordflow">if</span> constexpr (OutObj::rank() == 1) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (size_type row{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(row, x.extent(0)); ++row) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            z(row) = x(row) + <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>(row);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#ac621a6f2621417b7762c987e98988483">   19</a></span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (OutObj::rank() == 1) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">for</span> (size_type row{0}; etl::cmp_less(row, x.extent(0)); ++row) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            z(row) = x(row) + <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a><a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">(</a>row<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">)</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#a26ed01465803a2761e7c26d5da98d9fe">   23</a></span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        static_assert(OutObj::rank() == 2);</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#ae5e5a704d3af7936bba51f65579024cf">   25</a></span>&#160;        <span class="keywordflow">for</span> (size_type row{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(row, x.extent(0)); ++row) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">for</span> (size_type col{0}; <a class="code" href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a>(col, x.extent(1)); ++col) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                z(row, col) = x(row, col) + <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>(row, col);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static_assert</span>(OutObj::rank() == 2);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl_1_1linalg.html#ae5e5a704d3af7936bba51f65579024cf">   25</a></span>&#160;        <span class="keywordflow">for</span> (size_type row{0}; etl::cmp_less(row, x.extent(0)); ++row) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">for</span> (size_type col{0}; etl::cmp_less(col, x.extent(1)); ++col) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                z(row, col) = x(row, col) + <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a><a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">(</a>row<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">,</a> col<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">)</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
@@ -122,13 +130,7 @@ $(document).ready(function(){initNavTree('blas1__add_8hpp_source.html',''); init
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace etl::linalg</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_BLAS1_ADD_HPP</span></div>
-<div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
-<div class="ttc" id="acmp__less_8hpp_html"><div class="ttname"><a href="cmp__less_8hpp.html">cmp_less.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition:</b> accessor_conjugate.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a06fc87cb0b9090727f9f86cb6438c515"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">etl::linalg::requires</a></div><div class="ttdeci">requires(is_copy_constructible_v&lt; typename Accessor::reference &gt;) struct accessor_scaled</div><div class="ttdef"><b>Definition:</b> accessor_scaled.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a8d4f3be26a45d1c5877e4b4bbfafe7e1"><div class="ttname"><a href="namespaceetl.html#a8d4f3be26a45d1c5877e4b4bbfafe7e1">etl::cmp_less</a></div><div class="ttdeci">requires constexpr etl::detail::comparable_integers&lt; T, U &gt; auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition:</b> cmp_less.hpp:23</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_LINALG_BLAS1_ADD_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

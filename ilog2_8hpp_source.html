@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,18 +98,18 @@ $(document).ready(function(){initNavTree('ilog2_8hpp_source.html',''); initResiz
 <div class="contents">
 <a href="ilog2_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MATH_ILOG2_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MATH_ILOG2_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MATH_ILOG2_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MATH_ILOG2_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integral_8hpp.html">etl/_concepts/integral.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">integral</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#a68d6a400b03bbbcc87b81f9a8f70a4e5">   11</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a68d6a400b03bbbcc87b81f9a8f70a4e5">ilog2</a>(<a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> x) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;integral Int&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#a68d6a400b03bbbcc87b81f9a8f70a4e5">   11</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a68d6a400b03bbbcc87b81f9a8f70a4e5">ilog2</a>(Int x) <span class="keyword">noexcept</span> -&gt; Int</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> result = <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>(0);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span> (; x &gt; <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>(1); x &gt;&gt;= <a class="code" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a>(1)) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> result = Int(0);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span> (; x &gt; Int(1); x &gt;&gt;= Int(1)) {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        ++result;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> result;</div>
@@ -109,12 +117,7 @@ $(document).ready(function(){initNavTree('ilog2_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MATH_ILOG2_HPP</span></div>
-<div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a68d6a400b03bbbcc87b81f9a8f70a4e5"><div class="ttname"><a href="namespaceetl.html#a68d6a400b03bbbcc87b81f9a8f70a4e5">etl::ilog2</a></div><div class="ttdeci">constexpr auto ilog2(Int x) noexcept -&gt; Int</div><div class="ttdef"><b>Definition:</b> ilog2.hpp:11</div></div>
-<div class="ttc" id="anamespaceetl_html_af4f837bf0258547b23e4f04e4d03e6d1"><div class="ttname"><a href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">etl::Int</a></div><div class="ttdeci">Int b noexcept Int</div><div class="ttdef"><b>Definition:</b> midpoint.hpp:27</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MATH_ILOG2_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

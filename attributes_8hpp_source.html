@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,57 +98,57 @@ $(document).ready(function(){initNavTree('attributes_8hpp_source.html',''); init
 <div class="contents">
 <a href="attributes_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONFIG_ATTRIBUTES_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONFIG_ATTRIBUTES_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONFIG_ATTRIBUTES_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONFIG_ATTRIBUTES_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if __has_attribute(always_inline)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">    #define TETL_ALWAYS_INLINE __attribute__((always_inline))</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER)</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define TETL_ALWAYS_INLINE __forceinline</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">   11</a></span>&#160;<span class="preprocessor">    #define TETL_ALWAYS_INLINE</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">__has_attribute</span><span class="preprocessor">(</span><span class="preprocessor">always_inline</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALWAYS_INLINE</span> <span class="preprocessor">__attribute__</span><span class="preprocessor">(</span><span class="preprocessor">(</span><span class="preprocessor">always_inline</span><span class="preprocessor">)</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALWAYS_INLINE</span> <span class="preprocessor">__forceinline</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">   11</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALWAYS_INLINE</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if __has_attribute(noinline)</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #define TETL_NO_INLINE __attribute__((noinline))</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #define TETL_NO_INLINE __declspec(noinline)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#abb156b0e852ad82749ae42934d3b4dbf">   19</a></span>&#160;<span class="preprocessor">    #define TETL_NO_INLINE</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">__has_attribute</span><span class="preprocessor">(</span><span class="preprocessor">noinline</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_INLINE</span> <span class="preprocessor">__attribute__</span><span class="preprocessor">(</span><span class="preprocessor">(</span><span class="preprocessor">noinline</span><span class="preprocessor">)</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_INLINE</span> <span class="preprocessor">__declspec</span><span class="preprocessor">(</span><span class="preprocessor">noinline</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#abb156b0e852ad82749ae42934d3b4dbf">   19</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_INLINE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#if __has_attribute(cold)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    #define TETL_COLD __attribute__((cold))</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#af0eb4be3e44a6a8a9235265e12ad89a7">   25</a></span>&#160;<span class="preprocessor">    #define TETL_COLD</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">__has_attribute</span><span class="preprocessor">(</span><span class="preprocessor">cold</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_COLD</span> <span class="preprocessor">__attribute__</span><span class="preprocessor">(</span><span class="preprocessor">(</span><span class="preprocessor">cold</span><span class="preprocessor">)</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#af0eb4be3e44a6a8a9235265e12ad89a7">   25</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_COLD</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// EXPECT</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if __has_builtin(__builtin_expect)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    #define TETL_LIKELY(expr)   __builtin_expect(static_cast&lt;bool&gt;(expr), true)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    #define TETL_UNLIKELY(expr) __builtin_expect(static_cast&lt;bool&gt;(expr), false)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a1b845ee15bac195a3a5da2d85bd9af05">   33</a></span>&#160;<span class="preprocessor">    #define TETL_LIKELY(expr)   (expr)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a1ab38faf239bae2b36e2c1d83d35cf96">   34</a></span>&#160;<span class="preprocessor">    #define TETL_UNLIKELY(expr) (expr)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">__has_builtin</span><span class="preprocessor">(</span><span class="preprocessor">__builtin_expect</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LIKELY</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span>   <span class="preprocessor">__builtin_expect</span><span class="preprocessor">(</span><span class="preprocessor">static_cast</span><span class="preprocessor">&lt;</span><span class="preprocessor">bool</span><span class="preprocessor">&gt;</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span><span class="preprocessor">,</span> <span class="preprocessor">true</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_UNLIKELY</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span> <span class="preprocessor">__builtin_expect</span><span class="preprocessor">(</span><span class="preprocessor">static_cast</span><span class="preprocessor">&lt;</span><span class="preprocessor">bool</span><span class="preprocessor">&gt;</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span><span class="preprocessor">,</span> <span class="preprocessor">false</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a1b845ee15bac195a3a5da2d85bd9af05">   33</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LIKELY</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span>   <span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a1ab38faf239bae2b36e2c1d83d35cf96">   34</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_UNLIKELY</span><span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span> <span class="preprocessor">(</span><span class="preprocessor">expr</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) and not defined(__clang__)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    #define TETL_NO_UNIQUE_ADDRESS [[msvc::no_unique_address]]</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER) and defined(__clang__) and (__clang_major__ &gt;= 18)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    #define TETL_NO_UNIQUE_ADDRESS [[msvc::no_unique_address]]</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER) and defined(__clang__)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #define TETL_NO_UNIQUE_ADDRESS</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">   44</a></span>&#160;<span class="preprocessor">    #define TETL_NO_UNIQUE_ADDRESS [[no_unique_address]]</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span> <span class="preprocessor">and</span> <span class="preprocessor">not</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_UNIQUE_ADDRESS</span> <span class="preprocessor">[</span><span class="preprocessor">[</span><span class="preprocessor">msvc</span><span class="preprocessor">::</span><span class="preprocessor">no_unique_address</span><span class="preprocessor">]</span><span class="preprocessor">]</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span> <span class="preprocessor">and</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span> <span class="preprocessor">and</span> <span class="preprocessor">(</span><span class="preprocessor">__clang_major__</span> <span class="preprocessor">&gt;=</span> 18<span class="preprocessor">)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_UNIQUE_ADDRESS</span> <span class="preprocessor">[</span><span class="preprocessor">[</span><span class="preprocessor">msvc</span><span class="preprocessor">::</span><span class="preprocessor">no_unique_address</span><span class="preprocessor">]</span><span class="preprocessor">]</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">elif</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">_MSC_VER</span><span class="preprocessor">)</span> <span class="preprocessor">and</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_UNIQUE_ADDRESS</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">   44</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NO_UNIQUE_ADDRESS</span> <span class="preprocessor">[</span><span class="preprocessor">[</span><span class="preprocessor">no_unique_address</span><span class="preprocessor">]</span><span class="preprocessor">]</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if defined(__GNUC__) or defined(__clang__)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #define TETL_MAY_ALIAS [[gnu::may_alias]]</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a6cf990edeb7f9f6f1b5928471cef5e56">   50</a></span>&#160;<span class="preprocessor">    #define TETL_MAY_ALIAS</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__GNUC__</span><span class="preprocessor">)</span> <span class="preprocessor">or</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MAY_ALIAS</span> <span class="preprocessor">[</span><span class="preprocessor">[</span><span class="preprocessor">gnu</span><span class="preprocessor">::</span><span class="preprocessor">may_alias</span><span class="preprocessor">]</span><span class="preprocessor">]</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="attributes_8hpp.html#a6cf990edeb7f9f6f1b5928471cef5e56">   50</a></span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MAY_ALIAS</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_ATTRIBUTES_HPP</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONFIG_ATTRIBUTES_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,52 +98,51 @@ $(document).ready(function(){initNavTree('shift__left_8hpp_source.html',''); ini
 <div class="contents">
 <a href="shift__left_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__algorithm_2move_8hpp.html">etl/_algorithm/move.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="emulation_8hpp.html">etl/_concepts/emulation.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iterator__traits_8hpp.html">etl/_iterator/iterator_traits.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_algorithm</span><span class="preprocessor">/</span><span class="preprocessor">move</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">emulation</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">iterator_traits</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \brief Shifts the elements in the range [first, last) by n positions.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \details Shifts the elements towards the beginning of the range. If n == 0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// || n &gt;= last - first, there are no effects. If n &lt; 0, the behavior is</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// undefined. Otherwise, for every integer i in [0, last - first - n), moves</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// the element originally at position first + n + i to position first + i. The</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/// moves are performed in increasing order of i starting from ​0​.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;constexpr <span class="keyword">auto</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9df8e5c73b49b744646fa291c63525c1">   21</a></span>&#160;<a class="code" href="namespaceetl.html#a9df8e5c73b49b744646fa291c63525c1">shift_left</a>(ForwardIt first, ForwardIt <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits&lt;ForwardIt&gt;::difference_type</a> n) -&gt; ForwardIt</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9df8e5c73b49b744646fa291c63525c1">   21</a></span>&#160;<a class="code" href="namespaceetl.html#a9df8e5c73b49b744646fa291c63525c1">shift_left</a>(ForwardIt first, ForwardIt <span class="keyword">const</span> last, <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;ForwardIt&gt;::difference_type n) -&gt; ForwardIt</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (n &lt;= 0) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> last;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> start = first;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> constexpr (detail::RandomAccessIterator&lt;ForwardIt&gt;) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (n &gt;= <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a> - first) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (detail::RandomAccessIterator&lt;ForwardIt&gt;) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (n &gt;= last - first) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> first;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        start += n;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (; 0 &lt; n; --n) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span> (start == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span> (start == last) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">return</span> first;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            ++start;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    first = <a class="code" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a>(start, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, first);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    first = etl::move(start, last, first);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> first;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
-<div class="ttc" id="a__algorithm_2move_8hpp_html"><div class="ttname"><a href="__algorithm_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="aemulation_8hpp_html"><div class="ttname"><a href="emulation_8hpp.html">emulation.hpp</a></div></div>
-<div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition:</b> move.hpp:24</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_a9df8e5c73b49b744646fa291c63525c1"><div class="ttname"><a href="namespaceetl.html#a9df8e5c73b49b744646fa291c63525c1">etl::shift_left</a></div><div class="ttdeci">constexpr auto shift_left(ForwardIt first, ForwardIt const last, typename iterator_traits&lt; ForwardIt &gt;::difference_type n) -&gt; ForwardIt</div><div class="ttdoc">Shifts the elements in the range [first, last) by n positions.</div><div class="ttdef"><b>Definition:</b> shift_left.hpp:21</div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:47</div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_SHIFT_LEFT_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

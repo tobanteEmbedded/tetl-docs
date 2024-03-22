@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -89,49 +97,41 @@ $(document).ready(function(){initNavTree('reduce_8hpp_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a href="reduce_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef TETL_NUMERIC_REDUCE_HPP</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TETL_NUMERIC_REDUCE_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_NUMERIC_REDUCE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_NUMERIC_REDUCE_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="plus_8hpp.html">etl/_functional/plus.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iterator__traits_8hpp.html">etl/_iterator/iterator_traits.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="accumulate_8hpp.html">etl/_numeric/accumulate.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="__utility_2move_8hpp.html">etl/_utility/move.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">plus</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">iterator_traits</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_numeric</span><span class="preprocessor">/</span><span class="preprocessor">accumulate</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">move</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \brief Similar to etl::accumulate.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/algorithm/reduce</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIter, <span class="keyword">typename</span> T, <span class="keyword">typename</span> BinaryOp&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(InputIter first, InputIter <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, T init, BinaryOp op) -&gt; T</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">   15</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(InputIter first, InputIter last, T init, BinaryOp op) -&gt; T</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">accumulate</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, init, op);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> accumulate(first, last, init, op);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIter, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#af19beb246e0b495f1af0e0dda7ba07ce">   21</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(InputIter first, InputIter <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, T init) -&gt; T</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#af19beb246e0b495f1af0e0dda7ba07ce">   21</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#af19beb246e0b495f1af0e0dda7ba07ce">reduce</a>(InputIter first, InputIter last, T init) -&gt; T</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, init, <a class="code" href="structetl_1_1plus.html">etl::plus&lt;&gt;</a>());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> reduce(first, last, init, etl::<a class="code" href="structetl_1_1plus.html">plus</a>&lt;&gt;());</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIter&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a714efac01ef228fff45d4f6ab456dfb6">   27</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(InputIter first, InputIter <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">etl::iterator_traits&lt;InputIter&gt;::value_type</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a714efac01ef228fff45d4f6ab456dfb6">   27</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a714efac01ef228fff45d4f6ab456dfb6">reduce</a>(InputIter first, InputIter last) -&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">typename</span> etl::<a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;InputIter&gt;::<a class="code" href="namespaceetl.html#a714efac01ef228fff45d4f6ab456dfb6">value_type</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> init = <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">etl::iterator_traits&lt;InputIter&gt;::value_type</a>{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">reduce</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, init);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> init = <span class="keyword">typename</span> etl::<a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;InputIter&gt;::value_type{};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> reduce(first, last, init);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_NUMERIC_REDUCE_HPP</span></div>
-<div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="aaccumulate_8hpp_html"><div class="ttname"><a href="accumulate_8hpp.html">accumulate.hpp</a></div></div>
-<div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_a84c6438ff40771d562eba2df365db32b"><div class="ttname"><a href="namespaceetl.html#a84c6438ff40771d562eba2df365db32b">etl::reduce</a></div><div class="ttdeci">constexpr auto reduce(InputIter first, InputIter last, T init, BinaryOp op) -&gt; T</div><div class="ttdoc">Similar to etl::accumulate. https://en.cppreference.com/w/cpp/algorithm/reduce.</div><div class="ttdef"><b>Definition:</b> reduce.hpp:15</div></div>
-<div class="ttc" id="anamespaceetl_html_afe443a26a34b79fc921c4583df576333"><div class="ttname"><a href="namespaceetl.html#afe443a26a34b79fc921c4583df576333">etl::accumulate</a></div><div class="ttdeci">constexpr auto accumulate(InputIt first, InputIt last, Type init) noexcept -&gt; Type</div><div class="ttdoc">Computes the sum of the given value init and the elements in the range [first, last)....</div><div class="ttdef"><b>Definition:</b> accumulate.hpp:13</div></div>
-<div class="ttc" id="aplus_8hpp_html"><div class="ttname"><a href="plus_8hpp.html">plus.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:47</div></div>
-<div class="ttc" id="astructetl_1_1plus_html"><div class="ttname"><a href="structetl_1_1plus.html">etl::plus</a></div><div class="ttdoc">Function object for performing addition. Effectively calls operator+ on two instances of type T....</div><div class="ttdef"><b>Definition:</b> plus.hpp:14</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_NUMERIC_REDUCE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

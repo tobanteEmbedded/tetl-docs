@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,38 +98,31 @@ $(document).ready(function(){initNavTree('const__where__expression_8hpp_source.h
 <div class="contents">
 <a href="const__where__expression_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> M, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html">    9</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a8b144f04635bd0d80365ec5f4075016b">   10</a></span>&#160;    <a class="code" href="structetl_1_1const__where__expression.html#a8b144f04635bd0d80365ec5f4075016b">const_where_expression</a>(<a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a> <span class="keyword">const</span>&amp;)                    = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a6a335316ef74a7431589f50d196b2886">   11</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#a6a335316ef74a7431589f50d196b2886">operator=</a>(<a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a> <span class="keyword">const</span>&amp;) -&gt; <a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a>&amp; = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a6a335316ef74a7431589f50d196b2886">   11</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#a6a335316ef74a7431589f50d196b2886">operator</a>=(<a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a> <span class="keyword">const</span>&amp;) -&gt; <a class="code" href="structetl_1_1const__where__expression.html">const_where_expression</a>&amp; = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#acd4a67506f79e776518cea2cd4b97d47">   13</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#acd4a67506f79e776518cea2cd4b97d47">operator-</a>() const&amp;&amp; <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a1402dcc65befffc21cfd287cb636cdd0">   14</a></span>&#160;    auto operator+() const&amp;&amp; <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a9824ce26829a239e134d320cdc4fce35">   15</a></span>&#160;    auto operator~() const&amp;&amp; <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#acd4a67506f79e776518cea2cd4b97d47">   13</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#acd4a67506f79e776518cea2cd4b97d47">operator</a>-() <span class="keyword">const</span>&amp;&amp; <span class="keyword">noexcept</span> -&gt; T;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a1402dcc65befffc21cfd287cb636cdd0">   14</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#a1402dcc65befffc21cfd287cb636cdd0">operator</a>+() <span class="keyword">const</span>&amp;&amp; <span class="keyword">noexcept</span> -&gt; T;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a9824ce26829a239e134d320cdc4fce35">   15</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#a9824ce26829a239e134d320cdc4fce35">operator</a>~() <span class="keyword">const</span>&amp;&amp; <span class="keyword">noexcept</span> -&gt; T;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    template &lt;typename U, typename Flags&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a4d7236645aced6050a2b7303bc0e5554">   18</a></span>&#160;    auto <a class="code" href="structetl_1_1const__where__expression.html#a4d7236645aced6050a2b7303bc0e5554">copy_to</a>(U* mem, Flags f) const&amp;&amp; -&gt; <span class="keywordtype">void</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U, <span class="keyword">typename</span> Flags&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1const__where__expression.html#a4d7236645aced6050a2b7303bc0e5554">   18</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structetl_1_1const__where__expression.html#a4d7236645aced6050a2b7303bc0e5554">copy_to</a>(U* mem, Flags f) <span class="keyword">const</span>&amp;&amp; -&gt; <span class="keywordtype">void</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;private:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    M const _mask;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    M <span class="keyword">const</span> _mask;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    T&amp; _data;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
-<div class="ttc" id="astructetl_1_1const__where__expression_html"><div class="ttname"><a href="structetl_1_1const__where__expression.html">etl::const_where_expression</a></div><div class="ttdef"><b>Definition:</b> const_where_expression.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1const__where__expression_html_a4d7236645aced6050a2b7303bc0e5554"><div class="ttname"><a href="structetl_1_1const__where__expression.html#a4d7236645aced6050a2b7303bc0e5554">etl::const_where_expression::copy_to</a></div><div class="ttdeci">auto copy_to(U *mem, Flags f) const &amp;&amp;-&gt; void</div></div>
-<div class="ttc" id="astructetl_1_1const__where__expression_html_a6a335316ef74a7431589f50d196b2886"><div class="ttname"><a href="structetl_1_1const__where__expression.html#a6a335316ef74a7431589f50d196b2886">etl::const_where_expression::operator=</a></div><div class="ttdeci">auto operator=(const_where_expression const &amp;) -&gt; const_where_expression &amp;=delete</div></div>
-<div class="ttc" id="astructetl_1_1const__where__expression_html_a8b144f04635bd0d80365ec5f4075016b"><div class="ttname"><a href="structetl_1_1const__where__expression.html#a8b144f04635bd0d80365ec5f4075016b">etl::const_where_expression::const_where_expression</a></div><div class="ttdeci">const_where_expression(const_where_expression const &amp;)=delete</div></div>
-<div class="ttc" id="astructetl_1_1const__where__expression_html_acd4a67506f79e776518cea2cd4b97d47"><div class="ttname"><a href="structetl_1_1const__where__expression.html#acd4a67506f79e776518cea2cd4b97d47">etl::const_where_expression::operator-</a></div><div class="ttdeci">auto operator-() const &amp;&amp;noexcept -&gt; T</div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_SIMD_CONST_WHERE_EXPRESSION_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

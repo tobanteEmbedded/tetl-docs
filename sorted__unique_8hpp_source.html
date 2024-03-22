@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,24 +98,20 @@ $(document).ready(function(){initNavTree('sorted__unique_8hpp_source.html',''); 
 <div class="contents">
 <a href="sorted__unique_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structetl_1_1sorted__unique__t.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1sorted__unique__t.html">sorted_unique_t</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structetl_1_1sorted__unique__t.html">    8</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1sorted__unique__t.html">sorted_unique_t</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1sorted__unique__t.html#ab1b8504e59d669d3c5807af043b61e46">    9</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structetl_1_1sorted__unique__t.html#ab1b8504e59d669d3c5807af043b61e46">sorted_unique_t</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515">   12</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515">sorted_unique</a> = <a class="code" href="structetl_1_1sorted__unique__t.html">sorted_unique_t</a>{};</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515">   12</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515">sorted_unique</a> = <a class="code" href="structetl_1_1sorted__unique__t.html">sorted_unique_t</a><a class="code" href="structetl_1_1sorted__unique__t.html#ab1b8504e59d669d3c5807af043b61e46">{</a><a class="code" href="structetl_1_1sorted__unique__t.html#ab1b8504e59d669d3c5807af043b61e46">}</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a3206db2ddd4b49017ef0d257ca69a515"><div class="ttname"><a href="namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515">etl::sorted_unique</a></div><div class="ttdeci">constexpr auto sorted_unique</div><div class="ttdef"><b>Definition:</b> sorted_unique.hpp:12</div></div>
-<div class="ttc" id="astructetl_1_1sorted__unique__t_html"><div class="ttname"><a href="structetl_1_1sorted__unique__t.html">etl::sorted_unique_t</a></div><div class="ttdef"><b>Definition:</b> sorted_unique.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1sorted__unique__t_html_ab1b8504e59d669d3c5807af043b61e46"><div class="ttname"><a href="structetl_1_1sorted__unique__t.html#ab1b8504e59d669d3c5807af043b61e46">etl::sorted_unique_t::sorted_unique_t</a></div><div class="ttdeci">sorted_unique_t()=default</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_FLAT_SET_SORTED_UNIQUE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

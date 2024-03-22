@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -30,6 +37,7 @@
    <div id="projectname">tetl
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
+   <div id="projectbrief">Embedded Template Library</div>
   </td>
  </tr>
  </tbody>
@@ -90,93 +98,77 @@ $(document).ready(function(){initNavTree('is__destructible_8hpp_source.html','')
 <div class="contents">
 <a href="is__destructible_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="declval_8hpp.html">etl/_type_traits/declval.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="disjunction_8hpp.html">etl/_type_traits/disjunction.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extent_8hpp.html">etl/_type_traits/extent.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__function_8hpp.html">etl/_type_traits/is_function.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__reference_8hpp.html">etl/_type_traits/is_reference.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__scalar_8hpp.html">etl/_type_traits/is_scalar.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__unbounded__array_8hpp.html">etl/_type_traits/is_unbounded_array.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__void_8hpp.html">etl/_type_traits/is_void.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="remove__all__extents_8hpp.html">etl/_type_traits/remove_all_extents.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="type__identity_8hpp.html">etl/_type_traits/type_identity.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">declval</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">disjunction</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">extent</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_function</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_reference</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_scalar</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_unbounded_array</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_void</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">remove_all_extents</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">type_identity</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace</span> etl {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace</span> detail {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">struct </span>try_is_destructible_impl {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    template &lt;typename T, typename = decltype(etl::declval&lt;T&amp;&gt;().~T())&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> test(<span class="keywordtype">int</span>) -&gt; <a class="code" href="namespaceetl.html#aa107a29afbb5288d6dceb9fae86b07b8">etl::true_type</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">struct</span> try_is_destructible_impl {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keyword">decltype</span>(etl::declval&lt;T&amp;&gt;().~T())&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> test(<span class="keywordtype">int</span>) -&gt; etl::true_type;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> test(...) -&gt; <a class="code" href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">etl::false_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> test(...) -&gt; etl::false_type;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct </span>is_destructible_impl : try_is_destructible_impl {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> type = decltype(test&lt;T&gt;(0));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct</span> is_destructible_impl : try_is_destructible_impl {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> type = <span class="keyword">decltype</span>(test&lt;T&gt;(0));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">typename</span> T,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> = <a class="code" href="structetl_1_1disjunction.html">etl::disjunction&lt;etl::is_void&lt;T&gt;</a>, <a class="code" href="structetl_1_1is__function.html">etl::is_function&lt;T&gt;</a>, <a class="code" href="structetl_1_1is__unbounded__array.html">etl::is_unbounded_array&lt;T&gt;</a>&gt;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">::value</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> = <a class="code" href="structetl_1_1disjunction.html">etl::disjunction&lt;etl::is_reference&lt;T&gt;</a>, <a class="code" href="structetl_1_1is__scalar.html">etl::is_scalar&lt;T&gt;</a>&gt;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">::value</a>&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span>is_destructible_safe;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> = etl::<a class="code" href="structetl_1_1disjunction.html">disjunction</a>&lt;etl::is_void&lt;T&gt;, etl::is_function&lt;T&gt;, etl::<a class="code" href="structetl_1_1is__unbounded__array.html">is_unbounded_array</a>&lt;T&gt;&gt;::value,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> = etl::<a class="code" href="structetl_1_1disjunction.html">disjunction</a>&lt;etl::is_reference&lt;T&gt;, etl::is_scalar&lt;T&gt;&gt;::value&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct</span> is_destructible_safe;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct </span>is_destructible_safe&lt;T, false, false&gt; : is_destructible_impl&lt;typename etl::remove_all_extents_t&lt;T&gt;&gt;::type { };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct</span> is_destructible_safe&lt;T, <span class="keyword">false</span>, <span class="keyword">false</span>&gt; : is_destructible_impl&lt;<span class="keyword">typename</span> etl::remove_all_extents_t&lt;T&gt;&gt;::type { };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span>is_destructible_safe&lt;T, true, false&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::false_type</a> { };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct</span> is_destructible_safe&lt;T, <span class="keyword">true</span>, <span class="keyword">false</span>&gt; : etl::false_type { };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">struct </span>is_destructible_safe&lt;T, false, true&gt; : <a class="code" href="structetl_1_1integral__constant.html">etl::true_type</a> { };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">struct</span> is_destructible_safe&lt;T, <span class="keyword">false</span>, <span class="keyword">true</span>&gt; : etl::true_type { };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/// \brief Because the C++ program terminates if a destructor throws an</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/// exception during stack unwinding (which usually cannot be predicted), all</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/// practical destructors are non-throwing even if they are not declared</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/// noexcept. All destructors found in the C++ standard library are</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/// non-throwing.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/types/is_destructible</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__destructible.html">is_destructible</a> : detail::is_destructible_safe&lt;T&gt; { };</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible.html">   60</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__destructible.html">is_destructible</a> : detail::is_destructible_safe&lt;T&gt; { };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible_3_01Type_0f_0e_4.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__destructible.html">is_destructible</a>&lt;Type[]&gt; : <a class="code" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible_3_01Type_0f_0e_4.html">   63</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__destructible.html">is_destructible</a>&lt;Type[]&gt; : false_type { };</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible_3_01void_01_4.html">   66</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__destructible.html">is_destructible</a>&lt;<a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">void</a>&gt; : <a class="code" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible_3_01void_01_4.html">   66</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1is__destructible.html">is_destructible</a>&lt;<span class="keywordtype">void</span>&gt; : false_type { };</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">   69</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">is_destructible_v</a> = <a class="code" href="structetl_1_1is__destructible.html">is_destructible&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">T</a>&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">   69</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">is_destructible_v</a> = <a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">is_destructible</a>&lt;<a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">T</a>&gt;::<a class="code" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">value</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
-<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
-<div class="ttc" id="adisjunction_8hpp_html"><div class="ttname"><a href="disjunction_8hpp.html">disjunction.hpp</a></div></div>
-<div class="ttc" id="aextent_8hpp_html"><div class="ttname"><a href="extent_8hpp.html">extent.hpp</a></div></div>
-<div class="ttc" id="ais__function_8hpp_html"><div class="ttname"><a href="is__function_8hpp.html">is_function.hpp</a></div></div>
-<div class="ttc" id="ais__reference_8hpp_html"><div class="ttname"><a href="is__reference_8hpp.html">is_reference.hpp</a></div></div>
-<div class="ttc" id="ais__scalar_8hpp_html"><div class="ttname"><a href="is__scalar_8hpp.html">is_scalar.hpp</a></div></div>
-<div class="ttc" id="ais__unbounded__array_8hpp_html"><div class="ttname"><a href="is__unbounded__array_8hpp.html">is_unbounded_array.hpp</a></div></div>
-<div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_1_1linalg_html_a6b739e3edd217012215ee928ca208532"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">etl::linalg::void</a></div><div class="ttdeci">InObj2 OutObj z void</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a34ff2b6f5e9a98730031297120e28af4"><div class="ttname"><a href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">etl::is_destructible_v</a></div><div class="ttdeci">constexpr auto is_destructible_v</div><div class="ttdef"><b>Definition:</b> is_destructible.hpp:69</div></div>
-<div class="ttc" id="anamespaceetl_html_a466dc202e27dec8fa05a9fcc6ef47e27"><div class="ttname"><a href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_a51c15a5d5f4ab487941035d024cad9d7"><div class="ttname"><a href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">etl::value</a></div><div class="ttdeci">char const Int &amp; value</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
-<div class="ttc" id="anamespaceetl_html_aa107a29afbb5288d6dceb9fae86b07b8"><div class="ttname"><a href="namespaceetl.html#aa107a29afbb5288d6dceb9fae86b07b8">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition:</b> bool_constant.hpp:13</div></div>
-<div class="ttc" id="aremove__all__extents_8hpp_html"><div class="ttname"><a href="remove__all__extents_8hpp.html">remove_all_extents.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1disjunction_html"><div class="ttname"><a href="structetl_1_1disjunction.html">etl::disjunction</a></div><div class="ttdoc">Forms the logical disjunction of the type traits B..., effectively performing a logical OR on the seq...</div><div class="ttdef"><b>Definition:</b> disjunction.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1is__destructible_html"><div class="ttname"><a href="structetl_1_1is__destructible.html">etl::is_destructible</a></div><div class="ttdoc">Because the C++ program terminates if a destructor throws an exception during stack unwinding (which ...</div><div class="ttdef"><b>Definition:</b> is_destructible.hpp:60</div></div>
-<div class="ttc" id="astructetl_1_1is__function_html"><div class="ttname"><a href="structetl_1_1is__function.html">etl::is_function</a></div><div class="ttdef"><b>Definition:</b> is_function.hpp:20</div></div>
-<div class="ttc" id="astructetl_1_1is__scalar_html"><div class="ttname"><a href="structetl_1_1is__scalar.html">etl::is_scalar</a></div><div class="ttdoc">If T is a scalar type (that is a possibly cv-qualified arithmetic, pointer, pointer to member,...</div><div class="ttdef"><b>Definition:</b> is_scalar.hpp:36</div></div>
-<div class="ttc" id="astructetl_1_1is__unbounded__array_html"><div class="ttname"><a href="structetl_1_1is__unbounded__array.html">etl::is_unbounded_array</a></div><div class="ttdoc">Checks whether T is an array type of unknown bound. Provides the member constant value which is equal...</div><div class="ttdef"><b>Definition:</b> is_unbounded_array.hpp:14</div></div>
-<div class="ttc" id="atype__identity_8hpp_html"><div class="ttname"><a href="type__identity_8hpp.html">type_identity.hpp</a></div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_IS_DESTRUCTIBLE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
