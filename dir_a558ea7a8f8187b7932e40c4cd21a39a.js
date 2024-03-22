@@ -35,6 +35,9 @@ var dir_a558ea7a8f8187b7932e40c4cd21a39a =
       [ "pointer_traits", "structetl_1_1pointer__traits.html", "structetl_1_1pointer__traits" ],
       [ "pointer_traits< T * >", "structetl_1_1pointer__traits_3_01T_01_5_01_4.html", "structetl_1_1pointer__traits_3_01T_01_5_01_4" ]
     ] ],
+    [ "ranges_construct_at.hpp", "ranges__construct__at_8hpp.html", "ranges__construct__at_8hpp" ],
+    [ "ranges_destroy.hpp", "ranges__destroy_8hpp.html", "ranges__destroy_8hpp" ],
+    [ "ranges_destroy_at.hpp", "ranges__destroy__at_8hpp.html", "ranges__destroy__at_8hpp" ],
     [ "small_ptr.hpp", "small__ptr_8hpp.html", [
       [ "small_ptr", "structetl_1_1small__ptr.html", "structetl_1_1small__ptr" ]
     ] ],

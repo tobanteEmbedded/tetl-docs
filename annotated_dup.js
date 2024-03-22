@@ -97,6 +97,11 @@ var annotated_dup =
         [ "implicit_unit_diagonal_t", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html", "structetl_1_1linalg_1_1implicit__unit__diagonal__t" ],
         [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html", "structetl_1_1linalg_1_1explicit__diagonal__t" ]
       ] ],
+      [ "ranges", "namespaceetl_1_1ranges.html", [
+        [ "construct_at_fn", "structetl_1_1ranges_1_1construct__at__fn.html", "structetl_1_1ranges_1_1construct__at__fn" ],
+        [ "destroy_fn", "structetl_1_1ranges_1_1destroy__fn.html", "structetl_1_1ranges_1_1destroy__fn" ],
+        [ "destroy_at_fn", "structetl_1_1ranges_1_1destroy__at__fn.html", "structetl_1_1ranges_1_1destroy__at__fn" ]
+      ] ],
       [ "array", "structetl_1_1array.html", "structetl_1_1array" ],
       [ "tuple_size< array< T, N > >", "structetl_1_1tuple__size_3_01array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "tuple_element", "structetl_1_1tuple__element.html", null ],

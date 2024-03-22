@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"placeholder_8hpp.html#a48bf0995060b4acad3c0882859cea489":[9,0,1,0,29,28,36],
+"placeholder_8hpp.html#a4e429b87534aa543b974c7e3e75b45b1":[9,0,1,0,29,28,8],
+"placeholder_8hpp.html#a58ed0f1fa3a039a251395f9bd8bab9e6":[9,0,1,0,29,28,29],
 "placeholder_8hpp.html#a5b19add0a8d26c8c4ba337dc212d5163":[9,0,1,0,29,28,26],
 "placeholder_8hpp.html#a5c55175a60b12b3cdb56a5d7fa040777":[9,0,1,0,29,28,18],
 "placeholder_8hpp.html#a5f88d0dddbe19206fa3022fb9b739140":[9,0,1,0,29,28,24],
@@ -116,6 +119,15 @@ var NAVTREEINDEX21 =
 "range__value__t_8hpp_source.html":[9,0,1,0,45,11],
 "ranges_8hpp.html":[9,0,1,0,108],
 "ranges_8hpp_source.html":[9,0,1,0,108],
+"ranges__construct__at_8hpp.html":[9,0,1,0,38,15],
+"ranges__construct__at_8hpp.html#adc4d1d6f844c64643d68340758d520ee":[9,0,1,0,38,15,1],
+"ranges__construct__at_8hpp_source.html":[9,0,1,0,38,15],
+"ranges__destroy_8hpp.html":[9,0,1,0,38,16],
+"ranges__destroy_8hpp.html#ab7f5fbb66a4f37b1b1d0cbfead090d5e":[9,0,1,0,38,16,1],
+"ranges__destroy_8hpp_source.html":[9,0,1,0,38,16],
+"ranges__destroy__at_8hpp.html":[9,0,1,0,38,17],
+"ranges__destroy__at_8hpp.html#a0677a0b77ca32abb3ace3c39a10bfa7d":[9,0,1,0,38,17,1],
+"ranges__destroy__at_8hpp_source.html":[9,0,1,0,38,17],
 "rank_8hpp.html":[9,0,1,0,59,106],
 "rank_8hpp.html#a4229d4171b460abc833736d622ce9745":[9,0,1,0,59,106,3],
 "rank_8hpp_source.html":[9,0,1,0,59,106],
@@ -237,17 +249,5 @@ var NAVTREEINDEX21 =
 "replace_8hpp.html#ab115e24caa45f16f79bb770a6e3cbbab":[9,0,1,0,1,58,0],
 "replace_8hpp_source.html":[9,0,1,0,1,58],
 "replace__if_8hpp.html":[9,0,1,0,1,59],
-"replace__if_8hpp.html#a290953b933269399f045b7e2b37d97b7":[9,0,1,0,1,59,0],
-"replace__if_8hpp_source.html":[9,0,1,0,1,59],
-"reset__bit_8hpp.html":[9,0,1,0,3,14],
-"reset__bit_8hpp.html#ace9159d861c5d8c5ed5708b8381fa19a":[9,0,1,0,3,14,0],
-"reset__bit_8hpp.html#aecd9ef98d7cd14ca276c8df92dc00a64":[9,0,1,0,3,14,1],
-"reset__bit_8hpp_source.html":[9,0,1,0,3,14],
-"reverse_8hpp.html":[9,0,1,0,1,60],
-"reverse_8hpp.html#aa198aa5e9e5759947d51496cede4e6f6":[9,0,1,0,1,60,0],
-"reverse_8hpp_source.html":[9,0,1,0,1,60],
-"reverse__copy_8hpp.html":[9,0,1,0,1,61],
-"reverse__copy_8hpp.html#ae0246fc85a8996116ecfe4be33cd1495":[9,0,1,0,1,61,0],
-"reverse__copy_8hpp_source.html":[9,0,1,0,1,61],
-"reverse__iterator_8hpp.html":[9,0,1,0,32,23]
+"replace__if_8hpp.html#a290953b933269399f045b7e2b37d97b7":[9,0,1,0,1,59,0]
 };
