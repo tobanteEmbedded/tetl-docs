@@ -98,35 +98,26 @@ $(document).ready(function(){initNavTree('ispunct_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="ispunct_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CCTYPE_ISPUNCT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CCTYPE_ISPUNCT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CCTYPE_ISPUNCT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CCTYPE_ISPUNCT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief Checks if the given character is a punctuation character as</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// classified by the current C locale.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// The default C locale classifies the characters</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// !&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~ as punctuation.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \param ch Character to classify.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// \returns Non-zero value if the character is a punctuation character, zero</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// otherwise.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/string/byte/ispunct</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#a531a127903fbd0d7545d9a69bf13bb3c">   20</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a531a127903fbd0d7545d9a69bf13bb3c">ispunct</a>(<span class="keywordtype">int</span> ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#a531a127903fbd0d7545d9a69bf13bb3c">   20</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a531a127903fbd0d7545d9a69bf13bb3c">ispunct</a>(<span class="keywordtype">int</span> ch) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec1 = ch &gt;= <span class="stringliteral">&#39;!&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec2 = ch &gt;= <span class="stringliteral">&#39;:&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;@&#39;</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec3 = ch &gt;= <span class="stringliteral">&#39;[&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;`&#39;</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec4 = ch &gt;= <span class="stringliteral">&#39;{&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;~&#39;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec1 = ch &gt;= <span class="charliteral">&#39;!&#39;</span> and ch &lt;= <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec2 = ch &gt;= <span class="charliteral">&#39;:&#39;</span> and ch &lt;= <span class="charliteral">&#39;@&#39;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec3 = ch &gt;= <span class="charliteral">&#39;[&#39;</span> and ch &lt;= <span class="charliteral">&#39;`&#39;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> sec4 = ch &gt;= <span class="charliteral">&#39;{&#39;</span> and ch &lt;= <span class="charliteral">&#39;~&#39;</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(sec1 || sec2 || sec3 || sec4);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(sec1 || sec2 || sec3 || sec4);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CCTYPE_ISPUNCT_HPP</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CCTYPE_ISPUNCT_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a531a127903fbd0d7545d9a69bf13bb3c"><div class="ttname"><a href="namespaceetl.html#a531a127903fbd0d7545d9a69bf13bb3c">etl::ispunct</a></div><div class="ttdeci">constexpr auto ispunct(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is a punctuation character as classified by the current C locale.</div><div class="ttdef"><b>Definition:</b> ispunct.hpp:20</div></div>
+<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

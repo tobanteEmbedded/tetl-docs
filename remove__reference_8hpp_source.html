@@ -98,32 +98,38 @@ $(document).ready(function(){initNavTree('remove__reference_8hpp_source.html',''
 <div class="contents">
 <a href="remove__reference_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference.html">    9</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1remove__reference.html">remove_reference</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference.html#a2485f631f25b8f91e902b3d127fd5d2a">   10</a></span>&#160;    <span class="keyword">using</span> type = T;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1remove__reference.html">remove_reference</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference.html#a2485f631f25b8f91e902b3d127fd5d2a">   10</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1remove__reference.html#a2485f631f25b8f91e902b3d127fd5d2a">type</a> = T;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html">   14</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&amp;&gt; {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html#a86c4e754160bbcedbd47ce61faaf714d">   15</a></span>&#160;    <span class="keyword">using</span> type = T;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&amp;&gt; {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html#a86c4e754160bbcedbd47ce61faaf714d">   15</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html#a86c4e754160bbcedbd47ce61faaf714d">type</a> = T;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html">   19</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&amp;&amp;&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html#a9083c94d693a2c58100ebcedb5a2bda7">   20</a></span>&#160;    <span class="keyword">using</span> type = T;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&amp;&amp;&gt; {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html#a9083c94d693a2c58100ebcedb5a2bda7">   20</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html#a9083c94d693a2c58100ebcedb5a2bda7">type</a> = T;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">   24</a></span>&#160;<span class="keyword">using</span> remove_reference_t = <span class="keyword">typename</span> etl::<a class="code" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&gt;::type;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">   24</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">remove_reference_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1remove__reference.html#a2485f631f25b8f91e902b3d127fd5d2a">etl::remove_reference&lt;T&gt;::type</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_REMOVE_REFERENCE_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_ab812e9b378e738c7b7b7fc34f4dab9f3"><div class="ttname"><a href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a></div><div class="ttdeci">typename etl::remove_reference&lt; T &gt;::type remove_reference_t</div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:24</div></div>
+<div class="ttc" id="astructetl_1_1remove__reference_3_01T_01_6_01_4_html_a86c4e754160bbcedbd47ce61faaf714d"><div class="ttname"><a href="structetl_1_1remove__reference_3_01T_01_6_01_4.html#a86c4e754160bbcedbd47ce61faaf714d">etl::remove_reference&lt; T &amp; &gt;::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:15</div></div>
+<div class="ttc" id="astructetl_1_1remove__reference_3_01T_01_6_6_01_4_html_a9083c94d693a2c58100ebcedb5a2bda7"><div class="ttname"><a href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html#a9083c94d693a2c58100ebcedb5a2bda7">etl::remove_reference&lt; T &amp;&amp; &gt;::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:20</div></div>
+<div class="ttc" id="astructetl_1_1remove__reference_html"><div class="ttname"><a href="structetl_1_1remove__reference.html">etl::remove_reference</a></div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:9</div></div>
+<div class="ttc" id="astructetl_1_1remove__reference_html_a2485f631f25b8f91e902b3d127fd5d2a"><div class="ttname"><a href="structetl_1_1remove__reference.html#a2485f631f25b8f91e902b3d127fd5d2a">etl::remove_reference::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

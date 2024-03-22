@@ -98,62 +98,76 @@ $(document).ready(function(){initNavTree('decl_8hpp_source.html',''); initResiza
 <div class="contents">
 <a href="decl_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPETRAITS_DECL_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPETRAITS_DECL_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPETRAITS_DECL_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPETRAITS_DECL_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// primary type categories:</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct</span> is_void;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct </span>is_void;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">struct</span> is_null_pointer;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">struct </span>is_null_pointer;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct</span> is_integral;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>is_integral;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct</span> is_floating_point;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span>is_floating_point;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct</span> is_array;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct </span>is_array;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct</span> is_pointer;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>is_pointer;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">struct</span> is_lvalue_reference;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">struct </span>is_lvalue_reference;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">struct</span> is_rvalue_reference;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">struct </span>is_rvalue_reference;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct</span> is_member_object_pointer;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span>is_member_object_pointer;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct</span> is_member_function_pointer;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>is_member_function_pointer;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct</span> is_enum;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct </span>is_enum;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct</span> is_union;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">struct </span>is_union;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structetl_1_1is__typename.html">   33</a></span>&#160;<span class="keyword">struct</span> is_typename;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structetl_1_1is__typename.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__typename.html">is_typename</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct</span> is_function;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__function.html">is_function</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// composite type categories:</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct</span> is_reference;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__reference.html">is_reference</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">struct</span> is_arithmetic;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__arithmetic.html">is_arithmetic</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct</span> is_fundamental;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__fundamental.html">is_fundamental</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct</span> is_object;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__object.html">is_object</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct</span> is_scalar;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__scalar.html">is_scalar</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct</span> is_compound;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__compound.html">is_compound</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">struct</span> is_member_pointer;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1is__member__pointer.html">is_member_pointer</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0a1c3baeebc248b3f787a308af595c6a">   54</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a0a1c3baeebc248b3f787a308af595c6a">swap</a>(T&amp; a, T&amp; b) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">void</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0a1c3baeebc248b3f787a308af595c6a">   54</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5">swap</a>(T&amp; a, T&amp; <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="code" href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">void</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPETRAITS_DECL_HPP</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPETRAITS_DECL_HPP</span></div>
+<div class="ttc" id="anamespaceetl_1_1linalg_html_a6b739e3edd217012215ee928ca208532"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a6b739e3edd217012215ee928ca208532">etl::linalg::void</a></div><div class="ttdeci">InObj2 OutObj z void</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a18b6c2ea4f13089ede1a42514f87e6c6"><div class="ttname"><a href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">etl::b</a></div><div class="ttdeci">T const  &amp; b</div><div class="ttdef"><b>Definition:</b> incrementable_traits.hpp:39</div></div>
+<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html_ad707bbff2e759a5d868a7bfb7d6bc4c5"><div class="ttname"><a href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5">etl::swap</a></div><div class="ttdeci">constexpr auto swap(array&lt; T, N &gt; &amp;lhs, array&lt; T, N &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs))) -&gt; void</div><div class="ttdoc">Specializes the swap algorithm for array. Swaps the contents of lhs and rhs.</div><div class="ttdef"><b>Definition:</b> array.hpp:206</div></div>
+<div class="ttc" id="astructetl_1_1is__arithmetic_html"><div class="ttname"><a href="structetl_1_1is__arithmetic.html">etl::is_arithmetic</a></div><div class="ttdoc">If T is an arithmetic type (that is, an integral type or a floating-point type) or a cv-qualified ver...</div><div class="ttdef"><b>Definition:</b> is_arithmetic.hpp:18</div></div>
+<div class="ttc" id="astructetl_1_1is__compound_html"><div class="ttname"><a href="structetl_1_1is__compound.html">etl::is_compound</a></div><div class="ttdoc">If T is a compound type (that is, array, function, object pointer, function pointer,...</div><div class="ttdef"><b>Definition:</b> is_compound.hpp:16</div></div>
+<div class="ttc" id="astructetl_1_1is__function_html"><div class="ttname"><a href="structetl_1_1is__function.html">etl::is_function</a></div><div class="ttdef"><b>Definition:</b> is_function.hpp:20</div></div>
+<div class="ttc" id="astructetl_1_1is__fundamental_html"><div class="ttname"><a href="structetl_1_1is__fundamental.html">etl::is_fundamental</a></div><div class="ttdoc">If T is a fundamental type (that is, arithmetic type, void, or nullptr_t), provides the member consta...</div><div class="ttdef"><b>Definition:</b> is_fundamental.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1is__member__pointer_html"><div class="ttname"><a href="structetl_1_1is__member__pointer.html">etl::is_member_pointer</a></div><div class="ttdoc">If T is pointer to non-static member object or a pointer to non-static member function,...</div><div class="ttdef"><b>Definition:</b> is_member_pointer.hpp:37</div></div>
+<div class="ttc" id="astructetl_1_1is__object_html"><div class="ttname"><a href="structetl_1_1is__object.html">etl::is_object</a></div><div class="ttdoc">If T is an object type (that is any possibly cv-qualified type other than function,...</div><div class="ttdef"><b>Definition:</b> is_object.hpp:32</div></div>
+<div class="ttc" id="astructetl_1_1is__reference_html"><div class="ttname"><a href="structetl_1_1is__reference.html">etl::is_reference</a></div><div class="ttdoc">If T is a reference type (lvalue reference or rvalue reference), provides the member constant value e...</div><div class="ttdef"><b>Definition:</b> is_reference.hpp:15</div></div>
+<div class="ttc" id="astructetl_1_1is__scalar_html"><div class="ttname"><a href="structetl_1_1is__scalar.html">etl::is_scalar</a></div><div class="ttdoc">If T is a scalar type (that is a possibly cv-qualified arithmetic, pointer, pointer to member,...</div><div class="ttdef"><b>Definition:</b> is_scalar.hpp:36</div></div>
+<div class="ttc" id="astructetl_1_1is__typename_html"><div class="ttname"><a href="structetl_1_1is__typename.html">etl::is_typename</a></div><div class="ttdef"><b>Definition:</b> decl.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

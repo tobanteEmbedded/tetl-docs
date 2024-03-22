@@ -98,24 +98,20 @@ $(document).ready(function(){initNavTree('destroy__at_8hpp_source.html',''); ini
 <div class="contents">
 <a href="destroy__at_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MEMORY_DESTROY_AT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MEMORY_DESTROY_AT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MEMORY_DESTROY_AT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MEMORY_DESTROY_AT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_memory</span><span class="preprocessor">/</span><span class="preprocessor">addressof</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">is_array</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="addressof_8hpp.html">etl/_memory/addressof.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__array_8hpp.html">etl/_type_traits/is_array.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief If T is not an array type, calls the destructor of the object pointed</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// to by p, as if by p-&gt;~T(). If T is an array type, recursively destroys</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// elements of *p in order, as if by calling destroy(begin(*p),</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// end(*p)).</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">   16</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">destroy_at</a>(T* p) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">destroy_at</a>(T* p) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_array_v&lt;T&gt;) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> constexpr (is_array_v&lt;T&gt;) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; elem : *p) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            destroy_at(addressof(elem));</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">destroy_at</a>(<a class="code" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">addressof</a>(elem));</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        p-&gt;~T();</div>
@@ -124,7 +120,12 @@ $(document).ready(function(){initNavTree('destroy__at_8hpp_source.html',''); ini
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MEMORY_DESTROY_AT_HPP</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_DESTROY_AT_HPP</span></div>
+<div class="ttc" id="aaddressof_8hpp_html"><div class="ttname"><a href="addressof_8hpp.html">addressof.hpp</a></div></div>
+<div class="ttc" id="ais__array_8hpp_html"><div class="ttname"><a href="is__array_8hpp.html">is_array.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a13856fe74510e89b04a2310cbc9bde59"><div class="ttname"><a href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">etl::addressof</a></div><div class="ttdeci">auto addressof(T const &amp;&amp;)=delete</div></div>
+<div class="ttc" id="anamespaceetl_html_a1709580f4bcc18d6efb2b7e4d5c1b728"><div class="ttname"><a href="namespaceetl.html#a1709580f4bcc18d6efb2b7e4d5c1b728">etl::destroy_at</a></div><div class="ttdeci">constexpr auto destroy_at(T *p) -&gt; void</div><div class="ttdoc">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T()....</div><div class="ttdef"><b>Definition:</b> destroy_at.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

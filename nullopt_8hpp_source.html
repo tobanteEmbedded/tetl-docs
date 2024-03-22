@@ -98,26 +98,24 @@ $(document).ready(function(){initNavTree('nullopt_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="nullopt_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_OPTIONAL_NULLOPT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_OPTIONAL_NULLOPT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_OPTIONAL_NULLOPT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_OPTIONAL_NULLOPT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief etl::nullopt_t is an empty class type used to indicate optional type</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// with uninitialized state. In particular, etl::optional has a constructor</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// with nullopt_t as a single argument, which creates an optional that does not</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// contain a value.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1nullopt__t.html">   12</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1nullopt__t.html">nullopt_t</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">   13</a></span>&#160;    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">nullopt_t</a>(<span class="keywordtype">int</span> <span class="comment">/*unused*/</span>) { }</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1nullopt__t.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1nullopt__t.html">nullopt_t</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">   13</a></span>&#160;    <span class="keyword">explicit</span> constexpr <a class="code" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">nullopt_t</a>(<span class="keywordtype">int</span> <span class="comment">/*unused*/</span>) { }</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// \brief etl::nullopt is a constant of type etl::nullopt_t that is used to</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// indicate optional type with uninitialized state.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a93d7a7601aedf2ce125a34a9d83b80a7">   18</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a93d7a7601aedf2ce125a34a9d83b80a7">nullopt</a> = etl<a class="code" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">::</a><a class="code" href="structetl_1_1nullopt__t.html">nullopt_t</a><a class="code" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">{</a>{}<a class="code" href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">}</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a93d7a7601aedf2ce125a34a9d83b80a7">   18</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a93d7a7601aedf2ce125a34a9d83b80a7">nullopt</a> = <a class="code" href="structetl_1_1nullopt__t.html">etl::nullopt_t</a>{{}};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_OPTIONAL_NULLOPT_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_OPTIONAL_NULLOPT_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a93d7a7601aedf2ce125a34a9d83b80a7"><div class="ttname"><a href="namespaceetl.html#a93d7a7601aedf2ce125a34a9d83b80a7">etl::nullopt</a></div><div class="ttdeci">constexpr auto nullopt</div><div class="ttdoc">etl::nullopt is a constant of type etl::nullopt_t that is used to indicate optional type with uniniti...</div><div class="ttdef"><b>Definition:</b> nullopt.hpp:18</div></div>
+<div class="ttc" id="astructetl_1_1nullopt__t_html"><div class="ttname"><a href="structetl_1_1nullopt__t.html">etl::nullopt_t</a></div><div class="ttdoc">etl::nullopt_t is an empty class type used to indicate optional type with uninitialized state....</div><div class="ttdef"><b>Definition:</b> nullopt.hpp:12</div></div>
+<div class="ttc" id="astructetl_1_1nullopt__t_html_a4ce08abc399149f4b90151c895d37e4c"><div class="ttname"><a href="structetl_1_1nullopt__t.html#a4ce08abc399149f4b90151c895d37e4c">etl::nullopt_t::nullopt_t</a></div><div class="ttdeci">constexpr nullopt_t(int)</div><div class="ttdef"><b>Definition:</b> nullopt.hpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

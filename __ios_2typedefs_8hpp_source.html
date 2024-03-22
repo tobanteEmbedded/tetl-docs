@@ -98,17 +98,17 @@ $(document).ready(function(){initNavTree('__ios_2typedefs_8hpp_source.html','');
 <div class="contents">
 <a href="__ios_2typedefs_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_IOS_TYPEDEFS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_IOS_TYPEDEFS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_IOS_TYPEDEFS_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_IOS_TYPEDEFS_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ios</span><span class="preprocessor">/</span><span class="preprocessor">iosfwd</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">make_signed</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iosfwd_8hpp.html">etl/_ios/iosfwd.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="make__signed_8hpp.html">etl/_type_traits/make_signed.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8cc54c8127416c33c963bee08bc99596">   12</a></span>&#160;<span class="keyword">using</span> streamoff  = <span class="keywordtype">long</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa6a81fba06194ff9cf0d14e9dd9339a0">   13</a></span>&#160;<span class="keyword">using</span> streamsize = make_signed_t&lt;size_t&gt;;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8cc54c8127416c33c963bee08bc99596">   12</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#a8cc54c8127416c33c963bee08bc99596">streamoff</a>  = long;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa6a81fba06194ff9cf0d14e9dd9339a0">   13</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl.html#aa6a81fba06194ff9cf0d14e9dd9339a0">streamsize</a> = <a class="code" href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">make_signed_t&lt;size_t&gt;</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// template &lt;typename State&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// struct fpos;</span></div>
@@ -117,7 +117,14 @@ $(document).ready(function(){initNavTree('__ios_2typedefs_8hpp_source.html','');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// using wstreampos = fpos&lt;typename char_traits&lt;wchar_t&gt;::state_type&gt;;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_IOS_TYPEDEFS_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_IOS_TYPEDEFS_HPP</span></div>
+<div class="ttc" id="aiosfwd_8hpp_html"><div class="ttname"><a href="iosfwd_8hpp.html">iosfwd.hpp</a></div></div>
+<div class="ttc" id="amake__signed_8hpp_html"><div class="ttname"><a href="make__signed_8hpp.html">make_signed.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a8cc54c8127416c33c963bee08bc99596"><div class="ttname"><a href="namespaceetl.html#a8cc54c8127416c33c963bee08bc99596">etl::streamoff</a></div><div class="ttdeci">long streamoff</div><div class="ttdef"><b>Definition:</b> typedefs.hpp:12</div></div>
+<div class="ttc" id="anamespaceetl_html_aa6a81fba06194ff9cf0d14e9dd9339a0"><div class="ttname"><a href="namespaceetl.html#aa6a81fba06194ff9cf0d14e9dd9339a0">etl::streamsize</a></div><div class="ttdeci">make_signed_t&lt; size_t &gt; streamsize</div><div class="ttdef"><b>Definition:</b> typedefs.hpp:13</div></div>
+<div class="ttc" id="anamespaceetl_html_abffe34c79351f871acb3e0438b2ad488"><div class="ttname"><a href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">etl::make_signed_t</a></div><div class="ttdeci">typename make_signed&lt; T &gt;::type make_signed_t</div><div class="ttdef"><b>Definition:</b> make_signed.hpp:80</div></div>
+<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

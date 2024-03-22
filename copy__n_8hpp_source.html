@@ -98,37 +98,31 @@ $(document).ready(function(){initNavTree('copy__n_8hpp_source.html',''); initRes
 <div class="contents">
 <a href="copy__n_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_COPY_N_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_COPY_N_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_COPY_N_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_COPY_N_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/// \ingroup algorithm-header</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// @{</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Copies exactly count values from the range beginning at first to the</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// range beginning at result. Formally, for each integer `0 &lt;= i &lt; count`,</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// performs `*(result + i) = *(first + i)`. Overlap of ranges is formally</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// permitted, but leads to unpredictable ordering of the results.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// \returns Iterator in the destination range, pointing past the last element</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// copied if count&gt;0 or result otherwise.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> Size, <span class="keyword">typename</span> OutputIt&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">   18</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">copy_n</a>(InputIt first, Size count, OutputIt result) -&gt; OutputIt</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">copy_n</a>(InputIt first, <a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, OutputIt result) -&gt; OutputIt</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (count &gt; 0) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a> &gt; 0) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        *result = *first;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span> (Size i = 1; i &lt; count; ++i) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> i = 1; i &lt; <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>; ++i) {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            *(++result) = *(++first);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/// @}</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_COPY_N_HPP</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_COPY_N_HPP</span></div>
+<div class="ttc" id="agroup__algorithm-header_html_gaa65063d9f87cd088156f3d49bb32f2e5"><div class="ttname"><a href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">etl::copy_n</a></div><div class="ttdeci">constexpr auto copy_n(InputIt first, Size count, OutputIt result) -&gt; OutputIt</div><div class="ttdoc">Copies exactly count values from the range beginning at first to the range beginning at result....</div><div class="ttdef"><b>Definition:</b> copy_n.hpp:18</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a3f9162720047d01bb438874bf56df5d2"><div class="ttname"><a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition:</b> count.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_af9b15653958e67cfe944d92826719780"><div class="ttname"><a href="namespaceetl.html#af9b15653958e67cfe944d92826719780">etl::Size</a></div><div class="ttdeci">Size</div><div class="ttdef"><b>Definition:</b> uninitialized_array.hpp:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

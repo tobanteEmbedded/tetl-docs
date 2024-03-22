@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><a href="#header-overview">Header Overview</a></li>
 <li><a href="#header-detail">Header Detail</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Quick Start</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="array_8hpp.html">etl/array.hpp</a>&gt;</span></div>
@@ -136,7 +136,7 @@ Quick Start</h1>
 <div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">array is a container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition:</b> array.hpp:35</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line">g++ -Wall -Wextra -Wpedantic -std=c++20 -I path/to/tetl/include main.cpp</div>
 </div><!-- fragment --><p>For examples look at the <a href="./examples">examples</a> subdirectory or the test files in <a href="./tests">tests</a>. The <a href="https://tobanteembedded.github.io/tetl-docs/">API reference</a> is currently work in progress. I'm switching from doxygen to standardese, which still has some bugs, so some parts of the docs may still be missing.</p>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Status</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -144,7 +144,7 @@ Status</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://github.com/tobanteEmbedded/tetl/blob/main/LICENSE.txt"><img src="https://img.shields.io/badge/License-Boost%201.0-lightblue.svg" alt="License" style="pointer-events: none;" class="inline"/></a>   </td><td class="markdownTableBodyNone"><img src="https://tokei.rs/b1/github/tobanteEmbedded/tetl" alt="LOC" class="inline"/>   </td><td class="markdownTableBodyNone"><a href="https://docs.google.com/spreadsheets/d/1-qwa7tFnjFdgY9XKBy2fAsDozAfG8lXsJXHwA_ITQqM/edit?usp=sharing">Spreadsheet</a> / <a class="el" href="md_docs_progress.html">Papers</a>   </td><td class="markdownTableBodyNone"><a href="https://tobanteembedded.github.io/tetl-docs/">API Reference</a>   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Hosted</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -158,7 +158,7 @@ Hosted</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter"><b>JS/WASM</b>   </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/emscripten.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/emscripten.yml/badge.svg" alt="Emscripten" style="pointer-events: none;" class="inline"/></a>   </td><td class="markdownTableBodyCenter">Emscripten Latest   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Freestanding</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -170,7 +170,7 @@ Freestanding</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter"><b>MSP430</b>   </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/freestanding-msp430.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/freestanding-msp430.yml/badge.svg" alt="MSP430" style="pointer-events: none;" class="inline"/></a>   </td><td class="markdownTableBodyCenter">GCC 13   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Analysis</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -187,7 +187,7 @@ Analysis</h2>
 <blockquote class="doxtable">
 <p>**_NOTE:_** All test are compiled in debug and release mode with at least <code>-Wall -Wextra -Wpedantic -Werror</code> or <code>/W3 /WX</code>. The full list of warning flags can be found in the CMake configuration: <a href="./cmake/compiler_warnings.cmake">cmake/compiler_warnings.cmake</a>. Hosted platforms run all tests &amp; examples, while freestanding builds only compile (ARM &amp; AVR) and link (AVR) the example files. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Design Goals</h1>
 <ul>
 <li>100% portable (no STL headers required, minimum of C headers)</li>
@@ -215,17 +215,17 @@ Design Goals</h1>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Error Handling</h2>
 <p>Since I assume that you might have exceptions disabled, I need a different way of reporting exceptional cases to you which occured deep inside the library. To keep the behavior of my library and actual STL implementations as close as possible, I've chosen to add a global assert/exception handler functions, which can be overriden by enabling the <code>TETL_ENABLE_CUSTOM_ASSERT_HANDLER</code> macro.</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 TODO</h3>
 <ul>
 <li>ASSERT macro for debug checks</li>
 <li>EXCEPTION macro for debug &amp; release checks</li>
 </ul>
 <p>For more details about the global assertion handler <code>etl::tetl_assert_handler</code> &amp; the assertion macro <code>TETL_ASSERT</code> see the <a href="./examples/cassert.cpp">examples/cassert.cpp</a> file.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Near Future</h2>
 <ul>
 <li>Switch from <code>doxygen</code> to <code>standardese</code> as the documentation generator</li>
@@ -236,7 +236,7 @@ Near Future</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Far Future</h2>
 <ul>
 <li>Replace Catch2 with custom unit testing library<ul>
@@ -248,16 +248,16 @@ Far Future</h2>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Project Integration</h1>
 <p>The following steps explain how to add <code>etl</code> to your project. Embedded or desktop.</p>
 <div class="fragment"><div class="line">cd path/to/your/project</div>
 <div class="line">mkdir 3rd_party</div>
 <div class="line">git submodule add https://github.com/tobanteEmbedded/tetl.git 3rd_party/tetl</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 Command Line</h2>
 <div class="fragment"><div class="line">CXXFLAGS += -std=c++20 -I3rd_party/tetl/include</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md22"></a>
 CMake</h2>
 <p>Add <code>tetl</code> as a git submodule, then add these lines to your <code>CMakeLists.txt</code>:</p>
 <div class="fragment"><div class="line"># tetl::etl is an interface target, so you can use it even if you</div>
@@ -266,14 +266,14 @@ CMake</h2>
 <div class="line"> </div>
 <div class="line">add_subdirectory(3rd_party/tetl/include EXCLUDE_FROM_ALL)</div>
 <div class="line">target_link_libraries(${YOUR_TARGET} tetl::etl)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md22"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md23"></a>
 PlatformIO</h2>
 <p>Add <code>tetl</code> as a git submodule, then add these lines to your <code>platformio.ini</code>:</p>
 <div class="fragment"><div class="line">; Most Arduino code does not compile unless you have GNU extensions enabled.</div>
 <div class="line">[env:yourenv]</div>
 <div class="line">build_unflags = -std=gnu++11</div>
 <div class="line">build_flags = -std=gnu++20 -Wno-register -I 3rd_party/tetl/include</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md23"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md24"></a>
 Header Overview</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -485,9 +485,9 @@ Header Overview</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter"><a href="#warning">warning</a>   </td><td class="markdownTableBodyCenter">Utility   </td><td class="markdownTableBodyCenter"><b>Yes</b>   </td><td class="markdownTableBodyCenter">Non-standard   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Header Detail</h1>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 algorithm</h2>
 <ul>
 <li><b>Library:</b> Algorithms</li>
@@ -500,7 +500,7 @@ algorithm</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 array</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -512,7 +512,7 @@ array</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 bit</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -524,7 +524,7 @@ bit</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 bitset</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -536,7 +536,7 @@ bitset</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 cassert</h2>
 <ul>
 <li><b>Library:</b> Utility / Error Handling</li>
@@ -548,7 +548,7 @@ cassert</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md30"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 cctype</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -560,7 +560,7 @@ cctype</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 cfloat</h2>
 <ul>
 <li><b>Library:</b> Utility / Numeric Limits</li>
@@ -572,7 +572,7 @@ cfloat</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md32"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 charconv</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -584,7 +584,7 @@ charconv</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md34"></a>
 chrono</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -596,7 +596,7 @@ chrono</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 climits</h2>
 <ul>
 <li><b>Library:</b> Utility / Numeric Limits</li>
@@ -608,7 +608,7 @@ climits</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 cmath</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -620,7 +620,7 @@ cmath</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 compare</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -632,7 +632,7 @@ compare</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md37"></a>
+<h2><a class="anchor" id="autotoc_md38"></a>
 complex</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -644,7 +644,7 @@ complex</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md38"></a>
+<h2><a class="anchor" id="autotoc_md39"></a>
 concepts</h2>
 <ul>
 <li><b>Library:</b> Concepts</li>
@@ -656,7 +656,7 @@ concepts</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md40"></a>
 cstddef</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -668,7 +668,7 @@ cstddef</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 cstdint</h2>
 <ul>
 <li><b>Library:</b> Utility / Numeric Limits</li>
@@ -680,7 +680,7 @@ cstdint</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md41"></a>
+<h2><a class="anchor" id="autotoc_md42"></a>
 cstdio</h2>
 <ul>
 <li><b>Library:</b> Input/Output</li>
@@ -692,7 +692,7 @@ cstdio</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md42"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 cstdlib</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -704,7 +704,7 @@ cstdlib</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md43"></a>
+<h2><a class="anchor" id="autotoc_md44"></a>
 cstring</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -716,7 +716,7 @@ cstring</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md44"></a>
+<h2><a class="anchor" id="autotoc_md45"></a>
 ctime</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -728,7 +728,7 @@ ctime</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md45"></a>
+<h2><a class="anchor" id="autotoc_md46"></a>
 cwchar</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -740,7 +740,7 @@ cwchar</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 cwctype</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -752,7 +752,7 @@ cwctype</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 exception</h2>
 <ul>
 <li><b>Library:</b> Error handling</li>
@@ -764,7 +764,7 @@ exception</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 expected</h2>
 <ul>
 <li><b>Library:</b> Utility / Error Handling</li>
@@ -776,7 +776,7 @@ expected</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 flat_set</h2>
 <ul>
 <li><b>Library:</b> Container</li>
@@ -788,7 +788,7 @@ flat_set</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 flat_map</h2>
 <ul>
 <li><b>Library:</b> Container</li>
@@ -800,7 +800,7 @@ flat_map</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md51"></a>
+<h2><a class="anchor" id="autotoc_md52"></a>
 format</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -812,7 +812,7 @@ format</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md53"></a>
 functional</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -824,7 +824,7 @@ functional</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md53"></a>
+<h2><a class="anchor" id="autotoc_md54"></a>
 ios</h2>
 <ul>
 <li><b>Library:</b> Input/Output</li>
@@ -836,7 +836,7 @@ ios</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md55"></a>
 iterator</h2>
 <ul>
 <li><b>Library:</b> Iterator</li>
@@ -848,7 +848,7 @@ iterator</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md55"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 limits</h2>
 <ul>
 <li><b>Library:</b> Utility / Numeric Limits</li>
@@ -860,7 +860,7 @@ limits</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 linalg</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -872,7 +872,7 @@ linalg</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md58"></a>
 mdspan</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -884,7 +884,7 @@ mdspan</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<h2><a class="anchor" id="autotoc_md59"></a>
 memory</h2>
 <ul>
 <li><b>Library:</b> Utility / Dynamic Memory</li>
@@ -896,7 +896,7 @@ memory</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md59"></a>
+<h2><a class="anchor" id="autotoc_md60"></a>
 mutex</h2>
 <ul>
 <li><b>Library:</b> Thread</li>
@@ -908,7 +908,7 @@ mutex</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md61"></a>
 new</h2>
 <ul>
 <li><b>Library:</b> Utility / Dynamic Memory</li>
@@ -921,7 +921,7 @@ new</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md62"></a>
 numbers</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -933,7 +933,7 @@ numbers</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md63"></a>
 numeric</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -946,7 +946,7 @@ numeric</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 optional</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -958,7 +958,7 @@ optional</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 random</h2>
 <ul>
 <li><b>Library:</b> Random Number</li>
@@ -970,7 +970,7 @@ random</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 ranges</h2>
 <ul>
 <li><b>Library:</b> Ranges</li>
@@ -982,7 +982,7 @@ ranges</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 ratio</h2>
 <ul>
 <li><b>Library:</b> Numeric</li>
@@ -994,7 +994,7 @@ ratio</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 scope</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1008,7 +1008,7 @@ scope</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 source_location</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1020,7 +1020,7 @@ source_location</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 set</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -1034,7 +1034,7 @@ set</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 span</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -1042,7 +1042,7 @@ span</h2>
 <li><b>Example:</b> TODO</li>
 <li><b>Implementation Progress:</b> <a href="https://docs.google.com/spreadsheets/d/1-qwa7tFnjFdgY9XKBy2fAsDozAfG8lXsJXHwA_ITQqM/edit#gid=1750377555">span</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md72"></a>
 stack</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -1054,7 +1054,7 @@ stack</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md72"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 stdexcept</h2>
 <ul>
 <li><b>Library:</b> Error handling</li>
@@ -1066,7 +1066,7 @@ stdexcept</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md73"></a>
+<h2><a class="anchor" id="autotoc_md74"></a>
 string</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -1079,7 +1079,7 @@ string</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md74"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 string_view</h2>
 <ul>
 <li><b>Library:</b> Strings</li>
@@ -1092,7 +1092,7 @@ string_view</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md75"></a>
+<h2><a class="anchor" id="autotoc_md76"></a>
 system_error</h2>
 <ul>
 <li><b>Library:</b> Utility / Error Handling</li>
@@ -1104,7 +1104,7 @@ system_error</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md77"></a>
 tuple</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1116,7 +1116,7 @@ tuple</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md77"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 type_traits</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1128,7 +1128,7 @@ type_traits</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md79"></a>
 utility</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1140,7 +1140,7 @@ utility</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md80"></a>
 variant</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1152,7 +1152,7 @@ variant</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 vector</h2>
 <ul>
 <li><b>Library:</b> Containers</li>
@@ -1167,7 +1167,7 @@ vector</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md81"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 version</h2>
 <ul>
 <li><b>Library:</b> Utility</li>
@@ -1202,7 +1202,7 @@ version</h2>
 <div class="ttc" id="a__config_2version_8hpp_html_a61af8202ae33b372df8807b2da1142d8"><div class="ttname"><a href="__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8">TETL_VERSION_STRING</a></div><div class="ttdeci">#define TETL_VERSION_STRING</div><div class="ttdoc">The library version as a string literal.</div><div class="ttdef"><b>Definition:</b> version.hpp:19</div></div>
 <div class="ttc" id="anamespaceetl_html_afb1c600f9a9722bf7bef4af93af1d5ca"><div class="ttname"><a href="namespaceetl.html#afb1c600f9a9722bf7bef4af93af1d5ca">etl::current_standard</a></div><div class="ttdeci">constexpr auto current_standard</div><div class="ttdoc">The currently configured C++ standard.</div><div class="ttdef"><b>Definition:</b> language_standard.hpp:61</div></div>
 <div class="ttc" id="aversion_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md82"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md83"></a>
 warning</h2>
 <ul>
 <li><b>Library:</b> Utility</li>

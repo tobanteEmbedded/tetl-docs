@@ -98,22 +98,25 @@ $(document).ready(function(){initNavTree('bool__constant_8hpp_source.html',''); 
 <div class="contents">
 <a href="bool__constant_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">integral_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integral__constant_8hpp.html">etl/_type_traits/integral_constant.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> B&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa19ff9e7939158584698cee4260e4471">   11</a></span>&#160;<span class="keyword">using</span> bool_constant = <a class="code" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<span class="keywordtype">bool</span>, B&gt;;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa19ff9e7939158584698cee4260e4471">   11</a></span>&#160;<span class="keyword">using</span> <a class="code" href="structetl_1_1integral__constant.html">bool_constant</a> = <a class="code" href="structetl_1_1integral__constant.html">integral_constant&lt;bool, B&gt;</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa107a29afbb5288d6dceb9fae86b07b8">   13</a></span>&#160;<span class="keyword">using</span> true_type  = bool_constant&lt;<span class="keyword">true</span>&gt;;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">   14</a></span>&#160;<span class="keyword">using</span> false_type = bool_constant&lt;<span class="keyword">false</span>&gt;;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa107a29afbb5288d6dceb9fae86b07b8">   13</a></span>&#160;<span class="keyword">using</span> <a class="code" href="structetl_1_1integral__constant.html">true_type</a>  = <a class="code" href="structetl_1_1integral__constant.html">bool_constant&lt;true&gt;</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a466dc202e27dec8fa05a9fcc6ef47e27">   14</a></span>&#160;<span class="keyword">using</span> <a class="code" href="structetl_1_1integral__constant.html">false_type</a> = <a class="code" href="structetl_1_1integral__constant.html">bool_constant&lt;false&gt;</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_BOOL_CONSTANT_HPP</span></div>
+<div class="ttc" id="aintegral__constant_8hpp_html"><div class="ttname"><a href="integral__constant_8hpp.html">integral_constant.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

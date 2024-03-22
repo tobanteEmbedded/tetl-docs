@@ -116,13 +116,13 @@ $(document).ready(function(){initNavTree('binomial__coef_8hpp_source.html',''); 
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_binomial_coef_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_binomial_coef_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_binomial_coef_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_binomial_coef_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace</span> internal {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> binomial_coef_recur(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) <span class="keyword">noexcept</span> -&gt; T</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;constexpr <span class="keyword">auto</span> binomial_coef_recur(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) noexcept -&gt; T</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> (                           <span class="comment">// edge cases</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        (k == T(0) || n == k) ? T(1) : <span class="comment">// deals with 0 choose 0 case</span></div>
@@ -133,48 +133,40 @@ $(document).ready(function(){initNavTree('binomial__coef_8hpp_source.html',''); 
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    );</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> etl::enable_if&lt;etl::is_integral&lt;T&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> binomial_coef_check(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) <span class="keyword">noexcept</span> -&gt; T</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T, typename etl::enable_if&lt;etl::is_integral&lt;T&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;constexpr <span class="keyword">auto</span> binomial_coef_check(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) noexcept -&gt; T</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> binomial_coef_recur(n, k);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> etl::enable_if&lt;!etl::is_integral&lt;T&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> binomial_coef_check(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) <span class="keyword">noexcept</span> -&gt; T</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T, typename etl::enable_if&lt;!etl::is_integral&lt;T&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;constexpr <span class="keyword">auto</span> binomial_coef_check(T <span class="keyword">const</span> n, T <span class="keyword">const</span> k) noexcept -&gt; T</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// NaN check; removed due to MSVC problems; template not being</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             <span class="comment">// ignored in &lt;int&gt; cases (is_nan(n) || is_nan(k)) ?</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             <span class="comment">// etl::numeric_limits&lt;T&gt;::quiet_NaN() :</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;             <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static_cast</span>&lt;T&gt;(binomial_coef_recur(<span class="keyword">static_cast</span>&lt;ullint_t&gt;(n), <span class="keyword">static_cast</span>&lt;ullint_t&gt;(k)))</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(binomial_coef_recur(<span class="keyword">static_cast&lt;</span>ullint_t<span class="keyword">&gt;</span>(n), <span class="keyword">static_cast&lt;</span>ullint_t<span class="keyword">&gt;</span>(k)))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    );</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> TC = common_t&lt;T1, T2&gt;&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> binomial_coef_type_check(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) <span class="keyword">noexcept</span> -&gt; TC</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;constexpr <span class="keyword">auto</span> binomial_coef_type_check(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) noexcept -&gt; TC</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> binomial_coef_check(<span class="keyword">static_cast</span>&lt;TC&gt;(n), <span class="keyword">static_cast</span>&lt;TC&gt;(k));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> binomial_coef_check(<span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(n), <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(k));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * Compile-time binomial coefficient</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @param n integral-valued input.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @param k integral-valued input.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * @return computes the Binomial coefficient</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * \f[ \binom{n}{k} = \frac{n!}{k!(n-k)!} \f]</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * also known as &#39;\c n choose \c k &#39;.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">   74</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">binomial_coef</a>(<span class="keyword">const</span> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">T1</a> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">n</a>, <span class="keyword">const</span> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">T2</a> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">k</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">common_t</a>&lt;<a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">T1</a>, <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">T2</a>&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">   74</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">binomial_coef</a>(<span class="keyword">const</span> T1 n, <span class="keyword">const</span> T2 k) noexcept -&gt; common_t&lt;T1, T2&gt;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> internal::binomial_coef_type_check(n, k);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abinomial__coef_8hpp_html_ad011ad5b5f6ee4799dabdc81148741b6"><div class="ttname"><a href="binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6">binomial_coef</a></div><div class="ttdeci">constexpr auto binomial_coef(const T1 n, const T2 k) noexcept -&gt; common_t&lt; T1, T2 &gt;</div><div class="ttdef"><b>Definition:</b> binomial_coef.hpp:74</div></div>
+<div class="ttc" id="anamespaceetl_html_a51c15a5d5f4ab487941035d024cad9d7"><div class="ttname"><a href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">etl::value</a></div><div class="ttdeci">char const Int &amp; value</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

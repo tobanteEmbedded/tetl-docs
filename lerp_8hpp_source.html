@@ -98,38 +98,39 @@ $(document).ready(function(){initNavTree('lerp_8hpp_source.html',''); initResiza
 <div class="contents">
 <a href="lerp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CMATH_LERP_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CMATH_LERP_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CMATH_LERP_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CMATH_LERP_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">floating_point</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="floating__point_8hpp.html">etl/_concepts/floating_point.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Computes a+t(b−a), i.e. the linear interpolation between a and b for</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// the parameter t (or extrapolation, when t is outside the range [0,1]).</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// https://en.cppreference.com/w/cpp/numeric/lerp</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;floating_point Float&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac6bb19442837ee1b2540b722ce1c342e">   15</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac6bb19442837ee1b2540b722ce1c342e">lerp</a>(Float a, Float b, Float t) <span class="keyword">noexcept</span> -&gt; Float</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> Float&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac6bb19442837ee1b2540b722ce1c342e">   15</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ac6bb19442837ee1b2540b722ce1c342e">lerp</a>(Float a, Float <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, Float t) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; Float</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> ((a &lt;= 0 &amp;&amp; b &gt;= 0) || (a &gt;= 0 &amp;&amp; b &lt;= 0)) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> t * b + (1 - t) * a;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> ((a &lt;= 0 &amp;&amp; b &gt;= 0) || (a &gt;= 0 &amp;&amp; <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> &lt;= 0)) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> t * <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> + (1 - t) * a;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (t == 1) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> b;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> x = a + t * (b - a);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> ((t &gt; 1) == (b &gt; a)) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> b &lt; x ? x : b;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> x = a + t * (<a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> - a);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> ((t &gt; 1) == (<a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> &gt; a)) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> &lt; x ? x : <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> x &lt; b ? x : b;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> x &lt; <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> ? x : <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CMATH_LERP_HPP</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CMATH_LERP_HPP</span></div>
+<div class="ttc" id="afloating__point_8hpp_html"><div class="ttname"><a href="floating__point_8hpp.html">floating_point.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a18b6c2ea4f13089ede1a42514f87e6c6"><div class="ttname"><a href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">etl::b</a></div><div class="ttdeci">T const  &amp; b</div><div class="ttdef"><b>Definition:</b> incrementable_traits.hpp:39</div></div>
+<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html_ac6bb19442837ee1b2540b722ce1c342e"><div class="ttname"><a href="namespaceetl.html#ac6bb19442837ee1b2540b722ce1c342e">etl::lerp</a></div><div class="ttdeci">constexpr auto lerp(Float a, Float b, Float t) noexcept -&gt; Float</div><div class="ttdoc">Computes a+t(b−a), i.e. the linear interpolation between a and b for the parameter t (or extrapolatio...</div><div class="ttdef"><b>Definition:</b> lerp.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

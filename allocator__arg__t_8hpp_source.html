@@ -98,25 +98,24 @@ $(document).ready(function(){initNavTree('allocator__arg__t_8hpp_source.html',''
 <div class="contents">
 <a href="allocator__arg__t_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/// \brief allocator_arg_t is an empty class type used to disambiguate the</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/// overloads of constructors and member functions of allocator-aware objects.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1allocator__arg__t.html">   10</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1allocator__arg__t.html">allocator_arg_t</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structetl_1_1allocator__arg__t.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1allocator__arg__t.html">allocator_arg_t</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2">   11</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2">allocator_arg_t</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// \brief allocator_arg is a constant of type allocator_arg_t used to</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// disambiguate, at call site, the overloads of the constructors and member</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// functions of allocator-aware objects.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a74fea0e76b0257b8f9ffbca0b6de6aaa">   17</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code" href="structetl_1_1allocator__arg__t.html">allocator_arg_t</a> <a class="code" href="namespaceetl.html#a74fea0e76b0257b8f9ffbca0b6de6aaa">allocator_arg</a><a class="code" href="structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2">{</a><a class="code" href="structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2">}</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a74fea0e76b0257b8f9ffbca0b6de6aaa">   17</a></span>&#160;<span class="keyword">inline</span> constexpr <a class="code" href="structetl_1_1allocator__arg__t.html">allocator_arg_t</a> <a class="code" href="namespaceetl.html#a74fea0e76b0257b8f9ffbca0b6de6aaa">allocator_arg</a>{};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_ALLOCATOR_ARG_T_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a74fea0e76b0257b8f9ffbca0b6de6aaa"><div class="ttname"><a href="namespaceetl.html#a74fea0e76b0257b8f9ffbca0b6de6aaa">etl::allocator_arg</a></div><div class="ttdeci">constexpr allocator_arg_t allocator_arg</div><div class="ttdoc">allocator_arg is a constant of type allocator_arg_t used to disambiguate, at call site,...</div><div class="ttdef"><b>Definition:</b> allocator_arg_t.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1allocator__arg__t_html"><div class="ttname"><a href="structetl_1_1allocator__arg__t.html">etl::allocator_arg_t</a></div><div class="ttdoc">allocator_arg_t is an empty class type used to disambiguate the overloads of constructors and member ...</div><div class="ttdef"><b>Definition:</b> allocator_arg_t.hpp:10</div></div>
+<div class="ttc" id="astructetl_1_1allocator__arg__t_html_ab3b07137269f563edca4edaa9ac5eec2"><div class="ttname"><a href="structetl_1_1allocator__arg__t.html#ab3b07137269f563edca4edaa9ac5eec2">etl::allocator_arg_t::allocator_arg_t</a></div><div class="ttdeci">allocator_arg_t()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

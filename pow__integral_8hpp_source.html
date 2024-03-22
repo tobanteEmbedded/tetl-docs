@@ -120,88 +120,92 @@ $(document).ready(function(){initNavTree('pow__integral_8hpp_source.html',''); i
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * compile-time power function</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_pow_integral_HPP</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_pow_integral_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef GCEM_pow_integral_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define GCEM_pow_integral_HPP</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace</span> internal {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_compute(T1 base, T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_compute(T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, T2 expTerm) noexcept -&gt; T1;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// integral-valued powers using method described in</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// https://en.wikipedia.org/wiki/Exponentiation_by_squaring</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_compute_recur(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T1 val, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_compute_recur(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> (</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        expTerm &gt; T2(1) ? (is_odd(expTerm) ? pow_integral_compute_recur(base * base, val * base, expTerm / 2)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                           : pow_integral_compute_recur(base * base, val, expTerm / 2))</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        : (expTerm == T2(1) ? val * base : val)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        expTerm &gt; T2(1) ? (is_odd(expTerm) ? pow_integral_compute_recur(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, expTerm / 2)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                           : pow_integral_compute_recur(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>, expTerm / 2))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        : (expTerm == T2(1) ? <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> : <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    );</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> etl::enable_if&lt;etl::is_signed&lt;T2&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_sgn_check(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T1, typename T2, typename etl::enable_if&lt;etl::is_signed&lt;T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_sgn_check(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> (</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        expTerm &lt; T2(0) ? <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            T1(1) / pow_integral_compute(base, -expTerm)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            T1(1) / pow_integral_compute(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, -expTerm)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        :</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        <span class="comment">//</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            pow_integral_compute_recur(base, T1(1), expTerm)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            pow_integral_compute_recur(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, T1(1), expTerm)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    );</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> etl::enable_if&lt;!etl::is_signed&lt;T2&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_sgn_check(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T1, typename T2, typename etl::enable_if&lt;!etl::is_signed&lt;T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_sgn_check(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> (pow_integral_compute_recur(base, T1(1), expTerm));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> (pow_integral_compute_recur(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, T1(1), expTerm));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_compute(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_compute(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> (</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        expTerm == T2(3)   ? base * base * base</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : expTerm == T2(2) ? base * base</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        : expTerm == T2(1) ? base</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        expTerm == T2(3)   ? <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : expTerm == T2(2) ? <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a> * <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        : expTerm == T2(1) ? <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        : expTerm == T2(0) ? T1(1)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                           :</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                           <span class="comment">// check for overflow</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            expTerm == etl::numeric_limits&lt;T2&gt;::min() ? T1(0)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        : expTerm == etl::numeric_limits&lt;T2&gt;::max()   ? etl::numeric_limits&lt;T1&gt;::infinity()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            expTerm == <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T2&gt;::min</a>() ? T1(0)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        : expTerm == <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T2&gt;::max</a>()   ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T1&gt;::infinity</a>()</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                      :</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                    <span class="comment">// else</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            pow_integral_sgn_check(base, expTerm)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            pow_integral_sgn_check(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, expTerm)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    );</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> etl::enable_if&lt;etl::is_integral&lt;T2&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_type_check(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T1, typename T2, typename etl::enable_if&lt;etl::is_integral&lt;T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_type_check(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> pow_integral_compute(base, expTerm);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> pow_integral_compute(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, expTerm);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> etl::enable_if&lt;!etl::is_integral&lt;T2&gt;::value&gt;::type* = <span class="keywordtype">nullptr</span>&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral_type_check(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">template &lt;typename T1, typename T2, typename etl::enable_if&lt;!etl::is_integral&lt;T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;constexpr <span class="keyword">auto</span> pow_integral_type_check(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// return etl::numeric_limits&lt;return_t&lt;T1&gt;&gt;::quiet_NaN();</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> pow_integral_compute(base, <span class="keyword">static_cast</span>&lt;llint_t&gt;(expTerm));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> pow_integral_compute(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">static_cast&lt;</span>llint_t<span class="keyword">&gt;</span>(expTerm));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// main function</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> pow_integral(<span class="keyword">const</span> T1 base, <span class="keyword">const</span> T2 expTerm) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;constexpr <span class="keyword">auto</span> pow_integral(<span class="keyword">const</span> T1 <a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, <span class="keyword">const</span> T2 expTerm) noexcept -&gt; T1</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> internal::pow_integral_type_check(base, expTerm);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> internal::pow_integral_type_check(<a class="code" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a>, expTerm);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespaceetl_html_a299d1930276b590319d37b6b2afa6724"><div class="ttname"><a href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">etl::base</a></div><div class="ttdeci">char T int base</div><div class="ttdef"><b>Definition:</b> to_chars.hpp:36</div></div>
+<div class="ttc" id="anamespaceetl_html_a51c15a5d5f4ab487941035d024cad9d7"><div class="ttname"><a href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">etl::value</a></div><div class="ttdeci">char const Int &amp; value</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
+<div class="ttc" id="anamespaceetl_html_aa2a7c3cbcd306c97b268134f54e90d2d"><div class="ttname"><a href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">etl::val</a></div><div class="ttdeci">char T val</div><div class="ttdef"><b>Definition:</b> to_chars.hpp:36</div></div>
+<div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -116,19 +116,11 @@ $(document).ready(function(){initNavTree('sgn_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_sgn_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_sgn_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_sgn_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_sgn_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * Compile-time sign function</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @param x a real-valued input</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @return a value \f$ y \f$ such that \f[ y = \begin{cases} 1 \ &amp;\text{ if } x</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * &gt; 0 \\ 0 \ &amp;\text{ if } x = 0 \\ -1 \ &amp;\text{ if } x &lt; 0 \end{cases} \f]</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="sgn_8hpp.html#a2d1c354640836f90c93cf33ac025b866">   33</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="sgn_8hpp.html#a2d1c354640836f90c93cf33ac025b866">sgn</a>(T <span class="keyword">const</span> x) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="sgn_8hpp.html#a2d1c354640836f90c93cf33ac025b866">   33</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="sgn_8hpp.html#a2d1c354640836f90c93cf33ac025b866">sgn</a>(T <span class="keyword">const</span> x) noexcept -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// positive</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        x &gt; T(0) ? 1 :</div>
@@ -140,7 +132,8 @@ $(document).ready(function(){initNavTree('sgn_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    );</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="asgn_8hpp_html_a2d1c354640836f90c93cf33ac025b866"><div class="ttname"><a href="sgn_8hpp.html#a2d1c354640836f90c93cf33ac025b866">sgn</a></div><div class="ttdeci">constexpr auto sgn(T const x) noexcept -&gt; int</div><div class="ttdef"><b>Definition:</b> sgn.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

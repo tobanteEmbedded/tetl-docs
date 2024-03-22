@@ -116,47 +116,43 @@ $(document).ready(function(){initNavTree('__3rd__party_2gcem_2gcem__incl_2fmod_8
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_fmod_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_fmod_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_fmod_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_fmod_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace</span> internal {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> fmod_check(T <span class="keyword">const</span> x, T <span class="keyword">const</span> y) <span class="keyword">noexcept</span> -&gt; T</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;constexpr <span class="keyword">auto</span> fmod_check(T <span class="keyword">const</span> x, T <span class="keyword">const</span> <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) noexcept -&gt; T</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// NaN check</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        any_nan(x, y) ? etl::numeric_limits&lt;T&gt;::quiet_NaN() :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        any_nan(x, <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::quiet_NaN</a>() :</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                      <span class="comment">// +/- infinite</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            !all_finite(x, y) ? etl::numeric_limits&lt;T&gt;::quiet_NaN()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            !all_finite(x, <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T&gt;::quiet_NaN</a>()</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                              :</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                              <span class="comment">// else</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            x - trunc(x / y) * y</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            x - <a class="code" href="__3rd__party_2gcem_2gcem__incl_2trunc_8hpp.html#af78a9b11274f6bb96c4b4f18538eda49">trunc</a>(x / <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) * <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    );</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2, <span class="keyword">typename</span> TC = common_return_t&lt;T1, T2&gt;&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> fmod_type_check(<span class="keyword">const</span> T1 x, <span class="keyword">const</span> T2 y) <span class="keyword">noexcept</span> -&gt; TC</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;constexpr <span class="keyword">auto</span> fmod_type_check(<span class="keyword">const</span> T1 x, <span class="keyword">const</span> T2 <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) noexcept -&gt; TC</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> fmod_check(<span class="keyword">static_cast</span>&lt;TC&gt;(x), <span class="keyword">static_cast</span>&lt;TC&gt;(y));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> fmod_check(<span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(x), <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(<a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * Compile-time remainder of division function</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @param x a real-valued input.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @param y a real-valued input.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * @return computes the floating-point remainder of \f$ x / y \f$ (rounded</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * towards zero) using \f[ \text{fmod}(x,y) = x - \text{trunc}(x/y) \times y \f]</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">   56</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">fmod</a>(<span class="keyword">const</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">T1</a> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">x</a>, <span class="keyword">const</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">T2</a> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">y</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">common_return_t</a>&lt;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">T1</a>, <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">T2</a>&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">   56</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">fmod</a>(<span class="keyword">const</span> T1 x, <span class="keyword">const</span> T2 <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>) noexcept -&gt; common_return_t&lt;T1, T2&gt;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> internal::fmod_type_check(x, y);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> internal::fmod_type_check(x, <a class="code" href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">y</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2fmod_8hpp_html_a7d73d4123811d6fb54617aaf09a1d480"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html#a7d73d4123811d6fb54617aaf09a1d480">fmod</a></div><div class="ttdeci">constexpr auto fmod(const T1 x, const T2 y) noexcept -&gt; common_return_t&lt; T1, T2 &gt;</div><div class="ttdef"><b>Definition:</b> fmod.hpp:56</div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2trunc_8hpp_html_af78a9b11274f6bb96c4b4f18538eda49"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2trunc_8hpp.html#af78a9b11274f6bb96c4b4f18538eda49">trunc</a></div><div class="ttdeci">constexpr auto trunc(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> trunc.hpp:59</div></div>
+<div class="ttc" id="anamespaceetl_1_1linalg_html_a65df64219cd333470f53cc173f64b7cd"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a65df64219cd333470f53cc173f64b7cd">etl::linalg::y</a></div><div class="ttdeci">InObj2 y</div><div class="ttdef"><b>Definition:</b> blas1_add.hpp:13</div></div>
+<div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

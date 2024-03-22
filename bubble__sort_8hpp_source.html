@@ -98,38 +98,42 @@ $(document).ready(function(){initNavTree('bubble__sort_8hpp_source.html',''); in
 <div class="contents">
 <a href="bubble__sort_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_algorithm</span><span class="preprocessor">/</span><span class="preprocessor">iter_swap</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iter__swap_8hpp.html">etl/_algorithm/iter_swap.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="less_8hpp.html">etl/_functional/less.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Sorts the elements in the range `[first, last)` in non-descending</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// order. The order of equal elements is guaranteed to be preserved.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// https://en.wikipedia.org/wiki/Bubble_sort</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">   15</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a>(RandomIt first, RandomIt last, Compare comp) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">   15</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a>(RandomIt first, RandomIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = first; i != last; ++i) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = first; i != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>; ++i) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> j = first; j &lt; i; ++j) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (comp(*i, *j)) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                iter_swap(i, j);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <a class="code" href="namespaceetl.html#aa18b878794474881fce640e7a163abf3">iter_swap</a>(i, j);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae">   27</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae">bubble_sort</a>(RandomIt first, RandomIt last) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae">   27</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a>(RandomIt first, RandomIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    bubble_sort(first, last, <a class="code" href="structetl_1_1less.html">less</a>{});</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="code" href="structetl_1_1less.html">less</a>{});</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_BUBBLE_SORT_HPP</span></div>
+<div class="ttc" id="aiter__swap_8hpp_html"><div class="ttname"><a href="iter__swap_8hpp.html">iter_swap.hpp</a></div></div>
+<div class="ttc" id="aless_8hpp_html"><div class="ttname"><a href="less_8hpp.html">less.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a46270726b5073fd6eeefb5ccd9ed1f72"><div class="ttname"><a href="namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72">etl::bubble_sort</a></div><div class="ttdeci">constexpr auto bubble_sort(RandomIt first, RandomIt last, Compare comp) -&gt; void</div><div class="ttdoc">Sorts the elements in the range [first, last) in non-descending order. The order of equal elements is...</div><div class="ttdef"><b>Definition:</b> bubble_sort.hpp:15</div></div>
+<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
+<div class="ttc" id="anamespaceetl_html_aa18b878794474881fce640e7a163abf3"><div class="ttname"><a href="namespaceetl.html#aa18b878794474881fce640e7a163abf3">etl::iter_swap</a></div><div class="ttdeci">constexpr auto iter_swap(ForwardIt1 a, ForwardIt2 b) -&gt; void</div><div class="ttdoc">Swaps the values of the elements the given iterators are pointing to.</div><div class="ttdef"><b>Definition:</b> iter_swap.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1less_html"><div class="ttname"><a href="structetl_1_1less.html">etl::less</a></div><div class="ttdoc">Function object for performing comparisons. Unless specialised, invokes operator&lt; on type T....</div><div class="ttdef"><b>Definition:</b> less.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

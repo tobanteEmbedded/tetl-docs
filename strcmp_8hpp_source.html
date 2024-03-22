@@ -98,24 +98,24 @@ $(document).ready(function(){initNavTree('strcmp_8hpp_source.html',''); initResi
 <div class="contents">
 <a href="strcmp_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CSTRING_STRCMP_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CSTRING_STRCMP_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CSTRING_STRCMP_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CSTRING_STRCMP_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_strings</span><span class="preprocessor">/</span><span class="preprocessor">cstr_algorithm</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// \brief Compares the C string lhs to the C string rhs.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// \details This function starts comparing the first character of each string.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// If they are equal to each other, it continues with the following pairs until</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// the characters differ or until a terminating null-character is reached.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2b99355fef2ddb6740fbda691efe5591">   16</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a2b99355fef2ddb6740fbda691efe5591">strcmp</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* lhs, <span class="keywordtype">char</span> <span class="keyword">const</span>* rhs) -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> detail::strcmp_impl&lt;<span class="keywordtype">char</span>&gt;(lhs, rhs); }</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2b99355fef2ddb6740fbda691efe5591">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a2b99355fef2ddb6740fbda691efe5591">strcmp</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* rhs) -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> detail::strcmp_impl&lt;char&gt;(<a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, rhs); }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CSTRING_STRCMP_HPP</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_STRCMP_HPP</span></div>
+<div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a2b99355fef2ddb6740fbda691efe5591"><div class="ttname"><a href="namespaceetl.html#a2b99355fef2ddb6740fbda691efe5591">etl::strcmp</a></div><div class="ttdeci">constexpr auto strcmp(char const *lhs, char const *rhs) -&gt; int</div><div class="ttdoc">Compares the C string lhs to the C string rhs.</div><div class="ttdef"><b>Definition:</b> strcmp.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_a90533d8a4222a3a68dfc34fcd9b9e3a1"><div class="ttname"><a href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">etl::lhs</a></div><div class="ttdeci">C &amp; lhs</div><div class="ttdef"><b>Definition:</b> stack.hpp:178</div></div>
+<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

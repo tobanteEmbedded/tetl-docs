@@ -120,46 +120,40 @@ $(document).ready(function(){initNavTree('lmgamma_8hpp_source.html',''); initRes
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * log multivariate gamma function</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_lmgamma_HPP</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_lmgamma_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef GCEM_lmgamma_HPP</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define GCEM_lmgamma_HPP</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace</span> internal {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// see https://en.wikipedia.org/wiki/Multivariate_gamma_function</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> lmgamma_recur(<span class="keyword">const</span> T1 a, <span class="keyword">const</span> T2 p) <span class="keyword">noexcept</span> -&gt; T1</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;constexpr <span class="keyword">auto</span> lmgamma_recur(<span class="keyword">const</span> T1 a, <span class="keyword">const</span> T2 p) noexcept -&gt; T1</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> ( <span class="comment">// NaN check</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        is_nan(a) ? etl::numeric_limits&lt;T1&gt;::quiet_NaN() :</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        is_nan(a) ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T1&gt;::quiet_NaN</a>() :</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                  <span class="comment">//</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            p == T2(1) ? lgamma(a)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : p &lt; T2(1)    ? etl::numeric_limits&lt;T1&gt;::quiet_NaN()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            p == T2(1) ? <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(a)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : p &lt; T2(1)    ? <a class="code" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;T1&gt;::quiet_NaN</a>()</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       :</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="comment">// else</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            T1(GCEM_LOG_PI) * (p - T1(1)) / T1(2) + lgamma(a) + lmgamma_recur(a - T1(0.5), p - T2(1))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            T1(<a class="code" href="gcem__options_8hpp.html#af92c2b70f60cdf1cd7351fe01a2b6a6a">GCEM_LOG_PI</a>) * (p - T1(1)) / T1(2) + <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(a) + lmgamma_recur(a - T1(0.5), p - T2(1))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    );</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * Compile-time log multivariate gamma function</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * @param a a real-valued input.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * @param p integral-valued input.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @return computes log-multivariate gamma function via recursion</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * \f[ \Gamma_p(a) = \pi^{(p-1)/2} \Gamma(a) \Gamma_{p-1}(a-0.5) \f]</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * where \f$ \Gamma_1(a) = \Gamma(a) \f$.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">   59</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">lmgamma</a>(<span class="keyword">const</span> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">T1</a> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">a</a>, <span class="keyword">const</span> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">T2</a> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">p</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">return_t</a>&lt;<a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">T1</a>&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">   59</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">lmgamma</a>(<span class="keyword">const</span> T1 a, <span class="keyword">const</span> T2 p) noexcept -&gt; return_t&lt;T1&gt;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> internal::lmgamma_recur(<span class="keyword">static_cast</span>&lt;return_t&lt;T1&gt;&gt;(a), p);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> internal::lmgamma_recur(<span class="keyword">static_cast&lt;</span>return_t&lt;T1&gt;<span class="keyword">&gt;</span>(a), p);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp_html_a14a513449fbcbd357c584be73eff1189"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a></div><div class="ttdeci">constexpr auto lgamma(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> lgamma.hpp:113</div></div>
+<div class="ttc" id="agcem__options_8hpp_html_af92c2b70f60cdf1cd7351fe01a2b6a6a"><div class="ttname"><a href="gcem__options_8hpp.html#af92c2b70f60cdf1cd7351fe01a2b6a6a">GCEM_LOG_PI</a></div><div class="ttdeci">#define GCEM_LOG_PI</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:73</div></div>
+<div class="ttc" id="almgamma_8hpp_html_a0563cb70eaabf0161e3e1457bab08433"><div class="ttname"><a href="lmgamma_8hpp.html#a0563cb70eaabf0161e3e1457bab08433">lmgamma</a></div><div class="ttdeci">constexpr auto lmgamma(const T1 a, const T2 p) noexcept -&gt; return_t&lt; T1 &gt;</div><div class="ttdef"><b>Definition:</b> lmgamma.hpp:59</div></div>
+<div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition:</b> numeric_limits.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

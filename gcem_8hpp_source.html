@@ -116,109 +116,169 @@ $(document).ready(function(){initNavTree('gcem_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__GNUC__</span><span class="preprocessor">)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">GCC</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">push</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">GCC</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">ignored</span> <span class="stringliteral">&quot;-Wfloat-equal&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(__GNUC__)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    #pragma GCC diagnostic push</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    #pragma GCC diagnostic ignored &quot;-Wfloat-equal&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">clang</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">push</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">clang</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">ignored</span> <span class="stringliteral">&quot;-Wimplicit-int-float-conversion&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    #pragma clang diagnostic push</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    #pragma clang diagnostic ignored &quot;-Wimplicit-int-float-conversion&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/gcem_options.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gcem__options_8hpp.html">gcem_incl/gcem_options.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// clang-format off</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceetl.html">   38</a></span>&#160;<span class="keyword">namespace</span> etl::detail::<a class="code" href="namespaceetl.html">gcem</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/quadrature/gauss_legendre_50.hpp&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceetl.html">   38</a></span>&#160;<span class="keyword">namespace </span>etl::detail::gcem {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="gauss__legendre__50_8hpp.html">gcem_incl/quadrature/gauss_legendre_50.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/is_inf.hpp&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/is_nan.hpp&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/is_finite.hpp&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="is__inf_8hpp.html">gcem_incl/is_inf.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="is__nan_8hpp.html">gcem_incl/is_nan.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="is__finite_8hpp.html">gcem_incl/is_finite.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/abs.hpp&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/ceil.hpp&quot;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/floor.hpp&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/trunc.hpp&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/is_odd.hpp&quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/is_even.hpp&quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/max.hpp&quot;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/min.hpp&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/sqrt.hpp&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html">gcem_incl/abs.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2ceil_8hpp.html">gcem_incl/ceil.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2floor_8hpp.html">gcem_incl/floor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2trunc_8hpp.html">gcem_incl/trunc.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="is__odd_8hpp.html">gcem_incl/is_odd.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="is__even_8hpp.html">gcem_incl/is_even.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2max_8hpp.html">gcem_incl/max.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2min_8hpp.html">gcem_incl/min.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2sqrt_8hpp.html">gcem_incl/sqrt.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/signbit.hpp&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/copysign.hpp&quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/neg_zero.hpp&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/sgn.hpp&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2signbit_8hpp.html">gcem_incl/signbit.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2copysign_8hpp.html">gcem_incl/copysign.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="neg__zero_8hpp.html">gcem_incl/neg_zero.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="sgn_8hpp.html">gcem_incl/sgn.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/find_exponent.hpp&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/find_fraction.hpp&quot;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/find_whole.hpp&quot;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/mantissa.hpp&quot;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/round.hpp&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/fmod.hpp&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="find__exponent_8hpp.html">gcem_incl/find_exponent.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="find__fraction_8hpp.html">gcem_incl/find_fraction.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="find__whole_8hpp.html">gcem_incl/find_whole.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="mantissa_8hpp.html">gcem_incl/mantissa.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2round_8hpp.html">gcem_incl/round.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html">gcem_incl/fmod.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/pow_integral.hpp&quot;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/exp.hpp&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/expm1.hpp&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/log.hpp&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/log1p.hpp&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/log2.hpp&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/pow.hpp&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="pow__integral_8hpp.html">gcem_incl/pow_integral.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html">gcem_incl/exp.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="expm1_8hpp.html">gcem_incl/expm1.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2log_8hpp.html">gcem_incl/log.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2log1p_8hpp.html">gcem_incl/log1p.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2log2_8hpp.html">gcem_incl/log2.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2pow_8hpp.html">gcem_incl/pow.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/gcd.hpp&quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/lcm.hpp&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2gcd_8hpp.html">gcem_incl/gcd.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lcm_8hpp.html">gcem_incl/lcm.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/tan.hpp&quot;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/cos.hpp&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/sin.hpp&quot;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2tan_8hpp.html">gcem_incl/tan.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2cos_8hpp.html">gcem_incl/cos.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2sin_8hpp.html">gcem_incl/sin.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/atan.hpp&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/atan2.hpp&quot;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/acos.hpp&quot;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/asin.hpp&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2atan_8hpp.html">gcem_incl/atan.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2atan2_8hpp.html">gcem_incl/atan2.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2acos_8hpp.html">gcem_incl/acos.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2asin_8hpp.html">gcem_incl/asin.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/tanh.hpp&quot;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/cosh.hpp&quot;</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/sinh.hpp&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2tanh_8hpp.html">gcem_incl/tanh.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2cosh_8hpp.html">gcem_incl/cosh.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html">gcem_incl/sinh.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/atanh.hpp&quot;</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/acosh.hpp&quot;</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/asinh.hpp&quot;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2atanh_8hpp.html">gcem_incl/atanh.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2acosh_8hpp.html">gcem_incl/acosh.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2asinh_8hpp.html">gcem_incl/asinh.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/binomial_coef.hpp&quot;</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/lgamma.hpp&quot;</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/tgamma.hpp&quot;</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/factorial.hpp&quot;</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/lbeta.hpp&quot;</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/beta.hpp&quot;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/lmgamma.hpp&quot;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/log_binomial_coef.hpp&quot;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="binomial__coef_8hpp.html">gcem_incl/binomial_coef.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html">gcem_incl/lgamma.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2tgamma_8hpp.html">gcem_incl/tgamma.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="factorial_8hpp.html">gcem_incl/factorial.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="lbeta_8hpp.html">gcem_incl/lbeta.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2beta_8hpp.html">gcem_incl/beta.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="lmgamma_8hpp.html">gcem_incl/lmgamma.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="log__binomial__coef_8hpp.html">gcem_incl/log_binomial_coef.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/erf.hpp&quot;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/erf_inv.hpp&quot;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/incomplete_beta.hpp&quot;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/incomplete_beta_inv.hpp&quot;</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/incomplete_gamma.hpp&quot;</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="stringliteral">&quot;gcem_incl/incomplete_gamma_inv.hpp&quot;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="__3rd__party_2gcem_2gcem__incl_2erf_8hpp.html">gcem_incl/erf.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="erf__inv_8hpp.html">gcem_incl/erf_inv.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="incomplete__beta_8hpp.html">gcem_incl/incomplete_beta.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="incomplete__beta__inv_8hpp.html">gcem_incl/incomplete_beta_inv.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="incomplete__gamma_8hpp.html">gcem_incl/incomplete_gamma.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="incomplete__gamma__inv_8hpp.html">gcem_incl/incomplete_gamma_inv.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace etl::detail::gcem</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// clang-format on</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__GNUC__</span><span class="preprocessor">)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">GCC</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">pop</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if defined(__GNUC__)</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">    #pragma GCC diagnostic pop</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">defined</span><span class="preprocessor">(</span><span class="preprocessor">__clang__</span><span class="preprocessor">)</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="preprocessor">#</span><span class="preprocessor">pragma</span> <span class="preprocessor">clang</span> <span class="preprocessor">diagnostic</span> <span class="preprocessor">pop</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">    #pragma clang diagnostic pop</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2abs_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2abs_8hpp.html">abs.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2acos_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2acos_8hpp.html">acos.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2acosh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2acosh_8hpp.html">acosh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2asin_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2asin_8hpp.html">asin.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2asinh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2asinh_8hpp.html">asinh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2atan2_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2atan2_8hpp.html">atan2.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2atan_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2atan_8hpp.html">atan.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2atanh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2atanh_8hpp.html">atanh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2beta_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2beta_8hpp.html">beta.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2ceil_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2ceil_8hpp.html">ceil.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2copysign_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2copysign_8hpp.html">copysign.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2cos_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2cos_8hpp.html">cos.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2cosh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2cosh_8hpp.html">cosh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2erf_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2erf_8hpp.html">erf.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2exp_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2exp_8hpp.html">exp.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2floor_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2floor_8hpp.html">floor.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2fmod_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2fmod_8hpp.html">fmod.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2gcd_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2gcd_8hpp.html">gcd.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lcm_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lcm_8hpp.html">lcm.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html">lgamma.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2log1p_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2log1p_8hpp.html">log1p.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2log2_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2log2_8hpp.html">log2.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2log_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2log_8hpp.html">log.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2max_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2max_8hpp.html">max.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2min_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2min_8hpp.html">min.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2pow_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2pow_8hpp.html">pow.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2round_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2round_8hpp.html">round.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2signbit_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2signbit_8hpp.html">signbit.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2sin_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2sin_8hpp.html">sin.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2sinh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2sinh_8hpp.html">sinh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2sqrt_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2sqrt_8hpp.html">sqrt.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2tan_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2tan_8hpp.html">tan.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2tanh_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2tanh_8hpp.html">tanh.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2tgamma_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2tgamma_8hpp.html">tgamma.hpp</a></div></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2trunc_8hpp_html"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2trunc_8hpp.html">trunc.hpp</a></div></div>
+<div class="ttc" id="abinomial__coef_8hpp_html"><div class="ttname"><a href="binomial__coef_8hpp.html">binomial_coef.hpp</a></div></div>
+<div class="ttc" id="aerf__inv_8hpp_html"><div class="ttname"><a href="erf__inv_8hpp.html">erf_inv.hpp</a></div></div>
+<div class="ttc" id="aexpm1_8hpp_html"><div class="ttname"><a href="expm1_8hpp.html">expm1.hpp</a></div></div>
+<div class="ttc" id="afactorial_8hpp_html"><div class="ttname"><a href="factorial_8hpp.html">factorial.hpp</a></div></div>
+<div class="ttc" id="afind__exponent_8hpp_html"><div class="ttname"><a href="find__exponent_8hpp.html">find_exponent.hpp</a></div></div>
+<div class="ttc" id="afind__fraction_8hpp_html"><div class="ttname"><a href="find__fraction_8hpp.html">find_fraction.hpp</a></div></div>
+<div class="ttc" id="afind__whole_8hpp_html"><div class="ttname"><a href="find__whole_8hpp.html">find_whole.hpp</a></div></div>
+<div class="ttc" id="agauss__legendre__50_8hpp_html"><div class="ttname"><a href="gauss__legendre__50_8hpp.html">gauss_legendre_50.hpp</a></div></div>
+<div class="ttc" id="agcem__options_8hpp_html"><div class="ttname"><a href="gcem__options_8hpp.html">gcem_options.hpp</a></div></div>
+<div class="ttc" id="aincomplete__beta_8hpp_html"><div class="ttname"><a href="incomplete__beta_8hpp.html">incomplete_beta.hpp</a></div></div>
+<div class="ttc" id="aincomplete__beta__inv_8hpp_html"><div class="ttname"><a href="incomplete__beta__inv_8hpp.html">incomplete_beta_inv.hpp</a></div></div>
+<div class="ttc" id="aincomplete__gamma_8hpp_html"><div class="ttname"><a href="incomplete__gamma_8hpp.html">incomplete_gamma.hpp</a></div></div>
+<div class="ttc" id="aincomplete__gamma__inv_8hpp_html"><div class="ttname"><a href="incomplete__gamma__inv_8hpp.html">incomplete_gamma_inv.hpp</a></div></div>
+<div class="ttc" id="ais__even_8hpp_html"><div class="ttname"><a href="is__even_8hpp.html">is_even.hpp</a></div></div>
+<div class="ttc" id="ais__finite_8hpp_html"><div class="ttname"><a href="is__finite_8hpp.html">is_finite.hpp</a></div></div>
+<div class="ttc" id="ais__inf_8hpp_html"><div class="ttname"><a href="is__inf_8hpp.html">is_inf.hpp</a></div></div>
+<div class="ttc" id="ais__nan_8hpp_html"><div class="ttname"><a href="is__nan_8hpp.html">is_nan.hpp</a></div></div>
+<div class="ttc" id="ais__odd_8hpp_html"><div class="ttname"><a href="is__odd_8hpp.html">is_odd.hpp</a></div></div>
+<div class="ttc" id="albeta_8hpp_html"><div class="ttname"><a href="lbeta_8hpp.html">lbeta.hpp</a></div></div>
+<div class="ttc" id="almgamma_8hpp_html"><div class="ttname"><a href="lmgamma_8hpp.html">lmgamma.hpp</a></div></div>
+<div class="ttc" id="alog__binomial__coef_8hpp_html"><div class="ttname"><a href="log__binomial__coef_8hpp.html">log_binomial_coef.hpp</a></div></div>
+<div class="ttc" id="amantissa_8hpp_html"><div class="ttname"><a href="mantissa_8hpp.html">mantissa.hpp</a></div></div>
+<div class="ttc" id="aneg__zero_8hpp_html"><div class="ttname"><a href="neg__zero_8hpp.html">neg_zero.hpp</a></div></div>
+<div class="ttc" id="apow__integral_8hpp_html"><div class="ttname"><a href="pow__integral_8hpp.html">pow_integral.hpp</a></div></div>
+<div class="ttc" id="asgn_8hpp_html"><div class="ttname"><a href="sgn_8hpp.html">sgn.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

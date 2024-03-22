@@ -98,74 +98,83 @@ $(document).ready(function(){initNavTree('minmax__element_8hpp_source.html','');
 <div class="contents">
 <a href="minmax__element_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_functional</span><span class="preprocessor">/</span><span class="preprocessor">less</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">iterator_traits</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">pair</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="less_8hpp.html">etl/_functional/less.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iterator__traits_8hpp.html">etl/_iterator/iterator_traits.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pair_8hpp.html">etl/_utility/pair.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \brief Finds the smallest and greatest element in the range `[first, last)`.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> Compare&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">   14</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">minmax_element</a>(ForwardIt first, ForwardIt last, Compare comp) -&gt; <a class="code" href="structetl_1_1pair.html">pair</a>&lt;ForwardIt, ForwardIt&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">   14</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">minmax_element</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;ForwardIt, ForwardIt&gt;</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> min = first;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> max = first;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = first;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a> = first;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (first == last || ++first == last) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> {min, max};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (first == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a> || ++first == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> {<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>, <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a>};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (comp(*first, *min)) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        min = first;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (comp(*first, *<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>)) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = first;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        max = first;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a> = first;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">while</span> (++first != last) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">while</span> (++first != <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">auto</span> i = first;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (++first == last) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (comp(*i, *min)) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                min = i;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(comp(*i, *max))) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                max = i;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (++first == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (comp(*i, *<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>)) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = i;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(comp(*i, *<a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a>))) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a> = i;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (comp(*first, *i)) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (comp(*first, *min)) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                min = first;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (comp(*first, *<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>)) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = first;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (!(comp(*i, *max))) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                max = i;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (!(comp(*i, *<a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a>))) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a> = i;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (comp(*i, *min)) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                min = i;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (comp(*i, *<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>)) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a> = i;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (!(comp(*first, *max))) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                max = first;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (!(comp(*first, *<a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a>))) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a> = first;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> {min, max};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="namespaceetl.html#adae1500815312b248e453896d5439b63">min</a>, <a class="code" href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">max</a>};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/// \brief Finds the smallest and greatest element in the range `[first, last)`.</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3442eebc68bb878d66ab8a37478ff679">   62</a></span>&#160;[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3442eebc68bb878d66ab8a37478ff679">minmax_element</a>(ForwardIt first, ForwardIt last) -&gt; <a class="code" href="structetl_1_1pair.html">pair</a>&lt;ForwardIt, ForwardIt&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3442eebc68bb878d66ab8a37478ff679">   62</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">minmax_element</a>(ForwardIt first, ForwardIt <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; <a class="code" href="structetl_1_1pair.html">pair&lt;ForwardIt, ForwardIt&gt;</a></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt;ForwardIt&gt;::value_type;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> minmax_element(first, last, <a class="code" href="structetl_1_1less.html">less</a>&lt;value_type&gt;());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> <a class="code" href="structetl_1_1iterator__traits.html">iterator_traits&lt;ForwardIt&gt;::value_type</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">minmax_element</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, <a class="code" href="structetl_1_1less.html">less&lt;value_type&gt;</a>());</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_MINMAX_ELEMENT_HPP</span></div>
+<div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
+<div class="ttc" id="aless_8hpp_html"><div class="ttname"><a href="less_8hpp.html">less.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a5d5911bdc109e2c7265b7486da04e8b8"><div class="ttname"><a href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">etl::last</a></div><div class="ttdeci">char const  * last</div><div class="ttdef"><b>Definition:</b> from_chars.hpp:34</div></div>
+<div class="ttc" id="anamespaceetl_html_a7fdd0cf88f36f44f8fe8ec8327cfac74"><div class="ttname"><a href="namespaceetl.html#a7fdd0cf88f36f44f8fe8ec8327cfac74">etl::max</a></div><div class="ttdeci">constexpr auto max(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the greater of a and b.</div><div class="ttdef"><b>Definition:</b> max.hpp:10</div></div>
+<div class="ttc" id="anamespaceetl_html_adae1500815312b248e453896d5439b63"><div class="ttname"><a href="namespaceetl.html#adae1500815312b248e453896d5439b63">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b.</div><div class="ttdef"><b>Definition:</b> min.hpp:10</div></div>
+<div class="ttc" id="anamespaceetl_html_adf3573e5fccf8f6ff5d8636e23b1ffa0"><div class="ttname"><a href="namespaceetl.html#adf3573e5fccf8f6ff5d8636e23b1ffa0">etl::minmax_element</a></div><div class="ttdeci">constexpr auto minmax_element(ForwardIt first, ForwardIt last, Compare comp) -&gt; pair&lt; ForwardIt, ForwardIt &gt;</div><div class="ttdoc">Finds the smallest and greatest element in the range [first, last).</div><div class="ttdef"><b>Definition:</b> minmax_element.hpp:14</div></div>
+<div class="ttc" id="apair_8hpp_html"><div class="ttname"><a href="pair_8hpp.html">pair.hpp</a></div></div>
+<div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition:</b> iterator_traits.hpp:47</div></div>
+<div class="ttc" id="astructetl_1_1less_html"><div class="ttname"><a href="structetl_1_1less.html">etl::less</a></div><div class="ttdoc">Function object for performing comparisons. Unless specialised, invokes operator&lt; on type T....</div><div class="ttdef"><b>Definition:</b> less.hpp:14</div></div>
+<div class="ttc" id="astructetl_1_1pair_html"><div class="ttname"><a href="structetl_1_1pair.html">etl::pair</a></div><div class="ttdoc">etl::pair is a class template that provides a way to store two heterogeneous objects as a single unit...</div><div class="ttdef"><b>Definition:</b> pair.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

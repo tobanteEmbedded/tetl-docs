@@ -98,25 +98,27 @@ $(document).ready(function(){initNavTree('is__clock_8hpp_source.html',''); initR
 <div class="contents">
 <a href="is__clock_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CHRONO_IS_CLOCK_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CHRONO_IS_CLOCK_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CHRONO_IS_CLOCK_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CHRONO_IS_CLOCK_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">bool_constant</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool__constant_8hpp.html">etl/_type_traits/bool_constant.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl::<a class="code" href="namespaceetl_1_1chrono.html">chrono</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1chrono.html">etl::chrono</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief If T satisfies the Clock requirements, provides the member</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">///        constant value equal true. For any other type, value is false.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// \details https://en.cppreference.com/w/cpp/chrono/is_clock</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1chrono_1_1is__clock.html">   14</a></span>&#160;<span class="keyword">struct</span> <a class="code" href="structetl_1_1chrono_1_1is__clock.html">is_clock</a> : etl::false_type { };</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1chrono_1_1is__clock.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1chrono_1_1is__clock.html">is_clock</a> : <a class="code" href="structetl_1_1integral__constant.html">etl::false_type</a> { };</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">T</a>&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">   17</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">is_clock_v</a> = <a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">is_clock</a>&lt;<a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">T</a>&gt;::<a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">value</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">   17</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">is_clock_v</a> = <a class="code" href="structetl_1_1chrono_1_1is__clock.html">is_clock&lt;T&gt;::value</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace etl::chrono</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CHRONO_IS_CLOCK_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CHRONO_IS_CLOCK_HPP</span></div>
+<div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_1_1chrono_html"><div class="ttname"><a href="namespaceetl_1_1chrono.html">etl::chrono</a></div><div class="ttdef"><b>Definition:</b> abs.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_1_1chrono_html_a3dafebdcf9bd358d04910f790ee16a94"><div class="ttname"><a href="namespaceetl_1_1chrono.html#a3dafebdcf9bd358d04910f790ee16a94">etl::chrono::is_clock_v</a></div><div class="ttdeci">constexpr bool is_clock_v</div><div class="ttdef"><b>Definition:</b> is_clock.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1chrono_1_1is__clock_html"><div class="ttname"><a href="structetl_1_1chrono_1_1is__clock.html">etl::chrono::is_clock</a></div><div class="ttdoc">If T satisfies the Clock requirements, provides the member constant value equal true....</div><div class="ttdef"><b>Definition:</b> is_clock.hpp:14</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> integral_constant.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

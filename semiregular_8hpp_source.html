@@ -98,20 +98,24 @@ $(document).ready(function(){initNavTree('semiregular_8hpp_source.html',''); ini
 <div class="contents">
 <a href="semiregular_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">copyable</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_concepts</span><span class="preprocessor">/</span><span class="preprocessor">default_initializable</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="copyable_8hpp.html">etl/_concepts/copyable.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="default__initializable_8hpp.html">etl/_concepts/default_initializable.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">T</a>&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">   12</a></span>&#160;<span class="keyword">concept</span> <a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">semiregular</a> = <a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">etl</a>::<a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">copyable</a>&lt;<a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">T</a>&gt; <span class="keyword">and</span> <a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">etl</a>::<a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">default_initializable</a>&lt;<a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">T</a>&gt;;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">   12</a></span>&#160;concept <a class="code" href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">semiregular</a> = etl::copyable&lt;T&gt; and etl::default_initializable&lt;T&gt;;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_SEMIREGULAR_HPP</span></div>
+<div class="ttc" id="acopyable_8hpp_html"><div class="ttname"><a href="copyable_8hpp.html">copyable.hpp</a></div></div>
+<div class="ttc" id="adefault__initializable_8hpp_html"><div class="ttname"><a href="default__initializable_8hpp.html">default_initializable.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a2fd176827c6247549c03a4dd19731a01"><div class="ttname"><a href="namespaceetl.html#a2fd176827c6247549c03a4dd19731a01">etl::semiregular</a></div><div class="ttdeci">concept semiregular</div><div class="ttdef"><b>Definition:</b> semiregular.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

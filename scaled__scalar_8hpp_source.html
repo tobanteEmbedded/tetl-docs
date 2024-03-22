@@ -98,30 +98,30 @@ $(document).ready(function(){initNavTree('scaled__scalar_8hpp_source.html',''); 
 <div class="contents">
 <a href="scaled__scalar_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_LINALG_SCALED_SCALAR_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_LINALG_SCALED_SCALAR_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_LINALG_SCALED_SCALAR_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_LINALG_SCALED_SCALAR_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_linalg</span><span class="preprocessor">/</span><span class="preprocessor">proxy_reference</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_type_traits</span><span class="preprocessor">/</span><span class="preprocessor">declval</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="proxy__reference_8hpp.html">etl/_linalg/proxy_reference.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="declval_8hpp.html">etl/_type_traits/declval.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace</span> etl::<a class="code" href="namespaceetl_1_1linalg.html">linalg</a>::detail {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>etl::linalg::detail {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScalingFactor, <span class="keyword">typename</span> ReferenceValue&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">concept</span> scalable = <span class="keyword">requires</span> { declval&lt;ScalingFactor&gt;() * declval&lt;ReferenceValue&gt;(); };</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;concept scalable = <a class="code" href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">requires</a> { declval&lt;ScalingFactor&gt;() * declval&lt;ReferenceValue&gt;(); };</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScalingFactor, <span class="keyword">typename</span> Reference, <span class="keyword">typename</span> ReferenceValue&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">requires</span>(scalable&lt;ScalingFactor, ReferenceValue&gt;)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct</span> scaled_scalar</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">requires</a>(scalable&lt;ScalingFactor, ReferenceValue&gt;)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span>scaled_scalar</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    : proxy_reference&lt;Reference, ReferenceValue, scaled_scalar&lt;ScalingFactor, Reference, ReferenceValue&gt;&gt; {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">decltype</span>(declval&lt;ScalingFactor&gt;() * ReferenceValue(declval&lt;Reference&gt;()));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">using</span> value_type = decltype(declval&lt;ScalingFactor&gt;() * ReferenceValue(declval&lt;Reference&gt;()));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> scaled_scalar(ScalingFactor <span class="keyword">const</span>&amp; scalingFactor, Reference <span class="keyword">const</span>&amp; reference)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    constexpr <span class="keyword">explicit</span> scaled_scalar(ScalingFactor <span class="keyword">const</span>&amp; scalingFactor, Reference <span class="keyword">const</span>&amp; reference)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        : proxy_reference&lt;Reference, ReferenceValue, scaled_scalar&lt;ScalingFactor, Reference, ReferenceValue&gt;&gt;{reference}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        , _scalingFactor{scalingFactor}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> to_value(Reference reference) <span class="keyword">const</span> -&gt; value_type</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    [[nodiscard]] constexpr <span class="keyword">auto</span> to_value(Reference reference) <span class="keyword">const</span> -&gt; value_type</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> _scalingFactor * ReferenceValue(reference);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
@@ -132,7 +132,10 @@ $(document).ready(function(){initNavTree('scaled__scalar_8hpp_source.html',''); 
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace etl::linalg::detail</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_LINALG_SCALED_SCALAR_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_SCALED_SCALAR_HPP</span></div>
+<div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_1_1linalg_html_a06fc87cb0b9090727f9f86cb6438c515"><div class="ttname"><a href="namespaceetl_1_1linalg.html#a06fc87cb0b9090727f9f86cb6438c515">etl::linalg::requires</a></div><div class="ttdeci">requires(is_copy_constructible_v&lt; typename Accessor::reference &gt;) struct accessor_scaled</div><div class="ttdef"><b>Definition:</b> accessor_scaled.hpp:13</div></div>
+<div class="ttc" id="aproxy__reference_8hpp_html"><div class="ttname"><a href="proxy__reference_8hpp.html">proxy_reference.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -116,27 +116,19 @@ $(document).ready(function(){initNavTree('lbeta_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  ##</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ################################################################################*/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">GCEM_lbeta_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">GCEM_lbeta_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef GCEM_lbeta_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define GCEM_lbeta_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * Compile-time log-beta function</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @param a a real-valued input.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @param b a real-valued input.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @return the log-beta function using \f[ \ln \text{B}(\alpha,\beta) := \ln</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * \int_0^1 t^{\alpha - 1} (1-t)^{\beta - 1} dt = \ln \Gamma(\alpha) + \ln</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * \Gamma(\beta) - \ln \Gamma(\alpha + \beta) \f] where \f$ \Gamma \f$ denotes</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * the gamma function.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">   36</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">lbeta</a>(<span class="keyword">const</span> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">T1</a> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">a</a>, <span class="keyword">const</span> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">T2</a> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">b</a>) <span class="keyword">noexcept</span> -&gt; <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">common_return_t</a>&lt;<a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">T1</a>, <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">T2</a>&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">   36</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">lbeta</a>(<span class="keyword">const</span> T1 a, <span class="keyword">const</span> T2 <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>) noexcept -&gt; common_return_t&lt;T1, T2&gt;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> ((lgamma(a) + lgamma(b)) - lgamma(a + b));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> ((<a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(a) + <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(<a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>)) - <a class="code" href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a>(a + <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp_html_a14a513449fbcbd357c584be73eff1189"><div class="ttname"><a href="__3rd__party_2gcem_2gcem__incl_2lgamma_8hpp.html#a14a513449fbcbd357c584be73eff1189">lgamma</a></div><div class="ttdeci">constexpr auto lgamma(T const x) noexcept -&gt; return_t&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> lgamma.hpp:113</div></div>
+<div class="ttc" id="albeta_8hpp_html_a7da1281cfd1eb918553171261ac6e224"><div class="ttname"><a href="lbeta_8hpp.html#a7da1281cfd1eb918553171261ac6e224">lbeta</a></div><div class="ttdeci">constexpr auto lbeta(const T1 a, const T2 b) noexcept -&gt; common_return_t&lt; T1, T2 &gt;</div><div class="ttdef"><b>Definition:</b> lbeta.hpp:36</div></div>
+<div class="ttc" id="anamespaceetl_html_a18b6c2ea4f13089ede1a42514f87e6c6"><div class="ttname"><a href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">etl::b</a></div><div class="ttdeci">T const  &amp; b</div><div class="ttdef"><b>Definition:</b> incrementable_traits.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

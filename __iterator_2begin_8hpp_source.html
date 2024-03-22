@@ -98,48 +98,46 @@ $(document).ready(function(){initNavTree('__iterator_2begin_8hpp_source.html',''
 <div class="contents">
 <a href="__iterator_2begin_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_BEGIN_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_BEGIN_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_ITERATOR_BEGIN_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_BEGIN_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace</span> etl {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// \brief Returns an iterator to the beginning of the given container c or</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/// array array. These templates rely on `C::begin()` having a reasonable</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// implementation. Returns exactly c.begin(), which is typically an iterator to</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// the beginning of the sequence represented by c. If C is a standard</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/// Container, this returns `C::iterator` when c is not const-qualified, and</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/// `C::const_iterator` otherwise. Custom overloads of begin may be provided for</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/// classes that do not expose a suitable begin() member function, yet can be</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/// iterated.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">   19</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(C&amp; c) -&gt; <span class="keyword">decltype</span>(c.begin())</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(C&amp; c) -&gt; decltype(c.begin())</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> c.begin();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a62a601a1d87c13d9bcf1d4b0e2cf6c1c">   25</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a62a601a1d87c13d9bcf1d4b0e2cf6c1c">begin</a>(C <span class="keyword">const</span>&amp; c) -&gt; <span class="keyword">decltype</span>(c.begin())</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#a62a601a1d87c13d9bcf1d4b0e2cf6c1c">   25</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(C <span class="keyword">const</span>&amp; c) -&gt; decltype(c.begin())</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> c.begin();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::size_t N&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab0330eb79a39a00af31e79ece021f90f">   31</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ab0330eb79a39a00af31e79ece021f90f">begin</a>(T (&amp;array)[N]) <span class="keyword">noexcept</span> -&gt; T*</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab0330eb79a39a00af31e79ece021f90f">   31</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(T (&amp;<a class="code" href="structetl_1_1array.html">array</a>)[N]) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T*</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> &amp;array[0];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="structetl_1_1array.html">array</a>[0];</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">   37</a></span>&#160;<span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">cbegin</a>(C <span class="keyword">const</span>&amp; c) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">begin</a>(<a class="code" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">c</a>))) -&gt; <span class="keyword">decltype</span>(begin(c))</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">   37</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">cbegin</a>(C <span class="keyword">const</span>&amp; c) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(c))) -&gt; decltype(<a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(c))</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> begin(c);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>(c);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_BEGIN_HPP</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_BEGIN_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html_a085b23b10e801da02c5711b10f67141e"><div class="ttname"><a href="namespaceetl.html#a085b23b10e801da02c5711b10f67141e">etl::cbegin</a></div><div class="ttdeci">constexpr auto cbegin(C const &amp;c) noexcept(noexcept(begin(c))) -&gt; decltype(begin(c))</div><div class="ttdef"><b>Definition:</b> begin.hpp:37</div></div>
+<div class="ttc" id="anamespaceetl_html_a3031e070c39546444bdd5fda57ead3d2"><div class="ttname"><a href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition:</b> begin.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
+<div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
+<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">array is a container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition:</b> array.hpp:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
