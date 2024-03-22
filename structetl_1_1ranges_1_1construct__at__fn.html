@@ -97,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99581d893173d0a2959d59d2d9102e68"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a99581d893173d0a2959d59d2d9102e68"><td class="memTemplItemLeft" align="right" valign="top">requires&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1construct__at__fn.html#a99581d893173d0a2959d59d2d9102e68">requires</a> (void *ptr, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a99581d893173d0a2959d59d2d9102e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6952bc63a8a5d8e3a6327640c47cc5"><td class="memItemLeft" align="right" valign="top">constexpr T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1construct__at__fn.html#a1f6952bc63a8a5d8e3a6327640c47cc5">operator()</a> (T *p, Args &amp;&amp;... args) const</td></tr>
-<tr class="separator:a1f6952bc63a8a5d8e3a6327640c47cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bea55265923ebb4fb7a6d0ba0c01f6d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1construct__at__fn.html#a0bea55265923ebb4fb7a6d0ba0c01f6d">operator()</a> (T *p, Args &amp;&amp;... args) const -&gt; T *</td></tr>
+<tr class="separator:a0bea55265923ebb4fb7a6d0ba0c01f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99581d893173d0a2959d59d2d9102e68"></a>
@@ -139,8 +139,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a1f6952bc63a8a5d8e3a6327640c47cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6952bc63a8a5d8e3a6327640c47cc5">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a0bea55265923ebb4fb7a6d0ba0c01f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bea55265923ebb4fb7a6d0ba0c01f6d">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T* etl::ranges::construct_at_fn::operator() </td>
+          <td class="memname">constexpr auto etl::ranges::construct_at_fn::operator() </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -163,7 +163,8 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const -&gt; T*
+    </td>
         </tr>
       </table>
   </td>
