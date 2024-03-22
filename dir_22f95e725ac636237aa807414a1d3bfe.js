@@ -11,7 +11,9 @@ var dir_22f95e725ac636237aa807414a1d3bfe =
       [ "variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4" ]
     ] ],
     [ "variant.hpp", "__variant_2variant_8hpp.html", "__variant_2variant_8hpp" ],
-    [ "variant2.hpp", "variant2_8hpp.html", "variant2_8hpp" ],
+    [ "variant2.hpp", "variant2_8hpp.html", [
+      [ "variant2", "structetl_1_1variant2.html", "structetl_1_1variant2" ]
+    ] ],
     [ "variant_alternative.hpp", "variant__alternative_8hpp.html", "variant__alternative_8hpp" ],
     [ "variant_fwd.hpp", "variant__fwd_8hpp.html", "variant__fwd_8hpp" ],
     [ "variant_size.hpp", "variant__size_8hpp.html", "variant__size_8hpp" ],

@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('structetl_1_1variant2.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#related">Related Functions</a> &#124;
 <a href="structetl_1_1variant2-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">etl::variant2&lt; Ts &gt; Struct Template Reference</div>  </div>
@@ -118,19 +119,53 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade0a8a98de7a4e4aab9db59c04c5115a"><td class="memItemLeft" align="right" valign="top">constexpr ~<a class="el" href="structetl_1_1variant2.html">variant2</a>() <a class="el" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(... and etl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#ade0a8a98de7a4e4aab9db59c04c5115a">~variant2</a> ()</td></tr>
 <tr class="separator:ade0a8a98de7a4e4aab9db59c04c5115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae43716c06cc7326977643eb2dec03e4c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">index</a> () const <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a></td></tr>
+<tr class="memdesc:ae43716c06cc7326977643eb2dec03e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the zero-based index of the alternative that is currently held by the variant.  <a href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">More...</a><br /></td></tr>
 <tr class="separator:ae43716c06cc7326977643eb2dec03e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548e3b093ad1fcaed57a1e63c765a186"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I&gt; </td></tr>
 <tr class="memitem:a548e3b093ad1fcaed57a1e63c765a186"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#a548e3b093ad1fcaed57a1e63c765a186">operator[]</a> (<a class="el" href="namespaceetl.html#adee9f2213a709e3392d4d998d2a406f2">etl::index_constant</a>&lt; I &gt; <a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">index</a>) &amp;-&gt; auto &amp;</td></tr>
+<tr class="memdesc:a548e3b093ad1fcaed57a1e63c765a186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#a548e3b093ad1fcaed57a1e63c765a186">More...</a><br /></td></tr>
 <tr class="separator:a548e3b093ad1fcaed57a1e63c765a186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf17cd8bd9bcb46f5532af8c8ca26e37"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I&gt; </td></tr>
 <tr class="memitem:adf17cd8bd9bcb46f5532af8c8ca26e37"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#adf17cd8bd9bcb46f5532af8c8ca26e37">operator[]</a> (<a class="el" href="namespaceetl.html#adee9f2213a709e3392d4d998d2a406f2">etl::index_constant</a>&lt; I &gt; <a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">index</a>) const &amp;-&gt; auto const &amp;</td></tr>
+<tr class="memdesc:adf17cd8bd9bcb46f5532af8c8ca26e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#adf17cd8bd9bcb46f5532af8c8ca26e37">More...</a><br /></td></tr>
 <tr class="separator:adf17cd8bd9bcb46f5532af8c8ca26e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec703552f46dc775836be36e905b177f"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I&gt; </td></tr>
 <tr class="memitem:aec703552f46dc775836be36e905b177f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#aec703552f46dc775836be36e905b177f">operator[]</a> (<a class="el" href="namespaceetl.html#adee9f2213a709e3392d4d998d2a406f2">etl::index_constant</a>&lt; I &gt; <a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">index</a>) &amp;&amp;-&gt; auto &amp;&amp;</td></tr>
+<tr class="memdesc:aec703552f46dc775836be36e905b177f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#aec703552f46dc775836be36e905b177f">More...</a><br /></td></tr>
 <tr class="separator:aec703552f46dc775836be36e905b177f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e0251ca9bf8da1c0416fcb7ef49c4e9"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I&gt; </td></tr>
 <tr class="memitem:a7e0251ca9bf8da1c0416fcb7ef49c4e9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#a7e0251ca9bf8da1c0416fcb7ef49c4e9">operator[]</a> (<a class="el" href="namespaceetl.html#adee9f2213a709e3392d4d998d2a406f2">etl::index_constant</a>&lt; I &gt; <a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c">index</a>) const &amp;&amp;-&gt; auto const &amp;&amp;</td></tr>
+<tr class="memdesc:a7e0251ca9bf8da1c0416fcb7ef49c4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#a7e0251ca9bf8da1c0416fcb7ef49c4e9">More...</a><br /></td></tr>
 <tr class="separator:a7e0251ca9bf8da1c0416fcb7ef49c4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="related"></a>
+Related Functions</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
+</td></tr>
+<tr class="memitem:a78ab593d0e7f5e1e82da5a98d921d487"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:a78ab593d0e7f5e1e82da5a98d921d487"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#a78ab593d0e7f5e1e82da5a98d921d487">unchecked_get</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; &amp;v) -&gt; auto &amp;</td></tr>
+<tr class="memdesc:a78ab593d0e7f5e1e82da5a98d921d487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#a78ab593d0e7f5e1e82da5a98d921d487">More...</a><br /></td></tr>
+<tr class="separator:a78ab593d0e7f5e1e82da5a98d921d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff941f61a7e71248259c33337096242"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:abff941f61a7e71248259c33337096242"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#abff941f61a7e71248259c33337096242">unchecked_get</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const &amp;v) -&gt; auto const &amp;</td></tr>
+<tr class="memdesc:abff941f61a7e71248259c33337096242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#abff941f61a7e71248259c33337096242">More...</a><br /></td></tr>
+<tr class="separator:abff941f61a7e71248259c33337096242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab304b469a80b085a06f00b3500925f1"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:aab304b469a80b085a06f00b3500925f1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#aab304b469a80b085a06f00b3500925f1">unchecked_get</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; &amp;&amp;v) -&gt; auto &amp;&amp;</td></tr>
+<tr class="memdesc:aab304b469a80b085a06f00b3500925f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#aab304b469a80b085a06f00b3500925f1">More...</a><br /></td></tr>
+<tr class="separator:aab304b469a80b085a06f00b3500925f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac24a4d3cd8d624ac5ff2bc055f2e85"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:abac24a4d3cd8d624ac5ff2bc055f2e85"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#abac24a4d3cd8d624ac5ff2bc055f2e85">unchecked_get</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const &amp;&amp;v) -&gt; auto const &amp;&amp;</td></tr>
+<tr class="memdesc:abac24a4d3cd8d624ac5ff2bc055f2e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the object stored in the variant.  <a href="structetl_1_1variant2.html#abac24a4d3cd8d624ac5ff2bc055f2e85">More...</a><br /></td></tr>
+<tr class="separator:abac24a4d3cd8d624ac5ff2bc055f2e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ab76237013ae693fc66de914ebad07"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:a37ab76237013ae693fc66de914ebad07"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#a37ab76237013ae693fc66de914ebad07">get_if</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; *pv) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a>&lt; <a class="el" href="namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed">etl::variant_alternative_t</a>&lt; I, <a class="el" href="structetl_1_1variant2.html">etl::variant2</a>&lt; Ts... &gt;&gt;&gt;</td></tr>
+<tr class="memdesc:a37ab76237013ae693fc66de914ebad07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If pv is not a null pointer and pv-&gt;<a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c" title="Returns the zero-based index of the alternative that is currently held by the variant.">index()</a> == I, returns a pointer to the value stored in the variant pointed to by pv. Otherwise, returns a null pointer value. The call is ill-formed if I is not a valid index in the variant.  <a href="structetl_1_1variant2.html#a37ab76237013ae693fc66de914ebad07">More...</a><br /></td></tr>
+<tr class="separator:a37ab76237013ae693fc66de914ebad07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747c53c4298d1c2b9040f01a8def873a"><td class="memTemplParams" colspan="2">template&lt;etl::size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:a747c53c4298d1c2b9040f01a8def873a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1variant2.html#a747c53c4298d1c2b9040f01a8def873a">get_if</a> (<a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const *pv) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a>&lt; <a class="el" href="namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed">etl::variant_alternative_t</a>&lt; I, <a class="el" href="structetl_1_1variant2.html">etl::variant2</a>&lt; Ts... &gt;&gt; const &gt;</td></tr>
+<tr class="memdesc:a747c53c4298d1c2b9040f01a8def873a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If pv is not a null pointer and pv-&gt;<a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c" title="Returns the zero-based index of the alternative that is currently held by the variant.">index()</a> == I, returns a pointer to the value stored in the variant pointed to by pv. Otherwise, returns a null pointer value. The call is ill-formed if I is not a valid index in the variant.  <a href="structetl_1_1variant2.html#a747c53c4298d1c2b9040f01a8def873a">More...</a><br /></td></tr>
+<tr class="separator:a747c53c4298d1c2b9040f01a8def873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4d4beb817311ca40b55eff18543b06b2"></a>
@@ -365,6 +400,8 @@ template&lt;typename... Ts&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the zero-based index of the alternative that is currently held by the variant. </p>
+
 </div>
 </div>
 <a id="a548e3b093ad1fcaed57a1e63c765a186"></a>
@@ -395,6 +432,9 @@ template&lt;etl::size_t I&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
 
 </div>
 </div>
@@ -427,6 +467,9 @@ template&lt;etl::size_t I&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
 </div>
 </div>
 <a id="aec703552f46dc775836be36e905b177f"></a>
@@ -458,6 +501,9 @@ template&lt;etl::size_t I&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
 </div>
 </div>
 <a id="a7e0251ca9bf8da1c0416fcb7ef49c4e9"></a>
@@ -488,6 +534,200 @@ template&lt;etl::size_t I&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a78ab593d0e7f5e1e82da5a98d921d487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ab593d0e7f5e1e82da5a98d921d487">&#9670;&nbsp;</a></span>unchecked_get() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto unchecked_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; auto&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
+</div>
+</div>
+<a id="abff941f61a7e71248259c33337096242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff941f61a7e71248259c33337096242">&#9670;&nbsp;</a></span>unchecked_get() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto unchecked_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; auto const&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
+</div>
+</div>
+<a id="aab304b469a80b085a06f00b3500925f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab304b469a80b085a06f00b3500925f1">&#9670;&nbsp;</a></span>unchecked_get() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto unchecked_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; auto&amp;&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
+</div>
+</div>
+<a id="abac24a4d3cd8d624ac5ff2bc055f2e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac24a4d3cd8d624ac5ff2bc055f2e85">&#9670;&nbsp;</a></span>unchecked_get() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto unchecked_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const &amp;&amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; auto const&amp;&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the object stored in the variant. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+
+</div>
+</div>
+<a id="a37ab76237013ae693fc66de914ebad07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ab76237013ae693fc66de914ebad07">&#9670;&nbsp;</a></span>get_if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto get_if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; *&#160;</td>
+          <td class="paramname"><em>pv</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a>&lt;<a class="el" href="namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed">etl::variant_alternative_t</a>&lt;I, <a class="el" href="structetl_1_1variant2.html">etl::variant2</a>&lt;Ts...&gt;&gt;&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If pv is not a null pointer and pv-&gt;<a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c" title="Returns the zero-based index of the alternative that is currently held by the variant.">index()</a> == I, returns a pointer to the value stored in the variant pointed to by pv. Otherwise, returns a null pointer value. The call is ill-formed if I is not a valid index in the variant. </p>
+
+</div>
+</div>
+<a id="a747c53c4298d1c2b9040f01a8def873a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747c53c4298d1c2b9040f01a8def873a">&#9670;&nbsp;</a></span>get_if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::size_t I, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto get_if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant2.html">variant2</a>&lt; Ts... &gt; const *&#160;</td>
+          <td class="paramname"><em>pv</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a>&lt;<a class="el" href="namespaceetl.html#aef7110ca07ee5b481d99d9ae57a977ed">etl::variant_alternative_t</a>&lt;I, <a class="el" href="structetl_1_1variant2.html">etl::variant2</a>&lt;Ts...&gt;&gt; const&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If pv is not a null pointer and pv-&gt;<a class="el" href="structetl_1_1variant2.html#ae43716c06cc7326977643eb2dec03e4c" title="Returns the zero-based index of the alternative that is currently held by the variant.">index()</a> == I, returns a pointer to the value stored in the variant pointed to by pv. Otherwise, returns a null pointer value. The call is ill-formed if I is not a valid index in the variant. </p>
 
 </div>
 </div>

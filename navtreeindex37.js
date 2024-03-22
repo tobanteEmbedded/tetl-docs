@@ -1,5 +1,16 @@
 var NAVTREEINDEX37 =
 {
+"weakly__equality__comparable__with_8hpp.html#ada002bf896bcbba39f049225a8d45aef":[8,0,1,0,14,32,0],
+"weakly__equality__comparable__with_8hpp_source.html":[8,0,1,0,14,32],
+"weakly__incrementable_8hpp.html":[8,0,1,0,32,27],
+"weakly__incrementable_8hpp.html#acadd2b30864294d4537931e8d9835b94":[8,0,1,0,32,27,0],
+"weakly__incrementable_8hpp_source.html":[8,0,1,0,32,27],
+"weekday_8hpp.html":[8,0,1,0,9,20],
+"weekday_8hpp.html#a2bd0e2ca61e33514bc466027d868d12f":[8,0,1,0,9,20,2],
+"weekday_8hpp.html#a401a482f71fb22ea983ab827c64e8f35":[8,0,1,0,9,20,10],
+"weekday_8hpp.html#a57c1c5c33b9e5bb46361c01c4fa49826":[8,0,1,0,9,20,8],
+"weekday_8hpp.html#a66b9be964153a07637362b2cf1a3ae1c":[8,0,1,0,9,20,7],
+"weekday_8hpp.html#a776e268d58e50e81f3eac0ad69746345":[8,0,1,0,9,20,9],
 "weekday_8hpp.html#a78bc534ce78f4a5c39c9339aef470103":[8,0,1,0,9,20,4],
 "weekday_8hpp.html#a8cc7e1c28078fb6451582fd718635a55":[8,0,1,0,9,20,5],
 "weekday_8hpp.html#a97e5e0e7061b96f92c7817ffe1226c71":[8,0,1,0,9,20,11],

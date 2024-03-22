@@ -568,6 +568,7 @@ var annotated_dup =
       [ "variant_size", "structetl_1_1variant__size.html", null ],
       [ "variant_alternative", "structetl_1_1variant__alternative.html", null ],
       [ "variant_size< variant< Ts... > >", "structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html", null ],
+      [ "variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "variant_size< T const >", "structetl_1_1variant__size_3_01T_01const_01_4.html", null ],
       [ "variant_size< T volatile >", "structetl_1_1variant__size_3_01T_01volatile_01_4.html", null ],
       [ "variant_size< T const volatile >", "structetl_1_1variant__size_3_01T_01const_01volatile_01_4.html", null ],

@@ -373,6 +373,7 @@ var hierarchy =
       [ "etl::extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ]
     ] ],
     [ "etl::integral_constant< etl::size_t, sizeof...(Ts)>", "structetl_1_1integral__constant.html", [
+      [ "etl::variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "etl::variant_size< variant< Ts... > >", "structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "etl::integral_constant< int, 0 >", "structetl_1_1integral__constant.html", [
