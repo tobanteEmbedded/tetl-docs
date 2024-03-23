@@ -55,7 +55,7 @@ var searchData=
   ['addressof_2ehpp_95',['addressof.hpp',['../addressof_8hpp.html',1,'']]],
   ['adjacent_5fdifference_96',['adjacent_difference',['../namespaceetl.html#a4cdf06dcb6cdb229ddf2f001f7063d82',1,'etl::adjacent_difference(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt'],['../namespaceetl.html#a233e4dea3a5bcb4fa4018e9110735184',1,'etl::adjacent_difference(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt']]],
   ['adjacent_5fdifference_2ehpp_97',['adjacent_difference.hpp',['../adjacent__difference_8hpp.html',1,'']]],
-  ['adjacent_5ffind_98',['adjacent_find',['../group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e',1,'etl::adjacent_find(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt'],['../namespaceetl.html#a4fe91c66e3042bde20710111a8d622e4',1,'etl::adjacent_find(ForwardIt first, ForwardIt last) -&gt; ForwardIt']]],
+  ['adjacent_5ffind_98',['adjacent_find',['../group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e',1,'etl::adjacent_find(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt'],['../group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4',1,'etl::adjacent_find(ForwardIt first, ForwardIt last) -&gt; ForwardIt']]],
   ['adjacent_5ffind_2ehpp_99',['adjacent_find.hpp',['../adjacent__find_8hpp.html',1,'']]],
   ['adjustfield_100',['adjustfield',['../structetl_1_1ios__base.html#ad5ab84c392c4c11f4e53dca4bc2a8393',1,'etl::ios_base']]],
   ['adopt_5flock_101',['adopt_lock',['../namespaceetl.html#a03ee00292ff760cd8ecf8b41bb4de696',1,'etl']]],

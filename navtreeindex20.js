@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"namespaceetl_1_1placeholders.html#a65d025d6e4734a3b64c95047075c7e72":[6,0,0,6,27],
 "namespaceetl_1_1placeholders.html#a65d319e0df00ea797765dff4f61e75ad":[6,0,0,6,16],
 "namespaceetl_1_1placeholders.html#a66a65fcdd5c86a4bb4016a18868ff6cd":[6,0,0,6,4],
 "namespaceetl_1_1placeholders.html#a69c5d0f44bde836a7bd5b51b835445bb":[6,0,0,6,6],
@@ -100,8 +101,8 @@ var NAVTREEINDEX20 =
 "namespacemembers_type.html":[6,1,3],
 "namespacemembers_u.html":[6,1,0,20],
 "namespacemembers_v.html":[6,1,0,21],
-"namespacemembers_vars.html":[6,1,2,0],
 "namespacemembers_vars.html":[6,1,2],
+"namespacemembers_vars.html":[6,1,2,0],
 "namespacemembers_vars_a.html":[6,1,2,1],
 "namespacemembers_vars_b.html":[6,1,2,2],
 "namespacemembers_vars_c.html":[6,1,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "piecewise__construct_8hpp.html#a29815251de01b00c45a0bb62678930c5":[8,0,1,0,60,21,1],
 "piecewise__construct_8hpp_source.html":[8,0,1,0,60,21],
 "placeholder_8hpp.html":[8,0,1,0,29,28],
-"placeholder_8hpp.html#a08abe0432d794320079456a9212f08eb":[8,0,1,0,29,28,25],
-"placeholder_8hpp.html#a23e966a0295636bcd6105d2c4f8c7882":[8,0,1,0,29,28,22]
+"placeholder_8hpp.html#a08abe0432d794320079456a9212f08eb":[8,0,1,0,29,28,25]
 };

@@ -828,7 +828,7 @@ var namespaceetl =
       [ "cpp_26", "namespaceetl.html#a2f63a594bf7e2b29cb07e1868483ee53af94629088b2e56f93753526b629a62ff", null ]
     ] ],
     [ "adjacent_find", "group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e", null ],
-    [ "adjacent_find", "namespaceetl.html#a4fe91c66e3042bde20710111a8d622e4", null ],
+    [ "adjacent_find", "group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4", null ],
     [ "all_of", "group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9", null ],
     [ "any_of", "group__algorithm-header.html#ga1d4122ca9a611ac90a64ff447c212a42", null ],
     [ "binary_search", "group__algorithm-header.html#ga8844708a6931fb2b21419d7a605328dd", null ],

@@ -10,6 +10,7 @@ var group__algorithm_header =
     [ "copy_if", "group__algorithm-header.html#ga31799054ecdf344760efe76af7987776", null ],
     [ "copy_n", "group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5", null ],
     [ "count_if", "group__algorithm-header.html#ga7aff5cc5281436a205079dc71ee4c317", null ],
+    [ "adjacent_find", "group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4", null ],
     [ "binary_search", "group__algorithm-header.html#gadb446f356892ac1d540180018a20faba", null ],
     [ "clamp", "group__algorithm-header.html#gabfa416a307b0bb33666d34845c42ba2b", null ]
 ];
