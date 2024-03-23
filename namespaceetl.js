@@ -828,7 +828,7 @@ var namespaceetl =
       [ "cpp_26", "namespaceetl.html#a2f63a594bf7e2b29cb07e1868483ee53af94629088b2e56f93753526b629a62ff", null ]
     ] ],
     [ "adjacent_find", "group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e", null ],
-    [ "adjacent_find", "group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4", null ],
+    [ "adjacent_find", "namespaceetl.html#a4fe91c66e3042bde20710111a8d622e4", null ],
     [ "all_of", "group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9", null ],
     [ "any_of", "group__algorithm-header.html#ga1d4122ca9a611ac90a64ff447c212a42", null ],
     [ "binary_search", "group__algorithm-header.html#ga8844708a6931fb2b21419d7a605328dd", null ],
@@ -1952,9 +1952,6 @@ var namespaceetl =
     [ "is_volatile_v", "namespaceetl.html#aa76b943cef158f554f60c8d61b6835bc", null ],
     [ "negation_v", "namespaceetl.html#a2e0422e10e238c05956150aa5f4ed77e", null ],
     [ "rank_v", "namespaceetl.html#a4229d4171b460abc833736d622ce9745", null ],
-    [ "in_place", "namespaceetl.html#a4e2e748d9aa9eee89e9ae27c1783dbea", null ],
-    [ "in_place_index", "namespaceetl.html#a1c179dea2a5063201728cd0823d49e4f", null ],
-    [ "in_place_type", "namespaceetl.html#a9e9c16f25058085d7b41037104bfea25", null ],
     [ "nontype", "namespaceetl.html#a53057a1d7b9d22a69eb3e40fdc44eb3d", null ],
     [ "piecewise_construct", "namespaceetl.html#a29815251de01b00c45a0bb62678930c5", null ],
     [ "variant_npos", "namespaceetl.html#a28d369052fc23b452882a9fd514abb87", null ],

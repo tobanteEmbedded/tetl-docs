@@ -24,8 +24,6 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -139,7 +137,7 @@ $(document).ready(function(){initNavTree('variant2_8hpp_source.html',''); initRe
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structetl_1_1variant2.html#a4d4beb817311ca40b55eff18543b06b2">   42</a></span>&#160;    constexpr <a class="code" href="structetl_1_1variant2.html#a4d4beb817311ca40b55eff18543b06b2">variant2</a>() <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a>(<a class="code" href="namespaceetl.html">etl</a>::<a class="code" href="namespaceetl.html#a12e312d7578609fe1f21277a6d7a1606">is_nothrow_default_constructible_v</a>&lt;first_type&gt;)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(<a class="code" href="namespaceetl.html">etl</a>::<a class="code" href="namespaceetl.html#a0093a625b8acbeac1878b9a9668a2563">is_default_constructible_v</a>&lt;first_type&gt;)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        : <a class="code" href="structetl_1_1variant2.html">variant2</a>(<a class="code" href="namespaceetl.html">etl</a>::<a class="code" href="namespaceetl.html#a1c179dea2a5063201728cd0823d49e4f">in_place_index</a>&lt;0&gt;)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        : <a class="code" href="structetl_1_1variant2.html">variant2</a>(<a class="code" href="namespaceetl.html">etl</a>::in_place_index&lt;0&gt;)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -282,7 +280,6 @@ $(document).ready(function(){initNavTree('variant2_8hpp_source.html',''); initRe
 <div class="ttc" id="anamespaceetl_html_a12e312d7578609fe1f21277a6d7a1606"><div class="ttname"><a href="namespaceetl.html#a12e312d7578609fe1f21277a6d7a1606">etl::is_nothrow_default_constructible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_default_constructible_v</div><div class="ttdef"><b>Definition:</b> is_nothrow_default_constructible.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html_a13856fe74510e89b04a2310cbc9bde59"><div class="ttname"><a href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">etl::addressof</a></div><div class="ttdeci">auto addressof(T const &amp;&amp;)=delete</div></div>
 <div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
-<div class="ttc" id="anamespaceetl_html_a1c179dea2a5063201728cd0823d49e4f"><div class="ttname"><a href="namespaceetl.html#a1c179dea2a5063201728cd0823d49e4f">etl::in_place_index</a></div><div class="ttdeci">constexpr auto in_place_index</div><div class="ttdef"><b>Definition:</b> in_place_index.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html_a2ab42b86be16dbdbaa744a2caaca7e80"><div class="ttname"><a href="namespaceetl.html#a2ab42b86be16dbdbaa744a2caaca7e80">etl::add_pointer_t</a></div><div class="ttdeci">typename etl::add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdef"><b>Definition:</b> add_pointer.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_a82b776d5da5e25514489bfd330d7940d"><div class="ttname"><a href="namespaceetl.html#a82b776d5da5e25514489bfd330d7940d">etl::is_move_constructible_v</a></div><div class="ttdeci">constexpr bool is_move_constructible_v</div><div class="ttdef"><b>Definition:</b> is_move_constructible.hpp:20</div></div>

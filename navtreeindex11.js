@@ -1,10 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"iter__swap_8hpp.html#aa18b878794474881fce640e7a163abf3":[8,0,1,0,1,34,0],
-"iter__swap_8hpp_source.html":[8,0,1,0,1,34],
-"iter__value__t_8hpp.html":[8,0,1,0,32,17],
-"iter__value__t_8hpp.html#a7c22455efb7e072deb03e78241405e56":[8,0,1,0,32,17,0],
-"iter__value__t_8hpp_source.html":[8,0,1,0,32,17],
 "iterator_8hpp.html":[8,0,1,0,96],
 "iterator_8hpp_source.html":[8,0,1,0,96],
 "iterator__t_8hpp.html":[8,0,1,0,45,6],
@@ -249,5 +244,10 @@ var NAVTREEINDEX11 =
 "memory_8hpp_source.html":[8,0,1,0,101],
 "memset_8hpp.html":[8,0,1,0,21,3],
 "memset_8hpp.html#a055dc327ea35a394f661ca98bf2b08ad":[8,0,1,0,21,3,0],
-"memset_8hpp_source.html":[8,0,1,0,21,3]
+"memset_8hpp_source.html":[8,0,1,0,21,3],
+"merge_8hpp.html":[8,0,1,0,1,39],
+"merge_8hpp.html#a6d0face2f5fe06333854b6b120bd6bad":[8,0,1,0,1,39,1],
+"merge_8hpp.html#a9ee09e4768fc381002cd7dc14e8e561b":[8,0,1,0,1,39,0],
+"merge_8hpp_source.html":[8,0,1,0,1,39],
+"merge__sort_8hpp.html":[8,0,1,0,1,40]
 };

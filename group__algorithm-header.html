@@ -24,8 +24,6 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,18 +90,19 @@ $(document).ready(function(){initNavTree('group__algorithm-header.html',''); ini
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">algorithm.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Predicate &gt; </td></tr>
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">etl::adjacent_find</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Predicate pred) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the range <code>[first, last)</code> for two consecutive equal elements. Elements are compared using the given binary predicate p.  <a href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">More...</a><br /></td></tr>
 <tr class="separator:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4fe91c66e3042bde20710111a8d622e4"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
-<tr class="memitem:ga4fe91c66e3042bde20710111a8d622e4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga4fe91c66e3042bde20710111a8d622e4">etl::adjacent_find</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; ForwardIt</td></tr>
-<tr class="separator:ga4fe91c66e3042bde20710111a8d622e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac76b028bf28233ada520a5bc0d52f6b9"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Predicate &gt; </td></tr>
 <tr class="memitem:gac76b028bf28233ada520a5bc0d52f6b9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">etl::all_of</a> (InputIt first, InputIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Predicate p) -&gt; bool</td></tr>
 <tr class="memdesc:gac76b028bf28233ada520a5bc0d52f6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if unary predicate p returns true for all elements in the range <code>[first, last)</code>.  <a href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">More...</a><br /></td></tr>
@@ -152,7 +151,7 @@ $(document).ready(function(){initNavTree('group__algorithm-header.html',''); ini
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a id="ga09c5b412c05c58fb89e569a2d72ed17e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga09c5b412c05c58fb89e569a2d72ed17e">&#9670;&nbsp;</a></span>adjacent_find() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09c5b412c05c58fb89e569a2d72ed17e">&#9670;&nbsp;</a></span>adjacent_find()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -658,45 +657,6 @@ template&lt;typename InputIt , typename Predicate &gt; </div>
   </dd>
 </dl>
 <p><a href="https://en.cppreference.com/w/cpp/algorithm/count">https://en.cppreference.com/w/cpp/algorithm/count</a> </p>
-
-</div>
-</div>
-<a id="ga4fe91c66e3042bde20710111a8d622e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4fe91c66e3042bde20710111a8d622e4">&#9670;&nbsp;</a></span>adjacent_find() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ForwardIt &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto etl::adjacent_find </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; ForwardIt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
