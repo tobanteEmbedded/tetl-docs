@@ -1,17 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"placeholder_8hpp.html#a23e966a0295636bcd6105d2c4f8c7882":[8,0,1,0,29,28,22],
-"placeholder_8hpp.html#a3700cc69b40208fe62a81ad9a22803af":[8,0,1,0,29,28,33],
-"placeholder_8hpp.html#a3df8f9c1ad1e204ab8fa2e119be4b57d":[8,0,1,0,29,28,23],
-"placeholder_8hpp.html#a429feb6f7e4a7d8960516fd884410506":[8,0,1,0,29,28,12],
-"placeholder_8hpp.html#a44baffa2818c350dfdfe1005485d8faa":[8,0,1,0,29,28,6],
-"placeholder_8hpp.html#a48bf0995060b4acad3c0882859cea489":[8,0,1,0,29,28,36],
-"placeholder_8hpp.html#a4e429b87534aa543b974c7e3e75b45b1":[8,0,1,0,29,28,8],
-"placeholder_8hpp.html#a58ed0f1fa3a039a251395f9bd8bab9e6":[8,0,1,0,29,28,29],
-"placeholder_8hpp.html#a5b19add0a8d26c8c4ba337dc212d5163":[8,0,1,0,29,28,26],
-"placeholder_8hpp.html#a5c55175a60b12b3cdb56a5d7fa040777":[8,0,1,0,29,28,18],
-"placeholder_8hpp.html#a5f88d0dddbe19206fa3022fb9b739140":[8,0,1,0,29,28,24],
-"placeholder_8hpp.html#a60f8be40b4546133c0e02e2feb7c1ae2":[8,0,1,0,29,28,17],
 "placeholder_8hpp.html#a65d025d6e4734a3b64c95047075c7e72":[8,0,1,0,29,28,32],
 "placeholder_8hpp.html#a65d319e0df00ea797765dff4f61e75ad":[8,0,1,0,29,28,21],
 "placeholder_8hpp.html#a66a65fcdd5c86a4bb4016a18868ff6cd":[8,0,1,0,29,28,9],
@@ -249,5 +237,17 @@ var NAVTREEINDEX21 =
 "rend_8hpp.html#a3db12aaf2a7b1819d28995d635d91954":[8,0,1,0,32,22,0],
 "rend_8hpp.html#a75830ae03ce26ca2ea7289cc7d83a761":[8,0,1,0,32,22,1],
 "rend_8hpp.html#a94d4f59f901468f3a8d07e91a27e2ae2":[8,0,1,0,32,22,2],
-"rend_8hpp_source.html":[8,0,1,0,32,22]
+"rend_8hpp_source.html":[8,0,1,0,32,22],
+"replace_8hpp.html":[8,0,1,0,1,58],
+"replace_8hpp.html#ab115e24caa45f16f79bb770a6e3cbbab":[8,0,1,0,1,58,0],
+"replace_8hpp_source.html":[8,0,1,0,1,58],
+"replace__if_8hpp.html":[8,0,1,0,1,59],
+"replace__if_8hpp.html#a290953b933269399f045b7e2b37d97b7":[8,0,1,0,1,59,0],
+"replace__if_8hpp_source.html":[8,0,1,0,1,59],
+"reset__bit_8hpp.html":[8,0,1,0,3,14],
+"reset__bit_8hpp.html#ace9159d861c5d8c5ed5708b8381fa19a":[8,0,1,0,3,14,0],
+"reset__bit_8hpp.html#aecd9ef98d7cd14ca276c8df92dc00a64":[8,0,1,0,3,14,1],
+"reset__bit_8hpp_source.html":[8,0,1,0,3,14],
+"reverse_8hpp.html":[8,0,1,0,1,60],
+"reverse_8hpp.html#aa198aa5e9e5759947d51496cede4e6f6":[8,0,1,0,1,60,0]
 };

@@ -553,7 +553,7 @@ var annotated_dup =
       [ "tuple_element< I, pair< T1, T2 > >", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4" ],
       [ "piecewise_construct_t", "structetl_1_1piecewise__construct__t.html", "structetl_1_1piecewise__construct__t" ],
       [ "bad_variant_access", "structetl_1_1bad__variant__access.html", "structetl_1_1bad__variant__access" ],
-      [ "monostate", "structetl_1_1monostate.html", null ],
+      [ "monostate", "structetl_1_1monostate.html", "structetl_1_1monostate" ],
       [ "overload", "structetl_1_1overload.html", null ],
       [ "uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
       [ "variadic_union", "unionetl_1_1variadic__union.html", null ],
