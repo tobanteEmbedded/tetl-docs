@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('bit__floor_8hpp_source.html',''); init
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_BIT_BIT_FLOOR_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bit__width_8hpp.html">etl/_bit/bit_width.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="standard__unsigned__integer_8hpp.html">etl/_concepts/standard_unsigned_integer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="builtin__unsigned__integer_8hpp.html">etl/_concepts/builtin_unsigned_integer.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="numeric__limits_8hpp.html">etl/_limits/numeric_limits.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;etl::builtin_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a344157c15560dd640719de8ecf9a311a">   22</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a344157c15560dd640719de8ecf9a311a">bit_floor</a>(UInt x) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; UInt</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (x != 0) {</div>
@@ -117,12 +117,12 @@ $(document).ready(function(){initNavTree('bit__floor_8hpp_source.html',''); init
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_BIT_FLOOR_HPP</span></div>
 <div class="ttc" id="abit__width_8hpp_html"><div class="ttname"><a href="bit__width_8hpp.html">bit_width.hpp</a></div></div>
+<div class="ttc" id="abuiltin__unsigned__integer_8hpp_html"><div class="ttname"><a href="builtin__unsigned__integer_8hpp.html">builtin_unsigned_integer.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
 <div class="ttc" id="anamespaceetl_html_a344157c15560dd640719de8ecf9a311a"><div class="ttname"><a href="namespaceetl.html#a344157c15560dd640719de8ecf9a311a">etl::bit_floor</a></div><div class="ttdeci">constexpr auto bit_floor(UInt x) noexcept -&gt; UInt</div><div class="ttdoc">If x is not zero, calculates the largest integral power of two that is not greater than x....</div><div class="ttdef"><b>Definition:</b> bit_floor.hpp:22</div></div>
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_a7f9cca4b68917b48f46849a03007d9a9"><div class="ttname"><a href="namespaceetl.html#a7f9cca4b68917b48f46849a03007d9a9">etl::bit_width</a></div><div class="ttdeci">constexpr auto bit_width(UInt x) noexcept -&gt; int</div><div class="ttdoc">If x is not zero, calculates the number of bits needed to store the value x, that is,...</div><div class="ttdef"><b>Definition:</b> bit_width.hpp:19</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
-<div class="ttc" id="astandard__unsigned__integer_8hpp_html"><div class="ttname"><a href="standard__unsigned__integer_8hpp.html">standard_unsigned_integer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -25,6 +25,7 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "_ctime", "dir_7ff38e49015ae7ff583c4a58c7b6fac0.html", "dir_7ff38e49015ae7ff583c4a58c7b6fac0" ],
     [ "_cwchar", "dir_654767f1f845a43cfb380e17dc7914ff.html", "dir_654767f1f845a43cfb380e17dc7914ff" ],
     [ "_cwctype", "dir_883c3072c237bda7b2fc21c7d2dc0e9b.html", "dir_883c3072c237bda7b2fc21c7d2dc0e9b" ],
+    [ "_debugging", "dir_e8cd1b13a2f25817628d6e2cf98116f9.html", "dir_e8cd1b13a2f25817628d6e2cf98116f9" ],
     [ "_exception", "dir_56ac37526ce86f471fd3ac1c07c35ff6.html", "dir_56ac37526ce86f471fd3ac1c07c35ff6" ],
     [ "_expected", "dir_7cfd3e0d99f7f33792e4dc01c09c0039.html", "dir_7cfd3e0d99f7f33792e4dc01c09c0039" ],
     [ "_flat_set", "dir_0e3a3a06f19399ae3e6322d3488159ff.html", "dir_0e3a3a06f19399ae3e6322d3488159ff" ],
@@ -39,6 +40,7 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "_mdarray", "dir_54b899ce337599d5c008f5b3ac895f6e.html", "dir_54b899ce337599d5c008f5b3ac895f6e" ],
     [ "_mdspan", "dir_af9b918ea0ffb9889c3ed575d2f154ce.html", "dir_af9b918ea0ffb9889c3ed575d2f154ce" ],
     [ "_memory", "dir_a558ea7a8f8187b7932e40c4cd21a39a.html", "dir_a558ea7a8f8187b7932e40c4cd21a39a" ],
+    [ "_meta", "dir_7f0d850bb99825c9c1df28f118549ce8.html", "dir_7f0d850bb99825c9c1df28f118549ce8" ],
     [ "_mutex", "dir_b2f01d8ecfbee1e3e8680c705c85a3d8.html", "dir_b2f01d8ecfbee1e3e8680c705c85a3d8" ],
     [ "_new", "dir_f5efbb4b93ec1e857105f8d932c05e11.html", "dir_f5efbb4b93ec1e857105f8d932c05e11" ],
     [ "_numbers", "dir_45c2c89a8d2bc7d64bc0ceefffc4fb9f.html", "dir_45c2c89a8d2bc7d64bc0ceefffc4fb9f" ],
@@ -64,7 +66,6 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "_variant", "dir_22f95e725ac636237aa807414a1d3bfe.html", "dir_22f95e725ac636237aa807414a1d3bfe" ],
     [ "_vector", "dir_911862c2cbd70258b13443745db1f8f5.html", "dir_911862c2cbd70258b13443745db1f8f5" ],
     [ "_version", "dir_60962f7fdfa485dfa18f0bfa2f938bf8.html", "dir_60962f7fdfa485dfa18f0bfa2f938bf8" ],
-    [ "_warning", "dir_45dea08e29b7d2d8fc5b8b75fa2e884a.html", "dir_45dea08e29b7d2d8fc5b8b75fa2e884a" ],
     [ "experimental", "dir_05f624333b3279a234bacbfe8fd44398.html", "dir_05f624333b3279a234bacbfe8fd44398" ],
     [ "algorithm.hpp", "algorithm_8hpp.html", null ],
     [ "array.hpp", "array_8hpp.html", null ],
@@ -89,6 +90,7 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "ctime.hpp", "ctime_8hpp.html", null ],
     [ "cwchar.hpp", "cwchar_8hpp.html", null ],
     [ "cwctype.hpp", "cwctype_8hpp.html", null ],
+    [ "debugging.hpp", "debugging_8hpp.html", null ],
     [ "exception.hpp", "exception_8hpp.html", null ],
     [ "expected.hpp", "expected_8hpp.html", null ],
     [ "flat_set.hpp", "flat__set_8hpp.html", null ],
@@ -102,6 +104,7 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "mdarray.hpp", "mdarray_8hpp.html", null ],
     [ "mdspan.hpp", "mdspan_8hpp.html", null ],
     [ "memory.hpp", "memory_8hpp.html", null ],
+    [ "meta.hpp", "meta_8hpp.html", null ],
     [ "mutex.hpp", "mutex_8hpp.html", null ],
     [ "new.hpp", "new_8hpp.html", null ],
     [ "numbers.hpp", "numbers_8hpp.html", null ],
@@ -125,6 +128,5 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "utility.hpp", "utility_8hpp.html", null ],
     [ "variant.hpp", "variant_8hpp.html", null ],
     [ "vector.hpp", "vector_8hpp.html", null ],
-    [ "version.hpp", "version_8hpp.html", null ],
-    [ "warning.hpp", "warning_8hpp.html", null ]
+    [ "version.hpp", "version_8hpp.html", null ]
 ];

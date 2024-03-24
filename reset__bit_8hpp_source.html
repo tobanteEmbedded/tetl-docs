@@ -99,18 +99,18 @@ $(document).ready(function(){initNavTree('reset__bit_8hpp_source.html',''); init
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_BIT_RESET_BIT_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_BIT_RESET_BIT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="standard__unsigned__integer_8hpp.html">etl/_concepts/standard_unsigned_integer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="builtin__unsigned__integer_8hpp.html">etl/_concepts/builtin_unsigned_integer.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;etl::standard_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;etl::builtin_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#ace9159d861c5d8c5ed5708b8381fa19a">   12</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ace9159d861c5d8c5ed5708b8381fa19a">reset_bit</a>(UInt <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>, UInt bit) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; UInt</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(<a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a> &amp; <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(~(UInt(1) &lt;&lt; bit)));</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> Bit, etl::standard_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> Bit, etl::builtin_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#aecd9ef98d7cd14ca276c8df92dc00a64">   18</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#ace9159d861c5d8c5ed5708b8381fa19a">reset_bit</a>(UInt <a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; UInt</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#ace9159d861c5d8c5ed5708b8381fa19a">etl::reset_bit</a>(<a class="code" href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">val</a>, <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(Bit));</div>
@@ -119,12 +119,12 @@ $(document).ready(function(){initNavTree('reset__bit_8hpp_source.html',''); init
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace etl</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_RESET_BIT_HPP</span></div>
+<div class="ttc" id="abuiltin__unsigned__integer_8hpp_html"><div class="ttname"><a href="builtin__unsigned__integer_8hpp.html">builtin_unsigned_integer.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>
 <div class="ttc" id="anamespaceetl_html_a5489a5258551040b63e6eef9f49264d8"><div class="ttname"><a href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">etl::noexcept</a></div><div class="ttdeci">T(&amp;b)[N] noexcept(etl::is_nothrow_swappable&lt; T &gt;::value) -&gt; void</div><div class="ttdef"><b>Definition:</b> is_swappable_with.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_aa2a7c3cbcd306c97b268134f54e90d2d"><div class="ttname"><a href="namespaceetl.html#aa2a7c3cbcd306c97b268134f54e90d2d">etl::val</a></div><div class="ttdeci">char T val</div><div class="ttdef"><b>Definition:</b> to_chars.hpp:36</div></div>
 <div class="ttc" id="anamespaceetl_html_ace9159d861c5d8c5ed5708b8381fa19a"><div class="ttname"><a href="namespaceetl.html#ace9159d861c5d8c5ed5708b8381fa19a">etl::reset_bit</a></div><div class="ttdeci">constexpr auto reset_bit(UInt val, UInt bit) noexcept -&gt; UInt</div><div class="ttdef"><b>Definition:</b> reset_bit.hpp:12</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astandard__unsigned__integer_8hpp_html"><div class="ttname"><a href="standard__unsigned__integer_8hpp.html">standard_unsigned_integer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -13,6 +13,8 @@ var hierarchy =
     [ "etl::array< etl::uint8_t, allocated_ >", "structetl_1_1array.html", null ],
     [ "etl::array< value_type, Capacity+1 >", "structetl_1_1array.html", null ],
     [ "etl::assert_msg", "structetl_1_1assert__msg.html", null ],
+    [ "etl::meta::at< I, List >", "structetl_1_1meta_1_1at.html", null ],
+    [ "etl::meta::at< I, list< Ts... > >", "structetl_1_1meta_1_1at_3_01I_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::back_insert_iterator< Container >", "structetl_1_1back__insert__iterator.html", null ],
     [ "etl::basic_common_reference< T, U, TQ, UQ >", "structetl_1_1basic__common__reference.html", null ],
     [ "etl::basic_format_arg< Context >", "structetl_1_1basic__format__arg.html", null ],
@@ -82,6 +84,8 @@ var hierarchy =
     [ "etl::conditional_t", null, [
       [ "etl::unwrap_ref_decay< T >", "structetl_1_1unwrap__ref__decay.html", null ]
     ] ],
+    [ "etl::meta::cons< T, List >", "structetl_1_1meta_1_1cons.html", null ],
+    [ "etl::meta::cons< T, list< Ts... > >", "structetl_1_1meta_1_1cons_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::experimental::net::const_buffer", "structetl_1_1experimental_1_1net_1_1const__buffer.html", null ],
     [ "etl::const_where_expression< M, T >", "structetl_1_1const__where__expression.html", [
       [ "etl::where_expression< M, T >", "structetl_1_1where__expression.html", null ]
@@ -186,6 +190,8 @@ var hierarchy =
     [ "etl::hash< unsigned long long >", "structetl_1_1hash_3_01unsigned_01long_01long_01_4.html", null ],
     [ "etl::hash< unsigned short >", "structetl_1_1hash_3_01unsigned_01short_01_4.html", null ],
     [ "etl::hash< wchar_t >", "structetl_1_1hash_3_01wchar__t_01_4.html", null ],
+    [ "etl::meta::head< Ts >", "structetl_1_1meta_1_1head.html", null ],
+    [ "etl::meta::head< list< T, Ts... > >", "structetl_1_1meta_1_1head_3_01list_3_01T_00_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::identity", "structetl_1_1identity.html", null ],
     [ "etl::ignore", "structetl_1_1ignore.html", null ],
     [ "etl::imaxdiv_t", "structetl_1_1imaxdiv__t.html", null ],
@@ -288,6 +294,9 @@ var hierarchy =
       [ "etl::is_bitmask_type< T >", "structetl_1_1is__bitmask__type.html", null ],
       [ "etl::is_bounded_array< T >", "structetl_1_1is__bounded__array.html", null ],
       [ "etl::is_bounded_array< T[N]>", "structetl_1_1is__bounded__array_3_01T_0fN_0e_4.html", null ],
+      [ "etl::is_builtin_integer< T >", "structetl_1_1is__builtin__integer.html", null ],
+      [ "etl::is_builtin_signed_integer< T >", "structetl_1_1is__builtin__signed__integer.html", null ],
+      [ "etl::is_builtin_unsigned_integer< T >", "structetl_1_1is__builtin__unsigned__integer.html", null ],
       [ "etl::is_class< T >", "structetl_1_1is__class.html", null ],
       [ "etl::is_compound< T >", "structetl_1_1is__compound.html", null ],
       [ "etl::is_const< T >", "structetl_1_1is__const.html", null ],
@@ -335,10 +344,7 @@ var hierarchy =
       [ "etl::is_signed< T >", "structetl_1_1is__signed.html", null ],
       [ "etl::is_specialized< typename, typename, typename >", "structetl_1_1is__specialized.html", null ],
       [ "etl::is_specialized< Template, T, etl::void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01etl_1_1void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
-      [ "etl::is_standard_integer< T >", "structetl_1_1is__standard__integer.html", null ],
       [ "etl::is_standard_layout< T >", "structetl_1_1is__standard__layout.html", null ],
-      [ "etl::is_standard_signed_integer< T >", "structetl_1_1is__standard__signed__integer.html", null ],
-      [ "etl::is_standard_unsigned_integer< T >", "structetl_1_1is__standard__unsigned__integer.html", null ],
       [ "etl::is_swappable_with< T, U >", "structetl_1_1is__swappable__with.html", null ],
       [ "etl::is_trivial< T >", "structetl_1_1is__trivial.html", null ],
       [ "etl::is_trivially_assignable< T, U >", "structetl_1_1is__trivially__assignable.html", null ],
@@ -438,6 +444,7 @@ var hierarchy =
     [ "etl::less< void >", "structetl_1_1less_3_01void_01_4.html", null ],
     [ "etl::less_equal< T >", "structetl_1_1less__equal.html", null ],
     [ "etl::less_equal< void >", "structetl_1_1less__equal_3_01void_01_4.html", null ],
+    [ "etl::meta::list< Ts >", "structetl_1_1meta_1_1list.html", null ],
     [ "etl::lldiv_t", "structetl_1_1lldiv__t.html", null ],
     [ "etl::chrono::local_t", "structetl_1_1chrono_1_1local__t.html", null ],
     [ "etl::lock_guard< MutexT >", "structetl_1_1lock__guard.html", null ],
@@ -613,6 +620,8 @@ var hierarchy =
     [ "etl::strong_ordering", "structetl_1_1strong__ordering.html", null ],
     [ "etl::submdspan_mapping_result< LayoutMapping >", "structetl_1_1submdspan__mapping__result.html", null ],
     [ "etl::chrono::system_clock", "structetl_1_1chrono_1_1system__clock.html", null ],
+    [ "etl::meta::tail< Ts >", "structetl_1_1meta_1_1tail.html", null ],
+    [ "etl::meta::tail< list< T, Ts... > >", "structetl_1_1meta_1_1tail_3_01list_3_01T_00_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::chrono::time_point< Clock, Duration >", "structetl_1_1chrono_1_1time__point.html", null ],
     [ "etl::experimental::freertos::times< Count >", "structetl_1_1experimental_1_1freertos_1_1times.html", null ],
     [ "etl::timespec", "structetl_1_1timespec.html", null ],
@@ -673,7 +682,6 @@ var hierarchy =
       [ "etl::variant_size< T volatile >", "structetl_1_1variant__size_3_01T_01volatile_01_4.html", null ]
     ] ],
     [ "etl::type_identity< T >", "structetl_1_1type__identity.html", null ],
-    [ "etl::type_pack_element< I, Ts >", "structetl_1_1type__pack__element.html", null ],
     [ "etl::detail::underlying_type< T >", null, [
       [ "etl::underlying_type< T >", "structetl_1_1underlying__type.html", null ]
     ] ],
