@@ -90,19 +90,11 @@ $(document).ready(function(){initNavTree('group__algorithm-header.html',''); ini
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">algorithm.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplParams" colspan="2">template&lt;typename InIt , typename OutIt , typename Pred &gt; </td></tr>
-<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">etl::copy_if</a> (InIt first, InIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</td></tr>
-<tr class="memdesc:ga31799054ecdf344760efe76af7987776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements in the range, defined by <code>[first, last)</code>, to another range beginning at destination.  <a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">More...</a><br /></td></tr>
-<tr class="separator:ga31799054ecdf344760efe76af7987776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Predicate &gt; </td></tr>
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">etl::adjacent_find</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Predicate pred) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the range <code>[first, last)</code> for two consecutive equal elements. Elements are compared using the given binary predicate p.  <a href="group__algorithm-header.html#ga09c5b412c05c58fb89e569a2d72ed17e">More...</a><br /></td></tr>
@@ -140,6 +132,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5caeb0f954aff0eb31c350558f7e827"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">etl::copy_backward</a> (BidirIt1 first, BidirIt1 <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, BidirIt2 dLast) -&gt; BidirIt2</td></tr>
 <tr class="memdesc:gaf5caeb0f954aff0eb31c350558f7e827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements from the range, defined by <code>[first, last)</code>, to another range ending at <code>dLast</code>. The elements are copied in reverse order (the last element is copied first), but their relative order is preserved.  <a href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">More...</a><br /></td></tr>
 <tr class="separator:gaf5caeb0f954aff0eb31c350558f7e827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplParams" colspan="2">template&lt;typename InIt , typename OutIt , typename Pred &gt; </td></tr>
+<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">etl::copy_if</a> (InIt first, InIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</td></tr>
+<tr class="memdesc:ga31799054ecdf344760efe76af7987776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements in the range, defined by <code>[first, last)</code>, to another range beginning at destination.  <a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">More...</a><br /></td></tr>
+<tr class="separator:ga31799054ecdf344760efe76af7987776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Size , typename OutputIt &gt; </td></tr>
 <tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">etl::copy_n</a> (InputIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, OutputIt result) -&gt; OutputIt</td></tr>
 <tr class="memdesc:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies exactly count values from the range beginning at first to the range beginning at result. Formally, for each integer <code>0 &lt;= i &lt; count</code>, performs <code>*(result + i) = *(first + i)</code>. Overlap of ranges is formally permitted, but leads to unpredictable ordering of the results.  <a href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">More...</a><br /></td></tr>

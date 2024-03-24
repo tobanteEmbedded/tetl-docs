@@ -1759,10 +1759,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a1cc149eb7abea4405c02e767e7860dae"><td class="memTemplParams" colspan="2">template&lt;typename RandomIt &gt; </td></tr>
 <tr class="memitem:a1cc149eb7abea4405c02e767e7860dae"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae">bubble_sort</a> (RandomIt first, RandomIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; void</td></tr>
 <tr class="separator:a1cc149eb7abea4405c02e767e7860dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplParams" colspan="2">template&lt;typename InIt , typename OutIt , typename Pred &gt; </td></tr>
-<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">copy_if</a> (InIt first, InIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</td></tr>
-<tr class="memdesc:ga31799054ecdf344760efe76af7987776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements in the range, defined by <code>[first, last)</code>, to another range beginning at destination.  <a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">More...</a><br /></td></tr>
-<tr class="separator:ga31799054ecdf344760efe76af7987776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9162720047d01bb438874bf56df5d2"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename T &gt; </td></tr>
 <tr class="memitem:a3f9162720047d01bb438874bf56df5d2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a> (InputIt first, InputIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, T const &amp;<a class="el" href="namespaceetl.html#a51c15a5d5f4ab487941035d024cad9d7">value</a>) -&gt; typename <a class="el" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt; InputIt &gt;::difference_type</td></tr>
 <tr class="memdesc:a3f9162720047d01bb438874bf56df5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the range <code>[first, last)</code> satisfying specific criteria. Counts the elements that are equal to value.  <a href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">More...</a><br /></td></tr>
@@ -4886,6 +4882,11 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5caeb0f954aff0eb31c350558f7e827"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">copy_backward</a> (BidirIt1 first, BidirIt1 <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, BidirIt2 dLast) -&gt; BidirIt2</td></tr>
 <tr class="memdesc:gaf5caeb0f954aff0eb31c350558f7e827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements from the range, defined by <code>[first, last)</code>, to another range ending at <code>dLast</code>. The elements are copied in reverse order (the last element is copied first), but their relative order is preserved.  <a href="group__algorithm-header.html#gaf5caeb0f954aff0eb31c350558f7e827">More...</a><br /></td></tr>
 <tr class="separator:gaf5caeb0f954aff0eb31c350558f7e827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplParams" colspan="2">template&lt;typename InIt , typename OutIt , typename Pred &gt; </td></tr>
+<tr class="memitem:ga31799054ecdf344760efe76af7987776"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">copy_if</a> (InIt first, InIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, OutIt dFirst, Pred pred) -&gt; OutIt</td></tr>
+<tr class="memdesc:ga31799054ecdf344760efe76af7987776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the elements in the range, defined by <code>[first, last)</code>, to another range beginning at destination.  <a href="group__algorithm-header.html#ga31799054ecdf344760efe76af7987776">More...</a><br /></td></tr>
+<tr class="separator:ga31799054ecdf344760efe76af7987776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename Size , typename OutputIt &gt; </td></tr>
 <tr class="memitem:gaa65063d9f87cd088156f3d49bb32f2e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-header.html#gaa65063d9f87cd088156f3d49bb32f2e5">copy_n</a> (InputIt first, <a class="el" href="namespaceetl.html#af9b15653958e67cfe944d92826719780">Size</a> <a class="el" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>, OutputIt result) -&gt; OutputIt</td></tr>
@@ -29742,7 +29743,7 @@ template&lt;typename F , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -29763,7 +29764,7 @@ template&lt;typename R , typename F , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -41885,7 +41886,7 @@ template&lt;typename T &gt; </div>
 <div class="line">    <a class="code" href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5">swap</a>(a, <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>);</div>
 <div class="line">    </div>
 <div class="line">}</div>
-<div class="ttc" id="anamespaceetl_html_ad707bbff2e759a5d868a7bfb7d6bc4c5"><div class="ttname"><a href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5">etl::swap</a></div><div class="ttdeci">constexpr auto swap(array&lt; T, N &gt; &amp;lhs, array&lt; T, N &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs))) -&gt; void</div><div class="ttdoc">Specializes the swap algorithm for array. Swaps the contents of lhs and rhs.</div><div class="ttdef"><b>Definition:</b> array.hpp:206</div></div>
+<div class="ttc" id="anamespaceetl_html_ad707bbff2e759a5d868a7bfb7d6bc4c5"><div class="ttname"><a href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5">etl::swap</a></div><div class="ttdeci">constexpr auto swap(array&lt; T, N &gt; &amp;lhs, array&lt; T, N &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs))) -&gt; void</div><div class="ttdoc">Specializes the swap algorithm for array. Swaps the contents of lhs and rhs.</div><div class="ttdef"><b>Definition:</b> array.hpp:207</div></div>
 </div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Convert to ranges::swap once available </dd></dl>
 
 </div>

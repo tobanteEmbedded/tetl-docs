@@ -96,9 +96,17 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
 Quick Start</h1>
-<div class="fragment"><div class="line">cmake -S . -B build -G &quot;Ninja Multi-Config&quot;</div>
-<div class="line">cmake --build build --config Release</div>
-<div class="line">ctest --test-dir build -C Release --output-on-failure</div>
+<div class="fragment"><div class="line"># Desktop</div>
+<div class="line">cmake -S . -B cmake-build-desktop -G &quot;Ninja Multi-Config&quot;</div>
+<div class="line">cmake --build cmake-build-desktop --config Debug</div>
+<div class="line">ctest --test-dir cmake-build-desktop -C Debug --output-on-failure</div>
+</div><!-- fragment --><div class="fragment"><div class="line"># Emscripten</div>
+<div class="line">emcmake cmake -S . -B cmake-build-emscripten -G &quot;Ninja Multi-Config&quot; -D CMAKE_CXX_FLAGS=&quot;-fno-exceptions&quot;</div>
+<div class="line">cmake --build cmake-build-emscripten --config Debug</div>
+<div class="line">ctest --test-dir cmake-build-emscripten -C Debug --output-on-failure</div>
+</div><!-- fragment --><div class="fragment"><div class="line"># AVR</div>
+<div class="line">cmake -S . -B cmake-build-avr-gcc -G &quot;Ninja Multi-Config&quot; -D CMAKE_TOOLCHAIN_FILE=&quot;cmake/toolchain/atmega328p.cmake&quot;</div>
+<div class="line">cmake --build cmake-build-avr-gcc --config Debug</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 Project Layout</h2>
 <div class="fragment"><div class="line">├── benchmarks  # Compile-time benchmarks</div>
@@ -110,28 +118,67 @@ Project Layout</h2>
 <div class="line">├── scripts     # Coverage &amp; clang-tidy</div>
 <div class="line">└── tests       # Unit tests</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
-Coding Style</h1>
-<ul>
-<li>Trailing return type is used everywhere. Including if type is <code>void</code><ul>
-<li><code>auto foo() -&gt; double;</code></li>
-<li><code>auto nothing() -&gt; void;</code></li>
-</ul>
-</li>
-<li>Naming conventions:<ul>
-<li>Public interface matches the STL conventions</li>
-<li>Checked via <code>clang-tidy</code>. See <a href="./.clang-tidy">.clang-tidy</a> config.</li>
-<li>Local variables &amp; parameters are <code>camelBack</code></li>
-<li>Template arguments are <code>CamelCase</code></li>
-<li>Private members have a "\_" prefix. e.g. <code>int _val;</code></li>
-</ul>
-</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+Tests</h1>
+<p>Boilerplate for unit tests:</p>
+<div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="utility_8hpp.html">etl/utility.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;testing/testing.hpp&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>{</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line">constexpr <span class="keyword">auto</span> test() -&gt; <span class="keywordtype">bool</span></div>
+<div class="line">{</div>
+<div class="line">    CHECK(<a class="code" href="namespaceetl.html#a2ba6712de4c274105b7757d5ff5c256d">etl::cmp_equal</a>(1, T(1)));</div>
+<div class="line">    CHECK_FALSE(<a class="code" href="namespaceetl.html#a2ba6712de4c274105b7757d5ff5c256d">etl::cmp_equal</a>(-1, T(1)));</div>
+<div class="line">    CHECK_NOEXCEPT(<a class="code" href="namespaceetl.html#a2ba6712de4c274105b7757d5ff5c256d">etl::cmp_equal</a>(-1, T(1)));</div>
+<div class="line">    CHECK_SAME_TYPE(decltype(<a class="code" href="namespaceetl.html#a2ba6712de4c274105b7757d5ff5c256d">etl::cmp_equal</a>(-1, T(1))), <span class="keywordtype">bool</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// more checks</span></div>
+<div class="line">    <span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">constexpr <span class="keyword">auto</span> test_all() -&gt; <span class="keywordtype">bool</span></div>
+<div class="line">{</div>
+<div class="line">    CHECK(test&lt;signed char&gt;());</div>
+<div class="line">    CHECK(test&lt;signed short&gt;());</div>
+<div class="line">    CHECK(test&lt;signed int&gt;());</div>
+<div class="line">    CHECK(test&lt;signed long&gt;());</div>
+<div class="line">    CHECK(test&lt;signed long long&gt;());</div>
+<div class="line"> </div>
+<div class="line">    CHECK(test&lt;unsigned char&gt;());</div>
+<div class="line">    CHECK(test&lt;unsigned short&gt;());</div>
+<div class="line">    CHECK(test&lt;unsigned int&gt;());</div>
+<div class="line">    CHECK(test&lt;unsigned long&gt;());</div>
+<div class="line">    CHECK(test&lt;unsigned long long&gt;());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// more custom types if needed</span></div>
+<div class="line">    <span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">} <span class="comment">// namespace</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// runs both assert &amp; static_assert</span></div>
+<div class="line">    STATIC_CHECK(test_all());</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// runs only assert, use if constexpr is not supported</span></div>
+<div class="line">    <span class="comment">// CHECK(test_all());</span></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespaceetl_html_a2ba6712de4c274105b7757d5ff5c256d"><div class="ttname"><a href="namespaceetl.html#a2ba6712de4c274105b7757d5ff5c256d">etl::cmp_equal</a></div><div class="ttdeci">requires constexpr etl::detail::comparable_integers&lt; T, U &gt; auto cmp_equal(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition:</b> cmp_equal.hpp:22</div></div>
+<div class="ttc" id="autility_8hpp_html"><div class="ttname"><a href="utility_8hpp.html">utility.hpp</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Tools</h1>
 <h2><a class="anchor" id="autotoc_md5"></a>
 CMake Presets</h2>
-<div class="fragment"><div class="line"># Todo: How does &quot;Ninja Multi-Config&quot; work in VSCode when presets are enabled?</div>
-<div class="line">cmake --list-presets=all .</div>
+<div class="fragment"><div class="line">cmake --list-presets=all .</div>
 <div class="line">cmake --preset desktop</div>
 <div class="line">cmake --build --preset desktop</div>
 <div class="line">ctest --preset desktop</div>
@@ -146,10 +193,33 @@ pre-commit</h2>
 <div class="line">pre-commit run -a</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 doxygen</h2>
-<div class="fragment"><div class="line">git clone https://github.com/jothepro/doxygen-awesome-css.git 3rd_party/doxygen-awesome-css</div>
-<div class="line">doxygen Doxyfile</div>
+<div class="fragment"><div class="line">doxygen Doxyfile</div>
 <div class="line">open build-doxygen/html/index.html</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+VS Code</h2>
+<p>In <code>.vscode/settings.json</code></p>
+<div class="fragment"><div class="line">// enable</div>
+<div class="line">&quot;cmake.useCMakePresets&quot;: &quot;always&quot;</div>
+</div><!-- fragment --><div class="fragment"><div class="line">// disable</div>
+<div class="line">&quot;cmake.useCMakePresets&quot;: &quot;never&quot;</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
+Coding Style</h1>
+<ul>
+<li>Trailing return type is used everywhere. Including if type is <code>void</code><ul>
+<li><code>auto foo() -&gt; double;</code></li>
+<li><code>auto nothing() -&gt; void;</code></li>
+</ul>
+</li>
+<li>Naming conventions:<ul>
+<li>Public interface matches the STL conventions</li>
+<li>Checked via <code>clang-tidy</code>. See <a href="./.clang-tidy">.clang-tidy</a> config.</li>
+<li>Local variables &amp; parameters are <code>camelBack</code></li>
+<li>Template arguments are <code>CamelCase</code></li>
+<li>Private members have a "\_" prefix. e.g. <code>int _val;</code> </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
