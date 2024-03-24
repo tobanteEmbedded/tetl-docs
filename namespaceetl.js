@@ -594,7 +594,7 @@ var namespaceetl =
     [ "float_t", "namespaceetl.html#a04532556e568bb7cc276440befc7f441", null ],
     [ "double_t", "namespaceetl.html#a9c91cfdd41de11ccf80532067354fe92", null ],
     [ "common_comparison_category_t", "namespaceetl.html#ad206e673dfd2f8aa9800684c6734595c", null ],
-    [ "compare_three_way_result_t", "namespaceetl.html#a076e8c592e28166b1126264966624b4b", null ],
+    [ "compare_three_way_result_t", "namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc", null ],
     [ "smallest_size_t", "namespaceetl.html#a910e85d940ada86b5e325f3a16815963", null ],
     [ "nullptr_t", "namespaceetl.html#adf4272f3f16bf2234ac8248db615f133", null ],
     [ "ptrdiff_t", "namespaceetl.html#a955e0d5a5e84e9e394bf38a95c8ce380", null ],

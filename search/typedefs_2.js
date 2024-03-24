@@ -10,7 +10,7 @@ var searchData=
   ['common_5fcomparison_5fcategory_5ft_5976',['common_comparison_category_t',['../namespaceetl.html#ad206e673dfd2f8aa9800684c6734595c',1,'etl']]],
   ['common_5freference_5ft_5977',['common_reference_t',['../namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221',1,'etl']]],
   ['common_5ftype_5ft_5978',['common_type_t',['../namespaceetl.html#aa474dd82a788a57735f0603b85954c37',1,'etl']]],
-  ['compare_5fthree_5fway_5fresult_5ft_5979',['compare_three_way_result_t',['../namespaceetl.html#a076e8c592e28166b1126264966624b4b',1,'etl']]],
+  ['compare_5fthree_5fway_5fresult_5ft_5979',['compare_three_way_result_t',['../namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc',1,'etl']]],
   ['compatible_5980',['compatible',['../namespaceetl_1_1simd__abi.html#ababf41768ab504817bbb003125b1ed15',1,'etl::simd_abi']]],
   ['conditional_5ft_5981',['conditional_t',['../namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde',1,'etl']]],
   ['configstack_5fdepth_5ftype_5982',['configSTACK_DEPTH_TYPE',['../stubs_8hpp.html#aabec32c46dbd674bee0bdd6e57cb8888',1,'stubs.hpp']]],

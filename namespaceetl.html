@@ -1268,9 +1268,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ad206e673dfd2f8aa9800684c6734595c"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:ad206e673dfd2f8aa9800684c6734595c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ad206e673dfd2f8aa9800684c6734595c">common_comparison_category_t</a> = typename <a class="el" href="structetl_1_1common__comparison__category.html">common_comparison_category</a>&lt; Ts... &gt;::type</td></tr>
 <tr class="separator:ad206e673dfd2f8aa9800684c6734595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076e8c592e28166b1126264966624b4b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = T&gt; </td></tr>
-<tr class="memitem:a076e8c592e28166b1126264966624b4b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a076e8c592e28166b1126264966624b4b">compare_three_way_result_t</a> = decltype(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">declval</a>&lt; <a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">remove_reference_t</a>&lt; T &gt; const  &amp; &gt;()&lt;=&gt; <a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">declval</a>&lt; <a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">remove_reference_t</a>&lt; U &gt; const  &amp; &gt;())</td></tr>
-<tr class="separator:a076e8c592e28166b1126264966624b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe969bc58735b08f481f5c99f7bc76bc"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = T&gt; </td></tr>
+<tr class="memitem:abe969bc58735b08f481f5c99f7bc76bc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc">compare_three_way_result_t</a> = decltype(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt; <a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a>&lt; T &gt; const  &amp; &gt;()&lt;=&gt; <a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt; <a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a>&lt; U &gt; const  &amp; &gt;())</td></tr>
+<tr class="separator:abe969bc58735b08f481f5c99f7bc76bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a910e85d940ada86b5e325f3a16815963"><td class="memTemplParams" colspan="2">template&lt;unsigned long long N&gt; </td></tr>
 <tr class="memitem:a910e85d940ada86b5e325f3a16815963"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a910e85d940ada86b5e325f3a16815963">smallest_size_t</a> = <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">conditional_t</a>&lt;(N&lt; static_cast&lt; unsigned char &gt;(-1)), unsigned char, <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">conditional_t</a>&lt;(N&lt; static_cast&lt; unsigned short &gt;(-1)), unsigned short, <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">conditional_t</a>&lt;(N&lt; static_cast&lt; unsigned int &gt;(-1)), unsigned int, <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">conditional_t</a>&lt;(N&lt; static_cast&lt; unsigned long &gt;(-1)), unsigned long, unsigned long long &gt; &gt;&gt; &gt;</td></tr>
 <tr class="memdesc:a910e85d940ada86b5e325f3a16815963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smallest fixed-width unsigned integer type that can represent values in the range [0, N].  <a href="namespaceetl.html#a910e85d940ada86b5e325f3a16815963">More...</a><br /></td></tr>
@@ -4916,7 +4916,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a299d1930276b590319d37b6b2afa6724"><td class="memItemLeft" align="right" valign="top">char T int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a299d1930276b590319d37b6b2afa6724">base</a></td></tr>
 <tr class="separator:a299d1930276b590319d37b6b2afa6724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb8468ab3c13301477017cfc35f00ef"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a1bb8468ab3c13301477017cfc35f00ef"><td class="memTemplItemLeft" align="right" valign="top">requires&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a> { typename <a class="el" href="namespaceetl.html#a076e8c592e28166b1126264966624b4b">compare_three_way_result_t</a>&lt;T, U&gt;</td></tr>
+<tr class="memitem:a1bb8468ab3c13301477017cfc35f00ef"><td class="memTemplItemLeft" align="right" valign="top">requires&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a> { typename <a class="el" href="namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc">compare_three_way_result_t</a>&lt;T, U&gt;</td></tr>
 <tr class="separator:a1bb8468ab3c13301477017cfc35f00ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada667f9d8a054c2bcf73335fd257dbb8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Cat  = partial_ordering&gt; </td></tr>
 <tr class="memitem:ada667f9d8a054c2bcf73335fd257dbb8"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ada667f9d8a054c2bcf73335fd257dbb8">three_way_comparable</a></td></tr>
@@ -5496,8 +5496,8 @@ template&lt;typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="a076e8c592e28166b1126264966624b4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a076e8c592e28166b1126264966624b4b">&#9670;&nbsp;</a></span>compare_three_way_result_t</h2>
+<a id="abe969bc58735b08f481f5c99f7bc76bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe969bc58735b08f481f5c99f7bc76bc">&#9670;&nbsp;</a></span>compare_three_way_result_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5505,7 +5505,7 @@ template&lt;typename... Ts&gt; </div>
 template&lt;typename T , typename U  = T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceetl.html#a076e8c592e28166b1126264966624b4b">etl::compare_three_way_result_t</a> = typedef decltype( <a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">declval</a>&lt;<a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">remove_reference_t</a>&lt;T&gt; const&amp;&gt;() &lt;=&gt; <a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">declval</a>&lt;<a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">remove_reference_t</a>&lt;U&gt; const&amp;&gt;() )</td>
+          <td class="memname">using <a class="el" href="namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc">etl::compare_three_way_result_t</a> = typedef decltype(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt;<a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a>&lt;T&gt; const&amp;&gt;() &lt;=&gt; <a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt;<a class="el" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a>&lt;U&gt; const&amp;&gt;())</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -41237,7 +41237,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T , typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">requires etl::requires { typename <a class="el" href="namespaceetl.html#a076e8c592e28166b1126264966624b4b">compare_three_way_result_t</a>&lt;T, U&gt;</td>
+          <td class="memname">requires etl::requires { typename <a class="el" href="namespaceetl.html#abe969bc58735b08f481f5c99f7bc76bc">compare_three_way_result_t</a>&lt;T, U&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -41264,7 +41264,7 @@ template&lt;typename T , typename Cat  = partial_ordering&gt; </div>
 <div class="line">        { a &lt;=&gt; <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> } -&gt; detail::compares_as&lt;Cat&gt;;</div>
 <div class="line">    }</div>
 <div class="ttc" id="anamespaceetl_html_a18b6c2ea4f13089ede1a42514f87e6c6"><div class="ttname"><a href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">etl::b</a></div><div class="ttdeci">T const  &amp; b</div><div class="ttdef"><b>Definition:</b> incrementable_traits.hpp:39</div></div>
-<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:25</div></div>
+<div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:21</div></div>
 </div><!-- fragment -->
 </div>
 </div>
