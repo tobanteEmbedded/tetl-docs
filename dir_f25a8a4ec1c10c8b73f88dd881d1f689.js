@@ -10,7 +10,7 @@ var dir_f25a8a4ec1c10c8b73f88dd881d1f689 =
     [ "copy_backward.hpp", "copy__backward_8hpp.html", "copy__backward_8hpp" ],
     [ "copy_if.hpp", "copy__if_8hpp.html", "copy__if_8hpp" ],
     [ "copy_n.hpp", "copy__n_8hpp.html", "copy__n_8hpp" ],
-    [ "count.hpp", "count_8hpp.html", "count_8hpp" ],
+    [ "count.hpp", "__algorithm_2count_8hpp.html", "__algorithm_2count_8hpp" ],
     [ "count_if.hpp", "count__if_8hpp.html", "count__if_8hpp" ],
     [ "equal.hpp", "equal_8hpp.html", "equal_8hpp" ],
     [ "equal_range.hpp", "equal__range_8hpp.html", "equal__range_8hpp" ],

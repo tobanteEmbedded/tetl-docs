@@ -1,6 +1,8 @@
 var dir_7f0d850bb99825c9c1df28f118549ce8 =
 [
     [ "at.hpp", "at_8hpp.html", "at_8hpp" ],
+    [ "contains.hpp", "contains_8hpp.html", "contains_8hpp" ],
+    [ "count.hpp", "__meta_2count_8hpp.html", "__meta_2count_8hpp" ],
     [ "head.hpp", "head_8hpp.html", "head_8hpp" ],
     [ "list.hpp", "list_8hpp.html", [
       [ "list", "structetl_1_1meta_1_1list.html", null ]

@@ -13,6 +13,9 @@ var hierarchy =
     [ "etl::array< etl::uint8_t, allocated_ >", "structetl_1_1array.html", null ],
     [ "etl::array< value_type, Capacity+1 >", "structetl_1_1array.html", null ],
     [ "etl::assert_msg", "structetl_1_1assert__msg.html", null ],
+    [ "etl::meta::at< I, List >", "structetl_1_1meta_1_1at.html", null ],
+    [ "etl::meta::at< 0, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
+    [ "etl::meta::at< I, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "etl::back_insert_iterator< Container >", "structetl_1_1back__insert__iterator.html", null ],
     [ "etl::basic_common_reference< T, U, TQ, UQ >", "structetl_1_1basic__common__reference.html", null ],
     [ "etl::basic_format_arg< Context >", "structetl_1_1basic__format__arg.html", null ],
@@ -89,6 +92,8 @@ var hierarchy =
     [ "etl::experimental::const_where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1const__where__expression.html", null ],
     [ "etl::experimental::parallelism_v2::const_where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1const__where__expression.html", null ],
     [ "etl::ranges::construct_at_fn", "structetl_1_1ranges_1_1construct__at__fn.html", null ],
+    [ "etl::meta::contains< Needle, Haystack >", "structetl_1_1meta_1_1contains.html", null ],
+    [ "etl::meta::count< Needle, Haystack >", "structetl_1_1meta_1_1count.html", null ],
     [ "etl::chrono::day", "structetl_1_1chrono_1_1day.html", null ],
     [ "etl::decay< T >", "structetl_1_1decay.html", null ],
     [ "etl::experimental::parallelism_v2::simd_abi::deduce< T, N, Abis >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__abi_1_1deduce.html", null ],
@@ -186,6 +191,8 @@ var hierarchy =
     [ "etl::hash< unsigned long long >", "structetl_1_1hash_3_01unsigned_01long_01long_01_4.html", null ],
     [ "etl::hash< unsigned short >", "structetl_1_1hash_3_01unsigned_01short_01_4.html", null ],
     [ "etl::hash< wchar_t >", "structetl_1_1hash_3_01wchar__t_01_4.html", null ],
+    [ "etl::meta::head< Ts >", "structetl_1_1meta_1_1head.html", null ],
+    [ "etl::meta::head< list< Head, Tail... > >", "structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "etl::identity", "structetl_1_1identity.html", null ],
     [ "etl::ignore", "structetl_1_1ignore.html", null ],
     [ "etl::imaxdiv_t", "structetl_1_1imaxdiv__t.html", null ],
@@ -350,6 +357,7 @@ var hierarchy =
       [ "etl::is_union< T >", "structetl_1_1is__union.html", null ],
       [ "etl::is_volatile< T >", "structetl_1_1is__volatile.html", null ],
       [ "etl::is_volatile< T volatile >", "structetl_1_1is__volatile_3_01T_01volatile_01_4.html", null ],
+      [ "etl::meta::contains< Needle, list< Ts... > >", "structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "etl::negation< B >", "structetl_1_1negation.html", null ],
       [ "etl::ratio_equal< R1, R2 >", "structetl_1_1ratio__equal.html", null ],
       [ "etl::ratio_not_equal< R1, R2 >", "structetl_1_1ratio__not__equal.html", null ],
@@ -375,6 +383,9 @@ var hierarchy =
     [ "etl::integral_constant< etl::size_t, sizeof...(Ts)>", "structetl_1_1integral__constant.html", [
       [ "etl::variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "etl::variant_size< variant< Ts... > >", "structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html", null ]
+    ] ],
+    [ "etl::integral_constant< etl::size_t,(etl::is_same_v< Needle, Ts >+...+0)>", "structetl_1_1integral__constant.html", [
+      [ "etl::meta::count< Needle, list< Ts... > >", "structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "etl::integral_constant< int, 0 >", "structetl_1_1integral__constant.html", [
       [ "etl::is_placeholder< T >", "structetl_1_1is__placeholder.html", null ]
@@ -552,6 +563,10 @@ var hierarchy =
     [ "etl::pointer_traits< Ptr >", "structetl_1_1pointer__traits.html", null ],
     [ "etl::pointer_traits< T * >", "structetl_1_1pointer__traits_3_01T_01_5_01_4.html", null ],
     [ "etl::experimental::hardware::stm32::port", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html", null ],
+    [ "etl::meta::push_back< T, List >", "structetl_1_1meta_1_1push__back.html", null ],
+    [ "etl::meta::push_back< T, list< Ts... > >", "structetl_1_1meta_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
+    [ "etl::meta::push_front< T, List >", "structetl_1_1meta_1_1push__front.html", null ],
+    [ "etl::meta::push_front< T, list< Ts... > >", "structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::experimental::freertos::queue< T, Size >", "structetl_1_1experimental_1_1freertos_1_1queue.html", null ],
     [ "etl::ratio< Num, Denom >", "structetl_1_1ratio.html", null ],
     [ "etl::experimental::parallelism_v2::rebind_simd< T, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html", null ],
@@ -614,6 +629,8 @@ var hierarchy =
     [ "etl::strong_ordering", "structetl_1_1strong__ordering.html", null ],
     [ "etl::submdspan_mapping_result< LayoutMapping >", "structetl_1_1submdspan__mapping__result.html", null ],
     [ "etl::chrono::system_clock", "structetl_1_1chrono_1_1system__clock.html", null ],
+    [ "etl::meta::tail< Ts >", "structetl_1_1meta_1_1tail.html", null ],
+    [ "etl::meta::tail< list< Head, Tail... > >", "structetl_1_1meta_1_1tail_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "etl::chrono::time_point< Clock, Duration >", "structetl_1_1chrono_1_1time__point.html", null ],
     [ "etl::experimental::freertos::times< Count >", "structetl_1_1experimental_1_1freertos_1_1times.html", null ],
     [ "etl::timespec", "structetl_1_1timespec.html", null ],

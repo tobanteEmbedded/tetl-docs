@@ -104,39 +104,33 @@ $(document).ready(function(){initNavTree('at_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespaceetl_1_1meta.html">    9</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1meta.html">etl::meta</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>detail {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> I, <span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span>at_impl {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">using</span> type = <span class="keyword">typename</span> at_impl&lt;I - 1, Ts...&gt;::type;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>at_impl&lt;0, T, Ts...&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">using</span> type = T;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">struct </span><a class="code" href="namespaceetl_1_1meta.html#a2ac5d936f6858870d775d8159415bab2">at</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> I, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span><a class="code" href="namespaceetl_1_1meta.html#a2ac5d936f6858870d775d8159415bab2">at</a>&lt;I, <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;Ts...&gt;&gt; {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">using</span> type = <span class="keyword">typename</span> at_impl&lt;I, Ts...&gt;::type;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespaceetl_1_1meta.html#a2ac5d936f6858870d775d8159415bab2">   34</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl_1_1meta.html#a2ac5d936f6858870d775d8159415bab2">at</a> = <span class="keyword">typename</span> detail::at&lt;I, List&gt;::type;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace etl::meta</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_META_AT_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1at.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1meta_1_1at.html">at</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Head, <span class="keyword">typename</span>... Tail&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1meta_1_1at.html">at</a>&lt;0, <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;Head, Tail...&gt;&gt; {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#aeba4b84b77aedc552e8fbae48f11cc65">   16</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#aeba4b84b77aedc552e8fbae48f11cc65">type</a> = Head;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> I, <span class="keyword">typename</span> Head, <span class="keyword">typename</span>... Tail&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1meta_1_1at.html">at</a>&lt;I, <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;Head, Tail...&gt;&gt; {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#a631f1dce0be74d439da7c91af05aac96">   21</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#a631f1dce0be74d439da7c91af05aac96">type</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1meta_1_1at.html">at</a>&lt;I - 1, <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;Tail...&gt;&gt;<a class="code" href="structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#a631f1dce0be74d439da7c91af05aac96">::type</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl_1_1meta.html#af9d856c5e78e12e6a0a72cc7883aece2">   25</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl_1_1meta.html#af9d856c5e78e12e6a0a72cc7883aece2">at_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1meta_1_1at.html">at&lt;I, List&gt;::type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace etl::meta</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_META_AT_HPP</span></div>
 <div class="ttc" id="alist_8hpp_html"><div class="ttname"><a href="list_8hpp.html">list.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1meta_html"><div class="ttname"><a href="namespaceetl_1_1meta.html">etl::meta</a></div><div class="ttdef"><b>Definition:</b> at.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_1_1meta_html_a2ac5d936f6858870d775d8159415bab2"><div class="ttname"><a href="namespaceetl_1_1meta.html#a2ac5d936f6858870d775d8159415bab2">etl::meta::at</a></div><div class="ttdeci">typename detail::at&lt; I, List &gt;::type at</div><div class="ttdef"><b>Definition:</b> at.hpp:34</div></div>
+<div class="ttc" id="anamespaceetl_1_1meta_html_af9d856c5e78e12e6a0a72cc7883aece2"><div class="ttname"><a href="namespaceetl_1_1meta.html#af9d856c5e78e12e6a0a72cc7883aece2">etl::meta::at_t</a></div><div class="ttdeci">typename at&lt; I, List &gt;::type at_t</div><div class="ttdef"><b>Definition:</b> at.hpp:25</div></div>
 <div class="ttc" id="anamespaceetl_html_a9671046b2e5aea5a45a7f12fecc9f911"><div class="ttname"><a href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition:</b> size_t.hpp:14</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
+<div class="ttc" id="astructetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4_html_aeba4b84b77aedc552e8fbae48f11cc65"><div class="ttname"><a href="structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#aeba4b84b77aedc552e8fbae48f11cc65">etl::meta::at&lt; 0, list&lt; Head, Tail... &gt; &gt;::type</a></div><div class="ttdeci">Head type</div><div class="ttdef"><b>Definition:</b> at.hpp:16</div></div>
+<div class="ttc" id="astructetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4_html_a631f1dce0be74d439da7c91af05aac96"><div class="ttname"><a href="structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html#a631f1dce0be74d439da7c91af05aac96">etl::meta::at&lt; I, list&lt; Head, Tail... &gt; &gt;::type</a></div><div class="ttdeci">typename at&lt; I - 1, list&lt; Tail... &gt; &gt;::type type</div><div class="ttdef"><b>Definition:</b> at.hpp:21</div></div>
+<div class="ttc" id="astructetl_1_1meta_1_1at_html"><div class="ttname"><a href="structetl_1_1meta_1_1at.html">etl::meta::at</a></div><div class="ttdef"><b>Definition:</b> at.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1meta_1_1list_html"><div class="ttname"><a href="structetl_1_1meta_1_1list.html">etl::meta::list</a></div><div class="ttdef"><b>Definition:</b> list.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

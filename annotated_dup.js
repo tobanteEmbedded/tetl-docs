@@ -98,7 +98,22 @@ var annotated_dup =
         [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html", "structetl_1_1linalg_1_1explicit__diagonal__t" ]
       ] ],
       [ "meta", "namespaceetl_1_1meta.html", [
-        [ "list", "structetl_1_1meta_1_1list.html", null ]
+        [ "at", "structetl_1_1meta_1_1at.html", null ],
+        [ "at< 0, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ],
+        [ "at< I, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ],
+        [ "contains", "structetl_1_1meta_1_1contains.html", null ],
+        [ "contains< Needle, list< Ts... > >", "structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
+        [ "count", "structetl_1_1meta_1_1count.html", null ],
+        [ "count< Needle, list< Ts... > >", "structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
+        [ "head", "structetl_1_1meta_1_1head.html", null ],
+        [ "head< list< Head, Tail... > >", "structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ],
+        [ "list", "structetl_1_1meta_1_1list.html", null ],
+        [ "push_back", "structetl_1_1meta_1_1push__back.html", null ],
+        [ "push_back< T, list< Ts... > >", "structetl_1_1meta_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4" ],
+        [ "push_front", "structetl_1_1meta_1_1push__front.html", null ],
+        [ "push_front< T, list< Ts... > >", "structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4" ],
+        [ "tail", "structetl_1_1meta_1_1tail.html", null ],
+        [ "tail< list< Head, Tail... > >", "structetl_1_1meta_1_1tail_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1tail_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ]
       ] ],
       [ "ranges", "namespaceetl_1_1ranges.html", [
         [ "construct_at_fn", "structetl_1_1ranges_1_1construct__at__fn.html", "structetl_1_1ranges_1_1construct__at__fn" ],
