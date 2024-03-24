@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: include/etl/_meta/cons.hpp Source File</title>
+<title>tetl: include/etl/_meta/push_front.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('cons_8hpp_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('push__front_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,43 +91,45 @@ $(document).ready(function(){initNavTree('cons_8hpp_source.html',''); initResiza
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cons.hpp</div>  </div>
+<div class="title">push_front.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="cons_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<a href="push__front_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_META_CONS_HPP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_META_CONS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef TETL_META_PUSH_FRONT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_META_PUSH_FRONT_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="list_8hpp.html">etl/_meta/list.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl_1_1meta.html">etl::meta</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1cons.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1meta_1_1cons.html">cons</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1cons_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structetl_1_1meta_1_1cons.html">cons</a>&lt;T, <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;Ts...&gt;&gt; {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1meta_1_1cons_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html#a77d1bead61f9e4471713c49ea1dad254">   15</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structetl_1_1meta_1_1list.html">type</a> = <a class="code" href="structetl_1_1meta_1_1list.html">list</a>&lt;T, Ts...&gt;;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl_1_1meta.html#a8cd7ef34ebef032f6f438d112e480c67">   19</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl_1_1meta.html#a8cd7ef34ebef032f6f438d112e480c67">cons_t</a> = <span class="keyword">typename</span> <a class="code" href="structetl_1_1meta_1_1cons.html">cons&lt;T, List&gt;::type</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace etl::meta</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_META_CONS_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span><a class="code" href="namespaceetl_1_1meta.html#a1d3a1d80d1da5ff33d17fdb3f396cb4b">push_front</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span><a class="code" href="namespaceetl_1_1meta.html#a1d3a1d80d1da5ff33d17fdb3f396cb4b">push_front</a>&lt;T, list&lt;Ts...&gt;&gt; {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">using</span> type = list&lt;T, Ts...&gt;;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl_1_1meta.html#a1d3a1d80d1da5ff33d17fdb3f396cb4b">   23</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceetl_1_1meta.html#a1d3a1d80d1da5ff33d17fdb3f396cb4b">push_front</a> = <span class="keyword">typename</span> detail::push_front&lt;T, List&gt;::type;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl::meta</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_META_PUSH_FRONT_HPP</span></div>
 <div class="ttc" id="alist_8hpp_html"><div class="ttname"><a href="list_8hpp.html">list.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1meta_html"><div class="ttname"><a href="namespaceetl_1_1meta.html">etl::meta</a></div><div class="ttdef"><b>Definition:</b> at.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_1_1meta_html_a8cd7ef34ebef032f6f438d112e480c67"><div class="ttname"><a href="namespaceetl_1_1meta.html#a8cd7ef34ebef032f6f438d112e480c67">etl::meta::cons_t</a></div><div class="ttdeci">typename cons&lt; T, List &gt;::type cons_t</div><div class="ttdef"><b>Definition:</b> cons.hpp:19</div></div>
-<div class="ttc" id="astructetl_1_1meta_1_1cons_html"><div class="ttname"><a href="structetl_1_1meta_1_1cons.html">etl::meta::cons</a></div><div class="ttdef"><b>Definition:</b> cons.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1meta_1_1list_html"><div class="ttname"><a href="structetl_1_1meta_1_1list.html">etl::meta::list</a></div><div class="ttdef"><b>Definition:</b> list.hpp:9</div></div>
+<div class="ttc" id="anamespaceetl_1_1meta_html_a1d3a1d80d1da5ff33d17fdb3f396cb4b"><div class="ttname"><a href="namespaceetl_1_1meta.html#a1d3a1d80d1da5ff33d17fdb3f396cb4b">etl::meta::push_front</a></div><div class="ttdeci">typename detail::push_front&lt; T, List &gt;::type push_front</div><div class="ttdef"><b>Definition:</b> push_front.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_7f0d850bb99825c9c1df28f118549ce8.html">_meta</a></li><li class="navelem"><a class="el" href="cons_8hpp.html">cons.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_7f0d850bb99825c9c1df28f118549ce8.html">_meta</a></li><li class="navelem"><a class="el" href="push__front_8hpp.html">push_front.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

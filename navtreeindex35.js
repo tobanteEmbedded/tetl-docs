@@ -1,13 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"structetl_1_1weak__ordering.html":[7,0,0,26],
-"structetl_1_1weak__ordering.html#a02f90a8a012c6fa0acead0e4b4c51193":[7,0,0,26,3],
-"structetl_1_1weak__ordering.html#a0acb7b22a4d4f57f7d332fb21c3d50a8":[7,0,0,26,9],
-"structetl_1_1weak__ordering.html#a18aad6a5e31270421c9e0255578bff89":[7,0,0,26,2],
-"structetl_1_1weak__ordering.html#a1fb285b2439a917e066e60105c91b4b4":[7,0,0,26,1],
-"structetl_1_1weak__ordering.html#a280faa2d1fe8fd54f0a03faeda738217":[7,0,0,26,6],
-"structetl_1_1weak__ordering.html#a2a5455d987051c29a63981d13f629c33":[7,0,0,26,14],
-"structetl_1_1weak__ordering.html#a2c445311519e40d22ed584ca5bb4a04c":[7,0,0,26,12],
 "structetl_1_1weak__ordering.html#a8e687afb5edcebb1fb64b2eea53faed9":[7,0,0,26,15],
 "structetl_1_1weak__ordering.html#a9123f329e172a6829c89b5da1b3d8d53":[7,0,0,26,13],
 "structetl_1_1weak__ordering.html#a93c9a463a5ba67e9aa60dd441859c6a5":[7,0,0,26,5],
@@ -232,9 +224,9 @@ var NAVTREEINDEX35 =
 "system__clock_8hpp_source.html":[8,0,1,0,9,16],
 "system__error_8hpp.html":[8,0,1,0,122],
 "system__error_8hpp_source.html":[8,0,1,0,122],
-"tail_8hpp.html":[8,0,1,0,40,4],
-"tail_8hpp.html#a234f45f08c8add15c2d707f8f635e9cd":[8,0,1,0,40,4,1],
-"tail_8hpp_source.html":[8,0,1,0,40,4],
+"tail_8hpp.html":[8,0,1,0,40,5],
+"tail_8hpp.html#af1ac40abb617319063cefd3381ee8fcc":[8,0,1,0,40,5,0],
+"tail_8hpp_source.html":[8,0,1,0,40,5],
 "task_8hpp.html":[8,0,1,0,66,0,3],
 "task_8hpp.html#a0d88a9a6784792033b0b320a5d5af2e9":[8,0,1,0,66,0,3,7],
 "task_8hpp.html#a253174562969909422579caa02fa4f3e":[8,0,1,0,66,0,3,4],
@@ -249,5 +241,13 @@ var NAVTREEINDEX35 =
 "test__bit_8hpp.html":[8,0,1,0,3,18],
 "test__bit_8hpp.html#a4d062f57d0edbd6d850d13e600e385ee":[8,0,1,0,3,18,1],
 "test__bit_8hpp.html#a6446130881cadc4edfba7f0ec4b01d5f":[8,0,1,0,3,18,0],
-"test__bit_8hpp_source.html":[8,0,1,0,3,18]
+"test__bit_8hpp_source.html":[8,0,1,0,3,18],
+"three__way__comparable_8hpp.html":[8,0,1,0,12,7],
+"three__way__comparable_8hpp.html#ada667f9d8a054c2bcf73335fd257dbb8":[8,0,1,0,12,7,0],
+"three__way__comparable_8hpp_source.html":[8,0,1,0,12,7],
+"tie_8hpp.html":[8,0,1,0,60,7],
+"tie_8hpp.html#ada3ddae955d45b6a63298906227f2f60":[8,0,1,0,60,7,0],
+"tie_8hpp_source.html":[8,0,1,0,60,7],
+"time__point_8hpp.html":[8,0,1,0,9,17],
+"time__point_8hpp.html#a2372ffa577c8ef42bfd6d13be820fd4f":[8,0,1,0,9,17,4]
 };

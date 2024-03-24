@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"structetl_1_1basic__streambuf.html#a2483e482a1f46b051ea4cca554d59abe":[7,0,0,136,1],
+"structetl_1_1basic__streambuf.html#a5c5d502f336fd2e540cab06924d2a00b":[7,0,0,136,3],
+"structetl_1_1basic__streambuf.html#a7cabf379e74e8b46ce1932ae10f0de9f":[7,0,0,136,5],
+"structetl_1_1basic__streambuf.html#aa022463d2722e3f4ebe4a3b0efcb8bab":[7,0,0,136,4],
 "structetl_1_1basic__streambuf.html#aac86fb3b05d7563b2ca81dc73d1c752c":[7,0,0,136,0],
 "structetl_1_1basic__string__view.html":[7,0,0,253],
 "structetl_1_1basic__string__view.html#a0040d0a7ee323541b2079b0abc4f27d1":[7,0,0,253,63],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "structetl_1_1chrono_1_1is__clock.html":[7,0,0,0,3],
 "structetl_1_1chrono_1_1last__spec.html":[7,0,0,0,4],
 "structetl_1_1chrono_1_1last__spec.html#ae85ab19b13382e02c3289c46ccbced30":[7,0,0,0,4,0],
-"structetl_1_1chrono_1_1local__t.html":[7,0,0,0,5],
-"structetl_1_1chrono_1_1month.html":[7,0,0,0,6],
-"structetl_1_1chrono_1_1month.html#a0965600c23bd857841eb67305acc9a7a":[7,0,0,0,6,4],
-"structetl_1_1chrono_1_1month.html#a18a0aa4828ebdc9095db40a57a1e35f2":[7,0,0,0,6,2],
-"structetl_1_1chrono_1_1month.html#a289e2cda404950e111867593f8c3b4ea":[7,0,0,0,6,8]
+"structetl_1_1chrono_1_1local__t.html":[7,0,0,0,5]
 };

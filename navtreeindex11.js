@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"iswlower_8hpp_source.html":[8,0,1,0,24,6],
-"iswprint_8hpp.html":[8,0,1,0,24,7],
-"iswprint_8hpp.html#a92c5da6eb3f6bb1409caaf48fe877d11":[8,0,1,0,24,7,0],
 "iswprint_8hpp_source.html":[8,0,1,0,24,7],
 "iswpunct_8hpp.html":[8,0,1,0,24,8],
 "iswpunct_8hpp.html#ace0e85b2a576c543e973d860e1c1295f":[8,0,1,0,24,8,0],
@@ -94,8 +91,8 @@ var NAVTREEINDEX11 =
 "limits_8hpp_source.html":[8,0,1,0,99],
 "linalg_8hpp.html":[8,0,1,0,100],
 "linalg_8hpp_source.html":[8,0,1,0,100],
-"list_8hpp.html":[8,0,1,0,40,3],
-"list_8hpp_source.html":[8,0,1,0,40,3],
+"list_8hpp.html":[8,0,1,0,40,2],
+"list_8hpp_source.html":[8,0,1,0,40,2],
 "llabs_8hpp.html":[8,0,1,0,20,9],
 "llabs_8hpp.html#a03c11a988c576e5879aa5b6517da8d3e":[8,0,1,0,20,9,0],
 "llabs_8hpp_source.html":[8,0,1,0,20,9],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "md_CONTRIBUTING.html#autotoc_md4":[1,2],
 "md_CONTRIBUTING.html#autotoc_md5":[1,2,0],
 "md_CONTRIBUTING.html#autotoc_md6":[1,2,1],
-"md_CONTRIBUTING.html#autotoc_md7":[1,2,2]
+"md_CONTRIBUTING.html#autotoc_md7":[1,2,2],
+"md_CONTRIBUTING.html#autotoc_md8":[1,2,3],
+"md_docs_progress.html":[2],
+"md_docs_progress.html#autotoc_md88":[2,0]
 };
