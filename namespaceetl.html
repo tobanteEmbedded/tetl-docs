@@ -297,9 +297,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1equal__to_3_01void_01_4.html">equal_to&lt; void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1function__ref.html">function_ref</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-owning view of a callable.  <a href="structetl_1_1function__ref.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html">function_ref&lt; R(Args...)&gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-owning view of a callable.  <a href="structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html">function_ref&lt; R(Args...) noexcept &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1greater.html">greater</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object for performing comparisons. Unless specialised, invokes operator&gt; on type T. <a href="https://en.cppreference.com/w/cpp/utility/functional/greater">https://en.cppreference.com/w/cpp/utility/functional/greater</a>.  <a href="structetl_1_1greater.html#details">More...</a><br /></td></tr>
@@ -3684,10 +3686,6 @@ Functions</h2></td></tr>
 <tr class="memitem:afb3b5926a2945bf5dfa04525b2b3a11b"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
 <tr class="memitem:afb3b5926a2945bf5dfa04525b2b3a11b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afb3b5926a2945bf5dfa04525b2b3a11b">function_ref</a> (R(*)(Args...)) -&gt; <a class="el" href="structetl_1_1function__ref.html">function_ref</a>&lt; R(Args...)&gt;</td></tr>
 <tr class="separator:afb3b5926a2945bf5dfa04525b2b3a11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2b9f9a58bfd2eb7843bc6d4993f6e4"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
-<tr class="memitem:a0a2b9f9a58bfd2eb7843bc6d4993f6e4"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a0a2b9f9a58bfd2eb7843bc6d4993f6e4">swap</a> (<a class="el" href="structetl_1_1function__ref.html">function_ref</a>&lt; R(Args...)&gt; &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="structetl_1_1function__ref.html">function_ref</a>&lt; R(Args...)&gt; &amp;rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; void</td></tr>
-<tr class="memdesc:a0a2b9f9a58bfd2eb7843bc6d4993f6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchanges the values of lhs and rhs. Equivalent to lhs.swap(rhs).  <a href="namespaceetl.html#a0a2b9f9a58bfd2eb7843bc6d4993f6e4">More...</a><br /></td></tr>
-<tr class="separator:a0a2b9f9a58bfd2eb7843bc6d4993f6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d8f8d75e5381d2407570b4d97eaf0a"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args, size_t Capacity, size_t Alignment&gt; </td></tr>
 <tr class="memitem:a47d8f8d75e5381d2407570b4d97eaf0a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a47d8f8d75e5381d2407570b4d97eaf0a">swap</a> (<a class="el" href="structetl_1_1inplace__function.html">inplace_function</a>&lt; R(Args...), Capacity, Alignment &gt; &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="structetl_1_1inplace__function.html">inplace_function</a>&lt; R(Args...), Capacity, Alignment &gt; &amp;rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; void</td></tr>
 <tr class="memdesc:a47d8f8d75e5381d2407570b4d97eaf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the <a class="el" href="namespaceetl.html#ad707bbff2e759a5d868a7bfb7d6bc4c5" title="Specializes the swap algorithm for array. Swaps the contents of lhs and rhs.">etl::swap</a> algorithm for <a class="el" href="structetl_1_1inplace__function.html">etl::inplace_function</a>. Exchanges the state of lhs with that of rhs. Effectively calls lhs.swap(rhs).  <a href="namespaceetl.html#a47d8f8d75e5381d2407570b4d97eaf0a">More...</a><br /></td></tr>
@@ -13435,7 +13433,7 @@ template&lt;typename T , typename... U&gt; </div>
 </div>
 </div>
 <a id="ad707bbff2e759a5d868a7bfb7d6bc4c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad707bbff2e759a5d868a7bfb7d6bc4c5">&#9670;&nbsp;</a></span>swap() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad707bbff2e759a5d868a7bfb7d6bc4c5">&#9670;&nbsp;</a></span>swap() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -29197,7 +29195,7 @@ template&lt;typename Key , typename Container , typename Compare &gt; </div>
 </div>
 </div>
 <a id="a2d1cbfaeb551a2e0c9a49d4bb500bc98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1cbfaeb551a2e0c9a49d4bb500bc98">&#9670;&nbsp;</a></span>swap() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1cbfaeb551a2e0c9a49d4bb500bc98">&#9670;&nbsp;</a></span>swap() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -29461,49 +29459,8 @@ template&lt;typename R , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a0a2b9f9a58bfd2eb7843bc6d4993f6e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2b9f9a58bfd2eb7843bc6d4993f6e4">&#9670;&nbsp;</a></span>swap() <span class="overload">[3/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R , typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto etl::swap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1function__ref.html">function_ref</a>&lt; R(Args...)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1function__ref.html">function_ref</a>&lt; R(Args...)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; void
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Exchanges the values of lhs and rhs. Equivalent to lhs.swap(rhs). </p>
-
-</div>
-</div>
 <a id="a47d8f8d75e5381d2407570b4d97eaf0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47d8f8d75e5381d2407570b4d97eaf0a">&#9670;&nbsp;</a></span>swap() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d8f8d75e5381d2407570b4d97eaf0a">&#9670;&nbsp;</a></span>swap() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -29743,7 +29700,7 @@ template&lt;typename F , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -29764,7 +29721,7 @@ template&lt;typename R , typename F , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -32443,7 +32400,7 @@ template&lt;typename ForwardIt , typename T &gt; </div>
 </div>
 </div>
 <a id="a66b0627d3000daa570306e2c95d25db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b0627d3000daa570306e2c95d25db1">&#9670;&nbsp;</a></span>swap() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b0627d3000daa570306e2c95d25db1">&#9670;&nbsp;</a></span>swap() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -35039,7 +34996,7 @@ template&lt;typename Key , size_t Capacity, typename Comp &gt; </div>
 </div>
 </div>
 <a id="adbdaddf256aba01af62859d1d068472d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbdaddf256aba01af62859d1d068472d">&#9670;&nbsp;</a></span>swap() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdaddf256aba01af62859d1d068472d">&#9670;&nbsp;</a></span>swap() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -36234,7 +36191,7 @@ template&lt;typename CharT , typename Traits , etl::size_t Capacity&gt; </div>
 </div>
 </div>
 <a id="ad9897e71535e601101f19e29b7fb9c82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9897e71535e601101f19e29b7fb9c82">&#9670;&nbsp;</a></span>swap() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9897e71535e601101f19e29b7fb9c82">&#9670;&nbsp;</a></span>swap() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -38153,7 +38110,7 @@ template&lt;etl::tuple_like... Tuples&gt; </div>
 </div>
 </div>
 <a id="a0a1c3baeebc248b3f787a308af595c6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a1c3baeebc248b3f787a308af595c6a">&#9670;&nbsp;</a></span>swap() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1c3baeebc248b3f787a308af595c6a">&#9670;&nbsp;</a></span>swap() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -39060,7 +39017,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="aaa50aa68713ac9f56128ad9c0406b737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa50aa68713ac9f56128ad9c0406b737">&#9670;&nbsp;</a></span>swap() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa50aa68713ac9f56128ad9c0406b737">&#9670;&nbsp;</a></span>swap() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -40499,7 +40456,7 @@ template&lt;typename F , typename... Vs&gt; </div>
 </div>
 </div>
 <a id="ac1c5f129858d55474d1d7ae92c374456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1c5f129858d55474d1d7ae92c374456">&#9670;&nbsp;</a></span>swap() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c5f129858d55474d1d7ae92c374456">&#9670;&nbsp;</a></span>swap() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

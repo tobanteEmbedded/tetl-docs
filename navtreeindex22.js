@@ -1,7 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"remainder_8hpp.html#a2f1521d8219ac8ccb84c5de502919411":[9,0,1,0,11,34,4],
-"remainder_8hpp.html#a999d51f2384d0b2fbfd76288906b3e2d":[9,0,1,0,11,34,3],
 "remainder_8hpp.html#ad02a7e8321924bb554b336b84c2ee60d":[9,0,1,0,11,34,0],
 "remainder_8hpp.html#ad3bce49452ed33940fa9b1c8d2585072":[9,0,1,0,11,34,2],
 "remainder_8hpp_source.html":[9,0,1,0,11,34],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "str__find__first__not__of_8hpp.html":[9,0,1,0,56,6],
 "str__find__first__not__of_8hpp_source.html":[9,0,1,0,56,6],
 "str__replace_8hpp.html":[9,0,1,0,56,7],
-"str__replace_8hpp_source.html":[9,0,1,0,56,7]
+"str__replace_8hpp_source.html":[9,0,1,0,56,7],
+"str__rfind_8hpp.html":[9,0,1,0,56,8],
+"str__rfind_8hpp_source.html":[9,0,1,0,56,8]
 };

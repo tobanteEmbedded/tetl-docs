@@ -1,11 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"vformat__to_8hpp.html":[9,0,1,0,29,11],
-"vformat__to_8hpp.html#aacd3b8fb66cfa5b161911b9be0d00726":[9,0,1,0,29,11,0],
-"vformat__to_8hpp_source.html":[9,0,1,0,29,11],
-"visit_8hpp.html":[9,0,1,0,63,9],
-"visit_8hpp.html#aa43fcb4942d4cec1824f6e38edce9981":[9,0,1,0,63,9,0],
-"visit_8hpp_source.html":[9,0,1,0,63,9],
 "void__t_8hpp.html":[9,0,1,0,61,119],
 "void__t_8hpp.html#a8f76cc2621d7373b79e2fc034f160ee0":[9,0,1,0,61,119,0],
 "void__t_8hpp_source.html":[9,0,1,0,61,119],

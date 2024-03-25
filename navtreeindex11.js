@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"iswgraph_8hpp_source.html":[9,0,1,0,24,5],
 "iswlower_8hpp.html":[9,0,1,0,24,6],
 "iswlower_8hpp.html#a18eb7b15acffae2d169a7eaed66d9ba8":[9,0,1,0,24,6,0],
 "iswlower_8hpp_source.html":[9,0,1,0,24,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "md_CONTRIBUTING.html#autotoc_md1":[1,0],
 "md_CONTRIBUTING.html#autotoc_md10":[1,3],
 "md_CONTRIBUTING.html#autotoc_md2":[1,0,0],
-"md_CONTRIBUTING.html#autotoc_md3":[1,1]
+"md_CONTRIBUTING.html#autotoc_md3":[1,1],
+"md_CONTRIBUTING.html#autotoc_md4":[1,2]
 };

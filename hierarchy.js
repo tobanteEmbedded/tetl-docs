@@ -160,7 +160,12 @@ var hierarchy =
     [ "etl::front_insert_iterator< Container >", "structetl_1_1front__insert__iterator.html", null ],
     [ "etl::full_extent_t", "structetl_1_1full__extent__t.html", null ],
     [ "etl::function_ref< Signature >", "structetl_1_1function__ref.html", null ],
-    [ "etl::function_ref< R(Args...)>", "structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html", null ],
+    [ "etl::detail::function_ref< false, R(Args...)>", null, [
+      [ "etl::function_ref< R(Args...)>", "structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html", null ]
+    ] ],
+    [ "etl::detail::function_ref< true, R(Args...)>", null, [
+      [ "etl::function_ref< R(Args...) noexcept >", "structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html", null ]
+    ] ],
     [ "etl::experimental::hardware::stm32::gpio_memory_layout", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html", null ],
     [ "etl::greater< T >", "structetl_1_1greater.html", null ],
     [ "etl::greater< void >", "structetl_1_1greater_3_01void_01_4.html", null ],
