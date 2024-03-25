@@ -197,17 +197,24 @@ doxygen</h2>
 <div class="line">open build-doxygen/html/index.html</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
 VS Code</h2>
-<p>In <code>.vscode/settings.json</code></p>
-<div class="fragment"><div class="line">// enable</div>
-<div class="line">&quot;cmake.useCMakePresets&quot;: &quot;always&quot;</div>
-</div><!-- fragment --><div class="fragment"><div class="line">// disable</div>
+<p>Enable one of the following options in <code>.vscode/settings.json</code>:</p>
+<div class="fragment"><div class="line">&quot;cmake.useCMakePresets&quot;: &quot;always&quot;</div>
 <div class="line">&quot;cmake.useCMakePresets&quot;: &quot;never&quot;</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
 Coding Style</h1>
 <ul>
-<li>Trailing return type is used everywhere. Including if type is <code>void</code><ul>
-<li><code>auto foo() -&gt; double;</code></li>
-<li><code>auto nothing() -&gt; void;</code></li>
+<li>Trailing return type is used <b>everywhere</b>:<ul>
+<li><code>auto func() {}</code></li>
+<li><code>auto func() -&gt; void;</code></li>
+<li><code>auto func() -&gt; double;</code></li>
+<li><code>auto func() -&gt; auto&amp;;</code></li>
+<li><code>auto func() -&gt; decltype(auto);</code></li>
+</ul>
+</li>
+<li>Keyword <code>class</code> is <b>banned</b>:<ul>
+<li><code>struct foo {};</code></li>
+<li><code>enum struct foo { baz, baz };</code></li>
+<li><code>template&lt;typename T&gt;</code></li>
 </ul>
 </li>
 <li>Naming conventions:<ul>
