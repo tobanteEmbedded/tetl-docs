@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('find__end_8hpp_source.html',''); initR
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> result = <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">auto</span> newResult = <a class="code" href="namespaceetl.html#af39a57bc56c6f3c0bf94045777e9f274">search</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, sFirst, sLast, p);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">auto</span> newResult = <a class="code" href="namespaceetl.html#af39a57bc56c6f3c0bf94045777e9f274">etl::search</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, sFirst, sLast, p);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (newResult == <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('find__end_8hpp_source.html',''); initR
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespaceetl.html#a67a3af0f6b1ea2008b53ed21446814f5">   44</a></span>&#160;<a class="code" href="namespaceetl.html#a7c8d78c0146673a9463dc7c68540b963">find_end</a>(ForwardIt1 first, ForwardIt1 <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, ForwardIt2 sFirst, ForwardIt2 sLast) -&gt; ForwardIt1</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a7c8d78c0146673a9463dc7c68540b963">find_end</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, sFirst, sLast, <a class="code" href="structetl_1_1equal__to.html">equal_to</a>{});</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a7c8d78c0146673a9463dc7c68540b963">etl::find_end</a>(first, <a class="code" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, sFirst, sLast, <a class="code" href="structetl_1_1equal__to.html">etl::equal_to</a>());</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace etl</span></div>

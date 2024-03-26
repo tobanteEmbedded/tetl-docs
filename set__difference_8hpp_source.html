@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('set__difference_8hpp_source.html','');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span> (first1 != last1) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (first2 == last2) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(first1, last1, destination);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a>(first1, last1, destination);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (comp(*first1, *first2)) {</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('set__difference_8hpp_source.html','');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;constexpr <span class="keyword">auto</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceetl.html#a50c804f0766a786779b7c17886e601a2">   39</a></span>&#160;<a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination) -&gt; OutputIt</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">set_difference</a>(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">less</a>{});</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a563244b70e444026e7ddee3ad609b4a5">etl::set_difference</a>(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">etl::less</a>());</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace etl</span></div>

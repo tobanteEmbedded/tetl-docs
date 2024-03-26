@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('set__union_8hpp_source.html',''); init
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (; first1 != last1; ++destination) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (first2 == last2) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(first1, last1, destination);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a>(first1, last1, destination);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span> (comp(*first2, *first1)) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            *destination = *first2++;</div>
@@ -124,14 +124,14 @@ $(document).ready(function(){initNavTree('set__union_8hpp_source.html',''); init
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ++first1;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(first2, last2, destination);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a>(first2, last2, destination);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> OutputIt&gt;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;constexpr <span class="keyword">auto</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4c31225d785d8d6b0702705ce2706c53">   40</a></span>&#160;<a class="code" href="namespaceetl.html#a9009346ce6e69bac2a9406592192aef1">set_union</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination) -&gt; OutputIt</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a9009346ce6e69bac2a9406592192aef1">set_union</a>(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">etl::less</a>{});</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#a9009346ce6e69bac2a9406592192aef1">etl::set_union</a>(first1, last1, first2, last2, destination, <a class="code" href="structetl_1_1less.html">etl::less</a>());</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace etl</span></div>

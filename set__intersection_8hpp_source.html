@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('set__intersection_8hpp_source.html',''
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;constexpr <span class="keyword">auto</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceetl.html#a47a31828bddd42fb93f6afb491bd4b4f">   37</a></span>&#160;<a class="code" href="namespaceetl.html#ac6670fa3cc294c702e9b6245c55a1da4">set_intersection</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt dest) -&gt; OutputIt</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#ac6670fa3cc294c702e9b6245c55a1da4">set_intersection</a>(first1, last1, first2, last2, dest, <a class="code" href="structetl_1_1less.html">less&lt;&gt;</a>());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceetl.html#ac6670fa3cc294c702e9b6245c55a1da4">etl::set_intersection</a>(first1, last1, first2, last2, dest, <a class="code" href="structetl_1_1less.html">etl::less</a>());</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace etl</span></div>
