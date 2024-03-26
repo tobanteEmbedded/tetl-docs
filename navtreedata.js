@@ -56,11 +56,11 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_header.html", [
-      [ "algorithm", "md_docs_header.html#autotoc_md36", null ],
-      [ "array", "md_docs_header.html#autotoc_md37", null ],
-      [ "bit", "md_docs_header.html#autotoc_md38", null ],
-      [ "bitset", "md_docs_header.html#autotoc_md39", null ],
-      [ "cassert", "md_docs_header.html#autotoc_md44", null ],
+      [ "algorithm", "md_docs_header.html#autotoc_md41", null ],
+      [ "array", "md_docs_header.html#autotoc_md42", null ],
+      [ "bit", "md_docs_header.html#autotoc_md43", null ],
+      [ "bitset", "md_docs_header.html#autotoc_md44", null ],
+      [ "cassert", "md_docs_header.html#autotoc_md45", null ],
       [ "cctype", "md_docs_header.html#autotoc_md46", null ],
       [ "cfloat", "md_docs_header.html#autotoc_md47", null ],
       [ "charconv", "md_docs_header.html#autotoc_md48", null ],
@@ -123,12 +123,12 @@ var NAVTREE =
       [ "C++14", "md_docs_progress.html#autotoc_md34", null ]
     ] ],
     [ "Roadmap", "md_docs_roadmap.html", [
-      [ "Features", "md_docs_roadmap.html#autotoc_md40", [
-        [ "Ranges", "md_docs_roadmap.html#autotoc_md41", null ]
+      [ "Features", "md_docs_roadmap.html#autotoc_md36", [
+        [ "Ranges", "md_docs_roadmap.html#autotoc_md37", null ]
       ] ],
-      [ "Testing", "md_docs_roadmap.html#autotoc_md42", null ],
-      [ "QEMU", "md_docs_roadmap.html#autotoc_md43", [
-        [ "clang-verify", "md_docs_roadmap.html#autotoc_md45", null ]
+      [ "Testing", "md_docs_roadmap.html#autotoc_md38", null ],
+      [ "QEMU", "md_docs_roadmap.html#autotoc_md39", [
+        [ "clang-verify", "md_docs_roadmap.html#autotoc_md40", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
