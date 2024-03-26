@@ -56,24 +56,24 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_header.html", [
-      [ "algorithm", "md_docs_header.html#autotoc_md41", null ],
-      [ "array", "md_docs_header.html#autotoc_md42", null ],
-      [ "bit", "md_docs_header.html#autotoc_md43", null ],
-      [ "bitset", "md_docs_header.html#autotoc_md44", null ],
-      [ "cassert", "md_docs_header.html#autotoc_md45", null ],
-      [ "cctype", "md_docs_header.html#autotoc_md46", null ],
-      [ "cfloat", "md_docs_header.html#autotoc_md47", null ],
-      [ "charconv", "md_docs_header.html#autotoc_md48", null ],
-      [ "chrono", "md_docs_header.html#autotoc_md49", null ],
-      [ "climits", "md_docs_header.html#autotoc_md50", null ],
-      [ "cmath", "md_docs_header.html#autotoc_md51", null ],
-      [ "compare", "md_docs_header.html#autotoc_md52", null ],
-      [ "complex", "md_docs_header.html#autotoc_md53", null ],
-      [ "concepts", "md_docs_header.html#autotoc_md54", null ],
-      [ "cstddef", "md_docs_header.html#autotoc_md55", null ],
-      [ "cstdint", "md_docs_header.html#autotoc_md56", null ],
-      [ "cstdio", "md_docs_header.html#autotoc_md57", null ],
-      [ "cstdlib", "md_docs_header.html#autotoc_md58", null ],
+      [ "algorithm", "md_docs_header.html#autotoc_md35", null ],
+      [ "array", "md_docs_header.html#autotoc_md36", null ],
+      [ "bit", "md_docs_header.html#autotoc_md37", null ],
+      [ "bitset", "md_docs_header.html#autotoc_md38", null ],
+      [ "cassert", "md_docs_header.html#autotoc_md39", null ],
+      [ "cctype", "md_docs_header.html#autotoc_md40", null ],
+      [ "cfloat", "md_docs_header.html#autotoc_md41", null ],
+      [ "charconv", "md_docs_header.html#autotoc_md42", null ],
+      [ "chrono", "md_docs_header.html#autotoc_md43", null ],
+      [ "climits", "md_docs_header.html#autotoc_md44", null ],
+      [ "cmath", "md_docs_header.html#autotoc_md45", null ],
+      [ "compare", "md_docs_header.html#autotoc_md47", null ],
+      [ "complex", "md_docs_header.html#autotoc_md48", null ],
+      [ "concepts", "md_docs_header.html#autotoc_md49", null ],
+      [ "cstddef", "md_docs_header.html#autotoc_md50", null ],
+      [ "cstdint", "md_docs_header.html#autotoc_md51", null ],
+      [ "cstdio", "md_docs_header.html#autotoc_md53", null ],
+      [ "cstdlib", "md_docs_header.html#autotoc_md57", null ],
       [ "cstring", "md_docs_header.html#autotoc_md59", null ],
       [ "ctime", "md_docs_header.html#autotoc_md60", null ],
       [ "cwchar", "md_docs_header.html#autotoc_md61", null ],
@@ -115,20 +115,20 @@ var NAVTREE =
       [ "version", "md_docs_header.html#autotoc_md97", null ]
     ] ],
     [ "Progress", "md_docs_progress.html", [
-      [ "Proposal", "md_docs_progress.html#autotoc_md28", null ],
-      [ "C++26", "md_docs_progress.html#autotoc_md29", null ],
-      [ "C++23", "md_docs_progress.html#autotoc_md30", null ],
+      [ "Proposal", "md_docs_progress.html#autotoc_md29", null ],
+      [ "C++26", "md_docs_progress.html#autotoc_md30", null ],
+      [ "C++23", "md_docs_progress.html#autotoc_md31", null ],
       [ "C++20", "md_docs_progress.html#autotoc_md32", null ],
       [ "C++17", "md_docs_progress.html#autotoc_md33", null ],
       [ "C++14", "md_docs_progress.html#autotoc_md34", null ]
     ] ],
     [ "Roadmap", "md_docs_roadmap.html", [
-      [ "Features", "md_docs_roadmap.html#autotoc_md36", [
-        [ "Ranges", "md_docs_roadmap.html#autotoc_md37", null ]
+      [ "Features", "md_docs_roadmap.html#autotoc_md52", [
+        [ "Ranges", "md_docs_roadmap.html#autotoc_md54", null ]
       ] ],
-      [ "Testing", "md_docs_roadmap.html#autotoc_md38", null ],
-      [ "QEMU", "md_docs_roadmap.html#autotoc_md39", [
-        [ "clang-verify", "md_docs_roadmap.html#autotoc_md40", null ]
+      [ "Testing", "md_docs_roadmap.html#autotoc_md55", null ],
+      [ "QEMU", "md_docs_roadmap.html#autotoc_md56", [
+        [ "clang-verify", "md_docs_roadmap.html#autotoc_md58", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -202,15 +202,15 @@ var NAVTREEINDEX =
 "structetl_1_1default__searcher.html",
 "structetl_1_1flat__set.html#a0f6d310c5d217df9df70c60c882f828a",
 "structetl_1_1inplace__vector.html#a778bb96baffd3cb2ad166c12d3f4f070",
-"structetl_1_1layout__left_1_1mapping.html#ab898f97b48604df2cb0727f23728f942",
-"structetl_1_1numeric__limits.html#a1c79ac7daad009e8e3b2f2a3dfae1580",
-"structetl_1_1numeric__limits_3_01long_01_4.html#a9d681a3983f0c72f600812173f69f65d",
-"structetl_1_1optional.html#a29f94364bd60ce3a914a621f23efc5d1",
-"structetl_1_1reverse__iterator.html#a16abeebf4b53cde8bf2cdbea975315e9",
-"structetl_1_1string__constant.html#a88e153b1457df0e377ac65219dfd7ca8",
-"structetl_1_1vector.html#a8e78371bee35805c99ad800c7bf1dca3",
-"system__error_8hpp_source.html",
-"wcscat_8hpp.html"
+"structetl_1_1layout__left_1_1mapping.html#a8707d7596b3508392cbb468684172837",
+"structetl_1_1numeric__limits.html#a02e82e26bae1f085a65d80f478935c8d",
+"structetl_1_1numeric__limits_3_01long_01_4.html#a98662c6abdb7149947a55373e06e3290",
+"structetl_1_1optional.html#a0ecc50cedbc9325fe490016a296bb6c2",
+"structetl_1_1reverse__iterator.html",
+"structetl_1_1string__constant.html#a7ee84387856d88e17a5deed3efcd3f42",
+"structetl_1_1vector.html#a6f16b6dbcdc030d9e6a25d6898902d0c",
+"system__clock_8hpp_source.html",
+"void__t_8hpp.html#a8f76cc2621d7373b79e2fc034f160ee0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

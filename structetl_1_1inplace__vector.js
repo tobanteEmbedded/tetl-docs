@@ -36,6 +36,7 @@ var structetl_1_1inplace__vector =
     [ "unchecked_push_back", "structetl_1_1inplace__vector.html#acef808ed1ad64c115bd0e8bc80b21942", null ],
     [ "unchecked_push_back", "structetl_1_1inplace__vector.html#a00cb59093811a8a92850e8cdb9bd4d43", null ],
     [ "pop_back", "structetl_1_1inplace__vector.html#ad5bf12bb18b09e9ea37d4592a04e4d97", null ],
+    [ "clear", "structetl_1_1inplace__vector.html#af99e552a94511e4223cf08dc77e8ab46", null ],
     [ "inplace_vector", "structetl_1_1inplace__vector.html#a39e450188aac2a8184abf5874abf696c", null ],
     [ "inplace_vector", "structetl_1_1inplace__vector.html#ad14016954370c50ca545bc08e930c5a0", null ]
 ];
