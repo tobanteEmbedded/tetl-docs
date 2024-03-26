@@ -115,9 +115,9 @@ var NAVTREE =
       [ "version", "md_docs_header.html#autotoc_md97", null ]
     ] ],
     [ "Progress", "md_docs_progress.html", [
-      [ "Proposal", "md_docs_progress.html#autotoc_md29", null ],
-      [ "C++26", "md_docs_progress.html#autotoc_md30", null ],
-      [ "C++23", "md_docs_progress.html#autotoc_md31", null ],
+      [ "Proposal", "md_docs_progress.html#autotoc_md28", null ],
+      [ "C++26", "md_docs_progress.html#autotoc_md29", null ],
+      [ "C++23", "md_docs_progress.html#autotoc_md30", null ],
       [ "C++20", "md_docs_progress.html#autotoc_md32", null ],
       [ "C++17", "md_docs_progress.html#autotoc_md33", null ],
       [ "C++14", "md_docs_progress.html#autotoc_md34", null ]
