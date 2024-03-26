@@ -1,9 +1,9 @@
 var __cmath_2sin_8hpp =
 [
-    [ "sin", "__cmath_2sin_8hpp.html#ae3992e7303a218d44e01d6aae6b18a92", null ],
-    [ "sinf", "__cmath_2sin_8hpp.html#aa57bb2bd32cddffe62ba6a5c56f71189", null ],
-    [ "sin", "__cmath_2sin_8hpp.html#a9e32ccfd656cf4acc0e47b2b4b1d3b7d", null ],
-    [ "sin", "__cmath_2sin_8hpp.html#a31420163d28801f6cb0eaffb9ebee8b7", null ],
-    [ "sinl", "__cmath_2sin_8hpp.html#a8a0b05c4763f8e1661d067f91a5cbbec", null ],
-    [ "sin", "__cmath_2sin_8hpp.html#af76d0c4880759c4f43e1719488834341", null ]
+    [ "sin", "__cmath_2sin_8hpp.html#a658bf05b8a1404b6e18366e9666a793b", null ],
+    [ "sinf", "__cmath_2sin_8hpp.html#abdde537199b7bb6f4ec05ecb394cf2c9", null ],
+    [ "sin", "__cmath_2sin_8hpp.html#afed7450ee38549d51ff3c60fe2630530", null ],
+    [ "sin", "__cmath_2sin_8hpp.html#ad8903f152a43eb61c341a4e03221fa27", null ],
+    [ "sinl", "__cmath_2sin_8hpp.html#a1243af94f0a71d9df38ea872c3c84632", null ],
+    [ "sin", "__cmath_2sin_8hpp.html#a42714f17f2630f23993520d2052fab1a", null ]
 ];
