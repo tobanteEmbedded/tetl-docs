@@ -42,18 +42,18 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md10", null ]
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md7", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md8", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md9", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_header.html", [
       [ "algorithm", "md_docs_header.html#autotoc_md41", null ],
@@ -115,20 +115,20 @@ var NAVTREE =
       [ "version", "md_docs_header.html#autotoc_md97", null ]
     ] ],
     [ "Progress", "md_docs_progress.html", [
-      [ "Proposal", "md_docs_progress.html#autotoc_md29", null ],
-      [ "C++26", "md_docs_progress.html#autotoc_md30", null ],
-      [ "C++23", "md_docs_progress.html#autotoc_md31", null ],
-      [ "C++20", "md_docs_progress.html#autotoc_md32", null ],
-      [ "C++17", "md_docs_progress.html#autotoc_md33", null ],
-      [ "C++14", "md_docs_progress.html#autotoc_md34", null ]
+      [ "Proposal", "md_docs_progress.html#autotoc_md34", null ],
+      [ "C++26", "md_docs_progress.html#autotoc_md35", null ],
+      [ "C++23", "md_docs_progress.html#autotoc_md37", null ],
+      [ "C++20", "md_docs_progress.html#autotoc_md38", null ],
+      [ "C++17", "md_docs_progress.html#autotoc_md39", null ],
+      [ "C++14", "md_docs_progress.html#autotoc_md40", null ]
     ] ],
     [ "Roadmap", "md_docs_roadmap.html", [
-      [ "Features", "md_docs_roadmap.html#autotoc_md36", [
-        [ "Ranges", "md_docs_roadmap.html#autotoc_md37", null ]
+      [ "Features", "md_docs_roadmap.html#autotoc_md28", [
+        [ "Ranges", "md_docs_roadmap.html#autotoc_md29", null ]
       ] ],
-      [ "Testing", "md_docs_roadmap.html#autotoc_md38", null ],
-      [ "QEMU", "md_docs_roadmap.html#autotoc_md39", [
-        [ "clang-verify", "md_docs_roadmap.html#autotoc_md40", null ]
+      [ "Testing", "md_docs_roadmap.html#autotoc_md30", null ],
+      [ "QEMU", "md_docs_roadmap.html#autotoc_md31", [
+        [ "clang-verify", "md_docs_roadmap.html#autotoc_md32", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -182,35 +182,35 @@ var NAVTREEINDEX =
 "dir_8a2d86f1c5963def765f39e6fc8e45a5.html",
 "fdim_8hpp.html#ad8e19893929bbc794be4206bec3f1ffa",
 "gcem__options_8hpp.html#a8957e707fe6a4e7ed1a7a9d43134d936",
-"insertion__sort_8hpp.html#a5e6d5b25a5beae6b886f7eaccb6ccfd2",
-"is__nothrow__swappable__with_8hpp_source.html",
-"layout_8hpp.html",
-"md_docs_header.html#autotoc_md85",
-"namespaceetl.html#a11dd6c6fa125a008a2226c4f2a8b225f",
-"namespaceetl.html#a44d05954af24fa3a51c81a56eac04b53",
-"namespaceetl.html#a7b343e0347d929b0ff4d34d643f9cf9e",
-"namespaceetl.html#aae0eeae85a8a320c4b560b2c416d739a",
-"namespaceetl.html#ad206e673dfd2f8aa9800684c6734595c",
-"namespaceetl_1_1chrono.html#a2cc473402597c798502777003e02e613",
-"namespaceetl_1_1experimental_1_1parallelism__v2.html#a34a1252b4b53f164915cf52f5a160e8c",
-"namespaceetl_1_1numbers.html#a552daccb0aa893abfee0ac6f83d68286",
-"operator_8hpp_source.html",
-"reference__wrapper_8hpp_source.html",
-"stod_8hpp.html#a03247c5be7114ad3402fea1ac09a5323",
-"structetl_1_1basic__static__string.html#a33a28aa98709c14c038c6f4cdf4a4bdb",
-"structetl_1_1chrono_1_1duration.html#a1c57e1a77c765c16c58ef9a46d703d15",
-"structetl_1_1contiguous__iterator__tag.html",
-"structetl_1_1extents.html#a40c80edc71dbecbd2263cb0e773187b0",
-"structetl_1_1inplace__vector.html",
-"structetl_1_1iterator__traits_3_01T_01_5_01_4.html#a5d52ae45002ddca5357a8e65e4aff7f3",
-"structetl_1_1multiplies_3_01void_01_4.html#a28be9f686371c57ec07b2f1b2c303a0d",
-"structetl_1_1numeric__limits_3_01int_01_4.html#ae392e717175dafc757b28fd3e0d03ed3",
-"structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html#a871d50590e3c3df38689256f068f8d95",
-"structetl_1_1remove__pointer.html",
-"structetl_1_1static__vector.html#adde3452bcd35ec683a3d2ace64a376b9",
-"structetl_1_1variant__size.html",
-"synopsis_8hpp.html#ad8dc39f4d14a0eafb6101b118e0d8879",
-"variant__fwd_8hpp.html#ab54d98119a0f0e56078324af917a37e7"
+"inplace__vector_8hpp_source.html",
+"is__nothrow__move__constructible_8hpp_source.html",
+"language__standard_8hpp.html#a2f63a594bf7e2b29cb07e1868483ee53af94629088b2e56f93753526b629a62ff",
+"md_docs_header.html#autotoc_md73",
+"namespaceetl.html#a0ed3d4879ef8b1df2012935a3022f720",
+"namespaceetl.html#a41acb03578faec2a550c4830c1dd2071",
+"namespaceetl.html#a77987b5129ca33aaac1cc7f239d3f0ba",
+"namespaceetl.html#aab6c7ef0dbdd2323343636f79a74f8af",
+"namespaceetl.html#accd8b50cafa711d52c60a19ca80dee8f",
+"namespaceetl_1_1chrono.html#a09e365a7fcf84335408236fd0011d23c",
+"namespaceetl_1_1experimental_1_1parallelism__v2.html#a138e303811721e13b79f0ba68adcc556",
+"namespaceetl_1_1meta.html#ac457e2854d3f824076d4dc8440f0f056",
+"null_8hpp.html",
+"rbegin_8hpp.html#a31aadf1fc327da2eaac11d7e6e8617a8",
+"static__set_8hpp_source.html",
+"structetl_1_1basic__format__parse__context.html#a11e7ee34134c268a076d42b25f841b97",
+"structetl_1_1char__traits_3_01wchar__t_01_4.html#aa45c5f5754fac78b660ac526f1fa13a3",
+"structetl_1_1complex.html#a6cf821d0e18880a8f94b93380c265999",
+"structetl_1_1experimental_1_1parallelism__v2_1_1simd__abi_1_1deduce.html#a792e5a04dc089977d1af88707b189b0d",
+"structetl_1_1indirectly__readable__traits_3_01T_01_4.html",
+"structetl_1_1is__trivially__copy__constructible.html",
+"structetl_1_1minus_3_01void_01_4.html",
+"structetl_1_1numeric__limits_3_01int_01_4.html#a3e893f49bba48b5f0f8bdc73f3cdfa09",
+"structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html#ae6ee2ce15fff6c3d4a23184e84e00ec3",
+"structetl_1_1reference__wrapper.html#af5e950519d205853b04bcbdb89a2f5bc",
+"structetl_1_1static__vector.html#a6bec7cdd432b7c9bab7b6b7665c3fd40",
+"structetl_1_1variant2.html#a78ab593d0e7f5e1e82da5a98d921d487",
+"synopsis_8hpp.html#aa45e2b3eed3f18747f451d48bf41867a",
+"uses__allocator_8hpp.html#a16cf19d8af06969d839fa909ad6e184f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

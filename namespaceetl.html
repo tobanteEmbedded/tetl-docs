@@ -1402,12 +1402,17 @@ Typedefs</h2></td></tr>
 <tr class="separator:a8cc54c8127416c33c963bee08bc99596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a81fba06194ff9cf0d14e9dd9339a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa6a81fba06194ff9cf0d14e9dd9339a0">streamsize</a> = <a class="el" href="namespaceetl.html#abffe34c79351f871acb3e0438b2ad488">make_signed_t</a>&lt; <a class="el" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">size_t</a> &gt;</td></tr>
 <tr class="separator:aa6a81fba06194ff9cf0d14e9dd9339a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ceff8e2c4e10b4d2a42895898a17d0"><td class="memTemplParams" colspan="2">template&lt;etl::indirectly_readable T&gt; </td></tr>
+<tr class="memitem:a01ceff8e2c4e10b4d2a42895898a17d0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a01ceff8e2c4e10b4d2a42895898a17d0">iter_common_reference_t</a> = <a class="el" href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a>&lt; <a class="el" href="namespaceetl.html#a6106bae4778d251870adc7ae5b1974ef">etl::iter_reference_t</a>&lt; T &gt;, <a class="el" href="namespaceetl.html#a7c22455efb7e072deb03e78241405e56">etl::iter_value_t</a>&lt; T &gt; &amp; &gt;</td></tr>
+<tr class="separator:a01ceff8e2c4e10b4d2a42895898a17d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a7197a7953a7c1e620701f90bec2cc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a91a7197a7953a7c1e620701f90bec2cc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a91a7197a7953a7c1e620701f90bec2cc">iter_difference_t</a> = typename detail::iter_difference&lt; T &gt;::type</td></tr>
 <tr class="separator:a91a7197a7953a7c1e620701f90bec2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6106bae4778d251870adc7ae5b1974ef"><td class="memTemplParams" colspan="2">template&lt;detail::dereferenceable T&gt; </td></tr>
+<tr class="memitem:a6106bae4778d251870adc7ae5b1974ef"><td class="memTemplParams" colspan="2">template&lt;etl::detail::dereferenceable T&gt; </td></tr>
 <tr class="memitem:a6106bae4778d251870adc7ae5b1974ef"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6106bae4778d251870adc7ae5b1974ef">iter_reference_t</a> = decltype(*<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt; T &amp; &gt;())</td></tr>
 <tr class="separator:a6106bae4778d251870adc7ae5b1974ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf03d91b088f3b8cfbab7e6bd782d61f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abf03d91b088f3b8cfbab7e6bd782d61f">iter_rvalue_reference_t</a> = decltype(<a class="el" href="namespaceetl_1_1ranges_1_1cpo.html#adbb4630e362144a441c559ced59ebf86">etl::ranges::iter_move</a>(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt; T &amp; &gt;()))</td></tr>
+<tr class="separator:abf03d91b088f3b8cfbab7e6bd782d61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c22455efb7e072deb03e78241405e56"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7c22455efb7e072deb03e78241405e56"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a7c22455efb7e072deb03e78241405e56">iter_value_t</a> = typename detail::iter_value&lt; T &gt;::type</td></tr>
 <tr class="separator:a7c22455efb7e072deb03e78241405e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5060,6 +5065,12 @@ Variables</h2></td></tr>
 <tr class="separator:a212bf7be37c4b9bdf1328f042486b384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b6c2ea4f13089ede1a42514f87e6c6"><td class="memItemLeft" align="right" valign="top">T const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a></td></tr>
 <tr class="separator:a18b6c2ea4f13089ede1a42514f87e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memTemplParams" colspan="2">template&lt;typename In &gt; </td></tr>
+<tr class="memitem:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19">indirectly_readable</a> = etl::detail::indirectly_readable_impl&lt;<a class="el" href="namespaceetl.html#ac0c34af472196537fb719bde6ab1c4ad">etl::remove_cvref_t</a>&lt;In&gt;&gt;</td></tr>
+<tr class="separator:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memTemplParams" colspan="2">template&lt;typename F , typename Iter &gt; </td></tr>
+<tr class="memitem:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a666fa7ccc8eeba6fb7ee30d91bdf73d5">indirectly_unary_invocable</a></td></tr>
+<tr class="separator:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c276f2e1f0ad19e9311b62769978acc"><td class="memTemplParams" colspan="2">template&lt;typename Iter &gt; </td></tr>
 <tr class="memitem:a9c276f2e1f0ad19e9311b62769978acc"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9c276f2e1f0ad19e9311b62769978acc">input_or_output_iterator</a></td></tr>
 <tr class="separator:a9c276f2e1f0ad19e9311b62769978acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6255,6 +6266,22 @@ template&lt;size_t Capacity&gt; </div>
 
 </div>
 </div>
+<a id="a01ceff8e2c4e10b4d2a42895898a17d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ceff8e2c4e10b4d2a42895898a17d0">&#9670;&nbsp;</a></span>iter_common_reference_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::indirectly_readable T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceetl.html#a01ceff8e2c4e10b4d2a42895898a17d0">etl::iter_common_reference_t</a> = typedef <a class="el" href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a>&lt;<a class="el" href="namespaceetl.html#a6106bae4778d251870adc7ae5b1974ef">etl::iter_reference_t</a>&lt;T&gt;, <a class="el" href="namespaceetl.html#a7c22455efb7e072deb03e78241405e56">etl::iter_value_t</a>&lt;T&gt;&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a91a7197a7953a7c1e620701f90bec2cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91a7197a7953a7c1e620701f90bec2cc">&#9670;&nbsp;</a></span>iter_difference_t</h2>
 
@@ -6277,10 +6304,24 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;detail::dereferenceable T&gt; </div>
+template&lt;etl::detail::dereferenceable T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceetl.html#a6106bae4778d251870adc7ae5b1974ef">etl::iter_reference_t</a> = typedef decltype(*<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt;T&amp;&gt;())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf03d91b088f3b8cfbab7e6bd782d61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf03d91b088f3b8cfbab7e6bd782d61f">&#9670;&nbsp;</a></span>iter_rvalue_reference_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceetl.html#abf03d91b088f3b8cfbab7e6bd782d61f">etl::iter_rvalue_reference_t</a> = typedef decltype(<a class="el" href="namespaceetl_1_1ranges_1_1cpo.html#adbb4630e362144a441c559ced59ebf86">etl::ranges::iter_move</a>(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt;T&amp;&gt;()))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -42133,6 +42174,46 @@ template&lt;typename T &gt; </div>
 <div class="line">        { <a class="code" href="namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ae2dfdafbcff106ed4635ae08dbb1ffaba0cc175b9c0f1b6a831c399e269772661">a</a> - <a class="code" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a> } -&gt; <a class="code" href="namespaceetl.html#ac4daf60f1f070c94586efbcf55d6e84f">etl::integral</a></div>
 <div class="ttc" id="anamespaceetl_1_1experimental_1_1hardware_1_1mcp23017_html_ae2dfdafbcff106ed4635ae08dbb1ffaba0cc175b9c0f1b6a831c399e269772661"><div class="ttname"><a href="namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ae2dfdafbcff106ed4635ae08dbb1ffaba0cc175b9c0f1b6a831c399e269772661">etl::experimental::hardware::mcp23017::port::a</a></div><div class="ttdeci">@ a</div></div>
 <div class="ttc" id="anamespaceetl_html_ac4daf60f1f070c94586efbcf55d6e84f"><div class="ttname"><a href="namespaceetl.html#ac4daf60f1f070c94586efbcf55d6e84f">etl::integral</a></div><div class="ttdeci">concept integral</div><div class="ttdoc">The concept integral&lt;T&gt; is satisfied if and only if T is an integral type.</div><div class="ttdef"><b>Definition:</b> integral.hpp:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19">&#9670;&nbsp;</a></span>indirectly_readable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename In &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept etl::indirectly_readable = etl::detail::indirectly_readable_impl&lt;<a class="el" href="namespaceetl.html#ac0c34af472196537fb719bde6ab1c4ad">etl::remove_cvref_t</a>&lt;In&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a666fa7ccc8eeba6fb7ee30d91bdf73d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666fa7ccc8eeba6fb7ee30d91bdf73d5">&#9670;&nbsp;</a></span>indirectly_unary_invocable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename Iter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept etl::indirectly_unary_invocable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        etl::indirectly_readable&lt;Iter&gt;</div>
+<div class="line">    and etl::copy_constructible&lt;F&gt;</div>
+<div class="line">    and etl::invocable&lt;F&amp;, etl::iter_value_t&lt;Iter&gt;&amp;&gt;</div>
+<div class="line">    and etl::invocable&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;&gt;</div>
+<div class="line">    and etl::invocable&lt;F&amp;, etl::iter_common_reference_t&lt;Iter&gt;&gt;</div>
+<div class="line">    and etl::common_reference_with&lt;etl::invoke_result_t&lt;F&amp;, etl::iter_value_t&lt;Iter&gt;&amp;&gt;, <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;</a>&gt;&gt;</div>
+<div class="ttc" id="anamespaceetl_html_a93ed3feabd9624cf09aa604f49155cc2"><div class="ttname"><a href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t</a></div><div class="ttdeci">typename etl::invoke_result&lt; F, ArgTypes... &gt;::type invoke_result_t</div><div class="ttdef"><b>Definition:</b> invoke_result.hpp:70</div></div>
 </div><!-- fragment -->
 </div>
 </div>

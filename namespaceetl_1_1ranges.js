@@ -1,6 +1,7 @@
 var namespaceetl_1_1ranges =
 [
     [ "cpo", "namespaceetl_1_1ranges_1_1cpo.html", [
+      [ "iter_move", "namespaceetl_1_1ranges_1_1cpo.html#adbb4630e362144a441c559ced59ebf86", null ],
       [ "begin", "namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263", null ],
       [ "end", "namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6", null ],
       [ "size", "namespaceetl_1_1ranges_1_1cpo.html#a8137911f356b9810a1020d9bdb8c1bdc", null ]
@@ -14,6 +15,7 @@ var namespaceetl_1_1ranges =
     [ "range_size_t", "namespaceetl_1_1ranges.html#a98177327fd438fb8cf8d98fb330d81f8", null ],
     [ "range_value_t", "namespaceetl_1_1ranges.html#af013dd641800c3bf7f95c3eeabe727c3", null ],
     [ "sentinel_t", "namespaceetl_1_1ranges.html#a07d93a32453f6f71af9749099236bf87", null ],
+    [ "iter_move", "namespaceetl_1_1ranges_1_1cpo.html#adbb4630e362144a441c559ced59ebf86", null ],
     [ "construct_at", "namespaceetl_1_1ranges.html#adc4d1d6f844c64643d68340758d520ee", null ],
     [ "destroy", "namespaceetl_1_1ranges.html#ab7f5fbb66a4f37b1b1d0cbfead090d5e", null ],
     [ "destroy_at", "namespaceetl_1_1ranges.html#a0677a0b77ca32abb3ace3c39a10bfa7d", null ],

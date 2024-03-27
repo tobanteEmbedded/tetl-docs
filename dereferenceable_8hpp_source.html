@@ -100,20 +100,21 @@ $(document).ready(function(){initNavTree('dereferenceable_8hpp_source.html','');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define TETL_ITERATOR_DEREFERENCEABLE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="can__reference_8hpp.html">etl/_iterator/can_reference.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>etl::detail {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="declval_8hpp.html">etl/_type_traits/declval.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>etl::detail {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;concept dereferenceable = <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(T&amp; t) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  { *t } -&gt; can_reference;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    *etl::declval&lt;T&amp;&gt;();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    { *t } -&gt; can_reference;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <span class="comment">// namespace etl::detail</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_DEREFERENCEABLE_HPP</span></div>
 <div class="ttc" id="acan__reference_8hpp_html"><div class="ttname"><a href="can__reference_8hpp.html">can_reference.hpp</a></div></div>
+<div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html_a1bb8468ab3c13301477017cfc35f00ef"><div class="ttname"><a href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">etl::requires</a></div><div class="ttdeci">requires requires</div><div class="ttdef"><b>Definition:</b> compare_three_way_result.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
