@@ -16,6 +16,14 @@ var namespaceetl =
       [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65", null ],
       [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#ac6bb3a78ec03bd717efe7ae4f4f0e2d7", null ]
     ] ],
+    [ "complex_literals", "namespaceetl_1_1literals_1_1complex__literals.html", [
+      [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a90e09e7ad6bb736c3af3c6d4a8492094", null ],
+      [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a9aa4ce488ecc019a255f8b44595576c7", null ],
+      [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#a7587d4773cb77963d6a4c24788def998", null ],
+      [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ae13fbd07fcdb34bc2ae3dc0a1206a097", null ],
+      [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#aef7a230f9307ccbebaaca704bbda63ec", null ],
+      [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#a91587c8bc9e4d1db5665f40bcdba8ba0", null ]
+    ] ],
     [ "experimental", "namespaceetl_1_1experimental.html", "namespaceetl_1_1experimental" ],
     [ "linalg", "namespaceetl_1_1linalg.html", "namespaceetl_1_1linalg" ],
     [ "literals", "namespaceetl_1_1literals.html", "namespaceetl_1_1literals" ],
@@ -1321,6 +1329,12 @@ var namespaceetl =
     [ "operator!=", "namespaceetl.html#a19652b6d64df0961e5821c4df232fcc5", null ],
     [ "operator!=", "namespaceetl.html#aaf4c2db5ab66a07bf724a38c83659acd", null ],
     [ "operator!=", "namespaceetl.html#abd1eb7312810a052d5df24b678a67965", null ],
+    [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a90e09e7ad6bb736c3af3c6d4a8492094", null ],
+    [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a9aa4ce488ecc019a255f8b44595576c7", null ],
+    [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#a7587d4773cb77963d6a4c24788def998", null ],
+    [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ae13fbd07fcdb34bc2ae3dc0a1206a097", null ],
+    [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#aef7a230f9307ccbebaaca704bbda63ec", null ],
+    [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#a91587c8bc9e4d1db5665f40bcdba8ba0", null ],
     [ "conj", "namespaceetl.html#a46ff15d018c17347ac61e95ac1a30764", null ],
     [ "conj", "namespaceetl.html#acce7ac5a8dbb8ecf4841a23057e1126b", null ],
     [ "conj", "namespaceetl.html#ae5c80be7a4d685217616326a04620a45", null ],

@@ -105,13 +105,13 @@ $(document).ready(function(){initNavTree('addressof_8hpp_source.html',''); initR
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7c233c3cfa75e4228eaaa7664506dbc7">   15</a></span>&#160;    <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(is_object_v&lt;T&gt;)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">addressof</a>(T&amp; <a class="code" href="namespaceetl.html#a06165982b4ed16fe2e57476b46f4ad08">arg</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T*</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> __builtin_addressof(<a class="code" href="namespaceetl.html#a06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7c233c3cfa75e4228eaaa7664506dbc7">   14</a></span>&#160;    <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(is_object_v&lt;T&gt;)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">addressof</a>(T&amp; <a class="code" href="namespaceetl.html#a06165982b4ed16fe2e57476b46f4ad08">arg</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T*</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> __builtin_addressof(<a class="code" href="namespaceetl.html#a06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab3edffa6af6cd6422babaa5014a3edfe">   22</a></span>&#160;    <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(not is_object_v&lt;T&gt;)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">addressof</a>(T&amp; <a class="code" href="namespaceetl.html#a06165982b4ed16fe2e57476b46f4ad08">arg</a>) <a class="code" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; T*</div>

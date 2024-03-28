@@ -15,6 +15,14 @@ var namespaceetl_1_1literals =
       [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65", null ],
       [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#ac6bb3a78ec03bd717efe7ae4f4f0e2d7", null ]
     ] ],
+    [ "complex_literals", "namespaceetl_1_1literals_1_1complex__literals.html", [
+      [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a90e09e7ad6bb736c3af3c6d4a8492094", null ],
+      [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a9aa4ce488ecc019a255f8b44595576c7", null ],
+      [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#a7587d4773cb77963d6a4c24788def998", null ],
+      [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ae13fbd07fcdb34bc2ae3dc0a1206a097", null ],
+      [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#aef7a230f9307ccbebaaca704bbda63ec", null ],
+      [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#a91587c8bc9e4d1db5665f40bcdba8ba0", null ]
+    ] ],
     [ "string_view_literals", "namespaceetl_1_1literals_1_1string__view__literals.html", [
       [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c", null ]
     ] ],
@@ -31,5 +39,11 @@ var namespaceetl_1_1literals =
     [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#aa9627a966c293803c6800e039705a129", null ],
     [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65", null ],
     [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#ac6bb3a78ec03bd717efe7ae4f4f0e2d7", null ],
+    [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a90e09e7ad6bb736c3af3c6d4a8492094", null ],
+    [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a9aa4ce488ecc019a255f8b44595576c7", null ],
+    [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#a7587d4773cb77963d6a4c24788def998", null ],
+    [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ae13fbd07fcdb34bc2ae3dc0a1206a097", null ],
+    [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#aef7a230f9307ccbebaaca704bbda63ec", null ],
+    [ "operator\"\"_if", "namespaceetl_1_1literals_1_1complex__literals.html#a91587c8bc9e4d1db5665f40bcdba8ba0", null ],
     [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c", null ]
 ];

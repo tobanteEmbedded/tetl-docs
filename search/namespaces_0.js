@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['chrono_3844',['chrono',['../namespaceetl_1_1chrono.html',1,'etl']]],
-  ['chrono_5fliterals_3845',['chrono_literals',['../namespaceetl_1_1literals_1_1chrono__literals.html',1,'etl::chrono_literals'],['../namespaceetl_1_1literals_1_1chrono__literals.html',1,'etl::literals::chrono_literals']]],
+  ['chrono_3843',['chrono',['../namespaceetl_1_1chrono.html',1,'etl']]],
+  ['chrono_5fliterals_3844',['chrono_literals',['../namespaceetl_1_1literals_1_1chrono__literals.html',1,'etl::chrono_literals'],['../namespaceetl_1_1literals_1_1chrono__literals.html',1,'etl::literals::chrono_literals']]],
+  ['complex_5fliterals_3845',['complex_literals',['../namespaceetl_1_1literals_1_1complex__literals.html',1,'etl::complex_literals'],['../namespaceetl_1_1literals_1_1complex__literals.html',1,'etl::literals::complex_literals']]],
   ['cpo_3846',['cpo',['../namespaceetl_1_1ranges_1_1cpo.html',1,'etl::ranges']]],
   ['etl_3847',['etl',['../namespaceetl.html',1,'']]],
   ['experimental_3848',['experimental',['../namespaceetl_1_1experimental.html',1,'etl']]],
