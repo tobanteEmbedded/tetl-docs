@@ -106,13 +106,14 @@ $(document).ready(function(){initNavTree('strncpy_8hpp_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a591fc182edd0e8beef7af369c2dd772f">   22</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a591fc182edd0e8beef7af369c2dd772f">strncpy</a>(<span class="keywordtype">char</span>* dest, <span class="keywordtype">char</span> <span class="keyword">const</span>* src, <a class="code" href="namespaceetl.html#a9671046b2e5aea5a45a7f12fecc9f911">etl::size_t</a> <span class="keyword">const</span> <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>) -&gt; <span class="keywordtype">char</span>*</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    TETL_ASSERT(dest != <span class="keyword">nullptr</span> &amp;&amp; src != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> detail::strncpy_impl(dest, src, <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_STRNCPY_HPP</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    TETL_ASSERT(dest != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    TETL_ASSERT(src != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> detail::strncpy_impl(dest, src, <a class="code" href="namespaceetl.html#a3f9162720047d01bb438874bf56df5d2">count</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_STRNCPY_HPP</span></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>

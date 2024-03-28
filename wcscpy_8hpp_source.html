@@ -107,12 +107,13 @@ $(document).ready(function(){initNavTree('wcscpy_8hpp_source.html',''); initResi
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a777b53d3246198c5cbf458e59cbd05bf">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceetl.html#a777b53d3246198c5cbf458e59cbd05bf">wcscpy</a>(<span class="keywordtype">wchar_t</span>* dest, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* src) -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    TETL_ASSERT(dest != <span class="keyword">nullptr</span> &amp;&amp; src != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> detail::strcpy_impl(dest, src);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace etl</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CWCHAR_WCSCPY_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    TETL_ASSERT(dest != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    TETL_ASSERT(src != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> detail::strcpy_impl(dest, src);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// namespace etl</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TETL_CWCHAR_WCSCPY_HPP</span></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition:</b> gcem.hpp:38</div></div>

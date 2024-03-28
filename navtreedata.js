@@ -56,15 +56,15 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_header.html", [
-      [ "algorithm", "md_docs_header.html#autotoc_md41", null ],
-      [ "array", "md_docs_header.html#autotoc_md42", null ],
-      [ "bit", "md_docs_header.html#autotoc_md43", null ],
-      [ "bitset", "md_docs_header.html#autotoc_md44", null ],
-      [ "cassert", "md_docs_header.html#autotoc_md45", null ],
-      [ "cctype", "md_docs_header.html#autotoc_md46", null ],
-      [ "cfloat", "md_docs_header.html#autotoc_md47", null ],
-      [ "charconv", "md_docs_header.html#autotoc_md48", null ],
-      [ "chrono", "md_docs_header.html#autotoc_md49", null ],
+      [ "algorithm", "md_docs_header.html#autotoc_md40", null ],
+      [ "array", "md_docs_header.html#autotoc_md41", null ],
+      [ "bit", "md_docs_header.html#autotoc_md42", null ],
+      [ "bitset", "md_docs_header.html#autotoc_md43", null ],
+      [ "cassert", "md_docs_header.html#autotoc_md44", null ],
+      [ "cctype", "md_docs_header.html#autotoc_md45", null ],
+      [ "cfloat", "md_docs_header.html#autotoc_md46", null ],
+      [ "charconv", "md_docs_header.html#autotoc_md47", null ],
+      [ "chrono", "md_docs_header.html#autotoc_md48", null ],
       [ "climits", "md_docs_header.html#autotoc_md50", null ],
       [ "cmath", "md_docs_header.html#autotoc_md51", null ],
       [ "compare", "md_docs_header.html#autotoc_md52", null ],
@@ -115,20 +115,20 @@ var NAVTREE =
       [ "version", "md_docs_header.html#autotoc_md97", null ]
     ] ],
     [ "Progress", "md_docs_progress.html", [
-      [ "Proposal", "md_docs_progress.html#autotoc_md28", null ],
-      [ "C++26", "md_docs_progress.html#autotoc_md30", null ],
-      [ "C++23", "md_docs_progress.html#autotoc_md31", null ],
-      [ "C++20", "md_docs_progress.html#autotoc_md32", null ],
-      [ "C++17", "md_docs_progress.html#autotoc_md33", null ],
-      [ "C++14", "md_docs_progress.html#autotoc_md34", null ]
+      [ "Proposal", "md_docs_progress.html#autotoc_md35", null ],
+      [ "C++26", "md_docs_progress.html#autotoc_md36", null ],
+      [ "C++23", "md_docs_progress.html#autotoc_md37", null ],
+      [ "C++20", "md_docs_progress.html#autotoc_md38", null ],
+      [ "C++17", "md_docs_progress.html#autotoc_md39", null ],
+      [ "C++14", "md_docs_progress.html#autotoc_md49", null ]
     ] ],
     [ "Roadmap", "md_docs_roadmap.html", [
-      [ "Features", "md_docs_roadmap.html#autotoc_md36", [
-        [ "Ranges", "md_docs_roadmap.html#autotoc_md37", null ]
+      [ "Features", "md_docs_roadmap.html#autotoc_md28", [
+        [ "Ranges", "md_docs_roadmap.html#autotoc_md29", null ]
       ] ],
-      [ "Testing", "md_docs_roadmap.html#autotoc_md38", null ],
-      [ "QEMU", "md_docs_roadmap.html#autotoc_md39", [
-        [ "clang-verify", "md_docs_roadmap.html#autotoc_md40", null ]
+      [ "Testing", "md_docs_roadmap.html#autotoc_md30", null ],
+      [ "QEMU", "md_docs_roadmap.html#autotoc_md31", [
+        [ "clang-verify", "md_docs_roadmap.html#autotoc_md32", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
