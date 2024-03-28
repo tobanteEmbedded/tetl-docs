@@ -794,8 +794,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1common__reference_3_01T_00_01U_01_4.html">common_reference&lt; T, U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1common__reference_3_01T1_00_01T2_00_01R_8_8_8_01_4.html">common_reference&lt; T1, T2, R... &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1common__type.html">common_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the common type among all types <code>T...</code>, that is the type all <code>T...</code> can be implicitly converted to. If such a type exists, the member type names that type. Otherwise, there is no member type.  <a href="structetl_1_1common__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3373,43 +3371,43 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f88510fb558792c06ba4d60e131fdd1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a5f88510fb558792c06ba4d60e131fdd1">to_integer</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a></td></tr>
 <tr class="memdesc:a5f88510fb558792c06ba4d60e131fdd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return Int(b);</code>  <a href="namespaceetl.html#a5f88510fb558792c06ba4d60e131fdd1">More...</a><br /></td></tr>
 <tr class="separator:a5f88510fb558792c06ba4d60e131fdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc904547fdea8181f43e29bdd2499a18"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
-<tr class="memitem:afc904547fdea8181f43e29bdd2499a18"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afc904547fdea8181f43e29bdd2499a18">operator&lt;&lt;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:afc904547fdea8181f43e29bdd2499a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &lt;&lt; shift);</code>  <a href="namespaceetl.html#afc904547fdea8181f43e29bdd2499a18">More...</a><br /></td></tr>
-<tr class="separator:afc904547fdea8181f43e29bdd2499a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3715f231cbbd499f1ae94cb720235a0a"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
-<tr class="memitem:a3715f231cbbd499f1ae94cb720235a0a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a3715f231cbbd499f1ae94cb720235a0a">operator&gt;&gt;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:a3715f231cbbd499f1ae94cb720235a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &gt;&gt; shift);</code>  <a href="namespaceetl.html#a3715f231cbbd499f1ae94cb720235a0a">More...</a><br /></td></tr>
-<tr class="separator:a3715f231cbbd499f1ae94cb720235a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5333e22ae93bd22aa8bd647619966a"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
-<tr class="memitem:afa5333e22ae93bd22aa8bd647619966a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afa5333e22ae93bd22aa8bd647619966a">operator&lt;&lt;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
-<tr class="memdesc:afa5333e22ae93bd22aa8bd647619966a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return b = b &lt;&lt; shift;</code>  <a href="namespaceetl.html#afa5333e22ae93bd22aa8bd647619966a">More...</a><br /></td></tr>
-<tr class="separator:afa5333e22ae93bd22aa8bd647619966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071dbaa078a310d6e8bd2aa0eb028695"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
-<tr class="memitem:a071dbaa078a310d6e8bd2aa0eb028695"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a071dbaa078a310d6e8bd2aa0eb028695">operator&gt;&gt;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
-<tr class="memdesc:a071dbaa078a310d6e8bd2aa0eb028695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return b = b &gt;&gt; shift;</code>  <a href="namespaceetl.html#a071dbaa078a310d6e8bd2aa0eb028695">More...</a><br /></td></tr>
-<tr class="separator:a071dbaa078a310d6e8bd2aa0eb028695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1165be7031be3bc4b2ca83ab0f4da3d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ab1165be7031be3bc4b2ca83ab0f4da3d">operator|</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:ab1165be7031be3bc4b2ca83ab0f4da3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) | static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#ab1165be7031be3bc4b2ca83ab0f4da3d">More...</a><br /></td></tr>
-<tr class="separator:ab1165be7031be3bc4b2ca83ab0f4da3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49515e2d52191477551bdd9dada0ffe7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a49515e2d52191477551bdd9dada0ffe7">operator&amp;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:a49515e2d52191477551bdd9dada0ffe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) &amp; static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#a49515e2d52191477551bdd9dada0ffe7">More...</a><br /></td></tr>
-<tr class="separator:a49515e2d52191477551bdd9dada0ffe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52bf67065e04389a339bfcffa2d58de7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a52bf67065e04389a339bfcffa2d58de7">operator^</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:a52bf67065e04389a339bfcffa2d58de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) ^ static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#a52bf67065e04389a339bfcffa2d58de7">More...</a><br /></td></tr>
-<tr class="separator:a52bf67065e04389a339bfcffa2d58de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb428553f8379a8f3920c202cd85993"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6cb428553f8379a8f3920c202cd85993">operator~</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
-<tr class="memdesc:a6cb428553f8379a8f3920c202cd85993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(~static_cast&lt;unsigned int&gt;(b));</code>  <a href="namespaceetl.html#a6cb428553f8379a8f3920c202cd85993">More...</a><br /></td></tr>
-<tr class="separator:a6cb428553f8379a8f3920c202cd85993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5809b0b530dbcedb43f8300cee97c4d7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a5809b0b530dbcedb43f8300cee97c4d7">operator|=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
-<tr class="memdesc:a5809b0b530dbcedb43f8300cee97c4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs | rhs;</code>  <a href="namespaceetl.html#a5809b0b530dbcedb43f8300cee97c4d7">More...</a><br /></td></tr>
-<tr class="separator:a5809b0b530dbcedb43f8300cee97c4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe619a854c58b98dd311ab0411dd1870"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abe619a854c58b98dd311ab0411dd1870">operator&amp;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
-<tr class="memdesc:abe619a854c58b98dd311ab0411dd1870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs &amp; rhs;</code>  <a href="namespaceetl.html#abe619a854c58b98dd311ab0411dd1870">More...</a><br /></td></tr>
-<tr class="separator:abe619a854c58b98dd311ab0411dd1870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdab0f40108ae4c427a26dd401a81418"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acdab0f40108ae4c427a26dd401a81418">operator^=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
-<tr class="memdesc:acdab0f40108ae4c427a26dd401a81418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs ^ rhs;</code>  <a href="namespaceetl.html#acdab0f40108ae4c427a26dd401a81418">More...</a><br /></td></tr>
-<tr class="separator:acdab0f40108ae4c427a26dd401a81418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44584367e15d11f32751e3d8d4725f16"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
+<tr class="memitem:a44584367e15d11f32751e3d8d4725f16"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a44584367e15d11f32751e3d8d4725f16">operator&lt;&lt;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:a44584367e15d11f32751e3d8d4725f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &lt;&lt; shift);</code>  <a href="namespaceetl.html#a44584367e15d11f32751e3d8d4725f16">More...</a><br /></td></tr>
+<tr class="separator:a44584367e15d11f32751e3d8d4725f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7f98d5d03378f119ca13d457d61c7"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
+<tr class="memitem:acdb7f98d5d03378f119ca13d457d61c7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acdb7f98d5d03378f119ca13d457d61c7">operator&gt;&gt;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:acdb7f98d5d03378f119ca13d457d61c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &gt;&gt; shift);</code>  <a href="namespaceetl.html#acdb7f98d5d03378f119ca13d457d61c7">More...</a><br /></td></tr>
+<tr class="separator:acdb7f98d5d03378f119ca13d457d61c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fa80bf128a0118061c9d6185bf36d6"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
+<tr class="memitem:ae0fa80bf128a0118061c9d6185bf36d6"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ae0fa80bf128a0118061c9d6185bf36d6">operator&lt;&lt;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
+<tr class="memdesc:ae0fa80bf128a0118061c9d6185bf36d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return b = b &lt;&lt; shift;</code>  <a href="namespaceetl.html#ae0fa80bf128a0118061c9d6185bf36d6">More...</a><br /></td></tr>
+<tr class="separator:ae0fa80bf128a0118061c9d6185bf36d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebc33d04290787ba740891df73f3f89"><td class="memTemplParams" colspan="2">template&lt;etl::integral Int&gt; </td></tr>
+<tr class="memitem:a3ebc33d04290787ba740891df73f3f89"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a3ebc33d04290787ba740891df73f3f89">operator&gt;&gt;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, <a class="el" href="namespaceetl.html#af4f837bf0258547b23e4f04e4d03e6d1">Int</a> <a class="el" href="namespaceetl.html#a3acb4483c815a6504bcca76ca33d7d0f">shift</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
+<tr class="memdesc:a3ebc33d04290787ba740891df73f3f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return b = b &gt;&gt; shift;</code>  <a href="namespaceetl.html#a3ebc33d04290787ba740891df73f3f89">More...</a><br /></td></tr>
+<tr class="separator:a3ebc33d04290787ba740891df73f3f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e1c2c453bb1d61c7a52dda5a79095d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac8e1c2c453bb1d61c7a52dda5a79095d">operator|</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:ac8e1c2c453bb1d61c7a52dda5a79095d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) | static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#ac8e1c2c453bb1d61c7a52dda5a79095d">More...</a><br /></td></tr>
+<tr class="separator:ac8e1c2c453bb1d61c7a52dda5a79095d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d95d435a5d6467e5f89783c769b3527"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6d95d435a5d6467e5f89783c769b3527">operator&amp;</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:a6d95d435a5d6467e5f89783c769b3527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) &amp; static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#a6d95d435a5d6467e5f89783c769b3527">More...</a><br /></td></tr>
+<tr class="separator:a6d95d435a5d6467e5f89783c769b3527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1cd766ac7656c01eee7597a9b1e911"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a0b1cd766ac7656c01eee7597a9b1e911">operator^</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:a0b1cd766ac7656c01eee7597a9b1e911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) ^ static_cast&lt;unsigned int&gt;(rhs));</code>  <a href="namespaceetl.html#a0b1cd766ac7656c01eee7597a9b1e911">More...</a><br /></td></tr>
+<tr class="separator:a0b1cd766ac7656c01eee7597a9b1e911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affda460b410869ee69ffb45950ad092c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#affda460b410869ee69ffb45950ad092c">operator~</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> <a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a></td></tr>
+<tr class="memdesc:affda460b410869ee69ffb45950ad092c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(~static_cast&lt;unsigned int&gt;(b));</code>  <a href="namespaceetl.html#affda460b410869ee69ffb45950ad092c">More...</a><br /></td></tr>
+<tr class="separator:affda460b410869ee69ffb45950ad092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4ed34835b264ed80aa26d064415df4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6a4ed34835b264ed80aa26d064415df4">operator|=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
+<tr class="memdesc:a6a4ed34835b264ed80aa26d064415df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs | rhs;</code>  <a href="namespaceetl.html#a6a4ed34835b264ed80aa26d064415df4">More...</a><br /></td></tr>
+<tr class="separator:a6a4ed34835b264ed80aa26d064415df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e68f07a496ef6c6878eb4705391bc0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a19e68f07a496ef6c6878eb4705391bc0">operator&amp;=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
+<tr class="memdesc:a19e68f07a496ef6c6878eb4705391bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs &amp; rhs;</code>  <a href="namespaceetl.html#a19e68f07a496ef6c6878eb4705391bc0">More...</a><br /></td></tr>
+<tr class="separator:a19e68f07a496ef6c6878eb4705391bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cb4bb5192546c2d12958f67a39591e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aa5cb4bb5192546c2d12958f67a39591e">operator^=</a> (<a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;<a class="el" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> rhs) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;</td></tr>
+<tr class="memdesc:aa5cb4bb5192546c2d12958f67a39591e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return lhs = lhs ^ rhs;</code>  <a href="namespaceetl.html#aa5cb4bb5192546c2d12958f67a39591e">More...</a><br /></td></tr>
+<tr class="separator:aa5cb4bb5192546c2d12958f67a39591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70c570009ef313782a1d98cfdadb585"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#af70c570009ef313782a1d98cfdadb585">atof</a> (char const *str) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; double</td></tr>
 <tr class="memdesc:af70c570009ef313782a1d98cfdadb585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets a floating point value in a byte string pointed to by str.  <a href="namespaceetl.html#af70c570009ef313782a1d98cfdadb585">More...</a><br /></td></tr>
 <tr class="separator:af70c570009ef313782a1d98cfdadb585"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -25479,8 +25477,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="afc904547fdea8181f43e29bdd2499a18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc904547fdea8181f43e29bdd2499a18">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+<a id="a44584367e15d11f32751e3d8d4725f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44584367e15d11f32751e3d8d4725f16">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25491,7 +25489,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&lt;&lt; </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -25520,8 +25518,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a3715f231cbbd499f1ae94cb720235a0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3715f231cbbd499f1ae94cb720235a0a">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+<a id="acdb7f98d5d03378f119ca13d457d61c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb7f98d5d03378f119ca13d457d61c7">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25532,7 +25530,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&gt;&gt; </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -25561,8 +25559,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="afa5333e22ae93bd22aa8bd647619966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa5333e22ae93bd22aa8bd647619966a">&#9670;&nbsp;</a></span>operator&lt;&lt;=()</h2>
+<a id="ae0fa80bf128a0118061c9d6185bf36d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0fa80bf128a0118061c9d6185bf36d6">&#9670;&nbsp;</a></span>operator&lt;&lt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25573,7 +25571,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&lt;&lt;= </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&lt;&lt;= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -25603,8 +25601,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a071dbaa078a310d6e8bd2aa0eb028695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071dbaa078a310d6e8bd2aa0eb028695">&#9670;&nbsp;</a></span>operator&gt;&gt;=()</h2>
+<a id="a3ebc33d04290787ba740891df73f3f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebc33d04290787ba740891df73f3f89">&#9670;&nbsp;</a></span>operator&gt;&gt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25615,7 +25613,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&gt;&gt;= </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&gt;&gt;= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -25644,8 +25642,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="ab1165be7031be3bc4b2ca83ab0f4da3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1165be7031be3bc4b2ca83ab0f4da3d">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/3]</span></h2>
+<a id="ac8e1c2c453bb1d61c7a52dda5a79095d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e1c2c453bb1d61c7a52dda5a79095d">&#9670;&nbsp;</a></span>operator|() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25654,7 +25652,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator| </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator| </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25683,8 +25681,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a49515e2d52191477551bdd9dada0ffe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49515e2d52191477551bdd9dada0ffe7">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[3/3]</span></h2>
+<a id="a6d95d435a5d6467e5f89783c769b3527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d95d435a5d6467e5f89783c769b3527">&#9670;&nbsp;</a></span>operator&amp;() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25693,7 +25691,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&amp; </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&amp; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25722,8 +25720,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a52bf67065e04389a339bfcffa2d58de7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52bf67065e04389a339bfcffa2d58de7">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/3]</span></h2>
+<a id="a0b1cd766ac7656c01eee7597a9b1e911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1cd766ac7656c01eee7597a9b1e911">&#9670;&nbsp;</a></span>operator^() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25732,7 +25730,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator^ </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator^ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25761,8 +25759,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a6cb428553f8379a8f3920c202cd85993"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cb428553f8379a8f3920c202cd85993">&#9670;&nbsp;</a></span>operator~() <span class="overload">[2/2]</span></h2>
+<a id="affda460b410869ee69ffb45950ad092c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affda460b410869ee69ffb45950ad092c">&#9670;&nbsp;</a></span>operator~() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25771,7 +25769,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator~ </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator~ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
@@ -25790,8 +25788,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="a5809b0b530dbcedb43f8300cee97c4d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5809b0b530dbcedb43f8300cee97c4d7">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[2/2]</span></h2>
+<a id="a6a4ed34835b264ed80aa26d064415df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4ed34835b264ed80aa26d064415df4">&#9670;&nbsp;</a></span>operator|=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25800,7 +25798,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator|= </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator|= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25814,7 +25812,8 @@ template&lt;etl::integral Int&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp; </td>
+          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp;
+</td>
         </tr>
       </table>
   </td>
@@ -25828,8 +25827,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="abe619a854c58b98dd311ab0411dd1870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe619a854c58b98dd311ab0411dd1870">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[2/2]</span></h2>
+<a id="a19e68f07a496ef6c6878eb4705391bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e68f07a496ef6c6878eb4705391bc0">&#9670;&nbsp;</a></span>operator&amp;=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25838,7 +25837,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator&amp;= </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator&amp;= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25852,7 +25851,8 @@ template&lt;etl::integral Int&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp; </td>
+          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp;
+</td>
         </tr>
       </table>
   </td>
@@ -25866,8 +25866,8 @@ template&lt;etl::integral Int&gt; </div>
 
 </div>
 </div>
-<a id="acdab0f40108ae4c427a26dd401a81418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdab0f40108ae4c427a26dd401a81418">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[2/2]</span></h2>
+<a id="aa5cb4bb5192546c2d12958f67a39591e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5cb4bb5192546c2d12958f67a39591e">&#9670;&nbsp;</a></span>operator^=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -25876,7 +25876,7 @@ template&lt;etl::integral Int&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto etl::operator^= </td>
+          <td class="memname">constexpr <a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> auto etl::operator^= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a> &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -25890,7 +25890,8 @@ template&lt;etl::integral Int&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp; </td>
+          <td></td><td> -&gt; <a class="el" href="namespaceetl.html#a1d957fa8529e9617c445e42519518e5e">etl::byte</a>&amp;
+</td>
         </tr>
       </table>
   </td>
@@ -41376,17 +41377,13 @@ template&lt;typename LHS , typename RHS &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">  etl::is_lvalue_reference_v&lt;LHS&gt; &amp;&amp;</div>
-<div class="line">  <a class="code" href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">etl::common_reference_with</a>&lt;</div>
-<div class="line">    <a class="code" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t&lt;LHS&gt;</a> <span class="keyword">const</span>&amp;,</div>
-<div class="line">    <a class="code" href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t&lt;RHS&gt;</a> <span class="keyword">const</span>&amp;&gt; &amp;&amp;</div>
-<div class="line">  <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(LHS <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, RHS&amp;&amp; rhs) {</div>
-<div class="line">    { <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a> = <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(rhs) } -&gt; etl::same_as&lt;LHS&gt;;</div>
-<div class="line">  }</div>
+<div class="line">        etl::is_lvalue_reference_v&lt;LHS&gt;</div>
+<div class="line">    </div>
+<div class="line">    and <a class="code" href="namespaceetl.html#a1bb8468ab3c13301477017cfc35f00ef">requires</a>(LHS <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a>, RHS&amp;&amp; rhs) {</div>
+<div class="line">        { <a class="code" href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">lhs</a> = <a class="code" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(rhs) } -&gt; etl::same_as&lt;LHS&gt;;</div>
+<div class="line">    }</div>
 <div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition:</b> forward.hpp:32</div></div>
-<div class="ttc" id="anamespaceetl_html_a07e107a90f5ce06cb6af9b383b8012da"><div class="ttname"><a href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">etl::common_reference_with</a></div><div class="ttdeci">concept common_reference_with</div><div class="ttdef"><b>Definition:</b> common_reference_with.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_a90533d8a4222a3a68dfc34fcd9b9e3a1"><div class="ttname"><a href="namespaceetl.html#a90533d8a4222a3a68dfc34fcd9b9e3a1">etl::lhs</a></div><div class="ttdeci">C &amp; lhs</div><div class="ttdef"><b>Definition:</b> stack.hpp:178</div></div>
-<div class="ttc" id="anamespaceetl_html_ab812e9b378e738c7b7b7fc34f4dab9f3"><div class="ttname"><a href="namespaceetl.html#ab812e9b378e738c7b7b7fc34f4dab9f3">etl::remove_reference_t</a></div><div class="ttdeci">typename etl::remove_reference&lt; T &gt;::type remove_reference_t</div><div class="ttdef"><b>Definition:</b> remove_reference.hpp:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -41506,7 +41503,8 @@ template&lt;typename T , typename U &gt; </div>
 <div class="line">    <a class="code" href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">common_reference_t</a>&lt;</div>
 <div class="line">      add_lvalue_reference_t&lt;T const&gt;,</div>
 <div class="line">      add_lvalue_reference_t&lt;U const&gt;&gt;&gt;</div>
-<div class="ttc" id="anamespaceetl_html_aadad4ea85004a040c0e6e70341e2d221"><div class="ttname"><a href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition:</b> common_reference.hpp:21</div></div>
+<div class="ttc" id="anamespaceetl_html_a07e107a90f5ce06cb6af9b383b8012da"><div class="ttname"><a href="namespaceetl.html#a07e107a90f5ce06cb6af9b383b8012da">etl::common_reference_with</a></div><div class="ttdeci">concept common_reference_with</div><div class="ttdef"><b>Definition:</b> common_reference_with.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_aadad4ea85004a040c0e6e70341e2d221"><div class="ttname"><a href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition:</b> common_reference.hpp:38</div></div>
 </div><!-- fragment -->
 </div>
 </div>

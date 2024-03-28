@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('cassert_8cpp-example.html',''); initRe
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span>  <span class="comment">// for printf</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">// for exit</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#if defined(TETL_MSVC)</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_MSVC)</span></div>
 <div class="line"><span class="preprocessor">    #pragma warning(disable: 4127) </span><span class="comment">// Conditional expression is constant</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('cassert_8cpp-example.html',''); initRe
 <div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS; <span class="comment">// unreachable</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#if defined(TETL_MSVC)</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_MSVC)</span></div>
 <div class="line"><span class="preprocessor">    #pragma warning(default: 4127) </span><span class="comment">// Conditional expression is constant</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>

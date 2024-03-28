@@ -998,11 +998,11 @@ version</h1>
 <div class="line">  puts(<a class="code" href="__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8">TETL_VERSION_STRING</a>);  <span class="comment">// Print current library version</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Detect compiler</span></div>
-<div class="line"><span class="preprocessor">#if defined(TETL_MSVC)</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_MSVC)</span></div>
 <div class="line">  puts(<span class="stringliteral">&quot;msvc&quot;</span>);</div>
-<div class="line"><span class="preprocessor">#if defined(TETL_GCC)</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_GCC)</span></div>
 <div class="line">  puts(<span class="stringliteral">&quot;gcc&quot;</span>);</div>
-<div class="line"><span class="preprocessor">#if defined(TETL_CLANG)</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_CLANG)</span></div>
 <div class="line">  puts(<span class="stringliteral">&quot;clang&quot;</span>);</div>
 <div class="line"><span class="preprocessor">#else</span></div>
 <div class="line">  puts(<span class="stringliteral">&quot;other compiler&quot;</span>);</div>

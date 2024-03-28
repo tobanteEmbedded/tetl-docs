@@ -62,9 +62,6 @@ var hierarchy =
       [ "etl::common_comparison_category< Ts >", "structetl_1_1common__comparison__category.html", null ]
     ] ],
     [ "etl::common_reference< T >", "structetl_1_1common__reference.html", null ],
-    [ "etl::common_reference< common_reference_t< T1, T2 >, R... >", "structetl_1_1common__reference.html", [
-      [ "etl::common_reference< T1, T2, R... >", "structetl_1_1common__reference_3_01T1_00_01T2_00_01R_8_8_8_01_4.html", null ]
-    ] ],
     [ "etl::common_reference< T >", "structetl_1_1common__reference_3_01T_01_4.html", null ],
     [ "etl::common_reference< T, U >", "structetl_1_1common__reference_3_01T_00_01U_01_4.html", null ],
     [ "etl::common_reference<>", "structetl_1_1common__reference_3_4.html", null ],
