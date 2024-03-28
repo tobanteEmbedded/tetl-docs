@@ -116,9 +116,11 @@ var annotated_dup =
         [ "tail< list< Head, Tail... > >", "structetl_1_1meta_1_1tail_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1tail_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ]
       ] ],
       [ "ranges", "namespaceetl_1_1ranges.html", [
+        [ "in_fun_result", "structetl_1_1ranges_1_1in__fun__result.html", "structetl_1_1ranges_1_1in__fun__result" ],
         [ "construct_at_fn", "structetl_1_1ranges_1_1construct__at__fn.html", "structetl_1_1ranges_1_1construct__at__fn" ],
         [ "destroy_fn", "structetl_1_1ranges_1_1destroy__fn.html", "structetl_1_1ranges_1_1destroy__fn" ],
-        [ "destroy_at_fn", "structetl_1_1ranges_1_1destroy__at__fn.html", "structetl_1_1ranges_1_1destroy__at__fn" ]
+        [ "destroy_at_fn", "structetl_1_1ranges_1_1destroy__at__fn.html", "structetl_1_1ranges_1_1destroy__at__fn" ],
+        [ "dangling", "structetl_1_1ranges_1_1dangling.html", "structetl_1_1ranges_1_1dangling" ]
       ] ],
       [ "array", "structetl_1_1array.html", "structetl_1_1array" ],
       [ "tuple_size< array< T, N > >", "structetl_1_1tuple__size_3_01array_3_01T_00_01N_01_4_01_4.html", null ],
@@ -569,6 +571,7 @@ var annotated_dup =
       [ "pair", "structetl_1_1pair.html", "structetl_1_1pair" ],
       [ "tuple_size< pair< T1, T2 > >", "structetl_1_1tuple__size_3_01pair_3_01T1_00_01T2_01_4_01_4.html", null ],
       [ "tuple_element< I, pair< T1, T2 > >", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4" ],
+      [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4" ],
       [ "piecewise_construct_t", "structetl_1_1piecewise__construct__t.html", "structetl_1_1piecewise__construct__t" ],
       [ "bad_variant_access", "structetl_1_1bad__variant__access.html", "structetl_1_1bad__variant__access" ],
       [ "monostate", "structetl_1_1monostate.html", "structetl_1_1monostate" ],

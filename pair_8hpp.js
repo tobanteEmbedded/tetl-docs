@@ -3,6 +3,7 @@ var pair_8hpp =
     [ "pair", "structetl_1_1pair.html", "structetl_1_1pair" ],
     [ "tuple_size< pair< T1, T2 > >", "structetl_1_1tuple__size_3_01pair_3_01T1_00_01T2_01_4_01_4.html", null ],
     [ "tuple_element< I, pair< T1, T2 > >", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4" ],
+    [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4" ],
     [ "pair", "pair_8hpp.html#a53eed856cd0d950a984b3f7b4bed78b4", null ],
     [ "swap", "pair_8hpp.html#aaa50aa68713ac9f56128ad9c0406b737", null ],
     [ "make_pair", "pair_8hpp.html#a481d5f0f3c183fc9d7407e1275c3040d", null ],

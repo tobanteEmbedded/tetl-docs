@@ -146,6 +146,8 @@ var NAVTREEINDEX3 =
 "bad__optional__access_8hpp_source.html":[10,0,1,0,45,0],
 "bad__variant__access_8hpp.html":[10,0,1,0,63,0],
 "bad__variant__access_8hpp_source.html":[10,0,1,0,63,0],
+"basic__common__reference_8hpp.html":[10,0,1,0,61,10],
+"basic__common__reference_8hpp_source.html":[10,0,1,0,61,10],
 "basic__format__arg_8hpp.html":[10,0,1,0,29,1],
 "basic__format__arg_8hpp_source.html":[10,0,1,0,29,1],
 "basic__format__args_8hpp.html":[10,0,1,0,29,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "bit__or_8hpp_source.html":[10,0,1,0,30,3],
 "bit__width_8hpp.html":[10,0,1,0,3,3],
 "bit__width_8hpp.html#a7f9cca4b68917b48f46849a03007d9a9":[10,0,1,0,3,3,0],
-"bit__width_8hpp_source.html":[10,0,1,0,3,3],
-"bit__xor_8hpp.html":[10,0,1,0,30,4],
-"bit__xor_8hpp_source.html":[10,0,1,0,30,4]
+"bit__width_8hpp_source.html":[10,0,1,0,3,3]
 };

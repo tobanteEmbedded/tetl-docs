@@ -107,15 +107,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1in__fun__result.html">in_fun_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1construct__at__fn.html">construct_at_fn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1destroy__fn.html">destroy_fn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1destroy__at__fn.html">destroy_at_fn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ranges_1_1dangling.html">dangling</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a89323f79ddf6a2715ec3ca7e86c8bbf7"><td class="memTemplParams" colspan="2">template&lt;etl::ranges::range R&gt; </td></tr>
+<tr class="memitem:a89323f79ddf6a2715ec3ca7e86c8bbf7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1ranges.html#a89323f79ddf6a2715ec3ca7e86c8bbf7">borrowed_iterator_t</a> = <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">etl::conditional_t</a>&lt; <a class="el" href="namespaceetl_1_1ranges.html#a49150dba91950b9135f540e0c0df0055">etl::ranges::borrowed_range</a>&lt; R &gt;, <a class="el" href="namespaceetl_1_1ranges.html#a33425610736b0a257a9c5b3f1ce1c53e">etl::ranges::iterator_t</a>&lt; R &gt;, <a class="el" href="structetl_1_1ranges_1_1dangling.html">etl::ranges::dangling</a> &gt;</td></tr>
+<tr class="separator:a89323f79ddf6a2715ec3ca7e86c8bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33425610736b0a257a9c5b3f1ce1c53e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a33425610736b0a257a9c5b3f1ce1c53e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1ranges.html#a33425610736b0a257a9c5b3f1ce1c53e">iterator_t</a> = decltype(<a class="el" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">etl::ranges::begin</a>(<a class="el" href="namespaceetl.html#a27a1a97135d4a41771948063bd8c3a90">etl::declval</a>&lt; T &amp; &gt;()))</td></tr>
 <tr class="separator:a33425610736b0a257a9c5b3f1ce1c53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +154,9 @@ Variables</h2></td></tr>
 <tr class="separator:a0677a0b77ca32abb3ace3c39a10bfa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3359121d1e6b6048466a7042367de263"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a> = begin_cpo::fn{}</td></tr>
 <tr class="separator:a3359121d1e6b6048466a7042367de263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49150dba91950b9135f540e0c0df0055"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
+<tr class="memitem:a49150dba91950b9135f540e0c0df0055"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1ranges.html#a49150dba91950b9135f540e0c0df0055">borrowed_range</a></td></tr>
+<tr class="separator:a49150dba91950b9135f540e0c0df0055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1811ff006304c16c290c13573752a099"><td class="memTemplParams" colspan="2">template&lt;typename &gt; </td></tr>
 <tr class="memitem:a1811ff006304c16c290c13573752a099"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1ranges.html#a1811ff006304c16c290c13573752a099">disable_sized_range</a> = false</td></tr>
 <tr class="separator:a1811ff006304c16c290c13573752a099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +175,22 @@ Variables</h2></td></tr>
 <tr class="separator:a109806e71c68af6e9a90350dd5051aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a89323f79ddf6a2715ec3ca7e86c8bbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89323f79ddf6a2715ec3ca7e86c8bbf7">&#9670;&nbsp;</a></span>borrowed_iterator_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::ranges::range R&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceetl_1_1ranges.html#a89323f79ddf6a2715ec3ca7e86c8bbf7">etl::ranges::borrowed_iterator_t</a> = typedef <a class="el" href="namespaceetl.html#a27f0be4dd8251443fd1dbf06fa9c2bde">etl::conditional_t</a>&lt;<a class="el" href="namespaceetl_1_1ranges.html#a49150dba91950b9135f540e0c0df0055">etl::ranges::borrowed_range</a>&lt;R&gt;, <a class="el" href="namespaceetl_1_1ranges.html#a33425610736b0a257a9c5b3f1ce1c53e">etl::ranges::iterator_t</a>&lt;R&gt;, <a class="el" href="structetl_1_1ranges_1_1dangling.html">etl::ranges::dangling</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33425610736b0a257a9c5b3f1ce1c53e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33425610736b0a257a9c5b3f1ce1c53e">&#9670;&nbsp;</a></span>iterator_t</h2>
 
@@ -302,6 +328,26 @@ template&lt;etl::ranges::range R&gt; </div>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a49150dba91950b9135f540e0c0df0055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49150dba91950b9135f540e0c0df0055">&#9670;&nbsp;</a></span>borrowed_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept etl::ranges::borrowed_range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= etl::ranges::range&lt;R&gt;</div>
+<div class="line">                     and (etl::is_lvalue_reference_v&lt;R&gt; or <a class="code" href="namespaceetl_1_1ranges.html#a287997a0ac35fb35b125c47378897878">etl::ranges::enable_borrowed_range</a>&lt;<a class="code" href="namespaceetl.html#ac0c34af472196537fb719bde6ab1c4ad">etl::remove_cvref_t&lt;R&gt;</a>&gt;)</div>
+<div class="ttc" id="anamespaceetl_1_1ranges_html_a287997a0ac35fb35b125c47378897878"><div class="ttname"><a href="namespaceetl_1_1ranges.html#a287997a0ac35fb35b125c47378897878">etl::ranges::enable_borrowed_range</a></div><div class="ttdeci">constexpr bool enable_borrowed_range</div><div class="ttdef"><b>Definition:</b> enable_borrowed_range.hpp:9</div></div>
+<div class="ttc" id="anamespaceetl_html_ac0c34af472196537fb719bde6ab1c4ad"><div class="ttname"><a href="namespaceetl.html#ac0c34af472196537fb719bde6ab1c4ad">etl::remove_cvref_t</a></div><div class="ttdeci">etl::remove_cv_t&lt; etl::remove_reference_t&lt; T &gt; &gt; remove_cvref_t</div><div class="ttdef"><b>Definition:</b> remove_cvref.hpp:23</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1811ff006304c16c290c13573752a099"></a>

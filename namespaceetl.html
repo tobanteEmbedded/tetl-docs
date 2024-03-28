@@ -1203,6 +1203,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html">tuple_element&lt; I, pair&lt; T1, T2 &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The partial specializations of <a class="el" href="structetl_1_1tuple__element.html" title="Provides compile-time indexed access to the type of the elements of the array using tuple-like interf...">tuple_element</a> for pairs provide compile-time access to the types of the pair's elements, using tuple-like syntax. The program is ill-formed if I &gt;= 2.  <a href="structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html">basic_common_reference&lt; pair&lt; T1, T2 &gt;, pair&lt; U1, U2 &gt;, TQual, UQual &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1piecewise__construct__t.html">piecewise_construct_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1piecewise__construct__t.html" title="etl::piecewise_construct_t is an empty class tag type used to disambiguate between different function...">etl::piecewise_construct_t</a> is an empty class tag type used to disambiguate between different functions that take two tuple arguments.  <a href="structetl_1_1piecewise__construct__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1416,6 +1418,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a7c22455efb7e072deb03e78241405e56"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7c22455efb7e072deb03e78241405e56"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a7c22455efb7e072deb03e78241405e56">iter_value_t</a> = typename detail::iter_value&lt; T &gt;::type</td></tr>
 <tr class="separator:a7c22455efb7e072deb03e78241405e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64966693fcef70f619ddf7fb442c56d"><td class="memTemplParams" colspan="2">template&lt;etl::indirectly_readable Iter, etl::indirectly_regular_unary_invocable&lt; Iter &gt; Proj&gt; </td></tr>
+<tr class="memitem:af64966693fcef70f619ddf7fb442c56d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#af64966693fcef70f619ddf7fb442c56d">projected</a> = etl::detail::projected_impl&lt; Iter, Proj &gt;::type</td></tr>
+<tr class="separator:af64966693fcef70f619ddf7fb442c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a314896b8468bbdbea59f862f4c5e8aef"><td class="memTemplParams" colspan="2">template&lt;typename IndexType , etl::size_t Rank&gt; </td></tr>
 <tr class="memitem:a314896b8468bbdbea59f862f4c5e8aef"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a314896b8468bbdbea59f862f4c5e8aef">dextents</a> = typename detail::dextents_impl&lt; IndexType, <a class="el" href="namespaceetl.html#acca681165e818e6caaf5e237e8125ae8">etl::make_index_sequence</a>&lt; Rank &gt; &gt;::type</td></tr>
 <tr class="separator:a314896b8468bbdbea59f862f4c5e8aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1855,13 +1860,13 @@ Functions</h2></td></tr>
 <tr class="memitem:add4a4559a0af0147ebc0d7572dbc142e"><td class="memTemplParams" colspan="2">template&lt;typename BidirIt &gt; </td></tr>
 <tr class="memitem:add4a4559a0af0147ebc0d7572dbc142e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#add4a4559a0af0147ebc0d7572dbc142e">gnome_sort</a> (BidirIt first, BidirIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) -&gt; void</td></tr>
 <tr class="separator:add4a4559a0af0147ebc0d7572dbc142e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7d9a038b385aff889235d470b837e4"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 &gt; </td></tr>
-<tr class="memitem:acc7d9a038b385aff889235d470b837e4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acc7d9a038b385aff889235d470b837e4">includes</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2) -&gt; bool</td></tr>
-<tr class="memdesc:acc7d9a038b385aff889235d470b837e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the sorted range <code>[first2, last2)</code> is a subsequence of the sorted range <code>[first1, last1)</code>. Both ranges must be sorted.  <a href="namespaceetl.html#acc7d9a038b385aff889235d470b837e4">More...</a><br /></td></tr>
-<tr class="separator:acc7d9a038b385aff889235d470b837e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f97df033ed5dc7c5458f991078633d9"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 , typename Compare &gt; </td></tr>
 <tr class="memitem:a2f97df033ed5dc7c5458f991078633d9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a2f97df033ed5dc7c5458f991078633d9">includes</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Compare comp) -&gt; bool</td></tr>
+<tr class="memdesc:a2f97df033ed5dc7c5458f991078633d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the sorted range <code>[first2, last2)</code> is a subsequence of the sorted range <code>[first1, last1)</code>. Both ranges must be sorted.  <a href="namespaceetl.html#a2f97df033ed5dc7c5458f991078633d9">More...</a><br /></td></tr>
 <tr class="separator:a2f97df033ed5dc7c5458f991078633d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7d9a038b385aff889235d470b837e4"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 &gt; </td></tr>
+<tr class="memitem:acc7d9a038b385aff889235d470b837e4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#acc7d9a038b385aff889235d470b837e4">includes</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2) -&gt; bool</td></tr>
+<tr class="separator:acc7d9a038b385aff889235d470b837e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8a63b710f7e13e8142d025fe5f2ef94"><td class="memTemplParams" colspan="2">template&lt;typename BidirIt , typename Compare &gt; </td></tr>
 <tr class="memitem:af8a63b710f7e13e8142d025fe5f2ef94"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#af8a63b710f7e13e8142d025fe5f2ef94">inplace_merge</a> (BidirIt <a class="el" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">begin</a>, BidirIt mid, BidirIt <a class="el" href="namespaceetl.html#abf9eb859a31968a9179b29b638cd054b">end</a>, Compare comp) -&gt; void</td></tr>
 <tr class="memdesc:af8a63b710f7e13e8142d025fe5f2ef94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two consecutive sorted ranges [first, middle) and [middle, last) into one sorted range [first, last).  <a href="namespaceetl.html#af8a63b710f7e13e8142d025fe5f2ef94">More...</a><br /></td></tr>
@@ -1927,14 +1932,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a220fbd23aca7dbc728c200471ed114c8"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a220fbd23aca7dbc728c200471ed114c8">max</a> (Type const &amp;a, Type const &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, Compare comp) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; Type const &amp;</td></tr>
 <tr class="memdesc:a220fbd23aca7dbc728c200471ed114c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the greater of a and b, using a compare function.  <a href="namespaceetl.html#a220fbd23aca7dbc728c200471ed114c8">More...</a><br /></td></tr>
 <tr class="separator:a220fbd23aca7dbc728c200471ed114c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc62e1e0c57de79b8b007265bc308ec2"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
-<tr class="memitem:abc62e1e0c57de79b8b007265bc308ec2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abc62e1e0c57de79b8b007265bc308ec2">max_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; ForwardIt</td></tr>
-<tr class="memdesc:abc62e1e0c57de79b8b007265bc308ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;.  <a href="namespaceetl.html#abc62e1e0c57de79b8b007265bc308ec2">More...</a><br /></td></tr>
-<tr class="separator:abc62e1e0c57de79b8b007265bc308ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcf261d2d7377e2284ab3f5738b34e1"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Compare &gt; </td></tr>
 <tr class="memitem:aedcf261d2d7377e2284ab3f5738b34e1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#aedcf261d2d7377e2284ab3f5738b34e1">max_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:aedcf261d2d7377e2284ab3f5738b34e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using the given binary comparison function comp.  <a href="namespaceetl.html#aedcf261d2d7377e2284ab3f5738b34e1">More...</a><br /></td></tr>
 <tr class="separator:aedcf261d2d7377e2284ab3f5738b34e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc62e1e0c57de79b8b007265bc308ec2"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
+<tr class="memitem:abc62e1e0c57de79b8b007265bc308ec2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#abc62e1e0c57de79b8b007265bc308ec2">max_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; ForwardIt</td></tr>
+<tr class="memdesc:abc62e1e0c57de79b8b007265bc308ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;.  <a href="namespaceetl.html#abc62e1e0c57de79b8b007265bc308ec2">More...</a><br /></td></tr>
+<tr class="separator:abc62e1e0c57de79b8b007265bc308ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee09e4768fc381002cd7dc14e8e561b"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 , typename OutputIt , typename Compare &gt; </td></tr>
 <tr class="memitem:a9ee09e4768fc381002cd7dc14e8e561b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9ee09e4768fc381002cd7dc14e8e561b">merge</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, OutputIt destination, Compare comp) -&gt; OutputIt</td></tr>
 <tr class="memdesc:a9ee09e4768fc381002cd7dc14e8e561b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two sorted ranges <code>[first1, last1)</code> and <code>[first2, last2)</code> into one sorted range beginning at <code>destination</code>.  <a href="namespaceetl.html#a9ee09e4768fc381002cd7dc14e8e561b">More...</a><br /></td></tr>
@@ -1957,14 +1962,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a479c4a8315ae3ef2d1128858d723afc2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a479c4a8315ae3ef2d1128858d723afc2">min</a> (Type const &amp;a, Type const &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, Compare comp) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; Type const &amp;</td></tr>
 <tr class="memdesc:a479c4a8315ae3ef2d1128858d723afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the smaller of a and b, using a compare function.  <a href="namespaceetl.html#a479c4a8315ae3ef2d1128858d723afc2">More...</a><br /></td></tr>
 <tr class="separator:a479c4a8315ae3ef2d1128858d723afc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71878538e0e2b2f8026ed657836382c0"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
-<tr class="memitem:a71878538e0e2b2f8026ed657836382c0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a71878538e0e2b2f8026ed657836382c0">min_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; ForwardIt</td></tr>
-<tr class="memdesc:a71878538e0e2b2f8026ed657836382c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;.  <a href="namespaceetl.html#a71878538e0e2b2f8026ed657836382c0">More...</a><br /></td></tr>
-<tr class="separator:a71878538e0e2b2f8026ed657836382c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4af4c7706179eef16ba76242c48518a9"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt , typename Compare &gt; </td></tr>
 <tr class="memitem:a4af4c7706179eef16ba76242c48518a9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a4af4c7706179eef16ba76242c48518a9">min_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>, Compare comp) -&gt; ForwardIt</td></tr>
 <tr class="memdesc:a4af4c7706179eef16ba76242c48518a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using the given binary comparison function comp.  <a href="namespaceetl.html#a4af4c7706179eef16ba76242c48518a9">More...</a><br /></td></tr>
 <tr class="separator:a4af4c7706179eef16ba76242c48518a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71878538e0e2b2f8026ed657836382c0"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIt &gt; </td></tr>
+<tr class="memitem:a71878538e0e2b2f8026ed657836382c0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a71878538e0e2b2f8026ed657836382c0">min_element</a> (ForwardIt first, ForwardIt <a class="el" href="namespaceetl.html#a5d5911bdc109e2c7265b7486da04e8b8">last</a>) <a class="el" href="namespaceetl.html#a5489a5258551040b63e6eef9f49264d8">noexcept</a> -&gt; ForwardIt</td></tr>
+<tr class="memdesc:a71878538e0e2b2f8026ed657836382c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;.  <a href="namespaceetl.html#a71878538e0e2b2f8026ed657836382c0">More...</a><br /></td></tr>
+<tr class="separator:a71878538e0e2b2f8026ed657836382c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81f900b934c83cdb278826ede239e6b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare &gt; </td></tr>
 <tr class="memitem:ae81f900b934c83cdb278826ede239e6b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ae81f900b934c83cdb278826ede239e6b">minmax</a> (T const &amp;a, T const &amp;<a class="el" href="namespaceetl.html#a18b6c2ea4f13089ede1a42514f87e6c6">b</a>, Compare comp) -&gt; <a class="el" href="structetl_1_1pair.html">pair</a>&lt; T const &amp;, T const &amp; &gt;</td></tr>
 <tr class="memdesc:ae81f900b934c83cdb278826ede239e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lowest and the greatest of the given values.  <a href="namespaceetl.html#ae81f900b934c83cdb278826ede239e6b">More...</a><br /></td></tr>
@@ -5068,6 +5073,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memTemplParams" colspan="2">template&lt;typename In &gt; </td></tr>
 <tr class="memitem:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19">indirectly_readable</a> = etl::detail::indirectly_readable_impl&lt;<a class="el" href="namespaceetl.html#ac0c34af472196537fb719bde6ab1c4ad">etl::remove_cvref_t</a>&lt;In&gt;&gt;</td></tr>
 <tr class="separator:a9c3f8cf1ae2f68c91bcfbd2ad7f1bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a7c676854c909e4823a0765f949385"><td class="memTemplParams" colspan="2">template&lt;typename F , typename Iter &gt; </td></tr>
+<tr class="memitem:ac7a7c676854c909e4823a0765f949385"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ac7a7c676854c909e4823a0765f949385">indirectly_regular_unary_invocable</a></td></tr>
+<tr class="separator:ac7a7c676854c909e4823a0765f949385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memTemplParams" colspan="2">template&lt;typename F , typename Iter &gt; </td></tr>
 <tr class="memitem:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a666fa7ccc8eeba6fb7ee30d91bdf73d5">indirectly_unary_invocable</a></td></tr>
 <tr class="separator:a666fa7ccc8eeba6fb7ee30d91bdf73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6338,6 +6346,22 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceetl.html#a7c22455efb7e072deb03e78241405e56">etl::iter_value_t</a> = typedef typename detail::iter_value&lt;T&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af64966693fcef70f619ddf7fb442c56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64966693fcef70f619ddf7fb442c56d">&#9670;&nbsp;</a></span>projected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;etl::indirectly_readable Iter, etl::indirectly_regular_unary_invocable&lt; Iter &gt; Proj&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceetl.html#af64966693fcef70f619ddf7fb442c56d">etl::projected</a> = typedef etl::detail::projected_impl&lt;Iter, Proj&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -9064,61 +9088,8 @@ template&lt;typename BidirIt &gt; </div>
 
 </div>
 </div>
-<a id="acc7d9a038b385aff889235d470b837e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7d9a038b385aff889235d470b837e4">&#9670;&nbsp;</a></span>includes() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename InputIt1 , typename InputIt2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto etl::includes </td>
-          <td>(</td>
-          <td class="paramtype">InputIt1&#160;</td>
-          <td class="paramname"><em>first1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIt1&#160;</td>
-          <td class="paramname"><em>last1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIt2&#160;</td>
-          <td class="paramname"><em>first2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIt2&#160;</td>
-          <td class="paramname"><em>last2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the sorted range <code>[first2, last2)</code> is a subsequence of the sorted range <code>[first1, last1)</code>. Both ranges must be sorted. </p>
-
-</div>
-</div>
 <a id="a2f97df033ed5dc7c5458f991078633d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f97df033ed5dc7c5458f991078633d9">&#9670;&nbsp;</a></span>includes() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f97df033ed5dc7c5458f991078633d9">&#9670;&nbsp;</a></span>includes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9157,6 +9128,59 @@ template&lt;typename InputIt1 , typename InputIt2 , typename Compare &gt; </div>
           <td></td>
           <td class="paramtype">Compare&#160;</td>
           <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the sorted range <code>[first2, last2)</code> is a subsequence of the sorted range <code>[first1, last1)</code>. Both ranges must be sorted. </p>
+
+</div>
+</div>
+<a id="acc7d9a038b385aff889235d470b837e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7d9a038b385aff889235d470b837e4">&#9670;&nbsp;</a></span>includes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputIt1 , typename InputIt2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::includes </td>
+          <td>(</td>
+          <td class="paramtype">InputIt1&#160;</td>
+          <td class="paramname"><em>first1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt1&#160;</td>
+          <td class="paramname"><em>last1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt2&#160;</td>
+          <td class="paramname"><em>first2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt2&#160;</td>
+          <td class="paramname"><em>last2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -10024,49 +10048,8 @@ template&lt;typename Type , typename Compare &gt; </div>
 
 </div>
 </div>
-<a id="abc62e1e0c57de79b8b007265bc308ec2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc62e1e0c57de79b8b007265bc308ec2">&#9670;&nbsp;</a></span>max_element() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ForwardIt &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto etl::max_element </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; ForwardIt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;. </p>
-
-</div>
-</div>
 <a id="aedcf261d2d7377e2284ab3f5738b34e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedcf261d2d7377e2284ab3f5738b34e1">&#9670;&nbsp;</a></span>max_element() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedcf261d2d7377e2284ab3f5738b34e1">&#9670;&nbsp;</a></span>max_element() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10109,6 +10092,47 @@ template&lt;typename ForwardIt , typename Compare &gt; </div>
 </div><div class="memdoc">
 
 <p>Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using the given binary comparison function comp. </p>
+
+</div>
+</div>
+<a id="abc62e1e0c57de79b8b007265bc308ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc62e1e0c57de79b8b007265bc308ec2">&#9670;&nbsp;</a></span>max_element() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ForwardIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::max_element </td>
+          <td>(</td>
+          <td class="paramtype">ForwardIt&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ForwardIt&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; ForwardIt
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the greatest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;. </p>
 
 </div>
 </div>
@@ -10408,49 +10432,8 @@ template&lt;typename Type , typename Compare &gt; </div>
 
 </div>
 </div>
-<a id="a71878538e0e2b2f8026ed657836382c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71878538e0e2b2f8026ed657836382c0">&#9670;&nbsp;</a></span>min_element() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ForwardIt &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto etl::min_element </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; ForwardIt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;. </p>
-
-</div>
-</div>
 <a id="a4af4c7706179eef16ba76242c48518a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4af4c7706179eef16ba76242c48518a9">&#9670;&nbsp;</a></span>min_element() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af4c7706179eef16ba76242c48518a9">&#9670;&nbsp;</a></span>min_element() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -10493,6 +10476,47 @@ template&lt;typename ForwardIt , typename Compare &gt; </div>
 </div><div class="memdoc">
 
 <p>Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using the given binary comparison function comp. </p>
+
+</div>
+</div>
+<a id="a71878538e0e2b2f8026ed657836382c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71878538e0e2b2f8026ed657836382c0">&#9670;&nbsp;</a></span>min_element() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ForwardIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto etl::min_element </td>
+          <td>(</td>
+          <td class="paramtype">ForwardIt&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ForwardIt&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; ForwardIt
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the smallest element in the range <code>[first, last)</code>. Elements are compared using operator&lt;. </p>
 
 </div>
 </div>
@@ -41480,7 +41504,7 @@ template&lt;typename T , typename U &gt; </div>
 <div class="line">    <a class="code" href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">common_reference_t</a>&lt;</div>
 <div class="line">      add_lvalue_reference_t&lt;T const&gt;,</div>
 <div class="line">      add_lvalue_reference_t&lt;U const&gt;&gt;&gt;</div>
-<div class="ttc" id="anamespaceetl_html_aadad4ea85004a040c0e6e70341e2d221"><div class="ttname"><a href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition:</b> common_reference.hpp:43</div></div>
+<div class="ttc" id="anamespaceetl_html_aadad4ea85004a040c0e6e70341e2d221"><div class="ttname"><a href="namespaceetl.html#aadad4ea85004a040c0e6e70341e2d221">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition:</b> common_reference.hpp:38</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -42193,6 +42217,30 @@ template&lt;typename In &gt; </div>
 
 </div>
 </div>
+<a id="ac7a7c676854c909e4823a0765f949385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a7c676854c909e4823a0765f949385">&#9670;&nbsp;</a></span>indirectly_regular_unary_invocable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename Iter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept etl::indirectly_regular_unary_invocable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        etl::indirectly_readable&lt;Iter&gt;</div>
+<div class="line">    and etl::copy_constructible&lt;F&gt;</div>
+<div class="line">    and etl::regular_invocable&lt;F&amp;, etl::iter_value_t&lt;Iter&gt;&amp;&gt;</div>
+<div class="line">    and etl::regular_invocable&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;&gt;</div>
+<div class="line">    and etl::regular_invocable&lt;F&amp;, etl::iter_common_reference_t&lt;Iter&gt;&gt;</div>
+<div class="line">    and etl::common_reference_with&lt;etl::invoke_result_t&lt;F&amp;, etl::iter_value_t&lt;Iter&gt;&amp;&gt;, <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;</a>&gt;&gt;</div>
+<div class="ttc" id="anamespaceetl_html_a93ed3feabd9624cf09aa604f49155cc2"><div class="ttname"><a href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t</a></div><div class="ttdeci">typename etl::invoke_result&lt; F, ArgTypes... &gt;::type invoke_result_t</div><div class="ttdef"><b>Definition:</b> invoke_result.hpp:70</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a666fa7ccc8eeba6fb7ee30d91bdf73d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a666fa7ccc8eeba6fb7ee30d91bdf73d5">&#9670;&nbsp;</a></span>indirectly_unary_invocable</h2>
 
@@ -42213,7 +42261,6 @@ template&lt;typename F , typename Iter &gt; </div>
 <div class="line">    and etl::invocable&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;&gt;</div>
 <div class="line">    and etl::invocable&lt;F&amp;, etl::iter_common_reference_t&lt;Iter&gt;&gt;</div>
 <div class="line">    and etl::common_reference_with&lt;etl::invoke_result_t&lt;F&amp;, etl::iter_value_t&lt;Iter&gt;&amp;&gt;, <a class="code" href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t&lt;F&amp;, etl::iter_reference_t&lt;Iter&gt;</a>&gt;&gt;</div>
-<div class="ttc" id="anamespaceetl_html_a93ed3feabd9624cf09aa604f49155cc2"><div class="ttname"><a href="namespaceetl.html#a93ed3feabd9624cf09aa604f49155cc2">etl::invoke_result_t</a></div><div class="ttdeci">typename etl::invoke_result&lt; F, ArgTypes... &gt;::type invoke_result_t</div><div class="ttdef"><b>Definition:</b> invoke_result.hpp:70</div></div>
 </div><!-- fragment -->
 </div>
 </div>
