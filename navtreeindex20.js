@@ -2,7 +2,7 @@ var NAVTREEINDEX20 =
 {
 "namespaceetl_1_1literals_1_1chrono__literals.html#af259e8983c5c9a8c67cf23ad8d93b741":[8,0,0,1,1],
 "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65":[8,0,0,4,0,11],
-"namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65":[8,0,0,818],
+"namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65":[8,0,0,819],
 "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65":[8,0,0,4,13],
 "namespaceetl_1_1literals_1_1chrono__literals.html#af27e56cd9d11bb474497b44ac055ab65":[8,0,0,1,11],
 "namespaceetl_1_1literals_1_1string__view__literals.html":[8,0,0,4,1],
@@ -10,7 +10,7 @@ var NAVTREEINDEX20 =
 "namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c":[8,0,0,4,1,0],
 "namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c":[8,0,0,4,15],
 "namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c":[8,0,0,10,0],
-"namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c":[8,0,0,1458],
+"namespaceetl_1_1literals_1_1string__view__literals.html#aae9ad17f89aa026ee52417e1a98d119c":[8,0,0,1459],
 "namespaceetl_1_1meta.html":[8,0,0,5],
 "namespaceetl_1_1meta.html#a218f6e77e141655a42c1a3cf44aaa960":[8,0,0,5,17],
 "namespaceetl_1_1meta.html#a234f45f08c8add15c2d707f8f635e9cd":[8,0,0,5,20],
