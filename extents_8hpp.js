@@ -1,6 +1,6 @@
 var extents_8hpp =
 [
-    [ "extents", "structetl_1_1extents.html", "structetl_1_1extents" ],
-    [ "dextents", "extents_8hpp.html#a314896b8468bbdbea59f862f4c5e8aef", null ],
-    [ "requires", "extents_8hpp.html#a07f47998ffec36802839b7fed6d45cfa", null ]
+    [ "etl::extents< IndexType, Extents >", "structetl_1_1extents.html", "structetl_1_1extents" ],
+    [ "dextents", "extents_8hpp.html#ad27430ad24df2ec00864b7184d731465", null ],
+    [ "extents", "extents_8hpp.html#afc9186fde8e2d9973c0a6d7b0c5370c9", null ]
 ];

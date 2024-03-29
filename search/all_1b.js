@@ -1,4 +1,31 @@
 var searchData=
 [
-  ['zero_3238',['zero',['../structetl_1_1chrono_1_1duration.html#ab2b6c54721a74198b7a3622d39a9ef12',1,'etl::chrono::duration::zero()'],['../structetl_1_1chrono_1_1duration__values.html#a864ad0333d85d99bc4502ec37adc737e',1,'etl::chrono::duration_values::zero()']]]
+  ['xmessagebuffercreate_0',['xMessageBufferCreate',['../stubs_8hpp.html#aefa58eeb0fd73ae0b3163c20b76c8877',1,'stubs.hpp']]],
+  ['xorshift_1',['xorshift',['../structetl_1_1xorshift.html',1,'etl::xorshift&lt; UInt, X, Y, Z &gt;'],['../structetl_1_1xorshift.html#a9543cd8865db0d3ca15c11b3ddc9fbed',1,'etl::xorshift::xorshift()=default'],['../structetl_1_1xorshift.html#a0abb914acb78b0b3c7d59295025fd666',1,'etl::xorshift::xorshift(result_type seed) noexcept']]],
+  ['xorshift_2ehpp_2',['xorshift.hpp',['../xorshift_8hpp.html',1,'']]],
+  ['xorshift16_3',['xorshift16',['../namespaceetl.html#a07fc4f6678662874f84b8e547b4dda7b',1,'etl']]],
+  ['xorshift32_4',['xorshift32',['../namespaceetl.html#ac5e9e0a6364bd5186c2bc9be3d94d83e',1,'etl']]],
+  ['xorshift64_5',['xorshift64',['../namespaceetl.html#a01a0717f088e1767ac3b5fa849e0295e',1,'etl']]],
+  ['xoshiro128plus_6',['xoshiro128plus',['../structetl_1_1xoshiro128plus.html',1,'etl::xoshiro128plus'],['../structetl_1_1xoshiro128plus.html#a33d8567ce5168abce22e6b2f84ec3e25',1,'etl::xoshiro128plus::xoshiro128plus()=default'],['../structetl_1_1xoshiro128plus.html#a516f06b181ca0b8e4d09be7504482bc3',1,'etl::xoshiro128plus::xoshiro128plus(result_type seed) noexcept']]],
+  ['xoshiro128plus_2ehpp_7',['xoshiro128plus.hpp',['../xoshiro128plus_8hpp.html',1,'']]],
+  ['xoshiro128plusplus_8',['xoshiro128plusplus',['../structetl_1_1xoshiro128plusplus.html',1,'etl::xoshiro128plusplus'],['../structetl_1_1xoshiro128plusplus.html#a2acf41c24a3c579a02a1ddae4bbd6535',1,'etl::xoshiro128plusplus::xoshiro128plusplus()=default'],['../structetl_1_1xoshiro128plusplus.html#ae8b0f5906e16fbfc155a798e162b81ab',1,'etl::xoshiro128plusplus::xoshiro128plusplus(result_type seed) noexcept']]],
+  ['xoshiro128plusplus_2ehpp_9',['xoshiro128plusplus.hpp',['../xoshiro128plusplus_8hpp.html',1,'']]],
+  ['xoshiro128starstar_10',['xoshiro128starstar',['../structetl_1_1xoshiro128starstar.html',1,'etl::xoshiro128starstar'],['../structetl_1_1xoshiro128starstar.html#a3f36777231f2a8362073671f1275bb4d',1,'etl::xoshiro128starstar::xoshiro128starstar()=default'],['../structetl_1_1xoshiro128starstar.html#abd3d3718ea6b5e7f679cc8b1ebfe03ee',1,'etl::xoshiro128starstar::xoshiro128starstar(result_type seed) noexcept']]],
+  ['xoshiro128starstar_2ehpp_11',['xoshiro128starstar.hpp',['../xoshiro128starstar_8hpp.html',1,'']]],
+  ['xqueuecreate_12',['xQueueCreate',['../stubs_8hpp.html#a7c5315105f23801132728e024140cd31',1,'stubs.hpp']]],
+  ['xqueuereceive_13',['xQueueReceive',['../stubs_8hpp.html#a85c263b463343f814e9c309145c2c47a',1,'stubs.hpp']]],
+  ['xqueuereset_14',['xQueueReset',['../stubs_8hpp.html#a6cf057715e1654852136750ba640db3a',1,'stubs.hpp']]],
+  ['xqueuesend_15',['xQueueSend',['../stubs_8hpp.html#ad92b841c3bcd4ffce261c5cc0a8c59d4',1,'stubs.hpp']]],
+  ['xstreambufferbytesavailable_16',['xStreamBufferBytesAvailable',['../stubs_8hpp.html#a9e400fc398920a2a2c4f82fe559971fa',1,'stubs.hpp']]],
+  ['xstreambuffercreate_17',['xStreamBufferCreate',['../stubs_8hpp.html#a91d7f180588baf450b593a990c3b6d3e',1,'stubs.hpp']]],
+  ['xstreambufferisempty_18',['xStreamBufferIsEmpty',['../stubs_8hpp.html#a31dada5d722c82b3519e32a5ea5c4496',1,'stubs.hpp']]],
+  ['xstreambufferisfull_19',['xStreamBufferIsFull',['../stubs_8hpp.html#a8a9ee2c16c5d2bcca1a5832046d61411',1,'stubs.hpp']]],
+  ['xstreambufferreceive_20',['xStreamBufferReceive',['../stubs_8hpp.html#a12ad2fb1459d0ba218f82ae1778e03d2',1,'stubs.hpp']]],
+  ['xstreambufferreceivefromisr_21',['xStreamBufferReceiveFromISR',['../stubs_8hpp.html#acd18c050ce84822f9e197e16666dba67',1,'stubs.hpp']]],
+  ['xstreambufferreset_22',['xStreamBufferReset',['../stubs_8hpp.html#a45bf3067efdb364f6c1a7af43e4c05aa',1,'stubs.hpp']]],
+  ['xstreambuffersend_23',['xStreamBufferSend',['../stubs_8hpp.html#a0d03a5cbd317b5237f372fc37fcc0b72',1,'stubs.hpp']]],
+  ['xstreambuffersendfromisr_24',['xStreamBufferSendFromISR',['../stubs_8hpp.html#adbeb4fbfe376bb795fa8a6e57ea08bad',1,'stubs.hpp']]],
+  ['xstreambuffersettriggerlevel_25',['xStreamBufferSetTriggerLevel',['../stubs_8hpp.html#ae2adf511e26bd43c219365571a1dd2b1',1,'stubs.hpp']]],
+  ['xstreambufferspacesavailable_26',['xStreamBufferSpacesAvailable',['../stubs_8hpp.html#a1cb30ff4527e7d9d17f34fe8239810c9',1,'stubs.hpp']]],
+  ['xtaskcreate_27',['xTaskCreate',['../stubs_8hpp.html#a67085ebec4816a034cc8d6740611ac03',1,'stubs.hpp']]]
 ];

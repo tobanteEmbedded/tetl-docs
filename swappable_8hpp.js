@@ -1,4 +1,4 @@
 var swappable_8hpp =
 [
-    [ "swappable", "swappable_8hpp.html#abc3d55874cfd650688465099bef5a51c", null ]
+    [ "etl::swappable", "conceptetl_1_1swappable.html", null ]
 ];

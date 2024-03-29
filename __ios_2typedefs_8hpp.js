@@ -1,5 +1,5 @@
 var __ios_2typedefs_8hpp =
 [
-    [ "streamoff", "__ios_2typedefs_8hpp.html#a8cc54c8127416c33c963bee08bc99596", null ],
-    [ "streamsize", "__ios_2typedefs_8hpp.html#aa6a81fba06194ff9cf0d14e9dd9339a0", null ]
+    [ "streamoff", "__ios_2typedefs_8hpp.html#aa45281465d730bea49ffecd03ac96072", null ],
+    [ "streamsize", "__ios_2typedefs_8hpp.html#a2d460594ca594c171a5e0ed2934b46f2", null ]
 ];

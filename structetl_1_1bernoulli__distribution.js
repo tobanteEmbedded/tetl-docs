@@ -13,5 +13,5 @@ var structetl_1_1bernoulli__distribution =
     [ "reset", "structetl_1_1bernoulli__distribution.html#a3e7102311722ff20a3e6beec5ef2bd52", null ],
     [ "operator()", "structetl_1_1bernoulli__distribution.html#a431874d1ac331bce7dbb8e3702698235", null ],
     [ "operator()", "structetl_1_1bernoulli__distribution.html#a4a83d2e9609c3b2df2a8ded2d457ae31", null ],
-    [ "operator==", "structetl_1_1bernoulli__distribution.html#a76d23defbbc099c6d9b29abc79cc3f3f", null ]
+    [ "operator==", "structetl_1_1bernoulli__distribution.html#a3eb8efe552f438992e95d5bee6925548", null ]
 ];

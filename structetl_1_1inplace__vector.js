@@ -12,7 +12,12 @@ var structetl_1_1inplace__vector =
     [ "reverse_iterator", "structetl_1_1inplace__vector.html#ad84bc132e9e3a17bbb4c96de6df01b61", null ],
     [ "const_reverse_iterator", "structetl_1_1inplace__vector.html#ae8119750c696dcd0834ec0fafe723cd9", null ],
     [ "inplace_vector", "structetl_1_1inplace__vector.html#a82610bd21752339da330225cafa5953e", null ],
-    [ "~inplace_vector", "structetl_1_1inplace__vector.html#a0a683ce7c5c2e6583b3bbf08d0609a13", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#adc007226ea32f160315ec3cd81562995", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#a56efa90e1d2daa7cd5a6b0932504db28", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#a1d48e52e0a715363b277803db963c4f8", null ],
+    [ "inplace_vector", "structetl_1_1inplace__vector.html#abfbea185c4520cdc4abd499d4e79a117", null ],
+    [ "~inplace_vector", "structetl_1_1inplace__vector.html#a71896299936bd0589c99d6f74218f661", null ],
+    [ "~inplace_vector", "structetl_1_1inplace__vector.html#a143cb5c8ce43a9d14126f784994822f9", null ],
     [ "begin", "structetl_1_1inplace__vector.html#a845504f5a0e2a74c45428714390f1efa", null ],
     [ "begin", "structetl_1_1inplace__vector.html#ae7429b9edf5fcfdbe96604dab1e051ac", null ],
     [ "end", "structetl_1_1inplace__vector.html#a014431145b85bcf0fe1daa5456b8e121", null ],
@@ -36,7 +41,5 @@ var structetl_1_1inplace__vector =
     [ "unchecked_push_back", "structetl_1_1inplace__vector.html#acef808ed1ad64c115bd0e8bc80b21942", null ],
     [ "unchecked_push_back", "structetl_1_1inplace__vector.html#a00cb59093811a8a92850e8cdb9bd4d43", null ],
     [ "pop_back", "structetl_1_1inplace__vector.html#ad5bf12bb18b09e9ea37d4592a04e4d97", null ],
-    [ "clear", "structetl_1_1inplace__vector.html#af99e552a94511e4223cf08dc77e8ab46", null ],
-    [ "inplace_vector", "structetl_1_1inplace__vector.html#a39e450188aac2a8184abf5874abf696c", null ],
-    [ "inplace_vector", "structetl_1_1inplace__vector.html#ad14016954370c50ca545bc08e930c5a0", null ]
+    [ "clear", "structetl_1_1inplace__vector.html#af99e552a94511e4223cf08dc77e8ab46", null ]
 ];

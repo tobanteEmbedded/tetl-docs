@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['years_6314',['years',['../namespaceetl_1_1chrono.html#a7df540a900451ae7de8f2e4dabdb3486',1,'etl::chrono']]]
+  ['years_0',['years',['../namespaceetl_1_1chrono.html#a62604260a72a5b8e607e09e1d69b26d4',1,'etl::chrono']]]
 ];

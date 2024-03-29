@@ -1,5 +1,5 @@
 var __chrono_2floor_8hpp =
 [
-    [ "requires", "__chrono_2floor_8hpp.html#a9aaec16b343f4d126d10da542a451521", null ],
-    [ "noexcept", "__chrono_2floor_8hpp.html#a9926196e2f9ebe1c0affe210e6ab9e66", null ]
+    [ "floor", "__chrono_2floor_8hpp.html#a779f4dd8e035363b93dea41dc18629e5", null ],
+    [ "floor", "__chrono_2floor_8hpp.html#a742502d4cd720e3d868cb54cbc2e404c", null ]
 ];

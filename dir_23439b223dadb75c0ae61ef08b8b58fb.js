@@ -1,10 +1,7 @@
 var dir_23439b223dadb75c0ae61ef08b8b58fb =
 [
     [ "basic_static_string.hpp", "basic__static__string_8hpp.html", "basic__static__string_8hpp" ],
-    [ "char_traits.hpp", "char__traits_8hpp.html", [
-      [ "char_traits< char >", "structetl_1_1char__traits_3_01char_01_4.html", "structetl_1_1char__traits_3_01char_01_4" ],
-      [ "char_traits< wchar_t >", "structetl_1_1char__traits_3_01wchar__t_01_4.html", "structetl_1_1char__traits_3_01wchar__t_01_4" ]
-    ] ],
+    [ "char_traits.hpp", "char__traits_8hpp.html", "char__traits_8hpp" ],
     [ "static_string.hpp", "static__string_8hpp.html", "static__string_8hpp" ],
     [ "static_wstring.hpp", "static__wstring_8hpp.html", "static__wstring_8hpp" ],
     [ "stod.hpp", "stod_8hpp.html", "stod_8hpp" ],

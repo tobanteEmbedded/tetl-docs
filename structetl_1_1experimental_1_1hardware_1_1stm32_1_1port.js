@@ -8,5 +8,5 @@ var structetl_1_1experimental_1_1hardware_1_1stm32_1_1port =
     [ "toggle_pin", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#ada3350d204e1fad8dd9e8f16777f9346", null ],
     [ "write", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#af28e54318d80b6d6b3cbea738bae29b6", null ],
     [ "read", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#ae5c1b821322edf0d15c6035a840bf62b", null ],
-    [ "place_at", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#a2679246001831fff3f9a4919d96fc4f7", null ]
+    [ "place_at", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#a864a1085a7a671ed34c01216ed1add80", null ]
 ];

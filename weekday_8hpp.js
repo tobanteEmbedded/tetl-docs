@@ -1,6 +1,6 @@
 var weekday_8hpp =
 [
-    [ "weekday", "structetl_1_1chrono_1_1weekday.html", "structetl_1_1chrono_1_1weekday" ],
+    [ "etl::chrono::weekday", "structetl_1_1chrono_1_1weekday.html", "structetl_1_1chrono_1_1weekday" ],
     [ "operator==", "weekday_8hpp.html#abdbb3894c817ec3d54eb4da9a614c10e", null ],
     [ "operator+", "weekday_8hpp.html#a2bd0e2ca61e33514bc466027d868d12f", null ],
     [ "operator+", "weekday_8hpp.html#aa9f0a0b6e66587e6aa3d4ed61ca3d5a1", null ],

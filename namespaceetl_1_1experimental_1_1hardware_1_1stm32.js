@@ -1,8 +1,8 @@
 var namespaceetl_1_1experimental_1_1hardware_1_1stm32 =
 [
     [ "gpio_memory_layout", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout" ],
-    [ "port", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port" ],
     [ "isr", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr" ],
+    [ "port", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1port" ],
     [ "pin_number", "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a1d5670aded3e5ea81b4aa99cd95facd2", [
       [ "pin_0", "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a1d5670aded3e5ea81b4aa99cd95facd2a83f8fea7ae39847bcef9a17417f82530", null ],
       [ "pin_1", "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a1d5670aded3e5ea81b4aa99cd95facd2a47ccc9e3ee3a60c30dacaee70c24f5e6", null ],

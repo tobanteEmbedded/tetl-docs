@@ -1,8 +1,12 @@
 var hierarchy =
 [
     [ "etl::linalg::accessor_conjugate< Accessor >", "structetl_1_1linalg_1_1accessor__conjugate.html", null ],
+    [ "etl::linalg::accessor_scaled< ScalingFactor, Accessor >", "structetl_1_1linalg_1_1accessor__scaled.html", null ],
     [ "etl::add_const< T >", "structetl_1_1add__const.html", null ],
     [ "etl::add_cv< T >", "structetl_1_1add__cv.html", null ],
+    [ "etl::add_lvalue_reference< T >", "structetl_1_1add__lvalue__reference.html", null ],
+    [ "etl::add_pointer< T >", "structetl_1_1add__pointer.html", null ],
+    [ "etl::add_rvalue_reference< T >", "structetl_1_1add__rvalue__reference.html", null ],
     [ "etl::add_volatile< T >", "structetl_1_1add__volatile.html", null ],
     [ "etl::adopt_lock_t", "structetl_1_1adopt__lock__t.html", null ],
     [ "etl::aligned_storage< Len, Align >", "structetl_1_1aligned__storage.html", null ],
@@ -25,10 +29,10 @@ var hierarchy =
     [ "etl::basic_format_parse_context< CharT >", "structetl_1_1basic__format__parse__context.html", null ],
     [ "etl::basic_format_string< CharT, Args >", "structetl_1_1basic__format__string.html", null ],
     [ "etl::basic_static_string< CharT, Capacity, Traits >", "structetl_1_1basic__static__string.html", null ],
-    [ "etl::basic_streambuf< CharT, Capacity, Traits, Child >", "structetl_1_1basic__streambuf.html", null ],
-    [ "etl::basic_streambuf< CharT, Capacity, Traits, basic_stringbuf< CharT, Capacity, Traits > >", "structetl_1_1basic__streambuf.html", [
+    [ "etl::basic_streambuf< CharT, Capacity, Traits, Child >", "structetl_1_1basic__streambuf.html", [
       [ "etl::basic_stringbuf< CharT, Capacity, Traits >", "structetl_1_1basic__stringbuf.html", null ]
     ] ],
+    [ "etl::basic_streambuf< CharT, Capacity, char_traits< CharT >, basic_stringbuf< CharT, Capacity, char_traits< CharT > > >", "structetl_1_1basic__streambuf.html", null ],
     [ "etl::basic_string_view< CharType, Traits >", "structetl_1_1basic__string__view.html", null ],
     [ "etl::basic_string_view< CharT >", "structetl_1_1basic__string__view.html", null ],
     [ "etl::bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", null ],
@@ -168,6 +172,9 @@ var hierarchy =
     [ "etl::detail::function_ref< true, R(Args...)>", null, [
       [ "etl::function_ref< R(Args...) noexcept >", "structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html", null ]
     ] ],
+    [ "Functor...", null, [
+      [ "etl::overload< Functor >", "structetl_1_1overload.html", null ]
+    ] ],
     [ "etl::experimental::hardware::stm32::gpio_memory_layout", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html", null ],
     [ "etl::greater< T >", "structetl_1_1greater.html", null ],
     [ "etl::greater< void >", "structetl_1_1greater_3_01void_01_4.html", null ],
@@ -239,20 +246,20 @@ var hierarchy =
       [ "etl::detail::is_pointer< etl::remove_cv_t< T > >", null, [
         [ "etl::is_pointer< T >", "structetl_1_1is__pointer.html", null ]
       ] ],
-      [ "etl::is_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__assignable.html", [
-        [ "etl::is_move_assignable< T >", "structetl_1_1is__move__assignable.html", null ]
-      ] ],
       [ "etl::is_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__assignable.html", [
         [ "etl::is_copy_assignable< T >", "structetl_1_1is__copy__assignable.html", null ]
+      ] ],
+      [ "etl::is_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__assignable.html", [
+        [ "etl::is_move_assignable< T >", "structetl_1_1is__move__assignable.html", null ]
       ] ],
       [ "etl::is_floating_point< Rep >", "structetl_1_1is__floating__point.html", [
         [ "etl::chrono::treat_as_floating_point< Rep >", "structetl_1_1chrono_1_1treat__as__floating__point.html", null ]
       ] ],
-      [ "etl::is_nothrow_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__assignable.html", [
-        [ "etl::is_nothrow_move_assignable< T >", "structetl_1_1is__nothrow__move__assignable.html", null ]
-      ] ],
       [ "etl::is_nothrow_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__nothrow__assignable.html", [
         [ "etl::is_nothrow_copy_assignable< T >", "structetl_1_1is__nothrow__copy__assignable.html", null ]
+      ] ],
+      [ "etl::is_nothrow_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__assignable.html", [
+        [ "etl::is_nothrow_move_assignable< T >", "structetl_1_1is__nothrow__move__assignable.html", null ]
       ] ],
       [ "etl::is_same< nullptr_t, remove_cv_t< T > >", "structetl_1_1is__same.html", [
         [ "etl::is_null_pointer< T >", "structetl_1_1is__null__pointer.html", null ]
@@ -260,11 +267,11 @@ var hierarchy =
       [ "etl::is_same< void, etl::remove_cv_t< T > >", "structetl_1_1is__same.html", [
         [ "etl::is_void< T >", "structetl_1_1is__void.html", null ]
       ] ],
-      [ "etl::is_trivially_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__trivially__assignable.html", [
-        [ "etl::is_trivially_move_assignable< T >", "structetl_1_1is__trivially__move__assignable.html", null ]
-      ] ],
       [ "etl::is_trivially_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__trivially__assignable.html", [
         [ "etl::is_trivially_copy_assignable< T >", "structetl_1_1is__trivially__copy__assignable.html", null ]
+      ] ],
+      [ "etl::is_trivially_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__trivially__assignable.html", [
+        [ "etl::is_trivially_move_assignable< T >", "structetl_1_1is__trivially__move__assignable.html", null ]
       ] ],
       [ "etl::is_trivially_constructible< T, add_lvalue_reference_t< add_const_t< T > > >", "structetl_1_1is__trivially__constructible.html", [
         [ "etl::is_trivially_copy_constructible< T >", "structetl_1_1is__trivially__copy__constructible.html", null ]
@@ -477,6 +484,7 @@ var hierarchy =
     [ "etl::layout_left::mapping< Extents >", "structetl_1_1layout__left_1_1mapping.html", null ],
     [ "etl::layout_right::mapping< Extents >", "structetl_1_1layout__right_1_1mapping.html", null ],
     [ "etl::layout_stride::mapping< Extents >", "structetl_1_1layout__stride_1_1mapping.html", null ],
+    [ "etl::linalg::layout_transpose< Layout >::mapping< Extents >", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html", null ],
     [ "etl::max_align_t", "structetl_1_1max__align__t.html", null ],
     [ "etl::detail::maybe_value_type< T >", null, [
       [ "etl::indirectly_readable_traits< T * >", "structetl_1_1indirectly__readable__traits_3_01T_01_5_01_4.html", null ]
@@ -487,6 +495,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "etl::detail::maybe_value_type< T::value_type >", null, [
+      [ "etl::indirectly_readable_traits< T >", "structetl_1_1indirectly__readable__traits_3_01T_01_4.html", null ],
       [ "etl::indirectly_readable_traits< T >", "structetl_1_1indirectly__readable__traits_3_01T_01_4.html", null ]
     ] ],
     [ "etl::mdarray< ElementType, Extents, LayoutPolicy, Container >", "structetl_1_1mdarray.html", null ],
@@ -644,19 +653,11 @@ var hierarchy =
     [ "etl::timespec", "structetl_1_1timespec.html", null ],
     [ "etl::tm", "structetl_1_1tm.html", null ],
     [ "etl::to_chars_result", "structetl_1_1to__chars__result.html", null ],
-    [ "decltypeetl::detail::try_add_lvalue_reference", null, [
-      [ "etl::add_lvalue_reference< T >", "structetl_1_1add__lvalue__reference.html", null ]
-    ] ],
-    [ "decltypeetl::detail::try_add_pointer", null, [
-      [ "etl::add_pointer< T >", "structetl_1_1add__pointer.html", null ]
-    ] ],
-    [ "decltypeetl::detail::try_add_rvalue_reference", null, [
-      [ "etl::add_rvalue_reference< T >", "structetl_1_1add__rvalue__reference.html", null ]
-    ] ],
     [ "etl::try_to_lock_t", "structetl_1_1try__to__lock__t.html", null ],
     [ "etl::tuple< Ts >", "structetl_1_1tuple.html", null ],
     [ "etl::tuple_element< I, T >", "structetl_1_1tuple__element.html", null ],
     [ "etl::tuple_element< I, array< T, N > >", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4.html", null ],
+    [ "etl::tuple_element< I, etl::complex< T > >", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4.html", null ],
     [ "etl::tuple_element< I, pair< T1, T2 > >", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html", null ],
     [ "etl::tuple_element< I, T const >", "structetl_1_1tuple__element_3_01I_00_01T_01const_01_4.html", null ],
     [ "etl::tuple_element< I, T const volatile >", "structetl_1_1tuple__element_3_01I_00_01T_01const_01volatile_01_4.html", null ],
@@ -664,12 +665,16 @@ var hierarchy =
     [ "etl::tuple_element< I, tuple< Ts... > >", "structetl_1_1tuple__element_3_01I_00_01tuple_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "etl::tuple_size< T >", "structetl_1_1tuple__size.html", null ],
     [ "detail::is_nothrow_constructible_helper::type", null, [
-      [ "etl::is_nothrow_constructible< T, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__constructible.html", [
-        [ "etl::is_nothrow_move_constructible< T >", "structetl_1_1is__nothrow__move__constructible.html", null ]
-      ] ],
       [ "etl::is_nothrow_constructible< T, add_lvalue_reference_t< add_const_t< T > > >", "structetl_1_1is__nothrow__constructible.html", [
         [ "etl::is_nothrow_copy_constructible< T >", "structetl_1_1is__nothrow__copy__constructible.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "detail::is_nothrow_constructible_helper::type", null, [
+      [ "etl::is_nothrow_constructible< T, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__constructible.html", [
+        [ "etl::is_nothrow_move_constructible< T >", "structetl_1_1is__nothrow__move__constructible.html", null ]
+      ] ]
+    ] ],
+    [ "detail::is_nothrow_constructible_helper::type", null, [
       [ "etl::is_nothrow_constructible< T >", "structetl_1_1is__nothrow__constructible.html", [
         [ "etl::is_nothrow_default_constructible< T >", "structetl_1_1is__nothrow__default__constructible.html", null ]
       ] ]
@@ -708,6 +713,7 @@ var hierarchy =
     [ "etl::uniform_real_distribution< RealType >", "structetl_1_1uniform__real__distribution.html", null ],
     [ "etl::uninitialized_array< T, Size >", "structetl_1_1uninitialized__array.html", null ],
     [ "etl::uninitialized_array< T, Capacity >", "structetl_1_1uninitialized__array.html", null ],
+    [ "etl::uninitialized_array< T, Size >", "structetl_1_1uninitialized__array_3_01T_00_01Size_01_4.html", null ],
     [ "etl::uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
     [ "etl::unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
     [ "etl::unwrap_reference< T >", "structetl_1_1unwrap__reference.html", null ],
@@ -716,8 +722,8 @@ var hierarchy =
     [ "etl::variadic_union< Ts >", "unionetl_1_1variadic__union.html", null ],
     [ "etl::variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", null ],
     [ "etl::variadic_union< Ts... >", "unionetl_1_1variadic__union.html", null ],
-    [ "etl::variant< Ts >", "structetl_1_1variant.html", null ],
-    [ "etl::variant2< Ts >", "structetl_1_1variant2.html", null ],
+    [ "etl::variant< Types >", "structetl_1_1variant.html", null ],
+    [ "etl::variant2< Types >", "structetl_1_1variant2.html", null ],
     [ "etl::variant< etl::monostate, bool, char_type, int, unsigned int, long long int, unsigned long long int, float, double, long double, char_type const *, etl::basic_string_view< char_type >, void const *, etl::basic_format_arg::handle >", "structetl_1_1variant.html", null ],
     [ "etl::variant< T, E >", "structetl_1_1variant.html", null ],
     [ "etl::variant_alternative< I, T >", "structetl_1_1variant__alternative.html", null ],
@@ -746,8 +752,5 @@ var hierarchy =
     [ "etl::chrono::year_month_day", "structetl_1_1chrono_1_1year__month__day.html", null ],
     [ "etl::chrono::year_month_day_last", "structetl_1_1chrono_1_1year__month__day__last.html", null ],
     [ "etl::chrono::year_month_weekday", "structetl_1_1chrono_1_1year__month__weekday.html", null ],
-    [ "etl::chrono::year_month_weekday_last", "structetl_1_1chrono_1_1year__month__weekday__last.html", null ],
-    [ "etl::Functor", null, [
-      [ "etl::overload< Functor >", "structetl_1_1overload.html", null ]
-    ] ]
+    [ "etl::chrono::year_month_weekday_last", "structetl_1_1chrono_1_1year__month__weekday__last.html", null ]
 ];

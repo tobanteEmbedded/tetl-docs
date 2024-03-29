@@ -1,6 +1,6 @@
 var month_8hpp =
 [
-    [ "month", "structetl_1_1chrono_1_1month.html", "structetl_1_1chrono_1_1month" ],
+    [ "etl::chrono::month", "structetl_1_1chrono_1_1month.html", "structetl_1_1chrono_1_1month" ],
     [ "operator==", "month_8hpp.html#a603d8febc965f1d4426539139ac9320a", null ],
     [ "operator!=", "month_8hpp.html#ae03b17fee09f4ec3901ad9d306079a5d", null ],
     [ "operator<", "month_8hpp.html#a031c8ce6aa40ee73848a7128bd6e8246", null ],

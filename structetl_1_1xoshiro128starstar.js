@@ -8,7 +8,7 @@ var structetl_1_1xoshiro128starstar =
     [ "seed", "structetl_1_1xoshiro128starstar.html#afafc39cd14936f36ff14a8a1d0bb2275", null ],
     [ "discard", "structetl_1_1xoshiro128starstar.html#a22b0437467aa5ba5f1be7988e68a1cfb", null ],
     [ "operator()", "structetl_1_1xoshiro128starstar.html#a87b9bcc47b2526742879fa90981fa7d4", null ],
-    [ "operator==", "structetl_1_1xoshiro128starstar.html#a6b5bc427fd72e63a2a2997fab67b30eb", null ],
-    [ "operator!=", "structetl_1_1xoshiro128starstar.html#a6ae15ded17376923b5978b1e0c10cac7", null ],
+    [ "operator==", "structetl_1_1xoshiro128starstar.html#a6d0ce0f6845b7ed0975e52d25cb415bd", null ],
+    [ "operator!=", "structetl_1_1xoshiro128starstar.html#adbfab6f4714ff41cefebf0a75fd81798", null ],
     [ "default_seed", "structetl_1_1xoshiro128starstar.html#abea6fe6f29a1642e566a11c45e7d98a0", null ]
 ];

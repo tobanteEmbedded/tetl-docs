@@ -1,6 +1,6 @@
 var __flat__set_2flat__set_8hpp =
 [
-    [ "flat_set", "structetl_1_1flat__set.html", "structetl_1_1flat__set" ],
+    [ "etl::flat_set< Key, Container, Compare >", "structetl_1_1flat__set.html", "structetl_1_1flat__set" ],
     [ "operator==", "__flat__set_2flat__set_8hpp.html#a2e4a29ac6268a32d655a572bc728d561", null ],
     [ "operator!=", "__flat__set_2flat__set_8hpp.html#adbb7776985e823982b6dd579ea9446a5", null ],
     [ "operator<", "__flat__set_2flat__set_8hpp.html#a0f9846352e3d467e86fb4172d2637104", null ],

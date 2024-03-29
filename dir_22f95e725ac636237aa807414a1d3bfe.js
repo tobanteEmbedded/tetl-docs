@@ -1,21 +1,11 @@
 var dir_22f95e725ac636237aa807414a1d3bfe =
 [
-    [ "bad_variant_access.hpp", "bad__variant__access_8hpp.html", [
-      [ "bad_variant_access", "structetl_1_1bad__variant__access.html", "structetl_1_1bad__variant__access" ]
-    ] ],
-    [ "monostate.hpp", "monostate_8hpp.html", [
-      [ "monostate", "structetl_1_1monostate.html", "structetl_1_1monostate" ]
-    ] ],
+    [ "bad_variant_access.hpp", "bad__variant__access_8hpp.html", "bad__variant__access_8hpp" ],
+    [ "monostate.hpp", "monostate_8hpp.html", "monostate_8hpp" ],
     [ "overload.hpp", "overload_8hpp.html", "overload_8hpp" ],
-    [ "variadic_union.hpp", "variadic__union_8hpp.html", [
-      [ "uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
-      [ "variadic_union", "unionetl_1_1variadic__union.html", null ],
-      [ "variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4" ]
-    ] ],
+    [ "variadic_union.hpp", "variadic__union_8hpp.html", "variadic__union_8hpp" ],
     [ "variant.hpp", "__variant_2variant_8hpp.html", "__variant_2variant_8hpp" ],
-    [ "variant2.hpp", "variant2_8hpp.html", [
-      [ "variant2", "structetl_1_1variant2.html", "structetl_1_1variant2" ]
-    ] ],
+    [ "variant2.hpp", "variant2_8hpp.html", "variant2_8hpp" ],
     [ "variant_alternative.hpp", "variant__alternative_8hpp.html", "variant__alternative_8hpp" ],
     [ "variant_fwd.hpp", "variant__fwd_8hpp.html", "variant__fwd_8hpp" ],
     [ "variant_size.hpp", "variant__size_8hpp.html", "variant__size_8hpp" ],

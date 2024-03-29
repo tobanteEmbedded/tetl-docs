@@ -32,5 +32,5 @@ var structetl_1_1vector =
     [ "capacity", "structetl_1_1vector.html#a9c38e9ccbe036dc89e835e71cb6fc061", null ],
     [ "capacity", "structetl_1_1vector.html#a3152dc60ce502beeb7cbf5c22e788974", null ],
     [ "clear", "structetl_1_1vector.html#ada6aa4c6c52137af3d162f867fd64d05", null ],
-    [ "swap", "structetl_1_1vector.html#ae39db4b79884fa636b5c120f89d25806", null ]
+    [ "swap", "structetl_1_1vector.html#afc9ae8152fb21ced067c1dba2e455ad5", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['swap_6523',['swap',['../structetl_1_1unexpected.html#af9b929de368353637b665624b1fc2269',1,'etl::unexpected::swap()'],['../structetl_1_1vector.html#ae39db4b79884fa636b5c120f89d25806',1,'etl::vector::swap()']]]
+  ['swap_0',['swap',['../structetl_1_1unexpected.html#abc29715f4aeff27c974030d748183c47',1,'etl::unexpected::swap'],['../structetl_1_1vector.html#afc9ae8152fb21ced067c1dba2e455ad5',1,'etl::vector::swap']]]
 ];

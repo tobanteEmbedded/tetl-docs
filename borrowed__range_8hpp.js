@@ -1,4 +1,4 @@
 var borrowed__range_8hpp =
 [
-    [ "borrowed_range", "borrowed__range_8hpp.html#a49150dba91950b9135f540e0c0df0055", null ]
+    [ "etl::ranges::borrowed_range", "conceptetl_1_1ranges_1_1borrowed__range.html", null ]
 ];

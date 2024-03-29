@@ -1,6 +1,6 @@
 var mcp23017_8hpp =
 [
-    [ "device", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device.html", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device" ],
+    [ "etl::experimental::hardware::mcp23017::device< Driver >", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device.html", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device" ],
     [ "port", "mcp23017_8hpp.html#ae2dfdafbcff106ed4635ae08dbb1ffab", [
       [ "a", "mcp23017_8hpp.html#ae2dfdafbcff106ed4635ae08dbb1ffaba0cc175b9c0f1b6a831c399e269772661", null ],
       [ "b", "mcp23017_8hpp.html#ae2dfdafbcff106ed4635ae08dbb1ffaba92eb5ffee6ae2fec3ad71c777531578f", null ]

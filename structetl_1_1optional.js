@@ -37,6 +37,6 @@ var structetl_1_1optional =
     [ "and_then", "structetl_1_1optional.html#a26a703c4b169435eab75a5d5ca32dd94", null ],
     [ "and_then", "structetl_1_1optional.html#ac495b1be7cfa43980fe65875ab73fe6a", null ],
     [ "and_then", "structetl_1_1optional.html#a4b37ab7105baedde72864e959d2462f7", null ],
-    [ "requires", "structetl_1_1optional.html#a538bf095882954e8a2443f371c86ca24", null ],
-    [ "requires", "structetl_1_1optional.html#ada70d6925f1bdc2c36a183424e0ac360", null ]
+    [ "or_else", "structetl_1_1optional.html#a71ab7813e590fcc34a478fb0438c6d13", null ],
+    [ "or_else", "structetl_1_1optional.html#a6461e6e1fdc95cc5f7a85dddc54263ee", null ]
 ];

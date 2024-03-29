@@ -12,15 +12,9 @@ var dir_15507268755a352c739af494168e9f53 =
     [ "forward.hpp", "forward_8hpp.html", "forward_8hpp" ],
     [ "forward_like.hpp", "forward__like_8hpp.html", "forward__like_8hpp" ],
     [ "ignore_unused.hpp", "ignore__unused_8hpp.html", "ignore__unused_8hpp" ],
-    [ "in_place.hpp", "in__place_8hpp.html", [
-      [ "in_place_t", "structetl_1_1in__place__t.html", "structetl_1_1in__place__t" ]
-    ] ],
-    [ "in_place_index.hpp", "in__place__index_8hpp.html", [
-      [ "in_place_index_t", "structetl_1_1in__place__index__t.html", "structetl_1_1in__place__index__t" ]
-    ] ],
-    [ "in_place_type.hpp", "in__place__type_8hpp.html", [
-      [ "in_place_type_t", "structetl_1_1in__place__type__t.html", "structetl_1_1in__place__type__t" ]
-    ] ],
+    [ "in_place.hpp", "in__place_8hpp.html", "in__place_8hpp" ],
+    [ "in_place_index.hpp", "in__place__index_8hpp.html", "in__place__index_8hpp" ],
+    [ "in_place_type.hpp", "in__place__type_8hpp.html", "in__place__type_8hpp" ],
     [ "in_range.hpp", "in__range_8hpp.html", "in__range_8hpp" ],
     [ "index_sequence.hpp", "index__sequence_8hpp.html", "index__sequence_8hpp" ],
     [ "integer_sequence.hpp", "integer__sequence_8hpp.html", "integer__sequence_8hpp" ],

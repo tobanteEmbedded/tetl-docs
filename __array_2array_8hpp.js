@@ -1,8 +1,8 @@
 var __array_2array_8hpp =
 [
-    [ "array", "structetl_1_1array.html", "structetl_1_1array" ],
-    [ "tuple_size< array< T, N > >", "structetl_1_1tuple__size_3_01array_3_01T_00_01N_01_4_01_4.html", null ],
-    [ "tuple_element< I, array< T, N > >", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4" ],
+    [ "etl::array< Type, Size >", "structetl_1_1array.html", "structetl_1_1array" ],
+    [ "etl::tuple_size< array< T, N > >", "structetl_1_1tuple__size_3_01array_3_01T_00_01N_01_4_01_4.html", null ],
+    [ "etl::tuple_element< I, array< T, N > >", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01array_3_01T_00_01N_01_4_01_4" ],
     [ "array", "__array_2array_8hpp.html#ae5a13233ebf471c62f35f40b21128884", null ],
     [ "swap", "__array_2array_8hpp.html#ad707bbff2e759a5d868a7bfb7d6bc4c5", null ],
     [ "operator==", "__array_2array_8hpp.html#ad78053f3dad1753bf6896680da407b07", null ],

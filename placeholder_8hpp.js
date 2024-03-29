@@ -1,9 +1,9 @@
 var placeholder_8hpp =
 [
-    [ "is_placeholder", "structetl_1_1is__placeholder.html", null ],
-    [ "is_placeholder< T const >", "structetl_1_1is__placeholder_3_01T_01const_01_4.html", null ],
-    [ "is_placeholder< T volatile >", "structetl_1_1is__placeholder_3_01T_01volatile_01_4.html", null ],
-    [ "is_placeholder< T const volatile >", "structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html", null ],
+    [ "etl::is_placeholder< T >", "structetl_1_1is__placeholder.html", null ],
+    [ "etl::is_placeholder< T const >", "structetl_1_1is__placeholder_3_01T_01const_01_4.html", null ],
+    [ "etl::is_placeholder< T volatile >", "structetl_1_1is__placeholder_3_01T_01volatile_01_4.html", null ],
+    [ "etl::is_placeholder< T const volatile >", "structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html", null ],
     [ "is_placeholder_v", "placeholder_8hpp.html#ad5ecf4e1b001cdba463b17849f4b55e4", null ],
     [ "_1", "placeholder_8hpp.html#abf9dd9bf7af9e8a01edb8811558b2e60", null ],
     [ "_2", "placeholder_8hpp.html#a44baffa2818c350dfdfe1005485d8faa", null ],

@@ -1,6 +1,6 @@
 var year__month__day_8hpp =
 [
-    [ "year_month_day", "structetl_1_1chrono_1_1year__month__day.html", "structetl_1_1chrono_1_1year__month__day" ],
+    [ "etl::chrono::year_month_day", "structetl_1_1chrono_1_1year__month__day.html", "structetl_1_1chrono_1_1year__month__day" ],
     [ "operator==", "year__month__day_8hpp.html#a30a97fb5e16fdd6a4bf080fd2a19b1b5", null ],
     [ "operator+", "year__month__day_8hpp.html#a972aab998b3a816a3f5a1e8b8dbf2cec", null ],
     [ "operator+", "year__month__day_8hpp.html#a12195a36bd634eaf46c6db2798642ccf", null ],

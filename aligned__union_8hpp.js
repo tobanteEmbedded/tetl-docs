@@ -1,6 +1,6 @@
 var aligned__union_8hpp =
 [
-    [ "aligned_union", "structetl_1_1aligned__union.html", "structetl_1_1aligned__union" ],
-    [ "type", "structetl_1_1aligned__union_1_1type.html", "structetl_1_1aligned__union_1_1type" ],
-    [ "aligned_union_t", "aligned__union_8hpp.html#a5633d0f4ab2cab13d3635ee77ecba9ad", null ]
+    [ "etl::aligned_union< Len, Types >", "structetl_1_1aligned__union.html", "structetl_1_1aligned__union" ],
+    [ "etl::aligned_union< Len, Types >::type", "structetl_1_1aligned__union_1_1type.html", "structetl_1_1aligned__union_1_1type" ],
+    [ "aligned_union_t", "aligned__union_8hpp.html#ae90b42ca2c97e25ae857469d922a7b17", null ]
 ];

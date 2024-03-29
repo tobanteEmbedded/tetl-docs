@@ -1,4 +1,4 @@
 var indirectly__regular__unary__invocable_8hpp =
 [
-    [ "indirectly_regular_unary_invocable", "indirectly__regular__unary__invocable_8hpp.html#ac7a7c676854c909e4823a0765f949385", null ]
+    [ "etl::indirectly_regular_unary_invocable", "conceptetl_1_1indirectly__regular__unary__invocable.html", null ]
 ];

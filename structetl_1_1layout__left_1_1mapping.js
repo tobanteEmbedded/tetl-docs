@@ -8,13 +8,12 @@ var structetl_1_1layout__left_1_1mapping =
     [ "mapping", "structetl_1_1layout__left_1_1mapping.html#a2d96f2748354c286e644bffd24564103", null ],
     [ "mapping", "structetl_1_1layout__left_1_1mapping.html#a25b38718b12682a137b5ec6d2ff3a6e8", null ],
     [ "mapping", "structetl_1_1layout__left_1_1mapping.html#a2095ca28198e819a1d573f0263918ac2", null ],
-    [ "explicit", "structetl_1_1layout__left_1_1mapping.html#a6d90eac5cb1aa23f8ec38fba758ccf3d", null ],
-    [ "requires", "structetl_1_1layout__left_1_1mapping.html#a59d93149b566dc353248b6c352f53621", null ],
-    [ "explicit", "structetl_1_1layout__left_1_1mapping.html#ac41b7f90a507b84bf43a526cee0d9f5f", null ],
+    [ "explicit", "structetl_1_1layout__left_1_1mapping.html#a4be2022a552410862c2af1965d5e2f58", null ],
+    [ "explicit", "structetl_1_1layout__left_1_1mapping.html#a32140941e0a7277a0771dff9916b928e", null ],
+    [ "operator=", "structetl_1_1layout__left_1_1mapping.html#a8f9522d8257b3d413fa261a56090679f", null ],
     [ "extents", "structetl_1_1layout__left_1_1mapping.html#a4a5779d8e40b9a0289983d995c3c5125", null ],
     [ "required_span_size", "structetl_1_1layout__left_1_1mapping.html#a482e5f49a66387ca36761f24c63a05e2", null ],
-    [ "requires", "structetl_1_1layout__left_1_1mapping.html#a293f00d3d3781dcc44c793b78e27259f", null ],
-    [ "operator()", "structetl_1_1layout__left_1_1mapping.html#a291f7e265e98e48778e1ee4053e6c559", null ],
+    [ "operator()", "structetl_1_1layout__left_1_1mapping.html#a768a9a82bee70bdd0668d2f7e71c4838", null ],
     [ "is_always_unique", "structetl_1_1layout__left_1_1mapping.html#abe77dd70ad3ed886283e696e9b433005", null ],
     [ "is_always_exhaustive", "structetl_1_1layout__left_1_1mapping.html#a0ee579db4c6a427a99cd1ede183ca862", null ],
     [ "is_always_strided", "structetl_1_1layout__left_1_1mapping.html#a01c26abbb2e5efba0d86b54efd49bc84", null ],
@@ -22,6 +21,5 @@ var structetl_1_1layout__left_1_1mapping =
     [ "is_exhaustive", "structetl_1_1layout__left_1_1mapping.html#af2b92ce296c9b2732ff16b8a966d73ce", null ],
     [ "is_strided", "structetl_1_1layout__left_1_1mapping.html#a26c68a0768c2c10ca99cc684b50b32d7", null ],
     [ "stride", "structetl_1_1layout__left_1_1mapping.html#a4d9e8fbb1a2b5e72f30d30c0aae9aee1", null ],
-    [ "explicit", "structetl_1_1layout__left_1_1mapping.html#ab48ce696a01402c533a0fffe71fde5a1", null ],
-    [ "operator==", "structetl_1_1layout__left_1_1mapping.html#ade0ff0096e418385cf2564fa22bc3d61", null ]
+    [ "operator==", "structetl_1_1layout__left_1_1mapping.html#a3bae19e9dae21c88a977f22a3201dd4c", null ]
 ];

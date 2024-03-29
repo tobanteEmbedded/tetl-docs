@@ -1,7 +1,7 @@
 var half_8hpp =
 [
-    [ "binary_t", "structetl_1_1binary__t.html", null ],
-    [ "half", "structetl_1_1half.html", "structetl_1_1half" ],
+    [ "etl::binary_t", "structetl_1_1binary__t.html", null ],
+    [ "etl::half", "structetl_1_1half.html", "structetl_1_1half" ],
     [ "isfinite", "half_8hpp.html#a1c1ffcebf3ee4f04cf5987def83d0070", null ],
     [ "isinf", "half_8hpp.html#a587d2d42acd3ff40d56a98cdb84e1f57", null ],
     [ "isnan", "half_8hpp.html#ae8311e8c453fbb5b2e5eea1ed6aead74", null ],

@@ -1,7 +1,7 @@
 var xorshift_8hpp =
 [
-    [ "xorshift", "structetl_1_1xorshift.html", "structetl_1_1xorshift" ],
-    [ "xorshift16", "xorshift_8hpp.html#a56e01072f7d94c62bb328ea01c1588e1", null ],
-    [ "xorshift32", "xorshift_8hpp.html#ad5f97b463f89003915a42b98555c13bf", null ],
-    [ "xorshift64", "xorshift_8hpp.html#ac41a230169af2e293e51036057534936", null ]
+    [ "etl::xorshift< UInt, X, Y, Z >", "structetl_1_1xorshift.html", "structetl_1_1xorshift" ],
+    [ "xorshift16", "xorshift_8hpp.html#a07fc4f6678662874f84b8e547b4dda7b", null ],
+    [ "xorshift32", "xorshift_8hpp.html#ac5e9e0a6364bd5186c2bc9be3d94d83e", null ],
+    [ "xorshift64", "xorshift_8hpp.html#a01a0717f088e1767ac3b5fa849e0295e", null ]
 ];

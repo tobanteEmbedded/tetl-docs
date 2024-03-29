@@ -1,6 +1,6 @@
 var errc_8hpp =
 [
-    [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
+    [ "etl::is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
     [ "errc", "errc_8hpp.html#abf855e66ccd0c031e0994ed578f1c170", [
       [ "address_family_not_supported", "errc_8hpp.html#abf855e66ccd0c031e0994ed578f1c170a8ab69162f060cc46b805b3265ad1cdf1", null ],
       [ "address_in_use", "errc_8hpp.html#abf855e66ccd0c031e0994ed578f1c170a8e2bc80599069d337b43dff6edfb6891", null ],

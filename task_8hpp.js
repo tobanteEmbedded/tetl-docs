@@ -1,10 +1,10 @@
 var task_8hpp =
 [
-    [ "never", "structetl_1_1experimental_1_1freertos_1_1never.html", "structetl_1_1experimental_1_1freertos_1_1never" ],
-    [ "forever", "structetl_1_1experimental_1_1freertos_1_1forever.html", "structetl_1_1experimental_1_1freertos_1_1forever" ],
-    [ "times", "structetl_1_1experimental_1_1freertos_1_1times.html", "structetl_1_1experimental_1_1freertos_1_1times" ],
-    [ "once", "task_8hpp.html#acc873ef2bc8c10908c3b4472164df55e", null ],
-    [ "twice", "task_8hpp.html#a253174562969909422579caa02fa4f3e", null ],
+    [ "etl::experimental::freertos::never", "structetl_1_1experimental_1_1freertos_1_1never.html", "structetl_1_1experimental_1_1freertos_1_1never" ],
+    [ "etl::experimental::freertos::forever", "structetl_1_1experimental_1_1freertos_1_1forever.html", "structetl_1_1experimental_1_1freertos_1_1forever" ],
+    [ "etl::experimental::freertos::times< Count >", "structetl_1_1experimental_1_1freertos_1_1times.html", "structetl_1_1experimental_1_1freertos_1_1times" ],
+    [ "once", "task_8hpp.html#a3f1d25fa7789b562b8b532caf2da7563", null ],
+    [ "twice", "task_8hpp.html#a5e577a59d5b1f11bff8fc56a1a4ed88c", null ],
     [ "rtos_task", "task_8hpp.html#adc070dfa9e650ee2c63fd707847ea2bb", null ],
     [ "create_task", "task_8hpp.html#a583d477815738c89e9bfabe3f2aa7ba3", null ],
     [ "delete_task", "task_8hpp.html#a0d88a9a6784792033b0b320a5d5af2e9", null ],

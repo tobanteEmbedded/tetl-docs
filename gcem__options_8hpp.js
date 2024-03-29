@@ -1,5 +1,6 @@
 var gcem__options_8hpp =
 [
+    [ "GCEM_VERSION_MAJOR", "gcem__options_8hpp.html#a765b56e7a0bc414518ee7c585471e676", null ],
     [ "GCEM_VERSION_MINOR", "gcem__options_8hpp.html#a3cd624e2e8ba2fb30e6a80e30ae7ea3f", null ],
     [ "GCEM_VERSION_PATCH", "gcem__options_8hpp.html#aa6134bca34328ce495a5ce7871783098", null ],
     [ "GCEM_LOG_2", "gcem__options_8hpp.html#a87a3d4ef3ac86cc9286f6c4ee3af7ae9", null ],

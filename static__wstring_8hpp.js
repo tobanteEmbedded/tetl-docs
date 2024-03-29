@@ -1,4 +1,4 @@
 var static__wstring_8hpp =
 [
-    [ "static_wstring", "static__wstring_8hpp.html#a764367809b942e7602a985553294edba", null ]
+    [ "static_wstring", "static__wstring_8hpp.html#a095186d92f1db9993904799b96af15bb", null ]
 ];

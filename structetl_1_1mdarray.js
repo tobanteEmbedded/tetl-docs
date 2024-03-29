@@ -15,7 +15,7 @@ var structetl_1_1mdarray =
     [ "reference", "structetl_1_1mdarray.html#aef49e067ac35afd90fed674d8e7c0869", null ],
     [ "const_pointer", "structetl_1_1mdarray.html#a64359183ef3dfadf170b97d15f61b1d8", null ],
     [ "const_reference", "structetl_1_1mdarray.html#ad14d8577faf0b6e496ea3119699bb0c5", null ],
-    [ "mdarray", "structetl_1_1mdarray.html#af0c01bc4b0c62eb43b4068c32d0b53d7", null ],
+    [ "mdarray", "structetl_1_1mdarray.html#a574d30f20ba346f2e4f2b35ce59c1635", null ],
     [ "mdarray", "structetl_1_1mdarray.html#a70d2f4f7792bc884e0c0f4de102be0ce", null ],
     [ "mdarray", "structetl_1_1mdarray.html#a29a2d57510cc116feea08c75b248e87c", null ],
     [ "rank", "structetl_1_1mdarray.html#a0060c7974787e77474520f967f0f2eaa", null ],

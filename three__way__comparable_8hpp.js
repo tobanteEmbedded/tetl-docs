@@ -1,4 +1,4 @@
 var three__way__comparable_8hpp =
 [
-    [ "three_way_comparable", "three__way__comparable_8hpp.html#ada667f9d8a054c2bcf73335fd257dbb8", null ]
+    [ "etl::three_way_comparable", "conceptetl_1_1three__way__comparable.html", null ]
 ];

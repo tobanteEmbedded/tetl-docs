@@ -1,4 +1,4 @@
 var ratio__add_8hpp =
 [
-    [ "ratio_add", "ratio__add_8hpp.html#a515e08f8ce11f32a154acd83b2fe6b00", null ]
+    [ "ratio_add", "ratio__add_8hpp.html#a2192adc56583289052578ee61ab954c3", null ]
 ];

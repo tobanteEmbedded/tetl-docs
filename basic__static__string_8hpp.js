@@ -1,6 +1,6 @@
 var basic__static__string_8hpp =
 [
-    [ "basic_static_string", "structetl_1_1basic__static__string.html", "structetl_1_1basic__static__string" ],
+    [ "etl::basic_static_string< CharT, Capacity, Traits >", "structetl_1_1basic__static__string.html", "structetl_1_1basic__static__string" ],
     [ "operator+", "basic__static__string_8hpp.html#a550be74a772ee835b7969103906449d0", null ],
     [ "operator+", "basic__static__string_8hpp.html#a8f68785d405ab507029b4dc21d784f32", null ],
     [ "operator+", "basic__static__string_8hpp.html#a3730f573680ab7ee2848994263888494", null ],

@@ -10,7 +10,7 @@ var structetl_1_1span =
     [ "const_reference", "structetl_1_1span.html#afb5fb3e7344dbe77f1b330c599323bfd", null ],
     [ "iterator", "structetl_1_1span.html#a6bf422afd88deb8293731dcdb8c06d3c", null ],
     [ "reverse_iterator", "structetl_1_1span.html#a75e9022d5959d6a63e286426695992e3", null ],
-    [ "span", "structetl_1_1span.html#a930efa3667aa2a0df9c80837021c68a9", null ],
+    [ "span", "structetl_1_1span.html#a48b47e034fbf68014e20f840f539287f", null ],
     [ "explicit", "structetl_1_1span.html#a0309a789389c32beb95ffce0e784c88e", null ],
     [ "begin", "structetl_1_1span.html#a19552b21081a93efc803236413b9c559", null ],
     [ "end", "structetl_1_1span.html#a67fa4632156b842915857669bf9bf8cb", null ],

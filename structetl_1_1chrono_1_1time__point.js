@@ -6,7 +6,8 @@ var structetl_1_1chrono_1_1time__point =
     [ "period", "structetl_1_1chrono_1_1time__point.html#aa3e3b868dbf241ed4773f8bcabb7bb83", null ],
     [ "time_point", "structetl_1_1chrono_1_1time__point.html#add92b6e9c0c00f0d5a794139027c9138", null ],
     [ "time_point", "structetl_1_1chrono_1_1time__point.html#a108260bb8ca546b00a0fae24b9333064", null ],
-    [ "requires", "structetl_1_1chrono_1_1time__point.html#acd95df2720174e269b249bbfcf716e8c", null ],
+    [ "time_point", "structetl_1_1chrono_1_1time__point.html#a106d577d5d3dbd58a40ed83a857895c9", null ],
+    [ "time_since_epoch", "structetl_1_1chrono_1_1time__point.html#a2a03b9b033c7a61ad7c57968cbc85163", null ],
     [ "operator+=", "structetl_1_1chrono_1_1time__point.html#a7614924c809eb61c2e2916690e24c644", null ],
     [ "operator-=", "structetl_1_1chrono_1_1time__point.html#ae2e7676d861e00790129c4c909a47090", null ],
     [ "operator++", "structetl_1_1chrono_1_1time__point.html#a564100adf67c65924126424af2bcff55", null ],
@@ -14,6 +15,5 @@ var structetl_1_1chrono_1_1time__point =
     [ "operator--", "structetl_1_1chrono_1_1time__point.html#ad64442e456d7897903f5fcdbc412635a", null ],
     [ "operator--", "structetl_1_1chrono_1_1time__point.html#aff5daabe2bcd7f632b63c3b65b8193a7", null ],
     [ "min", "structetl_1_1chrono_1_1time__point.html#a43e91a929e57fe3fd8baf8cb24f11945", null ],
-    [ "max", "structetl_1_1chrono_1_1time__point.html#afd4ac4eed19fb3a1baff19f0588300c7", null ],
-    [ "t", "structetl_1_1chrono_1_1time__point.html#aa00acf0e756e4fe96a3050e13951c036", null ]
+    [ "max", "structetl_1_1chrono_1_1time__point.html#afd4ac4eed19fb3a1baff19f0588300c7", null ]
 ];

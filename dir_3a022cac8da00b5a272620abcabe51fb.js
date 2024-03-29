@@ -5,10 +5,8 @@ var dir_3a022cac8da00b5a272620abcabe51fb =
     [ "atol.hpp", "atol_8hpp.html", "atol_8hpp" ],
     [ "atoll.hpp", "atoll_8hpp.html", "atoll_8hpp" ],
     [ "div.hpp", "div_8hpp.html", "div_8hpp" ],
-    [ "exit.hpp", "exit_8hpp.html", null ],
-    [ "imaxdiv.hpp", "imaxdiv_8hpp.html", [
-      [ "imaxdiv_t", "structetl_1_1imaxdiv__t.html", "structetl_1_1imaxdiv__t" ]
-    ] ],
+    [ "exit.hpp", "exit_8hpp.html", "exit_8hpp" ],
+    [ "imaxdiv.hpp", "imaxdiv_8hpp.html", "imaxdiv_8hpp" ],
     [ "labs.hpp", "labs_8hpp.html", "labs_8hpp" ],
     [ "ldiv.hpp", "ldiv_8hpp.html", "ldiv_8hpp" ],
     [ "llabs.hpp", "llabs_8hpp.html", "llabs_8hpp" ],

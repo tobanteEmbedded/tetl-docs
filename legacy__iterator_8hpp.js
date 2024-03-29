@@ -1,4 +1,4 @@
 var legacy__iterator_8hpp =
 [
-    [ "legacy_iterator", "legacy__iterator_8hpp.html#aa82baebfe8bc565f562c94106384cc36", null ]
+    [ "etl::legacy_iterator", "conceptetl_1_1legacy__iterator.html", null ]
 ];

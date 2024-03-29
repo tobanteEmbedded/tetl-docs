@@ -1,4 +1,4 @@
 var accessor__scaled_8hpp =
 [
-    [ "requires", "accessor__scaled_8hpp.html#a06fc87cb0b9090727f9f86cb6438c515", null ]
+    [ "etl::linalg::accessor_scaled< ScalingFactor, Accessor >", "structetl_1_1linalg_1_1accessor__scaled.html", "structetl_1_1linalg_1_1accessor__scaled" ]
 ];

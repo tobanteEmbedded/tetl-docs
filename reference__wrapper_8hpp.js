@@ -1,6 +1,6 @@
 var reference__wrapper_8hpp =
 [
-    [ "reference_wrapper", "structetl_1_1reference__wrapper.html", "structetl_1_1reference__wrapper" ],
+    [ "etl::reference_wrapper< T >", "structetl_1_1reference__wrapper.html", "structetl_1_1reference__wrapper" ],
     [ "reference_wrapper", "reference__wrapper_8hpp.html#aeba1ef9fae68ae0f78265ecaa8a3d598", null ],
     [ "ref", "reference__wrapper_8hpp.html#a481b27ca7cd9de96cb435adc8a761b2a", null ],
     [ "ref", "reference__wrapper_8hpp.html#a1f67da318f2742930e9485ebba9b075b", null ],

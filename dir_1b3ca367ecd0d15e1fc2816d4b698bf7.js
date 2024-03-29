@@ -10,9 +10,7 @@ var dir_1b3ca367ecd0d15e1fc2816d4b698bf7 =
     [ "aligned_union.hpp", "aligned__union_8hpp.html", "aligned__union_8hpp" ],
     [ "alignment_of.hpp", "alignment__of_8hpp.html", "alignment__of_8hpp" ],
     [ "always_false.hpp", "always__false_8hpp.html", "always__false_8hpp" ],
-    [ "basic_common_reference.hpp", "basic__common__reference_8hpp.html", [
-      [ "basic_common_reference", "structetl_1_1basic__common__reference.html", null ]
-    ] ],
+    [ "basic_common_reference.hpp", "basic__common__reference_8hpp.html", "basic__common__reference_8hpp" ],
     [ "bool_constant.hpp", "bool__constant_8hpp.html", "bool__constant_8hpp" ],
     [ "common_reference.hpp", "common__reference_8hpp.html", "common__reference_8hpp" ],
     [ "common_type.hpp", "common__type_8hpp.html", "common__type_8hpp" ],
