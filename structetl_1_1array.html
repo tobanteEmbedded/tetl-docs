@@ -146,12 +146,6 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2fbc638f50ea8414194391ab8a17928c" id="r_a2fbc638f50ea8414194391ab8a17928c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbc638f50ea8414194391ab8a17928c">at</a> (<a class="el" href="#ab16e24a6df7b236119c4225ccaad5bd6">size_type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> <a class="el" href="structetl_1_1static__vector.html">pos</a>) noexcept -&gt; <a class="el" href="#a00032e42be228b44773af3bf6059b97d">reference</a></td></tr>
-<tr class="memdesc:a2fbc638f50ea8414194391ab8a17928c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the specified item with range checking.  <br /></td></tr>
-<tr class="separator:a2fbc638f50ea8414194391ab8a17928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90189e85d2fa50447a796304e2c6a8df" id="r_a90189e85d2fa50447a796304e2c6a8df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90189e85d2fa50447a796304e2c6a8df">at</a> (<a class="el" href="#ab16e24a6df7b236119c4225ccaad5bd6">size_type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> <a class="el" href="structetl_1_1static__vector.html">pos</a>) <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="#a613910aa29fa85d8ba523c567a0b7a24">const_reference</a></td></tr>
-<tr class="memdesc:a90189e85d2fa50447a796304e2c6a8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the specified const item with range checking.  <br /></td></tr>
-<tr class="separator:a90189e85d2fa50447a796304e2c6a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc42b55602ea9c9a3ddc08619788819" id="r_a6bc42b55602ea9c9a3ddc08619788819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc42b55602ea9c9a3ddc08619788819">operator[]</a> (<a class="el" href="#ab16e24a6df7b236119c4225ccaad5bd6">size_type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> <a class="el" href="structetl_1_1static__vector.html">pos</a>) noexcept -&gt; <a class="el" href="#a00032e42be228b44773af3bf6059b97d">reference</a></td></tr>
 <tr class="memdesc:a6bc42b55602ea9c9a3ddc08619788819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the specified item with range checking.  <br /></td></tr>
 <tr class="separator:a6bc42b55602ea9c9a3ddc08619788819"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +255,7 @@ Related Symbols</h2></td></tr>
 <tr class="separator:a52bce012c4b201c8f654c4eee78555ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7523a3dfaad4821bb37a62e49ae19564" id="r_a7523a3dfaad4821bb37a62e49ae19564"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
 <tr class="memitem:a7523a3dfaad4821bb37a62e49ae19564"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7523a3dfaad4821bb37a62e49ae19564">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T &amp;</td></tr>
-<tr class="memdesc:a7523a3dfaad4821bb37a62e49ae19564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to <a class="el" href="#a2fbc638f50ea8414194391ab8a17928c" title="Accesses the specified item with range checking.">at()</a> or operator[].  <br /></td></tr>
+<tr class="memdesc:a7523a3dfaad4821bb37a62e49ae19564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to at() or operator[].  <br /></td></tr>
 <tr class="separator:a7523a3dfaad4821bb37a62e49ae19564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64420ef7894f5d9a1c2f33d35f3136e" id="r_ab64420ef7894f5d9a1c2f33d35f3136e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
 <tr class="memitem:ab64420ef7894f5d9a1c2f33d35f3136e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab64420ef7894f5d9a1c2f33d35f3136e">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td></tr>
@@ -510,66 +504,6 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2fbc638f50ea8414194391ab8a17928c" name="a2fbc638f50ea8414194391ab8a17928c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fbc638f50ea8414194391ab8a17928c">&#9670;&#160;</a></span>at() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1array.html">etl::array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ab16e24a6df7b236119c4225ccaad5bd6">size_type</a> <a class="el" href="structetl_1_1static__vector.html">const</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#a00032e42be228b44773af3bf6059b97d">reference</a>
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Accesses the specified item with range checking. </p>
-
-</div>
-</div>
-<a id="a90189e85d2fa50447a796304e2c6a8df" name="a90189e85d2fa50447a796304e2c6a8df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90189e85d2fa50447a796304e2c6a8df">&#9670;&#160;</a></span>at() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1array.html">etl::array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ab16e24a6df7b236119c4225ccaad5bd6">size_type</a> <a class="el" href="structetl_1_1static__vector.html">const</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a613910aa29fa85d8ba523c567a0b7a24">const_reference</a>
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Accesses the specified const item with range checking. </p>
-
-</div>
-</div>
 <a id="a6bc42b55602ea9c9a3ddc08619788819" name="a6bc42b55602ea9c9a3ddc08619788819"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bc42b55602ea9c9a3ddc08619788819">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
 
@@ -1611,7 +1545,7 @@ template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111
 </table>
 </div><div class="memdoc">
 
-<p>Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to <a class="el" href="#a2fbc638f50ea8414194391ab8a17928c" title="Accesses the specified item with range checking.">at()</a> or operator[]. </p>
+<p>Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to at() or operator[]. </p>
 
 </div>
 </div>

@@ -23,14 +23,14 @@ var searchData=
   ['binary_5fsearch_20',['binary_search',['../group__algorithm-hpp.html#ga8844708a6931fb2b21419d7a605328dd',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value, Compare comp) -&gt; bool'],['../group__algorithm-hpp.html#gadb446f356892ac1d540180018a20faba',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value) -&gt; bool']]],
   ['bind_5ffront_21',['bind_front',['../namespaceetl.html#a817e57a985d0eab0156aa074d1928761',1,'etl']]],
   ['binomial_5fcoef_22',['binomial_coef',['../binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6',1,'binomial_coef.hpp']]],
-  ['bit_5fcast_23',['bit_cast',['../namespaceetl.html#a4070f4c004b740cd8c1b913db783dfb8',1,'etl']]],
-  ['bit_5fceil_24',['bit_ceil',['../namespaceetl.html#aa397d9f8380425b5e72d55d7f7f16b10',1,'etl']]],
-  ['bit_5ffloor_25',['bit_floor',['../namespaceetl.html#a344157c15560dd640719de8ecf9a311a',1,'etl']]],
-  ['bit_5fwidth_26',['bit_width',['../namespaceetl.html#a7f9cca4b68917b48f46849a03007d9a9',1,'etl']]],
+  ['bit_5fcast_23',['bit_cast',['../group__bit-hpp.html#ga4070f4c004b740cd8c1b913db783dfb8',1,'etl']]],
+  ['bit_5fceil_24',['bit_ceil',['../group__bit-hpp.html#gaa397d9f8380425b5e72d55d7f7f16b10',1,'etl']]],
+  ['bit_5ffloor_25',['bit_floor',['../group__bit-hpp.html#ga344157c15560dd640719de8ecf9a311a',1,'etl']]],
+  ['bit_5fwidth_26',['bit_width',['../group__bit-hpp.html#ga7f9cca4b68917b48f46849a03007d9a9',1,'etl']]],
   ['bitset_27',['bitset',['../structetl_1_1bitset.html#ac195be8146f47730bcde3e740a79968f',1,'etl::bitset::bitset() noexcept=default'],['../structetl_1_1bitset.html#a164aaa71bf04c8fd0b66757592f9905e',1,'etl::bitset::bitset(unsigned long long val) noexcept'],['../structetl_1_1bitset.html#a6884ba51151e6d5bd6c9e9ccd8a7a6d3',1,'etl::bitset::bitset(basic_string_view&lt; CharT, Traits &gt; const &amp;str, typename basic_string_view&lt; CharT, Traits &gt;::size_type pos=0, typename basic_string_view&lt; CharT, Traits &gt;::size_type n=basic_string_view&lt; CharT, Traits &gt;::npos, CharT zero=CharT(&apos;0&apos;), CharT one=CharT(&apos;1&apos;))'],['../structetl_1_1bitset.html#ace4d1965c6f537983df7e09a43c87a62',1,'etl::bitset::bitset(CharT const *str, typename basic_string_view&lt; CharT &gt;::size_type n=basic_string_view&lt; CharT &gt;::npos, CharT zero=CharT(&apos;0&apos;), CharT one=CharT(&apos;1&apos;))']]],
   ['breakpoint_28',['breakpoint',['../namespaceetl.html#a4cc789d7f68f903e899cff481cd71d1c',1,'etl']]],
   ['breakpoint_5fif_5fdebugging_29',['breakpoint_if_debugging',['../namespaceetl.html#a181e440953b961dd37846ec6cfc1727d',1,'etl']]],
-  ['bubble_5fsort_30',['bubble_sort',['../namespaceetl.html#a46270726b5073fd6eeefb5ccd9ed1f72',1,'etl::bubble_sort(RandomIt first, RandomIt last, Compare comp) -&gt; void'],['../namespaceetl.html#a1cc149eb7abea4405c02e767e7860dae',1,'etl::bubble_sort(RandomIt first, RandomIt last) -&gt; void']]],
+  ['bubble_5fsort_30',['bubble_sort',['../group__algorithm-hpp.html#ga46270726b5073fd6eeefb5ccd9ed1f72',1,'etl::bubble_sort(RandomIt first, RandomIt last, Compare comp) -&gt; void'],['../group__algorithm-hpp.html#ga1cc149eb7abea4405c02e767e7860dae',1,'etl::bubble_sort(RandomIt first, RandomIt last) -&gt; void']]],
   ['bytes_5favailable_31',['bytes_available',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a1a777340ddb9c01ea3d397f171392c40',1,'etl::experimental::freertos::stream_buffer']]],
-  ['byteswap_32',['byteswap',['../namespaceetl.html#ad4adeee8eaea36f5d0716abfe81148ba',1,'etl']]]
+  ['byteswap_32',['byteswap',['../group__bit-hpp.html#gad4adeee8eaea36f5d0716abfe81148ba',1,'etl']]]
 ];

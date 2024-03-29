@@ -112,7 +112,7 @@ $(function(){initNavTree('structetl_1_1experimental_1_1freertos_1_1stream__buffe
 </div><!--header-->
 <div class="contents">
 
-<p>Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives. Unlike most other FreeRTOS communications primitives, they are optimised for single reader single writer scenarios, such as passing data from an interrupt service routine to a task, or from one microcontroller core to another on dual core CPUs. Data is passed by copy - the data is copied into the buffer by the sender and out of the buffer by the read.  
+<p>Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="stream__buffer_8hpp_source.html">stream_buffer.hpp</a>&gt;</code></p>
@@ -169,11 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afdda76f14ff325fb5b420ec6ede07993"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stream buffer's trigger level is the number of bytes that must be in the stream buffer before a task that is blocked on the stream buffer to wait for data is moved out of the blocked state.  <br /></td></tr>
 <tr class="separator:afdda76f14ff325fb5b420ec6ede07993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad3797dcdb12dc7827fa905674227f8" id="r_aaad3797dcdb12dc7827fa905674227f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaad3797dcdb12dc7827fa905674227f8">native_handle</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="stubs_8hpp.html#a1d78f7e28aedae7857e0251fc89ef950">StreamBufferHandle_t</a></td></tr>
-<tr class="memdesc:aaad3797dcdb12dc7827fa905674227f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the native FreeRTOS handle to the <a class="el" href="structetl_1_1experimental_1_1freertos_1_1stream__buffer.html" title="Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives....">stream_buffer</a>.  <br /></td></tr>
+<tr class="memdesc:aaad3797dcdb12dc7827fa905674227f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the native FreeRTOS handle to the <a class="el" href="structetl_1_1experimental_1_1freertos_1_1stream__buffer.html" title="Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives.">stream_buffer</a>.  <br /></td></tr>
 <tr class="separator:aaad3797dcdb12dc7827fa905674227f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives. Unlike most other FreeRTOS communications primitives, they are optimised for single reader single writer scenarios, such as passing data from an interrupt service routine to a task, or from one microcontroller core to another on dual core CPUs. Data is passed by copy - the data is copied into the buffer by the sender and out of the buffer by the read. </p>
+<div class="textblock"><p>Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives. </p>
+<p>Unlike most other FreeRTOS communications primitives, they are optimised for single reader single writer scenarios, such as passing data from an interrupt service routine to a task, or from one microcontroller core to another on dual core CPUs. Data is passed by copy - the data is copied into the buffer by the sender and out of the buffer by the read.</p>
 <p><a href="https://www.freertos.org/RTOS-stream-buffer-API.html">https://www.freertos.org/RTOS-stream-buffer-API.html</a> <a href="https://www.freertos.org/RTOS-stream-message-buffers.html">https://www.freertos.org/RTOS-stream-message-buffers.html</a> </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa1cf720df2bd7a271e68b124466e6b52" name="aa1cf720df2bd7a271e68b124466e6b52"></a>
@@ -672,7 +673,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the native FreeRTOS handle to the <a class="el" href="structetl_1_1experimental_1_1freertos_1_1stream__buffer.html" title="Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives....">stream_buffer</a>. </p>
+<p>Returns the native FreeRTOS handle to the <a class="el" href="structetl_1_1experimental_1_1freertos_1_1stream__buffer.html" title="Stream buffers are an RTOS task to RTOS task, and interrupt to task communication primitives.">stream_buffer</a>. </p>
 
 </div>
 </div>

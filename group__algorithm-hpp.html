@@ -107,6 +107,9 @@ $(function(){initNavTree('group__algorithm-hpp.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">algorithm.hpp<div class="ingroups"><a class="el" href="group__algorithms-lib.html">Algorithms Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Algorithms that operate on ranges  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e" id="r_ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Predicate</a> &gt; </td></tr>
 <tr class="memitem:ga09c5b412c05c58fb89e569a2d72ed17e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga09c5b412c05c58fb89e569a2d72ed17e">etl::adjacent_find</a> (<a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> last, <a class="el" href="structetl_1_1static__vector.html">Predicate</a> <a class="el" href="structetl_1_1static__vector.html">pred</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a></td></tr>
@@ -130,6 +133,13 @@ $(function(){initNavTree('group__algorithm-hpp.html',''); initResizable(true); }
 <tr class="memitem:gadb446f356892ac1d540180018a20faba" id="r_gadb446f356892ac1d540180018a20faba"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:gadb446f356892ac1d540180018a20faba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gadb446f356892ac1d540180018a20faba">etl::binary_search</a> (<a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> last, T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;value) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
 <tr class="separator:gadb446f356892ac1d540180018a20faba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46270726b5073fd6eeefb5ccd9ed1f72" id="r_ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </td></tr>
+<tr class="memitem:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga46270726b5073fd6eeefb5ccd9ed1f72">etl::bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last, <a class="el" href="structetl_1_1static__vector.html">Compare</a> <a class="el" href="structetl_1_1static__vector.html">comp</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="memdesc:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the range <code>[first, last)</code> in non-descending order. The order of equal elements is guaranteed to be preserved.  <br /></td></tr>
+<tr class="separator:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc149eb7abea4405c02e767e7860dae" id="r_ga1cc149eb7abea4405c02e767e7860dae"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> &gt; </td></tr>
+<tr class="memitem:ga1cc149eb7abea4405c02e767e7860dae"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga1cc149eb7abea4405c02e767e7860dae">etl::bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="separator:ga1cc149eb7abea4405c02e767e7860dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabfa416a307b0bb33666d34845c42ba2b" id="r_gabfa416a307b0bb33666d34845c42ba2b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </td></tr>
 <tr class="memitem:gabfa416a307b0bb33666d34845c42ba2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gabfa416a307b0bb33666d34845c42ba2b">etl::clamp</a> (<a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lo</a>, <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">hi</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> <a class="el" href="structetl_1_1static__vector.html">comp</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td></tr>
 <tr class="memdesc:gabfa416a307b0bb33666d34845c42ba2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If v compares less than lo, returns lo; otherwise if hi compares less than v, returns hi; otherwise returns v. Uses operator&lt; to compare the values.  <br /></td></tr>
@@ -159,6 +169,7 @@ $(function(){initNavTree('group__algorithm-hpp.html',''); initResizable(true); }
 <tr class="separator:ga7aff5cc5281436a205079dc71ee4c317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Algorithms that operate on ranges </p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
@@ -332,6 +343,46 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 <p>Checks if an element equivalent to value appears within the range <code>[first, last)</code>. For binary_search to succeed, the range <code>[first, last)</code> must be at least partially ordered with respect to <code>value</code>. </p>
 <p><a href="https://en.cppreference.com/w/cpp/algorithm/binary_search">https://en.cppreference.com/w/cpp/algorithm/binary_search</a> </p>
+
+</div>
+</div>
+<a id="ga46270726b5073fd6eeefb5ccd9ed1f72" name="ga46270726b5073fd6eeefb5ccd9ed1f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46270726b5073fd6eeefb5ccd9ed1f72">&#9670;&#160;</a></span>bubble_sort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Compare</a></td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sorts the elements in the range <code>[first, last)</code> in non-descending order. The order of equal elements is guaranteed to be preserved. </p>
+<p><a href="https://en.wikipedia.org/wiki/Bubble_sort">https://en.wikipedia.org/wiki/Bubble_sort</a> </p>
 
 </div>
 </div>
@@ -658,6 +709,38 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cc149eb7abea4405c02e767e7860dae" name="ga1cc149eb7abea4405c02e767e7860dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cc149eb7abea4405c02e767e7860dae">&#9670;&#160;</a></span>bubble_sort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bubble_sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

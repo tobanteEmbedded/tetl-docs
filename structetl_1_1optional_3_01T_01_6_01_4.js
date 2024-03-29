@@ -18,7 +18,6 @@ var structetl_1_1optional_3_01T_01_6_01_4 =
     [ "operator*", "structetl_1_1optional_3_01T_01_6_01_4.html#a024b7d058525dede7547de02a6281cd6", null ],
     [ "operator bool", "structetl_1_1optional_3_01T_01_6_01_4.html#ac5f6ba9600bfbced55fcfb7a9ba2c01d", null ],
     [ "has_value", "structetl_1_1optional_3_01T_01_6_01_4.html#ae9473a8d158a7ae00e3c5e2fb922a461", null ],
-    [ "value", "structetl_1_1optional_3_01T_01_6_01_4.html#ab6c8985b433ba93c4ffba0666944aaae", null ],
     [ "reset", "structetl_1_1optional_3_01T_01_6_01_4.html#a93b2db295f449df18aefe454989fe73d", null ],
     [ "swap", "structetl_1_1optional_3_01T_01_6_01_4.html#ad30c949b71f5325b4991dede18753c62", null ]
 ];

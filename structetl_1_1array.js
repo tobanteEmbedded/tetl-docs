@@ -11,8 +11,6 @@ var structetl_1_1array =
     [ "const_iterator", "structetl_1_1array.html#a11262ded26a65ad5a81df54ebbafb36a", null ],
     [ "reverse_iterator", "structetl_1_1array.html#a665a946005473c899e5d11dfc9689d15", null ],
     [ "const_reverse_iterator", "structetl_1_1array.html#a3bbf0f09574b002d051f277051e327a3", null ],
-    [ "at", "structetl_1_1array.html#a2fbc638f50ea8414194391ab8a17928c", null ],
-    [ "at", "structetl_1_1array.html#a90189e85d2fa50447a796304e2c6a8df", null ],
     [ "operator[]", "structetl_1_1array.html#a6bc42b55602ea9c9a3ddc08619788819", null ],
     [ "operator[]", "structetl_1_1array.html#a6ac316953f9fe490ffd5fc9e9b92edb3", null ],
     [ "front", "structetl_1_1array.html#af5fdce1edbd84cbe2b7e73db4cb7b2a0", null ],

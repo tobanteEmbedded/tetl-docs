@@ -145,8 +145,7 @@ $(function(){initNavTree('optional_8cpp-example.html',''); initResizable(true); 
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(opt4));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// value &amp; value_or</span></div>
-<div class="line">    <span class="keyword">static_assert</span>(optional&lt;int&gt;().value_or(1) == 1);</div>
-<div class="line">    <span class="keyword">static_assert</span>(optional&lt;int&gt;(1).value() == 1);</div>
+<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(optional&lt;int&gt;().value_or(1) == 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Fails to compile, or raises an exception if invoked at runtime</span></div>
 <div class="line">    <span class="comment">// static_assert(optional&lt;int&gt;().value());</span></div>

@@ -198,7 +198,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1bad__function__call.html">bad_function_call</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1bad__optional__access.html">bad_optional_access</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a type of object to be thrown by <a class="el" href="structetl_1_1optional.html#acd491ba0eadd7e069af95df1e99d591d" title="If *this contains a value, returns a reference to the contained value. Otherwise, raises a etl::bad_o...">etl::optional::value</a> when accessing an optional object that does not contain a value.  <a href="structetl_1_1bad__optional__access.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a type of object to be thrown by etl::optional::value when accessing an optional object that does not contain a value.  <a href="structetl_1_1bad__optional__access.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1bad__variant__access.html">bad_variant_access</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1bad__variant__access.html" title="etl::bad_variant_access is the type of the exception thrown in the following situations: (1) etl::get...">etl::bad_variant_access</a> is the type of the exception thrown in the following situations: (1) etl::get(etl::variant) called with an index or type that does not match the currently active alternative. (2) <a class="el" href="#aa43fcb4942d4cec1824f6e38edce9981" title="Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...">etl::visit</a> called to visit a variant that is valueless_by_exception  <a href="structetl_1_1bad__variant__access.html#details">More...</a><br /></td></tr>
@@ -1735,12 +1735,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aadba129a7dc760f449b09b7fafeb63a8" id="r_aadba129a7dc760f449b09b7fafeb63a8"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8">endian</a> { <a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8aaae6635e044ac56046b2893a529b5114">little</a> = implementation defined
-, <a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8ad861877da56b8b4ceb35c8cbfdf65bb4">big</a> = implementation defined
-, <a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796">native</a> = implementation defined
+<tr class="memitem:gaadba129a7dc760f449b09b7fafeb63a8" id="r_gaadba129a7dc760f449b09b7fafeb63a8"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gaadba129a7dc760f449b09b7fafeb63a8">endian</a> { <a class="el" href="group__bit-hpp.html#ggaadba129a7dc760f449b09b7fafeb63a8aaae6635e044ac56046b2893a529b5114">endian::little</a> = implementation defined
+, <a class="el" href="group__bit-hpp.html#ggaadba129a7dc760f449b09b7fafeb63a8ad861877da56b8b4ceb35c8cbfdf65bb4">endian::big</a> = implementation defined
+, <a class="el" href="group__bit-hpp.html#ggaadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796">endian::native</a> = implementation defined
  }</td></tr>
-<tr class="memdesc:aadba129a7dc760f449b09b7fafeb63a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the endianness of all scalar types. If all scalar types are little-endian, <code>endian::native</code> equals <code>endian::little</code>. If all scalar types are big-endian, <code>endian::native</code> equals <code>endian::big</code>.  <a href="#aadba129a7dc760f449b09b7fafeb63a8">More...</a><br /></td></tr>
-<tr class="separator:aadba129a7dc760f449b09b7fafeb63a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gaadba129a7dc760f449b09b7fafeb63a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the endianness of all scalar types. If all scalar types are little-endian, <code>endian::native</code> equals <code>endian::little</code>. If all scalar types are big-endian, <code>endian::native</code> equals <code>endian::big</code>.  <a href="group__bit-hpp.html#gaadba129a7dc760f449b09b7fafeb63a8">More...</a><br /></td></tr>
+<tr class="separator:gaadba129a7dc760f449b09b7fafeb63a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af524d0acb625979997f7a2dd1c0ea944" id="r_af524d0acb625979997f7a2dd1c0ea944"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af524d0acb625979997f7a2dd1c0ea944">chars_format</a> : etl::uint8_t { <a class="el" href="#af524d0acb625979997f7a2dd1c0ea944a55a95650a66b53ecbb960b53d985b964">scientific</a> = 0x1
 , <a class="el" href="#af524d0acb625979997f7a2dd1c0ea944acec315e3d0975e5cc2811d5d8725f149">fixed</a> = 0x2
 , <a class="el" href="#af524d0acb625979997f7a2dd1c0ea944ab8d1b43eae73587ba56baef574709ecb">hex</a> = 0x4
@@ -1882,13 +1882,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a46270726b5073fd6eeefb5ccd9ed1f72" id="r_a46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </td></tr>
-<tr class="memitem:a46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last, <a class="el" href="structetl_1_1static__vector.html">Compare</a> <a class="el" href="structetl_1_1static__vector.html">comp</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
-<tr class="memdesc:a46270726b5073fd6eeefb5ccd9ed1f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the range <code>[first, last)</code> in non-descending order. The order of equal elements is guaranteed to be preserved. <a href="https://en.wikipedia.org/wiki/Bubble_sort">https://en.wikipedia.org/wiki/Bubble_sort</a>.  <br /></td></tr>
-<tr class="separator:a46270726b5073fd6eeefb5ccd9ed1f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc149eb7abea4405c02e767e7860dae" id="r_a1cc149eb7abea4405c02e767e7860dae"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> &gt; </td></tr>
-<tr class="memitem:a1cc149eb7abea4405c02e767e7860dae"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1cc149eb7abea4405c02e767e7860dae">bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
-<tr class="separator:a1cc149eb7abea4405c02e767e7860dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9162720047d01bb438874bf56df5d2" id="r_a3f9162720047d01bb438874bf56df5d2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">InputIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:a3f9162720047d01bb438874bf56df5d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3f9162720047d01bb438874bf56df5d2">count</a> (<a class="el" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="el" href="structetl_1_1static__vector.html">InputIt</a> last, T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;value) -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1iterator__traits.html">iterator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">InputIt</a> &gt;::difference_type</td></tr>
 <tr class="memdesc:a3f9162720047d01bb438874bf56df5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the range <code>[first, last)</code> satisfying specific criteria. Counts the elements that are equal to value.  <br /></td></tr>
@@ -2300,53 +2293,53 @@ Functions</h2></td></tr>
 <tr class="memitem:a3448c90cac95ec2e155cf8ac02b6c592" id="r_a3448c90cac95ec2e155cf8ac02b6c592"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:a3448c90cac95ec2e155cf8ac02b6c592"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3448c90cac95ec2e155cf8ac02b6c592">upper_bound</a> (<a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> last, T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;value) -&gt; <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a></td></tr>
 <tr class="separator:a3448c90cac95ec2e155cf8ac02b6c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4070f4c004b740cd8c1b913db783dfb8" id="r_a4070f4c004b740cd8c1b913db783dfb8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">From</a> &gt; <br />
+<tr class="memitem:ga4070f4c004b740cd8c1b913db783dfb8" id="r_ga4070f4c004b740cd8c1b913db783dfb8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">From</a> &gt; <br />
 requires (detail::bit_castable_types&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>, <a class="el" href="structetl_1_1static__vector.html">From</a>&gt;)</td></tr>
-<tr class="memitem:a4070f4c004b740cd8c1b913db783dfb8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4070f4c004b740cd8c1b913db783dfb8">bit_cast</a> (<a class="el" href="structetl_1_1static__vector.html">From</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">src</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">To</a></td></tr>
-<tr class="memdesc:a4070f4c004b740cd8c1b913db783dfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
-<tr class="separator:a4070f4c004b740cd8c1b913db783dfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa397d9f8380425b5e72d55d7f7f16b10" id="r_aa397d9f8380425b5e72d55d7f7f16b10"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:aa397d9f8380425b5e72d55d7f7f16b10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa397d9f8380425b5e72d55d7f7f16b10">bit_ceil</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; UInt</td></tr>
-<tr class="memdesc:aa397d9f8380425b5e72d55d7f7f16b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the smallest integral power of two that is not smaller than x. If that value is not representable in UInt, the behavior is undefined. Call to this function is permitted in constant evaluation only if the undefined behavior does not occur.  <br /></td></tr>
-<tr class="separator:aa397d9f8380425b5e72d55d7f7f16b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344157c15560dd640719de8ecf9a311a" id="r_a344157c15560dd640719de8ecf9a311a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a344157c15560dd640719de8ecf9a311a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a344157c15560dd640719de8ecf9a311a">bit_floor</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; UInt</td></tr>
-<tr class="memdesc:a344157c15560dd640719de8ecf9a311a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If x is not zero, calculates the largest integral power of two that is not greater than x. If x is zero, returns zero.  <br /></td></tr>
-<tr class="separator:a344157c15560dd640719de8ecf9a311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9cca4b68917b48f46849a03007d9a9" id="r_a7f9cca4b68917b48f46849a03007d9a9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a7f9cca4b68917b48f46849a03007d9a9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7f9cca4b68917b48f46849a03007d9a9">bit_width</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:a7f9cca4b68917b48f46849a03007d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If x is not zero, calculates the number of bits needed to store the value x, that is, 1+⌊log2(x)⌋. If x is zero, returns zero.  <br /></td></tr>
-<tr class="separator:a7f9cca4b68917b48f46849a03007d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4adeee8eaea36f5d0716abfe81148ba" id="r_ad4adeee8eaea36f5d0716abfe81148ba"><td class="memTemplParams" colspan="2">template&lt;integral T&gt; </td></tr>
-<tr class="memitem:ad4adeee8eaea36f5d0716abfe81148ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad4adeee8eaea36f5d0716abfe81148ba">byteswap</a> (T val) noexcept -&gt; T</td></tr>
-<tr class="memdesc:ad4adeee8eaea36f5d0716abfe81148ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the bytes in the given integer value n.  <br /></td></tr>
-<tr class="separator:ad4adeee8eaea36f5d0716abfe81148ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ce080db93d1da7b7ac5322f3edab4fa" id="r_a4ce080db93d1da7b7ac5322f3edab4fa"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a4ce080db93d1da7b7ac5322f3edab4fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4ce080db93d1da7b7ac5322f3edab4fa">countl_one</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:a4ce080db93d1da7b7ac5322f3edab4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 1 ("one") bits in the value of x, starting from the most significant bit ("left").  <br /></td></tr>
-<tr class="separator:a4ce080db93d1da7b7ac5322f3edab4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6df380fce74364ad8da2b39c516c24e" id="r_ac6df380fce74364ad8da2b39c516c24e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:ac6df380fce74364ad8da2b39c516c24e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac6df380fce74364ad8da2b39c516c24e">countl_zero</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:ac6df380fce74364ad8da2b39c516c24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 0 bits in the value of x, starting from the most significant bit ("left").  <br /></td></tr>
-<tr class="separator:ac6df380fce74364ad8da2b39c516c24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3fbba99f7fed7abe96381c03de2e54" id="r_a0e3fbba99f7fed7abe96381c03de2e54"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a0e3fbba99f7fed7abe96381c03de2e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0e3fbba99f7fed7abe96381c03de2e54">countr_one</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:a0e3fbba99f7fed7abe96381c03de2e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 1 bits in the value of x, starting from the least significant bit ("right").  <br /></td></tr>
-<tr class="separator:a0e3fbba99f7fed7abe96381c03de2e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5490ba02f948e6f27acbe515d47eab" id="r_a9a5490ba02f948e6f27acbe515d47eab"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a9a5490ba02f948e6f27acbe515d47eab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9a5490ba02f948e6f27acbe515d47eab">countr_zero</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:a9a5490ba02f948e6f27acbe515d47eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit ("right").  <br /></td></tr>
-<tr class="separator:a9a5490ba02f948e6f27acbe515d47eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0997ae09365ac687cb26999f55fbe724" id="r_a0997ae09365ac687cb26999f55fbe724"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a0997ae09365ac687cb26999f55fbe724"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0997ae09365ac687cb26999f55fbe724">flip_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
-<tr class="separator:a0997ae09365ac687cb26999f55fbe724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4862a11212e1db1497182b3c5e7acab4" id="r_a4862a11212e1db1497182b3c5e7acab4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a4862a11212e1db1497182b3c5e7acab4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4862a11212e1db1497182b3c5e7acab4">flip_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
-<tr class="separator:a4862a11212e1db1497182b3c5e7acab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af064bf9681c55a5f04915eeceb13348a" id="r_af064bf9681c55a5f04915eeceb13348a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:af064bf9681c55a5f04915eeceb13348a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af064bf9681c55a5f04915eeceb13348a">has_single_bit</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
-<tr class="memdesc:af064bf9681c55a5f04915eeceb13348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if x is an integral power of two.  <br /></td></tr>
-<tr class="separator:af064bf9681c55a5f04915eeceb13348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4070f4c004b740cd8c1b913db783dfb8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga4070f4c004b740cd8c1b913db783dfb8">bit_cast</a> (<a class="el" href="structetl_1_1static__vector.html">From</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">src</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">To</a></td></tr>
+<tr class="memdesc:ga4070f4c004b740cd8c1b913db783dfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
+<tr class="separator:ga4070f4c004b740cd8c1b913db783dfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa397d9f8380425b5e72d55d7f7f16b10" id="r_gaa397d9f8380425b5e72d55d7f7f16b10"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gaa397d9f8380425b5e72d55d7f7f16b10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gaa397d9f8380425b5e72d55d7f7f16b10">bit_ceil</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; UInt</td></tr>
+<tr class="memdesc:gaa397d9f8380425b5e72d55d7f7f16b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the smallest integral power of two that is not smaller than x. If that value is not representable in UInt, the behavior is undefined. Call to this function is permitted in constant evaluation only if the undefined behavior does not occur.  <br /></td></tr>
+<tr class="separator:gaa397d9f8380425b5e72d55d7f7f16b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga344157c15560dd640719de8ecf9a311a" id="r_ga344157c15560dd640719de8ecf9a311a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga344157c15560dd640719de8ecf9a311a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga344157c15560dd640719de8ecf9a311a">bit_floor</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; UInt</td></tr>
+<tr class="memdesc:ga344157c15560dd640719de8ecf9a311a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If x is not zero, calculates the largest integral power of two that is not greater than x. If x is zero, returns zero.  <br /></td></tr>
+<tr class="separator:ga344157c15560dd640719de8ecf9a311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f9cca4b68917b48f46849a03007d9a9" id="r_ga7f9cca4b68917b48f46849a03007d9a9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga7f9cca4b68917b48f46849a03007d9a9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga7f9cca4b68917b48f46849a03007d9a9">bit_width</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:ga7f9cca4b68917b48f46849a03007d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If x is not zero, calculates the number of bits needed to store the value x, that is, 1+⌊log2(x)⌋. If x is zero, returns zero.  <br /></td></tr>
+<tr class="separator:ga7f9cca4b68917b48f46849a03007d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4adeee8eaea36f5d0716abfe81148ba" id="r_gad4adeee8eaea36f5d0716abfe81148ba"><td class="memTemplParams" colspan="2">template&lt;integral T&gt; </td></tr>
+<tr class="memitem:gad4adeee8eaea36f5d0716abfe81148ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gad4adeee8eaea36f5d0716abfe81148ba">byteswap</a> (T val) noexcept -&gt; T</td></tr>
+<tr class="memdesc:gad4adeee8eaea36f5d0716abfe81148ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the bytes in the given integer value n.  <br /></td></tr>
+<tr class="separator:gad4adeee8eaea36f5d0716abfe81148ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ce080db93d1da7b7ac5322f3edab4fa" id="r_ga4ce080db93d1da7b7ac5322f3edab4fa"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga4ce080db93d1da7b7ac5322f3edab4fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga4ce080db93d1da7b7ac5322f3edab4fa">countl_one</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:ga4ce080db93d1da7b7ac5322f3edab4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 1 ("one") bits in the value of x, starting from the most significant bit ("left").  <br /></td></tr>
+<tr class="separator:ga4ce080db93d1da7b7ac5322f3edab4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6df380fce74364ad8da2b39c516c24e" id="r_gac6df380fce74364ad8da2b39c516c24e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gac6df380fce74364ad8da2b39c516c24e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gac6df380fce74364ad8da2b39c516c24e">countl_zero</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:gac6df380fce74364ad8da2b39c516c24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 0 bits in the value of x, starting from the most significant bit ("left").  <br /></td></tr>
+<tr class="separator:gac6df380fce74364ad8da2b39c516c24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e3fbba99f7fed7abe96381c03de2e54" id="r_ga0e3fbba99f7fed7abe96381c03de2e54"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga0e3fbba99f7fed7abe96381c03de2e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga0e3fbba99f7fed7abe96381c03de2e54">countr_one</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:ga0e3fbba99f7fed7abe96381c03de2e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 1 bits in the value of x, starting from the least significant bit ("right").  <br /></td></tr>
+<tr class="separator:ga0e3fbba99f7fed7abe96381c03de2e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a5490ba02f948e6f27acbe515d47eab" id="r_ga9a5490ba02f948e6f27acbe515d47eab"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga9a5490ba02f948e6f27acbe515d47eab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga9a5490ba02f948e6f27acbe515d47eab">countr_zero</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:ga9a5490ba02f948e6f27acbe515d47eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit ("right").  <br /></td></tr>
+<tr class="separator:ga9a5490ba02f948e6f27acbe515d47eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0997ae09365ac687cb26999f55fbe724" id="r_ga0997ae09365ac687cb26999f55fbe724"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga0997ae09365ac687cb26999f55fbe724"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga0997ae09365ac687cb26999f55fbe724">flip_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
+<tr class="separator:ga0997ae09365ac687cb26999f55fbe724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4862a11212e1db1497182b3c5e7acab4" id="r_ga4862a11212e1db1497182b3c5e7acab4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga4862a11212e1db1497182b3c5e7acab4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga4862a11212e1db1497182b3c5e7acab4">flip_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
+<tr class="separator:ga4862a11212e1db1497182b3c5e7acab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf064bf9681c55a5f04915eeceb13348a" id="r_gaf064bf9681c55a5f04915eeceb13348a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gaf064bf9681c55a5f04915eeceb13348a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gaf064bf9681c55a5f04915eeceb13348a">has_single_bit</a> (UInt <a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="memdesc:gaf064bf9681c55a5f04915eeceb13348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if x is an integral power of two.  <br /></td></tr>
+<tr class="separator:gaf064bf9681c55a5f04915eeceb13348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec2a511f8b5137e02416b9e4e8dc237" id="r_a6ec2a511f8b5137e02416b9e4e8dc237"><td class="memTemplParams" colspan="2">template&lt;bitmask_type T&gt; </td></tr>
 <tr class="memitem:a6ec2a511f8b5137e02416b9e4e8dc237"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6ec2a511f8b5137e02416b9e4e8dc237">operator&amp;</a> (T <a class="el" href="structetl_1_1static__vector.html">x</a>, T y) -&gt; T</td></tr>
 <tr class="separator:a6ec2a511f8b5137e02416b9e4e8dc237"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2368,36 +2361,36 @@ requires (detail::bit_castable_types&lt;<a class="el" href="structetl_1_1static_
 <tr class="memitem:a79f94aefe628a0474274befd3437bf64" id="r_a79f94aefe628a0474274befd3437bf64"><td class="memTemplParams" colspan="2">template&lt;bitmask_type T&gt; </td></tr>
 <tr class="memitem:a79f94aefe628a0474274befd3437bf64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79f94aefe628a0474274befd3437bf64">operator^=</a> (T &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, T y) noexcept -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td></tr>
 <tr class="separator:a79f94aefe628a0474274befd3437bf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e754daac238cd635c52a571019370d9" id="r_a9e754daac238cd635c52a571019370d9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a9e754daac238cd635c52a571019370d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9e754daac238cd635c52a571019370d9">popcount</a> (UInt val) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
-<tr class="memdesc:a9e754daac238cd635c52a571019370d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of 1 bits in the value of x.  <br /></td></tr>
-<tr class="separator:a9e754daac238cd635c52a571019370d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9159d861c5d8c5ed5708b8381fa19a" id="r_ace9159d861c5d8c5ed5708b8381fa19a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:ace9159d861c5d8c5ed5708b8381fa19a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ace9159d861c5d8c5ed5708b8381fa19a">reset_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
-<tr class="separator:ace9159d861c5d8c5ed5708b8381fa19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd9ef98d7cd14ca276c8df92dc00a64" id="r_aecd9ef98d7cd14ca276c8df92dc00a64"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:aecd9ef98d7cd14ca276c8df92dc00a64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aecd9ef98d7cd14ca276c8df92dc00a64">reset_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
-<tr class="separator:aecd9ef98d7cd14ca276c8df92dc00a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bbf35871b94190f98acbfc57d75c63c" id="r_a0bbf35871b94190f98acbfc57d75c63c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a0bbf35871b94190f98acbfc57d75c63c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0bbf35871b94190f98acbfc57d75c63c">rotl</a> (UInt <a class="el" href="structetl_1_1static__vector.html">t</a>, <a class="el" href="structetl_1_1static__vector.html">int</a> <a class="el" href="structetl_1_1static__vector.html">s</a>) noexcept -&gt; UInt</td></tr>
-<tr class="memdesc:a0bbf35871b94190f98acbfc57d75c63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of bitwise left-rotating the value of x by s positions. This operation is also known as a left circular shift.  <br /></td></tr>
-<tr class="separator:a0bbf35871b94190f98acbfc57d75c63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ebdfe26048f199e0778622f63a6653" id="r_a74ebdfe26048f199e0778622f63a6653"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a74ebdfe26048f199e0778622f63a6653"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a74ebdfe26048f199e0778622f63a6653">rotr</a> (UInt <a class="el" href="structetl_1_1static__vector.html">t</a>, <a class="el" href="structetl_1_1static__vector.html">int</a> <a class="el" href="structetl_1_1static__vector.html">s</a>) noexcept -&gt; UInt</td></tr>
-<tr class="memdesc:a74ebdfe26048f199e0778622f63a6653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of bitwise right-rotating the value of x by s positions. This operation is also known as a right circular shift.  <br /></td></tr>
-<tr class="separator:a74ebdfe26048f199e0778622f63a6653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8da66a736f8e15a2cf4dd681f6ab863" id="r_af8da66a736f8e15a2cf4dd681f6ab863"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:af8da66a736f8e15a2cf4dd681f6ab863"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af8da66a736f8e15a2cf4dd681f6ab863">set_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
-<tr class="separator:af8da66a736f8e15a2cf4dd681f6ab863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a5560970454768aa47bb8d4c5722ee" id="r_a84a5560970454768aa47bb8d4c5722ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a84a5560970454768aa47bb8d4c5722ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a84a5560970454768aa47bb8d4c5722ee">set_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
-<tr class="separator:a84a5560970454768aa47bb8d4c5722ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6446130881cadc4edfba7f0ec4b01d5f" id="r_a6446130881cadc4edfba7f0ec4b01d5f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a6446130881cadc4edfba7f0ec4b01d5f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6446130881cadc4edfba7f0ec4b01d5f">test_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
-<tr class="separator:a6446130881cadc4edfba7f0ec4b01d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d062f57d0edbd6d850d13e600e385ee" id="r_a4d062f57d0edbd6d850d13e600e385ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
-<tr class="memitem:a4d062f57d0edbd6d850d13e600e385ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4d062f57d0edbd6d850d13e600e385ee">test_bit</a> (UInt val) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
-<tr class="separator:a4d062f57d0edbd6d850d13e600e385ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e754daac238cd635c52a571019370d9" id="r_ga9e754daac238cd635c52a571019370d9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga9e754daac238cd635c52a571019370d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga9e754daac238cd635c52a571019370d9">popcount</a> (UInt val) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a></td></tr>
+<tr class="memdesc:ga9e754daac238cd635c52a571019370d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of 1 bits in the value of x.  <br /></td></tr>
+<tr class="separator:ga9e754daac238cd635c52a571019370d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace9159d861c5d8c5ed5708b8381fa19a" id="r_gace9159d861c5d8c5ed5708b8381fa19a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gace9159d861c5d8c5ed5708b8381fa19a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gace9159d861c5d8c5ed5708b8381fa19a">reset_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
+<tr class="separator:gace9159d861c5d8c5ed5708b8381fa19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecd9ef98d7cd14ca276c8df92dc00a64" id="r_gaecd9ef98d7cd14ca276c8df92dc00a64"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gaecd9ef98d7cd14ca276c8df92dc00a64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gaecd9ef98d7cd14ca276c8df92dc00a64">reset_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
+<tr class="separator:gaecd9ef98d7cd14ca276c8df92dc00a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bbf35871b94190f98acbfc57d75c63c" id="r_ga0bbf35871b94190f98acbfc57d75c63c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga0bbf35871b94190f98acbfc57d75c63c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga0bbf35871b94190f98acbfc57d75c63c">rotl</a> (UInt <a class="el" href="structetl_1_1static__vector.html">t</a>, <a class="el" href="structetl_1_1static__vector.html">int</a> <a class="el" href="structetl_1_1static__vector.html">s</a>) noexcept -&gt; UInt</td></tr>
+<tr class="memdesc:ga0bbf35871b94190f98acbfc57d75c63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of bitwise left-rotating the value of x by s positions. This operation is also known as a left circular shift.  <br /></td></tr>
+<tr class="separator:ga0bbf35871b94190f98acbfc57d75c63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74ebdfe26048f199e0778622f63a6653" id="r_ga74ebdfe26048f199e0778622f63a6653"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga74ebdfe26048f199e0778622f63a6653"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga74ebdfe26048f199e0778622f63a6653">rotr</a> (UInt <a class="el" href="structetl_1_1static__vector.html">t</a>, <a class="el" href="structetl_1_1static__vector.html">int</a> <a class="el" href="structetl_1_1static__vector.html">s</a>) noexcept -&gt; UInt</td></tr>
+<tr class="memdesc:ga74ebdfe26048f199e0778622f63a6653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of bitwise right-rotating the value of x by s positions. This operation is also known as a right circular shift.  <br /></td></tr>
+<tr class="separator:ga74ebdfe26048f199e0778622f63a6653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8da66a736f8e15a2cf4dd681f6ab863" id="r_gaf8da66a736f8e15a2cf4dd681f6ab863"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:gaf8da66a736f8e15a2cf4dd681f6ab863"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#gaf8da66a736f8e15a2cf4dd681f6ab863">set_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; UInt</td></tr>
+<tr class="separator:gaf8da66a736f8e15a2cf4dd681f6ab863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a5560970454768aa47bb8d4c5722ee" id="r_ga84a5560970454768aa47bb8d4c5722ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga84a5560970454768aa47bb8d4c5722ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga84a5560970454768aa47bb8d4c5722ee">set_bit</a> (UInt val) noexcept -&gt; UInt</td></tr>
+<tr class="separator:ga84a5560970454768aa47bb8d4c5722ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6446130881cadc4edfba7f0ec4b01d5f" id="r_ga6446130881cadc4edfba7f0ec4b01d5f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga6446130881cadc4edfba7f0ec4b01d5f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga6446130881cadc4edfba7f0ec4b01d5f">test_bit</a> (UInt val, UInt <a class="el" href="structetl_1_1static__vector.html">bit</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ga6446130881cadc4edfba7f0ec4b01d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d062f57d0edbd6d850d13e600e385ee" id="r_ga4d062f57d0edbd6d850d13e600e385ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
+<tr class="memitem:ga4d062f57d0edbd6d850d13e600e385ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit-hpp.html#ga4d062f57d0edbd6d850d13e600e385ee">test_bit</a> (UInt val) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ga4d062f57d0edbd6d850d13e600e385ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eaaf991a15c82d1ea08c9932f513126" id="r_a6eaaf991a15c82d1ea08c9932f513126"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> N&gt; </td></tr>
 <tr class="memitem:a6eaaf991a15c82d1ea08c9932f513126"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6eaaf991a15c82d1ea08c9932f513126">operator&amp;</a> (<a class="el" href="structetl_1_1bitset.html">bitset</a>&lt; <a class="el" href="structetl_1_1static__vector.html">N</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1bitset.html">bitset</a>&lt; <a class="el" href="structetl_1_1static__vector.html">N</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">bitset</a>&lt; <a class="el" href="structetl_1_1static__vector.html">N</a> &gt;</td></tr>
 <tr class="memdesc:a6eaaf991a15c82d1ea08c9932f513126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs binary AND between two bitsets, lhs and rhs.  <br /></td></tr>
@@ -4145,7 +4138,6 @@ requires (<a class="el" href="#a0ef2a50a29c8803d461abedd7437effd">etl::is_integr
 <tr class="memitem:a8905c086d6212eea0b6237e7f6e9bb10" id="r_a8905c086d6212eea0b6237e7f6e9bb10"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Ptr</a> &gt; <br />
 requires <a class="el" href="#ac00eca7d51c4d2c1021402ee9a70f03c">etl::is_pointer_v</a>&lt;<a class="el" href="structetl_1_1static__vector.html">Ptr</a>&gt;</td></tr>
 <tr class="memitem:a8905c086d6212eea0b6237e7f6e9bb10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8905c086d6212eea0b6237e7f6e9bb10">midpoint</a> (<a class="el" href="structetl_1_1static__vector.html">Ptr</a> a, <a class="el" href="structetl_1_1static__vector.html">Ptr</a> b) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">Ptr</a></td></tr>
-<tr class="memdesc:a8905c086d6212eea0b6237e7f6e9bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">\synopsis_return Ptr  <br /></td></tr>
 <tr class="separator:a8905c086d6212eea0b6237e7f6e9bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a717726a2fed08cececaa93b504419300" id="r_a717726a2fed08cececaa93b504419300"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">InputIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">OutputIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">BinaryOperation</a> &gt; </td></tr>
 <tr class="memitem:a717726a2fed08cececaa93b504419300"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a717726a2fed08cececaa93b504419300">partial_sum</a> (<a class="el" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="el" href="structetl_1_1static__vector.html">InputIt</a> last, <a class="el" href="structetl_1_1static__vector.html">OutputIt</a> <a class="el" href="structetl_1_1static__vector.html">destination</a>, <a class="el" href="structetl_1_1static__vector.html">BinaryOperation</a> <a class="el" href="structetl_1_1static__vector.html">op</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">OutputIt</a></td></tr>
@@ -4975,6 +4967,14 @@ requires (detail::enable_variant_swap&lt;Ts...&gt;)</td></tr>
 <tr class="memitem:gadb446f356892ac1d540180018a20faba" id="r_gadb446f356892ac1d540180018a20faba"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:gadb446f356892ac1d540180018a20faba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-hpp.html#gadb446f356892ac1d540180018a20faba">binary_search</a> (<a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="el" href="structetl_1_1static__vector.html">ForwardIt</a> last, T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;value) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
 <tr class="separator:gadb446f356892ac1d540180018a20faba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ga46270726b5073fd6eeefb5ccd9ed1f72" id="r_ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </td></tr>
+<tr class="memitem:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-hpp.html#ga46270726b5073fd6eeefb5ccd9ed1f72">bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last, <a class="el" href="structetl_1_1static__vector.html">Compare</a> <a class="el" href="structetl_1_1static__vector.html">comp</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="memdesc:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the range <code>[first, last)</code> in non-descending order. The order of equal elements is guaranteed to be preserved.  <br /></td></tr>
+<tr class="separator:ga46270726b5073fd6eeefb5ccd9ed1f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc149eb7abea4405c02e767e7860dae" id="r_ga1cc149eb7abea4405c02e767e7860dae"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> &gt; </td></tr>
+<tr class="memitem:ga1cc149eb7abea4405c02e767e7860dae"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-hpp.html#ga1cc149eb7abea4405c02e767e7860dae">bubble_sort</a> (<a class="el" href="structetl_1_1static__vector.html">RandomIt</a> first, <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> last) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="separator:ga1cc149eb7abea4405c02e767e7860dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:gabfa416a307b0bb33666d34845c42ba2b" id="r_gabfa416a307b0bb33666d34845c42ba2b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </td></tr>
 <tr class="memitem:gabfa416a307b0bb33666d34845c42ba2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm-hpp.html#gabfa416a307b0bb33666d34845c42ba2b">clamp</a> (<a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lo</a>, <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">hi</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> <a class="el" href="structetl_1_1static__vector.html">comp</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">Type</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td></tr>
@@ -7254,36 +7254,6 @@ template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t<
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="aadba129a7dc760f449b09b7fafeb63a8" name="aadba129a7dc760f449b09b7fafeb63a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadba129a7dc760f449b09b7fafeb63a8">&#9670;&#160;</a></span>endian</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">enum</a> <a class="el" href="structetl_1_1static__vector.html">struct</a> <a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8">etl::endian</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Indicates the endianness of all scalar types. If all scalar types are little-endian, <code><a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796">endian::native</a></code> equals <code><a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8aaae6635e044ac56046b2893a529b5114">endian::little</a></code>. If all scalar types are big-endian, <code><a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796">endian::native</a></code> equals <code><a class="el" href="#aadba129a7dc760f449b09b7fafeb63a8ad861877da56b8b4ceb35c8cbfdf65bb4">endian::big</a></code>. </p>
-<p><a href="https://en.cppreference.com/w/cpp/types/endian">https://en.cppreference.com/w/cpp/types/endian</a> </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aadba129a7dc760f449b09b7fafeb63a8aaae6635e044ac56046b2893a529b5114" name="aadba129a7dc760f449b09b7fafeb63a8aaae6635e044ac56046b2893a529b5114"></a>little&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aadba129a7dc760f449b09b7fafeb63a8ad861877da56b8b4ceb35c8cbfdf65bb4" name="aadba129a7dc760f449b09b7fafeb63a8ad861877da56b8b4ceb35c8cbfdf65bb4"></a>big&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796" name="aadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796"></a>native&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="af524d0acb625979997f7a2dd1c0ea944" name="af524d0acb625979997f7a2dd1c0ea944"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af524d0acb625979997f7a2dd1c0ea944">&#9670;&#160;</a></span>chars_format</h2>
 
@@ -7539,77 +7509,6 @@ template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t<
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a46270726b5073fd6eeefb5ccd9ed1f72" name="a46270726b5073fd6eeefb5ccd9ed1f72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46270726b5073fd6eeefb5ccd9ed1f72">&#9670;&#160;</a></span>bubble_sort() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bubble_sort </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Compare</a></td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sorts the elements in the range <code>[first, last)</code> in non-descending order. The order of equal elements is guaranteed to be preserved. <a href="https://en.wikipedia.org/wiki/Bubble_sort">https://en.wikipedia.org/wiki/Bubble_sort</a>. </p>
-
-</div>
-</div>
-<a id="a1cc149eb7abea4405c02e767e7860dae" name="a1cc149eb7abea4405c02e767e7860dae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cc149eb7abea4405c02e767e7860dae">&#9670;&#160;</a></span>bubble_sort() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">RandomIt</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bubble_sort </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">RandomIt</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3f9162720047d01bb438874bf56df5d2" name="a3f9162720047d01bb438874bf56df5d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f9162720047d01bb438874bf56df5d2">&#9670;&#160;</a></span>count()</h2>
 
@@ -12342,386 +12241,6 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 </div>
 </div>
-<a id="a4070f4c004b740cd8c1b913db783dfb8" name="a4070f4c004b740cd8c1b913db783dfb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4070f4c004b740cd8c1b913db783dfb8">&#9670;&#160;</a></span>bit_cast()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">From</a> &gt; <br />
-requires (detail::bit_castable_types&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>, <a class="el" href="structetl_1_1static__vector.html">From</a>&gt;)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bit_cast </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">From</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>src</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">To</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from. </p>
-<p>The values of padding bits in the returned To object are unspecified. If there is no value of type To corresponding to the value representation produced, the behavior is undefined. If there are multiple such values, which value is produced is unspecified. This overload only participates in overload resolution if sizeof(To) == sizeof(From) and both To and From are TriviallyCopyable types.</p>
-<p><a href="https://en.cppreference.com/w/cpp/numeric/bit_cast">https://en.cppreference.com/w/cpp/numeric/bit_cast</a> </p>
-
-</div>
-</div>
-<a id="aa397d9f8380425b5e72d55d7f7f16b10" name="aa397d9f8380425b5e72d55d7f7f16b10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa397d9f8380425b5e72d55d7f7f16b10">&#9670;&#160;</a></span>bit_ceil()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bit_ceil </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculates the smallest integral power of two that is not smaller than x. If that value is not representable in UInt, the behavior is undefined. Call to this function is permitted in constant evaluation only if the undefined behavior does not occur. </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>The smallest integral power of two that is not smaller than x. </dd></dl>
-
-</div>
-</div>
-<a id="a344157c15560dd640719de8ecf9a311a" name="a344157c15560dd640719de8ecf9a311a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a344157c15560dd640719de8ecf9a311a">&#9670;&#160;</a></span>bit_floor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bit_floor </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If x is not zero, calculates the largest integral power of two that is not greater than x. If x is zero, returns zero. </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>Zero if x is zero; otherwise, the largest integral power of two that is not greater than x. </dd></dl>
-
-</div>
-</div>
-<a id="a7f9cca4b68917b48f46849a03007d9a9" name="a7f9cca4b68917b48f46849a03007d9a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f9cca4b68917b48f46849a03007d9a9">&#9670;&#160;</a></span>bit_width()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::bit_width </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If x is not zero, calculates the number of bits needed to store the value x, that is, 1+⌊log2(x)⌋. If x is zero, returns zero. </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type). </p>
-
-</div>
-</div>
-<a id="ad4adeee8eaea36f5d0716abfe81148ba" name="ad4adeee8eaea36f5d0716abfe81148ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4adeee8eaea36f5d0716abfe81148ba">&#9670;&#160;</a></span>byteswap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;integral T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::byteswap </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; T
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reverses the bytes in the given integer value n. </p>
-<p><a class="el" href="#ad4adeee8eaea36f5d0716abfe81148ba" title="Reverses the bytes in the given integer value n.">etl::byteswap</a> participates in overload resolution only if T satisfies integral, i.e., T is an integer type. The program is ill-formed if T has padding bits.</p>
-<p><a href="https://en.cppreference.com/w/cpp/numeric/byteswap">https://en.cppreference.com/w/cpp/numeric/byteswap</a> </p>
-
-</div>
-</div>
-<a id="a4ce080db93d1da7b7ac5322f3edab4fa" name="a4ce080db93d1da7b7ac5322f3edab4fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ce080db93d1da7b7ac5322f3edab4fa">&#9670;&#160;</a></span>countl_one()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::countl_one </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of consecutive 1 ("one") bits in the value of x, starting from the most significant bit ("left"). </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>The number of consecutive 1 bits in the value of x, starting from the most significant bit. </dd></dl>
-
-</div>
-</div>
-<a id="ac6df380fce74364ad8da2b39c516c24e" name="ac6df380fce74364ad8da2b39c516c24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6df380fce74364ad8da2b39c516c24e">&#9670;&#160;</a></span>countl_zero()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::countl_zero </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of consecutive 0 bits in the value of x, starting from the most significant bit ("left"). </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>The number of consecutive 0 bits in the value of x, starting from the most significant bit. </dd></dl>
-
-</div>
-</div>
-<a id="a0e3fbba99f7fed7abe96381c03de2e54" name="a0e3fbba99f7fed7abe96381c03de2e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e3fbba99f7fed7abe96381c03de2e54">&#9670;&#160;</a></span>countr_one()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::countr_one </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of consecutive 1 bits in the value of x, starting from the least significant bit ("right"). </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>The number of consecutive 1 bits in the value of x, starting from the least significant bit. </dd></dl>
-
-</div>
-</div>
-<a id="a9a5490ba02f948e6f27acbe515d47eab" name="a9a5490ba02f948e6f27acbe515d47eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a5490ba02f948e6f27acbe515d47eab">&#9670;&#160;</a></span>countr_zero()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::countr_zero </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of consecutive 0 bits in the value of x, starting from the least significant bit ("right"). </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>The number of consecutive 0 bits in the value of x, starting from the least significant bit. </dd></dl>
-
-</div>
-</div>
-<a id="a0997ae09365ac687cb26999f55fbe724" name="a0997ae09365ac687cb26999f55fbe724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0997ae09365ac687cb26999f55fbe724">&#9670;&#160;</a></span>flip_bit() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::flip_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;) -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4862a11212e1db1497182b3c5e7acab4" name="a4862a11212e1db1497182b3c5e7acab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4862a11212e1db1497182b3c5e7acab4">&#9670;&#160;</a></span>flip_bit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::flip_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af064bf9681c55a5f04915eeceb13348a" name="af064bf9681c55a5f04915eeceb13348a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af064bf9681c55a5f04915eeceb13348a">&#9670;&#160;</a></span>has_single_bit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::has_single_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if x is an integral power of two. </p>
-<p>This overload only participates in overload resolution if T is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type).</p>
-<dl class="section return"><dt>Returns</dt><dd>true if x is an integral power of two; otherwise false. </dd></dl>
-
-</div>
-</div>
 <a id="a6ec2a511f8b5137e02416b9e4e8dc237" name="a6ec2a511f8b5137e02416b9e4e8dc237"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ec2a511f8b5137e02416b9e4e8dc237">&#9670;&#160;</a></span>operator&amp;() <span class="overload">[1/3]</span></h2>
 
@@ -12936,285 +12455,6 @@ template&lt;bitmask_type T&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9e754daac238cd635c52a571019370d9" name="a9e754daac238cd635c52a571019370d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e754daac238cd635c52a571019370d9">&#9670;&#160;</a></span>popcount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::popcount </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">int</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of 1 bits in the value of x. </p>
-<p>This overload only participates in overload resolution if UInt is an unsigned integer type (that is, unsigned char, unsigned short, unsigned int, unsigned long, unsigned long long, or an extended unsigned integer type). </p>
-
-</div>
-</div>
-<a id="ace9159d861c5d8c5ed5708b8381fa19a" name="ace9159d861c5d8c5ed5708b8381fa19a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace9159d861c5d8c5ed5708b8381fa19a">&#9670;&#160;</a></span>reset_bit() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::reset_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;) -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aecd9ef98d7cd14ca276c8df92dc00a64" name="aecd9ef98d7cd14ca276c8df92dc00a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecd9ef98d7cd14ca276c8df92dc00a64">&#9670;&#160;</a></span>reset_bit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::reset_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0bbf35871b94190f98acbfc57d75c63c" name="a0bbf35871b94190f98acbfc57d75c63c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bbf35871b94190f98acbfc57d75c63c">&#9670;&#160;</a></span>rotl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::rotl </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">int</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;) -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the result of bitwise left-rotating the value of x by s positions. This operation is also known as a left circular shift. </p>
-
-</div>
-</div>
-<a id="a74ebdfe26048f199e0778622f63a6653" name="a74ebdfe26048f199e0778622f63a6653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74ebdfe26048f199e0778622f63a6653">&#9670;&#160;</a></span>rotr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::rotr </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">int</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;) -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the result of bitwise right-rotating the value of x by s positions. This operation is also known as a right circular shift. </p>
-
-</div>
-</div>
-<a id="af8da66a736f8e15a2cf4dd681f6ab863" name="af8da66a736f8e15a2cf4dd681f6ab863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8da66a736f8e15a2cf4dd681f6ab863">&#9670;&#160;</a></span>set_bit() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::set_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;) -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a84a5560970454768aa47bb8d4c5722ee" name="a84a5560970454768aa47bb8d4c5722ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84a5560970454768aa47bb8d4c5722ee">&#9670;&#160;</a></span>set_bit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::set_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; UInt
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6446130881cadc4edfba7f0ec4b01d5f" name="a6446130881cadc4edfba7f0ec4b01d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6446130881cadc4edfba7f0ec4b01d5f">&#9670;&#160;</a></span>test_bit() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::test_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d062f57d0edbd6d850d13e600e385ee" name="a4d062f57d0edbd6d850d13e600e385ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d062f57d0edbd6d850d13e600e385ee">&#9670;&#160;</a></span>test_bit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="#a49823583370a499813db70f494111109">etl::size_t</a> Bit, <a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> etl::test_bit </td>
-          <td>(</td>
-          <td class="paramtype">UInt</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -29626,8 +28866,6 @@ requires <a class="el" href="#ac00eca7d51c4d2c1021402ee9a70f03c">etl::is_pointer
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\synopsis_return Ptr </p>
 
 </div>
 </div>

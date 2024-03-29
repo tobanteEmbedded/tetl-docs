@@ -1,6 +1,6 @@
 var group__numerics_lib =
 [
-    [ "bit.hpp", "group__bit-hpp.html", null ],
+    [ "bit.hpp", "group__bit-hpp.html", "group__bit-hpp" ],
     [ "cmath.hpp", "group__cmath-hpp.html", null ],
     [ "complex.hpp", "group__complex-hpp.html", null ],
     [ "linalg.hpp", "group__linalg-hpp.html", null ],
