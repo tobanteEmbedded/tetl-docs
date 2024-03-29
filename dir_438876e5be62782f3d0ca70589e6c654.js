@@ -7,6 +7,7 @@ var dir_438876e5be62782f3d0ca70589e6c654 =
     [ "builtin_types.hpp", "builtin__types_8hpp.html", "builtin__types_8hpp" ],
     [ "compiler.hpp", "compiler_8hpp.html", "compiler_8hpp" ],
     [ "debug_trap.hpp", "debug__trap_8hpp.html", "debug__trap_8hpp" ],
+    [ "docs.hpp", "docs_8hpp.html", null ],
     [ "preprocessor.hpp", "preprocessor_8hpp.html", "preprocessor_8hpp" ],
     [ "user.hpp", "user_8hpp.html", null ],
     [ "version.hpp", "__config_2version_8hpp.html", "__config_2version_8hpp" ],

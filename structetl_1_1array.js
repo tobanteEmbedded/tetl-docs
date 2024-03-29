@@ -37,5 +37,20 @@ var structetl_1_1array =
     [ "size", "structetl_1_1array.html#a8fc08ca1e9c6f08dec0522e8ddd6b9c0", null ],
     [ "max_size", "structetl_1_1array.html#af462cd846d1e153ea507bd6e5ac598ec", null ],
     [ "fill", "structetl_1_1array.html#a9f9f607957e9cd6f9840f56c73dd5eae", null ],
-    [ "swap", "structetl_1_1array.html#ab19fd5b30400092080b463959e489395", null ]
+    [ "swap", "structetl_1_1array.html#ab19fd5b30400092080b463959e489395", null ],
+    [ "swap", "structetl_1_1array.html#ab3ec4a357ac52e581d45047576bd002e", null ],
+    [ "operator==", "structetl_1_1array.html#a8bd4e830b5de57b0d1c67280677c992a", null ],
+    [ "operator!=", "structetl_1_1array.html#a66578f87f5e13ebca822ae1fef081442", null ],
+    [ "operator<", "structetl_1_1array.html#a55f0902fb41c93ffc3cfb1faca46e084", null ],
+    [ "operator<=", "structetl_1_1array.html#ad79496c668b8897e66cba6fb437edd34", null ],
+    [ "operator>", "structetl_1_1array.html#ab1b551796eb9b49716ae2ca6dd5dfed5", null ],
+    [ "operator>=", "structetl_1_1array.html#ad769293a87a5c718994c15a283597aba", null ],
+    [ "array", "structetl_1_1array.html#a4acb9fc77c91f6e92832d42185583633", null ],
+    [ "is_tuple_like", "structetl_1_1array.html#a52bce012c4b201c8f654c4eee78555ef", null ],
+    [ "get", "structetl_1_1array.html#a7523a3dfaad4821bb37a62e49ae19564", null ],
+    [ "get", "structetl_1_1array.html#ab64420ef7894f5d9a1c2f33d35f3136e", null ],
+    [ "get", "structetl_1_1array.html#a36575eb140868e578429286e8ec62e6e", null ],
+    [ "get", "structetl_1_1array.html#a519806e08910c96f1f59dc84109b2c60", null ],
+    [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ],
+    [ "to_array", "structetl_1_1array.html#a206fb932614fa86d56d410c37f786760", null ]
 ];

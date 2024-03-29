@@ -20,7 +20,7 @@ var searchData=
   ['beta_17',['beta',['../__3rd__party_2gcem_2gcem__incl_2beta_8hpp.html#af33405de2477b4517c13e41d45ac3473',1,'beta():&#160;beta.hpp'],['../namespaceetl.html#aefd33d209fa34a26154dec7971f43ce9',1,'etl::beta(double x, double y) noexcept -&gt; double']]],
   ['betaf_18',['betaf',['../namespaceetl.html#a5bb892bd770281574939e288765165ea',1,'etl']]],
   ['betal_19',['betal',['../namespaceetl.html#a1572e65836d75f30b200de7dd2cdc272',1,'etl']]],
-  ['binary_5fsearch_20',['binary_search',['../group__algorithm-header.html#ga8844708a6931fb2b21419d7a605328dd',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value, Compare comp) -&gt; bool'],['../group__algorithm-header.html#gadb446f356892ac1d540180018a20faba',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value) -&gt; bool']]],
+  ['binary_5fsearch_20',['binary_search',['../group__algorithm-hpp.html#ga8844708a6931fb2b21419d7a605328dd',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value, Compare comp) -&gt; bool'],['../group__algorithm-hpp.html#gadb446f356892ac1d540180018a20faba',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value) -&gt; bool']]],
   ['bind_5ffront_21',['bind_front',['../namespaceetl.html#a817e57a985d0eab0156aa074d1928761',1,'etl']]],
   ['binomial_5fcoef_22',['binomial_coef',['../binomial__coef_8hpp.html#ad011ad5b5f6ee4799dabdc81148741b6',1,'binomial_coef.hpp']]],
   ['bit_5fcast_23',['bit_cast',['../namespaceetl.html#a4070f4c004b740cd8c1b913db783dfb8',1,'etl']]],

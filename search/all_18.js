@@ -80,7 +80,9 @@ var searchData=
   ['uses_5fallocator_2ehpp_77',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
   ['uses_5fallocator_5fv_78',['uses_allocator_v',['../namespaceetl.html#a16cf19d8af06969d839fa909ad6e184f',1,'etl']]],
   ['ushrt_5fmax_79',['USHRT_MAX',['../__climits_2defines_8hpp.html#a689b119da994dece91d44b5aeac643ed',1,'defines.hpp']]],
-  ['utility_80',['utility',['../md_docs_2header.html#autotoc_md86',1,'']]],
-  ['utility_2ehpp_81',['utility.hpp',['../utility_8hpp.html',1,'']]],
-  ['uxqueuemessageswaiting_82',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
+  ['utilities_20library_80',['Utilities Library',['../group__utilities-lib.html',1,'']]],
+  ['utility_81',['utility',['../md_docs_2header.html#autotoc_md94',1,'']]],
+  ['utility_20hpp_82',['utility.hpp',['../group__utility-hpp.html',1,'']]],
+  ['utility_2ehpp_83',['utility.hpp',['../utility_8hpp.html',1,'']]],
+  ['uxqueuemessageswaiting_84',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
 ];

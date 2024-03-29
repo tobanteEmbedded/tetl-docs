@@ -1,17 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"__cmath_2atan2_8hpp.html":[11,0,1,0,11,5],
-"__cmath_2atan2_8hpp.html#a037863b294d960041c163520b22381e1":[11,0,1,0,11,5,4],
-"__cmath_2atan2_8hpp.html#a2c6967d95f89156650197ea75f1f3ba7":[11,0,1,0,11,5,3],
-"__cmath_2atan2_8hpp.html#a3d2b99c8ac12b4ede3490b55bc38ace7":[11,0,1,0,11,5,0],
-"__cmath_2atan2_8hpp.html#a5900f3d1e6a74988a7f45cd04a3627ae":[11,0,1,0,11,5,2],
-"__cmath_2atan2_8hpp.html#a8b28d5ed840d65898bb4bc7663cc6813":[11,0,1,0,11,5,1],
-"__cmath_2atan2_8hpp_source.html":[11,0,1,0,11,5],
-"__cmath_2atan_8hpp.html":[11,0,1,0,11,4],
-"__cmath_2atan_8hpp.html#a11dbb4af5e9f689d738347804fd05f90":[11,0,1,0,11,4,2],
-"__cmath_2atan_8hpp.html#a2b8a8b9108f9ce5f69505e9152a659d7":[11,0,1,0,11,4,3],
-"__cmath_2atan_8hpp.html#a65f8ad4a2909bbebbccfd140525f7c8f":[11,0,1,0,11,4,0],
-"__cmath_2atan_8hpp.html#a953ddfaa8dc761bf2a3cae7cf03ec743":[11,0,1,0,11,4,1],
 "__cmath_2atan_8hpp.html#ab422245244dbf22608b198e007417b9d":[11,0,1,0,11,4,4],
 "__cmath_2atan_8hpp.html#ab76f32464a65bbf8c839d67f702b2c81":[11,0,1,0,11,4,5],
 "__cmath_2atan_8hpp_source.html":[11,0,1,0,11,4],
@@ -249,5 +237,17 @@ var NAVTREEINDEX1 =
 "__complex_2complex_8hpp.html#aef7a230f9307ccbebaaca704bbda63ec":[11,0,1,0,13,2,27],
 "__complex_2complex_8hpp.html#af1dbf6c912f63446fe62ca363ce14874":[11,0,1,0,13,2,18],
 "__complex_2complex_8hpp_source.html":[11,0,1,0,13,2],
-"__complex_2cos_8hpp.html":[11,0,1,0,13,4]
+"__complex_2cos_8hpp.html":[11,0,1,0,13,4],
+"__complex_2cos_8hpp.html#a270bd6f09628db22fe5bd8b51dd0b715":[11,0,1,0,13,4,0],
+"__complex_2cos_8hpp_source.html":[11,0,1,0,13,4],
+"__complex_2cosh_8hpp.html":[11,0,1,0,13,5],
+"__complex_2cosh_8hpp.html#a46256752d5c736599fc58eff97661928":[11,0,1,0,13,5,0],
+"__complex_2cosh_8hpp_source.html":[11,0,1,0,13,5],
+"__complex_2log10_8hpp.html":[11,0,1,0,13,8],
+"__complex_2log10_8hpp.html#abb87c5a1d5623bb01299fd23324b1565":[11,0,1,0,13,8,0],
+"__complex_2log10_8hpp_source.html":[11,0,1,0,13,8],
+"__complex_2log_8hpp.html":[11,0,1,0,13,7],
+"__complex_2log_8hpp.html#a3dab176f001bd0087f3f8652eace5c93":[11,0,1,0,13,7,0],
+"__complex_2log_8hpp_source.html":[11,0,1,0,13,7],
+"__complex_2sin_8hpp.html":[11,0,1,0,13,12]
 };

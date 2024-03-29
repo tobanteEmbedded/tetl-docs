@@ -1,17 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"add__pointer_8hpp_source.html":[11,0,1,0,61,3],
-"add__rvalue__reference_8hpp.html":[11,0,1,0,61,4],
-"add__rvalue__reference_8hpp_source.html":[11,0,1,0,61,4],
-"add__sat_8hpp.html":[11,0,1,0,44,2],
-"add__sat_8hpp.html#a8090c84a226cdc13d3b2a1420e1d8e4f":[11,0,1,0,44,2,0],
-"add__sat_8hpp_source.html":[11,0,1,0,44,2],
-"add__volatile_8hpp.html":[11,0,1,0,61,5],
-"add__volatile_8hpp_source.html":[11,0,1,0,61,5],
-"addressof_8hpp.html":[11,0,1,0,39,0],
-"addressof_8hpp.html#a13856fe74510e89b04a2310cbc9bde59":[11,0,1,0,39,0,2],
-"addressof_8hpp.html#a351af276db5fcca32408696c2a4f8be6":[11,0,1,0,39,0,1],
-"addressof_8hpp.html#a99d4abdc9048a47e79b90addc653b930":[11,0,1,0,39,0,0],
 "addressof_8hpp_source.html":[11,0,1,0,39,0],
 "adjacent__difference_8hpp.html":[11,0,1,0,44,3],
 "adjacent__difference_8hpp.html#a233e4dea3a5bcb4fa4018e9110735184":[11,0,1,0,44,3,1],
@@ -249,5 +237,17 @@ var NAVTREEINDEX3 =
 "blas1__vector__idx__abs__max_8hpp.html#aac17487e636222c91804946c123a1c53":[11,0,1,0,35,9,0],
 "blas1__vector__idx__abs__max_8hpp_source.html":[11,0,1,0,35,9],
 "blas1__vector__two__norm_8hpp.html":[11,0,1,0,35,10],
-"blas1__vector__two__norm_8hpp.html#a2fafbaecba0403a0caf854c6969c4e5a":[11,0,1,0,35,10,1]
+"blas1__vector__two__norm_8hpp.html#a2fafbaecba0403a0caf854c6969c4e5a":[11,0,1,0,35,10,1],
+"blas1__vector__two__norm_8hpp.html#ade808e3f8a353d73fc3600225549d432":[11,0,1,0,35,10,0],
+"blas1__vector__two__norm_8hpp_source.html":[11,0,1,0,35,10],
+"blas2__matrix__vector__product_8hpp.html":[11,0,1,0,35,11],
+"blas2__matrix__vector__product_8hpp.html#ac1b620e55a25a3d6fd2ea3129f6d9440":[11,0,1,0,35,11,0],
+"blas2__matrix__vector__product_8hpp_source.html":[11,0,1,0,35,11],
+"bool__constant_8hpp.html":[11,0,1,0,61,11],
+"bool__constant_8hpp.html#a251ff8ada16d1b2942679b1cac95a5ed":[11,0,1,0,61,11,1],
+"bool__constant_8hpp.html#a4427bfeb098157f5bd5c0dc9d4dca6de":[11,0,1,0,61,11,2],
+"bool__constant_8hpp.html#ae91dc3f8feab79708723b75f54e9cc21":[11,0,1,0,61,11,0],
+"bool__constant_8hpp_source.html":[11,0,1,0,61,11],
+"boolean__testable_8hpp.html":[11,0,1,0,14,1],
+"boolean__testable_8hpp_source.html":[11,0,1,0,14,1]
 };

@@ -27,10 +27,11 @@ var searchData=
   ['distance_2ehpp_24',['distance.hpp',['../distance_8hpp.html',1,'']]],
   ['div_2ehpp_25',['div.hpp',['../div_8hpp.html',1,'']]],
   ['divides_2ehpp_26',['divides.hpp',['../divides_8hpp.html',1,'']]],
-  ['domain_5ferror_2ehpp_27',['domain_error.hpp',['../domain__error_8hpp.html',1,'']]],
-  ['duration_2ehpp_28',['duration.hpp',['../duration_8hpp.html',1,'']]],
-  ['duration_5fcast_2ehpp_29',['duration_cast.hpp',['../duration__cast_8hpp.html',1,'']]],
-  ['duration_5fvalues_2ehpp_30',['duration_values.hpp',['../duration__values_8hpp.html',1,'']]],
-  ['dynamic_5farray_2ehpp_31',['dynamic_array.hpp',['../dynamic__array_8hpp.html',1,'']]],
-  ['dynamic_5fextent_2ehpp_32',['dynamic_extent.hpp',['../dynamic__extent_8hpp.html',1,'']]]
+  ['docs_2ehpp_27',['docs.hpp',['../docs_8hpp.html',1,'']]],
+  ['domain_5ferror_2ehpp_28',['domain_error.hpp',['../domain__error_8hpp.html',1,'']]],
+  ['duration_2ehpp_29',['duration.hpp',['../duration_8hpp.html',1,'']]],
+  ['duration_5fcast_2ehpp_30',['duration_cast.hpp',['../duration__cast_8hpp.html',1,'']]],
+  ['duration_5fvalues_2ehpp_31',['duration_values.hpp',['../duration__values_8hpp.html',1,'']]],
+  ['dynamic_5farray_2ehpp_32',['dynamic_array.hpp',['../dynamic__array_8hpp.html',1,'']]],
+  ['dynamic_5fextent_2ehpp_33',['dynamic_extent.hpp',['../dynamic__extent_8hpp.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hpp_0',['algorithm.hpp',['../group__algorithm-header.html',1,'']]]
+  ['bit_20hpp_0',['bit.hpp',['../group__bit-hpp.html',1,'']]],
+  ['bitset_20hpp_1',['bitset.hpp',['../group__bitset-hpp.html',1,'']]]
 ];

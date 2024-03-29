@@ -107,15 +107,17 @@ $(function(){initNavTree('structetl_1_1array.html',''); initResizable(true); });
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="#related">Related Symbols</a> &#124;
 <a href="structetl_1_1array-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">etl::array&lt; Type, Size &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">etl::array&lt; Type, Size &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__containers-lib.html">Containers Library</a> &raquo; <a class="el" href="group__array-hpp.html">array.hpp</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>array is a container that encapsulates fixed size arrays.  
+<p>A container that encapsulates fixed size arrays.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="__array_2array_8hpp_source.html">array.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="array_8hpp_source.html">etl/array.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -225,10 +227,62 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab19fd5b30400092080b463959e489395" id="r_ab19fd5b30400092080b463959e489395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab19fd5b30400092080b463959e489395">swap</a> (<a class="el" href="structetl_1_1array.html">array</a> &amp;<a class="el" href="structetl_1_1static__vector.html">other</a>) noexcept(<a class="el" href="namespaceetl.html#a4fe0a7655d7b161139e48f8eb34838ac">is_nothrow_swappable_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a> &gt;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="memdesc:ab19fd5b30400092080b463959e489395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchanges the contents of the container with those of other. Does not cause iterators and references to associate with the other container.  <br /></td></tr>
 <tr class="separator:ab19fd5b30400092080b463959e489395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab3ec4a357ac52e581d45047576bd002e" id="r_ab3ec4a357ac52e581d45047576bd002e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3ec4a357ac52e581d45047576bd002e">swap</a> (<a class="el" href="structetl_1_1array.html">array</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) noexcept(noexcept(lhs.swap(<a class="el" href="structetl_1_1static__vector.html">rhs</a>))) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="memdesc:ab3ec4a357ac52e581d45047576bd002e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializes the swap algorithm for array. Swaps the contents of lhs and rhs.  <br /></td></tr>
+<tr class="separator:ab3ec4a357ac52e581d45047576bd002e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd4e830b5de57b0d1c67280677c992a" id="r_a8bd4e830b5de57b0d1c67280677c992a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bd4e830b5de57b0d1c67280677c992a">operator==</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="memdesc:a8bd4e830b5de57b0d1c67280677c992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the contents of lhs and rhs are equal, that is, they have the same number of elements and each element in lhs compares equal with the element in rhs at the same position.  <br /></td></tr>
+<tr class="separator:a8bd4e830b5de57b0d1c67280677c992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66578f87f5e13ebca822ae1fef081442" id="r_a66578f87f5e13ebca822ae1fef081442"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66578f87f5e13ebca822ae1fef081442">operator!=</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:a66578f87f5e13ebca822ae1fef081442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f0902fb41c93ffc3cfb1faca46e084" id="r_a55f0902fb41c93ffc3cfb1faca46e084"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55f0902fb41c93ffc3cfb1faca46e084">operator&lt;</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="memdesc:a55f0902fb41c93ffc3cfb1faca46e084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of lhs and rhs lexicographically. The comparison is performed by a function equivalent to lexicographical_compare.  <br /></td></tr>
+<tr class="separator:a55f0902fb41c93ffc3cfb1faca46e084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79496c668b8897e66cba6fb437edd34" id="r_ad79496c668b8897e66cba6fb437edd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad79496c668b8897e66cba6fb437edd34">operator&lt;=</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ad79496c668b8897e66cba6fb437edd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b551796eb9b49716ae2ca6dd5dfed5" id="r_ab1b551796eb9b49716ae2ca6dd5dfed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b551796eb9b49716ae2ca6dd5dfed5">operator&gt;</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ab1b551796eb9b49716ae2ca6dd5dfed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad769293a87a5c718994c15a283597aba" id="r_ad769293a87a5c718994c15a283597aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad769293a87a5c718994c15a283597aba">operator&gt;=</a> (<a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1array.html">array</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ad769293a87a5c718994c15a283597aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="related" name="related"></a>
+Related Symbols</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member symbols.) </p>
+</td></tr>
+<tr class="memitem:a4acb9fc77c91f6e92832d42185583633" id="r_a4acb9fc77c91f6e92832d42185583633"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , typename... U&gt; </td></tr>
+<tr class="memitem:a4acb9fc77c91f6e92832d42185583633"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4acb9fc77c91f6e92832d42185583633">array</a> (T, U...) -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt; T, 1+sizeof...(U)&gt;</td></tr>
+<tr class="memdesc:a4acb9fc77c91f6e92832d42185583633"><td class="mdescLeft">&#160;</td><td class="mdescRight">One deduction guide is provided for array to provide an equivalent of experimental::make_array for construction of array from a variadic parameter pack. The program is ill-formed if (is_same_v&lt;T, U&gt; and ...) is not true. Note that it is true when sizeof...(U) is zero.  <br /></td></tr>
+<tr class="separator:a4acb9fc77c91f6e92832d42185583633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bce012c4b201c8f654c4eee78555ef" id="r_a52bce012c4b201c8f654c4eee78555ef"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> Size&gt; </td></tr>
+<tr class="memitem:a52bce012c4b201c8f654c4eee78555ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a52bce012c4b201c8f654c4eee78555ef">is_tuple_like</a></td></tr>
+<tr class="separator:a52bce012c4b201c8f654c4eee78555ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7523a3dfaad4821bb37a62e49ae19564" id="r_a7523a3dfaad4821bb37a62e49ae19564"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
+<tr class="memitem:a7523a3dfaad4821bb37a62e49ae19564"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7523a3dfaad4821bb37a62e49ae19564">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T &amp;</td></tr>
+<tr class="memdesc:a7523a3dfaad4821bb37a62e49ae19564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to <a class="el" href="#a2fbc638f50ea8414194391ab8a17928c" title="Accesses the specified item with range checking.">at()</a> or operator[].  <br /></td></tr>
+<tr class="separator:a7523a3dfaad4821bb37a62e49ae19564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64420ef7894f5d9a1c2f33d35f3136e" id="r_ab64420ef7894f5d9a1c2f33d35f3136e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
+<tr class="memitem:ab64420ef7894f5d9a1c2f33d35f3136e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab64420ef7894f5d9a1c2f33d35f3136e">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td></tr>
+<tr class="separator:ab64420ef7894f5d9a1c2f33d35f3136e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36575eb140868e578429286e8ec62e6e" id="r_a36575eb140868e578429286e8ec62e6e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
+<tr class="memitem:a36575eb140868e578429286e8ec62e6e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a36575eb140868e578429286e8ec62e6e">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T &amp;&amp;</td></tr>
+<tr class="separator:a36575eb140868e578429286e8ec62e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519806e08910c96f1f59dc84109b2c60" id="r_a519806e08910c96f1f59dc84109b2c60"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </td></tr>
+<tr class="memitem:a519806e08910c96f1f59dc84109b2c60"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a519806e08910c96f1f59dc84109b2c60">get</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;&amp;<a class="el" href="structetl_1_1array.html">array</a>) noexcept -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;&amp;</td></tr>
+<tr class="separator:a519806e08910c96f1f59dc84109b2c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab473fe47c2383d723c9b37fa6af55104" id="r_ab473fe47c2383d723c9b37fa6af55104"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> N&gt; </td></tr>
+<tr class="memitem:ab473fe47c2383d723c9b37fa6af55104"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab473fe47c2383d723c9b37fa6af55104">to_array</a> (T(&amp;a)[<a class="el" href="structetl_1_1static__vector.html">N</a>]) -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="namespaceetl.html#a7d3ea939d0e932fceedbae01d7a3af90">remove_cv_t</a>&lt; T &gt;, <a class="el" href="structetl_1_1static__vector.html">N</a> &gt;</td></tr>
+<tr class="memdesc:ab473fe47c2383d723c9b37fa6af55104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a array from the one dimensional built-in array a. The elements of the array are copy-initialized from the corresponding element of a. Copying or moving multidimensional built-in array is not supported.  <br /></td></tr>
+<tr class="separator:ab473fe47c2383d723c9b37fa6af55104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206fb932614fa86d56d410c37f786760" id="r_a206fb932614fa86d56d410c37f786760"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> N&gt; </td></tr>
+<tr class="memitem:a206fb932614fa86d56d410c37f786760"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a206fb932614fa86d56d410c37f786760">to_array</a> (T(&amp;&amp;a)[<a class="el" href="structetl_1_1static__vector.html">N</a>])</td></tr>
+<tr class="separator:a206fb932614fa86d56d410c37f786760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt;<br />
-struct etl::array&lt; Type, Size &gt;</div><p>array is a container that encapsulates fixed size arrays. </p>
+struct etl::array&lt; Type, Size &gt;</div><p>A container that encapsulates fixed size arrays. </p>
 <p>This container is an aggregate type with the same semantics as a struct holding a C-style array Type[N] as its only non-static data member. Unlike a C-style array, it doesn't decay to Type* automatically. As an aggregate type, it can be initialized with aggregate-initialization given at most N initializers that are convertible to Type: <code>array&lt;int, 3&gt; a = {1,2,3};</code></p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
@@ -244,9 +298,9 @@ struct etl::array&lt; Type, Size &gt;</div><p>array is a container that encapsul
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">main</a>() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">using </span><a class="code hl_function" href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">etl::all_of</a>;</div>
+<div class="line">    <span class="keyword">using </span><a class="code hl_function" href="group__algorithm-hpp.html#gac76b028bf28233ada520a5bc0d52f6b9">etl::all_of</a>;</div>
 <div class="line">    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1array.html">etl::array</a>;</div>
-<div class="line">    <span class="keyword">using </span><a class="code hl_function" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a>;</div>
+<div class="line">    <span class="keyword">using </span><a class="code hl_function" href="group__algorithm-hpp.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">src</a> = <a class="code hl_struct" href="structetl_1_1array.html">array</a>{1, 2, 3, 4}; <span class="comment">// size &amp; type are deduced</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">item</a> : <a class="code hl_struct" href="structetl_1_1static__vector.html">src</a>) {</div>
@@ -257,10 +311,10 @@ struct etl::array&lt; Type, Size &gt;</div><p>array is a container that encapsul
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(all_of(begin(src), end(src), [](<span class="keyword">auto</span> v) { <span class="keywordflow">return</span> v == 42; }));</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">decltype</span>(src) dest = {};</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_function" href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">all_of</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(dest), [](<span class="keyword">auto</span> v) { <span class="keywordflow">return</span> v == 0; }));</div>
+<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_function" href="group__algorithm-hpp.html#gac76b028bf28233ada520a5bc0d52f6b9">all_of</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(dest), [](<span class="keyword">auto</span> v) { <span class="keywordflow">return</span> v == 0; }));</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(src), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(src), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest));</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_function" href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">all_of</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(dest), [](<span class="keyword">auto</span> v) { <span class="keywordflow">return</span> v == 42; }));</div>
+<div class="line">    <a class="code hl_function" href="group__algorithm-hpp.html#gad3271ee1abafc543f4bf69cc20b01ded">copy</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(src), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(src), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest));</div>
+<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_function" href="group__algorithm-hpp.html#gac76b028bf28233ada520a5bc0d52f6b9">all_of</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">begin</a>(dest), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">end</a>(dest), [](<span class="keyword">auto</span> v) { <span class="keywordflow">return</span> v == 42; }));</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_define" href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a>;</div>
 <div class="line">}</div>
@@ -268,13 +322,13 @@ struct etl::array&lt; Type, Size &gt;</div><p>array is a container that encapsul
 <div class="ttc" id="aarray_8hpp_html"><div class="ttname"><a href="array_8hpp.html">array.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
-<div class="ttc" id="agroup__algorithm-header_html_gac76b028bf28233ada520a5bc0d52f6b9"><div class="ttname"><a href="group__algorithm-header.html#gac76b028bf28233ada520a5bc0d52f6b9">etl::all_of</a></div><div class="ttdeci">constexpr auto all_of(InputIt first, InputIt last, Predicate p) -&gt; bool</div><div class="ttdoc">Checks if unary predicate p returns true for all elements in the range [first, last).</div><div class="ttdef"><b>Definition</b> all_of.hpp:15</div></div>
-<div class="ttc" id="agroup__algorithm-header_html_gad3271ee1abafc543f4bf69cc20b01ded"><div class="ttname"><a href="group__algorithm-header.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:20</div></div>
+<div class="ttc" id="agroup__algorithm-hpp_html_gac76b028bf28233ada520a5bc0d52f6b9"><div class="ttname"><a href="group__algorithm-hpp.html#gac76b028bf28233ada520a5bc0d52f6b9">etl::all_of</a></div><div class="ttdeci">constexpr auto all_of(InputIt first, InputIt last, Predicate p) -&gt; bool</div><div class="ttdoc">Checks if unary predicate p returns true for all elements in the range [first, last).</div><div class="ttdef"><b>Definition</b> all_of.hpp:15</div></div>
+<div class="ttc" id="agroup__algorithm-hpp_html_gad3271ee1abafc543f4bf69cc20b01ded"><div class="ttname"><a href="group__algorithm-hpp.html#gad3271ee1abafc543f4bf69cc20b01ded">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:20</div></div>
 <div class="ttc" id="aiterator_8hpp_html"><div class="ttname"><a href="iterator_8hpp.html">iterator.hpp</a></div></div>
 <div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
 <div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html_a3359121d1e6b6048466a7042367de263"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html#a3359121d1e6b6048466a7042367de263">etl::ranges::cpo::begin</a></div><div class="ttdeci">constexpr auto begin</div><div class="ttdef"><b>Definition</b> begin.hpp:62</div></div>
 <div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html_aabcecd54adfa279c6e77f2fce24f48a6"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html#aabcecd54adfa279c6e77f2fce24f48a6">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:57</div></div>
-<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">array is a container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:36</div></div>
+<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:38</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_8cpp-example.html#_a1">array.cpp</a>, and <a class="el" href="set_8cpp-example.html#_a0">set.cpp</a>.</dd>
 </dl>
@@ -1248,8 +1302,463 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ab3ec4a357ac52e581d45047576bd002e" name="ab3ec4a357ac52e581d45047576bd002e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ec4a357ac52e581d45047576bd002e">&#9670;&#160;</a></span>swap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specializes the swap algorithm for array. Swaps the contents of lhs and rhs. </p>
+
+</div>
+</div>
+<a id="a8bd4e830b5de57b0d1c67280677c992a" name="a8bd4e830b5de57b0d1c67280677c992a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd4e830b5de57b0d1c67280677c992a">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the contents of lhs and rhs are equal, that is, they have the same number of elements and each element in lhs compares equal with the element in rhs at the same position. </p>
+
+</div>
+</div>
+<a id="a66578f87f5e13ebca822ae1fef081442" name="a66578f87f5e13ebca822ae1fef081442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66578f87f5e13ebca822ae1fef081442">&#9670;&#160;</a></span>operator!=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55f0902fb41c93ffc3cfb1faca46e084" name="a55f0902fb41c93ffc3cfb1faca46e084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f0902fb41c93ffc3cfb1faca46e084">&#9670;&#160;</a></span>operator&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares the contents of lhs and rhs lexicographically. The comparison is performed by a function equivalent to lexicographical_compare. </p>
+
+</div>
+</div>
+<a id="ad79496c668b8897e66cba6fb437edd34" name="ad79496c668b8897e66cba6fb437edd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79496c668b8897e66cba6fb437edd34">&#9670;&#160;</a></span>operator&lt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1b551796eb9b49716ae2ca6dd5dfed5" name="ab1b551796eb9b49716ae2ca6dd5dfed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b551796eb9b49716ae2ca6dd5dfed5">&#9670;&#160;</a></span>operator&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad769293a87a5c718994c15a283597aba" name="ad769293a87a5c718994c15a283597aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad769293a87a5c718994c15a283597aba">&#9670;&#160;</a></span>operator&gt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Type</a> , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Type</a>, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4acb9fc77c91f6e92832d42185583633" name="a4acb9fc77c91f6e92832d42185583633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acb9fc77c91f6e92832d42185583633">&#9670;&#160;</a></span>array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , typename... U&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U...</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt;  <a class="el" href="structetl_1_1array.html">array</a>&lt; T, 1+sizeof...(U)&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>One deduction guide is provided for array to provide an equivalent of experimental::make_array for construction of array from a variadic parameter pack. The program is ill-formed if (is_same_v&lt;T, U&gt; and ...) is not true. Note that it is true when sizeof...(U) is zero. </p>
+
+</div>
+</div>
+<a id="a52bce012c4b201c8f654c4eee78555ef" name="a52bce012c4b201c8f654c4eee78555ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bce012c4b201c8f654c4eee78555ef">&#9670;&#160;</a></span>is_tuple_like()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> is_tuple_like&lt; <a class="el" href="structetl_1_1array.html">etl::array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7523a3dfaad4821bb37a62e49ae19564" name="a7523a3dfaad4821bb37a62e49ae19564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7523a3dfaad4821bb37a62e49ae19564">&#9670;&#160;</a></span>get() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td> -&gt; T&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extracts the Ith element element from the array. I must be an integer value in range [0, N). This is enforced at compile time as opposed to <a class="el" href="#a2fbc638f50ea8414194391ab8a17928c" title="Accesses the specified item with range checking.">at()</a> or operator[]. </p>
+
+</div>
+</div>
+<a id="ab64420ef7894f5d9a1c2f33d35f3136e" name="ab64420ef7894f5d9a1c2f33d35f3136e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64420ef7894f5d9a1c2f33d35f3136e">&#9670;&#160;</a></span>get() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td> -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a>&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36575eb140868e578429286e8ec62e6e" name="a36575eb140868e578429286e8ec62e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36575eb140868e578429286e8ec62e6e">&#9670;&#160;</a></span>get() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td> -&gt; T&amp;&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a519806e08910c96f1f59dc84109b2c60" name="a519806e08910c96f1f59dc84109b2c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519806e08910c96f1f59dc84109b2c60">&#9670;&#160;</a></span>get() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Index, <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; T, <a class="el" href="structetl_1_1static__vector.html">Size</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>array</em></span></td><td>)</td>
+          <td> -&gt; T <a class="el" href="structetl_1_1static__vector.html">const</a>&amp;&amp;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab473fe47c2383d723c9b37fa6af55104" name="ab473fe47c2383d723c9b37fa6af55104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab473fe47c2383d723c9b37fa6af55104">&#9670;&#160;</a></span>to_array() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> to_array </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>a</em></span>[N]</td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt;<a class="el" href="namespaceetl.html#a7d3ea939d0e932fceedbae01d7a3af90">remove_cv_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1static__vector.html">N</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a array from the one dimensional built-in array a. The elements of the array are copy-initialized from the corresponding element of a. Copying or moving multidimensional built-in array is not supported. </p>
+
+</div>
+</div>
+<a id="a206fb932614fa86d56d410c37f786760" name="a206fb932614fa86d56d410c37f786760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206fb932614fa86d56d410c37f786760">&#9670;&#160;</a></span>to_array() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">size_t</a> N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> to_array </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;&amp;)</td>          <td class="paramname"><span class="paramname"><em>a</em></span>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/etl/_array/<a class="el" href="__array_2array_8hpp_source.html">array.hpp</a></li>
+<li>include/etl/_array/<a class="el" href="to__array_8hpp_source.html">to_array.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
