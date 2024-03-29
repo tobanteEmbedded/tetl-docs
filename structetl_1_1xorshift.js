@@ -8,7 +8,9 @@ var structetl_1_1xorshift =
     [ "seed", "structetl_1_1xorshift.html#a1c913c57f607ba6949076676c3d4adb8", null ],
     [ "discard", "structetl_1_1xorshift.html#ad66d2556d7b797ef7248c94126f83c25", null ],
     [ "operator()", "structetl_1_1xorshift.html#a4abac310c7281daf5bef759cff111757", null ],
+    [ "xorshift16", "group__random.html#gada939b7242c7b75587b14fd18c28522f", null ],
+    [ "xorshift32", "group__random.html#ga6ff7397215e7cc0c5460ecd5b8d3302b", null ],
+    [ "xorshift64", "group__random.html#ga0d9d40f06204cac3ddc6e91203718e03", null ],
     [ "operator==", "structetl_1_1xorshift.html#a87281656e3d0c9d1787a74a4b25ff5ef", null ],
-    [ "operator!=", "structetl_1_1xorshift.html#ada68389f60f2b84cc483455cb1d1d54c", null ],
     [ "default_seed", "structetl_1_1xorshift.html#a5913c7bdcd408024db9d6c6db97ea221", null ]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['c_0',['c',['../structetl_1_1stack.html#ab365a51cd4677427e6180e46a9b5ea9d',1,'etl::stack']]],
-  ['column_5fmajor_1',['column_major',['../namespaceetl_1_1linalg.html#aa8edc7fda28e7f95895406df9b1e551b',1,'etl::linalg']]],
+  ['column_5fmajor_1',['column_major',['../structetl_1_1linalg_1_1column__major__t.html#a007e97f5335958e2ca27c76d1159062a',1,'etl::linalg::column_major_t']]],
   ['compatible_2',['compatible',['../namespaceetl_1_1experimental_1_1parallelism__v2_1_1simd__abi.html#a0d3bf99f793377ca0e7df9a5fd6addd3',1,'etl::experimental::parallelism_v2::simd_abi']]],
   ['conjunction_5fv_3',['conjunction_v',['../namespaceetl.html#af0d9f32a20bf813fd8ce025d0aebbff5',1,'etl']]],
   ['construct_5fat_4',['construct_at',['../namespaceetl_1_1ranges.html#adc4d1d6f844c64643d68340758d520ee',1,'etl::ranges']]],

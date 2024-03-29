@@ -115,21 +115,21 @@ $(function(){initNavTree('iota_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespaceetl.html#a44562b8c2da2eb5f51eb8e98d09ea697">   12</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a44562b8c2da2eb5f51eb8e98d09ea697">iota</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">ForwardIt</a> last, T value) -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">while</span> (first != last) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        *first++ = value;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        ++value;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="group__numeric.html#ga44562b8c2da2eb5f51eb8e98d09ea697">   13</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga44562b8c2da2eb5f51eb8e98d09ea697">iota</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">ForwardIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">ForwardIt</a> last, T value) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">while</span> (first != last) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        *first++ = value;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        ++value;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">// TETL_NUMERIC_IOTA_HPP</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_NUMERIC_IOTA_HPP</span></div>
+<div class="ttc" id="agroup__numeric_html_ga44562b8c2da2eb5f51eb8e98d09ea697"><div class="ttname"><a href="group__numeric.html#ga44562b8c2da2eb5f51eb8e98d09ea697">etl::iota</a></div><div class="ttdeci">constexpr auto iota(ForwardIt first, ForwardIt last, T value) -&gt; void</div><div class="ttdoc">Fills the range [first, last) with sequentially increasing values, starting with value and repetitive...</div><div class="ttdef"><b>Definition</b> iota.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a44562b8c2da2eb5f51eb8e98d09ea697"><div class="ttname"><a href="namespaceetl.html#a44562b8c2da2eb5f51eb8e98d09ea697">etl::iota</a></div><div class="ttdeci">constexpr auto iota(ForwardIt first, ForwardIt last, T value) -&gt; void</div><div class="ttdoc">Fills the range [first, last) with sequentially increasing values, starting with value and repetitive...</div><div class="ttdef"><b>Definition</b> iota.hpp:12</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->

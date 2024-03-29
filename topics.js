@@ -1,15 +1,15 @@
 var topics =
 [
-    [ "Concepts Library", "group__concepts-lib.html", "group__concepts-lib" ],
-    [ "Coroutines Library", "group__coroutines-lib.html", "group__coroutines-lib" ],
-    [ "Utilities Library", "group__utilities-lib.html", "group__utilities-lib" ],
-    [ "Dynamic memory management", "group__dynamic-memory-lib.html", "group__dynamic-memory-lib" ],
-    [ "Numeric limits", "group__limits-lib.html", "group__limits-lib" ],
-    [ "Error handling", "group__errors-lib.html", "group__errors-lib" ],
-    [ "Strings Library", "group__strings-lib.html", "group__strings-lib" ],
-    [ "Containers Library", "group__containers-lib.html", "group__containers-lib" ],
-    [ "Iterators Library", "group__iterators-lib.html", "group__iterators-lib" ],
-    [ "Ranges Library", "group__ranges-lib.html", "group__ranges-lib" ],
-    [ "Algorithms Library", "group__algorithms-lib.html", "group__algorithms-lib" ],
-    [ "Numerics Library", "group__numerics-lib.html", "group__numerics-lib" ]
+    [ "Concepts Library", "group__concepts-library.html", "group__concepts-library" ],
+    [ "Coroutines Library", "group__coroutines-library.html", "group__coroutines-library" ],
+    [ "Utilities Library", "group__utilities-library.html", "group__utilities-library" ],
+    [ "Dynamic memory management", "group__dynamic-memory-library.html", "group__dynamic-memory-library" ],
+    [ "Numeric limits", "group__limits-library.html", "group__limits-library" ],
+    [ "Error handling", "group__errors-library.html", "group__errors-library" ],
+    [ "Strings Library", "group__strings-library.html", "group__strings-library" ],
+    [ "Containers Library", "group__containers-library.html", "group__containers-library" ],
+    [ "Iterators Library", "group__iterators-library.html", "group__iterators-library" ],
+    [ "Ranges Library", "group__ranges-library.html", "group__ranges-library" ],
+    [ "Algorithms Library", "group__algorithms-library.html", "group__algorithms-library" ],
+    [ "Numerics Library", "group__numerics-library.html", "group__numerics-library" ]
 ];

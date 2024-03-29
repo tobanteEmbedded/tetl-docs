@@ -38,7 +38,6 @@ var structetl_1_1array =
     [ "swap", "structetl_1_1array.html#ab19fd5b30400092080b463959e489395", null ],
     [ "swap", "structetl_1_1array.html#ab3ec4a357ac52e581d45047576bd002e", null ],
     [ "operator==", "structetl_1_1array.html#a8bd4e830b5de57b0d1c67280677c992a", null ],
-    [ "operator!=", "structetl_1_1array.html#a66578f87f5e13ebca822ae1fef081442", null ],
     [ "operator<", "structetl_1_1array.html#a55f0902fb41c93ffc3cfb1faca46e084", null ],
     [ "operator<=", "structetl_1_1array.html#ad79496c668b8897e66cba6fb437edd34", null ],
     [ "operator>", "structetl_1_1array.html#ab1b551796eb9b49716ae2ca6dd5dfed5", null ],

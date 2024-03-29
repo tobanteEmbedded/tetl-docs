@@ -1,6 +1,5 @@
 var __complex_2complex_8hpp =
 [
-    [ "etl::complex< T >", "structetl_1_1complex.html", "structetl_1_1complex" ],
     [ "etl::tuple_size< etl::complex< T > >", "structetl_1_1tuple__size_3_01etl_1_1complex_3_01T_01_4_01_4.html", null ],
     [ "etl::tuple_element< I, etl::complex< T > >", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4" ],
     [ "operator+", "__complex_2complex_8hpp.html#a93401bd9402632426cada76f529d6b9f", null ],

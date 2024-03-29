@@ -13,15 +13,11 @@ var searchData=
   ['size_10',['size',['../structetl_1_1format__to__n__result.html#a21ef77e0435ea6f8568706c30bf8691e',1,'etl::format_to_n_result::size'],['../namespaceetl_1_1ranges_1_1cpo.html#a8137911f356b9810a1020d9bdb8c1bdc',1,'etl::ranges::size'],['../namespaceetl_1_1ranges_1_1cpo.html#a8137911f356b9810a1020d9bdb8c1bdc',1,'etl::ranges::cpo::size']]],
   ['skipws_11',['skipws',['../structetl_1_1ios__base.html#a9a88f519ce41810a46a763c20848e1eb',1,'etl::ios_base']]],
   ['sorted_5funique_12',['sorted_unique',['../namespaceetl.html#a3206db2ddd4b49017ef0d257ca69a515',1,'etl']]],
-  ['sqrt2_13',['sqrt2',['../namespaceetl_1_1numbers.html#a63b3ca4125aa9485378d0149b1f3b900',1,'etl::numbers']]],
-  ['sqrt2_5fv_14',['sqrt2_v',['../namespaceetl_1_1numbers.html#ab2f4bab2d51876a289739b3516f89afa',1,'etl::numbers']]],
-  ['sqrt2f_15',['sqrt2f',['../namespaceetl_1_1numbers.html#ab0358412ca4b0535d3d2a44d6359c662',1,'etl::numbers']]],
-  ['sqrt2l_16',['sqrt2l',['../namespaceetl_1_1numbers.html#a5be99a4894c574642df520ecf42b1cac',1,'etl::numbers']]],
-  ['sqrt3_17',['sqrt3',['../namespaceetl_1_1numbers.html#aec63a589e43781715af8e45509774495',1,'etl::numbers']]],
-  ['sqrt3_5fv_18',['sqrt3_v',['../namespaceetl_1_1numbers.html#a285bb2e50f4542bf6262b66c6620ef67',1,'etl::numbers']]],
-  ['sqrt3f_19',['sqrt3f',['../namespaceetl_1_1numbers.html#a6c61dddfa0aa5723d1529296fc921509',1,'etl::numbers']]],
-  ['sqrt3l_20',['sqrt3l',['../namespaceetl_1_1numbers.html#a85d42d7f8a48efc0374bdf93cf5d8f70',1,'etl::numbers']]],
-  ['storage_21',['storage',['../structetl_1_1string__constant.html#a599ba155f627db350507f4b771f52b3a',1,'etl::string_constant::storage'],['../structetl_1_1aligned__union_1_1type.html#a79ef5bac09995f2901b7977f27a63264',1,'etl::aligned_union::type::storage']]],
-  ['stride_22',['stride',['../structetl_1_1strided__slice.html#afbd23c832c3c9ddaf396cba7398acabc',1,'etl::strided_slice']]],
-  ['sunday_23',['Sunday',['../namespaceetl_1_1chrono.html#a8cc7e1c28078fb6451582fd718635a55',1,'etl::chrono']]]
+  ['sqrt2_13',['sqrt2',['../group__numbers.html#ga63b3ca4125aa9485378d0149b1f3b900',1,'etl::numbers']]],
+  ['sqrt2_5fv_14',['sqrt2_v',['../group__numbers.html#gab2f4bab2d51876a289739b3516f89afa',1,'etl::numbers']]],
+  ['sqrt3_15',['sqrt3',['../group__numbers.html#gaec63a589e43781715af8e45509774495',1,'etl::numbers']]],
+  ['sqrt3_5fv_16',['sqrt3_v',['../group__numbers.html#ga285bb2e50f4542bf6262b66c6620ef67',1,'etl::numbers']]],
+  ['storage_17',['storage',['../structetl_1_1string__constant.html#a599ba155f627db350507f4b771f52b3a',1,'etl::string_constant::storage'],['../structetl_1_1aligned__union_1_1type.html#a79ef5bac09995f2901b7977f27a63264',1,'etl::aligned_union::type::storage']]],
+  ['stride_18',['stride',['../structetl_1_1strided__slice.html#afbd23c832c3c9ddaf396cba7398acabc',1,'etl::strided_slice']]],
+  ['sunday_19',['Sunday',['../namespaceetl_1_1chrono.html#a8cc7e1c28078fb6451582fd718635a55',1,'etl::chrono']]]
 ];

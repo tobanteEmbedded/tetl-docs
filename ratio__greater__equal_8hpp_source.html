@@ -117,21 +117,20 @@ $(function(){initNavTree('ratio__greater__equal_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1ratio__greater__equal.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;(R1::num * R2::den &gt;= R2::num * R1::den)&gt; { };</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">   18</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">ratio_greater_equal_v</a> = <a class="code hl_struct" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal&lt;R1, R2&gt;::value</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_RATIO_GREATER_EQUAL_HPP</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1ratio__greater__equal.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;(R1::num * R2::den &gt;= R2::num * R1::den)&gt; { };</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R1, <span class="keyword">typename</span> R2&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__ratio.html#ga7d403b050d9362ca6382cae014e1a3be">   21</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> ratio_greater_equal_v = <a class="code hl_struct" href="structetl_1_1ratio__greater__equal.html">ratio_greater_equal&lt;R1, R2&gt;::value</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">// TETL_RATIO_GREATER_EQUAL_HPP</span></div>
 <div class="ttc" id="a__ratio_2ratio_8hpp_html"><div class="ttname"><a href="__ratio_2ratio_8hpp.html">ratio.hpp</a></div></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1ed208c9b18aabc1288d0721225be488"><div class="ttname"><a href="namespaceetl.html#a1ed208c9b18aabc1288d0721225be488">etl::ratio_greater_equal_v</a></div><div class="ttdeci">constexpr bool ratio_greater_equal_v</div><div class="ttdef"><b>Definition</b> ratio_greater_equal.hpp:18</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1ratio__greater__equal_html"><div class="ttname"><a href="structetl_1_1ratio__greater__equal.html">etl::ratio_greater_equal</a></div><div class="ttdoc">Compares two ratio objects for equality at compile-time. If the ratio R1 is greater than or equal to ...</div><div class="ttdef"><b>Definition</b> ratio_greater_equal.hpp:15</div></div>
+<div class="ttc" id="astructetl_1_1ratio__greater__equal_html"><div class="ttname"><a href="structetl_1_1ratio__greater__equal.html">etl::ratio_greater_equal</a></div><div class="ttdoc">Compares two ratio objects for equality at compile-time. If the ratio R1 is greater than or equal to ...</div><div class="ttdef"><b>Definition</b> ratio_greater_equal.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

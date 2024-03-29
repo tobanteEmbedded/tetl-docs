@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['native_0',['native',['../group__bit-hpp.html#ggaadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796',1,'etl']]],
+  ['native_0',['native',['../group__bit.html#ggaadba129a7dc760f449b09b7fafeb63a8a8e5f3adee38c8fccc13c1f3be0143796',1,'etl']]],
   ['network_5fdown_1',['network_down',['../namespaceetl.html#abf855e66ccd0c031e0994ed578f1c170a93b16d34b1689f66f0cfed60e99c0009',1,'etl']]],
   ['network_5freset_2',['network_reset',['../namespaceetl.html#abf855e66ccd0c031e0994ed578f1c170a0e1d200ae35ede416bf85f84093ce37a',1,'etl']]],
   ['network_5funreachable_3',['network_unreachable',['../namespaceetl.html#abf855e66ccd0c031e0994ed578f1c170a608a68344b4eb1fe0690861a83828816',1,'etl']]],

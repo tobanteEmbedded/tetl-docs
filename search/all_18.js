@@ -72,7 +72,7 @@ var searchData=
   ['update_5fptr_69',['update_ptr',['../structetl_1_1pointer__int__pair__info.html#af8860d50c799e6913b4287b21f7b0955',1,'etl::pointer_int_pair_info']]],
   ['upper_5fbound_70',['upper_bound',['../structetl_1_1flat__set.html#a0d407b7b59306640361ef58dd12b4180',1,'etl::flat_set::upper_bound(key_type const &amp;x) -&gt; iterator'],['../structetl_1_1flat__set.html#ad847727db926f13b94ce8cd3a4635ace',1,'etl::flat_set::upper_bound(key_type const &amp;x) const -&gt; const_iterator'],['../structetl_1_1flat__set.html#a4da0289a5677a6d868e1dd7a9d8786d4',1,'etl::flat_set::upper_bound(K const &amp;x) -&gt; iterator'],['../structetl_1_1flat__set.html#a2b3c3cc690f9d888d107f9b47ae1952e',1,'etl::flat_set::upper_bound(K const &amp;x) const -&gt; const_iterator'],['../structetl_1_1static__set.html#ae81a99ca82c2a5eaf1b22997f06874b1',1,'etl::static_set::upper_bound(key_type const &amp;key) -&gt; iterator'],['../structetl_1_1static__set.html#ae9e9e8291c11bb963ad1279e3d786514',1,'etl::static_set::upper_bound(key_type const &amp;key) const -&gt; const_iterator'],['../structetl_1_1static__set.html#af4a0caaadc981f1df34f667da987d272',1,'etl::static_set::upper_bound(K const &amp;key) -&gt; iterator'],['../structetl_1_1static__set.html#a7529b8d2b822d00b5b782f6e1d106d43',1,'etl::static_set::upper_bound(K const &amp;key) const -&gt; const_iterator'],['../namespaceetl.html#a9b32d22be5cb9bbaaf24e21d8b700bcb',1,'etl::upper_bound(ForwardIt first, ForwardIt last, T const &amp;value, Compare comp) -&gt; ForwardIt'],['../namespaceetl.html#a3448c90cac95ec2e155cf8ac02b6c592',1,'etl::upper_bound(ForwardIt first, ForwardIt last, T const &amp;value) -&gt; ForwardIt']]],
   ['upper_5fbound_2ehpp_71',['upper_bound.hpp',['../upper__bound_8hpp.html',1,'']]],
-  ['upper_5ftriangle_72',['upper_triangle',['../namespaceetl_1_1linalg.html#a16edf8782f52bbb1ff5977cc1f9251c0',1,'etl::linalg']]],
+  ['upper_5ftriangle_72',['upper_triangle',['../structetl_1_1linalg_1_1upper__triangle__t.html#a1ebc9641237c64f94205d7c763f6aefd',1,'etl::linalg::upper_triangle_t']]],
   ['upper_5ftriangle_5ft_73',['upper_triangle_t',['../structetl_1_1linalg_1_1upper__triangle__t.html',1,'etl::linalg::upper_triangle_t'],['../structetl_1_1linalg_1_1upper__triangle__t.html#a262ad52c636474c38b6091431406493e',1,'etl::linalg::upper_triangle_t::upper_triangle_t()']]],
   ['uppercase_74',['uppercase',['../structetl_1_1ios__base.html#a3ba1c5480af5a0a6a8b43f0e19a24ad3',1,'etl::ios_base']]],
   ['user_2ehpp_75',['user.hpp',['../user_8hpp.html',1,'']]],
@@ -80,8 +80,8 @@ var searchData=
   ['uses_5fallocator_2ehpp_77',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
   ['uses_5fallocator_5fv_78',['uses_allocator_v',['../namespaceetl.html#a16cf19d8af06969d839fa909ad6e184f',1,'etl']]],
   ['ushrt_5fmax_79',['USHRT_MAX',['../__climits_2defines_8hpp.html#a689b119da994dece91d44b5aeac643ed',1,'defines.hpp']]],
-  ['utilities_20library_80',['Utilities Library',['../group__utilities-lib.html',1,'']]],
-  ['utility_20hpp_81',['utility.hpp',['../group__utility-hpp.html',1,'']]],
+  ['utilities_20library_80',['Utilities Library',['../group__utilities-library.html',1,'']]],
+  ['utility_20hpp_81',['utility.hpp',['../group__utility.html',1,'']]],
   ['utility_2ehpp_82',['utility.hpp',['../utility_8hpp.html',1,'']]],
   ['uxqueuemessageswaiting_83',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
 ];

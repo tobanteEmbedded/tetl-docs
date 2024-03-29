@@ -116,41 +116,41 @@ $(function(){initNavTree('partial__sum_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> BinaryOperation&gt;</div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">   22</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> last, <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">BinaryOperation</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">op</a>) -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (first == last) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span> sum     = *first;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    *<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a> = sum;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">while</span> (++first != last) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        sum            = <a class="code hl_struct" href="structetl_1_1static__vector.html">op</a>(<a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(sum), *first);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        *++<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a> = sum;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> ++<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> BinaryOperation&gt;</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__numeric.html#ga717726a2fed08cececaa93b504419300">   24</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga717726a2fed08cececaa93b504419300">partial_sum</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> last, <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">BinaryOperation</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">op</a>) -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (first == last) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span> sum     = *first;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    *<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a> = sum;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">while</span> (++first != last) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        sum            = <a class="code hl_struct" href="structetl_1_1static__vector.html">op</a>(<a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(sum), *first);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        *++<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a> = sum;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> ++<a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt&gt;</div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8d274a25ea5a88eb47898c8832795e3e">   40</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">partial_sum</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> last, <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>) -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a>(first, last, <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::plus&lt;&gt;</a>());</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt&gt;</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group__numeric.html#ga8d274a25ea5a88eb47898c8832795e3e">   43</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga717726a2fed08cececaa93b504419300">partial_sum</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="code hl_struct" href="structetl_1_1static__vector.html">InputIt</a> last, <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>) -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">OutputIt</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__numeric.html#ga717726a2fed08cececaa93b504419300">etl::partial_sum</a>(first, last, <a class="code hl_struct" href="structetl_1_1static__vector.html">destination</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::plus&lt;&gt;</a>());</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">// TETL_NUMERIC_PARTIAL_SUM_HPP</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">// TETL_NUMERIC_PARTIAL_SUM_HPP</span></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html_afb338536d7767b0fd9392f796b908073"><div class="ttname"><a href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a></div><div class="ttdeci">#define TETL_MOVE(...)</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
+<div class="ttc" id="agroup__numeric_html_ga717726a2fed08cececaa93b504419300"><div class="ttname"><a href="group__numeric.html#ga717726a2fed08cececaa93b504419300">etl::partial_sum</a></div><div class="ttdeci">constexpr auto partial_sum(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div><div class="ttdoc">Computes the partial sums of the elements in the subranges of the range [first, last) and writes them...</div><div class="ttdef"><b>Definition</b> partial_sum.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a717726a2fed08cececaa93b504419300"><div class="ttname"><a href="namespaceetl.html#a717726a2fed08cececaa93b504419300">etl::partial_sum</a></div><div class="ttdeci">constexpr auto partial_sum(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt</div><div class="ttdoc">Computes the partial sums of the elements in the subranges of the range [first, last) and writes them...</div><div class="ttdef"><b>Definition</b> partial_sum.hpp:22</div></div>
 <div class="ttc" id="aplus_8hpp_html"><div class="ttname"><a href="plus_8hpp.html">plus.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->

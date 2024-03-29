@@ -1,6 +1,5 @@
 var __ratio_2ratio_8hpp =
 [
-    [ "etl::ratio< Num, Denom >", "structetl_1_1ratio.html", "structetl_1_1ratio" ],
     [ "atto", "__ratio_2ratio_8hpp.html#a968a1e0d1e8d9494d021d34bc2e6c82a", null ],
     [ "femto", "__ratio_2ratio_8hpp.html#a13b1921a95623fff3a9b8e397eb4a3f7", null ],
     [ "pico", "__ratio_2ratio_8hpp.html#ac489b67384efcc27fe4baeac5893713a", null ],
