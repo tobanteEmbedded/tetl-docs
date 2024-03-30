@@ -11,6 +11,8 @@ var group__algorithm =
     [ "etl::copy_if", "group__algorithm.html#ga31799054ecdf344760efe76af7987776", null ],
     [ "etl::copy_n", "group__algorithm.html#gaa65063d9f87cd088156f3d49bb32f2e5", null ],
     [ "etl::count_if", "group__algorithm.html#ga7aff5cc5281436a205079dc71ee4c317", null ],
+    [ "etl::exchange_sort", "group__algorithm.html#ga086d2ed75d087dea9497d60549d77485", null ],
+    [ "etl::exchange_sort", "group__algorithm.html#ga9635d27783910f84b9a83730f26f2c19", null ],
     [ "etl::adjacent_find", "group__algorithm.html#ga4fe91c66e3042bde20710111a8d622e4", null ],
     [ "etl::binary_search", "group__algorithm.html#gadb446f356892ac1d540180018a20faba", null ],
     [ "etl::bubble_sort", "group__algorithm.html#ga1cc149eb7abea4405c02e767e7860dae", null ],

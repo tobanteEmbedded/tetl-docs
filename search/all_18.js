@@ -81,7 +81,7 @@ var searchData=
   ['uses_5fallocator_5fv_78',['uses_allocator_v',['../namespaceetl.html#a16cf19d8af06969d839fa909ad6e184f',1,'etl']]],
   ['ushrt_5fmax_79',['USHRT_MAX',['../__climits_2defines_8hpp.html#a689b119da994dece91d44b5aeac643ed',1,'defines.hpp']]],
   ['utilities_20library_80',['Utilities Library',['../group__utilities-library.html',1,'']]],
-  ['utility_20hpp_81',['utility.hpp',['../group__utility.html',1,'']]],
+  ['utility_81',['utility',['../group__utility.html',1,'']]],
   ['utility_2ehpp_82',['utility.hpp',['../utility_8hpp.html',1,'']]],
   ['uxqueuemessageswaiting_83',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
 ];

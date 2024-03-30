@@ -118,22 +118,22 @@ $(function(){initNavTree('copyable_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="conceptetl_1_1copyable.html">   13</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1copyable.html">copyable</a> =                    <span class="comment">//</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_concept" href="conceptetl_1_1copy__constructible.html">copy_constructible&lt;T&gt;</a> and         <span class="comment">//</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_concept" href="conceptetl_1_1movable.html">movable&lt;T&gt;</a> and                    <span class="comment">//</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T&amp;&gt;</a> and       <span class="comment">//</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T const&amp;&gt;</a> and <span class="comment">//</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T const&gt;</a>;     <span class="comment">//</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_COPYABLE_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="conceptetl_1_1copyable.html">   14</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1copyable.html">copyable</a> =                    <span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_concept" href="conceptetl_1_1copy__constructible.html">copy_constructible&lt;T&gt;</a> and         <span class="comment">//</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_concept" href="conceptetl_1_1movable.html">movable&lt;T&gt;</a> and                    <span class="comment">//</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T&amp;&gt;</a> and       <span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T const&amp;&gt;</a> and <span class="comment">//</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_concept" href="conceptetl_1_1assignable__from.html">assignable_from&lt;T&amp;, T const&gt;</a>;     <span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_COPYABLE_HPP</span></div>
 <div class="ttc" id="aassignable__from_8hpp_html"><div class="ttname"><a href="assignable__from_8hpp.html">assignable_from.hpp</a></div></div>
-<div class="ttc" id="aconceptetl_1_1assignable__from_html"><div class="ttname"><a href="conceptetl_1_1assignable__from.html">etl::assignable_from</a></div><div class="ttdef"><b>Definition</b> assignable_from.hpp:16</div></div>
-<div class="ttc" id="aconceptetl_1_1copy__constructible_html"><div class="ttname"><a href="conceptetl_1_1copy__constructible.html">etl::copy_constructible</a></div><div class="ttdoc">The concept copy_constructible is satisfied if T is an lvalue reference type, or if it is a move_cons...</div><div class="ttdef"><b>Definition</b> copy_constructible.hpp:19</div></div>
-<div class="ttc" id="aconceptetl_1_1copyable_html"><div class="ttname"><a href="conceptetl_1_1copyable.html">etl::copyable</a></div><div class="ttdef"><b>Definition</b> copyable.hpp:13</div></div>
-<div class="ttc" id="aconceptetl_1_1movable_html"><div class="ttname"><a href="conceptetl_1_1movable.html">etl::movable</a></div><div class="ttdef"><b>Definition</b> movable.hpp:14</div></div>
+<div class="ttc" id="aconceptetl_1_1assignable__from_html"><div class="ttname"><a href="conceptetl_1_1assignable__from.html">etl::assignable_from</a></div><div class="ttdef"><b>Definition</b> assignable_from.hpp:19</div></div>
+<div class="ttc" id="aconceptetl_1_1copy__constructible_html"><div class="ttname"><a href="conceptetl_1_1copy__constructible.html">etl::copy_constructible</a></div><div class="ttdoc">The concept copy_constructible is satisfied if T is an lvalue reference type, or if it is a move_cons...</div><div class="ttdef"><b>Definition</b> copy_constructible.hpp:20</div></div>
+<div class="ttc" id="aconceptetl_1_1copyable_html"><div class="ttname"><a href="conceptetl_1_1copyable.html">etl::copyable</a></div><div class="ttdef"><b>Definition</b> copyable.hpp:14</div></div>
+<div class="ttc" id="aconceptetl_1_1movable_html"><div class="ttname"><a href="conceptetl_1_1movable.html">etl::movable</a></div><div class="ttdef"><b>Definition</b> movable.hpp:15</div></div>
 <div class="ttc" id="acopy__constructible_8hpp_html"><div class="ttname"><a href="copy__constructible_8hpp.html">copy_constructible.hpp</a></div></div>
 <div class="ttc" id="amovable_8hpp_html"><div class="ttname"><a href="movable_8hpp.html">movable.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>

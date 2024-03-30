@@ -121,34 +121,34 @@ $(function(){initNavTree('common__with_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="conceptetl_1_1common__with.html">   16</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1common__with.html">common_with</a> =</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_concept" href="conceptetl_1_1same__as.html">same_as&lt;common_type_t&lt;T, U&gt;</a>, common_type_t&lt;U, T&gt;&gt; &amp;&amp;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">requires</span> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static_cast&lt;</span>common_type_t&lt;T, U&gt;<span class="keyword">&gt;</span>(declval&lt;T&gt;());</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static_cast&lt;</span>common_type_t&lt;T, U&gt;<span class="keyword">&gt;</span>(declval&lt;U&gt;());</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  } &amp;&amp;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="conceptetl_1_1common__with.html">   17</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1common__with.html">common_with</a> =</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_concept" href="conceptetl_1_1same__as.html">same_as&lt;common_type_t&lt;T, U&gt;</a>, common_type_t&lt;U, T&gt;&gt; &amp;&amp;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">requires</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static_cast&lt;</span>common_type_t&lt;T, U&gt;<span class="keyword">&gt;</span>(declval&lt;T&gt;());</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">static_cast&lt;</span>common_type_t&lt;T, U&gt;<span class="keyword">&gt;</span>(declval&lt;U&gt;());</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  } &amp;&amp;</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_concept" href="conceptetl_1_1common__reference__with.html">common_reference_with</a>&lt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;T const&gt;</a>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;U const&gt;</a>&gt; &amp;&amp;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_concept" href="conceptetl_1_1common__reference__with.html">common_reference_with</a>&lt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;common_type_t&lt;T, U&gt;</a>&gt;,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_typedef" href="namespaceetl.html#adee609f391eb3188705d52e09cb8fb04">common_reference_t</a>&lt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;T const&gt;</a>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;U const&gt;</a>&gt;&gt;;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_concept" href="conceptetl_1_1common__reference__with.html">common_reference_with</a>&lt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;T const&gt;</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;U const&gt;</a>&gt; &amp;&amp;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_concept" href="conceptetl_1_1common__reference__with.html">common_reference_with</a>&lt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;common_type_t&lt;T, U&gt;</a>&gt;,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_typedef" href="namespaceetl.html#adee609f391eb3188705d52e09cb8fb04">common_reference_t</a>&lt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;T const&gt;</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <a class="code hl_struct" href="structetl_1_1static__vector.html">add_lvalue_reference_t&lt;U const&gt;</a>&gt;&gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_COMMON_WITH_HPP</span></div>
 <div class="ttc" id="aadd__lvalue__reference_8hpp_html"><div class="ttname"><a href="add__lvalue__reference_8hpp.html">add_lvalue_reference.hpp</a></div></div>
 <div class="ttc" id="acommon__reference_8hpp_html"><div class="ttname"><a href="common__reference_8hpp.html">common_reference.hpp</a></div></div>
 <div class="ttc" id="acommon__type_8hpp_html"><div class="ttname"><a href="common__type_8hpp.html">common_type.hpp</a></div></div>
-<div class="ttc" id="aconceptetl_1_1common__reference__with_html"><div class="ttname"><a href="conceptetl_1_1common__reference__with.html">etl::common_reference_with</a></div><div class="ttdef"><b>Definition</b> common_reference_with.hpp:14</div></div>
-<div class="ttc" id="aconceptetl_1_1common__with_html"><div class="ttname"><a href="conceptetl_1_1common__with.html">etl::common_with</a></div><div class="ttdef"><b>Definition</b> common_with.hpp:16</div></div>
-<div class="ttc" id="aconceptetl_1_1same__as_html"><div class="ttname"><a href="conceptetl_1_1same__as.html">etl::same_as</a></div><div class="ttdoc">The concept same_as&lt;T, U&gt; is satisfied if and only if T and U denote the same type....</div><div class="ttdef"><b>Definition</b> same_as.hpp:18</div></div>
+<div class="ttc" id="aconceptetl_1_1common__reference__with_html"><div class="ttname"><a href="conceptetl_1_1common__reference__with.html">etl::common_reference_with</a></div><div class="ttdef"><b>Definition</b> common_reference_with.hpp:16</div></div>
+<div class="ttc" id="aconceptetl_1_1common__with_html"><div class="ttname"><a href="conceptetl_1_1common__with.html">etl::common_with</a></div><div class="ttdef"><b>Definition</b> common_with.hpp:17</div></div>
+<div class="ttc" id="aconceptetl_1_1same__as_html"><div class="ttname"><a href="conceptetl_1_1same__as.html">etl::same_as</a></div><div class="ttdoc">The concept same_as&lt;T, U&gt; is satisfied if and only if T and U denote the same type....</div><div class="ttdef"><b>Definition</b> same_as.hpp:19</div></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
 <div class="ttc" id="anamespaceetl_html_adee609f391eb3188705d52e09cb8fb04"><div class="ttname"><a href="namespaceetl.html#adee609f391eb3188705d52e09cb8fb04">etl::common_reference_t</a></div><div class="ttdeci">typename common_reference&lt; T... &gt;::type common_reference_t</div><div class="ttdef"><b>Definition</b> common_reference.hpp:38</div></div>

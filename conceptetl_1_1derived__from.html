@@ -104,7 +104,7 @@ $(function(){initNavTree('conceptetl_1_1derived__from.html',''); initResizable(t
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">etl::derived_from Concept Reference</div></div>
+  <div class="headertitle"><div class="title">etl::derived_from Concept Reference<div class="ingroups"><a class="el" href="group__concepts-library.html">Concepts Library</a> &raquo; <a class="el" href="group__concepts.html">concepts</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -114,8 +114,8 @@ $(function(){initNavTree('conceptetl_1_1derived__from.html',''); initResizable(t
 <p><code>#include &lt;<a class="el" href="derived__from_8hpp_source.html">derived_from.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">etl::derived_from</a> =  is_base_of_v&lt;Base, Derived&gt; &amp;&amp; is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;</div>
-<div class="ttc" id="aconceptetl_1_1derived__from_html"><div class="ttname"><a href="conceptetl_1_1derived__from.html">etl::derived_from</a></div><div class="ttdoc">The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is eith...</div><div class="ttdef"><b>Definition</b> derived_from.hpp:16</div></div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">etl::derived_from</a> =  is_base_of_v&lt;Base, Derived&gt; and is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;</div>
+<div class="ttc" id="aconceptetl_1_1derived__from_html"><div class="ttname"><a href="conceptetl_1_1derived__from.html">etl::derived_from</a></div><div class="ttdoc">The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is eith...</div><div class="ttdef"><b>Definition</b> derived_from.hpp:17</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is either Derived or a public and unambiguous base of Derived, ignoring cv-qualifiers. Note that this behaviour is different to is_base_of when Base is a private or protected base of Derived. </p>
 </div></div><!-- contents -->

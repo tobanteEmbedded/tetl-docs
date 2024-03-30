@@ -6,7 +6,7 @@ var searchData=
   ['fixed_5fsize_3',['fixed_size',['../namespaceetl_1_1simd__abi.html#acf7e2a7a9e75f6e7cfd5a9c41a2a218a',1,'etl::simd_abi']]],
   ['fixed_5fsize_5fsimd_4',['fixed_size_simd',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a7acdea933ae595265bcddf6bdcda9b11',1,'etl::experimental::fixed_size_simd'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a7acdea933ae595265bcddf6bdcda9b11',1,'etl::experimental::parallelism_v2::fixed_size_simd']]],
   ['fixed_5fsize_5fsimd_5fmask_5',['fixed_size_simd_mask',['../namespaceetl_1_1experimental_1_1parallelism__v2.html#acc2fcc4de40929172acd2dc5d7158bd3',1,'etl::experimental::fixed_size_simd_mask'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#acc2fcc4de40929172acd2dc5d7158bd3',1,'etl::experimental::parallelism_v2::fixed_size_simd_mask']]],
-  ['float_5ft_6',['float_t',['../namespaceetl.html#a27e36416cdc5e1021c9d5151775e7ec9',1,'etl']]],
+  ['float_5ft_6',['float_t',['../group__cmath.html#ga27e36416cdc5e1021c9d5151775e7ec9',1,'etl']]],
   ['fmtflags_7',['fmtflags',['../structetl_1_1ios__base.html#a3445ec895a6de6b8039142eded2fa944',1,'etl::ios_base']]],
   ['format_5fargs_8',['format_args',['../namespaceetl.html#a5ca9dac165db8a73a0cd16ab2677fabc',1,'etl']]],
   ['format_5fcontext_9',['format_context',['../namespaceetl.html#ad867dbf777d0e2fcf904b16ffbbd1ac1',1,'etl']]],

@@ -117,13 +117,13 @@ $(function(){initNavTree('derived__from_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="conceptetl_1_1derived__from.html">   16</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">derived_from</a> = is_base_of_v&lt;Base, Derived&gt; &amp;&amp; is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_DERIVED_FROM_HPP</span></div>
-<div class="ttc" id="aconceptetl_1_1derived__from_html"><div class="ttname"><a href="conceptetl_1_1derived__from.html">etl::derived_from</a></div><div class="ttdoc">The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is eith...</div><div class="ttdef"><b>Definition</b> derived_from.hpp:16</div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="conceptetl_1_1derived__from.html">   17</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">derived_from</a> = is_base_of_v&lt;Base, Derived&gt; and is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_DERIVED_FROM_HPP</span></div>
+<div class="ttc" id="aconceptetl_1_1derived__from_html"><div class="ttname"><a href="conceptetl_1_1derived__from.html">etl::derived_from</a></div><div class="ttdoc">The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is eith...</div><div class="ttdef"><b>Definition</b> derived_from.hpp:17</div></div>
 <div class="ttc" id="ais__base__of_8hpp_html"><div class="ttname"><a href="is__base__of_8hpp.html">is_base_of.hpp</a></div></div>
 <div class="ttc" id="ais__convertible_8hpp_html"><div class="ttname"><a href="is__convertible_8hpp.html">is_convertible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>

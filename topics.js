@@ -11,5 +11,7 @@ var topics =
     [ "Iterators Library", "group__iterators-library.html", "group__iterators-library" ],
     [ "Ranges Library", "group__ranges-library.html", "group__ranges-library" ],
     [ "Algorithms Library", "group__algorithms-library.html", "group__algorithms-library" ],
-    [ "Numerics Library", "group__numerics-library.html", "group__numerics-library" ]
+    [ "Numerics Library", "group__numerics-library.html", "group__numerics-library" ],
+    [ "Input/Output Library", "group__io-library.html", "group__io-library" ],
+    [ "Thread support Library", "group__thread-library.html", "group__thread-library" ]
 ];

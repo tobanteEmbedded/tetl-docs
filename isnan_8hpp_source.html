@@ -119,19 +119,19 @@ $(function(){initNavTree('isnan_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a605d9e24e916cbbc8f38c7e377eb792d">   17</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">float</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#if __has_builtin(__builtin_isnanf) or defined(TETL_COMPILER_GCC)</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_isnanf</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a> != <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__cmath.html#ga605d9e24e916cbbc8f38c7e377eb792d">   16</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">float</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#if __has_builtin(__builtin_isnanf) or defined(TETL_COMPILER_GCC)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_isnanf</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a> != <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac4da86e5987c4a4fc2368f5195645c3f">   26</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">double</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__cmath.html#gac4da86e5987c4a4fc2368f5195645c3f">   26</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">double</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#if __has_builtin(__builtin_isnan) or defined(TETL_COMPILER_GCC)</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_isnan</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) != 0;</div>
@@ -141,28 +141,28 @@ $(function(){initNavTree('isnan_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5b1b06749558d3368fe928aba61d3b46">   35</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if __has_builtin(__builtin_isnanl) or defined(TETL_COMPILER_GCC)</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_isnanl</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a> != <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group__cmath.html#ga5b1b06749558d3368fe928aba61d3b46">   36</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#if __has_builtin(__builtin_isnanl) or defined(TETL_COMPILER_GCC)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_isnanl</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a> != <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3e91eb4fc3291fad0f13f2c74c57cd8f">   48</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">Int</a> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>));</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="group__cmath.html#ga3e91eb4fc3291fad0f13f2c74c57cd8f">   49</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">Int</a> <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#ae8311e8c453fbb5b2e5eea1ed6aead74">isnan</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CMATH_ISNAN_HPP</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CMATH_ISNAN_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="agroup__complex_html_ga06165982b4ed16fe2e57476b46f4ad08"><div class="ttname"><a href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">etl::arg</a></div><div class="ttdeci">constexpr auto arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T</div><div class="ttdef"><b>Definition</b> arg.hpp:16</div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>

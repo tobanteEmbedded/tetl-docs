@@ -107,8 +107,9 @@ $(function(){initNavTree('structetl_1_1unique__lock.html',''); initResizable(tru
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structetl_1_1unique__lock-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">etl::unique_lock&lt; Mutex &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">etl::unique_lock&lt; Mutex &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__thread-library.html">Thread support Library</a> &raquo; <a class="el" href="group__mutex.html">mutex</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -193,6 +194,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a662fe578e700ccd8df9d17fcfc736045" id="r_a662fe578e700ccd8df9d17fcfc736045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a662fe578e700ccd8df9d17fcfc736045">mutex</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="#ae3613854432f6d42c9c37c348d85b8d1">mutex_type</a> *</td></tr>
 <tr class="memdesc:a662fe578e700ccd8df9d17fcfc736045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the associated mutex, or a null pointer if there is no associated mutex.  <br /></td></tr>
 <tr class="separator:a662fe578e700ccd8df9d17fcfc736045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad47dba5face6556e39adf51ed5eee1af" id="r_ad47dba5face6556e39adf51ed5eee1af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad47dba5face6556e39adf51ed5eee1af">swap</a> (<a class="el" href="structetl_1_1unique__lock.html">unique_lock</a> &amp;<a class="el" href="structetl_1_1static__vector.html">lhs</a>, <a class="el" href="structetl_1_1unique__lock.html">unique_lock</a> &amp;<a class="el" href="structetl_1_1static__vector.html">rhs</a>) noexcept(noexcept(lhs.swap(<a class="el" href="structetl_1_1static__vector.html">rhs</a>))) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="memdesc:ad47dba5face6556e39adf51ed5eee1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializes the swap algorithm for <a class="el" href="structetl_1_1unique__lock.html" title="The struct unique_lock is a general-purpose mutex ownership wrapper allowing deferred locking,...">unique_lock</a>. Exchanges the state of lhs with that of rhs.  <br /></td></tr>
+<tr class="separator:ad47dba5face6556e39adf51ed5eee1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Mutex</a>&gt;<br />
@@ -888,6 +895,40 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 </div><div class="memdoc">
 
 <p>Returns a pointer to the associated mutex, or a null pointer if there is no associated mutex. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ad47dba5face6556e39adf51ed5eee1af" name="ad47dba5face6556e39adf51ed5eee1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47dba5face6556e39adf51ed5eee1af">&#9670;&#160;</a></span>swap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Mutex</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unique__lock.html">unique_lock</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Mutex</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unique__lock.html">unique_lock</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Mutex</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specializes the swap algorithm for <a class="el" href="structetl_1_1unique__lock.html" title="The struct unique_lock is a general-purpose mutex ownership wrapper allowing deferred locking,...">unique_lock</a>. Exchanges the state of lhs with that of rhs. </p>
 
 </div>
 </div>

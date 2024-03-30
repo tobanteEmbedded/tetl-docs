@@ -1,4 +1,4 @@
 var group__concepts_library =
 [
-    [ "concepts.hpp", "group__concepts.html", null ]
+    [ "concepts", "group__concepts.html", "group__concepts" ]
 ];

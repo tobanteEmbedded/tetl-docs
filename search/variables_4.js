@@ -4,7 +4,7 @@ var searchData=
   ['dec_1',['dec',['../structetl_1_1ios__base.html#accbe57f0fa7f4b69468aa9de66a59911',1,'etl::ios_base']]],
   ['december_2',['December',['../namespaceetl_1_1chrono.html#a99c6c8db9b04b9bae18a8aa73b4eac09',1,'etl::chrono']]],
   ['default_5fseed_3',['default_seed',['../structetl_1_1xorshift.html#a5913c7bdcd408024db9d6c6db97ea221',1,'etl::xorshift::default_seed'],['../structetl_1_1xoshiro128plus.html#a28f98fb68d34f435a8dd92cd1318297b',1,'etl::xoshiro128plus::default_seed'],['../structetl_1_1xoshiro128plusplus.html#a29ecae0be0412144e482f62823c7b6d6',1,'etl::xoshiro128plusplus::default_seed'],['../structetl_1_1xoshiro128starstar.html#abea6fe6f29a1642e566a11c45e7d98a0',1,'etl::xoshiro128starstar::default_seed']]],
-  ['defer_5flock_4',['defer_lock',['../namespaceetl.html#a3e9e177fde5dc55ea58bb3771c37051a',1,'etl']]],
+  ['defer_5flock_4',['defer_lock',['../group__mutex.html#ga92894de63ca98284fbc82b9581829955',1,'etl::defer_lock_t']]],
   ['den_5',['den',['../structetl_1_1ratio.html#acb49b27bde07d5c4878c5347454a0044',1,'etl::ratio']]],
   ['destroy_6',['destroy',['../namespaceetl_1_1ranges.html#ab7f5fbb66a4f37b1b1d0cbfead090d5e',1,'etl::ranges']]],
   ['destroy_5fat_7',['destroy_at',['../namespaceetl_1_1ranges.html#a0677a0b77ca32abb3ace3c39a10bfa7d',1,'etl::ranges']]],

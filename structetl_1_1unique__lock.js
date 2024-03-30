@@ -22,5 +22,6 @@ var structetl_1_1unique__lock =
     [ "release", "structetl_1_1unique__lock.html#a4e58cc5bd5dd8bec9f6228c88c43f607", null ],
     [ "owns_lock", "structetl_1_1unique__lock.html#a5e7118aa2e15ec59f0c770a20e792e4a", null ],
     [ "operator bool", "structetl_1_1unique__lock.html#a8483421183b46d312d53d859562e2b0b", null ],
-    [ "mutex", "structetl_1_1unique__lock.html#a662fe578e700ccd8df9d17fcfc736045", null ]
+    [ "mutex", "structetl_1_1unique__lock.html#a662fe578e700ccd8df9d17fcfc736045", null ],
+    [ "swap", "structetl_1_1unique__lock.html#ad47dba5face6556e39adf51ed5eee1af", null ]
 ];

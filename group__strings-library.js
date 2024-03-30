@@ -1,11 +1,11 @@
 var group__strings_library =
 [
-    [ "cctype.hpp", "group__cctype.html", null ],
-    [ "charconv.hpp", "group__charconv.html", null ],
-    [ "cstring.hpp", "group__cstring.html", null ],
-    [ "cwchar.hpp", "group__cwchar.html", null ],
-    [ "cwctype.hpp", "group__cwctype.html", null ],
-    [ "format.hpp", "group__format.html", null ],
-    [ "string.hpp", "group__string.html", null ],
-    [ "string_view.hpp", "group__string__view.html", null ]
+    [ "cctype", "group__cctype.html", null ],
+    [ "charconv", "group__charconv.html", null ],
+    [ "cstring", "group__cstring.html", null ],
+    [ "cwchar", "group__cwchar.html", null ],
+    [ "cwctype", "group__cwctype.html", null ],
+    [ "format", "group__format.html", null ],
+    [ "string", "group__string.html", null ],
+    [ "string_view", "group__string__view.html", null ]
 ];

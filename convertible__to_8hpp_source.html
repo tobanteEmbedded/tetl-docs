@@ -117,17 +117,17 @@ $(function(){initNavTree('convertible__to_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="conceptetl_1_1convertible__to.html">   16</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1convertible__to.html">convertible_to</a></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_convertible_v&lt;From, To&gt;</a> and <span class="keyword">requires</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::add_rvalue_reference_t&lt;From&gt;</a> (&amp;f)()) { <span class="keyword">static_cast&lt;</span>To<span class="keyword">&gt;</span>(f()); };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="conceptetl_1_1convertible__to.html">   17</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1convertible__to.html">convertible_to</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_convertible_v&lt;From, To&gt;</a> and <span class="keyword">requires</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::add_rvalue_reference_t&lt;From&gt;</a> (&amp;f)()) { <span class="keyword">static_cast&lt;</span>To<span class="keyword">&gt;</span>(f()); };</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_CONVERTIBLE_TO_HPP</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONCEPTS_CONVERTIBLE_TO_HPP</span></div>
 <div class="ttc" id="aadd__rvalue__reference_8hpp_html"><div class="ttname"><a href="add__rvalue__reference_8hpp.html">add_rvalue_reference.hpp</a></div></div>
-<div class="ttc" id="aconceptetl_1_1convertible__to_html"><div class="ttname"><a href="conceptetl_1_1convertible__to.html">etl::convertible_to</a></div><div class="ttdoc">The concept convertible_to&lt;From, To&gt; specifies that an expression of the same type and value category...</div><div class="ttdef"><b>Definition</b> convertible_to.hpp:17</div></div>
+<div class="ttc" id="aconceptetl_1_1convertible__to_html"><div class="ttname"><a href="conceptetl_1_1convertible__to.html">etl::convertible_to</a></div><div class="ttdoc">The concept convertible_to&lt;From, To&gt; specifies that an expression of the same type and value category...</div><div class="ttdef"><b>Definition</b> convertible_to.hpp:18</div></div>
 <div class="ttc" id="ais__convertible_8hpp_html"><div class="ttname"><a href="is__convertible_8hpp.html">is_convertible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
