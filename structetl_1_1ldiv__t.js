@@ -1,5 +1,5 @@
 var structetl_1_1ldiv__t =
 [
-    [ "quot", "structetl_1_1ldiv__t.html#a14fccb6794bb9d0f8f978ced66077584", null ],
-    [ "rem", "structetl_1_1ldiv__t.html#ad0bfb01b6cfa2517034722e1186660fb", null ]
+    [ "quot", "structetl_1_1ldiv__t.html#ac4000ffefcdd50a3cd0dc04fabfcce34", null ],
+    [ "rem", "structetl_1_1ldiv__t.html#a7c04b7afc95e3cc4480a634f3073ba8a", null ]
 ];

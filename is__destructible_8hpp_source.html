@@ -130,10 +130,10 @@ $(function(){initNavTree('is__destructible_8hpp_source.html',''); initResizable(
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">struct </span>try_is_destructible_impl {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    template &lt;typename T, typename = decltype(etl::declval&lt;T&amp;&gt;().~T())&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <span class="keyword">auto</span> test(<span class="keywordtype">int</span>) -&gt; <a class="code hl_typedef" href="namespaceetl.html#a251ff8ada16d1b2942679b1cac95a5ed">etl::true_type</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <span class="keyword">auto</span> test(<span class="keywordtype">int</span>) -&gt; <a class="code hl_typedef" href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keyword">auto</span> test(...) -&gt; <a class="code hl_typedef" href="namespaceetl.html#a4427bfeb098157f5bd5c0dc9d4dca6de">etl::false_type</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keyword">auto</span> test(...) -&gt; <a class="code hl_typedef" href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -168,7 +168,7 @@ $(function(){initNavTree('is__destructible_8hpp_source.html',''); initResizable(
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structetl_1_1is__destructible_3_01void_01_4.html">   66</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__destructible.html">is_destructible</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">void</a>&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">   69</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">is_destructible_v</a> = <a class="code hl_struct" href="structetl_1_1is__destructible.html">is_destructible&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad9b3cd3fa2118be96d3b81105df490f8">   69</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#ad9b3cd3fa2118be96d3b81105df490f8">is_destructible_v</a> = <a class="code hl_struct" href="structetl_1_1is__destructible.html">is_destructible&lt;T&gt;::value</a>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
@@ -182,10 +182,10 @@ $(function(){initNavTree('is__destructible_8hpp_source.html',''); initResizable(
 <div class="ttc" id="ais__scalar_8hpp_html"><div class="ttname"><a href="is__scalar_8hpp.html">is_scalar.hpp</a></div></div>
 <div class="ttc" id="ais__unbounded__array_8hpp_html"><div class="ttname"><a href="is__unbounded__array_8hpp.html">is_unbounded_array.hpp</a></div></div>
 <div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a251ff8ada16d1b2942679b1cac95a5ed"><div class="ttname"><a href="namespaceetl.html#a251ff8ada16d1b2942679b1cac95a5ed">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a34ff2b6f5e9a98730031297120e28af4"><div class="ttname"><a href="namespaceetl.html#a34ff2b6f5e9a98730031297120e28af4">etl::is_destructible_v</a></div><div class="ttdeci">constexpr auto is_destructible_v</div><div class="ttdef"><b>Definition</b> is_destructible.hpp:69</div></div>
-<div class="ttc" id="anamespaceetl_html_a4427bfeb098157f5bd5c0dc9d4dca6de"><div class="ttname"><a href="namespaceetl.html#a4427bfeb098157f5bd5c0dc9d4dca6de">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
+<div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_ad9b3cd3fa2118be96d3b81105df490f8"><div class="ttname"><a href="namespaceetl.html#ad9b3cd3fa2118be96d3b81105df490f8">etl::is_destructible_v</a></div><div class="ttdeci">constexpr auto is_destructible_v</div><div class="ttdef"><b>Definition</b> is_destructible.hpp:69</div></div>
 <div class="ttc" id="aremove__all__extents_8hpp_html"><div class="ttname"><a href="remove__all__extents_8hpp.html">remove_all_extents.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1is__destructible_html"><div class="ttname"><a href="structetl_1_1is__destructible.html">etl::is_destructible</a></div><div class="ttdoc">Because the C++ program terminates if a destructor throws an exception during stack unwinding (which ...</div><div class="ttdef"><b>Definition</b> is_destructible.hpp:60</div></div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('is__destructible_8hpp_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__destructible_8hpp.html">is_destructible.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

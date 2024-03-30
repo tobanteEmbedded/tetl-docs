@@ -1,13 +1,13 @@
 var is__bitmask__type_8hpp =
 [
-    [ "etl::is_bitmask_type< T >", "structetl_1_1is__bitmask__type.html", null ],
-    [ "etl::bitmask_type", "conceptetl_1_1bitmask__type.html", null ],
-    [ "operator&", "is__bitmask__type_8hpp.html#a6ec2a511f8b5137e02416b9e4e8dc237", null ],
-    [ "operator|", "is__bitmask__type_8hpp.html#ac3cb02b81d1ba34fc33b94555749fa92", null ],
-    [ "operator^", "is__bitmask__type_8hpp.html#af622835231ee77bf2d29dd490bcbb2bf", null ],
-    [ "operator~", "is__bitmask__type_8hpp.html#a92caafb1e73d48a1d1847f64093be44c", null ],
-    [ "operator|=", "is__bitmask__type_8hpp.html#ad2e027dfa37f613a9d94fe1ee90e7517", null ],
-    [ "operator&=", "is__bitmask__type_8hpp.html#abc72777ea30905ff52e4ce6d3448b3e8", null ],
-    [ "operator^=", "is__bitmask__type_8hpp.html#a79f94aefe628a0474274befd3437bf64", null ],
-    [ "is_bitmask_type_v", "is__bitmask__type_8hpp.html#aedb63d88f3219c350ab03af8bd0adb5a", null ]
+    [ "is_bitmask_type< T >", "structetl_1_1is__bitmask__type.html", null ],
+    [ "bitmask_type", "conceptetl_1_1bitmask__type.html", null ],
+    [ "operator&", "is__bitmask__type_8hpp.html#a99fb7a75a06b494847b855d850a44918", null ],
+    [ "operator|", "is__bitmask__type_8hpp.html#a8dbe12aeee105b81dad6ee8d5bf70db5", null ],
+    [ "operator^", "is__bitmask__type_8hpp.html#a949f06ea9ccea69532ff49532f6cd7c7", null ],
+    [ "operator~", "is__bitmask__type_8hpp.html#a8b2bdaacf0312586cd586bd854a7b35a", null ],
+    [ "operator|=", "is__bitmask__type_8hpp.html#afde4cd3357a82b4fb074755ab815223f", null ],
+    [ "operator&=", "is__bitmask__type_8hpp.html#a2fcea5ac2499171347312a5f20051970", null ],
+    [ "operator^=", "is__bitmask__type_8hpp.html#acfa9d2eff6d0a0723cccce281bcf5619", null ],
+    [ "is_bitmask_type_v", "is__bitmask__type_8hpp.html#ad6cb779fe6050798f469e14a06f4412e", null ]
 ];

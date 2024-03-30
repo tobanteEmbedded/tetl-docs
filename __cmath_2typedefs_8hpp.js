@@ -5,6 +5,6 @@ var __cmath_2typedefs_8hpp =
     [ "HUGE_VALF", "__cmath_2typedefs_8hpp.html#acd69981d54c27fe0ff514645dbfc6359", null ],
     [ "HUGE_VAL", "__cmath_2typedefs_8hpp.html#af2164b2db92d8a0ed3838ad5c28db971", null ],
     [ "HUGE_VALL", "__cmath_2typedefs_8hpp.html#ab8b359c356d4311bf5d4ae6c03f43182", null ],
-    [ "float_t", "__cmath_2typedefs_8hpp.html#ga27e36416cdc5e1021c9d5151775e7ec9", null ],
-    [ "double_t", "__cmath_2typedefs_8hpp.html#ga77bf8f126e3cdf99b95d6b073210cfe7", null ]
+    [ "float_t", "__cmath_2typedefs_8hpp.html#gaef34e23d4cca9aba8d78eeb0ae8fcd2e", null ],
+    [ "double_t", "__cmath_2typedefs_8hpp.html#ga8b0daa9c087aab901d5a05c155b62581", null ]
 ];

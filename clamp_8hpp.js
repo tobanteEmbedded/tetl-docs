@@ -1,5 +1,5 @@
 var clamp_8hpp =
 [
-    [ "clamp", "clamp_8hpp.html#gabfa416a307b0bb33666d34845c42ba2b", null ],
-    [ "clamp", "clamp_8hpp.html#gaf90379160c94dc0396b5f32204c790bf", null ]
+    [ "clamp", "clamp_8hpp.html#ga72ad3fc1cb6d967df6a52c8e61030f75", null ],
+    [ "clamp", "clamp_8hpp.html#gac2e0d6f4937eef794486e125996b6ce1", null ]
 ];

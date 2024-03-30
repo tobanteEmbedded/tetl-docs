@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: etl::reference_wrapper&lt; T &gt; Struct Template Reference</title>
+<title>tetl: reference_wrapper&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,7 +108,7 @@ $(function(){initNavTree('structetl_1_1reference__wrapper.html',''); initResizab
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structetl_1_1reference__wrapper-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">etl::reference_wrapper&lt; T &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">reference_wrapper&lt; T &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -119,38 +119,38 @@ $(function(){initNavTree('structetl_1_1reference__wrapper.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8745946a956ad5b8454dd11b4b57e696" id="r_a8745946a956ad5b8454dd11b4b57e696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8745946a956ad5b8454dd11b4b57e696">type</a> = T</td></tr>
-<tr class="separator:a8745946a956ad5b8454dd11b4b57e696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834c467da58ea1d81821952d3c473b64" id="r_a834c467da58ea1d81821952d3c473b64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a834c467da58ea1d81821952d3c473b64">type</a> = T</td></tr>
+<tr class="separator:a834c467da58ea1d81821952d3c473b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69f9c1da6faec0b9661f48af1f0383fc" id="r_a69f9c1da6faec0b9661f48af1f0383fc"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> U , <a class="el" href="structetl_1_1static__vector.html">typename</a>  = decltype(detail::FUN&lt;T&gt;(declval&lt;U&gt;()), enable_if_t&lt;!is_same_v&lt;reference_wrapper, remove_cvref_t&lt;U&gt;&gt;&gt;())&gt; </td></tr>
-<tr class="memitem:a69f9c1da6faec0b9661f48af1f0383fc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a69f9c1da6faec0b9661f48af1f0383fc">reference_wrapper</a> (U &amp;&amp;<a class="el" href="structetl_1_1static__vector.html">u</a>) noexcept(noexcept(detail::FUN&lt; T &gt;(<a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="el" href="structetl_1_1static__vector.html">u</a>))))</td></tr>
-<tr class="memdesc:a69f9c1da6faec0b9661f48af1f0383fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new reference wrapper. Converts x to T&amp; as if by T&amp; t = <a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD(x)</a>;, then stores a reference to t. This overload only participates in overload resolution if <code>decay_t&lt;U&gt;</code> is not the same type as <a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> and the expression <code>FUN(declval&lt;U&gt;())</code> is well-formed, where FUN names the set of imaginary functions:  <br /></td></tr>
-<tr class="separator:a69f9c1da6faec0b9661f48af1f0383fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4e9ada94ed7a0b51b21c11988d5b41" id="r_acc4e9ada94ed7a0b51b21c11988d5b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4e9ada94ed7a0b51b21c11988d5b41">reference_wrapper</a> (<a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept=<a class="el" href="structetl_1_1static__vector.html">default</a></td></tr>
-<tr class="memdesc:acc4e9ada94ed7a0b51b21c11988d5b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new reference wrapper. Copy constructor. Stores a reference to other.get().  <br /></td></tr>
-<tr class="separator:acc4e9ada94ed7a0b51b21c11988d5b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2bb2996fca9eebb54f4c83f9bcaf82" id="r_a7a2bb2996fca9eebb54f4c83f9bcaf82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a2bb2996fca9eebb54f4c83f9bcaf82">operator=</a> (<a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> &amp;=<a class="el" href="structetl_1_1static__vector.html">default</a></td></tr>
-<tr class="memdesc:a7a2bb2996fca9eebb54f4c83f9bcaf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator. Drops the current reference and stores a reference to other.get().  <br /></td></tr>
-<tr class="separator:a7a2bb2996fca9eebb54f4c83f9bcaf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a977a7d5358551b400b2e47aa083ac39e" id="r_a977a7d5358551b400b2e47aa083ac39e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a977a7d5358551b400b2e47aa083ac39e">operator type &amp;</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept</td></tr>
-<tr class="memdesc:a977a7d5358551b400b2e47aa083ac39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored reference.  <br /></td></tr>
-<tr class="separator:a977a7d5358551b400b2e47aa083ac39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9830db014b70bf71268462f0cb510340" id="r_a9830db014b70bf71268462f0cb510340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9830db014b70bf71268462f0cb510340">get</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="#a8745946a956ad5b8454dd11b4b57e696">type</a> &amp;</td></tr>
-<tr class="memdesc:a9830db014b70bf71268462f0cb510340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored reference.  <br /></td></tr>
-<tr class="separator:a9830db014b70bf71268462f0cb510340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e950519d205853b04bcbdb89a2f5bc" id="r_af5e950519d205853b04bcbdb89a2f5bc"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:af5e950519d205853b04bcbdb89a2f5bc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af5e950519d205853b04bcbdb89a2f5bc">operator()</a> (<a class="el" href="structetl_1_1static__vector.html">Args</a> &amp;&amp;... args) <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept(noexcept(<a class="el" href="namespaceetl.html#a0bd726a99d25fb6e96ef3527de8a0164">invoke</a>(<a class="el" href="#a9830db014b70bf71268462f0cb510340">get</a>(), <a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...))) -&gt; <a class="el" href="namespaceetl.html#ad47ced64dcc2c2322893df26022403c5">invoke_result_t</a>&lt; T &amp;, Args... &gt;</td></tr>
-<tr class="memdesc:af5e950519d205853b04bcbdb89a2f5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the Callable object, reference to which is stored. This function is available only if the stored reference points to a Callable object. T must be a complete type.  <br /></td></tr>
-<tr class="separator:af5e950519d205853b04bcbdb89a2f5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f2e013ba47966f0e2d7b3a6c9c5fe5" id="r_a03f2e013ba47966f0e2d7b3a6c9c5fe5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> U , <a class="el" href="structetl_1_1static__vector.html">typename</a>  = decltype(detail::FUN&lt;T&gt;(declval&lt;U&gt;()), enable_if_t&lt;!is_same_v&lt;reference_wrapper, remove_cvref_t&lt;U&gt;&gt;&gt;())&gt; </td></tr>
+<tr class="memitem:a03f2e013ba47966f0e2d7b3a6c9c5fe5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a03f2e013ba47966f0e2d7b3a6c9c5fe5">reference_wrapper</a> (U &amp;&amp;<a class="el" href="structetl_1_1static__vector.html">u</a>) noexcept(noexcept(detail::FUN&lt; T &gt;(<a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="el" href="structetl_1_1static__vector.html">u</a>))))</td></tr>
+<tr class="memdesc:a03f2e013ba47966f0e2d7b3a6c9c5fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new reference wrapper. Converts x to T&amp; as if by T&amp; t = <a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD(x)</a>;, then stores a reference to t. This overload only participates in overload resolution if <code>decay_t&lt;U&gt;</code> is not the same type as <a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> and the expression <code>FUN(declval&lt;U&gt;())</code> is well-formed, where FUN names the set of imaginary functions:  <br /></td></tr>
+<tr class="separator:a03f2e013ba47966f0e2d7b3a6c9c5fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f217ddff0efb519184f306cafa20f6" id="r_a41f217ddff0efb519184f306cafa20f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41f217ddff0efb519184f306cafa20f6">reference_wrapper</a> (<a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept=<a class="el" href="structetl_1_1static__vector.html">default</a></td></tr>
+<tr class="memdesc:a41f217ddff0efb519184f306cafa20f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new reference wrapper. Copy constructor. Stores a reference to other.get().  <br /></td></tr>
+<tr class="separator:a41f217ddff0efb519184f306cafa20f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e134cdb1e7992ff733a0f6a58a8654" id="r_a34e134cdb1e7992ff733a0f6a58a8654"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34e134cdb1e7992ff733a0f6a58a8654">operator=</a> (<a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> &amp;=<a class="el" href="structetl_1_1static__vector.html">default</a></td></tr>
+<tr class="memdesc:a34e134cdb1e7992ff733a0f6a58a8654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator. Drops the current reference and stores a reference to other.get().  <br /></td></tr>
+<tr class="separator:a34e134cdb1e7992ff733a0f6a58a8654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3d1dea7b561c72e11ee9234be9351e" id="r_a4f3d1dea7b561c72e11ee9234be9351e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f3d1dea7b561c72e11ee9234be9351e">operator type &amp;</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept</td></tr>
+<tr class="memdesc:a4f3d1dea7b561c72e11ee9234be9351e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored reference.  <br /></td></tr>
+<tr class="separator:a4f3d1dea7b561c72e11ee9234be9351e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85563e2bf6efbee88f5591397676abc" id="r_ab85563e2bf6efbee88f5591397676abc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab85563e2bf6efbee88f5591397676abc">get</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="#a834c467da58ea1d81821952d3c473b64">type</a> &amp;</td></tr>
+<tr class="memdesc:ab85563e2bf6efbee88f5591397676abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored reference.  <br /></td></tr>
+<tr class="separator:ab85563e2bf6efbee88f5591397676abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db2ba36bda58e0aa5f79306c3701f9e" id="r_a2db2ba36bda58e0aa5f79306c3701f9e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a2db2ba36bda58e0aa5f79306c3701f9e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2db2ba36bda58e0aa5f79306c3701f9e">operator()</a> (<a class="el" href="structetl_1_1static__vector.html">Args</a> &amp;&amp;... args) <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept(noexcept(<a class="el" href="namespaceetl.html#ab64d857ac492271f013aef7076333c81">invoke</a>(<a class="el" href="#ab85563e2bf6efbee88f5591397676abc">get</a>(), <a class="el" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...))) -&gt; <a class="el" href="namespaceetl.html#a601366c5cf97ac29c08fc7b51db875a9">invoke_result_t</a>&lt; T &amp;, Args... &gt;</td></tr>
+<tr class="memdesc:a2db2ba36bda58e0aa5f79306c3701f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the Callable object, reference to which is stored. This function is available only if the stored reference points to a Callable object. T must be a complete type.  <br /></td></tr>
+<tr class="separator:a2db2ba36bda58e0aa5f79306c3701f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T&gt;<br />
 struct etl::reference_wrapper&lt; T &gt;</div><p><a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> is a class template that wraps a reference in a copyable, assignable object. It is frequently used as a mechanism to store references inside standard containers (like <a class="el" href="structetl_1_1static__vector.html" title="Dynamically-resizable fixed-capacity vector.">etl::static_vector</a>) which cannot normally hold references. Specifically, <a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> is a CopyConstructible and CopyAssignable wrapper around a reference to object or reference to function of type T. Instances of <a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> are objects (they can be copied or stored in containers) but they are implicitly convertible to T&amp;, so that they can be used as arguments with the functions that take the underlying type by reference. If the stored reference is Callable, <a class="el" href="structetl_1_1reference__wrapper.html" title="reference_wrapper is a class template that wraps a reference in a copyable, assignable object....">reference_wrapper</a> is callable with the same arguments. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8745946a956ad5b8454dd11b4b57e696" name="a8745946a956ad5b8454dd11b4b57e696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8745946a956ad5b8454dd11b4b57e696">&#9670;&#160;</a></span>type</h2>
+<a id="a834c467da58ea1d81821952d3c473b64" name="a834c467da58ea1d81821952d3c473b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834c467da58ea1d81821952d3c473b64">&#9670;&#160;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +158,7 @@ struct etl::reference_wrapper&lt; T &gt;</div><p><a class="el" href="structetl_1
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::type = T</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a834c467da58ea1d81821952d3c473b64">type</a> = T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,8 +166,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a69f9c1da6faec0b9661f48af1f0383fc" name="a69f9c1da6faec0b9661f48af1f0383fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f9c1da6faec0b9661f48af1f0383fc">&#9670;&#160;</a></span>reference_wrapper() <span class="overload">[1/2]</span></h2>
+<a id="a03f2e013ba47966f0e2d7b3a6c9c5fe5" name="a03f2e013ba47966f0e2d7b3a6c9c5fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f2e013ba47966f0e2d7b3a6c9c5fe5">&#9670;&#160;</a></span>reference_wrapper() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +180,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> U
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::reference_wrapper </td>
+          <td class="memname"><a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> </td>
           <td>(</td>
           <td class="paramtype">U &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>u</em></span></td><td>)</td>
           <td></td>
@@ -200,8 +200,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> U
 
 </div>
 </div>
-<a id="acc4e9ada94ed7a0b51b21c11988d5b41" name="acc4e9ada94ed7a0b51b21c11988d5b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc4e9ada94ed7a0b51b21c11988d5b41">&#9670;&#160;</a></span>reference_wrapper() <span class="overload">[2/2]</span></h2>
+<a id="a41f217ddff0efb519184f306cafa20f6" name="a41f217ddff0efb519184f306cafa20f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f217ddff0efb519184f306cafa20f6">&#9670;&#160;</a></span>reference_wrapper() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +212,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::reference_wrapper </td>
+          <td class="memname"><a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a>&lt; T &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
@@ -230,8 +230,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a2bb2996fca9eebb54f4c83f9bcaf82" name="a7a2bb2996fca9eebb54f4c83f9bcaf82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2bb2996fca9eebb54f4c83f9bcaf82">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a34e134cdb1e7992ff733a0f6a58a8654" name="a34e134cdb1e7992ff733a0f6a58a8654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e134cdb1e7992ff733a0f6a58a8654">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::operator= </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a>&lt; T &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td> -&gt;  <a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a> &amp;=<a class="el" href="structetl_1_1static__vector.html">default</a></td>
@@ -259,8 +259,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 
 </div>
 </div>
-<a id="a977a7d5358551b400b2e47aa083ac39e" name="a977a7d5358551b400b2e47aa083ac39e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a977a7d5358551b400b2e47aa083ac39e">&#9670;&#160;</a></span>operator type &amp;()</h2>
+<a id="a4f3d1dea7b561c72e11ee9234be9351e" name="a4f3d1dea7b561c72e11ee9234be9351e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3d1dea7b561c72e11ee9234be9351e">&#9670;&#160;</a></span>operator type &amp;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::operator <a class="el" href="#a8745946a956ad5b8454dd11b4b57e696">type</a> &amp; </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">operator</a> <a class="el" href="#a834c467da58ea1d81821952d3c473b64">type</a> &amp; </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -288,8 +288,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 
 </div>
 </div>
-<a id="a9830db014b70bf71268462f0cb510340" name="a9830db014b70bf71268462f0cb510340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9830db014b70bf71268462f0cb510340">&#9670;&#160;</a></span>get()</h2>
+<a id="ab85563e2bf6efbee88f5591397676abc" name="ab85563e2bf6efbee88f5591397676abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85563e2bf6efbee88f5591397676abc">&#9670;&#160;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,10 +300,10 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::get </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> get </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a8745946a956ad5b8454dd11b4b57e696">type</a>&amp; </td>
+          <td> const -&gt; <a class="el" href="#a834c467da58ea1d81821952d3c473b64">type</a>&amp; </td>
         </tr>
       </table>
   </td>
@@ -317,8 +317,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 
 </div>
 </div>
-<a id="af5e950519d205853b04bcbdb89a2f5bc" name="af5e950519d205853b04bcbdb89a2f5bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e950519d205853b04bcbdb89a2f5bc">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a2db2ba36bda58e0aa5f79306c3701f9e" name="a2db2ba36bda58e0aa5f79306c3701f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db2ba36bda58e0aa5f79306c3701f9e">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,10 +331,10 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1reference__wrapper.html">etl::reference_wrapper</a>&lt; T &gt;::operator() </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Args</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="namespaceetl.html#ad47ced64dcc2c2322893df26022403c5">invoke_result_t</a>&lt;T&amp;, Args...&gt;
+          <td> const -&gt; <a class="el" href="namespaceetl.html#a601366c5cf97ac29c08fc7b51db875a9">invoke_result_t</a>&lt;T&amp;, Args...&gt;
     </td>
         </tr>
       </table>
@@ -361,7 +361,7 @@ template&lt;typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1reference__wrapper.html">reference_wrapper</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

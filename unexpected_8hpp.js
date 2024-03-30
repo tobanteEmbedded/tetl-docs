@@ -1,5 +1,5 @@
 var unexpected_8hpp =
 [
-    [ "etl::unexpected< E >", "structetl_1_1unexpected.html", "structetl_1_1unexpected" ],
-    [ "unexpected", "unexpected_8hpp.html#af11c4b54fda6c14f1df7ee9acbb8990b", null ]
+    [ "unexpected< E >", "structetl_1_1unexpected.html", "structetl_1_1unexpected" ],
+    [ "unexpected", "unexpected_8hpp.html#aa14cd5bdeb510c30773c0a14b86d5f8e", null ]
 ];

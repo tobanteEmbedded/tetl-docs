@@ -1,5 +1,5 @@
 var structetl_1_1format__to__n__result =
 [
-    [ "out", "structetl_1_1format__to__n__result.html#a1f0b7d725b8b4eafe1588eeff1fe26d8", null ],
-    [ "size", "structetl_1_1format__to__n__result.html#a21ef77e0435ea6f8568706c30bf8691e", null ]
+    [ "out", "structetl_1_1format__to__n__result.html#a3ea0d2cabf3f88d8466ae947d42f2486", null ],
+    [ "size", "structetl_1_1format__to__n__result.html#ae21db956a46fdb186874ab13636a3a18", null ]
 ];

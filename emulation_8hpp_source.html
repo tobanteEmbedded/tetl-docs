@@ -138,7 +138,7 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        and <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_swappable_v&lt;T&amp;&gt;</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Rng&gt;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>range_iterator_t = <span class="keyword">decltype</span>(<a class="code hl_function" href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">etl::begin</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::declval&lt;Rng&gt;</a>()));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>range_iterator_t = <span class="keyword">decltype</span>(<a class="code hl_function" href="namespaceetl.html#aeb088ae74a2ec53c8c206de329935df4">etl::begin</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::declval&lt;Rng&gt;</a>()));</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>iterator_reference_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">etl::iterator_traits&lt;T&gt;::reference</a>;</div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">struct </span>IteratorConcept : <a class="code hl_struct" href="structetl_1_1integral__constant.html">etl::false_type</a> { };</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Category&gt;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">struct </span>IteratorConcept&lt;T, Category, <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_typedef" href="namespaceetl.html#ab24730cbedd18b7acd975fd5dddadb3e">void_t</a>&lt;iterator_category_t&lt;T&gt;&gt;&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">struct </span>IteratorConcept&lt;T, Category, <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_typedef" href="namespaceetl.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a>&lt;iterator_category_t&lt;T&gt;&gt;&gt;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    : <a class="code hl_struct" href="structetl_1_1integral__constant.html">etl::bool_constant</a>&lt;etl::is_convertible_v&lt;iterator_category_t&lt;T&gt;, Category&gt;&gt; {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
@@ -175,9 +175,9 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div class="ttc" id="ais__object_8hpp_html"><div class="ttname"><a href="is__object_8hpp.html">is_object.hpp</a></div></div>
 <div class="ttc" id="ais__swappable_8hpp_html"><div class="ttname"><a href="is__swappable_8hpp.html">is_swappable.hpp</a></div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a3031e070c39546444bdd5fda57ead3d2"><div class="ttname"><a href="namespaceetl.html#a3031e070c39546444bdd5fda57ead3d2">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition</b> begin.hpp:19</div></div>
-<div class="ttc" id="anamespaceetl_html_ab24730cbedd18b7acd975fd5dddadb3e"><div class="ttname"><a href="namespaceetl.html#ab24730cbedd18b7acd975fd5dddadb3e">etl::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition</b> void_t.hpp:9</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_ab8ddf9531fc4ac7ce28574db20c8f20e"><div class="ttname"><a href="namespaceetl.html#ab8ddf9531fc4ac7ce28574db20c8f20e">etl::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition</b> void_t.hpp:9</div></div>
+<div class="ttc" id="anamespaceetl_html_aeb088ae74a2ec53c8c206de329935df4"><div class="ttname"><a href="namespaceetl.html#aeb088ae74a2ec53c8c206de329935df4">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition</b> begin.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_50bbc87141e63d62cafe38626bd86057.html">_concepts</a></li><li class="navelem"><a class="el" href="emulation_8hpp.html">emulation.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

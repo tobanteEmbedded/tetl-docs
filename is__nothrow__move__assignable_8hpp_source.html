@@ -122,7 +122,7 @@ $(function(){initNavTree('is__nothrow__move__assignable_8hpp_source.html',''); i
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__move__assignable.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__move__assignable.html">is_nothrow_move_assignable</a> : <a class="code hl_struct" href="structetl_1_1is__nothrow__assignable.html">is_nothrow_assignable</a>&lt;add_lvalue_reference_t&lt;T&gt;, add_rvalue_reference_t&lt;T&gt;&gt; { };</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab5d18b577003e8d090a82e4c6d497cdd">   28</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#ab5d18b577003e8d090a82e4c6d497cdd">is_nothrow_move_assignable_v</a> = <a class="code hl_struct" href="structetl_1_1is__nothrow__move__assignable.html">is_nothrow_move_assignable&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad26f59ba1b8a873f9d8374f72a4002c4">   28</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#ad26f59ba1b8a873f9d8374f72a4002c4">is_nothrow_move_assignable_v</a> = <a class="code hl_struct" href="structetl_1_1is__nothrow__move__assignable.html">is_nothrow_move_assignable&lt;T&gt;::value</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -130,8 +130,8 @@ $(function(){initNavTree('is__nothrow__move__assignable_8hpp_source.html',''); i
 <div class="ttc" id="aadd__lvalue__reference_8hpp_html"><div class="ttname"><a href="add__lvalue__reference_8hpp.html">add_lvalue_reference.hpp</a></div></div>
 <div class="ttc" id="aadd__rvalue__reference_8hpp_html"><div class="ttname"><a href="add__rvalue__reference_8hpp.html">add_rvalue_reference.hpp</a></div></div>
 <div class="ttc" id="ais__nothrow__assignable_8hpp_html"><div class="ttname"><a href="is__nothrow__assignable_8hpp.html">is_nothrow_assignable.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_ab5d18b577003e8d090a82e4c6d497cdd"><div class="ttname"><a href="namespaceetl.html#ab5d18b577003e8d090a82e4c6d497cdd">etl::is_nothrow_move_assignable_v</a></div><div class="ttdeci">constexpr bool is_nothrow_move_assignable_v</div><div class="ttdef"><b>Definition</b> is_nothrow_move_assignable.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_ad26f59ba1b8a873f9d8374f72a4002c4"><div class="ttname"><a href="namespaceetl.html#ad26f59ba1b8a873f9d8374f72a4002c4">etl::is_nothrow_move_assignable_v</a></div><div class="ttdeci">constexpr bool is_nothrow_move_assignable_v</div><div class="ttdef"><b>Definition</b> is_nothrow_move_assignable.hpp:28</div></div>
 <div class="ttc" id="astructetl_1_1is__nothrow__assignable_html"><div class="ttname"><a href="structetl_1_1is__nothrow__assignable.html">etl::is_nothrow_assignable</a></div><div class="ttdoc">If the expression etl::declval&lt;T&gt;() = etl::declval&lt;U&gt;() is well-formed in unevaluated context,...</div><div class="ttdef"><b>Definition</b> is_nothrow_assignable.hpp:17</div></div>
 <div class="ttc" id="astructetl_1_1is__nothrow__move__assignable_html"><div class="ttname"><a href="structetl_1_1is__nothrow__move__assignable.html">etl::is_nothrow_move_assignable</a></div><div class="ttdoc">If T is not a referenceable type (i.e., possibly cv-qualified void or a function type with a cv-quali...</div><div class="ttdef"><b>Definition</b> is_nothrow_move_assignable.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -140,7 +140,7 @@ $(function(){initNavTree('is__nothrow__move__assignable_8hpp_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__nothrow__move__assignable_8hpp.html">is_nothrow_move_assignable.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

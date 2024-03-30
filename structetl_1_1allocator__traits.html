@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: etl::allocator_traits&lt; Alloc &gt; Struct Template Reference</title>
+<title>tetl: allocator_traits&lt; Alloc &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,7 +108,7 @@ $(function(){initNavTree('structetl_1_1allocator__traits.html',''); initResizabl
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="structetl_1_1allocator__traits-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">etl::allocator_traits&lt; Alloc &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">allocator_traits&lt; Alloc &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -116,33 +116,33 @@ $(function(){initNavTree('structetl_1_1allocator__traits.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae155b3c3e5d782871b66edd93313a003" id="r_ae155b3c3e5d782871b66edd93313a003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae155b3c3e5d782871b66edd93313a003">allocator_type</a> = <a class="el" href="structetl_1_1static__vector.html">Alloc</a></td></tr>
-<tr class="separator:ae155b3c3e5d782871b66edd93313a003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e88cfcf4216f21c7e5730a06704bbe1" id="r_a5e88cfcf4216f21c7e5730a06704bbe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e88cfcf4216f21c7e5730a06704bbe1">value_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> Alloc::value_type</td></tr>
-<tr class="separator:a5e88cfcf4216f21c7e5730a06704bbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27923b0ea5c064da70de677dd198242e" id="r_a27923b0ea5c064da70de677dd198242e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27923b0ea5c064da70de677dd198242e">pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:a27923b0ea5c064da70de677dd198242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3370411b9c3998c5a84a79c46e2eb09" id="r_ad3370411b9c3998c5a84a79c46e2eb09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3370411b9c3998c5a84a79c46e2eb09">const_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:ad3370411b9c3998c5a84a79c46e2eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2281be94b720ffeb20ad56e63083bead" id="r_a2281be94b720ffeb20ad56e63083bead"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2281be94b720ffeb20ad56e63083bead">void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:a2281be94b720ffeb20ad56e63083bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e5e3669fd5219581d9aa480203fa73e" id="r_a2e5e3669fd5219581d9aa480203fa73e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e5e3669fd5219581d9aa480203fa73e">const_void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:a2e5e3669fd5219581d9aa480203fa73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbcc5fc7241dfecb4e4c47096dddbd3" id="r_a6fbcc5fc7241dfecb4e4c47096dddbd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fbcc5fc7241dfecb4e4c47096dddbd3">difference_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_difference_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:a6fbcc5fc7241dfecb4e4c47096dddbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82e0c1aef4e8f140d105fd0362181f0" id="r_aa82e0c1aef4e8f140d105fd0362181f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa82e0c1aef4e8f140d105fd0362181f0">size_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_size_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
-<tr class="separator:aa82e0c1aef4e8f140d105fd0362181f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85263a9e2d1f4da2cde00205ca6f8d08" id="r_a85263a9e2d1f4da2cde00205ca6f8d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85263a9e2d1f4da2cde00205ca6f8d08">allocator_type</a> = <a class="el" href="structetl_1_1static__vector.html">Alloc</a></td></tr>
+<tr class="separator:a85263a9e2d1f4da2cde00205ca6f8d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1577a3b234d8eee67cb2c3fbf7f41ce0" id="r_a1577a3b234d8eee67cb2c3fbf7f41ce0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1577a3b234d8eee67cb2c3fbf7f41ce0">value_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> Alloc::value_type</td></tr>
+<tr class="separator:a1577a3b234d8eee67cb2c3fbf7f41ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1851158ab5b9ae73da5ae7f989c81b3" id="r_ae1851158ab5b9ae73da5ae7f989c81b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1851158ab5b9ae73da5ae7f989c81b3">pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:ae1851158ab5b9ae73da5ae7f989c81b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02869c0ee4bb50c4242420537eb3ad7c" id="r_a02869c0ee4bb50c4242420537eb3ad7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02869c0ee4bb50c4242420537eb3ad7c">const_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:a02869c0ee4bb50c4242420537eb3ad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215bb1f71726aee0fc6653325bcac7e1" id="r_a215bb1f71726aee0fc6653325bcac7e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a215bb1f71726aee0fc6653325bcac7e1">void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:a215bb1f71726aee0fc6653325bcac7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047a910a302e8303b0a11d46fa50680d" id="r_a047a910a302e8303b0a11d46fa50680d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a047a910a302e8303b0a11d46fa50680d">const_void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:a047a910a302e8303b0a11d46fa50680d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af949edeceaf6441702164aa4c7d49404" id="r_af949edeceaf6441702164aa4c7d49404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af949edeceaf6441702164aa4c7d49404">difference_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_difference_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:af949edeceaf6441702164aa4c7d49404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906bccec79e59fb882527bb4dfd6f016" id="r_a906bccec79e59fb882527bb4dfd6f016"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_size_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td></tr>
+<tr class="separator:a906bccec79e59fb882527bb4dfd6f016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a047d62744c9d726c2cbab83ce20aa99a" id="r_a047d62744c9d726c2cbab83ce20aa99a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a047d62744c9d726c2cbab83ce20aa99a">allocate</a> (<a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;a, <a class="el" href="#aa82e0c1aef4e8f140d105fd0362181f0">size_type</a> <a class="el" href="structetl_1_1static__vector.html">n</a>)</td></tr>
-<tr class="separator:a047d62744c9d726c2cbab83ce20aa99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fa8131fa5593ae5c87b9a567f15d2a8" id="r_a5fa8131fa5593ae5c87b9a567f15d2a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa8131fa5593ae5c87b9a567f15d2a8">deallocate</a> (<a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;a, <a class="el" href="#a27923b0ea5c064da70de677dd198242e">pointer</a> p, <a class="el" href="#aa82e0c1aef4e8f140d105fd0362181f0">size_type</a> <a class="el" href="structetl_1_1static__vector.html">n</a>)</td></tr>
-<tr class="separator:a5fa8131fa5593ae5c87b9a567f15d2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352f8914cbd593685bef6ed16ca48820" id="r_a352f8914cbd593685bef6ed16ca48820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a352f8914cbd593685bef6ed16ca48820">allocate</a> (<a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;a, <a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a> <a class="el" href="structetl_1_1static__vector.html">n</a>)</td></tr>
+<tr class="separator:a352f8914cbd593685bef6ed16ca48820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e43a5aef746723ebec1f481e2d1a62b" id="r_a7e43a5aef746723ebec1f481e2d1a62b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e43a5aef746723ebec1f481e2d1a62b">deallocate</a> (<a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;a, <a class="el" href="#ae1851158ab5b9ae73da5ae7f989c81b3">pointer</a> p, <a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a> <a class="el" href="structetl_1_1static__vector.html">n</a>)</td></tr>
+<tr class="separator:a7e43a5aef746723ebec1f481e2d1a62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae155b3c3e5d782871b66edd93313a003" name="ae155b3c3e5d782871b66edd93313a003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae155b3c3e5d782871b66edd93313a003">&#9670;&#160;</a></span>allocator_type</h2>
+<a id="a85263a9e2d1f4da2cde00205ca6f8d08" name="a85263a9e2d1f4da2cde00205ca6f8d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85263a9e2d1f4da2cde00205ca6f8d08">&#9670;&#160;</a></span>allocator_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,15 +150,15 @@ Static Public Member Functions</h2></td></tr>
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::allocator_type = <a class="el" href="structetl_1_1static__vector.html">Alloc</a></td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a85263a9e2d1f4da2cde00205ca6f8d08">allocator_type</a> = <a class="el" href="structetl_1_1static__vector.html">Alloc</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5e88cfcf4216f21c7e5730a06704bbe1" name="a5e88cfcf4216f21c7e5730a06704bbe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e88cfcf4216f21c7e5730a06704bbe1">&#9670;&#160;</a></span>value_type</h2>
+<a id="a1577a3b234d8eee67cb2c3fbf7f41ce0" name="a1577a3b234d8eee67cb2c3fbf7f41ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1577a3b234d8eee67cb2c3fbf7f41ce0">&#9670;&#160;</a></span>value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,15 +166,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::value_type = <a class="el" href="structetl_1_1static__vector.html">typename</a> Alloc::value_type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a1577a3b234d8eee67cb2c3fbf7f41ce0">value_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> Alloc::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a27923b0ea5c064da70de677dd198242e" name="a27923b0ea5c064da70de677dd198242e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27923b0ea5c064da70de677dd198242e">&#9670;&#160;</a></span>pointer</h2>
+<a id="ae1851158ab5b9ae73da5ae7f989c81b3" name="ae1851158ab5b9ae73da5ae7f989c81b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1851158ab5b9ae73da5ae7f989c81b3">&#9670;&#160;</a></span>pointer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,15 +182,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::pointer = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#ae1851158ab5b9ae73da5ae7f989c81b3">pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad3370411b9c3998c5a84a79c46e2eb09" name="ad3370411b9c3998c5a84a79c46e2eb09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3370411b9c3998c5a84a79c46e2eb09">&#9670;&#160;</a></span>const_pointer</h2>
+<a id="a02869c0ee4bb50c4242420537eb3ad7c" name="a02869c0ee4bb50c4242420537eb3ad7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02869c0ee4bb50c4242420537eb3ad7c">&#9670;&#160;</a></span>const_pointer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,15 +198,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::const_pointer = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a02869c0ee4bb50c4242420537eb3ad7c">const_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2281be94b720ffeb20ad56e63083bead" name="a2281be94b720ffeb20ad56e63083bead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2281be94b720ffeb20ad56e63083bead">&#9670;&#160;</a></span>void_pointer</h2>
+<a id="a215bb1f71726aee0fc6653325bcac7e1" name="a215bb1f71726aee0fc6653325bcac7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215bb1f71726aee0fc6653325bcac7e1">&#9670;&#160;</a></span>void_pointer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,15 +214,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::void_pointer = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a215bb1f71726aee0fc6653325bcac7e1">void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2e5e3669fd5219581d9aa480203fa73e" name="a2e5e3669fd5219581d9aa480203fa73e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e5e3669fd5219581d9aa480203fa73e">&#9670;&#160;</a></span>const_void_pointer</h2>
+<a id="a047a910a302e8303b0a11d46fa50680d" name="a047a910a302e8303b0a11d46fa50680d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047a910a302e8303b0a11d46fa50680d">&#9670;&#160;</a></span>const_void_pointer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,15 +230,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::const_void_pointer = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a047a910a302e8303b0a11d46fa50680d">const_void_pointer</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_const_void_pointer&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6fbcc5fc7241dfecb4e4c47096dddbd3" name="a6fbcc5fc7241dfecb4e4c47096dddbd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fbcc5fc7241dfecb4e4c47096dddbd3">&#9670;&#160;</a></span>difference_type</h2>
+<a id="af949edeceaf6441702164aa4c7d49404" name="af949edeceaf6441702164aa4c7d49404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af949edeceaf6441702164aa4c7d49404">&#9670;&#160;</a></span>difference_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,15 +246,15 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::difference_type = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_difference_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#af949edeceaf6441702164aa4c7d49404">difference_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_difference_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa82e0c1aef4e8f140d105fd0362181f0" name="aa82e0c1aef4e8f140d105fd0362181f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa82e0c1aef4e8f140d105fd0362181f0">&#9670;&#160;</a></span>size_type</h2>
+<a id="a906bccec79e59fb882527bb4dfd6f016" name="a906bccec79e59fb882527bb4dfd6f016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906bccec79e59fb882527bb4dfd6f016">&#9670;&#160;</a></span>size_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +262,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::size_type = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_size_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> detail::allocator_traits_size_type&lt;<a class="el" href="structetl_1_1static__vector.html">Alloc</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -270,8 +270,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a047d62744c9d726c2cbab83ce20aa99a" name="a047d62744c9d726c2cbab83ce20aa99a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a047d62744c9d726c2cbab83ce20aa99a">&#9670;&#160;</a></span>allocate()</h2>
+<a id="a352f8914cbd593685bef6ed16ca48820" name="a352f8914cbd593685bef6ed16ca48820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352f8914cbd593685bef6ed16ca48820">&#9670;&#160;</a></span>allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,14 +282,14 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::allocate </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a> allocate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#aa82e0c1aef4e8f140d105fd0362181f0">size_type</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -301,8 +301,8 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 </div>
 </div>
-<a id="a5fa8131fa5593ae5c87b9a567f15d2a8" name="a5fa8131fa5593ae5c87b9a567f15d2a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fa8131fa5593ae5c87b9a567f15d2a8">&#9670;&#160;</a></span>deallocate()</h2>
+<a id="a7e43a5aef746723ebec1f481e2d1a62b" name="a7e43a5aef746723ebec1f481e2d1a62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e43a5aef746723ebec1f481e2d1a62b">&#9670;&#160;</a></span>deallocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,19 +313,19 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">void</a> <a class="el" href="structetl_1_1allocator__traits.html">etl::allocator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Alloc</a> &gt;::deallocate </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">void</a> deallocate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Alloc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a27923b0ea5c064da70de677dd198242e">pointer</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#ae1851158ab5b9ae73da5ae7f989c81b3">pointer</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#aa82e0c1aef4e8f140d105fd0362181f0">size_type</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a906bccec79e59fb882527bb4dfd6f016">size_type</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -346,7 +346,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1allocator__traits.html">allocator_traits</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

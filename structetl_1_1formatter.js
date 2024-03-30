@@ -1,6 +1,6 @@
 var structetl_1_1formatter =
 [
-    [ "formatter", "structetl_1_1formatter.html#aef433432e02d0f754e91df0ab7432b60", null ],
-    [ "formatter", "structetl_1_1formatter.html#a6c920cb79fd28bbf7cdd59ac14972943", null ],
-    [ "operator=", "structetl_1_1formatter.html#adae89dd4fa8aabf787760937e9014b4a", null ]
+    [ "formatter", "structetl_1_1formatter.html#a81c2fae306c5df1771102de3eb74aff9", null ],
+    [ "formatter", "structetl_1_1formatter.html#ab74e1e19727b75c7cee023d2377f41eb", null ],
+    [ "operator=", "structetl_1_1formatter.html#ab9e8207f4da203344a65a25d6b0e6f63", null ]
 ];

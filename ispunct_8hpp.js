@@ -1,4 +1,4 @@
 var ispunct_8hpp =
 [
-    [ "ispunct", "ispunct_8hpp.html#a531a127903fbd0d7545d9a69bf13bb3c", null ]
+    [ "ispunct", "ispunct_8hpp.html#a5b14f213f7af1217b2d2cdf65f180738", null ]
 ];

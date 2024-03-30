@@ -129,7 +129,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1static__vector.html">U</a> = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_reference_t&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1decay.html#a06c8e67bfa3289a9f9bf3a45c62d020f">   25</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1static__vector.html">type</a> = <a class="code hl_typedef" href="namespaceetl.html#ab39305667768a11caaca93abf03c21ce">etl::conditional_t</a>&lt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1decay.html#a5a1d7f99fe830ad314cbe8a5bef6b2a0">   25</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1static__vector.html">type</a> = <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_array_v&lt;U&gt;</a>,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_extent_t&lt;U&gt;</a>*,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::conditional_t&lt;etl::is_function_v&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::add_pointer_t&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_cv_t&lt;U&gt;</a>&gt;&gt;;</div>
@@ -137,7 +137,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac731e2d13871fb7848c6f0ccde332949">   32</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceetl.html#ac731e2d13871fb7848c6f0ccde332949">decay_t</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="structetl_1_1decay.html#a06c8e67bfa3289a9f9bf3a45c62d020f">etl::decay&lt;T&gt;::type</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">   32</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="structetl_1_1decay.html#a5a1d7f99fe830ad314cbe8a5bef6b2a0">etl::decay&lt;T&gt;::type</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
@@ -146,14 +146,14 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aconditional_8hpp_html"><div class="ttname"><a href="conditional_8hpp.html">conditional.hpp</a></div></div>
 <div class="ttc" id="ais__array_8hpp_html"><div class="ttname"><a href="is__array_8hpp.html">is_array.hpp</a></div></div>
 <div class="ttc" id="ais__function_8hpp_html"><div class="ttname"><a href="is__function_8hpp.html">is_function.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_ab39305667768a11caaca93abf03c21ce"><div class="ttname"><a href="namespaceetl.html#ab39305667768a11caaca93abf03c21ce">etl::conditional_t</a></div><div class="ttdeci">typename etl::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_ac731e2d13871fb7848c6f0ccde332949"><div class="ttname"><a href="namespaceetl.html#ac731e2d13871fb7848c6f0ccde332949">etl::decay_t</a></div><div class="ttdeci">typename etl::decay&lt; T &gt;::type decay_t</div><div class="ttdef"><b>Definition</b> decay.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a24f3c9ab2c53f9192c2899fc8efb263d"><div class="ttname"><a href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a></div><div class="ttdeci">typename etl::decay&lt; T &gt;::type decay_t</div><div class="ttdef"><b>Definition</b> decay.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html_a4ccf02556580259044928051b1689171"><div class="ttname"><a href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a></div><div class="ttdeci">typename etl::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 <div class="ttc" id="aremove__extent_8hpp_html"><div class="ttname"><a href="remove__extent_8hpp.html">remove_extent.hpp</a></div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1decay_html"><div class="ttname"><a href="structetl_1_1decay.html">etl::decay</a></div><div class="ttdoc">Applies lvalue-to-rvalue, array-to-pointer, and function-to-pointer implicit conversions to the type ...</div><div class="ttdef"><b>Definition</b> decay.hpp:20</div></div>
-<div class="ttc" id="astructetl_1_1decay_html_a06c8e67bfa3289a9f9bf3a45c62d020f"><div class="ttname"><a href="structetl_1_1decay.html#a06c8e67bfa3289a9f9bf3a45c62d020f">etl::decay::type</a></div><div class="ttdeci">etl::conditional_t&lt; etl::is_array_v&lt; U &gt;, etl::remove_extent_t&lt; U &gt; *, etl::conditional_t&lt; etl::is_function_v&lt; U &gt;, etl::add_pointer_t&lt; U &gt;, etl::remove_cv_t&lt; U &gt; &gt; &gt; type</div><div class="ttdef"><b>Definition</b> decay.hpp:25</div></div>
+<div class="ttc" id="astructetl_1_1decay_html_a5a1d7f99fe830ad314cbe8a5bef6b2a0"><div class="ttname"><a href="structetl_1_1decay.html#a5a1d7f99fe830ad314cbe8a5bef6b2a0">etl::decay::type</a></div><div class="ttdeci">etl::conditional_t&lt; etl::is_array_v&lt; U &gt;, etl::remove_extent_t&lt; U &gt; *, etl::conditional_t&lt; etl::is_function_v&lt; U &gt;, etl::add_pointer_t&lt; U &gt;, etl::remove_cv_t&lt; U &gt; &gt; &gt; type</div><div class="ttdef"><b>Definition</b> decay.hpp:25</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -161,7 +161,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="decay_8hpp.html">decay.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

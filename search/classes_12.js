@@ -26,6 +26,6 @@ var searchData=
   ['tuple_5fsize_3c_20t_20const_20volatile_20_3e_23',['tuple_size&lt; T const volatile &gt;',['../structetl_1_1tuple__size_3_01T_01const_01volatile_01_4.html',1,'etl']]],
   ['tuple_5fsize_3c_20t_20volatile_20_3e_24',['tuple_size&lt; T volatile &gt;',['../structetl_1_1tuple__size_3_01T_01volatile_01_4.html',1,'etl']]],
   ['tuple_5fsize_3c_20tuple_3c_20ts_2e_2e_2e_20_3e_20_3e_25',['tuple_size&lt; tuple&lt; Ts... &gt; &gt;',['../structetl_1_1tuple__size_3_01tuple_3_01Ts_8_8_8_01_4_01_4.html',1,'etl']]],
-  ['type_26',['type',['../structetl_1_1aligned__storage_1_1type.html',1,'etl::aligned_storage&lt; Len, Align &gt;::type'],['../structetl_1_1aligned__union_1_1type.html',1,'etl::aligned_union&lt; Len, Types &gt;::type']]],
+  ['type_26',['type',['../structetl_1_1aligned__storage_1_1type.html',1,'aligned_storage&lt; Len, Align &gt;::type'],['../structetl_1_1aligned__union_1_1type.html',1,'aligned_union&lt; Len, Types &gt;::type']]],
   ['type_5fidentity_27',['type_identity',['../structetl_1_1type__identity.html',1,'etl']]]
 ];

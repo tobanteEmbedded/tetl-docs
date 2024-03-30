@@ -1,10 +1,10 @@
 var implementation_8hpp =
 [
-    [ "implementation", "implementation_8hpp.html#a035e7d2ea0f6aebad724e7fab40495d5", [
-      [ "freestanding", "implementation_8hpp.html#a035e7d2ea0f6aebad724e7fab40495d5aed920a9dd5bae2e1c4f11aab8f5784e1", null ],
-      [ "hosted", "implementation_8hpp.html#a035e7d2ea0f6aebad724e7fab40495d5a734d3030ff72ad8d9678efa82b1db7d2", null ]
+    [ "implementation", "implementation_8hpp.html#a6a5c92ae723acdba8ce0f48be8530154", [
+      [ "freestanding", "implementation_8hpp.html#a6a5c92ae723acdba8ce0f48be8530154aed920a9dd5bae2e1c4f11aab8f5784e1", null ],
+      [ "hosted", "implementation_8hpp.html#a6a5c92ae723acdba8ce0f48be8530154a734d3030ff72ad8d9678efa82b1db7d2", null ]
     ] ],
-    [ "is_hosted", "implementation_8hpp.html#a47b8bc94405a580d276749fde24834f7", null ],
-    [ "is_freestanding", "implementation_8hpp.html#ae0643ba313eeb2da0a37a713fa74cb5f", null ],
-    [ "current_implementation", "implementation_8hpp.html#a8047ec1fd97af797afb4226eba8bd80f", null ]
+    [ "is_hosted", "implementation_8hpp.html#a5914a0a90f9a279328bcadc57b7ce090", null ],
+    [ "is_freestanding", "implementation_8hpp.html#adcf6fdfc0878be3154d7671edc95de7f", null ],
+    [ "current_implementation", "implementation_8hpp.html#ac9683edd538ff0cc668fb5a823604223", null ]
 ];

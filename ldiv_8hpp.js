@@ -1,6 +1,6 @@
 var ldiv_8hpp =
 [
-    [ "etl::ldiv_t", "structetl_1_1ldiv__t.html", "structetl_1_1ldiv__t" ],
-    [ "div", "ldiv_8hpp.html#a43b5e9350f1530967470589c83376b30", null ],
-    [ "ldiv", "ldiv_8hpp.html#ab7b706a74e1efaf3c98804627fba671c", null ]
+    [ "ldiv_t", "structetl_1_1ldiv__t.html", "structetl_1_1ldiv__t" ],
+    [ "div", "ldiv_8hpp.html#afe969af8a9f77fea0bb9e0d7a82c5b3f", null ],
+    [ "ldiv", "ldiv_8hpp.html#a817f60653f2167239f303e63ec82d4d8", null ]
 ];

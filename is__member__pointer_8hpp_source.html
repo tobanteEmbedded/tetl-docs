@@ -122,26 +122,26 @@ $(function(){initNavTree('is__member__pointer_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if defined(TETL_COMPILER_CLANG)</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#adbaaa5057d498812ee848f491a20649a">is_member_pointer_v</a> = __is_member_pointer(T);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a8f351ba579310d9228dc77b84bdf10b6">is_member_pointer_v</a> = __is_member_pointer(T);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">struct </span>is_member_pointer : <a class="code hl_typedef" href="namespaceetl.html#ae91dc3f8feab79708723b75f54e9cc21">bool_constant</a>&lt;__is_member_pointer(T)&gt; { };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">struct </span>is_member_pointer : <a class="code hl_typedef" href="namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a>&lt;__is_member_pointer(T)&gt; { };</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">struct </span>is_member_pointer_helper : <a class="code hl_typedef" href="namespaceetl.html#a4427bfeb098157f5bd5c0dc9d4dca6de">false_type</a> { };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">struct </span>is_member_pointer_helper : <a class="code hl_typedef" href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">false_type</a> { };</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">struct </span>is_member_pointer_helper&lt;T U::*&gt; : <a class="code hl_typedef" href="namespaceetl.html#a251ff8ada16d1b2942679b1cac95a5ed">true_type</a> { };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">struct </span>is_member_pointer_helper&lt;T U::*&gt; : <a class="code hl_typedef" href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">true_type</a> { };</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structetl_1_1is__member__pointer.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__member__pointer.html">is_member_pointer</a> : detail::is_member_pointer_helper&lt;remove_cv_t&lt;T&gt; &gt; { };</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#adbaaa5057d498812ee848f491a20649a">   40</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#adbaaa5057d498812ee848f491a20649a">is_member_pointer_v</a> = <a class="code hl_struct" href="structetl_1_1is__member__pointer.html">is_member_pointer&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8f351ba579310d9228dc77b84bdf10b6">   40</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a8f351ba579310d9228dc77b84bdf10b6">is_member_pointer_v</a> = <a class="code hl_struct" href="structetl_1_1is__member__pointer.html">is_member_pointer&lt;T&gt;::value</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
@@ -150,11 +150,11 @@ $(function(){initNavTree('is__member__pointer_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_MEMBER_POINTER_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a251ff8ada16d1b2942679b1cac95a5ed"><div class="ttname"><a href="namespaceetl.html#a251ff8ada16d1b2942679b1cac95a5ed">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
-<div class="ttc" id="anamespaceetl_html_a4427bfeb098157f5bd5c0dc9d4dca6de"><div class="ttname"><a href="namespaceetl.html#a4427bfeb098157f5bd5c0dc9d4dca6de">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_adbaaa5057d498812ee848f491a20649a"><div class="ttname"><a href="namespaceetl.html#adbaaa5057d498812ee848f491a20649a">etl::is_member_pointer_v</a></div><div class="ttdeci">constexpr bool is_member_pointer_v</div><div class="ttdef"><b>Definition</b> is_member_pointer.hpp:40</div></div>
-<div class="ttc" id="anamespaceetl_html_ae91dc3f8feab79708723b75f54e9cc21"><div class="ttname"><a href="namespaceetl.html#ae91dc3f8feab79708723b75f54e9cc21">etl::bool_constant</a></div><div class="ttdeci">integral_constant&lt; bool, B &gt; bool_constant</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a8f351ba579310d9228dc77b84bdf10b6"><div class="ttname"><a href="namespaceetl.html#a8f351ba579310d9228dc77b84bdf10b6">etl::is_member_pointer_v</a></div><div class="ttdeci">constexpr bool is_member_pointer_v</div><div class="ttdef"><b>Definition</b> is_member_pointer.hpp:40</div></div>
+<div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
+<div class="ttc" id="anamespaceetl_html_ac5c90336c94cb0db8abdd10603a3c7cc"><div class="ttname"><a href="namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc">etl::bool_constant</a></div><div class="ttdeci">integral_constant&lt; bool, B &gt; bool_constant</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1is__member__pointer_html"><div class="ttname"><a href="structetl_1_1is__member__pointer.html">etl::is_member_pointer</a></div><div class="ttdoc">If T is pointer to non-static member object or a pointer to non-static member function,...</div><div class="ttdef"><b>Definition</b> is_member_pointer.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -163,7 +163,7 @@ $(function(){initNavTree('is__member__pointer_8hpp_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__member__pointer_8hpp.html">is_member_pointer.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

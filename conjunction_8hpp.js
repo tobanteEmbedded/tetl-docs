@@ -1,5 +1,5 @@
 var conjunction_8hpp =
 [
-    [ "etl::conjunction< B >", "structetl_1_1conjunction.html", null ],
-    [ "conjunction_v", "conjunction_8hpp.html#af0d9f32a20bf813fd8ce025d0aebbff5", null ]
+    [ "conjunction< B >", "structetl_1_1conjunction.html", null ],
+    [ "conjunction_v", "conjunction_8hpp.html#a5672914b2f1f9c1c4c50ded53a8db2e3", null ]
 ];

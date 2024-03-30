@@ -12,8 +12,8 @@ var structetl_1_1partial__ordering =
     [ "operator>=", "structetl_1_1partial__ordering.html#a0e598185c94d8c7e9e1c2474db64f3c4", null ],
     [ "operator<=>", "structetl_1_1partial__ordering.html#aa01fce203419946e66707daab58c1aaf", null ],
     [ "operator<=>", "structetl_1_1partial__ordering.html#ae0e6e248f6b2c2856137dfa914014269", null ],
-    [ "less", "structetl_1_1partial__ordering.html#a30851763ea1de6e9d6c1ada6a8f3b42b", null ],
-    [ "equivalent", "structetl_1_1partial__ordering.html#a38bb99b3fb889a98e01e52a1e69fe857", null ],
-    [ "greater", "structetl_1_1partial__ordering.html#ace000c62533ca36d9b8ec3fe19aca842", null ],
-    [ "unordered", "structetl_1_1partial__ordering.html#a8e34884d52c27f7d2e8eddc77a9750cb", null ]
+    [ "less", "structetl_1_1partial__ordering.html#afe602a56b96a2de4ccb5368329741054", null ],
+    [ "equivalent", "structetl_1_1partial__ordering.html#a546e9a193c11fc89b46d10200418228f", null ],
+    [ "greater", "structetl_1_1partial__ordering.html#a6dbcd31788c9418153c2f90492c3bcb0", null ],
+    [ "unordered", "structetl_1_1partial__ordering.html#a3e7b7be212509698498583f137e0a466", null ]
 ];

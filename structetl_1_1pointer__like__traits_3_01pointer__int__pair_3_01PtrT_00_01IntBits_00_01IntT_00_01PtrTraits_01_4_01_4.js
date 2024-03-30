@@ -1,7 +1,7 @@
 var structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4 =
 [
-    [ "get_as_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#ac10174bc94e19ac1947012aea8e34d01", null ],
-    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#ae23be85ac43dff87517a8391f5f4b9a5", null ],
-    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#a52ff413371e5fb5d10220f656f666b4f", null ],
-    [ "free_bits", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#a83788536ed523821982c752d03f4ad3f", null ]
+    [ "get_as_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#a05c8b6d71ff130472df7b6ad510397b1", null ],
+    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#aef7b6bf620771d65e7f2bbf586fe8975", null ],
+    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#ad0c1e69d63374b276f9925a12e252e93", null ],
+    [ "free_bits", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html#a44554ded36bdd7aa9a30f9c1b9cfcaa5", null ]
 ];

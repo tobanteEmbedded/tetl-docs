@@ -1,4 +1,4 @@
 var wcscat_8hpp =
 [
-    [ "wcscat", "wcscat_8hpp.html#afb64ccab832f8ed29a305df495394bd8", null ]
+    [ "wcscat", "wcscat_8hpp.html#a95b81f8645cb1474f15eb0afc8297a82", null ]
 ];

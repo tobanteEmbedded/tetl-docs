@@ -118,7 +118,7 @@ $(function(){initNavTree('__utility_2move_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#a4c81fb3d2e0ae2e41e87e2381bd9776a">   18</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">move</a>(T&amp;&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">t</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_reference_t&lt;T&gt;</a>&amp;&amp;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#adeb87647bd4c378500cd694ccc0e4608">   18</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a9060e0931516472a88f4657d835684a9">move</a>(T&amp;&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">t</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_reference_t&lt;T&gt;</a>&amp;&amp;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_reference_t&lt;T&gt;</a>&amp;&amp;<span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">t</a>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
@@ -130,8 +130,8 @@ $(function(){initNavTree('__utility_2move_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">   26</a></span><span class="preprocessor">#define TETL_MOVE(...) static_cast&lt;etl::remove_reference_t&lt;decltype(__VA_ARGS__)&gt;&amp;&amp;&gt;(__VA_ARGS__)</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">// TETL_UTILITY_MOVE_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a1b8df3814fc65f04932c2f0d09a56107"><div class="ttname"><a href="namespaceetl.html#a1b8df3814fc65f04932c2f0d09a56107">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:24</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="namespaceetl.html#a9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:24</div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -140,7 +140,7 @@ $(function(){initNavTree('__utility_2move_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="__utility_2move_8hpp.html">move.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,6 @@
 var nextafter_8hpp =
 [
-    [ "nextafter", "nextafter_8hpp.html#ga59be8945c5efec1cdc9860dd0a8f04ed", null ],
-    [ "nextafterf", "nextafter_8hpp.html#ga7c0420dd56139b0939734e1952cbb1c4", null ],
-    [ "nextafter", "nextafter_8hpp.html#ga3f83e49db9982e87ce21075dc80cf9a5", null ]
+    [ "nextafter", "nextafter_8hpp.html#gaaa3ff973e51c840722b01eca0e1af274", null ],
+    [ "nextafterf", "nextafter_8hpp.html#ga3dcbc27b4908c97a6afd89f89b9cd525", null ],
+    [ "nextafter", "nextafter_8hpp.html#ga3520d2487f82a9efbef4e6df25e28905", null ]
 ];

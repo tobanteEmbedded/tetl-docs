@@ -1,16 +1,16 @@
 var structetl_1_1xorshift =
 [
-    [ "result_type", "structetl_1_1xorshift.html#ae4995d1619392eabeafd1ac54d3ef1d6", null ],
-    [ "xorshift", "structetl_1_1xorshift.html#a9543cd8865db0d3ca15c11b3ddc9fbed", null ],
-    [ "xorshift", "structetl_1_1xorshift.html#a0abb914acb78b0b3c7d59295025fd666", null ],
-    [ "min", "structetl_1_1xorshift.html#a2e8ab47790bb344dfbcd50287ba4a111", null ],
-    [ "max", "structetl_1_1xorshift.html#a457121c284b204697017719c2cc9fcbe", null ],
-    [ "seed", "structetl_1_1xorshift.html#a1c913c57f607ba6949076676c3d4adb8", null ],
-    [ "discard", "structetl_1_1xorshift.html#ad66d2556d7b797ef7248c94126f83c25", null ],
-    [ "operator()", "structetl_1_1xorshift.html#a4abac310c7281daf5bef759cff111757", null ],
+    [ "result_type", "structetl_1_1xorshift.html#abbad69f934226934e32489c3215b6e58", null ],
+    [ "xorshift", "structetl_1_1xorshift.html#a87ed37e66e0eacaa727950acf1577d32", null ],
+    [ "xorshift", "structetl_1_1xorshift.html#a213b0910f16aa5fd0823cc3b8c1e3f5d", null ],
+    [ "min", "structetl_1_1xorshift.html#aca3c7b034975cf83cf3ffceb1b9eaee2", null ],
+    [ "max", "structetl_1_1xorshift.html#a807c5ae485107075e645a00d0d9f5df3", null ],
+    [ "seed", "structetl_1_1xorshift.html#a2c47e69f65e5f576c7aec26dabdffdd3", null ],
+    [ "discard", "structetl_1_1xorshift.html#a31a4b8a32f9bf3991822f291e1cf89dc", null ],
+    [ "operator()", "structetl_1_1xorshift.html#ad6cfa14e27711de78039bcacbc454157", null ],
     [ "xorshift16", "group__random.html#gada939b7242c7b75587b14fd18c28522f", null ],
     [ "xorshift32", "group__random.html#ga6ff7397215e7cc0c5460ecd5b8d3302b", null ],
     [ "xorshift64", "group__random.html#ga0d9d40f06204cac3ddc6e91203718e03", null ],
     [ "operator==", "structetl_1_1xorshift.html#a87281656e3d0c9d1787a74a4b25ff5ef", null ],
-    [ "default_seed", "structetl_1_1xorshift.html#a5913c7bdcd408024db9d6c6db97ea221", null ]
+    [ "default_seed", "structetl_1_1xorshift.html#afe0170472aeefd0e86554654d580c534", null ]
 ];

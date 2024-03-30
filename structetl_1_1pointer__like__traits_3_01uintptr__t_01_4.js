@@ -1,6 +1,6 @@
 var structetl_1_1pointer__like__traits_3_01uintptr__t_01_4 =
 [
-    [ "get_as_void_pointer", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#a22abaf68a99eb3c3b39701147a4abade", null ],
-    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#a16fa07c269ce50ee33386a267c173f94", null ],
-    [ "free_bits", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#a9583c45d19a87805b55ee8888f1dd698", null ]
+    [ "get_as_void_pointer", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#aff199cd97f05787507f1bd6186ae15c1", null ],
+    [ "get_from_void_pointer", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#ab21ae88d3d991b4dabffa2f3058a9dc8", null ],
+    [ "free_bits", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html#a44554ded36bdd7aa9a30f9c1b9cfcaa5", null ]
 ];

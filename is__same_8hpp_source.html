@@ -117,10 +117,10 @@ $(function(){initNavTree('is__same_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#a3f74da2365a9a6f68d472686fd0f1666">   11</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a3f74da2365a9a6f68d472686fd0f1666">is_same_v</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">   11</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a699a4890b6c210a9503c517082e10e6c">   14</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">is_same_v&lt;T, T&gt;</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#abd4cca5d1a81afdeb0354d88b58554a1">   14</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">is_same_v&lt;T, T&gt;</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structetl_1_1is__same.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__same.html">is_same</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;is_same_v&lt;T, U&gt;&gt; { };</div>
@@ -129,8 +129,8 @@ $(function(){initNavTree('is__same_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_SAME_HPP</span></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a3f74da2365a9a6f68d472686fd0f1666"><div class="ttname"><a href="namespaceetl.html#a3f74da2365a9a6f68d472686fd0f1666">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_aa6c6bde5fd020a928e6d7b5fe8db7bb0"><div class="ttname"><a href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1is__same_html"><div class="ttname"><a href="structetl_1_1is__same.html">etl::is_same</a></div><div class="ttdoc">If T and U name the same type (taking into account const/volatile qualifications),...</div><div class="ttdef"><b>Definition</b> is_same.hpp:20</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
@@ -140,7 +140,7 @@ $(function(){initNavTree('is__same_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__same_8hpp.html">is_same.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

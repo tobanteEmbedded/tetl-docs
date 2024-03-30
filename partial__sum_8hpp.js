@@ -1,5 +1,5 @@
 var partial__sum_8hpp =
 [
-    [ "partial_sum", "partial__sum_8hpp.html#ga717726a2fed08cececaa93b504419300", null ],
-    [ "partial_sum", "partial__sum_8hpp.html#ga8d274a25ea5a88eb47898c8832795e3e", null ]
+    [ "partial_sum", "partial__sum_8hpp.html#ga8650e67603d39eabc51d4f625fd33dd9", null ],
+    [ "partial_sum", "partial__sum_8hpp.html#ga48622cf727966c91682f2a36c6cc3695", null ]
 ];

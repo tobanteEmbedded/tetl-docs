@@ -1,4 +1,4 @@
 var wcsspn_8hpp =
 [
-    [ "wcsspn", "wcsspn_8hpp.html#a51c979220a7a1ae7a993a34cce85292a", null ]
+    [ "wcsspn", "wcsspn_8hpp.html#a62a3a2cd36229b80bef3fcc819e45291", null ]
 ];

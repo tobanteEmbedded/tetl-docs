@@ -12,7 +12,7 @@ var searchData=
   ['ratio_5fless_9',['ratio_less',['../structetl_1_1ratio__less.html',1,'etl']]],
   ['ratio_5fless_5fequal_10',['ratio_less_equal',['../structetl_1_1ratio__less__equal.html',1,'etl']]],
   ['ratio_5fnot_5fequal_11',['ratio_not_equal',['../structetl_1_1ratio__not__equal.html',1,'etl']]],
-  ['rebind_5fsimd_12',['rebind_simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html',1,'etl::experimental::parallelism_v2::rebind_simd&lt; T, V &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html',1,'etl::experimental::rebind_simd&lt; T, V &gt;']]],
+  ['rebind_5fsimd_12',['rebind_simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html',1,'rebind_simd&lt; T, V &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html',1,'rebind_simd&lt; T, V &gt;']]],
   ['reference_13',['reference',['../structetl_1_1bitset_1_1reference.html',1,'etl::bitset']]],
   ['reference_5fwrapper_14',['reference_wrapper',['../structetl_1_1reference__wrapper.html',1,'etl']]],
   ['remove_5fall_5fextents_15',['remove_all_extents',['../structetl_1_1remove__all__extents.html',1,'etl']]],
@@ -35,7 +35,7 @@ var searchData=
   ['remove_5freference_3c_20t_20_26_26_20_3e_32',['remove_reference&lt; T &amp;&amp; &gt;',['../structetl_1_1remove__reference_3_01T_01_6_6_01_4.html',1,'etl']]],
   ['remove_5fvolatile_33',['remove_volatile',['../structetl_1_1remove__volatile.html',1,'etl']]],
   ['remove_5fvolatile_3c_20type_20volatile_20_3e_34',['remove_volatile&lt; Type volatile &gt;',['../structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html',1,'etl']]],
-  ['resize_5fsimd_35',['resize_simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html',1,'etl::experimental::parallelism_v2::resize_simd&lt; N, V &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html',1,'etl::experimental::resize_simd&lt; N, V &gt;']]],
+  ['resize_5fsimd_35',['resize_simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html',1,'resize_simd&lt; N, V &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html',1,'resize_simd&lt; N, V &gt;']]],
   ['reverse_5fiterator_36',['reverse_iterator',['../structetl_1_1reverse__iterator.html',1,'etl']]],
   ['row_5fmajor_5ft_37',['row_major_t',['../structetl_1_1linalg_1_1row__major__t.html',1,'etl::linalg']]],
   ['runtime_5ferror_38',['runtime_error',['../structetl_1_1runtime__error.html',1,'etl']]]

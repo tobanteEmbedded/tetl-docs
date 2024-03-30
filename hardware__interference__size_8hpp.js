@@ -1,6 +1,6 @@
 var hardware__interference__size_8hpp =
 [
     [ "TETL_CACHELINE_SIZE", "hardware__interference__size_8hpp.html#aa953892fe644febd033c1e533d29ac47", null ],
-    [ "hardware_constructive_interference_size", "hardware__interference__size_8hpp.html#a20ecb067c83bfce58af4f03457f15c8c", null ],
-    [ "hardware_destructive_interference_size", "hardware__interference__size_8hpp.html#abc217ae19afd481b0993696cbb1729bf", null ]
+    [ "hardware_constructive_interference_size", "hardware__interference__size_8hpp.html#a968338cd15fb1036406d2b3c8cb5b591", null ],
+    [ "hardware_destructive_interference_size", "hardware__interference__size_8hpp.html#acf9464e19a95c1baba9554e5ae2c2af6", null ]
 ];

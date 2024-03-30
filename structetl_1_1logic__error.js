@@ -1,5 +1,5 @@
 var structetl_1_1logic__error =
 [
-    [ "logic_error", "structetl_1_1logic__error.html#ad69a6ffbf1780f1cb7e13ed1b2b47ccc", null ],
-    [ "logic_error", "structetl_1_1logic__error.html#a0db7a2d6ba1c92d3a41854eb4154eb9e", null ]
+    [ "logic_error", "structetl_1_1logic__error.html#a9ce8e514aace0870a774f0456459e5a9", null ],
+    [ "logic_error", "structetl_1_1logic__error.html#a18f8c75ffe2dd70dfd2fb53546f6cafa", null ]
 ];

@@ -20,5 +20,5 @@ var searchData=
   ['variant_5fsize_3c_20variant2_3c_20ts_2e_2e_2e_20_3e_20_3e_17',['variant_size&lt; variant2&lt; Ts... &gt; &gt;',['../structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html',1,'etl']]],
   ['variant_5fsize_3c_20variant_3c_20ts_2e_2e_2e_20_3e_20_3e_18',['variant_size&lt; variant&lt; Ts... &gt; &gt;',['../structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html',1,'etl']]],
   ['vector_19',['vector',['../structetl_1_1vector.html',1,'etl']]],
-  ['vector_5faligned_5ftag_20',['vector_aligned_tag',['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'etl::experimental::parallelism_v2::vector_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'etl::experimental::vector_aligned_tag'],['../structetl_1_1vector__aligned__tag.html',1,'etl::vector_aligned_tag']]]
+  ['vector_5faligned_5ftag_20',['vector_aligned_tag',['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'vector_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'vector_aligned_tag'],['../structetl_1_1vector__aligned__tag.html',1,'vector_aligned_tag']]]
 ];

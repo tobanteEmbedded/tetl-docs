@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['float_5fdenorm_5fstyle_0',['float_denorm_style',['../namespaceetl.html#ad4892bd9af0bd3ad759fb95ab241247c',1,'etl']]],
-  ['float_5fround_5fstyle_1',['float_round_style',['../namespaceetl.html#a0cdec522db16c755ade7c7222bf8af92',1,'etl']]]
+  ['float_5fdenorm_5fstyle_0',['float_denorm_style',['../namespaceetl.html#a592fe78d9bf66455d12aa075f36313b6',1,'etl']]],
+  ['float_5fround_5fstyle_1',['float_round_style',['../namespaceetl.html#a3bdaf6c7e8a65859bf550443989c5a66',1,'etl']]]
 ];

@@ -1,7 +1,7 @@
 var year__month_8hpp =
 [
-    [ "etl::chrono::year_month", "structetl_1_1chrono_1_1year__month.html", "structetl_1_1chrono_1_1year__month" ],
-    [ "operator==", "year__month_8hpp.html#a23b995e3237b5a99fe16ca951e495f6a", null ],
-    [ "operator+", "year__month_8hpp.html#a131140b888c4f7be7262d2d24a64c66d", null ],
-    [ "operator+", "year__month_8hpp.html#a9d44194f1abe75eeea7cfbbc07b29fd4", null ]
+    [ "year_month", "structetl_1_1chrono_1_1year__month.html", "structetl_1_1chrono_1_1year__month" ],
+    [ "operator==", "year__month_8hpp.html#a0a89ab5a236d8c7df00719999519c914", null ],
+    [ "operator+", "year__month_8hpp.html#a55a60133475c3932fdf5ccbcd7039202", null ],
+    [ "operator+", "year__month_8hpp.html#ac071837fcac6a4b10bb77636be9f9691", null ]
 ];

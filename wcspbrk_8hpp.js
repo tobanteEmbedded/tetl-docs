@@ -1,5 +1,5 @@
 var wcspbrk_8hpp =
 [
-    [ "wcspbrk", "wcspbrk_8hpp.html#a543232e434a1cf41ac373bb986dd6761", null ],
-    [ "wcspbrk", "wcspbrk_8hpp.html#a8b719c7d907c831543f6a36d7c03c358", null ]
+    [ "wcspbrk", "wcspbrk_8hpp.html#a1dcddbba9daed153f19e883e9aea6f8d", null ],
+    [ "wcspbrk", "wcspbrk_8hpp.html#afa424e61dbe13ba0fa30a5c09f2045ac", null ]
 ];

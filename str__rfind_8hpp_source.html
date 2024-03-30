@@ -114,21 +114,21 @@ $(function(){initNavTree('str__rfind_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define TETL_STRING_STR_RFIND_HPP</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="find__end_8hpp.html">etl/_algorithm/find_end.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="__algorithm_2min_8hpp.html">etl/_algorithm/min.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="min_8hpp.html">etl/_algorithm/min.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>etl::detail {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> SizeT, <span class="keyword">typename</span> Traits, SizeT NPos&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> str_rfind(CharT <span class="keyword">const</span>* str, SizeT <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>, CharT c, SizeT pos) <span class="keyword">noexcept</span> -&gt; SizeT</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> str_rfind(CharT <span class="keyword">const</span>* str, SizeT <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>, CharT c, SizeT pos) <span class="keyword">noexcept</span> -&gt; SizeT</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a> &lt; 1) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a> &lt; 1) {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> NPos;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (pos &lt; <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (pos &lt; <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        ++pos;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        pos = <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        pos = <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>* s = str + pos; s != str;) {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> (Traits::eq(*--s, c)) {</div>
@@ -140,16 +140,16 @@ $(function(){initNavTree('str__rfind_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> SizeT, <span class="keyword">typename</span> Traits, SizeT NPos&gt;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>str_rfind(CharT <span class="keyword">const</span>* str, SizeT <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>, CharT <span class="keyword">const</span>* s, SizeT pos, SizeT n) <span class="keyword">noexcept</span> -&gt; SizeT</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>str_rfind(CharT <span class="keyword">const</span>* str, SizeT <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>, CharT <span class="keyword">const</span>* s, SizeT pos, SizeT n) <span class="keyword">noexcept</span> -&gt; SizeT</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    pos = <a class="code hl_function" href="namespaceetl.html#adae1500815312b248e453896d5439b63">etl::min</a>(pos, <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> (n &lt; <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a> - pos) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    pos = <a class="code hl_function" href="namespaceetl.html#a810b4260b22a58b461be941fa6acb745">etl::min</a>(pos, <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> (n &lt; <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a> - pos) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        pos += n;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        pos = <a class="code hl_function" href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">size</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        pos = <a class="code hl_function" href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">size</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* r = <a class="code hl_function" href="namespaceetl.html#a7c8d78c0146673a9463dc7c68540b963">etl::find_end</a>(str, str + pos, s, s + n, Traits::eq);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* r = <a class="code hl_function" href="namespaceetl.html#a99ba00834faefda2a3d9b112d053f889">etl::find_end</a>(str, str + pos, s, s + n, Traits::eq);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (n &gt; 0 &amp;&amp; r == str + pos) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> NPos;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
@@ -159,18 +159,18 @@ $(function(){initNavTree('str__rfind_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace etl::detail</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRING_STR_RFIND_HPP</span></div>
-<div class="ttc" id="a__algorithm_2min_8hpp_html"><div class="ttname"><a href="__algorithm_2min_8hpp.html">min.hpp</a></div></div>
 <div class="ttc" id="afind__end_8hpp_html"><div class="ttname"><a href="find__end_8hpp.html">find_end.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a7c8d78c0146673a9463dc7c68540b963"><div class="ttname"><a href="namespaceetl.html#a7c8d78c0146673a9463dc7c68540b963">etl::find_end</a></div><div class="ttdeci">constexpr auto find_end(ForwardIt1 first, ForwardIt1 last, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate p) -&gt; ForwardIt1</div><div class="ttdoc">Searches for the last occurrence of the sequence [sFirst, sLast) in the range [first,...</div><div class="ttdef"><b>Definition</b> find_end.hpp:24</div></div>
-<div class="ttc" id="anamespaceetl_html_adae1500815312b248e453896d5439b63"><div class="ttname"><a href="namespaceetl.html#adae1500815312b248e453896d5439b63">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b.</div><div class="ttdef"><b>Definition</b> min.hpp:10</div></div>
-<div class="ttc" id="anamespaceetl_html_af3008e042f920b06e2a67b1aa31a1803"><div class="ttname"><a href="namespaceetl.html#af3008e042f920b06e2a67b1aa31a1803">etl::size</a></div><div class="ttdeci">constexpr auto size(C const &amp;c) noexcept(noexcept(c.size())) -&gt; decltype(c.size())</div><div class="ttdoc">Returns the size of the given container c or array array. Returns c.size(), converted to the return t...</div><div class="ttdef"><b>Definition</b> size.hpp:17</div></div>
+<div class="ttc" id="amin_8hpp_html"><div class="ttname"><a href="min_8hpp.html">min.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html_a810b4260b22a58b461be941fa6acb745"><div class="ttname"><a href="namespaceetl.html#a810b4260b22a58b461be941fa6acb745">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b.</div><div class="ttdef"><b>Definition</b> min.hpp:10</div></div>
+<div class="ttc" id="anamespaceetl_html_a99ba00834faefda2a3d9b112d053f889"><div class="ttname"><a href="namespaceetl.html#a99ba00834faefda2a3d9b112d053f889">etl::find_end</a></div><div class="ttdeci">constexpr auto find_end(ForwardIt1 first, ForwardIt1 last, ForwardIt2 sFirst, ForwardIt2 sLast, Predicate p) -&gt; ForwardIt1</div><div class="ttdoc">Searches for the last occurrence of the sequence [sFirst, sLast) in the range [first,...</div><div class="ttdef"><b>Definition</b> find_end.hpp:24</div></div>
+<div class="ttc" id="anamespaceetl_html_ae8701f2e299015f92e83f375a604ef61"><div class="ttname"><a href="namespaceetl.html#ae8701f2e299015f92e83f375a604ef61">etl::size</a></div><div class="ttdeci">constexpr auto size(C const &amp;c) noexcept(noexcept(c.size())) -&gt; decltype(c.size())</div><div class="ttdoc">Returns the size of the given container c or array array. Returns c.size(), converted to the return t...</div><div class="ttdef"><b>Definition</b> size.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_23439b223dadb75c0ae61ef08b8b58fb.html">_string</a></li><li class="navelem"><a class="el" href="str__rfind_8hpp.html">str_rfind.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

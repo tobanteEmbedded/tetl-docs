@@ -1,6 +1,6 @@
 var reduce_8hpp =
 [
-    [ "reduce", "reduce_8hpp.html#ga84c6438ff40771d562eba2df365db32b", null ],
-    [ "reduce", "reduce_8hpp.html#gaf19beb246e0b495f1af0e0dda7ba07ce", null ],
-    [ "reduce", "reduce_8hpp.html#ga714efac01ef228fff45d4f6ab456dfb6", null ]
+    [ "reduce", "reduce_8hpp.html#ga1c4ece300169efb3528dd8de1633ca66", null ],
+    [ "reduce", "reduce_8hpp.html#ga10c4d18cd54181d2f678ecbf4ca6110c", null ],
+    [ "reduce", "reduce_8hpp.html#ga1aab27726885209d183d580fba57f1bb", null ]
 ];

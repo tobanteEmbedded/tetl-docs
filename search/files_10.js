@@ -27,7 +27,7 @@ var searchData=
   ['ratio_5fnot_5fequal_2ehpp_24',['ratio_not_equal.hpp',['../ratio__not__equal_8hpp.html',1,'']]],
   ['ratio_5fsubtract_2ehpp_25',['ratio_subtract.hpp',['../ratio__subtract_8hpp.html',1,'']]],
   ['rbegin_2ehpp_26',['rbegin.hpp',['../rbegin_8hpp.html',1,'']]],
-  ['readme_2emd_27',['README.md',['../include_2etl_2__3rd__party_2gcem_2README_8md.html',1,'(Global Namespace)'],['../include_2etl_2experimental_2string__constant_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd_27',['README.md',['../include_2etl_2experimental_2string__constant_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)']]],
   ['real_2ehpp_28',['real.hpp',['../real_8hpp.html',1,'']]],
   ['reduce_2ehpp_29',['reduce.hpp',['../reduce_8hpp.html',1,'']]],
   ['reference_5fwrapper_2ehpp_30',['reference_wrapper.hpp',['../reference__wrapper_8hpp.html',1,'']]],
@@ -61,6 +61,6 @@ var searchData=
   ['rotate_5fcopy_2ehpp_58',['rotate_copy.hpp',['../rotate__copy_8hpp.html',1,'']]],
   ['rotl_2ehpp_59',['rotl.hpp',['../rotl_8hpp.html',1,'']]],
   ['rotr_2ehpp_60',['rotr.hpp',['../rotr_8hpp.html',1,'']]],
-  ['round_2ehpp_61',['round.hpp',['../__3rd__party_2gcem_2gcem__incl_2round_8hpp.html',1,'(Global Namespace)'],['../__chrono_2round_8hpp.html',1,'(Global Namespace)'],['../__cmath_2round_8hpp.html',1,'(Global Namespace)']]],
+  ['round_2ehpp_61',['round.hpp',['../__chrono_2round_8hpp.html',1,'(Global Namespace)'],['../__cmath_2round_8hpp.html',1,'(Global Namespace)']]],
   ['runtime_5ferror_2ehpp_62',['runtime_error.hpp',['../runtime__error_8hpp.html',1,'']]]
 ];

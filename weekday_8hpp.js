@@ -1,15 +1,15 @@
 var weekday_8hpp =
 [
-    [ "etl::chrono::weekday", "structetl_1_1chrono_1_1weekday.html", "structetl_1_1chrono_1_1weekday" ],
-    [ "operator==", "weekday_8hpp.html#abdbb3894c817ec3d54eb4da9a614c10e", null ],
-    [ "operator+", "weekday_8hpp.html#a2bd0e2ca61e33514bc466027d868d12f", null ],
-    [ "operator+", "weekday_8hpp.html#aa9f0a0b6e66587e6aa3d4ed61ca3d5a1", null ],
-    [ "operator-", "weekday_8hpp.html#a78bc534ce78f4a5c39c9339aef470103", null ],
-    [ "Sunday", "weekday_8hpp.html#a8cc7e1c28078fb6451582fd718635a55", null ],
-    [ "Monday", "weekday_8hpp.html#abe68bb092abbd700b346d25552df7288", null ],
-    [ "Tuesday", "weekday_8hpp.html#a66b9be964153a07637362b2cf1a3ae1c", null ],
-    [ "Wednesday", "weekday_8hpp.html#a57c1c5c33b9e5bb46361c01c4fa49826", null ],
-    [ "Thursday", "weekday_8hpp.html#a776e268d58e50e81f3eac0ad69746345", null ],
-    [ "Friday", "weekday_8hpp.html#a401a482f71fb22ea983ab827c64e8f35", null ],
-    [ "Saturday", "weekday_8hpp.html#a97e5e0e7061b96f92c7817ffe1226c71", null ]
+    [ "weekday", "structetl_1_1chrono_1_1weekday.html", "structetl_1_1chrono_1_1weekday" ],
+    [ "operator==", "weekday_8hpp.html#ad76fd119f7a9ce522ffe6e5b070ff5dc", null ],
+    [ "operator+", "weekday_8hpp.html#a642823174f7bede34b33028f39b67b7a", null ],
+    [ "operator+", "weekday_8hpp.html#a76d578cfba3d04306c7ffda4511e38ea", null ],
+    [ "operator-", "weekday_8hpp.html#a370e3ed562d125bf5fbcf7f88f6855ac", null ],
+    [ "Sunday", "weekday_8hpp.html#afeee752d7e9c4d5fbd933b3a3257691c", null ],
+    [ "Monday", "weekday_8hpp.html#adbec715ef8076ac6fd93c4dda5e00ecd", null ],
+    [ "Tuesday", "weekday_8hpp.html#ad0bf3db47ee27534ec066ca73d46fe73", null ],
+    [ "Wednesday", "weekday_8hpp.html#ab4440fda6b4a23ad6276aec469d3e453", null ],
+    [ "Thursday", "weekday_8hpp.html#af7f0511f14d57ea9d0178aaefc8d3b98", null ],
+    [ "Friday", "weekday_8hpp.html#aa8d9eb8f05af61c6cd3c9ea6ece82712", null ],
+    [ "Saturday", "weekday_8hpp.html#a405e574eb88b8be81bf76527c94b1010", null ]
 ];

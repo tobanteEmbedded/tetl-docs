@@ -1,9 +1,9 @@
 var buffer_8hpp =
 [
-    [ "make_buffer", "buffer_8hpp.html#a7173f6e23f0a97ef4890e9b638f12211", null ],
-    [ "make_buffer", "buffer_8hpp.html#aa95199eb4d922761566a486aad111409", null ],
-    [ "make_buffer", "buffer_8hpp.html#ab1c6f5a0a90c7928db1b094e207bf645", null ],
-    [ "make_buffer", "buffer_8hpp.html#a654d1b84c2fb4fe0debdc55b24be5515", null ],
-    [ "make_buffer", "buffer_8hpp.html#a4117734c425ab5459573dfa63df7d8db", null ],
-    [ "make_buffer", "buffer_8hpp.html#a5966cb7078e0953ca4b98ad06180af0b", null ]
+    [ "make_buffer", "buffer_8hpp.html#af8b378b41e4394703812e9943dab64fe", null ],
+    [ "make_buffer", "buffer_8hpp.html#a149687cc43bd69a0f8df1832060ededd", null ],
+    [ "make_buffer", "buffer_8hpp.html#ae0a17c64621bf473b401bc46ae722766", null ],
+    [ "make_buffer", "buffer_8hpp.html#ab6844b2a6be32c70b886451e09ba558e", null ],
+    [ "make_buffer", "buffer_8hpp.html#adc0d58197832f6c66e6cc9728d6063b5", null ],
+    [ "make_buffer", "buffer_8hpp.html#a9a92cb022fa1a50205868e9428f744e6", null ]
 ];

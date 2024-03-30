@@ -1,6 +1,6 @@
 var norm_8hpp =
 [
-    [ "norm", "norm_8hpp.html#gaf87ec2d3c345ee05d9ccf2b964c9158a", null ],
-    [ "norm", "norm_8hpp.html#ga470b55e42f2e92bdc567ee6bcbe6a860", null ],
-    [ "norm", "norm_8hpp.html#gae77e5264f5b4ac53f724b8d74b943d77", null ]
+    [ "norm", "norm_8hpp.html#ga5f970b8afc721e0d297f41f5b4e93b4f", null ],
+    [ "norm", "norm_8hpp.html#ga7e0f057f14a0df74b805602e63f6006a", null ],
+    [ "norm", "norm_8hpp.html#ga1653c839c2e17f1fe8d77b998c528a90", null ]
 ];

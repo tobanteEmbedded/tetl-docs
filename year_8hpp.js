@@ -1,14 +1,14 @@
 var year_8hpp =
 [
-    [ "etl::chrono::year", "structetl_1_1chrono_1_1year.html", "structetl_1_1chrono_1_1year" ],
-    [ "operator==", "year_8hpp.html#a2b7276a65562b52fc0b8a4ea8fdc3b8b", null ],
-    [ "operator!=", "year_8hpp.html#a94b02438bdf55d38b5bc1b18a05a0028", null ],
-    [ "operator<", "year_8hpp.html#a330454897a2632c6c1d9c56253db7c1f", null ],
-    [ "operator<=", "year_8hpp.html#ae31531f28e5ba523683eb39d1044e358", null ],
-    [ "operator>", "year_8hpp.html#a2cc473402597c798502777003e02e613", null ],
-    [ "operator>=", "year_8hpp.html#a95dac9c7a9bc167484feb445411a2264", null ],
-    [ "operator+", "year_8hpp.html#a90151ef74fa39b90540ef87d17d76810", null ],
-    [ "operator+", "year_8hpp.html#a9b172b6b8a9f99f92672840cd6a8f1ce", null ],
-    [ "operator-", "year_8hpp.html#a9e06135bc584e17fc8c9a78c906436da", null ],
-    [ "operator-", "year_8hpp.html#a09e365a7fcf84335408236fd0011d23c", null ]
+    [ "year", "structetl_1_1chrono_1_1year.html", "structetl_1_1chrono_1_1year" ],
+    [ "operator==", "year_8hpp.html#ae082ec57516dcc6466e55e6dcbe480e8", null ],
+    [ "operator!=", "year_8hpp.html#aee622f4aac80ec31e29394b2e301d080", null ],
+    [ "operator<", "year_8hpp.html#a43567d0d86fa9747b1aa0f8f955f0712", null ],
+    [ "operator<=", "year_8hpp.html#a1fef80eaef5f0d79d2d7344ebf062884", null ],
+    [ "operator>", "year_8hpp.html#a15cc1d0a658f06c4f4e3a499219040c3", null ],
+    [ "operator>=", "year_8hpp.html#a21f0a529519bdb639fa761edc306c771", null ],
+    [ "operator+", "year_8hpp.html#aed0b0e8abf7c42d9f127a87577d48fb3", null ],
+    [ "operator+", "year_8hpp.html#ab375a3471cc48c99aedebbe80968d362", null ],
+    [ "operator-", "year_8hpp.html#a9cfe118e5cf4503035c55727b702cd80", null ],
+    [ "operator-", "year_8hpp.html#ab03b328819f8656edea0c3ddac1464a5", null ]
 ];

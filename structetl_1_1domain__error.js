@@ -1,5 +1,5 @@
 var structetl_1_1domain__error =
 [
-    [ "domain_error", "structetl_1_1domain__error.html#a1fe8aebdcecc18b5a8a5f8e1eae44266", null ],
-    [ "domain_error", "structetl_1_1domain__error.html#a1b03303c781c96d34c25ed3bcceee423", null ]
+    [ "domain_error", "structetl_1_1domain__error.html#a6e94a85fc746fc712277bf5d9f7cb3be", null ],
+    [ "domain_error", "structetl_1_1domain__error.html#a2be91654096ba493da5bfa201d81b60d", null ]
 ];

@@ -135,7 +135,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From&gt;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">requires</span>(detail::bit_castable_types&lt;To, From&gt;)</div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group__bit.html#ga4070f4c004b740cd8c1b913db783dfb8">   42</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#ga4070f4c004b740cd8c1b913db783dfb8">bit_cast</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">From</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">src</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">To</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">   42</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">bit_cast</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">From</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">src</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">To</a></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if __has_builtin(__builtin_bit_cast)</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_bit_cast</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">To</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">src</a>);</div>
@@ -156,10 +156,10 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_BIT_CAST_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
-<div class="ttc" id="agroup__bit_html_ga4070f4c004b740cd8c1b913db783dfb8"><div class="ttname"><a href="group__bit.html#ga4070f4c004b740cd8c1b913db783dfb8">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:42</div></div>
+<div class="ttc" id="agroup__bit_html_ga2498c6989c510ee8806df8ac266b6305"><div class="ttname"><a href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:42</div></div>
 <div class="ttc" id="ais__trivially__constructible_8hpp_html"><div class="ttname"><a href="is__trivially__constructible_8hpp.html">is_trivially_constructible.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__copyable_8hpp_html"><div class="ttname"><a href="is__trivially__copyable_8hpp.html">is_trivially_copyable.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -168,7 +168,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a0e972f307317c01cd5f823260660e0a.html">_bit</a></li><li class="navelem"><a class="el" href="bit__cast_8hpp.html">bit_cast.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

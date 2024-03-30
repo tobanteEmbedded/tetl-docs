@@ -1,6 +1,6 @@
 var structetl_1_1chrono_1_1duration__values =
 [
-    [ "zero", "structetl_1_1chrono_1_1duration__values.html#a864ad0333d85d99bc4502ec37adc737e", null ],
-    [ "min", "structetl_1_1chrono_1_1duration__values.html#ae14166b9119dd42338e10a5e0146de0d", null ],
-    [ "max", "structetl_1_1chrono_1_1duration__values.html#af8d3deb46d3c97945c512d59157c62ee", null ]
+    [ "zero", "structetl_1_1chrono_1_1duration__values.html#ac43451617ebb73e4a1a1cc0c10fd2bc3", null ],
+    [ "min", "structetl_1_1chrono_1_1duration__values.html#ac11b709666bcf2c3660f6f0d4df5d587", null ],
+    [ "max", "structetl_1_1chrono_1_1duration__values.html#a6aae7feef13749e2c17b7f77dfaefd18", null ]
 ];

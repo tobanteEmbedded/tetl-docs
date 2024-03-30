@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: etl::aligned_union&lt; Len, Types &gt; Struct Template Reference</title>
+<title>tetl: aligned_union&lt; Len, Types &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,7 +108,7 @@ $(function(){initNavTree('structetl_1_1aligned__union.html',''); initResizable(t
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structetl_1_1aligned__union-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">etl::aligned_union&lt; Len, Types &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">aligned_union&lt; Len, Types &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -124,26 +124,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a36c482313882e155252cdd982ec79535" id="r_a36c482313882e155252cdd982ec79535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36c482313882e155252cdd982ec79535">alignment_value</a> = detail::vmax(<a class="el" href="structetl_1_1static__vector.html">alignof</a>(<a class="el" href="structetl_1_1static__vector.html">Types</a>)...)</td></tr>
-<tr class="separator:a36c482313882e155252cdd982ec79535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907d88e02093543da20b2cd4e39eb567" id="r_a907d88e02093543da20b2cd4e39eb567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">static</a> <a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a907d88e02093543da20b2cd4e39eb567">alignment_value</a> = detail::vmax(<a class="el" href="structetl_1_1static__vector.html">alignof</a>(<a class="el" href="structetl_1_1static__vector.html">Types</a>)...)</td></tr>
+<tr class="separator:a907d88e02093543da20b2cd4e39eb567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> Len, typename... Types&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Len, typename... Types&gt;<br />
 struct etl::aligned_union&lt; Len, Types &gt;</div><p>Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types. The size of the storage is at least Len. <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> also determines the strictest (largest) alignment requirement among all Types and makes it available as the constant alignment_value. If sizeof...(Types) == 0 or if any of the types in Types is not a complete object type, the behavior is undefined. It is implementation-defined whether any extended alignment is supported. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> is undefined. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a36c482313882e155252cdd982ec79535" name="a36c482313882e155252cdd982ec79535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36c482313882e155252cdd982ec79535">&#9670;&#160;</a></span>alignment_value</h2>
+<a id="a907d88e02093543da20b2cd4e39eb567" name="a907d88e02093543da20b2cd4e39eb567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907d88e02093543da20b2cd4e39eb567">&#9670;&#160;</a></span>alignment_value</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> Len, typename... Types&gt; </div>
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Len, typename... Types&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> <a class="el" href="structetl_1_1aligned__union.html">etl::aligned_union</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Len</a>, <a class="el" href="structetl_1_1static__vector.html">Types</a> &gt;::alignment_value = detail::vmax(<a class="el" href="structetl_1_1static__vector.html">alignof</a>(<a class="el" href="structetl_1_1static__vector.html">Types</a>)...)</td>
+          <td class="memname"><a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> alignment_value = detail::vmax(<a class="el" href="structetl_1_1static__vector.html">alignof</a>(<a class="el" href="structetl_1_1static__vector.html">Types</a>)...)</td>
         </tr>
       </table>
   </td>
@@ -164,7 +164,7 @@ template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1aligned__union.html">aligned_union</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

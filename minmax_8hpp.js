@@ -1,5 +1,5 @@
 var minmax_8hpp =
 [
-    [ "minmax", "minmax_8hpp.html#ae81f900b934c83cdb278826ede239e6b", null ],
-    [ "minmax", "minmax_8hpp.html#a1a85dc58adf499e8f90a9e9c4eb0594a", null ]
+    [ "minmax", "minmax_8hpp.html#a2cf8c00a7d8e6e8c5eff71f1063fad52", null ],
+    [ "minmax", "minmax_8hpp.html#a8fe7517750d66b576d14d06fd58d74b1", null ]
 ];

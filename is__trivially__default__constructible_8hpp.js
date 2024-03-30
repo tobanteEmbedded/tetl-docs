@@ -1,5 +1,5 @@
 var is__trivially__default__constructible_8hpp =
 [
-    [ "etl::is_trivially_default_constructible< T >", "structetl_1_1is__trivially__default__constructible.html", null ],
-    [ "is_trivially_default_constructible_v", "is__trivially__default__constructible_8hpp.html#a6f37ab88cda78781a7aca13f18adac97", null ]
+    [ "is_trivially_default_constructible< T >", "structetl_1_1is__trivially__default__constructible.html", null ],
+    [ "is_trivially_default_constructible_v", "is__trivially__default__constructible_8hpp.html#aadf6d7f246062eff8288873db7382e49", null ]
 ];

@@ -1,13 +1,13 @@
 var static__vector_8hpp =
 [
-    [ "etl::static_vector< T, Capacity >", "structetl_1_1static__vector.html", "structetl_1_1static__vector" ],
-    [ "swap", "static__vector_8hpp.html#ac1c5f129858d55474d1d7ae92c374456", null ],
-    [ "operator==", "static__vector_8hpp.html#a9d3aa3446aca179d812252faf83360c6", null ],
-    [ "operator!=", "static__vector_8hpp.html#a3d2867e9d12d25137a50a1b3aee3c5a7", null ],
-    [ "operator<", "static__vector_8hpp.html#ab0dfb93223a9c8e4413fe9368cd36046", null ],
-    [ "operator<=", "static__vector_8hpp.html#a715395c53fa693969e269ef5af1972e6", null ],
-    [ "operator>", "static__vector_8hpp.html#ad4fd2ea0cf33ad9339a54469a92f5121", null ],
-    [ "operator>=", "static__vector_8hpp.html#aebf47ed021fd1e8bfbc389525967e551", null ],
-    [ "erase_if", "static__vector_8hpp.html#ab6028d08459dc299edcae40876481fca", null ],
-    [ "erase", "static__vector_8hpp.html#a7eea328e45af7e2f0cba2ecf9bfae03e", null ]
+    [ "static_vector< T, Capacity >", "structetl_1_1static__vector.html", "structetl_1_1static__vector" ],
+    [ "swap", "static__vector_8hpp.html#a1059d0a7b563d13c9d599eea27ca489e", null ],
+    [ "operator==", "static__vector_8hpp.html#a287ee2e9239c563f862cb177ec7d5792", null ],
+    [ "operator!=", "static__vector_8hpp.html#a473df8e3ace08ad49d812cd57fcc5f90", null ],
+    [ "operator<", "static__vector_8hpp.html#ab892f9c1b557a16dd61daa9664feafda", null ],
+    [ "operator<=", "static__vector_8hpp.html#a894460b393d2ac20c8b8f033322ff230", null ],
+    [ "operator>", "static__vector_8hpp.html#ab897f8f3641b27de2e08d2d16563a2c2", null ],
+    [ "operator>=", "static__vector_8hpp.html#a5beff690dcaa87cb11a10e760c1d0211", null ],
+    [ "erase_if", "static__vector_8hpp.html#a9ae66b21dd10f996a2782e6e8b604593", null ],
+    [ "erase", "static__vector_8hpp.html#ab2e72fc74a7231310049a5cb0790c765", null ]
 ];

@@ -1,91 +1,91 @@
 var group__linalg =
 [
-    [ "etl::linalg::in_vector", "conceptetl_1_1linalg_1_1in__vector.html", null ],
-    [ "etl::linalg::out_vector", "conceptetl_1_1linalg_1_1out__vector.html", null ],
-    [ "etl::linalg::inout_vector", "conceptetl_1_1linalg_1_1inout__vector.html", null ],
-    [ "etl::linalg::in_matrix", "conceptetl_1_1linalg_1_1in__matrix.html", null ],
-    [ "etl::linalg::out_matrix", "conceptetl_1_1linalg_1_1out__matrix.html", null ],
-    [ "etl::linalg::inout_matrix", "conceptetl_1_1linalg_1_1inout__matrix.html", null ],
-    [ "etl::linalg::in_object", "conceptetl_1_1linalg_1_1in__object.html", null ],
-    [ "etl::linalg::out_object", "conceptetl_1_1linalg_1_1out__object.html", null ],
-    [ "etl::linalg::inout_object", "conceptetl_1_1linalg_1_1inout__object.html", null ],
-    [ "etl::linalg::accessor_conjugate< Accessor >", "structetl_1_1linalg_1_1accessor__conjugate.html", [
-      [ "reference", "structetl_1_1linalg_1_1accessor__conjugate.html#aeaa0e2efbdad973f04ccf2058c8e1fca", null ],
-      [ "element_type", "structetl_1_1linalg_1_1accessor__conjugate.html#afabf516ecc827444d1af6079c3177735", null ],
-      [ "data_handle_type", "structetl_1_1linalg_1_1accessor__conjugate.html#a510f6cb895a9b91aff6c0692aaa08599", null ],
-      [ "offset_policy", "structetl_1_1linalg_1_1accessor__conjugate.html#a2a392322054b2fb835f7243643a559f6", null ],
-      [ "accessor_conjugate", "structetl_1_1linalg_1_1accessor__conjugate.html#a56e2cfa9160d6763fc9346b405918b52", null ],
-      [ "access", "structetl_1_1linalg_1_1accessor__conjugate.html#a0ac9ffa4ef2151b65a37c65aca9e7222", null ],
-      [ "offset", "structetl_1_1linalg_1_1accessor__conjugate.html#ab0f18495a7c5bc555697ff6c2dce2db6", null ],
-      [ "nested_accessor", "structetl_1_1linalg_1_1accessor__conjugate.html#acaff1a32d4c8bd53451f7b5938be0e87", null ]
+    [ "in_vector", "conceptetl_1_1linalg_1_1in__vector.html", null ],
+    [ "out_vector", "conceptetl_1_1linalg_1_1out__vector.html", null ],
+    [ "inout_vector", "conceptetl_1_1linalg_1_1inout__vector.html", null ],
+    [ "in_matrix", "conceptetl_1_1linalg_1_1in__matrix.html", null ],
+    [ "out_matrix", "conceptetl_1_1linalg_1_1out__matrix.html", null ],
+    [ "inout_matrix", "conceptetl_1_1linalg_1_1inout__matrix.html", null ],
+    [ "in_object", "conceptetl_1_1linalg_1_1in__object.html", null ],
+    [ "out_object", "conceptetl_1_1linalg_1_1out__object.html", null ],
+    [ "inout_object", "conceptetl_1_1linalg_1_1inout__object.html", null ],
+    [ "accessor_conjugate< Accessor >", "structetl_1_1linalg_1_1accessor__conjugate.html", [
+      [ "reference", "structetl_1_1linalg_1_1accessor__conjugate.html#ac017d8aa356ca9d02803560f3b4d9bbc", null ],
+      [ "element_type", "structetl_1_1linalg_1_1accessor__conjugate.html#a492b6c1f36167694cb80483e11d0da48", null ],
+      [ "data_handle_type", "structetl_1_1linalg_1_1accessor__conjugate.html#a3e939909eefcadda02ed1e3217c5f6dd", null ],
+      [ "offset_policy", "structetl_1_1linalg_1_1accessor__conjugate.html#aa822a30bee7009adbd37765e8d181304", null ],
+      [ "accessor_conjugate", "structetl_1_1linalg_1_1accessor__conjugate.html#a7a9563e9d6b7c4d0ecde9855dcd2bb38", null ],
+      [ "access", "structetl_1_1linalg_1_1accessor__conjugate.html#ab5abd7afbc40f3e9419211253030ea84", null ],
+      [ "offset", "structetl_1_1linalg_1_1accessor__conjugate.html#a7de21337b630e0b4b42365bf7ed2a50c", null ],
+      [ "nested_accessor", "structetl_1_1linalg_1_1accessor__conjugate.html#a1676e84c5daffaf36862d0977d7e140d", null ]
     ] ],
-    [ "etl::linalg::accessor_scaled< ScalingFactor, Accessor >", "structetl_1_1linalg_1_1accessor__scaled.html", [
-      [ "reference", "structetl_1_1linalg_1_1accessor__scaled.html#af898cf30bc874f1666cc9afb07288c23", null ],
-      [ "element_type", "structetl_1_1linalg_1_1accessor__scaled.html#a8ac2775207817bbbbb464276b421c5e8", null ],
-      [ "data_handle_type", "structetl_1_1linalg_1_1accessor__scaled.html#a46fd4f41ef9f58ba30894885cb93d1bd", null ],
-      [ "offset_policy", "structetl_1_1linalg_1_1accessor__scaled.html#a59be2db578ab0ff1ffc1f509c5c007d5", null ],
-      [ "accessor_scaled", "structetl_1_1linalg_1_1accessor__scaled.html#aec10d3062710699fc08be1eda7c498cc", null ],
-      [ "access", "structetl_1_1linalg_1_1accessor__scaled.html#a3eb76d6e1c694890fba08b9bc9067f65", null ],
-      [ "offset", "structetl_1_1linalg_1_1accessor__scaled.html#a7495caf5d7e9b0655f1483246ac7c497", null ],
-      [ "scaling_factor", "structetl_1_1linalg_1_1accessor__scaled.html#a05d02579a76838cb418309dbc62f7207", null ],
-      [ "nested_accessor", "structetl_1_1linalg_1_1accessor__scaled.html#a84a63930f0dc6bbdac3abe9cdd689a64", null ]
+    [ "accessor_scaled< ScalingFactor, Accessor >", "structetl_1_1linalg_1_1accessor__scaled.html", [
+      [ "reference", "structetl_1_1linalg_1_1accessor__scaled.html#a0793c45f8e24160f64df0a902ca84635", null ],
+      [ "element_type", "structetl_1_1linalg_1_1accessor__scaled.html#adf6748bb725c7a9488510e47b71997ce", null ],
+      [ "data_handle_type", "structetl_1_1linalg_1_1accessor__scaled.html#a3e939909eefcadda02ed1e3217c5f6dd", null ],
+      [ "offset_policy", "structetl_1_1linalg_1_1accessor__scaled.html#a677b57718b17494930b5aa6b246dc8af", null ],
+      [ "accessor_scaled", "structetl_1_1linalg_1_1accessor__scaled.html#a382b495cc07f95ba5befd3611d9e4369", null ],
+      [ "access", "structetl_1_1linalg_1_1accessor__scaled.html#a61a9e8e5a307cd02f448f9273f6a811d", null ],
+      [ "offset", "structetl_1_1linalg_1_1accessor__scaled.html#a8bad70fa6cfb779e2fc7da5d5a174864", null ],
+      [ "scaling_factor", "structetl_1_1linalg_1_1accessor__scaled.html#a795f2a0fb8afe26faa7447ab876a31cc", null ],
+      [ "nested_accessor", "structetl_1_1linalg_1_1accessor__scaled.html#a1676e84c5daffaf36862d0977d7e140d", null ]
     ] ],
-    [ "etl::linalg::layout_transpose< Layout >", "structetl_1_1linalg_1_1layout__transpose.html", [
+    [ "layout_transpose< Layout >", "structetl_1_1linalg_1_1layout__transpose.html", [
       [ "mapping", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html", [
-        [ "extents_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a0d4cbfaa48df5bc45504cd8547283bef", null ],
-        [ "size_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a9608225d9334aa0aba829f5c4ed118d1", null ],
-        [ "layout_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a899c2bc8a6a5ba6de28152685c8ced6b", null ],
-        [ "mapping", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a04fd814b8dbd8acd0de12d1eee2754a8", null ],
-        [ "extents", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a87ec97d0fbf68c923affaf39405284fd", null ],
-        [ "required_span_size", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#aa49501fa5fa921e3c36748eea0b0bd9a", null ],
-        [ "operator()", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a78696f3e575acbf850b060d5df10dc6a", null ],
-        [ "nested_mapping", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#aec4143f3323e980c17ce390cd12b156c", null ],
-        [ "is_always_unique", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a9db045d03cdab28a2e6bf15ee223e00f", null ],
-        [ "is_always_contiguous", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a30ebb5297bc0d9a59325245c1d13cadf", null ],
-        [ "is_always_strided", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a96fc23be4ce4882f55b96470a6253688", null ],
-        [ "is_unique", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#afe3ade383bbc0353c587d67cafeac4ef", null ],
-        [ "is_contiguous", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#ab6016d072aff64d1a648c219f768ce91", null ],
-        [ "is_strided", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#ab289472581be9fe28e24d83c3fde650f", null ],
-        [ "stride", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#accb937c44c5713029475106b9b4e2f6d", null ],
+        [ "extents_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46", null ],
+        [ "size_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a921f28284bd72648875e6e8ae56a8c8d", null ],
+        [ "layout_type", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#aad51cefd83c404baaa8ac3686df413bb", null ],
+        [ "mapping", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a6770646f2219ceac85189853af612fb4", null ],
+        [ "extents", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#acd91c83df00c8bc366a727261aee882c", null ],
+        [ "required_span_size", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a787b3d5e3fa037c7ab39563817548e17", null ],
+        [ "operator()", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#aac9be3c533cdf70df6a1153d30e93aeb", null ],
+        [ "nested_mapping", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a074a5f54dca921b7af0771fad7aee424", null ],
+        [ "is_always_unique", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a0311b742d35377d9af57f5e46b131ab4", null ],
+        [ "is_always_contiguous", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a19dce0b2a48b12458afa8afb2fc204c8", null ],
+        [ "is_always_strided", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#af8d8fef092df6e0687bd7019d86d2560", null ],
+        [ "is_unique", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a6a95ee67364029a71d84cec0b71fcfee", null ],
+        [ "is_contiguous", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a564da09603d7a8b49b87a253b9e9d3c5", null ],
+        [ "is_strided", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#ac0061156c12be4e26776197b6fc0b534", null ],
+        [ "stride", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#af2d129a98aaab8212aa2221c1183fcd9", null ],
         [ "operator==", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a1444d57eaa590e949af454fba64d94b5", null ]
       ] ]
     ] ],
-    [ "etl::linalg::column_major_t", "structetl_1_1linalg_1_1column__major__t.html", [
-      [ "column_major_t", "structetl_1_1linalg_1_1column__major__t.html#a24291f5c2913202edf445fdab99e8f21", null ],
+    [ "column_major_t", "structetl_1_1linalg_1_1column__major__t.html", [
+      [ "column_major_t", "structetl_1_1linalg_1_1column__major__t.html#ab03cfae38e563bba0bf0df5600d76075", null ],
       [ "column_major", "structetl_1_1linalg_1_1column__major__t.html#a007e97f5335958e2ca27c76d1159062a", null ]
     ] ],
-    [ "etl::linalg::row_major_t", "structetl_1_1linalg_1_1row__major__t.html", [
-      [ "row_major_t", "structetl_1_1linalg_1_1row__major__t.html#a26e5a5083e14bf96f3ba13f5db9039dc", null ]
+    [ "row_major_t", "structetl_1_1linalg_1_1row__major__t.html", [
+      [ "row_major_t", "structetl_1_1linalg_1_1row__major__t.html#a2084e4b0d528fbaf39bfe3408b1f59c8", null ]
     ] ],
-    [ "etl::linalg::upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html", [
-      [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html#a262ad52c636474c38b6091431406493e", null ],
+    [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html", [
+      [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html#ab643bf944fffc88b84bbebb0d95e736d", null ],
       [ "upper_triangle", "structetl_1_1linalg_1_1upper__triangle__t.html#a1ebc9641237c64f94205d7c763f6aefd", null ]
     ] ],
-    [ "etl::linalg::lower_triangle_t", "structetl_1_1linalg_1_1lower__triangle__t.html", [
-      [ "lower_triangle_t", "structetl_1_1linalg_1_1lower__triangle__t.html#a1da6ece4697f6581cd582e9ee6b94d9b", null ],
+    [ "lower_triangle_t", "structetl_1_1linalg_1_1lower__triangle__t.html", [
+      [ "lower_triangle_t", "structetl_1_1linalg_1_1lower__triangle__t.html#ac079393559572fad5fbdb4ed3498679c", null ],
       [ "lower_triangle", "structetl_1_1linalg_1_1lower__triangle__t.html#a9c22fb61626ad4ac3179410d05453291", null ]
     ] ],
-    [ "etl::linalg::implicit_unit_diagonal_t", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html", [
-      [ "implicit_unit_diagonal_t", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html#afbb7871386385e85a1c2dd1dedfa976b", null ],
+    [ "implicit_unit_diagonal_t", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html", [
+      [ "implicit_unit_diagonal_t", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html#a4fbe1ce5e9db494fb6749e3ef4da2c50", null ],
       [ "implicit_unit_diagonal", "structetl_1_1linalg_1_1implicit__unit__diagonal__t.html#aee70662c5ac5066ec71bc7df79f14089", null ]
     ] ],
-    [ "etl::linalg::explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html", [
-      [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html#a3cf9ad4b1e2d4fcc0718a0b1587ea273", null ],
+    [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html", [
+      [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html#a14647993b52e846dbec65a24e8dede2f", null ],
       [ "explicit_diagonal", "structetl_1_1linalg_1_1explicit__diagonal__t.html#a60c1a9bea7a7851ff98e7b2bf11dbd11", null ]
     ] ],
-    [ "etl::linalg::add", "group__linalg.html#ga74449bab5dab8c03433a7b2e6839d052", null ],
-    [ "etl::linalg::copy", "group__linalg.html#ga4e4866502a86a2057eaecb997e29bfc1", null ],
-    [ "etl::linalg::matrix_frob_norm", "group__linalg.html#gacb658bb6ab891527da57f89a2c056b9b", null ],
-    [ "etl::linalg::matrix_frob_norm", "group__linalg.html#ga0ab17163fe0d356c7bcb88058f37ad8e", null ],
-    [ "etl::linalg::scale", "group__linalg.html#gaf379d86030135301ffc0f1f2ad7f117f", null ],
-    [ "etl::linalg::scaled", "group__linalg.html#ga2c2adf8557897836b9878d3f933394c4", null ],
-    [ "etl::linalg::swap_elements", "group__linalg.html#ga0e74a90d2b1f12cf88aa7390baf78d02", null ],
-    [ "etl::linalg::vector_abs_sum", "group__linalg.html#ga3398abd9f019c75bbb7b9dbdcbbcae63", null ],
-    [ "etl::linalg::vector_abs_sum", "group__linalg.html#gac62547360541d593c936a505d015f7fe", null ],
-    [ "etl::linalg::idx_abs_max", "group__linalg.html#gaac17487e636222c91804946c123a1c53", null ],
-    [ "etl::linalg::vector_two_norm", "group__linalg.html#gade808e3f8a353d73fc3600225549d432", null ],
-    [ "etl::linalg::vector_two_norm", "group__linalg.html#ga2fafbaecba0403a0caf854c6969c4e5a", null ],
-    [ "etl::linalg::matrix_vector_product", "group__linalg.html#gac1b620e55a25a3d6fd2ea3129f6d9440", null ],
-    [ "etl::linalg::conjugated", "group__linalg.html#ga45d808b75bb20523b55c9666fd8eff47", null ],
-    [ "etl::linalg::conjugated", "group__linalg.html#gac7002b3a617c5a5849d468a0a8c432e2", null ]
+    [ "add", "group__linalg.html#gacf93681a90edb360f8f9cc34567fe06f", null ],
+    [ "copy", "group__linalg.html#ga14fcd1f0635afb3b1a64590492a8cee4", null ],
+    [ "matrix_frob_norm", "group__linalg.html#ga34c71064afa2e19010b8e98e433b18e6", null ],
+    [ "matrix_frob_norm", "group__linalg.html#gaae634038fa5612fc5c78cef9435c3480", null ],
+    [ "scale", "group__linalg.html#ga485db7be4a843ec9c1983d9639c9a70a", null ],
+    [ "scaled", "group__linalg.html#ga84fb7f39ec6ec79085f80a99a648e924", null ],
+    [ "swap_elements", "group__linalg.html#ga553227d0d5fd2afa355ec86b3b27d3ce", null ],
+    [ "vector_abs_sum", "group__linalg.html#gae991b3ad5a3a6cb6536f25a5e847a687", null ],
+    [ "vector_abs_sum", "group__linalg.html#gaa6e3ca96a0e36a246d067a2e7cd14299", null ],
+    [ "idx_abs_max", "group__linalg.html#gaa1d6eae27b2281c3a966c843b2c26291", null ],
+    [ "vector_two_norm", "group__linalg.html#gacfe629c56077186d1a4ef180ecabe0ab", null ],
+    [ "vector_two_norm", "group__linalg.html#gae89d2a8589fcabfa4a9ee1b12e7ccd59", null ],
+    [ "matrix_vector_product", "group__linalg.html#ga55f018664141af1c83938eb0f4f95137", null ],
+    [ "conjugated", "group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63", null ],
+    [ "conjugated", "group__linalg.html#ga275984a3105f041ab5dbfbe430db347e", null ]
 ];

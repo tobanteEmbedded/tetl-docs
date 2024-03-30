@@ -1,6 +1,6 @@
 var nan_8hpp =
 [
-    [ "nanf", "nan_8hpp.html#ga21120c1b64cbc4c4d446f0859a011d82", null ],
-    [ "nan", "nan_8hpp.html#ga7e0c6b512cfa1423e392e02430121c44", null ],
-    [ "nanl", "nan_8hpp.html#gae289a4c91b473e5e1302aa1b0142b48d", null ]
+    [ "nanf", "nan_8hpp.html#ga92b23f23746d65434dd57cbf03dde471", null ],
+    [ "nan", "nan_8hpp.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64", null ],
+    [ "nanl", "nan_8hpp.html#gab2ef6ce5627884455b58fbf76bd8c8ea", null ]
 ];

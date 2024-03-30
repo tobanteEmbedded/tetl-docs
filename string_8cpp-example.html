@@ -156,8 +156,8 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(copy == str);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can apply algorithms.</span></div>
-<div class="line">    <span class="keyword">auto</span> toUpper = [](<span class="keyword">auto</span> ch) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a id="a2" name="a2"></a><a class="code hl_function" href="namespaceetl.html#a2b46f5faca236c0de0b9f378c22498c1">etl::toupper</a>(ch)); };</div>
-<div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="namespaceetl.html#a4467ebe5b0d985e1661eb04cb65fab6a">etl::transform</a>(begin(str), end(str), begin(str), toUpper);</div>
+<div class="line">    <span class="keyword">auto</span> toUpper = [](<span class="keyword">auto</span> ch) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a id="a2" name="a2"></a><a class="code hl_function" href="namespaceetl.html#abf5656409846cdb311fcc37acd590d9a">etl::toupper</a>(ch)); };</div>
+<div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(begin(str), end(str), begin(str), toUpper);</div>
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;HELLO WORLD&quot;</span>);</div>
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(copy != str);</div>
 <div class="line"> </div>
@@ -173,7 +173,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can convert a static_string into a string_view</span></div>
 <div class="line">    <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::string_view</a> view = str;</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(view.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1static__vector.html#a079439a9d4e37950fc4a7cec4f6c750a">size</a>() == str.<a class="code hl_function" href="structetl_1_1static__vector.html#a079439a9d4e37950fc4a7cec4f6c750a">size</a>());</div>
+<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(view.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>() == str.<a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// TODO: find &amp; friends</span></div>
 <div class="line"> </div>
@@ -188,17 +188,17 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
 <div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
-<div class="ttc" id="anamespaceetl_html_a2b46f5faca236c0de0b9f378c22498c1"><div class="ttname"><a href="namespaceetl.html#a2b46f5faca236c0de0b9f378c22498c1">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:24</div></div>
-<div class="ttc" id="anamespaceetl_html_a4467ebe5b0d985e1661eb04cb65fab6a"><div class="ttname"><a href="namespaceetl.html#a4467ebe5b0d985e1661eb04cb65fab6a">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdoc">Applies the given function to a range and stores the result in another range, beginning at dest....</div><div class="ttdef"><b>Definition</b> transform.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_a0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdoc">Applies the given function to a range and stores the result in another range, beginning at dest....</div><div class="ttdef"><b>Definition</b> transform.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_abf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="namespaceetl.html#abf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:24</div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html_a079439a9d4e37950fc4a7cec4f6c750a"><div class="ttname"><a href="structetl_1_1static__vector.html#a079439a9d4e37950fc4a7cec4f6c750a">etl::static_vector::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_type</div><div class="ttdoc">Number of elements in the vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:604</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html_aeda399ad0b26aa2d0116f45b2a4c6ca0"><div class="ttname"><a href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">etl::static_vector::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_type</div><div class="ttdoc">Number of elements in the vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:604</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

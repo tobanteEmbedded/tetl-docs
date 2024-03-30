@@ -1,5 +1,5 @@
 var insertion__sort_8hpp =
 [
-    [ "insertion_sort", "insertion__sort_8hpp.html#a0080a41003199426077c02b6175ae904", null ],
-    [ "insertion_sort", "insertion__sort_8hpp.html#a5e6d5b25a5beae6b886f7eaccb6ccfd2", null ]
+    [ "insertion_sort", "insertion__sort_8hpp.html#a1189f81daa0314d4422781edab8a4e83", null ],
+    [ "insertion_sort", "insertion__sort_8hpp.html#a819f2e196782c8f996a7a6d85853564b", null ]
 ];

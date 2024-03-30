@@ -1,5 +1,5 @@
 var strtol_8hpp =
 [
-    [ "strtol", "strtol_8hpp.html#a4892f7bf3b9db8e5a5b3476de9f04c07", null ],
-    [ "strtoll", "strtol_8hpp.html#a53416ace17ca278512fca91c7ba514a9", null ]
+    [ "strtol", "strtol_8hpp.html#a1a70d2daad7d58df41e035dc7b7d6ee1", null ],
+    [ "strtoll", "strtol_8hpp.html#afe6baccbeb60e396a8222d877a5ef28f", null ]
 ];

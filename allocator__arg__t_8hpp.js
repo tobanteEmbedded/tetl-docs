@@ -1,5 +1,5 @@
 var allocator__arg__t_8hpp =
 [
-    [ "etl::allocator_arg_t", "structetl_1_1allocator__arg__t.html", "structetl_1_1allocator__arg__t" ],
-    [ "allocator_arg", "allocator__arg__t_8hpp.html#a74fea0e76b0257b8f9ffbca0b6de6aaa", null ]
+    [ "allocator_arg_t", "structetl_1_1allocator__arg__t.html", "structetl_1_1allocator__arg__t" ],
+    [ "allocator_arg", "allocator__arg__t_8hpp.html#a1903f5208bf0e496f112e85dd1915de8", null ]
 ];

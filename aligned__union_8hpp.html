@@ -116,10 +116,10 @@ $(function(){initNavTree('aligned__union_8hpp.html',''); initResizable(true); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union.html">etl::aligned_union&lt; Len, Types &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union.html">aligned_union&lt; Len, Types &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types. The size of the storage is at least Len. <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> also determines the strictest (largest) alignment requirement among all Types and makes it available as the constant alignment_value. If sizeof...(Types) == 0 or if any of the types in Types is not a complete object type, the behavior is undefined. It is implementation-defined whether any extended alignment is supported. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> is undefined.  <a href="structetl_1_1aligned__union.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union_1_1type.html">etl::aligned_union&lt; Len, Types &gt;::type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union_1_1type.html">aligned_union&lt; Len, Types &gt;::type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -129,9 +129,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae90b42ca2c97e25ae857469d922a7b17" id="r_ae90b42ca2c97e25ae857469d922a7b17"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> Len, typename... Types&gt; </td></tr>
-<tr class="memitem:ae90b42ca2c97e25ae857469d922a7b17"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#ae90b42ca2c97e25ae857469d922a7b17">etl::aligned_union_t</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1aligned__union.html">etl::aligned_union</a>&lt;<a class="el" href="structetl_1_1static__vector.html">Len</a>, Types...&gt;::type</td></tr>
-<tr class="separator:ae90b42ca2c97e25ae857469d922a7b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9513446f02808e2f74f025a795d894c2" id="r_a9513446f02808e2f74f025a795d894c2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Len, typename... Types&gt; </td></tr>
+<tr class="memitem:a9513446f02808e2f74f025a795d894c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a9513446f02808e2f74f025a795d894c2">aligned_union_t</a> = <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1aligned__union.html">etl::aligned_union</a>&lt;<a class="el" href="structetl_1_1static__vector.html">Len</a>, Types...&gt;::type</td></tr>
+<tr class="separator:a9513446f02808e2f74f025a795d894c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +139,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="aligned__union_8hpp.html">aligned_union.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

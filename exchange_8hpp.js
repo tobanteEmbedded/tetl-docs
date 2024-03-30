@@ -1,4 +1,4 @@
 var exchange_8hpp =
 [
-    [ "exchange", "exchange_8hpp.html#abab9c512cd288c92340c8a957b3742fe", null ]
+    [ "exchange", "exchange_8hpp.html#a7c1576e57ae3b113a38b8a9793bb4074", null ]
 ];

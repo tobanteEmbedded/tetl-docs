@@ -1,9 +1,9 @@
 var searchData=
 [
   ['scope_5fexit_0',['scope_exit',['../structetl_1_1scope__exit.html',1,'etl']]],
-  ['simd_1',['simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd.html',1,'etl::experimental::parallelism_v2::simd&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd.html',1,'etl::experimental::simd&lt; T, Abi &gt;']]],
-  ['simd_5fmask_2',['simd_mask',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html',1,'etl::experimental::parallelism_v2::simd_mask&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html',1,'etl::experimental::simd_mask&lt; T, Abi &gt;']]],
-  ['simd_5fsize_3',['simd_size',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html',1,'etl::experimental::parallelism_v2::simd_size&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html',1,'etl::experimental::simd_size&lt; T, Abi &gt;']]],
+  ['simd_1',['simd',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd.html',1,'simd&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd.html',1,'simd&lt; T, Abi &gt;']]],
+  ['simd_5fmask_2',['simd_mask',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html',1,'simd_mask&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html',1,'simd_mask&lt; T, Abi &gt;']]],
+  ['simd_5fsize_3',['simd_size',['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html',1,'simd_size&lt; T, Abi &gt;'],['../structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html',1,'simd_size&lt; T, Abi &gt;']]],
   ['small_5fptr_4',['small_ptr',['../structetl_1_1small__ptr.html',1,'etl']]],
   ['sorted_5funique_5ft_5',['sorted_unique_t',['../structetl_1_1sorted__unique__t.html',1,'etl']]],
   ['span_6',['span',['../structetl_1_1span.html',1,'etl']]],

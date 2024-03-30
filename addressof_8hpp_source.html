@@ -121,32 +121,32 @@ $(function(){initNavTree('addressof_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">requires</span>(is_object_v&lt;T&gt;)</div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a99d4abdc9048a47e79b90addc653b930">   15</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a99d4abdc9048a47e79b90addc653b930">addressof</a>(T&amp; <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) <span class="keyword">noexcept</span> -&gt; T*</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">   15</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">addressof</a>(T&amp; <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; T*</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_addressof</a>(<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">__builtin_addressof</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">requires</span>(not is_object_v&lt;T&gt;)</div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a351af276db5fcca32408696c2a4f8be6">   23</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a99d4abdc9048a47e79b90addc653b930">addressof</a>(T&amp; <a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>) <span class="keyword">noexcept</span> -&gt; T*</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2b8d9c987fb1214a1989a00c3ac4d175">   23</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">addressof</a>(T&amp; <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; T*</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_function" href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">arg</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#a13856fe74510e89b04a2310cbc9bde59">   29</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a99d4abdc9048a47e79b90addc653b930">addressof</a>(T <span class="keyword">const</span>&amp;&amp; <span class="comment">/*ignore*/</span>) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#a951855af4ae6cd241993c4f6bde82de5">   29</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">addressof</a>(T <span class="keyword">const</span>&amp;&amp; <span class="comment">/*ignore*/</span>) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_ADDRESSOF_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
-<div class="ttc" id="agroup__complex_html_ga06165982b4ed16fe2e57476b46f4ad08"><div class="ttname"><a href="group__complex.html#ga06165982b4ed16fe2e57476b46f4ad08">etl::arg</a></div><div class="ttdeci">constexpr auto arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T</div><div class="ttdef"><b>Definition</b> arg.hpp:16</div></div>
+<div class="ttc" id="agroup__complex_html_ga0c18e9f715e3983b7a71347ce6e0e2c1"><div class="ttname"><a href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">etl::arg</a></div><div class="ttdeci">constexpr auto arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T</div><div class="ttdef"><b>Definition</b> arg.hpp:16</div></div>
 <div class="ttc" id="ais__object_8hpp_html"><div class="ttname"><a href="is__object_8hpp.html">is_object.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> gcem.hpp:38</div></div>
-<div class="ttc" id="anamespaceetl_html_a99d4abdc9048a47e79b90addc653b930"><div class="ttname"><a href="namespaceetl.html#a99d4abdc9048a47e79b90addc653b930">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a21ae02f44cb9f415d79d030c8ceb8c16"><div class="ttname"><a href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +154,7 @@ $(function(){initNavTree('addressof_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="addressof_8hpp.html">addressof.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

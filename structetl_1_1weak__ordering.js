@@ -1,6 +1,6 @@
 var structetl_1_1weak__ordering =
 [
-    [ "operator partial_ordering", "structetl_1_1weak__ordering.html#afb80f4ec3f60ad3a7735781dba72407c", null ],
+    [ "operator partial_ordering", "structetl_1_1weak__ordering.html#a5b86d331b77e434e276978360f517809", null ],
     [ "operator==", "structetl_1_1weak__ordering.html#af939e186e3aa1a5369932df808cf097d", null ],
     [ "operator==", "structetl_1_1weak__ordering.html#acdc65e59659d4fb1955061f04b423c61", null ],
     [ "operator<", "structetl_1_1weak__ordering.html#a0c6d7f73701b4f6e742f08d342122210", null ],
@@ -13,7 +13,7 @@ var structetl_1_1weak__ordering =
     [ "operator>=", "structetl_1_1weak__ordering.html#ad08cf448f5d1aae3ab9632f46059a6e6", null ],
     [ "operator<=>", "structetl_1_1weak__ordering.html#a8c3e72923cd5155cbf062508c8e8d26f", null ],
     [ "operator<=>", "structetl_1_1weak__ordering.html#af26924bf3821bc2b509cb344ecae629e", null ],
-    [ "less", "structetl_1_1weak__ordering.html#a9123f329e172a6829c89b5da1b3d8d53", null ],
-    [ "equivalent", "structetl_1_1weak__ordering.html#a2a5455d987051c29a63981d13f629c33", null ],
-    [ "greater", "structetl_1_1weak__ordering.html#a8e687afb5edcebb1fb64b2eea53faed9", null ]
+    [ "less", "structetl_1_1weak__ordering.html#afa5ea474894fe13eb3a26dfe53f83fa1", null ],
+    [ "equivalent", "structetl_1_1weak__ordering.html#a4bb3be549b0b19e5419e510c8d915627", null ],
+    [ "greater", "structetl_1_1weak__ordering.html#a330530845c1df90442eafd44d9a0e3b3", null ]
 ];

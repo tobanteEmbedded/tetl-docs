@@ -1,5 +1,5 @@
 var structetl_1_1timespec =
 [
-    [ "tv_sec", "structetl_1_1timespec.html#a011a410d774e7499b2b8604f82c5859f", null ],
-    [ "tv_nsec", "structetl_1_1timespec.html#add3837f0e410a930c838e1433af4ba61", null ]
+    [ "tv_sec", "structetl_1_1timespec.html#a63520b249c6ad75d0ae7c753d8d502c8", null ],
+    [ "tv_nsec", "structetl_1_1timespec.html#a87f023ba4df946995ed7434144501c4a", null ]
 ];

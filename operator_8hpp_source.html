@@ -122,17 +122,17 @@ $(function(){initNavTree('operator_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="operator_8hpp.html#a522458e13fc259cf6d28015c387bef0e">   19</a></span>[[nodiscard]] <span class="keyword">auto</span> <span class="keyword">operator</span> <span class="keyword">new</span>(<a class="code hl_typedef" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> count, <span class="keywordtype">void</span>* ptr) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">void</span>*</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="operator_8hpp.html#a522458e13fc259cf6d28015c387bef0e">   19</a></span>[[nodiscard]] <span class="keyword">auto</span> <span class="keyword">operator</span> <span class="keyword">new</span>(<a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> count, <span class="keywordtype">void</span>* ptr) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">void</span>*</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(count);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(count);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> ptr;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="operator_8hpp.html#aa994729279323d9864d823944a24959c">   29</a></span>[[nodiscard]] <span class="keyword">auto</span> <span class="keyword">operator</span> <span class="keyword">new</span>[](<a class="code hl_typedef" href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a> count, <span class="keywordtype">void</span>* ptr) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">void</span>*</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="operator_8hpp.html#aa994729279323d9864d823944a24959c">   29</a></span>[[nodiscard]] <span class="keyword">auto</span> <span class="keyword">operator</span> <span class="keyword">new</span>[](<a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> count, <span class="keywordtype">void</span>* ptr) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">void</span>*</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a>(count);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(count);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> ptr;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 </div>
@@ -141,8 +141,8 @@ $(function(){initNavTree('operator_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">// TETL_NEW_OPERATOR_HPP</span></div>
 <div class="ttc" id="aignore__unused_8hpp_html"><div class="ttname"><a href="ignore__unused_8hpp.html">ignore_unused.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_a49823583370a499813db70f494111109"><div class="ttname"><a href="namespaceetl.html#a49823583370a499813db70f494111109">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_acce870bde6a96dc0634f235573439dd1"><div class="ttname"><a href="namespaceetl.html#acce870bde6a96dc0634f235573439dd1">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition</b> ignore_unused.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_ad27e213c027bfb11ed648fb543842995"><div class="ttname"><a href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition</b> ignore_unused.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -150,7 +150,7 @@ $(function(){initNavTree('operator_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f5efbb4b93ec1e857105f8d932c05e11.html">_new</a></li><li class="navelem"><a class="el" href="operator_8hpp.html">operator.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 30 2024 03:18:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

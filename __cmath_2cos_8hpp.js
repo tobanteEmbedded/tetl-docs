@@ -1,9 +1,9 @@
 var __cmath_2cos_8hpp =
 [
-    [ "cos", "__cmath_2cos_8hpp.html#ga4906f1caf2586cc2563fc0faf2f7ea30", null ],
-    [ "cosf", "__cmath_2cos_8hpp.html#ga73d17a837d13ea55344804cb5c64322c", null ],
-    [ "cos", "__cmath_2cos_8hpp.html#gaab6c7ef0dbdd2323343636f79a74f8af", null ],
-    [ "cos", "__cmath_2cos_8hpp.html#ga07734dc481f156ef3959fb891782b58f", null ],
-    [ "cosl", "__cmath_2cos_8hpp.html#gaed9df8dfe51ba4bb2b189f503a7cdd75", null ],
-    [ "cos", "__cmath_2cos_8hpp.html#gaf4e34ec5e84f9fb625cf7ee93df783c4", null ]
+    [ "cos", "__cmath_2cos_8hpp.html#ga1b56c844b2ce61b2d76a4d2c77396ce9", null ],
+    [ "cosf", "__cmath_2cos_8hpp.html#ga6b64d241e55170c1c5ff3c81b7f049d8", null ],
+    [ "cos", "__cmath_2cos_8hpp.html#gaa6d37321a2b5d670a7f7e1d350e4a5d9", null ],
+    [ "cos", "__cmath_2cos_8hpp.html#gad9bea6fec2b71789aa1efe4390cd8ca9", null ],
+    [ "cosl", "__cmath_2cos_8hpp.html#ga6b52639423f23e3404d217ee510d9d5a", null ],
+    [ "cos", "__cmath_2cos_8hpp.html#ga46067cbddc095bd090dcb965bb4b1765", null ]
 ];

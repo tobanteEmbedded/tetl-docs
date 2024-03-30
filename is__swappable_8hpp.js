@@ -1,5 +1,5 @@
 var is__swappable_8hpp =
 [
-    [ "etl::is_swappable< T >", "structetl_1_1is__swappable.html", null ],
-    [ "is_swappable_v", "is__swappable_8hpp.html#a46cb1671f31576cce07cf1bac1e99f7c", null ]
+    [ "is_swappable< T >", "structetl_1_1is__swappable.html", null ],
+    [ "is_swappable_v", "is__swappable_8hpp.html#a6a08681ad0c17b00662bfd185a081335", null ]
 ];

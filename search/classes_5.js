@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['element_5faligned_5ftag_0',['element_aligned_tag',['../structetl_1_1element__aligned__tag.html',1,'etl::element_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html',1,'etl::experimental::element_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html',1,'etl::experimental::parallelism_v2::element_aligned_tag']]],
+  ['element_5faligned_5ftag_0',['element_aligned_tag',['../structetl_1_1element__aligned__tag.html',1,'element_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html',1,'element_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html',1,'element_aligned_tag']]],
   ['empty_5fc_5farray_1',['empty_c_array',['../structetl_1_1empty__c__array.html',1,'etl']]],
   ['enable_5fif_2',['enable_if',['../structetl_1_1enable__if.html',1,'etl']]],
   ['enable_5fif_3c_20true_2c_20type_20_3e_3',['enable_if&lt; true, Type &gt;',['../structetl_1_1enable__if_3_01true_00_01Type_01_4.html',1,'etl']]],
