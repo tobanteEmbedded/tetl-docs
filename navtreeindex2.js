@@ -161,7 +161,7 @@ var NAVTREEINDEX2 =
 "buffer__const_8hpp_source.html":[11,0,1,0,65,2,1],
 "buffer__mutable_8hpp.html":[11,0,1,0,65,2,2],
 "buffer__mutable_8hpp_source.html":[11,0,1,0,65,2,2],
-"bug.html":[5],
+"bug.html":[6],
 "builtin__functions_8hpp.html":[11,0,1,0,14,3],
 "builtin__functions_8hpp.html#a023727fd641a33df258d5256aade9e2b":[11,0,1,0,14,3,4],
 "builtin__functions_8hpp.html#a11ded0a4d968db93cdbe8c5e942cb96b":[11,0,1,0,14,3,3],

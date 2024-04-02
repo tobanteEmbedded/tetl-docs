@@ -17,7 +17,7 @@ var searchData=
   ['base_14',['base',['../structetl_1_1reverse__iterator.html#ace9b6b3f5d4203ad591e41244f92ed86',1,'etl::reverse_iterator']]],
   ['basefield_15',['basefield',['../structetl_1_1ios__base.html#a3886ffcc7264ade8ee0fd28d82744f3b',1,'etl::ios_base']]],
   ['basetype_5ft_16',['BaseType_t',['../stubs_8hpp.html#a2d7fc630e89911cbf80c510f0b1a3e9c',1,'stubs.hpp']]],
-  ['basic_5fbitset_17',['basic_bitset',['../structetl_1_1basic__bitset.html',1,'basic_bitset&lt; Bits, WordType &gt;'],['../structetl_1_1basic__bitset.html#acb4bf4a06dea1ebbf10c6336d98d196a',1,'etl::basic_bitset::basic_bitset()']]],
+  ['basic_5fbitset_17',['basic_bitset',['../structetl_1_1basic__bitset.html',1,'basic_bitset&lt; Bits, WordType &gt;'],['../structetl_1_1basic__bitset.html#acb4bf4a06dea1ebbf10c6336d98d196a',1,'etl::basic_bitset::basic_bitset()=default'],['../structetl_1_1basic__bitset.html#a1e48751dc3eded5b3cc9929526ea5633',1,'etl::basic_bitset::basic_bitset(unsigned long val)']]],
   ['basic_5fbitset_2ehpp_18',['basic_bitset.hpp',['../basic__bitset_8hpp.html',1,'']]],
   ['basic_5fcommon_5freference_19',['basic_common_reference',['../structetl_1_1basic__common__reference.html',1,'etl']]],
   ['basic_5fcommon_5freference_2ehpp_20',['basic_common_reference.hpp',['../basic__common__reference_8hpp.html',1,'']]],
