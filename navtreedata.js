@@ -42,20 +42,20 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md32", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md33", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md34", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md35", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md36", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md37", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md26", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md28", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md29", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md30", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md31", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md26", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md27", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md33", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md34", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md28", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md29", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md30", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md35", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md36", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md37", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -125,15 +125,15 @@ var NAVTREEINDEX =
 "structetl_1_1basic__bitset.html#a02701da0eee9b79401d2520f1761e814",
 "structetl_1_1basic__static__string.html#a8440675a9b302e4dbfdd0ccb287ec1bf",
 "structetl_1_1basic__string__view.html#a8278eaae9ffdfe5e2ff5041dc6dd3317",
-"structetl_1_1char__traits_3_01wchar__t_01_4.html#a7f44837737e9d434eecfad8593b9878d",
-"structetl_1_1chrono_1_1weekday__indexed.html#a2fca511e0ae30036fb6cc95454d1c185",
-"structetl_1_1conditional.html",
+"structetl_1_1char__traits_3_01wchar__t_01_4.html#a6e1d3594745dc6e335001a3ed8f06978",
+"structetl_1_1chrono_1_1weekday__indexed.html",
+"structetl_1_1complex.html#afb9ded5f49336ae503bb9f2035ea902b",
 "structetl_1_1experimental_1_1freertos_1_1queue.html#afb9ded5f49336ae503bb9f2035ea902b",
 "structetl_1_1extents.html#abb7d26f0e216c000f490d57385ef3637",
 "structetl_1_1front__insert__iterator.html#ac153ebd21c9ff887d3db629171e6bf80",
-"structetl_1_1inplace__vector.html#a4d1ca55c8c62d4fbf3ea42d9919125a0",
-"structetl_1_1is__builtin__integer.html#ab37be6df3156233ffb034d2833fcba81",
-"structetl_1_1layout__left_1_1mapping.html#ab12dbf09e48e5ea776b91a96e8fd2cb6",
+"structetl_1_1inplace__vector.html#a4ac1b4dda24ad6f24ee80d0043b3e0d0",
+"structetl_1_1is__builtin__integer.html",
+"structetl_1_1layout__left_1_1mapping.html#a921f28284bd72648875e6e8ae56a8c8d",
 "structetl_1_1mdarray.html#ab523280552089290cb8b2ba7dea98e9f",
 "structetl_1_1numeric__limits.html#a5d493aa0e62d05f575c2a3f9fb810cc6",
 "structetl_1_1numeric__limits_3_01double_01_4.html",
@@ -144,10 +144,10 @@ var NAVTREEINDEX =
 "structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb",
 "structetl_1_1static__set.html#a3c9600e7a9cd61d5e0232703679c2300",
 "structetl_1_1strong__ordering.html#a04fedf239b7712dbc62a76b7ea2b556d",
-"structetl_1_1uninitialized__array.html#afb9ded5f49336ae503bb9f2035ea902b",
-"structetl_1_1weak__ordering.html#a5b86d331b77e434e276978360f517809",
-"tail_8hpp_source.html",
-"void__t_8hpp.html"
+"structetl_1_1uninitialized__array.html#ae65394ee0e86a1b91dd59f2e72aa907a",
+"structetl_1_1weak__ordering.html#a4bb3be549b0b19e5419e510c8d915627",
+"tail_8hpp.html#aedfed40a7e233a34be811f95f44d59fd",
+"visit_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

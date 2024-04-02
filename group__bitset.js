@@ -2,6 +2,7 @@ var group__bitset =
 [
     [ "basic_bitset< Bits, WordType >", "structetl_1_1basic__bitset.html", [
       [ "basic_bitset", "structetl_1_1basic__bitset.html#acb4bf4a06dea1ebbf10c6336d98d196a", null ],
+      [ "size", "structetl_1_1basic__bitset.html#ae65cdb6d1b78786be63a454776fc211c", null ],
       [ "operator[]", "structetl_1_1basic__bitset.html#afca78b006b31782e6f1a31458b25dfca", null ],
       [ "all", "structetl_1_1basic__bitset.html#a9d382b499ae2a7c9b167c39471b6c9ca", null ],
       [ "any", "structetl_1_1basic__bitset.html#a27ebbdb92df6f4be6891d382894140c7", null ],

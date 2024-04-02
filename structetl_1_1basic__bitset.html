@@ -117,6 +117,8 @@ $(function(){initNavTree('structetl_1_1basic__bitset.html',''); initResizable(tr
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb4bf4a06dea1ebbf10c6336d98d196a" id="r_acb4bf4a06dea1ebbf10c6336d98d196a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4bf4a06dea1ebbf10c6336d98d196a">basic_bitset</a> ()=<a class="el" href="structetl_1_1static__vector.html">default</a></td></tr>
 <tr class="separator:acb4bf4a06dea1ebbf10c6336d98d196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65cdb6d1b78786be63a454776fc211c" id="r_ae65cdb6d1b78786be63a454776fc211c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae65cdb6d1b78786be63a454776fc211c">size</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></td></tr>
+<tr class="separator:ae65cdb6d1b78786be63a454776fc211c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca78b006b31782e6f1a31458b25dfca" id="r_afca78b006b31782e6f1a31458b25dfca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca78b006b31782e6f1a31458b25dfca">operator[]</a> (<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="el" href="structetl_1_1static__vector.html">pos</a>) <a class="el" href="structetl_1_1static__vector.html">const</a> -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
 <tr class="separator:afca78b006b31782e6f1a31458b25dfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d382b499ae2a7c9b167c39471b6c9ca" id="r_a9d382b499ae2a7c9b167c39471b6c9ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d382b499ae2a7c9b167c39471b6c9ca">all</a> () <a class="el" href="structetl_1_1static__vector.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
@@ -169,6 +171,33 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae65cdb6d1b78786be63a454776fc211c" name="ae65cdb6d1b78786be63a454776fc211c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65cdb6d1b78786be63a454776fc211c">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Bits, <a class="el" href="conceptetl_1_1unsigned__integral.html">etl::unsigned_integral</a> WordType = etl::size_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afca78b006b31782e6f1a31458b25dfca" name="afca78b006b31782e6f1a31458b25dfca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afca78b006b31782e6f1a31458b25dfca">&#9670;&#160;</a></span>operator[]()</h2>
 
@@ -212,7 +241,8 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
           <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> all </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -239,7 +269,8 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
           <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> any </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -266,7 +297,8 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
           <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> none </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -487,7 +519,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__bitset.html">basic_bitset</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 01:27:55 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 03:07:14 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
