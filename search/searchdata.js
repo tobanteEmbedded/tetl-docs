@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   9: "bgiost",
   10: "_acdefhilmnpstuw",
   11: "abcdefhilmnorstuv",
-  12: "bcehlprt",
+  12: "bcdehlprt",
   13: "e"
 };
 

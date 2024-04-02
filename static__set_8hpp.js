@@ -1,6 +1,5 @@
 var static__set_8hpp =
 [
-    [ "static_set< Key, Capacity, Compare >", "structetl_1_1static__set.html", "structetl_1_1static__set" ],
     [ "operator==", "static__set_8hpp.html#ae066ee7e8566233be5ae1d96840d0c27", null ],
     [ "operator!=", "static__set_8hpp.html#a3b524b62bdc9f0a6c515bb44965cb68c", null ],
     [ "operator<", "static__set_8hpp.html#ad49df96265d6364140d73a8656425763", null ],

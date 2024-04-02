@@ -28,7 +28,7 @@ var searchData=
   ['new_2ehpp_25',['new.hpp',['../new_8hpp.html',1,'']]],
   ['new_5fhandler_26',['new_handler',['../namespaceetl.html#aa2f26afef63b527bf205bb01455a515b',1,'etl']]],
   ['new_5fhandler_2ehpp_27',['new_handler.hpp',['../new__handler_8hpp.html',1,'']]],
-  ['next_28',['next',['../namespaceetl.html#ab5e8085c3345374b117c1dc70edf9d9b',1,'etl']]],
+  ['next_28',['next',['../group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b',1,'etl']]],
   ['next_2ehpp_29',['next.hpp',['../next_8hpp.html',1,'']]],
   ['next_5farg_5fid_30',['next_arg_id',['../structetl_1_1basic__format__parse__context.html#a816eb55f1a8d806253688c70c0ef82ee',1,'etl::basic_format_parse_context']]],
   ['nextafter_31',['nextafter',['../group__cmath.html#gaaa3ff973e51c840722b01eca0e1af274',1,'etl::nextafter(float from, float to) noexcept -&gt; float'],['../group__cmath.html#ga3520d2487f82a9efbef4e6df25e28905',1,'etl::nextafter(double from, double to) noexcept -&gt; double']]],

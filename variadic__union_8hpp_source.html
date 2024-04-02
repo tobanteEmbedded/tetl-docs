@@ -115,7 +115,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="all_8hpp.html">etl/_config/all.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="integral__constant_8hpp.html">etl/_type_traits/integral_constant.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="index__constant_8hpp.html">etl/_type_traits/index_constant.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="is__trivially__destructible_8hpp.html">etl/_type_traits/is_trivially_destructible.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="forward_8hpp.html">etl/_utility/forward.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="__utility_2move_8hpp.html">etl/_utility/move.hpp</a>&gt;</span></div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">requires</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> &gt; 0)</div>
 <div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#ae857e1a6ab980bc9bced930beac84a64">   33</a></span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#ae857e1a6ab980bc9bced930beac84a64">variadic_union</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::index_constant&lt;I&gt;</a> <span class="comment">/*index*/</span>, <a class="code hl_struct" href="structetl_1_1static__vector.html">Args</a>&amp;&amp;... args)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : tail(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::index_c&lt;I - 1&gt;</a>, <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : tail(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::index_v&lt;I - 1&gt;</a>, <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
@@ -170,7 +170,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> == 0) {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> head;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> tail[<a class="code hl_variable" href="namespaceetl.html#a0a6eea4e711c17c5bb6f7e8af9c7effc">etl::index_c</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> tail[<a class="code hl_variable" href="namespaceetl.html#a36d83619b037b662e5e0443f9d22fe3a">etl::index_v</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 </div>
@@ -182,7 +182,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> == 0) {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> head;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> tail[<a class="code hl_variable" href="namespaceetl.html#a0a6eea4e711c17c5bb6f7e8af9c7effc">etl::index_c</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> tail[<a class="code hl_variable" href="namespaceetl.html#a36d83619b037b662e5e0443f9d22fe3a">etl::index_v</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 </div>
@@ -194,7 +194,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> == 0) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(head);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(tail)[<a class="code hl_variable" href="namespaceetl.html#a0a6eea4e711c17c5bb6f7e8af9c7effc">etl::index_c</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(tail)[<a class="code hl_variable" href="namespaceetl.html#a36d83619b037b662e5e0443f9d22fe3a">etl::index_v</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 </div>
@@ -206,7 +206,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> == 0) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(head);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(tail)[<a class="code hl_variable" href="namespaceetl.html#a0a6eea4e711c17c5bb6f7e8af9c7effc">etl::index_c</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(tail)[<a class="code hl_variable" href="namespaceetl.html#a36d83619b037b662e5e0443f9d22fe3a">etl::index_v</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">I</a> - 1&gt;];</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 </div>
@@ -225,13 +225,13 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="ttc" id="aattributes_8hpp_html_aefe1f8fe28785a4006b5ec587c7ec6d8"><div class="ttname"><a href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">TETL_NO_UNIQUE_ADDRESS</a></div><div class="ttdeci">#define TETL_NO_UNIQUE_ADDRESS</div><div class="ttdef"><b>Definition</b> attributes.hpp:41</div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition</b> forward.hpp:32</div></div>
-<div class="ttc" id="aintegral__constant_8hpp_html"><div class="ttname"><a href="integral__constant_8hpp.html">integral_constant.hpp</a></div></div>
+<div class="ttc" id="aindex__constant_8hpp_html"><div class="ttname"><a href="index__constant_8hpp.html">index_constant.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__destructible_8hpp_html"><div class="ttname"><a href="is__trivially__destructible_8hpp.html">is_trivially_destructible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a0a6eea4e711c17c5bb6f7e8af9c7effc"><div class="ttname"><a href="namespaceetl.html#a0a6eea4e711c17c5bb6f7e8af9c7effc">etl::index_c</a></div><div class="ttdeci">constexpr auto index_c</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:25</div></div>
+<div class="ttc" id="anamespaceetl_html_a36d83619b037b662e5e0443f9d22fe3a"><div class="ttname"><a href="namespaceetl.html#a36d83619b037b662e5e0443f9d22fe3a">etl::index_v</a></div><div class="ttdeci">constexpr auto index_v</div><div class="ttdef"><b>Definition</b> index_constant.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:328</div></div>
 <div class="ttc" id="astructetl_1_1uninitialized__union_html"><div class="ttname"><a href="structetl_1_1uninitialized__union.html">etl::uninitialized_union</a></div><div class="ttdef"><b>Definition</b> variadic_union.hpp:16</div></div>
 <div class="ttc" id="aunionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4_html_a0327b9b6ae80e2a3c05b8042b0266e62"><div class="ttname"><a href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#a0327b9b6ae80e2a3c05b8042b0266e62">etl::variadic_union&lt; T, Ts... &gt;::operator=</a></div><div class="ttdeci">constexpr auto operator=(variadic_union &amp;&amp;other) -&gt; variadic_union &amp;=default</div></div>
 <div class="ttc" id="aunionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4_html_a08a74286b9ef344547c9780c8cddd408"><div class="ttname"><a href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#a08a74286b9ef344547c9780c8cddd408">etl::variadic_union&lt; T, Ts... &gt;::tail</a></div><div class="ttdeci">TETL_NO_UNIQUE_ADDRESS etl::variadic_union&lt; Ts... &gt; tail</div><div class="ttdef"><b>Definition</b> variadic_union.hpp:91</div></div>
@@ -255,7 +255,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_22f95e725ac636237aa807414a1d3bfe.html">_variant</a></li><li class="navelem"><a class="el" href="variadic__union_8hpp.html">variadic_union.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 18:33:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

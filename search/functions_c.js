@@ -6,7 +6,7 @@ var searchData=
   ['native_5fhandle_3',['native_handle',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a6019c9cc5c094228e016dc6d595ff988',1,'etl::experimental::freertos::stream_buffer']]],
   ['nested_5faccessor_4',['nested_accessor',['../structetl_1_1linalg_1_1accessor__conjugate.html#a1676e84c5daffaf36862d0977d7e140d',1,'etl::linalg::accessor_conjugate::nested_accessor()'],['../structetl_1_1linalg_1_1accessor__scaled.html#a1676e84c5daffaf36862d0977d7e140d',1,'etl::linalg::accessor_scaled::nested_accessor()']]],
   ['nested_5fmapping_5',['nested_mapping',['../structetl_1_1linalg_1_1layout__transpose_1_1mapping.html#a074a5f54dca921b7af0771fad7aee424',1,'etl::linalg::layout_transpose::mapping']]],
-  ['next_6',['next',['../namespaceetl.html#ab5e8085c3345374b117c1dc70edf9d9b',1,'etl']]],
+  ['next_6',['next',['../group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b',1,'etl']]],
   ['next_5farg_5fid_7',['next_arg_id',['../structetl_1_1basic__format__parse__context.html#a816eb55f1a8d806253688c70c0ef82ee',1,'etl::basic_format_parse_context']]],
   ['nextafter_8',['nextafter',['../group__cmath.html#gaaa3ff973e51c840722b01eca0e1af274',1,'etl::nextafter(float from, float to) noexcept -&gt; float'],['../group__cmath.html#ga3520d2487f82a9efbef4e6df25e28905',1,'etl::nextafter(double from, double to) noexcept -&gt; double']]],
   ['nextafterf_9',['nextafterf',['../group__cmath.html#ga3dcbc27b4908c97a6afd89f89b9cd525',1,'etl']]],

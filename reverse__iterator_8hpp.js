@@ -1,6 +1,5 @@
 var reverse__iterator_8hpp =
 [
-    [ "reverse_iterator< Iter >", "structetl_1_1reverse__iterator.html", "structetl_1_1reverse__iterator" ],
     [ "make_reverse_iterator", "reverse__iterator_8hpp.html#af0773cf088e3cccbce2905050fcdd0eb", null ],
     [ "operator==", "reverse__iterator_8hpp.html#a9ac9a7daa4f77fbf1aae7a1b941301cc", null ],
     [ "operator!=", "reverse__iterator_8hpp.html#aa42d5ab2b854a73191219d9dd7768be5", null ],

@@ -1,6 +1,5 @@
 var static__vector_8hpp =
 [
-    [ "static_vector< T, Capacity >", "structetl_1_1static__vector.html", "structetl_1_1static__vector" ],
     [ "swap", "static__vector_8hpp.html#a1059d0a7b563d13c9d599eea27ca489e", null ],
     [ "operator==", "static__vector_8hpp.html#a287ee2e9239c563f862cb177ec7d5792", null ],
     [ "operator!=", "static__vector_8hpp.html#a473df8e3ace08ad49d812cd57fcc5f90", null ],

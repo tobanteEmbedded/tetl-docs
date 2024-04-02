@@ -108,14 +108,14 @@ $(function(){initNavTree('structetl_1_1static__vector.html',''); initResizable(t
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structetl_1_1static__vector-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">static_vector&lt; T, Capacity &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">static_vector&lt; T, Capacity &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__containers-library.html">Containers Library</a> &raquo; <a class="el" href="group__vector.html">vector</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Dynamically-resizable fixed-capacity vector.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="vector_8hpp_source.html">etl/vector.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for static_vector&lt; T, Capacity &gt;:</div>
 <div class="dyncontent">
@@ -339,7 +339,7 @@ struct etl::static_vector&lt; T, Capacity &gt;</div><p>Dynamically-resizable fix
 <div class="line">        <span class="keywordflow">return</span> p;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(<a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#afb6f1543017c167a1217483e5a858556">begin</a>(people), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#ad43eaed7106105b050de21ea023d9d3c">end</a>(people), <a class="code hl_variable" href="namespaceetl_1_1ranges_1_1cpo.html#afb6f1543017c167a1217483e5a858556">begin</a>(people), levelUp);</div>
+<div class="line">    <a class="code hl_function" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(<a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), <a class="code hl_variable" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">end</a>(people), <a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), levelUp);</div>
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(people[0].experience == 1);</div>
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(people[1].experience == 101);</div>
 <div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(copy != people);</div>
@@ -350,12 +350,12 @@ struct etl::static_vector&lt; T, Capacity &gt;</div><p>Dynamically-resizable fix
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:20</div></div>
+<div class="ttc" id="agroup__ranges_html_gad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:58</div></div>
+<div class="ttc" id="agroup__ranges_html_gafb6f1543017c167a1217483e5a858556"><div class="ttname"><a href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">etl::ranges::cpo::begin</a></div><div class="ttdeci">constexpr auto begin</div><div class="ttdef"><b>Definition</b> begin.hpp:63</div></div>
 <div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_a58dbc8a129d4640697fb1a0ee181fb0a"><div class="ttname"><a href="namespaceetl_1_1chrono.html#a58dbc8a129d4640697fb1a0ee181fb0a">etl::chrono::operator==</a></div><div class="ttdeci">constexpr auto operator==(day lhs, day rhs) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> day.hpp:55</div></div>
-<div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html_ad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html#ad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:57</div></div>
-<div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html_afb6f1543017c167a1217483e5a858556"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html#afb6f1543017c167a1217483e5a858556">etl::ranges::cpo::begin</a></div><div class="ttdeci">constexpr auto begin</div><div class="ttdef"><b>Definition</b> begin.hpp:62</div></div>
 <div class="ttc" id="anamespaceetl_html_a0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdoc">Applies the given function to a range and stores the result in another range, beginning at dest....</div><div class="ttdef"><b>Definition</b> transform.hpp:19</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:328</div></div>
 <div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="algorithm_8cpp-example.html#_a3">algorithm.cpp</a>, <a class="el" href="bitset_8cpp-example.html#_a0">bitset.cpp</a>, <a class="el" href="chrono_8cpp-example.html#_a0">chrono.cpp</a>, <a class="el" href="memory_8cpp-example.html#_a0">memory.cpp</a>, <a class="el" href="numeric_8cpp-example.html#_a1">numeric.cpp</a>, <a class="el" href="source_location_8cpp-example.html#_a0">source_location.cpp</a>, <a class="el" href="string_8cpp-example.html#_a0">string.cpp</a>, <a class="el" href="tuple_8cpp-example.html#_a0">tuple.cpp</a>, <a class="el" href="type_traits_8cpp-example.html#_a0">type_traits.cpp</a>, and <a class="el" href="vector_8cpp-example.html#_a0">vector.cpp</a>.</dd>
 </dl>
@@ -1977,7 +1977,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1static__vector.html">static_vector</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 18:33:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

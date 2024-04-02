@@ -19,7 +19,7 @@ var searchData=
   ['adjacent_5fdifference_16',['adjacent_difference',['../group__numeric.html#ga83e312ccaf077fc1515c569cbd885794',1,'etl::adjacent_difference(InputIt first, InputIt last, OutputIt destination, BinaryOperation op) -&gt; OutputIt'],['../group__numeric.html#ga644b57c780b4aaa5d094ceec2f74e4de',1,'etl::adjacent_difference(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt']]],
   ['adjacent_5ffind_17',['adjacent_find',['../group__algorithm.html#ga6643f5ca84c6579040caeeb9079e0c3a',1,'etl::adjacent_find(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt'],['../group__algorithm.html#ga5bf6853a6729fd97ca2688e2ce192273',1,'etl::adjacent_find(ForwardIt first, ForwardIt last) -&gt; ForwardIt']]],
   ['adopt_5flock_5ft_18',['adopt_lock_t',['../structetl_1_1adopt__lock__t.html#a2ffa5a01a765d9aa1f7efadd32e3aa85',1,'etl::adopt_lock_t']]],
-  ['advance_19',['advance',['../namespaceetl.html#aad815b7c902d91f337c10cb8c6876e87',1,'etl']]],
+  ['advance_19',['advance',['../group__iterator.html#gaad815b7c902d91f337c10cb8c6876e87',1,'etl']]],
   ['advance_5fto_20',['advance_to',['../structetl_1_1basic__format__context.html#a4d13266d4d73e57b7f08ee05c4ed5d9e',1,'etl::basic_format_context::advance_to()'],['../structetl_1_1basic__format__parse__context.html#aa5627cd952ddc06f0f810d2ffde13882',1,'etl::basic_format_parse_context::advance_to()']]],
   ['align_21',['align',['../namespaceetl.html#a410a978255250c24ca74fad8f26910d9',1,'etl']]],
   ['all_22',['all',['../structetl_1_1basic__bitset.html#a9d382b499ae2a7c9b167c39471b6c9ca',1,'etl::basic_bitset::all()'],['../structetl_1_1bitset.html#a9d382b499ae2a7c9b167c39471b6c9ca',1,'etl::bitset::all()']]],

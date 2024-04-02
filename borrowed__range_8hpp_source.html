@@ -119,29 +119,29 @@ $(function(){initNavTree('borrowed__range_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl_1_1ranges.html">etl::ranges</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="conceptetl_1_1ranges_1_1borrowed__range.html">   14</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1ranges_1_1borrowed__range.html">borrowed_range</a> = <a class="code hl_concept" href="conceptetl_1_1ranges_1_1range.html">etl::ranges::range&lt;R&gt;</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                     and (<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_lvalue_reference_v&lt;R&gt;</a> or <a class="code hl_variable" href="namespaceetl_1_1ranges.html#a1ef5828b7322cb06fc27740f00cfeb34">etl::ranges::enable_borrowed_range</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_cvref_t&lt;R&gt;</a>&gt;);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <span class="comment">// namespace etl::ranges</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif </span><span class="comment">// TETL_RANGES_BORROWED_RANGE_HPP</span></div>
-<div class="ttc" id="aconceptetl_1_1ranges_1_1borrowed__range_html"><div class="ttname"><a href="conceptetl_1_1ranges_1_1borrowed__range.html">etl::ranges::borrowed_range</a></div><div class="ttdef"><b>Definition</b> borrowed_range.hpp:14</div></div>
-<div class="ttc" id="aconceptetl_1_1ranges_1_1range_html"><div class="ttname"><a href="conceptetl_1_1ranges_1_1range.html">etl::ranges::range</a></div><div class="ttdef"><b>Definition</b> range.hpp:12</div></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="conceptetl_1_1ranges_1_1borrowed__range.html">   15</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1ranges_1_1borrowed__range.html">borrowed_range</a> = <a class="code hl_concept" href="conceptetl_1_1ranges_1_1range.html">etl::ranges::range&lt;R&gt;</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                     and (<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_lvalue_reference_v&lt;R&gt;</a> or <a class="code hl_variable" href="group__ranges.html#ga1ef5828b7322cb06fc27740f00cfeb34">etl::ranges::enable_borrowed_range</a>&lt;<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_cvref_t&lt;R&gt;</a>&gt;);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace etl::ranges</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// TETL_RANGES_BORROWED_RANGE_HPP</span></div>
+<div class="ttc" id="aconceptetl_1_1ranges_1_1borrowed__range_html"><div class="ttname"><a href="conceptetl_1_1ranges_1_1borrowed__range.html">etl::ranges::borrowed_range</a></div><div class="ttdef"><b>Definition</b> borrowed_range.hpp:15</div></div>
+<div class="ttc" id="aconceptetl_1_1ranges_1_1range_html"><div class="ttname"><a href="conceptetl_1_1ranges_1_1range.html">etl::ranges::range</a></div><div class="ttdef"><b>Definition</b> range.hpp:13</div></div>
 <div class="ttc" id="aenable__borrowed__range_8hpp_html"><div class="ttname"><a href="enable__borrowed__range_8hpp.html">enable_borrowed_range.hpp</a></div></div>
+<div class="ttc" id="agroup__ranges_html_ga1ef5828b7322cb06fc27740f00cfeb34"><div class="ttname"><a href="group__ranges.html#ga1ef5828b7322cb06fc27740f00cfeb34">etl::ranges::enable_borrowed_range</a></div><div class="ttdeci">constexpr bool enable_borrowed_range</div><div class="ttdef"><b>Definition</b> enable_borrowed_range.hpp:10</div></div>
 <div class="ttc" id="ais__lvalue__reference_8hpp_html"><div class="ttname"><a href="is__lvalue__reference_8hpp.html">is_lvalue_reference.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1ranges_html"><div class="ttname"><a href="namespaceetl_1_1ranges.html">etl::ranges</a></div><div class="ttdef"><b>Definition</b> ranges_in_fun_result.hpp:11</div></div>
-<div class="ttc" id="anamespaceetl_1_1ranges_html_a1ef5828b7322cb06fc27740f00cfeb34"><div class="ttname"><a href="namespaceetl_1_1ranges.html#a1ef5828b7322cb06fc27740f00cfeb34">etl::ranges::enable_borrowed_range</a></div><div class="ttdeci">constexpr bool enable_borrowed_range</div><div class="ttdef"><b>Definition</b> enable_borrowed_range.hpp:9</div></div>
 <div class="ttc" id="arange_8hpp_html"><div class="ttname"><a href="range_8hpp.html">range.hpp</a></div></div>
 <div class="ttc" id="aremove__cvref_8hpp_html"><div class="ttname"><a href="remove__cvref_8hpp.html">remove_cvref.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:328</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_765abac2ba11e7762dcb3a96b740b442.html">_ranges</a></li><li class="navelem"><a class="el" href="borrowed__range_8hpp.html">borrowed_range.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 18:33:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -118,7 +118,7 @@ $(function(){initNavTree('structetl_1_1span.html',''); initResizable(true); });
 <p>A non-owning view over a contiguous sequence of objects.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="__span_2span_8hpp_source.html">span.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="span_8hpp_source.html">etl/span.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -237,7 +237,8 @@ Related Symbols</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Extent = etl::dynamic_extent&gt;<br />
 struct etl::span&lt; ElementType, Extent &gt;</div><p>A non-owning view over a contiguous sequence of objects. </p>
 <p>The class template span describes an object that can refer to a contiguous sequence of objects with the first element of the sequence at position zero. A span can either have a static extent, in which case the number of elements in the sequence is known and encoded in the type, or a dynamic extent.</p>
-<p>If a span has dynamic extent a typical implementation holds two members: a pointer to T and a size. A span with static extent may have only one member: a pointer to T. </p>
+<p>If a span has dynamic extent a typical implementation holds two members: a pointer to T and a size. A span with static extent may have only one member: a pointer to T.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Remove size member when <code>Extent != dynamic_extent</code> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7cbbe79dd1d6924256315d862fc9248a" name="a7cbbe79dd1d6924256315d862fc9248a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cbbe79dd1d6924256315d862fc9248a">&#9670;&#160;</a></span>element_type</h2>
@@ -1031,10 +1032,10 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 <div class="line">    </div>
 <div class="line">    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
 <div class="line">    <span class="keyword">constexpr</span> <a class="code hl_function" href="#af7bf71641c3216b2738147dbe6bee547">span</a>(<a class="code hl_typedef" href="#a7cbbe79dd1d6924256315d862fc9248a">element_type</a> (&amp;<a class="code hl_struct" href="structetl_1_1static__vector.html">arr</a>)[<a class="code hl_struct" href="structetl_1_1static__vector.html">N</a>]) noexcept : _data{&amp;<a class="code hl_struct" href="structetl_1_1static__vector.html">arr</a>[0]}</div>
-<div class="ttc" id="astructetl_1_1span_html_a63a9cbbcc6f14ca8d086c4b4eab5dedb"><div class="ttname"><a href="#a63a9cbbcc6f14ca8d086c4b4eab5dedb">etl::span::count</a></div><div class="ttdeci">size_type count</div><div class="ttdef"><b>Definition</b> span.hpp:90</div></div>
-<div class="ttc" id="astructetl_1_1span_html_a7cbbe79dd1d6924256315d862fc9248a"><div class="ttname"><a href="#a7cbbe79dd1d6924256315d862fc9248a">etl::span::element_type</a></div><div class="ttdeci">ElementType element_type</div><div class="ttdef"><b>Definition</b> span.hpp:53</div></div>
+<div class="ttc" id="astructetl_1_1span_html_a63a9cbbcc6f14ca8d086c4b4eab5dedb"><div class="ttname"><a href="#a63a9cbbcc6f14ca8d086c4b4eab5dedb">etl::span::count</a></div><div class="ttdeci">size_type count</div><div class="ttdef"><b>Definition</b> span.hpp:92</div></div>
+<div class="ttc" id="astructetl_1_1span_html_a7cbbe79dd1d6924256315d862fc9248a"><div class="ttname"><a href="#a7cbbe79dd1d6924256315d862fc9248a">etl::span::element_type</a></div><div class="ttdeci">ElementType element_type</div><div class="ttdef"><b>Definition</b> span.hpp:55</div></div>
 <div class="ttc" id="astructetl_1_1span_html_af7bf71641c3216b2738147dbe6bee547"><div class="ttname"><a href="#af7bf71641c3216b2738147dbe6bee547">etl::span::span</a></div><div class="ttdeci">constexpr span() noexcept=default</div><div class="ttdoc">Constructs a span. Constructs an empty span whose data() == nullptr and size() == 0.</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:326</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:328</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1048,7 +1049,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1span.html">span</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 18:33:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

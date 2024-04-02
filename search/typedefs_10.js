@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['range_5fdifference_5ft_0',['range_difference_t',['../namespaceetl_1_1ranges.html#a0350b8082850d48327cd739fc46091f4',1,'etl::ranges']]],
-  ['range_5freference_5ft_1',['range_reference_t',['../namespaceetl_1_1ranges.html#afc25f4866af55fc001e4ea65659735b6',1,'etl::ranges']]],
-  ['range_5fsize_5ft_2',['range_size_t',['../namespaceetl_1_1ranges.html#a82dd991432fa25e80777cea181487f5d',1,'etl::ranges']]],
-  ['range_5fvalue_5ft_3',['range_value_t',['../namespaceetl_1_1ranges.html#aa84b53d13e589cb2c9a404427f9852d6',1,'etl::ranges']]],
+  ['range_5fdifference_5ft_0',['range_difference_t',['../group__ranges.html#ga0350b8082850d48327cd739fc46091f4',1,'etl::ranges']]],
+  ['range_5freference_5ft_1',['range_reference_t',['../group__ranges.html#gafc25f4866af55fc001e4ea65659735b6',1,'etl::ranges']]],
+  ['range_5fsize_5ft_2',['range_size_t',['../group__ranges.html#ga82dd991432fa25e80777cea181487f5d',1,'etl::ranges']]],
+  ['range_5fvalue_5ft_3',['range_value_t',['../group__ranges.html#gaa84b53d13e589cb2c9a404427f9852d6',1,'etl::ranges']]],
   ['rank_5ftype_4',['rank_type',['../structetl_1_1mdarray.html#a643a9c73766f847c533d151d0e7c89d5',1,'etl::mdarray::rank_type'],['../structetl_1_1extents.html#a6df0ea5ffa7e130b9cadda5aff2fca40',1,'etl::extents::rank_type'],['../structetl_1_1layout__left_1_1mapping.html#a0832497c317d58c52b434e6db2cfa438',1,'etl::layout_left::mapping::rank_type'],['../structetl_1_1layout__right_1_1mapping.html#a0832497c317d58c52b434e6db2cfa438',1,'etl::layout_right::mapping::rank_type'],['../structetl_1_1mdspan.html#a0832497c317d58c52b434e6db2cfa438',1,'etl::mdspan::rank_type']]],
   ['ratio_5fadd_5',['ratio_add',['../group__ratio.html#ga355c433e6d91bee78ed9c6448e77aeb4',1,'etl']]],
   ['ratio_5fdivide_6',['ratio_divide',['../group__ratio.html#gac1a3d5969bc4fe12c5f31a130821b9ce',1,'etl']]],
