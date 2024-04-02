@@ -10,5 +10,6 @@ var dir_e755c22006577f029332e1bd80389811 =
     [ "lcm.hpp", "lcm_8hpp.html", "lcm_8hpp" ],
     [ "midpoint.hpp", "midpoint_8hpp.html", "midpoint_8hpp" ],
     [ "partial_sum.hpp", "partial__sum_8hpp.html", "partial__sum_8hpp" ],
-    [ "reduce.hpp", "reduce_8hpp.html", "reduce_8hpp" ]
+    [ "reduce.hpp", "reduce_8hpp.html", "reduce_8hpp" ],
+    [ "transform_reduce.hpp", "transform__reduce_8hpp.html", "transform__reduce_8hpp" ]
 ];

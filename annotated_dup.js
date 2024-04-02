@@ -144,6 +144,7 @@ var annotated_dup =
       [ "bad_function_call", "structetl_1_1bad__function__call.html", "structetl_1_1bad__function__call" ],
       [ "bad_optional_access", "structetl_1_1bad__optional__access.html", "structetl_1_1bad__optional__access" ],
       [ "bad_variant_access", "structetl_1_1bad__variant__access.html", "structetl_1_1bad__variant__access" ],
+      [ "basic_bitset", "structetl_1_1basic__bitset.html", "structetl_1_1basic__bitset" ],
       [ "basic_common_reference", "structetl_1_1basic__common__reference.html", null ],
       [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4" ],
       [ "basic_format_arg", "structetl_1_1basic__format__arg.html", "structetl_1_1basic__format__arg" ],

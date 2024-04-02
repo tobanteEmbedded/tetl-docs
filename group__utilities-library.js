@@ -1,6 +1,6 @@
 var group__utilities_library =
 [
-    [ "bitset", "group__bitset.html", null ],
+    [ "bitset", "group__bitset.html", "group__bitset" ],
     [ "chrono", "group__chrono.html", null ],
     [ "compare", "group__compare.html", null ],
     [ "cstddef", "group__cstddef.html", null ],

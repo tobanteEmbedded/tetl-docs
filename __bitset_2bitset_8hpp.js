@@ -1,6 +1,5 @@
 var __bitset_2bitset_8hpp =
 [
-    [ "bitset< N >", "structetl_1_1bitset.html", "structetl_1_1bitset" ],
     [ "reference", "structetl_1_1bitset_1_1reference.html", "structetl_1_1bitset_1_1reference" ],
     [ "operator&", "__bitset_2bitset_8hpp.html#a3e91ff1be82212d980d87b1b7eee50ae", null ],
     [ "operator|", "__bitset_2bitset_8hpp.html#afb6dd579fe662e47108bc466e6f4b94a", null ],

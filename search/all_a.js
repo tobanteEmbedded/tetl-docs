@@ -21,7 +21,7 @@ var searchData=
   ['giga_18',['giga',['../namespaceetl.html#aa0782f438fdf0a5e815bb88d8116543a',1,'etl']]],
   ['gnome_5fsort_19',['gnome_sort',['../namespaceetl.html#afe96d864c89d47ea3902b6fc8826d2b5',1,'etl::gnome_sort(BidirIt first, BidirIt last, Compare comp) -&gt; void'],['../namespaceetl.html#a4ee8f3605b778d70c05a5697ffae6192',1,'etl::gnome_sort(BidirIt first, BidirIt last) -&gt; void']]],
   ['gnome_5fsort_2ehpp_20',['gnome_sort.hpp',['../gnome__sort_8hpp.html',1,'']]],
-  ['goals_21',['Design Goals',['../index.html#autotoc_md6',1,'']]],
+  ['goals_21',['Design Goals',['../index.html#autotoc_md17',1,'']]],
   ['goodbit_22',['goodbit',['../structetl_1_1ios__base.html#a1bfbbd702a3e450ff464be13150f1e41',1,'etl::ios_base']]],
   ['gpintena_23',['GPINTENA',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da03993b5654f15a8140aa212a0a0166d5',1,'etl::experimental::hardware::mcp23017']]],
   ['gpintenb_24',['GPINTENB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59dae374660a6659b9e5bffe1e1e802d87be',1,'etl::experimental::hardware::mcp23017']]],

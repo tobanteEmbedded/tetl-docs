@@ -1,8 +1,8 @@
 var searchData=
 [
   ['named_5ffunctions_2ehpp_0',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
-  ['nan_1',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
-  ['nan_2',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
+  ['nan_1',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
+  ['nan_2',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
   ['nan_2ehpp_3',['nan.hpp',['../nan_8hpp.html',1,'']]],
   ['nanf_4',['nanf',['../group__cmath.html#ga92b23f23746d65434dd57cbf03dde471',1,'etl']]],
   ['nanl_5',['nanl',['../group__cmath.html#gab2ef6ce5627884455b58fbf76bd8c8ea',1,'etl']]],
@@ -51,7 +51,7 @@ var searchData=
   ['noexcept_48',['noexcept',['../structetl_1_1extents.html#ac467bd3dc5782412f0df7177a844474d',1,'etl::extents::noexcept'],['../structetl_1_1extents.html#ab02c18016c47df2b6128f4e43f9f08d8',1,'etl::extents::noexcept']]],
   ['non_5fconst_49',['non_const',['../structetl_1_1pointer__like__traits_3_01T_01const_01_4.html#aa04f34258dab7eb1ad72816abf236fd6',1,'etl::pointer_like_traits&lt; T const &gt;::non_const'],['../structetl_1_1pointer__like__traits_3_01T_01const_01_5_01_4.html#ae67b73f6bc199f768654b735e98b140a',1,'etl::pointer_like_traits&lt; T const * &gt;::non_const']]],
   ['non_5ftype_2ehpp_50',['non_type.hpp',['../non__type_8hpp.html',1,'']]],
-  ['none_51',['none',['../structetl_1_1bitset.html#a0c5da0e71185e2cbcf2500f3b84079a5',1,'etl::bitset']]],
+  ['none_51',['none',['../structetl_1_1basic__bitset.html#a0c5da0e71185e2cbcf2500f3b84079a5',1,'etl::basic_bitset::none()'],['../structetl_1_1bitset.html#a0c5da0e71185e2cbcf2500f3b84079a5',1,'etl::bitset::none()']]],
   ['none_5fof_52',['none_of',['../namespaceetl.html#a816a532bf04d7e7c0a846b930a571a1d',1,'etl::none_of()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a52275de788aafea553250469f6552548',1,'etl::experimental::none_of()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a52275de788aafea553250469f6552548',1,'etl::experimental::parallelism_v2::none_of()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a566e44db5a19bbc7c1e1833acfb9fd62',1,'etl::experimental::none_of()'],['../namespaceetl_1_1experimental_1_1parallelism__v2.html#a566e44db5a19bbc7c1e1833acfb9fd62',1,'etl::experimental::parallelism_v2::none_of()']]],
   ['none_5fof_2ehpp_53',['none_of.hpp',['../none__of_8hpp.html',1,'']]],
   ['nontype_54',['nontype',['../namespaceetl.html#afb090c3e2bd7b58f70ddb151d426d84c',1,'etl']]],

@@ -18,5 +18,6 @@ var group__numeric =
     [ "partial_sum", "group__numeric.html#ga48622cf727966c91682f2a36c6cc3695", null ],
     [ "reduce", "group__numeric.html#ga1c4ece300169efb3528dd8de1633ca66", null ],
     [ "reduce", "group__numeric.html#ga10c4d18cd54181d2f678ecbf4ca6110c", null ],
-    [ "reduce", "group__numeric.html#ga1aab27726885209d183d580fba57f1bb", null ]
+    [ "reduce", "group__numeric.html#ga1aab27726885209d183d580fba57f1bb", null ],
+    [ "transform_reduce", "group__numeric.html#gab38fcd7a07285868feed538786ca5523", null ]
 ];

@@ -188,6 +188,10 @@ requires <a class="el" href="namespaceetl.html#a60d8a43ca3d5d473f1651ef5114c2628
 <tr class="memitem:ga1aab27726885209d183d580fba57f1bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga1aab27726885209d183d580fba57f1bb">reduce</a> (<a class="el" href="structetl_1_1static__vector.html">InputIter</a> first, <a class="el" href="structetl_1_1static__vector.html">InputIter</a> last) -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1iterator__traits.html">etl::iterator_traits</a>&lt; <a class="el" href="structetl_1_1static__vector.html">InputIter</a> &gt;::value_type</td></tr>
 <tr class="memdesc:ga1aab27726885209d183d580fba57f1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="#gabb8f915bbbbe802e8277bc6c7334bbd1" title="Computes the sum of the given value init and the elements in the range [first, last).">etl::accumulate</a>.  <br /></td></tr>
 <tr class="separator:ga1aab27726885209d183d580fba57f1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab38fcd7a07285868feed538786ca5523" id="r_gab38fcd7a07285868feed538786ca5523"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">InputIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">BinaryReductionOp</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">UnaryTransformOp</a> &gt; </td></tr>
+<tr class="memitem:gab38fcd7a07285868feed538786ca5523"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gab38fcd7a07285868feed538786ca5523">transform_reduce</a> (<a class="el" href="structetl_1_1static__vector.html">InputIt</a> first, <a class="el" href="structetl_1_1static__vector.html">InputIt</a> last, T init, <a class="el" href="structetl_1_1static__vector.html">BinaryReductionOp</a> <a class="el" href="#ga1c4ece300169efb3528dd8de1633ca66">reduce</a>, <a class="el" href="structetl_1_1static__vector.html">UnaryTransformOp</a> <a class="el" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">transform</a>) -&gt; T</td></tr>
+<tr class="memdesc:gab38fcd7a07285868feed538786ca5523"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/algorithm/transform_reduce">https://en.cppreference.com/w/cpp/algorithm/transform_reduce</a>  <br /></td></tr>
+<tr class="separator:gab38fcd7a07285868feed538786ca5523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Numeric operations on values in ranges </p>
@@ -934,12 +938,61 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 </div>
 </div>
+<a id="gab38fcd7a07285868feed538786ca5523" name="gab38fcd7a07285868feed538786ca5523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab38fcd7a07285868feed538786ca5523">&#9670;&#160;</a></span>transform_reduce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">InputIt</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> T , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">BinaryReductionOp</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">UnaryTransformOp</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> transform_reduce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InputIt</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InputIt</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>init</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">BinaryReductionOp</a></td>          <td class="paramname"><span class="paramname"><em>reduce</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">UnaryTransformOp</a></td>          <td class="paramname"><span class="paramname"><em>transform</em></span>&#160;) -&gt; T
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a href="https://en.cppreference.com/w/cpp/algorithm/transform_reduce">https://en.cppreference.com/w/cpp/algorithm/transform_reduce</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Mar 30 2024 05:19:33 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 01:27:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

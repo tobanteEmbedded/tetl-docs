@@ -23,7 +23,9 @@ var group__bit =
     [ "rotl", "group__bit.html#ga3111087bb441d3683d06cb5af2e68c3c", null ],
     [ "rotr", "group__bit.html#ga2aeaa8cb213500ab9a8cf6ee98314d2a", null ],
     [ "set_bit", "group__bit.html#ga029b15dc4de2e5837b791049d6d16ed0", null ],
+    [ "set_bit", "group__bit.html#gaa12374769ae1db920c570b5b5b0cec13", null ],
     [ "set_bit", "group__bit.html#gaeef0ecd7ca83244453f2e3ca077cf4d4", null ],
+    [ "set_bit", "group__bit.html#gafa73517548e29dd7eff01b08cd2619a2", null ],
     [ "test_bit", "group__bit.html#gab4773cf495c99535fcec3c02995c7427", null ],
     [ "test_bit", "group__bit.html#ga726b254bcee55a0855832cfd3bafd000", null ]
 ];
