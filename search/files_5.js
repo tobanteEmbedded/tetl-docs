@@ -16,9 +16,11 @@ var searchData=
   ['exception_2ehpp_13',['exception.hpp',['../__exception_2exception_8hpp.html',1,'(Global Namespace)'],['../exception_8hpp.html',1,'(Global Namespace)']]],
   ['exchange_2ehpp_14',['exchange.hpp',['../exchange_8hpp.html',1,'']]],
   ['exchange_5fsort_2ehpp_15',['exchange_sort.hpp',['../exchange__sort_8hpp.html',1,'']]],
-  ['exit_2ehpp_16',['exit.hpp',['../exit_8hpp.html',1,'']]],
-  ['exp_2ehpp_17',['exp.hpp',['../exp_8hpp.html',1,'']]],
-  ['expected_2ehpp_18',['expected.hpp',['../__expected_2expected_8hpp.html',1,'(Global Namespace)'],['../expected_8hpp.html',1,'(Global Namespace)']]],
-  ['extent_2ehpp_19',['extent.hpp',['../extent_8hpp.html',1,'']]],
-  ['extents_2ehpp_20',['extents.hpp',['../extents_8hpp.html',1,'']]]
+  ['execution_2ehpp_16',['execution.hpp',['../execution_8hpp.html',1,'']]],
+  ['execution_5fpolicy_2ehpp_17',['execution_policy.hpp',['../execution__policy_8hpp.html',1,'']]],
+  ['exit_2ehpp_18',['exit.hpp',['../exit_8hpp.html',1,'']]],
+  ['exp_2ehpp_19',['exp.hpp',['../exp_8hpp.html',1,'']]],
+  ['expected_2ehpp_20',['expected.hpp',['../__expected_2expected_8hpp.html',1,'(Global Namespace)'],['../expected_8hpp.html',1,'(Global Namespace)']]],
+  ['extent_2ehpp_21',['extent.hpp',['../extent_8hpp.html',1,'']]],
+  ['extents_2ehpp_22',['extents.hpp',['../extents_8hpp.html',1,'']]]
 ];

@@ -17,10 +17,11 @@ var searchData=
   ['unique_5fcopy_2ehpp_14',['unique_copy.hpp',['../unique__copy_8hpp.html',1,'']]],
   ['unique_5flock_2ehpp_15',['unique_lock.hpp',['../unique__lock_8hpp.html',1,'']]],
   ['unreachable_2ehpp_16',['unreachable.hpp',['../unreachable_8hpp.html',1,'']]],
-  ['unsigned_5fintegral_2ehpp_17',['unsigned_integral.hpp',['../unsigned__integral_8hpp.html',1,'']]],
-  ['unwrap_5freference_2ehpp_18',['unwrap_reference.hpp',['../unwrap__reference_8hpp.html',1,'']]],
-  ['upper_5fbound_2ehpp_19',['upper_bound.hpp',['../upper__bound_8hpp.html',1,'']]],
-  ['user_2ehpp_20',['user.hpp',['../user_8hpp.html',1,'']]],
-  ['uses_5fallocator_2ehpp_21',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
-  ['utility_2ehpp_22',['utility.hpp',['../utility_8hpp.html',1,'']]]
+  ['unsequenced_5fpolicy_2ehpp_17',['unsequenced_policy.hpp',['../unsequenced__policy_8hpp.html',1,'']]],
+  ['unsigned_5fintegral_2ehpp_18',['unsigned_integral.hpp',['../unsigned__integral_8hpp.html',1,'']]],
+  ['unwrap_5freference_2ehpp_19',['unwrap_reference.hpp',['../unwrap__reference_8hpp.html',1,'']]],
+  ['upper_5fbound_2ehpp_20',['upper_bound.hpp',['../upper__bound_8hpp.html',1,'']]],
+  ['user_2ehpp_21',['user.hpp',['../user_8hpp.html',1,'']]],
+  ['uses_5fallocator_2ehpp_22',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
+  ['utility_2ehpp_23',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

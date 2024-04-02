@@ -26,6 +26,10 @@ var annotated_dup =
         [ "year_month_weekday", "structetl_1_1chrono_1_1year__month__weekday.html", "structetl_1_1chrono_1_1year__month__weekday" ],
         [ "year_month_weekday_last", "structetl_1_1chrono_1_1year__month__weekday__last.html", "structetl_1_1chrono_1_1year__month__weekday__last" ]
       ] ],
+      [ "execution", "namespaceetl_1_1execution.html", [
+        [ "sequenced_policy", "structetl_1_1execution_1_1sequenced__policy.html", "structetl_1_1execution_1_1sequenced__policy" ],
+        [ "unsequenced_policy", "structetl_1_1execution_1_1unsequenced__policy.html", "structetl_1_1execution_1_1unsequenced__policy" ]
+      ] ],
       [ "experimental", "namespaceetl_1_1experimental.html", [
         [ "freertos", "namespaceetl_1_1experimental_1_1freertos.html", [
           [ "forever", "structetl_1_1experimental_1_1freertos_1_1forever.html", "structetl_1_1experimental_1_1freertos_1_1forever" ],
@@ -325,6 +329,9 @@ var annotated_dup =
       [ "is_enum", "structetl_1_1is__enum.html", null ],
       [ "is_error_condition_enum", "structetl_1_1is__error__condition__enum.html", null ],
       [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
+      [ "is_execution_policy", "structetl_1_1is__execution__policy.html", "structetl_1_1is__execution__policy" ],
+      [ "is_execution_policy< etl::execution::sequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1sequenced__policy_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::unsequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1unsequenced__policy_01_4.html", null ],
       [ "is_final", "structetl_1_1is__final.html", null ],
       [ "is_floating_point", "structetl_1_1is__floating__point.html", null ],
       [ "is_function", "structetl_1_1is__function.html", null ],

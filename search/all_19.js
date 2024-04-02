@@ -43,7 +43,7 @@ var searchData=
   ['vector_5faligned_5ftag_40',['vector_aligned_tag',['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'vector_aligned_tag'],['../structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html',1,'vector_aligned_tag'],['../structetl_1_1vector__aligned__tag.html',1,'vector_aligned_tag']]],
   ['vector_5ft_41',['vector_t',['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html#aac71403b76a4461dbb0f62fc5b37fdfe',1,'etl::experimental::hardware::stm32::isr']]],
   ['vector_5ftwo_5fnorm_42',['vector_two_norm',['../group__linalg.html#gacfe629c56077186d1a4ef180ecabe0ab',1,'etl::linalg::vector_two_norm(InVec v, Scalar init) noexcept -&gt; Scalar'],['../group__linalg.html#gae89d2a8589fcabfa4a9ee1b12e7ccd59',1,'etl::linalg::vector_two_norm(InVec v) noexcept -&gt; typename InVec::value_type']]],
-  ['verify_43',['clang-verify',['../md_docs_2roadmap.html#autotoc_md29',1,'']]],
+  ['verify_43',['clang-verify',['../md_docs_2roadmap.html#autotoc_md31',1,'']]],
   ['version_44',['version',['../group__version.html',1,'']]],
   ['version_2ehpp_45',['version.hpp',['../__config_2version_8hpp.html',1,'(Global Namespace)'],['../version_8hpp.html',1,'(Global Namespace)']]],
   ['vformat_5fto_46',['vformat_to',['../namespaceetl.html#a08c2340a69881856d04c55c19bb5c291',1,'etl']]],

@@ -325,6 +325,9 @@ var hierarchy =
       [ "is_enum< T >", "structetl_1_1is__enum.html", null ],
       [ "is_error_condition_enum< T >", "structetl_1_1is__error__condition__enum.html", null ],
       [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
+      [ "is_execution_policy< T >", "structetl_1_1is__execution__policy.html", null ],
+      [ "is_execution_policy< etl::execution::sequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1sequenced__policy_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::unsequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1unsequenced__policy_01_4.html", null ],
       [ "is_final< T >", "structetl_1_1is__final.html", null ],
       [ "is_floating_point< T >", "structetl_1_1is__floating__point.html", null ],
       [ "is_function< T >", "structetl_1_1is__function.html", null ],
@@ -622,6 +625,7 @@ var hierarchy =
     [ "scope_guard< FuncT, detail::scope_exit_impl >", null, [
       [ "scope_exit< FuncT >", "structetl_1_1scope__exit.html", null ]
     ] ],
+    [ "sequenced_policy", "structetl_1_1execution_1_1sequenced__policy.html", null ],
     [ "sfinae_assign_base< CanCopy, CanMove >", null, [
       [ "optional< T >", "structetl_1_1optional.html", null ]
     ] ],
@@ -721,6 +725,7 @@ var hierarchy =
     [ "uninitialized_array< T, Size >", "structetl_1_1uninitialized__array_3_01T_00_01Size_01_4.html", null ],
     [ "uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
     [ "unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
+    [ "unsequenced_policy", "structetl_1_1execution_1_1unsequenced__policy.html", null ],
     [ "unwrap_reference< T >", "structetl_1_1unwrap__reference.html", null ],
     [ "unwrap_reference< etl::reference_wrapper< T > >", "structetl_1_1unwrap__reference_3_01etl_1_1reference__wrapper_3_01T_01_4_01_4.html", null ],
     [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html", null ],
