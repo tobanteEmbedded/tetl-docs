@@ -71,5 +71,12 @@ var structetl_1_1flat__set =
     [ "equal_range", "structetl_1_1flat__set.html#a445d642219f0654d876f8428087c136d", null ],
     [ "equal_range", "structetl_1_1flat__set.html#afa0f70aa941d55bee249ffd149f77069", null ],
     [ "equal_range", "structetl_1_1flat__set.html#aadfb3e6175e932d6a307168cd3b4bba3", null ],
-    [ "equal_range", "structetl_1_1flat__set.html#a069b742560e4921de8d2566ab3cd07bf", null ]
+    [ "equal_range", "structetl_1_1flat__set.html#a069b742560e4921de8d2566ab3cd07bf", null ],
+    [ "operator==", "structetl_1_1flat__set.html#ac64af3d65ef331dbe8684edcaed976ce", null ],
+    [ "operator!=", "structetl_1_1flat__set.html#a25ffac0c3d3086702385c0114913583e", null ],
+    [ "operator<", "structetl_1_1flat__set.html#a7a705f1144e844ba22e380f66b867d3a", null ],
+    [ "operator>", "structetl_1_1flat__set.html#a63a5e92b259c2607e6ccc90122ef8a25", null ],
+    [ "operator<=", "structetl_1_1flat__set.html#a5a7b91c6cbd012ba5c2a6e93ac1f5562", null ],
+    [ "operator>=", "structetl_1_1flat__set.html#ae62dbcf16cd6f6e3dabb10a1c742dc28", null ],
+    [ "swap", "structetl_1_1flat__set.html#abc552e44aa703fca0532053ee07dce6f", null ]
 ];

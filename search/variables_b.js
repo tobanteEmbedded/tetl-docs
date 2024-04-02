@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_0',['last',['../namespaceetl_1_1chrono.html#a5379264e83af65af8802eeec0d49e5f0',1,'etl::chrono']]],
+  ['last_0',['last',['../group__chrono.html#ga5379264e83af65af8802eeec0d49e5f0',1,'etl::chrono::last_spec']]],
   ['left_1',['left',['../structetl_1_1ios__base.html#aca90e1410d6e289b05ffc41e7b785b4d',1,'etl::ios_base']]],
   ['less_2',['less',['../structetl_1_1partial__ordering.html#afe602a56b96a2de4ccb5368329741054',1,'etl::partial_ordering::less'],['../structetl_1_1strong__ordering.html#a4f35fb8431668cc82fcb560d434edf9c',1,'etl::strong_ordering::less'],['../structetl_1_1weak__ordering.html#afa5ea474894fe13eb3a26dfe53f83fa1',1,'etl::weak_ordering::less']]],
   ['line_3',['line',['../structetl_1_1assert__msg.html#a41ebd28ef1d7c6ade45642cb6acc1039',1,'etl::assert_msg']]],

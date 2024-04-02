@@ -126,8 +126,8 @@ $(function(){initNavTree('layout__transpose_8hpp_source.html',''); initResizable
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">requires</span>(Extents::rank() == 2)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> transpose_extents(Extents <span class="keyword">const</span>&amp; e) -&gt; transpose_extents_t&lt;Extents&gt;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isDynamicE0 = Extents::static_extent(0) == <a class="code hl_variable" href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isDynamicE1 = Extents::static_extent(1) == <a class="code hl_variable" href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isDynamicE0 = Extents::static_extent(0) == <a class="code hl_variable" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isDynamicE1 = Extents::static_extent(1) == <a class="code hl_variable" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (isDynamicE0) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (isDynamicE1) {</div>
@@ -259,8 +259,8 @@ $(function(){initNavTree('layout__transpose_8hpp_source.html',''); initResizable
 <div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
 <div class="ttc" id="adynamic__extent_8hpp_html"><div class="ttname"><a href="dynamic__extent_8hpp.html">dynamic_extent.hpp</a></div></div>
 <div class="ttc" id="agroup__numbers_html_gab1b5243878365dc4acdd37a1dce0d976"><div class="ttname"><a href="group__numbers.html#gab1b5243878365dc4acdd37a1dce0d976">etl::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition</b> constants.hpp:29</div></div>
+<div class="ttc" id="agroup__span_html_ga22e7be40fea564f0c1fe3d11229ef0f8"><div class="ttname"><a href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition</b> dynamic_extent.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_html_a22e7be40fea564f0c1fe3d11229ef0f8"><div class="ttname"><a href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition</b> dynamic_extent.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_a8161915e533ff99801f4017d6737d978"><div class="ttname"><a href="namespaceetl.html#a8161915e533ff99801f4017d6737d978">etl::extents</a></div><div class="ttdeci">extents(Integrals...) -&gt; extents&lt; etl::size_t, etl::size_t((Integrals(), etl::dynamic_extent))... &gt;</div></div>
 <div class="ttc" id="astructetl_1_1extents_html"><div class="ttname"><a href="structetl_1_1extents.html">etl::extents</a></div><div class="ttdef"><b>Definition</b> is_extents.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1linalg_1_1layout__transpose_1_1mapping_html"><div class="ttname"><a href="structetl_1_1linalg_1_1layout__transpose_1_1mapping.html">etl::linalg::layout_transpose::mapping</a></div><div class="ttdef"><b>Definition</b> layout_transpose.hpp:45</div></div>
@@ -286,7 +286,7 @@ $(function(){initNavTree('layout__transpose_8hpp_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="layout__transpose_8hpp.html">layout_transpose.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

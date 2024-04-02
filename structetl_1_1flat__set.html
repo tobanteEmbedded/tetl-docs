@@ -107,15 +107,16 @@ $(function(){initNavTree('structetl_1_1flat__set.html',''); initResizable(true);
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structetl_1_1flat__set-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">flat_set&lt; Key, Container, Compare &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">flat_set&lt; Key, Container, Compare &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__containers-library.html">Containers Library</a> &raquo; <a class="el" href="group__flat__set.html">flat_set</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>A <a class="el" href="structetl_1_1flat__set.html" title="A flat_set is a container adaptor that provides an associative container interface that supports uniq...">flat_set</a> is a container adaptor that provides an associative container interface that supports unique keys (contains at most one of each key value) and provides for fast retrieval of the keys themselves. <a class="el" href="structetl_1_1flat__set.html" title="A flat_set is a container adaptor that provides an associative container interface that supports uniq...">flat_set</a> supports random access iterators. Any sequence container supporting random access iteration can be used to instantiate <a class="el" href="structetl_1_1flat__set.html" title="A flat_set is a container adaptor that provides an associative container interface that supports uniq...">flat_set</a>.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="__flat__set_2flat__set_8hpp_source.html">flat_set.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="flat__set_8hpp_source.html">etl/flat_set.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -288,6 +289,23 @@ requires (detail::is_transparent_v&lt;<a class="el" href="structetl_1_1static__v
 <tr class="memitem:a069b742560e4921de8d2566ab3cd07bf" id="r_a069b742560e4921de8d2566ab3cd07bf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">K</a> &gt; </td></tr>
 <tr class="memitem:a069b742560e4921de8d2566ab3cd07bf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a069b742560e4921de8d2566ab3cd07bf">equal_range</a> (<a class="el" href="structetl_1_1static__vector.html">K</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>) <a class="el" href="structetl_1_1static__vector.html">const</a> -&gt; <a class="el" href="structetl_1_1pair.html">etl::pair</a>&lt; <a class="el" href="#a15b80e6a4154108039a976cabc68b5db">const_iterator</a>, <a class="el" href="#a15b80e6a4154108039a976cabc68b5db">const_iterator</a> &gt;</td></tr>
 <tr class="separator:a069b742560e4921de8d2566ab3cd07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ac64af3d65ef331dbe8684edcaed976ce" id="r_ac64af3d65ef331dbe8684edcaed976ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac64af3d65ef331dbe8684edcaed976ce">operator==</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ac64af3d65ef331dbe8684edcaed976ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ffac0c3d3086702385c0114913583e" id="r_a25ffac0c3d3086702385c0114913583e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ffac0c3d3086702385c0114913583e">operator!=</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:a25ffac0c3d3086702385c0114913583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a705f1144e844ba22e380f66b867d3a" id="r_a7a705f1144e844ba22e380f66b867d3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a705f1144e844ba22e380f66b867d3a">operator&lt;</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:a7a705f1144e844ba22e380f66b867d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a5e92b259c2607e6ccc90122ef8a25" id="r_a63a5e92b259c2607e6ccc90122ef8a25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63a5e92b259c2607e6ccc90122ef8a25">operator&gt;</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:a63a5e92b259c2607e6ccc90122ef8a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7b91c6cbd012ba5c2a6e93ac1f5562" id="r_a5a7b91c6cbd012ba5c2a6e93ac1f5562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a7b91c6cbd012ba5c2a6e93ac1f5562">operator&lt;=</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:a5a7b91c6cbd012ba5c2a6e93ac1f5562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62dbcf16cd6f6e3dabb10a1c742dc28" id="r_ae62dbcf16cd6f6e3dabb10a1c742dc28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae62dbcf16cd6f6e3dabb10a1c742dc28">operator&gt;=</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;y) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a></td></tr>
+<tr class="separator:ae62dbcf16cd6f6e3dabb10a1c742dc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc552e44aa703fca0532053ee07dce6f" id="r_abc552e44aa703fca0532053ee07dce6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc552e44aa703fca0532053ee07dce6f">swap</a> (<a class="el" href="structetl_1_1flat__set.html">flat_set</a> &amp;<a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1flat__set.html">flat_set</a> &amp;y) noexcept(noexcept(x.swap(y))) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="separator:abc552e44aa703fca0532053ee07dce6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a> = etl::less&lt;Key&gt;&gt;<br />
@@ -298,8 +316,7 @@ struct etl::flat_set&lt; Key, Container, Compare &gt;</div><p>A <a class="el" hr
 <li>it does not meet the requirements related to iterator invalidation, and</li>
 <li>the time complexity of the insert, emplace, emplace_hint, and erase members that respectively insert, emplace or erase a single element from the set is linear, including the ones that take an insertion position iterator.</li>
 </ul>
-<p><a href="https://isocpp.org/files/papers/P1222R1.pdf">https://isocpp.org/files/papers/P1222R1.pdf</a></p>
-<p><a href="https://youtu.be/b9ZYM0d6htg">https://youtu.be/b9ZYM0d6htg</a> </p>
+<p><a href="https://isocpp.org/files/papers/P1222R1.pdf">https://isocpp.org/files/papers/P1222R1.pdf</a> <a href="https://youtu.be/b9ZYM0d6htg">https://youtu.be/b9ZYM0d6htg</a> </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acf4be953c7037c26797d1e8784b3074d" name="acf4be953c7037c26797d1e8784b3074d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf4be953c7037c26797d1e8784b3074d">&#9670;&#160;</a></span>key_type</h2>
@@ -2221,6 +2238,226 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ac64af3d65ef331dbe8684edcaed976ce" name="ac64af3d65ef331dbe8684edcaed976ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64af3d65ef331dbe8684edcaed976ce">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25ffac0c3d3086702385c0114913583e" name="a25ffac0c3d3086702385c0114913583e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ffac0c3d3086702385c0114913583e">&#9670;&#160;</a></span>operator!=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a705f1144e844ba22e380f66b867d3a" name="a7a705f1144e844ba22e380f66b867d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a705f1144e844ba22e380f66b867d3a">&#9670;&#160;</a></span>operator&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63a5e92b259c2607e6ccc90122ef8a25" name="a63a5e92b259c2607e6ccc90122ef8a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a5e92b259c2607e6ccc90122ef8a25">&#9670;&#160;</a></span>operator&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a7b91c6cbd012ba5c2a6e93ac1f5562" name="a5a7b91c6cbd012ba5c2a6e93ac1f5562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7b91c6cbd012ba5c2a6e93ac1f5562">&#9670;&#160;</a></span>operator&lt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae62dbcf16cd6f6e3dabb10a1c742dc28" name="ae62dbcf16cd6f6e3dabb10a1c742dc28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62dbcf16cd6f6e3dabb10a1c742dc28">&#9670;&#160;</a></span>operator&gt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> <a class="el" href="structetl_1_1static__vector.html">operator</a>&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">bool</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc552e44aa703fca0532053ee07dce6f" name="abc552e44aa703fca0532053ee07dce6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc552e44aa703fca0532053ee07dce6f">&#9670;&#160;</a></span>swap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Key</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Container</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Compare</a>  = etl::less&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1flat__set.html">flat_set</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Key</a>, <a class="el" href="structetl_1_1static__vector.html">Container</a>, <a class="el" href="structetl_1_1static__vector.html">Compare</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/etl/_flat_set/<a class="el" href="__flat__set_2flat__set_8hpp_source.html">flat_set.hpp</a></li>
 </ul>
@@ -2230,7 +2467,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1flat__set.html">flat_set</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

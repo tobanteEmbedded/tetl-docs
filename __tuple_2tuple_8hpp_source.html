@@ -161,8 +161,8 @@ $(function(){initNavTree('__tuple_2tuple_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> swap_impl(index_constant&lt;I&gt; <span class="comment">/*ic*/</span>, T&amp; other) <span class="keyword">noexcept</span>(is_nothrow_swappable_v&lt;T&gt;) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">using </span><a class="code hl_function" href="namespaceetl.html#a48495c00a9d4cf87f14566260d153f83">etl::swap</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_function" href="namespaceetl.html#a48495c00a9d4cf87f14566260d153f83">swap</a>(_value, other);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">using </span><a class="code hl_function" href="namespaceetl.html#ac15165afbf59de637ccf27b635458ece">etl::swap</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_function" href="namespaceetl.html#ac15165afbf59de637ccf27b635458ece">swap</a>(_value, other);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">private</span>:</div>
@@ -203,7 +203,7 @@ $(function(){initNavTree('__tuple_2tuple_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    using tuple_leaf&lt;Idx, Ts&gt;::get_type...;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    using tuple_leaf&lt;Idx, Ts&gt;::get_impl...;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    constexpr auto <a class="code hl_function" href="namespaceetl.html#a48495c00a9d4cf87f14566260d153f83">swap</a>(tuple_impl&amp; other) noexcept((<a class="code hl_variable" href="namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5">is_nothrow_swappable_v</a>&lt;Ts&gt; &amp;&amp; ...)) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    constexpr auto <a class="code hl_function" href="namespaceetl.html#ac15165afbf59de637ccf27b635458ece">swap</a>(tuple_impl&amp; other) noexcept((<a class="code hl_variable" href="namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5">is_nothrow_swappable_v</a>&lt;Ts&gt; &amp;&amp; ...)) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        (tuple_leaf&lt;Idx, Ts&gt;::swap_impl(index_c&lt;Idx&gt;, other.get_impl(index_c&lt;Idx&gt;)), ...);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
@@ -387,10 +387,10 @@ $(function(){initNavTree('__tuple_2tuple_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="ais__same_8hpp_html"><div class="ttname"><a href="is__same_8hpp.html">is_same.hpp</a></div></div>
 <div class="ttc" id="ais__tuple__like_8hpp_html"><div class="ttname"><a href="is__tuple__like_8hpp.html">is_tuple_like.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a48495c00a9d4cf87f14566260d153f83"><div class="ttname"><a href="namespaceetl.html#a48495c00a9d4cf87f14566260d153f83">etl::swap</a></div><div class="ttdeci">constexpr auto swap(flat_set&lt; Key, Container, Compare &gt; &amp;x, flat_set&lt; Key, Container, Compare &gt; &amp;y) noexcept(noexcept(x.swap(y))) -&gt; void</div><div class="ttdef"><b>Definition</b> flat_set.hpp:355</div></div>
 <div class="ttc" id="anamespaceetl_html_a5ad99d6adeb2c1d8530bf9204f34aab4"><div class="ttname"><a href="namespaceetl.html#a5ad99d6adeb2c1d8530bf9204f34aab4">etl::is_tuple_like</a></div><div class="ttdeci">constexpr auto is_tuple_like</div><div class="ttdef"><b>Definition</b> is_tuple_like.hpp:9</div></div>
 <div class="ttc" id="anamespaceetl_html_a6c41ad6b9af06544b52833e235bb14dd"><div class="ttname"><a href="namespaceetl.html#a6c41ad6b9af06544b52833e235bb14dd">etl::index_sequence</a></div><div class="ttdeci">etl::integer_sequence&lt; etl::size_t, Ints... &gt; index_sequence</div><div class="ttdef"><b>Definition</b> index_sequence.hpp:12</div></div>
 <div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:197</div></div>
+<div class="ttc" id="anamespaceetl_html_ac15165afbf59de637ccf27b635458ece"><div class="ttname"><a href="namespaceetl.html#ac15165afbf59de637ccf27b635458ece">etl::swap</a></div><div class="ttdeci">auto swap(inplace_function&lt; R(Args...), Capacity, Alignment &gt; &amp;lhs, inplace_function&lt; R(Args...), Capacity, Alignment &gt; &amp;rhs) noexcept -&gt; void</div><div class="ttdoc">Overloads the etl::swap algorithm for etl::inplace_function. Exchanges the state of lhs with that of ...</div><div class="ttdef"><b>Definition</b> inplace_function.hpp:241</div></div>
 <div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_af740a9b650d7a3063e9414c3c50ffdb5"><div class="ttname"><a href="namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5">etl::is_nothrow_swappable_v</a></div><div class="ttdeci">constexpr bool is_nothrow_swappable_v</div><div class="ttdef"><b>Definition</b> is_nothrow_swappable.hpp:21</div></div>
@@ -418,7 +418,7 @@ $(function(){initNavTree('__tuple_2tuple_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_8be609a5e5a1157a2235a808dd93e4b3.html">_tuple</a></li><li class="navelem"><a class="el" href="__tuple_2tuple_8hpp.html">tuple.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

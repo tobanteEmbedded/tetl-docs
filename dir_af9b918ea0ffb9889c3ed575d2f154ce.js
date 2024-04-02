@@ -2,7 +2,7 @@ var dir_af9b918ea0ffb9889c3ed575d2f154ce =
 [
     [ "default_accessor.hpp", "default__accessor_8hpp.html", "default__accessor_8hpp" ],
     [ "extents.hpp", "extents_8hpp.html", "extents_8hpp" ],
-    [ "full_extent.hpp", "full__extent_8hpp.html", "full__extent_8hpp" ],
+    [ "full_extent.hpp", "full__extent_8hpp.html", null ],
     [ "integral_constant_like.hpp", "integral__constant__like_8hpp.html", null ],
     [ "is_extents.hpp", "is__extents_8hpp.html", null ],
     [ "layout.hpp", "layout_8hpp.html", "layout_8hpp" ],

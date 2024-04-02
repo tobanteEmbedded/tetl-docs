@@ -1,6 +1,5 @@
 var duration_8hpp =
 [
-    [ "duration< Rep, Period >", "structetl_1_1chrono_1_1duration.html", "structetl_1_1chrono_1_1duration" ],
     [ "common_type< chrono::duration< Rep1, Period1 >, chrono::duration< Rep2, Period2 > >", "structetl_1_1common__type_3_01chrono_1_1duration_3_01Rep1_00_01Period1_01_4_00_01chrono_1_1durat4fc2dee09f301ff098a97ea2485d2b03.html", "structetl_1_1common__type_3_01chrono_1_1duration_3_01Rep1_00_01Period1_01_4_00_01chrono_1_1durat4fc2dee09f301ff098a97ea2485d2b03" ],
     [ "nanoseconds", "duration_8hpp.html#aa2bdb8896e8a0a6a257483bf345f97ec", null ],
     [ "microseconds", "duration_8hpp.html#a080788fed03294e645b6718a9063b197", null ],

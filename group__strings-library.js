@@ -2,7 +2,7 @@ var group__strings_library =
 [
     [ "cctype", "group__cctype.html", null ],
     [ "charconv", "group__charconv.html", null ],
-    [ "cstring", "group__cstring.html", null ],
+    [ "cstring", "group__cstring.html", "group__cstring" ],
     [ "cwchar", "group__cwchar.html", null ],
     [ "cwctype", "group__cwctype.html", null ],
     [ "format", "group__format.html", null ],

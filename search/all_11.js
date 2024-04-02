@@ -1,8 +1,8 @@
 var searchData=
 [
   ['named_5ffunctions_2ehpp_0',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
-  ['nan_1',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
-  ['nan_2',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
+  ['nan_1',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
+  ['nan_2',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
   ['nan_2ehpp_3',['nan.hpp',['../nan_8hpp.html',1,'']]],
   ['nanf_4',['nanf',['../group__cmath.html#ga92b23f23746d65434dd57cbf03dde471',1,'etl']]],
   ['nanl_5',['nanl',['../group__cmath.html#gab2ef6ce5627884455b58fbf76bd8c8ea',1,'etl']]],
@@ -102,14 +102,16 @@ var searchData=
   ['numeric_5flimits_3c_20int_20_3e_99',['numeric_limits&lt; int &gt;',['../structetl_1_1numeric__limits_3_01int_01_4.html',1,'etl']]],
   ['numeric_5flimits_3c_20long_20_3e_100',['numeric_limits&lt; long &gt;',['../structetl_1_1numeric__limits_3_01long_01_4.html',1,'etl']]],
   ['numeric_5flimits_3c_20long_20double_20_3e_101',['numeric_limits&lt; long double &gt;',['../structetl_1_1numeric__limits_3_01long_01double_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20short_20_3e_102',['numeric_limits&lt; short &gt;',['../structetl_1_1numeric__limits_3_01short_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20signed_20char_20_3e_103',['numeric_limits&lt; signed char &gt;',['../structetl_1_1numeric__limits_3_01signed_01char_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20t_20const_20_3e_104',['numeric_limits&lt; T const &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20t_20const_20volatile_20_3e_105',['numeric_limits&lt; T const volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01volatile_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20t_20volatile_20_3e_106',['numeric_limits&lt; T volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01volatile_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20char_20_3e_107',['numeric_limits&lt; unsigned char &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01char_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20int_20_3e_108',['numeric_limits&lt; unsigned int &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20long_20_3e_109',['numeric_limits&lt; unsigned long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20short_20_3e_110',['numeric_limits&lt; unsigned short &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html',1,'etl']]],
-  ['numerics_20library_111',['Numerics Library',['../group__numerics-library.html',1,'']]]
+  ['numeric_5flimits_3c_20long_20long_20_3e_102',['numeric_limits&lt; long long &gt;',['../structetl_1_1numeric__limits_3_01long_01long_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20short_20_3e_103',['numeric_limits&lt; short &gt;',['../structetl_1_1numeric__limits_3_01short_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20signed_20char_20_3e_104',['numeric_limits&lt; signed char &gt;',['../structetl_1_1numeric__limits_3_01signed_01char_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20t_20const_20_3e_105',['numeric_limits&lt; T const &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20t_20const_20volatile_20_3e_106',['numeric_limits&lt; T const volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01volatile_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20t_20volatile_20_3e_107',['numeric_limits&lt; T volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01volatile_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20char_20_3e_108',['numeric_limits&lt; unsigned char &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01char_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20int_20_3e_109',['numeric_limits&lt; unsigned int &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20long_20_3e_110',['numeric_limits&lt; unsigned long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20long_20long_20_3e_111',['numeric_limits&lt; unsigned long long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01long_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20short_20_3e_112',['numeric_limits&lt; unsigned short &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html',1,'etl']]],
+  ['numerics_20library_113',['Numerics Library',['../group__numerics-library.html',1,'']]]
 ];

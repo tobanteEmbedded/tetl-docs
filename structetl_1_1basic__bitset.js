@@ -2,7 +2,7 @@ var structetl_1_1basic__bitset =
 [
     [ "reference", "structetl_1_1basic__bitset_1_1reference.html", "structetl_1_1basic__bitset_1_1reference" ],
     [ "basic_bitset", "structetl_1_1basic__bitset.html#acb4bf4a06dea1ebbf10c6336d98d196a", null ],
-    [ "basic_bitset", "structetl_1_1basic__bitset.html#a1e48751dc3eded5b3cc9929526ea5633", null ],
+    [ "basic_bitset", "structetl_1_1basic__bitset.html#a75a970286091777375cd8233b6cd0626", null ],
     [ "size", "structetl_1_1basic__bitset.html#ae65cdb6d1b78786be63a454776fc211c", null ],
     [ "operator[]", "structetl_1_1basic__bitset.html#afca78b006b31782e6f1a31458b25dfca", null ],
     [ "operator[]", "structetl_1_1basic__bitset.html#ae260c4261e49866135d9c6f2403d0122", null ],

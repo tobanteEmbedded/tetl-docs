@@ -104,19 +104,266 @@ $(function(){initNavTree('group__chrono.html',''); initResizable(true); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">chrono<div class="ingroups"><a class="el" href="group__utilities-library.html">Utilities Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>C++ time utilities  
-</p>
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1duration.html">duration&lt; Rep, Period &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class template <a class="el" href="structetl_1_1chrono_1_1duration.html" title="Class template etl::chrono::duration represents a time interval.">etl::chrono::duration</a> represents a time interval.  <a href="structetl_1_1chrono_1_1duration.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1duration__values.html">duration_values&lt; Rep &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structetl_1_1chrono_1_1duration__values.html" title="The etl::chrono::duration_values type defines three common durations.">etl::chrono::duration_values</a> type defines three common durations.  <a href="structetl_1_1chrono_1_1duration__values.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1chrono_1_1last__spec.html" title="last_spec is an empty tag type that is used in conjunction with other calendar types to indicate the ...">last_spec</a> is an empty tag type that is used in conjunction with other calendar types to indicate the last thing in a sequence.  <a href="structetl_1_1chrono_1_1last__spec.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1local__t.html">local_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class <a class="el" href="structetl_1_1chrono_1_1local__t.html" title="The class local_t is a pseudo-clock that is used as the first template argument to etl::chrono::time_...">local_t</a> is a pseudo-clock that is used as the first template argument to <a class="el" href="structetl_1_1chrono_1_1time__point.html" title="Class template time_point represents a point in time. It is implemented as if it stores a value of ty...">etl::chrono::time_point</a> to indicate that the time point represents local time with respect of a not-yet-specified time zone. local_time supports streaming and the full set of time point arithmetic.  <a href="structetl_1_1chrono_1_1local__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga9cc874e9b5c4f4b45d061cff492000a0" id="r_ga9cc874e9b5c4f4b45d061cff492000a0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; </td></tr>
+<tr class="memitem:ga9cc874e9b5c4f4b45d061cff492000a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a> = <a class="el" href="structetl_1_1chrono_1_1time__point.html">etl::chrono::time_point</a>&lt;<a class="el" href="structetl_1_1chrono_1_1local__t.html">etl::chrono::local_t</a>, <a class="el" href="structetl_1_1static__vector.html">Duration</a>&gt;</td></tr>
+<tr class="separator:ga9cc874e9b5c4f4b45d061cff492000a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97808a47c6ad8c9e5f15b1d73c385ee3" id="r_ga97808a47c6ad8c9e5f15b1d73c385ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga97808a47c6ad8c9e5f15b1d73c385ee3">local_seconds</a> = <a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a>&lt;<a class="el" href="namespaceetl_1_1chrono.html#ad74086ee1024e4cf191fcc7e461a2835">etl::chrono::seconds</a>&gt;</td></tr>
+<tr class="separator:ga97808a47c6ad8c9e5f15b1d73c385ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1aba6fd24a14a18f324075155f2a037" id="r_gaa1aba6fd24a14a18f324075155f2a037"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa1aba6fd24a14a18f324075155f2a037">local_days</a> = <a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a>&lt;<a class="el" href="namespaceetl_1_1chrono.html#a2f75e5eff74833ee87e0cea3c92423d5">etl::chrono::days</a>&gt;</td></tr>
+<tr class="separator:gaa1aba6fd24a14a18f324075155f2a037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga6d43204bc1c7eaae688e7aa706cd00a2" id="r_ga6d43204bc1c7eaae688e7aa706cd00a2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">R</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">P</a> &gt; <br />
+requires (<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="structetl_1_1static__vector.html">R</a>&gt;::is_signed)</td></tr>
+<tr class="memitem:ga6d43204bc1c7eaae688e7aa706cd00a2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga6d43204bc1c7eaae688e7aa706cd00a2">abs</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">R</a>, <a class="el" href="structetl_1_1static__vector.html">P</a> &gt; d) noexcept(<a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">R</a> &gt;) -&gt; <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">R</a>, <a class="el" href="structetl_1_1static__vector.html">P</a> &gt;</td></tr>
+<tr class="memdesc:ga6d43204bc1c7eaae688e7aa706cd00a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute value of the duration d. Specifically, if d &gt;= d.zero(), return d, otherwise return -d. The function does not participate in the overload resolution unless <a class="el" href="structetl_1_1numeric__limits.html#ad8915ca97feb7066661158ad9b85a9bd">etl::numeric_limits&lt;R&gt;::is_signed</a> is true.  <br /></td></tr>
+<tr class="separator:ga6d43204bc1c7eaae688e7aa706cd00a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5344eaa1b0cbd9061bc7c3c30569dab" id="r_gaa5344eaa1b0cbd9061bc7c3c30569dab"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Rep</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <br />
+requires (detail::is_duration_v&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>&gt;)</td></tr>
+<tr class="memitem:gaa5344eaa1b0cbd9061bc7c3c30569dab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa5344eaa1b0cbd9061bc7c3c30569dab">ceil</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a>, <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;d) noexcept(<a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a> &gt; <a class="el" href="structetl_1_1static__vector.html">and</a> <a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">typename</a> To::rep &gt;) -&gt; <a class="el" href="structetl_1_1static__vector.html">To</a></td></tr>
+<tr class="separator:gaa5344eaa1b0cbd9061bc7c3c30569dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga071748f4942196365e7108fa5a2776c9" id="r_ga071748f4942196365e7108fa5a2776c9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Clock</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; <br />
+requires (detail::is_duration_v&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>&gt;)</td></tr>
+<tr class="memitem:ga071748f4942196365e7108fa5a2776c9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga071748f4942196365e7108fa5a2776c9">ceil</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Clock</a>, <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1static__vector.html">tp</a>) -&gt; <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Clock</a>, <a class="el" href="structetl_1_1static__vector.html">To</a> &gt;</td></tr>
+<tr class="separator:ga071748f4942196365e7108fa5a2776c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2d8e96af604afd97412df1c887c7135" id="r_gaa2d8e96af604afd97412df1c887c7135"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ToDur</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Rep</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; </td></tr>
+<tr class="memitem:gaa2d8e96af604afd97412df1c887c7135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa2d8e96af604afd97412df1c887c7135">duration_cast</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a>, <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>) noexcept(<a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a> &gt; <a class="el" href="structetl_1_1static__vector.html">and</a> <a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; <a class="el" href="structetl_1_1static__vector.html">typename</a> ToDur::rep &gt;) -&gt; <a class="el" href="structetl_1_1static__vector.html">ToDur</a></td></tr>
+<tr class="memdesc:gaa2d8e96af604afd97412df1c887c7135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a duration to a duration of different type ToDur.  <br /></td></tr>
+<tr class="separator:gaa2d8e96af604afd97412df1c887c7135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5379264e83af65af8802eeec0d49e5f0" id="r_ga5379264e83af65af8802eeec0d49e5f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5379264e83af65af8802eeec0d49e5f0">last</a> = <a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>{}</td></tr>
+<tr class="separator:ga5379264e83af65af8802eeec0d49e5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>C++ time utilities </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9cc874e9b5c4f4b45d061cff492000a0" name="ga9cc874e9b5c4f4b45d061cff492000a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cc874e9b5c4f4b45d061cff492000a0">&#9670;&#160;</a></span>local_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a> = <a class="el" href="structetl_1_1chrono_1_1time__point.html">etl::chrono::time_point</a>&lt;<a class="el" href="structetl_1_1chrono_1_1local__t.html">etl::chrono::local_t</a>, <a class="el" href="structetl_1_1static__vector.html">Duration</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97808a47c6ad8c9e5f15b1d73c385ee3" name="ga97808a47c6ad8c9e5f15b1d73c385ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97808a47c6ad8c9e5f15b1d73c385ee3">&#9670;&#160;</a></span>local_seconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#ga97808a47c6ad8c9e5f15b1d73c385ee3">local_seconds</a> = <a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a>&lt;<a class="el" href="namespaceetl_1_1chrono.html#ad74086ee1024e4cf191fcc7e461a2835">etl::chrono::seconds</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa1aba6fd24a14a18f324075155f2a037" name="gaa1aba6fd24a14a18f324075155f2a037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1aba6fd24a14a18f324075155f2a037">&#9670;&#160;</a></span>local_days</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#gaa1aba6fd24a14a18f324075155f2a037">local_days</a> = <a class="el" href="#ga9cc874e9b5c4f4b45d061cff492000a0">local_time</a>&lt;<a class="el" href="namespaceetl_1_1chrono.html#a2f75e5eff74833ee87e0cea3c92423d5">etl::chrono::days</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga6d43204bc1c7eaae688e7aa706cd00a2" name="ga6d43204bc1c7eaae688e7aa706cd00a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d43204bc1c7eaae688e7aa706cd00a2">&#9670;&#160;</a></span>abs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">R</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">P</a> &gt; <br />
+requires (<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="structetl_1_1static__vector.html">R</a>&gt;::is_signed)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> abs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">R</a>, <a class="el" href="structetl_1_1static__vector.html">P</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;<a class="el" href="structetl_1_1static__vector.html">R</a>, <a class="el" href="structetl_1_1static__vector.html">P</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the absolute value of the duration d. Specifically, if d &gt;= d.zero(), return d, otherwise return -d. The function does not participate in the overload resolution unless <a class="el" href="structetl_1_1numeric__limits.html#ad8915ca97feb7066661158ad9b85a9bd">etl::numeric_limits&lt;R&gt;::is_signed</a> is true. </p>
+
+</div>
+</div>
+<a id="gaa5344eaa1b0cbd9061bc7c3c30569dab" name="gaa5344eaa1b0cbd9061bc7c3c30569dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5344eaa1b0cbd9061bc7c3c30569dab">&#9670;&#160;</a></span>ceil() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Rep</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <br />
+requires (detail::is_duration_v&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> ceil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a>, <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">To</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga071748f4942196365e7108fa5a2776c9" name="ga071748f4942196365e7108fa5a2776c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga071748f4942196365e7108fa5a2776c9">&#9670;&#160;</a></span>ceil() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">To</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Clock</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; <br />
+requires (detail::is_duration_v&lt;<a class="el" href="structetl_1_1static__vector.html">To</a>&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> ceil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Clock</a>, <a class="el" href="structetl_1_1static__vector.html">Duration</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tp</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt;<a class="el" href="structetl_1_1static__vector.html">Clock</a>, <a class="el" href="structetl_1_1static__vector.html">To</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa2d8e96af604afd97412df1c887c7135" name="gaa2d8e96af604afd97412df1c887c7135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2d8e96af604afd97412df1c887c7135">&#9670;&#160;</a></span>duration_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ToDur</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Rep</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> duration_cast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; <a class="el" href="structetl_1_1static__vector.html">Rep</a>, <a class="el" href="structetl_1_1static__vector.html">Period</a> &gt; <a class="el" href="structetl_1_1static__vector.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>duration</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">ToDur</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a duration to a duration of different type ToDur. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga5379264e83af65af8802eeec0d49e5f0" name="ga5379264e83af65af8802eeec0d49e5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5379264e83af65af8802eeec0d49e5f0">&#9670;&#160;</a></span>last</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> last = <a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>{}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

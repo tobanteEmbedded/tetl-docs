@@ -1,6 +1,5 @@
 var __mdspan_2mdspan_8hpp =
 [
-    [ "mdspan< ElementType, Extents, LayoutPolicy, AccessorPolicy >", "structetl_1_1mdspan.html", "structetl_1_1mdspan" ],
     [ "mdspan", "__mdspan_2mdspan_8hpp.html#a1fe0d774229c098831602663bd591f28", null ],
     [ "mdspan", "__mdspan_2mdspan_8hpp.html#aa581bd5419c1b5ce63db2ceefe37b971", null ],
     [ "mdspan", "__mdspan_2mdspan_8hpp.html#a82de4f51577f9cfd914c0f916caf46fc", null ],

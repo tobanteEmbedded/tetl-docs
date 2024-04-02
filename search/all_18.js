@@ -36,7 +36,7 @@ var searchData=
   ['underlying_5ftype_33',['underlying_type',['../structetl_1_1underlying__type.html',1,'etl']]],
   ['underlying_5ftype_2ehpp_34',['underlying_type.hpp',['../underlying__type_8hpp.html',1,'']]],
   ['underlying_5ftype_5ft_35',['underlying_type_t',['../namespaceetl.html#aa68cdd3b170a7e28ceeb562ad04c2853',1,'etl']]],
-  ['unexpect_36',['unexpect',['../namespaceetl.html#a8ede73f6e8b0e147031608038da7de60',1,'etl']]],
+  ['unexpect_36',['unexpect',['../group__expected.html#ga8ede73f6e8b0e147031608038da7de60',1,'etl::unexpect_t']]],
   ['unexpect_2ehpp_37',['unexpect.hpp',['../unexpect_8hpp.html',1,'']]],
   ['unexpect_5ft_38',['unexpect_t',['../structetl_1_1unexpect__t.html',1,'unexpect_t'],['../structetl_1_1unexpect__t.html#ae581d47b52174ad75e75cbd45ed0ce08',1,'etl::unexpect_t::unexpect_t()']]],
   ['unexpected_39',['unexpected',['../structetl_1_1unexpected.html',1,'unexpected&lt; E &gt;'],['../structetl_1_1unexpected.html#a2bba237693bc09f63b35931c1ac121da',1,'etl::unexpected::unexpected(Err &amp;&amp;e)'],['../structetl_1_1unexpected.html#aa8e1eaa68d572351812a070b78261597',1,'etl::unexpected::unexpected(etl::in_place_t, Args &amp;&amp;... args)'],['../structetl_1_1unexpected.html#a5e30973c509fb7640c6cc4f4152a6abf',1,'etl::unexpected::unexpected(unexpected const &amp;)=default'],['../structetl_1_1unexpected.html#a1b7cc81c21ded672ac68ca17efc51bb5',1,'etl::unexpected::unexpected(unexpected &amp;&amp;)=default'],['../namespaceetl.html#aa14cd5bdeb510c30773c0a14b86d5f8e',1,'etl::unexpected()']]],

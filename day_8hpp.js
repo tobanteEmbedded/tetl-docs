@@ -1,6 +1,5 @@
 var day_8hpp =
 [
-    [ "day", "structetl_1_1chrono_1_1day.html", "structetl_1_1chrono_1_1day" ],
     [ "operator==", "day_8hpp.html#a58dbc8a129d4640697fb1a0ee181fb0a", null ],
     [ "operator!=", "day_8hpp.html#a84670efb322f969ea049082ffe33f6f7", null ],
     [ "operator<", "day_8hpp.html#a4c37f65948848c0e644241cb613e5c53", null ],

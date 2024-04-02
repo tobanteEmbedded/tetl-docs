@@ -117,31 +117,31 @@ $(function(){initNavTree('breakpoint__if__debugging_8hpp_source.html',''); initR
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad9a2659c0357fb2180dab051dfe348eb">   11</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ad9a2659c0357fb2180dab051dfe348eb">breakpoint_if_debugging</a>() noexcept -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceetl.html#a17c8a352def3b5c249692e3ed0da20ad">etl::is_debugger_present</a>()) {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_function" href="namespaceetl.html#a7a1617ac5647781dfed036ade2fdb9c8">etl::breakpoint</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__debugging.html#gad9a2659c0357fb2180dab051dfe348eb">   15</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__debugging.html#gad9a2659c0357fb2180dab051dfe348eb">breakpoint_if_debugging</a>() noexcept -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="group__debugging.html#ga17c8a352def3b5c249692e3ed0da20ad">etl::is_debugger_present</a>()) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_function" href="group__debugging.html#ga7a1617ac5647781dfed036ade2fdb9c8">etl::breakpoint</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// TETL_DEBUGGING_BREAKPOINT_IF_DEBUGGING_HPP</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// TETL_DEBUGGING_BREAKPOINT_IF_DEBUGGING_HPP</span></div>
 <div class="ttc" id="abreakpoint_8hpp_html"><div class="ttname"><a href="breakpoint_8hpp.html">breakpoint.hpp</a></div></div>
+<div class="ttc" id="agroup__debugging_html_ga17c8a352def3b5c249692e3ed0da20ad"><div class="ttname"><a href="group__debugging.html#ga17c8a352def3b5c249692e3ed0da20ad">etl::is_debugger_present</a></div><div class="ttdeci">auto is_debugger_present() noexcept -&gt; bool</div><div class="ttdoc">Attempts to determine if the program is being executed with debugger present.</div><div class="ttdef"><b>Definition</b> is_debugger_present.hpp:12</div></div>
+<div class="ttc" id="agroup__debugging_html_ga7a1617ac5647781dfed036ade2fdb9c8"><div class="ttname"><a href="group__debugging.html#ga7a1617ac5647781dfed036ade2fdb9c8">etl::breakpoint</a></div><div class="ttdeci">auto breakpoint() noexcept -&gt; void</div><div class="ttdoc">Unconditional breakpoint: attempts to temporarily halt the execution of the program and transfer cont...</div><div class="ttdef"><b>Definition</b> breakpoint.hpp:13</div></div>
+<div class="ttc" id="agroup__debugging_html_gad9a2659c0357fb2180dab051dfe348eb"><div class="ttname"><a href="group__debugging.html#gad9a2659c0357fb2180dab051dfe348eb">etl::breakpoint_if_debugging</a></div><div class="ttdeci">auto breakpoint_if_debugging() noexcept -&gt; void</div><div class="ttdoc">Conditional breakpoint: attempts to temporarily halt the execution of the program and transfer contro...</div><div class="ttdef"><b>Definition</b> breakpoint_if_debugging.hpp:15</div></div>
 <div class="ttc" id="ais__debugger__present_8hpp_html"><div class="ttname"><a href="is__debugger__present_8hpp.html">is_debugger_present.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a17c8a352def3b5c249692e3ed0da20ad"><div class="ttname"><a href="namespaceetl.html#a17c8a352def3b5c249692e3ed0da20ad">etl::is_debugger_present</a></div><div class="ttdeci">auto is_debugger_present() noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> is_debugger_present.hpp:10</div></div>
-<div class="ttc" id="anamespaceetl_html_a7a1617ac5647781dfed036ade2fdb9c8"><div class="ttname"><a href="namespaceetl.html#a7a1617ac5647781dfed036ade2fdb9c8">etl::breakpoint</a></div><div class="ttdeci">auto breakpoint() noexcept -&gt; void</div><div class="ttdef"><b>Definition</b> breakpoint.hpp:10</div></div>
-<div class="ttc" id="anamespaceetl_html_ad9a2659c0357fb2180dab051dfe348eb"><div class="ttname"><a href="namespaceetl.html#ad9a2659c0357fb2180dab051dfe348eb">etl::breakpoint_if_debugging</a></div><div class="ttdeci">auto breakpoint_if_debugging() noexcept -&gt; void</div><div class="ttdef"><b>Definition</b> breakpoint_if_debugging.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_e8cd1b13a2f25817628d6e2cf98116f9.html">_debugging</a></li><li class="navelem"><a class="el" href="breakpoint__if__debugging_8hpp.html">breakpoint_if_debugging.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:03 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

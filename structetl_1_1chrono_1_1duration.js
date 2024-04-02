@@ -22,5 +22,6 @@ var structetl_1_1chrono_1_1duration =
     [ "operator*=", "structetl_1_1chrono_1_1duration.html#abe49acba818ad435a5976a014190f4e9", null ],
     [ "operator/=", "structetl_1_1chrono_1_1duration.html#a3305fc2bb836e18069d377a50be2dc1a", null ],
     [ "operator%=", "structetl_1_1chrono_1_1duration.html#aa03d479685eb42739f73357fee1564dc", null ],
-    [ "operator%=", "structetl_1_1chrono_1_1duration.html#ae9beae32a996ad81f2a271589af4c1f5", null ]
+    [ "operator%=", "structetl_1_1chrono_1_1duration.html#ae9beae32a996ad81f2a271589af4c1f5", null ],
+    [ "duration_cast", "group__chrono.html#gaa2d8e96af604afd97412df1c887c7135", null ]
 ];

@@ -131,7 +131,7 @@ $(function(){initNavTree('submdspan__extents_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">using </span>IndexT = <span class="keyword">typename</span> Extent::index_type;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Extent::static_extent(Extent::rank() - K) != <a class="code hl_variable" href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a>) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Extent::static_extent(Extent::rank() - K) != <a class="code hl_variable" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a>) {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_convertible_v&lt;Sk, etl::full_extent_t&gt;</a>) {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">return</span> Extent::static_extent(Extent::rank() - K);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (index_pair_like&lt;Sk, IndexT&gt;) {</div>
@@ -151,7 +151,7 @@ $(function(){initNavTree('submdspan__extents_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> K, <span class="keyword">typename</span> Extents, <span class="keywordtype">size_t</span>... NewExtents&gt;</div>
@@ -208,10 +208,10 @@ $(function(){initNavTree('submdspan__extents_8hpp_source.html',''); initResizabl
 <div class="ttc" id="adynamic__extent_8hpp_html"><div class="ttname"><a href="dynamic__extent_8hpp.html">dynamic_extent.hpp</a></div></div>
 <div class="ttc" id="aextents_8hpp_html"><div class="ttname"><a href="extents_8hpp.html">extents.hpp</a></div></div>
 <div class="ttc" id="afull__extent_8hpp_html"><div class="ttname"><a href="full__extent_8hpp.html">full_extent.hpp</a></div></div>
+<div class="ttc" id="agroup__span_html_ga22e7be40fea564f0c1fe3d11229ef0f8"><div class="ttname"><a href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition</b> dynamic_extent.hpp:14</div></div>
 <div class="ttc" id="aintegral__constant__like_8hpp_html"><div class="ttname"><a href="integral__constant__like_8hpp.html">integral_constant_like.hpp</a></div></div>
 <div class="ttc" id="ais__convertible_8hpp_html"><div class="ttname"><a href="is__convertible_8hpp.html">is_convertible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a22e7be40fea564f0c1fe3d11229ef0f8"><div class="ttname"><a href="namespaceetl.html#a22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition</b> dynamic_extent.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_ab5e8085c3345374b117c1dc70edf9d9b"><div class="ttname"><a href="namespaceetl.html#ab5e8085c3345374b117c1dc70edf9d9b">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition</b> next.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_af804eb418abea75441ce277a3d8ac9a4"><div class="ttname"><a href="namespaceetl.html#af804eb418abea75441ce277a3d8ac9a4">etl::submdspan_extents</a></div><div class="ttdeci">constexpr auto submdspan_extents(etl::extents&lt; IndexT, Extents... &gt; const &amp;ext, SliceSpecifiers... slices)</div><div class="ttdef"><b>Definition</b> submdspan_extents.hpp:86</div></div>
@@ -226,7 +226,7 @@ $(function(){initNavTree('submdspan__extents_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_af9b918ea0ffb9889c3ed575d2f154ce.html">_mdspan</a></li><li class="navelem"><a class="el" href="submdspan__extents_8hpp.html">submdspan_extents.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 14:00:29 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 2 2024 17:58:04 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

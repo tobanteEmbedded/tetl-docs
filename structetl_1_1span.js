@@ -29,6 +29,8 @@ var structetl_1_1span =
     [ "last", "structetl_1_1span.html#aa0dbda62b7c13d95a8deef6ad6140eb1", null ],
     [ "subspan", "structetl_1_1span.html#af4134699db10bfe5254b7bb10dab6a48", null ],
     [ "subspan", "structetl_1_1span.html#a59f7670ffbbb832ecaf9f9b0a90909cc", null ],
+    [ "as_bytes", "group__span.html#ga76f0f69b8c6ca92d82eef71a4c9f4056", null ],
+    [ "as_writable_bytes", "group__span.html#ga782ff6f632fb48e1dc91dec240b5de82", null ],
     [ "extent", "structetl_1_1span.html#a00742803104bb69f8f341b5999987144", null ],
     [ "count", "structetl_1_1span.html#a63a9cbbcc6f14ca8d086c4b4eab5dedb", null ],
     [ "_size", "structetl_1_1span.html#a9f1927ae81f20205d93e0b86915f27d7", null ]
