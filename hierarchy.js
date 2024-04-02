@@ -590,6 +590,7 @@ var hierarchy =
     [ "ratio< Num, Denom >", "structetl_1_1ratio.html", null ],
     [ "rebind_simd< T, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html", null ],
     [ "rebind_simd< T, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html", null ],
+    [ "reference", "structetl_1_1basic__bitset_1_1reference.html", null ],
     [ "reference", "structetl_1_1bitset_1_1reference.html", null ],
     [ "reference_wrapper< T >", "structetl_1_1reference__wrapper.html", null ],
     [ "remove_all_extents< T >", "structetl_1_1remove__all__extents.html", null ],

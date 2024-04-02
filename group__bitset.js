@@ -1,20 +1,35 @@
 var group__bitset =
 [
     [ "basic_bitset< Bits, WordType >", "structetl_1_1basic__bitset.html", [
+      [ "reference", "structetl_1_1basic__bitset_1_1reference.html", [
+        [ "operator=", "structetl_1_1basic__bitset_1_1reference.html#a0c9f25abee38f714c74763270b5b5f79", null ],
+        [ "operator=", "structetl_1_1basic__bitset_1_1reference.html#ae649d44a97369408a0879f983236a33f", null ],
+        [ "operator bool", "structetl_1_1basic__bitset_1_1reference.html#a7990d8e87d9eab2383f94c88c23a6488", null ],
+        [ "operator~", "structetl_1_1basic__bitset_1_1reference.html#ab8f99f10230d222116ecbffe41977b72", null ],
+        [ "flip", "structetl_1_1basic__bitset_1_1reference.html#ae0905fc08c32c7a615a36305c875e62d", null ]
+      ] ],
       [ "basic_bitset", "structetl_1_1basic__bitset.html#acb4bf4a06dea1ebbf10c6336d98d196a", null ],
       [ "basic_bitset", "structetl_1_1basic__bitset.html#a1e48751dc3eded5b3cc9929526ea5633", null ],
       [ "size", "structetl_1_1basic__bitset.html#ae65cdb6d1b78786be63a454776fc211c", null ],
       [ "operator[]", "structetl_1_1basic__bitset.html#afca78b006b31782e6f1a31458b25dfca", null ],
+      [ "operator[]", "structetl_1_1basic__bitset.html#ae260c4261e49866135d9c6f2403d0122", null ],
       [ "all", "structetl_1_1basic__bitset.html#a9d382b499ae2a7c9b167c39471b6c9ca", null ],
       [ "any", "structetl_1_1basic__bitset.html#a27ebbdb92df6f4be6891d382894140c7", null ],
       [ "none", "structetl_1_1basic__bitset.html#a0c5da0e71185e2cbcf2500f3b84079a5", null ],
       [ "count", "structetl_1_1basic__bitset.html#a02701da0eee9b79401d2520f1761e814", null ],
+      [ "unchecked_test", "structetl_1_1basic__bitset.html#a677cdec97450c16e352b83015f93e9ee", null ],
       [ "set", "structetl_1_1basic__bitset.html#a149a1e8c082161eb0e82cad5b419f8ae", null ],
-      [ "set", "structetl_1_1basic__bitset.html#a2b9d4c40e7d0fd89342c720bcfebe585", null ],
+      [ "unchecked_set", "structetl_1_1basic__bitset.html#ab43228b576a3e4a6778d9d226e544ce6", null ],
       [ "reset", "structetl_1_1basic__bitset.html#a3966195738f81ff3b357494218c374ce", null ],
-      [ "reset", "structetl_1_1basic__bitset.html#a21195b0f59c460c0058cae40e0afff76", null ],
+      [ "unchecked_reset", "structetl_1_1basic__bitset.html#a578d363dbc64dd639a88be725de993b4", null ],
       [ "flip", "structetl_1_1basic__bitset.html#a6c25ea4c376d173d3001b2321a66c2ee", null ],
-      [ "flip", "structetl_1_1basic__bitset.html#a0080fc17ddc6342ec42a677ed0ee7099", null ],
+      [ "unchecked_flip", "structetl_1_1basic__bitset.html#aaa9f087f08f1d63e20a3f3afc1c694fd", null ],
+      [ "operator&=", "structetl_1_1basic__bitset.html#a9013bdb4672359f9bca020e2286700ae", null ],
+      [ "operator|=", "structetl_1_1basic__bitset.html#a4e8ae5915b02985034dcb86899b67a87", null ],
+      [ "operator^=", "structetl_1_1basic__bitset.html#a17d443d2669573304776db260e6e4924", null ],
+      [ "operator&", "structetl_1_1basic__bitset.html#a5fd08f21b97ece475cb9b5d83d29ed68", null ],
+      [ "operator|", "structetl_1_1basic__bitset.html#aba3e0e0f6d0fb4b2a34c8f850f256b87", null ],
+      [ "operator^", "structetl_1_1basic__bitset.html#a8e61353587d65b3966b639e19e41a60c", null ],
       [ "operator==", "structetl_1_1basic__bitset.html#ace0bd51a14d8f0bfb5bd9461a92759ee", null ]
     ] ],
     [ "bitset< N >", "structetl_1_1bitset.html", [
