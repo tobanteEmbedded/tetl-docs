@@ -156,7 +156,7 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <div class="line">        <span class="keywordflow">return</span> p;</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(<a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), <a class="code hl_variable" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">end</a>(people), <a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), levelUp);</div>
+<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(<a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), <a class="code hl_variable" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">end</a>(people), <a class="code hl_variable" href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">begin</a>(people), levelUp);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(people[0].experience == 1);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(people[1].experience == 101);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(copy != people);</div>
@@ -167,10 +167,10 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
-<div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:20</div></div>
+<div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:24</div></div>
+<div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:18</div></div>
 <div class="ttc" id="agroup__ranges_html_gad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:58</div></div>
 <div class="ttc" id="agroup__ranges_html_gafb6f1543017c167a1217483e5a858556"><div class="ttname"><a href="group__ranges.html#gafb6f1543017c167a1217483e5a858556">etl::ranges::cpo::begin</a></div><div class="ttdeci">constexpr auto begin</div><div class="ttdef"><b>Definition</b> begin.hpp:63</div></div>
-<div class="ttc" id="anamespaceetl_html_a0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdoc">Applies the given function to a range and stores the result in another range, beginning at dest....</div><div class="ttdef"><b>Definition</b> transform.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
 <div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
@@ -178,7 +178,7 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 3 2024 00:17:20 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 18:40:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
