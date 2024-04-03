@@ -114,7 +114,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">etl/string.hpp</a>&gt;</span> <span class="comment">// for static_string</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span> <span class="comment">// for transform</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span>   <span class="comment">// for TETL_ASSERT</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span>   <span class="comment">// for assert</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cctype_8hpp.html">etl/cctype.hpp</a>&gt;</span>    <span class="comment">// for toupper</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span>  <span class="comment">// for printf</span></div>
@@ -125,55 +125,55 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">    <span class="comment">// Unlike a std::string you will have to decide which maximum capacity you</span></div>
 <div class="line">    <span class="comment">// need. Apart from that it behaves almost the same as the standard version.</span></div>
 <div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::static_string&lt;32&gt;</a> str{};</div>
-<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.empty());</div>
+<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.empty());</div>
 <div class="line">    <span class="keyword">static_assert</span>(str.capacity() == 32);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can append/push_back characters, c-strings, string_view and other</span></div>
 <div class="line">    <span class="comment">// strings of same or different capacity.</span></div>
 <div class="line">    str.append(<span class="stringliteral">&quot;Hello&quot;</span>, 2);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.size() == 2);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;He&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 2);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;He&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    str.append(2, <span class="charliteral">&#39;l&#39;</span>);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.size() == 4);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;Hell&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 4);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hell&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    str.push_back(<span class="charliteral">&#39;o&#39;</span>);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(!str.empty());</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.size() == 5);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;Hello&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(!str.empty());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 5);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> other = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::string_view</a>{<span class="stringliteral">&quot; World&quot;</span>};</div>
 <div class="line">    str.append(other, 0);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(!str.empty());</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.size() == 11);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;Hello World&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(!str.empty());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 11);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hello World&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can make copies.</span></div>
 <div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span> copy = str;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can compare strings</span></div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(copy == str);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(copy == str);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can apply algorithms.</span></div>
 <div class="line">    <span class="keyword">auto</span> toUpper = [](<span class="keyword">auto</span> ch) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a id="a2" name="a2"></a><a class="code hl_function" href="namespaceetl.html#abf5656409846cdb311fcc37acd590d9a">etl::toupper</a>(ch)); };</div>
 <div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a>(begin(str), end(str), begin(str), toUpper);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;HELLO WORLD&quot;</span>);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(copy != str);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;HELLO WORLD&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(copy != str);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can insert at any position</span></div>
 <div class="line">    str.insert(0, 2, <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;  HELLO WORLD&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;  HELLO WORLD&quot;</span>);</div>
 <div class="line">    str.insert(7, <span class="stringliteral">&quot; foo&quot;</span>);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str == <span class="stringliteral">&quot;  HELLO foo WORLD&quot;</span>);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;  HELLO foo WORLD&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can check if a static_string starts or ends with a substring</span></div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.starts_with(<span class="stringliteral">&quot;  &quot;</span>));</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(str.ends_with(<span class="stringliteral">&quot;WORLD&quot;</span>));</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.starts_with(<span class="stringliteral">&quot;  &quot;</span>));</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.ends_with(<span class="stringliteral">&quot;WORLD&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// You can convert a static_string into a string_view</span></div>
 <div class="line">    <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::string_view</a> view = str;</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(view.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>() == str.<a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(view.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>() == str.<a class="code hl_function" href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>());</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// TODO: find &amp; friends</span></div>
 <div class="line"> </div>
@@ -185,20 +185,20 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">}</div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
-<div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
 <div class="ttc" id="anamespaceetl_html_a0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="namespaceetl.html#a0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdoc">Applies the given function to a range and stores the result in another range, beginning at dest....</div><div class="ttdef"><b>Definition</b> transform.hpp:19</div></div>
 <div class="ttc" id="anamespaceetl_html_abf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="namespaceetl.html#abf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:24</div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:328</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html_aeda399ad0b26aa2d0116f45b2a4c6ca0"><div class="ttname"><a href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">etl::static_vector::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_type</div><div class="ttdoc">Number of elements in the vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:606</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html_aeda399ad0b26aa2d0116f45b2a4c6ca0"><div class="ttname"><a href="structetl_1_1static__vector.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">etl::static_vector::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_type</div><div class="ttdoc">Number of elements in the vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:607</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 2 2024 20:54:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 00:17:20 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -113,7 +113,7 @@ $(function(){initNavTree('set_8cpp-example.html',''); initResizable(true); });
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span> <span class="comment">// for for_each</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="array_8hpp.html">etl/array.hpp</a>&gt;</span>     <span class="comment">// for array</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span>   <span class="comment">// for TETL_ASSERT</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span>   <span class="comment">// for assert</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="iterator_8hpp.html">etl/iterator.hpp</a>&gt;</span>  <span class="comment">// for begin, end</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="set_8hpp.html">etl/set.hpp</a>&gt;</span>       <span class="comment">// for static_set</span></div>
 <div class="line"> </div>
@@ -135,36 +135,36 @@ $(function(){initNavTree('set_8cpp-example.html',''); initResizable(true); });
 <div class="line"> </div>
 <div class="line">    for_each(begin(set1), end(set1), [](<span class="keyword">auto</span> key) { printf(<span class="stringliteral">&quot;%d\n&quot;</span>, key); });</div>
 <div class="line"> </div>
-<div class="line">    <a id="a5" name="a5"></a><a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(set1.contains(2));</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(set1.contains(5) == <span class="keyword">false</span>);</div>
+<div class="line">    <a id="a5" name="a5"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(set1.contains(2));</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(set1.contains(5) == <span class="keyword">false</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Construct from range</span></div>
 <div class="line">    <span class="keyword">auto</span> data = array{1.0F, 2.0F, 3.0F};</div>
 <div class="line">    <span class="keyword">auto</span> set2 = static_set&lt;float, 3&gt;{begin(data), end(data)};</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(set2.full());</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(set2.size() == 3);</div>
-<div class="line">    <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(set2.count(1.0F) == 1);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(set2.full());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(set2.size() == 3);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(set2.count(1.0F) == 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aarray_8hpp_html"><div class="ttname"><a href="array_8hpp.html">array.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="aiterator_8hpp_html"><div class="ttname"><a href="iterator_8hpp.html">iterator.hpp</a></div></div>
-<div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
 <div class="ttc" id="anamespaceetl_html_a14fe21109f4f9d8ce7a3364bb45e9eae"><div class="ttname"><a href="namespaceetl.html#a14fe21109f4f9d8ce7a3364bb45e9eae">etl::for_each</a></div><div class="ttdeci">constexpr auto for_each(InputIt first, InputIt last, UnaryFunc f) noexcept -&gt; UnaryFunc</div><div class="ttdoc">Applies the given function object f to the result of dereferencing every iterator in the range [first...</div><div class="ttdef"><b>Definition</b> for_each.hpp:18</div></div>
 <div class="ttc" id="aset_8hpp_html"><div class="ttname"><a href="set_8hpp.html">set.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:39</div></div>
 <div class="ttc" id="astructetl_1_1static__set_html"><div class="ttname"><a href="structetl_1_1static__set.html">etl::static_set</a></div><div class="ttdoc">static_set is an associative container that contains a sorted set of unique objects of type Key....</div><div class="ttdef"><b>Definition</b> static_set.hpp:29</div></div>
 <div class="ttc" id="astructetl_1_1static__set_html_ad5ffdd8de7689fa39828d1123dd7629d"><div class="ttname"><a href="structetl_1_1static__set.html#ad5ffdd8de7689fa39828d1123dd7629d">etl::static_set::insert</a></div><div class="ttdeci">constexpr auto insert(value_type &amp;&amp;value) -&gt; pair&lt; iterator, bool &gt; requires(is_move_constructible_v&lt; value_type &gt;)</div><div class="ttdoc">Inserts element into the container, if the container doesn't already contain an element with an equiv...</div><div class="ttdef"><b>Definition</b> static_set.hpp:164</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html_ad1dfd5a4848d3a604a2bc2151f7b6623"><div class="ttname"><a href="structetl_1_1static__vector.html#ad1dfd5a4848d3a604a2bc2151f7b6623">etl::static_vector::insert</a></div><div class="ttdeci">constexpr auto insert(const_iterator position, value_type &amp;&amp;x) noexcept(noexcept(move_insert(position, &amp;x, &amp;x+1))) -&gt; iterator requires(is_move_constructible_v&lt; T &gt;)</div><div class="ttdef"><b>Definition</b> static_vector.hpp:455</div></div>
+<div class="ttc" id="astructetl_1_1static__vector_html_ad1dfd5a4848d3a604a2bc2151f7b6623"><div class="ttname"><a href="structetl_1_1static__vector.html#ad1dfd5a4848d3a604a2bc2151f7b6623">etl::static_vector::insert</a></div><div class="ttdeci">constexpr auto insert(const_iterator position, value_type &amp;&amp;x) noexcept(noexcept(move_insert(position, &amp;x, &amp;x+1))) -&gt; iterator requires(is_move_constructible_v&lt; T &gt;)</div><div class="ttdef"><b>Definition</b> static_vector.hpp:456</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 2 2024 20:54:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 00:17:20 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

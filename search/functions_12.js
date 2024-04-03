@@ -15,7 +15,7 @@ var searchData=
   ['tgammal_12',['tgammal',['../group__cmath.html#gaeedb170320e69f563ba810bcbee6b2e0',1,'etl']]],
   ['tie_13',['tie',['../namespaceetl.html#a0d1ede89bcd679cdd58f45d98b785cd8',1,'etl']]],
   ['time_5fpoint_14',['time_point',['../structetl_1_1chrono_1_1time__point.html#a5027b68a194e6f3206c14291cd55c2e9',1,'etl::chrono::time_point::time_point() noexcept=default'],['../structetl_1_1chrono_1_1time__point.html#ad679d64e647c8ae53ad2a53132044ad2',1,'etl::chrono::time_point::time_point(duration const &amp;d) noexcept'],['../structetl_1_1chrono_1_1time__point.html#a0af4ff33f7c9bf4067944119fb5d7980',1,'etl::chrono::time_point::time_point(time_point&lt; clock, Dur2 &gt; const &amp;t)']]],
-  ['time_5fpoint_5fcast_15',['time_point_cast',['../namespaceetl_1_1chrono.html#a3850f6f9aa2cc624194dafe65dd44735',1,'etl::chrono']]],
+  ['time_5fpoint_5fcast_15',['time_point_cast',['../group__chrono.html#ga3850f6f9aa2cc624194dafe65dd44735',1,'etl::chrono']]],
   ['time_5fsince_5fepoch_16',['time_since_epoch',['../structetl_1_1chrono_1_1time__point.html#a0d0d0173d3635ce756de06d3b7b6710c',1,'etl::chrono::time_point']]],
   ['to_5faddress_17',['to_address',['../namespaceetl.html#aa171f5d95623a8a1268dc9134a02f972',1,'etl::to_address(Ptr const &amp;ptr) noexcept'],['../namespaceetl.html#a9487e53c09efc9a8837a2d074e441b99',1,'etl::to_address(T *ptr) noexcept -&gt; T *']]],
   ['to_5farray_18',['to_array',['../structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104',1,'etl::array::to_array(T(&amp;a)[N]) -&gt; array&lt; remove_cv_t&lt; T &gt;, N &gt;'],['../structetl_1_1array.html#a206fb932614fa86d56d410c37f786760',1,'etl::array::to_array(T(&amp;&amp;a)[N])']]],

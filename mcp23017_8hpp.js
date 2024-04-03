@@ -1,10 +1,6 @@
 var mcp23017_8hpp =
 [
     [ "device< Driver >", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device.html", "structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device" ],
-    [ "port", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765c", [
-      [ "a", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765ca0cc175b9c0f1b6a831c399e269772661", null ],
-      [ "b", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765ca92eb5ffee6ae2fec3ad71c777531578f", null ]
-    ] ],
     [ "address", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56e", [
       [ "a20", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56ea550748639a1675e04db3d8a4135094a0", null ],
       [ "a21", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56eaa126f3646da124e2839a6bbbd2f1400f", null ],
@@ -14,28 +10,6 @@ var mcp23017_8hpp =
       [ "a25", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56ea7850737a42d9d21cac6fee3958d95f5f", null ],
       [ "a26", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56eabbf2466e744a50035030927d7283f2b3", null ],
       [ "a27", "mcp23017_8hpp.html#a3c6ffa3b08b8d76fe1627eb812d0e56ea07ae153a4f9e087201edbdd5a4c12d5e", null ]
-    ] ],
-    [ "registers", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59d", [
-      [ "io_direction_a", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da84c64f2e221e2c40fc4983af6b6aad50", null ],
-      [ "io_direction_b", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da780ac4d36a15bdd156387687f8c2d0fb", null ],
-      [ "IPOLA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da9e5298ed29a66e92c80ae80c5ab35d8e", null ],
-      [ "IPOLB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da86f025b3f0ba1169acfeb0ce5fc83095", null ],
-      [ "GPINTENA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da03993b5654f15a8140aa212a0a0166d5", null ],
-      [ "GPINTENB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dae374660a6659b9e5bffe1e1e802d87be", null ],
-      [ "DEFVALA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da9cb811587b96ad554f7e970f5c8a691c", null ],
-      [ "DEFVALB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5989dad3c64dc4825dffadc2cac49779", null ],
-      [ "INTCONA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5238f9b2996229e6e4a2e6b184ba947a", null ],
-      [ "INTCONB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da8f94a42d1c1b210d0540cba799615bca", null ],
-      [ "GPPUA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabecb3fd95be2bc7f2de8989e13d47a7f", null ],
-      [ "GPPUB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59daad2ef1450a5819c882c6f567c3026156", null ],
-      [ "INTFA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabccd7f7d0e7558172ffd8910c41c8e3e", null ],
-      [ "INTFB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da0e273e572ea29472a3e71eeb19eda140", null ],
-      [ "INTCAPA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5d13a99c9011a154c98bc50467a25dbb", null ],
-      [ "INTCAPB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da387372365a3b34b98aca9d9707aeb8a8", null ],
-      [ "GPIOA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59daeacd2953fcef7bde871f22dfc4a05792", null ],
-      [ "GPIOB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da990b6031915662e14ca7c8954cf21643", null ],
-      [ "OLATA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da2961530b6a5251790abea73e433f837a", null ],
-      [ "OLATB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabefbc283964efb7eda0caee089605442", null ]
     ] ],
     [ "io_direction", "mcp23017_8hpp.html#adec947cf27ef0d70dce020edfcaab109", [
       [ "all_output", "mcp23017_8hpp.html#adec947cf27ef0d70dce020edfcaab109ad8a096f30e1fe532049440ec34a217e2", null ],
@@ -61,6 +35,10 @@ var mcp23017_8hpp =
       [ "inverted_O6", "mcp23017_8hpp.html#ac4514602b2567a4bfd5f2d6d4434328baa33cabd870960234a81cb92e97e2b82f", null ],
       [ "inverted_O7", "mcp23017_8hpp.html#ac4514602b2567a4bfd5f2d6d4434328ba424c45e59d7fe0fdd869e2f4289b9108", null ]
     ] ],
+    [ "port", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765c", [
+      [ "a", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765ca0cc175b9c0f1b6a831c399e269772661", null ],
+      [ "b", "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765ca92eb5ffee6ae2fec3ad71c777531578f", null ]
+    ] ],
     [ "pull_up_resistor", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37c", [
       [ "all_disabled", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37ca5599fd353b54b2e5a40d8bf084756795", null ],
       [ "all_enabled", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37ca45af82beb33aee3f358b7c761876f795", null ],
@@ -72,5 +50,27 @@ var mcp23017_8hpp =
       [ "enabled_O5", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37ca0a83e9e2ed7fad3947043ddb3a49ce44", null ],
       [ "enabled_O6", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37cae76f8f56acfd5d8c0af472aad0d7f4ef", null ],
       [ "enabled_O7", "mcp23017_8hpp.html#a41b39c335ef0887256cf15fd7cc7a37ca96ae9e441ba402e57518f2485cf444f9", null ]
+    ] ],
+    [ "registers", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59d", [
+      [ "io_direction_a", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da84c64f2e221e2c40fc4983af6b6aad50", null ],
+      [ "io_direction_b", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da780ac4d36a15bdd156387687f8c2d0fb", null ],
+      [ "IPOLA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da9e5298ed29a66e92c80ae80c5ab35d8e", null ],
+      [ "IPOLB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da86f025b3f0ba1169acfeb0ce5fc83095", null ],
+      [ "GPINTENA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da03993b5654f15a8140aa212a0a0166d5", null ],
+      [ "GPINTENB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dae374660a6659b9e5bffe1e1e802d87be", null ],
+      [ "DEFVALA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da9cb811587b96ad554f7e970f5c8a691c", null ],
+      [ "DEFVALB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5989dad3c64dc4825dffadc2cac49779", null ],
+      [ "INTCONA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5238f9b2996229e6e4a2e6b184ba947a", null ],
+      [ "INTCONB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da8f94a42d1c1b210d0540cba799615bca", null ],
+      [ "GPPUA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabecb3fd95be2bc7f2de8989e13d47a7f", null ],
+      [ "GPPUB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59daad2ef1450a5819c882c6f567c3026156", null ],
+      [ "INTFA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabccd7f7d0e7558172ffd8910c41c8e3e", null ],
+      [ "INTFB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da0e273e572ea29472a3e71eeb19eda140", null ],
+      [ "INTCAPA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da5d13a99c9011a154c98bc50467a25dbb", null ],
+      [ "INTCAPB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da387372365a3b34b98aca9d9707aeb8a8", null ],
+      [ "GPIOA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59daeacd2953fcef7bde871f22dfc4a05792", null ],
+      [ "GPIOB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da990b6031915662e14ca7c8954cf21643", null ],
+      [ "OLATA", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59da2961530b6a5251790abea73e433f837a", null ],
+      [ "OLATB", "mcp23017_8hpp.html#aeb1980b0ba216613d2d748535dede59dabefbc283964efb7eda0caee089605442", null ]
     ] ]
 ];

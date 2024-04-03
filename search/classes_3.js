@@ -29,6 +29,9 @@ var searchData=
   ['contains_26',['contains',['../structetl_1_1meta_1_1contains.html',1,'etl::meta']]],
   ['contains_3c_20needle_2c_20list_3c_20ts_2e_2e_2e_20_3e_20_3e_27',['contains&lt; Needle, list&lt; Ts... &gt; &gt;',['../structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html',1,'etl::meta']]],
   ['contiguous_5fiterator_5ftag_28',['contiguous_iterator_tag',['../structetl_1_1contiguous__iterator__tag.html',1,'etl']]],
-  ['count_29',['count',['../structetl_1_1meta_1_1count.html',1,'etl::meta']]],
-  ['count_3c_20needle_2c_20list_3c_20ts_2e_2e_2e_20_3e_20_3e_30',['count&lt; Needle, list&lt; Ts... &gt; &gt;',['../structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html',1,'etl::meta']]]
+  ['coroutine_5fhandle_29',['coroutine_handle',['../structetl_1_1coroutine__handle.html',1,'etl']]],
+  ['coroutine_5fhandle_3c_20void_20_3e_30',['coroutine_handle&lt; void &gt;',['../structetl_1_1coroutine__handle_3_01void_01_4.html',1,'etl']]],
+  ['coroutine_5ftraits_31',['coroutine_traits',['../structetl_1_1coroutine__traits.html',1,'etl']]],
+  ['count_32',['count',['../structetl_1_1meta_1_1count.html',1,'etl::meta']]],
+  ['count_3c_20needle_2c_20list_3c_20ts_2e_2e_2e_20_3e_20_3e_33',['count&lt; Needle, list&lt; Ts... &gt; &gt;',['../structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html',1,'etl::meta']]]
 ];

@@ -7,6 +7,6 @@ var searchData=
   ['nothrow_4',['nothrow',['../namespaceetl.html#a9706e5f8dbc47772797c3f13cfd73517',1,'etl']]],
   ['november_5',['November',['../namespaceetl_1_1chrono.html#ac0a0297ab62ef2a24c3c0fcf4d3c57f6',1,'etl::chrono']]],
   ['npos_6',['npos',['../structetl_1_1basic__static__string.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_static_string::npos'],['../structetl_1_1basic__string__view.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_string_view::npos']]],
-  ['nullopt_7',['nullopt',['../namespaceetl.html#acd293644b847dc4549de80a090d66625',1,'etl']]],
+  ['nullopt_7',['nullopt',['../group__optional.html#gacd293644b847dc4549de80a090d66625',1,'etl::nullopt_t']]],
   ['num_8',['num',['../structetl_1_1ratio.html#ac28a2bb1d992ebc93e802b4364b7f51d',1,'etl::ratio']]]
 ];

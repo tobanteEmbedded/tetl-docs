@@ -112,47 +112,17 @@ $(function(){initNavTree('namespaceetl_1_1experimental_1_1freertos_1_1this__task
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad2249f2577e442471ff9f4923d0c81f3" id="r_ad2249f2577e442471ff9f4923d0c81f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3">yield</a> () -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
-<tr class="memdesc:ad2249f2577e442471ff9f4923d0c81f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a context switch to another task.  <br /></td></tr>
-<tr class="separator:ad2249f2577e442471ff9f4923d0c81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c14c77f5abba27ce63c4448b9810f28" id="r_a1c14c77f5abba27ce63c4448b9810f28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c14c77f5abba27ce63c4448b9810f28">sleep_for</a> (<a class="el" href="namespaceetl.html#ac524e3389ea120063f493b23ce5ba2a6">etl::uint32_t</a> <a class="el" href="structetl_1_1static__vector.html">ticks</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="memdesc:a1c14c77f5abba27ce63c4448b9810f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a task for a given number of ticks. The actual time that the task remains blocked depends on the tick rate.  <br /></td></tr>
 <tr class="separator:a1c14c77f5abba27ce63c4448b9810f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76272782f22bb27b41f26dcd6d519d22" id="r_a76272782f22bb27b41f26dcd6d519d22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76272782f22bb27b41f26dcd6d519d22">sleep_until</a> (<a class="el" href="namespaceetl.html#ac524e3389ea120063f493b23ce5ba2a6">etl::uint32_t</a> &amp;<a class="el" href="group__iterator.html#ga6d9cd7356c493ca709070e97bf61ed63">prev</a>, <a class="el" href="namespaceetl.html#ac524e3389ea120063f493b23ce5ba2a6">etl::uint32_t</a> <a class="el" href="structetl_1_1static__vector.html">increment</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="memdesc:a76272782f22bb27b41f26dcd6d519d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a task until a specified time. This function can be used by periodic tasks to ensure a constant execution frequency.  <br /></td></tr>
 <tr class="separator:a76272782f22bb27b41f26dcd6d519d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2249f2577e442471ff9f4923d0c81f3" id="r_ad2249f2577e442471ff9f4923d0c81f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3">yield</a> () -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="memdesc:ad2249f2577e442471ff9f4923d0c81f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a context switch to another task.  <br /></td></tr>
+<tr class="separator:ad2249f2577e442471ff9f4923d0c81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad2249f2577e442471ff9f4923d0c81f3" name="ad2249f2577e442471ff9f4923d0c81f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2249f2577e442471ff9f4923d0c81f3">&#9670;&#160;</a></span>yield()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> yield </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Request a context switch to another task. </p>
-<p>However, if there are no other tasks at a higher or equal priority to the task that calls <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> then the RTOS scheduler will simply select the task that called <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> to run again.</p>
-<p>If configUSE_PREEMPTION is set to 1 then the RTOS scheduler will always be running the highest priority task that is able to run, so calling <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> will never result in a switch to a higher priority task.</p>
-<p><a href="https://www.freertos.org/a00020.html#taskYIELD">https://www.freertos.org/a00020.html#taskYIELD</a> </p>
-
-</div>
-</div>
 <a id="a1c14c77f5abba27ce63c4448b9810f28" name="a1c14c77f5abba27ce63c4448b9810f28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c14c77f5abba27ce63c4448b9810f28">&#9670;&#160;</a></span>sleep_for()</h2>
 
@@ -215,13 +185,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2249f2577e442471ff9f4923d0c81f3" name="ad2249f2577e442471ff9f4923d0c81f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2249f2577e442471ff9f4923d0c81f3">&#9670;&#160;</a></span>yield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> yield </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Request a context switch to another task. </p>
+<p>However, if there are no other tasks at a higher or equal priority to the task that calls <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> then the RTOS scheduler will simply select the task that called <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> to run again.</p>
+<p>If configUSE_PREEMPTION is set to 1 then the RTOS scheduler will always be running the highest priority task that is able to run, so calling <a class="el" href="#ad2249f2577e442471ff9f4923d0c81f3" title="Request a context switch to another task.">yield()</a> will never result in a switch to a higher priority task.</p>
+<p><a href="https://www.freertos.org/a00020.html#taskYIELD">https://www.freertos.org/a00020.html#taskYIELD</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1experimental.html">experimental</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1experimental_1_1freertos.html">freertos</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1experimental_1_1freertos_1_1this__task.html">this_task</a></li>
-    <li class="footer">Generated on Tue Apr 2 2024 20:54:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 00:17:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

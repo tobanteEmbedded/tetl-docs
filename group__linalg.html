@@ -142,19 +142,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1accessor__scaled.html">accessor_scaled&lt; ScalingFactor, Accessor &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1column__major__t.html">column_major_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1explicit__diagonal__t.html">explicit_diagonal_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1implicit__unit__diagonal__t.html">implicit_unit_diagonal_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1layout__transpose.html">layout_transpose&lt; Layout &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1column__major__t.html">column_major_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1lower__triangle__t.html">lower_triangle_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1row__major__t.html">row_major_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1upper__triangle__t.html">upper_triangle_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1lower__triangle__t.html">lower_triangle_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1implicit__unit__diagonal__t.html">implicit_unit_diagonal_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1linalg_1_1explicit__diagonal__t.html">explicit_diagonal_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -163,16 +163,28 @@ Functions</h2></td></tr>
 requires (InObj1::rank() == OutObj::rank() <a class="el" href="structetl_1_1static__vector.html">and</a> InObj2::rank() == OutObj::rank())</td></tr>
 <tr class="memitem:gacf93681a90edb360f8f9cc34567fe06f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gacf93681a90edb360f8f9cc34567fe06f">add</a> (<a class="el" href="structetl_1_1static__vector.html">InObj1</a> <a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1static__vector.html">InObj2</a> y, <a class="el" href="structetl_1_1static__vector.html">OutObj</a> <a class="el" href="structetl_1_1static__vector.html">z</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="separator:gacf93681a90edb360f8f9cc34567fe06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6429923716f8ef49947c0b82bb76bc63" id="r_ga6429923716f8ef49947c0b82bb76bc63"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; </td></tr>
+<tr class="memitem:ga6429923716f8ef49947c0b82bb76bc63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a> (<a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; a)</td></tr>
+<tr class="separator:ga6429923716f8ef49947c0b82bb76bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga275984a3105f041ab5dbfbe430db347e" id="r_ga275984a3105f041ab5dbfbe430db347e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; </td></tr>
+<tr class="memitem:ga275984a3105f041ab5dbfbe430db347e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga275984a3105f041ab5dbfbe430db347e">conjugated</a> (<a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt; <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; &gt; a)</td></tr>
+<tr class="separator:ga275984a3105f041ab5dbfbe430db347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14fcd1f0635afb3b1a64590492a8cee4" id="r_ga14fcd1f0635afb3b1a64590492a8cee4"><td class="memTemplParams" colspan="2">template&lt;in_object InObj, out_object OutObj&gt; <br />
 requires (InObj::rank() == OutObj::rank())</td></tr>
 <tr class="memitem:ga14fcd1f0635afb3b1a64590492a8cee4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga14fcd1f0635afb3b1a64590492a8cee4">copy</a> (<a class="el" href="structetl_1_1static__vector.html">InObj</a> <a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1static__vector.html">OutObj</a> y) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="separator:ga14fcd1f0635afb3b1a64590492a8cee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34c71064afa2e19010b8e98e433b18e6" id="r_ga34c71064afa2e19010b8e98e433b18e6"><td class="memTemplParams" colspan="2">template&lt;in_matrix InMat, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
-<tr class="memitem:ga34c71064afa2e19010b8e98e433b18e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga34c71064afa2e19010b8e98e433b18e6">matrix_frob_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InMat</a> a, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
-<tr class="separator:ga34c71064afa2e19010b8e98e433b18e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1d6eae27b2281c3a966c843b2c26291" id="r_gaa1d6eae27b2281c3a966c843b2c26291"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec&gt; </td></tr>
+<tr class="memitem:gaa1d6eae27b2281c3a966c843b2c26291"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa1d6eae27b2281c3a966c843b2c26291">idx_abs_max</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::size_type</td></tr>
+<tr class="separator:gaa1d6eae27b2281c3a966c843b2c26291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae634038fa5612fc5c78cef9435c3480" id="r_gaae634038fa5612fc5c78cef9435c3480"><td class="memTemplParams" colspan="2">template&lt;in_matrix InMat&gt; </td></tr>
 <tr class="memitem:gaae634038fa5612fc5c78cef9435c3480"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaae634038fa5612fc5c78cef9435c3480">matrix_frob_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InMat</a> a)</td></tr>
 <tr class="separator:gaae634038fa5612fc5c78cef9435c3480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34c71064afa2e19010b8e98e433b18e6" id="r_ga34c71064afa2e19010b8e98e433b18e6"><td class="memTemplParams" colspan="2">template&lt;in_matrix InMat, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
+<tr class="memitem:ga34c71064afa2e19010b8e98e433b18e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga34c71064afa2e19010b8e98e433b18e6">matrix_frob_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InMat</a> a, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
+<tr class="separator:ga34c71064afa2e19010b8e98e433b18e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55f018664141af1c83938eb0f4f95137" id="r_ga55f018664141af1c83938eb0f4f95137"><td class="memTemplParams" colspan="2">template&lt;in_matrix InMat, in_vector InVec, out_vector OutVec&gt; </td></tr>
+<tr class="memitem:ga55f018664141af1c83938eb0f4f95137"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga55f018664141af1c83938eb0f4f95137">matrix_vector_product</a> (<a class="el" href="structetl_1_1static__vector.html">InMat</a> a, <a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1static__vector.html">OutVec</a> y) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
+<tr class="separator:ga55f018664141af1c83938eb0f4f95137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga485db7be4a843ec9c1983d9639c9a70a" id="r_ga485db7be4a843ec9c1983d9639c9a70a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> , inout_object InOutObj&gt; </td></tr>
 <tr class="memitem:ga485db7be4a843ec9c1983d9639c9a70a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga485db7be4a843ec9c1983d9639c9a70a">scale</a> (<a class="el" href="structetl_1_1static__vector.html">Scalar</a> <a class="el" href="structetl_1_1static__vector.html">alpha</a>, <a class="el" href="structetl_1_1static__vector.html">InOutObj</a> <a class="el" href="structetl_1_1static__vector.html">x</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="separator:ga485db7be4a843ec9c1983d9639c9a70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,30 +195,18 @@ requires (InObj::rank() == OutObj::rank())</td></tr>
 requires (InOutObj1::rank() == InOutObj1::rank())</td></tr>
 <tr class="memitem:ga553227d0d5fd2afa355ec86b3b27d3ce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga553227d0d5fd2afa355ec86b3b27d3ce">swap_elements</a> (<a class="el" href="structetl_1_1static__vector.html">InOutObj1</a> <a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1static__vector.html">InOutObj2</a> y) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
 <tr class="separator:ga553227d0d5fd2afa355ec86b3b27d3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae991b3ad5a3a6cb6536f25a5e847a687" id="r_gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
-<tr class="memitem:gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae991b3ad5a3a6cb6536f25a5e847a687">vector_abs_sum</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
-<tr class="separator:gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6e3ca96a0e36a246d067a2e7cd14299" id="r_gaa6e3ca96a0e36a246d067a2e7cd14299"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec&gt; </td></tr>
 <tr class="memitem:gaa6e3ca96a0e36a246d067a2e7cd14299"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa6e3ca96a0e36a246d067a2e7cd14299">vector_abs_sum</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::value_type</td></tr>
 <tr class="separator:gaa6e3ca96a0e36a246d067a2e7cd14299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1d6eae27b2281c3a966c843b2c26291" id="r_gaa1d6eae27b2281c3a966c843b2c26291"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec&gt; </td></tr>
-<tr class="memitem:gaa1d6eae27b2281c3a966c843b2c26291"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa1d6eae27b2281c3a966c843b2c26291">idx_abs_max</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>) -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::size_type</td></tr>
-<tr class="separator:gaa1d6eae27b2281c3a966c843b2c26291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacfe629c56077186d1a4ef180ecabe0ab" id="r_gacfe629c56077186d1a4ef180ecabe0ab"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
-<tr class="memitem:gacfe629c56077186d1a4ef180ecabe0ab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gacfe629c56077186d1a4ef180ecabe0ab">vector_two_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
-<tr class="separator:gacfe629c56077186d1a4ef180ecabe0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae991b3ad5a3a6cb6536f25a5e847a687" id="r_gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
+<tr class="memitem:gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae991b3ad5a3a6cb6536f25a5e847a687">vector_abs_sum</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
+<tr class="separator:gae991b3ad5a3a6cb6536f25a5e847a687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae89d2a8589fcabfa4a9ee1b12e7ccd59" id="r_gae89d2a8589fcabfa4a9ee1b12e7ccd59"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec&gt; </td></tr>
 <tr class="memitem:gae89d2a8589fcabfa4a9ee1b12e7ccd59"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae89d2a8589fcabfa4a9ee1b12e7ccd59">vector_two_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::value_type</td></tr>
 <tr class="separator:gae89d2a8589fcabfa4a9ee1b12e7ccd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55f018664141af1c83938eb0f4f95137" id="r_ga55f018664141af1c83938eb0f4f95137"><td class="memTemplParams" colspan="2">template&lt;in_matrix InMat, in_vector InVec, out_vector OutVec&gt; </td></tr>
-<tr class="memitem:ga55f018664141af1c83938eb0f4f95137"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga55f018664141af1c83938eb0f4f95137">matrix_vector_product</a> (<a class="el" href="structetl_1_1static__vector.html">InMat</a> a, <a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">x</a>, <a class="el" href="structetl_1_1static__vector.html">OutVec</a> y) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a></td></tr>
-<tr class="separator:ga55f018664141af1c83938eb0f4f95137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6429923716f8ef49947c0b82bb76bc63" id="r_ga6429923716f8ef49947c0b82bb76bc63"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; </td></tr>
-<tr class="memitem:ga6429923716f8ef49947c0b82bb76bc63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a> (<a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; a)</td></tr>
-<tr class="separator:ga6429923716f8ef49947c0b82bb76bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga275984a3105f041ab5dbfbe430db347e" id="r_ga275984a3105f041ab5dbfbe430db347e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; </td></tr>
-<tr class="memitem:ga275984a3105f041ab5dbfbe430db347e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga275984a3105f041ab5dbfbe430db347e">conjugated</a> (<a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt; <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; &gt; a)</td></tr>
-<tr class="separator:ga275984a3105f041ab5dbfbe430db347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfe629c56077186d1a4ef180ecabe0ab" id="r_gacfe629c56077186d1a4ef180ecabe0ab"><td class="memTemplParams" colspan="2">template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </td></tr>
+<tr class="memitem:gacfe629c56077186d1a4ef180ecabe0ab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">constexpr</a> <a class="el" href="structetl_1_1static__vector.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gacfe629c56077186d1a4ef180ecabe0ab">vector_two_norm</a> (<a class="el" href="structetl_1_1static__vector.html">InVec</a> <a class="el" href="structetl_1_1static__vector.html">v</a>, <a class="el" href="structetl_1_1static__vector.html">Scalar</a> init) noexcept -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a></td></tr>
+<tr class="separator:gacfe629c56077186d1a4ef180ecabe0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Basic linear algebra algorithms </p>
@@ -251,6 +251,60 @@ requires (InObj1::rank() == OutObj::rank() <a class="el" href="structetl_1_1stat
 
 </div>
 </div>
+<a id="ga6429923716f8ef49947c0b82bb76bc63" name="ga6429923716f8ef49947c0b82bb76bc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6429923716f8ef49947c0b82bb76bc63">&#9670;&#160;</a></span>conjugated() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> conjugated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga275984a3105f041ab5dbfbe430db347e" name="ga275984a3105f041ab5dbfbe430db347e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga275984a3105f041ab5dbfbe430db347e">&#9670;&#160;</a></span>conjugated() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> conjugated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt; <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga14fcd1f0635afb3b1a64590492a8cee4" name="ga14fcd1f0635afb3b1a64590492a8cee4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga14fcd1f0635afb3b1a64590492a8cee4">&#9670;&#160;</a></span>copy()</h2>
 
@@ -284,8 +338,63 @@ requires (InObj::rank() == OutObj::rank())</div>
 
 </div>
 </div>
+<a id="gaa1d6eae27b2281c3a966c843b2c26291" name="gaa1d6eae27b2281c3a966c843b2c26291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1d6eae27b2281c3a966c843b2c26291">&#9670;&#160;</a></span>idx_abs_max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;in_vector InVec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> idx_abs_max </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::size_type
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaae634038fa5612fc5c78cef9435c3480" name="gaae634038fa5612fc5c78cef9435c3480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae634038fa5612fc5c78cef9435c3480">&#9670;&#160;</a></span>matrix_frob_norm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;in_matrix InMat&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> matrix_frob_norm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InMat</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga34c71064afa2e19010b8e98e433b18e6" name="ga34c71064afa2e19010b8e98e433b18e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34c71064afa2e19010b8e98e433b18e6">&#9670;&#160;</a></span>matrix_frob_norm() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34c71064afa2e19010b8e98e433b18e6">&#9670;&#160;</a></span>matrix_frob_norm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,27 +425,37 @@ template&lt;in_matrix InMat, <a class="el" href="structetl_1_1static__vector.htm
 
 </div>
 </div>
-<a id="gaae634038fa5612fc5c78cef9435c3480" name="gaae634038fa5612fc5c78cef9435c3480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae634038fa5612fc5c78cef9435c3480">&#9670;&#160;</a></span>matrix_frob_norm() <span class="overload">[2/2]</span></h2>
+<a id="ga55f018664141af1c83938eb0f4f95137" name="ga55f018664141af1c83938eb0f4f95137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55f018664141af1c83938eb0f4f95137">&#9670;&#160;</a></span>matrix_vector_product()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;in_matrix InMat&gt; </div>
+template&lt;in_matrix InMat, in_vector InVec, out_vector OutVec&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> matrix_frob_norm </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> matrix_vector_product </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InMat</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InMat</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">OutVec</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
+</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -439,40 +558,8 @@ requires (InOutObj1::rank() == InOutObj1::rank())</div>
 
 </div>
 </div>
-<a id="gae991b3ad5a3a6cb6536f25a5e847a687" name="gae991b3ad5a3a6cb6536f25a5e847a687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae991b3ad5a3a6cb6536f25a5e847a687">&#9670;&#160;</a></span>vector_abs_sum() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> vector_abs_sum </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Scalar</a></td>          <td class="paramname"><span class="paramname"><em>init</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaa6e3ca96a0e36a246d067a2e7cd14299" name="gaa6e3ca96a0e36a246d067a2e7cd14299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6e3ca96a0e36a246d067a2e7cd14299">&#9670;&#160;</a></span>vector_abs_sum() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6e3ca96a0e36a246d067a2e7cd14299">&#9670;&#160;</a></span>vector_abs_sum() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,36 +586,8 @@ template&lt;in_vector InVec&gt; </div>
 
 </div>
 </div>
-<a id="gaa1d6eae27b2281c3a966c843b2c26291" name="gaa1d6eae27b2281c3a966c843b2c26291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa1d6eae27b2281c3a966c843b2c26291">&#9670;&#160;</a></span>idx_abs_max()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;in_vector InVec&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> idx_abs_max </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1static__vector.html">typename</a> InVec::size_type
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacfe629c56077186d1a4ef180ecabe0ab" name="gacfe629c56077186d1a4ef180ecabe0ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacfe629c56077186d1a4ef180ecabe0ab">&#9670;&#160;</a></span>vector_two_norm() <span class="overload">[1/2]</span></h2>
+<a id="gae991b3ad5a3a6cb6536f25a5e847a687" name="gae991b3ad5a3a6cb6536f25a5e847a687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae991b3ad5a3a6cb6536f25a5e847a687">&#9670;&#160;</a></span>vector_abs_sum() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +598,7 @@ template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> vector_two_norm </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> vector_abs_sum </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
         </tr>
@@ -560,7 +619,7 @@ template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.htm
 </div>
 </div>
 <a id="gae89d2a8589fcabfa4a9ee1b12e7ccd59" name="gae89d2a8589fcabfa4a9ee1b12e7ccd59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae89d2a8589fcabfa4a9ee1b12e7ccd59">&#9670;&#160;</a></span>vector_two_norm() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae89d2a8589fcabfa4a9ee1b12e7ccd59">&#9670;&#160;</a></span>vector_two_norm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,31 +646,26 @@ template&lt;in_vector InVec&gt; </div>
 
 </div>
 </div>
-<a id="ga55f018664141af1c83938eb0f4f95137" name="ga55f018664141af1c83938eb0f4f95137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55f018664141af1c83938eb0f4f95137">&#9670;&#160;</a></span>matrix_vector_product()</h2>
+<a id="gacfe629c56077186d1a4ef180ecabe0ab" name="gacfe629c56077186d1a4ef180ecabe0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfe629c56077186d1a4ef180ecabe0ab">&#9670;&#160;</a></span>vector_two_norm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;in_matrix InMat, in_vector InVec, out_vector OutVec&gt; </div>
+template&lt;in_vector InVec, <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Scalar</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> matrix_vector_product </td>
+          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> vector_two_norm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InMat</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">InVec</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">OutVec</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">void</a>
+          <td class="paramtype"><a class="el" href="structetl_1_1static__vector.html">Scalar</a></td>          <td class="paramname"><span class="paramname"><em>init</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1static__vector.html">Scalar</a>
 </td>
         </tr>
       </table>
@@ -624,66 +678,12 @@ template&lt;in_matrix InMat, in_vector InVec, out_vector OutVec&gt; </div>
 
 </div>
 </div>
-<a id="ga6429923716f8ef49947c0b82bb76bc63" name="ga6429923716f8ef49947c0b82bb76bc63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6429923716f8ef49947c0b82bb76bc63">&#9670;&#160;</a></span>conjugated() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> conjugated </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1static__vector.html">Accessor</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga275984a3105f041ab5dbfbe430db347e" name="ga275984a3105f041ab5dbfbe430db347e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga275984a3105f041ab5dbfbe430db347e">&#9670;&#160;</a></span>conjugated() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">ElementType</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Extents</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">Layout</a> , <a class="el" href="structetl_1_1static__vector.html">typename</a> <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">auto</a> conjugated </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1mdspan.html">mdspan</a>&lt; <a class="el" href="structetl_1_1static__vector.html">ElementType</a>, <a class="el" href="structetl_1_1static__vector.html">Extents</a>, <a class="el" href="structetl_1_1static__vector.html">Layout</a>, <a class="el" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate</a>&lt; <a class="el" href="structetl_1_1static__vector.html">NestedAccessor</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 2 2024 20:54:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 00:17:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

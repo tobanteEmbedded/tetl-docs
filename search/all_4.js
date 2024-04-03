@@ -49,7 +49,7 @@ var searchData=
   ['add_5fvolatile_46',['add_volatile',['../structetl_1_1add__volatile.html',1,'etl']]],
   ['add_5fvolatile_2ehpp_47',['add_volatile.hpp',['../add__volatile_8hpp.html',1,'']]],
   ['add_5fvolatile_5ft_48',['add_volatile_t',['../structetl_1_1add__volatile.html#aca82822377303c11d8b0f3faecf890c2',1,'etl::add_volatile']]],
-  ['address_49',['address',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a3c6ffa3b08b8d76fe1627eb812d0e56e',1,'etl::experimental::hardware::mcp23017']]],
+  ['address_49',['address',['../structetl_1_1coroutine__handle_3_01void_01_4.html#a30da3ed8943b75cb539ce2aa8ecd790f',1,'etl::coroutine_handle&lt; void &gt;::address()'],['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a3c6ffa3b08b8d76fe1627eb812d0e56e',1,'etl::experimental::hardware::mcp23017::address']]],
   ['address_5ffamily_5fnot_5fsupported_50',['address_family_not_supported',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a8ab69162f060cc46b805b3265ad1cdf1',1,'etl']]],
   ['address_5fin_5fuse_51',['address_in_use',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a8e2bc80599069d337b43dff6edfb6891',1,'etl']]],
   ['address_5fnot_5favailable_52',['address_not_available',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a20abf2ffbf6e82e36405843f269d6438',1,'etl']]],
@@ -171,5 +171,8 @@ var searchData=
   ['atoll_2ehpp_168',['atoll.hpp',['../atoll_8hpp.html',1,'']]],
   ['atto_169',['atto',['../namespaceetl.html#ac437d8206f0e17da3a896c5f4d17f95a',1,'etl']]],
   ['attributes_2ehpp_170',['attributes.hpp',['../attributes_8hpp.html',1,'']]],
-  ['august_171',['August',['../namespaceetl_1_1chrono.html#a42637db1ac5e2c4ba851ef68084a1451',1,'etl::chrono']]]
+  ['august_171',['August',['../namespaceetl_1_1chrono.html#a42637db1ac5e2c4ba851ef68084a1451',1,'etl::chrono']]],
+  ['await_5fready_172',['await_ready',['../structetl_1_1suspend__always.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_always::await_ready()'],['../structetl_1_1suspend__never.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_never::await_ready()']]],
+  ['await_5fresume_173',['await_resume',['../structetl_1_1suspend__always.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_always::await_resume()'],['../structetl_1_1suspend__never.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_never::await_resume()']]],
+  ['await_5fsuspend_174',['await_suspend',['../structetl_1_1suspend__always.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_always::await_suspend()'],['../structetl_1_1suspend__never.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_never::await_suspend()']]]
 ];

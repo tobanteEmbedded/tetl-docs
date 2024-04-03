@@ -7,5 +7,5 @@ var group__strings_library =
     [ "cwctype", "group__cwctype.html", null ],
     [ "format", "group__format.html", null ],
     [ "string", "group__string.html", null ],
-    [ "string_view", "group__string__view.html", null ]
+    [ "string_view", "group__string__view.html", "group__string__view" ]
 ];

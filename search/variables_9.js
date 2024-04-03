@@ -32,7 +32,7 @@ var searchData=
   ['is_5fbuiltin_5fsigned_5finteger_5fv_29',['is_builtin_signed_integer_v',['../structetl_1_1is__builtin__signed__integer.html#afb068f2d42709bb8f4e34051af6249e2',1,'etl::is_builtin_signed_integer']]],
   ['is_5fbuiltin_5funsigned_5finteger_5fv_30',['is_builtin_unsigned_integer_v',['../structetl_1_1is__builtin__unsigned__integer.html#ae4505c091f15f466c044b6b11b890a7a',1,'etl::is_builtin_unsigned_integer']]],
   ['is_5fclass_5fv_31',['is_class_v',['../namespaceetl.html#aca38abc104326427a46bccfd27cbfe28',1,'etl']]],
-  ['is_5fclock_5fv_32',['is_clock_v',['../namespaceetl_1_1chrono.html#a2682b90c2f4b1ec7ccc3fb6b74a4fee8',1,'etl::chrono']]],
+  ['is_5fclock_5fv_32',['is_clock_v',['../group__chrono.html#ga2682b90c2f4b1ec7ccc3fb6b74a4fee8',1,'etl::chrono']]],
   ['is_5fcompound_5fv_33',['is_compound_v',['../namespaceetl.html#aad2d62ca306fe828c5b72d7ebd4bf357',1,'etl']]],
   ['is_5fconst_5fv_34',['is_const_v',['../namespaceetl.html#a0bf567b7866a96e4005d64743e0859b0',1,'etl']]],
   ['is_5fconstructible_5fv_35',['is_constructible_v',['../namespaceetl.html#a123009e89543c37bab698abc5f4221a0',1,'etl']]],

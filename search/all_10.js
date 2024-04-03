@@ -9,7 +9,7 @@ var searchData=
   ['make_5ffrom_5ftuple_2ehpp_6',['make_from_tuple.hpp',['../make__from__tuple_8hpp.html',1,'']]],
   ['make_5findex_5fsequence_7',['make_index_sequence',['../namespaceetl.html#a3c526d8179a55ec15611d7627272e067',1,'etl']]],
   ['make_5finteger_5fsequence_8',['make_integer_sequence',['../namespaceetl.html#a4c97ecfe358afc1b3c226c0d7036da95',1,'etl']]],
-  ['make_5foptional_9',['make_optional',['../namespaceetl.html#ac49c48774035c7f282eeaa3e6288dce8',1,'etl::make_optional(T &amp;&amp;value) -&gt; etl::optional&lt; etl::decay_t&lt; T &gt; &gt;'],['../namespaceetl.html#a676d3a9766e7187541dac0084ca9352d',1,'etl::make_optional(Args &amp;&amp;... args) -&gt; etl::optional&lt; T &gt;']]],
+  ['make_5foptional_9',['make_optional',['../group__optional.html#gac49c48774035c7f282eeaa3e6288dce8',1,'etl::optional::make_optional(T &amp;&amp;value) -&gt; etl::optional&lt; etl::decay_t&lt; T &gt; &gt;'],['../group__optional.html#ga676d3a9766e7187541dac0084ca9352d',1,'etl::optional::make_optional(Args &amp;&amp;... args) -&gt; etl::optional&lt; T &gt;']]],
   ['make_5foptional_2ehpp_10',['make_optional.hpp',['../make__optional_8hpp.html',1,'']]],
   ['make_5fpair_11',['make_pair',['../namespaceetl.html#a944300e491e850f5e82717c7a66b5463',1,'etl']]],
   ['make_5freverse_5fiterator_12',['make_reverse_iterator',['../namespaceetl.html#af0773cf088e3cccbce2905050fcdd0eb',1,'etl']]],
