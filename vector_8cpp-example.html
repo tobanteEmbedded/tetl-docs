@@ -111,12 +111,8 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span> <span class="comment">// for assert</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cctype_8hpp.html">etl/cctype.hpp</a>&gt;</span>  <span class="comment">// for toupper</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">etl/vector.hpp</a>&gt;</span>  <span class="comment">// for static_vector</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span>  <span class="comment">// for printf</span></div>
-<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">// for EXIT_SUCCESS</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">etl/vector.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>Person {</div>
 <div class="line">    <span class="keyword">constexpr</span> Person(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> e) noexcept : age{a}, experience{e} { }</div>
@@ -161,12 +157,10 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(people[1].experience == 101);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(copy != people);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">return</span> <a id="a3" name="a3"></a><a class="code hl_define" href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a>;</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
-<div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
-<div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:24</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:18</div></div>
 <div class="ttc" id="agroup__ranges_html_gad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:58</div></div>
@@ -178,7 +172,7 @@ $(function(){initNavTree('vector_8cpp-example.html',''); initResizable(true); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 15:07:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

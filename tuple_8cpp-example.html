@@ -111,25 +111,27 @@ $(function(){initNavTree('tuple_8cpp-example.html',''); initResizable(true); });
 <div class="ttc" id="atuple_8hpp_html"><div class="ttname"><a href="tuple_8hpp.html">tuple.hpp</a></div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="tuple_8hpp.html">etl/tuple.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">auto</span> main(<span class="keywordtype">int</span> <span class="comment">/*unused*/</span>, <span class="keywordtype">char</span>** <span class="comment">/*unused*/</span>) -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
-<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::tuple&lt;int, int, double&gt;</a> c(3, 5, 1.1);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%d\n&quot;</span>, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;1&gt;</a>(c));</div>
-<div class="line">    <span class="keywordflow">return</span> <a id="a1" name="a1"></a><a class="code hl_define" href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a>;</div>
+<div class="line">    <span class="keyword">auto</span> c = <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::tuple&lt;int, int, double&gt;</a>{3, 5, 1.1};</div>
+<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;0&gt;</a>(c) == 3);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;1&gt;</a>(c) == 5);</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
+<div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 15:07:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

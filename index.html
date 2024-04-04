@@ -144,7 +144,7 @@ Quick Start</h1>
 <div class="ttc" id="agroup__algorithm_html_gadf36ef6fdcb46c9ad8060d4520016096"><div class="ttname"><a href="group__algorithm.html#gadf36ef6fdcb46c9ad8060d4520016096">etl::count_if</a></div><div class="ttdeci">constexpr auto count_if(InputIt first, InputIt last, Predicate p) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition</b> count_if.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:39</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line">g++ -Wall -Wextra -Wpedantic -std=c++20 -I path/to/tetl/include main.cpp</div>
-</div><!-- fragment --><p>For examples look at the <a href="./examples">examples</a> subdirectory or the test files in <a href="./tests">tests</a>. The <a href="https://tobanteembedded.github.io/tetl-docs/">API reference</a> is currently work in progress. I'm switching from doxygen to standardese, which still has some bugs, so some parts of the docs may still be missing.</p>
+</div><!-- fragment --><p>For examples look at the <a href="./examples">examples</a> subdirectory or the test files in <a href="./tests">tests</a>. The <a href="https://tobanteembedded.github.io/tetl-docs/">API reference</a> is currently work in progress.</p>
 <h1><a class="anchor" id="autotoc_md13"></a>
 Status</h1>
 <table class="markdownTable">
@@ -193,9 +193,7 @@ Analysis</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter"><b>Clang -Weverything</b>   </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/clang-weverything.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/clang-weverything.yml/badge.svg" alt="Clang -Weverything" style="pointer-events: none;" class="inline"/></a>   </td><td class="markdownTableBodyCenter">Clang 18   </td></tr>
 </table>
-<blockquote class="doxtable">
-<p>&zwj;All test are compiled in debug and release mode with at least <code>-Wall -Wextra -Wpedantic -Werror</code> or <code>/W3 /WX</code>. The full list of warning flags can be found in the CMake configuration: <a href="./cmake/compiler_warnings.cmake">cmake/compiler_warnings.cmake</a>. Hosted platforms run all tests &amp; examples, while freestanding builds only compile (ARM &amp; AVR) and link (AVR) the example files. </p>
-</blockquote>
+<dl class="section note"><dt>Note</dt><dd>All test are compiled in debug and release mode with at least <code>-Wall -Wextra -Wpedantic -Werror</code> or <code>/W3 /WX</code>. The full list of warning flags can be found in the CMake configuration: <a href="./cmake/compiler_warnings.cmake">cmake/compiler_warnings.cmake</a>. Hosted platforms run all tests &amp; examples, while freestanding builds only compile (ARM &amp; AVR) and link (AVR) the example files.</dd></dl>
 <h1><a class="anchor" id="autotoc_md17"></a>
 Design Goals</h1>
 <ul>
@@ -259,7 +257,7 @@ PlatformIO</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 14:48:55 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 15:07:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
