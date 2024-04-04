@@ -120,10 +120,10 @@ $(function(){initNavTree('bit__floor_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;etl::builtin_<span class="keywordtype">unsigned</span>_<span class="keywordtype">int</span>eger UInt&gt;</div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d">   24</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d">bit_floor</a>(UInt <a class="code hl_struct" href="structetl_1_1static__vector.html">x</a>) <span class="keyword">noexcept</span> -&gt; UInt</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d">   24</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d">bit_floor</a>(UInt <a class="code hl_struct" href="structetl_1_1bitset.html">x</a>) <span class="keyword">noexcept</span> -&gt; UInt</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">x</a> != 0) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> UInt(1) &lt;&lt; <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(<a class="code hl_function" href="group__bit.html#gae31295beb3cd3da128d5df9392b56816">etl::bit_width</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">x</a>)) - UInt(1));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">x</a> != 0) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> UInt(1) &lt;&lt; <span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>UInt<span class="keyword">&gt;</span>(<a class="code hl_function" href="group__bit.html#gae31295beb3cd3da128d5df9392b56816">etl::bit_width</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">x</a>)) - UInt(1));</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
@@ -137,14 +137,14 @@ $(function(){initNavTree('bit__floor_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="agroup__bit_html_gae31295beb3cd3da128d5df9392b56816"><div class="ttname"><a href="group__bit.html#gae31295beb3cd3da128d5df9392b56816">etl::bit_width</a></div><div class="ttdeci">constexpr auto bit_width(UInt x) noexcept -&gt; int</div><div class="ttdoc">If x is not zero, calculates the number of bits needed to store the value x, that is,...</div><div class="ttdef"><b>Definition</b> bit_width.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a0e972f307317c01cd5f823260660e0a.html">_bit</a></li><li class="navelem"><a class="el" href="bit__floor_8hpp.html">bit_floor.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

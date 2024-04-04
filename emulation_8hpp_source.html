@@ -132,13 +132,13 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_movable_v</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_object_v&lt;T&gt;</a></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        and <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_assignable_v&lt;T&amp;, T&gt;</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        and <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_move_constructible_v&lt;T&gt;</a></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        and <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_swappable_v&lt;T&amp;&gt;</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_object_v&lt;T&gt;</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        and <a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_assignable_v&lt;T&amp;, T&gt;</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        and <a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_move_constructible_v&lt;T&gt;</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        and <a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_swappable_v&lt;T&amp;&gt;</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Rng&gt;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>range_iterator_t = <span class="keyword">decltype</span>(<a class="code hl_function" href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">etl::declval&lt;Rng&gt;</a>()));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>range_iterator_t = <span class="keyword">decltype</span>(<a class="code hl_function" href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::declval&lt;Rng&gt;</a>()));</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>iterator_reference_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">etl::iterator_traits&lt;T&gt;::reference</a>;</div>
@@ -178,9 +178,9 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_ab8ddf9531fc4ac7ce28574db20c8f20e"><div class="ttname"><a href="namespaceetl.html#ab8ddf9531fc4ac7ce28574db20c8f20e">etl::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition</b> void_t.hpp:9</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:9</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
 <div class="ttc" id="avoid__t_8hpp_html"><div class="ttname"><a href="void__t_8hpp.html">void_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -188,7 +188,7 @@ $(function(){initNavTree('emulation_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_50bbc87141e63d62cafe38626bd86057.html">_concepts</a></li><li class="navelem"><a class="el" href="emulation_8hpp.html">emulation.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

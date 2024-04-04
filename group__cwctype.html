@@ -104,19 +104,491 @@ $(function(){initNavTree('group__cwctype.html',''); initResizable(true); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">cwctype<div class="ingroups"><a class="el" href="group__strings-library.html">Strings Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Functions to determine the category of wide characters  
-</p>
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gadcd605e16e8fe82cfcbe722d1cc32531" id="r_gadcd605e16e8fe82cfcbe722d1cc32531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadcd605e16e8fe82cfcbe722d1cc32531">iswalnum</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gadcd605e16e8fe82cfcbe722d1cc32531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is an alphanumeric character, i.e. either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz) or any alphanumeric character specific to the current locale.  <br /></td></tr>
+<tr class="separator:gadcd605e16e8fe82cfcbe722d1cc32531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26e7f38abfa4626a87a678221210ff20" id="r_ga26e7f38abfa4626a87a678221210ff20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga26e7f38abfa4626a87a678221210ff20">iswalpha</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:ga26e7f38abfa4626a87a678221210ff20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is an alphabetic character, i.e. either an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz) or any alphabetic character specific to the current locale.  <br /></td></tr>
+<tr class="separator:ga26e7f38abfa4626a87a678221210ff20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6ddfc9129d96c9d732bd42aae4d2b7e" id="r_gaf6ddfc9129d96c9d732bd42aae4d2b7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf6ddfc9129d96c9d732bd42aae4d2b7e">iswblank</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gaf6ddfc9129d96c9d732bd42aae4d2b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is classified as blank character (that is, a whitespace character used to separate words in a sentence) by the current C locale. In the default C locale, only space (0x20) and horizontal tab (0x09) are blank characters.  <br /></td></tr>
+<tr class="separator:gaf6ddfc9129d96c9d732bd42aae4d2b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcb4d7527b43f2bf80b6709558ce8751" id="r_gabcb4d7527b43f2bf80b6709558ce8751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabcb4d7527b43f2bf80b6709558ce8751">iswcntrl</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gabcb4d7527b43f2bf80b6709558ce8751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a control character, i.e. codes 0x00-0x1F and 0x7F and any control characters specific to the current locale.  <br /></td></tr>
+<tr class="separator:gabcb4d7527b43f2bf80b6709558ce8751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd57dd6cbdd4676e575a985b16fc6c73" id="r_gacd57dd6cbdd4676e575a985b16fc6c73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacd57dd6cbdd4676e575a985b16fc6c73">iswdigit</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gacd57dd6cbdd4676e575a985b16fc6c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character corresponds (if narrowed) to one of the ten decimal digit characters 0123456789.  <br /></td></tr>
+<tr class="separator:gacd57dd6cbdd4676e575a985b16fc6c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7497aa1630afdaae61880742d859160" id="r_gae7497aa1630afdaae61880742d859160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae7497aa1630afdaae61880742d859160">iswgraph</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gae7497aa1630afdaae61880742d859160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character has a graphical representation, i.e. it is either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz), a punctuation character(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~) or any graphical character specific to the current C locale.  <br /></td></tr>
+<tr class="separator:gae7497aa1630afdaae61880742d859160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacebca8a0e95d8a7c4b7fbe0022762b5c" id="r_gacebca8a0e95d8a7c4b7fbe0022762b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacebca8a0e95d8a7c4b7fbe0022762b5c">iswlower</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gacebca8a0e95d8a7c4b7fbe0022762b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a lowercase letter, i.e. one of abcdefghijklmnopqrstuvwxyz or any lowercase letter specific to the current locale.  <br /></td></tr>
+<tr class="separator:gacebca8a0e95d8a7c4b7fbe0022762b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c844b2e79830a5920aef8f6537b691d" id="r_ga9c844b2e79830a5920aef8f6537b691d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c844b2e79830a5920aef8f6537b691d">iswprint</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:ga9c844b2e79830a5920aef8f6537b691d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character can be printed, i.e. it is either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz), a punctuation character(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~), space or any printable character specific to the current C locale.  <br /></td></tr>
+<tr class="separator:ga9c844b2e79830a5920aef8f6537b691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafeae65f95769adaef057cef1e2072cf2" id="r_gafeae65f95769adaef057cef1e2072cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafeae65f95769adaef057cef1e2072cf2">iswpunct</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:gafeae65f95769adaef057cef1e2072cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a punctuation character, i.e. it is one of !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~ or any punctuation character specific to the current locale.  <br /></td></tr>
+<tr class="separator:gafeae65f95769adaef057cef1e2072cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08bc2486b7f8fe2d819d038bde3e96dd" id="r_ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga08bc2486b7f8fe2d819d038bde3e96dd">iswspace</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale. In the default locale, the whitespace characters are the following:  <br /></td></tr>
+<tr class="separator:ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga597b876c6866c7f04154fcc066fd08ba" id="r_ga597b876c6866c7f04154fcc066fd08ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga597b876c6866c7f04154fcc066fd08ba">iswupper</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:ga597b876c6866c7f04154fcc066fd08ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is an uppercase letter, i.e. one of ABCDEFGHIJKLMNOPQRSTUVWXYZ or any uppercase letter specific to the current locale.  <br /></td></tr>
+<tr class="separator:ga597b876c6866c7f04154fcc066fd08ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49d8adf51dcb6a599f5da613d2e32b5d" id="r_ga49d8adf51dcb6a599f5da613d2e32b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga49d8adf51dcb6a599f5da613d2e32b5d">iswxdigit</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
+<tr class="memdesc:ga49d8adf51dcb6a599f5da613d2e32b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character corresponds (if narrowed) to a hexadecimal numeric character, i.e. one of 0123456789abcdefABCDEF.  <br /></td></tr>
+<tr class="separator:ga49d8adf51dcb6a599f5da613d2e32b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9acd9b1a67a38e589ba86c569aac0cb9" id="r_ga9acd9b1a67a38e589ba86c569aac0cb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9acd9b1a67a38e589ba86c569aac0cb9">towlower</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td></tr>
+<tr class="memdesc:ga9acd9b1a67a38e589ba86c569aac0cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given wide character to lowercase, if possible.  <br /></td></tr>
+<tr class="separator:ga9acd9b1a67a38e589ba86c569aac0cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefdb01e19c1c3b047ac3a7586586f2fd" id="r_gaefdb01e19c1c3b047ac3a7586586f2fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaefdb01e19c1c3b047ac3a7586586f2fd">towupper</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td></tr>
+<tr class="memdesc:gaefdb01e19c1c3b047ac3a7586586f2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given wide character to uppercase, if possible.  <br /></td></tr>
+<tr class="separator:gaefdb01e19c1c3b047ac3a7586586f2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to determine the category of wide characters </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gadcd605e16e8fe82cfcbe722d1cc32531" name="gadcd605e16e8fe82cfcbe722d1cc32531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcd605e16e8fe82cfcbe722d1cc32531">&#9670;&#160;</a></span>iswalnum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswalnum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is an alphanumeric character, i.e. either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz) or any alphanumeric character specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswalnum">https://en.cppreference.com/w/cpp/string/wide/iswalnum</a> </p>
+
+</div>
+</div>
+<a id="ga26e7f38abfa4626a87a678221210ff20" name="ga26e7f38abfa4626a87a678221210ff20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26e7f38abfa4626a87a678221210ff20">&#9670;&#160;</a></span>iswalpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswalpha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is an alphabetic character, i.e. either an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz) or any alphabetic character specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswalpha">https://en.cppreference.com/w/cpp/string/wide/iswalpha</a> </p>
+
+</div>
+</div>
+<a id="gaf6ddfc9129d96c9d732bd42aae4d2b7e" name="gaf6ddfc9129d96c9d732bd42aae4d2b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6ddfc9129d96c9d732bd42aae4d2b7e">&#9670;&#160;</a></span>iswblank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswblank </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is classified as blank character (that is, a whitespace character used to separate words in a sentence) by the current C locale. In the default C locale, only space (0x20) and horizontal tab (0x09) are blank characters. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswblank">https://en.cppreference.com/w/cpp/string/wide/iswblank</a> </p>
+
+</div>
+</div>
+<a id="gabcb4d7527b43f2bf80b6709558ce8751" name="gabcb4d7527b43f2bf80b6709558ce8751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcb4d7527b43f2bf80b6709558ce8751">&#9670;&#160;</a></span>iswcntrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswcntrl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is a control character, i.e. codes 0x00-0x1F and 0x7F and any control characters specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/byte/iscntrl">https://en.cppreference.com/w/cpp/string/byte/iscntrl</a> </p>
+
+</div>
+</div>
+<a id="gacd57dd6cbdd4676e575a985b16fc6c73" name="gacd57dd6cbdd4676e575a985b16fc6c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd57dd6cbdd4676e575a985b16fc6c73">&#9670;&#160;</a></span>iswdigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswdigit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character corresponds (if narrowed) to one of the ten decimal digit characters 0123456789. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswdigit">https://en.cppreference.com/w/cpp/string/wide/iswdigit</a> </p>
+
+</div>
+</div>
+<a id="gae7497aa1630afdaae61880742d859160" name="gae7497aa1630afdaae61880742d859160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7497aa1630afdaae61880742d859160">&#9670;&#160;</a></span>iswgraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswgraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character has a graphical representation, i.e. it is either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz), a punctuation character(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~) or any graphical character specific to the current C locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswgraph">https://en.cppreference.com/w/cpp/string/wide/iswgraph</a> </p>
+
+</div>
+</div>
+<a id="gacebca8a0e95d8a7c4b7fbe0022762b5c" name="gacebca8a0e95d8a7c4b7fbe0022762b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacebca8a0e95d8a7c4b7fbe0022762b5c">&#9670;&#160;</a></span>iswlower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswlower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is a lowercase letter, i.e. one of abcdefghijklmnopqrstuvwxyz or any lowercase letter specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswlower">https://en.cppreference.com/w/cpp/string/wide/iswlower</a> </p>
+
+</div>
+</div>
+<a id="ga9c844b2e79830a5920aef8f6537b691d" name="ga9c844b2e79830a5920aef8f6537b691d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c844b2e79830a5920aef8f6537b691d">&#9670;&#160;</a></span>iswprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswprint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character can be printed, i.e. it is either a number (0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase letter (abcdefghijklmnopqrstuvwxyz), a punctuation character(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~), space or any printable character specific to the current C locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswprint">https://en.cppreference.com/w/cpp/string/wide/iswprint</a> </p>
+
+</div>
+</div>
+<a id="gafeae65f95769adaef057cef1e2072cf2" name="gafeae65f95769adaef057cef1e2072cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafeae65f95769adaef057cef1e2072cf2">&#9670;&#160;</a></span>iswpunct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswpunct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is a punctuation character, i.e. it is one of !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~ or any punctuation character specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswpunct">https://en.cppreference.com/w/cpp/string/wide/iswpunct</a> </p>
+
+</div>
+</div>
+<a id="ga08bc2486b7f8fe2d819d038bde3e96dd" name="ga08bc2486b7f8fe2d819d038bde3e96dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08bc2486b7f8fe2d819d038bde3e96dd">&#9670;&#160;</a></span>iswspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswspace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale. In the default locale, the whitespace characters are the following: </p>
+<pre class="fragment">- space (0x20, ' ')
+- form feed (0x0c, '\f')
+- line feed (0x0a, '\n')
+- carriage return (0x0d, '\r')
+- horizontal tab (0x09, '\t')
+- vertical tab (0x0b, '\v')
+</pre><p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswspace">https://en.cppreference.com/w/cpp/string/wide/iswspace</a> </p>
+
+</div>
+</div>
+<a id="ga597b876c6866c7f04154fcc066fd08ba" name="ga597b876c6866c7f04154fcc066fd08ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga597b876c6866c7f04154fcc066fd08ba">&#9670;&#160;</a></span>iswupper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswupper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character is an uppercase letter, i.e. one of ABCDEFGHIJKLMNOPQRSTUVWXYZ or any uppercase letter specific to the current locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswupper">https://en.cppreference.com/w/cpp/string/wide/iswupper</a> </p>
+
+</div>
+</div>
+<a id="ga49d8adf51dcb6a599f5da613d2e32b5d" name="ga49d8adf51dcb6a599f5da613d2e32b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49d8adf51dcb6a599f5da613d2e32b5d">&#9670;&#160;</a></span>iswxdigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> iswxdigit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">int</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the given wide character corresponds (if narrowed) to a hexadecimal numeric character, i.e. one of 0123456789abcdefABCDEF. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswxdigit">https://en.cppreference.com/w/cpp/string/wide/iswxdigit</a> </p>
+
+</div>
+</div>
+<a id="ga9acd9b1a67a38e589ba86c569aac0cb9" name="ga9acd9b1a67a38e589ba86c569aac0cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9acd9b1a67a38e589ba86c569aac0cb9">&#9670;&#160;</a></span>towlower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> towlower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the given wide character to lowercase, if possible. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/towlower">https://en.cppreference.com/w/cpp/string/wide/towlower</a> </p>
+
+</div>
+</div>
+<a id="gaefdb01e19c1c3b047ac3a7586586f2fd" name="gaefdb01e19c1c3b047ac3a7586586f2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefdb01e19c1c3b047ac3a7586586f2fd">&#9670;&#160;</a></span>towupper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> towupper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the given wide character to uppercase, if possible. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
+<p><a href="https://en.cppreference.com/w/cpp/string/wide/towupper">https://en.cppreference.com/w/cpp/string/wide/towupper</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:24 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

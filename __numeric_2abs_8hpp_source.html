@@ -117,16 +117,16 @@ $(function(){initNavTree('__numeric_2abs_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group__numeric.html#ga446d7a4c7b401cc37781c997c2c27666">   12</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">Type</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">input</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">Type</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group__numeric.html#ga446d7a4c7b401cc37781c997c2c27666">   12</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Type</a> <a class="code hl_struct" href="structetl_1_1bitset.html">input</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">Type</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">using </span>limits = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::numeric_limits&lt;Type&gt;</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (limits::is_signed <a class="code hl_struct" href="structetl_1_1static__vector.html">or</a> <a class="code hl_struct" href="structetl_1_1static__vector.html">not</a> limits::is_specialized) {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">input</a> &lt; 0) {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structetl_1_1static__vector.html">Type</a><span class="keyword">&gt;</span>(-<a class="code hl_struct" href="structetl_1_1static__vector.html">input</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">using </span>limits = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::numeric_limits&lt;Type&gt;</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (limits::is_signed <a class="code hl_struct" href="structetl_1_1bitset.html">or</a> <a class="code hl_struct" href="structetl_1_1bitset.html">not</a> limits::is_specialized) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">input</a> &lt; 0) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structetl_1_1bitset.html">Type</a><span class="keyword">&gt;</span>(-<a class="code hl_struct" href="structetl_1_1bitset.html">input</a>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">input</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">input</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">input</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">input</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
@@ -137,14 +137,14 @@ $(function(){initNavTree('__numeric_2abs_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="agroup__complex_html_gabe732728abf637284509396f07e7e428"><div class="ttname"><a href="group__complex.html#gabe732728abf637284509396f07e7e428">etl::abs</a></div><div class="ttdeci">constexpr auto abs(complex&lt; T &gt; const &amp;z) -&gt; T</div><div class="ttdef"><b>Definition</b> abs.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_e755c22006577f029332e1bd80389811.html">_numeric</a></li><li class="navelem"><a class="el" href="__numeric_2abs_8hpp.html">abs.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

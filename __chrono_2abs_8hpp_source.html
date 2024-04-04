@@ -123,9 +123,9 @@ $(function(){initNavTree('__chrono_2abs_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span> P&gt;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">requires</span>(<a class="code hl_struct" href="structetl_1_1numeric__limits.html">numeric_limits&lt;R&gt;::is_signed</a>)</div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__chrono.html#ga6d43204bc1c7eaae688e7aa706cd00a2">   19</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__chrono.html#ga6d43204bc1c7eaae688e7aa706cd00a2">abs</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">duration&lt;R, P&gt;</a> d) <span class="keyword">noexcept</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">is_arithmetic_v&lt;R&gt;</a>) -&gt; <a class="code hl_struct" href="structetl_1_1static__vector.html">duration&lt;R, P&gt;</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__chrono.html#ga6d43204bc1c7eaae688e7aa706cd00a2">   19</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__chrono.html#ga6d43204bc1c7eaae688e7aa706cd00a2">abs</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">duration&lt;R, P&gt;</a> d) <span class="keyword">noexcept</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">is_arithmetic_v&lt;R&gt;</a>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">duration&lt;R, P&gt;</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">d &lt; duration&lt;R, P&gt;::zero</a>() ? <a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration&lt;R, P&gt;::zero</a>() - d : d;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">d &lt; duration&lt;R, P&gt;::zero</a>() ? <a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration&lt;R, P&gt;::zero</a>() - d : d;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -138,9 +138,9 @@ $(function(){initNavTree('__chrono_2abs_8hpp_source.html',''); initResizable(tru
 <div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html"><div class="ttname"><a href="namespaceetl_1_1chrono.html">etl::chrono</a></div><div class="ttdef"><b>Definition</b> abs.hpp:11</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1duration_html"><div class="ttname"><a href="structetl_1_1chrono_1_1duration.html">etl::chrono::duration</a></div><div class="ttdoc">Class template etl::chrono::duration represents a time interval.</div><div class="ttdef"><b>Definition</b> duration.hpp:31</div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:19</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
 <div class="ttc" id="atime__point__cast_8hpp_html"><div class="ttname"><a href="time__point__cast_8hpp.html">time_point_cast.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -148,7 +148,7 @@ $(function(){initNavTree('__chrono_2abs_8hpp_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a2f0e1630974749eeb51a13bacac0fde.html">_chrono</a></li><li class="navelem"><a class="el" href="__chrono_2abs_8hpp.html">abs.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

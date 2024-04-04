@@ -181,11 +181,11 @@ $(function(){initNavTree('bind__front_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func, <span class="keyword">typename</span>... BoundArgs&gt;</div>
 <div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa615187d5a248ab9e6493944c709279e">   82</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#aa615187d5a248ab9e6493944c709279e">bind_front</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">Func</a>&amp;&amp; func, <a class="code hl_struct" href="structetl_1_1static__vector.html">BoundArgs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1static__vector.html">boundArgs</a>)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa615187d5a248ab9e6493944c709279e">   82</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#aa615187d5a248ab9e6493944c709279e">bind_front</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Func</a>&amp;&amp; func, <a class="code hl_struct" href="structetl_1_1bitset.html">BoundArgs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1bitset.html">boundArgs</a>)</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> detail::bind_front_t&lt;decay_t&lt;Func&gt;, <a class="code hl_struct" href="structetl_1_1static__vector.html">unwrap_ref_decay_t&lt;BoundArgs&gt;</a>...&gt;{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> detail::bind_front_t&lt;decay_t&lt;Func&gt;, <a class="code hl_struct" href="structetl_1_1bitset.html">unwrap_ref_decay_t&lt;BoundArgs&gt;</a>...&gt;{</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(func),</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">boundArgs</a>)...</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">boundArgs</a>)...</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    };</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 </div>
@@ -208,7 +208,7 @@ $(function(){initNavTree('bind__front_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="anamespaceetl_html_a0f7d8fa4cd29bfaa5efc2ced210dd105"><div class="ttname"><a href="namespaceetl.html#a0f7d8fa4cd29bfaa5efc2ced210dd105">etl::apply</a></div><div class="ttdeci">constexpr auto apply(F &amp;&amp;f, Tuple &amp;&amp;t) -&gt; decltype(auto)</div><div class="ttdef"><b>Definition</b> apply.hpp:16</div></div>
 <div class="ttc" id="anamespaceetl_html_a601366c5cf97ac29c08fc7b51db875a9"><div class="ttname"><a href="namespaceetl.html#a601366c5cf97ac29c08fc7b51db875a9">etl::invoke_result_t</a></div><div class="ttdeci">typename etl::invoke_result&lt; F, ArgTypes... &gt;::type invoke_result_t</div><div class="ttdef"><b>Definition</b> invoke_result.hpp:70</div></div>
 <div class="ttc" id="anamespaceetl_html_aa615187d5a248ab9e6493944c709279e"><div class="ttname"><a href="namespaceetl.html#aa615187d5a248ab9e6493944c709279e">etl::bind_front</a></div><div class="ttdeci">constexpr auto bind_front(Func &amp;&amp;func, BoundArgs &amp;&amp;... boundArgs)</div><div class="ttdoc">The function template bind_front generates a forwarding call wrapper for f. Calling this wrapper is e...</div><div class="ttdef"><b>Definition</b> bind_front.hpp:82</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="aunwrap__reference_8hpp_html"><div class="ttname"><a href="unwrap__reference_8hpp.html">unwrap_reference.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -216,7 +216,7 @@ $(function(){initNavTree('bind__front_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="bind__front_8hpp.html">bind_front.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

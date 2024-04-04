@@ -121,9 +121,9 @@ $(function(){initNavTree('destroy__at_8hpp_source.html',''); initResizable(true)
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae14a8af642cc7dc92cca033c1eff9fad">   16</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae14a8af642cc7dc92cca033c1eff9fad">destroy_at</a>(T* p) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1static__vector.html">is_array_v&lt;T&gt;</a>) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">elem</a> : *p) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="namespaceetl.html#ae14a8af642cc7dc92cca033c1eff9fad">destroy_at</a>(<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">addressof</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">elem</a>));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">is_array_v&lt;T&gt;</a>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">elem</a> : *p) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="namespaceetl.html#ae14a8af642cc7dc92cca033c1eff9fad">destroy_at</a>(<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">addressof</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">elem</a>));</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        p-&gt;~T();</div>
@@ -139,14 +139,14 @@ $(function(){initNavTree('destroy__at_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a21ae02f44cb9f415d79d030c8ceb8c16"><div class="ttname"><a href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_ae14a8af642cc7dc92cca033c1eff9fad"><div class="ttname"><a href="namespaceetl.html#ae14a8af642cc7dc92cca033c1eff9fad">etl::destroy_at</a></div><div class="ttdeci">constexpr auto destroy_at(T *p) -&gt; void</div><div class="ttdoc">If T is not an array type, calls the destructor of the object pointed to by p, as if by p-&gt;~T()....</div><div class="ttdef"><b>Definition</b> destroy_at.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="destroy__at_8hpp.html">destroy_at.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

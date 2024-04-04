@@ -147,9 +147,9 @@ $(function(){initNavTree('macro_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">   45</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">noreturn</a>]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">default_assert_handler</a>(<a class="code hl_struct" href="structetl_1_1assert__msg.html">assert_msg</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1static__vector.html">msg</a>) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">   45</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">noreturn</a>]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">default_assert_handler</a>(<a class="code hl_struct" href="structetl_1_1assert__msg.html">assert_msg</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">msg</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="macro_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
@@ -158,7 +158,7 @@ $(function(){initNavTree('macro_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>[[noreturn]] <span class="keyword">inline</span> <span class="keyword">auto</span> call_assert_handler(assert_msg <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#if defined(TETL_ENABLE_CUSTOM_ASSERT_HANDLER)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::tetl_assert_handler</a>(msg);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::tetl_assert_handler</a>(msg);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">etl::default_assert_handler</a>(msg);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
@@ -203,14 +203,14 @@ $(function(){initNavTree('macro_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="astructetl_1_1assert__msg_html_a49d4365485834727e27083ee7b6e28a6"><div class="ttname"><a href="structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6">etl::assert_msg::expression</a></div><div class="ttdeci">char const  * expression</div><div class="ttdef"><b>Definition</b> macro.hpp:25</div></div>
 <div class="ttc" id="astructetl_1_1assert__msg_html_a5177d780470a1e88ba0cc4405b4efbb9"><div class="ttname"><a href="structetl_1_1assert__msg.html#a5177d780470a1e88ba0cc4405b4efbb9">etl::assert_msg::file</a></div><div class="ttdeci">char const  * file</div><div class="ttdef"><b>Definition</b> macro.hpp:23</div></div>
 <div class="ttc" id="astructetl_1_1assert__msg_html_adeb6601eaf00658aeacfcfc2fb093c25"><div class="ttname"><a href="structetl_1_1assert__msg.html#adeb6601eaf00658aeacfcfc2fb093c25">etl::assert_msg::func</a></div><div class="ttdeci">char const  * func</div><div class="ttdef"><b>Definition</b> macro.hpp:24</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fc655ba7b5f9f1961939440acc4f0c6f.html">_cassert</a></li><li class="navelem"><a class="el" href="macro_8hpp.html">macro.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

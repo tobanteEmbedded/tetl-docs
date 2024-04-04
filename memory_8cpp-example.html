@@ -111,13 +111,13 @@ $(function(){initNavTree('memory_8cpp-example.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="memory_8hpp.html">etl/memory.hpp</a>&quot;</span>  <span class="comment">// for pointer_int_pair</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&quot;</span> <span class="comment">// for assert</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span> <span class="comment">// for assert</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="memory_8hpp.html">etl/memory.hpp</a>&gt;</span>  <span class="comment">// for pointer_int_pair</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
 <div class="line"><span class="preprocessor">#if not defined(TETL_WORKAROUND_AVR_BROKEN_TESTS)</span></div>
-<div class="line">    <span class="keyword">auto</span> ptr = <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::pointer_int_pair&lt;double*, 2&gt;</a>{<span class="keyword">new</span> double(42.0), 1U};</div>
+<div class="line">    <span class="keyword">auto</span> ptr = <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::pointer_int_pair&lt;double*, 2&gt;</a>{<span class="keyword">new</span> double(42.0), 1U};</div>
 <div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(*ptr.get_pointer() == 42.0);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(ptr.get_int() == 1U);</div>
 <div class="line">    <span class="keyword">delete</span> ptr.get_pointer();</div>
@@ -128,13 +128,13 @@ $(function(){initNavTree('memory_8cpp-example.html',''); initResizable(true); })
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="amemory_8hpp_html"><div class="ttname"><a href="memory_8hpp.html">memory.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

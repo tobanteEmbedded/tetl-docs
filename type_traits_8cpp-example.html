@@ -109,13 +109,13 @@ $(function(){initNavTree('type_traits_8cpp-example.html',''); initResizable(true
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="type__traits_8hpp.html">etl/type_traits.hpp</a>&quot;</span> <span class="comment">// for enable_if</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cstdint_8hpp.html">etl/cstdint.hpp</a>&quot;</span>     <span class="comment">// for uint16_t</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cstdint_8hpp.html">etl/cstdint.hpp</a>&gt;</span>     <span class="comment">// for uint16_t</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="type__traits_8hpp.html">etl/type_traits.hpp</a>&gt;</span> <span class="comment">// for enable_if</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>{</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">auto</span> func(T val) -&gt; <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::enable_if_t&lt;etl::is_integral_v&lt;T&gt;</a>, <span class="keywordtype">int</span>&gt;</div>
+<div class="line"><span class="keyword">auto</span> func(T val) -&gt; <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::enable_if_t&lt;etl::is_integral_v&lt;T&gt;</a>, <span class="keywordtype">int</span>&gt;</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(val);</div>
 <div class="line">}</div>
@@ -133,14 +133,14 @@ $(function(){initNavTree('type_traits_8cpp-example.html',''); initResizable(true
 <div class="line">}</div>
 <div class="ttc" id="acstdint_8hpp_html"><div class="ttname"><a href="cstdint_8hpp.html">cstdint.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html_a46518a317507676ba5887e53ca4bf5bd"><div class="ttname"><a href="namespaceetl.html#a46518a317507676ba5887e53ca4bf5bd">etl::uint16_t</a></div><div class="ttdeci">TETL_BUILTIN_UINT16 uint16_t</div><div class="ttdoc">Unsigned integer type with width of exactly 16 bits.</div><div class="ttdef"><b>Definition</b> uint_t.hpp:14</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="atype__traits_8hpp_html"><div class="ttname"><a href="type__traits_8hpp.html">type_traits.hpp</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

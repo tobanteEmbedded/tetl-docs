@@ -113,29 +113,30 @@ $(function(){initNavTree('chrono_8cpp-example.html',''); initResizable(true); })
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="chrono_8hpp.html">etl/chrono.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="chrono_8hpp.html">etl/chrono.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceetl_1_1literals.html">etl::literals</a>;</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">hour</a> = <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::chrono::hours</a>{1};</div>
-<div class="line">        <a class="code hl_struct" href="structetl_1_1static__vector.html">printf</a>(<span class="stringliteral">&quot;%ld\n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">hour</a>.count()));</div>
+<div class="line">        <span class="keyword">auto</span> <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">hour</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::chrono::hours</a>{1};</div>
+<div class="line">        <a class="code hl_struct" href="structetl_1_1bitset.html">printf</a>(<span class="stringliteral">&quot;%ld\n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">hour</a>.<a id="a1" name="a1"></a><a class="code hl_function" href="structetl_1_1bitset.html#a6c0a23deac5e3dd9a5bd831c4d28a86e">count</a>()));</div>
 <div class="line">    }</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">hour</a> = 1<a class="code hl_struct" href="structetl_1_1static__vector.html">_h</a>;</div>
-<div class="line">        <a class="code hl_struct" href="structetl_1_1static__vector.html">printf</a>(<span class="stringliteral">&quot;%ld\n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1static__vector.html">hour</a>.count()));</div>
+<div class="line">        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">hour</a> = 1<a class="code hl_struct" href="structetl_1_1bitset.html">_h</a>;</div>
+<div class="line">        <a class="code hl_struct" href="structetl_1_1bitset.html">printf</a>(<span class="stringliteral">&quot;%ld\n&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">hour</a>.<a class="code hl_function" href="structetl_1_1bitset.html#a6c0a23deac5e3dd9a5bd831c4d28a86e">count</a>()));</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespaceetl_1_1literals_html"><div class="ttname"><a href="namespaceetl_1_1literals.html">etl::literals</a></div><div class="ttdef"><b>Definition</b> day.hpp:109</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html_a6c0a23deac5e3dd9a5bd831c4d28a86e"><div class="ttname"><a href="structetl_1_1bitset.html#a6c0a23deac5e3dd9a5bd831c4d28a86e">etl::bitset::count</a></div><div class="ttdeci">constexpr auto count() const noexcept -&gt; size_t</div><div class="ttdoc">Returns the number of bits that are set to true.</div><div class="ttdef"><b>Definition</b> bitset.hpp:260</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

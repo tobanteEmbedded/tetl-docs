@@ -111,53 +111,29 @@ $(function(){initNavTree('algorithm_8cpp-example.html',''); initResizable(true);
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">etl/vector.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">using </span><a id="a0" name="a0"></a><a class="code hl_function" href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a>;</div>
-<div class="line">    <span class="keyword">using </span><a id="a1" name="a1"></a><a class="code hl_function" href="group__algorithm.html#ga14fe21109f4f9d8ce7a3364bb45e9eae">etl::for_each</a>;</div>
-<div class="line">    <span class="keyword">using </span><a id="a2" name="a2"></a><a class="code hl_function" href="group__algorithm.html#ga5ef3395c26e44857cb21437ffbd285e7">etl::for_each_n</a>;</div>
-<div class="line">    <span class="keyword">using </span><a id="_a3" name="_a3"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::static_vector</a>;</div>
+<div class="line">    <span class="keyword">auto</span> vec = <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1static__vector.html">etl::static_vector&lt;double, 16&gt;</a>{};</div>
+<div class="line">    vec.<a id="a1" name="a1"></a><a class="code hl_function" href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">push_back</a>(1.0);</div>
+<div class="line">    vec.push_back(2.0);</div>
+<div class="line">    vec.push_back(3.0);</div>
+<div class="line">    vec.push_back(4.0);</div>
 <div class="line"> </div>
-<div class="line">    static_vector&lt;double, 16&gt; vec;</div>
-<div class="line">    vec.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">push_back</a>(1.0);</div>
-<div class="line">    vec.<a class="code hl_function" href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">push_back</a>(2.0);</div>
-<div class="line">    vec.<a class="code hl_function" href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">push_back</a>(3.0);</div>
-<div class="line">    vec.<a class="code hl_function" href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">push_back</a>(4.0);</div>
+<div class="line">    <span class="comment">// FIND</span></div>
+<div class="line">    <span class="keyword">auto</span>* <span class="keyword">const</span> result1 = <a id="a2" name="a2"></a><a class="code hl_function" href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a>(vec.begin(), vec.end(), 3.0);</div>
+<div class="line">    <a id="a3" name="a3"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(result1 != vec.end());</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// FOR_EACH</span></div>
-<div class="line">    <span class="keyword">auto</span> print = [](<span class="keyword">auto</span>&amp; x) { printf(<span class="stringliteral">&quot;%f\n&quot;</span>, x); };</div>
-<div class="line"> </div>
-<div class="line">    for_each(vec.begin(), vec.end(), print);</div>
-<div class="line">    for_each_n(vec.begin(), 3, [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; x) { printf(<span class="stringliteral">&quot;%f\n&quot;</span>, x * 2); });</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// FIND FIND_IF</span></div>
-<div class="line">    <span class="keywordtype">double</span> n1 = 3.0;</div>
-<div class="line">    <span class="keywordtype">double</span> n2 = 5;</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span>* result1 = find(vec.begin(), vec.end(), n1);</div>
-<div class="line">    <span class="keyword">auto</span>* result2 = find(vec.begin(), vec.end(), n2);</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (result1 != vec.end()) {</div>
-<div class="line">        printf(<span class="stringliteral">&quot;v contains: %f\n&quot;</span>, n1);</div>
-<div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        printf(<span class="stringliteral">&quot;v does not contain: %f\n&quot;</span>, n1);</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (result2 != vec.end()) {</div>
-<div class="line">        printf(<span class="stringliteral">&quot;v contains: %f\n&quot;</span>, n2);</div>
-<div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        printf(<span class="stringliteral">&quot;v does not contain: %f\n&quot;</span>, n2);</div>
-<div class="line">    }</div>
+<div class="line">    <span class="keyword">auto</span>* <span class="keyword">const</span> result2 = <a class="code hl_function" href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a>(vec.begin(), vec.end(), 5.0);</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(result2 == vec.end());</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__algorithm_html_ga14fe21109f4f9d8ce7a3364bb45e9eae"><div class="ttname"><a href="group__algorithm.html#ga14fe21109f4f9d8ce7a3364bb45e9eae">etl::for_each</a></div><div class="ttdeci">constexpr auto for_each(InputIt first, InputIt last, UnaryFunc f) noexcept -&gt; UnaryFunc</div><div class="ttdoc">Applies the given function object f to the result of dereferencing every iterator in the range [first...</div><div class="ttdef"><b>Definition</b> for_each.hpp:20</div></div>
-<div class="ttc" id="agroup__algorithm_html_ga5ef3395c26e44857cb21437ffbd285e7"><div class="ttname"><a href="group__algorithm.html#ga5ef3395c26e44857cb21437ffbd285e7">etl::for_each_n</a></div><div class="ttdeci">constexpr auto for_each_n(InputIt first, Size n, UnaryFunc f) noexcept -&gt; InputIt</div><div class="ttdoc">Applies the given function object f to the result of dereferencing every iterator in the range [first...</div><div class="ttdef"><b>Definition</b> for_each_n.hpp:20</div></div>
+<div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="agroup__algorithm_html_gaf123f494fccf3d1e9420928c32915189"><div class="ttname"><a href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a></div><div class="ttdeci">constexpr auto find(InputIt first, InputIt last, T const &amp;value) noexcept -&gt; InputIt</div><div class="ttdoc">Searches for an element equal to value.</div><div class="ttdef"><b>Definition</b> find.hpp:18</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
 <div class="ttc" id="astructetl_1_1static__vector_html_aab99986b57a9351c94df5fce3676ca65"><div class="ttname"><a href="structetl_1_1static__vector.html#aab99986b57a9351c94df5fce3676ca65">etl::static_vector::push_back</a></div><div class="ttdeci">constexpr auto push_back(U &amp;&amp;value) noexcept(noexcept(emplace_back(TETL_FORWARD(value)))) -&gt; void</div><div class="ttdoc">Appends value at the end of the vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:413</div></div>
@@ -167,7 +143,7 @@ $(function(){initNavTree('algorithm_8cpp-example.html',''); initResizable(true);
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

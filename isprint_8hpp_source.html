@@ -112,30 +112,30 @@ $(function(){initNavTree('isprint_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_CCTYPE_ISPRINT_HPP</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CCTYPE_ISPRINT_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="isgraph_8hpp.html">etl/_cctype/isgraph.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="isgraph_8hpp.html">etl/_cctype/isgraph.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceetl.html#aa48a725052c02bf9e7e2b74019bcb27e">   18</a></span>[[<a class="code hl_struct" href="structetl_1_1static__vector.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#aa48a725052c02bf9e7e2b74019bcb27e">isprint</a>(<span class="keywordtype">int</span> <a class="code hl_struct" href="structetl_1_1static__vector.html">ch</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceetl.html#a3ce765b38ec7d09c9ef4e3424d24ce3b">etl::isgraph</a>(<a class="code hl_struct" href="structetl_1_1static__vector.html">ch</a>) != 0 || <a class="code hl_struct" href="structetl_1_1static__vector.html">ch</a> == <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__cctype.html#gaa48a725052c02bf9e7e2b74019bcb27e">   20</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cctype.html#gaa48a725052c02bf9e7e2b74019bcb27e">isprint</a>(<span class="keywordtype">int</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="group__cctype.html#ga3ce765b38ec7d09c9ef4e3424d24ce3b">etl::isgraph</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>) != 0 || <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a> == <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CCTYPE_ISPRINT_HPP</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CCTYPE_ISPRINT_HPP</span></div>
+<div class="ttc" id="agroup__cctype_html_ga3ce765b38ec7d09c9ef4e3424d24ce3b"><div class="ttname"><a href="group__cctype.html#ga3ce765b38ec7d09c9ef4e3424d24ce3b">etl::isgraph</a></div><div class="ttdeci">constexpr auto isgraph(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is graphic (has a graphical representation) as classified by the defaul...</div><div class="ttdef"><b>Definition</b> isgraph.hpp:24</div></div>
+<div class="ttc" id="agroup__cctype_html_gaa48a725052c02bf9e7e2b74019bcb27e"><div class="ttname"><a href="group__cctype.html#gaa48a725052c02bf9e7e2b74019bcb27e">etl::isprint</a></div><div class="ttdeci">constexpr auto isprint(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if ch is a printable character as classified by the default C locale.</div><div class="ttdef"><b>Definition</b> isprint.hpp:20</div></div>
 <div class="ttc" id="aisgraph_8hpp_html"><div class="ttname"><a href="isgraph_8hpp.html">isgraph.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a3ce765b38ec7d09c9ef4e3424d24ce3b"><div class="ttname"><a href="namespaceetl.html#a3ce765b38ec7d09c9ef4e3424d24ce3b">etl::isgraph</a></div><div class="ttdeci">constexpr auto isgraph(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is graphic (has a graphical representation) as classified by the defaul...</div><div class="ttdef"><b>Definition</b> isgraph.hpp:22</div></div>
-<div class="ttc" id="anamespaceetl_html_aa48a725052c02bf9e7e2b74019bcb27e"><div class="ttname"><a href="namespaceetl.html#aa48a725052c02bf9e7e2b74019bcb27e">etl::isprint</a></div><div class="ttdeci">constexpr auto isprint(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if ch is a printable character as classified by the default C locale.</div><div class="ttdef"><b>Definition</b> isprint.hpp:18</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_9546d4ce0294fc1f78ba6300191ec0a4.html">_cctype</a></li><li class="navelem"><a class="el" href="isprint_8hpp.html">isprint.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

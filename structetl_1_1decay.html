@@ -118,11 +118,11 @@ $(function(){initNavTree('structetl_1_1decay.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5a1d7f99fe830ad314cbe8a5bef6b2a0" id="r_a5a1d7f99fe830ad314cbe8a5bef6b2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1static__vector.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a1d7f99fe830ad314cbe8a5bef6b2a0">type</a></td></tr>
+<tr class="memitem:a5a1d7f99fe830ad314cbe8a5bef6b2a0" id="r_a5a1d7f99fe830ad314cbe8a5bef6b2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a1d7f99fe830ad314cbe8a5bef6b2a0">type</a></td></tr>
 <tr class="separator:a5a1d7f99fe830ad314cbe8a5bef6b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T&gt;<br />
 struct etl::decay&lt; T &gt;</div><p>Applies lvalue-to-rvalue, array-to-pointer, and function-to-pointer implicit conversions to the type T, removes cv-qualifiers, and defines the resulting type as the member typedef type. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5a1d7f99fe830ad314cbe8a5bef6b2a0" name="a5a1d7f99fe830ad314cbe8a5bef6b2a0"></a>
@@ -131,19 +131,19 @@ struct etl::decay&lt; T &gt;</div><p>Applies lvalue-to-rvalue, array-to-pointer,
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T &gt; </div>
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1static__vector.html">using</a> <a class="el" href="#a5a1d7f99fe830ad314cbe8a5bef6b2a0">type</a></td>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#a5a1d7f99fe830ad314cbe8a5bef6b2a0">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;</div>
-<div class="line">        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::is_array_v&lt;U&gt;</a>,</div>
-<div class="line">        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_extent_t&lt;U&gt;</a>*,</div>
-<div class="line">        <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::conditional_t&lt;etl::is_function_v&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::add_pointer_t&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1static__vector.html">etl::remove_cv_t&lt;U&gt;</a>&gt;&gt;</div>
+<div class="line">        <a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_array_v&lt;U&gt;</a>,</div>
+<div class="line">        <a class="code hl_struct" href="structetl_1_1bitset.html">etl::remove_extent_t&lt;U&gt;</a>*,</div>
+<div class="line">        <a class="code hl_struct" href="structetl_1_1bitset.html">etl::conditional_t&lt;etl::is_function_v&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::add_pointer_t&lt;U&gt;</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::remove_cv_t&lt;U&gt;</a>&gt;&gt;</div>
 <div class="ttc" id="anamespaceetl_html_a4ccf02556580259044928051b1689171"><div class="ttname"><a href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a></div><div class="ttdeci">typename etl::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
-<div class="ttc" id="astructetl_1_1static__vector_html"><div class="ttname"><a href="structetl_1_1static__vector.html">etl::static_vector</a></div><div class="ttdoc">Dynamically-resizable fixed-capacity vector.</div><div class="ttdef"><b>Definition</b> static_vector.hpp:329</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -156,7 +156,7 @@ template&lt;<a class="el" href="structetl_1_1static__vector.html">typename</a> T
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1decay.html">decay</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 11:15:24 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 14:48:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
