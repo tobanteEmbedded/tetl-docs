@@ -20,6 +20,8 @@ var dir_a558ea7a8f8187b7932e40c4cd21a39a =
     [ "ranges_destroy_at.hpp", "ranges__destroy__at_8hpp.html", "ranges__destroy__at_8hpp" ],
     [ "small_ptr.hpp", "small__ptr_8hpp.html", "small__ptr_8hpp" ],
     [ "to_address.hpp", "to__address_8hpp.html", "to__address_8hpp" ],
+    [ "uninitialized_copy.hpp", "uninitialized__copy_8hpp.html", "uninitialized__copy_8hpp" ],
     [ "uninitialized_fill.hpp", "uninitialized__fill_8hpp.html", "uninitialized__fill_8hpp" ],
+    [ "uninitialized_move.hpp", "uninitialized__move_8hpp.html", "uninitialized__move_8hpp" ],
     [ "uses_allocator.hpp", "uses__allocator_8hpp.html", "uses__allocator_8hpp" ]
 ];
