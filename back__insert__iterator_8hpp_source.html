@@ -143,7 +143,7 @@ $(function(){initNavTree('back__insert__iterator_8hpp_source.html',''); initResi
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structetl_1_1back__insert__iterator.html#af3bea755be3850f5a0409a5e372578dc">   41</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1back__insert__iterator.html#af3bea755be3850f5a0409a5e372578dc">operator=</a>(<span class="keyword">typename</span> Container::value_type&amp;&amp; value) -&gt; <a class="code hl_struct" href="structetl_1_1back__insert__iterator.html">back_insert_iterator</a>&amp;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        _container-&gt;push_back(<a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(value));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        _container-&gt;push_back(<a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(value));</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
 </div>
@@ -172,8 +172,8 @@ $(function(){initNavTree('back__insert__iterator_8hpp_source.html',''); initResi
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_BACK_INSERT_ITERATOR_HPP</span></div>
 <div class="ttc" id="a__iterator_2tags_8hpp_html"><div class="ttname"><a href="__iterator_2tags_8hpp.html">tags.hpp</a></div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="a__utility_2move_8hpp_html_afb338536d7767b0fd9392f796b908073"><div class="ttname"><a href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a></div><div class="ttdeci">#define TETL_MOVE(...)</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="aaddressof_8hpp_html"><div class="ttname"><a href="addressof_8hpp.html">addressof.hpp</a></div></div>
+<div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a21ae02f44cb9f415d79d030c8ceb8c16"><div class="ttname"><a href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
@@ -195,7 +195,7 @@ $(function(){initNavTree('back__insert__iterator_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="back__insert__iterator_8hpp.html">back_insert_iterator.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 17:27:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

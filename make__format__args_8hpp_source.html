@@ -122,7 +122,7 @@ $(function(){initNavTree('make__format__args_8hpp_source.html',''); initResizabl
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0bc7cabf52200c976eb934c6de9399fb">   13</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a0bc7cabf52200c976eb934c6de9399fb">make_format_args</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Args</a>&amp;&amp;... args) -&gt; detail::format_arg_store&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">Context</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Args</a>...&gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> {<a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> {<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Args&gt;</a>(args)...};</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -130,7 +130,7 @@ $(function(){initNavTree('make__format__args_8hpp_source.html',''); initResizabl
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae6a9f575220aa9ab48e4d48b82093698">   19</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae6a9f575220aa9ab48e4d48b82093698">make_wformat_args</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Args</a>&amp;&amp;... args) -&gt; detail::format_arg_store&lt;<a class="code hl_typedef" href="namespaceetl.html#a03b255764cde83db44d0e61eebc55d36">wformat_context</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Args</a>...&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> {<a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(args)...};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> {<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Args&gt;</a>(args)...};</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -140,7 +140,6 @@ $(function(){initNavTree('make__format__args_8hpp_source.html',''); initResizabl
 <div class="ttc" id="abasic__format__context_8hpp_html"><div class="ttname"><a href="basic__format__context_8hpp.html">basic_format_context.hpp</a></div></div>
 <div class="ttc" id="aformat__arg__store_8hpp_html"><div class="ttname"><a href="format__arg__store_8hpp.html">format_arg_store.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition</b> forward.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a03b255764cde83db44d0e61eebc55d36"><div class="ttname"><a href="namespaceetl.html#a03b255764cde83db44d0e61eebc55d36">etl::wformat_context</a></div><div class="ttdeci">basic_format_context&lt; back_insert_iterator&lt; detail::fmt_buffer&lt; wchar_t &gt; &gt;, wchar_t &gt; wformat_context</div><div class="ttdef"><b>Definition</b> basic_format_context.hpp:53</div></div>
 <div class="ttc" id="anamespaceetl_html_a0bc7cabf52200c976eb934c6de9399fb"><div class="ttname"><a href="namespaceetl.html#a0bc7cabf52200c976eb934c6de9399fb">etl::make_format_args</a></div><div class="ttdeci">auto make_format_args(Args &amp;&amp;... args) -&gt; detail::format_arg_store&lt; Context, Args... &gt;</div><div class="ttdef"><b>Definition</b> make_format_args.hpp:13</div></div>
@@ -153,7 +152,7 @@ $(function(){initNavTree('make__format__args_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_16b7d14cc1ebca4125843589b43c6666.html">_format</a></li><li class="navelem"><a class="el" href="make__format__args_8hpp.html">make_format_args.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 17:27:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

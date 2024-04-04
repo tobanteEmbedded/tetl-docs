@@ -129,7 +129,7 @@ $(function(){initNavTree('make__from__tuple_8hpp_source.html',''); initResizable
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> [&amp;]&lt;<a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a>... <a class="code hl_struct" href="structetl_1_1bitset.html">I</a>&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">index_sequence</a>&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">I</a>...&gt; <span class="comment">/*i*/</span>) {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">using </span><a class="code hl_function" href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> T(<a class="code hl_struct" href="structetl_1_1bitset.html">get&lt;I&gt;</a>(<a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">t</a>))...);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> T(<a class="code hl_struct" href="structetl_1_1bitset.html">get&lt;I&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Tuple&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">t</a>))...);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::make_index_sequence&lt;etl::tuple_size_v&lt;etl::remove_reference_t&lt;Tuple&gt;</a>&gt;&gt;{});</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
@@ -140,12 +140,11 @@ $(function(){initNavTree('make__from__tuple_8hpp_source.html',''); initResizable
 <div class="ttc" id="a__tuple_2tuple_8hpp_html"><div class="ttname"><a href="__tuple_2tuple_8hpp.html">tuple.hpp</a></div></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition</b> forward.hpp:32</div></div>
 <div class="ttc" id="aindex__sequence_8hpp_html"><div class="ttname"><a href="index__sequence_8hpp.html">index_sequence.hpp</a></div></div>
 <div class="ttc" id="ais__constructible_8hpp_html"><div class="ttname"><a href="is__constructible_8hpp.html">is_constructible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a1ae0d54a117c055337810c0829b22eaf"><div class="ttname"><a href="namespaceetl.html#a1ae0d54a117c055337810c0829b22eaf">etl::make_from_tuple</a></div><div class="ttdeci">constexpr auto make_from_tuple(Tuple &amp;&amp;t) -&gt; T</div><div class="ttdef"><b>Definition</b> make_from_tuple.hpp:18</div></div>
-<div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:197</div></div>
+<div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:198</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
@@ -156,7 +155,7 @@ $(function(){initNavTree('make__from__tuple_8hpp_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_8be609a5e5a1157a2235a808dd93e4b3.html">_tuple</a></li><li class="navelem"><a class="el" href="make__from__tuple_8hpp.html">make_from_tuple.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 17:27:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

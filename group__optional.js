@@ -21,7 +21,7 @@ var group__optional =
       [ "optional", "structetl_1_1optional.html#a29a74af56f6de9269bf8f3dc30579f4b", null ],
       [ "optional", "structetl_1_1optional.html#a215759ae3da0237322ab37b8708fee39", null ],
       [ "optional", "structetl_1_1optional.html#a215759ae3da0237322ab37b8708fee39", null ],
-      [ "optional", "structetl_1_1optional.html#ab91cd46c83c14e1b47a9914bb82219ed", null ],
+      [ "optional", "structetl_1_1optional.html#ac464f7565277200c8f70b9b3fc9f992f", null ],
       [ "optional", "structetl_1_1optional.html#a9f6de21d7f02d8561e656f3b20ae3ab9", null ],
       [ "optional", "structetl_1_1optional.html#a9f6de21d7f02d8561e656f3b20ae3ab9", null ],
       [ "and_then", "structetl_1_1optional.html#a62819f8ee94f18955aa983370e6f8d57", null ],

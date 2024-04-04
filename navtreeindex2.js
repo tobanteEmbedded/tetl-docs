@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"basic__string__view_8hpp.html#ae3409e7cab3e6c13e3d748566971e05e":[12,0,1,0,56,0,5],
 "basic__string__view_8hpp.html#af437446fcc1e53640c10980cfd99616e":[12,0,1,0,56,0,4],
 "basic__string__view_8hpp.html#af87635e670e27f474bff7714a7bbe558":[12,0,1,0,56,0,0],
 "basic__string__view_8hpp_source.html":[12,0,1,0,56,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1copy__constructible.html":[8,0,0,9],
 "conceptetl_1_1copyable.html":[8,0,0,10],
 "conceptetl_1_1default__initializable.html":[8,0,0,11],
-"conceptetl_1_1derived__from.html":[8,0,0,12]
+"conceptetl_1_1derived__from.html":[8,0,0,12],
+"conceptetl_1_1destructible.html":[8,0,0,13]
 };

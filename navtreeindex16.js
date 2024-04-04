@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"namespaceetl_1_1placeholders.html#a1e10ffb5e538585265e5e195a83b0fa1":[9,0,0,9,0],
-"namespaceetl_1_1placeholders.html#a24c0d513b4952da551706acf00f1ac03":[9,0,0,9,18],
 "namespaceetl_1_1placeholders.html#a4789ecf3cbb24709e3948e97e66a48e5":[9,0,0,9,24],
 "namespaceetl_1_1placeholders.html#a568b4db357350e6538958a7186712f2d":[9,0,0,9,2],
 "namespaceetl_1_1placeholders.html#a5bc9e889d5a3d65d823861fb5e64f3ba":[9,0,0,9,21],
@@ -33,8 +31,8 @@ var NAVTREEINDEX16 =
 "namespaceetl_1_1ranges.html#a5a66c4f69ddfe66624910fd8b9134c8e":[9,0,0,10,19],
 "namespaceetl_1_1ranges.html#aafaa337be0352947d708d2a0e0c01168":[9,0,0,10,18],
 "namespaceetl_1_1ranges_1_1cpo.html":[9,0,0,10,0],
-"namespacemembers.html":[9,1,0,0],
 "namespacemembers.html":[9,1,0],
+"namespacemembers.html":[9,1,0,0],
 "namespacemembers_a.html":[9,1,0,1],
 "namespacemembers_b.html":[9,1,0,2],
 "namespacemembers_c.html":[9,1,0,3],
@@ -43,8 +41,8 @@ var NAVTREEINDEX16 =
 "namespacemembers_enum.html":[9,1,4],
 "namespacemembers_eval.html":[9,1,5],
 "namespacemembers_f.html":[9,1,0,6],
-"namespacemembers_func.html":[9,1,1,0],
 "namespacemembers_func.html":[9,1,1],
+"namespacemembers_func.html":[9,1,1,0],
 "namespacemembers_func_b.html":[9,1,1,1],
 "namespacemembers_func_c.html":[9,1,1,2],
 "namespacemembers_func_d.html":[9,1,1,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "pointer__traits_8hpp.html":[12,0,1,0,39,14],
 "pointer__traits_8hpp_source.html":[12,0,1,0,39,14],
 "polar_8hpp.html":[12,0,1,0,12,10],
-"polar_8hpp_source.html":[12,0,1,0,12,10]
+"polar_8hpp_source.html":[12,0,1,0,12,10],
+"popcount_8hpp.html":[12,0,1,0,2,13],
+"popcount_8hpp_source.html":[12,0,1,0,2,13]
 };

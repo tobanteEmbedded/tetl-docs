@@ -187,10 +187,10 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">get</a>(T&amp;&amp; t) -&gt; <span class="keyword">decltype</span>(<span class="keyword">auto</span>)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_variant_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;I&gt;</a>(<a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(t));</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;I&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;T&gt;</a>(t));</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">static_assert</span>(I == 0);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(t);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;T&gt;</a>(t);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
@@ -230,12 +230,12 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>{</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> n = next_seq(i, m);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::detail::sum(n) == 0) {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> f(get&lt;Is&gt;(<a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(vs))...);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> f(get&lt;Is&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(vs))...);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1tuple.html">etl::tuple</a>(etl::detail::index(vs)...) == <a class="code hl_struct" href="structetl_1_1tuple.html">etl::tuple</a>(Is...)) {</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">return</span> f(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward_like&lt;Vs&gt;</a>(*etl::detail::get_if&lt;Is&gt;(&amp;vs))...);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> visit(n, m, <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(f), <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(vs)...);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> visit(n, m, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;F&gt;</a>(f), <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(vs)...);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
@@ -254,8 +254,8 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span> etl::detail::visit(</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence</a>&lt;etl::detail::zero&lt;Vs&gt;...&gt;{},</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence&lt;etl::detail::variant_size&lt;Vs&gt;</a>()...&gt;{},</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(f),</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <a class="code hl_define" href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)...</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;F&gt;</a>(f),</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)...</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        );</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
@@ -270,7 +270,6 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aconditional_8hpp_html"><div class="ttname"><a href="conditional_8hpp.html">conditional.hpp</a></div></div>
 <div class="ttc" id="adecay_8hpp_html"><div class="ttname"><a href="decay_8hpp.html">decay.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="aforward_8hpp_html_a2d576f2c39bf49da4909a2a497671e6e"><div class="ttname"><a href="forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e">TETL_FORWARD</a></div><div class="ttdeci">#define TETL_FORWARD(...)</div><div class="ttdef"><b>Definition</b> forward.hpp:32</div></div>
 <div class="ttc" id="aforward__like_8hpp_html"><div class="ttname"><a href="forward__like_8hpp.html">forward_like.hpp</a></div></div>
 <div class="ttc" id="aindex__sequence_8hpp_html"><div class="ttname"><a href="index__sequence_8hpp.html">index_sequence.hpp</a></div></div>
 <div class="ttc" id="ais__lvalue__reference_8hpp_html"><div class="ttname"><a href="is__lvalue__reference_8hpp.html">is_lvalue_reference.hpp</a></div></div>
@@ -279,7 +278,7 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a0f2481ba64051d1ccdbcef2661bdd51e"><div class="ttname"><a href="namespaceetl.html#a0f2481ba64051d1ccdbcef2661bdd51e">etl::get_if</a></div><div class="ttdeci">constexpr auto get_if(variant&lt; Ts... &gt; *pv) noexcept -&gt; add_pointer_t&lt; variant_alternative_t&lt; I, variant&lt; Ts... &gt; &gt; &gt;</div><div class="ttdoc">Index-based non-throwing accessor: If pv is not a null pointer and pv-&gt;index() == I,...</div><div class="ttdef"><b>Definition</b> variant.hpp:590</div></div>
 <div class="ttc" id="anamespaceetl_html_a2f45e7a98a49bac4a0e8006a9c784f8a"><div class="ttname"><a href="namespaceetl.html#a2f45e7a98a49bac4a0e8006a9c784f8a">etl::visit</a></div><div class="ttdeci">constexpr auto visit(F &amp;&amp;f, Vs &amp;&amp;... vs)</div><div class="ttdoc">Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...</div><div class="ttdef"><b>Definition</b> visit.hpp:149</div></div>
-<div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:197</div></div>
+<div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:198</div></div>
 <div class="ttc" id="anamespaceetl_html_ab8ddf9531fc4ac7ce28574db20c8f20e"><div class="ttname"><a href="namespaceetl.html#ab8ddf9531fc4ac7ce28574db20c8f20e">etl::void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition</b> void_t.hpp:9</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
@@ -297,7 +296,7 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_22f95e725ac636237aa807414a1d3bfe.html">_variant</a></li><li class="navelem"><a class="el" href="visit_8hpp.html">visit.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 17:27:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

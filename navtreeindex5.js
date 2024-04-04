@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"floating__point_8hpp.html":[12,0,1,0,13,17],
 "floating__point_8hpp_source.html":[12,0,1,0,13,17],
 "fma_8hpp.html":[12,0,1,0,10,16],
 "fma_8hpp_source.html":[12,0,1,0,10,16],
@@ -28,12 +27,11 @@ var NAVTREEINDEX5 =
 "formatter_8hpp.html":[12,0,1,0,29,9],
 "formatter_8hpp_source.html":[12,0,1,0,29,9],
 "forward_8hpp.html":[12,0,1,0,61,9],
-"forward_8hpp.html#a2d576f2c39bf49da4909a2a497671e6e":[12,0,1,0,61,9,0],
-"forward_8hpp.html#a6a7e67893a6b3c341ea0624e30e1d89d":[12,0,1,0,61,9,1],
-"forward_8hpp.html#aea04c6a544a650bcf6a7f88ff623c80f":[12,0,1,0,61,9,2],
+"forward_8hpp.html#a6a7e67893a6b3c341ea0624e30e1d89d":[12,0,1,0,61,9,0],
+"forward_8hpp.html#aea04c6a544a650bcf6a7f88ff623c80f":[12,0,1,0,61,9,1],
 "forward_8hpp_source.html":[12,0,1,0,61,9],
 "forward__as__tuple_8hpp.html":[12,0,1,0,59,1],
-"forward__as__tuple_8hpp.html#a1b5f5e3e00087ff6ca8916d9e69d2cec":[12,0,1,0,59,1,0],
+"forward__as__tuple_8hpp.html#a73855f5edc16acf9ba653c540059bf5c":[12,0,1,0,59,1,0],
 "forward__as__tuple_8hpp_source.html":[12,0,1,0,59,1],
 "forward__like_8hpp.html":[12,0,1,0,61,10],
 "forward__like_8hpp.html#a881439150ce3ae249968cc8b15d6e31d":[12,0,1,0,61,10,0],
@@ -53,8 +51,8 @@ var NAVTREEINDEX5 =
 "function__ref_8hpp_source.html":[12,0,1,0,30,8],
 "functional_8hpp.html":[12,0,1,0,95],
 "functional_8hpp_source.html":[12,0,1,0,95],
-"functions.html":[11,3,0,0],
 "functions.html":[11,3,0],
+"functions.html":[11,3,0,0],
 "functions_a.html":[11,3,0,1],
 "functions_b.html":[11,3,0,2],
 "functions_c.html":[11,3,0,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "group__algorithm.html#ga6aefae29604dcd0147171f39aa1380be":[8,10,0,119],
 "group__algorithm.html#ga6bbb8794e1a09c00341acc4070284bd3":[8,10,0,54],
 "group__algorithm.html#ga7225526a11c7ee4454afce37e9bfd031":[8,10,0,21],
-"group__algorithm.html#ga72ad3fc1cb6d967df6a52c8e61030f75":[8,10,0,10]
+"group__algorithm.html#ga72ad3fc1cb6d967df6a52c8e61030f75":[8,10,0,10],
+"group__algorithm.html#ga74fd28c3677d3bebf66460a3e492f3c0":[8,10,0,30],
+"group__algorithm.html#ga7a1249aee36691133f6b783a82290f8e":[8,10,0,53]
 };

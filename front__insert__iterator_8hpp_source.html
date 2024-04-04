@@ -146,7 +146,7 @@ $(function(){initNavTree('front__insert__iterator_8hpp_source.html',''); initRes
 <div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structetl_1_1front__insert__iterator.html#aa047d735ab5b6383b4e8f22004e7a5a4">   47</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1front__insert__iterator.html#aa047d735ab5b6383b4e8f22004e7a5a4">operator=</a>(<span class="keyword">typename</span> Container::value_type&amp;&amp; value) -&gt; <a class="code hl_struct" href="structetl_1_1front__insert__iterator.html">front_insert_iterator</a>&amp;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="structetl_1_1front__insert__iterator.html#aed0f611346aff4950378fefaf0ded3d2">container_</a>-&gt;push_front(<a class="code hl_define" href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a>(value));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="structetl_1_1front__insert__iterator.html#aed0f611346aff4950378fefaf0ded3d2">container_</a>-&gt;push_front(<a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(value));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 </div>
@@ -172,8 +172,8 @@ $(function(){initNavTree('front__insert__iterator_8hpp_source.html',''); initRes
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_FRONT_INSERT_ITERATOR_HPP</span></div>
 <div class="ttc" id="a__iterator_2tags_8hpp_html"><div class="ttname"><a href="__iterator_2tags_8hpp.html">tags.hpp</a></div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="a__utility_2move_8hpp_html_afb338536d7767b0fd9392f796b908073"><div class="ttname"><a href="__utility_2move_8hpp.html#afb338536d7767b0fd9392f796b908073">TETL_MOVE</a></div><div class="ttdeci">#define TETL_MOVE(...)</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="aaddressof_8hpp_html"><div class="ttname"><a href="addressof_8hpp.html">addressof.hpp</a></div></div>
+<div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a21ae02f44cb9f415d79d030c8ceb8c16"><div class="ttname"><a href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_aa8cd5fdd90a750ceb082da63058a6816"><div class="ttname"><a href="namespaceetl.html#aa8cd5fdd90a750ceb082da63058a6816">etl::front_inserter</a></div><div class="ttdeci">constexpr auto front_inserter(Container &amp;c) -&gt; front_insert_iterator&lt; Container &gt;</div><div class="ttdoc">front_inserter is a convenience function template that constructs a front_insert_iterator for the con...</div><div class="ttdef"><b>Definition</b> front_insert_iterator.hpp:76</div></div>
@@ -193,7 +193,7 @@ $(function(){initNavTree('front__insert__iterator_8hpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="front__insert__iterator_8hpp.html">front_insert_iterator.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 17:27:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

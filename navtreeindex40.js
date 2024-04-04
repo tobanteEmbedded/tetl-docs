@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"unsigned__integral_8hpp.html":[12,0,1,0,13,32],
-"unsigned__integral_8hpp_source.html":[12,0,1,0,13,32],
 "unwrap__reference_8hpp.html":[12,0,1,0,60,120],
 "unwrap__reference_8hpp.html#aadfe1ea88386619b73c8642aaac66548":[12,0,1,0,60,120,2],
 "unwrap__reference_8hpp_source.html":[12,0,1,0,60,120],

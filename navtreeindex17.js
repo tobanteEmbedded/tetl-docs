@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"popcount_8hpp.html":[12,0,1,0,2,13],
-"popcount_8hpp_source.html":[12,0,1,0,2,13],
 "predicate_8hpp.html":[12,0,1,0,13,22],
 "predicate_8hpp_source.html":[12,0,1,0,13,22],
 "preprocessor_8hpp.html":[12,0,1,0,14,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX17 =
 "source_location_8cpp-example.html":[13,9],
 "span_8hpp.html":[12,0,1,0,116],
 "span_8hpp_source.html":[12,0,1,0,116],
-"sqrt_8hpp.html":[12,0,1,0,10,40]
+"sqrt_8hpp.html":[12,0,1,0,10,40],
+"sqrt_8hpp_source.html":[12,0,1,0,10,40],
+"stable__partition_8hpp.html":[12,0,1,0,0,74]
 };
