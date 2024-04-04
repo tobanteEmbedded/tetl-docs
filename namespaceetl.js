@@ -92,13 +92,6 @@ var namespaceetl =
       [ "_9", "namespaceetl_1_1placeholders.html#a052dc554703cbd2d5a09234ad30a7cf7", null ]
     ] ],
     [ "ranges", "namespaceetl_1_1ranges.html", "namespaceetl_1_1ranges" ],
-    [ "simd_abi", "namespaceetl_1_1simd__abi.html", [
-      [ "compatible", "namespaceetl_1_1simd__abi.html#ad945cdd13efff8b6c90c6791dc2954d4", null ],
-      [ "fixed_size", "namespaceetl_1_1simd__abi.html#a721686bc594cc9b3a50204805bd856a0", null ],
-      [ "native", "namespaceetl_1_1simd__abi.html#a0c99413b9c8b7c79fd3d40d8ce728c2a", null ],
-      [ "scalar", "namespaceetl_1_1simd__abi.html#aab270de5ab4b5c915a01b0c9f198e900", null ],
-      [ "max_fixed_size", "namespaceetl_1_1simd__abi.html#a2c144022da5ed87ebfc98c637e59a54f", null ]
-    ] ],
     [ "string_view_literals", "namespaceetl_1_1literals_1_1string__view__literals.html", [
       [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22", null ]
     ] ],
@@ -132,9 +125,7 @@ var namespaceetl =
     [ "basic_format_parse_context", "structetl_1_1basic__format__parse__context.html", "structetl_1_1basic__format__parse__context" ],
     [ "basic_format_string", "structetl_1_1basic__format__string.html", "structetl_1_1basic__format__string" ],
     [ "basic_static_string", "structetl_1_1basic__static__string.html", "structetl_1_1basic__static__string" ],
-    [ "basic_streambuf", "structetl_1_1basic__streambuf.html", "structetl_1_1basic__streambuf" ],
     [ "basic_string_view", "structetl_1_1basic__string__view.html", "structetl_1_1basic__string__view" ],
-    [ "basic_stringbuf", "structetl_1_1basic__stringbuf.html", "structetl_1_1basic__stringbuf" ],
     [ "bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", "structetl_1_1bernoulli__distribution" ],
     [ "bidirectional_iterator_tag", "structetl_1_1bidirectional__iterator__tag.html", null ],
     [ "binary_t", "structetl_1_1binary__t.html", null ],
@@ -167,7 +158,6 @@ var namespaceetl =
     [ "conditional", "structetl_1_1conditional.html", "structetl_1_1conditional" ],
     [ "conditional< false, T, F >", "structetl_1_1conditional_3_01false_00_01T_00_01F_01_4.html", "structetl_1_1conditional_3_01false_00_01T_00_01F_01_4" ],
     [ "conjunction", "structetl_1_1conjunction.html", null ],
-    [ "const_where_expression", "structetl_1_1const__where__expression.html", "structetl_1_1const__where__expression" ],
     [ "contiguous_iterator_tag", "structetl_1_1contiguous__iterator__tag.html", null ],
     [ "coroutine_handle", "structetl_1_1coroutine__handle.html", null ],
     [ "coroutine_handle< void >", "structetl_1_1coroutine__handle_3_01void_01_4.html", "structetl_1_1coroutine__handle_3_01void_01_4" ],
@@ -185,7 +175,6 @@ var namespaceetl =
     [ "divides< void >", "structetl_1_1divides_3_01void_01_4.html", "structetl_1_1divides_3_01void_01_4" ],
     [ "domain_error", "structetl_1_1domain__error.html", "structetl_1_1domain__error" ],
     [ "dynamic_array", "structetl_1_1dynamic__array.html", "structetl_1_1dynamic__array" ],
-    [ "element_aligned_tag", "structetl_1_1element__aligned__tag.html", null ],
     [ "empty_c_array", "structetl_1_1empty__c__array.html", null ],
     [ "enable_if", "structetl_1_1enable__if.html", null ],
     [ "enable_if< true, Type >", "structetl_1_1enable__if_3_01true_00_01Type_01_4.html", "structetl_1_1enable__if_3_01true_00_01Type_01_4" ],
@@ -277,7 +266,6 @@ var namespaceetl =
     [ "integral_constant", "structetl_1_1integral__constant.html", "structetl_1_1integral__constant" ],
     [ "invalid_argument", "structetl_1_1invalid__argument.html", "structetl_1_1invalid__argument" ],
     [ "invoke_result", "structetl_1_1invoke__result.html", null ],
-    [ "ios_base", "structetl_1_1ios__base.html", "structetl_1_1ios__base" ],
     [ "is_abstract", "structetl_1_1is__abstract.html", null ],
     [ "is_aggregate", "structetl_1_1is__aggregate.html", null ],
     [ "is_any_of", "structetl_1_1is__any__of.html", null ],
@@ -455,7 +443,6 @@ var namespaceetl =
     [ "optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", "structetl_1_1optional_3_01T_01_6_01_4" ],
     [ "out_of_range", "structetl_1_1out__of__range.html", "structetl_1_1out__of__range" ],
     [ "output_iterator_tag", "structetl_1_1output__iterator__tag.html", null ],
-    [ "overaligned_tag", "structetl_1_1overaligned__tag.html", null ],
     [ "overflow_error", "structetl_1_1overflow__error.html", "structetl_1_1overflow__error" ],
     [ "overload", "structetl_1_1overload.html", null ],
     [ "pair", "structetl_1_1pair.html", "structetl_1_1pair" ],
@@ -575,9 +562,7 @@ var namespaceetl =
     [ "variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "variant_size< variant< Ts... > >", "structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "vector", "structetl_1_1vector.html", "structetl_1_1vector" ],
-    [ "vector_aligned_tag", "structetl_1_1vector__aligned__tag.html", null ],
     [ "weak_ordering", "structetl_1_1weak__ordering.html", "structetl_1_1weak__ordering" ],
-    [ "where_expression", "structetl_1_1where__expression.html", "structetl_1_1where__expression" ],
     [ "xorshift", "structetl_1_1xorshift.html", "structetl_1_1xorshift" ],
     [ "xoshiro128plus", "structetl_1_1xoshiro128plus.html", "structetl_1_1xoshiro128plus" ],
     [ "xoshiro128plusplus", "structetl_1_1xoshiro128plusplus.html", "structetl_1_1xoshiro128plusplus" ],
@@ -718,7 +703,6 @@ var namespaceetl =
     [ "streamoff", "namespaceetl.html#a66b66173615e2c5f0568adb2cae8739f", null ],
     [ "streamsize", "namespaceetl.html#afcecc45ff4539025dd0eb1cea84021f9", null ],
     [ "string_view", "namespaceetl.html#a6f7f02db9e66eaec8dccdca2f4e98a2f", null ],
-    [ "stringbuf", "namespaceetl.html#a636c37daca18857edd92e6fa8ebb6627", null ],
     [ "tera", "namespaceetl.html#abb0850018459aaecf06435ee5eb9f0d8", null ],
     [ "time_t", "namespaceetl.html#a62da72e20fc89d790a5f88420496d0d7", null ],
     [ "true_type", "namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd", null ],
@@ -1763,7 +1747,6 @@ var namespaceetl =
     [ "destroying_delete", "namespaceetl.html#ac49e3304c1cd20a376c9bd1758dd13bd", null ],
     [ "disjunction_v", "namespaceetl.html#abb3abcd15bf9ea4a0629b7e03498e1e1", null ],
     [ "dynamic_extent", "group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8", null ],
-    [ "element_aligned", "namespaceetl.html#a12dd54e001e852c457b3b78bec3f9439", null ],
     [ "extent_v", "namespaceetl.html#a06332dc22e85765f2c195c703cc49068", null ],
     [ "hardware_constructive_interference_size", "namespaceetl.html#a968338cd15fb1036406d2b3c8cb5b591", null ],
     [ "hardware_destructive_interference_size", "namespaceetl.html#acf9464e19a95c1baba9554e5ae2c2af6", null ],
@@ -1852,7 +1835,6 @@ var namespaceetl =
     [ "negation_v", "namespaceetl.html#a3bef7b75bd1375e11a158bc94cbc4fa3", null ],
     [ "nontype", "namespaceetl.html#afb090c3e2bd7b58f70ddb151d426d84c", null ],
     [ "nothrow", "namespaceetl.html#a9706e5f8dbc47772797c3f13cfd73517", null ],
-    [ "overaligned", "namespaceetl.html#a94295cec56b880883c5b127dbf8dacd9", null ],
     [ "piecewise_construct", "namespaceetl.html#a773a2a7547427bfc26b4ff3b8c2cebe3", null ],
     [ "rank_v", "namespaceetl.html#a3c66bceba9ac1596666a40596ddf9b62", null ],
     [ "ratio_greater_v", "group__ratio.html#gad13c7dc384ea307cfe91df7962930245", null ],
@@ -1863,6 +1845,5 @@ var namespaceetl =
     [ "tuple_size_v", "namespaceetl.html#a4bccb49e0b1f811bb51be4f782a5b6c6", null ],
     [ "uses_allocator_v", "namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764", null ],
     [ "variant_npos", "namespaceetl.html#a8c2627e58d7c15ca89a458ad54eba558", null ],
-    [ "variant_size_v", "namespaceetl.html#a048867192f342c93436216b7b1ed601b", null ],
-    [ "vector_aligned", "namespaceetl.html#a47b3f0cc9d6b62d223bde4e4ce670e9f", null ]
+    [ "variant_size_v", "namespaceetl.html#a048867192f342c93436216b7b1ed601b", null ]
 ];

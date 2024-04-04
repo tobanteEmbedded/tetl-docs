@@ -12,7 +12,6 @@ var group__utilities_library =
     [ "meta", "group__meta.html", "group__meta" ],
     [ "optional", "group__optional.html", "group__optional" ],
     [ "scope", "group__scope.html", null ],
-    [ "simd", "group__simd.html", null ],
     [ "source_location", "group__source__location.html", "group__source__location" ],
     [ "tuple", "group__tuple.html", null ],
     [ "type_traits", "group__type__traits.html", null ],

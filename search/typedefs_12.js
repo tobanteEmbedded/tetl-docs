@@ -7,7 +7,7 @@ var searchData=
   ['ticktype_5ft_4',['TickType_t',['../stubs_8hpp.html#a7a499be6ab5cca64bfdc5c0c7c1805ca',1,'stubs.hpp']]],
   ['time_5fpoint_5',['time_point',['../structetl_1_1chrono_1_1system__clock.html#a9765706c09cb18c23d2ebc3582924718',1,'etl::chrono::system_clock']]],
   ['time_5ft_6',['time_t',['../namespaceetl.html#a62da72e20fc89d790a5f88420496d0d7',1,'etl']]],
-  ['traits_5ftype_7',['traits_type',['../structetl_1_1basic__streambuf.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_streambuf::traits_type'],['../structetl_1_1basic__stringbuf.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_stringbuf::traits_type'],['../structetl_1_1basic__static__string.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_static_string::traits_type'],['../structetl_1_1basic__string__view.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_string_view::traits_type']]],
+  ['traits_5ftype_7',['traits_type',['../structetl_1_1basic__static__string.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_static_string::traits_type'],['../structetl_1_1basic__string__view.html#a7762fa62b377a4fe9013a86afeb00b99',1,'etl::basic_string_view::traits_type']]],
   ['true_5ftype_8',['true_type',['../namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd',1,'etl']]],
   ['tuple_5felement_5ft_9',['tuple_element_t',['../namespaceetl.html#ae88df1a5f5c335cb6cf4909b47882e53',1,'etl']]],
   ['twice_10',['twice',['../namespaceetl_1_1experimental_1_1freertos.html#abdada4e515cc37e20f4f7d72de1cfd0d',1,'etl::experimental::freertos']]],

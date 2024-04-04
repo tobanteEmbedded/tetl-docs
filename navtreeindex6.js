@@ -1,17 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"group__algorithm.html#ga59eeccfe79ec5ab27f96d577417ca35a":[8,10,0,82],
-"group__algorithm.html#ga5bd7d82f1e1253083d060c08049cb64b":[8,10,0,5],
-"group__algorithm.html#ga5bf6853a6729fd97ca2688e2ce192273":[8,10,0,1],
-"group__algorithm.html#ga5c80d1254a7659943993cacc3498dc38":[8,10,0,102],
-"group__algorithm.html#ga5ef3395c26e44857cb21437ffbd285e7":[8,10,0,35],
-"group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa":[8,10,0,41],
-"group__algorithm.html#ga5f3eca1793f7f38aeb756464984eb194":[8,10,0,58],
-"group__algorithm.html#ga6643f5ca84c6579040caeeb9079e0c3a":[8,10,0,2],
-"group__algorithm.html#ga6aefae29604dcd0147171f39aa1380be":[8,10,0,119],
-"group__algorithm.html#ga6bbb8794e1a09c00341acc4070284bd3":[8,10,0,54],
-"group__algorithm.html#ga7225526a11c7ee4454afce37e9bfd031":[8,10,0,21],
-"group__algorithm.html#ga72ad3fc1cb6d967df6a52c8e61030f75":[8,10,0,10],
 "group__algorithm.html#ga74fd28c3677d3bebf66460a3e492f3c0":[8,10,0,30],
 "group__algorithm.html#ga7a1249aee36691133f6b783a82290f8e":[8,10,0,53],
 "group__algorithm.html#ga7c3a106198fbf6b07743f082cec761fa":[8,10,0,46],
@@ -249,5 +237,17 @@ var NAVTREEINDEX6 =
 "group__cmath.html#ga6f9635830aa0cf956dc1924dbd841ad8":[8,11,1,76],
 "group__cmath.html#ga703cda91c0dcce6bd41bebefcaef7cfa":[8,11,1,110],
 "group__cmath.html#ga70eeceedd0d7ba7d7ac10b7399b6d2c2":[8,11,1,223],
-"group__cmath.html#ga7186dd4004ef53b28e2872d0e5f30ac6":[8,11,1,153]
+"group__cmath.html#ga7186dd4004ef53b28e2872d0e5f30ac6":[8,11,1,153],
+"group__cmath.html#ga7506d6f1c9f1562f76ddf3085ab653ad":[8,11,1,206],
+"group__cmath.html#ga758b1f8836537fd120e6a43ec143657e":[8,11,1,146],
+"group__cmath.html#ga7618da1cd9d1a0e9f80aa0e46738c503":[8,11,1,28],
+"group__cmath.html#ga764e7260866a5c3c61a9a51b61844b37":[8,11,1,135],
+"group__cmath.html#ga790f3ebf241e522dbb8f9ddb5ecf8301":[8,11,1,231],
+"group__cmath.html#ga798ddc91a8ff660e3e5ae767103b2573":[8,11,1,86],
+"group__cmath.html#ga7ace0191001caa6f64e0a19166a147ae":[8,11,1,220],
+"group__cmath.html#ga7af6a240c95112abd3800979b58338b8":[8,11,1,33],
+"group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b":[8,11,1,131],
+"group__cmath.html#ga7e121a21d96d862846a8dd6a7d146fa8":[8,11,1,149],
+"group__cmath.html#ga8054035883ddf10f76dddbe361976fe4":[8,11,1,96],
+"group__cmath.html#ga81ee0f470ef3824f040878a2ad1b165c":[8,11,1,219]
 };

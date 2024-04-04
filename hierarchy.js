@@ -31,10 +31,6 @@ var hierarchy =
     [ "basic_format_parse_context< CharT >", "structetl_1_1basic__format__parse__context.html", null ],
     [ "basic_format_string< CharT, Args >", "structetl_1_1basic__format__string.html", null ],
     [ "basic_static_string< CharT, Capacity, Traits >", "structetl_1_1basic__static__string.html", null ],
-    [ "basic_streambuf< CharT, Capacity, Traits, Child >", "structetl_1_1basic__streambuf.html", [
-      [ "basic_stringbuf< CharT, Capacity, Traits >", "structetl_1_1basic__stringbuf.html", null ]
-    ] ],
-    [ "basic_streambuf< CharT, Capacity, char_traits< CharT >, basic_stringbuf< CharT, Capacity, char_traits< CharT > > >", "structetl_1_1basic__streambuf.html", null ],
     [ "basic_string_view< CharType, Traits >", "structetl_1_1basic__string__view.html", null ],
     [ "basic_string_view< CharT >", "structetl_1_1basic__string__view.html", null ],
     [ "bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", null ],
@@ -93,11 +89,6 @@ var hierarchy =
       [ "unwrap_ref_decay< T >", "structetl_1_1unwrap__ref__decay.html", null ]
     ] ],
     [ "const_buffer", "structetl_1_1experimental_1_1net_1_1const__buffer.html", null ],
-    [ "const_where_expression< M, T >", "structetl_1_1const__where__expression.html", [
-      [ "where_expression< M, T >", "structetl_1_1where__expression.html", null ]
-    ] ],
-    [ "const_where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1const__where__expression.html", null ],
-    [ "const_where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1const__where__expression.html", null ],
     [ "construct_at_fn", "structetl_1_1ranges_1_1construct__at__fn.html", null ],
     [ "contains< Needle, Haystack >", "structetl_1_1meta_1_1contains.html", null ],
     [ "coro_traits< R, typename >", null, [
@@ -109,7 +100,6 @@ var hierarchy =
     [ "dangling", "structetl_1_1ranges_1_1dangling.html", null ],
     [ "day", "structetl_1_1chrono_1_1day.html", null ],
     [ "decay< T >", "structetl_1_1decay.html", null ],
-    [ "deduce< T, N, Abis >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__abi_1_1deduce.html", null ],
     [ "default_accessor< ElementType >", "structetl_1_1default__accessor.html", null ],
     [ "default_delete< T >", "structetl_1_1default__delete.html", null ],
     [ "default_delete< T[]>", "structetl_1_1default__delete_3_01T_0f_0e_4.html", null ],
@@ -125,9 +115,6 @@ var hierarchy =
     [ "duration< Rep, Period >", "structetl_1_1chrono_1_1duration.html", null ],
     [ "duration_values< Rep >", "structetl_1_1chrono_1_1duration__values.html", null ],
     [ "dynamic_array< T, Allocator >", "structetl_1_1dynamic__array.html", null ],
-    [ "element_aligned_tag", "structetl_1_1element__aligned__tag.html", null ],
-    [ "element_aligned_tag", "structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html", null ],
-    [ "element_aligned_tag", "structetl_1_1experimental_1_1parallelism__v2_1_1element__aligned__tag.html", null ],
     [ "empty_c_array", "structetl_1_1empty__c__array.html", null ],
     [ "enable_if< bool, Type >", "structetl_1_1enable__if.html", null ],
     [ "enable_if< true, Type >", "structetl_1_1enable__if_3_01true_00_01Type_01_4.html", null ],
@@ -441,9 +428,6 @@ var hierarchy =
     [ "invoke_result< void, F, ArgTypes... >", null, [
       [ "invoke_result< F, ArgTypes >", "structetl_1_1invoke__result.html", null ]
     ] ],
-    [ "ios_base", "structetl_1_1ios__base.html", null ],
-    [ "is_abi_tag< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__abi__tag.html", null ],
-    [ "is_abi_tag< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__abi__tag.html", null ],
     [ "is_destructible_safe< T, bool, bool >", null, [
       [ "is_destructible< T >", "structetl_1_1is__destructible.html", null ]
     ] ],
@@ -452,12 +436,6 @@ var hierarchy =
         [ "is_nothrow_destructible< Type[N]>", "structetl_1_1is__nothrow__destructible_3_01Type_0fN_0e_4.html", null ]
       ] ]
     ] ],
-    [ "is_simd< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd.html", null ],
-    [ "is_simd< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd.html", null ],
-    [ "is_simd_flag_type< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__flag__type.html", null ],
-    [ "is_simd_flag_type< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__flag__type.html", null ],
-    [ "is_simd_mask< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__mask.html", null ],
-    [ "is_simd_mask< T >", "structetl_1_1experimental_1_1parallelism__v2_1_1is__simd__mask.html", null ],
     [ "is_typename< T >", "structetl_1_1is__typename.html", null ],
     [ "isr", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html", null ],
     [ "iterator_traits< T * >", "structetl_1_1iterator__traits_3_01T_01_5_01_4.html", null ],
@@ -511,8 +489,6 @@ var hierarchy =
     ] ],
     [ "mdarray< ElementType, Extents, LayoutPolicy, Container >", "structetl_1_1mdarray.html", null ],
     [ "mdspan< ElementType, Extents, LayoutPolicy, AccessorPolicy >", "structetl_1_1mdspan.html", null ],
-    [ "memory_alignment< T, U >", "structetl_1_1experimental_1_1parallelism__v2_1_1memory__alignment.html", null ],
-    [ "memory_alignment< T, U >", "structetl_1_1experimental_1_1parallelism__v2_1_1memory__alignment.html", null ],
     [ "minus< T >", "structetl_1_1minus.html", null ],
     [ "minus< void >", "structetl_1_1minus_3_01void_01_4.html", null ],
     [ "modulus< T >", "structetl_1_1modulus.html", null ],
@@ -571,9 +547,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "output_iterator_tag", "structetl_1_1output__iterator__tag.html", null ],
-    [ "overaligned_tag< size_t >", "structetl_1_1experimental_1_1parallelism__v2_1_1overaligned__tag.html", null ],
-    [ "overaligned_tag< size_t >", "structetl_1_1experimental_1_1parallelism__v2_1_1overaligned__tag.html", null ],
-    [ "overaligned_tag< size_t >", "structetl_1_1overaligned__tag.html", null ],
     [ "pair< T1, T2 >", "structetl_1_1pair.html", null ],
     [ "param_type", "structetl_1_1bernoulli__distribution_1_1param__type.html", null ],
     [ "param_type", "structetl_1_1uniform__int__distribution_1_1param__type.html", null ],
@@ -599,8 +572,6 @@ var hierarchy =
     [ "push_front< T, list< Ts... > >", "structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "queue< T, Size >", "structetl_1_1experimental_1_1freertos_1_1queue.html", null ],
     [ "ratio< Num, Denom >", "structetl_1_1ratio.html", null ],
-    [ "rebind_simd< T, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html", null ],
-    [ "rebind_simd< T, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1rebind__simd.html", null ],
     [ "reference", "structetl_1_1basic__bitset_1_1reference.html", null ],
     [ "reference", "structetl_1_1bitset_1_1reference.html", null ],
     [ "reference_wrapper< T >", "structetl_1_1reference__wrapper.html", null ],
@@ -624,8 +595,6 @@ var hierarchy =
     [ "remove_reference< T && >", "structetl_1_1remove__reference_3_01T_01_6_6_01_4.html", null ],
     [ "remove_volatile< Type >", "structetl_1_1remove__volatile.html", null ],
     [ "remove_volatile< Type volatile >", "structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html", null ],
-    [ "resize_simd< N, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html", null ],
-    [ "resize_simd< N, V >", "structetl_1_1experimental_1_1parallelism__v2_1_1resize__simd.html", null ],
     [ "reverse_iterator< Iter >", "structetl_1_1reverse__iterator.html", null ],
     [ "row_major_t", "structetl_1_1linalg_1_1row__major__t.html", null ],
     [ "scope_guard< FuncT, detail::scope_exit_impl >", null, [
@@ -638,12 +607,6 @@ var hierarchy =
     [ "sfinae_ctor_base< CanCopy, CanMove >", null, [
       [ "optional< T >", "structetl_1_1optional.html", null ]
     ] ],
-    [ "simd< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd.html", null ],
-    [ "simd< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd.html", null ],
-    [ "simd_mask< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html", null ],
-    [ "simd_mask< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__mask.html", null ],
-    [ "simd_size< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html", null ],
-    [ "simd_size< T, Abi >", "structetl_1_1experimental_1_1parallelism__v2_1_1simd__size.html", null ],
     [ "small_ptr< Type, BaseAddress, StorageType >", "structetl_1_1small__ptr.html", null ],
     [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", null ],
     [ "source_location", "structetl_1_1source__location.html", null ],
@@ -753,15 +716,10 @@ var hierarchy =
     [ "variant_alternative< Idx, T volatile >", "structetl_1_1variant__alternative_3_01Idx_00_01T_01volatile_01_4.html", null ],
     [ "variant_size< T >", "structetl_1_1variant__size.html", null ],
     [ "vector< T, Allocator >", "structetl_1_1vector.html", null ],
-    [ "vector_aligned_tag", "structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html", null ],
-    [ "vector_aligned_tag", "structetl_1_1experimental_1_1parallelism__v2_1_1vector__aligned__tag.html", null ],
-    [ "vector_aligned_tag", "structetl_1_1vector__aligned__tag.html", null ],
     [ "weak_ordering", "structetl_1_1weak__ordering.html", null ],
     [ "weekday", "structetl_1_1chrono_1_1weekday.html", null ],
     [ "weekday_indexed", "structetl_1_1chrono_1_1weekday__indexed.html", null ],
     [ "weekday_last", "structetl_1_1chrono_1_1weekday__last.html", null ],
-    [ "where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1where__expression.html", null ],
-    [ "where_expression< M, T >", "structetl_1_1experimental_1_1parallelism__v2_1_1where__expression.html", null ],
     [ "xorshift< UInt, X, Y, Z >", "structetl_1_1xorshift.html", null ],
     [ "xoshiro128plus", "structetl_1_1xoshiro128plus.html", null ],
     [ "xoshiro128plusplus", "structetl_1_1xoshiro128plusplus.html", null ],

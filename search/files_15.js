@@ -19,12 +19,11 @@ var searchData=
   ['weekday_2ehpp_16',['weekday.hpp',['../weekday_8hpp.html',1,'']]],
   ['weekday_5findexed_2ehpp_17',['weekday_indexed.hpp',['../weekday__indexed_8hpp.html',1,'']]],
   ['weekday_5flast_2ehpp_18',['weekday_last.hpp',['../weekday__last_8hpp.html',1,'']]],
-  ['where_5fexpression_2ehpp_19',['where_expression.hpp',['../where__expression_8hpp.html',1,'']]],
-  ['wint_5ft_2ehpp_20',['wint_t.hpp',['../wint__t_8hpp.html',1,'']]],
-  ['wmemchr_2ehpp_21',['wmemchr.hpp',['../wmemchr_8hpp.html',1,'']]],
-  ['wmemcmp_2ehpp_22',['wmemcmp.hpp',['../wmemcmp_8hpp.html',1,'']]],
-  ['wmemcpy_2ehpp_23',['wmemcpy.hpp',['../wmemcpy_8hpp.html',1,'']]],
-  ['wmemmove_2ehpp_24',['wmemmove.hpp',['../wmemmove_8hpp.html',1,'']]],
-  ['wmemset_2ehpp_25',['wmemset.hpp',['../wmemset_8hpp.html',1,'']]],
-  ['workarounds_2ehpp_26',['workarounds.hpp',['../workarounds_8hpp.html',1,'']]]
+  ['wint_5ft_2ehpp_19',['wint_t.hpp',['../wint__t_8hpp.html',1,'']]],
+  ['wmemchr_2ehpp_20',['wmemchr.hpp',['../wmemchr_8hpp.html',1,'']]],
+  ['wmemcmp_2ehpp_21',['wmemcmp.hpp',['../wmemcmp_8hpp.html',1,'']]],
+  ['wmemcpy_2ehpp_22',['wmemcpy.hpp',['../wmemcpy_8hpp.html',1,'']]],
+  ['wmemmove_2ehpp_23',['wmemmove.hpp',['../wmemmove_8hpp.html',1,'']]],
+  ['wmemset_2ehpp_24',['wmemset.hpp',['../wmemset_8hpp.html',1,'']]],
+  ['workarounds_2ehpp_25',['workarounds.hpp',['../workarounds_8hpp.html',1,'']]]
 ];
