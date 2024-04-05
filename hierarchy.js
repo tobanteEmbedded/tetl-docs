@@ -449,7 +449,6 @@ var hierarchy =
     [ "layout_transpose< Layout >", "structetl_1_1linalg_1_1layout__transpose.html", null ],
     [ "ldiv_t", "structetl_1_1ldiv__t.html", null ],
     [ "less< T >", "structetl_1_1less.html", null ],
-    [ "less< Key >", "structetl_1_1less.html", null ],
     [ "less< void >", "structetl_1_1less_3_01void_01_4.html", null ],
     [ "less_equal< T >", "structetl_1_1less__equal.html", null ],
     [ "less_equal< void >", "structetl_1_1less__equal_3_01void_01_4.html", null ],

@@ -131,11 +131,10 @@ $(function(){initNavTree('cassert_8cpp-example.html',''); initResizable(true); }
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Assertion&gt;</div>
-<div class="line">[[noreturn]] <span class="keyword">auto</span> tetl_assert_handler(Assertion <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span></div>
+<div class="line">[[noreturn]] <span class="keyword">auto</span> tetl_assert_handler(assert_msg <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span></div>
 <div class="line">{</div>
 <div class="line">    ::printf(<span class="stringliteral">&quot;EXCEPTION: %s:%d\n&quot;</span>, msg.file, msg.line);</div>
-<div class="line">    <a id="a0" name="a0"></a><a class="code hl_function" href="macro_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
+<div class="line">    <a id="a0" name="a0"></a><a class="code hl_function" href="assert_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">} <span class="comment">// namespace etl</span></div>
@@ -150,16 +149,16 @@ $(function(){initNavTree('cassert_8cpp-example.html',''); initResizable(true); }
 <div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_MSVC)</span></div>
 <div class="line"><span class="preprocessor">    #pragma warning(default: 4127) </span><span class="comment">// Conditional expression is constant</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aassert_8hpp_html_ad6298afdfd5046d87889de8140e640cd"><div class="ttname"><a href="assert_8hpp.html#ad6298afdfd5046d87889de8140e640cd">exit</a></div><div class="ttdeci">auto exit(int) -&gt; void</div><div class="ttdef"><b>Definition</b> assert.hpp:16</div></div>
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
-<div class="ttc" id="amacro_8hpp_html_ad6298afdfd5046d87889de8140e640cd"><div class="ttname"><a href="macro_8hpp.html#ad6298afdfd5046d87889de8140e640cd">exit</a></div><div class="ttdeci">auto exit(int) -&gt; void</div><div class="ttdef"><b>Definition</b> macro.hpp:16</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 5 2024 20:09:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

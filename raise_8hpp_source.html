@@ -114,7 +114,7 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="all_8hpp.html">etl/_config/all.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="macro_8hpp.html">etl/_cassert/macro.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="__exception_2exception_8hpp.html">etl/_exception/exception.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="__source__location_2source__location_8hpp.html">etl/_source_location/source_location.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -163,12 +163,12 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="a__exception_2exception_8hpp_html"><div class="ttname"><a href="__exception_2exception_8hpp.html">exception.hpp</a></div></div>
 <div class="ttc" id="a__source__location_2source__location_8hpp_html"><div class="ttname"><a href="__source__location_2source__location_8hpp.html">source_location.hpp</a></div></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
+<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
 <div class="ttc" id="aattributes_8hpp_html_abb156b0e852ad82749ae42934d3b4dbf"><div class="ttname"><a href="attributes_8hpp.html#abb156b0e852ad82749ae42934d3b4dbf">TETL_NO_INLINE</a></div><div class="ttdeci">#define TETL_NO_INLINE</div><div class="ttdef"><b>Definition</b> attributes.hpp:19</div></div>
 <div class="ttc" id="aattributes_8hpp_html_af0eb4be3e44a6a8a9235265e12ad89a7"><div class="ttname"><a href="attributes_8hpp.html#af0eb4be3e44a6a8a9235265e12ad89a7">TETL_COLD</a></div><div class="ttdeci">#define TETL_COLD</div><div class="ttdef"><b>Definition</b> attributes.hpp:25</div></div>
-<div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a5e19467104f59f0dafeaf2752b461a9e"><div class="ttname"><a href="namespaceetl.html#a5e19467104f59f0dafeaf2752b461a9e">etl::raise</a></div><div class="ttdeci">TETL_NO_INLINE TETL_COLD auto raise(char const *msg, etl::source_location const loc=etl::source_location::current()) -&gt; void</div><div class="ttdef"><b>Definition</b> raise.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1assert__msg_html"><div class="ttname"><a href="structetl_1_1assert__msg.html">etl::assert_msg</a></div><div class="ttdoc">Payload for an assertion.</div><div class="ttdef"><b>Definition</b> macro.hpp:21</div></div>
+<div class="ttc" id="astructetl_1_1assert__msg_html"><div class="ttname"><a href="structetl_1_1assert__msg.html">etl::assert_msg</a></div><div class="ttdoc">Payload for an assertion.</div><div class="ttdef"><b>Definition</b> assert.hpp:21</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1source__location_html"><div class="ttname"><a href="structetl_1_1source__location.html">etl::source_location</a></div><div class="ttdoc">A class representing information about the source code, such as file names, line numbers,...</div><div class="ttdef"><b>Definition</b> source_location.hpp:21</div></div>
 <div class="ttc" id="astructetl_1_1source__location_html_a53acf372b311e213942517d71b4bf8b8"><div class="ttname"><a href="structetl_1_1source__location.html#a53acf372b311e213942517d71b4bf8b8">etl::source_location::current</a></div><div class="ttdeci">static consteval auto current(uint_least32_t const line=TETL_BUILTIN_LINE(), uint_least32_t const column=TETL_BUILTIN_COLUMN(), char const *const file=TETL_BUILTIN_FILE(), char const *const function=TETL_BUILTIN_FUNCTION()) noexcept -&gt; source_location</div><div class="ttdef"><b>Definition</b> source_location.hpp:22</div></div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_56ac37526ce86f471fd3ac1c07c35ff6.html">_exception</a></li><li class="navelem"><a class="el" href="raise_8hpp.html">raise.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 5 2024 20:09:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -113,7 +113,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_FORMAT_ARGUMENT_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="find_8hpp.html">etl/_algorithm/find.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="macro_8hpp.html">etl/_cassert/macro.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="formatter_8hpp.html">etl/_format/formatter.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="pair_8hpp.html">etl/_utility/pair.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -174,7 +174,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                first = closeFirst + 2;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="comment">// No closing &quot;}}&quot; found</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_define" href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        } <span class="keywordflow">else</span> {</div>
@@ -188,6 +188,8 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace etl::detail</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// TETL_FORMAT_ARGUMENT_HPP</span></div>
+<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
+<div class="ttc" id="aassert_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdef"><b>Definition</b> assert.hpp:78</div></div>
 <div class="ttc" id="afind_8hpp_html"><div class="ttname"><a href="find_8hpp.html">find.hpp</a></div></div>
 <div class="ttc" id="aformatter_8hpp_html"><div class="ttname"><a href="formatter_8hpp.html">formatter.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_gaf123f494fccf3d1e9420928c32915189"><div class="ttname"><a href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a></div><div class="ttdeci">constexpr auto find(InputIt first, InputIt last, T const &amp;value) noexcept -&gt; InputIt</div><div class="ttdoc">Searches for an element equal to value.</div><div class="ttdef"><b>Definition</b> find.hpp:18</div></div>
@@ -195,8 +197,6 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="agroup__iterator_html_gab5e8085c3345374b117c1dc70edf9d9b"><div class="ttname"><a href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition</b> next.hpp:14</div></div>
 <div class="ttc" id="agroup__iterator_html_gaba994bcf39b8b428fec5852ea0cc728c"><div class="ttname"><a href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">etl::distance</a></div><div class="ttdeci">constexpr auto distance(It first, It last) -&gt; typename iterator_traits&lt; It &gt;::difference_type</div><div class="ttdoc">Returns the number of hops from first to last.</div><div class="ttdef"><b>Definition</b> distance.hpp:16</div></div>
 <div class="ttc" id="agroup__iterator_html_gaeb088ae74a2ec53c8c206de329935df4"><div class="ttname"><a href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition</b> begin.hpp:20</div></div>
-<div class="ttc" id="amacro_8hpp_html"><div class="ttname"><a href="macro_8hpp.html">macro.hpp</a></div></div>
-<div class="ttc" id="amacro_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="macro_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdoc">Assertion macro with customizable runtime behavior.</div><div class="ttdef"><b>Definition</b> macro.hpp:68</div></div>
 <div class="ttc" id="anamespaceetl_html_a944300e491e850f5e82717c7a66b5463"><div class="ttname"><a href="namespaceetl.html#a944300e491e850f5e82717c7a66b5463">etl::make_pair</a></div><div class="ttdeci">constexpr auto make_pair(T1 &amp;&amp;t, T2 &amp;&amp;u) -&gt; pair&lt; decay_t&lt; T1 &gt;, decay_t&lt; T2 &gt; &gt;</div><div class="ttdoc">Creates a etl::pair object, deducing the target type from the types of arguments.</div><div class="ttdef"><b>Definition</b> pair.hpp:170</div></div>
 <div class="ttc" id="apair_8hpp_html"><div class="ttname"><a href="pair_8hpp.html">pair.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
@@ -206,7 +206,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_16b7d14cc1ebca4125843589b43c6666.html">_format</a></li><li class="navelem"><a class="el" href="argument_8hpp.html">argument.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 18:10:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 5 2024 20:09:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
