@@ -106,6 +106,7 @@ $(function(){initNavTree('structetl_1_1variant.html',''); initResizable(true); }
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structetl_1_1variant-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">variant&lt; Types &gt; Struct Template Reference</div></div>
 </div><!--header-->
@@ -145,10 +146,6 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 <tr class="memitem:add24359b3b9248c42aa8846ad791683d" id="r_add24359b3b9248c42aa8846ad791683d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , typename... Args&gt; </td></tr>
 <tr class="memitem:add24359b3b9248c42aa8846ad791683d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#add24359b3b9248c42aa8846ad791683d">emplace</a> (<a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) -&gt; T &amp;</td></tr>
 <tr class="separator:add24359b3b9248c42aa8846ad791683d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bfbffbc6430196c877a01d4e5fed92b" id="r_a7bfbffbc6430196c877a01d4e5fed92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bfbffbc6430196c877a01d4e5fed92b">impl</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept</td></tr>
-<tr class="separator:a7bfbffbc6430196c877a01d4e5fed92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee167220cbf6c4543352a854e4c7827" id="r_a5ee167220cbf6c4543352a854e4c7827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ee167220cbf6c4543352a854e4c7827">impl</a> () noexcept</td></tr>
-<tr class="separator:a5ee167220cbf6c4543352a854e4c7827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e82596198858ba8f3ffe23c8699687b" id="r_a9e82596198858ba8f3ffe23c8699687b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e82596198858ba8f3ffe23c8699687b">index</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></td></tr>
 <tr class="memdesc:a9e82596198858ba8f3ffe23c8699687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the zero-based index of the alternative that is currently held by the variant. If the variant is valueless_by_exception, returns variant_npos.  <br /></td></tr>
 <tr class="separator:a9e82596198858ba8f3ffe23c8699687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +177,24 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" hr
 <tr class="memitem:a1c75063c3da286f71df7ed6049f118d1" id="r_a1c75063c3da286f71df7ed6049f118d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c75063c3da286f71df7ed6049f118d1">valueless_by_exception</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
 <tr class="memdesc:a1c75063c3da286f71df7ed6049f118d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if and only if the variant holds a value. Currently always returns false, since there is no default constructor.  <br /></td></tr>
 <tr class="separator:a1c75063c3da286f71df7ed6049f118d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ab288e994e9719641ddbf74440d706720" id="r_ab288e994e9719641ddbf74440d706720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab288e994e9719641ddbf74440d706720">operator&lt;</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memdesc:ab288e994e9719641ddbf74440d706720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less-than operator for variants:  <br /></td></tr>
+<tr class="separator:ab288e994e9719641ddbf74440d706720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d4f3d6b4c086b27fa6906097c8a646" id="r_a46d4f3d6b4c086b27fa6906097c8a646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d4f3d6b4c086b27fa6906097c8a646">operator&lt;=</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memdesc:a46d4f3d6b4c086b27fa6906097c8a646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less-equal operator for variants:  <br /></td></tr>
+<tr class="separator:a46d4f3d6b4c086b27fa6906097c8a646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdfe04fe6d740b363c2c8314c2fec60" id="r_a3fdfe04fe6d740b363c2c8314c2fec60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fdfe04fe6d740b363c2c8314c2fec60">operator==</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memdesc:a3fdfe04fe6d740b363c2c8314c2fec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator for variants:  <br /></td></tr>
+<tr class="separator:a3fdfe04fe6d740b363c2c8314c2fec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaeee1910cce501e42d01e29628fca81" id="r_aeaeee1910cce501e42d01e29628fca81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaeee1910cce501e42d01e29628fca81">operator&gt;</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memdesc:aeaeee1910cce501e42d01e29628fca81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater-than operator for variants:  <br /></td></tr>
+<tr class="separator:aeaeee1910cce501e42d01e29628fca81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca715ac2485966c7a3653e076fe2e739" id="r_aca715ac2485966c7a3653e076fe2e739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca715ac2485966c7a3653e076fe2e739">operator&gt;=</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memdesc:aca715ac2485966c7a3653e076fe2e739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater-equal operator for variants:  <br /></td></tr>
+<tr class="separator:aca715ac2485966c7a3653e076fe2e739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Types&gt;<br />
@@ -437,61 +452,6 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 
 </div>
 </div>
-<a id="a7bfbffbc6430196c877a01d4e5fed92b" name="a7bfbffbc6430196c877a01d4e5fed92b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bfbffbc6430196c877a01d4e5fed92b">&#9670;&#160;</a></span>impl() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Types&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> impl </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>Remove &amp; replace with friendship for get_if. </dd></dl>
-
-</div>
-</div>
-<a id="a5ee167220cbf6c4543352a854e4c7827" name="a5ee167220cbf6c4543352a854e4c7827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ee167220cbf6c4543352a854e4c7827">&#9670;&#160;</a></span>impl() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Types&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> impl </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9e82596198858ba8f3ffe23c8699687b" name="a9e82596198858ba8f3ffe23c8699687b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e82596198858ba8f3ffe23c8699687b">&#9670;&#160;</a></span>index()</h2>
 
@@ -610,7 +570,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 </div><div class="memdoc">
 
 <p>Returns a reference to the object stored in the variant. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>I == <a class="el" href="#a9e82596198858ba8f3ffe23c8699687b" title="Returns the zero-based index of the alternative that is currently held by the variant....">index()</a> </dd></dl>
 
 </div>
 </div>
@@ -643,7 +603,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 </div><div class="memdoc">
 
 <p>Returns a reference to the object stored in the variant. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>I == <a class="el" href="#a9e82596198858ba8f3ffe23c8699687b" title="Returns the zero-based index of the alternative that is currently held by the variant....">index()</a> </dd></dl>
 
 </div>
 </div>
@@ -676,7 +636,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 </div><div class="memdoc">
 
 <p>Returns a reference to the object stored in the variant. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>I == <a class="el" href="#a9e82596198858ba8f3ffe23c8699687b" title="Returns the zero-based index of the alternative that is currently held by the variant....">index()</a> </dd></dl>
 
 </div>
 </div>
@@ -709,7 +669,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 </div><div class="memdoc">
 
 <p>Returns a reference to the object stored in the variant. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>v.index() == I </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>I == <a class="el" href="#a9e82596198858ba8f3ffe23c8699687b" title="Returns the zero-based index of the alternative that is currently held by the variant....">index()</a> </dd></dl>
 
 </div>
 </div>
@@ -772,6 +732,210 @@ template&lt;typename... Types&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ab288e994e9719641ddbf74440d706720" name="ab288e994e9719641ddbf74440d706720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab288e994e9719641ddbf74440d706720">&#9670;&#160;</a></span>operator&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Less-than operator for variants: </p>
+<ul>
+<li>If rhs.valueless_by_exception(), returns false;</li>
+<li>If lhs.valueless_by_exception(), returns true;</li>
+<li>If lhs.index() &lt; rhs.index(), returns true;</li>
+<li>If lhs.index() &gt; rhs.index(), returns false;</li>
+<li>Otherwise returns get&lt;lhs.index()&gt;(v) &lt; get&lt;lhs.index()&gt;(w) </li>
+</ul>
+
+</div>
+</div>
+<a id="a46d4f3d6b4c086b27fa6906097c8a646" name="a46d4f3d6b4c086b27fa6906097c8a646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d4f3d6b4c086b27fa6906097c8a646">&#9670;&#160;</a></span>operator&lt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Less-equal operator for variants: </p>
+<ul>
+<li>If lhs.valueless_by_exception(), returns true;</li>
+<li>If rhs.valueless_by_exception(), returns false;</li>
+<li>If lhs.index() &lt; rhs.index(), returns true;</li>
+<li>If lhs.index() &gt; rhs.index(), returns false;</li>
+<li>Otherwise returns get&lt;lhs.index()&gt;(v) &lt;= get&lt;lhs.index()&gt;(w) </li>
+</ul>
+
+</div>
+</div>
+<a id="a3fdfe04fe6d740b363c2c8314c2fec60" name="a3fdfe04fe6d740b363c2c8314c2fec60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdfe04fe6d740b363c2c8314c2fec60">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Equality operator for variants: </p>
+<ul>
+<li>If lhs.index() != rhs.index(), returns false;</li>
+<li>If lhs.valueless_by_exception(), returns true;</li>
+<li>Otherwise returns get&lt;lhs.index()&gt;(lhs) == get&lt;lhs.index()&gt;(rhs) </li>
+</ul>
+
+</div>
+</div>
+<a id="aeaeee1910cce501e42d01e29628fca81" name="aeaeee1910cce501e42d01e29628fca81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaeee1910cce501e42d01e29628fca81">&#9670;&#160;</a></span>operator&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Greater-than operator for variants: </p>
+<ul>
+<li>If lhs.valueless_by_exception(), returns false;</li>
+<li>If rhs.valueless_by_exception(), returns true;</li>
+<li>If lhs.index() &gt; rhs.index(), returns true;</li>
+<li>If lhs.index() &lt; rhs.index(), returns false;</li>
+<li>Otherwise returns get&lt;lhs.index()&gt;(v) &gt; get&lt;lhs.index()&gt;(w) </li>
+</ul>
+
+</div>
+</div>
+<a id="aca715ac2485966c7a3653e076fe2e739" name="aca715ac2485966c7a3653e076fe2e739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca715ac2485966c7a3653e076fe2e739">&#9670;&#160;</a></span>operator&gt;=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1variant.html">variant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Types</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Greater-equal operator for variants: </p>
+<ul>
+<li>If lhs.valueless_by_exception(), returns false;</li>
+<li>If rhs.valueless_by_exception(), returns true;</li>
+<li>If lhs.index() &gt; rhs.index(), returns true;</li>
+<li>If lhs.index() &lt; rhs.index(), returns false;</li>
+<li>Otherwise returns get&lt;lhs.index()&gt;(v) &gt;= get&lt;lhs.index()&gt;(w) </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/etl/_variant/<a class="el" href="__variant_2variant_8hpp_source.html">variant.hpp</a></li>
 <li>include/etl/_variant/<a class="el" href="variant__fwd_8hpp_source.html">variant_fwd.hpp</a></li>
@@ -782,7 +946,7 @@ template&lt;typename... Types&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1variant.html">variant</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 02:30:07 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 03:49:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

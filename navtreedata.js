@@ -27,18 +27,18 @@ var NAVTREE =
   [ "tetl", "index.html", [
     [ "TETL - Embedded Template Library", "index.html", "index" ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md10", null ]
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md7", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md8", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md9", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
@@ -104,34 +104,34 @@ var NAVTREEINDEX =
 [
 "001__avr__macros_8hpp.html",
 "__ratio_2ratio_8hpp.html#abb0850018459aaecf06435ee5eb9f0d8",
-"basic__string__view_8hpp.html#a6911622913c358aa6c9a69533740656e",
-"conceptetl_1_1convertible__to.html",
-"dir_96929a0b348c47d555bbf3e5ace983e1.html",
-"float__round__style_8hpp.html#a3bdaf6c7e8a65859bf550443989c5a66a33f65225750a8f3edc0b6601fa7bcd52",
-"group__algorithm.html#ga6aefae29604dcd0147171f39aa1380be",
-"group__cmath.html#ga6e900fb29e26b00afd5ddffc99f7b537",
-"group__iterator.html#ga67945df65c1fbfa26461032e32b8bd70",
-"in__place_8hpp_source.html",
-"is__member__pointer_8hpp.html",
-"layout__right_8hpp.html",
-"movable_8hpp.html",
-"namespaceetl.html#a6a5c92ae723acdba8ce0f48be8530154a734d3030ff72ad8d9678efa82b1db7d2",
-"namespaceetl.html#abb0850018459aaecf06435ee5eb9f0d8",
-"namespaceetl_1_1chrono.html#ad0bf3db47ee27534ec066ca73d46fe73",
-"namespaceetl_1_1placeholders.html#a24c0d513b4952da551706acf00f1ac03",
-"popcount_8hpp_source.html",
-"stable__partition_8hpp.html",
-"structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6",
-"structetl_1_1basic__static__string.html#a54e9e2595f09c86e66ceecfc6efe2803",
-"structetl_1_1basic__string__view.html#a8278eaae9ffdfe5e2ff5041dc6dd3317",
-"structetl_1_1chrono_1_1last__spec.html#ae8e9aaa239d32e5d9fd50b420ebaef40",
-"structetl_1_1contiguous__iterator__tag.html",
-"structetl_1_1experimental_1_1freertos_1_1times.html#aa72a6ed1190f2b039ae2f38f957fc383",
-"structetl_1_1formatter_3_01int_00_01char_01_4.html",
-"structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html",
-"structetl_1_1is__final.html",
-"structetl_1_1layout__right_1_1mapping.html#a90cf6685027605935386233ccaa88faa",
-"structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html",
+"basic__string__view_8hpp.html#ae3409e7cab3e6c13e3d748566971e05e",
+"conceptetl_1_1destructible.html",
+"dir_a558ea7a8f8187b7932e40c4cd21a39a.html",
+"floating__point_8hpp.html",
+"group__algorithm.html#ga7a1249aee36691133f6b783a82290f8e",
+"group__cmath.html#ga7186dd4004ef53b28e2872d0e5f30ac6",
+"group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c",
+"in__range_8hpp.html",
+"is__member__pointer_8hpp_source.html",
+"layout__transpose_8hpp.html",
+"move__backward_8hpp.html",
+"namespaceetl.html#a6d46a108541ea7e9e622ba37063518f9",
+"namespaceetl.html#abbffd4a8b5d0838ecc6a3f36cad3e3c6",
+"namespaceetl_1_1chrono.html#adbec715ef8076ac6fd93c4dda5e00ecd",
+"namespaceetl_1_1placeholders.html#a83bd80bdf5bfb7849dd63d802d051c7c",
+"preprocessor_8hpp.html#a49cee2f88dbff95fa975546979b59c97",
+"static__set_8hpp.html",
+"structetl_1_1back__insert__iterator.html#a085d2b94e430442d57241971b3d43291",
+"structetl_1_1basic__static__string.html#a5642f8da06ca2e11b7307560f99fa501",
+"structetl_1_1basic__string__view.html#a918aa2db77648f4bd28d098b2291208a",
+"structetl_1_1chrono_1_1month.html#a6412a63983e16bf16ef5c88c1ccb9fb4",
+"structetl_1_1coroutine__handle_3_01void_01_4.html#a57f383f22cbf078b7185687e3cf76bed",
+"structetl_1_1experimental_1_1hardware_1_1mcp23017_1_1device.html#a01de62e51998c7c82f65f0d79e30a666",
+"structetl_1_1formatter_3_01long_00_01char_01_4.html#a858c404ff04a65635fc8037c0c5de020",
+"structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html#a2aee2576638edef866f5e40adc9950ef",
+"structetl_1_1is__fundamental.html",
+"structetl_1_1layout__right_1_1mapping.html#ab6b4df124d0571899d08c0d3c0f5d0cc",
+"structetl_1_1meta_1_1head.html",
 "structetl_1_1numeric__limits_3_01char8__t_01_4.html#a1561594738198528e5b3c227a8ba9337",
 "structetl_1_1numeric__limits_3_01float_01_4.html#ae7a892fc3837f6ed7555340a143e0d27",
 "structetl_1_1numeric__limits_3_01long_01long_01_4.html#ac1cce3aa6d9f05c2a1ba220da9585544",
@@ -141,8 +141,8 @@ var NAVTREEINDEX =
 "structetl_1_1small__ptr.html#a4b2414f420503e17bf3dee0e55953742",
 "structetl_1_1strong__ordering.html#a57a87382eb692fab3a6359430f44d2e7",
 "structetl_1_1unique__lock.html#a420e60e9788bfa3b52aa3aab72ea3a5e",
-"stubs_8hpp.html#a31dada5d722c82b3519e32a5ea5c4496",
-"unique__lock_8hpp.html"
+"stubs_8hpp.html#a0d03a5cbd317b5237f372fc37fcc0b72",
+"unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#ae857e1a6ab980bc9bced930beac84a64"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

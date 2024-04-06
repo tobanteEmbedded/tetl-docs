@@ -8,8 +8,6 @@ var structetl_1_1variant =
     [ "~variant", "structetl_1_1variant.html#adbf070ba0fb08941bec0b2b392405ce6", null ],
     [ "emplace", "structetl_1_1variant.html#a1cd02ddb782a728b9c7341d4d9ce4cf5", null ],
     [ "emplace", "structetl_1_1variant.html#add24359b3b9248c42aa8846ad791683d", null ],
-    [ "impl", "structetl_1_1variant.html#a7bfbffbc6430196c877a01d4e5fed92b", null ],
-    [ "impl", "structetl_1_1variant.html#a5ee167220cbf6c4543352a854e4c7827", null ],
     [ "index", "structetl_1_1variant.html#a9e82596198858ba8f3ffe23c8699687b", null ],
     [ "operator=", "structetl_1_1variant.html#aacbb48f259d6f2addd718c0c34fa2cb4", null ],
     [ "operator=", "structetl_1_1variant.html#a006d19ae51c1c07f12acdf69d683da3a", null ],
@@ -18,5 +16,10 @@ var structetl_1_1variant =
     [ "operator[]", "structetl_1_1variant.html#a65fa5b463833d6da4e5f9ed8e831cf26", null ],
     [ "operator[]", "structetl_1_1variant.html#adb91754c1becfde4ccdc351533a007bb", null ],
     [ "swap", "structetl_1_1variant.html#a14bd3b64ae9ac9c2a42b704d5f3fb99b", null ],
-    [ "valueless_by_exception", "structetl_1_1variant.html#a1c75063c3da286f71df7ed6049f118d1", null ]
+    [ "valueless_by_exception", "structetl_1_1variant.html#a1c75063c3da286f71df7ed6049f118d1", null ],
+    [ "operator<", "structetl_1_1variant.html#ab288e994e9719641ddbf74440d706720", null ],
+    [ "operator<=", "structetl_1_1variant.html#a46d4f3d6b4c086b27fa6906097c8a646", null ],
+    [ "operator==", "structetl_1_1variant.html#a3fdfe04fe6d740b363c2c8314c2fec60", null ],
+    [ "operator>", "structetl_1_1variant.html#aeaeee1910cce501e42d01e29628fca81", null ],
+    [ "operator>=", "structetl_1_1variant.html#aca715ac2485966c7a3653e076fe2e739", null ]
 ];

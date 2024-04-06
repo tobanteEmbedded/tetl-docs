@@ -132,6 +132,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html">head&lt; list&lt; Head, Tail... &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1index__of.html">index_of</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1index__of_3_01Head_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html">index_of&lt; Head, list&lt; Head, Tail... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1index__of_3_01T_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html">index_of&lt; T, list&lt; Head, Tail... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1list.html">list</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1meta_1_1push__back.html">push_back</a></td></tr>
@@ -173,6 +179,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a600f8adca491196ab63f2b8ed64e61a5" id="r_a600f8adca491196ab63f2b8ed64e61a5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Needle</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Haystack</a> &gt; </td></tr>
 <tr class="memitem:a600f8adca491196ab63f2b8ed64e61a5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a600f8adca491196ab63f2b8ed64e61a5">count_v</a> = <a class="el" href="structetl_1_1meta_1_1count.html">count</a>&lt;<a class="el" href="structetl_1_1bitset.html">Needle</a>, <a class="el" href="structetl_1_1bitset.html">Haystack</a>&gt;::value</td></tr>
 <tr class="separator:a600f8adca491196ab63f2b8ed64e61a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ac664128f85071092cd61eec6c6d49" id="r_aa4ac664128f85071092cd61eec6c6d49"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">List</a> &gt; </td></tr>
+<tr class="memitem:aa4ac664128f85071092cd61eec6c6d49"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa4ac664128f85071092cd61eec6c6d49">index_of_v</a> = <a class="el" href="structetl_1_1meta_1_1index__of.html">index_of</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">List</a>&gt;::value</td></tr>
+<tr class="separator:aa4ac664128f85071092cd61eec6c6d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac246929d7a75d919003203682e9caca8" name="ac246929d7a75d919003203682e9caca8"></a>
@@ -288,13 +297,37 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 
 </div>
 </div>
+<a id="aa4ac664128f85071092cd61eec6c6d49" name="aa4ac664128f85071092cd61eec6c6d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ac664128f85071092cd61eec6c6d49">&#9670;&#160;</a></span>index_of_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">List</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> index_of_v = <a class="el" href="structetl_1_1meta_1_1index__of.html">index_of</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">List</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1meta.html">meta</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 02:30:07 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 03:49:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

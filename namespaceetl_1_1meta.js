@@ -9,6 +9,9 @@ var namespaceetl_1_1meta =
     [ "count< Needle, list< Ts... > >", "structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "head", "structetl_1_1meta_1_1head.html", null ],
     [ "head< list< Head, Tail... > >", "structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1head_3_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4" ],
+    [ "index_of", "structetl_1_1meta_1_1index__of.html", null ],
+    [ "index_of< Head, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01Head_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
+    [ "index_of< T, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01T_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "list", "structetl_1_1meta_1_1list.html", null ],
     [ "push_back", "structetl_1_1meta_1_1push__back.html", null ],
     [ "push_back< T, list< Ts... > >", "structetl_1_1meta_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", "structetl_1_1meta_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4" ],
@@ -22,5 +25,6 @@ var namespaceetl_1_1meta =
     [ "push_front_t", "namespaceetl_1_1meta.html#ae097bb8dee277fb5bede5765467fadc7", null ],
     [ "tail_t", "namespaceetl_1_1meta.html#aedfed40a7e233a34be811f95f44d59fd", null ],
     [ "contains_v", "namespaceetl_1_1meta.html#a28778869adf07e02443b9e8e77f1def5", null ],
-    [ "count_v", "namespaceetl_1_1meta.html#a600f8adca491196ab63f2b8ed64e61a5", null ]
+    [ "count_v", "namespaceetl_1_1meta.html#a600f8adca491196ab63f2b8ed64e61a5", null ],
+    [ "index_of_v", "namespaceetl_1_1meta.html#aa4ac664128f85071092cd61eec6c6d49", null ]
 ];

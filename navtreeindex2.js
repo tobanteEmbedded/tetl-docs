@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"basic__string__view_8hpp.html#a6911622913c358aa6c9a69533740656e":[12,0,1,0,56,0,7],
-"basic__string__view_8hpp.html#a7456ec6ff542660d9777cf19081a2cac":[12,0,1,0,56,0,15],
-"basic__string__view_8hpp.html#a767725b8e1034844aa4c3245f940832f":[12,0,1,0,56,0,14],
-"basic__string__view_8hpp.html#a77e34f2ca4ffdc8cf580ee55405dbd50":[12,0,1,0,56,0,12],
-"basic__string__view_8hpp.html#abbf977200588526eee94f7bfe90d02a9":[12,0,1,0,56,0,17],
 "basic__string__view_8hpp.html#ae3409e7cab3e6c13e3d748566971e05e":[12,0,1,0,56,0,5],
 "basic__string__view_8hpp.html#af437446fcc1e53640c10980cfd99616e":[12,0,1,0,56,0,4],
 "basic__string__view_8hpp.html#af87635e670e27f474bff7714a7bbe558":[12,0,1,0,56,0,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1builtin__unsigned__integer.html":[8,0,0,4],
 "conceptetl_1_1common__reference__with.html":[8,0,0,5],
 "conceptetl_1_1common__with.html":[8,0,0,6],
-"conceptetl_1_1constructible__from.html":[8,0,0,7]
+"conceptetl_1_1constructible__from.html":[8,0,0,7],
+"conceptetl_1_1convertible__to.html":[8,0,0,8],
+"conceptetl_1_1copy__constructible.html":[8,0,0,9],
+"conceptetl_1_1copyable.html":[8,0,0,10],
+"conceptetl_1_1default__initializable.html":[8,0,0,11],
+"conceptetl_1_1derived__from.html":[8,0,0,12]
 };

@@ -215,6 +215,7 @@ var hierarchy =
     [ "incrementable_traits< T >", "structetl_1_1incrementable__traits_3_01T_01_4.html", [
       [ "incrementable_traits< T const >", "structetl_1_1incrementable__traits_3_01T_01const_01_4.html", null ]
     ] ],
+    [ "index_of< T, List >", "structetl_1_1meta_1_1index__of.html", null ],
     [ "indirectly_readable_traits< I >", "structetl_1_1indirectly__readable__traits.html", null ],
     [ "indirectly_readable_traits< I >", "structetl_1_1indirectly__readable__traits_3_01I_01_4.html", null ],
     [ "inplace_function< Signature, Capacity, Alignment >", "structetl_1_1inplace__function.html", null ],
@@ -382,7 +383,8 @@ var hierarchy =
         [ "extent< T[], N >", "structetl_1_1extent_3_01T_0f_0e_00_01N_01_4.html", null ]
       ] ],
       [ "extent< T, N >", "structetl_1_1extent.html", null ],
-      [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ]
+      [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ],
+      [ "index_of< Head, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01Head_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, 2 >", "structetl_1_1integral__constant.html", [
       [ "tuple_size< etl::complex< T > >", "structetl_1_1tuple__size_3_01etl_1_1complex_3_01T_01_4_01_4.html", null ]
@@ -392,6 +394,9 @@ var hierarchy =
     ] ],
     [ "integral_constant< etl::size_t, I >", "structetl_1_1integral__constant.html", [
       [ "extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ]
+    ] ],
+    [ "integral_constant< etl::size_t, index_of_v< T, list< Tail... > >+1 >", "structetl_1_1integral__constant.html", [
+      [ "index_of< T, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01T_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, sizeof...(Ts)>", "structetl_1_1integral__constant.html", [
       [ "variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
