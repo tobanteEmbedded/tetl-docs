@@ -1,9 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"layout__transpose_8hpp.html":[12,0,1,0,35,15],
-"layout__transpose_8hpp_source.html":[12,0,1,0,35,15],
-"lcm_8hpp.html":[12,0,1,0,44,7],
-"lcm_8hpp_source.html":[12,0,1,0,44,7],
 "ldiv_8hpp.html":[12,0,1,0,19,8],
 "ldiv_8hpp.html#a817f60653f2167239f303e63ec82d4d8":[12,0,1,0,19,8,2],
 "ldiv_8hpp.html#afe969af8a9f77fea0bb9e0d7a82c5b3f":[12,0,1,0,19,8,1],
@@ -171,11 +167,11 @@ var NAVTREEINDEX11 =
 "md_docs_2progress.html#autotoc_md36":[3,4],
 "md_docs_2progress.html#autotoc_md37":[3,5],
 "md_docs_2roadmap.html":[4],
-"md_docs_2roadmap.html#autotoc_md26":[4,0],
-"md_docs_2roadmap.html#autotoc_md27":[4,0,0],
-"md_docs_2roadmap.html#autotoc_md28":[4,1],
-"md_docs_2roadmap.html#autotoc_md29":[4,1,0],
-"md_docs_2roadmap.html#autotoc_md30":[4,1,1],
+"md_docs_2roadmap.html#autotoc_md25":[4,0],
+"md_docs_2roadmap.html#autotoc_md26":[4,0,0],
+"md_docs_2roadmap.html#autotoc_md27":[4,1],
+"md_docs_2roadmap.html#autotoc_md28":[4,1,0],
+"md_docs_2roadmap.html#autotoc_md29":[4,1,1],
 "mdarray_8hpp.html":[12,0,1,0,101],
 "mdarray_8hpp_source.html":[12,0,1,0,101],
 "mdspan_8hpp.html":[12,0,1,0,102],
@@ -249,5 +245,9 @@ var NAVTREEINDEX11 =
 "month__weekday__last_8hpp.html":[12,0,1,0,8,14],
 "month__weekday__last_8hpp_source.html":[12,0,1,0,8,14],
 "movable_8hpp.html":[12,0,1,0,13,20],
-"movable_8hpp_source.html":[12,0,1,0,13,20]
+"movable_8hpp_source.html":[12,0,1,0,13,20],
+"move__backward_8hpp.html":[12,0,1,0,0,47],
+"move__backward_8hpp_source.html":[12,0,1,0,0,47],
+"move__constructible_8hpp.html":[12,0,1,0,13,21],
+"move__constructible_8hpp_source.html":[12,0,1,0,13,21]
 };

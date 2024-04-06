@@ -9,7 +9,7 @@ var structetl_1_1variant =
     [ "emplace", "structetl_1_1variant.html#a1cd02ddb782a728b9c7341d4d9ce4cf5", null ],
     [ "emplace", "structetl_1_1variant.html#add24359b3b9248c42aa8846ad791683d", null ],
     [ "index", "structetl_1_1variant.html#a9e82596198858ba8f3ffe23c8699687b", null ],
-    [ "operator=", "structetl_1_1variant.html#aacbb48f259d6f2addd718c0c34fa2cb4", null ],
+    [ "operator=", "structetl_1_1variant.html#ac6732c09f6f530e0992f1e249830fd44", null ],
     [ "operator=", "structetl_1_1variant.html#a006d19ae51c1c07f12acdf69d683da3a", null ],
     [ "operator[]", "structetl_1_1variant.html#a79bce2d83a231f8b3526135ae2cef57b", null ],
     [ "operator[]", "structetl_1_1variant.html#a57d4919910eb210533a90895d4406d73", null ],

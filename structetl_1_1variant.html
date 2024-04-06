@@ -112,7 +112,7 @@ $(function(){initNavTree('structetl_1_1variant.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>The class template variant represents a type-safe union. An instance of variant at any given time either holds a value of one of its alternative types.  
+<p>The class template variant represents a type-safe union.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="__variant_2variant_8hpp_source.html">variant.hpp</a>&gt;</code></p>
@@ -149,10 +149,10 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 <tr class="memitem:a9e82596198858ba8f3ffe23c8699687b" id="r_a9e82596198858ba8f3ffe23c8699687b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e82596198858ba8f3ffe23c8699687b">index</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></td></tr>
 <tr class="memdesc:a9e82596198858ba8f3ffe23c8699687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the zero-based index of the alternative that is currently held by the variant. If the variant is valueless_by_exception, returns variant_npos.  <br /></td></tr>
 <tr class="separator:a9e82596198858ba8f3ffe23c8699687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbb48f259d6f2addd718c0c34fa2cb4" id="r_aacbb48f259d6f2addd718c0c34fa2cb4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; <br />
-requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1variant.html">variant</a>&gt; <a class="el" href="structetl_1_1bitset.html">and</a> (0 + ... + <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1bitset.html">Ts</a>&gt;) == 1)</td></tr>
-<tr class="memitem:aacbb48f259d6f2addd718c0c34fa2cb4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aacbb48f259d6f2addd718c0c34fa2cb4">operator=</a> (T &amp;&amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1variant.html">variant</a> &amp;</td></tr>
-<tr class="separator:aacbb48f259d6f2addd718c0c34fa2cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6732c09f6f530e0992f1e249830fd44" id="r_ac6732c09f6f530e0992f1e249830fd44"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; <br />
+requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1variant.html">variant</a>&gt; <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="namespaceetl_1_1meta.html#a600f8adca491196ab63f2b8ed64e61a5">etl::meta::count_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1meta_1_1list.html">etl::meta::list</a>&lt;Ts...&gt;&gt; == 1)</td></tr>
+<tr class="memitem:ac6732c09f6f530e0992f1e249830fd44"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac6732c09f6f530e0992f1e249830fd44">operator=</a> (T &amp;&amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1variant.html">variant</a> &amp;</td></tr>
+<tr class="separator:ac6732c09f6f530e0992f1e249830fd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a006d19ae51c1c07f12acdf69d683da3a" id="r_a006d19ae51c1c07f12acdf69d683da3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006d19ae51c1c07f12acdf69d683da3a">operator=</a> (<a class="el" href="structetl_1_1variant.html">variant</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1variant.html">variant</a> &amp;</td></tr>
 <tr class="separator:a006d19ae51c1c07f12acdf69d683da3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79bce2d83a231f8b3526135ae2cef57b" id="r_a79bce2d83a231f8b3526135ae2cef57b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> I&gt; </td></tr>
@@ -198,7 +198,9 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Types&gt;<br />
-struct etl::variant&lt; Types &gt;</div><p>The class template variant represents a type-safe union. An instance of variant at any given time either holds a value of one of its alternative types. </p>
+struct etl::variant&lt; Types &gt;</div><p>The class template variant represents a type-safe union. </p>
+<p>An instance of variant at any given time either holds a value of one of its alternative types.</p>
+<dl class="section warning"><dt>Warning</dt><dd>All types need to be nothrow move constructible. This avoids the need for valueless_by_exception. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e9a581981366f01dcde16d298be2655" name="a9e9a581981366f01dcde16d298be2655"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e9a581981366f01dcde16d298be2655">&#9670;&#160;</a></span>variant() <span class="overload">[1/4]</span></h2>
@@ -482,8 +484,8 @@ template&lt;typename... Types&gt; </div>
 
 </div>
 </div>
-<a id="aacbb48f259d6f2addd718c0c34fa2cb4" name="aacbb48f259d6f2addd718c0c34fa2cb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacbb48f259d6f2addd718c0c34fa2cb4">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="ac6732c09f6f530e0992f1e249830fd44" name="ac6732c09f6f530e0992f1e249830fd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6732c09f6f530e0992f1e249830fd44">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,7 +493,7 @@ template&lt;typename... Types&gt; </div>
 template&lt;typename... Types&gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; <br />
-requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1variant.html">variant</a>&gt; <a class="el" href="structetl_1_1bitset.html">and</a> (0 + ... + <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1bitset.html">Ts</a>&gt;) == 1)</div>
+requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1variant.html">variant</a>&gt; <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="namespaceetl_1_1meta.html#a600f8adca491196ab63f2b8ed64e61a5">etl::meta::count_v</a>&lt;<a class="el" href="namespaceetl.html#a2d55d5d88d171bb347117b67a8741b65">etl::remove_cvref_t</a>&lt;T&gt;, <a class="el" href="structetl_1_1meta_1_1list.html">etl::meta::list</a>&lt;Ts...&gt;&gt; == 1)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -946,7 +948,7 @@ template&lt;typename... Types&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1variant.html">variant</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 03:49:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 04:35:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

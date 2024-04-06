@@ -1,5 +1,7 @@
 var variant__fwd_8hpp =
 [
+    [ "get_if", "variant__fwd_8hpp.html#a8533ab84ad3bca58b10fe76177e3c3b0", null ],
+    [ "get_if", "variant__fwd_8hpp.html#a452591d2182a2f153c6d9cf9c6951007", null ],
     [ "get_if", "variant__fwd_8hpp.html#ade109c386a760b9572261c6afe7dbdf8", null ],
     [ "get_if", "variant__fwd_8hpp.html#ade2d2fedb0567e3c7742e87fd799b82c", null ],
     [ "unchecked_get", "variant__fwd_8hpp.html#aab304b469a80b085a06f00b3500925f1", null ],

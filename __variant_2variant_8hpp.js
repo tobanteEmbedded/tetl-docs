@@ -1,10 +1,6 @@
 var __variant_2variant_8hpp =
 [
     [ "variant< Types >", "structetl_1_1variant.html", "structetl_1_1variant" ],
-    [ "get", "__variant_2variant_8hpp.html#a7dc3bfdddd4c9eb6b16837669c20bcf9", null ],
-    [ "get", "__variant_2variant_8hpp.html#a6f52b9d8c7ffe776affe797a23d8e891", null ],
-    [ "get", "__variant_2variant_8hpp.html#af3a1d9307c3f9941d2b8a832e99f1545", null ],
-    [ "get", "__variant_2variant_8hpp.html#a037eb5fb1f902ba9d35e91b47d543769", null ],
     [ "get_if", "__variant_2variant_8hpp.html#a0f2481ba64051d1ccdbcef2661bdd51e", null ],
     [ "get_if", "__variant_2variant_8hpp.html#af4f5dc629dca8570d215cdbae7b9b5b6", null ],
     [ "holds_alternative", "__variant_2variant_8hpp.html#ab330d47780e2692b931342bfaefe1223", null ],
