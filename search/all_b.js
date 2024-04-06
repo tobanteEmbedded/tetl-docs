@@ -56,7 +56,7 @@ var searchData=
   ['header_2emd_53',['header.md',['../header_8md.html',1,'']]],
   ['hecto_54',['hecto',['../namespaceetl.html#aee06e415331cdede5a5e81a37ae91014',1,'etl']]],
   ['hex_55',['hex',['../namespaceetl.html#abc55212e09044ea8a258cd3a53d90ddeab8d1b43eae73587ba56baef574709ecb',1,'etl']]],
-  ['holds_5falternative_56',['holds_alternative',['../namespaceetl.html#ab330d47780e2692b931342bfaefe1223',1,'etl']]],
+  ['holds_5falternative_56',['holds_alternative',['../structetl_1_1variant2.html#a0389768bec735050cb22996becca33e6',1,'etl::variant2::holds_alternative()'],['../namespaceetl.html#ab330d47780e2692b931342bfaefe1223',1,'etl::holds_alternative(variant&lt; Ts... &gt; const &amp;v) noexcept -&gt; bool']]],
   ['host_5funreachable_57',['host_unreachable',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243afe2377fbd16d7f335474e1df7d6376bf',1,'etl']]],
   ['hosted_58',['hosted',['../namespaceetl.html#a6a5c92ae723acdba8ce0f48be8530154a734d3030ff72ad8d9678efa82b1db7d2',1,'etl']]],
   ['hosted_59',['Hosted',['../index.html#autotoc_md14',1,'']]],
