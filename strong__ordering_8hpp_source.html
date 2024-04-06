@@ -221,20 +221,23 @@ $(function(){initNavTree('strong__ordering_8hpp_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_struct" href="structetl_1_1strong__ordering.html">strong_ordering</a>(detail::order_result <a class="code hl_struct" href="structetl_1_1bitset.html">v</a>) noexcept : _value{<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a52ed057e79c7de5d1451928e10dcf46d">int8_t</a><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">v</a>)} { }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_typedef" href="namespaceetl.html#a52ed057e79c7de5d1451928e10dcf46d">int8_t</a> _value;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
-</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_struct" href="structetl_1_1strong__ordering.html">strong_ordering</a>(detail::order_result <a class="code hl_struct" href="structetl_1_1bitset.html">v</a>) noexcept</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        : _value{<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a52ed057e79c7de5d1451928e10dcf46d">int8_t</a><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">v</a>)}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a4f35fb8431668cc82fcb560d434edf9c">strong_ordering::less</a>{detail::order_result::less};</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a8c1fa03bb85b64b61205c5414deb3d9c">strong_ordering::equal</a>{detail::order_result::equal};</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a81eefbc93e7ff33d6a41dc0d1f3d2398">strong_ordering::equivalent</a>{detail::order_result::equal};</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a72c1d40535ad6c4444f2c654684df713">strong_ordering::greater</a>{detail::order_result::greater};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">// TETL_COMPARE_STRONG_ORDERING_HPP</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_typedef" href="namespaceetl.html#a52ed057e79c7de5d1451928e10dcf46d">int8_t</a> _value;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a4f35fb8431668cc82fcb560d434edf9c">strong_ordering::less</a>{detail::order_result::less};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a8c1fa03bb85b64b61205c5414deb3d9c">strong_ordering::equal</a>{detail::order_result::equal};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a81eefbc93e7ff33d6a41dc0d1f3d2398">strong_ordering::equivalent</a>{detail::order_result::equal};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> strong_ordering <a class="code hl_variable" href="structetl_1_1strong__ordering.html#a72c1d40535ad6c4444f2c654684df713">strong_ordering::greater</a>{detail::order_result::greater};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">// TETL_COMPARE_STRONG_ORDERING_HPP</span></div>
 <div class="ttc" id="adetail_8hpp_html"><div class="ttname"><a href="detail_8hpp.html">detail.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a52ed057e79c7de5d1451928e10dcf46d"><div class="ttname"><a href="namespaceetl.html#a52ed057e79c7de5d1451928e10dcf46d">etl::int8_t</a></div><div class="ttdeci">TETL_BUILTIN_INT8 int8_t</div><div class="ttdoc">Signed integer type with width of exactly 8 bits.</div><div class="ttdef"><b>Definition</b> int_t.hpp:11</div></div>
@@ -274,7 +277,7 @@ $(function(){initNavTree('strong__ordering_8hpp_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_cb9cea40886eb4134161c1018de4b930.html">_compare</a></li><li class="navelem"><a class="el" href="strong__ordering_8hpp.html">strong_ordering.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 13:47:40 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 14:22:38 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

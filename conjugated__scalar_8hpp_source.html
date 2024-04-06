@@ -128,21 +128,24 @@ $(function(){initNavTree('conjugated__scalar_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">struct </span>conjugated_scalar : proxy_reference&lt;Reference, ReferenceValue, conjugated_scalar&lt;Reference, ReferenceValue&gt;&gt; {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">using </span>value_type = <span class="keyword">decltype</span>(conj_if_needed(ReferenceValue(declval&lt;Reference&gt;())));</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> conjugated_scalar(Reference reference) : base_type(reference) { }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> to_value(Reference reference)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> conj_if_needed(ReferenceValue(reference));</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">using </span>my_type   = conjugated_scalar&lt;Reference, ReferenceValue&gt;;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">using </span>base_type = proxy_reference&lt;Reference, ReferenceValue, my_type&gt;;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// namespace etl::linalg::detail</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_CONJUGATED_SCALAR_HPP</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> conjugated_scalar(Reference reference)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        : base_type(reference)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> to_value(Reference reference)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> conj_if_needed(ReferenceValue(reference));</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">using </span>my_type   = conjugated_scalar&lt;Reference, ReferenceValue&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">using </span>base_type = proxy_reference&lt;Reference, ReferenceValue, my_type&gt;;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <span class="comment">// namespace etl::linalg::detail</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_CONJUGATED_SCALAR_HPP</span></div>
 <div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="aproxy__reference_8hpp_html"><div class="ttname"><a href="proxy__reference_8hpp.html">proxy_reference.hpp</a></div></div>
@@ -153,7 +156,7 @@ $(function(){initNavTree('conjugated__scalar_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="conjugated__scalar_8hpp.html">conjugated_scalar.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 13:47:40 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 14:22:38 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

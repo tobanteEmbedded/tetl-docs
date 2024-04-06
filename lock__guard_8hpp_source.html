@@ -121,23 +121,34 @@ $(function(){initNavTree('lock__guard_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">MutexT</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">   21</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">lock_guard</a>(<a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; m) : _mutex{m} { _mutex.lock(); }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">   23</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">lock_guard</a>(<a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; m, <a class="code hl_struct" href="structetl_1_1adopt__lock__t.html">adopt_lock_t</a> <span class="comment">/*tag*/</span>) : _mutex{m} { }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">   25</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">~lock_guard</a>() { _mutex.unlock(); }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a90cd9182505442e3e6059eaac6eec4dc">   27</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#a90cd9182505442e3e6059eaac6eec4dc">lock_guard</a>(<a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> <span class="keyword">const</span>&amp;)                    = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">   28</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">operator=</a>(<a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> <span class="keyword">const</span>&amp;) -&gt; <a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a>&amp; = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; _mutex;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">   21</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">lock_guard</a>(<a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; m)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        : _mutex{m}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        _mutex.lock();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">   27</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">lock_guard</a>(<a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; m, <a class="code hl_struct" href="structetl_1_1adopt__lock__t.html">adopt_lock_t</a> <span class="comment">/*tag*/</span>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        : _mutex{m}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">   32</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">~lock_guard</a>() { _mutex.unlock(); }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MUTEX_LOCK_GUARD_HPP</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a90cd9182505442e3e6059eaac6eec4dc">   34</a></span>    <a class="code hl_function" href="structetl_1_1lock__guard.html#a90cd9182505442e3e6059eaac6eec4dc">lock_guard</a>(<a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> <span class="keyword">const</span>&amp;)                    = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">   35</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">operator=</a>(<a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> <span class="keyword">const</span>&amp;) -&gt; <a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a>&amp; = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; _mutex;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MUTEX_LOCK_GUARD_HPP</span></div>
 <div class="ttc" id="a__mutex_2tags_8hpp_html"><div class="ttname"><a href="__mutex_2tags_8hpp.html">tags.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="astructetl_1_1adopt__lock__t_html"><div class="ttname"><a href="structetl_1_1adopt__lock__t.html">etl::adopt_lock_t</a></div><div class="ttdoc">Empty struct tag types used to specify locking strategy for etl::lock_guard, etl::scoped_lock,...</div><div class="ttdef"><b>Definition</b> tags.hpp:41</div></div>
@@ -147,15 +158,15 @@ $(function(){initNavTree('lock__guard_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="astructetl_1_1lock__guard_html_a7b61680ee1d9665b28473e2efa027757"><div class="ttname"><a href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">etl::lock_guard::operator=</a></div><div class="ttdeci">auto operator=(lock_guard const &amp;) -&gt; lock_guard &amp;=delete</div></div>
 <div class="ttc" id="astructetl_1_1lock__guard_html_a8eb885a4b8e103182d867442c5e4ea8f"><div class="ttname"><a href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">etl::lock_guard::mutex_type</a></div><div class="ttdeci">MutexT mutex_type</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1lock__guard_html_a90cd9182505442e3e6059eaac6eec4dc"><div class="ttname"><a href="structetl_1_1lock__guard.html#a90cd9182505442e3e6059eaac6eec4dc">etl::lock_guard::lock_guard</a></div><div class="ttdeci">lock_guard(lock_guard const &amp;)=delete</div></div>
-<div class="ttc" id="astructetl_1_1lock__guard_html_aa54999fb933a139807d39ed05e97aa6d"><div class="ttname"><a href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">etl::lock_guard::~lock_guard</a></div><div class="ttdeci">~lock_guard()</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:25</div></div>
-<div class="ttc" id="astructetl_1_1lock__guard_html_aeca056a578e1ac3d8dc8daa54fd896a7"><div class="ttname"><a href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">etl::lock_guard::lock_guard</a></div><div class="ttdeci">lock_guard(mutex_type &amp;m, adopt_lock_t)</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:23</div></div>
+<div class="ttc" id="astructetl_1_1lock__guard_html_aa54999fb933a139807d39ed05e97aa6d"><div class="ttname"><a href="structetl_1_1lock__guard.html#aa54999fb933a139807d39ed05e97aa6d">etl::lock_guard::~lock_guard</a></div><div class="ttdeci">~lock_guard()</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:32</div></div>
+<div class="ttc" id="astructetl_1_1lock__guard_html_aeca056a578e1ac3d8dc8daa54fd896a7"><div class="ttname"><a href="structetl_1_1lock__guard.html#aeca056a578e1ac3d8dc8daa54fd896a7">etl::lock_guard::lock_guard</a></div><div class="ttdeci">lock_guard(mutex_type &amp;m, adopt_lock_t)</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_b2f01d8ecfbee1e3e8680c705c85a3d8.html">_mutex</a></li><li class="navelem"><a class="el" href="lock__guard_8hpp.html">lock_guard.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 13:47:40 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 14:22:38 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
