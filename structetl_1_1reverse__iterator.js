@@ -1,6 +1,7 @@
 var structetl_1_1reverse__iterator =
 [
     [ "difference_type", "structetl_1_1reverse__iterator.html#abc7b5425cfd372e23d97496c3ef943f7", null ],
+    [ "iterator_category", "structetl_1_1reverse__iterator.html#a2f9eb1a17efbc9fc559d9110f9c6fa03", null ],
     [ "iterator_type", "structetl_1_1reverse__iterator.html#a8a5365dd9f0b716713659acb9987a9d3", null ],
     [ "pointer", "structetl_1_1reverse__iterator.html#a0b64cf4405f07fb40b119968439843e1", null ],
     [ "reference", "structetl_1_1reverse__iterator.html#ae0e65f63d5169a214802c1779c1bc9c6", null ],

@@ -42,7 +42,7 @@ var structetl_1_1flat__set =
     [ "erase", "structetl_1_1flat__set.html#a15d278248cde7204e502e0ebf76b85e8", null ],
     [ "erase", "structetl_1_1flat__set.html#ae940c87f7eb77b34a29b8113cd36a6d6", null ],
     [ "erase", "structetl_1_1flat__set.html#a22dff65c7f70f6f8913b08edeba8e3dd", null ],
-    [ "erase", "structetl_1_1flat__set.html#a1952886007938c207bd37d4363bd3988", null ],
+    [ "erase", "structetl_1_1flat__set.html#a0537a2539f526cef285946657d1df26f", null ],
     [ "extract", "structetl_1_1flat__set.html#ae01829c50f19436937966350ce7e0052", null ],
     [ "find", "structetl_1_1flat__set.html#af06af3eba7aed32c0041f2c95f9558c2", null ],
     [ "find", "structetl_1_1flat__set.html#abcbe76186f8cc52bf9a21e259d680e23", null ],

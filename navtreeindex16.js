@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"namespaceetl_1_1placeholders.html#a1e09361776f90555d8f975b082a69c74":[9,0,0,9,16],
+"namespaceetl_1_1placeholders.html#a1e10ffb5e538585265e5e195a83b0fa1":[9,0,0,9,0],
 "namespaceetl_1_1placeholders.html#a24c0d513b4952da551706acf00f1ac03":[9,0,0,9,18],
 "namespaceetl_1_1placeholders.html#a4789ecf3cbb24709e3948e97e66a48e5":[9,0,0,9,24],
 "namespaceetl_1_1placeholders.html#a568b4db357350e6538958a7186712f2d":[9,0,0,9,2],
@@ -80,8 +82,8 @@ var NAVTREEINDEX16 =
 "namespacemembers_type.html":[9,1,3],
 "namespacemembers_u.html":[9,1,0,20],
 "namespacemembers_v.html":[9,1,0,21],
-"namespacemembers_vars.html":[9,1,2,0],
 "namespacemembers_vars.html":[9,1,2],
+"namespacemembers_vars.html":[9,1,2,0],
 "namespacemembers_vars_a.html":[9,1,2,1],
 "namespacemembers_vars_b.html":[9,1,2,2],
 "namespacemembers_vars_c.html":[9,1,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "pointer__like__traits_8hpp_source.html":[12,0,1,0,39,13],
 "pointer__traits_8hpp.html":[12,0,1,0,39,14],
 "pointer__traits_8hpp_source.html":[12,0,1,0,39,14],
-"polar_8hpp.html":[12,0,1,0,12,10],
-"polar_8hpp_source.html":[12,0,1,0,12,10],
-"popcount_8hpp.html":[12,0,1,0,2,13]
+"polar_8hpp.html":[12,0,1,0,12,10]
 };

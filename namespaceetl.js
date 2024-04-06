@@ -1019,6 +1019,7 @@ var namespaceetl =
     [ "erase", "namespaceetl.html#add6036904dcb2247ec2dbf4bc784d460", null ],
     [ "erase", "namespaceetl.html#ab2e72fc74a7231310049a5cb0790c765", null ],
     [ "erase_if", "namespaceetl.html#a713c02c496b3a3e3d246868add007065", null ],
+    [ "erase_if", "namespaceetl.html#ad89568833148c25f186a180cef490087", null ],
     [ "erase_if", "namespaceetl.html#a9ae66b21dd10f996a2782e6e8b604593", null ],
     [ "erf", "group__cmath.html#ga13bbf02499fb50c7f713c884e7519cd6", null ],
     [ "erf", "group__cmath.html#ga1181784239ab4a4d91bbb09c6e136260", null ],
