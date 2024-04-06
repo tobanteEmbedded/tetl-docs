@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"layout__transpose_8hpp.html":[12,0,1,0,35,15],
-"layout__transpose_8hpp_source.html":[12,0,1,0,35,15],
 "lcm_8hpp.html":[12,0,1,0,44,7],
 "lcm_8hpp_source.html":[12,0,1,0,44,7],
 "ldiv_8hpp.html":[12,0,1,0,19,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "month__weekday__last_8hpp.html":[12,0,1,0,8,14],
 "month__weekday__last_8hpp_source.html":[12,0,1,0,8,14],
 "movable_8hpp.html":[12,0,1,0,13,20],
-"movable_8hpp_source.html":[12,0,1,0,13,20]
+"movable_8hpp_source.html":[12,0,1,0,13,20],
+"move__backward_8hpp.html":[12,0,1,0,0,47],
+"move__backward_8hpp_source.html":[12,0,1,0,0,47]
 };

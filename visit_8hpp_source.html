@@ -260,14 +260,16 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> F, <span class="keyword">typename</span>... Vs&gt;</div>
-<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">  167</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">visit</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">F</a>&amp;&amp; f, <a class="code hl_struct" href="structetl_1_1bitset.html">Vs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (((etl::detail::variant_size&lt;Vs&gt;() == 1) <a class="code hl_struct" href="structetl_1_1bitset.html">and</a> ...)) {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordflow">return</span> f(etl::detail::get&lt;0&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>))...);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> F, <span class="keyword">typename</span>... Vs&gt;</div>
+<div class="foldopen" id="foldopen00165" data-start="{" data-end="}">
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">  165</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">visit_with_index</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">F</a>&amp;&amp; f, <a class="code hl_struct" href="structetl_1_1bitset.html">Vs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>{</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (((etl::detail::variant_size&lt;Vs&gt;() == 1) <a class="code hl_struct" href="structetl_1_1bitset.html">and</a> ...)) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">return</span> f(etl::detail::indexed_value&lt;<span class="keyword">decltype</span>(etl::detail::get&lt;0&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>))), 0&gt;(</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            etl::detail::get&lt;0&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>))</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        )...);</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span> etl::detail::visit(</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span> etl::detail::visit_with_index(</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence</a>&lt;etl::detail::zero&lt;Vs&gt;...&gt;{},</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence&lt;etl::detail::variant_size&lt;Vs&gt;</a>()...&gt;{},</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;F&gt;</a>(f),</div>
@@ -277,36 +279,28 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
 </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1bitset.html">F</a>, <span class="keyword">typename</span>... <a class="code hl_struct" href="structetl_1_1bitset.html">Vs</a>&gt;</div>
-<div class="foldopen" id="foldopen00194" data-start="{" data-end="}">
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">  194</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">visit_with_index</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">F</a>&amp;&amp; f, <a class="code hl_struct" href="structetl_1_1bitset.html">Vs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (((etl::detail::variant_size&lt;Vs&gt;() == 1) <a class="code hl_struct" href="structetl_1_1bitset.html">and</a> ...)) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span> f(etl::detail::indexed_value&lt;<span class="keyword">decltype</span>(etl::detail::get&lt;0&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>))), 0&gt;(</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            etl::detail::get&lt;0&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>))</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        )...);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">return</span> etl::detail::visit_with_index(</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence</a>&lt;etl::detail::zero&lt;Vs&gt;...&gt;{},</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::index_sequence&lt;etl::detail::variant_size&lt;Vs&gt;</a>()...&gt;{},</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;F&gt;</a>(f),</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)...</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        );</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> F, <span class="keyword">typename</span>... Vs&gt;</div>
+<div class="foldopen" id="foldopen00192" data-start="{" data-end="}">
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">  192</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">visit</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">F</a>&amp;&amp; f, <a class="code hl_struct" href="structetl_1_1bitset.html">Vs</a>&amp;&amp;... <a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>{</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">etl::visit_with_index</a>([&amp;](<span class="keyword">auto</span>... <a class="code hl_struct" href="structetl_1_1bitset.html">parameter</a>) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;F&gt;</a>(f)(<a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">parameter</a>).value()...);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;Vs&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">vs</a>)...);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#endif </span><span class="comment">// TETL_VARIANT_VISIT_HPP</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif </span><span class="comment">// TETL_VARIANT_VISIT_HPP</span></div>
 <div class="ttc" id="a__tuple_2tuple_8hpp_html"><div class="ttname"><a href="__tuple_2tuple_8hpp.html">tuple.hpp</a></div></div>
 <div class="ttc" id="aadd__rvalue__reference_8hpp_html"><div class="ttname"><a href="add__rvalue__reference_8hpp.html">add_rvalue_reference.hpp</a></div></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="aconditional_8hpp_html"><div class="ttname"><a href="conditional_8hpp.html">conditional.hpp</a></div></div>
 <div class="ttc" id="adecay_8hpp_html"><div class="ttname"><a href="decay_8hpp.html">decay.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
-<div class="ttc" id="agroup__variant_html_ga2f45e7a98a49bac4a0e8006a9c784f8a"><div class="ttname"><a href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">etl::variant2::visit</a></div><div class="ttdeci">constexpr auto visit(F &amp;&amp;f, Vs &amp;&amp;... vs)</div><div class="ttdoc">Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...</div><div class="ttdef"><b>Definition</b> visit.hpp:167</div></div>
-<div class="ttc" id="agroup__variant_html_gadc0c6481c2192cc80ab2f7b38c248ed5"><div class="ttname"><a href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">etl::variant2::visit_with_index</a></div><div class="ttdeci">constexpr auto visit_with_index(F &amp;&amp;f, Vs &amp;&amp;... vs)</div><div class="ttdoc">Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...</div><div class="ttdef"><b>Definition</b> visit.hpp:194</div></div>
+<div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
+<div class="ttc" id="agroup__variant_html_ga2f45e7a98a49bac4a0e8006a9c784f8a"><div class="ttname"><a href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">etl::visit</a></div><div class="ttdeci">constexpr auto visit(F &amp;&amp;f, Vs &amp;&amp;... vs)</div><div class="ttdoc">Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...</div><div class="ttdef"><b>Definition</b> visit.hpp:192</div></div>
+<div class="ttc" id="agroup__variant_html_gadc0c6481c2192cc80ab2f7b38c248ed5"><div class="ttname"><a href="group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5">etl::visit_with_index</a></div><div class="ttdeci">constexpr auto visit_with_index(F &amp;&amp;f, Vs &amp;&amp;... vs)</div><div class="ttdoc">Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...</div><div class="ttdef"><b>Definition</b> visit.hpp:165</div></div>
 <div class="ttc" id="aindex__sequence_8hpp_html"><div class="ttname"><a href="index__sequence_8hpp.html">index_sequence.hpp</a></div></div>
 <div class="ttc" id="ais__lvalue__reference_8hpp_html"><div class="ttname"><a href="is__lvalue__reference_8hpp.html">is_lvalue_reference.hpp</a></div></div>
 <div class="ttc" id="ais__reference_8hpp_html"><div class="ttname"><a href="is__reference_8hpp.html">is_reference.hpp</a></div></div>
@@ -331,7 +325,7 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_22f95e725ac636237aa807414a1d3bfe.html">_variant</a></li><li class="navelem"><a class="el" href="visit_8hpp.html">visit.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 09:32:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 10:00:03 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

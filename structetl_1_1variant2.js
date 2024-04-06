@@ -22,7 +22,5 @@ var structetl_1_1variant2 =
     [ "unchecked_get", "structetl_1_1variant2.html#aab304b469a80b085a06f00b3500925f1", null ],
     [ "unchecked_get", "structetl_1_1variant2.html#a78ab593d0e7f5e1e82da5a98d921d487", null ],
     [ "unchecked_get", "structetl_1_1variant2.html#abac24a4d3cd8d624ac5ff2bc055f2e85", null ],
-    [ "unchecked_get", "structetl_1_1variant2.html#abff941f61a7e71248259c33337096242", null ],
-    [ "visit", "group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a", null ],
-    [ "visit_with_index", "group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5", null ]
+    [ "unchecked_get", "structetl_1_1variant2.html#abff941f61a7e71248259c33337096242", null ]
 ];
