@@ -1708,6 +1708,7 @@ var namespaceetl =
     [ "upper_bound", "group__algorithm.html#gad3130ebfc35a09b9488d205269fdac86", null ],
     [ "vformat_to", "namespaceetl.html#a08c2340a69881856d04c55c19bb5c291", null ],
     [ "visit", "group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a", null ],
+    [ "visit_with_index", "group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5", null ],
     [ "wcscat", "namespaceetl.html#a95b81f8645cb1474f15eb0afc8297a82", null ],
     [ "wcschr", "namespaceetl.html#a48742a27f06adaa943c923168958fffd", null ],
     [ "wcschr", "namespaceetl.html#afa8528d93a4e282441b93ef41355de51", null ],

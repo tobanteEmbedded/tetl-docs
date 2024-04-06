@@ -132,6 +132,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga2f45e7a98a49bac4a0e8006a9c784f8a">visit</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f, <a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">vs</a>)</td></tr>
 <tr class="memdesc:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars.  <br /></td></tr>
 <tr class="separator:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc0c6481c2192cc80ab2f7b38c248ed5" id="r_gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </td></tr>
+<tr class="memitem:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gadc0c6481c2192cc80ab2f7b38c248ed5">visit_with_index</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f, <a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">vs</a>)</td></tr>
+<tr class="memdesc:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars.  <br /></td></tr>
+<tr class="separator:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc0c6481c2192cc80ab2f7b38c248ed5" id="r_gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </td></tr>
+<tr class="memitem:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gadc0c6481c2192cc80ab2f7b38c248ed5">visit_with_index</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f, <a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">vs</a>)</td></tr>
+<tr class="memdesc:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars.  <br /></td></tr>
+<tr class="separator:gadc0c6481c2192cc80ab2f7b38c248ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p><a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a> class template </p>
@@ -168,7 +176,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars. </p>
-<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>. It is unspecified whether other argument types, e.g. a class derived from a <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>, are supported.</p>
+<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>.</p>
 <ul>
 <li>Copied from <a href="https://github.com/rollbear/visit">https://github.com/rollbear/visit</a></li>
 <li><a href="https://github.com/rollbear/visit/blob/master/LICENSE.txt">https://github.com/rollbear/visit/blob/master/LICENSE.txt</a> </li>
@@ -206,10 +214,86 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars. </p>
-<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>. It is unspecified whether other argument types, e.g. a class derived from a <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>, are supported.</p>
+<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>.</p>
 <ul>
 <li>Copied from <a href="https://github.com/rollbear/visit">https://github.com/rollbear/visit</a></li>
 <li><a href="https://github.com/rollbear/visit/blob/master/LICENSE.txt">https://github.com/rollbear/visit/blob/master/LICENSE.txt</a> </li>
+</ul>
+
+</div>
+</div>
+<a id="gadc0c6481c2192cc80ab2f7b38c248ed5" name="gadc0c6481c2192cc80ab2f7b38c248ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0c6481c2192cc80ab2f7b38c248ed5">&#9670;&#160;</a></span>visit_with_index() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> visit_with_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>vs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars. </p>
+<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>.</p>
+<ul>
+<li>Access index as <code>v.index</code></li>
+<li>Access value as <code>v.value()</code> </li>
+</ul>
+
+</div>
+</div>
+<a id="gadc0c6481c2192cc80ab2f7b38c248ed5" name="gadc0c6481c2192cc80ab2f7b38c248ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0c6481c2192cc80ab2f7b38c248ed5">&#9670;&#160;</a></span>visit_with_index() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> visit_with_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>vs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars. </p>
+<p>Every type in <a class="el" href="namespaceetl.html#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>.</p>
+<ul>
+<li>Access index as <code>v.index</code></li>
+<li>Access value as <code>v.value()</code> </li>
 </ul>
 
 </div>
@@ -219,7 +303,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 6 2024 08:25:47 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 09:13:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
