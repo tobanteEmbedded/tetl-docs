@@ -13,6 +13,10 @@ var structetl_1_1variant =
     [ "index", "structetl_1_1variant.html#a9e82596198858ba8f3ffe23c8699687b", null ],
     [ "operator=", "structetl_1_1variant.html#aacbb48f259d6f2addd718c0c34fa2cb4", null ],
     [ "operator=", "structetl_1_1variant.html#a006d19ae51c1c07f12acdf69d683da3a", null ],
+    [ "operator[]", "structetl_1_1variant.html#a79bce2d83a231f8b3526135ae2cef57b", null ],
+    [ "operator[]", "structetl_1_1variant.html#a57d4919910eb210533a90895d4406d73", null ],
+    [ "operator[]", "structetl_1_1variant.html#a65fa5b463833d6da4e5f9ed8e831cf26", null ],
+    [ "operator[]", "structetl_1_1variant.html#adb91754c1becfde4ccdc351533a007bb", null ],
     [ "swap", "structetl_1_1variant.html#a14bd3b64ae9ac9c2a42b704d5f3fb99b", null ],
     [ "valueless_by_exception", "structetl_1_1variant.html#a1c75063c3da286f71df7ed6049f118d1", null ]
 ];

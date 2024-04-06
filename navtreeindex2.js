@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"basic__string__view_8hpp.html#a56d3249f7e27fcfa91639f72eb53dc75":[12,0,1,0,56,0,2],
 "basic__string__view_8hpp.html#a6911622913c358aa6c9a69533740656e":[12,0,1,0,56,0,7],
 "basic__string__view_8hpp.html#a7456ec6ff542660d9777cf19081a2cac":[12,0,1,0,56,0,15],
 "basic__string__view_8hpp.html#a767725b8e1034844aa4c3245f940832f":[12,0,1,0,56,0,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1builtin__signed__integer.html":[8,0,0,3],
 "conceptetl_1_1builtin__unsigned__integer.html":[8,0,0,4],
 "conceptetl_1_1common__reference__with.html":[8,0,0,5],
-"conceptetl_1_1common__with.html":[8,0,0,6]
+"conceptetl_1_1common__with.html":[8,0,0,6],
+"conceptetl_1_1constructible__from.html":[8,0,0,7]
 };

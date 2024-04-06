@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"float__round__style_8hpp.html#a3bdaf6c7e8a65859bf550443989c5a66a2378935a2849c4d049d5e5a01324e827":[12,0,1,0,34,1,0,1],
 "float__round__style_8hpp.html#a3bdaf6c7e8a65859bf550443989c5a66a33f65225750a8f3edc0b6601fa7bcd52":[12,0,1,0,34,1,0,3],
 "float__round__style_8hpp.html#a3bdaf6c7e8a65859bf550443989c5a66aae97e229f8502c244371d7f7e3105afc":[12,0,1,0,34,1,0,2],
 "float__round__style_8hpp.html#a3bdaf6c7e8a65859bf550443989c5a66ad9c511acb4735515f2402087641e9725":[12,0,1,0,34,1,0,4],
@@ -58,16 +57,16 @@ var NAVTREEINDEX5 =
 "function__ref_8hpp_source.html":[12,0,1,0,30,8],
 "functional_8hpp.html":[12,0,1,0,95],
 "functional_8hpp_source.html":[12,0,1,0,95],
-"functions.html":[11,3,0],
 "functions.html":[11,3,0,0],
+"functions.html":[11,3,0],
 "functions_a.html":[11,3,0,1],
 "functions_b.html":[11,3,0,2],
 "functions_c.html":[11,3,0,3],
 "functions_d.html":[11,3,0,4],
 "functions_e.html":[11,3,0,5],
 "functions_f.html":[11,3,0,6],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -107,8 +106,8 @@ var NAVTREEINDEX5 =
 "functions_rela.html":[11,3,4],
 "functions_s.html":[11,3,0,18],
 "functions_t.html":[11,3,0,19],
-"functions_type.html":[11,3,3],
 "functions_type.html":[11,3,3,0],
+"functions_type.html":[11,3,3],
 "functions_type_c.html":[11,3,3,1],
 "functions_type_d.html":[11,3,3,2],
 "functions_type_e.html":[11,3,3,3],
@@ -128,8 +127,8 @@ var NAVTREEINDEX5 =
 "functions_type_x.html":[11,3,3,17],
 "functions_u.html":[11,3,0,20],
 "functions_v.html":[11,3,0,21],
-"functions_vars.html":[11,3,2,0],
 "functions_vars.html":[11,3,2],
+"functions_vars.html":[11,3,2,0],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "group__algorithm.html#ga5c80d1254a7659943993cacc3498dc38":[8,10,0,102],
 "group__algorithm.html#ga5ef3395c26e44857cb21437ffbd285e7":[8,10,0,35],
 "group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa":[8,10,0,41],
-"group__algorithm.html#ga5f3eca1793f7f38aeb756464984eb194":[8,10,0,58]
+"group__algorithm.html#ga5f3eca1793f7f38aeb756464984eb194":[8,10,0,58],
+"group__algorithm.html#ga6643f5ca84c6579040caeeb9079e0c3a":[8,10,0,2]
 };
