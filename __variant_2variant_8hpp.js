@@ -1,6 +1,5 @@
 var __variant_2variant_8hpp =
 [
-    [ "variant< Types >", "structetl_1_1variant.html", "structetl_1_1variant" ],
     [ "get_if", "__variant_2variant_8hpp.html#a0f2481ba64051d1ccdbcef2661bdd51e", null ],
     [ "get_if", "__variant_2variant_8hpp.html#af4f5dc629dca8570d215cdbae7b9b5b6", null ],
     [ "holds_alternative", "__variant_2variant_8hpp.html#ab330d47780e2692b931342bfaefe1223", null ],

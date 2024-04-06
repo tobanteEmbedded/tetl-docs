@@ -5,7 +5,7 @@ var dir_22f95e725ac636237aa807414a1d3bfe =
     [ "overload.hpp", "overload_8hpp.html", "overload_8hpp" ],
     [ "variadic_union.hpp", "variadic__union_8hpp.html", "variadic__union_8hpp" ],
     [ "variant.hpp", "__variant_2variant_8hpp.html", "__variant_2variant_8hpp" ],
-    [ "variant2.hpp", "variant2_8hpp.html", "variant2_8hpp" ],
+    [ "variant2.hpp", "variant2_8hpp.html", null ],
     [ "variant_alternative.hpp", "variant__alternative_8hpp.html", "variant__alternative_8hpp" ],
     [ "variant_fwd.hpp", "variant__fwd_8hpp.html", "variant__fwd_8hpp" ],
     [ "variant_size.hpp", "variant__size_8hpp.html", "variant__size_8hpp" ],

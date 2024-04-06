@@ -201,7 +201,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a type of object to be thrown by etl::optional::value when accessing an optional object that does not contain a value.  <a href="structetl_1_1bad__optional__access.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1bad__variant__access.html">bad_variant_access</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1bad__variant__access.html" title="etl::bad_variant_access is the type of the exception thrown in the following situations: (1) etl::get...">etl::bad_variant_access</a> is the type of the exception thrown in the following situations: (1) etl::get(etl::variant) called with an index or type that does not match the currently active alternative. (2) <a class="el" href="#a2f45e7a98a49bac4a0e8006a9c784f8a" title="Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...">etl::visit</a> called to visit a variant that is valueless_by_exception  <a href="structetl_1_1bad__variant__access.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1bad__variant__access.html" title="etl::bad_variant_access is the type of the exception thrown in the following situations: (1) etl::get...">etl::bad_variant_access</a> is the type of the exception thrown in the following situations: (1) etl::get(etl::variant) called with an index or type that does not match the currently active alternative. (2) <a class="el" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a" title="Applies the visitor vis (Callable that can be called with any combination of types from variants) to ...">etl::visit</a> called to visit a variant that is valueless_by_exception  <a href="structetl_1_1bad__variant__access.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1basic__bitset.html">basic_bitset</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4629,10 +4629,10 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> same_as&lt;T, <a
 <tr class="memitem:a08c2340a69881856d04c55c19bb5c291" id="r_a08c2340a69881856d04c55c19bb5c291"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">OutputIt</a> &gt; </td></tr>
 <tr class="memitem:a08c2340a69881856d04c55c19bb5c291"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a08c2340a69881856d04c55c19bb5c291">vformat_to</a> (<a class="el" href="structetl_1_1bitset.html">OutputIt</a> out, <a class="el" href="#a6f7f02db9e66eaec8dccdca2f4e98a2f">string_view</a> <a class="el" href="structetl_1_1bitset.html">fmt</a>, <a class="el" href="#abd8c737296655b44480da4fb422add24">format_args</a> args) -&gt; <a class="el" href="structetl_1_1bitset.html">OutputIt</a></td></tr>
 <tr class="separator:a08c2340a69881856d04c55c19bb5c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f45e7a98a49bac4a0e8006a9c784f8a" id="r_a2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </td></tr>
-<tr class="memitem:a2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2f45e7a98a49bac4a0e8006a9c784f8a">visit</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f, <a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">vs</a>)</td></tr>
-<tr class="memdesc:a2f45e7a98a49bac4a0e8006a9c784f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars.  <br /></td></tr>
-<tr class="separator:a2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f45e7a98a49bac4a0e8006a9c784f8a" id="r_ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </td></tr>
+<tr class="memitem:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a">visit</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f, <a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">vs</a>)</td></tr>
+<tr class="memdesc:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars.  <br /></td></tr>
+<tr class="separator:ga2f45e7a98a49bac4a0e8006a9c784f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b81f8645cb1474f15eb0afc8297a82" id="r_a95b81f8645cb1474f15eb0afc8297a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95b81f8645cb1474f15eb0afc8297a82">wcscat</a> (<a class="el" href="structetl_1_1bitset.html">wchar_t</a> *<a class="el" href="structetl_1_1bitset.html">dest</a>, <a class="el" href="structetl_1_1bitset.html">wchar_t</a> <a class="el" href="structetl_1_1bitset.html">const</a> *<a class="el" href="structetl_1_1bitset.html">src</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">wchar_t</a> *</td></tr>
 <tr class="memdesc:a95b81f8645cb1474f15eb0afc8297a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a copy of the wide string pointed to by src to the end of the wide string pointed to by dest. The wide character src[0] replaces the null terminator at the end of dest. The resulting wide string is null-terminated.  <br /></td></tr>
 <tr class="separator:a95b81f8645cb1474f15eb0afc8297a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -16887,41 +16887,6 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 
 </div>
 </div>
-<a id="a2f45e7a98a49bac4a0e8006a9c784f8a" name="a2f45e7a98a49bac4a0e8006a9c784f8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f45e7a98a49bac4a0e8006a9c784f8a">&#9670;&#160;</a></span>visit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... Vs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> visit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Vs</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>vs</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the visitor vis (Callable that can be called with any combination of types from variants) to the variants vars. </p>
-<p>Every type in <a class="el" href="#a9319953b536fc8279d2a105b02d1a938">etl::remove_reference_t&lt;Variants&gt;</a>... may be a (possibly const-qualified) specialization of <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>. It is unspecified whether other argument types, e.g. a class derived from a <a class="el" href="structetl_1_1variant.html" title="The class template variant represents a type-safe union.">etl::variant</a>, are supported.</p>
-<p>Copied from <a href="https://github.com/rollbear/visit">https://github.com/rollbear/visit</a> <a href="https://github.com/rollbear/visit/blob/master/LICENSE.txt">https://github.com/rollbear/visit/blob/master/LICENSE.txt</a> </p>
-
-</div>
-</div>
 <a id="a95b81f8645cb1474f15eb0afc8297a82" name="a95b81f8645cb1474f15eb0afc8297a82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95b81f8645cb1474f15eb0afc8297a82">&#9670;&#160;</a></span>wcscat()</h2>
 
@@ -20271,7 +20236,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 04:35:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 6 2024 08:25:47 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
