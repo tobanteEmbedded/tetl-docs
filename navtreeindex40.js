@@ -1,13 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"weak__ordering_8hpp_source.html":[12,0,1,0,11,8],
-"weakly__equality__comparable__with_8hpp.html":[12,0,1,0,13,33],
-"weakly__equality__comparable__with_8hpp_source.html":[12,0,1,0,13,33],
-"weakly__incrementable_8hpp.html":[12,0,1,0,34,39],
-"weakly__incrementable_8hpp_source.html":[12,0,1,0,34,39],
-"weekday_8hpp.html":[12,0,1,0,8,20],
-"weekday_8hpp.html#a370e3ed562d125bf5fbcf7f88f6855ac":[12,0,1,0,8,20,2],
-"weekday_8hpp.html#a405e574eb88b8be81bf76527c94b1010":[12,0,1,0,8,20,6],
 "weekday_8hpp.html#a642823174f7bede34b33028f39b67b7a":[12,0,1,0,8,20,1],
 "weekday_8hpp.html#a76d578cfba3d04306c7ffda4511e38ea":[12,0,1,0,8,20,0],
 "weekday_8hpp.html#aa8d9eb8f05af61c6cd3c9ea6ece82712":[12,0,1,0,8,20,4],
