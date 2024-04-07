@@ -112,7 +112,7 @@ $(function(){initNavTree('wcscpy_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_CWCHAR_WCSCPY_HPP</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CWCHAR_WCSCPY_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="check_8hpp.html">etl/_contracts/check.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -121,16 +121,16 @@ $(function(){initNavTree('wcscpy_8hpp_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespaceetl.html#a9c6e17a8ddf3c4fbe89a15f971083a96">   19</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a9c6e17a8ddf3c4fbe89a15f971083a96">wcscpy</a>(<span class="keywordtype">wchar_t</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>) -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">src</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">src</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> detail::strcpy_impl(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CWCHAR_WCSCPY_HPP</span></div>
-<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
-<div class="ttc" id="aassert_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdef"><b>Definition</b> assert.hpp:79</div></div>
+<div class="ttc" id="acheck_8hpp_html"><div class="ttname"><a href="check_8hpp.html">check.hpp</a></div></div>
+<div class="ttc" id="acheck_8hpp_html_ac92901699a8c18f0024c6668eba14185"><div class="ttname"><a href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a></div><div class="ttdeci">#define TETL_PRECONDITION(...)</div><div class="ttdef"><b>Definition</b> check.hpp:11</div></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a9c6e17a8ddf3c4fbe89a15f971083a96"><div class="ttname"><a href="namespaceetl.html#a9c6e17a8ddf3c4fbe89a15f971083a96">etl::wcscpy</a></div><div class="ttdeci">constexpr auto wcscpy(wchar_t *dest, wchar_t const *src) -&gt; wchar_t *</div><div class="ttdoc">Copies the wide string pointed to by src (including the terminating null wide character) to wide char...</div><div class="ttdef"><b>Definition</b> wcscpy.hpp:19</div></div>
@@ -142,7 +142,7 @@ $(function(){initNavTree('wcscpy_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_654767f1f845a43cfb380e17dc7914ff.html">_cwchar</a></li><li class="navelem"><a class="el" href="wcscpy_8hpp.html">wcscpy.hpp</a></li>
-    <li class="footer">Generated on Sun Apr 7 2024 19:07:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 7 2024 22:55:12 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

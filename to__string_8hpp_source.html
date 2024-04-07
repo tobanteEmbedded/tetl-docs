@@ -108,10 +108,10 @@ $(function(){initNavTree('to__string_8hpp_source.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 <a href="to__string_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef TETL_STRING_TO_STRING_HPP</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define TETL_STRING_TO_STRING_HPP</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_STRING_TO_STRING_HPP</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_STRING_TO_STRING_HPP</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="static__string_8hpp.html">etl/_string/static_string.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="conversion_8hpp.html">etl/_strings/conversion.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
@@ -181,46 +181,13 @@ $(function(){initNavTree('to__string_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="namespaceetl.html#a47e864c1efccb08ca482ae4e47e01c66">   71</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ab437ae2f4b539e25a05115f96175a00e">to_string</a>(<span class="keywordtype">float</span> value) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::static_string&lt;Capacity&gt;</a></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(value);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
-</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespaceetl.html#afeefc6128abb677e96133e15926cd60a">   80</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ab437ae2f4b539e25a05115f96175a00e">to_string</a>(<span class="keywordtype">double</span> value) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::static_string&lt;Capacity&gt;</a></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(value);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
-</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">size_t</span> Capacity&gt;</div>
-<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="namespaceetl.html#a8b760f0d1dfec7f0dcdc9bcade7cd710">   89</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ab437ae2f4b539e25a05115f96175a00e">to_string</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> value) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::static_string&lt;Capacity&gt;</a></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(value);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
-</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRING_TO_STRING_HPP</span></div>
-<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
-<div class="ttc" id="aassert_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdef"><b>Definition</b> assert.hpp:79</div></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRING_TO_STRING_HPP</span></div>
 <div class="ttc" id="aconversion_8hpp_html"><div class="ttname"><a href="conversion_8hpp.html">conversion.hpp</a></div></div>
 <div class="ttc" id="agroup__iterator_html_gaeb088ae74a2ec53c8c206de329935df4"><div class="ttname"><a href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition</b> begin.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_ab437ae2f4b539e25a05115f96175a00e"><div class="ttname"><a href="namespaceetl.html#ab437ae2f4b539e25a05115f96175a00e">etl::to_string</a></div><div class="ttdeci">constexpr auto to_string(int value) noexcept -&gt; etl::static_string&lt; Capacity &gt;</div><div class="ttdoc">Converts a numeric value to etl::static_string.</div><div class="ttdef"><b>Definition</b> to_string.hpp:29</div></div>
-<div class="ttc" id="anamespaceetl_html_ad27e213c027bfb11ed648fb543842995"><div class="ttname"><a href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition</b> ignore_unused.hpp:17</div></div>
 <div class="ttc" id="astatic__string_8hpp_html"><div class="ttname"><a href="static__string_8hpp.html">static_string.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -229,7 +196,7 @@ $(function(){initNavTree('to__string_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_23439b223dadb75c0ae61ef08b8b58fb.html">_string</a></li><li class="navelem"><a class="el" href="to__string_8hpp.html">to_string.hpp</a></li>
-    <li class="footer">Generated on Sun Apr 7 2024 19:07:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 7 2024 22:55:13 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

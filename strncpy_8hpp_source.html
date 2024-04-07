@@ -112,7 +112,7 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_CSTRING_STRNCPY_HPP</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CSTRING_STRNCPY_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="check_8hpp.html">etl/_contracts/check.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -121,8 +121,8 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__cstring.html#ga50d78828452384f88828ac39373bdb7f">   24</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#ga50d78828452384f88828ac39373bdb7f">strncpy</a>(<span class="keywordtype">char</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <span class="keyword">const</span> <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>) -&gt; <span class="keywordtype">char</span>*</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">src</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">src</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> detail::strncpy_impl(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
@@ -130,8 +130,8 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_STRNCPY_HPP</span></div>
-<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
-<div class="ttc" id="aassert_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdef"><b>Definition</b> assert.hpp:79</div></div>
+<div class="ttc" id="acheck_8hpp_html"><div class="ttname"><a href="check_8hpp.html">check.hpp</a></div></div>
+<div class="ttc" id="acheck_8hpp_html_ac92901699a8c18f0024c6668eba14185"><div class="ttname"><a href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a></div><div class="ttdeci">#define TETL_PRECONDITION(...)</div><div class="ttdef"><b>Definition</b> check.hpp:11</div></div>
 <div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_gacf27092e22460faafdb958cac56c6fec"><div class="ttname"><a href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition</b> count.hpp:21</div></div>
 <div class="ttc" id="agroup__cstring_html_ga50d78828452384f88828ac39373bdb7f"><div class="ttname"><a href="group__cstring.html#ga50d78828452384f88828ac39373bdb7f">etl::strncpy</a></div><div class="ttdeci">constexpr auto strncpy(char *dest, char const *src, etl::size_t const count) -&gt; char *</div><div class="ttdoc">Copies at most count characters of the byte string pointed to by src (including the terminating null ...</div><div class="ttdef"><b>Definition</b> strncpy.hpp:24</div></div>
@@ -145,7 +145,7 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="strncpy_8hpp.html">strncpy.hpp</a></li>
-    <li class="footer">Generated on Sun Apr 7 2024 19:07:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 7 2024 22:55:12 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

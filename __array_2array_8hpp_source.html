@@ -114,7 +114,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="equal_8hpp.html">etl/_algorithm/equal.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="lexicographical__compare_8hpp.html">etl/_algorithm/lexicographical_compare.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8hpp.html">etl/_cassert/assert.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="check_8hpp.html">etl/_contracts/check.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="__iterator_2begin_8hpp.html">etl/_iterator/begin.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="data_8hpp.html">etl/_iterator/data.hpp</a>&gt;</span></div>
@@ -149,7 +149,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structetl_1_1array.html#a58947c8752717e8dd93a105e7d37821d">   53</a></span>    [[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1array.html#a58947c8752717e8dd93a105e7d37821d">operator[]</a>(<a class="code hl_typedef" href="structetl_1_1array.html#a8560ac5527cd0ed38d71e0e58acc8021">size_type</a> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">pos</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">reference</a></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a> &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">Size</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a> &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">Size</a>);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> _internal_data[<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a>];</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
@@ -157,7 +157,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structetl_1_1array.html#a5b3f10db87a718012382b83be92260be">   60</a></span>    [[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1array.html#a5b3f10db87a718012382b83be92260be">operator[]</a>(<a class="code hl_typedef" href="structetl_1_1array.html#a8560ac5527cd0ed38d71e0e58acc8021">size_type</a> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">pos</a>) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">const_reference</a></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a> &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">Size</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a> &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">Size</a>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> _internal_data[<a class="code hl_struct" href="structetl_1_1bitset.html">pos</a>];</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
@@ -321,8 +321,8 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="a__iterator_2end_8hpp_html"><div class="ttname"><a href="__iterator_2end_8hpp.html">end.hpp</a></div></div>
 <div class="ttc" id="a__iterator_2size_8hpp_html"><div class="ttname"><a href="__iterator_2size_8hpp.html">size.hpp</a></div></div>
 <div class="ttc" id="a__utility_2move_8hpp_html"><div class="ttname"><a href="__utility_2move_8hpp.html">move.hpp</a></div></div>
-<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div></div>
-<div class="ttc" id="aassert_8hpp_html_a0437873c880d530d0e43a83a0c413d95"><div class="ttname"><a href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></div><div class="ttdeci">#define TETL_ASSERT(...)</div><div class="ttdef"><b>Definition</b> assert.hpp:79</div></div>
+<div class="ttc" id="acheck_8hpp_html"><div class="ttname"><a href="check_8hpp.html">check.hpp</a></div></div>
+<div class="ttc" id="acheck_8hpp_html_ac92901699a8c18f0024c6668eba14185"><div class="ttname"><a href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a></div><div class="ttdeci">#define TETL_PRECONDITION(...)</div><div class="ttdef"><b>Definition</b> check.hpp:11</div></div>
 <div class="ttc" id="adata_8hpp_html"><div class="ttname"><a href="data_8hpp.html">data.hpp</a></div></div>
 <div class="ttc" id="aequal_8hpp_html"><div class="ttname"><a href="equal_8hpp.html">equal.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
@@ -394,7 +394,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_2d008c465bf677034825632487fc545c.html">_array</a></li><li class="navelem"><a class="el" href="__array_2array_8hpp.html">array.hpp</a></li>
-    <li class="footer">Generated on Sun Apr 7 2024 19:07:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 7 2024 22:55:12 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
