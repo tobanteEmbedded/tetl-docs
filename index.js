@@ -1,9 +1,9 @@
 var index =
 [
-    [ "Quick Start", "index.html#autotoc_md2", null ],
-    [ "Status", "index.html#autotoc_md3", [
-      [ "Hosted", "index.html#autotoc_md4", null ],
-      [ "Freestanding", "index.html#autotoc_md14", null ],
+    [ "Quick Start", "index.html#autotoc_md12", null ],
+    [ "Status", "index.html#autotoc_md13", [
+      [ "Hosted", "index.html#autotoc_md14", null ],
+      [ "Freestanding", "index.html#autotoc_md15", null ],
       [ "Analysis", "index.html#autotoc_md16", null ]
     ] ],
     [ "Design Goals", "index.html#autotoc_md17", [
