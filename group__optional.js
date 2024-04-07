@@ -23,7 +23,7 @@ var group__optional =
       [ "and_then", "structetl_1_1optional.html#adabc593e326c7a64748c51b9d549f75a", null ],
       [ "and_then", "structetl_1_1optional.html#ad8d6cb036f0179ae2333a4f469de86b6", null ],
       [ "emplace", "structetl_1_1optional.html#af874c082d6f6f9d72b111a835c1057fb", null ],
-      [ "explicit", "structetl_1_1optional.html#a47030dea3e5d8142523e353778404ae2", null ],
+      [ "explicit", "structetl_1_1optional.html#a5889b65ac9c400a00b0062c30893d416", null ],
       [ "explicit", "structetl_1_1optional.html#aeda274a20488653d836324948f725ff9", null ],
       [ "explicit", "structetl_1_1optional.html#a2dfd235620c5c9c33dbfa93920c1e2a3", null ],
       [ "has_value", "structetl_1_1optional.html#ad3f48c5b80fe4eb6c795b88361b32d3b", null ],
