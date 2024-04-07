@@ -535,20 +535,8 @@ var hierarchy =
     [ "numeric_limits< unsigned long >", "structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html", null ],
     [ "numeric_limits< unsigned long long >", "structetl_1_1numeric__limits_3_01unsigned_01long_01long_01_4.html", null ],
     [ "numeric_limits< unsigned short >", "structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html", null ],
+    [ "optional< T >", "structetl_1_1optional.html", null ],
     [ "optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", null ],
-    [ "optional_destruct_base< T, bool >", null, [
-      [ "optional_storage_base< T, bool >", null, [
-        [ "optional_copy_base< T, bool >", null, [
-          [ "optional_move_base< T, bool >", null, [
-            [ "optional_copy_assign_base< T, bool >", null, [
-              [ "optional_move_assign_base< T, bool >", null, [
-                [ "optional< T >", "structetl_1_1optional.html", null ]
-              ] ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
     [ "output_iterator_tag", "structetl_1_1output__iterator__tag.html", null ],
     [ "pair< T1, T2 >", "structetl_1_1pair.html", null ],
     [ "param_type", "structetl_1_1bernoulli__distribution_1_1param__type.html", null ],
@@ -604,12 +592,6 @@ var hierarchy =
       [ "scope_exit< FuncT >", "structetl_1_1scope__exit.html", null ]
     ] ],
     [ "sequenced_policy", "structetl_1_1execution_1_1sequenced__policy.html", null ],
-    [ "sfinae_assign_base< CanCopy, CanMove >", null, [
-      [ "optional< T >", "structetl_1_1optional.html", null ]
-    ] ],
-    [ "sfinae_ctor_base< CanCopy, CanMove >", null, [
-      [ "optional< T >", "structetl_1_1optional.html", null ]
-    ] ],
     [ "small_ptr< Type, BaseAddress, StorageType >", "structetl_1_1small__ptr.html", null ],
     [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", null ],
     [ "source_location", "structetl_1_1source__location.html", null ],
@@ -709,6 +691,7 @@ var hierarchy =
     [ "variadic_union< Ts... >", "unionetl_1_1variadic__union.html", null ],
     [ "variant< Types >", "structetl_1_1variant.html", null ],
     [ "variant< bool, char_type, int, unsigned int, long long int, unsigned long long int, float, double, long double, char_type const *, etl::basic_string_view< char_type >, void const *, etl::basic_format_arg::handle >", "structetl_1_1variant.html", null ],
+    [ "variant< etl::nullopt_t, T >", "structetl_1_1variant.html", null ],
     [ "variant< T, E >", "structetl_1_1variant.html", null ],
     [ "variant_alternative< I, T >", "structetl_1_1variant__alternative.html", null ],
     [ "variant_alternative< Idx, etl::variant< Ts... > >", "structetl_1_1variant__alternative_3_01Idx_00_01etl_1_1variant_3_01Ts_8_8_8_01_4_01_4.html", null ],

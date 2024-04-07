@@ -5,12 +5,15 @@ var searchData=
   ['ec_2',['ec',['../structetl_1_1from__chars__result.html#a57aef602c9291b451a57decfdd7eec6d',1,'etl::from_chars_result::ec'],['../structetl_1_1to__chars__result.html#a57aef602c9291b451a57decfdd7eec6d',1,'etl::to_chars_result::ec']]],
   ['egamma_3',['egamma',['../group__numbers.html#gad85723708e688ad9c27f4b6d83e93d6e',1,'etl::numbers']]],
   ['egamma_5fv_4',['egamma_v',['../group__numbers.html#ga4466e12d8c225e3992cb0f55f0abd35b',1,'etl::numbers']]],
-  ['enable_5fborrowed_5frange_5',['enable_borrowed_range',['../group__ranges.html#ga1ef5828b7322cb06fc27740f00cfeb34',1,'etl::ranges']]],
-  ['end_6',['end',['../group__ranges.html#gad43eaed7106105b050de21ea023d9d3c',1,'etl::ranges::end'],['../group__ranges.html#gad43eaed7106105b050de21ea023d9d3c',1,'etl::ranges::cpo::end']]],
-  ['equal_7',['equal',['../structetl_1_1strong__ordering.html#a8c1fa03bb85b64b61205c5414deb3d9c',1,'etl::strong_ordering']]],
-  ['equivalent_8',['equivalent',['../structetl_1_1partial__ordering.html#a546e9a193c11fc89b46d10200418228f',1,'etl::partial_ordering::equivalent'],['../structetl_1_1strong__ordering.html#a81eefbc93e7ff33d6a41dc0d1f3d2398',1,'etl::strong_ordering::equivalent'],['../structetl_1_1weak__ordering.html#a4bb3be549b0b19e5419e510c8d915627',1,'etl::weak_ordering::equivalent']]],
-  ['explicit_5fdiagonal_9',['explicit_diagonal',['../structetl_1_1linalg_1_1explicit__diagonal__t.html#a60c1a9bea7a7851ff98e7b2bf11dbd11',1,'etl::linalg::explicit_diagonal_t']]],
-  ['expression_10',['expression',['../structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6',1,'etl::assert_msg']]],
-  ['extent_11',['extent',['../structetl_1_1strided__slice.html#a1b38315cfe5f4fc202ced6013625281c',1,'etl::strided_slice::extent'],['../structetl_1_1span.html#a00742803104bb69f8f341b5999987144',1,'etl::span::extent']]],
-  ['extent_5fv_12',['extent_v',['../namespaceetl.html#a06332dc22e85765f2c195c703cc49068',1,'etl']]]
+  ['enable_5fassign_5fother_5',['enable_assign_other',['../structetl_1_1optional.html#a64cf6bc2dd5054a5a4b6e7fbee381644',1,'etl::optional']]],
+  ['enable_5fborrowed_5frange_6',['enable_borrowed_range',['../group__ranges.html#ga1ef5828b7322cb06fc27740f00cfeb34',1,'etl::ranges']]],
+  ['enable_5fctor_5f4_5f5_5fbase_7',['enable_ctor_4_5_base',['../structetl_1_1optional.html#a382ecf6fb3fd73062acfc9bc72d621d6',1,'etl::optional']]],
+  ['enable_5fctor_5f8_8',['enable_ctor_8',['../structetl_1_1optional.html#a5d0f0a6c68fc43996cadb3373785d9d3',1,'etl::optional']]],
+  ['end_9',['end',['../group__ranges.html#gad43eaed7106105b050de21ea023d9d3c',1,'etl::ranges::end'],['../group__ranges.html#gad43eaed7106105b050de21ea023d9d3c',1,'etl::ranges::cpo::end']]],
+  ['equal_10',['equal',['../structetl_1_1strong__ordering.html#a8c1fa03bb85b64b61205c5414deb3d9c',1,'etl::strong_ordering']]],
+  ['equivalent_11',['equivalent',['../structetl_1_1partial__ordering.html#a546e9a193c11fc89b46d10200418228f',1,'etl::partial_ordering::equivalent'],['../structetl_1_1strong__ordering.html#a81eefbc93e7ff33d6a41dc0d1f3d2398',1,'etl::strong_ordering::equivalent'],['../structetl_1_1weak__ordering.html#a4bb3be549b0b19e5419e510c8d915627',1,'etl::weak_ordering::equivalent']]],
+  ['explicit_5fdiagonal_12',['explicit_diagonal',['../structetl_1_1linalg_1_1explicit__diagonal__t.html#a60c1a9bea7a7851ff98e7b2bf11dbd11',1,'etl::linalg::explicit_diagonal_t']]],
+  ['expression_13',['expression',['../structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6',1,'etl::assert_msg']]],
+  ['extent_14',['extent',['../structetl_1_1strided__slice.html#a1b38315cfe5f4fc202ced6013625281c',1,'etl::strided_slice::extent'],['../structetl_1_1span.html#a00742803104bb69f8f341b5999987144',1,'etl::span::extent']]],
+  ['extent_5fv_15',['extent_v',['../namespaceetl.html#a06332dc22e85765f2c195c703cc49068',1,'etl']]]
 ];

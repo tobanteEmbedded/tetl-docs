@@ -19,7 +19,7 @@ var searchData=
   ['has_5funique_5fobject_5frepresentations_16',['has_unique_object_representations',['../structetl_1_1has__unique__object__representations.html',1,'etl']]],
   ['has_5funique_5fobject_5frepresentations_2ehpp_17',['has_unique_object_representations.hpp',['../has__unique__object__representations_8hpp.html',1,'']]],
   ['has_5funique_5fobject_5frepresentations_5fv_18',['has_unique_object_representations_v',['../namespaceetl.html#a4c5a77036b20d94554de76a0879573e1',1,'etl']]],
-  ['has_5fvalue_19',['has_value',['../structetl_1_1expected.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::expected::has_value()'],['../structetl_1_1optional_3_01T_01_6_01_4.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::optional&lt; T &amp; &gt;::has_value()']]],
+  ['has_5fvalue_19',['has_value',['../structetl_1_1expected.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::expected::has_value()'],['../structetl_1_1optional.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::optional::has_value()'],['../structetl_1_1optional_3_01T_01_6_01_4.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::optional&lt; T &amp; &gt;::has_value()']]],
   ['has_5fvirtual_5fdestructor_20',['has_virtual_destructor',['../structetl_1_1has__virtual__destructor.html',1,'etl']]],
   ['has_5fvirtual_5fdestructor_2ehpp_21',['has_virtual_destructor.hpp',['../has__virtual__destructor_8hpp.html',1,'']]],
   ['has_5fvirtual_5fdestructor_5fv_22',['has_virtual_destructor_v',['../namespaceetl.html#a7e997395a99be7b3ac747230c82b51d2',1,'etl']]],

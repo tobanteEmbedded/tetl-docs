@@ -1,12 +1,11 @@
 var NAVTREEINDEX9 =
 {
-"includes_8hpp_source.html":[12,0,1,0,0,27],
 "incrementable_8hpp.html":[12,0,1,0,33,11],
 "incrementable_8hpp_source.html":[12,0,1,0,33,11],
 "incrementable__traits_8hpp.html":[12,0,1,0,33,12],
 "incrementable__traits_8hpp_source.html":[12,0,1,0,33,12],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md12":[0,0],
 "index.html#autotoc_md13":[0,1],
 "index.html#autotoc_md14":[0,1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "is__member__pointer_8hpp_source.html":[12,0,1,0,60,61],
 "is__move__assignable_8hpp.html":[12,0,1,0,60,62],
 "is__move__assignable_8hpp.html#afbf52ca54b0d508bfc6b9bbe916faf18":[12,0,1,0,60,62,1],
-"is__move__assignable_8hpp_source.html":[12,0,1,0,60,62]
+"is__move__assignable_8hpp_source.html":[12,0,1,0,60,62],
+"is__move__constructible_8hpp.html":[12,0,1,0,60,63]
 };
