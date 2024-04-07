@@ -104,19 +104,209 @@ $(function(){initNavTree('group__type__traits.html',''); initResizable(true); })
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">type_traits<div class="ingroups"><a class="el" href="group__utilities-library.html">Utilities Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Compile-time type information  
-</p>
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with&lt; T, U &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__pointer.html">remove_pointer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the member typedef type which is the type pointed to by T, or, if T is not a pointer, then type is the same as T. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1remove__pointer.html" title="Provides the member typedef type which is the type pointed to by T, or, if T is not a pointer,...">remove_pointer</a> is undefined.  <a href="structetl_1_1remove__pointer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__reference.html">remove_reference&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__reference_3_01T_01_6_01_4.html">remove_reference&lt; T &amp; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__reference_3_01T_01_6_6_01_4.html">remove_reference&lt; T &amp;&amp; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__volatile.html">remove_volatile&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the member typedef type which is the same as T, except that its topmost cv-qualifiers are removed. Removes the topmost volatile.  <a href="structetl_1_1remove__volatile.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1type__identity.html">type_identity&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1underlying__type.html">underlying_type&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying type of an enum.  <a href="structetl_1_1underlying__type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga9319953b536fc8279d2a105b02d1a938" id="r_ga9319953b536fc8279d2a105b02d1a938"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:ga9319953b536fc8279d2a105b02d1a938"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga9319953b536fc8279d2a105b02d1a938">remove_reference_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1remove__reference.html">etl::remove_reference</a>&lt;T&gt;::type</td></tr>
+<tr class="separator:ga9319953b536fc8279d2a105b02d1a938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8be2e70b3b5f54ad08dcfc5af63c9da" id="r_gad8be2e70b3b5f54ad08dcfc5af63c9da"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:gad8be2e70b3b5f54ad08dcfc5af63c9da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gad8be2e70b3b5f54ad08dcfc5af63c9da">remove_volatile_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1remove__volatile.html">etl::remove_volatile</a>&lt;T&gt;::type</td></tr>
+<tr class="separator:gad8be2e70b3b5f54ad08dcfc5af63c9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a3d3a54ac48d364dc4b3a06a7522126" id="r_ga2a3d3a54ac48d364dc4b3a06a7522126"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">unsigned</a> <a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">long</a> N&gt; </td></tr>
+<tr class="memitem:ga2a3d3a54ac48d364dc4b3a06a7522126"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga2a3d3a54ac48d364dc4b3a06a7522126">smallest_size_t</a></td></tr>
+<tr class="memdesc:ga2a3d3a54ac48d364dc4b3a06a7522126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smallest unsigned integer type that can represent values in the range [0, N].  <br /></td></tr>
+<tr class="separator:ga2a3d3a54ac48d364dc4b3a06a7522126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7cfb52ab2d82ff12cd2e0340315447f" id="r_gae7cfb52ab2d82ff12cd2e0340315447f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:gae7cfb52ab2d82ff12cd2e0340315447f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae7cfb52ab2d82ff12cd2e0340315447f">type_identity_t</a> = T</td></tr>
+<tr class="separator:gae7cfb52ab2d82ff12cd2e0340315447f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa68cdd3b170a7e28ceeb562ad04c2853" id="r_gaa68cdd3b170a7e28ceeb562ad04c2853"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:gaa68cdd3b170a7e28ceeb562ad04c2853"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa68cdd3b170a7e28ceeb562ad04c2853">underlying_type_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1underlying__type.html">etl::underlying_type</a>&lt;T&gt;::type</td></tr>
+<tr class="separator:gaa68cdd3b170a7e28ceeb562ad04c2853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8ddf9531fc4ac7ce28574db20c8f20e" id="r_gab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplParams" colspan="2">template&lt;typename... &gt; </td></tr>
+<tr class="memitem:gab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> = <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
+<tr class="separator:gab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaa10bae03ee2ee7efc954c5553dfb34dd" id="r_gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </td></tr>
+<tr class="memitem:gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa10bae03ee2ee7efc954c5553dfb34dd">is_nothrow_swappable_with_v</a> = <a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with</a>&lt;T, U&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time type information </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9319953b536fc8279d2a105b02d1a938" name="ga9319953b536fc8279d2a105b02d1a938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9319953b536fc8279d2a105b02d1a938">&#9670;&#160;</a></span>remove_reference_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#ga9319953b536fc8279d2a105b02d1a938">remove_reference_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1remove__reference.html">etl::remove_reference</a>&lt;T&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8be2e70b3b5f54ad08dcfc5af63c9da" name="gad8be2e70b3b5f54ad08dcfc5af63c9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8be2e70b3b5f54ad08dcfc5af63c9da">&#9670;&#160;</a></span>remove_volatile_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#gad8be2e70b3b5f54ad08dcfc5af63c9da">remove_volatile_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1remove__volatile.html">etl::remove_volatile</a>&lt;T&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2a3d3a54ac48d364dc4b3a06a7522126" name="ga2a3d3a54ac48d364dc4b3a06a7522126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a3d3a54ac48d364dc4b3a06a7522126">&#9670;&#160;</a></span>smallest_size_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">unsigned</a> <a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">long</a> N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#ga2a3d3a54ac48d364dc4b3a06a7522126">smallest_size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">            <a class="code hl_struct" href="structetl_1_1bitset.html">etl::conditional_t&lt;(N &lt; static_cast&lt;unsigned char&gt;</a>(-1)),     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>,</div>
+<div class="line">            <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;(N &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(-1)),    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>,</div>
+<div class="line">            <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;(N &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(-1)),      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>,</div>
+<div class="line">            <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;(N &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(-1)),     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>,</div>
+<div class="line">                                                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>&gt;&gt;&gt;&gt;</div>
+<div class="ttc" id="anamespaceetl_html_a4ccf02556580259044928051b1689171"><div class="ttname"><a href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a></div><div class="ttdeci">typename etl::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
+</div><!-- fragment -->
+<p>Smallest unsigned integer type that can represent values in the range [0, N]. </p>
+
+</div>
+</div>
+<a id="gae7cfb52ab2d82ff12cd2e0340315447f" name="gae7cfb52ab2d82ff12cd2e0340315447f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7cfb52ab2d82ff12cd2e0340315447f">&#9670;&#160;</a></span>type_identity_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#gae7cfb52ab2d82ff12cd2e0340315447f">type_identity_t</a> = T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa68cdd3b170a7e28ceeb562ad04c2853" name="gaa68cdd3b170a7e28ceeb562ad04c2853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa68cdd3b170a7e28ceeb562ad04c2853">&#9670;&#160;</a></span>underlying_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#gaa68cdd3b170a7e28ceeb562ad04c2853">underlying_type_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1underlying__type.html">etl::underlying_type</a>&lt;T&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab8ddf9531fc4ac7ce28574db20c8f20e" name="gab8ddf9531fc4ac7ce28574db20c8f20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8ddf9531fc4ac7ce28574db20c8f20e">&#9670;&#160;</a></span>void_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#gab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> = <a class="el" href="structetl_1_1bitset.html">void</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gaa10bae03ee2ee7efc954c5553dfb34dd" name="gaa10bae03ee2ee7efc954c5553dfb34dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa10bae03ee2ee7efc954c5553dfb34dd">&#9670;&#160;</a></span>is_nothrow_swappable_with_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">bool</a> is_nothrow_swappable_with_v = <a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with</a>&lt;T, U&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 7 2024 13:18:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 7 2024 15:36:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -399,7 +399,6 @@ var hierarchy =
       [ "index_of< T, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01T_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, sizeof...(Ts)>", "structetl_1_1integral__constant.html", [
-      [ "variant_size< variant2< Ts... > >", "structetl_1_1variant__size_3_01variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "variant_size< variant< Ts... > >", "structetl_1_1variant__size_3_01variant_3_01Ts_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t,(etl::is_same_v< Needle, Ts >+...+0)>", "structetl_1_1integral__constant.html", [
@@ -709,11 +708,9 @@ var hierarchy =
     [ "variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", null ],
     [ "variadic_union< Ts... >", "unionetl_1_1variadic__union.html", null ],
     [ "variant< Types >", "structetl_1_1variant.html", null ],
-    [ "variant2< Types >", "structetl_1_1variant2.html", null ],
-    [ "variant2< T, E >", "structetl_1_1variant2.html", null ],
-    [ "variant< etl::monostate, bool, char_type, int, unsigned int, long long int, unsigned long long int, float, double, long double, char_type const *, etl::basic_string_view< char_type >, void const *, etl::basic_format_arg::handle >", "structetl_1_1variant.html", null ],
+    [ "variant< bool, char_type, int, unsigned int, long long int, unsigned long long int, float, double, long double, char_type const *, etl::basic_string_view< char_type >, void const *, etl::basic_format_arg::handle >", "structetl_1_1variant.html", null ],
+    [ "variant< T, E >", "structetl_1_1variant.html", null ],
     [ "variant_alternative< I, T >", "structetl_1_1variant__alternative.html", null ],
-    [ "variant_alternative< Idx, etl::variant2< Ts... > >", "structetl_1_1variant__alternative_3_01Idx_00_01etl_1_1variant2_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "variant_alternative< Idx, etl::variant< Ts... > >", "structetl_1_1variant__alternative_3_01Idx_00_01etl_1_1variant_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "variant_alternative< Idx, T const >", "structetl_1_1variant__alternative_3_01Idx_00_01T_01const_01_4.html", null ],
     [ "variant_alternative< Idx, T const volatile >", "structetl_1_1variant__alternative_3_01Idx_00_01T_01const_01volatile_01_4.html", null ],

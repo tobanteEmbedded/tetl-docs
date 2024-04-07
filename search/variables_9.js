@@ -72,7 +72,7 @@ var searchData=
   ['is_5fnothrow_5fmove_5fassignable_5fv_69',['is_nothrow_move_assignable_v',['../namespaceetl.html#ad26f59ba1b8a873f9d8374f72a4002c4',1,'etl']]],
   ['is_5fnothrow_5fmove_5fconstructible_5fv_70',['is_nothrow_move_constructible_v',['../namespaceetl.html#a34e3584e54b63fd9e6a35fffd41080bd',1,'etl']]],
   ['is_5fnothrow_5fswappable_5fv_71',['is_nothrow_swappable_v',['../namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5',1,'etl']]],
-  ['is_5fnothrow_5fswappable_5fwith_5fv_72',['is_nothrow_swappable_with_v',['../namespaceetl.html#aa10bae03ee2ee7efc954c5553dfb34dd',1,'etl']]],
+  ['is_5fnothrow_5fswappable_5fwith_5fv_72',['is_nothrow_swappable_with_v',['../group__type__traits.html#gaa10bae03ee2ee7efc954c5553dfb34dd',1,'etl::is_nothrow_swappable_with']]],
   ['is_5fnull_5fpointer_5fv_73',['is_null_pointer_v',['../namespaceetl.html#a284cbaff17633b620e43bf4c4a5b9c66',1,'etl']]],
   ['is_5fobject_5fv_74',['is_object_v',['../namespaceetl.html#a6e0edf4d9cccfbffc3b8744b2c7bcfe9',1,'etl']]],
   ['is_5fplaceholder_5fv_75',['is_placeholder_v',['../namespaceetl.html#af6e287e878604ddef97548a69df3bb24',1,'etl']]],

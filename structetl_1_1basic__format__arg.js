@@ -12,5 +12,5 @@ var structetl_1_1basic__format__arg =
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#ad88495d458d427ae4dedaca5b84ed6e3", null ],
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#aebd96ac572cccc675f96b0d1c714b43d", null ],
     [ "operator bool", "structetl_1_1basic__format__arg.html#a420e60e9788bfa3b52aa3aab72ea3a5e", null ],
-    [ "value", "structetl_1_1basic__format__arg.html#ac7079b963f36e87efffa9c2bd1833bde", null ]
+    [ "value", "structetl_1_1basic__format__arg.html#a277632813bb6eab2a6ebce69b9599151", null ]
 ];

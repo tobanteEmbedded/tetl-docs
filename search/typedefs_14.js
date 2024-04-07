@@ -5,5 +5,5 @@ var searchData=
   ['variant_5falternative_5ft_2',['variant_alternative_t',['../namespaceetl.html#a7b611e97373f7c9c739f58a942f9de05',1,'etl']]],
   ['vector_5ft_3',['vector_t',['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html#aac71403b76a4461dbb0f62fc5b37fdfe',1,'etl::experimental::hardware::stm32::isr']]],
   ['void_5fpointer_4',['void_pointer',['../structetl_1_1allocator__traits.html#a215bb1f71726aee0fc6653325bcac7e1',1,'etl::allocator_traits']]],
-  ['void_5ft_5',['void_t',['../namespaceetl.html#ab8ddf9531fc4ac7ce28574db20c8f20e',1,'etl']]]
+  ['void_5ft_5',['void_t',['../group__type__traits.html#gab8ddf9531fc4ac7ce28574db20c8f20e',1,'etl']]]
 ];
