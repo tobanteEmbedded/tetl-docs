@@ -12,7 +12,7 @@ var searchData=
   ['basic_5fformat_5fcontext_9',['basic_format_context',['../structetl_1_1basic__format__context.html',1,'etl']]],
   ['basic_5fformat_5fparse_5fcontext_10',['basic_format_parse_context',['../structetl_1_1basic__format__parse__context.html',1,'etl']]],
   ['basic_5fformat_5fstring_11',['basic_format_string',['../structetl_1_1basic__format__string.html',1,'etl']]],
-  ['basic_5fstatic_5fstring_12',['basic_static_string',['../structetl_1_1basic__static__string.html',1,'etl']]],
+  ['basic_5finplace_5fstring_12',['basic_inplace_string',['../structetl_1_1basic__inplace__string.html',1,'etl']]],
   ['basic_5fstring_5fview_13',['basic_string_view',['../structetl_1_1basic__string__view.html',1,'etl']]],
   ['basic_5fstring_5fview_3c_20chart_20_3e_14',['basic_string_view&lt; CharT &gt;',['../structetl_1_1basic__string__view.html',1,'etl']]],
   ['bernoulli_5fdistribution_15',['bernoulli_distribution',['../structetl_1_1bernoulli__distribution.html',1,'etl']]],

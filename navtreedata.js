@@ -25,37 +25,37 @@
 var NAVTREE =
 [
   [ "tetl", "index.html", [
-    [ "TETL - Embedded Template Library", "index.html", "index" ],
+    [ "Embedded Template Library", "index.html", "index" ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md10", null ]
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md7", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md8", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md9", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md32", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md33", null ],
+      [ "Proposal", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md28", null ],
       [ "C++23", "md_docs_2progress.html#autotoc_md34", null ],
       [ "C++20", "md_docs_2progress.html#autotoc_md35", null ],
       [ "C++17", "md_docs_2progress.html#autotoc_md36", null ],
       [ "C++14", "md_docs_2progress.html#autotoc_md37", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md25", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md26", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md29", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md30", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md27", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md28", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md29", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md31", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md32", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md33", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -112,17 +112,17 @@ var NAVTREEINDEX =
 "group__cmath.html#ga798ddc91a8ff660e3e5ae767103b2573",
 "group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e",
 "index.html",
-"is__nothrow__assignable_8hpp_source.html",
-"legacy__forward__iterator_8hpp.html",
-"mutex_8hpp_source.html",
-"namespaceetl.html#a72411d869deb28d3d6a0f7d0d77dd1deaf94629088b2e56f93753526b629a62ff",
-"namespaceetl.html#ac53bcc0a66170293af1f9319d4663d1a",
-"namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a3c6ffa3b08b8d76fe1627eb812d0e56eaa126f3646da124e2839a6bbbd2f1400f",
-"namespacemembers_eval.html",
-"range__difference__t_8hpp_source.html",
+"is__move__assignable_8hpp_source.html",
+"ldiv_8hpp.html",
+"move__if__noexcept_8hpp.html",
+"namespaceetl.html#a72411d869deb28d3d6a0f7d0d77dd1dea6289bbfa378818f7066ccad5847da5a2",
+"namespaceetl.html#ac0bec1ad7f12ec0170c07608d82af228",
+"namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html",
+"namespacemembers_a.html",
+"raise_8hpp_source.html",
 "stoi_8hpp_source.html",
 "structetl_1_1basic__bitset.html#a6c25ea4c376d173d3001b2321a66c2ee",
-"structetl_1_1basic__static__string.html#a7d775d08517312971f785afd6d0ac8a6",
+"structetl_1_1basic__inplace__string.html#a7b80dbf714c8ebc3ae4d1843e21d7bfe",
 "structetl_1_1bernoulli__distribution.html#a07cc05cb17b1520a925c55ec4b0b6280",
 "structetl_1_1chrono_1_1time__point.html#a2676f3cf76fd55f31881be84c2f47feb",
 "structetl_1_1default__delete_3_01T_0f_0e_4.html",

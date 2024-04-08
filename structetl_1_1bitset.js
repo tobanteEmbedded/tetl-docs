@@ -25,7 +25,7 @@ var structetl_1_1bitset =
     [ "set", "structetl_1_1bitset.html#affe9014ce0b7932e2ef5ff47f4b6791b", null ],
     [ "size", "structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824", null ],
     [ "test", "structetl_1_1bitset.html#afd5edc73bc57dbc4560212a96c9157da", null ],
-    [ "to_string", "structetl_1_1bitset.html#a6efc4353403113e948e93649913ff0f1", null ],
+    [ "to_string", "structetl_1_1bitset.html#a28778eaf03fbf727f9662d0b249ca547", null ],
     [ "to_ullong", "structetl_1_1bitset.html#ab1d8a1eb8dbb141db2885bb55b332dd4", null ],
     [ "to_ulong", "structetl_1_1bitset.html#ad97eab3ef83f35bf9a286431c3c652e5", null ]
 ];

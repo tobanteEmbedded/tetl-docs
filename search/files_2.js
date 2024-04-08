@@ -10,7 +10,7 @@ var searchData=
   ['basic_5fformat_5fcontext_2ehpp_7',['basic_format_context.hpp',['../basic__format__context_8hpp.html',1,'']]],
   ['basic_5fformat_5fparse_5fcontext_2ehpp_8',['basic_format_parse_context.hpp',['../basic__format__parse__context_8hpp.html',1,'']]],
   ['basic_5fformat_5fstring_2ehpp_9',['basic_format_string.hpp',['../basic__format__string_8hpp.html',1,'']]],
-  ['basic_5fstatic_5fstring_2ehpp_10',['basic_static_string.hpp',['../basic__static__string_8hpp.html',1,'']]],
+  ['basic_5finplace_5fstring_2ehpp_10',['basic_inplace_string.hpp',['../basic__inplace__string_8hpp.html',1,'']]],
   ['basic_5fstring_5fview_2ehpp_11',['basic_string_view.hpp',['../basic__string__view_8hpp.html',1,'']]],
   ['begin_2ehpp_12',['begin.hpp',['../__iterator_2begin_8hpp.html',1,'(Global Namespace)'],['../__ranges_2begin_8hpp.html',1,'(Global Namespace)']]],
   ['bernoulli_5fdistribution_2ehpp_13',['bernoulli_distribution.hpp',['../bernoulli__distribution_8hpp.html',1,'']]],

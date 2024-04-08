@@ -1,9 +1,9 @@
 var dir_23439b223dadb75c0ae61ef08b8b58fb =
 [
-    [ "basic_static_string.hpp", "basic__static__string_8hpp.html", "basic__static__string_8hpp" ],
+    [ "basic_inplace_string.hpp", "basic__inplace__string_8hpp.html", "basic__inplace__string_8hpp" ],
     [ "char_traits.hpp", "char__traits_8hpp.html", "char__traits_8hpp" ],
-    [ "static_string.hpp", "static__string_8hpp.html", "static__string_8hpp" ],
-    [ "static_wstring.hpp", "static__wstring_8hpp.html", "static__wstring_8hpp" ],
+    [ "inplace_string.hpp", "inplace__string_8hpp.html", "inplace__string_8hpp" ],
+    [ "inplace_wstring.hpp", "inplace__wstring_8hpp.html", "inplace__wstring_8hpp" ],
     [ "stod.hpp", "stod_8hpp.html", "stod_8hpp" ],
     [ "stoi.hpp", "stoi_8hpp.html", "stoi_8hpp" ],
     [ "str_find_first_not_of.hpp", "str__find__first__not__of_8hpp.html", null ],

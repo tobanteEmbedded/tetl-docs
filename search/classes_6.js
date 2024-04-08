@@ -7,7 +7,7 @@ var searchData=
   ['formatter_3c_20char_20const_20_2a_2c_20char_20_3e_4',['formatter&lt; char const *, char &gt;',['../structetl_1_1formatter_3_01char_01const_01_5_00_01char_01_4.html',1,'etl']]],
   ['formatter_3c_20char_2c_20char_20_3e_5',['formatter&lt; char, char &gt;',['../structetl_1_1formatter_3_01char_00_01char_01_4.html',1,'etl']]],
   ['formatter_3c_20char_5bn_5d_2c_20char_20_3e_6',['formatter&lt; char[N], char &gt;',['../structetl_1_1formatter_3_01char_0fN_0e_00_01char_01_4.html',1,'etl']]],
-  ['formatter_3c_20etl_3a_3astatic_5fstring_3c_20capacity_20_3e_2c_20char_20_3e_7',['formatter&lt; etl::static_string&lt; Capacity &gt;, char &gt;',['../structetl_1_1formatter_3_01etl_1_1static__string_3_01Capacity_01_4_00_01char_01_4.html',1,'etl']]],
+  ['formatter_3c_20etl_3a_3ainplace_5fstring_3c_20capacity_20_3e_2c_20char_20_3e_7',['formatter&lt; etl::inplace_string&lt; Capacity &gt;, char &gt;',['../structetl_1_1formatter_3_01etl_1_1inplace__string_3_01Capacity_01_4_00_01char_01_4.html',1,'etl']]],
   ['formatter_3c_20etl_3a_3astring_5fview_2c_20char_20_3e_8',['formatter&lt; etl::string_view, char &gt;',['../structetl_1_1formatter_3_01etl_1_1string__view_00_01char_01_4.html',1,'etl']]],
   ['formatter_3c_20int_2c_20char_20_3e_9',['formatter&lt; int, char &gt;',['../structetl_1_1formatter_3_01int_00_01char_01_4.html',1,'etl']]],
   ['formatter_3c_20long_20long_2c_20char_20_3e_10',['formatter&lt; long long, char &gt;',['../structetl_1_1formatter_3_01long_01long_00_01char_01_4.html',1,'etl']]],

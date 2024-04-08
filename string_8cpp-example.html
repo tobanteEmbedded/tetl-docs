@@ -124,7 +124,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Unlike a std::string you will have to decide which maximum capacity you</span></div>
 <div class="line">    <span class="comment">// need. Apart from that it behaves almost the same as the standard version.</span></div>
-<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::static_string&lt;32&gt;</a> str{};</div>
+<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_struct" href="structetl_1_1bitset.html">etl::inplace_string&lt;32&gt;</a> str{};</div>
 <div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.empty());</div>
 <div class="line">    <span class="keyword">static_assert</span>(str.capacity() == 32);</div>
 <div class="line"> </div>
@@ -167,11 +167,11 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">    str.insert(7, <span class="stringliteral">&quot; foo&quot;</span>);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;  HELLO foo WORLD&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// You can check if a static_string starts or ends with a substring</span></div>
+<div class="line">    <span class="comment">// You can check if a inplace_string starts or ends with a substring</span></div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.starts_with(<span class="stringliteral">&quot;  &quot;</span>));</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.ends_with(<span class="stringliteral">&quot;WORLD&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// You can convert a static_string into a string_view</span></div>
+<div class="line">    <span class="comment">// You can convert a inplace_string into a string_view</span></div>
 <div class="line">    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a> view = str;</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(view.<a id="a4" name="a4"></a><a class="code hl_function" href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">size</a>() == str.<a class="code hl_function" href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">size</a>());</div>
 <div class="line"> </div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 8 2024 18:56:03 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 8 2024 19:24:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

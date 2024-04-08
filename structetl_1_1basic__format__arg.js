@@ -8,7 +8,7 @@ var structetl_1_1basic__format__arg =
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#ae94bfdcfcaa6b58e7c84ecaf40b83b8e", null ],
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#a8099c822618023e6c57326277b0bec32", null ],
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#ad4ae13f20d3612cabbb4a936c52fc15d", null ],
-    [ "basic_format_arg", "structetl_1_1basic__format__arg.html#aa75e602b078f8d535670f19ca158e87e", null ],
+    [ "basic_format_arg", "structetl_1_1basic__format__arg.html#af98e720ed5e1f25dc8717e0983d2e772", null ],
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#ad88495d458d427ae4dedaca5b84ed6e3", null ],
     [ "basic_format_arg", "structetl_1_1basic__format__arg.html#aebd96ac572cccc675f96b0d1c714b43d", null ],
     [ "operator bool", "structetl_1_1basic__format__arg.html#a420e60e9788bfa3b52aa3aab72ea3a5e", null ],
