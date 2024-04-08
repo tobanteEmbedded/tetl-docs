@@ -201,7 +201,7 @@ var searchData=
   ['strtoul_2ehpp_198',['strtoul.hpp',['../strtoul_8hpp.html',1,'']]],
   ['strtoull_199',['strtoull',['../namespaceetl.html#a4ab96db1ba94415b0dce36ec1327f314',1,'etl']]],
   ['stubs_2ehpp_200',['stubs.hpp',['../stubs_8hpp.html',1,'']]],
-  ['style_201',['Coding Style',['../md_CONTRIBUTING.html#autotoc_md10',1,'']]],
+  ['style_201',['Coding Style',['../md_CONTRIBUTING.html#autotoc_md11',1,'']]],
   ['submdspan_2ehpp_202',['submdspan.hpp',['../submdspan_8hpp.html',1,'']]],
   ['submdspan_5fextents_203',['submdspan_extents',['../namespaceetl.html#af804eb418abea75441ce277a3d8ac9a4',1,'etl']]],
   ['submdspan_5fextents_2ehpp_204',['submdspan_extents.hpp',['../submdspan__extents_8hpp.html',1,'']]],
