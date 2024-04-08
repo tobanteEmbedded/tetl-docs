@@ -2023,6 +2023,9 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" hr
 <tr class="memitem:ga8cba14d8fe2e4ab545185b18a751e4c5" id="r_ga8cba14d8fe2e4ab545185b18a751e4c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cmath.html#ga8cba14d8fe2e4ab545185b18a751e4c5">asinl</a> (<a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">double</a> <a class="el" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">double</a></td></tr>
 <tr class="memdesc:ga8cba14d8fe2e4ab545185b18a751e4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the principal value of the arc sine of arg.  <br /></td></tr>
 <tr class="separator:ga8cba14d8fe2e4ab545185b18a751e4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee" id="r_afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Assertion</a> &gt; </td></tr>
+<tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a> (<a class="el" href="structetl_1_1bitset.html">Assertion</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">msg</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
+<tr class="separator:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae867798dd2ddddb86806aa99a0ae9101" id="r_ae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N, <a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:ae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae867798dd2ddddb86806aa99a0ae9101">assume_aligned</a> (T *ptr) -&gt; T *</td></tr>
 <tr class="memdesc:ae867798dd2ddddb86806aa99a0ae9101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the implementation that the object ptr points to is aligned to at least N. The implementation may use this information to generate more efficient code, but it might only make this assumption if the object is accessed via the return value of assume_aligned.  <br /></td></tr>
@@ -2347,9 +2350,6 @@ requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
 <tr class="memitem:af8fe16af1fc0c146d690634a5b2da600" id="r_af8fe16af1fc0c146d690634a5b2da600"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:af8fe16af1fc0c146d690634a5b2da600"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af8fe16af1fc0c146d690634a5b2da600">declval</a> () noexcept -&gt; etl::add_rvalue_reference_t&lt; T &gt;</td></tr>
 <tr class="separator:af8fe16af1fc0c146d690634a5b2da600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af087d859a13aefa1d1af499478179a59" id="r_af087d859a13aefa1d1af499478179a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af087d859a13aefa1d1af499478179a59">default_assert_handler</a> (<a class="el" href="structetl_1_1assert__msg.html">assert_msg</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">msg</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
-<tr class="memdesc:af087d859a13aefa1d1af499478179a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default assert handler. This will be called, if an assertion is triggered at runtime.  <br /></td></tr>
-<tr class="separator:af087d859a13aefa1d1af499478179a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad349bf22ae9342501dceb73d04bfcb7e" id="r_ad349bf22ae9342501dceb73d04bfcb7e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIt</a> &gt; </td></tr>
 <tr class="memitem:ad349bf22ae9342501dceb73d04bfcb7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad349bf22ae9342501dceb73d04bfcb7e">destroy</a> (<a class="el" href="structetl_1_1bitset.html">ForwardIt</a> first, <a class="el" href="structetl_1_1bitset.html">ForwardIt</a> last) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
 <tr class="memdesc:ad349bf22ae9342501dceb73d04bfcb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the objects in the range [first, last).  <br /></td></tr>
@@ -7260,6 +7260,28 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 
 </div>
 </div>
+<a id="afcdd4cbf8740ceb15439f10eee6080ee" name="afcdd4cbf8740ceb15439f10eee6080ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdd4cbf8740ceb15439f10eee6080ee">&#9670;&#160;</a></span>assert_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Assertion</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> assert_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Assertion</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a> 
+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="cassert_8cpp-example.html#a0">cassert.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="ae867798dd2ddddb86806aa99a0ae9101" name="ae867798dd2ddddb86806aa99a0ae9101"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae867798dd2ddddb86806aa99a0ae9101">&#9670;&#160;</a></span>assume_aligned()</h2>
 
@@ -7833,34 +7855,6 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="af087d859a13aefa1d1af499478179a59" name="af087d859a13aefa1d1af499478179a59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af087d859a13aefa1d1af499478179a59">&#9670;&#160;</a></span>default_assert_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> default_assert_handler </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1assert__msg.html">assert_msg</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The default assert handler. This will be called, if an assertion is triggered at runtime. </p>
 
 </div>
 </div>
@@ -9102,7 +9096,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -9136,7 +9130,7 @@ requires (<a class="el" href="#a79bb140a0b590bb8a6eadea52d880d17">etl::is_invoca
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -19611,7 +19605,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Mon Apr 8 2024 19:24:06 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 8 2024 21:00:22 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

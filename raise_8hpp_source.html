@@ -128,9 +128,9 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    #if defined(TETL_ENABLE_CUSTOM_EXCEPTION_HANDLER)</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    (<a class="code hl_struct" href="structetl_1_1bitset.html">void</a>)<a class="code hl_struct" href="structetl_1_1bitset.html">loc</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::tetl_exception_handler</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Exception</a>{<a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>});</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::exception_handler</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Exception</a>{<a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>});</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    detail::call_assert_handler(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">etl::assert_handler</a>(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">loc</a>.line()),</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_struct" href="structetl_1_1bitset.html">loc</a>.file_name(),</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_struct" href="structetl_1_1bitset.html">loc</a>.function_name(),</div>
@@ -146,9 +146,9 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>[[noreturn]] <a class="code hl_define" href="attributes_8hpp.html#abb156b0e852ad82749ae42934d3b4dbf">TETL_NO_INLINE</a> <a class="code hl_define" href="attributes_8hpp.html#af0eb4be3e44a6a8a9235265e12ad89a7">TETL_COLD</a> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a5e19467104f59f0dafeaf2752b461a9e">raise</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* msg) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    #if defined(TETL_ENABLE_CUSTOM_EXCEPTION_HANDLER)</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::tetl_exception_handler</a>(Exception{msg});</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_struct" href="structetl_1_1bitset.html">etl::exception_handler</a>(Exception{msg});</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    detail::call_assert_handler(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">etl::assert_handler</a>(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        0,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">nullptr</span>,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">nullptr</span>,</div>
@@ -168,6 +168,7 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aattributes_8hpp_html_af0eb4be3e44a6a8a9235265e12ad89a7"><div class="ttname"><a href="attributes_8hpp.html#af0eb4be3e44a6a8a9235265e12ad89a7">TETL_COLD</a></div><div class="ttdeci">#define TETL_COLD</div><div class="ttdef"><b>Definition</b> attributes.hpp:25</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a5e19467104f59f0dafeaf2752b461a9e"><div class="ttname"><a href="namespaceetl.html#a5e19467104f59f0dafeaf2752b461a9e">etl::raise</a></div><div class="ttdeci">TETL_NO_INLINE TETL_COLD auto raise(char const *msg, etl::source_location const loc=etl::source_location::current()) -&gt; void</div><div class="ttdef"><b>Definition</b> raise.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_afcdd4cbf8740ceb15439f10eee6080ee"><div class="ttname"><a href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">etl::assert_handler</a></div><div class="ttdeci">auto assert_handler(Assertion const &amp;msg) -&gt; void</div><div class="ttdef"><b>Definition</b> assert.hpp:39</div></div>
 <div class="ttc" id="astructetl_1_1assert__msg_html"><div class="ttname"><a href="structetl_1_1assert__msg.html">etl::assert_msg</a></div><div class="ttdoc">Payload for an assertion.</div><div class="ttdef"><b>Definition</b> assert.hpp:21</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1source__location_html"><div class="ttname"><a href="structetl_1_1source__location.html">etl::source_location</a></div><div class="ttdoc">A class representing information about the source code, such as file names, line numbers,...</div><div class="ttdef"><b>Definition</b> source_location.hpp:21</div></div>
@@ -178,7 +179,7 @@ $(function(){initNavTree('raise_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_56ac37526ce86f471fd3ac1c07c35ff6.html">_exception</a></li><li class="navelem"><a class="el" href="raise_8hpp.html">raise.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 8 2024 19:24:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 8 2024 21:00:22 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

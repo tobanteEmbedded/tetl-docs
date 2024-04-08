@@ -132,19 +132,19 @@ $(function(){initNavTree('cassert_8cpp-example.html',''); initResizable(true); }
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Assertion&gt;</div>
-<div class="line">[[noreturn]] <span class="keyword">auto</span> tetl_assert_handler(Assertion <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span></div>
+<div class="line">[[noreturn]] <span class="keyword">auto</span> <a id="a0" name="a0"></a><a class="code hl_function" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a>(Assertion <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span></div>
 <div class="line">{</div>
 <div class="line">    ::printf(<span class="stringliteral">&quot;EXCEPTION: %s:%d\n&quot;</span>, msg.file, msg.line);</div>
-<div class="line">    <a id="a0" name="a0"></a><a class="code hl_function" href="assert_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
+<div class="line">    <a id="a1" name="a1"></a><a class="code hl_function" href="assert_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">} <span class="comment">// namespace etl</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
-<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(2 == 2);      <span class="comment">// success, nothing is printed</span></div>
+<div class="line">    <a id="a2" name="a2"></a><a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(2 == 2);      <span class="comment">// success, nothing is printed</span></div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(2 == 3);      <span class="comment">// failure, the assert handler is invoked</span></div>
-<div class="line">    <span class="keywordflow">return</span> <a id="a2" name="a2"></a><a class="code hl_define" href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a>; <span class="comment">// unreachable</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a id="a3" name="a3"></a><a class="code hl_define" href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a>; <span class="comment">// unreachable</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(TETL_COMPILER_MSVC)</span></div>
@@ -154,12 +154,13 @@ $(function(){initNavTree('cassert_8cpp-example.html',''); initResizable(true); }
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="aexit_8hpp_html_a687984f47d8cce148d1b914d2b79612a"><div class="ttname"><a href="exit_8hpp.html#a687984f47d8cce148d1b914d2b79612a">EXIT_SUCCESS</a></div><div class="ttdeci">#define EXIT_SUCCESS</div><div class="ttdoc">Successful execution of a program.</div><div class="ttdef"><b>Definition</b> exit.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_afcdd4cbf8740ceb15439f10eee6080ee"><div class="ttname"><a href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">etl::assert_handler</a></div><div class="ttdeci">auto assert_handler(Assertion const &amp;msg) -&gt; void</div><div class="ttdef"><b>Definition</b> assert.hpp:39</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 8 2024 19:24:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 8 2024 21:00:22 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

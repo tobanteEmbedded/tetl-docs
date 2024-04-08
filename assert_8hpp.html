@@ -135,9 +135,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af087d859a13aefa1d1af499478179a59" id="r_af087d859a13aefa1d1af499478179a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#af087d859a13aefa1d1af499478179a59">default_assert_handler</a> (<a class="el" href="structetl_1_1assert__msg.html">assert_msg</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">msg</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
-<tr class="memdesc:af087d859a13aefa1d1af499478179a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default assert handler. This will be called, if an assertion is triggered at runtime.  <br /></td></tr>
-<tr class="separator:af087d859a13aefa1d1af499478179a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee" id="r_afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Assertion</a> &gt; </td></tr>
+<tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a> (<a class="el" href="structetl_1_1bitset.html">Assertion</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">msg</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
+<tr class="separator:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6298afdfd5046d87889de8140e640cd" id="r_ad6298afdfd5046d87889de8140e640cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6298afdfd5046d87889de8140e640cd">exit</a> (int) -&gt; void</td></tr>
 <tr class="separator:ad6298afdfd5046d87889de8140e640cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -176,7 +176,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                                               \</div>
 <div class="line">        if (not(__VA_ARGS__)) [[unlikely]] {                                                                           \</div>
 <div class="line">            <span class="comment">/* TETL_DEBUG_TRAP(); */</span>                                                                                   \</div>
-<div class="line">            etl::detail::call_assert_handler(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{                                                          \</div>
+<div class="line">            etl::assert_handler(<a class="code hl_struct" href="structetl_1_1assert__msg.html">etl::assert_msg</a>{                                                                       \</div>
 <div class="line">                __LINE__,                                                                                              \</div>
 <div class="line">                __FILE__,                                                                                              \</div>
 <div class="line">                etl::is_hosted() ? <a class="code hl_define" href="builtin__functions_8hpp.html#a11ded0a4d968db93cdbe8c5e942cb96b">TETL_BUILTIN_FUNCTION</a>() : nullptr,                                                  \</div>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="cassert_8cpp-example.html#a0">cassert.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="cassert_8cpp-example.html#a1">cassert.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fc655ba7b5f9f1961939440acc4f0c6f.html">_cassert</a></li><li class="navelem"><a class="el" href="assert_8hpp.html">assert.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 8 2024 19:24:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 8 2024 21:00:22 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
