@@ -59,7 +59,7 @@ var searchData=
   ['holds_5falternative_56',['holds_alternative',['../structetl_1_1variant.html#ab330d47780e2692b931342bfaefe1223',1,'etl::variant']]],
   ['host_5funreachable_57',['host_unreachable',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243afe2377fbd16d7f335474e1df7d6376bf',1,'etl']]],
   ['hosted_58',['hosted',['../namespaceetl.html#a6a5c92ae723acdba8ce0f48be8530154a734d3030ff72ad8d9678efa82b1db7d2',1,'etl']]],
-  ['hosted_59',['Hosted',['../index.html#autotoc_md4',1,'']]],
+  ['hosted_59',['Hosted',['../index.html#autotoc_md14',1,'']]],
   ['hours_60',['hours',['../namespaceetl_1_1chrono.html#ae4c835a01e4830892ef9701461215a4e',1,'etl::chrono']]],
   ['hton_61',['hton',['../namespaceetl_1_1experimental_1_1net.html#a35f6ff5f5ada80c83dcb7658e97c9010',1,'etl::experimental::net::hton(T) -&gt; T=delete'],['../namespaceetl_1_1experimental_1_1net.html#a7d0bbe2ca85f41aa20c76e9650e2afc2',1,'etl::experimental::net::hton(char v) noexcept -&gt; char'],['../namespaceetl_1_1experimental_1_1net.html#acd47bf963d2d38057095f08cca26ff79',1,'etl::experimental::net::hton(int8_t v) noexcept -&gt; int8_t'],['../namespaceetl_1_1experimental_1_1net.html#a79372c76e6dc95c9b61445222534d517',1,'etl::experimental::net::hton(uint8_t v) noexcept -&gt; uint8_t'],['../namespaceetl_1_1experimental_1_1net.html#accb3fbf6f9a2042c7c22f96823b93662',1,'etl::experimental::net::hton(uint16_t v) noexcept -&gt; uint16_t'],['../namespaceetl_1_1experimental_1_1net.html#ae648fcaa26f9c79070519faf0bf9669a',1,'etl::experimental::net::hton(uint32_t v) noexcept -&gt; uint32_t']]],
   ['huge_5fval_62',['HUGE_VAL',['../__cmath_2typedefs_8hpp.html#af2164b2db92d8a0ed3838ad5c28db971',1,'typedefs.hpp']]],
