@@ -55,11 +55,12 @@ var searchData=
   ['tetl_5fstring_5fc_52',['TETL_STRING_C',['../string__constant_8hpp.html#a449ec6f42d6d76025e22e7406da8aec4',1,'string_constant.hpp']]],
   ['tetl_5fstringify_53',['TETL_STRINGIFY',['../preprocessor_8hpp.html#a8b1cd97a66b0e0b252ddf9c3e47c36aa',1,'preprocessor.hpp']]],
   ['tetl_5fstringify_5fimpl_54',['TETL_STRINGIFY_IMPL',['../preprocessor_8hpp.html#a0d65b452ca022689b3d8304c271a8d65',1,'preprocessor.hpp']]],
-  ['tetl_5funique_5fname_55',['TETL_UNIQUE_NAME',['../preprocessor_8hpp.html#aa22af080551a5e92efde7b948b259919',1,'preprocessor.hpp']]],
-  ['tetl_5fversion_5fmajor_56',['TETL_VERSION_MAJOR',['../__config_2version_8hpp.html#a794fae99c7a1f088f200c1b7ebf76733',1,'version.hpp']]],
-  ['tetl_5fversion_5fminor_57',['TETL_VERSION_MINOR',['../__config_2version_8hpp.html#a6e7f90a652459af5326c50f9c937e5fc',1,'version.hpp']]],
-  ['tetl_5fversion_5fpatch_58',['TETL_VERSION_PATCH',['../__config_2version_8hpp.html#af04aab66e291c7edca770f414595a538',1,'version.hpp']]],
-  ['tetl_5fversion_5fstring_59',['TETL_VERSION_STRING',['../__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8',1,'version.hpp']]],
-  ['tetl_5fwchar_5fmax_60',['TETL_WCHAR_MAX',['../builtin__types_8hpp.html#afd9b41902f202d56ae59fda727e49e72',1,'builtin_types.hpp']]],
-  ['tetl_5fwchar_5fmin_61',['TETL_WCHAR_MIN',['../builtin__types_8hpp.html#a691c7b82a165e9694c0b762d7c6acced',1,'builtin_types.hpp']]]
+  ['tetl_5ftrivial_5fabi_55',['TETL_TRIVIAL_ABI',['../attributes_8hpp.html#a918a9e7a33904386a9566be130fa6ec6',1,'attributes.hpp']]],
+  ['tetl_5funique_5fname_56',['TETL_UNIQUE_NAME',['../preprocessor_8hpp.html#aa22af080551a5e92efde7b948b259919',1,'preprocessor.hpp']]],
+  ['tetl_5fversion_5fmajor_57',['TETL_VERSION_MAJOR',['../__config_2version_8hpp.html#a794fae99c7a1f088f200c1b7ebf76733',1,'version.hpp']]],
+  ['tetl_5fversion_5fminor_58',['TETL_VERSION_MINOR',['../__config_2version_8hpp.html#a6e7f90a652459af5326c50f9c937e5fc',1,'version.hpp']]],
+  ['tetl_5fversion_5fpatch_59',['TETL_VERSION_PATCH',['../__config_2version_8hpp.html#af04aab66e291c7edca770f414595a538',1,'version.hpp']]],
+  ['tetl_5fversion_5fstring_60',['TETL_VERSION_STRING',['../__config_2version_8hpp.html#a61af8202ae33b372df8807b2da1142d8',1,'version.hpp']]],
+  ['tetl_5fwchar_5fmax_61',['TETL_WCHAR_MAX',['../builtin__types_8hpp.html#afd9b41902f202d56ae59fda727e49e72',1,'builtin_types.hpp']]],
+  ['tetl_5fwchar_5fmin_62',['TETL_WCHAR_MIN',['../builtin__types_8hpp.html#a691c7b82a165e9694c0b762d7c6acced',1,'builtin_types.hpp']]]
 ];

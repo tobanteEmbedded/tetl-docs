@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"dir_b231c524d21ceb1b2bc93ec7805c27d6.html":[12,0,1,0,47],
 "dir_b2f01d8ecfbee1e3e8680c705c85a3d8.html":[12,0,1,0,42],
 "dir_b30d7fc65793e72e54991785e9e7e489.html":[12,0,1,0,66,1,1],
 "dir_b729200df6fd10c409e1af54792da758.html":[12,0,1,0,66,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "fma_8hpp.html":[12,0,1,0,10,16],
 "fma_8hpp_source.html":[12,0,1,0,10,16],
 "fmax_8hpp.html":[12,0,1,0,10,17],
-"fmax_8hpp_source.html":[12,0,1,0,10,17],
-"fmin_8hpp.html":[12,0,1,0,10,18]
+"fmax_8hpp_source.html":[12,0,1,0,10,17]
 };

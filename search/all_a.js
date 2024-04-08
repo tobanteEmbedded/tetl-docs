@@ -21,7 +21,7 @@ var searchData=
   ['giga_18',['giga',['../namespaceetl.html#aa0782f438fdf0a5e815bb88d8116543a',1,'etl']]],
   ['gnome_5fsort_19',['gnome_sort',['../group__algorithm.html#gafe96d864c89d47ea3902b6fc8826d2b5',1,'etl::gnome_sort(BidirIt first, BidirIt last, Compare comp) -&gt; void'],['../group__algorithm.html#ga4ee8f3605b778d70c05a5697ffae6192',1,'etl::gnome_sort(BidirIt first, BidirIt last) -&gt; void']]],
   ['gnome_5fsort_2ehpp_20',['gnome_sort.hpp',['../gnome__sort_8hpp.html',1,'']]],
-  ['goals_21',['Design Goals',['../index.html#autotoc_md6',1,'']]],
+  ['goals_21',['Design Goals',['../index.html#autotoc_md17',1,'']]],
   ['gpintena_22',['GPINTENA',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da03993b5654f15a8140aa212a0a0166d5',1,'etl::experimental::hardware::mcp23017']]],
   ['gpintenb_23',['GPINTENB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59dae374660a6659b9e5bffe1e1e802d87be',1,'etl::experimental::hardware::mcp23017']]],
   ['gpio_2ehpp_24',['gpio.hpp',['../gpio_8hpp.html',1,'']]],
