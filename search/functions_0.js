@@ -51,7 +51,7 @@ var searchData=
   ['atan2f_48',['atan2f',['../group__cmath.html#ga7af6a240c95112abd3800979b58338b8',1,'etl']]],
   ['atan2l_49',['atan2l',['../group__cmath.html#ga93fecd8eed70865ec7a4bbaf336a108f',1,'etl']]],
   ['atanf_50',['atanf',['../group__cmath.html#gadc77c1f521b383cb7c8e3caea2ccd145',1,'etl']]],
-  ['atanh_51',['atanh',['../group__cmath.html#ga0085c94b22dfe824cd8181da9714026a',1,'etl::atanh(float arg) noexcept -&gt; float'],['../group__cmath.html#ga3cc6272738fda91f94464a0ff78196f2',1,'etl::atanh(double arg) noexcept -&gt; double'],['../group__cmath.html#ga44fbe54fbbf219b24c4e2a9f1bc38cc6',1,'etl::atanh(long double arg) noexcept -&gt; long double'],['../group__cmath.html#ga9b4e3143d7e3727b642a830f9fceff16',1,'etl::atanh(T arg) noexcept -&gt; double']]],
+  ['atanh_51',['atanh',['../group__cmath.html#ga0085c94b22dfe824cd8181da9714026a',1,'etl::atanh(float arg) noexcept -&gt; float'],['../group__cmath.html#ga3cc6272738fda91f94464a0ff78196f2',1,'etl::atanh(double arg) noexcept -&gt; double'],['../group__cmath.html#ga44fbe54fbbf219b24c4e2a9f1bc38cc6',1,'etl::atanh(long double arg) noexcept -&gt; long double'],['../group__cmath.html#ga9fb1822f040a28c13544da79418e2489',1,'etl::atanh(integral auto arg) noexcept -&gt; double']]],
   ['atanhf_52',['atanhf',['../group__cmath.html#gae158c810a6fc7cd5ba3a30ad242fa665',1,'etl']]],
   ['atanhl_53',['atanhl',['../group__cmath.html#ga5dd5afff1dc0cd8c7e74a471a250cff5',1,'etl']]],
   ['atanl_54',['atanl',['../group__cmath.html#ga0da6aa9cdb87c1dd54a93329b7a39b94',1,'etl']]],
