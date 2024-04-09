@@ -22,5 +22,6 @@ var searchData=
   ['etl_3a_3aplaceholders_19',['placeholders',['../namespaceetl_1_1placeholders.html',1,'etl']]],
   ['etl_3a_3aranges_20',['ranges',['../namespaceetl_1_1ranges.html',1,'etl']]],
   ['etl_3a_3aranges_3a_3acpo_21',['cpo',['../namespaceetl_1_1ranges_1_1cpo.html',1,'etl::ranges']]],
-  ['etl_3a_3astring_5fview_5fliterals_22',['string_view_literals',['../namespaceetl_1_1literals_1_1string__view__literals.html',1,'etl']]]
+  ['etl_3a_3astring_5fview_5fliterals_22',['string_view_literals',['../namespaceetl_1_1literals_1_1string__view__literals.html',1,'etl']]],
+  ['etl_3a_3astrings_23',['strings',['../namespaceetl_1_1strings.html',1,'etl']]]
 ];

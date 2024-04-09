@@ -123,6 +123,7 @@ var dir_088299f779bf7d891f9a291787866d6f =
     [ "stdexcept.hpp", "stdexcept_8hpp.html", null ],
     [ "string.hpp", "string_8hpp.html", null ],
     [ "string_view.hpp", "string__view_8hpp.html", null ],
+    [ "strings.hpp", "strings_8hpp.html", null ],
     [ "system_error.hpp", "system__error_8hpp.html", null ],
     [ "tuple.hpp", "tuple_8hpp.html", null ],
     [ "type_traits.hpp", "type__traits_8hpp.html", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['val_0',['val',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#adad0391e1ba46cb4c621f759c9f67c10',1,'etl::experimental::hardware::stm32']]],
-  ['value_1',['value',['../structetl_1_1basic__format__arg.html#a277632813bb6eab2a6ebce69b9599151',1,'etl::basic_format_arg::value'],['../structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571',1,'etl::integral_constant::value']]],
+  ['value_1',['value',['../structetl_1_1basic__format__arg.html#a277632813bb6eab2a6ebce69b9599151',1,'etl::basic_format_arg::value'],['../structetl_1_1strings_1_1to__floating__point__result.html#af3c4346e62ce5b28db7eb352797c73e5',1,'etl::strings::to_floating_point_result::value'],['../structetl_1_1strings_1_1to__integer__result.html#abb90678ae3c8b70ff32c0e28ddd2bb5c',1,'etl::strings::to_integer_result::value'],['../structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571',1,'etl::integral_constant::value']]],
   ['value_5fcomp_2',['value_comp',['../structetl_1_1flat__set.html#a9835183dbe7981807d1a78f43559d424',1,'etl::flat_set::value_comp()'],['../structetl_1_1static__set.html#aa9a663243f377c0679b30eec0ef0c69b',1,'etl::static_set::value_comp()']]],
   ['value_5fcompare_3',['value_compare',['../structetl_1_1flat__set.html#a07d3d19b8346c70ccd60b326550b5551',1,'etl::flat_set::value_compare'],['../structetl_1_1static__set.html#a07d3d19b8346c70ccd60b326550b5551',1,'etl::static_set::value_compare']]],
   ['value_5for_4',['value_or',['../structetl_1_1expected.html#afd74b4d087a50f844cb7b4b36eb812d0',1,'etl::expected::value_or(U &amp;&amp;fallback) const &amp;-&gt; T'],['../structetl_1_1expected.html#a59c81efffd705fa5e7e0ee929da1c1d1',1,'etl::expected::value_or(U &amp;&amp;fallback) &amp;&amp;-&gt; T'],['../structetl_1_1optional.html#ac1018dae8b7954ada4445cc24cc182f2',1,'etl::optional::value_or(U &amp;&amp;defaultValue) const &amp;-&gt; value_type'],['../structetl_1_1optional.html#a0d5545fc0107174fb0785e41d5309adf',1,'etl::optional::value_or(U &amp;&amp;defaultValue) &amp;&amp;-&gt; value_type']]],
@@ -37,7 +37,7 @@ var searchData=
   ['vector_5fabs_5fsum_34',['vector_abs_sum',['../group__linalg.html#gae991b3ad5a3a6cb6536f25a5e847a687',1,'etl::linalg::vector_abs_sum(InVec v, Scalar init) noexcept -&gt; Scalar'],['../group__linalg.html#gaa6e3ca96a0e36a246d067a2e7cd14299',1,'etl::linalg::vector_abs_sum(InVec v) noexcept -&gt; typename InVec::value_type']]],
   ['vector_5ft_35',['vector_t',['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html#aac71403b76a4461dbb0f62fc5b37fdfe',1,'etl::experimental::hardware::stm32::isr']]],
   ['vector_5ftwo_5fnorm_36',['vector_two_norm',['../group__linalg.html#gacfe629c56077186d1a4ef180ecabe0ab',1,'etl::linalg::vector_two_norm(InVec v, Scalar init) noexcept -&gt; Scalar'],['../group__linalg.html#gae89d2a8589fcabfa4a9ee1b12e7ccd59',1,'etl::linalg::vector_two_norm(InVec v) noexcept -&gt; typename InVec::value_type']]],
-  ['verify_37',['clang-verify',['../md_docs_2roadmap.html#autotoc_md29',1,'']]],
+  ['verify_37',['clang-verify',['../md_docs_2roadmap.html#autotoc_md37',1,'']]],
   ['version_38',['version',['../group__version.html',1,'']]],
   ['version_2ehpp_39',['version.hpp',['../__config_2version_8hpp.html',1,'(Global Namespace)'],['../version_8hpp.html',1,'(Global Namespace)']]],
   ['vformat_5fto_40',['vformat_to',['../namespaceetl.html#a08c2340a69881856d04c55c19bb5c291',1,'etl']]],

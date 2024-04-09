@@ -86,10 +86,11 @@ var searchData=
   ['output_20library_83',['Input/Output Library',['../group__io-library.html',1,'']]],
   ['output_5fdata_84',['output_data',['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html#a49e734ee0c3862fd5a9a1fe3e4bbf039',1,'etl::experimental::hardware::stm32::gpio_memory_layout']]],
   ['output_5fiterator_5ftag_85',['output_iterator_tag',['../structetl_1_1output__iterator__tag.html',1,'etl']]],
-  ['overflow_5ferror_86',['overflow_error',['../structetl_1_1overflow__error.html',1,'overflow_error'],['../structetl_1_1overflow__error.html#a650255d7e0f15dc78e2d685990a37589',1,'etl::overflow_error::overflow_error()=default'],['../structetl_1_1overflow__error.html#ae873b3c0048dd30e7093ae259995428e',1,'etl::overflow_error::overflow_error(char const *what)']]],
-  ['overflow_5ferror_2ehpp_87',['overflow_error.hpp',['../overflow__error_8hpp.html',1,'']]],
-  ['overload_88',['overload',['../structetl_1_1overload.html',1,'overload&lt; Functor &gt;'],['../namespaceetl.html#aabca2e2f91841c82fb5ef20995a618bb',1,'etl::overload(Functor...) -&gt; overload&lt; Functor... &gt;']]],
-  ['overload_2ehpp_89',['overload.hpp',['../overload_8hpp.html',1,'']]],
-  ['owner_5fdead_90',['owner_dead',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a2abac2fa6722c56b2ea17ac6c4097f68',1,'etl']]],
-  ['owns_5flock_91',['owns_lock',['../structetl_1_1unique__lock.html#ab3c6f41040a2fdf9ef4689c31b08acff',1,'etl::unique_lock']]]
+  ['overflow_86',['overflow',['../namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a0bd9f6dd716003f3818d15d2e211ee73',1,'etl::strings::overflow'],['../namespaceetl_1_1strings.html#ae7104c48ed7b2dfabf112aa5eb629bb5a0bd9f6dd716003f3818d15d2e211ee73',1,'etl::strings::overflow'],['../namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73',1,'etl::strings::overflow']]],
+  ['overflow_5ferror_87',['overflow_error',['../structetl_1_1overflow__error.html',1,'overflow_error'],['../structetl_1_1overflow__error.html#a650255d7e0f15dc78e2d685990a37589',1,'etl::overflow_error::overflow_error()=default'],['../structetl_1_1overflow__error.html#ae873b3c0048dd30e7093ae259995428e',1,'etl::overflow_error::overflow_error(char const *what)']]],
+  ['overflow_5ferror_2ehpp_88',['overflow_error.hpp',['../overflow__error_8hpp.html',1,'']]],
+  ['overload_89',['overload',['../structetl_1_1overload.html',1,'overload&lt; Functor &gt;'],['../namespaceetl.html#aabca2e2f91841c82fb5ef20995a618bb',1,'etl::overload(Functor...) -&gt; overload&lt; Functor... &gt;']]],
+  ['overload_2ehpp_90',['overload.hpp',['../overload_8hpp.html',1,'']]],
+  ['owner_5fdead_91',['owner_dead',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a2abac2fa6722c56b2ea17ac6c4097f68',1,'etl']]],
+  ['owns_5flock_92',['owns_lock',['../structetl_1_1unique__lock.html#ab3c6f41040a2fdf9ef4689c31b08acff',1,'etl::unique_lock']]]
 ];

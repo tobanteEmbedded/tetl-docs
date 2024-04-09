@@ -113,7 +113,7 @@ $(function(){initNavTree('stoi_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="integral_8hpp.html">etl/_concepts/integral.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="__string__view_2string__view_8hpp.html">etl/_string_view/string_view.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="conversion_8hpp.html">etl/_strings/conversion.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="to__integer_8hpp.html">etl/_strings/to_integer.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -122,8 +122,8 @@ $(function(){initNavTree('stoi_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> sto_impl(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a> str, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a>* pos, <span class="keywordtype">int</span> base) -&gt; Int</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> trim = detail::skip_whitespace::yes;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> <span class="keyword">const</span> res      = detail::string_to_integer&lt;Int, trim&gt;(str.data(), str.size(), <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(base));</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> trim = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#abe33c9fd6436aecdb4d123423eb1fcc9aa6105c0a611b41b08f1209506350279e">strings::skip_whitespace::yes</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> <span class="keyword">const</span> res      = strings::to_integer&lt;Int, trim&gt;(str.data(), str.size(), <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(base));</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> (pos != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        *pos = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">etl::distance</a>(str.data(), res.end));</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
@@ -172,9 +172,9 @@ $(function(){initNavTree('stoi_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRING_STOI_HPP</span></div>
 <div class="ttc" id="a__string__view_2string__view_8hpp_html"><div class="ttname"><a href="__string__view_2string__view_8hpp.html">string_view.hpp</a></div></div>
-<div class="ttc" id="aconversion_8hpp_html"><div class="ttname"><a href="conversion_8hpp.html">conversion.hpp</a></div></div>
 <div class="ttc" id="agroup__iterator_html_gaba994bcf39b8b428fec5852ea0cc728c"><div class="ttname"><a href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">etl::distance</a></div><div class="ttdeci">constexpr auto distance(It first, It last) -&gt; typename iterator_traits&lt; It &gt;::difference_type</div><div class="ttdoc">Returns the number of hops from first to last.</div><div class="ttdef"><b>Definition</b> distance.hpp:16</div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_1_1strings_html_abe33c9fd6436aecdb4d123423eb1fcc9aa6105c0a611b41b08f1209506350279e"><div class="ttname"><a href="namespaceetl_1_1strings.html#abe33c9fd6436aecdb4d123423eb1fcc9aa6105c0a611b41b08f1209506350279e">etl::strings::skip_whitespace::yes</a></div><div class="ttdeci">@ yes</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a0c74f60fe53545b60e1c1404719b84e6"><div class="ttname"><a href="namespaceetl.html#a0c74f60fe53545b60e1c1404719b84e6">etl::stoul</a></div><div class="ttdeci">constexpr auto stoul(etl::string_view str, etl::size_t *pos=nullptr, int base=10) -&gt; unsigned long</div><div class="ttdoc">Interprets a signed integer value in the string str.</div><div class="ttdef"><b>Definition</b> stoi.hpp:65</div></div>
 <div class="ttc" id="anamespaceetl_html_a1a292e75d88b4e3619e2654b8f6f8660"><div class="ttname"><a href="namespaceetl.html#a1a292e75d88b4e3619e2654b8f6f8660">etl::stoi</a></div><div class="ttdeci">constexpr auto stoi(etl::string_view str, etl::size_t *pos=nullptr, int base=10) -&gt; int</div><div class="ttdoc">Interprets a signed integer value in the string str.</div><div class="ttdef"><b>Definition</b> stoi.hpp:32</div></div>
@@ -183,13 +183,14 @@ $(function(){initNavTree('stoi_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespaceetl_html_a8b844e6e1102e2efe7b9f7ad9ef4fff6"><div class="ttname"><a href="namespaceetl.html#a8b844e6e1102e2efe7b9f7ad9ef4fff6">etl::stoll</a></div><div class="ttdeci">constexpr auto stoll(etl::string_view str, etl::size_t *pos=nullptr, int base=10) -&gt; long long</div><div class="ttdoc">Interprets a signed integer value in the string str.</div><div class="ttdef"><b>Definition</b> stoi.hpp:54</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
+<div class="ttc" id="ato__integer_8hpp_html"><div class="ttname"><a href="to__integer_8hpp.html">to_integer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_23439b223dadb75c0ae61ef08b8b58fb.html">_string</a></li><li class="navelem"><a class="el" href="stoi_8hpp.html">stoi.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 19:20:47 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 20:27:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

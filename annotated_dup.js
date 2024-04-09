@@ -92,6 +92,11 @@ var annotated_dup =
         [ "destroy_fn", "structetl_1_1ranges_1_1destroy__fn.html", "structetl_1_1ranges_1_1destroy__fn" ],
         [ "in_fun_result", "structetl_1_1ranges_1_1in__fun__result.html", "structetl_1_1ranges_1_1in__fun__result" ]
       ] ],
+      [ "strings", "namespaceetl_1_1strings.html", [
+        [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", "structetl_1_1strings_1_1from__integer__result" ],
+        [ "to_floating_point_result", "structetl_1_1strings_1_1to__floating__point__result.html", "structetl_1_1strings_1_1to__floating__point__result" ],
+        [ "to_integer_result", "structetl_1_1strings_1_1to__integer__result.html", "structetl_1_1strings_1_1to__integer__result" ]
+      ] ],
       [ "_swap_no_throw", "structetl_1_1__swap__no__throw.html", null ],
       [ "_swappable_with_helper", "structetl_1_1__swappable__with__helper.html", null ],
       [ "_swappable_with_helper< T, U, void_t< decltype(swap(declval< T >(), declval< U >()))> >", "structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html", null ],

@@ -95,6 +95,7 @@ var namespaceetl =
     [ "string_view_literals", "namespaceetl_1_1literals_1_1string__view__literals.html", [
       [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22", null ]
     ] ],
+    [ "strings", "namespaceetl_1_1strings.html", "namespaceetl_1_1strings" ],
     [ "_swap_no_throw", "structetl_1_1__swap__no__throw.html", null ],
     [ "_swappable_with_helper", "structetl_1_1__swappable__with__helper.html", null ],
     [ "_swappable_with_helper< T, U, void_t< decltype(swap(declval< T >(), declval< U >()))> >", "structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html", null ],
