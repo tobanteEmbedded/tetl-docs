@@ -23,7 +23,7 @@ var dir_1b3ca367ecd0d15e1fc2816d4b698bf7 =
     [ "enable_if.hpp", "enable__if_8hpp.html", "enable__if_8hpp" ],
     [ "extent.hpp", "extent_8hpp.html", "extent_8hpp" ],
     [ "has_unique_object_representations.hpp", "has__unique__object__representations_8hpp.html", "has__unique__object__representations_8hpp" ],
-    [ "has_virtual_destructor.hpp", "has__virtual__destructor_8hpp.html", "has__virtual__destructor_8hpp" ],
+    [ "has_virtual_destructor.hpp", "has__virtual__destructor_8hpp.html", null ],
     [ "index_constant.hpp", "index__constant_8hpp.html", "index__constant_8hpp" ],
     [ "integral_constant.hpp", "integral__constant_8hpp.html", "integral__constant_8hpp" ],
     [ "invoke_result.hpp", "invoke__result_8hpp.html", "invoke__result_8hpp" ],

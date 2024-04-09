@@ -119,23 +119,24 @@ $(function(){initNavTree('is__scoped__enum_8hpp_source.html',''); initResizable(
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">bool</span> = is_enum_v&lt;T&gt;&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1is__scoped__enum.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__scoped__enum.html">is_scoped_enum</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">false_type</a> { };</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1is__scoped__enum_3_01T_00_01true_01_4.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__scoped__enum.html">is_scoped_enum</a>&lt;T, <a class="code hl_struct" href="structetl_1_1bitset.html">true</a>&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;!is_convertible_v&lt;T, underlying_type_t&lt;T&gt;&gt;&gt; { };</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">   26</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">is_scoped_enum_v</a> = <a class="code hl_struct" href="structetl_1_1is__scoped__enum.html">is_scoped_enum&lt;T&gt;::value</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_SCOPED_ENUM_HPP</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">requires</span> <a class="code hl_struct" href="structetl_1_1bitset.html">is_enum_v&lt;T&gt;</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1is__scoped__enum_3_01T_01_4.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__scoped__enum.html">is_scoped_enum</a>&lt;T&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;not is_convertible_v&lt;T, underlying_type_t&lt;T&gt;&gt;&gt; { };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">   27</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">is_scoped_enum_v</a> = <a class="code hl_struct" href="structetl_1_1is__scoped__enum.html">is_scoped_enum&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_SCOPED_ENUM_HPP</span></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="ais__convertible_8hpp_html"><div class="ttname"><a href="is__convertible_8hpp.html">is_convertible.hpp</a></div></div>
 <div class="ttc" id="ais__enum_8hpp_html"><div class="ttname"><a href="is__enum_8hpp.html">is_enum.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a78db0060aa04a75ce5b8a07e7ece59de"><div class="ttname"><a href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">etl::is_scoped_enum_v</a></div><div class="ttdeci">constexpr bool is_scoped_enum_v</div><div class="ttdoc">Checks whether T is an scoped enumeration type. Provides the member constant value which is equal to ...</div><div class="ttdef"><b>Definition</b> is_scoped_enum.hpp:26</div></div>
+<div class="ttc" id="anamespaceetl_html_a78db0060aa04a75ce5b8a07e7ece59de"><div class="ttname"><a href="namespaceetl.html#a78db0060aa04a75ce5b8a07e7ece59de">etl::is_scoped_enum_v</a></div><div class="ttdeci">constexpr bool is_scoped_enum_v</div><div class="ttdoc">Checks whether T is an scoped enumeration type. Provides the member constant value which is equal to ...</div><div class="ttdef"><b>Definition</b> is_scoped_enum.hpp:27</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:9</div></div>
 <div class="ttc" id="astructetl_1_1is__scoped__enum_html"><div class="ttname"><a href="structetl_1_1is__scoped__enum.html">etl::is_scoped_enum</a></div><div class="ttdef"><b>Definition</b> is_scoped_enum.hpp:14</div></div>
@@ -146,7 +147,7 @@ $(function(){initNavTree('is__scoped__enum_8hpp_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__scoped__enum_8hpp.html">is_scoped_enum.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

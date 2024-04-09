@@ -140,7 +140,7 @@ $(function(){initNavTree('popcount_8hpp_source.html',''); initResizable(true); }
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group__bit.html#ga484a219aea6406f7398208397bb244eb">   38</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#ga484a219aea6406f7398208397bb244eb">popcount</a>(UInt val) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">not</a> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">etl::is_constant_evaluated</a>()) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">not</a> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a>()) {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#if __has_builtin(__builtin_popcount)</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<span class="keyword">sizeof</span>(UInt) == <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">__builtin_popcountll</a>(val));</div>
@@ -175,7 +175,7 @@ $(function(){initNavTree('popcount_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a0e972f307317c01cd5f823260660e0a.html">_bit</a></li><li class="navelem"><a class="el" href="popcount_8hpp.html">popcount.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

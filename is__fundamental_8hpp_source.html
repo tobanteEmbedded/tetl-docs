@@ -120,7 +120,7 @@ $(function(){initNavTree('is__fundamental_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1is__fundamental.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__fundamental.html">is_fundamental</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;is_arithmetic_v&lt;T&gt; || is_void_v&lt;T&gt; || is_null_pointer_v&lt;T&gt;&gt; { };</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1is__fundamental.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__fundamental.html">is_fundamental</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;is_arithmetic_v&lt;T&gt; or is_void_v&lt;T&gt; or is_null_pointer_v&lt;T&gt;&gt; { };</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#aec01da22051322819e36fdfa6c5514a5">   20</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#aec01da22051322819e36fdfa6c5514a5">is_fundamental_v</a> = <a class="code hl_struct" href="structetl_1_1is__fundamental.html">is_fundamental&lt;T&gt;::value</a>;</div>
@@ -142,7 +142,7 @@ $(function(){initNavTree('is__fundamental_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__fundamental_8hpp.html">is_fundamental.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

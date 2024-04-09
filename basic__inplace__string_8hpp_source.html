@@ -1330,7 +1330,7 @@ $(function(){initNavTree('basic__inplace__string_8hpp_source.html',''); initResi
 <div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>        <a class="code hl_struct" href="structetl_1_1bitset.html">etl::array&lt;value_type, Capacity + 1&gt;</a> _buffer{};</div>
 <div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>    };</div>
 <div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span> </div>
-<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <span class="keyword">using </span>layout_type = <a class="code hl_typedef" href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a>&lt;(Capacity &lt; 16), tiny_layout, normal_layout&gt;;</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <span class="keyword">using </span>layout_type = <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a>&lt;(Capacity &lt; 16), tiny_layout, normal_layout&gt;;</div>
 <div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>    layout_type _storage{};</div>
 <div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>};</div>
 </div>
@@ -1636,9 +1636,9 @@ $(function(){initNavTree('basic__inplace__string_8hpp_source.html',''); initResi
 <div class="ttc" id="amax_8hpp_html"><div class="ttname"><a href="max_8hpp.html">max.hpp</a></div></div>
 <div class="ttc" id="amemset_8hpp_html"><div class="ttname"><a href="memset_8hpp.html">memset.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_a0c27b4cf9bc931994626a2ef5dccdd31"><div class="ttname"><a href="namespaceetl.html#a0c27b4cf9bc931994626a2ef5dccdd31">etl::operator!=</a></div><div class="ttdeci">constexpr auto operator!=(complex&lt; T &gt; const &amp;lhs, complex&lt; T &gt; const &amp;rhs) -&gt; bool</div><div class="ttdef"><b>Definition</b> complex.hpp:305</div></div>
 <div class="ttc" id="anamespaceetl_html_a27742612e6861226707341546907da1e"><div class="ttname"><a href="namespaceetl.html#a27742612e6861226707341546907da1e">etl::operator==</a></div><div class="ttdeci">constexpr auto operator==(complex&lt; T &gt; const &amp;lhs, complex&lt; T &gt; const &amp;rhs) -&gt; bool</div><div class="ttdef"><b>Definition</b> complex.hpp:287</div></div>
-<div class="ttc" id="anamespaceetl_html_a4ccf02556580259044928051b1689171"><div class="ttname"><a href="namespaceetl.html#a4ccf02556580259044928051b1689171">etl::conditional_t</a></div><div class="ttdeci">typename etl::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_a6f7f02db9e66eaec8dccdca2f4e98a2f"><div class="ttname"><a href="namespaceetl.html#a6f7f02db9e66eaec8dccdca2f4e98a2f">etl::string_view</a></div><div class="ttdeci">basic_string_view&lt; char, etl::char_traits&lt; char &gt; &gt; string_view</div><div class="ttdoc">Typedefs for common character type.</div><div class="ttdef"><b>Definition</b> string_view.hpp:10</div></div>
 <div class="ttc" id="anamespaceetl_html_a86b87a87e119f906f153eb7a9dd4b27f"><div class="ttname"><a href="namespaceetl.html#a86b87a87e119f906f153eb7a9dd4b27f">etl::operator&lt;</a></div><div class="ttdeci">constexpr auto operator&lt;(etl::reverse_iterator&lt; Iter1 &gt; const &amp;lhs, etl::reverse_iterator&lt; Iter2 &gt; const &amp;rhs) -&gt; bool</div><div class="ttdoc">Compares the underlying iterators. Inverse comparisons are applied in order to take into account that...</div><div class="ttdef"><b>Definition</b> reverse_iterator.hpp:168</div></div>
 <div class="ttc" id="anamespaceetl_html_a8f1ea907ad0e2faef6a9dc5daae77f10"><div class="ttname"><a href="namespaceetl.html#a8f1ea907ad0e2faef6a9dc5daae77f10">etl::operator+</a></div><div class="ttdeci">constexpr auto operator+(complex&lt; T &gt; const &amp;val) -&gt; complex&lt; T &gt;</div><div class="ttdef"><b>Definition</b> complex.hpp:203</div></div>
@@ -1816,7 +1816,7 @@ $(function(){initNavTree('basic__inplace__string_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_23439b223dadb75c0ae61ef08b8b58fb.html">_string</a></li><li class="navelem"><a class="el" href="basic__inplace__string_8hpp.html">basic_inplace_string.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

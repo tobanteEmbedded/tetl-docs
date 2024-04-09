@@ -120,18 +120,18 @@ $(function(){initNavTree('add__pointer_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">auto</span> try_add_pointer(<span class="keywordtype">int</span>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::type_identity&lt;etl::remove_reference_t&lt;T&gt;</a>*&gt;;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">auto</span> try_add_pointer(<span class="keywordtype">int</span>) -&gt; type_identity&lt;remove_reference_t&lt;T&gt;*&gt;;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">auto</span> try_add_pointer(...) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::type_identity&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">auto</span> try_add_pointer(...) -&gt; type_identity&lt;T&gt;;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1add__pointer.html">add_pointer</a> : <a class="code hl_struct" href="structetl_1_1bitset.html">decltype</a>(etl::detail::try_add_pointer&lt;T&gt;(0)) { };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1add__pointer.html">add_pointer</a> : <a class="code hl_struct" href="structetl_1_1bitset.html">decltype</a>(detail::try_add_pointer&lt;T&gt;(0)) { };</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html#ab151b46ce60c1bec795bd73085252033">   35</a></span><span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1add__pointer.html#ab151b46ce60c1bec795bd73085252033">add_pointer_t</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1add__pointer.html">etl::add_pointer&lt;T&gt;::type</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structetl_1_1add__pointer.html#a895a26b8692afd426fdc2d82c36a9951">   35</a></span><span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1add__pointer.html#a895a26b8692afd426fdc2d82c36a9951">add_pointer_t</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1add__pointer.html">add_pointer&lt;T&gt;::type</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -139,7 +139,7 @@ $(function(){initNavTree('add__pointer_8hpp_source.html',''); initResizable(true
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1add__pointer_html"><div class="ttname"><a href="structetl_1_1add__pointer.html">etl::add_pointer</a></div><div class="ttdoc">If T is a reference type, then provides the member typedef type which is a pointer to the referred ty...</div><div class="ttdef"><b>Definition</b> add_pointer.hpp:31</div></div>
-<div class="ttc" id="astructetl_1_1add__pointer_html_ab151b46ce60c1bec795bd73085252033"><div class="ttname"><a href="structetl_1_1add__pointer.html#ab151b46ce60c1bec795bd73085252033">etl::add_pointer::add_pointer_t</a></div><div class="ttdeci">typename etl::add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdef"><b>Definition</b> add_pointer.hpp:35</div></div>
+<div class="ttc" id="astructetl_1_1add__pointer_html_a895a26b8692afd426fdc2d82c36a9951"><div class="ttname"><a href="structetl_1_1add__pointer.html#a895a26b8692afd426fdc2d82c36a9951">etl::add_pointer::add_pointer_t</a></div><div class="ttdeci">typename add_pointer&lt; T &gt;::type add_pointer_t</div><div class="ttdef"><b>Definition</b> add_pointer.hpp:35</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="atype__identity_8hpp_html"><div class="ttname"><a href="type__identity_8hpp.html">type_identity.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -148,7 +148,7 @@ $(function(){initNavTree('add__pointer_8hpp_source.html',''); initResizable(true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="add__pointer_8hpp.html">add_pointer.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

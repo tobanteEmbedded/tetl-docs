@@ -287,7 +287,7 @@ $(function(){initNavTree('conversion_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">bool</span> isNegative = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_signed_v&lt;Int&gt;</a>) {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_signed_v&lt;Int&gt;) {</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">if</span> (num &lt; 0 &amp;&amp; base == 10) {</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            isNegative = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            num        = -num;</div>
@@ -304,7 +304,7 @@ $(function(){initNavTree('conversion_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">etl::is_signed_v&lt;Int&gt;</a>) {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_signed_v&lt;Int&gt;) {</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">if</span> (isNegative) {</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            str[i++] = <span class="charliteral">&#39;-&#39;</span>;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
@@ -335,7 +335,6 @@ $(function(){initNavTree('conversion_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:19</div></div>
 <div class="ttc" id="atolower_8hpp_html"><div class="ttname"><a href="tolower_8hpp.html">tolower.hpp</a></div></div>
 <div class="ttc" id="auint__t_8hpp_html"><div class="ttname"><a href="uint__t_8hpp.html">uint_t.hpp</a></div></div>
@@ -345,7 +344,7 @@ $(function(){initNavTree('conversion_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_ac1289053c60d7d57e43725f5379b917.html">_strings</a></li><li class="navelem"><a class="el" href="conversion_8hpp.html">conversion.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

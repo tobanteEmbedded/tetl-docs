@@ -74,7 +74,7 @@ var hierarchy =
     [ "common_type< T, T >", "structetl_1_1common__type.html", [
       [ "common_type< T >", "structetl_1_1common__type_3_01T_01_4.html", null ]
     ] ],
-    [ "common_type_2_impl< etl::decay_t< T1 >, etl::decay_t< T2 > >", null, [
+    [ "common_type_2_impl< decay_t< T1 >, decay_t< T2 > >", null, [
       [ "common_type< T1, T2 >", "structetl_1_1common__type_3_01T1_00_01T2_01_4.html", null ]
     ] ],
     [ "common_type_multi_impl< void, T1, T2, R... >", null, [
@@ -260,7 +260,7 @@ var hierarchy =
       [ "is_same< nullptr_t, remove_cv_t< T > >", "structetl_1_1is__same.html", [
         [ "is_null_pointer< T >", "structetl_1_1is__null__pointer.html", null ]
       ] ],
-      [ "is_same< void, etl::remove_cv_t< T > >", "structetl_1_1is__same.html", [
+      [ "is_same< void, remove_cv_t< T > >", "structetl_1_1is__same.html", [
         [ "is_void< T >", "structetl_1_1is__void.html", null ]
       ] ],
       [ "is_trivially_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__trivially__assignable.html", [
@@ -275,7 +275,7 @@ var hierarchy =
       [ "is_trivially_constructible< T >", "structetl_1_1is__trivially__constructible.html", [
         [ "is_trivially_default_constructible< T >", "structetl_1_1is__trivially__default__constructible.html", null ]
       ] ],
-      [ "is_trivially_constructible< T, etl::add_rvalue_reference_t< T > >", "structetl_1_1is__trivially__constructible.html", [
+      [ "is_trivially_constructible< T, add_rvalue_reference_t< T > >", "structetl_1_1is__trivially__constructible.html", [
         [ "is_trivially_move_constructible< T >", "structetl_1_1is__trivially__move__constructible.html", null ]
       ] ],
       [ "_swap_no_throw< T, U >", "structetl_1_1__swap__no__throw.html", null ],
@@ -353,11 +353,11 @@ var hierarchy =
       [ "is_rvalue_reference< T && >", "structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ],
       [ "is_same< T, U >", "structetl_1_1is__same.html", null ],
       [ "is_scalar< T >", "structetl_1_1is__scalar.html", null ],
-      [ "is_scoped_enum< T, bool >", "structetl_1_1is__scoped__enum.html", null ],
-      [ "is_scoped_enum< T, true >", "structetl_1_1is__scoped__enum_3_01T_00_01true_01_4.html", null ],
+      [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum.html", null ],
+      [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum_3_01T_01_4.html", null ],
       [ "is_signed< T >", "structetl_1_1is__signed.html", null ],
       [ "is_specialized< typename, typename, typename >", "structetl_1_1is__specialized.html", null ],
-      [ "is_specialized< Template, T, etl::void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01etl_1_1void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
+      [ "is_specialized< Template, T, void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
       [ "is_standard_layout< T >", "structetl_1_1is__standard__layout.html", null ],
       [ "is_swappable_with< T, U >", "structetl_1_1is__swappable__with.html", null ],
       [ "is_trivial< T >", "structetl_1_1is__trivial.html", null ],
@@ -368,6 +368,7 @@ var hierarchy =
       [ "is_unbounded_array< T >", "structetl_1_1is__unbounded__array.html", null ],
       [ "is_unbounded_array< T[]>", "structetl_1_1is__unbounded__array_3_01T_0f_0e_4.html", null ],
       [ "is_union< T >", "structetl_1_1is__union.html", null ],
+      [ "is_unsigned< T >", "structetl_1_1is__unsigned.html", null ],
       [ "is_volatile< T >", "structetl_1_1is__volatile.html", null ],
       [ "is_volatile< T volatile >", "structetl_1_1is__volatile_3_01T_01volatile_01_4.html", null ],
       [ "contains< Needle, list< Ts... > >", "structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
@@ -377,22 +378,10 @@ var hierarchy =
       [ "uses_allocator< Type, Alloc >", "structetl_1_1uses__allocator.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, 0 >", "structetl_1_1integral__constant.html", [
-      [ "extent< T, N - 1 >", "structetl_1_1extent.html", [
-        [ "extent< T[I], N >", "structetl_1_1extent_3_01T_0fI_0e_00_01N_01_4.html", null ],
-        [ "extent< T[], N >", "structetl_1_1extent_3_01T_0f_0e_00_01N_01_4.html", null ]
-      ] ],
-      [ "extent< T, N >", "structetl_1_1extent.html", null ],
-      [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ],
       [ "index_of< Head, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01Head_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, 2 >", "structetl_1_1integral__constant.html", [
       [ "tuple_size< etl::complex< T > >", "structetl_1_1tuple__size_3_01etl_1_1complex_3_01T_01_4_01_4.html", null ]
-    ] ],
-    [ "integral_constant< etl::size_t, alignof(T)>", "structetl_1_1integral__constant.html", [
-      [ "alignment_of< T >", "structetl_1_1alignment__of.html", null ]
-    ] ],
-    [ "integral_constant< etl::size_t, I >", "structetl_1_1integral__constant.html", [
-      [ "extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, index_of_v< T, list< Tail... > >+1 >", "structetl_1_1integral__constant.html", [
       [ "index_of< T, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01T_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
@@ -408,10 +397,22 @@ var hierarchy =
     ] ],
     [ "integral_constant< int, N >", "structetl_1_1integral__constant.html", null ],
     [ "integral_constant< size_t, 0 >", "structetl_1_1integral__constant.html", [
+      [ "extent< T, N - 1 >", "structetl_1_1extent.html", [
+        [ "extent< T[I], N >", "structetl_1_1extent_3_01T_0fI_0e_00_01N_01_4.html", null ],
+        [ "extent< T[], N >", "structetl_1_1extent_3_01T_0f_0e_00_01N_01_4.html", null ]
+      ] ],
+      [ "extent< T, N >", "structetl_1_1extent.html", null ],
+      [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ],
       [ "rank< T >", "structetl_1_1rank.html", null ]
     ] ],
     [ "integral_constant< size_t, 2 >", "structetl_1_1integral__constant.html", [
       [ "tuple_size< pair< T1, T2 > >", "structetl_1_1tuple__size_3_01pair_3_01T1_00_01T2_01_4_01_4.html", null ]
+    ] ],
+    [ "integral_constant< size_t, alignof(T)>", "structetl_1_1integral__constant.html", [
+      [ "alignment_of< T >", "structetl_1_1alignment__of.html", null ]
+    ] ],
+    [ "integral_constant< size_t, I >", "structetl_1_1integral__constant.html", [
+      [ "extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ]
     ] ],
     [ "integral_constant< size_t, N >", "structetl_1_1integral__constant.html", [
       [ "tuple_size< array< T, N > >", "structetl_1_1tuple__size_3_01array_3_01T_00_01N_01_4_01_4.html", null ]
@@ -644,12 +645,6 @@ var hierarchy =
         [ "is_nothrow_default_constructible< T >", "structetl_1_1is__nothrow__default__constructible.html", null ]
       ] ]
     ] ],
-    [ "type", null, [
-      [ "is_unsigned< T >", "structetl_1_1is__unsigned.html", null ],
-      [ "is_unsigned< T const >", "structetl_1_1is__unsigned_3_01T_01const_01_4.html", null ],
-      [ "is_unsigned< T const volatile >", "structetl_1_1is__unsigned_3_01T_01const_01volatile_01_4.html", null ],
-      [ "is_unsigned< T volatile >", "structetl_1_1is__unsigned_3_01T_01volatile_01_4.html", null ]
-    ] ],
     [ "type", "structetl_1_1aligned__storage_1_1type.html", null ],
     [ "type", "structetl_1_1aligned__union_1_1type.html", null ],
     [ "type", null, [
@@ -683,7 +678,7 @@ var hierarchy =
     [ "unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
     [ "unsequenced_policy", "structetl_1_1execution_1_1unsequenced__policy.html", null ],
     [ "unwrap_reference< T >", "structetl_1_1unwrap__reference.html", null ],
-    [ "unwrap_reference< etl::reference_wrapper< T > >", "structetl_1_1unwrap__reference_3_01etl_1_1reference__wrapper_3_01T_01_4_01_4.html", null ],
+    [ "unwrap_reference< reference_wrapper< T > >", "structetl_1_1unwrap__reference_3_01reference__wrapper_3_01T_01_4_01_4.html", null ],
     [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html", null ],
     [ "variadic_union< Ts >", "unionetl_1_1variadic__union.html", null ],
     [ "variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", null ],

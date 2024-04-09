@@ -80,7 +80,7 @@ var searchData=
   ['sleep_5funtil_77',['sleep_until',['../namespaceetl_1_1experimental_1_1freertos_1_1this__task.html#a76272782f22bb27b41f26dcd6d519d22',1,'etl::experimental::freertos::this_task']]],
   ['small_5fptr_78',['small_ptr',['../structetl_1_1small__ptr.html',1,'small_ptr&lt; Type, BaseAddress, StorageType &gt;'],['../structetl_1_1small__ptr.html#aa73bf156e53a0eabd7c41162cde5dfb5',1,'etl::small_ptr::small_ptr()=default'],['../structetl_1_1small__ptr.html#a257e4da8e16248e4a798baeee447f3be',1,'etl::small_ptr::small_ptr(nullptr_t null)'],['../structetl_1_1small__ptr.html#a2c4104bda4d9d4f0d62ea5299e3fb423',1,'etl::small_ptr::small_ptr(Type *ptr)']]],
   ['small_5fptr_2ehpp_79',['small_ptr.hpp',['../small__ptr_8hpp.html',1,'']]],
-  ['smallest_5fsize_5ft_80',['smallest_size_t',['../group__type__traits.html#ga2a3d3a54ac48d364dc4b3a06a7522126',1,'etl']]],
+  ['smallest_5fsize_5ft_80',['smallest_size_t',['../group__type__traits.html#ga0fa3ee2a2bd4938f2e8f2f7e00117be6',1,'etl']]],
   ['smallest_5fsize_5ft_2ehpp_81',['smallest_size_t.hpp',['../smallest__size__t_8hpp.html',1,'']]],
   ['sort_82',['sort',['../group__algorithm.html#gad5ef221b98a814660142c728ce9bac78',1,'etl::sort(RandomIt first, RandomIt last, Compare comp) -&gt; void'],['../group__algorithm.html#ga9823f4c1911f50c9f7ac3b4a8be9f294',1,'etl::sort(RandomIt first, RandomIt last) -&gt; void']]],
   ['sort_2ehpp_83',['sort.hpp',['../sort_8hpp.html',1,'']]],

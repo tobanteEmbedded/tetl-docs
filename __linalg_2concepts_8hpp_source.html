@@ -142,7 +142,7 @@ $(function(){initNavTree('__linalg_2concepts_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">struct </span>is_mdspan&lt;<a class="code hl_function" href="namespaceetl.html#a1fe0d774229c098831602663bd591f28">mdspan</a>&lt;T, Extents, Layout, Accessor&gt;&gt; : <a class="code hl_typedef" href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">true_type</a> { };</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>common_size_type_t = <a class="code hl_typedef" href="namespaceetl.html#a29d6d310a0bc8bcb40b024f5259088a6">common_type_t</a>&lt;<span class="keyword">typename</span> Ts::size_type...&gt;;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>common_size_type_t = <a class="code hl_typedef" href="namespaceetl.html#ac0f7a81113943dc723a4e4751c342144">common_type_t</a>&lt;<span class="keyword">typename</span> Ts::size_type...&gt;;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span>linalg_adl_checks {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
@@ -311,9 +311,9 @@ $(function(){initNavTree('__linalg_2concepts_8hpp_source.html',''); initResizabl
 <div class="ttc" id="anamespaceetl_1_1experimental_1_1hardware_1_1stm32_html_adad0391e1ba46cb4c621f759c9f67c10"><div class="ttname"><a href="namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#adad0391e1ba46cb4c621f759c9f67c10">etl::experimental::hardware::stm32::val</a></div><div class="ttdeci">auto val(pin_number pin) -&gt; etl::uint16_t</div><div class="ttdef"><b>Definition</b> gpio.hpp:37</div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
 <div class="ttc" id="anamespaceetl_html_a1fe0d774229c098831602663bd591f28"><div class="ttname"><a href="namespaceetl.html#a1fe0d774229c098831602663bd591f28">etl::mdspan</a></div><div class="ttdeci">mdspan(CArray &amp;) -&gt; mdspan&lt; remove_all_extents_t&lt; CArray &gt;, extents&lt; size_t, extent_v&lt; CArray, 0 &gt; &gt; &gt;</div></div>
-<div class="ttc" id="anamespaceetl_html_a29d6d310a0bc8bcb40b024f5259088a6"><div class="ttname"><a href="namespaceetl.html#a29d6d310a0bc8bcb40b024f5259088a6">etl::common_type_t</a></div><div class="ttdeci">typename etl::common_type&lt; T... &gt;::type common_type_t</div><div class="ttdef"><b>Definition</b> common_type.hpp:50</div></div>
 <div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_aa6c6bde5fd020a928e6d7b5fe8db7bb0"><div class="ttname"><a href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_ac0f7a81113943dc723a4e4751c342144"><div class="ttname"><a href="namespaceetl.html#ac0f7a81113943dc723a4e4751c342144">etl::common_type_t</a></div><div class="ttdeci">typename common_type&lt; T... &gt;::type common_type_t</div><div class="ttdef"><b>Definition</b> common_type.hpp:50</div></div>
 <div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="areal_8hpp_html"><div class="ttname"><a href="real_8hpp.html">real.hpp</a></div></div>
 <div class="ttc" id="aremove__const_8hpp_html"><div class="ttname"><a href="remove__const_8hpp.html">remove_const.hpp</a></div></div>
@@ -326,7 +326,7 @@ $(function(){initNavTree('__linalg_2concepts_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="__linalg_2concepts_8hpp.html">concepts.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -128,36 +128,36 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe5f4c4381a977a78fc3cfac0610c122" id="r_afe5f4c4381a977a78fc3cfac0610c122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5f4c4381a977a78fc3cfac0610c122">expected</a> () noexcept(<a class="el" href="namespaceetl.html#a2d84124b3f5c4c4fab97253443d07a56">etl::is_nothrow_default_constructible_v</a>&lt; T &gt;)</td></tr>
-<tr class="separator:afe5f4c4381a977a78fc3cfac0610c122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a83cdee3e9b624fb7e5f77536e5466" id="r_a71a83cdee3e9b624fb7e5f77536e5466"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, Args...&gt;</td></tr>
-<tr class="memitem:a71a83cdee3e9b624fb7e5f77536e5466"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a71a83cdee3e9b624fb7e5f77536e5466">expected</a> (<a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept(<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a>&lt; T, Args... &gt;)</td></tr>
-<tr class="separator:a71a83cdee3e9b624fb7e5f77536e5466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3746aecd4c1f7ff8536b298855900207" id="r_a3746aecd4c1f7ff8536b298855900207"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</td></tr>
-<tr class="memitem:a3746aecd4c1f7ff8536b298855900207"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3746aecd4c1f7ff8536b298855900207">expected</a> (<a class="el" href="structetl_1_1unexpect__t.html">etl::unexpect_t</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept(<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a>, Args... &gt;)</td></tr>
-<tr class="separator:a3746aecd4c1f7ff8536b298855900207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab60a0dca98a55b2e0062c768988c8ea5" id="r_ab60a0dca98a55b2e0062c768988c8ea5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</td></tr>
-<tr class="memitem:ab60a0dca98a55b2e0062c768988c8ea5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab60a0dca98a55b2e0062c768988c8ea5">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;</td></tr>
-<tr class="separator:ab60a0dca98a55b2e0062c768988c8ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5523056757783ece3fe00aff9ffc6c62" id="r_a5523056757783ece3fe00aff9ffc6c62"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</td></tr>
-<tr class="memitem:a5523056757783ece3fe00aff9ffc6c62"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5523056757783ece3fe00aff9ffc6c62">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;&amp;</td></tr>
-<tr class="separator:a5523056757783ece3fe00aff9ffc6c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a927edd1aa8050d4a71364a33287d7969" id="r_a927edd1aa8050d4a71364a33287d7969"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</td></tr>
-<tr class="memitem:a927edd1aa8050d4a71364a33287d7969"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a927edd1aa8050d4a71364a33287d7969">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
-<tr class="separator:a927edd1aa8050d4a71364a33287d7969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1bb5425885373c1c7e8c245dd08df83" id="r_ae1bb5425885373c1c7e8c245dd08df83"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</td></tr>
-<tr class="memitem:ae1bb5425885373c1c7e8c245dd08df83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae1bb5425885373c1c7e8c245dd08df83">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;</td></tr>
-<tr class="separator:ae1bb5425885373c1c7e8c245dd08df83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be363734fb52ce5989abaf2b13485fa" id="r_a8be363734fb52ce5989abaf2b13485fa"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a>&lt;T, Args...&gt;</td></tr>
-<tr class="memitem:a8be363734fb52ce5989abaf2b13485fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8be363734fb52ce5989abaf2b13485fa">emplace</a> (<a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept -&gt; T &amp;</td></tr>
-<tr class="separator:a8be363734fb52ce5989abaf2b13485fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1465a23e28691e316bb93b3a2fc74423" id="r_a1465a23e28691e316bb93b3a2fc74423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1465a23e28691e316bb93b3a2fc74423">expected</a> () noexcept(<a class="el" href="namespaceetl.html#a2d84124b3f5c4c4fab97253443d07a56">is_nothrow_default_constructible_v</a>&lt; T &gt;)</td></tr>
+<tr class="separator:a1465a23e28691e316bb93b3a2fc74423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653fe2b81f2da20c3f6607592aadaa98" id="r_a653fe2b81f2da20c3f6607592aadaa98"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, Args...&gt;</td></tr>
+<tr class="memitem:a653fe2b81f2da20c3f6607592aadaa98"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a653fe2b81f2da20c3f6607592aadaa98">expected</a> (<a class="el" href="structetl_1_1in__place__t.html">in_place_t</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept(<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt; T, Args... &gt;)</td></tr>
+<tr class="separator:a653fe2b81f2da20c3f6607592aadaa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce86390b2226ed3f0bc8b04127b287d" id="r_a4ce86390b2226ed3f0bc8b04127b287d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</td></tr>
+<tr class="memitem:a4ce86390b2226ed3f0bc8b04127b287d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4ce86390b2226ed3f0bc8b04127b287d">expected</a> (<a class="el" href="structetl_1_1unexpect__t.html">unexpect_t</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept(<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a>, Args... &gt;)</td></tr>
+<tr class="separator:a4ce86390b2226ed3f0bc8b04127b287d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060a47d37d7a5ee075549fb89574e115" id="r_a060a47d37d7a5ee075549fb89574e115"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</td></tr>
+<tr class="memitem:a060a47d37d7a5ee075549fb89574e115"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a060a47d37d7a5ee075549fb89574e115">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;</td></tr>
+<tr class="separator:a060a47d37d7a5ee075549fb89574e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f16e1bdaacd9ff4d66eef5bcb70967" id="r_a43f16e1bdaacd9ff4d66eef5bcb70967"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</td></tr>
+<tr class="memitem:a43f16e1bdaacd9ff4d66eef5bcb70967"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a43f16e1bdaacd9ff4d66eef5bcb70967">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;&amp;</td></tr>
+<tr class="separator:a43f16e1bdaacd9ff4d66eef5bcb70967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcf0db40d3fe5c7807afa3aa69306eb" id="r_a4fcf0db40d3fe5c7807afa3aa69306eb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</td></tr>
+<tr class="memitem:a4fcf0db40d3fe5c7807afa3aa69306eb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4fcf0db40d3fe5c7807afa3aa69306eb">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
+<tr class="separator:a4fcf0db40d3fe5c7807afa3aa69306eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d463a173851b14aaab3d843ea8d2d5" id="r_ad7d463a173851b14aaab3d843ea8d2d5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</td></tr>
+<tr class="memitem:ad7d463a173851b14aaab3d843ea8d2d5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad7d463a173851b14aaab3d843ea8d2d5">and_then</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;</td></tr>
+<tr class="separator:ad7d463a173851b14aaab3d843ea8d2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6b2f090c57666e068d53c5b65bffbf" id="r_a1b6b2f090c57666e068d53c5b65bffbf"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
+requires <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;T, Args...&gt;</td></tr>
+<tr class="memitem:a1b6b2f090c57666e068d53c5b65bffbf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1b6b2f090c57666e068d53c5b65bffbf">emplace</a> (<a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept -&gt; T &amp;</td></tr>
+<tr class="separator:a1b6b2f090c57666e068d53c5b65bffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c36b98120f999340f0c993459aef69f" id="r_a2c36b98120f999340f0c993459aef69f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c36b98120f999340f0c993459aef69f">error</a> () &amp;&amp;-&gt; <a class="el" href="structetl_1_1bitset.html">E</a> &amp;&amp;</td></tr>
 <tr class="separator:a2c36b98120f999340f0c993459aef69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3684082b4777eb3ea0d22383c8972f02" id="r_a3684082b4777eb3ea0d22383c8972f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a> () &amp;-&gt; <a class="el" href="structetl_1_1bitset.html">E</a> &amp;</td></tr>
@@ -182,22 +182,22 @@ requires <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101
 <tr class="separator:a22a7e6957f56339ee499b5c29934d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7edf4db9623a79b5d3f14475367cec80" id="r_a7edf4db9623a79b5d3f14475367cec80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7edf4db9623a79b5d3f14475367cec80">operator-&gt;</a> () noexcept -&gt; T *</td></tr>
 <tr class="separator:a7edf4db9623a79b5d3f14475367cec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95906b0d8d7b256b935cae88eb7332a0" id="r_a95906b0d8d7b256b935cae88eb7332a0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</td></tr>
-<tr class="memitem:a95906b0d8d7b256b935cae88eb7332a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a95906b0d8d7b256b935cae88eb7332a0">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;</td></tr>
-<tr class="separator:a95906b0d8d7b256b935cae88eb7332a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f427dd0f661a134cc44bc2cfcdf3a4b" id="r_a5f427dd0f661a134cc44bc2cfcdf3a4b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</td></tr>
-<tr class="memitem:a5f427dd0f661a134cc44bc2cfcdf3a4b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5f427dd0f661a134cc44bc2cfcdf3a4b">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;&amp;</td></tr>
-<tr class="separator:a5f427dd0f661a134cc44bc2cfcdf3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e05459285721f99f6bccf35c79cc9f9" id="r_a4e05459285721f99f6bccf35c79cc9f9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</td></tr>
-<tr class="memitem:a4e05459285721f99f6bccf35c79cc9f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4e05459285721f99f6bccf35c79cc9f9">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
-<tr class="separator:a4e05459285721f99f6bccf35c79cc9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d437d4cc73aad1f2f2031fd222c16c" id="r_a96d437d4cc73aad1f2f2031fd222c16c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</td></tr>
-<tr class="memitem:a96d437d4cc73aad1f2f2031fd222c16c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a96d437d4cc73aad1f2f2031fd222c16c">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;</td></tr>
-<tr class="separator:a96d437d4cc73aad1f2f2031fd222c16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7948a404e4d79248cdd52c24f43781b" id="r_ad7948a404e4d79248cdd52c24f43781b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</td></tr>
+<tr class="memitem:ad7948a404e4d79248cdd52c24f43781b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad7948a404e4d79248cdd52c24f43781b">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;</td></tr>
+<tr class="separator:ad7948a404e4d79248cdd52c24f43781b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f50598b3e8607c80654a5cc4299293" id="r_a55f50598b3e8607c80654a5cc4299293"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</td></tr>
+<tr class="memitem:a55f50598b3e8607c80654a5cc4299293"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a55f50598b3e8607c80654a5cc4299293">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;&amp;</td></tr>
+<tr class="separator:a55f50598b3e8607c80654a5cc4299293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7bf080b422afd075a5e2c683456690" id="r_a6c7bf080b422afd075a5e2c683456690"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</td></tr>
+<tr class="memitem:a6c7bf080b422afd075a5e2c683456690"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6c7bf080b422afd075a5e2c683456690">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
+<tr class="separator:a6c7bf080b422afd075a5e2c683456690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06be73de06b3c15ab1d407eab0c96afb" id="r_a06be73de06b3c15ab1d407eab0c96afb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</td></tr>
+<tr class="memitem:a06be73de06b3c15ab1d407eab0c96afb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a06be73de06b3c15ab1d407eab0c96afb">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;</td></tr>
+<tr class="separator:a06be73de06b3c15ab1d407eab0c96afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c81efffd705fa5e7e0ee929da1c1d1" id="r_a59c81efffd705fa5e7e0ee929da1c1d1"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </td></tr>
 <tr class="memitem:a59c81efffd705fa5e7e0ee929da1c1d1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a59c81efffd705fa5e7e0ee929da1c1d1">value_or</a> (U &amp;&amp;<a class="el" href="structetl_1_1bitset.html">fallback</a>) &amp;&amp;-&gt; T</td></tr>
 <tr class="separator:a59c81efffd705fa5e7e0ee929da1c1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,8 +273,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afe5f4c4381a977a78fc3cfac0610c122" name="afe5f4c4381a977a78fc3cfac0610c122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe5f4c4381a977a78fc3cfac0610c122">&#9670;&#160;</a></span>expected() <span class="overload">[1/3]</span></h2>
+<a id="a1465a23e28691e316bb93b3a2fc74423" name="a1465a23e28691e316bb93b3a2fc74423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1465a23e28691e316bb93b3a2fc74423">&#9670;&#160;</a></span>expected() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,8 +300,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 
 </div>
 </div>
-<a id="a71a83cdee3e9b624fb7e5f77536e5466" name="a71a83cdee3e9b624fb7e5f77536e5466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71a83cdee3e9b624fb7e5f77536e5466">&#9670;&#160;</a></span>expected() <span class="overload">[2/3]</span></h2>
+<a id="a653fe2b81f2da20c3f6607592aadaa98" name="a653fe2b81f2da20c3f6607592aadaa98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653fe2b81f2da20c3f6607592aadaa98">&#9670;&#160;</a></span>expected() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +309,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, Args...&gt;</div>
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, Args...&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -317,7 +317,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1expected.html">expected</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype"><a class="el" href="structetl_1_1in__place__t.html">in_place_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -334,8 +334,8 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 
 </div>
 </div>
-<a id="a3746aecd4c1f7ff8536b298855900207" name="a3746aecd4c1f7ff8536b298855900207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3746aecd4c1f7ff8536b298855900207">&#9670;&#160;</a></span>expected() <span class="overload">[3/3]</span></h2>
+<a id="a4ce86390b2226ed3f0bc8b04127b287d" name="a4ce86390b2226ed3f0bc8b04127b287d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce86390b2226ed3f0bc8b04127b287d">&#9670;&#160;</a></span>expected() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</div>
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -351,7 +351,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1expected.html">expected</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpect__t.html">etl::unexpect_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpect__t.html">unexpect_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -369,8 +369,8 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab60a0dca98a55b2e0062c768988c8ea5" name="ab60a0dca98a55b2e0062c768988c8ea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab60a0dca98a55b2e0062c768988c8ea5">&#9670;&#160;</a></span>and_then() <span class="overload">[1/4]</span></h2>
+<a id="a060a47d37d7a5ee075549fb89574e115" name="a060a47d37d7a5ee075549fb89574e115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060a47d37d7a5ee075549fb89574e115">&#9670;&#160;</a></span>and_then() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +378,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -399,8 +399,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a5523056757783ece3fe00aff9ffc6c62" name="a5523056757783ece3fe00aff9ffc6c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5523056757783ece3fe00aff9ffc6c62">&#9670;&#160;</a></span>and_then() <span class="overload">[2/4]</span></h2>
+<a id="a43f16e1bdaacd9ff4d66eef5bcb70967" name="a43f16e1bdaacd9ff4d66eef5bcb70967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f16e1bdaacd9ff4d66eef5bcb70967">&#9670;&#160;</a></span>and_then() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +408,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>())&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -429,8 +429,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a927edd1aa8050d4a71364a33287d7969" name="a927edd1aa8050d4a71364a33287d7969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a927edd1aa8050d4a71364a33287d7969">&#9670;&#160;</a></span>and_then() <span class="overload">[3/4]</span></h2>
+<a id="a4fcf0db40d3fe5c7807afa3aa69306eb" name="a4fcf0db40d3fe5c7807afa3aa69306eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcf0db40d3fe5c7807afa3aa69306eb">&#9670;&#160;</a></span>and_then() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,7 +438,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -459,8 +459,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="ae1bb5425885373c1c7e8c245dd08df83" name="ae1bb5425885373c1c7e8c245dd08df83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1bb5425885373c1c7e8c245dd08df83">&#9670;&#160;</a></span>and_then() <span class="overload">[4/4]</span></h2>
+<a id="ad7d463a173851b14aaab3d843ea8d2d5" name="ad7d463a173851b14aaab3d843ea8d2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d463a173851b14aaab3d843ea8d2d5">&#9670;&#160;</a></span>and_then() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,7 +468,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="#a3684082b4777eb3ea0d22383c8972f02">error</a>()))&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -489,8 +489,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a8be363734fb52ce5989abaf2b13485fa" name="a8be363734fb52ce5989abaf2b13485fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8be363734fb52ce5989abaf2b13485fa">&#9670;&#160;</a></span>emplace()</h2>
+<a id="a1b6b2f090c57666e068d53c5b65bffbf" name="a1b6b2f090c57666e068d53c5b65bffbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6b2f090c57666e068d53c5b65bffbf">&#9670;&#160;</a></span>emplace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +498,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a>&lt;T, Args...&gt;</div>
+requires <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;T, Args...&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -844,8 +844,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 
 </div>
 </div>
-<a id="a95906b0d8d7b256b935cae88eb7332a0" name="a95906b0d8d7b256b935cae88eb7332a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95906b0d8d7b256b935cae88eb7332a0">&#9670;&#160;</a></span>or_else() <span class="overload">[1/4]</span></h2>
+<a id="ad7948a404e4d79248cdd52c24f43781b" name="ad7948a404e4d79248cdd52c24f43781b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7948a404e4d79248cdd52c24f43781b">&#9670;&#160;</a></span>or_else() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -853,7 +853,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -874,8 +874,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a5f427dd0f661a134cc44bc2cfcdf3a4b" name="a5f427dd0f661a134cc44bc2cfcdf3a4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f427dd0f661a134cc44bc2cfcdf3a4b">&#9670;&#160;</a></span>or_else() <span class="overload">[2/4]</span></h2>
+<a id="a55f50598b3e8607c80654a5cc4299293" name="a55f50598b3e8607c80654a5cc4299293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f50598b3e8607c80654a5cc4299293">&#9670;&#160;</a></span>or_else() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,7 +883,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>)&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -904,8 +904,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a4e05459285721f99f6bccf35c79cc9f9" name="a4e05459285721f99f6bccf35c79cc9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e05459285721f99f6bccf35c79cc9f9">&#9670;&#160;</a></span>or_else() <span class="overload">[3/4]</span></h2>
+<a id="a6c7bf080b422afd075a5e2c683456690" name="a6c7bf080b422afd075a5e2c683456690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7bf080b422afd075a5e2c683456690">&#9670;&#160;</a></span>or_else() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +913,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -934,8 +934,8 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 
 </div>
 </div>
-<a id="a96d437d4cc73aad1f2f2031fd222c16c" name="a96d437d4cc73aad1f2f2031fd222c16c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d437d4cc73aad1f2f2031fd222c16c">&#9670;&#160;</a></span>or_else() <span class="overload">[4/4]</span></h2>
+<a id="a06be73de06b3c15ab1d407eab0c96afb" name="a06be73de06b3c15ab1d407eab0c96afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06be73de06b3c15ab1d407eab0c96afb">&#9670;&#160;</a></span>or_else() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,7 +943,7 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</div>
+requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(**<a class="el" href="structetl_1_1bitset.html">this</a>))&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1033,7 +1033,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1expected.html">expected</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

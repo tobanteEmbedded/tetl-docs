@@ -22,7 +22,7 @@ var searchData=
   ['has_5fvalue_19',['has_value',['../structetl_1_1expected.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::expected::has_value()'],['../structetl_1_1optional.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::optional::has_value()'],['../structetl_1_1optional_3_01T_01_6_01_4.html#ad3f48c5b80fe4eb6c795b88361b32d3b',1,'etl::optional&lt; T &amp; &gt;::has_value()']]],
   ['has_5fvirtual_5fdestructor_20',['has_virtual_destructor',['../structetl_1_1has__virtual__destructor.html',1,'etl']]],
   ['has_5fvirtual_5fdestructor_2ehpp_21',['has_virtual_destructor.hpp',['../has__virtual__destructor_8hpp.html',1,'']]],
-  ['has_5fvirtual_5fdestructor_5fv_22',['has_virtual_destructor_v',['../namespaceetl.html#a7e997395a99be7b3ac747230c82b51d2',1,'etl']]],
+  ['has_5fvirtual_5fdestructor_5fv_22',['has_virtual_destructor_v',['../group__type__traits.html#ga7e997395a99be7b3ac747230c82b51d2',1,'etl::has_virtual_destructor']]],
   ['hash_23',['hash',['../structetl_1_1hash.html',1,'etl']]],
   ['hash_2ehpp_24',['hash.hpp',['../hash_8hpp.html',1,'']]],
   ['hash_3c_20bool_20_3e_25',['hash&lt; bool &gt;',['../structetl_1_1hash_3_01bool_01_4.html',1,'etl']]],

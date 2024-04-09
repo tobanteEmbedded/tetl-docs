@@ -15,7 +15,7 @@ var searchData=
   ['uint_5fleast8_5ft_12',['uint_least8_t',['../namespaceetl.html#a3e9da1f87db9cd7b9d1f76ade9b44c94',1,'etl']]],
   ['uintmax_5ft_13',['uintmax_t',['../namespaceetl.html#a05138bec421765330b01b925aae5d89f',1,'etl']]],
   ['uintptr_5ft_14',['uintptr_t',['../namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43',1,'etl']]],
-  ['underlying_5ftype_5ft_15',['underlying_type_t',['../group__type__traits.html#gaa68cdd3b170a7e28ceeb562ad04c2853',1,'etl']]],
+  ['underlying_5ftype_5ft_15',['underlying_type_t',['../group__type__traits.html#ga23e4463cad64a4fb5f8e4cf7acafec27',1,'etl']]],
   ['unexpected_5ftype_16',['unexpected_type',['../structetl_1_1expected.html#a16020b46103d6b004562dd23cd3135c0',1,'etl::expected']]],
-  ['unwrap_5fref_5fdecay_5ft_17',['unwrap_ref_decay_t',['../namespaceetl.html#aadfe1ea88386619b73c8642aaac66548',1,'etl']]]
+  ['unwrap_5fref_5fdecay_5ft_17',['unwrap_ref_decay_t',['../namespaceetl.html#ab50d469d33ed56a0ce32f87d03ac5f10',1,'etl']]]
 ];

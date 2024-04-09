@@ -118,18 +118,17 @@ $(function(){initNavTree('alignment__of_8hpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1alignment__of.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1alignment__of.html">alignment_of</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;etl::size_t, alignof(T)&gt; { };</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1alignment__of.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1alignment__of.html">alignment_of</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, alignof(T)&gt; { };</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0319c290d41e45e5190db6169c188724">   16</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_variable" href="namespaceetl.html#a0319c290d41e45e5190db6169c188724">alignment_of_v</a> = <a class="code hl_struct" href="structetl_1_1alignment__of.html">etl::alignment_of&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">   16</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">alignment_of_v</a> = <a class="code hl_struct" href="structetl_1_1alignment__of.html">alignment_of&lt;T&gt;::value</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_ALIGNMENT_OF_HPP</span></div>
 <div class="ttc" id="aintegral__constant_8hpp_html"><div class="ttname"><a href="integral__constant_8hpp.html">integral_constant.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a0319c290d41e45e5190db6169c188724"><div class="ttname"><a href="namespaceetl.html#a0319c290d41e45e5190db6169c188724">etl::alignment_of_v</a></div><div class="ttdeci">constexpr etl::size_t alignment_of_v</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:16</div></div>
-<div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_ae7fde4c1b709be147fc5d8f4efc0c605"><div class="ttname"><a href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">etl::alignment_of_v</a></div><div class="ttdeci">constexpr size_t alignment_of_v</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:16</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1alignment__of_html"><div class="ttname"><a href="structetl_1_1alignment__of.html">etl::alignment_of</a></div><div class="ttdoc">alignment_of</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:13</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:9</div></div>
@@ -139,7 +138,7 @@ $(function(){initNavTree('alignment__of_8hpp_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="alignment__of_8hpp.html">alignment_of.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 02:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 17:15:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
