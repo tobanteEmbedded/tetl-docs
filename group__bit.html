@@ -142,10 +142,10 @@ requires (detail::bit_castable_types&lt;<a class="el" href="structetl_1_1bitset.
 <tr class="memitem:gae31295beb3cd3da128d5df9392b56816"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae31295beb3cd3da128d5df9392b56816">bit_width</a> (UInt <a class="el" href="structetl_1_1bitset.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
 <tr class="memdesc:gae31295beb3cd3da128d5df9392b56816"><td class="mdescLeft">&#160;</td><td class="mdescRight">If x is not zero, calculates the number of bits needed to store the value x, that is, 1+⌊log2(x)⌋. If x is zero, returns zero.  <br /></td></tr>
 <tr class="separator:gae31295beb3cd3da128d5df9392b56816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9a4e9ba0fafa208687f231ab27af92e" id="r_gae9a4e9ba0fafa208687f231ab27af92e"><td class="memTemplParams" colspan="2">template&lt;integral T&gt; </td></tr>
-<tr class="memitem:gae9a4e9ba0fafa208687f231ab27af92e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae9a4e9ba0fafa208687f231ab27af92e">byteswap</a> (T val) noexcept -&gt; T</td></tr>
-<tr class="memdesc:gae9a4e9ba0fafa208687f231ab27af92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the bytes in the given integer value n.  <br /></td></tr>
-<tr class="separator:gae9a4e9ba0fafa208687f231ab27af92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56cd46acc36e47b8dd8e0db497b856cb" id="r_ga56cd46acc36e47b8dd8e0db497b856cb"><td class="memTemplParams" colspan="2">template&lt;integral Int&gt; </td></tr>
+<tr class="memitem:ga56cd46acc36e47b8dd8e0db497b856cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga56cd46acc36e47b8dd8e0db497b856cb">byteswap</a> (<a class="el" href="structetl_1_1bitset.html">Int</a> val) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">Int</a></td></tr>
+<tr class="memdesc:ga56cd46acc36e47b8dd8e0db497b856cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the bytes in the given integer value n.  <br /></td></tr>
+<tr class="separator:ga56cd46acc36e47b8dd8e0db497b856cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8ff4047b7f7215764870239e29f7647" id="r_gaa8ff4047b7f7215764870239e29f7647"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
 <tr class="memitem:gaa8ff4047b7f7215764870239e29f7647"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaa8ff4047b7f7215764870239e29f7647">countl_one</a> (UInt <a class="el" href="structetl_1_1bitset.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
 <tr class="memdesc:gaa8ff4047b7f7215764870239e29f7647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consecutive 1 ("one") bits in the value of x, starting from the most significant bit ("left").  <br /></td></tr>
@@ -383,13 +383,13 @@ template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">e
 
 </div>
 </div>
-<a id="gae9a4e9ba0fafa208687f231ab27af92e" name="gae9a4e9ba0fafa208687f231ab27af92e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9a4e9ba0fafa208687f231ab27af92e">&#9670;&#160;</a></span>byteswap()</h2>
+<a id="ga56cd46acc36e47b8dd8e0db497b856cb" name="ga56cd46acc36e47b8dd8e0db497b856cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56cd46acc36e47b8dd8e0db497b856cb">&#9670;&#160;</a></span>byteswap()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;integral T&gt; </div>
+template&lt;integral Int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -397,8 +397,8 @@ template&lt;integral T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> byteswap </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td> -&gt; T
+          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Int</a></td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">Int</a>
 </td>
         </tr>
       </table>
@@ -410,7 +410,7 @@ template&lt;integral T&gt; </div>
 </div><div class="memdoc">
 
 <p>Reverses the bytes in the given integer value n. </p>
-<p><a class="el" href="#gae9a4e9ba0fafa208687f231ab27af92e" title="Reverses the bytes in the given integer value n.">etl::byteswap</a> participates in overload resolution only if T satisfies integral, i.e., T is an integer type. The program is ill-formed if T has padding bits.</p>
+<p><a class="el" href="#ga56cd46acc36e47b8dd8e0db497b856cb" title="Reverses the bytes in the given integer value n.">etl::byteswap</a> participates in overload resolution only if Int satisfies integral, i.e., Int is an integer type. The program is ill-formed if Int has padding bits.</p>
 <p><a href="https://en.cppreference.com/w/cpp/numeric/byteswap">https://en.cppreference.com/w/cpp/numeric/byteswap</a> </p>
 
 </div>
@@ -1023,7 +1023,7 @@ template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">e
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 9 2024 22:17:44 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:36:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -932,7 +932,7 @@ var namespaceetl =
     [ "breakpoint_if_debugging", "group__debugging.html#gad9a2659c0357fb2180dab051dfe348eb", null ],
     [ "bubble_sort", "group__algorithm.html#ga1aaad8ffc58779f75d6ce3d017dd3cb4", null ],
     [ "bubble_sort", "group__algorithm.html#ga11d3f8f2170e346ec527e33ba981a2ae", null ],
-    [ "byteswap", "group__bit.html#gae9a4e9ba0fafa208687f231ab27af92e", null ],
+    [ "byteswap", "group__bit.html#ga56cd46acc36e47b8dd8e0db497b856cb", null ],
     [ "cbegin", "group__iterator.html#gab8ff9f99fa557857de8d9e6a4829d752", null ],
     [ "ceil", "group__cmath.html#gaca876419c954b74e77fde43b651c1a45", null ],
     [ "ceil", "group__cmath.html#ga519930d517ee057032189d734e9fc5ed", null ],

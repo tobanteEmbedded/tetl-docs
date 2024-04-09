@@ -114,6 +114,6 @@ var searchData=
   ['byte_2ehpp_111',['byte.hpp',['../byte_8hpp.html',1,'']]],
   ['byte_5forder_2ehpp_112',['byte_order.hpp',['../byte__order_8hpp.html',1,'']]],
   ['bytes_5favailable_113',['bytes_available',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a8469eacc2ee43be2d104ce70393b4f51',1,'etl::experimental::freertos::stream_buffer']]],
-  ['byteswap_114',['byteswap',['../group__bit.html#gae9a4e9ba0fafa208687f231ab27af92e',1,'etl']]],
+  ['byteswap_114',['byteswap',['../group__bit.html#ga56cd46acc36e47b8dd8e0db497b856cb',1,'etl']]],
   ['byteswap_2ehpp_115',['byteswap.hpp',['../byteswap_8hpp.html',1,'']]]
 ];

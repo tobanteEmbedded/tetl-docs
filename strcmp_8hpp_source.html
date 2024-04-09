@@ -113,16 +113,16 @@ $(function(){initNavTree('strcmp_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CSTRING_STRCMP_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="cstr_8hpp.html">etl/_strings/cstr.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34">   18</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34">strcmp</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">lhs</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">rhs</a>) -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> detail::strcmp_impl&lt;char&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">lhs</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">rhs</a>); }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34">   18</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34">strcmp</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">lhs</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">rhs</a>) -&gt; <span class="keywordtype">int</span> { <span class="keywordflow">return</span> detail::strcmp&lt;char&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">lhs</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">rhs</a>); }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_STRCMP_HPP</span></div>
-<div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
+<div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
 <div class="ttc" id="agroup__cstring_html_gaa03c96c75f1fa5b4153f1dab9148fd34"><div class="ttname"><a href="group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34">etl::strcmp</a></div><div class="ttdeci">constexpr auto strcmp(char const *lhs, char const *rhs) -&gt; int</div><div class="ttdoc">Compares the C string lhs to the C string rhs.</div><div class="ttdef"><b>Definition</b> strcmp.hpp:18</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
@@ -133,7 +133,7 @@ $(function(){initNavTree('strcmp_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="strcmp_8hpp.html">strcmp.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 22:17:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:36:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

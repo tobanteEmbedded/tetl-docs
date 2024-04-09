@@ -67,7 +67,7 @@ var searchData=
   ['cstdint_2ehpp_64',['cstdint.hpp',['../cstdint_8hpp.html',1,'']]],
   ['cstdio_2ehpp_65',['cstdio.hpp',['../cstdio_8hpp.html',1,'']]],
   ['cstdlib_2ehpp_66',['cstdlib.hpp',['../cstdlib_8hpp.html',1,'']]],
-  ['cstr_5falgorithm_2ehpp_67',['cstr_algorithm.hpp',['../cstr__algorithm_8hpp.html',1,'']]],
+  ['cstr_2ehpp_67',['cstr.hpp',['../cstr_8hpp.html',1,'']]],
   ['cstring_2ehpp_68',['cstring.hpp',['../cstring_8hpp.html',1,'']]],
   ['ctime_2ehpp_69',['ctime.hpp',['../ctime_8hpp.html',1,'']]],
   ['cwchar_2ehpp_70',['cwchar.hpp',['../cwchar_8hpp.html',1,'']]],

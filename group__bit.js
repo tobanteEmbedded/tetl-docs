@@ -9,7 +9,7 @@ var group__bit =
     [ "bit_ceil", "group__bit.html#ga5006351c988afecab30821e1ee41f2ed", null ],
     [ "bit_floor", "group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d", null ],
     [ "bit_width", "group__bit.html#gae31295beb3cd3da128d5df9392b56816", null ],
-    [ "byteswap", "group__bit.html#gae9a4e9ba0fafa208687f231ab27af92e", null ],
+    [ "byteswap", "group__bit.html#ga56cd46acc36e47b8dd8e0db497b856cb", null ],
     [ "countl_one", "group__bit.html#gaa8ff4047b7f7215764870239e29f7647", null ],
     [ "countl_zero", "group__bit.html#ga120e955a7d833bee8e6c68c6a5639ca3", null ],
     [ "countr_one", "group__bit.html#gac7e62f92367cf6ac4c456e52924e0814", null ],

@@ -113,27 +113,27 @@ $(function(){initNavTree('wmemchr_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CWCHAR_WMEMCHR_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="cstr__algorithm_8hpp.html">etl/_strings/cstr_algorithm.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="cstr_8hpp.html">etl/_strings/cstr.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">   17</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">wmemchr</a>(<span class="keywordtype">wchar_t</span>* ptr, <span class="keywordtype">wchar_t</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> detail::memchr_impl&lt;wchar_t&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> detail::memchr&lt;wchar_t&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#a65747ecf11dff5d8f3be4a0f7793ca69">   28</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">wmemchr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* ptr, <span class="keywordtype">wchar_t</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> detail::memchr_impl&lt;wchar_t const&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> detail::memchr&lt;wchar_t const&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CWCHAR_WMEMCHR_HPP</span></div>
-<div class="ttc" id="acstr__algorithm_8hpp_html"><div class="ttname"><a href="cstr__algorithm_8hpp.html">cstr_algorithm.hpp</a></div></div>
+<div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_gacf27092e22460faafdb958cac56c6fec"><div class="ttname"><a href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition</b> count.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a5175847a36c688adb123a34e9780ab25"><div class="ttname"><a href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">etl::wmemchr</a></div><div class="ttdeci">constexpr auto wmemchr(wchar_t *ptr, wchar_t ch, etl::size_t count) noexcept -&gt; wchar_t *</div><div class="ttdoc">Locates the first occurrence of wide character ch in the initial count wide characters of the wide ch...</div><div class="ttdef"><b>Definition</b> wmemchr.hpp:17</div></div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('wmemchr_8hpp_source.html',''); initResizable(true); })
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_654767f1f845a43cfb380e17dc7914ff.html">_cwchar</a></li><li class="navelem"><a class="el" href="wmemchr_8hpp.html">wmemchr.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 22:17:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:36:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

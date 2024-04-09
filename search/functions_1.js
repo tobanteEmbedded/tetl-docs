@@ -32,5 +32,5 @@ var searchData=
   ['breakpoint_5fif_5fdebugging_29',['breakpoint_if_debugging',['../group__debugging.html#gad9a2659c0357fb2180dab051dfe348eb',1,'etl']]],
   ['bubble_5fsort_30',['bubble_sort',['../group__algorithm.html#ga11d3f8f2170e346ec527e33ba981a2ae',1,'etl::bubble_sort(RandomIt first, RandomIt last, Compare comp) -&gt; void'],['../group__algorithm.html#ga1aaad8ffc58779f75d6ce3d017dd3cb4',1,'etl::bubble_sort(RandomIt first, RandomIt last) -&gt; void']]],
   ['bytes_5favailable_31',['bytes_available',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a8469eacc2ee43be2d104ce70393b4f51',1,'etl::experimental::freertos::stream_buffer']]],
-  ['byteswap_32',['byteswap',['../group__bit.html#gae9a4e9ba0fafa208687f231ab27af92e',1,'etl']]]
+  ['byteswap_32',['byteswap',['../group__bit.html#ga56cd46acc36e47b8dd8e0db497b856cb',1,'etl']]]
 ];
