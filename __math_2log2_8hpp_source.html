@@ -116,22 +116,22 @@ $(function(){initNavTree('__math_2log2_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Compile time version of log2 that handles 0.</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IntT&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>[[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cmath.html#gae7fb3e6d3600c8a676f922cad1c6c4d4">log2</a>(IntT value) -&gt; IntT</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>[[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(IntT value) -&gt; IntT</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> (value == 0 || value == 1) ? 0 : 1 + <a class="code hl_function" href="group__cmath.html#gae7fb3e6d3600c8a676f922cad1c6c4d4">log2</a>(value / 2);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> (value == 0 || value == 1) ? 0 : 1 + <a class="code hl_function" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(value / 2);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>} <span class="comment">// namespace etl::detail</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MATH_LOG2_HPP</span></div>
-<div class="ttc" id="agroup__cmath_html_gae7fb3e6d3600c8a676f922cad1c6c4d4"><div class="ttname"><a href="group__cmath.html#gae7fb3e6d3600c8a676f922cad1c6c4d4">etl::log2</a></div><div class="ttdeci">constexpr auto log2(float v) noexcept -&gt; float</div><div class="ttdoc">Computes the binary (base-2) logarithm of arg.</div><div class="ttdef"><b>Definition</b> log2.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_a86319ce6c017b8e0cbaed828b6dad2f7"><div class="ttname"><a href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">etl::ilog2</a></div><div class="ttdeci">constexpr auto ilog2(Int x) noexcept -&gt; Int</div><div class="ttdef"><b>Definition</b> ilog2.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_d0070ab6a2620982e003767af1e9a0b5.html">_math</a></li><li class="navelem"><a class="el" href="__math_2log2_8hpp.html">log2.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 00:22:33 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 00:58:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

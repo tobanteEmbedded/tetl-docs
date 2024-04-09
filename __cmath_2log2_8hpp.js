@@ -1,9 +1,9 @@
 var __cmath_2log2_8hpp =
 [
-    [ "log2", "__cmath_2log2_8hpp.html#ga8a9b906b733b6b964285c7216d83e49c", null ],
-    [ "log2", "__cmath_2log2_8hpp.html#gae7fb3e6d3600c8a676f922cad1c6c4d4", null ],
-    [ "log2", "__cmath_2log2_8hpp.html#gaffebb5db1927e7b7b51c98433c4d6517", null ],
-    [ "log2", "__cmath_2log2_8hpp.html#ga06eb20ebfee69d9f55ab468b9cc420c7", null ],
-    [ "log2f", "__cmath_2log2_8hpp.html#ga071ff2ff89eeb3ac71fc6bb2891fc055", null ],
-    [ "log2l", "__cmath_2log2_8hpp.html#gad8abc9673ac68a415596cbc534fc307c", null ]
+    [ "log2", "__cmath_2log2_8hpp.html#ga5df7f7d0d1fefde1fdb3cbde13b5fed0", null ],
+    [ "log2", "__cmath_2log2_8hpp.html#ga9191968342c66327e279e2007d5bb7ce", null ],
+    [ "log2", "__cmath_2log2_8hpp.html#ga373d95b511f9ddc4d991f652eeac139f", null ],
+    [ "log2", "__cmath_2log2_8hpp.html#gafc012d679f6f798b5770a4b2d65f443c", null ],
+    [ "log2f", "__cmath_2log2_8hpp.html#gaae9a81ee78be6ea9810f1144c3554c84", null ],
+    [ "log2l", "__cmath_2log2_8hpp.html#ga23030fe110f0a79e9a390de4c93f99a3", null ]
 ];
