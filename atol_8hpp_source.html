@@ -112,26 +112,23 @@ $(function(){initNavTree('atol_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_CSTDLIB_ATOL_HPP</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_CSTDLIB_ATOL_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="strlen_8hpp.html">etl/_cstring/strlen.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="to__integer_8hpp.html">etl/_strings/to_integer.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">atol</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">str</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">long</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a> = strings::to_integer&lt;long, strings::skip_whitespace::yes&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <a class="code hl_function" href="group__cstring.html#ga847c7fe27bc536cdf5109074b14e81d7">strlen</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>));</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a>.value;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="to__integer_8hpp.html">etl/_strings/to_integer.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">   14</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">atol</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">str</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">long</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a> = strings::to_integer&lt;long&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a>.value;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CSTDLIB_ATOL_HPP</span></div>
-<div class="ttc" id="agroup__cstring_html_ga847c7fe27bc536cdf5109074b14e81d7"><div class="ttname"><a href="group__cstring.html#ga847c7fe27bc536cdf5109074b14e81d7">etl::strlen</a></div><div class="ttdeci">constexpr auto strlen(char const *str) -&gt; etl::size_t</div><div class="ttdoc">Returns the length of the C string str.</div><div class="ttdef"><b>Definition</b> strlen.hpp:13</div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CSTDLIB_ATOL_HPP</span></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_a699027607c1a0d56baf456931b915e76"><div class="ttname"><a href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">etl::atol</a></div><div class="ttdeci">constexpr auto atol(char const *str) noexcept -&gt; long</div><div class="ttdoc">Interprets an integer value in a byte string pointed to by str. Discards any whitespace characters un...</div><div class="ttdef"><b>Definition</b> atol.hpp:15</div></div>
-<div class="ttc" id="astrlen_8hpp_html"><div class="ttname"><a href="strlen_8hpp.html">strlen.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html_a699027607c1a0d56baf456931b915e76"><div class="ttname"><a href="namespaceetl.html#a699027607c1a0d56baf456931b915e76">etl::atol</a></div><div class="ttdeci">constexpr auto atol(char const *str) noexcept -&gt; long</div><div class="ttdoc">Interprets an integer value in a byte string pointed to by str. Discards any whitespace characters un...</div><div class="ttdef"><b>Definition</b> atol.hpp:14</div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="ato__integer_8hpp_html"><div class="ttname"><a href="to__integer_8hpp.html">to_integer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -140,7 +137,7 @@ $(function(){initNavTree('atol_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_3a022cac8da00b5a272620abcabe51fb.html">_cstdlib</a></li><li class="navelem"><a class="el" href="atol_8hpp.html">atol.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 21:07:25 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:17:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -124,7 +124,7 @@ $(function(){initNavTree('to__string_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">char</span> buffer[Capacity]{};</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span>* first    = <a class="code hl_function" href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a>(buffer);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> <span class="keyword">const</span> res = etl::strings::from_integer&lt;Int&gt;(val, first, 10, Capacity);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> <span class="keyword">const</span> res = etl::strings::from_integer&lt;Int&gt;(val, first, Capacity, 10);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (res.error == <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8">etl::strings::from_integer_error::none</a>) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::inplace_string&lt;Capacity&gt;</a>{first, res.end};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('to__string_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_23439b223dadb75c0ae61ef08b8b58fb.html">_string</a></li><li class="navelem"><a class="el" href="to__string_8hpp.html">to_string.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 21:07:25 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:17:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -2,6 +2,7 @@ var namespaceetl_1_1strings =
 [
     [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", "structetl_1_1strings_1_1from__integer__result" ],
     [ "to_floating_point_result", "structetl_1_1strings_1_1to__floating__point__result.html", "structetl_1_1strings_1_1to__floating__point__result" ],
+    [ "to_integer_options", "structetl_1_1strings_1_1to__integer__options.html", "structetl_1_1strings_1_1to__integer__options" ],
     [ "to_integer_result", "structetl_1_1strings_1_1to__integer__result.html", "structetl_1_1strings_1_1to__integer__result" ],
     [ "from_integer_error", "namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1", [
       [ "none", "namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
@@ -21,7 +22,7 @@ var namespaceetl_1_1strings =
       [ "invalid_input", "namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33", null ],
       [ "overflow", "namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73", null ]
     ] ],
-    [ "from_integer", "namespaceetl_1_1strings.html#a1e3a51706ffb89dcdbad17c040caa980", null ],
-    [ "to_floating_point", "namespaceetl_1_1strings.html#abf8d65b5d2afd5556a48c20c0608c862", null ],
-    [ "to_integer", "namespaceetl_1_1strings.html#a0dde38b0cdfdaf983b1fec1d1c4cd145", null ]
+    [ "from_integer", "namespaceetl_1_1strings.html#a54ae04c3ae3ee1d65d83249c70eeb654", null ],
+    [ "to_floating_point", "namespaceetl_1_1strings.html#a31d25f31f6487964390d841ea26025e1", null ],
+    [ "to_integer", "namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775", null ]
 ];

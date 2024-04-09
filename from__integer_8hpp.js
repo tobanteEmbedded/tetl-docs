@@ -5,5 +5,5 @@ var from__integer_8hpp =
       [ "none", "from__integer_8hpp.html#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
       [ "overflow", "from__integer_8hpp.html#a45b29152e0ff3e6bf2761172cc23f9a1a0bd9f6dd716003f3818d15d2e211ee73", null ]
     ] ],
-    [ "from_integer", "from__integer_8hpp.html#a1e3a51706ffb89dcdbad17c040caa980", null ]
+    [ "from_integer", "from__integer_8hpp.html#a54ae04c3ae3ee1d65d83249c70eeb654", null ]
 ];

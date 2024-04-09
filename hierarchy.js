@@ -621,6 +621,7 @@ var hierarchy =
     [ "tm", "structetl_1_1tm.html", null ],
     [ "to_chars_result", "structetl_1_1to__chars__result.html", null ],
     [ "to_floating_point_result< Float >", "structetl_1_1strings_1_1to__floating__point__result.html", null ],
+    [ "to_integer_options", "structetl_1_1strings_1_1to__integer__options.html", null ],
     [ "to_integer_result< Int >", "structetl_1_1strings_1_1to__integer__result.html", null ],
     [ "try_to_lock_t", "structetl_1_1try__to__lock__t.html", null ],
     [ "tuple< Ts >", "structetl_1_1tuple.html", null ],
