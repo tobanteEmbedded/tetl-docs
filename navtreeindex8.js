@@ -167,6 +167,9 @@ var NAVTREEINDEX8 =
 "group__stack.html":[8,7,7],
 "group__stdexcept.html":[8,5,2],
 "group__string.html":[8,6,6],
+"group__string.html#ga8374fa7ba20373e38b7faf50c7a2e9eb":[8,6,6,1],
+"group__string.html#ga8f331cad44e7c284adb790b1daabb0cc":[8,6,6,2],
+"group__string.html#gae2ef04cbec9181a661996527e875a00a":[8,6,6,0],
 "group__string__view.html":[8,6,7],
 "group__strings-library.html":[8,6],
 "group__strings.html":[8,6,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "in__place__index_8hpp_source.html":[12,0,1,0,62,13],
 "in__place__type_8hpp.html":[12,0,1,0,62,14],
 "in__place__type_8hpp_source.html":[12,0,1,0,62,14],
-"in__range_8hpp.html":[12,0,1,0,62,15],
-"in__range_8hpp.html#a06254a010da20091fb04d67702c29da3":[12,0,1,0,62,15,0],
-"in__range_8hpp_source.html":[12,0,1,0,62,15],
-"includes_8hpp.html":[12,0,1,0,0,27]
+"in__range_8hpp.html":[12,0,1,0,62,15]
 };
