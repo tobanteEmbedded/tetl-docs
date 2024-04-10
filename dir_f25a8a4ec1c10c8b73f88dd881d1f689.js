@@ -17,7 +17,7 @@ var dir_f25a8a4ec1c10c8b73f88dd881d1f689 =
     [ "exchange_sort.hpp", "exchange__sort_8hpp.html", "exchange__sort_8hpp" ],
     [ "fill.hpp", "fill_8hpp.html", "fill_8hpp" ],
     [ "fill_n.hpp", "fill__n_8hpp.html", "fill__n_8hpp" ],
-    [ "find.hpp", "find_8hpp.html", "find_8hpp" ],
+    [ "find.hpp", "__algorithm_2find_8hpp.html", "__algorithm_2find_8hpp" ],
     [ "find_end.hpp", "find__end_8hpp.html", "find__end_8hpp" ],
     [ "find_first_of.hpp", "find__first__of_8hpp.html", "find__first__of_8hpp" ],
     [ "find_if.hpp", "find__if_8hpp.html", "find__if_8hpp" ],

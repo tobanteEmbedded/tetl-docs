@@ -3,7 +3,7 @@ var searchData=
   ['fdim_2ehpp_0',['fdim.hpp',['../fdim_8hpp.html',1,'']]],
   ['fill_2ehpp_1',['fill.hpp',['../fill_8hpp.html',1,'']]],
   ['fill_5fn_2ehpp_2',['fill_n.hpp',['../fill__n_8hpp.html',1,'']]],
-  ['find_2ehpp_3',['find.hpp',['../find_8hpp.html',1,'']]],
+  ['find_2ehpp_3',['find.hpp',['../__algorithm_2find_8hpp.html',1,'(Global Namespace)'],['../__strings_2find_8hpp.html',1,'(Global Namespace)']]],
   ['find_5fend_2ehpp_4',['find_end.hpp',['../find__end_8hpp.html',1,'']]],
   ['find_5ffirst_5fof_2ehpp_5',['find_first_of.hpp',['../find__first__of_8hpp.html',1,'']]],
   ['find_5fif_2ehpp_6',['find_if.hpp',['../find__if_8hpp.html',1,'']]],

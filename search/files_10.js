@@ -55,12 +55,13 @@ var searchData=
   ['reverse_2ehpp_52',['reverse.hpp',['../reverse_8hpp.html',1,'']]],
   ['reverse_5fcopy_2ehpp_53',['reverse_copy.hpp',['../reverse__copy_8hpp.html',1,'']]],
   ['reverse_5fiterator_2ehpp_54',['reverse_iterator.hpp',['../reverse__iterator_8hpp.html',1,'']]],
-  ['rint_2ehpp_55',['rint.hpp',['../rint_8hpp.html',1,'']]],
-  ['roadmap_2emd_56',['roadmap.md',['../roadmap_8md.html',1,'']]],
-  ['rotate_2ehpp_57',['rotate.hpp',['../rotate_8hpp.html',1,'']]],
-  ['rotate_5fcopy_2ehpp_58',['rotate_copy.hpp',['../rotate__copy_8hpp.html',1,'']]],
-  ['rotl_2ehpp_59',['rotl.hpp',['../rotl_8hpp.html',1,'']]],
-  ['rotr_2ehpp_60',['rotr.hpp',['../rotr_8hpp.html',1,'']]],
-  ['round_2ehpp_61',['round.hpp',['../__chrono_2round_8hpp.html',1,'(Global Namespace)'],['../__cmath_2round_8hpp.html',1,'(Global Namespace)']]],
-  ['runtime_5ferror_2ehpp_62',['runtime_error.hpp',['../runtime__error_8hpp.html',1,'']]]
+  ['rfind_2ehpp_55',['rfind.hpp',['../rfind_8hpp.html',1,'']]],
+  ['rint_2ehpp_56',['rint.hpp',['../rint_8hpp.html',1,'']]],
+  ['roadmap_2emd_57',['roadmap.md',['../roadmap_8md.html',1,'']]],
+  ['rotate_2ehpp_58',['rotate.hpp',['../rotate_8hpp.html',1,'']]],
+  ['rotate_5fcopy_2ehpp_59',['rotate_copy.hpp',['../rotate__copy_8hpp.html',1,'']]],
+  ['rotl_2ehpp_60',['rotl.hpp',['../rotl_8hpp.html',1,'']]],
+  ['rotr_2ehpp_61',['rotr.hpp',['../rotr_8hpp.html',1,'']]],
+  ['round_2ehpp_62',['round.hpp',['../__chrono_2round_8hpp.html',1,'(Global Namespace)'],['../__cmath_2round_8hpp.html',1,'(Global Namespace)']]],
+  ['runtime_5ferror_2ehpp_63',['runtime_error.hpp',['../runtime__error_8hpp.html',1,'']]]
 ];

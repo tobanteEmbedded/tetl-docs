@@ -22,7 +22,10 @@ var namespaceetl_1_1strings =
       [ "invalid_input", "namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33", null ],
       [ "overflow", "namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73", null ]
     ] ],
+    [ "find", "namespaceetl_1_1strings.html#a3d53ea21c634134f65be30fcfb775bf4", null ],
     [ "from_integer", "namespaceetl_1_1strings.html#a54ae04c3ae3ee1d65d83249c70eeb654", null ],
+    [ "rfind", "namespaceetl_1_1strings.html#af61d4af12c5135a1020cb458044c5a97", null ],
+    [ "rfind", "namespaceetl_1_1strings.html#a51b4cfba87a0d4089a7bea28400907c8", null ],
     [ "to_floating_point", "namespaceetl_1_1strings.html#a31d25f31f6487964390d841ea26025e1", null ],
     [ "to_integer", "namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775", null ]
 ];
