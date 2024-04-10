@@ -268,7 +268,7 @@ var annotated_dup =
       [ "integer_sequence", "structetl_1_1integer__sequence.html", "structetl_1_1integer__sequence" ],
       [ "integral_constant", "structetl_1_1integral__constant.html", "structetl_1_1integral__constant" ],
       [ "invalid_argument", "structetl_1_1invalid__argument.html", "structetl_1_1invalid__argument" ],
-      [ "invoke_result", "structetl_1_1invoke__result.html", null ],
+      [ "invoke_result", "structetl_1_1invoke__result.html", "structetl_1_1invoke__result" ],
       [ "is_abstract", "structetl_1_1is__abstract.html", null ],
       [ "is_aggregate", "structetl_1_1is__aggregate.html", null ],
       [ "is_arithmetic", "structetl_1_1is__arithmetic.html", null ],

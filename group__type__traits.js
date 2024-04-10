@@ -3,6 +3,9 @@ var group__type__traits =
     [ "has_virtual_destructor< T >", "structetl_1_1has__virtual__destructor.html", [
       [ "has_virtual_destructor_v", "group__type__traits.html#ga7e997395a99be7b3ac747230c82b51d2", null ]
     ] ],
+    [ "invoke_result< F, ArgTypes >", "structetl_1_1invoke__result.html", [
+      [ "invoke_result_t", "group__type__traits.html#ga631cecedda7818c94112a75b0f9a751c", null ]
+    ] ],
     [ "is_nothrow_swappable_with< T, U >", "structetl_1_1is__nothrow__swappable__with.html", [
       [ "is_nothrow_swappable_with_v", "group__type__traits.html#gaa10bae03ee2ee7efc954c5553dfb34dd", null ]
     ] ],
@@ -25,6 +28,7 @@ var group__type__traits =
       [ "type", "structetl_1_1type__identity.html#a834c467da58ea1d81821952d3c473b64", null ]
     ] ],
     [ "underlying_type< T >", "structetl_1_1underlying__type.html", null ],
+    [ "invoke_result_t", "group__type__traits.html#ga631cecedda7818c94112a75b0f9a751c", null ],
     [ "remove_reference_t", "group__type__traits.html#ga5993e4587ccd2777e95893329360358a", null ],
     [ "remove_volatile_t", "group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf", null ],
     [ "smallest_size_t", "group__type__traits.html#ga0fa3ee2a2bd4938f2e8f2f7e00117be6", null ],

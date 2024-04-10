@@ -222,11 +222,11 @@ requires ( <a class="el" href="namespaceetl.html#a762a8e8750c01c04403086076b7bab
 <tr class="memdesc:af95f8f310f29de8851d3a632d3d659ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perfect-forwarded assignment.  <br /></td></tr>
 <tr class="separator:af95f8f310f29de8851d3a632d3d659ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf8ecb46bbeb400c12e1ce4e7bfcc5d" id="r_a4bf8ecb46bbeb400c12e1ce4e7bfcc5d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (move_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;<a class="el" href="namespaceetl.html#a631cecedda7818c94112a75b0f9a751c">invoke_result_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
+requires (move_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;invoke_result_t&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
 <tr class="memitem:a4bf8ecb46bbeb400c12e1ce4e7bfcc5d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4bf8ecb46bbeb400c12e1ce4e7bfcc5d">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) &amp;&amp;-&gt; <a class="el" href="structetl_1_1optional.html">optional</a></td></tr>
 <tr class="separator:a4bf8ecb46bbeb400c12e1ce4e7bfcc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48c79bffe8008c5867b41dd9b958522d" id="r_a48c79bffe8008c5867b41dd9b958522d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (copy_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;<a class="el" href="namespaceetl.html#a631cecedda7818c94112a75b0f9a751c">invoke_result_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
+requires (copy_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;invoke_result_t&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
 <tr class="memitem:a48c79bffe8008c5867b41dd9b958522d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a48c79bffe8008c5867b41dd9b958522d">or_else</a> (<a class="el" href="structetl_1_1bitset.html">F</a> &amp;&amp;f) <a class="el" href="structetl_1_1bitset.html">const</a> &amp;-&gt; <a class="el" href="structetl_1_1optional.html">optional</a></td></tr>
 <tr class="separator:a48c79bffe8008c5867b41dd9b958522d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522878c5867961253036a55c319ee8aa" id="r_a522878c5867961253036a55c319ee8aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a522878c5867961253036a55c319ee8aa">reset</a> () noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
@@ -1283,7 +1283,7 @@ requires ( <a class="el" href="namespaceetl.html#a762a8e8750c01c04403086076b7bab
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (move_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;<a class="el" href="namespaceetl.html#a631cecedda7818c94112a75b0f9a751c">invoke_result_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</div>
+requires (move_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;invoke_result_t&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1314,7 +1314,7 @@ requires (move_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.ht
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; <br />
-requires (copy_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;<a class="el" href="namespaceetl.html#a631cecedda7818c94112a75b0f9a751c">invoke_result_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</div>
+requires (copy_constructible&lt;T&gt; <a class="el" href="structetl_1_1bitset.html">and</a> same_as&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;invoke_result_t&lt;<a class="el" href="structetl_1_1bitset.html">F</a>&gt;&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1468,7 +1468,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1optional.html">optional</a></li>
-    <li class="footer">Generated on Wed Apr 10 2024 02:03:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 10 2024 18:04:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -111,7 +111,7 @@ var searchData=
   ['apply_108',['apply',['../namespaceetl.html#a0f7d8fa4cd29bfaa5efc2ced210dd105',1,'etl']]],
   ['apply_2ehpp_109',['apply.hpp',['../apply_8hpp.html',1,'']]],
   ['april_110',['April',['../namespaceetl_1_1chrono.html#a803abec70c7cee4cc8780af6cf209fd7',1,'etl::chrono']]],
-  ['arg_111',['arg',['../group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1',1,'etl::arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T'],['../group__complex.html#gac21be8ae65aa553b7b584624a2aa3325',1,'etl::arg(Float f) noexcept -&gt; enable_if_t&lt; is_floating_point_v&lt; Float &gt;, complex&lt; Float &gt; &gt;'],['../group__complex.html#gac3702b79ef03a1b00289fb59cc09b9c0',1,'etl::arg(Integer i) noexcept -&gt; enable_if_t&lt; is_integral_v&lt; Integer &gt;, complex&lt; double &gt; &gt;']]],
+  ['arg_111',['arg',['../group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1',1,'etl::arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T'],['../group__complex.html#ga1ab9ee42ec06396333a752c794ead0bb',1,'etl::arg(Float f) noexcept -&gt; complex&lt; Float &gt;'],['../group__complex.html#gaede2a350f60d965adc98d8c1ca1da6b2',1,'etl::arg(Integer i) noexcept -&gt; complex&lt; double &gt;']]],
   ['arg_2ehpp_112',['arg.hpp',['../arg_8hpp.html',1,'']]],
   ['argument_2ehpp_113',['argument.hpp',['../argument_8hpp.html',1,'']]],
   ['argument_5flist_5ftoo_5flong_114',['argument_list_too_long',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a1b245b26b5ea3428c050d7f1503d7715',1,'etl']]],

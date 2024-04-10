@@ -1,8 +1,8 @@
 var searchData=
 [
   ['named_5ffunctions_2ehpp_0',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
-  ['nan_1',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
-  ['nan_2',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
+  ['nan_1',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
+  ['nan_2',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
   ['nan_2ehpp_3',['nan.hpp',['../nan_8hpp.html',1,'']]],
   ['nanf_4',['nanf',['../group__cmath.html#ga92b23f23746d65434dd57cbf03dde471',1,'etl']]],
   ['nanl_5',['nanl',['../group__cmath.html#gab2ef6ce5627884455b58fbf76bd8c8ea',1,'etl']]],
@@ -55,7 +55,7 @@ var searchData=
   ['none_5fof_2ehpp_52',['none_of.hpp',['../none__of_8hpp.html',1,'']]],
   ['nontype_53',['nontype',['../namespaceetl.html#afb090c3e2bd7b58f70ddb151d426d84c',1,'etl']]],
   ['nontype_5ft_54',['nontype_t',['../structetl_1_1nontype__t.html',1,'nontype_t&lt; V &gt;'],['../structetl_1_1nontype__t.html#afa6a92aa0bbf167b37bdcc392257589f',1,'etl::nontype_t::nontype_t()']]],
-  ['norm_55',['norm',['../group__complex.html#ga5f970b8afc721e0d297f41f5b4e93b4f',1,'etl::norm(complex&lt; T &gt; const &amp;z) noexcept -&gt; T'],['../group__complex.html#ga7e0f057f14a0df74b805602e63f6006a',1,'etl::norm(Float f) noexcept -&gt; enable_if_t&lt; is_floating_point_v&lt; Float &gt;, complex&lt; Float &gt; &gt;'],['../group__complex.html#ga1653c839c2e17f1fe8d77b998c528a90',1,'etl::norm(Integer i) noexcept -&gt; enable_if_t&lt; is_integral_v&lt; Integer &gt;, complex&lt; double &gt; &gt;']]],
+  ['norm_55',['norm',['../group__complex.html#ga5f970b8afc721e0d297f41f5b4e93b4f',1,'etl::norm(complex&lt; T &gt; const &amp;z) noexcept -&gt; T'],['../group__complex.html#gad53365f58607769e78eb64bf2442fc3b',1,'etl::norm(Float f) noexcept -&gt; complex&lt; Float &gt;'],['../group__complex.html#ga8258458b8977e7d9a73c4bcc2f61bca6',1,'etl::norm(Integer i) noexcept -&gt; complex&lt; double &gt;']]],
   ['norm_2ehpp_56',['norm.hpp',['../norm_8hpp.html',1,'']]],
   ['not_5fa_5fdirectory_57',['not_a_directory',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a21e867ca95e1dfecff4701863547dcec',1,'etl']]],
   ['not_5fa_5fsocket_58',['not_a_socket',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a22ac64bb14c46bcbc338a21950b6e722',1,'etl']]],

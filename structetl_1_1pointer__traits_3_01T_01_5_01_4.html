@@ -112,7 +112,7 @@ $(function(){initNavTree('structetl_1_1pointer__traits_3_01T_01_5_01_4.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structetl_1_1pointer__traits.html" title="The pointer_traits class template provides the standardized way to access certain properties of point...">pointer_traits</a> class template provides the standardized way to access certain properties of pointer-like types. <a href="https://en.cppreference.com/w/cpp/memory/pointer_traits">https://en.cppreference.com/w/cpp/memory/pointer_traits</a>.  
+<p>The <a class="el" href="structetl_1_1pointer__traits.html" title="The pointer_traits class template provides the standardized way to access certain properties of point...">pointer_traits</a> class template provides the standardized way to access certain properties of pointer-like types.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="pointer__traits_8hpp_source.html">pointer_traits.hpp</a>&gt;</code></p>
@@ -131,14 +131,14 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aad2f2733fc0e0fa37463b3f17f07ece5" id="r_aad2f2733fc0e0fa37463b3f17f07ece5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B = etl::is_void_v&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:aad2f2733fc0e0fa37463b3f17f07ece5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aad2f2733fc0e0fa37463b3f17f07ece5">pointer_to</a> (<a class="el" href="namespaceetl.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">etl::enable_if_t</a>&lt;!<a class="el" href="structetl_1_1bitset.html">B</a>, T &gt; &amp;<a class="el" href="structetl_1_1bitset.html">r</a>) -&gt; <a class="el" href="#ab088798d28525c0befe3c707b95c5bc2">pointer</a></td></tr>
-<tr class="memdesc:aad2f2733fc0e0fa37463b3f17f07ece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a dereferenceable pointer or pointer-like object ("fancy pointer") to its argument.  <br /></td></tr>
-<tr class="separator:aad2f2733fc0e0fa37463b3f17f07ece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae1679b4d59098ebd5dd6c5dbafb3b5" id="r_a5ae1679b4d59098ebd5dd6c5dbafb3b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ae1679b4d59098ebd5dd6c5dbafb3b5">pointer_to</a> (T &amp;<a class="el" href="structetl_1_1bitset.html">r</a>) -&gt; <a class="el" href="#ab088798d28525c0befe3c707b95c5bc2">pointer</a> <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#a4414ccc8655262f0522dc640003d64b7">etl::is_void_v</a>&lt; T &gt;)</td></tr>
+<tr class="memdesc:a5ae1679b4d59098ebd5dd6c5dbafb3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a dereferenceable pointer or pointer-like object ("fancy pointer") to its argument.  <br /></td></tr>
+<tr class="separator:a5ae1679b4d59098ebd5dd6c5dbafb3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T&gt;<br />
-struct etl::pointer_traits&lt; T * &gt;</div><p>The <a class="el" href="structetl_1_1pointer__traits.html" title="The pointer_traits class template provides the standardized way to access certain properties of point...">pointer_traits</a> class template provides the standardized way to access certain properties of pointer-like types. <a href="https://en.cppreference.com/w/cpp/memory/pointer_traits">https://en.cppreference.com/w/cpp/memory/pointer_traits</a>. </p>
+struct etl::pointer_traits&lt; T * &gt;</div><p>The <a class="el" href="structetl_1_1pointer__traits.html" title="The pointer_traits class template provides the standardized way to access certain properties of point...">pointer_traits</a> class template provides the standardized way to access certain properties of pointer-like types. </p>
+<p><a href="https://en.cppreference.com/w/cpp/memory/pointer_traits">https://en.cppreference.com/w/cpp/memory/pointer_traits</a></p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>A raw pointer </td></tr>
@@ -213,15 +213,13 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aad2f2733fc0e0fa37463b3f17f07ece5" name="aad2f2733fc0e0fa37463b3f17f07ece5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad2f2733fc0e0fa37463b3f17f07ece5">&#9670;&#160;</a></span>pointer_to()</h2>
+<a id="a5ae1679b4d59098ebd5dd6c5dbafb3b5" name="a5ae1679b4d59098ebd5dd6c5dbafb3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae1679b4d59098ebd5dd6c5dbafb3b5">&#9670;&#160;</a></span>pointer_to()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
-<div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B = etl::is_void_v&lt;T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -229,8 +227,9 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B = etl::is_v
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a> pointer_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceetl.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">etl::enable_if_t</a>&lt;!<a class="el" href="structetl_1_1bitset.html">B</a>, T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
           <td> -&gt; <a class="el" href="#ab088798d28525c0befe3c707b95c5bc2">pointer</a>
+        <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#a4414ccc8655262f0522dc640003d64b7">etl::is_void_v</a>&lt;T&gt;)
     </td>
         </tr>
       </table>
@@ -262,7 +261,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B = etl::is_v
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1pointer__traits_3_01T_01_5_01_4.html">pointer_traits&lt; T * &gt;</a></li>
-    <li class="footer">Generated on Wed Apr 10 2024 02:03:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 10 2024 18:04:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

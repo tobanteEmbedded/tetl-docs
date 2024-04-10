@@ -120,6 +120,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1has__virtual__destructor.html">has_virtual_destructor&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/has_virtual_destructor">https://en.cppreference.com/w/cpp/types/has_virtual_destructor</a>  <a href="structetl_1_1has__virtual__destructor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1invoke__result.html">invoke_result&lt; F, ArgTypes &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduces the return type of an INVOKE expression at compile time.  <a href="structetl_1_1invoke__result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with&lt; T, U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1remove__pointer.html">remove_pointer&lt; T &gt;</a></td></tr>
@@ -142,6 +145,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga631cecedda7818c94112a75b0f9a751c" id="r_ga631cecedda7818c94112a75b0f9a751c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... ArgTypes&gt; </td></tr>
+<tr class="memitem:ga631cecedda7818c94112a75b0f9a751c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga631cecedda7818c94112a75b0f9a751c">invoke_result_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1invoke__result.html">invoke_result</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>, ArgTypes...&gt;::type</td></tr>
+<tr class="separator:ga631cecedda7818c94112a75b0f9a751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5993e4587ccd2777e95893329360358a" id="r_ga5993e4587ccd2777e95893329360358a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
 <tr class="memitem:ga5993e4587ccd2777e95893329360358a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga5993e4587ccd2777e95893329360358a">remove_reference_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1remove__reference.html">remove_reference</a>&lt;T&gt;::type</td></tr>
 <tr class="separator:ga5993e4587ccd2777e95893329360358a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +180,32 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time type information </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga631cecedda7818c94112a75b0f9a751c" name="ga631cecedda7818c94112a75b0f9a751c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga631cecedda7818c94112a75b0f9a751c">&#9670;&#160;</a></span>invoke_result_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... ArgTypes&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... ArgTypes&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#ga631cecedda7818c94112a75b0f9a751c">invoke_result_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1invoke__result.html">invoke_result</a>&lt;<a class="el" href="structetl_1_1bitset.html">F</a>, ArgTypes...&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga5993e4587ccd2777e95893329360358a" name="ga5993e4587ccd2777e95893329360358a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5993e4587ccd2777e95893329360358a">&#9670;&#160;</a></span>remove_reference_t</h2>
 
@@ -336,7 +368,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 10 2024 02:03:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 10 2024 18:04:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
