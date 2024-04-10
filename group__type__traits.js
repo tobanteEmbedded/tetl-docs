@@ -32,7 +32,7 @@ var group__type__traits =
     [ "remove_reference_t", "group__type__traits.html#ga5993e4587ccd2777e95893329360358a", null ],
     [ "remove_volatile_t", "group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf", null ],
     [ "smallest_size_t", "group__type__traits.html#ga0fa3ee2a2bd4938f2e8f2f7e00117be6", null ],
-    [ "type_identity_t", "group__type__traits.html#gae7cfb52ab2d82ff12cd2e0340315447f", null ],
+    [ "type_identity_t", "group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23", null ],
     [ "underlying_type_t", "group__type__traits.html#ga23e4463cad64a4fb5f8e4cf7acafec27", null ],
     [ "void_t", "group__type__traits.html#gab8ddf9531fc4ac7ce28574db20c8f20e", null ],
     [ "has_virtual_destructor_v", "group__type__traits.html#ga7e997395a99be7b3ac747230c82b51d2", null ],
