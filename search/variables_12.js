@@ -14,5 +14,6 @@ var searchData=
   ['sqrt3_5fv_11',['sqrt3_v',['../group__numbers.html#ga9ea33a5059b461203794d344157820e4',1,'etl::numbers']]],
   ['storage_12',['storage',['../structetl_1_1string__constant.html#ab626a04f060dde553645d388d5390580',1,'etl::string_constant::storage'],['../structetl_1_1aligned__union_1_1type.html#a88734f80b62723f6a0f5526ace1120e7',1,'etl::aligned_union::type::storage']]],
   ['stride_13',['stride',['../structetl_1_1strided__slice.html#aba261993f72aae7e6d4e35caa23d941b',1,'etl::strided_slice']]],
-  ['sunday_14',['Sunday',['../namespaceetl_1_1chrono.html#afeee752d7e9c4d5fbd933b3a3257691c',1,'etl::chrono']]]
+  ['string_5fview_5flike_14',['string_view_like',['../structetl_1_1basic__inplace__string.html#aa007b921bdf214f4132fdd20af8beaa4',1,'etl::basic_inplace_string']]],
+  ['sunday_15',['Sunday',['../namespaceetl_1_1chrono.html#afeee752d7e9c4d5fbd933b3a3257691c',1,'etl::chrono']]]
 ];

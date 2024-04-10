@@ -23,5 +23,5 @@ var searchData=
   ['powl_20',['powl',['../group__cmath.html#ga2faf58ce4c1c2fd993748a69cecd13c5',1,'etl']]],
   ['prev_21',['prev',['../group__iterator.html#ga6d9cd7356c493ca709070e97bf61ed63',1,'etl']]],
   ['push_22',['push',['../structetl_1_1stack.html#a7a34dd3e7d295c7b0a39e8a45db8757a',1,'etl::stack::push(value_type const &amp;x) noexcept(noexcept(declval&lt; Container &gt;().push_back(x))) -&gt; void'],['../structetl_1_1stack.html#ac21a5e38fec4ef4dc228d02b9eedb633',1,'etl::stack::push(value_type &amp;&amp;x) noexcept(noexcept(declval&lt; Container &gt;().push_back(etl::move(x)))) -&gt; void']]],
-  ['push_5fback_23',['push_back',['../structetl_1_1basic__inplace__string.html#aadf1269b6e2dd4ad653ed2eb9384d161',1,'etl::basic_inplace_string::push_back()'],['../structetl_1_1static__vector.html#a72456609d7a9ceb1705b59377b592d29',1,'etl::static_vector::push_back()']]]
+  ['push_5fback_23',['push_back',['../structetl_1_1basic__inplace__string.html#af203c16292db3164a3fe67078c7a9379',1,'etl::basic_inplace_string::push_back()'],['../structetl_1_1static__vector.html#a72456609d7a9ceb1705b59377b592d29',1,'etl::static_vector::push_back()']]]
 ];

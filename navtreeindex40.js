@@ -1,9 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"version_8hpp.html":[12,0,1,0,130],
-"version_8hpp_source.html":[12,0,1,0,130],
-"vformat__to_8hpp.html":[12,0,1,0,30,11],
-"vformat__to_8hpp.html#a08c2340a69881856d04c55c19bb5c291":[12,0,1,0,30,11,0],
 "vformat__to_8hpp_source.html":[12,0,1,0,30,11],
 "visit_8hpp.html":[12,0,1,0,63,10],
 "visit_8hpp_source.html":[12,0,1,0,63,10],
