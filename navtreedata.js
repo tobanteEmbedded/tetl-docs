@@ -42,20 +42,20 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md26", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md27", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md28", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md29", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md30", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md31", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md32", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md33", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md34", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md35", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md36", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md37", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md33", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md34", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md26", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md27", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md35", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md36", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md37", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md28", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md29", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md30", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -115,15 +115,15 @@ var NAVTREEINDEX =
 "is__member__pointer_8hpp_source.html",
 "layout__transpose_8hpp_source.html",
 "move__constructible_8hpp_source.html",
-"namespaceetl.html#a73fcc8395221077570ae4d49d16fdfb5",
-"namespaceetl.html#ac524e3389ea120063f493b23ce5ba2a6",
+"namespaceetl.html#a74d69c1152ef7e628b1691179fc6f530",
+"namespaceetl.html#ac6034951d763ffd6c29af4c172b8a4fa",
 "namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a41b39c335ef0887256cf15fd7cc7a37c",
 "namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775",
 "ptrdiff__t_8hpp.html#aac63559b08846022abfeabda8583ed87",
 "static__vector_8hpp.html#ab897f8f3641b27de2e08d2d16563a2c2",
 "structetl_1_1basic__bitset.html#a02701da0eee9b79401d2520f1761e814",
 "structetl_1_1basic__inplace__string.html#a7762fa62b377a4fe9013a86afeb00b99",
-"structetl_1_1basic__string__view.html#ae178c024df401efc115ee625a64f3b43",
+"structetl_1_1basic__string__view.html#acf509bd9a95c5adc0fd870ca0e7df4bd",
 "structetl_1_1chrono_1_1system__clock.html#a59a5c68cfee42d9a7e4eed2eb44ee5a3",
 "structetl_1_1default__accessor.html#ac30062536d9045ae629c3921d8eb7ffa",
 "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html#acafcf0084f7f38e2b991102e09c4b164",

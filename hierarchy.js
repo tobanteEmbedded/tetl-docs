@@ -31,7 +31,7 @@ var hierarchy =
     [ "basic_format_parse_context< CharT >", "structetl_1_1basic__format__parse__context.html", null ],
     [ "basic_format_string< CharT, Args >", "structetl_1_1basic__format__string.html", null ],
     [ "basic_inplace_string< CharT, Capacity, Traits >", "structetl_1_1basic__inplace__string.html", null ],
-    [ "basic_string_view< CharType, Traits >", "structetl_1_1basic__string__view.html", null ],
+    [ "basic_string_view< Char, Traits >", "structetl_1_1basic__string__view.html", null ],
     [ "basic_string_view< CharT >", "structetl_1_1basic__string__view.html", null ],
     [ "bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", null ],
     [ "binary_t", "structetl_1_1binary__t.html", null ],
