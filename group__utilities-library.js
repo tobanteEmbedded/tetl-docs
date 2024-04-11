@@ -15,7 +15,7 @@ var group__utilities_library =
     [ "source_location", "group__source__location.html", "group__source__location" ],
     [ "tuple", "group__tuple.html", null ],
     [ "type_traits", "group__type__traits.html", "group__type__traits" ],
-    [ "utility", "group__utility.html", null ],
+    [ "utility", "group__utility.html", "group__utility" ],
     [ "variant", "group__variant.html", "group__variant" ],
     [ "version", "group__version.html", null ]
 ];

@@ -1,7 +1,6 @@
 var pair_8hpp =
 [
     [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4" ],
-    [ "pair< T1, T2 >", "structetl_1_1pair.html", "structetl_1_1pair" ],
     [ "tuple_element< I, pair< T1, T2 > >", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01pair_3_01T1_00_01T2_01_4_01_4" ],
     [ "tuple_size< pair< T1, T2 > >", "structetl_1_1tuple__size_3_01pair_3_01T1_00_01T2_01_4_01_4.html", null ],
     [ "get", "pair_8hpp.html#af2afb17c2e9b1ec115692dd31cdf6574", null ],
