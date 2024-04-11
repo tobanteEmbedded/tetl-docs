@@ -98,7 +98,7 @@ var searchData=
   ['three_5fway_5fcomparable_2ehpp_95',['three_way_comparable.hpp',['../three__way__comparable_8hpp.html',1,'']]],
   ['thursday_96',['Thursday',['../namespaceetl_1_1chrono.html#af7f0511f14d57ea9d0178aaefc8d3b98',1,'etl::chrono']]],
   ['ticktype_5ft_97',['TickType_t',['../stubs_8hpp.html#a7a499be6ab5cca64bfdc5c0c7c1805ca',1,'stubs.hpp']]],
-  ['tidy_98',['clang-tidy',['../md_CONTRIBUTING.html#autotoc_md7',1,'']]],
+  ['tidy_98',['clang-tidy',['../md_CONTRIBUTING.html#autotoc_md6',1,'']]],
   ['tie_99',['tie',['../namespaceetl.html#a0d1ede89bcd679cdd58f45d98b785cd8',1,'etl']]],
   ['tie_2ehpp_100',['tie.hpp',['../tie_8hpp.html',1,'']]],
   ['time_5fpoint_101',['time_point',['../structetl_1_1chrono_1_1time__point.html',1,'time_point&lt; Clock, Duration &gt;'],['../structetl_1_1chrono_1_1system__clock.html#a9765706c09cb18c23d2ebc3582924718',1,'etl::chrono::system_clock::time_point'],['../structetl_1_1chrono_1_1time__point.html#a5027b68a194e6f3206c14291cd55c2e9',1,'etl::chrono::time_point::time_point() noexcept=default'],['../structetl_1_1chrono_1_1time__point.html#ad679d64e647c8ae53ad2a53132044ad2',1,'etl::chrono::time_point::time_point(duration const &amp;d) noexcept'],['../structetl_1_1chrono_1_1time__point.html#a0af4ff33f7c9bf4067944119fb5d7980',1,'etl::chrono::time_point::time_point(time_point&lt; clock, Dur2 &gt; const &amp;t)']]],

@@ -33,12 +33,12 @@ var NAVTREE =
       [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
       [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
         [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md10", null ]
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md7", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md8", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md9", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md10", null ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
