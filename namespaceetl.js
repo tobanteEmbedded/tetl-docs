@@ -891,7 +891,7 @@ var namespaceetl =
     [ "asinhl", "group__cmath.html#ga4fdc11c6a149dde153853117d7395182", null ],
     [ "asinl", "group__cmath.html#ga8cba14d8fe2e4ab545185b18a751e4c5", null ],
     [ "assert_handler", "namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee", null ],
-    [ "assume_aligned", "namespaceetl.html#ae867798dd2ddddb86806aa99a0ae9101", null ],
+    [ "assume_aligned", "group__memory.html#gae867798dd2ddddb86806aa99a0ae9101", null ],
     [ "atan", "group__cmath.html#gac7f38e6f2553eab83a47f6a250630516", null ],
     [ "atan", "group__cmath.html#ga050d30d9993cbfef460a649443ea4e14", null ],
     [ "atan", "group__cmath.html#gade68021b3a0ed38780444a3793a13409", null ],

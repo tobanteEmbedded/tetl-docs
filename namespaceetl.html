@@ -1941,10 +1941,10 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" hr
 <tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee" id="r_afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Assertion</a> &gt; </td></tr>
 <tr class="memitem:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a> (<a class="el" href="structetl_1_1bitset.html">Assertion</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">msg</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
 <tr class="separator:afcdd4cbf8740ceb15439f10eee6080ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae867798dd2ddddb86806aa99a0ae9101" id="r_ae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N, <a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
-<tr class="memitem:ae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae867798dd2ddddb86806aa99a0ae9101">assume_aligned</a> (T *ptr) -&gt; T *</td></tr>
-<tr class="memdesc:ae867798dd2ddddb86806aa99a0ae9101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the implementation that the object ptr points to is aligned to at least N. The implementation may use this information to generate more efficient code, but it might only make this assumption if the object is accessed via the return value of assume_aligned.  <br /></td></tr>
-<tr class="separator:ae867798dd2ddddb86806aa99a0ae9101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae867798dd2ddddb86806aa99a0ae9101" id="r_gae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N, <a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </td></tr>
+<tr class="memitem:gae867798dd2ddddb86806aa99a0ae9101"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory.html#gae867798dd2ddddb86806aa99a0ae9101">assume_aligned</a> (T *ptr) -&gt; T *</td></tr>
+<tr class="memdesc:gae867798dd2ddddb86806aa99a0ae9101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the implementation that the object ptr points to is aligned to at least N. The implementation may use this information to generate more efficient code, but it might only make this assumption if the object is accessed via the return value of assume_aligned.  <br /></td></tr>
+<tr class="separator:gae867798dd2ddddb86806aa99a0ae9101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bf898417a69084f2e08aa12510db7d" id="r_a27bf898417a69084f2e08aa12510db7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27bf898417a69084f2e08aa12510db7d">atof</a> (<a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a> *<a class="el" href="structetl_1_1bitset.html">str</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">double</a></td></tr>
 <tr class="memdesc:a27bf898417a69084f2e08aa12510db7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets a floating point value in a byte string pointed to by str.  <br /></td></tr>
 <tr class="separator:a27bf898417a69084f2e08aa12510db7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7058,38 +7058,6 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="cassert_8cpp-example.html#a0">cassert.cpp</a>.</dd>
 </dl>
-
-</div>
-</div>
-<a id="ae867798dd2ddddb86806aa99a0ae9101" name="ae867798dd2ddddb86806aa99a0ae9101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae867798dd2ddddb86806aa99a0ae9101">&#9670;&#160;</a></span>assume_aligned()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N, <a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> assume_aligned </td>
-          <td>(</td>
-          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td> -&gt; T*
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Informs the implementation that the object ptr points to is aligned to at least N. The implementation may use this information to generate more efficient code, but it might only make this assumption if the object is accessed via the return value of assume_aligned. </p>
-<p>The program is ill-formed if N is not a power of 2. The behavior is undefined if ptr does not point to an object of type T (ignoring cv-qualification at every level), or if the object's alignment is not at least N.</p>
-<p><a href="https://en.cppreference.com/w/cpp/memory/assume_aligned">https://en.cppreference.com/w/cpp/memory/assume_aligned</a> </p>
 
 </div>
 </div>
@@ -19047,7 +19015,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Thu Apr 11 2024 00:53:02 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 11 2024 01:10:50 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
