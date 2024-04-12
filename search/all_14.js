@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['qemu_0',['QEMU',['../md_docs_2roadmap.html#autotoc_md29',1,'']]],
+  ['qemu_0',['QEMU',['../md_docs_2roadmap.html#autotoc_md37',1,'']]],
   ['queue_1',['queue',['../structetl_1_1experimental_1_1freertos_1_1queue.html',1,'queue&lt; T, Size &gt;'],['../structetl_1_1experimental_1_1freertos_1_1queue.html#ae8b79ba88a610d47081602a758aac023',1,'etl::experimental::freertos::queue::queue()'],['../structetl_1_1experimental_1_1freertos_1_1queue.html#a4ceebf74fdff00524dbc5f139f26aebe',1,'etl::experimental::freertos::queue::queue(queue const &amp;)=delete'],['../structetl_1_1experimental_1_1freertos_1_1queue.html#a258d22f6144da7a1ce7608879cfed766',1,'etl::experimental::freertos::queue::queue(queue &amp;&amp;)=delete']]],
   ['queue_2ehpp_2',['queue.hpp',['../queue_8hpp.html',1,'']]],
   ['queuehandle_5ft_3',['QueueHandle_t',['../stubs_8hpp.html#a7ea12d2ebf3440986c9718aee2f84449',1,'stubs.hpp']]],
