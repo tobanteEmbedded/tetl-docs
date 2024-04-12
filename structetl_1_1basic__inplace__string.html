@@ -513,10 +513,10 @@ requires <a class="el" href="#aa007b921bdf214f4132fdd20af8beaa4">string_view_lik
 <tr class="memdesc:a0e69bc7490e63865360a8f6305176dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the specified character without bounds checking.  <br /></td></tr>
 <tr class="separator:a0e69bc7490e63865360a8f6305176dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a957f4216a46d362fe70076411fa35a35" id="r_a957f4216a46d362fe70076411fa35a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a957f4216a46d362fe70076411fa35a35">pop_back</a> () noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
-<tr class="memdesc:a957f4216a46d362fe70076411fa35a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last character from the string. Does nothing if the string is empty.  <br /></td></tr>
+<tr class="memdesc:a957f4216a46d362fe70076411fa35a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last character from the string.  <br /></td></tr>
 <tr class="separator:a957f4216a46d362fe70076411fa35a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af203c16292db3164a3fe67078c7a9379" id="r_af203c16292db3164a3fe67078c7a9379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af203c16292db3164a3fe67078c7a9379">push_back</a> (<a class="el" href="structetl_1_1bitset.html">CharT</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
-<tr class="memdesc:af203c16292db3164a3fe67078c7a9379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the given character ch to the end of the string. Does nothing if the string is full.  <br /></td></tr>
+<tr class="memdesc:af203c16292db3164a3fe67078c7a9379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the given character ch to the end of the string.  <br /></td></tr>
 <tr class="separator:af203c16292db3164a3fe67078c7a9379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7ebbc275e0cbbe7e3cc1588a86855e" id="r_a4f7ebbc275e0cbbe7e3cc1588a86855e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7ebbc275e0cbbe7e3cc1588a86855e">rbegin</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a></td></tr>
 <tr class="memdesc:a4f7ebbc275e0cbbe7e3cc1588a86855e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reverse iterator to the first character of the reversed string. It corresponds to the last character of the non-reversed string.  <br /></td></tr>
@@ -953,7 +953,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Character pointer constructor. </p>
-<p>Fails silently if input len is greater then capacity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>len &lt;= Capacity </dd></dl>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Character pointer constructor. Calls traits_type::length. </p>
-<p>Fails silently if input length is greater then capacity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Length of <code>str</code> must be &lt;= Capacity </dd></dl>
 
 </div>
 </div>
@@ -1044,7 +1044,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Constructs the string with count copies of character ch. </p>
-<p>Fails silently if input length is greater then capacity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>count &lt;= Capacity </dd></dl>
 
 </div>
 </div>
@@ -4636,7 +4636,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </table>
 </div><div class="memdoc">
 
-<p>Removes the last character from the string. Does nothing if the string is empty. </p>
+<p>Removes the last character from the string. </p>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of characters.">size()</a> != 0 </dd></dl>
 
 </div>
 </div>
@@ -4666,7 +4667,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </table>
 </div><div class="memdoc">
 
-<p>Appends the given character ch to the end of the string. Does nothing if the string is full. </p>
+<p>Appends the given character ch to the end of the string. </p>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of characters.">size()</a> &lt; <a class="el" href="#af10920072a5a2cb01c7d608b7e23fbb7" title="Returns the number of characters that can be held in allocated storage, NOT including the null termin...">capacity()</a> </dd></dl>
 
 </div>
 </div>
@@ -5635,7 +5637,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a></li>
-    <li class="footer">Generated on Fri Apr 12 2024 04:24:40 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 12 2024 04:41:01 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
