@@ -1,8 +1,8 @@
 var searchData=
 [
   ['c_0',['c',['../structetl_1_1stack.html#a2fcde4b4de912fa6ec240e5ca9c1e7fe',1,'etl::stack']]],
-  ['c_2014_1',['C++14',['../md_docs_2progress.html#autotoc_md32',1,'']]],
-  ['c_2017_2',['C++17',['../md_docs_2progress.html#autotoc_md31',1,'']]],
+  ['c_2014_1',['C++14',['../md_docs_2progress.html#autotoc_md38',1,'']]],
+  ['c_2017_2',['C++17',['../md_docs_2progress.html#autotoc_md32',1,'']]],
   ['c_2020_3',['C++20',['../md_docs_2progress.html#autotoc_md30',1,'']]],
   ['c_2023_4',['C++23',['../md_docs_2progress.html#autotoc_md29',1,'']]],
   ['c_2026_5',['C++26',['../md_docs_2progress.html#autotoc_md28',1,'']]],
@@ -49,7 +49,7 @@ var searchData=
   ['clamp_46',['clamp',['../group__algorithm.html#ga72ad3fc1cb6d967df6a52c8e61030f75',1,'etl::clamp(Type const &amp;v, Type const &amp;lo, Type const &amp;hi, Compare comp) -&gt; Type const &amp;'],['../group__algorithm.html#gac2e0d6f4937eef794486e125996b6ce1',1,'etl::clamp(Type const &amp;v, Type const &amp;lo, Type const &amp;hi) noexcept -&gt; Type const &amp;']]],
   ['clamp_2ehpp_47',['clamp.hpp',['../clamp_8hpp.html',1,'']]],
   ['clang_20tidy_48',['clang-tidy',['../md_CONTRIBUTING.html#autotoc_md6',1,'']]],
-  ['clang_20verify_49',['clang-verify',['../md_docs_2roadmap.html#autotoc_md38',1,'']]],
+  ['clang_20verify_49',['clang-verify',['../md_docs_2roadmap.html#autotoc_md37',1,'']]],
   ['clear_50',['clear',['../structetl_1_1flat__set.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::flat_set::clear()'],['../structetl_1_1inplace__vector.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::inplace_vector::clear()'],['../structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::inplace_vector&lt; T, 0 &gt;::clear()'],['../structetl_1_1static__set.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::static_set::clear()'],['../structetl_1_1basic__inplace__string.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::basic_inplace_string::clear()'],['../structetl_1_1static__vector.html#a96d391a5b8907ff5b9adf72774583f90',1,'etl::static_vector::clear()'],['../structetl_1_1vector.html#a93f3f2b1ceb4b375d2404dd417a14dc2',1,'etl::vector::clear()']]],
   ['climits_51',['climits',['../group__climits.html',1,'']]],
   ['climits_2ehpp_52',['climits.hpp',['../climits_8hpp.html',1,'']]],
