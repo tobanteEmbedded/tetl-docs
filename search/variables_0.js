@@ -32,6 +32,5 @@ var searchData=
   ['_5f7_29',['_7',['../namespaceetl_1_1placeholders.html#a149144aed24c50f69f9deba3b894150f',1,'etl::placeholders']]],
   ['_5f8_30',['_8',['../namespaceetl_1_1placeholders.html#a7adab4ad4ce632d1ad47ea88c4672856',1,'etl::placeholders']]],
   ['_5f9_31',['_9',['../namespaceetl_1_1placeholders.html#a052dc554703cbd2d5a09234ad30a7cf7',1,'etl::placeholders']]],
-  ['_5fhandle_32',['_handle',['../structetl_1_1coroutine__handle_3_01void_01_4.html#af4a6d172f632c6c18774f45134c77900',1,'etl::coroutine_handle&lt; void &gt;']]],
-  ['_5fsize_33',['_size',['../structetl_1_1span.html#a9f1927ae81f20205d93e0b86915f27d7',1,'etl::span']]]
+  ['_5fhandle_32',['_handle',['../structetl_1_1coroutine__handle_3_01void_01_4.html#af4a6d172f632c6c18774f45134c77900',1,'etl::coroutine_handle&lt; void &gt;']]]
 ];

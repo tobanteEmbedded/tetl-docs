@@ -596,7 +596,7 @@ var hierarchy =
     [ "small_ptr< Type, BaseAddress, StorageType >", "structetl_1_1small__ptr.html", null ],
     [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", null ],
     [ "source_location", "structetl_1_1source__location.html", null ],
-    [ "span< ElementType, Extent >", "structetl_1_1span.html", null ],
+    [ "span< T, Extent >", "structetl_1_1span.html", null ],
     [ "span< etl::basic_format_arg< Context > const >", "structetl_1_1span.html", null ],
     [ "span< etl::byte >", "structetl_1_1span.html", null ],
     [ "stack< T, Container >", "structetl_1_1stack.html", null ],

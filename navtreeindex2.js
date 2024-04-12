@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"bit_8hpp.html":[12,0,1,0,69],
 "bit_8hpp_source.html":[12,0,1,0,69],
 "bit__and_8hpp.html":[12,0,1,0,31,1],
 "bit__and_8hpp_source.html":[12,0,1,0,31,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1incrementable.html":[9,0,0,514],
 "conceptetl_1_1indirectly__readable.html":[10,0,39],
 "conceptetl_1_1indirectly__readable.html":[9,0,0,515],
-"conceptetl_1_1indirectly__regular__unary__invocable.html":[9,0,0,516]
+"conceptetl_1_1indirectly__regular__unary__invocable.html":[9,0,0,516],
+"conceptetl_1_1indirectly__regular__unary__invocable.html":[10,0,40]
 };

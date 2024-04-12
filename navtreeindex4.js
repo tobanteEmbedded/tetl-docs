@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"dir_b729200df6fd10c409e1af54792da758.html":[12,0,1,0,66,1],
 "dir_c32c544dc38724570487a838afd845ea.html":[12,0,1,0,32],
 "dir_c330c4b0504c55195deae1b11ef4e47e.html":[12,0,1,0,57],
 "dir_c9f17b464bcd26fda6809fc2838ca256.html":[12,0,1,0,49],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "fmin_8hpp_source.html":[12,0,1,0,10,18],
 "fmod_8hpp.html":[12,0,1,0,10,19],
 "fmod_8hpp_source.html":[12,0,1,0,10,19],
-"fmt__buffer_8hpp.html":[12,0,1,0,30,6]
+"fmt__buffer_8hpp.html":[12,0,1,0,30,6],
+"fmt__buffer_8hpp_source.html":[12,0,1,0,30,6]
 };
