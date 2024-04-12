@@ -188,19 +188,30 @@ Tests</h1>
 <div class="line">}</div>
 <div class="ttc" id="anamespaceetl_html_affc67214aa9016de19ce8c56cacf050f"><div class="ttname"><a href="namespaceetl.html#affc67214aa9016de19ce8c56cacf050f">etl::cmp_equal</a></div><div class="ttdeci">constexpr auto cmp_equal(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_equal.hpp:22</div></div>
 <div class="ttc" id="autility_8hpp_html"><div class="ttname"><a href="utility_8hpp.html">utility.hpp</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Tools</h1>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 CMake Presets</h2>
 <div class="fragment"><div class="line">cmake --list-presets=all .</div>
 <div class="line">cmake --preset desktop</div>
 <div class="line">cmake --build --preset desktop</div>
 <div class="line">ctest --preset desktop</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 clang-tidy</h2>
 <div class="fragment"><div class="line">cmake -S . -B cmake-build-tidy -G &quot;Unix Makefiles&quot; -D CMAKE_BUILD_TYPE=Debug</div>
 <div class="line">cmake --build cmake-build-tidy --parallel 8</div>
 <div class="line">run-clang-tidy -fix -j 8 -quiet -p cmake-build-tidy -header-filter $(realpath .) $(realpath .)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+coverage</h2>
+<div class="fragment"><div class="line"># build with coverage flags</div>
+<div class="line">cmake -S . -B cmake-build-coverage -G Ninja -D CMAKE_BUILD_TYPE=Debug -D CMAKE_CXX_STANDARD=23 -D TETL_BUILD_COVERAGE=ON</div>
+<div class="line">cmake --build cmake-build-coverage --parallel 8</div>
+<div class="line"> </div>
+<div class="line"># run gcov</div>
+<div class="line">gcovr --html-details -e &quot;.*_3rd_party*&quot; --exclude-unreachable-branches -r . -s cmake-build-coverage -o cmake-build-coverage/coverage.html -j 4</div>
+<div class="line"> </div>
+<div class="line"># or grcov (faster)</div>
+<div class="line">grcov . -s . --binary-path ./cmake-build-coverage/bin/ -t html --ignore-not-existing -o ./cmake-build-coverage/html/ --ignore &#39;*_3rd_party/*&#39; --threads 4</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 pre-commit</h2>
 <div class="fragment"><div class="line">pre-commit install</div>
@@ -246,7 +257,7 @@ Coding Style</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 12 2024 01:49:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 12 2024 02:13:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

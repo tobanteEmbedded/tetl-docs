@@ -60,7 +60,7 @@ var searchData=
   ['deprecated_20list_57',['Deprecated List',['../deprecated.html',1,'']]],
   ['dereferenceable_2ehpp_58',['dereferenceable.hpp',['../dereferenceable_8hpp.html',1,'']]],
   ['derived_5ffrom_2ehpp_59',['derived_from.hpp',['../derived__from_8hpp.html',1,'']]],
-  ['design_20goals_60',['Design Goals',['../index.html#autotoc_md17',1,'']]],
+  ['design_20goals_60',['Design Goals',['../index.html#autotoc_md18',1,'']]],
   ['destination_5faddress_5frequired_61',['destination_address_required',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a326032e01f2a5e14c7f730f4d03d753a',1,'etl']]],
   ['destroy_62',['destroy',['../structetl_1_1coroutine__handle_3_01void_01_4.html#ad4d3929ac58f174862b965abfb5b98f7',1,'etl::coroutine_handle&lt; void &gt;::destroy()'],['../namespaceetl_1_1ranges.html#aafaa337be0352947d708d2a0e0c01168',1,'etl::ranges::destroy'],['../namespaceetl.html#ad349bf22ae9342501dceb73d04bfcb7e',1,'etl::destroy()']]],
   ['destroy_2ehpp_63',['destroy.hpp',['../destroy_8hpp.html',1,'']]],

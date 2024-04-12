@@ -31,9 +31,10 @@ var NAVTREE =
         [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
       [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "coverage", "md_CONTRIBUTING.html#autotoc_md7", null ],
         [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md8", null ],
         [ "doxygen", "md_CONTRIBUTING.html#autotoc_md9", null ],
         [ "VS Code", "md_CONTRIBUTING.html#autotoc_md10", null ]
@@ -42,20 +43,20 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md26", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md27", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md28", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md29", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md30", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md31", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md28", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md29", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md30", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md31", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md32", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md33", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md34", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md34", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md35", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md35", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md36", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md37", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md36", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md37", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md38", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
@@ -114,35 +115,35 @@ var NAVTREEINDEX =
 "in__range_8hpp_source.html",
 "is__member__pointer_8hpp_source.html",
 "layout__transpose_8hpp_source.html",
-"move__constructible_8hpp_source.html",
-"namespaceetl.html#a74d69c1152ef7e628b1691179fc6f530",
-"namespaceetl.html#ac6034951d763ffd6c29af4c172b8a4fa",
-"namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a41b39c335ef0887256cf15fd7cc7a37ca0a83e9e2ed7fad3947043ddb3a49ce44",
-"namespaceetl_1_1strings.html#abe33c9fd6436aecdb4d123423eb1fcc9",
-"ptrdiff__t_8hpp_source.html",
-"static__vector_8hpp_source.html",
-"structetl_1_1basic__bitset.html#a0c5da0e71185e2cbcf2500f3b84079a5",
-"structetl_1_1basic__inplace__string.html#a7853899cf40384f81bb34dcc8f665ab6",
-"structetl_1_1basic__string__view.html#ad1b2b12b3bf884656d0749249db3ac12",
-"structetl_1_1chrono_1_1system__clock.html#a5eb189aaedd3e56c561d728182b4017c",
+"move__constructible_8hpp.html",
+"namespaceetl.html#a74587901a0df261ba728e5fab73273de",
+"namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc",
+"namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#a41b39c335ef0887256cf15fd7cc7a37c",
+"namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775",
+"ptrdiff__t_8hpp.html#aac63559b08846022abfeabda8583ed87",
+"static__vector_8hpp.html#ab897f8f3641b27de2e08d2d16563a2c2",
+"structetl_1_1basic__bitset.html#a02701da0eee9b79401d2520f1761e814",
+"structetl_1_1basic__inplace__string.html#a7762fa62b377a4fe9013a86afeb00b99",
+"structetl_1_1basic__string__view.html#acf509bd9a95c5adc0fd870ca0e7df4bd",
+"structetl_1_1chrono_1_1system__clock.html#a59a5c68cfee42d9a7e4eed2eb44ee5a3",
 "structetl_1_1default__accessor.html#ac30062536d9045ae629c3921d8eb7ffa",
 "structetl_1_1experimental_1_1hardware_1_1stm32_1_1gpio__memory__layout.html#acafcf0084f7f38e2b991102e09c4b164",
 "structetl_1_1from__chars__result.html#a1538e5d54ba0122f7fb91d06b1d2ab02",
-"structetl_1_1inplace__vector.html#a241682fab1d41ae19269a1d4ce8af636",
+"structetl_1_1inplace__vector.html#a1cf1c10a8e691560b224eb1ad8fff909",
 "structetl_1_1is__nothrow__convertible.html",
-"structetl_1_1less__equal.html#a354d37dd30cc96c224dd4ec1ae16e1bc",
-"structetl_1_1modulus_3_01void_01_4.html",
-"structetl_1_1numeric__limits_3_01char8__t_01_4.html#abae3d7f611c2a918095fdfddf24c4313",
-"structetl_1_1numeric__limits_3_01int_01_4.html#a755eb8c67d331adc268ce24d7f67aa61",
-"structetl_1_1numeric__limits_3_01short_01_4.html#a57ecdf76b75692a550f6a020cde27f9c",
-"structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html#a001955037291925080612f0839fbb199",
+"structetl_1_1less__equal.html",
+"structetl_1_1modulus.html#ae12925d00e104afe7ae3132a47e363fe",
+"structetl_1_1numeric__limits_3_01char8__t_01_4.html#a91df51c141b7b11a75309caef934c613",
+"structetl_1_1numeric__limits_3_01int_01_4.html#a7359db10e9faf135518e4691deb56c95",
+"structetl_1_1numeric__limits_3_01short_01_4.html#a49a4afa9b79b2f17164eccf3fcd068cf",
+"structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html",
 "structetl_1_1optional_3_01T_01_6_01_4.html#a8c8704f745587070300ccb9086c75f5e",
-"structetl_1_1ranges_1_1construct__at__fn.html",
-"structetl_1_1stack.html#a83e59b2bcc9fc96e45be48dc514824be",
+"structetl_1_1range__error.html#a8311c3888a939c329d9cbb3e3269e24d",
+"structetl_1_1stack.html#a7a34dd3e7d295c7b0a39e8a45db8757a",
 "structetl_1_1tm.html#a994c4f4519ba57e186580d21cc86f9e5",
-"structetl_1_1variant.html#aae1c1888a97166e0126e241a193a89da",
-"to__address_8hpp.html#a9487e53c09efc9a8837a2d074e441b99",
-"wcsrchr_8hpp.html#abb75f8bb32c928b359607a41c9f634e5"
+"structetl_1_1variant.html#aad50a510e48a28f57ac043ae710db49f",
+"to__address_8hpp.html",
+"wcsrchr_8hpp.html#a5ef301df65d76aedef7c3211e00900a2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
