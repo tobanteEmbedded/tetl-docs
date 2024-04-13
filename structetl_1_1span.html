@@ -236,8 +236,7 @@ Related Symbols</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Extent&gt;<br />
 struct etl::span&lt; T, Extent &gt;</div><p>A non-owning view over a contiguous sequence of objects. </p>
 <p>The class template span describes an object that can refer to a contiguous sequence of objects with the first element of the sequence at position zero. A span can either have a static extent, in which case the number of elements in the sequence is known and encoded in the type, or a dynamic extent.</p>
-<p>If a span has dynamic extent a typical implementation holds two members: a pointer to T and a size. A span with static extent may have only one member: a pointer to T.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>Remove size member when <code>Extent != dynamic_extent</code> </dd></dl>
+<p>If a span has dynamic extent a typical implementation holds two members: a pointer to T and a size. A span with static extent may have only one member: a pointer to T. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ada8ef625b97396676e3e2303a84535be" name="ada8ef625b97396676e3e2303a84535be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada8ef625b97396676e3e2303a84535be">&#9670;&#160;</a></span>const_pointer</h2>
@@ -1018,7 +1017,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1span.html">span</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 07:57:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 13 2024 08:36:24 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
