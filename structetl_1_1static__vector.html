@@ -217,6 +217,10 @@ requires (detail::InputIterator&lt;<a class="el" href="structetl_1_1bitset.html"
 <tr class="memitem:a96d391a5b8907ff5b9adf72774583f90" id="r_a96d391a5b8907ff5b9adf72774583f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d391a5b8907ff5b9adf72774583f90">clear</a> () noexcept</td></tr>
 <tr class="memdesc:a96d391a5b8907ff5b9adf72774583f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the vector.  <br /></td></tr>
 <tr class="separator:a96d391a5b8907ff5b9adf72774583f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398644ccb51f16fc1ae01744f51ca411" id="r_a398644ccb51f16fc1ae01744f51ca411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a398644ccb51f16fc1ae01744f51ca411">crbegin</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a></td></tr>
+<tr class="separator:a398644ccb51f16fc1ae01744f51ca411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf509bd9a95c5adc0fd870ca0e7df4bd" id="r_acf509bd9a95c5adc0fd870ca0e7df4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf509bd9a95c5adc0fd870ca0e7df4bd">crend</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a></td></tr>
+<tr class="separator:acf509bd9a95c5adc0fd870ca0e7df4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b669e31054545afd9b606f1beb95684" id="r_a2b669e31054545afd9b606f1beb95684"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
 requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, Args...&gt;)</td></tr>
 <tr class="memitem:a2b669e31054545afd9b606f1beb95684"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2b669e31054545afd9b606f1beb95684">emplace</a> (<a class="el" href="#ac4ea462116ba252e4f04989f5b6c437e">const_iterator</a> <a class="el" href="structetl_1_1bitset.html">position</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) noexcept(noexcept(<a class="el" href="#a3c87801f70f136f6f6e5a05715ca94ff">move_insert</a>(<a class="el" href="structetl_1_1bitset.html">position</a>, <a class="el" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval</a>&lt; <a class="el" href="#af913a2da451317ebeebb26c0715e133b">value_type</a> * &gt;(), <a class="el" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval</a>&lt; <a class="el" href="#af913a2da451317ebeebb26c0715e133b">value_type</a> * &gt;()))) -&gt; <a class="el" href="#a8ebd50f45abb75b382875463ea5e6433">iterator</a></td></tr>
@@ -1148,6 +1152,62 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 
 </div>
 </div>
+<a id="a398644ccb51f16fc1ae01744f51ca411" name="a398644ccb51f16fc1ae01744f51ca411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398644ccb51f16fc1ae01744f51ca411">&#9670;&#160;</a></span>crbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> crbegin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf509bd9a95c5adc0fd870ca0e7df4bd" name="acf509bd9a95c5adc0fd870ca0e7df4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf509bd9a95c5adc0fd870ca0e7df4bd">&#9670;&#160;</a></span>crend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> crend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2b669e31054545afd9b606f1beb95684" name="a2b669e31054545afd9b606f1beb95684"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b669e31054545afd9b606f1beb95684">&#9670;&#160;</a></span>emplace()</h2>
 
@@ -1967,7 +2027,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1static__vector.html">static_vector</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 12:06:24 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 13 2024 12:30:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

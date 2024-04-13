@@ -31,6 +31,8 @@ var structetl_1_1static__vector =
     [ "cend", "structetl_1_1static__vector.html#aefb46423f218c0902e36d10d8c50ca5f", null ],
     [ "cend", "structetl_1_1static__vector.html#a52aa709838ae901c9ce8f0e830a57958", null ],
     [ "clear", "structetl_1_1static__vector.html#a96d391a5b8907ff5b9adf72774583f90", null ],
+    [ "crbegin", "structetl_1_1static__vector.html#a398644ccb51f16fc1ae01744f51ca411", null ],
+    [ "crend", "structetl_1_1static__vector.html#acf509bd9a95c5adc0fd870ca0e7df4bd", null ],
     [ "emplace", "structetl_1_1static__vector.html#a2b669e31054545afd9b606f1beb95684", null ],
     [ "end", "structetl_1_1static__vector.html#ac0f1c50547264d3a0a125f5cc92e4fe4", null ],
     [ "end", "structetl_1_1static__vector.html#a7be357fc22f42093a431a1132b2c4b0c", null ],

@@ -596,6 +596,7 @@ var hierarchy =
     ] ],
     [ "sequenced_policy", "structetl_1_1execution_1_1sequenced__policy.html", null ],
     [ "small_ptr< Type, BaseAddress, StorageType >", "structetl_1_1small__ptr.html", null ],
+    [ "sorted_equivalent_t", "structetl_1_1sorted__equivalent__t.html", null ],
     [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", null ],
     [ "source_location", "structetl_1_1source__location.html", null ],
     [ "span< T, Extent >", "structetl_1_1span.html", null ],

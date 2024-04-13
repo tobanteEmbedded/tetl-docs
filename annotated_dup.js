@@ -497,6 +497,7 @@ var annotated_dup =
       [ "runtime_error", "structetl_1_1runtime__error.html", "structetl_1_1runtime__error" ],
       [ "scope_exit", "structetl_1_1scope__exit.html", null ],
       [ "small_ptr", "structetl_1_1small__ptr.html", "structetl_1_1small__ptr" ],
+      [ "sorted_equivalent_t", "structetl_1_1sorted__equivalent__t.html", "structetl_1_1sorted__equivalent__t" ],
       [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", "structetl_1_1sorted__unique__t" ],
       [ "source_location", "structetl_1_1source__location.html", "structetl_1_1source__location" ],
       [ "span", "structetl_1_1span.html", "structetl_1_1span" ],
