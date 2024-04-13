@@ -27,14 +27,14 @@ var NAVTREE =
   [ "tetl", "index.html", [
     [ "Embedded Template Library", "index.html", "index" ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md1", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md2", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "coverage", "md_CONTRIBUTING.html#autotoc_md8", null ],
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md3", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md4", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md5", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md6", null ],
+        [ "coverage", "md_CONTRIBUTING.html#autotoc_md7", null ],
         [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md9", null ],
         [ "doxygen", "md_CONTRIBUTING.html#autotoc_md10", null ],
         [ "VS Code", "md_CONTRIBUTING.html#autotoc_md11", null ]
@@ -43,20 +43,20 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md33", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md34", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md35", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md36", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md37", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md38", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md28", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md29", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md30", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md31", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md32", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md26", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md27", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md34", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md35", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md28", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md29", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md30", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md36", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md37", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md38", null ]
       ] ]
     ] ],
     [ "Bug List", "bug.html", null ],
