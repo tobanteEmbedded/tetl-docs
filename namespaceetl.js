@@ -189,6 +189,7 @@ var namespaceetl =
     [ "extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ],
     [ "extent< T[I], N >", "structetl_1_1extent_3_01T_0fI_0e_00_01N_01_4.html", null ],
     [ "extents", "structetl_1_1extents.html", "structetl_1_1extents" ],
+    [ "flat_multiset", "structetl_1_1flat__multiset.html", "structetl_1_1flat__multiset" ],
     [ "flat_set", "structetl_1_1flat__set.html", "structetl_1_1flat__set" ],
     [ "format_to_n_result", "structetl_1_1format__to__n__result.html", "structetl_1_1format__to__n__result" ],
     [ "formatter", "structetl_1_1formatter.html", "structetl_1_1formatter" ],

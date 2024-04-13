@@ -220,6 +220,8 @@ var NAVTREEINDEX4 =
 "find__if_8hpp_source.html":[12,0,1,0,0,20],
 "find__if__not_8hpp.html":[12,0,1,0,0,21],
 "find__if__not_8hpp_source.html":[12,0,1,0,0,21],
+"flat__multiset_8hpp.html":[12,0,1,0,29,0],
+"flat__multiset_8hpp_source.html":[12,0,1,0,29,0],
 "flat__set_8hpp.html":[12,0,1,0,95],
 "flat__set_8hpp_source.html":[12,0,1,0,95],
 "flip__bit_8hpp.html":[12,0,1,0,2,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "fmin_8hpp.html":[12,0,1,0,10,18],
 "fmin_8hpp_source.html":[12,0,1,0,10,18],
 "fmod_8hpp.html":[12,0,1,0,10,19],
-"fmod_8hpp_source.html":[12,0,1,0,10,19],
-"fmt__buffer_8hpp.html":[12,0,1,0,30,6],
-"fmt__buffer_8hpp_source.html":[12,0,1,0,30,6]
+"fmod_8hpp_source.html":[12,0,1,0,10,19]
 };

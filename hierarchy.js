@@ -139,6 +139,7 @@ var hierarchy =
     [ "expected< T, E >", "structetl_1_1expected.html", null ],
     [ "explicit_diagonal_t", "structetl_1_1linalg_1_1explicit__diagonal__t.html", null ],
     [ "extents< IndexType, Extents >", "structetl_1_1extents.html", null ],
+    [ "flat_multiset< Key, KeyContainer, Compare >", "structetl_1_1flat__multiset.html", null ],
     [ "flat_set< Key, Container, Compare >", "structetl_1_1flat__set.html", null ],
     [ "forever", "structetl_1_1experimental_1_1freertos_1_1forever.html", null ],
     [ "format_to_n_result< Out >", "structetl_1_1format__to__n__result.html", null ],
@@ -454,6 +455,7 @@ var hierarchy =
     [ "layout_transpose< Layout >", "structetl_1_1linalg_1_1layout__transpose.html", null ],
     [ "ldiv_t", "structetl_1_1ldiv__t.html", null ],
     [ "less< T >", "structetl_1_1less.html", null ],
+    [ "less< Key >", "structetl_1_1less.html", null ],
     [ "less< void >", "structetl_1_1less_3_01void_01_4.html", null ],
     [ "less_equal< T >", "structetl_1_1less__equal.html", null ],
     [ "less_equal< void >", "structetl_1_1less__equal_3_01void_01_4.html", null ],
@@ -637,16 +639,12 @@ var hierarchy =
     [ "type", null, [
       [ "is_nothrow_constructible< T, add_lvalue_reference_t< add_const_t< T > > >", "structetl_1_1is__nothrow__constructible.html", [
         [ "is_nothrow_copy_constructible< T >", "structetl_1_1is__nothrow__copy__constructible.html", null ]
-      ] ]
-    ] ],
-    [ "type", null, [
-      [ "is_nothrow_constructible< T, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__constructible.html", [
-        [ "is_nothrow_move_constructible< T >", "structetl_1_1is__nothrow__move__constructible.html", null ]
-      ] ]
-    ] ],
-    [ "type", null, [
+      ] ],
       [ "is_nothrow_constructible< T >", "structetl_1_1is__nothrow__constructible.html", [
         [ "is_nothrow_default_constructible< T >", "structetl_1_1is__nothrow__default__constructible.html", null ]
+      ] ],
+      [ "is_nothrow_constructible< T, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__constructible.html", [
+        [ "is_nothrow_move_constructible< T >", "structetl_1_1is__nothrow__move__constructible.html", null ]
       ] ]
     ] ],
     [ "type", "structetl_1_1aligned__storage_1_1type.html", null ],
