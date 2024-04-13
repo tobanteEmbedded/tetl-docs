@@ -188,12 +188,12 @@ requires detail::span_convertible_from&lt;<a class="el" href="group__type__trait
 <tr class="memitem:a8ba80220403d5512180a885d91df6115" id="r_a8ba80220403d5512180a885d91df6115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ba80220403d5512180a885d91df6115">operator[]</a> (<a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a> <a class="el" href="structetl_1_1bitset.html">idx</a>) <a class="el" href="structetl_1_1bitset.html">const</a> -&gt; <a class="el" href="#a0c5a1541ecf7ad17925583cf6abd2c65">reference</a></td></tr>
 <tr class="memdesc:a8ba80220403d5512180a885d91df6115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the idx-th element of the sequence. The behavior is undefined if idx is out of range (i.e., if it is greater than or equal to <a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of elements in the span.">size()</a>).  <br /></td></tr>
 <tr class="separator:a8ba80220403d5512180a885d91df6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4865d587aeb442505c6caf64ff5be674" id="r_a4865d587aeb442505c6caf64ff5be674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4865d587aeb442505c6caf64ff5be674">rbegin</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a></td></tr>
-<tr class="memdesc:a4865d587aeb442505c6caf64ff5be674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reverse iterator to the first element of the reversed span. It corresponds to the last element of the non-reversed span. If the span is empty, the returned iterator is equal to <a class="el" href="#a2cc579fc016b1b834ce5c24658bd0916" title="Returns a reverse iterator to the element following the last element of the reversed span....">rend()</a>.  <br /></td></tr>
-<tr class="separator:a4865d587aeb442505c6caf64ff5be674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cc579fc016b1b834ce5c24658bd0916" id="r_a2cc579fc016b1b834ce5c24658bd0916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc579fc016b1b834ce5c24658bd0916">rend</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a></td></tr>
-<tr class="memdesc:a2cc579fc016b1b834ce5c24658bd0916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reverse iterator to the element following the last element of the reversed span. It corresponds to the element preceding the first element of the non-reversed span. This element acts as a placeholder, attempting to access it results in undefined behavior.  <br /></td></tr>
-<tr class="separator:a2cc579fc016b1b834ce5c24658bd0916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1947abee5c571b16d4a32e821dd92c5d" id="r_a1947abee5c571b16d4a32e821dd92c5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1947abee5c571b16d4a32e821dd92c5d">rbegin</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a></td></tr>
+<tr class="memdesc:a1947abee5c571b16d4a32e821dd92c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reverse iterator to the first element of the reversed span. It corresponds to the last element of the non-reversed span. If the span is empty, the returned iterator is equal to <a class="el" href="#a53beca34c006f95a51776363651a9cd9" title="Returns a reverse iterator to the element following the last element of the reversed span....">rend()</a>.  <br /></td></tr>
+<tr class="separator:a1947abee5c571b16d4a32e821dd92c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53beca34c006f95a51776363651a9cd9" id="r_a53beca34c006f95a51776363651a9cd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53beca34c006f95a51776363651a9cd9">rend</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a></td></tr>
+<tr class="memdesc:a53beca34c006f95a51776363651a9cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reverse iterator to the element following the last element of the reversed span. It corresponds to the element preceding the first element of the non-reversed span. This element acts as a placeholder, attempting to access it results in undefined behavior.  <br /></td></tr>
+<tr class="separator:a53beca34c006f95a51776363651a9cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda399ad0b26aa2d0116f45b2a4c6ca0" id="r_aeda399ad0b26aa2d0116f45b2a4c6ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a></td></tr>
 <tr class="memdesc:aeda399ad0b26aa2d0116f45b2a4c6ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the span.  <br /></td></tr>
 <tr class="separator:aeda399ad0b26aa2d0116f45b2a4c6ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -783,8 +783,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 
 </div>
 </div>
-<a id="a4865d587aeb442505c6caf64ff5be674" name="a4865d587aeb442505c6caf64ff5be674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4865d587aeb442505c6caf64ff5be674">&#9670;&#160;</a></span>rbegin()</h2>
+<a id="a1947abee5c571b16d4a32e821dd92c5d" name="a1947abee5c571b16d4a32e821dd92c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1947abee5c571b16d4a32e821dd92c5d">&#9670;&#160;</a></span>rbegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,17 +803,17 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a reverse iterator to the first element of the reversed span. It corresponds to the last element of the non-reversed span. If the span is empty, the returned iterator is equal to <a class="el" href="#a2cc579fc016b1b834ce5c24658bd0916" title="Returns a reverse iterator to the element following the last element of the reversed span....">rend()</a>. </p>
+<p>Returns a reverse iterator to the first element of the reversed span. It corresponds to the last element of the non-reversed span. If the span is empty, the returned iterator is equal to <a class="el" href="#a53beca34c006f95a51776363651a9cd9" title="Returns a reverse iterator to the element following the last element of the reversed span....">rend()</a>. </p>
 
 </div>
 </div>
-<a id="a2cc579fc016b1b834ce5c24658bd0916" name="a2cc579fc016b1b834ce5c24658bd0916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cc579fc016b1b834ce5c24658bd0916">&#9670;&#160;</a></span>rend()</h2>
+<a id="a53beca34c006f95a51776363651a9cd9" name="a53beca34c006f95a51776363651a9cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53beca34c006f95a51776363651a9cd9">&#9670;&#160;</a></span>rend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +832,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1018,7 +1018,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , <a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1span.html">span</a></li>
-    <li class="footer">Generated on Fri Apr 12 2024 08:30:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 13 2024 07:57:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
