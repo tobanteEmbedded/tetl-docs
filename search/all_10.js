@@ -120,7 +120,7 @@ var searchData=
   ['multiplies_2ehpp_117',['multiplies.hpp',['../multiplies_8hpp.html',1,'']]],
   ['multiplies_3c_20void_20_3e_118',['multiplies&lt; void &gt;',['../structetl_1_1multiplies_3_01void_01_4.html',1,'etl']]],
   ['mutable_5fbuffer_119',['mutable_buffer',['../structetl_1_1experimental_1_1net_1_1mutable__buffer.html',1,'mutable_buffer'],['../structetl_1_1experimental_1_1net_1_1mutable__buffer.html#ab1f80aba1cdce3ed484d2a4a7220d6e7',1,'etl::experimental::net::mutable_buffer::mutable_buffer() noexcept=default'],['../structetl_1_1experimental_1_1net_1_1mutable__buffer.html#a8797c76f2d48878012d2f14a9d505837',1,'etl::experimental::net::mutable_buffer::mutable_buffer(void *data, etl::size_t size)']]],
-  ['mutex_120',['mutex',['../structetl_1_1unique__lock.html#a2dae81b27dff214b989e5972f8dfc14a',1,'etl::unique_lock::mutex()'],['../group__mutex.html',1,'mutex']]],
+  ['mutex_120',['mutex',['../structetl_1_1unique__lock.html#a31f582ec5df01a4d729bdd13fd85e885',1,'etl::unique_lock::mutex()'],['../group__mutex.html',1,'mutex']]],
   ['mutex_2ehpp_121',['mutex.hpp',['../mutex_8hpp.html',1,'']]],
   ['mutex_5ftype_122',['mutex_type',['../structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f',1,'etl::lock_guard::mutex_type'],['../structetl_1_1unique__lock.html#af2bc67cbb92781d7ffd1ebb837e25122',1,'etl::unique_lock::mutex_type']]]
 ];

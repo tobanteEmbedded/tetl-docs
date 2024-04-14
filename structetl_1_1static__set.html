@@ -268,9 +268,9 @@ requires (detail::InputIterator&lt;<a class="el" href="structetl_1_1bitset.html"
 <tr class="memitem:a87bda9becd278377622c4dee5e7c9d1b" id="r_a87bda9becd278377622c4dee5e7c9d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87bda9becd278377622c4dee5e7c9d1b">insert</a> (<a class="el" href="#a1f270aaeb9fe8511d9951bde9aaf7747">value_type</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;value) noexcept(noexcept(insert(<a class="el" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="el" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval</a>&lt; <a class="el" href="#a68e169a970de3c36a4f63748c0a97b53">key_type</a> &gt;())))) -&gt; <a class="el" href="structetl_1_1pair.html">pair</a>&lt; <a class="el" href="#a0805f0f25e50d2a6dc78841421cf031c">iterator</a>, <a class="el" href="structetl_1_1bitset.html">bool</a> &gt; <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="namespaceetl.html#a03f5da2852be4424089f4235ef44dec2">is_copy_constructible_v</a>&lt; <a class="el" href="#a1f270aaeb9fe8511d9951bde9aaf7747">value_type</a> &gt;)</td></tr>
 <tr class="memdesc:a87bda9becd278377622c4dee5e7c9d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element into the container, if the container doesn't already contain an element with an equivalent key.  <br /></td></tr>
 <tr class="separator:a87bda9becd278377622c4dee5e7c9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ff15ed53b8d960bcd39769f2869b51" id="r_a23ff15ed53b8d960bcd39769f2869b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23ff15ed53b8d960bcd39769f2869b51">key_comp</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a2d4598451b10f284fb9ac97381ccf34e">key_compare</a></td></tr>
-<tr class="memdesc:a23ff15ed53b8d960bcd39769f2869b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function object that compares the keys, which is a copy of this container's constructor argument comp. It is the same as value_comp.  <br /></td></tr>
-<tr class="separator:a23ff15ed53b8d960bcd39769f2869b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af552133d82a8bf20f7b34baa627f1240" id="r_af552133d82a8bf20f7b34baa627f1240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af552133d82a8bf20f7b34baa627f1240">key_comp</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a2d4598451b10f284fb9ac97381ccf34e">key_compare</a></td></tr>
+<tr class="memdesc:af552133d82a8bf20f7b34baa627f1240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function object that compares the keys, which is a copy of this container's constructor argument comp. It is the same as value_comp.  <br /></td></tr>
+<tr class="separator:af552133d82a8bf20f7b34baa627f1240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace22a778cae790f221f371950b457ab1" id="r_ace22a778cae790f221f371950b457ab1"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">K</a> &gt; <br />
 requires (detail::is_transparent_v&lt;<a class="el" href="#a2d4598451b10f284fb9ac97381ccf34e">key_compare</a>&gt;)</td></tr>
 <tr class="memitem:ace22a778cae790f221f371950b457ab1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ace22a778cae790f221f371950b457ab1">lower_bound</a> (<a class="el" href="structetl_1_1bitset.html">K</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">key</a>) -&gt; <a class="el" href="#a0805f0f25e50d2a6dc78841421cf031c">iterator</a></td></tr>
@@ -328,9 +328,9 @@ requires (detail::is_transparent_v&lt;<a class="el" href="#a2d4598451b10f284fb9a
 <tr class="memitem:ae28ed0048ef98c2186e03d21b0c4b620" id="r_ae28ed0048ef98c2186e03d21b0c4b620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae28ed0048ef98c2186e03d21b0c4b620">upper_bound</a> (<a class="el" href="#a68e169a970de3c36a4f63748c0a97b53">key_type</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">key</a>) <a class="el" href="structetl_1_1bitset.html">const</a> -&gt; <a class="el" href="#aa93d6ab997e121199f1e6253c797cafe">const_iterator</a></td></tr>
 <tr class="memdesc:ae28ed0048ef98c2186e03d21b0c4b620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator pointing to the first element that is greater than key.  <br /></td></tr>
 <tr class="separator:ae28ed0048ef98c2186e03d21b0c4b620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a663243f377c0679b30eec0ef0c69b" id="r_aa9a663243f377c0679b30eec0ef0c69b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a663243f377c0679b30eec0ef0c69b">value_comp</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a07d3d19b8346c70ccd60b326550b5551">value_compare</a></td></tr>
-<tr class="memdesc:aa9a663243f377c0679b30eec0ef0c69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function object that compares the values. It is the same as key_comp.  <br /></td></tr>
-<tr class="separator:aa9a663243f377c0679b30eec0ef0c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2541cef60b30d6a66e6d56375fd1b148" id="r_a2541cef60b30d6a66e6d56375fd1b148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2541cef60b30d6a66e6d56375fd1b148">value_comp</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="#a07d3d19b8346c70ccd60b326550b5551">value_compare</a></td></tr>
+<tr class="memdesc:a2541cef60b30d6a66e6d56375fd1b148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function object that compares the values. It is the same as key_comp.  <br /></td></tr>
+<tr class="separator:a2541cef60b30d6a66e6d56375fd1b148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Key</a>, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Compare</a> = less&lt;Key&gt;&gt;<br />
@@ -1611,8 +1611,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 
 </div>
 </div>
-<a id="a23ff15ed53b8d960bcd39769f2869b51" name="a23ff15ed53b8d960bcd39769f2869b51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ff15ed53b8d960bcd39769f2869b51">&#9670;&#160;</a></span>key_comp()</h2>
+<a id="af552133d82a8bf20f7b34baa627f1240" name="af552133d82a8bf20f7b34baa627f1240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af552133d82a8bf20f7b34baa627f1240">&#9670;&#160;</a></span>key_comp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1631,7 +1631,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2154,8 +2154,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 
 </div>
 </div>
-<a id="aa9a663243f377c0679b30eec0ef0c69b" name="aa9a663243f377c0679b30eec0ef0c69b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9a663243f377c0679b30eec0ef0c69b">&#9670;&#160;</a></span>value_comp()</h2>
+<a id="a2541cef60b30d6a66e6d56375fd1b148" name="a2541cef60b30d6a66e6d56375fd1b148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2541cef60b30d6a66e6d56375fd1b148">&#9670;&#160;</a></span>value_comp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2174,7 +2174,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2193,7 +2193,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1static__set.html">static_set</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 12:30:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sun Apr 14 2024 21:06:06 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
