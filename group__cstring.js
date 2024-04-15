@@ -6,7 +6,7 @@ var group__cstring =
     [ "memcpy", "group__cstring.html#gaafeb4c0affd826ba14f5bf3039c84812", null ],
     [ "memmove", "group__cstring.html#gad85a137d45d955fd74c76657306b19c1", null ],
     [ "memset", "group__cstring.html#gaf2b88ca84d198104e49ac2bd09977c45", null ],
-    [ "strcat", "group__cstring.html#ga5321996edb97a0bb3ce62286dd77d58e", null ],
+    [ "strcat", "group__cstring.html#ga7ba9f37919984fde4ba2013e83086f80", null ],
     [ "strchr", "group__cstring.html#ga1ab0d635f5b2d4f2b9cfceec2c41c373", null ],
     [ "strchr", "group__cstring.html#ga6fca1e170d91ea2b0901d41ccb3f4ef6", null ],
     [ "strcmp", "group__cstring.html#gaa03c96c75f1fa5b4153f1dab9148fd34", null ],

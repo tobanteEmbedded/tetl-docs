@@ -125,7 +125,7 @@ $(function(){initNavTree('memchr_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">__builtin_memchr</a>(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">auto</span>* p = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(ptr);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> detail::memchr(p, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>), <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl_1_1cstr.html#a3ef4cb72bd083b3a444a5bd579a2192e">etl::cstr::memchr</a>(p, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>), <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
@@ -138,7 +138,7 @@ $(function(){initNavTree('memchr_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* <span class="keyword">const</span> p = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_struct" href="structetl_1_1bitset.html">const</a>*<span class="keyword">&gt;</span>(ptr);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span> <span class="keyword">const</span> c        = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> detail::memchr&lt;unsigned char const, etl::size_t&gt;(p, c, <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> etl::cstr::memchr&lt;unsigned char const, etl::size_t&gt;(p, c, <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
@@ -149,6 +149,7 @@ $(function(){initNavTree('memchr_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CSTRING_MEMCHR_HPP</span></div>
 <div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
 <div class="ttc" id="agroup__cstring_html_gabe3560744264a5bf3038cd7744b9968e"><div class="ttname"><a href="group__cstring.html#gabe3560744264a5bf3038cd7744b9968e">etl::memchr</a></div><div class="ttdeci">auto memchr(void *ptr, int ch, etl::size_t n) -&gt; void *</div><div class="ttdoc">Converts ch to unsigned char and locates the first occurrence of that value in the initial count char...</div><div class="ttdef"><b>Definition</b> memchr.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_1_1cstr_html_a3ef4cb72bd083b3a444a5bd579a2192e"><div class="ttname"><a href="namespaceetl_1_1cstr.html#a3ef4cb72bd083b3a444a5bd579a2192e">etl::cstr::memchr</a></div><div class="ttdeci">constexpr auto memchr(CharT *ptr, CharT ch, SizeT n) -&gt; CharT *</div><div class="ttdef"><b>Definition</b> cstr.hpp:226</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
@@ -159,7 +160,7 @@ $(function(){initNavTree('memchr_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="memchr_8hpp.html">memchr.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 14:19:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:10:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

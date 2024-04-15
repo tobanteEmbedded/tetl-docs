@@ -125,7 +125,7 @@ $(function(){initNavTree('memcmp_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">l</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_struct" href="structetl_1_1bitset.html">const</a>*<span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">lhs</a>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">r</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_struct" href="structetl_1_1bitset.html">const</a>*<span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">rhs</a>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> detail::strncmp&lt;unsigned char, etl::size_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">l</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">r</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> etl::cstr::strncmp&lt;unsigned char, etl::size_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">l</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">r</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('memcmp_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="memcmp_8hpp.html">memcmp.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 14:19:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:10:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

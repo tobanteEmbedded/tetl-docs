@@ -120,14 +120,14 @@ $(function(){initNavTree('wmemchr_8hpp_source.html',''); initResizable(true); })
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">   17</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">wmemchr</a>(<span class="keywordtype">wchar_t</span>* ptr, <span class="keywordtype">wchar_t</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> detail::memchr&lt;wchar_t&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> etl::cstr::memchr&lt;wchar_t&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceetl.html#a65747ecf11dff5d8f3be4a0f7793ca69">   28</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a5175847a36c688adb123a34e9780ab25">wmemchr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* ptr, <span class="keywordtype">wchar_t</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> detail::memchr&lt;wchar_t const&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> etl::cstr::memchr&lt;wchar_t const&gt;(ptr, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <span class="comment">// namespace etl</span></div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('wmemchr_8hpp_source.html',''); initResizable(true); })
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_654767f1f845a43cfb380e17dc7914ff.html">_cwchar</a></li><li class="navelem"><a class="el" href="wmemchr_8hpp.html">wmemchr.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 14:19:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:10:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
