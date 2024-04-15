@@ -15,6 +15,8 @@ var NAVTREEINDEX4 =
 "div_8hpp.html":[12,0,1,0,20,4],
 "div_8hpp.html#a2a2d6bdea1596be40cc1f1965d14d3a7":[12,0,1,0,20,4,1],
 "div_8hpp_source.html":[12,0,1,0,20,4],
+"div__sat_8hpp.html":[12,0,1,0,45,4],
+"div__sat_8hpp_source.html":[12,0,1,0,45,4],
 "divides_8hpp.html":[12,0,1,0,31,6],
 "divides_8hpp_source.html":[12,0,1,0,31,6],
 "docs_8hpp.html":[12,0,1,0,14,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "for__each__n_8hpp_source.html":[12,0,1,0,0,23],
 "format_8hpp.html":[12,0,1,0,96],
 "format_8hpp_source.html":[12,0,1,0,96],
-"format__arg__store_8hpp.html":[12,0,1,0,30,7],
-"format__arg__store_8hpp_source.html":[12,0,1,0,30,7],
-"format__to_8hpp.html":[12,0,1,0,30,8]
+"format__arg__store_8hpp.html":[12,0,1,0,30,7]
 };

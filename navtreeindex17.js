@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"push__back_8hpp.html":[12,0,1,0,41,6],
+"push__back_8hpp_source.html":[12,0,1,0,41,6],
+"push__front_8hpp.html":[12,0,1,0,41,7],
+"push__front_8hpp.html#ae097bb8dee277fb5bede5765467fadc7":[12,0,1,0,41,7,1],
 "push__front_8hpp_source.html":[12,0,1,0,41,7],
 "queue_8hpp.html":[12,0,1,0,66,0,0],
 "queue_8hpp_source.html":[12,0,1,0,66,0,0],
@@ -64,8 +68,8 @@ var NAVTREEINDEX17 =
 "rbegin_8hpp_source.html":[12,0,1,0,34,33],
 "real_8hpp.html":[12,0,1,0,12,11],
 "real_8hpp_source.html":[12,0,1,0,12,11],
-"reduce_8hpp.html":[12,0,1,0,45,10],
-"reduce_8hpp_source.html":[12,0,1,0,45,10],
+"reduce_8hpp.html":[12,0,1,0,45,11],
+"reduce_8hpp_source.html":[12,0,1,0,45,11],
 "reference__wrapper_8hpp.html":[12,0,1,0,31,30],
 "reference__wrapper_8hpp.html#a09ebab5fc63c081909c10f9255347efb":[12,0,1,0,31,30,3],
 "reference__wrapper_8hpp.html#a11516b369ddf80bc94d2f450200f5d11":[12,0,1,0,31,30,5],
@@ -155,6 +159,8 @@ var NAVTREEINDEX17 =
 "runtime__error_8hpp_source.html":[12,0,1,0,55,7],
 "same__as_8hpp.html":[12,0,1,0,13,27],
 "same__as_8hpp_source.html":[12,0,1,0,13,27],
+"saturate__cast_8hpp.html":[12,0,1,0,45,12],
+"saturate__cast_8hpp_source.html":[12,0,1,0,45,12],
 "scaled__scalar_8hpp.html":[12,0,1,0,36,17],
 "scaled__scalar_8hpp_source.html":[12,0,1,0,36,17],
 "scope_8hpp.html":[12,0,1,0,115],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "static__vector_8hpp.html#a287ee2e9239c563f862cb177ec7d5792":[12,0,1,0,64,0,5],
 "static__vector_8hpp.html#a473df8e3ace08ad49d812cd57fcc5f90":[12,0,1,0,64,0,2],
 "static__vector_8hpp.html#a5beff690dcaa87cb11a10e760c1d0211":[12,0,1,0,64,0,7],
-"static__vector_8hpp.html#a894460b393d2ac20c8b8f033322ff230":[12,0,1,0,64,0,4],
-"static__vector_8hpp.html#a9ae66b21dd10f996a2782e6e8b604593":[12,0,1,0,64,0,1],
-"static__vector_8hpp.html#ab2e72fc74a7231310049a5cb0790c765":[12,0,1,0,64,0,0],
-"static__vector_8hpp.html#ab892f9c1b557a16dd61daa9664feafda":[12,0,1,0,64,0,3],
-"static__vector_8hpp.html#ab897f8f3641b27de2e08d2d16563a2c2":[12,0,1,0,64,0,6],
-"static__vector_8hpp_source.html":[12,0,1,0,64,0],
-"stdexcept_8hpp.html":[12,0,1,0,120]
+"static__vector_8hpp.html#a894460b393d2ac20c8b8f033322ff230":[12,0,1,0,64,0,4]
 };

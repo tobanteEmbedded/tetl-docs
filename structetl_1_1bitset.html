@@ -223,8 +223,6 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Bits&gt;<br />
 struct etl::bitset&lt; Bits &gt;</div><p>The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated by standard logic operators. </p>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>Add tests for sizes that are not a power of two. Broken at the moment. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>What if position index is out of bounds? Return nullptr?</dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="bitset_8cpp-example.html#_a0">bitset.cpp</a>, <a class="el" href="chrono_8cpp-example.html#_a1">chrono.cpp</a>, <a class="el" href="memory_8cpp-example.html#_a0">memory.cpp</a>, <a class="el" href="numeric_8cpp-example.html#_a1">numeric.cpp</a>, <a class="el" href="set_8cpp-example.html#_a0">set.cpp</a>, <a class="el" href="source_location_8cpp-example.html#_a0">source_location.cpp</a>, <a class="el" href="string_8cpp-example.html#_a0">string.cpp</a>, <a class="el" href="tuple_8cpp-example.html#_a0">tuple.cpp</a>, <a class="el" href="type_traits_8cpp-example.html#_a0">type_traits.cpp</a>, <a class="el" href="utility_8cpp-example.html#_a7">utility.cpp</a>, and <a class="el" href="vector_8cpp-example.html#_a0">vector.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -1064,7 +1062,7 @@ requires (<a class="el" href="structetl_1_1bitset.html">Capacity</a> &gt;= <a cl
 </div><div class="memdoc">
 
 <p>Converts the contents of the bitset to a string. Uses zero to represent bits with value of false and one to represent bits with value of true. The resulting string contains Bits characters with the first character corresponds to the last (Bits-1th) bit and the last character corresponding to the first bit. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>Currently truncates the low bits, if the string is large enough. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>Currently truncates the low bits, if the string is large enough. </dd></dl>
 
 </div>
 </div>
@@ -1242,7 +1240,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1bitset.html">bitset</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 17:49:37 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 22:04:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

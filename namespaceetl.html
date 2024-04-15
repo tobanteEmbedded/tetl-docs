@@ -2160,6 +2160,10 @@ requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
 <tr class="memitem:afe969af8a9f77fea0bb9e0d7a82c5b3f" id="r_afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe969af8a9f77fea0bb9e0d7a82c5b3f">div</a> (<a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">x</a>, <a class="el" href="structetl_1_1bitset.html">long</a> y) noexcept -&gt; <a class="el" href="structetl_1_1ldiv__t.html">ldiv_t</a></td></tr>
 <tr class="memdesc:afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator x by the denominator y. The quotient is the result of the expression x/y. The remainder is the result of the expression xy.  <br /></td></tr>
 <tr class="separator:afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c10cdbbd78f2e34e1b00165692b1d2c" id="r_ga5c10cdbbd78f2e34e1b00165692b1d2c"><td class="memTemplParams" colspan="2">template&lt;builtin_integer Int&gt; </td></tr>
+<tr class="memitem:ga5c10cdbbd78f2e34e1b00165692b1d2c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__numeric.html#ga5c10cdbbd78f2e34e1b00165692b1d2c">div_sat</a> (<a class="el" href="structetl_1_1bitset.html">Int</a> <a class="el" href="structetl_1_1bitset.html">x</a>, <a class="el" href="structetl_1_1bitset.html">Int</a> y) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">Int</a></td></tr>
+<tr class="memdesc:ga5c10cdbbd78f2e34e1b00165692b1d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the saturating division x / y.  <br /></td></tr>
+<tr class="separator:ga5c10cdbbd78f2e34e1b00165692b1d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga314873517bdae4e131a403c322a9763f" id="r_ga314873517bdae4e131a403c322a9763f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">C</a> &gt; </td></tr>
 <tr class="memitem:ga314873517bdae4e131a403c322a9763f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__iterator.html#ga314873517bdae4e131a403c322a9763f">empty</a> (<a class="el" href="structetl_1_1bitset.html">C</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;c) noexcept(noexcept(c.empty())) -&gt; <a class="el" href="structetl_1_1bitset.html">decltype</a>(c.empty())</td></tr>
 <tr class="memdesc:ga314873517bdae4e131a403c322a9763f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given container is empty.  <br /></td></tr>
@@ -3563,6 +3567,10 @@ requires (sizeof...(<a class="el" href="structetl_1_1bitset.html">Ts</a>) == siz
 <tr class="memitem:ga2aeaa8cb213500ab9a8cf6ee98314d2a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit.html#ga2aeaa8cb213500ab9a8cf6ee98314d2a">rotr</a> (UInt <a class="el" href="structetl_1_1bitset.html">t</a>, <a class="el" href="structetl_1_1bitset.html">int</a> <a class="el" href="structetl_1_1bitset.html">s</a>) noexcept -&gt; UInt</td></tr>
 <tr class="memdesc:ga2aeaa8cb213500ab9a8cf6ee98314d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of bitwise right-rotating the value of x by s positions. This operation is also known as a right circular shift.  <br /></td></tr>
 <tr class="separator:ga2aeaa8cb213500ab9a8cf6ee98314d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga285c532790816de24f811a76aaf5f78c" id="r_ga285c532790816de24f811a76aaf5f78c"><td class="memTemplParams" colspan="2">template&lt;builtin_integer To, builtin_integer From&gt; </td></tr>
+<tr class="memitem:ga285c532790816de24f811a76aaf5f78c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__numeric.html#ga285c532790816de24f811a76aaf5f78c">saturate_cast</a> (<a class="el" href="structetl_1_1bitset.html">From</a> <a class="el" href="structetl_1_1bitset.html">x</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">To</a></td></tr>
+<tr class="memdesc:ga285c532790816de24f811a76aaf5f78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the value x to a value of type T, clamping x between the minimum and maximum values of type T.  <br /></td></tr>
+<tr class="separator:ga285c532790816de24f811a76aaf5f78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e8ae9359da3a0a4cb0573e8cd219638" id="r_a0e8ae9359da3a0a4cb0573e8cd219638"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">FuncT</a> &gt; </td></tr>
 <tr class="memitem:a0e8ae9359da3a0a4cb0573e8cd219638"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0e8ae9359da3a0a4cb0573e8cd219638">scope_exit</a> (<a class="el" href="structetl_1_1bitset.html">FuncT</a>) -&gt; scope_exit&lt; <a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1bitset.html">FuncT</a> &gt; &gt;</td></tr>
 <tr class="separator:a0e8ae9359da3a0a4cb0573e8cd219638"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8740,7 +8748,7 @@ template&lt;typename... Types&gt; </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespaceetl_html_ad27e213c027bfb11ed648fb543842995"><div class="ttname"><a href="#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition</b> ignore_unused.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -8834,7 +8842,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -8868,7 +8876,7 @@ requires (<a class="el" href="#a79bb140a0b590bb8a6eadea52d880d17">etl::is_invoca
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -18907,7 +18915,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 17:49:37 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 22:04:59 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

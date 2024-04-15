@@ -157,7 +157,7 @@ var NAVTREEINDEX3 =
 "default__initializable_8hpp_source.html":[12,0,1,0,13,11],
 "default__searcher_8hpp.html":[12,0,1,0,31,5],
 "default__searcher_8hpp_source.html":[12,0,1,0,31,5],
-"deprecated.html":[7],
+"deprecated.html":[6],
 "dereferenceable_8hpp.html":[12,0,1,0,34,5],
 "dereferenceable_8hpp_source.html":[12,0,1,0,34,5],
 "derived__from_8hpp.html":[12,0,1,0,13,12],

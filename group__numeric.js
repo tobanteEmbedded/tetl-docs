@@ -6,6 +6,7 @@ var group__numeric =
     [ "add_sat", "group__numeric.html#ga99c9d06efc6545df1f62f896f3039ec0", null ],
     [ "adjacent_difference", "group__numeric.html#ga644b57c780b4aaa5d094ceec2f74e4de", null ],
     [ "adjacent_difference", "group__numeric.html#ga83e312ccaf077fc1515c569cbd885794", null ],
+    [ "div_sat", "group__numeric.html#ga5c10cdbbd78f2e34e1b00165692b1d2c", null ],
     [ "gcd", "group__numeric.html#ga955751ac2a2b96303705764b4bb30db3", null ],
     [ "inner_product", "group__numeric.html#ga96ad6461a0165e73290f0352e8fd4cd0", null ],
     [ "inner_product", "group__numeric.html#ga7c0ed0370d54cfcffdf5a5d84313c3bc", null ],
@@ -19,6 +20,7 @@ var group__numeric =
     [ "reduce", "group__numeric.html#ga1aab27726885209d183d580fba57f1bb", null ],
     [ "reduce", "group__numeric.html#ga10c4d18cd54181d2f678ecbf4ca6110c", null ],
     [ "reduce", "group__numeric.html#ga1c4ece300169efb3528dd8de1633ca66", null ],
+    [ "saturate_cast", "group__numeric.html#ga285c532790816de24f811a76aaf5f78c", null ],
     [ "transform_reduce", "group__numeric.html#gab38fcd7a07285868feed538786ca5523", null ],
     [ "transform_reduce", "group__numeric.html#gab107a1f3770c53e8bae0569b29c8eb52", null ],
     [ "transform_reduce", "group__numeric.html#ga43a7150bf27fdb35cbafba959838e4e6", null ]
