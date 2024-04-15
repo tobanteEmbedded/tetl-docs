@@ -175,7 +175,7 @@ var searchData=
   ['strlen_2ehpp_172',['strlen.hpp',['../strlen_8hpp.html',1,'']]],
   ['strncat_173',['strncat',['../group__cstring.html#ga3f875253fd9982757bdb90f84284322c',1,'etl']]],
   ['strncat_2ehpp_174',['strncat.hpp',['../strncat_8hpp.html',1,'']]],
-  ['strncmp_175',['strncmp',['../group__cstring.html#gacc17ca72f164ecad9eb0bdf5fec43928',1,'etl']]],
+  ['strncmp_175',['strncmp',['../group__cstring.html#ga715682839cad49dfea265072062c75fe',1,'etl']]],
   ['strncmp_2ehpp_176',['strncmp.hpp',['../strncmp_8hpp.html',1,'']]],
   ['strncpy_177',['strncpy',['../group__cstring.html#ga50d78828452384f88828ac39373bdb7f',1,'etl']]],
   ['strncpy_2ehpp_178',['strncpy.hpp',['../strncpy_8hpp.html',1,'']]],

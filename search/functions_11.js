@@ -72,7 +72,7 @@ var searchData=
   ['strided_5fslice_69',['strided_slice',['../namespaceetl.html#aa9406cef0552ac36f0ea11e670081897',1,'etl']]],
   ['strlen_70',['strlen',['../group__cstring.html#ga847c7fe27bc536cdf5109074b14e81d7',1,'etl']]],
   ['strncat_71',['strncat',['../group__cstring.html#ga3f875253fd9982757bdb90f84284322c',1,'etl']]],
-  ['strncmp_72',['strncmp',['../group__cstring.html#gacc17ca72f164ecad9eb0bdf5fec43928',1,'etl']]],
+  ['strncmp_72',['strncmp',['../group__cstring.html#ga715682839cad49dfea265072062c75fe',1,'etl']]],
   ['strncpy_73',['strncpy',['../group__cstring.html#ga50d78828452384f88828ac39373bdb7f',1,'etl']]],
   ['strpbrk_74',['strpbrk',['../group__cstring.html#ga41a1eddfb9d029d0710fd07afafcf1fb',1,'etl::strpbrk(char const *dest, char const *breakset) noexcept -&gt; char const *'],['../group__cstring.html#ga042c917008dbbbd4e10d144f2b8153bf',1,'etl::strpbrk(char *dest, char *breakset) noexcept -&gt; char *']]],
   ['strrchr_75',['strrchr',['../group__cstring.html#ga70ad1e9ee68483c83ab85fec3c3bc098',1,'etl::strrchr(char const *str, int ch) noexcept -&gt; char const *'],['../group__cstring.html#ga9044fb8ace92be15f8af4d7bf6afa524',1,'etl::strrchr(char *str, int ch) noexcept -&gt; char *']]],

@@ -1,6 +1,7 @@
 var dir_fe9f96db0bbf428111fd687fd105db69 =
 [
     [ "memchr.hpp", "memchr_8hpp.html", "memchr_8hpp" ],
+    [ "memcmp.hpp", "memcmp_8hpp.html", "memcmp_8hpp" ],
     [ "memcpy.hpp", "memcpy_8hpp.html", "memcpy_8hpp" ],
     [ "memmove.hpp", "memmove_8hpp.html", "memmove_8hpp" ],
     [ "memset.hpp", "memset_8hpp.html", "memset_8hpp" ],
