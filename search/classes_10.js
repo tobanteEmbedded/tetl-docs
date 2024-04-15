@@ -12,7 +12,7 @@ var searchData=
   ['ratio_5fless_9',['ratio_less',['../structetl_1_1ratio__less.html',1,'etl']]],
   ['ratio_5fless_5fequal_10',['ratio_less_equal',['../structetl_1_1ratio__less__equal.html',1,'etl']]],
   ['ratio_5fnot_5fequal_11',['ratio_not_equal',['../structetl_1_1ratio__not__equal.html',1,'etl']]],
-  ['reference_12',['reference',['../structetl_1_1basic__bitset_1_1reference.html',1,'basic_bitset&lt; Bits, WordType &gt;::reference'],['../structetl_1_1bitset_1_1reference.html',1,'bitset&lt; N &gt;::reference']]],
+  ['reference_12',['reference',['../structetl_1_1basic__bitset_1_1reference.html',1,'etl::basic_bitset']]],
   ['reference_5fwrapper_13',['reference_wrapper',['../structetl_1_1reference__wrapper.html',1,'etl']]],
   ['remove_5fall_5fextents_14',['remove_all_extents',['../structetl_1_1remove__all__extents.html',1,'etl']]],
   ['remove_5fall_5fextents_3c_20t_5b_5d_3e_15',['remove_all_extents&lt; T[]&gt;',['../structetl_1_1remove__all__extents_3_01T_0f_0e_4.html',1,'etl']]],

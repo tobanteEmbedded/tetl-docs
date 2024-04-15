@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"ldiv_8hpp_source.html":[12,0,1,0,20,8],
-"legacy__bidirectional__iterator_8hpp.html":[12,0,1,0,34,25],
-"legacy__bidirectional__iterator_8hpp_source.html":[12,0,1,0,34,25],
 "legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26],
 "legacy__forward__iterator_8hpp_source.html":[12,0,1,0,34,26],
 "legacy__input__iterator_8hpp.html":[12,0,1,0,34,27],
@@ -146,16 +143,16 @@ var NAVTREEINDEX11 =
 "mcp23017_8hpp_source.html":[12,0,1,0,66,1,0,0],
 "md_CONTRIBUTING.html":[1],
 "md_CONTRIBUTING.html#autotoc_md1":[1,0],
-"md_CONTRIBUTING.html#autotoc_md10":[1,2,5],
-"md_CONTRIBUTING.html#autotoc_md11":[1,3],
+"md_CONTRIBUTING.html#autotoc_md10":[1,2,4],
+"md_CONTRIBUTING.html#autotoc_md11":[1,2,5],
+"md_CONTRIBUTING.html#autotoc_md12":[1,3],
 "md_CONTRIBUTING.html#autotoc_md2":[1,0,0],
 "md_CONTRIBUTING.html#autotoc_md3":[1,1],
 "md_CONTRIBUTING.html#autotoc_md4":[1,2],
 "md_CONTRIBUTING.html#autotoc_md5":[1,2,0],
 "md_CONTRIBUTING.html#autotoc_md6":[1,2,1],
-"md_CONTRIBUTING.html#autotoc_md7":[1,2,2],
-"md_CONTRIBUTING.html#autotoc_md8":[1,2,3],
-"md_CONTRIBUTING.html#autotoc_md9":[1,2,4],
+"md_CONTRIBUTING.html#autotoc_md8":[1,2,2],
+"md_CONTRIBUTING.html#autotoc_md9":[1,2,3],
 "md_docs_2header.html":[2],
 "md_docs_2progress.html":[3],
 "md_docs_2progress.html#autotoc_md27":[3,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "move__backward_8hpp.html":[12,0,1,0,0,47],
 "move__backward_8hpp_source.html":[12,0,1,0,0,47],
 "move__constructible_8hpp.html":[12,0,1,0,13,21],
-"move__constructible_8hpp_source.html":[12,0,1,0,13,21]
+"move__constructible_8hpp_source.html":[12,0,1,0,13,21],
+"move__if__noexcept_8hpp.html":[12,0,1,0,62,19],
+"move__if__noexcept_8hpp.html#ae197a91f87223433229090889ab96734":[12,0,1,0,62,19,0],
+"move__if__noexcept_8hpp_source.html":[12,0,1,0,62,19]
 };

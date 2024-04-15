@@ -1,8 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"format__arg__store_8hpp.html":[12,0,1,0,30,7],
-"format__arg__store_8hpp_source.html":[12,0,1,0,30,7],
-"format__to_8hpp.html":[12,0,1,0,30,8],
 "format__to_8hpp.html#a05dfe0d6b5c463f72f72a6bf14e21b0f":[12,0,1,0,30,8,1],
 "format__to_8hpp.html#a142c844e65677a96dcb134681d85e8a2":[12,0,1,0,30,8,2],
 "format__to_8hpp.html#afa2b8092a29056d823a289eb08a11484":[12,0,1,0,30,8,3],
@@ -48,8 +45,8 @@ var NAVTREEINDEX5 =
 "functions_d.html":[11,3,0,4],
 "functions_e.html":[11,3,0,5],
 "functions_f.html":[11,3,0,6],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
 "functions_func_d.html":[11,3,1,3],
@@ -89,8 +86,8 @@ var NAVTREEINDEX5 =
 "functions_rela.html":[11,3,4],
 "functions_s.html":[11,3,0,18],
 "functions_t.html":[11,3,0,19],
-"functions_type.html":[11,3,3],
 "functions_type.html":[11,3,3,0],
+"functions_type.html":[11,3,3],
 "functions_type_c.html":[11,3,3,1],
 "functions_type_d.html":[11,3,3,2],
 "functions_type_e.html":[11,3,3,3],
@@ -110,8 +107,8 @@ var NAVTREEINDEX5 =
 "functions_type_x.html":[11,3,3,17],
 "functions_u.html":[11,3,0,20],
 "functions_v.html":[11,3,0,21],
-"functions_vars.html":[11,3,2],
 "functions_vars.html":[11,3,2,0],
+"functions_vars.html":[11,3,2],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX5 =
 "group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53":[8,10,0,78],
 "group__algorithm.html#ga8bdbbf4b495def4cb406f6af3ef25882":[8,10,0,85],
 "group__algorithm.html#ga8cb7da13869cc2911d1dd3ebfbc49681":[8,10,0,18],
-"group__algorithm.html#ga8e3ea43eb370058e059c95c0738eb379":[8,10,0,92]
+"group__algorithm.html#ga8e3ea43eb370058e059c95c0738eb379":[8,10,0,92],
+"group__algorithm.html#ga8ec0297d32d2f51e39c270a715b430d1":[8,10,0,93],
+"group__algorithm.html#ga8fe7517750d66b576d14d06fd58d74b1":[8,10,0,70],
+"group__algorithm.html#ga9060e0931516472a88f4657d835684a9":[8,10,0,75]
 };

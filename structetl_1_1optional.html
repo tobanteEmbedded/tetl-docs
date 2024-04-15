@@ -406,7 +406,7 @@ struct etl::optional&lt; T &gt;</div><p>The class template optional manages an o
 <div class="line">    <span class="comment">// reset</span></div>
 <div class="line">    <span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1bitset.html">opt5</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">optional&lt;float&gt;</a>(1.0F);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">opt5</a>.has_value());</div>
-<div class="line">    <a class="code hl_struct" href="structetl_1_1bitset.html">opt5</a>.<a class="code hl_function" href="structetl_1_1bitset.html#a2de5db560b551d42cf44f600da7dd55e">reset</a>();</div>
+<div class="line">    <a class="code hl_struct" href="structetl_1_1bitset.html">opt5</a>.<a class="code hl_function" href="structetl_1_1bitset.html#aa7fd3437301df63ddb89207519db7376">reset</a>();</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">opt5</a>.has_value() == <span class="keyword">false</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
@@ -415,8 +415,8 @@ struct etl::optional&lt; T &gt;</div><p>The class template optional manages an o
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="aoptional_8hpp_html"><div class="ttname"><a href="optional_8hpp.html">optional.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html_a2de5db560b551d42cf44f600da7dd55e"><div class="ttname"><a href="structetl_1_1bitset.html#a2de5db560b551d42cf44f600da7dd55e">etl::bitset::reset</a></div><div class="ttdeci">constexpr auto reset() noexcept -&gt; bitset&lt; N &gt; &amp;</div><div class="ttdoc">Sets all bits to false.</div><div class="ttdef"><b>Definition</b> bitset.hpp:187</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html_aa7fd3437301df63ddb89207519db7376"><div class="ttname"><a href="structetl_1_1bitset.html#aa7fd3437301df63ddb89207519db7376">etl::bitset::reset</a></div><div class="ttdeci">constexpr auto reset() noexcept -&gt; bitset &amp;</div><div class="ttdoc">Sets all bits to false.</div><div class="ttdef"><b>Definition</b> bitset.hpp:122</div></div>
 <div class="ttc" id="astructetl_1_1optional_html"><div class="ttname"><a href="structetl_1_1optional.html">etl::optional</a></div><div class="ttdoc">The class template optional manages an optional contained value, i.e. a value that may or may not be ...</div><div class="ttdef"><b>Definition</b> optional.hpp:89</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="optional_8cpp-example.html#_a0">optional.cpp</a>.</dd>
 </dl>
@@ -1468,7 +1468,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1optional.html">optional</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 15:21:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 17:49:38 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -120,7 +120,7 @@ var searchData=
   ['array_2ehpp_117',['array.hpp',['../__array_2array_8hpp.html',1,'(Global Namespace)'],['../array_8hpp.html',1,'(Global Namespace)']]],
   ['array_3c_20chart_2c_20capacity_2b1_20_3e_118',['array&lt; CharT, Capacity+1 &gt;',['../structetl_1_1array.html',1,'etl']]],
   ['array_3c_20etl_3a_3asize_5ft_2c_20num_5fwords_20_3e_119',['array&lt; etl::size_t, num_words &gt;',['../structetl_1_1array.html',1,'etl']]],
-  ['array_3c_20etl_3a_3auint8_5ft_2c_20allocated_5f_20_3e_120',['array&lt; etl::uint8_t, allocated_ &gt;',['../structetl_1_1array.html',1,'etl']]],
+  ['array_3c_20wordtype_2c_20num_5fwords_20_3e_120',['array&lt; WordType, num_words &gt;',['../structetl_1_1array.html',1,'etl']]],
   ['as_5fbytes_121',['as_bytes',['../group__span.html#ga76f0f69b8c6ca92d82eef71a4c9f4056',1,'etl::span']]],
   ['as_5fbytes_2ehpp_122',['as_bytes.hpp',['../as__bytes_8hpp.html',1,'']]],
   ['as_5fconst_123',['as_const',['../namespaceetl.html#a087e608dcade676ed1707b2780820b4b',1,'etl::as_const(T &amp;t) noexcept -&gt; add_const_t&lt; T &gt; &amp;'],['../namespaceetl.html#a73fcc8395221077570ae4d49d16fdfb5',1,'etl::as_const(T const &amp;&amp;) -&gt; void=delete']]],

@@ -17,7 +17,7 @@ var searchData=
   ['array_14',['array',['../structetl_1_1array.html',1,'etl']]],
   ['array_3c_20chart_2c_20capacity_2b1_20_3e_15',['array&lt; CharT, Capacity+1 &gt;',['../structetl_1_1array.html',1,'etl']]],
   ['array_3c_20etl_3a_3asize_5ft_2c_20num_5fwords_20_3e_16',['array&lt; etl::size_t, num_words &gt;',['../structetl_1_1array.html',1,'etl']]],
-  ['array_3c_20etl_3a_3auint8_5ft_2c_20allocated_5f_20_3e_17',['array&lt; etl::uint8_t, allocated_ &gt;',['../structetl_1_1array.html',1,'etl']]],
+  ['array_3c_20wordtype_2c_20num_5fwords_20_3e_17',['array&lt; WordType, num_words &gt;',['../structetl_1_1array.html',1,'etl']]],
   ['assert_5fmsg_18',['assert_msg',['../structetl_1_1assert__msg.html',1,'etl']]],
   ['at_19',['at',['../structetl_1_1meta_1_1at.html',1,'etl::meta']]],
   ['at_3c_200_2c_20list_3c_20head_2c_20tail_2e_2e_2e_20_3e_20_3e_20',['at&lt; 0, list&lt; Head, Tail... &gt; &gt;',['../structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html',1,'etl::meta']]],
