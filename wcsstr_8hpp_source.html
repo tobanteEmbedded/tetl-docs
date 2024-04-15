@@ -119,14 +119,14 @@ $(function(){initNavTree('wcsstr_8hpp_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a74d69c1152ef7e628b1691179fc6f530">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a74d69c1152ef7e628b1691179fc6f530">wcsstr</a>(<span class="keywordtype">wchar_t</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <span class="keywordtype">wchar_t</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> etl::cstr::strstr_impl&lt;wchar_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;wchar_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad67cab31ecf7c17b7ea41fbc4c1d0bd5">   25</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a74d69c1152ef7e628b1691179fc6f530">wcsstr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> etl::cstr::strstr_impl&lt;wchar_t const&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;wchar_t const&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace etl</span></div>
@@ -141,7 +141,7 @@ $(function(){initNavTree('wcsstr_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_654767f1f845a43cfb380e17dc7914ff.html">_cwchar</a></li><li class="navelem"><a class="el" href="wcsstr_8hpp.html">wcsstr.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 15:10:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:21:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

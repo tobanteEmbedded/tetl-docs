@@ -1,6 +1,6 @@
 var dir_ac1289053c60d7d57e43725f5379b917 =
 [
-    [ "cstr.hpp", "cstr_8hpp.html", "cstr_8hpp" ],
+    [ "cstr.hpp", "cstr_8hpp.html", null ],
     [ "find.hpp", "__strings_2find_8hpp.html", "__strings_2find_8hpp" ],
     [ "from_integer.hpp", "from__integer_8hpp.html", "from__integer_8hpp" ],
     [ "rfind.hpp", "rfind_8hpp.html", "rfind_8hpp" ],

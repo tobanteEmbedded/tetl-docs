@@ -123,7 +123,7 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">src</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl_1_1cstr.html#a45bacc8b74472d3d751300ec7118060e">etl::cstr::strncpy</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> etl::detail::strncpy(<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">src</a>, <a class="code hl_function" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -135,7 +135,6 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_gacf27092e22460faafdb958cac56c6fec"><div class="ttname"><a href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">etl::count</a></div><div class="ttdeci">constexpr auto count(InputIt first, InputIt last, T const &amp;value) -&gt; typename iterator_traits&lt; InputIt &gt;::difference_type</div><div class="ttdoc">Returns the number of elements in the range [first, last) satisfying specific criteria....</div><div class="ttdef"><b>Definition</b> count.hpp:21</div></div>
 <div class="ttc" id="agroup__cstring_html_ga50d78828452384f88828ac39373bdb7f"><div class="ttname"><a href="group__cstring.html#ga50d78828452384f88828ac39373bdb7f">etl::strncpy</a></div><div class="ttdeci">constexpr auto strncpy(char *dest, char const *src, etl::size_t const count) -&gt; char *</div><div class="ttdoc">Copies at most count characters of the byte string pointed to by src (including the terminating null ...</div><div class="ttdef"><b>Definition</b> strncpy.hpp:24</div></div>
-<div class="ttc" id="anamespaceetl_1_1cstr_html_a45bacc8b74472d3d751300ec7118060e"><div class="ttname"><a href="namespaceetl_1_1cstr.html#a45bacc8b74472d3d751300ec7118060e">etl::cstr::strncpy</a></div><div class="ttdeci">constexpr auto strncpy(CharT *dest, CharT const *src, SizeT count) -&gt; CharT *</div><div class="ttdef"><b>Definition</b> cstr.hpp:17</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
@@ -146,7 +145,7 @@ $(function(){initNavTree('strncpy_8hpp_source.html',''); initResizable(true); })
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="strncpy_8hpp.html">strncpy.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 15:10:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:21:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
