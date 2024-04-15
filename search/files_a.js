@@ -30,7 +30,7 @@ var searchData=
   ['log_2ehpp_27',['log.hpp',['../__cmath_2log_8hpp.html',1,'(Global Namespace)'],['../__complex_2log_8hpp.html',1,'(Global Namespace)']]],
   ['log10_2ehpp_28',['log10.hpp',['../__cmath_2log10_8hpp.html',1,'(Global Namespace)'],['../__complex_2log10_8hpp.html',1,'(Global Namespace)']]],
   ['log1p_2ehpp_29',['log1p.hpp',['../log1p_8hpp.html',1,'']]],
-  ['log2_2ehpp_30',['log2.hpp',['../__cmath_2log2_8hpp.html',1,'(Global Namespace)'],['../__math_2log2_8hpp.html',1,'(Global Namespace)']]],
+  ['log2_2ehpp_30',['log2.hpp',['../log2_8hpp.html',1,'']]],
   ['logic_5ferror_2ehpp_31',['logic_error.hpp',['../logic__error_8hpp.html',1,'']]],
   ['logical_5fand_2ehpp_32',['logical_and.hpp',['../logical__and_8hpp.html',1,'']]],
   ['logical_5fnot_2ehpp_33',['logical_not.hpp',['../logical__not_8hpp.html',1,'']]],

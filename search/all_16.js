@@ -183,7 +183,7 @@ var searchData=
   ['strong_5fordering_2ehpp_180',['strong_ordering.hpp',['../strong__ordering_8hpp.html',1,'']]],
   ['strpbrk_181',['strpbrk',['../group__cstring.html#ga41a1eddfb9d029d0710fd07afafcf1fb',1,'etl::strpbrk(char const *dest, char const *breakset) noexcept -&gt; char const *'],['../group__cstring.html#ga042c917008dbbbd4e10d144f2b8153bf',1,'etl::strpbrk(char *dest, char *breakset) noexcept -&gt; char *']]],
   ['strpbrk_2ehpp_182',['strpbrk.hpp',['../strpbrk_8hpp.html',1,'']]],
-  ['strrchr_183',['strrchr',['../group__cstring.html#gab1d044d1f8e1c1b85fe30e4830ca04d7',1,'etl::strrchr(char const *str, int ch) -&gt; char const *'],['../group__cstring.html#ga21ac7ed52583c6766a16279f6b2a56e2',1,'etl::strrchr(char *str, int ch) -&gt; char *']]],
+  ['strrchr_183',['strrchr',['../group__cstring.html#ga70ad1e9ee68483c83ab85fec3c3bc098',1,'etl::strrchr(char const *str, int ch) noexcept -&gt; char const *'],['../group__cstring.html#ga9044fb8ace92be15f8af4d7bf6afa524',1,'etl::strrchr(char *str, int ch) noexcept -&gt; char *']]],
   ['strrchr_2ehpp_184',['strrchr.hpp',['../strrchr_8hpp.html',1,'']]],
   ['strspn_185',['strspn',['../group__cstring.html#gae4f31dcdd10129882c6856b848a0ca8f',1,'etl']]],
   ['strspn_2ehpp_186',['strspn.hpp',['../strspn_8hpp.html',1,'']]],

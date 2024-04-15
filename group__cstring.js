@@ -1,10 +1,10 @@
 var group__cstring =
 [
-    [ "memchr", "group__cstring.html#ga6740ef7f61c971d75fd44a39eac300f5", null ],
-    [ "memchr", "group__cstring.html#gafc7e9e584f1928136b069284b7c32f45", null ],
-    [ "memcpy", "group__cstring.html#ga08ec3f6b7d154def9046012af9517965", null ],
-    [ "memmove", "group__cstring.html#ga4e0d1af4b8d0546159c26456db74a309", null ],
-    [ "memset", "group__cstring.html#ga987e078e2adade59dfd923d96f3ba4ce", null ],
+    [ "memchr", "group__cstring.html#gabe3560744264a5bf3038cd7744b9968e", null ],
+    [ "memchr", "group__cstring.html#ga8db7edd253bf76b92a7ebeb8afad8ef3", null ],
+    [ "memcpy", "group__cstring.html#gaafeb4c0affd826ba14f5bf3039c84812", null ],
+    [ "memmove", "group__cstring.html#gad85a137d45d955fd74c76657306b19c1", null ],
+    [ "memset", "group__cstring.html#gaf2b88ca84d198104e49ac2bd09977c45", null ],
     [ "strcat", "group__cstring.html#ga5321996edb97a0bb3ce62286dd77d58e", null ],
     [ "strchr", "group__cstring.html#ga1ab0d635f5b2d4f2b9cfceec2c41c373", null ],
     [ "strchr", "group__cstring.html#ga6fca1e170d91ea2b0901d41ccb3f4ef6", null ],
@@ -17,8 +17,8 @@ var group__cstring =
     [ "strncpy", "group__cstring.html#ga50d78828452384f88828ac39373bdb7f", null ],
     [ "strpbrk", "group__cstring.html#ga042c917008dbbbd4e10d144f2b8153bf", null ],
     [ "strpbrk", "group__cstring.html#ga41a1eddfb9d029d0710fd07afafcf1fb", null ],
-    [ "strrchr", "group__cstring.html#ga21ac7ed52583c6766a16279f6b2a56e2", null ],
-    [ "strrchr", "group__cstring.html#gab1d044d1f8e1c1b85fe30e4830ca04d7", null ],
+    [ "strrchr", "group__cstring.html#ga9044fb8ace92be15f8af4d7bf6afa524", null ],
+    [ "strrchr", "group__cstring.html#ga70ad1e9ee68483c83ab85fec3c3bc098", null ],
     [ "strspn", "group__cstring.html#gae4f31dcdd10129882c6856b848a0ca8f", null ],
     [ "strstr", "group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883", null ],
     [ "strstr", "group__cstring.html#ga3af5da7af9b58ac38ff5d4da3ff5434b", null ]

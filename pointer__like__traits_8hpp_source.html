@@ -114,7 +114,7 @@ $(function(){initNavTree('pointer__like__traits_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="uintptr__t_8hpp.html">etl/_cstdint/uintptr_t.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="__math_2log2_8hpp.html">etl/_math/log2.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="ilog2_8hpp.html">etl/_math/ilog2.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -128,7 +128,7 @@ $(function(){initNavTree('pointer__like__traits_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html#a6eb03a39ee092974bb06a8ba205a6261">   22</a></span>    [[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html#a6eb03a39ee092974bb06a8ba205a6261">get_from_void_pointer</a>(<span class="keywordtype">void</span>* p) -&gt; T* { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(p); }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html#a44554ded36bdd7aa9a30f9c1b9cfcaa5">   24</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> free_bits = detail::ilog2(<span class="keyword">alignof</span>(T));</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html#a44554ded36bdd7aa9a30f9c1b9cfcaa5">   24</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> free_bits = <a class="code hl_function" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(<span class="keyword">alignof</span>(T));</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
@@ -194,9 +194,10 @@ $(function(){initNavTree('pointer__like__traits_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_POINTER_LIKE_TRAITS_HPP</span></div>
-<div class="ttc" id="a__math_2log2_8hpp_html"><div class="ttname"><a href="__math_2log2_8hpp.html">log2.hpp</a></div></div>
+<div class="ttc" id="ailog2_8hpp_html"><div class="ttname"><a href="ilog2_8hpp.html">ilog2.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a1d944a371245d51e3b9ea011f7b97f43"><div class="ttname"><a href="namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43">etl::uintptr_t</a></div><div class="ttdeci">TETL_BUILTIN_UINTPTR uintptr_t</div><div class="ttdoc">Unsigned integer type capable of holding a pointer.</div><div class="ttdef"><b>Definition</b> uintptr_t.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_a86319ce6c017b8e0cbaed828b6dad2f7"><div class="ttname"><a href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">etl::ilog2</a></div><div class="ttdeci">constexpr auto ilog2(Int x) noexcept -&gt; Int</div><div class="ttdef"><b>Definition</b> ilog2.hpp:11</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of N bits. Bitsets can be manipulated by s...</div><div class="ttdef"><b>Definition</b> bitset.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1pointer__like__traits_3_01T_01_5_01_4_html"><div class="ttname"><a href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html">etl::pointer_like_traits&lt; T * &gt;</a></div><div class="ttdoc">Provide pointer_like_traits for non-cvr pointers.</div><div class="ttdef"><b>Definition</b> pointer_like_traits.hpp:19</div></div>
@@ -216,7 +217,7 @@ $(function(){initNavTree('pointer__like__traits_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="pointer__like__traits_8hpp.html">pointer_like_traits.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 15 2024 11:45:44 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 12:29:19 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

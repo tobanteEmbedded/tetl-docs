@@ -29,7 +29,7 @@ var dir_0a8451822ead037db42f7b180ec45725 =
     [ "log.hpp", "__cmath_2log_8hpp.html", "__cmath_2log_8hpp" ],
     [ "log10.hpp", "__cmath_2log10_8hpp.html", "__cmath_2log10_8hpp" ],
     [ "log1p.hpp", "log1p_8hpp.html", "log1p_8hpp" ],
-    [ "log2.hpp", "__cmath_2log2_8hpp.html", "__cmath_2log2_8hpp" ],
+    [ "log2.hpp", "log2_8hpp.html", "log2_8hpp" ],
     [ "lrint.hpp", "lrint_8hpp.html", "lrint_8hpp" ],
     [ "nan.hpp", "nan_8hpp.html", "nan_8hpp" ],
     [ "nextafter.hpp", "nextafter_8hpp.html", "nextafter_8hpp" ],

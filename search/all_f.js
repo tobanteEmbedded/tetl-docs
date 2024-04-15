@@ -104,7 +104,7 @@ var searchData=
   ['log1pf_101',['log1pf',['../group__cmath.html#ga0ceec6b47194b6218670a6a38324516b',1,'etl']]],
   ['log1pl_102',['log1pl',['../group__cmath.html#gac82247b08fd64f14d6120ddb97dd44f7',1,'etl']]],
   ['log2_103',['log2',['../group__cmath.html#ga9191968342c66327e279e2007d5bb7ce',1,'etl::log2(float arg) noexcept -&gt; float'],['../group__cmath.html#ga5df7f7d0d1fefde1fdb3cbde13b5fed0',1,'etl::log2(double arg) noexcept -&gt; double'],['../group__cmath.html#gafc012d679f6f798b5770a4b2d65f443c',1,'etl::log2(long double arg) noexcept -&gt; long double'],['../group__cmath.html#ga373d95b511f9ddc4d991f652eeac139f',1,'etl::log2(integral auto arg) noexcept -&gt; double']]],
-  ['log2_2ehpp_104',['log2.hpp',['../__cmath_2log2_8hpp.html',1,'(Global Namespace)'],['../__math_2log2_8hpp.html',1,'(Global Namespace)']]],
+  ['log2_2ehpp_104',['log2.hpp',['../log2_8hpp.html',1,'']]],
   ['log2e_105',['log2e',['../group__numbers.html#ga0d3ce59eef43fceb7c981209b0b9e812',1,'etl::numbers']]],
   ['log2e_5fv_106',['log2e_v',['../group__numbers.html#ga257736f17d105c22ecaabc9f37876b8c',1,'etl::numbers']]],
   ['log2f_107',['log2f',['../group__cmath.html#gaae9a81ee78be6ea9810f1144c3554c84',1,'etl']]],

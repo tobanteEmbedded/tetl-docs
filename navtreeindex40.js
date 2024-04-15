@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"user_8hpp.html":[12,0,1,0,14,9],
-"user_8hpp_source.html":[12,0,1,0,14,9],
 "uses__allocator_8hpp.html":[12,0,1,0,40,23],
 "uses__allocator_8hpp.html#a2eb779f5e8046c7d141522c238bc2764":[12,0,1,0,40,23,1],
 "uses__allocator_8hpp_source.html":[12,0,1,0,40,23],

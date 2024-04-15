@@ -1,5 +1,5 @@
 var strrchr_8hpp =
 [
-    [ "strrchr", "strrchr_8hpp.html#ga21ac7ed52583c6766a16279f6b2a56e2", null ],
-    [ "strrchr", "strrchr_8hpp.html#gab1d044d1f8e1c1b85fe30e4830ca04d7", null ]
+    [ "strrchr", "strrchr_8hpp.html#ga9044fb8ace92be15f8af4d7bf6afa524", null ],
+    [ "strrchr", "strrchr_8hpp.html#ga70ad1e9ee68483c83ab85fec3c3bc098", null ]
 ];
