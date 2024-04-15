@@ -33,7 +33,7 @@ var dir_0a8451822ead037db42f7b180ec45725 =
     [ "lrint.hpp", "lrint_8hpp.html", "lrint_8hpp" ],
     [ "nan.hpp", "nan_8hpp.html", "nan_8hpp" ],
     [ "nextafter.hpp", "nextafter_8hpp.html", "nextafter_8hpp" ],
-    [ "pow.hpp", "__cmath_2pow_8hpp.html", "__cmath_2pow_8hpp" ],
+    [ "pow.hpp", "pow_8hpp.html", "pow_8hpp" ],
     [ "remainder.hpp", "remainder_8hpp.html", "remainder_8hpp" ],
     [ "rint.hpp", "rint_8hpp.html", "rint_8hpp" ],
     [ "round.hpp", "__cmath_2round_8hpp.html", "__cmath_2round_8hpp" ],

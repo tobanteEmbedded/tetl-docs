@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"__ratio_2ratio_8hpp.html#aabe49b8885eb17fdade12acd5f37acad":[12,0,1,0,49,0,4],
-"__ratio_2ratio_8hpp.html#ab10931e9eceef3f81bae9ea43bdd8e89":[12,0,1,0,49,0,11],
-"__ratio_2ratio_8hpp.html#abb0850018459aaecf06435ee5eb9f0d8":[12,0,1,0,49,0,15],
-"__ratio_2ratio_8hpp.html#ac437d8206f0e17da3a896c5f4d17f95a":[12,0,1,0,49,0,0],
 "__ratio_2ratio_8hpp.html#aeb47ecbe72de3b6984811c6a1c8c6d5b":[12,0,1,0,49,0,2],
 "__ratio_2ratio_8hpp.html#aee06e415331cdede5a5e81a37ae91014":[12,0,1,0,49,0,7],
 "__ratio_2ratio_8hpp.html#af06b69df89587850ded6209b864e7569":[12,0,1,0,49,0,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "bind__front_8hpp.html":[12,0,1,0,31,0],
 "bind__front_8hpp.html#aa615187d5a248ab9e6493944c709279e":[12,0,1,0,31,0,0],
 "bind__front_8hpp_source.html":[12,0,1,0,31,0],
-"bit_8hpp.html":[12,0,1,0,69]
+"bit_8hpp.html":[12,0,1,0,69],
+"bit_8hpp_source.html":[12,0,1,0,69],
+"bit__and_8hpp.html":[12,0,1,0,31,1],
+"bit__and_8hpp_source.html":[12,0,1,0,31,1],
+"bit__cast_8hpp.html":[12,0,1,0,2,0]
 };

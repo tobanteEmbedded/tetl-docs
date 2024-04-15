@@ -17,7 +17,7 @@ var searchData=
   ['pointer_5ftraits_2ehpp_14',['pointer_traits.hpp',['../pointer__traits_8hpp.html',1,'']]],
   ['polar_2ehpp_15',['polar.hpp',['../polar_8hpp.html',1,'']]],
   ['popcount_2ehpp_16',['popcount.hpp',['../popcount_8hpp.html',1,'']]],
-  ['pow_2ehpp_17',['pow.hpp',['../__cmath_2pow_8hpp.html',1,'(Global Namespace)'],['../__math_2pow_8hpp.html',1,'(Global Namespace)']]],
+  ['pow_2ehpp_17',['pow.hpp',['../pow_8hpp.html',1,'']]],
   ['predicate_2ehpp_18',['predicate.hpp',['../predicate_8hpp.html',1,'']]],
   ['preprocessor_2ehpp_19',['preprocessor.hpp',['../preprocessor_8hpp.html',1,'']]],
   ['prev_2ehpp_20',['prev.hpp',['../prev_8hpp.html',1,'']]],

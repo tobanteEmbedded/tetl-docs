@@ -114,8 +114,8 @@ $(function(){initNavTree('assume__aligned_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="all_8hpp.html">etl/_config/all.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="__math_2pow_8hpp.html">etl/_math/pow.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="has__single__bit_8hpp.html">etl/_bit/has_single_bit.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="size__t_8hpp.html">etl/_cstddef/size_t.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="is__constant__evaluated_8hpp.html">etl/_type_traits/is_constant_evaluated.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
@@ -124,7 +124,7 @@ $(function(){initNavTree('assume__aligned_8hpp_source.html',''); initResizable(t
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__memory.html#gae867798dd2ddddb86806aa99a0ae9101">   28</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__memory.html#gae867798dd2ddddb86806aa99a0ae9101">assume_aligned</a>(T* ptr) -&gt; T*</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static_assert</span>(detail::is_power2(<a class="code hl_struct" href="structetl_1_1bitset.html">N</a>));</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static_assert</span>(<a class="code hl_function" href="group__bit.html#ga4732ae6a536891ce2d355378e0ac571c">etl::has_single_bit</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">N</a>));</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static_assert</span>(<span class="keyword">alignof</span>(T) &lt;= <a class="code hl_struct" href="structetl_1_1bitset.html">N</a>);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">not</a> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a>()) {</div>
@@ -140,9 +140,10 @@ $(function(){initNavTree('assume__aligned_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_ASSUME_ALIGNED_HPP</span></div>
-<div class="ttc" id="a__math_2pow_8hpp_html"><div class="ttname"><a href="__math_2pow_8hpp.html">pow.hpp</a></div></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
+<div class="ttc" id="agroup__bit_html_ga4732ae6a536891ce2d355378e0ac571c"><div class="ttname"><a href="group__bit.html#ga4732ae6a536891ce2d355378e0ac571c">etl::has_single_bit</a></div><div class="ttdeci">constexpr auto has_single_bit(UInt x) noexcept -&gt; bool</div><div class="ttdoc">Checks if x is an integral power of two.</div><div class="ttdef"><b>Definition</b> has_single_bit.hpp:21</div></div>
 <div class="ttc" id="agroup__memory_html_gae867798dd2ddddb86806aa99a0ae9101"><div class="ttname"><a href="group__memory.html#gae867798dd2ddddb86806aa99a0ae9101">etl::assume_aligned</a></div><div class="ttdeci">constexpr auto assume_aligned(T *ptr) -&gt; T *</div><div class="ttdoc">Informs the implementation that the object ptr points to is aligned to at least N....</div><div class="ttdef"><b>Definition</b> assume_aligned.hpp:28</div></div>
+<div class="ttc" id="ahas__single__bit_8hpp_html"><div class="ttname"><a href="has__single__bit_8hpp.html">has_single_bit.hpp</a></div></div>
 <div class="ttc" id="ais__constant__evaluated_8hpp_html"><div class="ttname"><a href="is__constant__evaluated_8hpp.html">is_constant_evaluated.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a135ea1c61ce77c9bf27e83df6a1fec64"><div class="ttname"><a href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">etl::is_constant_evaluated</a></div><div class="ttdeci">constexpr auto is_constant_evaluated() noexcept -&gt; bool</div><div class="ttdoc">Detects whether the function call occurs within a constant-evaluated context. Returns true if the eva...</div><div class="ttdef"><b>Definition</b> is_constant_evaluated.hpp:16</div></div>
@@ -154,7 +155,7 @@ $(function(){initNavTree('assume__aligned_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="assume__aligned_8hpp.html">assume_aligned.hpp</a></li>
-    <li class="footer">Generated on Sun Apr 14 2024 21:06:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 11:45:44 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
