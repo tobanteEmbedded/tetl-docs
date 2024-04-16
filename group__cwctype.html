@@ -143,7 +143,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafeae65f95769adaef057cef1e2072cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a punctuation character, i.e. it is one of !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_`{|}~ or any punctuation character specific to the current locale.  <br /></td></tr>
 <tr class="separator:gafeae65f95769adaef057cef1e2072cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08bc2486b7f8fe2d819d038bde3e96dd" id="r_ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga08bc2486b7f8fe2d819d038bde3e96dd">iswspace</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
-<tr class="memdesc:ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale. In the default locale, the whitespace characters are the following:  <br /></td></tr>
+<tr class="memdesc:ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale.  <br /></td></tr>
 <tr class="separator:ga08bc2486b7f8fe2d819d038bde3e96dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga597b876c6866c7f04154fcc066fd08ba" id="r_ga597b876c6866c7f04154fcc066fd08ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga597b876c6866c7f04154fcc066fd08ba">iswupper</a> (<a class="el" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> <a class="el" href="structetl_1_1bitset.html">ch</a>) noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">int</a></td></tr>
 <tr class="memdesc:ga597b876c6866c7f04154fcc066fd08ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given wide character is an uppercase letter, i.e. one of ABCDEFGHIJKLMNOPQRSTUVWXYZ or any uppercase letter specific to the current locale.  <br /></td></tr>
@@ -452,15 +452,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale. In the default locale, the whitespace characters are the following: </p>
-<pre class="fragment">- space (0x20, ' ')
-- form feed (0x0c, '\f')
-- line feed (0x0a, '\n')
-- carriage return (0x0d, '\r')
-- horizontal tab (0x09, '\t')
-- vertical tab (0x0b, '\v')
-</pre><p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined.</p>
-<p><a href="https://en.cppreference.com/w/cpp/string/wide/iswspace">https://en.cppreference.com/w/cpp/string/wide/iswspace</a> </p>
+<p>Checks if the given wide character is a wide whitespace character as classified by the currently installed C locale. </p>
+<p>If the value of ch is neither representable as a wchar_t nor equal to the value of the macro WEOF, the behavior is undefined. In the default locale, the whitespace characters are the following: </p><pre class="fragment">- space (0x20)
+- form feed (0x0c)
+- line feed (0x0a)
+- carriage return (0x0d)
+- horizontal tab (0x09)
+- vertical tab (0x0b)
+</pre><p> <a href="https://en.cppreference.com/w/cpp/string/wide/iswspace">https://en.cppreference.com/w/cpp/string/wide/iswspace</a> </p>
 
 </div>
 </div>
@@ -588,7 +587,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 15 2024 23:06:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 01:15:37 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

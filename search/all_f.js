@@ -64,7 +64,7 @@ var searchData=
   ['linalg_2ehpp_61',['linalg.hpp',['../linalg_8hpp.html',1,'']]],
   ['line_62',['Command Line',['../index.html#autotoc_md21',1,'']]],
   ['line_63',['line',['../structetl_1_1assert__msg.html#a41ebd28ef1d7c6ade45642cb6acc1039',1,'etl::assert_msg::line'],['../structetl_1_1source__location.html#aec5e3954a302039415fa25638c2d2863',1,'etl::source_location::line()']]],
-  ['list_64',['List',['../bug.html',1,'Bug List'],['../deprecated.html',1,'Deprecated List']]],
+  ['list_64',['Bug List',['../bug.html',1,'']]],
   ['list_65',['list',['../structetl_1_1meta_1_1list.html',1,'etl::meta']]],
   ['list_66',['Todo List',['../todo.html',1,'']]],
   ['list_2ehpp_67',['list.hpp',['../list_8hpp.html',1,'']]],
