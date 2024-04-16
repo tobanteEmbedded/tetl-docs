@@ -9,6 +9,7 @@ var group__type__traits =
     [ "is_nothrow_swappable_with< T, U >", "structetl_1_1is__nothrow__swappable__with.html", [
       [ "is_nothrow_swappable_with_v", "group__type__traits.html#gaa10bae03ee2ee7efc954c5553dfb34dd", null ]
     ] ],
+    [ "make_signed< Type >", "structetl_1_1make__signed.html", null ],
     [ "remove_pointer< T >", "structetl_1_1remove__pointer.html", [
       [ "type", "structetl_1_1remove__pointer.html#a834c467da58ea1d81821952d3c473b64", null ]
     ] ],

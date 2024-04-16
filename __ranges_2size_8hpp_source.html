@@ -141,13 +141,13 @@ $(function(){initNavTree('__ranges_2size_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">struct </span>fn {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::c_array&lt;T, Size&gt;</a>&amp; <span class="comment">/*t*/</span>) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(<a class="code hl_typedef" href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">etl::c_array&lt;T, Size&gt;</a>&amp; <span class="comment">/*t*/</span>) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> Size;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::c_array&lt;T, Size&gt;</a>&amp;&amp; <span class="comment">/*t*/</span>) const noexcept</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(<a class="code hl_typedef" href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">etl::c_array&lt;T, Size&gt;</a>&amp;&amp; <span class="comment">/*t*/</span>) const noexcept</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> Size;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
@@ -180,20 +180,20 @@ $(function(){initNavTree('__ranges_2size_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="aconceptetl_1_1integral_html"><div class="ttname"><a href="conceptetl_1_1integral.html">etl::integral</a></div><div class="ttdoc">The concept integral&lt;T&gt; is satisfied if and only if T is an integral type.</div><div class="ttdef"><b>Definition</b> integral.hpp:13</div></div>
 <div class="ttc" id="adecay__copy_8hpp_html"><div class="ttname"><a href="decay__copy_8hpp.html">decay_copy.hpp</a></div></div>
 <div class="ttc" id="adisable__sized__range_8hpp_html"><div class="ttname"><a href="disable__sized__range_8hpp.html">disable_sized_range.hpp</a></div></div>
+<div class="ttc" id="agroup__array_html_ga1693d67d03475372752f9e6973d67a8d"><div class="ttname"><a href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">etl::c_array</a></div><div class="ttdeci">ValueType[Size] c_array</div><div class="ttdef"><b>Definition</b> c_array.hpp:12</div></div>
 <div class="ttc" id="agroup__ranges_html_ga634128d2b51dd1677291370fa7276399"><div class="ttname"><a href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">etl::decay_copy</a></div><div class="ttdeci">constexpr auto decay_copy(T &amp;&amp;t) noexcept(is_nothrow_convertible_v&lt; T, decay_t&lt; T &gt; &gt;) -&gt; decay_t&lt; T &gt;</div><div class="ttdef"><b>Definition</b> decay_copy.hpp:14</div></div>
 <div class="ttc" id="agroup__ranges_html_ga95d3fe103aa2ab8634a824562dd8390c"><div class="ttname"><a href="group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c">etl::ranges::cpo::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdef"><b>Definition</b> size.hpp:65</div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
 <div class="ttc" id="aiterator__t_8hpp_html"><div class="ttname"><a href="iterator__t_8hpp.html">iterator_t.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1ranges_html"><div class="ttname"><a href="namespaceetl_1_1ranges.html">etl::ranges</a></div><div class="ttdef"><b>Definition</b> ranges_in_fun_result.hpp:11</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_765abac2ba11e7762dcb3a96b740b442.html">_ranges</a></li><li class="navelem"><a class="el" href="__ranges_2size_8hpp.html">size.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

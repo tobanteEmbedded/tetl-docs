@@ -118,9 +118,9 @@ $(function(){initNavTree('remove_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt, <span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga1ecba2ecefe71607f67bec456ff072fd">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga1ecba2ecefe71607f67bec456ff072fd">remove</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a> last, T <span class="keyword">const</span>&amp; value) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga1ecba2ecefe71607f67bec456ff072fd">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga1ecba2ecefe71607f67bec456ff072fd">remove</a>(ForwardIt first, ForwardIt last, T <span class="keyword">const</span>&amp; value) -&gt; ForwardIt</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__algorithm.html#ga22cf73ac58ec2b4dd086be384cbbdd7d">etl::remove_if</a>(first, last, [&amp;value](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">item</a>) { <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">item</a> == value; });</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__algorithm.html#ga22cf73ac58ec2b4dd086be384cbbdd7d">etl::remove_if</a>(first, last, [&amp;value](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; item) { <span class="keywordflow">return</span> item == value; });</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -131,14 +131,13 @@ $(function(){initNavTree('remove_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="agroup__algorithm_html_ga22cf73ac58ec2b4dd086be384cbbdd7d"><div class="ttname"><a href="group__algorithm.html#ga22cf73ac58ec2b4dd086be384cbbdd7d">etl::remove_if</a></div><div class="ttdeci">constexpr auto remove_if(ForwardIt first, ForwardIt last, Predicate pred) -&gt; ForwardIt</div><div class="ttdoc">Removes all elements satisfying specific criteria from the range [first, last) and returns a past-the...</div><div class="ttdef"><b>Definition</b> remove_if.hpp:16</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="aremove__if_8hpp_html"><div class="ttname"><a href="remove__if_8hpp.html">remove_if.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="remove_8hpp.html">remove.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

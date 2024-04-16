@@ -117,10 +117,10 @@ $(function(){initNavTree('is__constant__evaluated_8hpp_source.html',''); initRes
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">   16</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a>() noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">   16</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a>() noexcept -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#if __has_builtin(__builtin_is_constant_evaluated)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">__builtin_is_constant_evaluated</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> __builtin_is_constant_evaluated();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
@@ -133,14 +133,13 @@ $(function(){initNavTree('is__constant__evaluated_8hpp_source.html',''); initRes
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a135ea1c61ce77c9bf27e83df6a1fec64"><div class="ttname"><a href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">etl::is_constant_evaluated</a></div><div class="ttdeci">constexpr auto is_constant_evaluated() noexcept -&gt; bool</div><div class="ttdoc">Detects whether the function call occurs within a constant-evaluated context. Returns true if the eva...</div><div class="ttdef"><b>Definition</b> is_constant_evaluated.hpp:16</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__constant__evaluated_8hpp.html">is_constant_evaluated.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

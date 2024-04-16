@@ -119,18 +119,18 @@ $(function(){initNavTree('structetl_1_1pointer__like__traits_3_01T_01_5_01_4.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4490909fafdb6254b97e7de29736eca" id="r_ac4490909fafdb6254b97e7de29736eca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4490909fafdb6254b97e7de29736eca">get_as_void_pointer</a> (T *p) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a> *</td></tr>
+<tr class="memitem:ac4490909fafdb6254b97e7de29736eca" id="r_ac4490909fafdb6254b97e7de29736eca"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4490909fafdb6254b97e7de29736eca">get_as_void_pointer</a> (T *p) -&gt; void *</td></tr>
 <tr class="separator:ac4490909fafdb6254b97e7de29736eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb03a39ee092974bb06a8ba205a6261" id="r_a6eb03a39ee092974bb06a8ba205a6261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb03a39ee092974bb06a8ba205a6261">get_from_void_pointer</a> (<a class="el" href="structetl_1_1bitset.html">void</a> *p) -&gt; T *</td></tr>
+<tr class="memitem:a6eb03a39ee092974bb06a8ba205a6261" id="r_a6eb03a39ee092974bb06a8ba205a6261"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb03a39ee092974bb06a8ba205a6261">get_from_void_pointer</a> (void *p) -&gt; T *</td></tr>
 <tr class="separator:a6eb03a39ee092974bb06a8ba205a6261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a44554ded36bdd7aa9a30f9c1b9cfcaa5" id="r_a44554ded36bdd7aa9a30f9c1b9cfcaa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44554ded36bdd7aa9a30f9c1b9cfcaa5">free_bits</a> = <a class="el" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(<a class="el" href="structetl_1_1bitset.html">alignof</a>(T))</td></tr>
+<tr class="memitem:a44554ded36bdd7aa9a30f9c1b9cfcaa5" id="r_a44554ded36bdd7aa9a30f9c1b9cfcaa5"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44554ded36bdd7aa9a30f9c1b9cfcaa5">free_bits</a> = <a class="el" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(alignof(T))</td></tr>
 <tr class="separator:a44554ded36bdd7aa9a30f9c1b9cfcaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 struct etl::pointer_like_traits&lt; T * &gt;</div><p>Provide <a class="el" href="structetl_1_1pointer__like__traits.html" title="A traits type that is used to handle pointer types and things that are just wrappers for pointers as ...">pointer_like_traits</a> for non-cvr pointers. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac4490909fafdb6254b97e7de29736eca" name="ac4490909fafdb6254b97e7de29736eca"></a>
@@ -139,16 +139,16 @@ struct etl::pointer_like_traits&lt; T * &gt;</div><p>Provide <a class="el" href=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a> get_as_void_pointer </td>
+          <td class="memname">static auto get_as_void_pointer </td>
           <td>(</td>
           <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>* </td>
+          <td> -&gt; void* </td>
         </tr>
       </table>
   </td>
@@ -166,15 +166,15 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">auto</a> get_from_void_pointer </td>
+          <td class="memname">static auto get_from_void_pointer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">void</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
           <td> -&gt; T* </td>
         </tr>
       </table>
@@ -194,13 +194,13 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> free_bits = <a class="el" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(<a class="el" href="structetl_1_1bitset.html">alignof</a>(T))</td>
+          <td class="memname"><a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> free_bits = <a class="el" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(alignof(T))</td>
         </tr>
       </table>
   </td>
@@ -221,7 +221,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html">pointer_like_traits&lt; T * &gt;</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

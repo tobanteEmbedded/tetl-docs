@@ -118,13 +118,13 @@ $(function(){initNavTree('identity_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1identity.html">identity</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">   13</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">is_transparent</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">void</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">   13</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">is_transparent</a> = void;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">   16</a></span>    [[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">operator()</a>(T&amp;&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">t</a>) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; T&amp;&amp;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">   16</a></span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">operator()</a>(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; T&amp;&amp;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">etl::forward&lt;T&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">t</a>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> etl::forward&lt;T&gt;(t);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
@@ -135,16 +135,16 @@ $(function(){initNavTree('identity_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1identity_html"><div class="ttname"><a href="structetl_1_1identity.html">etl::identity</a></div><div class="ttdoc">etl::identity is a function object type whose operator() returns its argument unchanged.</div><div class="ttdef"><b>Definition</b> identity.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1identity_html_a139f060ad86e9afb79e37b916f7125e8"><div class="ttname"><a href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">etl::identity::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;t) const noexcept -&gt; T &amp;&amp;</div><div class="ttdef"><b>Definition</b> identity.hpp:16</div></div>
+<div class="ttc" id="astructetl_1_1identity_html_a2fbeedf2fc9bbbe1f7c1df62798a28e8"><div class="ttname"><a href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">etl::identity::is_transparent</a></div><div class="ttdeci">void is_transparent</div><div class="ttdef"><b>Definition</b> identity.hpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="identity_8hpp.html">identity.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

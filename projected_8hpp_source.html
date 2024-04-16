@@ -126,7 +126,7 @@ $(function(){initNavTree('projected_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter, <span class="keyword">typename</span> Proj&gt;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span>projected_impl {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">struct </span>type {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">using </span>value_type = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::remove_cvref_t&lt;etl::indirect_result_t&lt;Proj&amp;, Iter&gt;</a>&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">using </span>value_type = <a class="code hl_typedef" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t&lt;etl::indirect_result_t&lt;Proj&amp;, Iter&gt;</a>&gt;;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ade01d8f935d63f6d9cba9fbe323f8821">operator*</a>() const -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_typedef" href="group__iterator.html#gad753b7ec242604e8139a352b4d049398">indirect_result_t</a>&lt;Proj&amp;, Iter&gt;; <span class="comment">// not defined</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
@@ -135,8 +135,8 @@ $(function(){initNavTree('projected_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    requires weakly_incrementable&lt;Iter&gt;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>struct projected_impl&lt;Iter, Proj&gt; {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">struct </span>type {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">using </span>value_type      = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::remove_cvref_t&lt;etl::indirect_result_t&lt;Proj&amp;, Iter&gt;</a>&gt;;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">using </span>difference_type = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::iter_difference_t&lt;Iter&gt;</a>; <span class="comment">// conditionally present</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">using </span>value_type      = <a class="code hl_typedef" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t&lt;etl::indirect_result_t&lt;Proj&amp;, Iter&gt;</a>&gt;;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">using </span>difference_type = <a class="code hl_typedef" href="group__iterator.html#ga89bccf0617839402578ce56ea06409b5">etl::iter_difference_t&lt;Iter&gt;</a>; <span class="comment">// conditionally present</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ade01d8f935d63f6d9cba9fbe323f8821">operator*</a>() const -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::indirect_result_t&lt;Proj&amp;, Iter&gt;; <span class="comment">// not defined</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    };</div>
@@ -145,21 +145,22 @@ $(function(){initNavTree('projected_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>template &lt;<a class="code hl_namespace" href="namespaceetl.html">etl</a>::indirectly_readable Iter, <a class="code hl_namespace" href="namespaceetl.html">etl</a>::indirectly_regular_unary_invocable&lt;Iter&gt; Proj&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7">   40</a></span><a class="code hl_struct" href="structetl_1_1bitset.html">using</a> <a class="code hl_typedef" href="group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7">projected</a> = <a class="code hl_namespace" href="namespaceetl.html">etl</a>::detail::projected_impl&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">Iter</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Proj</a>&gt;::type;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7">   40</a></span>using <a class="code hl_typedef" href="group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7">projected</a> = <a class="code hl_namespace" href="namespaceetl.html">etl</a>::detail::projected_impl&lt;Iter, Proj&gt;::type;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ITERATOR_PROJECTED_HPP</span></div>
 <div class="ttc" id="agroup__iterator_html_ga6729ebb98236f93b98f0492cb3415fb7"><div class="ttname"><a href="group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7">etl::projected</a></div><div class="ttdeci">etl::detail::projected_impl&lt; Iter, Proj &gt;::type projected</div><div class="ttdef"><b>Definition</b> projected.hpp:40</div></div>
+<div class="ttc" id="agroup__iterator_html_ga89bccf0617839402578ce56ea06409b5"><div class="ttname"><a href="group__iterator.html#ga89bccf0617839402578ce56ea06409b5">etl::iter_difference_t</a></div><div class="ttdeci">typename detail::iter_difference&lt; T &gt;::type iter_difference_t</div><div class="ttdef"><b>Definition</b> iter_difference_t.hpp:30</div></div>
 <div class="ttc" id="agroup__iterator_html_gad753b7ec242604e8139a352b4d049398"><div class="ttname"><a href="group__iterator.html#gad753b7ec242604e8139a352b4d049398">etl::indirect_result_t</a></div><div class="ttdeci">etl::invoke_result_t&lt; F, etl::iter_reference_t&lt; Iters &gt;... &gt; indirect_result_t</div><div class="ttdef"><b>Definition</b> indirect_result_t.hpp:16</div></div>
 <div class="ttc" id="aindirect__result__t_8hpp_html"><div class="ttname"><a href="indirect__result__t_8hpp.html">indirect_result_t.hpp</a></div></div>
 <div class="ttc" id="aindirectly__readable_8hpp_html"><div class="ttname"><a href="indirectly__readable_8hpp.html">indirectly_readable.hpp</a></div></div>
 <div class="ttc" id="aindirectly__regular__unary__invocable_8hpp_html"><div class="ttname"><a href="indirectly__regular__unary__invocable_8hpp.html">indirectly_regular_unary_invocable.hpp</a></div></div>
 <div class="ttc" id="aiter__difference__t_8hpp_html"><div class="ttname"><a href="iter__difference__t_8hpp.html">iter_difference_t.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a13534b69c91b07e4add5cea854cfedd8"><div class="ttname"><a href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a></div><div class="ttdeci">remove_cv_t&lt; remove_reference_t&lt; T &gt; &gt; remove_cvref_t</div><div class="ttdef"><b>Definition</b> remove_cvref.hpp:23</div></div>
 <div class="ttc" id="anamespaceetl_html_ade01d8f935d63f6d9cba9fbe323f8821"><div class="ttname"><a href="namespaceetl.html#ade01d8f935d63f6d9cba9fbe323f8821">etl::operator*</a></div><div class="ttdeci">constexpr auto operator*(complex&lt; T &gt; const &amp;lhs, complex&lt; T &gt; const &amp;rhs) -&gt; complex&lt; T &gt;</div><div class="ttdef"><b>Definition</b> complex.hpp:251</div></div>
 <div class="ttc" id="aremove__cvref_8hpp_html"><div class="ttname"><a href="remove__cvref_8hpp.html">remove_cvref.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="aweakly__incrementable_8hpp_html"><div class="ttname"><a href="weakly__incrementable_8hpp.html">weakly_incrementable.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -167,7 +168,7 @@ $(function(){initNavTree('projected_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="projected_8hpp.html">projected.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

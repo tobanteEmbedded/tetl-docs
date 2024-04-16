@@ -119,7 +119,7 @@ $(function(){initNavTree('lock__guard_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> MutexT&gt;</div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1lock__guard.html">lock_guard</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">MutexT</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a> = MutexT;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">   21</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">lock_guard</a>(<a class="code hl_typedef" href="structetl_1_1lock__guard.html#a8eb885a4b8e103182d867442c5e4ea8f">mutex_type</a>&amp; m)</div>
@@ -152,7 +152,6 @@ $(function(){initNavTree('lock__guard_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="a__mutex_2tags_8hpp_html"><div class="ttname"><a href="__mutex_2tags_8hpp.html">tags.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="astructetl_1_1adopt__lock__t_html"><div class="ttname"><a href="structetl_1_1adopt__lock__t.html">etl::adopt_lock_t</a></div><div class="ttdoc">Empty struct tag types used to specify locking strategy for etl::lock_guard, etl::scoped_lock,...</div><div class="ttdef"><b>Definition</b> tags.hpp:41</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1lock__guard_html"><div class="ttname"><a href="structetl_1_1lock__guard.html">etl::lock_guard</a></div><div class="ttdoc">The struct lock_guard is a mutex wrapper that provides a convenient RAII-style mechanism for owning a...</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:18</div></div>
 <div class="ttc" id="astructetl_1_1lock__guard_html_a45ce8a248da90a0124a15afbf190d058"><div class="ttname"><a href="structetl_1_1lock__guard.html#a45ce8a248da90a0124a15afbf190d058">etl::lock_guard::lock_guard</a></div><div class="ttdeci">lock_guard(mutex_type &amp;m)</div><div class="ttdef"><b>Definition</b> lock_guard.hpp:21</div></div>
 <div class="ttc" id="astructetl_1_1lock__guard_html_a7b61680ee1d9665b28473e2efa027757"><div class="ttname"><a href="structetl_1_1lock__guard.html#a7b61680ee1d9665b28473e2efa027757">etl::lock_guard::operator=</a></div><div class="ttdeci">auto operator=(lock_guard const &amp;) -&gt; lock_guard &amp;=delete</div></div>
@@ -166,7 +165,7 @@ $(function(){initNavTree('lock__guard_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_b2f01d8ecfbee1e3e8680c705c85a3d8.html">_mutex</a></li><li class="navelem"><a class="el" href="lock__guard_8hpp.html">lock_guard.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

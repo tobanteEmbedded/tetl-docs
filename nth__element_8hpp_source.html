@@ -119,19 +119,19 @@ $(function(){initNavTree('nth__element_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt, <span class="keyword">typename</span> Compare&gt;</div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">   22</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">nth_element</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">nth</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> last, <a class="code hl_struct" href="structetl_1_1bitset.html">Compare</a> <a class="code hl_struct" href="structetl_1_1bitset.html">comp</a>) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">   22</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">nth_element</a>(RandomIt first, RandomIt nth, RandomIt last, Compare comp) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// TODO: Improve. Currently forwards to regular sort.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">nth</a>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="group__algorithm.html#gad5ef221b98a814660142c728ce9bac78">etl::sort</a>(first, last, <a class="code hl_struct" href="structetl_1_1bitset.html">comp</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(nth);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="group__algorithm.html#gad5ef221b98a814660142c728ce9bac78">etl::sort</a>(first, last, comp);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RandomIt&gt;</div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a477060cd9d79c15a82456242a3005517">   30</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">nth_element</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">nth</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">RandomIt</a> last) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#a477060cd9d79c15a82456242a3005517">   30</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53">nth_element</a>(RandomIt first, RandomIt nth, RandomIt last) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">nth</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(nth);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="group__algorithm.html#gad5ef221b98a814660142c728ce9bac78">etl::sort</a>(first, last);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 </div>
@@ -145,14 +145,13 @@ $(function(){initNavTree('nth__element_8hpp_source.html',''); initResizable(true
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_ad27e213c027bfb11ed648fb543842995"><div class="ttname"><a href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a></div><div class="ttdeci">constexpr auto ignore_unused(Types &amp;&amp;...) -&gt; void</div><div class="ttdoc">Explicitly ignore arguments or variables.</div><div class="ttdef"><b>Definition</b> ignore_unused.hpp:17</div></div>
 <div class="ttc" id="asort_8hpp_html"><div class="ttname"><a href="sort_8hpp.html">sort.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="nth__element_8hpp.html">nth_element.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

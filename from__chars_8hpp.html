@@ -128,8 +128,8 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a57744d86f1f45347bc48d426591e1ce1" id="r_a57744d86f1f45347bc48d426591e1ce1"><td class="memTemplParams" colspan="2">template&lt;integral Int&gt; <br />
-requires (<a class="el" href="structetl_1_1bitset.html">not</a> same_as&lt;<a class="el" href="structetl_1_1bitset.html">Int</a>, <a class="el" href="structetl_1_1bitset.html">bool</a>&gt;)</td></tr>
-<tr class="memitem:a57744d86f1f45347bc48d426591e1ce1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a57744d86f1f45347bc48d426591e1ce1">from_chars</a> (<a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a> *first, <a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a> *last, <a class="el" href="structetl_1_1bitset.html">Int</a> &amp;value, <a class="el" href="structetl_1_1bitset.html">int</a> base=10) -&gt; <a class="el" href="structetl_1_1from__chars__result.html">from_chars_result</a></td></tr>
+requires (not same_as&lt;Int, bool&gt;)</td></tr>
+<tr class="memitem:a57744d86f1f45347bc48d426591e1ce1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a57744d86f1f45347bc48d426591e1ce1">from_chars</a> (char const *first, char const *last, Int &amp;value, int base=10) -&gt; <a class="el" href="structetl_1_1from__chars__result.html">from_chars_result</a></td></tr>
 <tr class="memdesc:a57744d86f1f45347bc48d426591e1ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyzes the character sequence [first,last) for a pattern described below. If no characters match the pattern or if the value obtained by parsing the matched characters is not representable in the type of value, value is unmodified, otherwise the characters matching the pattern are interpreted as a text representation of an arithmetic value, which is stored in value.  <br /></td></tr>
 <tr class="separator:a57744d86f1f45347bc48d426591e1ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -139,7 +139,7 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> same_as&lt;<a cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_28bf191bf11fe8bb0374912a9d396ea7.html">_charconv</a></li><li class="navelem"><a class="el" href="from__chars_8hpp.html">from_chars.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

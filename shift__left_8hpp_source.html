@@ -121,30 +121,30 @@ $(function(){initNavTree('shift__left_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga2a6d3457c4b1a845dce8219245bbc31c">   23</a></span><a class="code hl_function" href="group__algorithm.html#ga2a6d3457c4b1a845dce8219245bbc31c">shift_left</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a> <span class="keyword">const</span> last, <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;ForwardIt&gt;::difference_type</a> <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">ForwardIt</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga2a6d3457c4b1a845dce8219245bbc31c">   23</a></span><a class="code hl_function" href="group__algorithm.html#ga2a6d3457c4b1a845dce8219245bbc31c">shift_left</a>(ForwardIt first, ForwardIt <span class="keyword">const</span> last, <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;ForwardIt&gt;::difference_type</a> n) -&gt; ForwardIt</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// The standard only checks for n == 0. n &lt; 0 would be undefined behavior.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// This implementation does nothing if n &lt; 0.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">n</a> &lt;= 0) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (n &lt;= 0) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span> last;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1bitset.html">start</a> = first;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> start = first;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::detail::RandomAccessIterator&lt;ForwardIt&gt;) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">n</a> &gt;= last - first) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> (n &gt;= last - first) {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> first;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_struct" href="structetl_1_1bitset.html">start</a> += <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        start += n;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">for</span> (; 0 &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>; --<a class="code hl_struct" href="structetl_1_1bitset.html">n</a>) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">start</a> == last) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">for</span> (; 0 &lt; n; --n) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (start == last) {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">return</span> first;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            ++<a class="code hl_struct" href="structetl_1_1bitset.html">start</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            ++start;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    first = <a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">start</a>, last, first);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    first = <a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(start, last, first);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> first;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
@@ -158,7 +158,6 @@ $(function(){initNavTree('shift__left_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -166,7 +165,7 @@ $(function(){initNavTree('shift__left_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="shift__left_8hpp.html">shift_left.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -117,34 +117,35 @@ $(function(){initNavTree('remove__volatile_8hpp_source.html',''); initResizable(
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1remove__volatile.html">remove_volatile</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb">   17</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">type</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">Type</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb">   17</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb">type</a> = Type;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1remove__volatile.html">remove_volatile</a>&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">Type</a> <a class="code hl_struct" href="structetl_1_1bitset.html">volatile</a>&gt; {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">   22</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">type</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">Type</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1remove__volatile.html">remove_volatile</a>&lt;Type volatile&gt; {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">   22</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">type</a> = Type;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf">   27</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf">remove_volatile_t</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1bitset.html">remove_volatile&lt;T&gt;::type</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf">   27</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf">remove_volatile_t</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb">remove_volatile&lt;T&gt;::type</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_REMOVE_VOLATILE_HPP</span></div>
 <div class="ttc" id="agroup__type__traits_html_ga52b035d7a0227468261ee211d61d7abf"><div class="ttname"><a href="group__type__traits.html#ga52b035d7a0227468261ee211d61d7abf">etl::remove_volatile_t</a></div><div class="ttdeci">typename remove_volatile&lt; T &gt;::type remove_volatile_t</div><div class="ttdef"><b>Definition</b> remove_volatile.hpp:27</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1remove__volatile_3_01Type_01volatile_01_4_html_aca8c309473ba6429aad9347ffbe7a9fb"><div class="ttname"><a href="structetl_1_1remove__volatile_3_01Type_01volatile_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">etl::remove_volatile&lt; Type volatile &gt;::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition</b> remove_volatile.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1remove__volatile_html"><div class="ttname"><a href="structetl_1_1remove__volatile.html">etl::remove_volatile</a></div><div class="ttdoc">Provides the member typedef type which is the same as T, except that its topmost cv-qualifiers are re...</div><div class="ttdef"><b>Definition</b> remove_volatile.hpp:16</div></div>
+<div class="ttc" id="astructetl_1_1remove__volatile_html_aca8c309473ba6429aad9347ffbe7a9fb"><div class="ttname"><a href="structetl_1_1remove__volatile.html#aca8c309473ba6429aad9347ffbe7a9fb">etl::remove_volatile::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition</b> remove_volatile.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="remove__volatile_8hpp.html">remove_volatile.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

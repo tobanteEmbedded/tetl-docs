@@ -120,20 +120,20 @@ $(function(){initNavTree('distance_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> It&gt;</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">   16</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">distance</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">It</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">It</a> last) -&gt; <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::difference_type</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">   16</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">distance</a>(It first, It last) -&gt; <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::difference_type</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">category</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::iterator_category</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static_assert</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">is_base_of_v&lt;input_iterator_tag, category&gt;</a>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>category = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::iterator_category</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static_assert</span>(is_base_of_v&lt;input_iterator_tag, category&gt;);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">is_base_of_v&lt;random_access_iterator_tag, category&gt;</a>) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_base_of_v&lt;random_access_iterator_tag, category&gt;) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> last - first;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::difference_type</a>{};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span> result = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::difference_type</a>{};</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">while</span> (first != last) {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            ++first;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            ++<a class="code hl_struct" href="structetl_1_1bitset.html">result</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            ++result;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
@@ -146,7 +146,6 @@ $(function(){initNavTree('distance_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="ais__base__of_8hpp_html"><div class="ttname"><a href="is__base__of_8hpp.html">is_base_of.hpp</a></div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +153,7 @@ $(function(){initNavTree('distance_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="distance_8hpp.html">distance.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

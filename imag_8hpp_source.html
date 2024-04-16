@@ -120,23 +120,23 @@ $(function(){initNavTree('imag_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">   14</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">complex&lt;T&gt;</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">z</a>) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">z</a>.imag())) -&gt; T</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">   14</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(<a class="code hl_struct" href="structetl_1_1complex.html">complex&lt;T&gt;</a> <span class="keyword">const</span>&amp; z) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(z.imag())) -&gt; T</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">z</a>.imag();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> z.imag();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> Float&gt;</div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__complex.html#ga6d0ad216ba4bc6ac0ce104fa507be482">   21</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Float</a> <span class="comment">/*f*/</span>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">Float</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__complex.html#ga6d0ad216ba4bc6ac0ce104fa507be482">   21</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(Float <span class="comment">/*f*/</span>) <span class="keyword">noexcept</span> -&gt; Float</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">Float</a>{};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> Float{};</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Integer&gt;</div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__complex.html#ga0aee87424a681f33d80df9fdd70c16bc">   28</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Integer</a> <span class="comment">/*i*/</span>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">double</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__complex.html#ga0aee87424a681f33d80df9fdd70c16bc">   28</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">imag</a>(Integer <span class="comment">/*i*/</span>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">double</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
@@ -150,14 +150,14 @@ $(function(){initNavTree('imag_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="agroup__complex_html_gaab3bbdd5f75b3b8343a6f44cf4845397"><div class="ttname"><a href="group__complex.html#gaab3bbdd5f75b3b8343a6f44cf4845397">etl::imag</a></div><div class="ttdeci">constexpr auto imag(complex&lt; T &gt; const &amp;z) noexcept(noexcept(z.imag())) -&gt; T</div><div class="ttdef"><b>Definition</b> imag.hpp:14</div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1complex_html"><div class="ttname"><a href="structetl_1_1complex.html">etl::complex</a></div><div class="ttdoc">A complex number.</div><div class="ttdef"><b>Definition</b> complex.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_2f074b85cc54b926559aac2a1dc7d0b8.html">_complex</a></li><li class="navelem"><a class="el" href="imag_8hpp.html">imag.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

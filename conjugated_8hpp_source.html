@@ -121,19 +121,19 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ElementType, <span class="keyword">typename</span> Extents, <span class="keyword">typename</span> Layout, <span class="keyword">typename</span> Accessor&gt;</div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a> a)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a>(<a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a> a)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">is_arithmetic_v&lt;remove_cv_t&lt;ElementType&gt;</a>&gt;) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_arithmetic_v&lt;remove_cv_t&lt;ElementType&gt;&gt;) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            a.data_handle(),</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            a.mapping(),</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            a.accessor(),</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        };</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">using </span>element_type  = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1bitset.html">accessor_conjugate&lt;Accessor&gt;::element_type</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">using </span>accessor_type = <a class="code hl_struct" href="structetl_1_1bitset.html">accessor_conjugate&lt;Accessor&gt;</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">using </span>element_type  = <span class="keyword">typename</span> <a class="code hl_typedef" href="structetl_1_1linalg_1_1accessor__conjugate.html#a492b6c1f36167694cb80483e11d0da48">accessor_conjugate&lt;Accessor&gt;::element_type</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">using </span>accessor_type = <a class="code hl_struct" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate&lt;Accessor&gt;</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            a.data_handle(),</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            a.mapping(),</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            accessor_type(a.accessor()),</div>
@@ -144,12 +144,12 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ElementType, <span class="keyword">typename</span> Extents, <span class="keyword">typename</span> Layout, <span class="keyword">typename</span> NestedAccessor&gt;</div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group__linalg.html#ga275984a3105f041ab5dbfbe430db347e">   37</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a>(<a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan</a>&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">ElementType</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Extents</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Layout</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">accessor_conjugate&lt;NestedAccessor&gt;</a>&gt; a)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group__linalg.html#ga275984a3105f041ab5dbfbe430db347e">   37</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a>(<a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan</a>&lt;ElementType, Extents, Layout, <a class="code hl_struct" href="structetl_1_1linalg_1_1accessor__conjugate.html">accessor_conjugate&lt;NestedAccessor&gt;</a>&gt; a)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">using </span>element_type  = <span class="keyword">typename</span> NestedAccessor::element_type;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">using </span>accessor_type = <a class="code hl_struct" href="structetl_1_1bitset.html">NestedAccessor</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">using </span>accessor_type = NestedAccessor;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;element_type, Extents, Layout, accessor_type&gt;</a>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        a.data_handle(),</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        a.mapping(),</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        a.accessor().nested_accessor(),</div>
@@ -166,7 +166,8 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html">etl::linalg::accessor_conjugate</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:16</div></div>
+<div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html_a492b6c1f36167694cb80483e11d0da48"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html#a492b6c1f36167694cb80483e11d0da48">etl::linalg::accessor_conjugate::element_type</a></div><div class="ttdeci">add_const_t&lt; conditional_t&lt; is_arithmetic_v&lt; remove_cv_t&lt; typename Accessor::element_type &gt; &gt;, typename Accessor::element_type, typename reference::value_type &gt; &gt; element_type</div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:21</div></div>
 <div class="ttc" id="astructetl_1_1mdspan_html"><div class="ttname"><a href="structetl_1_1mdspan.html">etl::mdspan</a></div><div class="ttdef"><b>Definition</b> mdspan.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -174,7 +175,7 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="conjugated_8hpp.html">conjugated.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

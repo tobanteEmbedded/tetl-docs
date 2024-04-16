@@ -147,9 +147,9 @@ $(function(){initNavTree('assert_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Assertion&gt;</div>
 <div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">   39</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">noreturn</a>]] <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Assertion</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>) -&gt; <span class="keywordtype">void</span> <span class="comment">// NOLINT</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">   39</a></span>[[noreturn]] <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">assert_handler</a>(Assertion <span class="keyword">const</span>&amp; msg) -&gt; <span class="keywordtype">void</span> <span class="comment">// NOLINT</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">msg</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="namespaceetl.html#ad27e213c027bfb11ed648fb543842995">etl::ignore_unused</a>(msg);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="assert_8hpp.html#ad6298afdfd5046d87889de8140e640cd">::exit</a>(1); <span class="comment">// NOLINT</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 </div>
@@ -193,14 +193,13 @@ $(function(){initNavTree('assert_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="astructetl_1_1assert__msg_html_a49d4365485834727e27083ee7b6e28a6"><div class="ttname"><a href="structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6">etl::assert_msg::expression</a></div><div class="ttdeci">char const  * expression</div><div class="ttdef"><b>Definition</b> assert.hpp:25</div></div>
 <div class="ttc" id="astructetl_1_1assert__msg_html_a5177d780470a1e88ba0cc4405b4efbb9"><div class="ttname"><a href="structetl_1_1assert__msg.html#a5177d780470a1e88ba0cc4405b4efbb9">etl::assert_msg::file</a></div><div class="ttdeci">char const  * file</div><div class="ttdef"><b>Definition</b> assert.hpp:23</div></div>
 <div class="ttc" id="astructetl_1_1assert__msg_html_adeb6601eaf00658aeacfcfc2fb093c25"><div class="ttname"><a href="structetl_1_1assert__msg.html#adeb6601eaf00658aeacfcfc2fb093c25">etl::assert_msg::func</a></div><div class="ttdeci">char const  * func</div><div class="ttdef"><b>Definition</b> assert.hpp:24</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fc655ba7b5f9f1961939440acc4f0c6f.html">_cassert</a></li><li class="navelem"><a class="el" href="assert_8hpp.html">assert.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

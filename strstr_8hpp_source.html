@@ -118,16 +118,16 @@ $(function(){initNavTree('strstr_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">   17</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">strstr</a>(<span class="keywordtype">char</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <span class="keywordtype">char</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">char</span>*</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">   17</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">strstr</a>(<span class="keywordtype">char</span>* haystack, <span class="keywordtype">char</span>* needle) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">char</span>*</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;char&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;char&gt;(haystack, needle);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__cstring.html#ga3af5da7af9b58ac38ff5d4da3ff5434b">   22</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">strstr</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">char</span> <span class="keyword">const</span>*</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__cstring.html#ga3af5da7af9b58ac38ff5d4da3ff5434b">   22</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">strstr</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* haystack, <span class="keywordtype">char</span> <span class="keyword">const</span>* needle) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">char</span> <span class="keyword">const</span>*</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;char const&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">haystack</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">needle</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> etl::detail::strstr_impl&lt;char const&gt;(haystack, needle);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
@@ -138,14 +138,13 @@ $(function(){initNavTree('strstr_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
 <div class="ttc" id="agroup__cstring_html_gab1553928b9c7f3cb2b4232652f7a8883"><div class="ttname"><a href="group__cstring.html#gab1553928b9c7f3cb2b4232652f7a8883">etl::strstr</a></div><div class="ttdeci">constexpr auto strstr(char *haystack, char *needle) noexcept -&gt; char *</div><div class="ttdef"><b>Definition</b> strstr.hpp:17</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_fe9f96db0bbf428111fd687fd105db69.html">_cstring</a></li><li class="navelem"><a class="el" href="strstr_8hpp.html">strstr.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

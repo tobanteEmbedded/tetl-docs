@@ -117,23 +117,23 @@ $(function(){initNavTree('transform_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> UnaryOp&gt;</div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">   24</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">transform</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">InputIt</a> first, <a class="code hl_struct" href="structetl_1_1bitset.html">InputIt</a> last, <a class="code hl_struct" href="structetl_1_1bitset.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">UnaryOp</a> <a class="code hl_struct" href="structetl_1_1bitset.html">op</a>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">OutputIt</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">   24</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">transform</a>(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">for</span> (; first != last; ++first, (<a class="code hl_struct" href="structetl_1_1bitset.html">void</a>)++<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        *<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">op</a>(*first);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">for</span> (; first != last; ++first, (void)++dest) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        *dest = op(*first);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> dest;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt1, <span class="keyword">typename</span> InputIt2, <span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> BinaryOp&gt;</div>
 <div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__algorithm.html#gaa4f1eb9069005465b67c5d79eaae8bb9">   33</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">transform</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">InputIt1</a> <a class="code hl_struct" href="structetl_1_1bitset.html">first1</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">InputIt1</a> <a class="code hl_struct" href="structetl_1_1bitset.html">last1</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">InputIt2</a> <a class="code hl_struct" href="structetl_1_1bitset.html">first2</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">OutputIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">BinaryOp</a> <a class="code hl_struct" href="structetl_1_1bitset.html">op</a>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">OutputIt</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__algorithm.html#gaa4f1eb9069005465b67c5d79eaae8bb9">   33</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">transform</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, OutputIt dest, BinaryOp op) -&gt; OutputIt</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span> (; <a class="code hl_struct" href="structetl_1_1bitset.html">first1</a> != <a class="code hl_struct" href="structetl_1_1bitset.html">last1</a>; ++<a class="code hl_struct" href="structetl_1_1bitset.html">first1</a>, (<a class="code hl_struct" href="structetl_1_1bitset.html">void</a>)++<a class="code hl_struct" href="structetl_1_1bitset.html">first2</a>, ++<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        *<a class="code hl_struct" href="structetl_1_1bitset.html">dest</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">op</a>(*<a class="code hl_struct" href="structetl_1_1bitset.html">first1</a>, *<a class="code hl_struct" href="structetl_1_1bitset.html">first2</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span> (; first1 != last1; ++first1, (void)++first2, ++dest) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        *dest = op(*first1, *first2);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">dest</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> dest;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
@@ -143,14 +143,13 @@ $(function(){initNavTree('transform_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ALGORITHM_TRANSFORM_HPP</span></div>
 <div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="transform_8hpp.html">transform.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

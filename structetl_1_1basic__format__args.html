@@ -115,12 +115,12 @@ $(function(){initNavTree('structetl_1_1basic__format__args.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a26591f646b254f87744531f269ca2e0c" id="r_a26591f646b254f87744531f269ca2e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26591f646b254f87744531f269ca2e0c">basic_format_args</a> () noexcept=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
+<tr class="memitem:a26591f646b254f87744531f269ca2e0c" id="r_a26591f646b254f87744531f269ca2e0c"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26591f646b254f87744531f269ca2e0c">basic_format_args</a> () noexcept=default</td></tr>
 <tr class="separator:a26591f646b254f87744531f269ca2e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1d64b3a64a64b02a6e02e58c4e83e0" id="r_acc1d64b3a64a64b02a6e02e58c4e83e0"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:acc1d64b3a64a64b02a6e02e58c4e83e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acc1d64b3a64a64b02a6e02e58c4e83e0">basic_format_args</a> (detail::format_arg_store&lt; <a class="el" href="structetl_1_1bitset.html">Context</a>, Args... &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">store</a>) noexcept</td></tr>
+<tr class="memitem:acc1d64b3a64a64b02a6e02e58c4e83e0"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acc1d64b3a64a64b02a6e02e58c4e83e0">basic_format_args</a> (detail::format_arg_store&lt; Context, Args... &gt; const &amp;store) noexcept</td></tr>
 <tr class="separator:acc1d64b3a64a64b02a6e02e58c4e83e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8ae468a25d7f460d2039d9cbf9c4267" id="r_ab8ae468a25d7f460d2039d9cbf9c4267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8ae468a25d7f460d2039d9cbf9c4267">get</a> (<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> <a class="el" href="structetl_1_1bitset.html">i</a>) <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1basic__format__arg.html">basic_format_arg</a>&lt; <a class="el" href="structetl_1_1bitset.html">Context</a> &gt;</td></tr>
+<tr class="memitem:ab8ae468a25d7f460d2039d9cbf9c4267" id="r_ab8ae468a25d7f460d2039d9cbf9c4267"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8ae468a25d7f460d2039d9cbf9c4267">get</a> (<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> i) const noexcept -&gt; <a class="el" href="structetl_1_1basic__format__arg.html">basic_format_arg</a>&lt; Context &gt;</td></tr>
 <tr class="separator:ab8ae468a25d7f460d2039d9cbf9c4267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Context</a> &gt; </div>
+template&lt;typename Context &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -157,7 +157,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Context</a> &gt; </div>
+template&lt;typename Context &gt; </div>
 <div class="memtemplate">
 template&lt;typename... Args&gt; </div>
 <table class="mlabels">
@@ -167,7 +167,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1basic__format__args.html">basic_format_args</a> </td>
           <td>(</td>
-          <td class="paramtype">detail::format_arg_store&lt; <a class="el" href="structetl_1_1bitset.html">Context</a>, Args... &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>store</em></span></td><td>)</td>
+          <td class="paramtype">detail::format_arg_store&lt; Context, Args... &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>store</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -187,16 +187,16 @@ template&lt;typename... Args&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Context</a> &gt; </div>
+template&lt;typename Context &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get </td>
+          <td class="memname">auto get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__format__arg.html">basic_format_arg</a>&lt;<a class="el" href="structetl_1_1bitset.html">Context</a>&gt;
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__format__arg.html">basic_format_arg</a>&lt;Context&gt;
     </td>
         </tr>
       </table>
@@ -218,7 +218,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__format__args.html">basic_format_args</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

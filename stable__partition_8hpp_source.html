@@ -118,17 +118,17 @@ $(function(){initNavTree('stable__partition_8hpp_source.html',''); initResizable
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> B<span class="keywordtype">id</span>irIt, <span class="keyword">typename</span> Predicate&gt;</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">   16</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">stable_partition</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">BidirIt</a> f, <a class="code hl_struct" href="structetl_1_1bitset.html">BidirIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">l</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">Predicate</a> p) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">BidirIt</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">   16</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">stable_partition</a>(BidirIt f, BidirIt l, Predicate p) -&gt; BidirIt</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">n</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">l</a> - f;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">n</a> == 0) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> <span class="keyword">const</span> n = l - f;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (n == 0) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> f;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">n</a> == 1) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (n == 1) {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">return</span> f + p(*f);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> m = f + (<a class="code hl_struct" href="structetl_1_1bitset.html">n</a> / 2);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__algorithm.html#ga99d4db23a06789c303ee8ec693d84129">etl::rotate</a>(<a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">etl::stable_partition</a>(f, m, p), m, <a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">etl::stable_partition</a>(m, <a class="code hl_struct" href="structetl_1_1bitset.html">l</a>, p));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> m = f + (n / 2);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__algorithm.html#ga99d4db23a06789c303ee8ec693d84129">etl::rotate</a>(<a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">etl::stable_partition</a>(f, m, p), m, <a class="code hl_function" href="group__algorithm.html#ga0402fada51d792d7500e9a8f196eb649">etl::stable_partition</a>(m, l, p));</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -139,14 +139,13 @@ $(function(){initNavTree('stable__partition_8hpp_source.html',''); initResizable
 <div class="ttc" id="agroup__algorithm_html_ga99d4db23a06789c303ee8ec693d84129"><div class="ttname"><a href="group__algorithm.html#ga99d4db23a06789c303ee8ec693d84129">etl::rotate</a></div><div class="ttdeci">constexpr auto rotate(ForwardIt first, ForwardIt nFirst, ForwardIt last) -&gt; ForwardIt</div><div class="ttdoc">Performs a left rotation on a range of elements.</div><div class="ttdef"><b>Definition</b> rotate.hpp:17</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="arotate_8hpp_html"><div class="ttname"><a href="rotate_8hpp.html">rotate.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="stable__partition_8hpp.html">stable_partition.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

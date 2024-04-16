@@ -115,11 +115,11 @@ $(function(){initNavTree('structetl_1_1basic__format__string.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9f237d117dd4841b39bda06a52b1c44" id="r_ae9f237d117dd4841b39bda06a52b1c44"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; <br />
-requires convertible_to&lt;T <a class="el" href="structetl_1_1bitset.html">const</a>&amp;, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;<a class="el" href="structetl_1_1bitset.html">CharT</a>&gt;&gt;</td></tr>
-<tr class="memitem:ae9f237d117dd4841b39bda06a52b1c44"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">consteval</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae9f237d117dd4841b39bda06a52b1c44">basic_format_string</a> (T <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">s</a>)</td></tr>
+<tr class="memitem:ae9f237d117dd4841b39bda06a52b1c44" id="r_ae9f237d117dd4841b39bda06a52b1c44"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires convertible_to&lt;T const&amp;, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;CharT&gt;&gt;</td></tr>
+<tr class="memitem:ae9f237d117dd4841b39bda06a52b1c44"><td class="memTemplItemLeft" align="right" valign="top">consteval&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae9f237d117dd4841b39bda06a52b1c44">basic_format_string</a> (T const &amp;s)</td></tr>
 <tr class="separator:ae9f237d117dd4841b39bda06a52b1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42bcdf13bf5665385aeb00e90aff20e3" id="r_a42bcdf13bf5665385aeb00e90aff20e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42bcdf13bf5665385aeb00e90aff20e3">get</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structetl_1_1bitset.html">CharT</a> &gt;</td></tr>
+<tr class="memitem:a42bcdf13bf5665385aeb00e90aff20e3" id="r_a42bcdf13bf5665385aeb00e90aff20e3"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42bcdf13bf5665385aeb00e90aff20e3">get</a> () const noexcept -&gt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; CharT &gt;</td></tr>
 <tr class="separator:a42bcdf13bf5665385aeb00e90aff20e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -129,10 +129,10 @@ requires convertible_to&lt;T <a class="el" href="structetl_1_1bitset.html">const
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">CharT</a> , typename... Args&gt; </div>
+template&lt;typename CharT , typename... Args&gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T &gt; <br />
-requires convertible_to&lt;T <a class="el" href="structetl_1_1bitset.html">const</a>&amp;, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;<a class="el" href="structetl_1_1bitset.html">CharT</a>&gt;&gt;</div>
+template&lt;typename T &gt; <br />
+requires convertible_to&lt;T const&amp;, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;CharT&gt;&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -140,7 +140,7 @@ requires convertible_to&lt;T <a class="el" href="structetl_1_1bitset.html">const
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1basic__format__string.html">basic_format_string</a> </td>
           <td>(</td>
-          <td class="paramtype">T <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td class="paramtype">T const &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -160,16 +160,16 @@ requires convertible_to&lt;T <a class="el" href="structetl_1_1bitset.html">const
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">CharT</a> , typename... Args&gt; </div>
+template&lt;typename CharT , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get </td>
+          <td class="memname">auto get </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;<a class="el" href="structetl_1_1bitset.html">CharT</a>&gt; </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt;CharT&gt; </td>
         </tr>
       </table>
   </td>
@@ -190,7 +190,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__format__string.html">basic_format_string</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

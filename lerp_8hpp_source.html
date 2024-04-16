@@ -118,21 +118,21 @@ $(function(){initNavTree('lerp_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> Float&gt;</div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b">lerp</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Float</a> a, <a class="code hl_struct" href="structetl_1_1bitset.html">Float</a> b, <a class="code hl_struct" href="structetl_1_1bitset.html">Float</a> <a class="code hl_struct" href="structetl_1_1bitset.html">t</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">Float</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b">lerp</a>(Float a, Float b, Float t) <span class="keyword">noexcept</span> -&gt; Float</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> ((<a class="code hl_struct" href="structetl_1_1bitset.html">a &lt;= 0 &amp;&amp; b &gt;</a>= 0) || (a &gt;= 0 &amp;&amp; b &lt;= 0)) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">t</a> * b + (1 - <a class="code hl_struct" href="structetl_1_1bitset.html">t</a>) * a;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> ((a &lt;= 0 &amp;&amp; b &gt;= 0) || (a &gt;= 0 &amp;&amp; b &lt;= 0)) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> t * b + (1 - t) * a;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structetl_1_1bitset.html">t</a> == 1) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> (t == 1) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> b;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> = a + <a class="code hl_struct" href="structetl_1_1bitset.html">t</a> * (b - a);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> ((<a class="code hl_struct" href="structetl_1_1bitset.html">t</a> &gt; 1) == (b &gt; a)) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> b &lt; <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> ? <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> : b;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> x = a + t * (b - a);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> ((t &gt; 1) == (b &gt; a)) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> b &lt; x ? x : b;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> &lt; b ? <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> : b;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> x &lt; b ? x : b;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -142,14 +142,13 @@ $(function(){initNavTree('lerp_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="afloating__point_8hpp_html"><div class="ttname"><a href="floating__point_8hpp.html">floating_point.hpp</a></div></div>
 <div class="ttc" id="agroup__cmath_html_ga7dc29d72e030e4aed81ae36516bdd74b"><div class="ttname"><a href="group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b">etl::lerp</a></div><div class="ttdeci">constexpr auto lerp(Float a, Float b, Float t) noexcept -&gt; Float</div><div class="ttdoc">Computes a+t(b−a), i.e. the linear interpolation between a and b for the parameter t (or extrapolatio...</div><div class="ttdef"><b>Definition</b> lerp.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_0a8451822ead037db42f7b180ec45725.html">_cmath</a></li><li class="navelem"><a class="el" href="lerp_8hpp.html">lerp.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

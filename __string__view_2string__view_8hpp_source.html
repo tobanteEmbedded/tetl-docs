@@ -115,16 +115,16 @@ $(function(){initNavTree('__string__view_2string__view_8hpp_source.html',''); in
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6f7f02db9e66eaec8dccdca2f4e98a2f">   10</a></span><span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">string_view</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">basic_string_view&lt;char, etl::char_traits&lt;char&gt;</a>&gt;;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6f7f02db9e66eaec8dccdca2f4e98a2f">   10</a></span><span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1basic__string__view.html">string_view</a> = <a class="code hl_struct" href="structetl_1_1basic__string__view.html">basic_string_view&lt;char, etl::char_traits&lt;char&gt;</a>&gt;;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">inline</span> <span class="keyword">namespace </span>literals {</div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespaceetl_1_1literals_1_1string__view__literals.html">   13</a></span><span class="keyword">inline</span> <span class="keyword">namespace </span>string_view_literals {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22">   17</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span><a class="code hl_struct" href="structetl_1_1bitset.html">_sv</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> <a class="code hl_struct" href="structetl_1_1bitset.html">len</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22">   17</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_sv(<span class="keywordtype">char</span> <span class="keyword">const</span>* str, <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> len) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> {<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">len</a>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> {str, len};</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -138,14 +138,14 @@ $(function(){initNavTree('__string__view_2string__view_8hpp_source.html',''); in
 <div class="ttc" id="abasic__string__view_8hpp_html"><div class="ttname"><a href="basic__string__view_8hpp.html">basic_string_view.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1basic__string__view_html"><div class="ttname"><a href="structetl_1_1basic__string__view.html">etl::basic_string_view</a></div><div class="ttdoc">The class template basic_string_view describes an object that can refer to a constant contiguous sequ...</div><div class="ttdef"><b>Definition</b> basic_string_view.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_c330c4b0504c55195deae1b11ef4e47e.html">_string_view</a></li><li class="navelem"><a class="el" href="__string__view_2string__view_8hpp.html">string_view.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

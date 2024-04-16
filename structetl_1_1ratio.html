@@ -119,14 +119,14 @@ $(function(){initNavTree('structetl_1_1ratio.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acc0cf4a576946bc21e056fc790877b54" id="r_acc0cf4a576946bc21e056fc790877b54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc0cf4a576946bc21e056fc790877b54">type</a> = <a class="el" href="structetl_1_1ratio.html">ratio</a>&lt;<a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a>, <a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a>&gt;</td></tr>
+<tr class="memitem:acc0cf4a576946bc21e056fc790877b54" id="r_acc0cf4a576946bc21e056fc790877b54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc0cf4a576946bc21e056fc790877b54">type</a> = <a class="el" href="structetl_1_1ratio.html">ratio</a>&lt;<a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a>, <a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a>&gt;</td></tr>
 <tr class="separator:acc0cf4a576946bc21e056fc790877b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a39d4e8f1f2b19d86e23a8fdf3a4283a0" id="r_a39d4e8f1f2b19d86e23a8fdf3a4283a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a> = <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="el" href="structetl_1_1bitset.html">Denom</a>) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>, <a class="el" href="structetl_1_1bitset.html">Denom</a>)</td></tr>
+<tr class="memitem:a39d4e8f1f2b19d86e23a8fdf3a4283a0" id="r_a39d4e8f1f2b19d86e23a8fdf3a4283a0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a> = <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(Denom) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(Num, Denom)</td></tr>
 <tr class="separator:a39d4e8f1f2b19d86e23a8fdf3a4283a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28a2bb1d992ebc93e802b4364b7f51d" id="r_ac28a2bb1d992ebc93e802b4364b7f51d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a> = detail::sign(<a class="el" href="structetl_1_1bitset.html">Num</a>) * detail::sign(<a class="el" href="structetl_1_1bitset.html">Denom</a>) * <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>, <a class="el" href="structetl_1_1bitset.html">Denom</a>)</td></tr>
+<tr class="memitem:ac28a2bb1d992ebc93e802b4364b7f51d" id="r_ac28a2bb1d992ebc93e802b4364b7f51d"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a> = detail::sign(Num) * detail::sign(Denom) * <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(Num) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(Num, Denom)</td></tr>
 <tr class="separator:ac28a2bb1d992ebc93e802b4364b7f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -142,7 +142,7 @@ struct etl::ratio&lt; Num, Denom &gt;</div><p>The typename template provides com
 template&lt;<a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> Num, <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> Denom = 1&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="#acc0cf4a576946bc21e056fc790877b54">type</a> = <a class="el" href="structetl_1_1ratio.html">ratio</a>&lt;<a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a>, <a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a>&gt;</td>
+          <td class="memname">using <a class="el" href="#acc0cf4a576946bc21e056fc790877b54">type</a> = <a class="el" href="structetl_1_1ratio.html">ratio</a>&lt;<a class="el" href="#ac28a2bb1d992ebc93e802b4364b7f51d">num</a>, <a class="el" href="#a39d4e8f1f2b19d86e23a8fdf3a4283a0">den</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -162,7 +162,7 @@ template&lt;<a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> den = <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="el" href="structetl_1_1bitset.html">Denom</a>) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>, <a class="el" href="structetl_1_1bitset.html">Denom</a>)</td>
+          <td class="memname"><a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> den = <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(Denom) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(Num, Denom)</td>
         </tr>
       </table>
   </td>
@@ -186,7 +186,7 @@ template&lt;<a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> num = detail::sign(<a class="el" href="structetl_1_1bitset.html">Num</a>) * detail::sign(<a class="el" href="structetl_1_1bitset.html">Denom</a>) * <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(<a class="el" href="structetl_1_1bitset.html">Num</a>, <a class="el" href="structetl_1_1bitset.html">Denom</a>)</td>
+          <td class="memname"><a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> num = detail::sign(Num) * detail::sign(Denom) * <a class="el" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(Num) / <a class="el" href="group__numeric.html#ga955751ac2a2b96303705764b4bb30db3">gcd</a>(Num, Denom)</td>
         </tr>
       </table>
   </td>
@@ -207,7 +207,7 @@ template&lt;<a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1ratio.html">ratio</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

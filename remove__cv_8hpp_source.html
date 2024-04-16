@@ -120,28 +120,30 @@ $(function(){initNavTree('remove__cv_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1remove__cv.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1remove__cv.html">remove_cv</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1remove__cv.html#a2aa4194e3cfa264fe7fe76df408eb4e5">   18</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">type</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">remove_const_t&lt;remove_volatile_t&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1remove__cv.html#a2aa4194e3cfa264fe7fe76df408eb4e5">   18</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1remove__cv.html#a2aa4194e3cfa264fe7fe76df408eb4e5">type</a> = <a class="code hl_typedef" href="namespaceetl.html#a75ab6c9a804ec997a6e8cb9c5b36c3e4">remove_const_t&lt;remove_volatile_t&lt;T&gt;</a>&gt;;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
 </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">   22</a></span><span class="keyword">using </span><a class="code hl_struct" href="structetl_1_1bitset.html">remove_cv_t</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">remove_const_t&lt;remove_volatile_t&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">   22</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">remove_cv_t</a> = <a class="code hl_typedef" href="namespaceetl.html#a75ab6c9a804ec997a6e8cb9c5b36c3e4">remove_const_t&lt;remove_volatile_t&lt;T&gt;</a>&gt;;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_REMOVE_CV_HPP</span></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a57d58de8ee9130049557265efc11802c"><div class="ttname"><a href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">etl::remove_cv_t</a></div><div class="ttdeci">remove_const_t&lt; remove_volatile_t&lt; T &gt; &gt; remove_cv_t</div><div class="ttdef"><b>Definition</b> remove_cv.hpp:22</div></div>
+<div class="ttc" id="anamespaceetl_html_a75ab6c9a804ec997a6e8cb9c5b36c3e4"><div class="ttname"><a href="namespaceetl.html#a75ab6c9a804ec997a6e8cb9c5b36c3e4">etl::remove_const_t</a></div><div class="ttdeci">typename remove_const&lt; T &gt;::type remove_const_t</div><div class="ttdef"><b>Definition</b> remove_const.hpp:23</div></div>
 <div class="ttc" id="aremove__const_8hpp_html"><div class="ttname"><a href="remove__const_8hpp.html">remove_const.hpp</a></div></div>
 <div class="ttc" id="aremove__volatile_8hpp_html"><div class="ttname"><a href="remove__volatile_8hpp.html">remove_volatile.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1remove__cv_html"><div class="ttname"><a href="structetl_1_1remove__cv.html">etl::remove_cv</a></div><div class="ttdoc">Provides the member typedef type which is the same as T, except that its topmost cv-qualifiers are re...</div><div class="ttdef"><b>Definition</b> remove_cv.hpp:17</div></div>
+<div class="ttc" id="astructetl_1_1remove__cv_html_a2aa4194e3cfa264fe7fe76df408eb4e5"><div class="ttname"><a href="structetl_1_1remove__cv.html#a2aa4194e3cfa264fe7fe76df408eb4e5">etl::remove_cv::type</a></div><div class="ttdeci">remove_const_t&lt; remove_volatile_t&lt; T &gt; &gt; type</div><div class="ttdef"><b>Definition</b> remove_cv.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="remove__cv_8hpp.html">remove_cv.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

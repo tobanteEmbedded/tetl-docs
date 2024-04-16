@@ -104,7 +104,7 @@ $(function(){initNavTree('structetl_1_1make__signed.html',''); initResizable(tru
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">make_signed&lt; Type &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">make_signed&lt; Type &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__utilities-library.html">Utilities Library</a> &raquo; <a class="el" href="group__type__traits.html">type_traits</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -119,11 +119,10 @@ Inheritance diagram for make_signed&lt; Type &gt;:</div>
   <img src="structetl_1_1make__signed.png" alt=""/>
  </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Type</a>&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Type&gt;<br />
 struct etl::make_signed&lt; Type &gt;</div><p>If T is an integral (except bool) or enumeration type, provides the member typedef type which is the unsigned integer type corresponding to T, with the same cv-qualifiers. If T is signed or unsigned char, short, int, long, long long; the unsigned type from this list corresponding to T is provided. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1make__signed.html" title="If T is an integral (except bool) or enumeration type, provides the member typedef type which is the ...">make_signed</a> is undefined. </p>
 <div class="fragment"><div class="line"><span class="comment">// Convert an unsigned int to signed int</span></div>
-<div class="line"><span class="keyword">static_assert</span>(<a class="code hl_struct" href="structetl_1_1bitset.html">is_same_v&lt;make_signed_t&lt;unsigned&gt;</a>, <span class="keywordtype">int</span>&gt;);</div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="line"><span class="keyword">static_assert</span>(is_same_v&lt;make_signed_t&lt;unsigned&gt;, <span class="keywordtype">int</span>&gt;);</div>
 </div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/etl/_type_traits/<a class="el" href="make__signed_8hpp_source.html">make_signed.hpp</a></li>
 </ul>
@@ -133,7 +132,7 @@ struct etl::make_signed&lt; Type &gt;</div><p>If T is an integral (except bool) 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1make__signed.html">make_signed</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

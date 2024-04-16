@@ -118,13 +118,13 @@ $(function(){initNavTree('scope__exit_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FuncT&gt;</div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1scope__exit.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1scope__exit.html">scope_exit</a> : detail::scope_guard&lt;FuncT, detail::scope_exit_impl&gt; {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>detail::scope_guard&lt;<a class="code hl_struct" href="structetl_1_1bitset.html">FuncT</a>, detail::scope_exit_impl&gt;::scope_guard;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>detail::scope_guard&lt;FuncT, detail::scope_exit_impl&gt;::scope_guard;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Deduction guide</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FuncT&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0e8ae9359da3a0a4cb0573e8cd219638">   27</a></span><a class="code hl_function" href="namespaceetl.html#a0e8ae9359da3a0a4cb0573e8cd219638">scope_exit</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">FuncT</a>) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">scope_exit&lt;decay_t&lt;FuncT&gt;</a>&gt;;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceetl.html#a0e8ae9359da3a0a4cb0573e8cd219638">   27</a></span><a class="code hl_function" href="namespaceetl.html#a0e8ae9359da3a0a4cb0573e8cd219638">scope_exit</a>(FuncT) -&gt; <a class="code hl_struct" href="structetl_1_1scope__exit.html">scope_exit&lt;decay_t&lt;FuncT&gt;</a>&gt;;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -132,7 +132,6 @@ $(function(){initNavTree('scope__exit_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a0e8ae9359da3a0a4cb0573e8cd219638"><div class="ttname"><a href="namespaceetl.html#a0e8ae9359da3a0a4cb0573e8cd219638">etl::scope_exit</a></div><div class="ttdeci">scope_exit(FuncT) -&gt; scope_exit&lt; decay_t&lt; FuncT &gt; &gt;</div></div>
 <div class="ttc" id="ascope__guard_8hpp_html"><div class="ttname"><a href="scope__guard_8hpp.html">scope_guard.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1scope__exit_html"><div class="ttname"><a href="structetl_1_1scope__exit.html">etl::scope_exit</a></div><div class="ttdoc">The class template scope_exit is a general-purpose scope guard intended to call its exit function whe...</div><div class="ttdef"><b>Definition</b> scope_exit.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -140,7 +139,7 @@ $(function(){initNavTree('scope__exit_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_e0a5d8a3ea3561e67daba19b8d4691d5.html">_scope</a></li><li class="navelem"><a class="el" href="scope__exit_8hpp.html">scope_exit.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

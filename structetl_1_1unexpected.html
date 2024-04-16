@@ -116,39 +116,39 @@ $(function(){initNavTree('structetl_1_1unexpected.html',''); initResizable(true)
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bba237693bc09f63b35931c1ac121da" id="r_a2bba237693bc09f63b35931c1ac121da"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Err</a>  = E&gt; <br />
-requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">Err</a>&gt;, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&gt; // <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">Err</a>&gt;, <a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>&gt; // <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">Err</a>&gt;)</td></tr>
-<tr class="memitem:a2bba237693bc09f63b35931c1ac121da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2bba237693bc09f63b35931c1ac121da">unexpected</a> (<a class="el" href="structetl_1_1bitset.html">Err</a> &amp;&amp;e)</td></tr>
+<tr class="memitem:a2bba237693bc09f63b35931c1ac121da" id="r_a2bba237693bc09f63b35931c1ac121da"><td class="memTemplParams" colspan="2">template&lt;typename Err  = E&gt; <br />
+requires (not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;Err&gt;, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&gt; // and not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;Err&gt;, <a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>&gt; // and <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;E, Err&gt;)</td></tr>
+<tr class="memitem:a2bba237693bc09f63b35931c1ac121da"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2bba237693bc09f63b35931c1ac121da">unexpected</a> (Err &amp;&amp;e)</td></tr>
 <tr class="separator:a2bba237693bc09f63b35931c1ac121da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e1eaa68d572351812a070b78261597" id="r_aa8e1eaa68d572351812a070b78261597"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</td></tr>
-<tr class="memitem:aa8e1eaa68d572351812a070b78261597"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa8e1eaa68d572351812a070b78261597">unexpected</a> (<a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args)</td></tr>
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;E, Args...&gt;</td></tr>
+<tr class="memitem:aa8e1eaa68d572351812a070b78261597"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa8e1eaa68d572351812a070b78261597">unexpected</a> (<a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:aa8e1eaa68d572351812a070b78261597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7cc81c21ded672ac68ca17efc51bb5" id="r_a1b7cc81c21ded672ac68ca17efc51bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b7cc81c21ded672ac68ca17efc51bb5">unexpected</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;&amp;)=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
+<tr class="memitem:a1b7cc81c21ded672ac68ca17efc51bb5" id="r_a1b7cc81c21ded672ac68ca17efc51bb5"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b7cc81c21ded672ac68ca17efc51bb5">unexpected</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a1b7cc81c21ded672ac68ca17efc51bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e30973c509fb7640c6cc4f4152a6abf" id="r_a5e30973c509fb7640c6cc4f4152a6abf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e30973c509fb7640c6cc4f4152a6abf">unexpected</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;)=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
+<tr class="memitem:a5e30973c509fb7640c6cc4f4152a6abf" id="r_a5e30973c509fb7640c6cc4f4152a6abf"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e30973c509fb7640c6cc4f4152a6abf">unexpected</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> const &amp;)=default</td></tr>
 <tr class="separator:a5e30973c509fb7640c6cc4f4152a6abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a8cdf3b26f9a19c92ebd1cf28520f1" id="r_ad7a8cdf3b26f9a19c92ebd1cf28520f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7a8cdf3b26f9a19c92ebd1cf28520f1">error</a> () &amp;&amp;noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> &amp;&amp;</td></tr>
+<tr class="memitem:ad7a8cdf3b26f9a19c92ebd1cf28520f1" id="r_ad7a8cdf3b26f9a19c92ebd1cf28520f1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7a8cdf3b26f9a19c92ebd1cf28520f1">error</a> () &amp;&amp;noexcept -&gt; E &amp;&amp;</td></tr>
 <tr class="separator:ad7a8cdf3b26f9a19c92ebd1cf28520f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77286cdc61761bacf432bceb2791851f" id="r_a77286cdc61761bacf432bceb2791851f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77286cdc61761bacf432bceb2791851f">error</a> () &amp;noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> &amp;</td></tr>
+<tr class="memitem:a77286cdc61761bacf432bceb2791851f" id="r_a77286cdc61761bacf432bceb2791851f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77286cdc61761bacf432bceb2791851f">error</a> () &amp;noexcept -&gt; E &amp;</td></tr>
 <tr class="separator:a77286cdc61761bacf432bceb2791851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf41ae6a582e89b5edd6ee2ea7484f68" id="r_aaf41ae6a582e89b5edd6ee2ea7484f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf41ae6a582e89b5edd6ee2ea7484f68">error</a> () <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&amp;</td></tr>
+<tr class="memitem:aaf41ae6a582e89b5edd6ee2ea7484f68" id="r_aaf41ae6a582e89b5edd6ee2ea7484f68"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf41ae6a582e89b5edd6ee2ea7484f68">error</a> () const &amp;&amp;noexcept -&gt; E const &amp;&amp;</td></tr>
 <tr class="separator:aaf41ae6a582e89b5edd6ee2ea7484f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98df781df304e321a31ca9b691528f4c" id="r_a98df781df304e321a31ca9b691528f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98df781df304e321a31ca9b691528f4c">error</a> () <a class="el" href="structetl_1_1bitset.html">const</a> &amp;noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
+<tr class="memitem:a98df781df304e321a31ca9b691528f4c" id="r_a98df781df304e321a31ca9b691528f4c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98df781df304e321a31ca9b691528f4c">error</a> () const &amp;noexcept -&gt; E const &amp;</td></tr>
 <tr class="separator:a98df781df304e321a31ca9b691528f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed9f0db92742096717d05350390ed06d" id="r_aed9f0db92742096717d05350390ed06d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed9f0db92742096717d05350390ed06d">operator=</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;&amp;) -&gt; <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
+<tr class="memitem:aed9f0db92742096717d05350390ed06d" id="r_aed9f0db92742096717d05350390ed06d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed9f0db92742096717d05350390ed06d">operator=</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;&amp;) -&gt; <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=default</td></tr>
 <tr class="separator:aed9f0db92742096717d05350390ed06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a20bfe720b043f6ac918f376281a479" id="r_a8a20bfe720b043f6ac918f376281a479"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a20bfe720b043f6ac918f376281a479">operator=</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;) -&gt; <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
+<tr class="memitem:a8a20bfe720b043f6ac918f376281a479" id="r_a8a20bfe720b043f6ac918f376281a479"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a20bfe720b043f6ac918f376281a479">operator=</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> const &amp;) -&gt; <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=default</td></tr>
 <tr class="separator:a8a20bfe720b043f6ac918f376281a479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe1120510dc1c04654e4864a3e34719" id="r_a4fe1120510dc1c04654e4864a3e34719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fe1120510dc1c04654e4864a3e34719">swap</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;<a class="el" href="structetl_1_1bitset.html">other</a>) noexcept(<a class="el" href="namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5">etl::is_nothrow_swappable_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt;) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
+<tr class="memitem:a4fe1120510dc1c04654e4864a3e34719" id="r_a4fe1120510dc1c04654e4864a3e34719"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fe1120510dc1c04654e4864a3e34719">swap</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;other) noexcept(<a class="el" href="namespaceetl.html#af740a9b650d7a3063e9414c3c50ffdb5">etl::is_nothrow_swappable_v</a>&lt; E &gt;) -&gt; void</td></tr>
 <tr class="separator:a4fe1120510dc1c04654e4864a3e34719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ad0236e449e231fa98520bb18a3a6e5d8" id="r_ad0236e449e231fa98520bb18a3a6e5d8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E2</a> &gt; </td></tr>
-<tr class="memitem:ad0236e449e231fa98520bb18a3a6e5d8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad0236e449e231fa98520bb18a3a6e5d8">operator==</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">lhs</a>, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E2</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;<a class="el" href="structetl_1_1bitset.html">rhs</a>) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a></td></tr>
+<tr class="memitem:ad0236e449e231fa98520bb18a3a6e5d8" id="r_ad0236e449e231fa98520bb18a3a6e5d8"><td class="memTemplParams" colspan="2">template&lt;typename E2 &gt; </td></tr>
+<tr class="memitem:ad0236e449e231fa98520bb18a3a6e5d8"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad0236e449e231fa98520bb18a3a6e5d8">operator==</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> const &amp;lhs, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="separator:ad0236e449e231fa98520bb18a3a6e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc29715f4aeff27c974030d748183c47" id="r_abc29715f4aeff27c974030d748183c47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc29715f4aeff27c974030d748183c47">swap</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;<a class="el" href="structetl_1_1bitset.html">x</a>, <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;y) noexcept(noexcept(x.swap(y))) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a> <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="namespaceetl.html#a6a08681ad0c17b00662bfd185a081335">etl::is_swappable_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt;)</td></tr>
+<tr class="memitem:abc29715f4aeff27c974030d748183c47" id="r_abc29715f4aeff27c974030d748183c47"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc29715f4aeff27c974030d748183c47">swap</a> (<a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;x, <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;y) noexcept(noexcept(x.swap(y))) -&gt; void requires(<a class="el" href="namespaceetl.html#a6a08681ad0c17b00662bfd185a081335">etl::is_swappable_v</a>&lt; E &gt;)</td></tr>
 <tr class="separator:abc29715f4aeff27c974030d748183c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -158,10 +158,10 @@ Friends</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Err</a>  = E&gt; <br />
-requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">Err</a>&gt;, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&gt; // <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">Err</a>&gt;, <a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>&gt; // <a class="el" href="structetl_1_1bitset.html">and</a> <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, <a class="el" href="structetl_1_1bitset.html">Err</a>&gt;)</div>
+template&lt;typename Err  = E&gt; <br />
+requires (not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;Err&gt;, <a class="el" href="structetl_1_1unexpected.html">unexpected</a>&gt; // and not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">etl::remove_cvref_t</a>&lt;Err&gt;, <a class="el" href="structetl_1_1in__place__t.html">etl::in_place_t</a>&gt; // and <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;E, Err&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -169,7 +169,7 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" hr
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1unexpected.html">unexpected</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Err</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
+          <td class="paramtype">Err &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -188,10 +188,10 @@ requires (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" hr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <div class="memtemplate">
 template&lt;typename... Args&gt; <br />
-requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>, Args...&gt;</div>
+requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a>&lt;E, Args...&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -204,7 +204,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -222,7 +222,7 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -230,7 +230,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1unexpected.html">unexpected</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -249,7 +249,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -257,7 +257,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1unexpected.html">unexpected</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -277,16 +277,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> error </td>
+          <td class="memname">auto error </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> &amp;&amp; -&gt; <a class="el" href="structetl_1_1bitset.html">E</a>&amp;&amp; </td>
+          <td> &amp;&amp; -&gt; E&amp;&amp; </td>
         </tr>
       </table>
   </td>
@@ -304,16 +304,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> error </td>
+          <td class="memname">auto error </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> &amp; -&gt; <a class="el" href="structetl_1_1bitset.html">E</a>&amp; </td>
+          <td> &amp; -&gt; E&amp; </td>
         </tr>
       </table>
   </td>
@@ -331,16 +331,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> error </td>
+          <td class="memname">auto error </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const &amp;&amp; -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> <a class="el" href="structetl_1_1bitset.html">const</a>&amp;&amp; </td>
+          <td> const &amp;&amp; -&gt; E const&amp;&amp; </td>
         </tr>
       </table>
   </td>
@@ -358,16 +358,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> error </td>
+          <td class="memname">auto error </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const &amp; -&gt; <a class="el" href="structetl_1_1bitset.html">E</a> <a class="el" href="structetl_1_1bitset.html">const</a>&amp; </td>
+          <td> const &amp; -&gt; E const&amp; </td>
         </tr>
       </table>
   </td>
@@ -385,16 +385,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>= </td>
+          <td class="memname">auto operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=<a class="el" href="structetl_1_1bitset.html">default</a></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=default</td>
         </tr>
       </table>
   </td>
@@ -412,16 +412,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>= </td>
+          <td class="memname">auto operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=<a class="el" href="structetl_1_1bitset.html">default</a></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structetl_1_1unexpected.html">unexpected</a> &amp;=default</td>
         </tr>
       </table>
   </td>
@@ -439,16 +439,16 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> swap </td>
+          <td class="memname">auto swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> -&gt; void
     </td>
         </tr>
       </table>
@@ -468,22 +468,22 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E2</a> &gt; </div>
+template&lt;typename E2 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>== </td>
+          <td class="memname">auto operator== </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E2</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E2 &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
     </td>
         </tr>
       </table>
@@ -502,21 +502,21 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">E</a> &gt; </div>
+template&lt;typename E &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> swap </td>
+          <td class="memname">auto swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; <a class="el" href="structetl_1_1bitset.html">E</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>
-        <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="namespaceetl.html#a6a08681ad0c17b00662bfd185a081335">etl::is_swappable_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">E</a>&gt;)
+          <td class="paramtype"><a class="el" href="structetl_1_1unexpected.html">unexpected</a>&lt; E &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) -&gt; void
+        requires(<a class="el" href="namespaceetl.html#a6a08681ad0c17b00662bfd185a081335">etl::is_swappable_v</a>&lt;E&gt;)
     </td>
         </tr>
       </table>
@@ -538,7 +538,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1unexpected.html">unexpected</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -115,9 +115,9 @@ $(function(){initNavTree('structetl_1_1ranges_1_1construct__at__fn.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0cb79286bf0f04df63185f7e4f01dfd2" id="r_a0cb79286bf0f04df63185f7e4f01dfd2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , typename... Args&gt; <br />
-requires <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="structetl_1_1bitset.html">void</a>* ptr, <a class="el" href="structetl_1_1bitset.html">Args</a>&amp;&amp;... args) { ::new (ptr) T(<a class="el" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a>&lt;<a class="el" href="structetl_1_1bitset.html">Args</a>&gt;(args)...); }</td></tr>
-<tr class="memitem:a0cb79286bf0f04df63185f7e4f01dfd2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0cb79286bf0f04df63185f7e4f01dfd2">operator()</a> (T *p, <a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) <a class="el" href="structetl_1_1bitset.html">const</a> -&gt; T *</td></tr>
+<tr class="memitem:a0cb79286bf0f04df63185f7e4f01dfd2" id="r_a0cb79286bf0f04df63185f7e4f01dfd2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; <br />
+requires requires(void* ptr, Args&amp;&amp;... args) { ::new (ptr) T(<a class="el" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a>&lt;Args&gt;(args)...); }</td></tr>
+<tr class="memitem:a0cb79286bf0f04df63185f7e4f01dfd2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0cb79286bf0f04df63185f7e4f01dfd2">operator()</a> (T *p, Args &amp;&amp;... args) const -&gt; T *</td></tr>
 <tr class="separator:a0cb79286bf0f04df63185f7e4f01dfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -127,21 +127,21 @@ requires <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> T , typename... Args&gt; <br />
-requires <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el" href="structetl_1_1bitset.html">void</a>* ptr, <a class="el" href="structetl_1_1bitset.html">Args</a>&amp;&amp;... args) { ::new (ptr) T(<a class="el" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a>&lt;<a class="el" href="structetl_1_1bitset.html">Args</a>&gt;(args)...); }</div>
+template&lt;typename T , typename... Args&gt; <br />
+requires requires(void* ptr, Args&amp;&amp;... args) { ::new (ptr) T(<a class="el" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a>&lt;Args&gt;(args)...); }</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
+          <td class="memname">auto operator() </td>
           <td>(</td>
           <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;) const -&gt; T*
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;) const -&gt; T*
     </td>
         </tr>
       </table>
@@ -163,7 +163,7 @@ requires <a class="el" href="structetl_1_1bitset.html">requires</a>(<a class="el
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1ranges.html">ranges</a></li><li class="navelem"><a class="el" href="structetl_1_1ranges_1_1construct__at__fn.html">construct_at_fn</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

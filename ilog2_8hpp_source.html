@@ -118,13 +118,13 @@ $(function(){initNavTree('ilog2_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">   11</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">Int</a> <a class="code hl_struct" href="structetl_1_1bitset.html">x</a>) <span class="keyword">noexcept</span> -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">Int</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">   11</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">ilog2</a>(Int x) <span class="keyword">noexcept</span> -&gt; Int</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a> = <a class="code hl_struct" href="structetl_1_1bitset.html">Int</a>(0);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">for</span> (; <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> &gt; <a class="code hl_struct" href="structetl_1_1bitset.html">Int</a>(1); <a class="code hl_struct" href="structetl_1_1bitset.html">x</a> &gt;&gt;= <a class="code hl_struct" href="structetl_1_1bitset.html">Int</a>(1)) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        ++<a class="code hl_struct" href="structetl_1_1bitset.html">result</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">auto</span> result = Int(0);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">for</span> (; x &gt; Int(1); x &gt;&gt;= Int(1)) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        ++result;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">result</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -134,14 +134,13 @@ $(function(){initNavTree('ilog2_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a86319ce6c017b8e0cbaed828b6dad2f7"><div class="ttname"><a href="namespaceetl.html#a86319ce6c017b8e0cbaed828b6dad2f7">etl::ilog2</a></div><div class="ttdeci">constexpr auto ilog2(Int x) noexcept -&gt; Int</div><div class="ttdef"><b>Definition</b> ilog2.hpp:11</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_d0070ab6a2620982e003767af1e9a0b5.html">_math</a></li><li class="navelem"><a class="el" href="ilog2_8hpp.html">ilog2.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

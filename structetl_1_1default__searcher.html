@@ -118,14 +118,14 @@ $(function(){initNavTree('structetl_1_1default__searcher.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abdb6cf73d2f8303a2456e7720433cb50" id="r_abdb6cf73d2f8303a2456e7720433cb50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdb6cf73d2f8303a2456e7720433cb50">default_searcher</a> (<a class="el" href="structetl_1_1bitset.html">ForwardIter</a> f, <a class="el" href="structetl_1_1bitset.html">ForwardIter</a> <a class="el" href="structetl_1_1bitset.html">l</a>, <a class="el" href="structetl_1_1bitset.html">Predicate</a> p=<a class="el" href="structetl_1_1bitset.html">Predicate</a>())</td></tr>
+<tr class="memitem:abdb6cf73d2f8303a2456e7720433cb50" id="r_abdb6cf73d2f8303a2456e7720433cb50"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdb6cf73d2f8303a2456e7720433cb50">default_searcher</a> (ForwardIter f, ForwardIter l, Predicate p=Predicate())</td></tr>
 <tr class="separator:abdb6cf73d2f8303a2456e7720433cb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3304362ced68debe93e15bcdfef542" id="r_a0a3304362ced68debe93e15bcdfef542"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a> &gt; </td></tr>
-<tr class="memitem:a0a3304362ced68debe93e15bcdfef542"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a3304362ced68debe93e15bcdfef542">operator()</a> (<a class="el" href="structetl_1_1bitset.html">ForwardIter2</a> f, <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a> <a class="el" href="structetl_1_1bitset.html">l</a>) <a class="el" href="structetl_1_1bitset.html">const</a> -&gt; <a class="el" href="structetl_1_1pair.html">etl::pair</a>&lt; <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a>, <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a> &gt;</td></tr>
+<tr class="memitem:a0a3304362ced68debe93e15bcdfef542" id="r_a0a3304362ced68debe93e15bcdfef542"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIter2 &gt; </td></tr>
+<tr class="memitem:a0a3304362ced68debe93e15bcdfef542"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a3304362ced68debe93e15bcdfef542">operator()</a> (ForwardIter2 f, ForwardIter2 l) const -&gt; <a class="el" href="structetl_1_1pair.html">etl::pair</a>&lt; ForwardIter2, ForwardIter2 &gt;</td></tr>
 <tr class="separator:a0a3304362ced68debe93e15bcdfef542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIter</a>, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Predicate</a> = equal_to&lt;&gt;&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ForwardIter, typename Predicate = equal_to&lt;&gt;&gt;<br />
 struct etl::default_searcher&lt; ForwardIter, Predicate &gt;</div><p>Default searcher. A class suitable for use with Searcher overload of <a class="el" href="group__algorithm.html#gaa6b2f5d7fd6a15ab6fc4d30c1a716a6e">etl::search</a> that delegates the search operation to the pre-C++17 standard library's <a class="el" href="group__algorithm.html#gaa6b2f5d7fd6a15ab6fc4d30c1a716a6e">etl::search</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abdb6cf73d2f8303a2456e7720433cb50" name="abdb6cf73d2f8303a2456e7720433cb50"></a>
@@ -134,7 +134,7 @@ struct etl::default_searcher&lt; ForwardIter, Predicate &gt;</div><p>Default sea
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIter</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Predicate</a>  = equal_to&lt;&gt;&gt; </div>
+template&lt;typename ForwardIter , typename Predicate  = equal_to&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -142,17 +142,17 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
         <tr>
           <td class="memname"><a class="el" href="structetl_1_1default__searcher.html">default_searcher</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">ForwardIter</a></td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+          <td class="paramtype">ForwardIter</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">ForwardIter</a></td>          <td class="paramname"><span class="paramname"><em>l</em></span>, </td>
+          <td class="paramtype">ForwardIter</td>          <td class="paramname"><span class="paramname"><em>l</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Predicate</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="structetl_1_1bitset.html">Predicate</a>()</span>&#160;)</td>
+          <td class="paramtype">Predicate</td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">Predicate()</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -171,22 +171,22 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIter</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Predicate</a>  = equal_to&lt;&gt;&gt; </div>
+template&lt;typename ForwardIter , typename Predicate  = equal_to&lt;&gt;&gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a> &gt; </div>
+template&lt;typename ForwardIter2 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
+          <td class="memname">auto operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">ForwardIter2</a></td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+          <td class="paramtype">ForwardIter2</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">ForwardIter2</a></td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;) const -&gt; <a class="el" href="structetl_1_1pair.html">etl::pair</a>&lt;<a class="el" href="structetl_1_1bitset.html">ForwardIter2</a>, <a class="el" href="structetl_1_1bitset.html">ForwardIter2</a>&gt;
+          <td class="paramtype">ForwardIter2</td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;) const -&gt; <a class="el" href="structetl_1_1pair.html">etl::pair</a>&lt;ForwardIter2, ForwardIter2&gt;
     </td>
         </tr>
       </table>
@@ -208,7 +208,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1default__searcher.html">default_searcher</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -129,9 +129,9 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> f.format(val, fc);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">inline</span> <span class="keyword">auto</span> split_at_next_argument(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a> str) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">etl::pair&lt;etl::string_view, etl::string_view&gt;</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">inline</span> <span class="keyword">auto</span> split_at_next_argument(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a> str) -&gt; <a class="code hl_struct" href="structetl_1_1pair.html">etl::pair&lt;etl::string_view, etl::string_view&gt;</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">using </span>size_type = etl::string_view::size_type;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">using </span>size_type = <a class="code hl_typedef" href="structetl_1_1basic__string__view.html#a35a6612a3895e065eade0f7eb04868b6">etl::string_view::size_type</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* res = <a class="code hl_function" href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a>(<a class="code hl_function" href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">begin</a>(str), <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(str), token_begin);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> (res != <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(str) &amp;&amp; *<a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(res) == token_end) {</div>
@@ -141,11 +141,11 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a944300e491e850f5e82717c7a66b5463">etl::make_pair</a>(first, second);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a944300e491e850f5e82717c7a66b5463">etl::make_pair</a>(str, <a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a>{});</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a944300e491e850f5e82717c7a66b5463">etl::make_pair</a>(str, <a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a>{});</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatContext&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">auto</span> format_escaped_sequences(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a> str, FormatContext&amp; ctx) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">auto</span> format_escaped_sequences(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a> str, FormatContext&amp; ctx) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// Loop as long as escaped sequences are found.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> <span class="keyword">const</span>* first = <a class="code hl_function" href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">begin</a>(str);</div>
@@ -159,7 +159,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> (escapeStart) {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="comment">// Copy upto {{</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            detail::format_argument(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a>(first, openFirst), ctx);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            detail::format_argument(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a>(first, openFirst), ctx);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">// Find sequence }}</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">auto</span> <span class="keyword">const</span>* closeFirst = <a class="code hl_function" href="group__algorithm.html#gaf123f494fccf3d1e9420928c32915189">etl::find</a>(<a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(openSec), <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(str), token_end);</div>
@@ -170,7 +170,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="comment">// Copy everything between {{ ... }}, but only one curly each.</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (escapeClose) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                detail::format_argument(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a>(openSec, closeFirst + 1), ctx);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                detail::format_argument(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a>(openSec, closeFirst + 1), ctx);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                first = closeFirst + 2;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="comment">// No closing &quot;}}&quot; found</span></div>
@@ -179,7 +179,7 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="comment">// No more escaped sequence found, copy rest.</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            detail::format_argument(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a>(first, <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(str)), ctx);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            detail::format_argument(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a>(first, <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(str)), ctx);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
@@ -199,14 +199,16 @@ $(function(){initNavTree('argument_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="agroup__iterator_html_gaeb088ae74a2ec53c8c206de329935df4"><div class="ttname"><a href="group__iterator.html#gaeb088ae74a2ec53c8c206de329935df4">etl::begin</a></div><div class="ttdeci">constexpr auto begin(C &amp;c) -&gt; decltype(c.begin())</div><div class="ttdoc">Returns an iterator to the beginning of the given container c or array array. These templates rely on...</div><div class="ttdef"><b>Definition</b> begin.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html_a944300e491e850f5e82717c7a66b5463"><div class="ttname"><a href="namespaceetl.html#a944300e491e850f5e82717c7a66b5463">etl::make_pair</a></div><div class="ttdeci">constexpr auto make_pair(T1 &amp;&amp;t, T2 &amp;&amp;u) -&gt; pair&lt; decay_t&lt; T1 &gt;, decay_t&lt; T2 &gt; &gt;</div><div class="ttdoc">Creates a etl::pair object, deducing the target type from the types of arguments.</div><div class="ttdef"><b>Definition</b> pair.hpp:164</div></div>
 <div class="ttc" id="apair_8hpp_html"><div class="ttname"><a href="pair_8hpp.html">pair.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1basic__string__view_html"><div class="ttname"><a href="structetl_1_1basic__string__view.html">etl::basic_string_view</a></div><div class="ttdoc">The class template basic_string_view describes an object that can refer to a constant contiguous sequ...</div><div class="ttdef"><b>Definition</b> basic_string_view.hpp:32</div></div>
+<div class="ttc" id="astructetl_1_1basic__string__view_html_a35a6612a3895e065eade0f7eb04868b6"><div class="ttname"><a href="structetl_1_1basic__string__view.html#a35a6612a3895e065eade0f7eb04868b6">etl::basic_string_view::size_type</a></div><div class="ttdeci">etl::size_t size_type</div><div class="ttdef"><b>Definition</b> basic_string_view.hpp:41</div></div>
+<div class="ttc" id="astructetl_1_1pair_html"><div class="ttname"><a href="structetl_1_1pair.html">etl::pair</a></div><div class="ttdoc">etl::pair is a class template that provides a way to store two heterogeneous objects as a single unit...</div><div class="ttdef"><b>Definition</b> pair.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_16b7d14cc1ebca4125843589b43c6666.html">_format</a></li><li class="navelem"><a class="el" href="argument_8hpp.html">argument.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -119,10 +119,10 @@ $(function(){initNavTree('next_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputIt&gt;</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">   14</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">next</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">InputIt</a> <a class="code hl_struct" href="structetl_1_1bitset.html">it</a>, <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;InputIt&gt;::difference_type</a> <a class="code hl_struct" href="structetl_1_1bitset.html">n</a> = 1) -&gt; <a class="code hl_struct" href="structetl_1_1bitset.html">InputIt</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">   14</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">next</a>(InputIt it, <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;InputIt&gt;::difference_type</a> n = 1) -&gt; InputIt</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_function" href="group__iterator.html#gaad815b7c902d91f337c10cb8c6876e87">etl::advance</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">it</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">n</a>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1bitset.html">it</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_function" href="group__iterator.html#gaad815b7c902d91f337c10cb8c6876e87">etl::advance</a>(it, n);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> it;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -134,7 +134,6 @@ $(function(){initNavTree('next_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="agroup__iterator_html_gab5e8085c3345374b117c1dc70edf9d9b"><div class="ttname"><a href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition</b> next.hpp:14</div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +141,7 @@ $(function(){initNavTree('next_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="next_8hpp.html">next.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

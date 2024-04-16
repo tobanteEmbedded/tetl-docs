@@ -117,9 +117,9 @@ $(function(){initNavTree('iswcntrl_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__cwctype.html#gabcb4d7527b43f2bf80b6709558ce8751">   20</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cwctype.html#gabcb4d7527b43f2bf80b6709558ce8751">iswcntrl</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">wint_t</a> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__cwctype.html#gabcb4d7527b43f2bf80b6709558ce8751">   20</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cwctype.html#gabcb4d7527b43f2bf80b6709558ce8751">iswcntrl</a>(<a class="code hl_typedef" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a> ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((<a class="code hl_struct" href="structetl_1_1bitset.html">ch</a> &lt;= <a class="code hl_typedef" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>(0x1F)) || <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a> == <a class="code hl_typedef" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>(0x7F));</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((ch &lt;= <a class="code hl_typedef" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>(0x1F)) || ch == <a class="code hl_typedef" href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">wint_t</a>(0x7F));</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -129,7 +129,6 @@ $(function(){initNavTree('iswcntrl_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="agroup__cwctype_html_gabcb4d7527b43f2bf80b6709558ce8751"><div class="ttname"><a href="group__cwctype.html#gabcb4d7527b43f2bf80b6709558ce8751">etl::iswcntrl</a></div><div class="ttdeci">constexpr auto iswcntrl(wint_t ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given wide character is a control character, i.e. codes 0x00-0x1F and 0x7F and any cont...</div><div class="ttdef"><b>Definition</b> iswcntrl.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_afb4e6bc2deecad0fb678bfe7c838df5e"><div class="ttname"><a href="namespaceetl.html#afb4e6bc2deecad0fb678bfe7c838df5e">etl::wint_t</a></div><div class="ttdeci">unsigned int wint_t</div><div class="ttdef"><b>Definition</b> wint_t.hpp:29</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 <div class="ttc" id="awint__t_8hpp_html"><div class="ttname"><a href="wint__t_8hpp.html">wint_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +136,7 @@ $(function(){initNavTree('iswcntrl_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_883c3072c237bda7b2fc21c7d2dc0e9b.html">_cwctype</a></li><li class="navelem"><a class="el" href="iswcntrl_8hpp.html">iswcntrl.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -118,16 +118,16 @@ $(function(){initNavTree('wcsrchr_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">   15</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">wcsrchr</a>(<span class="keywordtype">wchar_t</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <span class="keywordtype">int</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>) -&gt; <span class="keywordtype">wchar_t</span>*</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">wcsrchr</a>(<span class="keywordtype">wchar_t</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span>*</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> etl::detail::strrchr&lt;wchar_t, etl::size_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> etl::detail::strrchr&lt;wchar_t, etl::size_t&gt;(str, ch);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5ef301df65d76aedef7c3211e00900a2">   24</a></span>[[<a class="code hl_struct" href="structetl_1_1bitset.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">wcsrchr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* <a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <span class="keywordtype">int</span> <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>) -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceetl.html#a5ef301df65d76aedef7c3211e00900a2">   24</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">wcsrchr</a>(<span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* str, <span class="keywordtype">int</span> ch) -&gt; <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>*</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> etl::detail::strrchr&lt;wchar_t const, etl::size_t&gt;(<a class="code hl_struct" href="structetl_1_1bitset.html">str</a>, <a class="code hl_struct" href="structetl_1_1bitset.html">ch</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> etl::detail::strrchr&lt;wchar_t const, etl::size_t&gt;(str, ch);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace etl</span></div>
@@ -136,14 +136,13 @@ $(function(){initNavTree('wcsrchr_8hpp_source.html',''); initResizable(true); })
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_abb75f8bb32c928b359607a41c9f634e5"><div class="ttname"><a href="namespaceetl.html#abb75f8bb32c928b359607a41c9f634e5">etl::wcsrchr</a></div><div class="ttdeci">constexpr auto wcsrchr(wchar_t *str, int ch) -&gt; wchar_t *</div><div class="ttdoc">Finds the last occurrence of the wide character ch in the wide string pointed to by str.</div><div class="ttdef"><b>Definition</b> wcsrchr.hpp:15</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_654767f1f845a43cfb380e17dc7914ff.html">_cwchar</a></li><li class="navelem"><a class="el" href="wcsrchr_8hpp.html">wcsrchr.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

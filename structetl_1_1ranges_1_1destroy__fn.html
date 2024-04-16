@@ -115,13 +115,13 @@ $(function(){initNavTree('structetl_1_1ranges_1_1destroy__fn.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:affed0fa954b1d6248d4c4a0b3e45355b" id="r_affed0fa954b1d6248d4c4a0b3e45355b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">I</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">S</a> &gt; <br />
-requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="namespaceetl.html#afe275d17dd765cd278253e72900c895f">etl::iter_value_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">I</a>&gt;&gt;</td></tr>
-<tr class="memitem:affed0fa954b1d6248d4c4a0b3e45355b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#affed0fa954b1d6248d4c4a0b3e45355b">operator()</a> (<a class="el" href="structetl_1_1bitset.html">I</a> first, <a class="el" href="structetl_1_1bitset.html">S</a> last) <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">I</a></td></tr>
+<tr class="memitem:affed0fa954b1d6248d4c4a0b3e45355b" id="r_affed0fa954b1d6248d4c4a0b3e45355b"><td class="memTemplParams" colspan="2">template&lt;typename I , typename S &gt; <br />
+requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="namespaceetl.html#afe275d17dd765cd278253e72900c895f">etl::iter_value_t</a>&lt;I&gt;&gt;</td></tr>
+<tr class="memitem:affed0fa954b1d6248d4c4a0b3e45355b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#affed0fa954b1d6248d4c4a0b3e45355b">operator()</a> (I first, S last) const noexcept -&gt; I</td></tr>
 <tr class="separator:affed0fa954b1d6248d4c4a0b3e45355b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5061440c6c75621666bb5c066435662e" id="r_a5061440c6c75621666bb5c066435662e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">R</a> &gt; <br />
-requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="group__ranges.html#gaa84b53d13e589cb2c9a404427f9852d6">etl::ranges::range_value_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">R</a>&gt;&gt;</td></tr>
-<tr class="memitem:a5061440c6c75621666bb5c066435662e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5061440c6c75621666bb5c066435662e">operator()</a> (<a class="el" href="structetl_1_1bitset.html">R</a> &amp;&amp;<a class="el" href="structetl_1_1bitset.html">r</a>) <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1bitset.html">auto</a></td></tr>
+<tr class="memitem:a5061440c6c75621666bb5c066435662e" id="r_a5061440c6c75621666bb5c066435662e"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; <br />
+requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="group__ranges.html#gaa84b53d13e589cb2c9a404427f9852d6">etl::ranges::range_value_t</a>&lt;R&gt;&gt;</td></tr>
+<tr class="memitem:a5061440c6c75621666bb5c066435662e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5061440c6c75621666bb5c066435662e">operator()</a> (R &amp;&amp;r) const noexcept -&gt; auto</td></tr>
 <tr class="separator:a5061440c6c75621666bb5c066435662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -131,21 +131,21 @@ requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">I</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">S</a> &gt; <br />
-requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="namespaceetl.html#afe275d17dd765cd278253e72900c895f">etl::iter_value_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">I</a>&gt;&gt;</div>
+template&lt;typename I , typename S &gt; <br />
+requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="namespaceetl.html#afe275d17dd765cd278253e72900c895f">etl::iter_value_t</a>&lt;I&gt;&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
+          <td class="memname">auto operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">I</a></td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+          <td class="paramtype">I</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">S</a></td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;) const -&gt; <a class="el" href="structetl_1_1bitset.html">I</a>
+          <td class="paramtype">S</td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;) const -&gt; I
     </td>
         </tr>
       </table>
@@ -164,17 +164,17 @@ requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">R</a> &gt; <br />
-requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="group__ranges.html#gaa84b53d13e589cb2c9a404427f9852d6">etl::ranges::range_value_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">R</a>&gt;&gt;</div>
+template&lt;typename R &gt; <br />
+requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible</a>&lt;<a class="el" href="group__ranges.html#gaa84b53d13e589cb2c9a404427f9852d6">etl::ranges::range_value_t</a>&lt;R&gt;&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
+          <td class="memname">auto operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">R</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">auto</a> 
+          <td class="paramtype">R &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const -&gt; auto 
     </td>
         </tr>
       </table>
@@ -196,7 +196,7 @@ requires <a class="el" href="conceptetl_1_1destructible.html">etl::destructible<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1ranges.html">ranges</a></li><li class="navelem"><a class="el" href="structetl_1_1ranges_1_1destroy__fn.html">destroy_fn</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 15:37:53 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
