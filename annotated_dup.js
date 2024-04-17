@@ -143,6 +143,7 @@ var annotated_dup =
       [ "bitset", "structetl_1_1bitset.html", "structetl_1_1bitset" ],
       [ "char_traits", "structetl_1_1char__traits.html", null ],
       [ "char_traits< char >", "structetl_1_1char__traits_3_01char_01_4.html", "structetl_1_1char__traits_3_01char_01_4" ],
+      [ "char_traits< char8_t >", "structetl_1_1char__traits_3_01char8__t_01_4.html", "structetl_1_1char__traits_3_01char8__t_01_4" ],
       [ "char_traits< wchar_t >", "structetl_1_1char__traits_3_01wchar__t_01_4.html", "structetl_1_1char__traits_3_01wchar__t_01_4" ],
       [ "common_comparison_category", "structetl_1_1common__comparison__category.html", "structetl_1_1common__comparison__category" ],
       [ "common_reference", "structetl_1_1common__reference.html", null ],

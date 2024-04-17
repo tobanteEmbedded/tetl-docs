@@ -62,7 +62,7 @@ var searchData=
   ['not_5fa_5fstream_59',['not_a_stream',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a6e752b7a04543e5052b2d0dd05eca0fa',1,'etl']]],
   ['not_5fconnected_60',['not_connected',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a69c2dbb5917ca550a862e9c1c839bca1',1,'etl']]],
   ['not_5fenough_5fmemory_61',['not_enough_memory',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243aafdb5594dc3e484fc1bfd7c564d550c1',1,'etl']]],
-  ['not_5feof_62',['not_eof',['../structetl_1_1char__traits_3_01char_01_4.html#a90cfe7ca47b0e7979c2f368d009ec238',1,'etl::char_traits&lt; char &gt;::not_eof()'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#adbd62c7d3a9de4e04e328b627ac4f997',1,'etl::char_traits&lt; wchar_t &gt;::not_eof()']]],
+  ['not_5feof_62',['not_eof',['../structetl_1_1char__traits_3_01char_01_4.html#a90cfe7ca47b0e7979c2f368d009ec238',1,'etl::char_traits&lt; char &gt;::not_eof()'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#adbd62c7d3a9de4e04e328b627ac4f997',1,'etl::char_traits&lt; wchar_t &gt;::not_eof()'],['../structetl_1_1char__traits_3_01char8__t_01_4.html#a90cfe7ca47b0e7979c2f368d009ec238',1,'etl::char_traits&lt; char8_t &gt;::not_eof()']]],
   ['not_5fequal_5fto_63',['not_equal_to',['../structetl_1_1not__equal__to.html',1,'etl']]],
   ['not_5fequal_5fto_2ehpp_64',['not_equal_to.hpp',['../not__equal__to_8hpp.html',1,'']]],
   ['not_5fequal_5fto_3c_20void_20_3e_65',['not_equal_to&lt; void &gt;',['../structetl_1_1not__equal__to_3_01void_01_4.html',1,'etl']]],

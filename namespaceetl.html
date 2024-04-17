@@ -265,6 +265,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1char__traits_3_01char_01_4.html">char_traits&lt; char &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializations of <a class="el" href="structetl_1_1char__traits.html" title="The char_traits class is a traits class template that abstracts basic character and string operations...">char_traits</a> for type char.  <a href="structetl_1_1char__traits_3_01char_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1char__traits_3_01char8__t_01_4.html">char_traits&lt; char8_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializations of <a class="el" href="structetl_1_1char__traits.html" title="The char_traits class is a traits class template that abstracts basic character and string operations...">char_traits</a> for type char8_t.  <a href="structetl_1_1char__traits_3_01char8__t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1char__traits_3_01wchar__t_01_4.html">char_traits&lt; wchar_t &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1common__comparison__category.html">common_comparison_category</a></td></tr>
@@ -1464,6 +1467,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ad8a7ab76e5b59bba68d1362a0cbff96c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad8a7ab76e5b59bba68d1362a0cbff96c">inplace_string</a> = <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt;char, Capacity&gt;</td></tr>
 <tr class="memdesc:ad8a7ab76e5b59bba68d1362a0cbff96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a <a class="el" href="structetl_1_1basic__inplace__string.html" title="basic_inplace_string class with fixed size capacity.">basic_inplace_string</a> using 'char'.  <br /></td></tr>
 <tr class="separator:ad8a7ab76e5b59bba68d1362a0cbff96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2461b338938a1fc7244f1c5fcc2efc21" id="r_a2461b338938a1fc7244f1c5fcc2efc21"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity&gt; </td></tr>
+<tr class="memitem:a2461b338938a1fc7244f1c5fcc2efc21"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2461b338938a1fc7244f1c5fcc2efc21">inplace_u8string</a> = <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt;char8_t, Capacity&gt;</td></tr>
+<tr class="memdesc:a2461b338938a1fc7244f1c5fcc2efc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a <a class="el" href="structetl_1_1basic__inplace__string.html" title="basic_inplace_string class with fixed size capacity.">basic_inplace_string</a> using 'char8_t'.  <br /></td></tr>
+<tr class="separator:a2461b338938a1fc7244f1c5fcc2efc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e4d364842c4ff48aed1de99ba3cf122" id="r_a9e4d364842c4ff48aed1de99ba3cf122"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:a9e4d364842c4ff48aed1de99ba3cf122"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9e4d364842c4ff48aed1de99ba3cf122">inplace_wstring</a> = <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt;wchar_t, Capacity&gt;</td></tr>
 <tr class="memdesc:a9e4d364842c4ff48aed1de99ba3cf122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for a <a class="el" href="structetl_1_1basic__inplace__string.html" title="basic_inplace_string class with fixed size capacity.">basic_inplace_string</a> using 'wchar_t'.  <br /></td></tr>
@@ -3091,16 +3098,13 @@ requires <a class="el" href="#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer
 <tr class="memitem:a0f06ce36c25f48f7c4d49f07810219cb"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0f06ce36c25f48f7c4d49f07810219cb">operator&lt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a0f06ce36c25f48f7c4d49f07810219cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two views. All comparisons are done via the compare() member function (which itself is defined in terms of Traits::compare()):  <br /></td></tr>
 <tr class="separator:a0f06ce36c25f48f7c4d49f07810219cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b4ff70a86050542607bbe10515ce6a" id="r_a31b4ff70a86050542607bbe10515ce6a"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
-<tr class="memitem:a31b4ff70a86050542607bbe10515ce6a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a31b4ff70a86050542607bbe10515ce6a">operator&lt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a31b4ff70a86050542607bbe10515ce6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a91fb07baa63eccd169f5c2b57f3f30" id="r_a0a91fb07baa63eccd169f5c2b57f3f30"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
+<tr class="memitem:a0a91fb07baa63eccd169f5c2b57f3f30"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a91fb07baa63eccd169f5c2b57f3f30">operator&lt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:a0a91fb07baa63eccd169f5c2b57f3f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571d0698767bc83dd12cd1d4d3dd9a9c" id="r_a571d0698767bc83dd12cd1d4d3dd9a9c"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:a571d0698767bc83dd12cd1d4d3dd9a9c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a571d0698767bc83dd12cd1d4d3dd9a9c">operator&lt;</a> (CharT const *lhs, <a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a571d0698767bc83dd12cd1d4d3dd9a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
 <tr class="separator:a571d0698767bc83dd12cd1d4d3dd9a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6034951d763ffd6c29af4c172b8a4fa" id="r_ac6034951d763ffd6c29af4c172b8a4fa"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
-<tr class="memitem:ac6034951d763ffd6c29af4c172b8a4fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac6034951d763ffd6c29af4c172b8a4fa">operator&lt;</a> (<a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:ac6034951d763ffd6c29af4c172b8a4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6435b7c6bb6e776d7d7b22bc36f3a364" id="r_a6435b7c6bb6e776d7d7b22bc36f3a364"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:a6435b7c6bb6e776d7d7b22bc36f3a364"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6435b7c6bb6e776d7d7b22bc36f3a364">operator&lt;</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;lhs, CharT const *rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a6435b7c6bb6e776d7d7b22bc36f3a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
@@ -3127,6 +3131,9 @@ requires <a class="el" href="#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer
 <tr class="memitem:ab892f9c1b557a16dd61daa9664feafda"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab892f9c1b557a16dd61daa9664feafda">operator&lt;</a> (<a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;lhs, <a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ab892f9c1b557a16dd61daa9664feafda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of two vectors.  <br /></td></tr>
 <tr class="separator:ab892f9c1b557a16dd61daa9664feafda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63eef2eca864cfa354cda4b9aca3cc0e" id="r_a63eef2eca864cfa354cda4b9aca3cc0e"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
+<tr class="memitem:a63eef2eca864cfa354cda4b9aca3cc0e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a63eef2eca864cfa354cda4b9aca3cc0e">operator&lt;</a> (<a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:a63eef2eca864cfa354cda4b9aca3cc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36eb9271474c81cef432c9a2b4afbee6" id="r_a36eb9271474c81cef432c9a2b4afbee6"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> Int&gt; </td></tr>
 <tr class="memitem:a36eb9271474c81cef432c9a2b4afbee6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a36eb9271474c81cef432c9a2b4afbee6">operator&lt;&lt;</a> (<a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a> b, Int shift) noexcept -&gt; <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a></td></tr>
 <tr class="memdesc:a36eb9271474c81cef432c9a2b4afbee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &lt;&lt; shift);</code>  <br /></td></tr>
@@ -3139,16 +3146,13 @@ requires <a class="el" href="#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer
 <tr class="memitem:aca8da4539b1ec2706c6d40b6887f1caf"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aca8da4539b1ec2706c6d40b6887f1caf">operator&lt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:aca8da4539b1ec2706c6d40b6887f1caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two views. All comparisons are done via the compare() member function (which itself is defined in terms of Traits::compare()):  <br /></td></tr>
 <tr class="separator:aca8da4539b1ec2706c6d40b6887f1caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f4c2d3927fa63ba06f2d2b4118dcee" id="r_af5f4c2d3927fa63ba06f2d2b4118dcee"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
-<tr class="memitem:af5f4c2d3927fa63ba06f2d2b4118dcee"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af5f4c2d3927fa63ba06f2d2b4118dcee">operator&lt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:af5f4c2d3927fa63ba06f2d2b4118dcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4930de6f8d3421248b0e8755553b55e7" id="r_a4930de6f8d3421248b0e8755553b55e7"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
+<tr class="memitem:a4930de6f8d3421248b0e8755553b55e7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4930de6f8d3421248b0e8755553b55e7">operator&lt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:a4930de6f8d3421248b0e8755553b55e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168c032d92366a1e3a01fd042f1bdd4b" id="r_a168c032d92366a1e3a01fd042f1bdd4b"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:a168c032d92366a1e3a01fd042f1bdd4b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a168c032d92366a1e3a01fd042f1bdd4b">operator&lt;=</a> (CharT const *lhs, <a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a168c032d92366a1e3a01fd042f1bdd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
 <tr class="separator:a168c032d92366a1e3a01fd042f1bdd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c5366b5a3a6b4e66025f911af5370d" id="r_af2c5366b5a3a6b4e66025f911af5370d"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
-<tr class="memitem:af2c5366b5a3a6b4e66025f911af5370d"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af2c5366b5a3a6b4e66025f911af5370d">operator&lt;=</a> (<a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:af2c5366b5a3a6b4e66025f911af5370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c452fa081a792d415bada3098142f2c" id="r_a6c452fa081a792d415bada3098142f2c"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:a6c452fa081a792d415bada3098142f2c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6c452fa081a792d415bada3098142f2c">operator&lt;=</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;lhs, CharT const *rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a6c452fa081a792d415bada3098142f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
@@ -3174,6 +3178,9 @@ requires <a class="el" href="#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer
 <tr class="memitem:a894460b393d2ac20c8b8f033322ff230" id="r_a894460b393d2ac20c8b8f033322ff230"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:a894460b393d2ac20c8b8f033322ff230"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a894460b393d2ac20c8b8f033322ff230">operator&lt;=</a> (<a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;lhs, <a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:a894460b393d2ac20c8b8f033322ff230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877d6d9cfe0217502daf254ff681587e" id="r_a877d6d9cfe0217502daf254ff681587e"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
+<tr class="memitem:a877d6d9cfe0217502daf254ff681587e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a877d6d9cfe0217502daf254ff681587e">operator&lt;=</a> (<a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:a877d6d9cfe0217502daf254ff681587e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a674ed01bb2ebe56cb0e6e6cb2dcec801" id="r_a674ed01bb2ebe56cb0e6e6cb2dcec801"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits &gt; </td></tr>
 <tr class="memitem:a674ed01bb2ebe56cb0e6e6cb2dcec801"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a674ed01bb2ebe56cb0e6e6cb2dcec801">operator==</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a674ed01bb2ebe56cb0e6e6cb2dcec801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two views. All comparisons are done via the compare() member function (which itself is defined in terms of Traits::compare()):  <br /></td></tr>
@@ -3243,16 +3250,13 @@ requires (sizeof...(Ts) == sizeof...(Us))</td></tr>
 <tr class="memitem:ab12960d02aafe38c90bc1e149d6ac902"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab12960d02aafe38c90bc1e149d6ac902">operator&gt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ab12960d02aafe38c90bc1e149d6ac902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two views. All comparisons are done via the compare() member function (which itself is defined in terms of Traits::compare()):  <br /></td></tr>
 <tr class="separator:ab12960d02aafe38c90bc1e149d6ac902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6a87083f5571c7807df03ffc059630" id="r_a9d6a87083f5571c7807df03ffc059630"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
-<tr class="memitem:a9d6a87083f5571c7807df03ffc059630"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9d6a87083f5571c7807df03ffc059630">operator&gt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a9d6a87083f5571c7807df03ffc059630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5826956ba6015a9c62fbc77edfd938" id="r_a7a5826956ba6015a9c62fbc77edfd938"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
+<tr class="memitem:a7a5826956ba6015a9c62fbc77edfd938"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7a5826956ba6015a9c62fbc77edfd938">operator&gt;</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:a7a5826956ba6015a9c62fbc77edfd938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a02eaf1df39c8c9bf6616e9d9297c7" id="r_a19a02eaf1df39c8c9bf6616e9d9297c7"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:a19a02eaf1df39c8c9bf6616e9d9297c7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a19a02eaf1df39c8c9bf6616e9d9297c7">operator&gt;</a> (CharT const *lhs, <a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a19a02eaf1df39c8c9bf6616e9d9297c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
 <tr class="separator:a19a02eaf1df39c8c9bf6616e9d9297c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e6560b526961ea9007c3da161e9937" id="r_a60e6560b526961ea9007c3da161e9937"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
-<tr class="memitem:a60e6560b526961ea9007c3da161e9937"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a60e6560b526961ea9007c3da161e9937">operator&gt;</a> (<a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a60e6560b526961ea9007c3da161e9937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad834ca81bce076e5e37bd38d124fbbda" id="r_ad834ca81bce076e5e37bd38d124fbbda"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity1&gt; </td></tr>
 <tr class="memitem:ad834ca81bce076e5e37bd38d124fbbda"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad834ca81bce076e5e37bd38d124fbbda">operator&gt;</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity1, Traits &gt; const &amp;lhs, CharT const *rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ad834ca81bce076e5e37bd38d124fbbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
@@ -3278,20 +3282,20 @@ requires (sizeof...(Ts) == sizeof...(Us))</td></tr>
 <tr class="memitem:ab897f8f3641b27de2e08d2d16563a2c2" id="r_ab897f8f3641b27de2e08d2d16563a2c2"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:ab897f8f3641b27de2e08d2d16563a2c2"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab897f8f3641b27de2e08d2d16563a2c2">operator&gt;</a> (<a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;lhs, <a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:ab897f8f3641b27de2e08d2d16563a2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef16b59993b8d2be8f8502d7d4c09386" id="r_aef16b59993b8d2be8f8502d7d4c09386"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
+<tr class="memitem:aef16b59993b8d2be8f8502d7d4c09386"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aef16b59993b8d2be8f8502d7d4c09386">operator&gt;</a> (<a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:aef16b59993b8d2be8f8502d7d4c09386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab860da8e7c0639c518a775ea7e61fc66" id="r_ab860da8e7c0639c518a775ea7e61fc66"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits &gt; </td></tr>
 <tr class="memitem:ab860da8e7c0639c518a775ea7e61fc66"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab860da8e7c0639c518a775ea7e61fc66">operator&gt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ab860da8e7c0639c518a775ea7e61fc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two views. All comparisons are done via the compare() member function (which itself is defined in terms of Traits::compare()):  <br /></td></tr>
 <tr class="separator:ab860da8e7c0639c518a775ea7e61fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986a09147f5583387546f97c46f51417" id="r_a986a09147f5583387546f97c46f51417"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
-<tr class="memitem:a986a09147f5583387546f97c46f51417"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a986a09147f5583387546f97c46f51417">operator&gt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a986a09147f5583387546f97c46f51417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8e1d90e1ed05c4104f6f6d03471d3f" id="r_aea8e1d90e1ed05c4104f6f6d03471d3f"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 2&gt; </td></tr>
+<tr class="memitem:aea8e1d90e1ed05c4104f6f6d03471d3f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aea8e1d90e1ed05c4104f6f6d03471d3f">operator&gt;=</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; lhs, <a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:aea8e1d90e1ed05c4104f6f6d03471d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926a024f13c49393549366cb074449cb" id="r_a926a024f13c49393549366cb074449cb"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:a926a024f13c49393549366cb074449cb"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a926a024f13c49393549366cb074449cb">operator&gt;=</a> (CharT const *lhs, <a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity, Traits &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a926a024f13c49393549366cb074449cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
 <tr class="separator:a926a024f13c49393549366cb074449cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c2363f1e372936d877c5d36e3c60fd" id="r_af2c2363f1e372936d877c5d36e3c60fd"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
-<tr class="memitem:af2c2363f1e372936d877c5d36e3c60fd"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af2c2363f1e372936d877c5d36e3c60fd">operator&gt;=</a> (<a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:af2c2363f1e372936d877c5d36e3c60fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add94f74715c924f9a96904acdea72bc9" id="r_add94f74715c924f9a96904acdea72bc9"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:add94f74715c924f9a96904acdea72bc9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#add94f74715c924f9a96904acdea72bc9">operator&gt;=</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a>&lt; CharT, Capacity, Traits &gt; const &amp;lhs, CharT const *rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:add94f74715c924f9a96904acdea72bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of a string with another string or a null-terminated array of CharT.  <br /></td></tr>
@@ -3317,6 +3321,9 @@ requires (sizeof...(Ts) == sizeof...(Us))</td></tr>
 <tr class="memitem:a5beff690dcaa87cb11a10e760c1d0211" id="r_a5beff690dcaa87cb11a10e760c1d0211"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe">size_t</a> Capacity&gt; </td></tr>
 <tr class="memitem:a5beff690dcaa87cb11a10e760c1d0211"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5beff690dcaa87cb11a10e760c1d0211">operator&gt;=</a> (<a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;lhs, <a class="el" href="structetl_1_1static__vector.html">static_vector</a>&lt; T, Capacity &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:a5beff690dcaa87cb11a10e760c1d0211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32207f7f29ede28988ea0285bc749ea" id="r_ac32207f7f29ede28988ea0285bc749ea"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits , int  = 1&gt; </td></tr>
+<tr class="memitem:ac32207f7f29ede28988ea0285bc749ea"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac32207f7f29ede28988ea0285bc749ea">operator&gt;=</a> (<a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt; lhs, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; rhs) noexcept -&gt; bool</td></tr>
+<tr class="separator:ac32207f7f29ede28988ea0285bc749ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51eea63a0ce9f777a6682aaf90f48696" id="r_a51eea63a0ce9f777a6682aaf90f48696"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> Int&gt; </td></tr>
 <tr class="memitem:a51eea63a0ce9f777a6682aaf90f48696"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a51eea63a0ce9f777a6682aaf90f48696">operator&gt;&gt;</a> (<a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a> b, Int shift) noexcept -&gt; <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a></td></tr>
 <tr class="memdesc:a51eea63a0ce9f777a6682aaf90f48696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>(static_cast&lt;unsigned int&gt;(b) &gt;&gt; shift);</code>  <br /></td></tr>
@@ -5337,6 +5344,24 @@ template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t<
 </div><div class="memdoc">
 
 <p>Typedef for a <a class="el" href="structetl_1_1basic__inplace__string.html" title="basic_inplace_string class with fixed size capacity.">basic_inplace_string</a> using 'char'. </p>
+
+</div>
+</div>
+<a id="a2461b338938a1fc7244f1c5fcc2efc21" name="a2461b338938a1fc7244f1c5fcc2efc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2461b338938a1fc7244f1c5fcc2efc21">&#9670;&#160;</a></span>inplace_u8string</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a2461b338938a1fc7244f1c5fcc2efc21">inplace_u8string</a> = <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt;char8_t, Capacity&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typedef for a <a class="el" href="structetl_1_1basic__inplace__string.html" title="basic_inplace_string class with fixed size capacity.">basic_inplace_string</a> using 'char8_t'. </p>
 
 </div>
 </div>
@@ -11132,8 +11157,8 @@ template&lt;typename Char , typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="a31b4ff70a86050542607bbe10515ce6a" name="a31b4ff70a86050542607bbe10515ce6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31b4ff70a86050542607bbe10515ce6a">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/11]</span></h2>
+<a id="a0a91fb07baa63eccd169f5c2b57f3f30" name="a0a91fb07baa63eccd169f5c2b57f3f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a91fb07baa63eccd169f5c2b57f3f30">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11151,7 +11176,7 @@ template&lt;typename Char , typename Traits , int  = 2&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
 </td>
         </tr>
       </table>
@@ -11199,40 +11224,8 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 
 </div>
 </div>
-<a id="ac6034951d763ffd6c29af4c172b8a4fa" name="ac6034951d763ffd6c29af4c172b8a4fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6034951d763ffd6c29af4c172b8a4fa">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[4/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , typename Traits , int  = 1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6435b7c6bb6e776d7d7b22bc36f3a364" name="a6435b7c6bb6e776d7d7b22bc36f3a364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6435b7c6bb6e776d7d7b22bc36f3a364">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6435b7c6bb6e776d7d7b22bc36f3a364">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11267,7 +11260,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="ab4cd653fa75caba7b24defbc611c6f71" name="ab4cd653fa75caba7b24defbc611c6f71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4cd653fa75caba7b24defbc611c6f71">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4cd653fa75caba7b24defbc611c6f71">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11301,7 +11294,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="a86b87a87e119f906f153eb7a9dd4b27f" name="a86b87a87e119f906f153eb7a9dd4b27f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86b87a87e119f906f153eb7a9dd4b27f">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b87a87e119f906f153eb7a9dd4b27f">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11335,7 +11328,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="acc3d8b9402fd47ee81c43ca9621035b7" name="acc3d8b9402fd47ee81c43ca9621035b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc3d8b9402fd47ee81c43ca9621035b7">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3d8b9402fd47ee81c43ca9621035b7">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11365,7 +11358,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a1e4f1579948c0050989b6bc4d56f0862" name="a1e4f1579948c0050989b6bc4d56f0862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e4f1579948c0050989b6bc4d56f0862">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4f1579948c0050989b6bc4d56f0862">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11399,7 +11392,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="ad49df96265d6364140d73a8656425763" name="ad49df96265d6364140d73a8656425763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad49df96265d6364140d73a8656425763">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49df96265d6364140d73a8656425763">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11434,7 +11427,7 @@ template&lt;typename Key , <a class="el" href="#aee50235c04ef643cb7502785393220f
 </div>
 </div>
 <a id="ab892f9c1b557a16dd61daa9664feafda" name="ab892f9c1b557a16dd61daa9664feafda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab892f9c1b557a16dd61daa9664feafda">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab892f9c1b557a16dd61daa9664feafda">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11465,6 +11458,38 @@ template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe"
 
 <p>Compares the contents of two vectors. </p>
 <p>Compares the contents of lhs and rhs lexicographically. The comparison is performed by a function equivalent to lexicographical_compare. </p>
+
+</div>
+</div>
+<a id="a63eef2eca864cfa354cda4b9aca3cc0e" name="a63eef2eca864cfa354cda4b9aca3cc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63eef2eca864cfa354cda4b9aca3cc0e">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Traits , int  = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -11572,8 +11597,8 @@ template&lt;typename Char , typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="af5f4c2d3927fa63ba06f2d2b4118dcee" name="af5f4c2d3927fa63ba06f2d2b4118dcee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f4c2d3927fa63ba06f2d2b4118dcee">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[2/11]</span></h2>
+<a id="a4930de6f8d3421248b0e8755553b55e7" name="a4930de6f8d3421248b0e8755553b55e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4930de6f8d3421248b0e8755553b55e7">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11591,7 +11616,7 @@ template&lt;typename Char , typename Traits , int  = 2&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
 </td>
         </tr>
       </table>
@@ -11639,40 +11664,8 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 
 </div>
 </div>
-<a id="af2c5366b5a3a6b4e66025f911af5370d" name="af2c5366b5a3a6b4e66025f911af5370d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c5366b5a3a6b4e66025f911af5370d">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[4/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , typename Traits , int  = 1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6c452fa081a792d415bada3098142f2c" name="a6c452fa081a792d415bada3098142f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c452fa081a792d415bada3098142f2c">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c452fa081a792d415bada3098142f2c">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11707,7 +11700,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="a40dafd7cae83ec90b947ed85149a4b38" name="a40dafd7cae83ec90b947ed85149a4b38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40dafd7cae83ec90b947ed85149a4b38">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a40dafd7cae83ec90b947ed85149a4b38">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11741,7 +11734,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="ab26706133b16070592575cd905122691" name="ab26706133b16070592575cd905122691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26706133b16070592575cd905122691">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26706133b16070592575cd905122691">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11775,7 +11768,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a4e8fec49a7e24b2cb1f6dc5b738b1daa" name="a4e8fec49a7e24b2cb1f6dc5b738b1daa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e8fec49a7e24b2cb1f6dc5b738b1daa">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8fec49a7e24b2cb1f6dc5b738b1daa">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11805,7 +11798,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a5a36c94057cb8199ed38d8d08fd67ef5" name="a5a36c94057cb8199ed38d8d08fd67ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a36c94057cb8199ed38d8d08fd67ef5">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a36c94057cb8199ed38d8d08fd67ef5">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11839,7 +11832,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="acf24c3b1cefb36e0c44f1cfaf6bf3f61" name="acf24c3b1cefb36e0c44f1cfaf6bf3f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf24c3b1cefb36e0c44f1cfaf6bf3f61">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acf24c3b1cefb36e0c44f1cfaf6bf3f61">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11874,7 +11867,7 @@ template&lt;typename Key , <a class="el" href="#aee50235c04ef643cb7502785393220f
 </div>
 </div>
 <a id="a894460b393d2ac20c8b8f033322ff230" name="a894460b393d2ac20c8b8f033322ff230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a894460b393d2ac20c8b8f033322ff230">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a894460b393d2ac20c8b8f033322ff230">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11899,6 +11892,38 @@ template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe"
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a877d6d9cfe0217502daf254ff681587e" name="a877d6d9cfe0217502daf254ff681587e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a877d6d9cfe0217502daf254ff681587e">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Traits , int  = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -12543,8 +12568,8 @@ template&lt;typename Char , typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="a9d6a87083f5571c7807df03ffc059630" name="a9d6a87083f5571c7807df03ffc059630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6a87083f5571c7807df03ffc059630">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[2/11]</span></h2>
+<a id="a7a5826956ba6015a9c62fbc77edfd938" name="a7a5826956ba6015a9c62fbc77edfd938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5826956ba6015a9c62fbc77edfd938">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12562,7 +12587,7 @@ template&lt;typename Char , typename Traits , int  = 2&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
 </td>
         </tr>
       </table>
@@ -12610,40 +12635,8 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 
 </div>
 </div>
-<a id="a60e6560b526961ea9007c3da161e9937" name="a60e6560b526961ea9007c3da161e9937"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60e6560b526961ea9007c3da161e9937">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[4/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , typename Traits , int  = 1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad834ca81bce076e5e37bd38d124fbbda" name="ad834ca81bce076e5e37bd38d124fbbda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad834ca81bce076e5e37bd38d124fbbda">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad834ca81bce076e5e37bd38d124fbbda">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12678,7 +12671,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="a874855bcecdef2ce1a2b18ee560f4875" name="a874855bcecdef2ce1a2b18ee560f4875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a874855bcecdef2ce1a2b18ee560f4875">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a874855bcecdef2ce1a2b18ee560f4875">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12712,7 +12705,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="aca4156f3a7bdd78f42dba049d9cd2a7f" name="aca4156f3a7bdd78f42dba049d9cd2a7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca4156f3a7bdd78f42dba049d9cd2a7f">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4156f3a7bdd78f42dba049d9cd2a7f">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12746,7 +12739,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a5f071a704146a7adbb1dc8186e6cd184" name="a5f071a704146a7adbb1dc8186e6cd184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f071a704146a7adbb1dc8186e6cd184">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f071a704146a7adbb1dc8186e6cd184">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12776,7 +12769,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="aba18e7582c10621006e4e0cbc7ad4e4a" name="aba18e7582c10621006e4e0cbc7ad4e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba18e7582c10621006e4e0cbc7ad4e4a">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba18e7582c10621006e4e0cbc7ad4e4a">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12810,7 +12803,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="a17ccbb17eca7af36ce1a29e8d176f165" name="a17ccbb17eca7af36ce1a29e8d176f165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17ccbb17eca7af36ce1a29e8d176f165">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ccbb17eca7af36ce1a29e8d176f165">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12845,7 +12838,7 @@ template&lt;typename Key , <a class="el" href="#aee50235c04ef643cb7502785393220f
 </div>
 </div>
 <a id="ab897f8f3641b27de2e08d2d16563a2c2" name="ab897f8f3641b27de2e08d2d16563a2c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab897f8f3641b27de2e08d2d16563a2c2">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab897f8f3641b27de2e08d2d16563a2c2">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12870,6 +12863,38 @@ template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe"
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef16b59993b8d2be8f8502d7d4c09386" name="aef16b59993b8d2be8f8502d7d4c09386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef16b59993b8d2be8f8502d7d4c09386">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Traits , int  = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -12911,8 +12936,8 @@ template&lt;typename Char , typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="a986a09147f5583387546f97c46f51417" name="a986a09147f5583387546f97c46f51417"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a986a09147f5583387546f97c46f51417">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[2/11]</span></h2>
+<a id="aea8e1d90e1ed05c4104f6f6d03471d3f" name="aea8e1d90e1ed05c4104f6f6d03471d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8e1d90e1ed05c4104f6f6d03471d3f">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12930,7 +12955,7 @@ template&lt;typename Char , typename Traits , int  = 2&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
 </td>
         </tr>
       </table>
@@ -12978,40 +13003,8 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 
 </div>
 </div>
-<a id="af2c2363f1e372936d877c5d36e3c60fd" name="af2c2363f1e372936d877c5d36e3c60fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c2363f1e372936d877c5d36e3c60fd">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[4/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , typename Traits , int  = 1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="add94f74715c924f9a96904acdea72bc9" name="add94f74715c924f9a96904acdea72bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add94f74715c924f9a96904acdea72bc9">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#add94f74715c924f9a96904acdea72bc9">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13046,7 +13039,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="a5d74379e90ba804afd1c2f9739b7d9d7" name="a5d74379e90ba804afd1c2f9739b7d9d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d74379e90ba804afd1c2f9739b7d9d7">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d74379e90ba804afd1c2f9739b7d9d7">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13080,7 +13073,7 @@ template&lt;typename CharT , typename Traits , <a class="el" href="#aee50235c04e
 </div>
 </div>
 <a id="adada3b76df2e6fc502cf397340f36c22" name="adada3b76df2e6fc502cf397340f36c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adada3b76df2e6fc502cf397340f36c22">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adada3b76df2e6fc502cf397340f36c22">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13114,7 +13107,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a9a11fea942b05530889b9e1944f07147" name="a9a11fea942b05530889b9e1944f07147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a11fea942b05530889b9e1944f07147">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a11fea942b05530889b9e1944f07147">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13144,7 +13137,7 @@ template&lt;typename Iter1 , typename Iter2 &gt; </div>
 </div>
 </div>
 <a id="a8f52394fdd7dcf3de62c6201ba727716" name="a8f52394fdd7dcf3de62c6201ba727716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f52394fdd7dcf3de62c6201ba727716">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f52394fdd7dcf3de62c6201ba727716">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13178,7 +13171,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div>
 </div>
 <a id="adb7a5ebdf6dec990fea752e60d99fc2c" name="adb7a5ebdf6dec990fea752e60d99fc2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7a5ebdf6dec990fea752e60d99fc2c">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7a5ebdf6dec990fea752e60d99fc2c">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13213,7 +13206,7 @@ template&lt;typename Key , <a class="el" href="#aee50235c04ef643cb7502785393220f
 </div>
 </div>
 <a id="a5beff690dcaa87cb11a10e760c1d0211" name="a5beff690dcaa87cb11a10e760c1d0211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5beff690dcaa87cb11a10e760c1d0211">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5beff690dcaa87cb11a10e760c1d0211">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13238,6 +13231,38 @@ template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe"
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac32207f7f29ede28988ea0285bc749ea" name="ac32207f7f29ede28988ea0285bc749ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32207f7f29ede28988ea0285bc749ea">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Traits , int  = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -18914,7 +18939,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Tue Apr 16 2024 22:54:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 17 2024 01:31:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

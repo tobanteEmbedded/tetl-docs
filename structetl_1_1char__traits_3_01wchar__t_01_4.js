@@ -1,6 +1,7 @@
 var structetl_1_1char__traits_3_01wchar__t_01_4 =
 [
     [ "char_type", "structetl_1_1char__traits_3_01wchar__t_01_4.html#a7f44837737e9d434eecfad8593b9878d", null ],
+    [ "comparison_category", "structetl_1_1char__traits_3_01wchar__t_01_4.html#a560c41f75a7ed5193757e35c0c8e1abe", null ],
     [ "int_type", "structetl_1_1char__traits_3_01wchar__t_01_4.html#afb60d3029d9620b4e7bea94cd4f782d6", null ],
     [ "off_type", "structetl_1_1char__traits_3_01wchar__t_01_4.html#a1f913e9bcc697e6ef5d34ecf1a894b7b", null ],
     [ "assign", "structetl_1_1char__traits_3_01wchar__t_01_4.html#a5299fd942d25632306821a426e052269", null ],
