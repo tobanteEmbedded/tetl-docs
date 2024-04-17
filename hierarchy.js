@@ -61,6 +61,12 @@ var hierarchy =
     [ "char_traits_base< char, int, -1 >", null, [
       [ "char_traits< char >", "structetl_1_1char__traits_3_01char_01_4.html", null ]
     ] ],
+    [ "char_traits_base< char16_t, uint_least16_t, uint_least16_t(0xFFFF)>", null, [
+      [ "char_traits< char16_t >", "structetl_1_1char__traits_3_01char16__t_01_4.html", null ]
+    ] ],
+    [ "char_traits_base< char32_t, uint_least32_t, uint_least32_t(0xFFFFFFFF)>", null, [
+      [ "char_traits< char32_t >", "structetl_1_1char__traits_3_01char32__t_01_4.html", null ]
+    ] ],
     [ "char_traits_base< char8_t, unsigned, static_cast< unsigned >(-1)>", null, [
       [ "char_traits< char8_t >", "structetl_1_1char__traits_3_01char8__t_01_4.html", null ]
     ] ],
