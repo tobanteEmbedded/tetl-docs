@@ -1,6 +1,11 @@
 var basic__inplace__string_8hpp =
 [
     [ "basic_inplace_string< CharT, Capacity, Traits >", "structetl_1_1basic__inplace__string.html", "structetl_1_1basic__inplace__string" ],
+    [ "inplace_string", "basic__inplace__string_8hpp.html#ad8a7ab76e5b59bba68d1362a0cbff96c", null ],
+    [ "inplace_u16string", "basic__inplace__string_8hpp.html#a6a58379f9b3bb2b78864258270695746", null ],
+    [ "inplace_u32string", "basic__inplace__string_8hpp.html#a577e1c6e03d5f201bc8b8fa58e97a8d7", null ],
+    [ "inplace_u8string", "basic__inplace__string_8hpp.html#a2461b338938a1fc7244f1c5fcc2efc21", null ],
+    [ "inplace_wstring", "basic__inplace__string_8hpp.html#a9e4d364842c4ff48aed1de99ba3cf122", null ],
     [ "erase", "basic__inplace__string_8hpp.html#ad0457bf90404832209a27ed391d14e9f", null ],
     [ "erase_if", "basic__inplace__string_8hpp.html#ad5826b2aecc2787206e14b1db8db393f", null ],
     [ "operator!=", "basic__inplace__string_8hpp.html#a99e5b0ddb23a7821301be31ebd8198ea", null ],

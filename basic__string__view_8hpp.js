@@ -1,5 +1,15 @@
 var basic__string__view_8hpp =
 [
+    [ "string_view", "basic__string__view_8hpp.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f", null ],
+    [ "u16string_view", "basic__string__view_8hpp.html#ga78063dd4c433139e4a09048178b75cd7", null ],
+    [ "u32string_view", "basic__string__view_8hpp.html#ga4c2c2ac5d94b74c5f40a8c3dab4bb4d8", null ],
+    [ "u8string_view", "basic__string__view_8hpp.html#gaeb8937e6015b33fe342b1cc4bf300111", null ],
+    [ "wstring_view", "basic__string__view_8hpp.html#gaa9b1a068b262624bb2acdd4a72fddb28", null ],
+    [ "operator\"\"_sv", "basic__string__view_8hpp.html#a2624a1c2bc9ae10e7e77dddbc403bf22", null ],
+    [ "operator\"\"_sv", "basic__string__view_8hpp.html#acb2d0f43c8f2907a54ec77992f782674", null ],
+    [ "operator\"\"_sv", "basic__string__view_8hpp.html#adedd6d6eb71fb889fe6c3342e5451aff", null ],
+    [ "operator\"\"_sv", "basic__string__view_8hpp.html#a3ace4e4371593e4f9ad337ea139ba6aa", null ],
+    [ "operator\"\"_sv", "basic__string__view_8hpp.html#aef7939278c60a608bef4d15527431163", null ],
     [ "operator<", "basic__string__view_8hpp.html#a0f06ce36c25f48f7c4d49f07810219cb", null ],
     [ "operator<", "basic__string__view_8hpp.html#a0a91fb07baa63eccd169f5c2b57f3f30", null ],
     [ "operator<", "basic__string__view_8hpp.html#a63eef2eca864cfa354cda4b9aca3cc0e", null ],

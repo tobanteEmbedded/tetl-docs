@@ -11,7 +11,7 @@ var searchData=
   ['streamoff_8',['streamoff',['../namespaceetl.html#a66b66173615e2c5f0568adb2cae8739f',1,'etl']]],
   ['streamsize_9',['streamsize',['../namespaceetl.html#afcecc45ff4539025dd0eb1cea84021f9',1,'etl']]],
   ['stride_5ftype_10',['stride_type',['../structetl_1_1strided__slice.html#a44e0c6c5401696c0f804789b5918cc2a',1,'etl::strided_slice']]],
-  ['string_5fview_11',['string_view',['../namespaceetl.html#a6f7f02db9e66eaec8dccdca2f4e98a2f',1,'etl']]],
+  ['string_5fview_11',['string_view',['../group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f',1,'etl']]],
   ['string_5fview_5ftype_12',['string_view_type',['../structetl_1_1string__constant.html#af421bc38e276db88ec8da1ca6e75998d',1,'etl::string_constant']]],
   ['sys_5fdays_13',['sys_days',['../namespaceetl_1_1chrono.html#a4d90ebb7f905c753f85d5e7df1a289ad',1,'etl::chrono']]],
   ['sys_5fseconds_14',['sys_seconds',['../namespaceetl_1_1chrono.html#af2a26b027e62b68f0388dcd52272c7a1',1,'etl::chrono']]],

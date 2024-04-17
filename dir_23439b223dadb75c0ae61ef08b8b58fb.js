@@ -2,11 +2,6 @@ var dir_23439b223dadb75c0ae61ef08b8b58fb =
 [
     [ "basic_inplace_string.hpp", "basic__inplace__string_8hpp.html", "basic__inplace__string_8hpp" ],
     [ "char_traits.hpp", "char__traits_8hpp.html", null ],
-    [ "inplace_string.hpp", "inplace__string_8hpp.html", "inplace__string_8hpp" ],
-    [ "inplace_u16string.hpp", "inplace__u16string_8hpp.html", "inplace__u16string_8hpp" ],
-    [ "inplace_u32string.hpp", "inplace__u32string_8hpp.html", "inplace__u32string_8hpp" ],
-    [ "inplace_u8string.hpp", "inplace__u8string_8hpp.html", "inplace__u8string_8hpp" ],
-    [ "inplace_wstring.hpp", "inplace__wstring_8hpp.html", "inplace__wstring_8hpp" ],
     [ "stod.hpp", "stod_8hpp.html", "stod_8hpp" ],
     [ "stoi.hpp", "stoi_8hpp.html", "stoi_8hpp" ],
     [ "str_replace.hpp", "str__replace_8hpp.html", null ],

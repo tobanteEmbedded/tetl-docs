@@ -55,7 +55,7 @@ var searchData=
   ['strided_5fslice_2ehpp_52',['strided_slice.hpp',['../strided__slice_8hpp.html',1,'']]],
   ['string_2ehpp_53',['string.hpp',['../string_8hpp.html',1,'']]],
   ['string_5fconstant_2ehpp_54',['string_constant.hpp',['../string__constant_8hpp.html',1,'']]],
-  ['string_5fview_2ehpp_55',['string_view.hpp',['../__string__view_2string__view_8hpp.html',1,'(Global Namespace)'],['../string__view_8hpp.html',1,'(Global Namespace)']]],
+  ['string_5fview_2ehpp_55',['string_view.hpp',['../string__view_8hpp.html',1,'']]],
   ['strings_2ehpp_56',['strings.hpp',['../strings_8hpp.html',1,'']]],
   ['strlen_2ehpp_57',['strlen.hpp',['../strlen_8hpp.html',1,'']]],
   ['strncat_2ehpp_58',['strncat.hpp',['../strncat_8hpp.html',1,'']]],

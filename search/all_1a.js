@@ -62,5 +62,6 @@ var searchData=
   ['workarounds_2ehpp_59',['workarounds.hpp',['../workarounds_8hpp.html',1,'']]],
   ['write_60',['write',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aaea6ef98b3b587108dbe50d1185a2aee',1,'etl::experimental::freertos::stream_buffer::write()'],['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#aa0c17ac8d56bd49eaa6ea4a1dfe8ee9d',1,'etl::experimental::hardware::stm32::port::write()']]],
   ['write_5ffrom_5fisr_61',['write_from_isr',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a39d6f175456ecd0ddc1b3126bba8d86b',1,'etl::experimental::freertos::stream_buffer']]],
-  ['wrong_5fprotocol_5ftype_62',['wrong_protocol_type',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a81cac28a38438710de9856af4a8bcd0b',1,'etl']]]
+  ['wrong_5fprotocol_5ftype_62',['wrong_protocol_type',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a81cac28a38438710de9856af4a8bcd0b',1,'etl']]],
+  ['wstring_5fview_63',['wstring_view',['../group__string__view.html#gaa9b1a068b262624bb2acdd4a72fddb28',1,'etl']]]
 ];
