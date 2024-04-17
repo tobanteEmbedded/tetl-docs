@@ -58,9 +58,15 @@ var hierarchy =
       [ "ratio_less_equal< R1, R2 >", "structetl_1_1ratio__less__equal.html", null ]
     ] ],
     [ "char_traits< CharT >", "structetl_1_1char__traits.html", null ],
-    [ "char_traits< char >", "structetl_1_1char__traits_3_01char_01_4.html", null ],
-    [ "char_traits< char8_t >", "structetl_1_1char__traits_3_01char8__t_01_4.html", null ],
-    [ "char_traits< wchar_t >", "structetl_1_1char__traits_3_01wchar__t_01_4.html", null ],
+    [ "char_traits_base< char, int, -1 >", null, [
+      [ "char_traits< char >", "structetl_1_1char__traits_3_01char_01_4.html", null ]
+    ] ],
+    [ "char_traits_base< char8_t, unsigned, static_cast< unsigned >(-1)>", null, [
+      [ "char_traits< char8_t >", "structetl_1_1char__traits_3_01char8__t_01_4.html", null ]
+    ] ],
+    [ "char_traits_base< wchar_t, wint_t, static_cast< wint_t >(WEOF)>", null, [
+      [ "char_traits< wchar_t >", "structetl_1_1char__traits_3_01wchar__t_01_4.html", null ]
+    ] ],
     [ "column_major_t", "structetl_1_1linalg_1_1column__major__t.html", null ],
     [ "common_cmpcat_base<(0U|...|(is_same_v< Ts, strong_ordering > ? 0U :is_same_v< Ts, weak_ordering > ? 4U :is_same_v< Ts, partial_ordering > ? 2U :1U))>", null, [
       [ "common_comparison_category< Ts >", "structetl_1_1common__comparison__category.html", null ]

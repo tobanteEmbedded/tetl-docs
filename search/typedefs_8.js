@@ -20,7 +20,7 @@ var searchData=
   ['int_5fleast32_5ft_17',['int_least32_t',['../namespaceetl.html#ae2ce02c549a43d9c5f85a2b39b7c8c4b',1,'etl']]],
   ['int_5fleast64_5ft_18',['int_least64_t',['../namespaceetl.html#a85a53a2f96f40b0aeddf74828d71712e',1,'etl']]],
   ['int_5fleast8_5ft_19',['int_least8_t',['../namespaceetl.html#aff47f46aff9c632e1283854fda8dc0e1',1,'etl']]],
-  ['int_5ftype_20',['int_type',['../structetl_1_1pointer__int__pair.html#a9ae03ec9c08d5bcdb61bf3b40b0708ab',1,'etl::pointer_int_pair::int_type'],['../structetl_1_1char__traits_3_01char_01_4.html#ae393554d5d9cb600f54c85049c15df9f',1,'etl::char_traits&lt; char &gt;::int_type'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#afb60d3029d9620b4e7bea94cd4f782d6',1,'etl::char_traits&lt; wchar_t &gt;::int_type'],['../structetl_1_1char__traits_3_01char8__t_01_4.html#a4768fedcbad66ec62c48114cc0887372',1,'etl::char_traits&lt; char8_t &gt;::int_type']]],
+  ['int_5ftype_20',['int_type',['../structetl_1_1pointer__int__pair.html#a9ae03ec9c08d5bcdb61bf3b40b0708ab',1,'etl::pointer_int_pair']]],
   ['intmax_5ft_21',['intmax_t',['../namespaceetl.html#a64887361e0411caef7d81a411f3a6868',1,'etl']]],
   ['intptr_5ft_22',['intptr_t',['../namespaceetl.html#a3fd46e49593ca8eb7a2a60667662abf4',1,'etl']]],
   ['invoke_5fresult_5ft_23',['invoke_result_t',['../group__type__traits.html#ga631cecedda7818c94112a75b0f9a751c',1,'etl::invoke_result']]],

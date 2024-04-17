@@ -39,7 +39,7 @@ var searchData=
   ['legacy_5fforward_5fiterator_2ehpp_36',['legacy_forward_iterator.hpp',['../legacy__forward__iterator_8hpp.html',1,'']]],
   ['legacy_5finput_5fiterator_2ehpp_37',['legacy_input_iterator.hpp',['../legacy__input__iterator_8hpp.html',1,'']]],
   ['legacy_5fiterator_2ehpp_38',['legacy_iterator.hpp',['../legacy__iterator_8hpp.html',1,'']]],
-  ['length_39',['length',['../structetl_1_1basic__inplace__string.html#aa41d4366325c4fb242d14237a36aaf28',1,'etl::basic_inplace_string::length()'],['../structetl_1_1char__traits_3_01char_01_4.html#ac8650a329c0e55a20d0bb7417adad8aa',1,'etl::char_traits&lt; char &gt;::length()'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#a2465b7f85056c608a7ef2fc7157b1166',1,'etl::char_traits&lt; wchar_t &gt;::length()'],['../structetl_1_1char__traits_3_01char8__t_01_4.html#ac8650a329c0e55a20d0bb7417adad8aa',1,'etl::char_traits&lt; char8_t &gt;::length()'],['../structetl_1_1basic__string__view.html#aa41d4366325c4fb242d14237a36aaf28',1,'etl::basic_string_view::length()']]],
+  ['length_39',['length',['../structetl_1_1basic__inplace__string.html#aa41d4366325c4fb242d14237a36aaf28',1,'etl::basic_inplace_string::length()'],['../structetl_1_1basic__string__view.html#aa41d4366325c4fb242d14237a36aaf28',1,'etl::basic_string_view::length()']]],
   ['length_5ferror_40',['length_error',['../structetl_1_1length__error.html',1,'length_error'],['../structetl_1_1length__error.html#aef7bc3664d566c2aced4f61b8873b8cb',1,'etl::length_error::length_error()=default'],['../structetl_1_1length__error.html#aa33cbf6b190c3c8a7e3f67e0be0462f9',1,'etl::length_error::length_error(char const *what)']]],
   ['length_5ferror_2ehpp_41',['length_error.hpp',['../length__error_8hpp.html',1,'']]],
   ['lerp_42',['lerp',['../group__cmath.html#ga7dc29d72e030e4aed81ae36516bdd74b',1,'etl']]],
@@ -132,6 +132,5 @@ var searchData=
   ['lrint_129',['lrint',['../group__cmath.html#ga9efdcfc19324e3e04f9368cece16244f',1,'etl::lrint(float arg) noexcept -&gt; long'],['../group__cmath.html#ga541a33c411499961bd3e08733707140f',1,'etl::lrint(double arg) noexcept -&gt; long'],['../group__cmath.html#ga5f44d4156ec3e888fbcbdc58e2d1d9eb',1,'etl::lrint(long double arg) noexcept -&gt; long'],['../group__cmath.html#ga9466128546cf8b58e9221df02f82b56d',1,'etl::lrint(T arg) noexcept -&gt; long']]],
   ['lrint_2ehpp_130',['lrint.hpp',['../lrint_8hpp.html',1,'']]],
   ['lrintf_131',['lrintf',['../group__cmath.html#ga4ca941408e9c364428b2587af9bca033',1,'etl']]],
-  ['lrintl_132',['lrintl',['../group__cmath.html#gaa14c44304eebfdfc43c7bb881bfb7cf4',1,'etl']]],
-  ['lt_133',['lt',['../structetl_1_1char__traits_3_01char_01_4.html#a1c40a37733186e4cbd6671071e50c3ce',1,'etl::char_traits&lt; char &gt;::lt()'],['../structetl_1_1char__traits_3_01wchar__t_01_4.html#afb7cfedb8414656a537008543d88fd2a',1,'etl::char_traits&lt; wchar_t &gt;::lt()'],['../structetl_1_1char__traits_3_01char8__t_01_4.html#a1c40a37733186e4cbd6671071e50c3ce',1,'etl::char_traits&lt; char8_t &gt;::lt()']]]
+  ['lrintl_132',['lrintl',['../group__cmath.html#gaa14c44304eebfdfc43c7bb881bfb7cf4',1,'etl']]]
 ];
