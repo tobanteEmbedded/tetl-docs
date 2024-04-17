@@ -5163,7 +5163,7 @@ template&lt;typename ForwardIt &gt; </div>
 </div><div class="memdoc">
 
 <p>Shifts the elements in the range [first, last) by n positions. </p>
-<p>Shifts the elements towards the beginning of the range. If n == 0 || n &gt;= last - first, there are no effects. If n &lt; 0, the behavior is undefined. Otherwise, for every integer i in [0, last - first - n), moves the element originally at position first + n + i to position first + i. The moves are performed in increasing order of i starting from ​0​. </p>
+<p>Shifts the elements towards the beginning of the range. If n == 0 or n &gt;= last - first, there are no effects. If n &lt; 0, the behavior is undefined. Otherwise, for every integer i in [0, last - first - n), moves the element originally at position first + n + i to position first + i. The moves are performed in increasing order of i starting from ​0​. </p>
 
 </div>
 </div>
@@ -5203,7 +5203,7 @@ template&lt;typename BidiIt &gt; </div>
 </div><div class="memdoc">
 
 <p>Shifts the elements in the range [first, last) by n positions. </p>
-<p>Shifts the elements towards the end of the range. If n &lt;= 0 || n &gt;= last - first, there are no effects. Otherwise, for every integer i in [0, last - first - n), moves the element originally at position first + i to position first + n + i.</p>
+<p>Shifts the elements towards the end of the range. If n &lt;= 0 or n &gt;= last - first, there are no effects. Otherwise, for every integer i in [0, last - first - n), moves the element originally at position first + i to position first + n + i.</p>
 <p><a href="https://en.cppreference.com/w/cpp/algorithm/shift">https://en.cppreference.com/w/cpp/algorithm/shift</a></p>
 <dl class="section note"><dt>Note</dt><dd>The standard specifies that this algorithm should also work with legacy forward iterators. I don't know how to implement that without dynamic memory, so forward iterators are not supported. </dd></dl>
 
@@ -5745,7 +5745,7 @@ template&lt;typename ForwardIt , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> that is greater than <code>value</code>, or last if no such element is found.</p>
-<p>The range <code>[first, last)</code> must be partitioned with respect to the expression <code>!(value &lt; element)</code> or <code>!comp(value, element)</code>, i.e., all elements for which the expression is true must precede all elements for which the expression is false. A fully-sorted range meets this criterion. </p>
+<p>The range <code>[first, last)</code> must be partitioned with respect to the expression <code>not (value &lt; element)</code> or <code>not comp(value, element)</code>, i.e., all elements for which the expression is true must precede all elements for which the expression is false. A fully-sorted range meets this criterion. </p>
 
 </div>
 </div>
@@ -5789,7 +5789,7 @@ template&lt;typename ForwardIt , typename T , typename Compare &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> that is greater than <code>value</code>, or last if no such element is found.</p>
-<p>The range <code>[first, last)</code> must be partitioned with respect to the expression <code>!(value &lt; element)</code> or <code>!comp(value, element)</code>, i.e., all elements for which the expression is true must precede all elements for which the expression is false. A fully-sorted range meets this criterion. </p>
+<p>The range <code>[first, last)</code> must be partitioned with respect to the expression <code>not (value &lt; element)</code> or <code>not comp(value, element)</code>, i.e., all elements for which the expression is true must precede all elements for which the expression is false. A fully-sorted range meets this criterion. </p>
 
 </div>
 </div>
@@ -5798,7 +5798,7 @@ template&lt;typename ForwardIt , typename T , typename Compare &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 17 2024 16:48:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 17 2024 18:50:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

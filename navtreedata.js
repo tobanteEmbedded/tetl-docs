@@ -43,12 +43,12 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md26", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md27", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md28", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md29", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md30", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md31", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md28", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md29", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md30", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md31", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md32", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
       [ "Features", "md_docs_2roadmap.html#autotoc_md34", [

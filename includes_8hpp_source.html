@@ -122,10 +122,10 @@ $(function(){initNavTree('includes_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa">   15</a></span><a class="code hl_function" href="group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa">includes</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Compare comp) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">for</span> (; first2 != last2; ++first1) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> (first1 == last1 || comp(*first2, *first1)) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> (first1 == last1 or comp(*first2, *first1)) {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">if</span> (!comp(*first1, *first2)) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">if</span> (not comp(*first1, *first2)) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            ++first2;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
@@ -154,7 +154,7 @@ $(function(){initNavTree('includes_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="includes_8hpp.html">includes.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 16:48:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 17 2024 18:50:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

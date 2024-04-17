@@ -123,7 +123,7 @@ $(function(){initNavTree('binary__search_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga518c4f26f6b475c9ba5b742ca6202a05">   20</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__algorithm.html#ga518c4f26f6b475c9ba5b742ca6202a05">binary_search</a>(ForwardIt first, ForwardIt last, T <span class="keyword">const</span>&amp; value, Compare comp) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    first = <a class="code hl_function" href="group__algorithm.html#ga7eac84d4e60cc02ce593a33117a79ba3">etl::lower_bound</a>(first, last, value, comp);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> (!(first == last) and !(comp(value, *first)));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> first != last and not comp(value, *first);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -151,7 +151,7 @@ $(function(){initNavTree('binary__search_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="binary__search_8hpp.html">binary_search.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 16:48:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 17 2024 18:50:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

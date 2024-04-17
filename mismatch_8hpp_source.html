@@ -122,7 +122,7 @@ $(function(){initNavTree('mismatch_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__algorithm.html#ga272907f42acd772ea50acaa07ffb12aa">   26</a></span><a class="code hl_function" href="group__algorithm.html#ga272907f42acd772ea50acaa07ffb12aa">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, Predicate pred) -&gt; <a class="code hl_struct" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (; first1 != last1; ++first1, (void)++first2) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (!pred(*first1, *first2)) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (not pred(*first1, *first2)) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
@@ -145,7 +145,7 @@ $(function(){initNavTree('mismatch_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1833ff8cfefd00fbce92848e93af31e4">   45</a></span><a class="code hl_function" href="group__algorithm.html#ga272907f42acd772ea50acaa07ffb12aa">mismatch</a>(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Predicate pred) -&gt; <a class="code hl_struct" href="structetl_1_1pair.html">pair&lt;InputIt1, InputIt2&gt;</a></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (; first1 != last1 and first2 != last2; ++first1, (void)++first2) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (!pred(*first1, *first2)) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (not pred(*first1, *first2)) {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
@@ -177,7 +177,7 @@ $(function(){initNavTree('mismatch_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="mismatch_8hpp.html">mismatch.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 16:48:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 17 2024 18:50:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
