@@ -116,6 +116,7 @@ $(function(){initNavTree('namespaceetl_1_1chrono.html',''); initResizable(true);
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class day represents a day in a month.  <a href="structetl_1_1chrono_1_1day.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class template <a class="el" href="structetl_1_1chrono_1_1duration.html" title="Class template etl::chrono::duration represents a time interval.">etl::chrono::duration</a> represents a time interval.  <a href="structetl_1_1chrono_1_1duration.html#details">More...</a><br /></td></tr>
@@ -133,6 +134,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class <a class="el" href="structetl_1_1chrono_1_1local__t.html" title="The class local_t is a pseudo-clock that is used as the first template argument to etl::chrono::time_...">local_t</a> is a pseudo-clock that is used as the first template argument to <a class="el" href="structetl_1_1chrono_1_1time__point.html" title="Class template time_point represents a point in time. It is implemented as if it stores a value of ty...">etl::chrono::time_point</a> to indicate that the time point represents local time with respect of a not-yet-specified time zone. local_time supports streaming and the full set of time point arithmetic.  <a href="structetl_1_1chrono_1_1local__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class month represents a month in a year.  <a href="structetl_1_1chrono_1_1month.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,16 +242,10 @@ requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="memitem:ga84ada2b3216d3ac09f48224ea4ceb100"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__chrono.html#ga84ada2b3216d3ac09f48224ea4ceb100">floor</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Duration &gt; const &amp;tp) -&gt; <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, To &gt;</td></tr>
 <tr class="separator:ga84ada2b3216d3ac09f48224ea4ceb100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84670efb322f969ea049082ffe33f6f7" id="r_a84670efb322f969ea049082ffe33f6f7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84670efb322f969ea049082ffe33f6f7">operator!=</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a84670efb322f969ea049082ffe33f6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6337b3d2aca5ecd56da72b22c5f24851" id="r_a6337b3d2aca5ecd56da72b22c5f24851"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a6337b3d2aca5ecd56da72b22c5f24851"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6337b3d2aca5ecd56da72b22c5f24851">operator!=</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a6337b3d2aca5ecd56da72b22c5f24851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Checks if lhs and rhs are equal, i.e. the number of ticks for the type common to both durations are equal.  <br /></td></tr>
 <tr class="separator:a6337b3d2aca5ecd56da72b22c5f24851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ce11d7910cd8626afcc18ba8e57909" id="r_a63ce11d7910cd8626afcc18ba8e57909"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63ce11d7910cd8626afcc18ba8e57909">operator!=</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a63ce11d7910cd8626afcc18ba8e57909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee622f4aac80ec31e29394b2e301d080" id="r_aee622f4aac80ec31e29394b2e301d080"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee622f4aac80ec31e29394b2e301d080">operator!=</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:aee622f4aac80ec31e29394b2e301d080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148d85fda8ded9ab2f4854fe320eac99" id="r_a148d85fda8ded9ab2f4854fe320eac99"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a148d85fda8ded9ab2f4854fe320eac99"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a148d85fda8ded9ab2f4854fe320eac99">operator%</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; <a class="el" href="namespaceetl.html#ac0f7a81113943dc723a4e4751c342144">common_type_t</a>&lt; <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt;, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; &gt;</td></tr>
 <tr class="memdesc:a148d85fda8ded9ab2f4854fe320eac99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs basic arithmetic operations between two durations or between a duration and a tick count.  <br /></td></tr>
@@ -328,42 +324,26 @@ requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="memitem:a791534ccf8c4299afbbce84abe66bd51"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a791534ccf8c4299afbbce84abe66bd51">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; <a class="el" href="namespaceetl.html#ac0f7a81113943dc723a4e4751c342144">common_type_t</a>&lt; Rep1, Rep2 &gt;</td></tr>
 <tr class="memdesc:a791534ccf8c4299afbbce84abe66bd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs basic arithmetic operations between two durations or between a duration and a tick count.  <br /></td></tr>
 <tr class="separator:a791534ccf8c4299afbbce84abe66bd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c37f65948848c0e644241cb613e5c53" id="r_a4c37f65948848c0e644241cb613e5c53"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c37f65948848c0e644241cb613e5c53">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a4c37f65948848c0e644241cb613e5c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ffbbb28a4ed0a8f2e355277f46c296" id="r_a15ffbbb28a4ed0a8f2e355277f46c296"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a15ffbbb28a4ed0a8f2e355277f46c296"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a15ffbbb28a4ed0a8f2e355277f46c296">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a15ffbbb28a4ed0a8f2e355277f46c296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations.  <br /></td></tr>
 <tr class="separator:a15ffbbb28a4ed0a8f2e355277f46c296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad99ad74db5cfb5dbaffca5e89ba52e46" id="r_ad99ad74db5cfb5dbaffca5e89ba52e46"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad99ad74db5cfb5dbaffca5e89ba52e46">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:ad99ad74db5cfb5dbaffca5e89ba52e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0356a419699fecaac198c70e28e453" id="r_aab0356a419699fecaac198c70e28e453"><td class="memTemplParams" colspan="2">template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </td></tr>
 <tr class="memitem:aab0356a419699fecaac198c70e28e453"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aab0356a419699fecaac198c70e28e453">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:aab0356a419699fecaac198c70e28e453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
 <tr class="separator:aab0356a419699fecaac198c70e28e453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43567d0d86fa9747b1aa0f8f955f0712" id="r_a43567d0d86fa9747b1aa0f8f955f0712"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43567d0d86fa9747b1aa0f8f955f0712">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a43567d0d86fa9747b1aa0f8f955f0712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca4dc59ee07efe5d210527d4695bb77" id="r_a9ca4dc59ee07efe5d210527d4695bb77"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ca4dc59ee07efe5d210527d4695bb77">operator&lt;=</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a9ca4dc59ee07efe5d210527d4695bb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d2b17214a938b8e6060ce463821b57" id="r_a92d2b17214a938b8e6060ce463821b57"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a92d2b17214a938b8e6060ce463821b57"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a92d2b17214a938b8e6060ce463821b57">operator&lt;=</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a92d2b17214a938b8e6060ce463821b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations.  <br /></td></tr>
 <tr class="separator:a92d2b17214a938b8e6060ce463821b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a626dc0ff18b520cda90be93057e27494" id="r_a626dc0ff18b520cda90be93057e27494"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a626dc0ff18b520cda90be93057e27494">operator&lt;=</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a626dc0ff18b520cda90be93057e27494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd3bca5fe6e215d8e5f0987160b51cd" id="r_accd3bca5fe6e215d8e5f0987160b51cd"><td class="memTemplParams" colspan="2">template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </td></tr>
 <tr class="memitem:accd3bca5fe6e215d8e5f0987160b51cd"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#accd3bca5fe6e215d8e5f0987160b51cd">operator&lt;=</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:accd3bca5fe6e215d8e5f0987160b51cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
 <tr class="separator:accd3bca5fe6e215d8e5f0987160b51cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fef80eaef5f0d79d2d7344ebf062884" id="r_a1fef80eaef5f0d79d2d7344ebf062884"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fef80eaef5f0d79d2d7344ebf062884">operator&lt;=</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a1fef80eaef5f0d79d2d7344ebf062884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58dbc8a129d4640697fb1a0ee181fb0a" id="r_a58dbc8a129d4640697fb1a0ee181fb0a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58dbc8a129d4640697fb1a0ee181fb0a">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a58dbc8a129d4640697fb1a0ee181fb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5290a63cd105557a4ccce46d8e6dd3" id="r_a2d5290a63cd105557a4ccce46d8e6dd3"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a2d5290a63cd105557a4ccce46d8e6dd3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2d5290a63cd105557a4ccce46d8e6dd3">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a2d5290a63cd105557a4ccce46d8e6dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Checks if lhs and rhs are equal, i.e. the number of ticks for the type common to both durations are equal.  <br /></td></tr>
 <tr class="separator:a2d5290a63cd105557a4ccce46d8e6dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e6038558bcb23a7ad52c94973771df" id="r_ac2e6038558bcb23a7ad52c94973771df"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2e6038558bcb23a7ad52c94973771df">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:ac2e6038558bcb23a7ad52c94973771df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5ce9e1c2a6217a3f1f7067b0255df9f" id="r_ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="memTemplParams" colspan="2">template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </td></tr>
 <tr class="memitem:ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
@@ -372,42 +352,28 @@ requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="separator:ad76fd119f7a9ce522ffe6e5b070ff5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabdc39208f5d8880476996334141637" id="r_acabdc39208f5d8880476996334141637"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acabdc39208f5d8880476996334141637">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:acabdc39208f5d8880476996334141637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae082ec57516dcc6466e55e6dcbe480e8" id="r_ae082ec57516dcc6466e55e6dcbe480e8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae082ec57516dcc6466e55e6dcbe480e8">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:ae082ec57516dcc6466e55e6dcbe480e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a89ab5a236d8c7df00719999519c914" id="r_a0a89ab5a236d8c7df00719999519c914"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a89ab5a236d8c7df00719999519c914">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:a0a89ab5a236d8c7df00719999519c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32363baa711060aeaa2d6141431dcfc" id="r_ac32363baa711060aeaa2d6141431dcfc"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32363baa711060aeaa2d6141431dcfc">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1year__month__day.html">year_month_day</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1year__month__day.html">year_month_day</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:ac32363baa711060aeaa2d6141431dcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6026fba75e86a4f5fa7f2d794e11f142" id="r_a6026fba75e86a4f5fa7f2d794e11f142"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6026fba75e86a4f5fa7f2d794e11f142">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1year__month__weekday.html">year_month_weekday</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1year__month__weekday.html">year_month_weekday</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:a6026fba75e86a4f5fa7f2d794e11f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe19197137adf5cac3c6dba95ab9d03" id="r_aabe19197137adf5cac3c6dba95ab9d03"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe19197137adf5cac3c6dba95ab9d03">operator&gt;</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:aabe19197137adf5cac3c6dba95ab9d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18dbb060ae35bf03ac8f6d1c58a91771" id="r_a18dbb060ae35bf03ac8f6d1c58a91771"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a18dbb060ae35bf03ac8f6d1c58a91771"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a18dbb060ae35bf03ac8f6d1c58a91771">operator&gt;</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a18dbb060ae35bf03ac8f6d1c58a91771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations.  <br /></td></tr>
 <tr class="separator:a18dbb060ae35bf03ac8f6d1c58a91771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde8bddcdf8c9d302503120b9e49ce64" id="r_acde8bddcdf8c9d302503120b9e49ce64"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acde8bddcdf8c9d302503120b9e49ce64">operator&gt;</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:acde8bddcdf8c9d302503120b9e49ce64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bab19806b17d93c0596147e89cb554e" id="r_a2bab19806b17d93c0596147e89cb554e"><td class="memTemplParams" colspan="2">template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </td></tr>
 <tr class="memitem:a2bab19806b17d93c0596147e89cb554e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2bab19806b17d93c0596147e89cb554e">operator&gt;</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a2bab19806b17d93c0596147e89cb554e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
 <tr class="separator:a2bab19806b17d93c0596147e89cb554e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cc1d0a658f06c4f4e3a499219040c3" id="r_a15cc1d0a658f06c4f4e3a499219040c3"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15cc1d0a658f06c4f4e3a499219040c3">operator&gt;</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a15cc1d0a658f06c4f4e3a499219040c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67fbc36c37f80547ef14bcc278b26cd0" id="r_a67fbc36c37f80547ef14bcc278b26cd0"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67fbc36c37f80547ef14bcc278b26cd0">operator&gt;=</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> lhs, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a67fbc36c37f80547ef14bcc278b26cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae34a001a47e74706725bffe10b5b2ab9" id="r_ae34a001a47e74706725bffe10b5b2ab9"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:ae34a001a47e74706725bffe10b5b2ab9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae34a001a47e74706725bffe10b5b2ab9">operator&gt;=</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:ae34a001a47e74706725bffe10b5b2ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations.  <br /></td></tr>
 <tr class="separator:ae34a001a47e74706725bffe10b5b2ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae07f6322eaf44c24e9765cdd422a53" id="r_adae07f6322eaf44c24e9765cdd422a53"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adae07f6322eaf44c24e9765cdd422a53">operator&gt;=</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> lhs, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:adae07f6322eaf44c24e9765cdd422a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3649521766483c29a657bfd0776acfc" id="r_af3649521766483c29a657bfd0776acfc"><td class="memTemplParams" colspan="2">template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </td></tr>
 <tr class="memitem:af3649521766483c29a657bfd0776acfc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af3649521766483c29a657bfd0776acfc">operator&gt;=</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:af3649521766483c29a657bfd0776acfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
 <tr class="separator:af3649521766483c29a657bfd0776acfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21f0a529519bdb639fa761edc306c771" id="r_a21f0a529519bdb639fa761edc306c771"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f0a529519bdb639fa761edc306c771">operator&gt;=</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> lhs, <a class="el" href="structetl_1_1chrono_1_1year.html">year</a> rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:a21f0a529519bdb639fa761edc306c771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga403362db92b16b1a4435c484bc676508" id="r_ga403362db92b16b1a4435c484bc676508"><td class="memTemplParams" colspan="2">template&lt;typename To , typename Rep , typename Period &gt; <br />
 requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="memitem:ga403362db92b16b1a4435c484bc676508"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__chrono.html#ga403362db92b16b1a4435c484bc676508">round</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep, Period &gt; const &amp;dur) noexcept(<a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; Rep &gt; and <a class="el" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a>&lt; typename To::rep &gt;) -&gt; To</td></tr>
@@ -674,38 +640,8 @@ template&lt;typename Duration &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a84670efb322f969ea049082ffe33f6f7" name="a84670efb322f969ea049082ffe33f6f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84670efb322f969ea049082ffe33f6f7">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6337b3d2aca5ecd56da72b22c5f24851" name="a6337b3d2aca5ecd56da72b22c5f24851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6337b3d2aca5ecd56da72b22c5f24851">&#9670;&#160;</a></span>operator!=() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6337b3d2aca5ecd56da72b22c5f24851">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -735,66 +671,6 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div><div class="memdoc">
 
 <p>Compares two durations. Checks if lhs and rhs are equal, i.e. the number of ticks for the type common to both durations are equal. </p>
-
-</div>
-</div>
-<a id="a63ce11d7910cd8626afcc18ba8e57909" name="a63ce11d7910cd8626afcc18ba8e57909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63ce11d7910cd8626afcc18ba8e57909">&#9670;&#160;</a></span>operator!=() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee622f4aac80ec31e29394b2e301d080" name="aee622f4aac80ec31e29394b2e301d080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee622f4aac80ec31e29394b2e301d080">&#9670;&#160;</a></span>operator!=() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1869,38 +1745,8 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
-<a id="a4c37f65948848c0e644241cb613e5c53" name="a4c37f65948848c0e644241cb613e5c53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c37f65948848c0e644241cb613e5c53">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a15ffbbb28a4ed0a8f2e355277f46c296" name="a15ffbbb28a4ed0a8f2e355277f46c296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15ffbbb28a4ed0a8f2e355277f46c296">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ffbbb28a4ed0a8f2e355277f46c296">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1930,41 +1776,11 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div><div class="memdoc">
 
 <p>Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations. </p>
-
-</div>
-</div>
-<a id="ad99ad74db5cfb5dbaffca5e89ba52e46" name="ad99ad74db5cfb5dbaffca5e89ba52e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad99ad74db5cfb5dbaffca5e89ba52e46">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
 <a id="aab0356a419699fecaac198c70e28e453" name="aab0356a419699fecaac198c70e28e453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab0356a419699fecaac198c70e28e453">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab0356a419699fecaac198c70e28e453">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1997,68 +1813,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="a43567d0d86fa9747b1aa0f8f955f0712" name="a43567d0d86fa9747b1aa0f8f955f0712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43567d0d86fa9747b1aa0f8f955f0712">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ca4dc59ee07efe5d210527d4695bb77" name="a9ca4dc59ee07efe5d210527d4695bb77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca4dc59ee07efe5d210527d4695bb77">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a92d2b17214a938b8e6060ce463821b57" name="a92d2b17214a938b8e6060ce463821b57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92d2b17214a938b8e6060ce463821b57">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d2b17214a938b8e6060ce463821b57">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2091,38 +1847,8 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
-<a id="a626dc0ff18b520cda90be93057e27494" name="a626dc0ff18b520cda90be93057e27494"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a626dc0ff18b520cda90be93057e27494">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="accd3bca5fe6e215d8e5f0987160b51cd" name="accd3bca5fe6e215d8e5f0987160b51cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accd3bca5fe6e215d8e5f0987160b51cd">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#accd3bca5fe6e215d8e5f0987160b51cd">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2155,68 +1881,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="a1fef80eaef5f0d79d2d7344ebf062884" name="a1fef80eaef5f0d79d2d7344ebf062884"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fef80eaef5f0d79d2d7344ebf062884">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&lt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58dbc8a129d4640697fb1a0ee181fb0a" name="a58dbc8a129d4640697fb1a0ee181fb0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58dbc8a129d4640697fb1a0ee181fb0a">&#9670;&#160;</a></span>operator==() <span class="overload">[1/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2d5290a63cd105557a4ccce46d8e6dd3" name="a2d5290a63cd105557a4ccce46d8e6dd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d5290a63cd105557a4ccce46d8e6dd3">&#9670;&#160;</a></span>operator==() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5290a63cd105557a4ccce46d8e6dd3">&#9670;&#160;</a></span>operator==() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2249,38 +1915,8 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
-<a id="ac2e6038558bcb23a7ad52c94973771df" name="ac2e6038558bcb23a7ad52c94973771df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2e6038558bcb23a7ad52c94973771df">&#9670;&#160;</a></span>operator==() <span class="overload">[3/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae5ce9e1c2a6217a3f1f7067b0255df9f" name="ae5ce9e1c2a6217a3f1f7067b0255df9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">&#9670;&#160;</a></span>operator==() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">&#9670;&#160;</a></span>operator==() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2314,7 +1950,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="ad76fd119f7a9ce522ffe6e5b070ff5dc" name="ad76fd119f7a9ce522ffe6e5b070ff5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76fd119f7a9ce522ffe6e5b070ff5dc">&#9670;&#160;</a></span>operator==() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76fd119f7a9ce522ffe6e5b070ff5dc">&#9670;&#160;</a></span>operator==() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2344,7 +1980,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="acabdc39208f5d8880476996334141637" name="acabdc39208f5d8880476996334141637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acabdc39208f5d8880476996334141637">&#9670;&#160;</a></span>operator==() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acabdc39208f5d8880476996334141637">&#9670;&#160;</a></span>operator==() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2373,38 +2009,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="ae082ec57516dcc6466e55e6dcbe480e8" name="ae082ec57516dcc6466e55e6dcbe480e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae082ec57516dcc6466e55e6dcbe480e8">&#9670;&#160;</a></span>operator==() <span class="overload">[7/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0a89ab5a236d8c7df00719999519c914" name="a0a89ab5a236d8c7df00719999519c914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a89ab5a236d8c7df00719999519c914">&#9670;&#160;</a></span>operator==() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a89ab5a236d8c7df00719999519c914">&#9670;&#160;</a></span>operator==() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2434,7 +2040,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="ac32363baa711060aeaa2d6141431dcfc" name="ac32363baa711060aeaa2d6141431dcfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32363baa711060aeaa2d6141431dcfc">&#9670;&#160;</a></span>operator==() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32363baa711060aeaa2d6141431dcfc">&#9670;&#160;</a></span>operator==() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2464,7 +2070,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="a6026fba75e86a4f5fa7f2d794e11f142" name="a6026fba75e86a4f5fa7f2d794e11f142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6026fba75e86a4f5fa7f2d794e11f142">&#9670;&#160;</a></span>operator==() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6026fba75e86a4f5fa7f2d794e11f142">&#9670;&#160;</a></span>operator==() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2493,38 +2099,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="aabe19197137adf5cac3c6dba95ab9d03" name="aabe19197137adf5cac3c6dba95ab9d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe19197137adf5cac3c6dba95ab9d03">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a18dbb060ae35bf03ac8f6d1c58a91771" name="a18dbb060ae35bf03ac8f6d1c58a91771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18dbb060ae35bf03ac8f6d1c58a91771">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dbb060ae35bf03ac8f6d1c58a91771">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2554,41 +2130,11 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div><div class="memdoc">
 
 <p>Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations. </p>
-
-</div>
-</div>
-<a id="acde8bddcdf8c9d302503120b9e49ce64" name="acde8bddcdf8c9d302503120b9e49ce64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acde8bddcdf8c9d302503120b9e49ce64">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
 <a id="a2bab19806b17d93c0596147e89cb554e" name="a2bab19806b17d93c0596147e89cb554e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bab19806b17d93c0596147e89cb554e">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bab19806b17d93c0596147e89cb554e">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2621,68 +2167,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="a15cc1d0a658f06c4f4e3a499219040c3" name="a15cc1d0a658f06c4f4e3a499219040c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15cc1d0a658f06c4f4e3a499219040c3">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a67fbc36c37f80547ef14bcc278b26cd0" name="a67fbc36c37f80547ef14bcc278b26cd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67fbc36c37f80547ef14bcc278b26cd0">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae34a001a47e74706725bffe10b5b2ab9" name="ae34a001a47e74706725bffe10b5b2ab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae34a001a47e74706725bffe10b5b2ab9">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34a001a47e74706725bffe10b5b2ab9">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2715,38 +2201,8 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
-<a id="adae07f6322eaf44c24e9765cdd422a53" name="adae07f6322eaf44c24e9765cdd422a53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adae07f6322eaf44c24e9765cdd422a53">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af3649521766483c29a657bfd0776acfc" name="af3649521766483c29a657bfd0776acfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3649521766483c29a657bfd0776acfc">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3649521766483c29a657bfd0776acfc">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2776,36 +2232,6 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div><div class="memdoc">
 
 <p>Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points. </p>
-
-</div>
-</div>
-<a id="a21f0a529519bdb639fa761edc306c771" name="a21f0a529519bdb639fa761edc306c771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21f0a529519bdb639fa761edc306c771">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -3234,7 +2660,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1chrono.html">chrono</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 02:12:06 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 17:18:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -1,11 +1,5 @@
 var month_8hpp =
 [
-    [ "operator!=", "month_8hpp.html#a63ce11d7910cd8626afcc18ba8e57909", null ],
-    [ "operator<", "month_8hpp.html#ad99ad74db5cfb5dbaffca5e89ba52e46", null ],
-    [ "operator<=", "month_8hpp.html#a626dc0ff18b520cda90be93057e27494", null ],
-    [ "operator==", "month_8hpp.html#ac2e6038558bcb23a7ad52c94973771df", null ],
-    [ "operator>", "month_8hpp.html#acde8bddcdf8c9d302503120b9e49ce64", null ],
-    [ "operator>=", "month_8hpp.html#adae07f6322eaf44c24e9765cdd422a53", null ],
     [ "April", "month_8hpp.html#a803abec70c7cee4cc8780af6cf209fd7", null ],
     [ "August", "month_8hpp.html#a42637db1ac5e2c4ba851ef68084a1451", null ],
     [ "December", "month_8hpp.html#ad486dd52dc90f961fc984d5279fd23b7", null ],

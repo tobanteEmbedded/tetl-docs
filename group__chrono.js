@@ -2,15 +2,20 @@ var group__chrono =
 [
     [ "day", "structetl_1_1chrono_1_1day.html", [
       [ "day", "structetl_1_1chrono_1_1day.html#a39549afaefbfe21303c9ba15a252e820", null ],
-      [ "day", "structetl_1_1chrono_1_1day.html#a99d3fb8da4b56c9ac6d656bc28d9467e", null ],
+      [ "day", "structetl_1_1chrono_1_1day.html#ad1287a3d7907baeac227772cd5f762a2", null ],
       [ "ok", "structetl_1_1chrono_1_1day.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-      [ "operator uint32_t", "structetl_1_1chrono_1_1day.html#a7cb8c258da3269214be506815278bad9", null ],
+      [ "uint32_t", "structetl_1_1chrono_1_1day.html#ac21bcec47668626583d7a095ae23cc1a", null ],
       [ "operator++", "structetl_1_1chrono_1_1day.html#a87aec22f5175fbf553594d106dadc444", null ],
       [ "operator++", "structetl_1_1chrono_1_1day.html#a94611b80dc877f65a04eac1d18bbdf94", null ],
       [ "operator+=", "structetl_1_1chrono_1_1day.html#ac4ffd6d5e0e560d60bfe9c02fca2e1cc", null ],
       [ "operator--", "structetl_1_1chrono_1_1day.html#aee6a761bf9c4267ded2af0916394f0d4", null ],
       [ "operator--", "structetl_1_1chrono_1_1day.html#a5d376789e6075f46f7f658e2b3beeaaa", null ],
-      [ "operator-=", "structetl_1_1chrono_1_1day.html#af49b8426840bfc73ba6c1da8c69ffa43", null ]
+      [ "operator-=", "structetl_1_1chrono_1_1day.html#af49b8426840bfc73ba6c1da8c69ffa43", null ],
+      [ "operator<", "structetl_1_1chrono_1_1day.html#a4c37f65948848c0e644241cb613e5c53", null ],
+      [ "operator<=", "structetl_1_1chrono_1_1day.html#a9ca4dc59ee07efe5d210527d4695bb77", null ],
+      [ "operator==", "structetl_1_1chrono_1_1day.html#a58dbc8a129d4640697fb1a0ee181fb0a", null ],
+      [ "operator>", "structetl_1_1chrono_1_1day.html#aabe19197137adf5cac3c6dba95ab9d03", null ],
+      [ "operator>=", "structetl_1_1chrono_1_1day.html#a67fbc36c37f80547ef14bcc278b26cd0", null ]
     ] ],
     [ "duration< Rep, Period >", "structetl_1_1chrono_1_1duration.html", [
       [ "period", "structetl_1_1chrono_1_1duration.html#a21e6d0d165577d254d107d711ded4b13", null ],
@@ -51,15 +56,20 @@ var group__chrono =
     [ "local_t", "structetl_1_1chrono_1_1local__t.html", null ],
     [ "month", "structetl_1_1chrono_1_1month.html", [
       [ "month", "structetl_1_1chrono_1_1month.html#a12e82dd14d04e083c480ee1a464756de", null ],
-      [ "month", "structetl_1_1chrono_1_1month.html#ad44ff58a4198e4474b26cf5930b99197", null ],
+      [ "month", "structetl_1_1chrono_1_1month.html#a018ce4d8c92340b0a99f02babfe4c069", null ],
       [ "ok", "structetl_1_1chrono_1_1month.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-      [ "operator uint32_t", "structetl_1_1chrono_1_1month.html#a7cb8c258da3269214be506815278bad9", null ],
+      [ "uint32_t", "structetl_1_1chrono_1_1month.html#ac21bcec47668626583d7a095ae23cc1a", null ],
       [ "operator++", "structetl_1_1chrono_1_1month.html#abb6c5796c012e14f8ddefaa9a85e58df", null ],
       [ "operator++", "structetl_1_1chrono_1_1month.html#a2b6428706d5e02089269bfe246a6c2ee", null ],
       [ "operator+=", "structetl_1_1chrono_1_1month.html#a85484bf609b8831578be4d6f6a6c70ad", null ],
       [ "operator--", "structetl_1_1chrono_1_1month.html#a6412a63983e16bf16ef5c88c1ccb9fb4", null ],
       [ "operator--", "structetl_1_1chrono_1_1month.html#ac3fc289fe67d1344381987c907bc2edb", null ],
-      [ "operator-=", "structetl_1_1chrono_1_1month.html#ad6c19a220921efc81ccac554aa29209e", null ]
+      [ "operator-=", "structetl_1_1chrono_1_1month.html#ad6c19a220921efc81ccac554aa29209e", null ],
+      [ "operator<", "structetl_1_1chrono_1_1month.html#ad99ad74db5cfb5dbaffca5e89ba52e46", null ],
+      [ "operator<=", "structetl_1_1chrono_1_1month.html#a626dc0ff18b520cda90be93057e27494", null ],
+      [ "operator==", "structetl_1_1chrono_1_1month.html#ac2e6038558bcb23a7ad52c94973771df", null ],
+      [ "operator>", "structetl_1_1chrono_1_1month.html#acde8bddcdf8c9d302503120b9e49ce64", null ],
+      [ "operator>=", "structetl_1_1chrono_1_1month.html#adae07f6322eaf44c24e9765cdd422a53", null ]
     ] ],
     [ "month_day", "structetl_1_1chrono_1_1month__day.html", [
       [ "month_day", "structetl_1_1chrono_1_1month__day.html#a64e6b12f1c7c17c8ea91b58c5de848d1", null ],

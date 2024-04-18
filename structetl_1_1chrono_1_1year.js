@@ -14,5 +14,10 @@ var structetl_1_1chrono_1_1year =
     [ "operator-", "structetl_1_1chrono_1_1year.html#adaa5da4630a39196be9c83b6ad5e8c6e", null ],
     [ "operator--", "structetl_1_1chrono_1_1year.html#ab9e4b363fbf462043c04c7926525d9a7", null ],
     [ "operator--", "structetl_1_1chrono_1_1year.html#a06c8c184544e27b30e61c74216872f4d", null ],
-    [ "operator-=", "structetl_1_1chrono_1_1year.html#a892bd421f5c369a920bb4028b4472f4b", null ]
+    [ "operator-=", "structetl_1_1chrono_1_1year.html#a892bd421f5c369a920bb4028b4472f4b", null ],
+    [ "operator<", "structetl_1_1chrono_1_1year.html#a43567d0d86fa9747b1aa0f8f955f0712", null ],
+    [ "operator<=", "structetl_1_1chrono_1_1year.html#a1fef80eaef5f0d79d2d7344ebf062884", null ],
+    [ "operator==", "structetl_1_1chrono_1_1year.html#ae082ec57516dcc6466e55e6dcbe480e8", null ],
+    [ "operator>", "structetl_1_1chrono_1_1year.html#a15cc1d0a658f06c4f4e3a499219040c3", null ],
+    [ "operator>=", "structetl_1_1chrono_1_1year.html#a21f0a529519bdb639fa761edc306c771", null ]
 ];
