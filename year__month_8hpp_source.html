@@ -166,17 +166,17 @@ $(function(){initNavTree('year__month_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_struct" href="structetl_1_1chrono_1_1year.html">chrono::year</a> _y;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_struct" href="structetl_1_1chrono_1_1month.html">chrono::month</a> _m;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structetl_1_1chrono_1_1year__month.html#a0a89ab5a236d8c7df00719999519c914">   50</a></span>    <span class="keyword">friend</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_friend" href="structetl_1_1chrono_1_1year__month.html#a0a89ab5a236d8c7df00719999519c914">operator==</a>(<a class="code hl_struct" href="structetl_1_1chrono_1_1year__month.html">year_month</a> <span class="keyword">const</span>&amp; lhs, <a class="code hl_struct" href="structetl_1_1chrono_1_1year__month.html">year_month</a> <span class="keyword">const</span>&amp; rhs) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> lhs.year() == rhs.year() and lhs.month() == rhs.month();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#a0a89ab5a236d8c7df00719999519c914">   55</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1chrono.html#a2d5290a63cd105557a4ccce46d8e6dd3">operator==</a>(<a class="code hl_struct" href="structetl_1_1chrono_1_1year__month.html">year_month</a> <span class="keyword">const</span>&amp; lhs, <a class="code hl_struct" href="structetl_1_1chrono_1_1year__month.html">year_month</a> <span class="keyword">const</span>&amp; rhs) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> lhs.year() == rhs.year() and lhs.<a class="code hl_function" href="structetl_1_1chrono_1_1month.html#a12e82dd14d04e083c480ee1a464756de">month</a>() == rhs.month();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_struct" href="structetl_1_1chrono_1_1year.html">chrono::year</a> _y;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="structetl_1_1chrono_1_1month.html">chrono::month</a> _m;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
@@ -231,11 +231,10 @@ $(function(){initNavTree('year__month_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="amonth_8hpp_html"><div class="ttname"><a href="month_8hpp.html">month.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html"><div class="ttname"><a href="namespaceetl_1_1chrono.html">etl::chrono</a></div><div class="ttdef"><b>Definition</b> abs.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_1_1chrono_html_a17b0a1bcba8b6673457382c0a5191020"><div class="ttname"><a href="namespaceetl_1_1chrono.html#a17b0a1bcba8b6673457382c0a5191020">etl::chrono::operator+</a></div><div class="ttdeci">constexpr auto operator+(day const &amp;d, days const &amp;ds) noexcept -&gt; day</div><div class="ttdef"><b>Definition</b> day.hpp:89</div></div>
-<div class="ttc" id="anamespaceetl_1_1chrono_html_a2d5290a63cd105557a4ccce46d8e6dd3"><div class="ttname"><a href="namespaceetl_1_1chrono.html#a2d5290a63cd105557a4ccce46d8e6dd3">etl::chrono::operator==</a></div><div class="ttdeci">constexpr auto operator==(duration&lt; Rep1, Period1 &gt; const &amp;lhs, duration&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</div><div class="ttdoc">Compares two durations. Checks if lhs and rhs are equal, i.e. the number of ticks for the type common...</div><div class="ttdef"><b>Definition</b> duration.hpp:299</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1duration_html"><div class="ttname"><a href="structetl_1_1chrono_1_1duration.html">etl::chrono::duration</a></div><div class="ttdoc">Class template etl::chrono::duration represents a time interval.</div><div class="ttdef"><b>Definition</b> duration.hpp:31</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1month_html"><div class="ttname"><a href="structetl_1_1chrono_1_1month.html">etl::chrono::month</a></div><div class="ttdoc">The class month represents a month in a year.</div><div class="ttdef"><b>Definition</b> month.hpp:20</div></div>
-<div class="ttc" id="astructetl_1_1chrono_1_1month_html_a12e82dd14d04e083c480ee1a464756de"><div class="ttname"><a href="structetl_1_1chrono_1_1month.html#a12e82dd14d04e083c480ee1a464756de">etl::chrono::month::month</a></div><div class="ttdeci">month()=default</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1year__month_html"><div class="ttname"><a href="structetl_1_1chrono_1_1year__month.html">etl::chrono::year_month</a></div><div class="ttdef"><b>Definition</b> year_month.hpp:11</div></div>
+<div class="ttc" id="astructetl_1_1chrono_1_1year__month_html_a0a89ab5a236d8c7df00719999519c914"><div class="ttname"><a href="structetl_1_1chrono_1_1year__month.html#a0a89ab5a236d8c7df00719999519c914">etl::chrono::year_month::operator==</a></div><div class="ttdeci">friend constexpr auto operator==(year_month const &amp;lhs, year_month const &amp;rhs) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> year_month.hpp:50</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1year__month_html_a2fca511e0ae30036fb6cc95454d1c185"><div class="ttname"><a href="structetl_1_1chrono_1_1year__month.html#a2fca511e0ae30036fb6cc95454d1c185">etl::chrono::year_month::ok</a></div><div class="ttdeci">constexpr auto ok() const noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> year_month.hpp:24</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1year__month_html_a582292604521fe97b9dc2a6effe696a4"><div class="ttname"><a href="structetl_1_1chrono_1_1year__month.html#a582292604521fe97b9dc2a6effe696a4">etl::chrono::year_month::month</a></div><div class="ttdeci">constexpr auto month() const noexcept -&gt; chrono::month</div><div class="ttdef"><b>Definition</b> year_month.hpp:22</div></div>
 <div class="ttc" id="astructetl_1_1chrono_1_1year__month_html_a5857ae31dba5e544bf6b8f2ccf4b3810"><div class="ttname"><a href="structetl_1_1chrono_1_1year__month.html#a5857ae31dba5e544bf6b8f2ccf4b3810">etl::chrono::year_month::operator-=</a></div><div class="ttdeci">constexpr auto operator-=(months const &amp;dm) noexcept -&gt; year_month &amp;</div><div class="ttdef"><b>Definition</b> year_month.hpp:32</div></div>
@@ -252,7 +251,7 @@ $(function(){initNavTree('year__month_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a2f0e1630974749eeb51a13bacac0fde.html">_chrono</a></li><li class="navelem"><a class="el" href="year__month_8hpp.html">year_month.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 17:40:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 20:46:00 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

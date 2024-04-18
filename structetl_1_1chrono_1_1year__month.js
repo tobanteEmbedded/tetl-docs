@@ -8,5 +8,6 @@ var structetl_1_1chrono_1_1year__month =
     [ "operator+=", "structetl_1_1chrono_1_1year__month.html#a95436d2113349c094538cbe0ca632275", null ],
     [ "operator-=", "structetl_1_1chrono_1_1year__month.html#a5857ae31dba5e544bf6b8f2ccf4b3810", null ],
     [ "operator-=", "structetl_1_1chrono_1_1year__month.html#a7f2d2dd29d710d07780fb4e01c38ca6f", null ],
-    [ "year", "structetl_1_1chrono_1_1year__month.html#aae8490351a0e86f736a4d7ebf10845f5", null ]
+    [ "year", "structetl_1_1chrono_1_1year__month.html#aae8490351a0e86f736a4d7ebf10845f5", null ],
+    [ "operator==", "structetl_1_1chrono_1_1year__month.html#a0a89ab5a236d8c7df00719999519c914", null ]
 ];

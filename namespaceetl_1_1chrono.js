@@ -86,8 +86,6 @@ var namespaceetl_1_1chrono =
     [ "operator<=", "namespaceetl_1_1chrono.html#accd3bca5fe6e215d8e5f0987160b51cd", null ],
     [ "operator==", "namespaceetl_1_1chrono.html#a2d5290a63cd105557a4ccce46d8e6dd3", null ],
     [ "operator==", "namespaceetl_1_1chrono.html#ae5ce9e1c2a6217a3f1f7067b0255df9f", null ],
-    [ "operator==", "namespaceetl_1_1chrono.html#acabdc39208f5d8880476996334141637", null ],
-    [ "operator==", "namespaceetl_1_1chrono.html#a0a89ab5a236d8c7df00719999519c914", null ],
     [ "operator==", "namespaceetl_1_1chrono.html#ac32363baa711060aeaa2d6141431dcfc", null ],
     [ "operator==", "namespaceetl_1_1chrono.html#a6026fba75e86a4f5fa7f2d794e11f142", null ],
     [ "operator>", "namespaceetl_1_1chrono.html#a18dbb060ae35bf03ac8f6d1c58a91771", null ],

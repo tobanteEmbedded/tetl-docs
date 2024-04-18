@@ -126,11 +126,11 @@ var group__chrono =
     [ "treat_as_floating_point< Rep >", "structetl_1_1chrono_1_1treat__as__floating__point.html", null ],
     [ "weekday", "structetl_1_1chrono_1_1weekday.html", [
       [ "weekday", "structetl_1_1chrono_1_1weekday.html#afb4ff0c15eda3d8aee852bdf825d5217", null ],
-      [ "weekday", "structetl_1_1chrono_1_1weekday.html#aff6a6f97a14dba567e1968dd7538c959", null ],
+      [ "weekday", "structetl_1_1chrono_1_1weekday.html#a6054688fbce7eedcf188bc3a7c09da94", null ],
       [ "weekday", "structetl_1_1chrono_1_1weekday.html#a408e930574a2db937617b99640934674", null ],
       [ "weekday", "structetl_1_1chrono_1_1weekday.html#af7bb4039b774f1b364d712e964cfc17c", null ],
-      [ "c_encoding", "structetl_1_1chrono_1_1weekday.html#a033c5e5046dd3df1b5de673cb28db13b", null ],
-      [ "iso_encoding", "structetl_1_1chrono_1_1weekday.html#a3b3ece88c9ace348ca288d2e87fe1290", null ],
+      [ "c_encoding", "structetl_1_1chrono_1_1weekday.html#acd66a1d9565fa830cb421b25f34181f5", null ],
+      [ "iso_encoding", "structetl_1_1chrono_1_1weekday.html#ae0d73104fdb8929af7eae7b04c7a32a9", null ],
       [ "ok", "structetl_1_1chrono_1_1weekday.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
       [ "operator++", "structetl_1_1chrono_1_1weekday.html#a91cd8b0faf4b3e87733819544f7d2969", null ],
       [ "operator++", "structetl_1_1chrono_1_1weekday.html#a87e323d3ada3a7dcde18715994c567b4", null ],
@@ -138,19 +138,23 @@ var group__chrono =
       [ "operator--", "structetl_1_1chrono_1_1weekday.html#a2c131dfbebb919909183a5f9a210a514", null ],
       [ "operator--", "structetl_1_1chrono_1_1weekday.html#a2b907ac361a9396d5f63eaa854cf2093", null ],
       [ "operator-=", "structetl_1_1chrono_1_1weekday.html#acd0f3ef2867abffc510f38829b40c8e0", null ],
+      [ "operator[]", "structetl_1_1chrono_1_1weekday.html#a50bae9a51384fd5f5776b0477f55a90e", null ],
+      [ "operator[]", "structetl_1_1chrono_1_1weekday.html#a475bf7eb376580e962ec1ddd4d1be850", null ],
       [ "operator==", "structetl_1_1chrono_1_1weekday.html#ad76fd119f7a9ce522ffe6e5b070ff5dc", null ]
     ] ],
     [ "weekday_indexed", "structetl_1_1chrono_1_1weekday__indexed.html", [
       [ "weekday_indexed", "structetl_1_1chrono_1_1weekday__indexed.html#aa5cdc5ce6caed9b1ccd1b43122c7905a", null ],
-      [ "weekday_indexed", "structetl_1_1chrono_1_1weekday__indexed.html#a97997a6a4f5054f5cb25000f3ef1b026", null ],
-      [ "index", "structetl_1_1chrono_1_1weekday__indexed.html#a328d89752c46c15b1e6f14ea93f16cb0", null ],
+      [ "weekday_indexed", "structetl_1_1chrono_1_1weekday__indexed.html#a31eb240a27862ae516f5563820d25304", null ],
+      [ "index", "structetl_1_1chrono_1_1weekday__indexed.html#acaa931532d01cc451633a2eab5b042e8", null ],
       [ "ok", "structetl_1_1chrono_1_1weekday__indexed.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-      [ "weekday", "structetl_1_1chrono_1_1weekday__indexed.html#a5b5156171fa533b44690199299a15676", null ]
+      [ "weekday", "structetl_1_1chrono_1_1weekday__indexed.html#a5945d0c563292e49cd4b9f796bc88f18", null ],
+      [ "operator==", "structetl_1_1chrono_1_1weekday__indexed.html#acabdc39208f5d8880476996334141637", null ]
     ] ],
     [ "weekday_last", "structetl_1_1chrono_1_1weekday__last.html", [
       [ "weekday_last", "structetl_1_1chrono_1_1weekday__last.html#a37e531e3fe0fd1a3bdfbde558d8f5b52", null ],
       [ "ok", "structetl_1_1chrono_1_1weekday__last.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-      [ "weekday", "structetl_1_1chrono_1_1weekday__last.html#a5b5156171fa533b44690199299a15676", null ]
+      [ "weekday", "structetl_1_1chrono_1_1weekday__last.html#a5b5156171fa533b44690199299a15676", null ],
+      [ "operator==", "structetl_1_1chrono_1_1weekday__last.html#ac7939a823935bd8b788c1eb11f290308", null ]
     ] ],
     [ "year_month", "structetl_1_1chrono_1_1year__month.html", [
       [ "year_month", "structetl_1_1chrono_1_1year__month.html#ae4594c10fea39946560dbbc0269f43de", null ],
@@ -161,7 +165,8 @@ var group__chrono =
       [ "operator+=", "structetl_1_1chrono_1_1year__month.html#a95436d2113349c094538cbe0ca632275", null ],
       [ "operator-=", "structetl_1_1chrono_1_1year__month.html#a5857ae31dba5e544bf6b8f2ccf4b3810", null ],
       [ "operator-=", "structetl_1_1chrono_1_1year__month.html#a7f2d2dd29d710d07780fb4e01c38ca6f", null ],
-      [ "year", "structetl_1_1chrono_1_1year__month.html#aae8490351a0e86f736a4d7ebf10845f5", null ]
+      [ "year", "structetl_1_1chrono_1_1year__month.html#aae8490351a0e86f736a4d7ebf10845f5", null ],
+      [ "operator==", "structetl_1_1chrono_1_1year__month.html#a0a89ab5a236d8c7df00719999519c914", null ]
     ] ],
     [ "year_month_day", "structetl_1_1chrono_1_1year__month__day.html", [
       [ "year_month_day", "structetl_1_1chrono_1_1year__month__day.html#a7c39d176ca050972a0f981dd78617435", null ],
