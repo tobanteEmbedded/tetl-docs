@@ -82,13 +82,15 @@ var group__chrono =
     [ "month_day_last", "structetl_1_1chrono_1_1month__day__last.html", [
       [ "month_day_last", "structetl_1_1chrono_1_1month__day__last.html#a9b376f6543e91f190b8918a32c004cee", null ],
       [ "month", "structetl_1_1chrono_1_1month__day__last.html#a582292604521fe97b9dc2a6effe696a4", null ],
-      [ "ok", "structetl_1_1chrono_1_1month__day__last.html#a2fca511e0ae30036fb6cc95454d1c185", null ]
+      [ "ok", "structetl_1_1chrono_1_1month__day__last.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
+      [ "operator==", "structetl_1_1chrono_1_1month__day__last.html#a70699b40709133c5333e569347243775", null ]
     ] ],
     [ "month_weekday", "structetl_1_1chrono_1_1month__weekday.html", [
       [ "month_weekday", "structetl_1_1chrono_1_1month__weekday.html#a30056977f51813723587be5a75f30e03", null ],
       [ "month", "structetl_1_1chrono_1_1month__weekday.html#a582292604521fe97b9dc2a6effe696a4", null ],
       [ "ok", "structetl_1_1chrono_1_1month__weekday.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-      [ "weekday_indexed", "structetl_1_1chrono_1_1month__weekday.html#a33147b638fa644bc8fc265c9e37838d8", null ]
+      [ "weekday_indexed", "structetl_1_1chrono_1_1month__weekday.html#a33147b638fa644bc8fc265c9e37838d8", null ],
+      [ "operator==", "structetl_1_1chrono_1_1month__weekday.html#aca35bc8592f95b975972e9501fc7b31b", null ]
     ] ],
     [ "month_weekday_last", "structetl_1_1chrono_1_1month__weekday__last.html", [
       [ "month_weekday_last", "structetl_1_1chrono_1_1month__weekday__last.html#ab75ba52acdc7ee41769c45a5f45dc5ef", null ],
