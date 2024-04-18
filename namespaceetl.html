@@ -3048,6 +3048,9 @@ requires <a class="el" href="#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer
 <tr class="memitem:a6cefb6c59cd3f3c6fc3d7c87b547074c" id="r_a6cefb6c59cd3f3c6fc3d7c87b547074c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1literals_1_1chrono__literals.html#a6cefb6c59cd3f3c6fc3d7c87b547074c">operator&quot;&quot;_us</a> (unsigned long long m) -&gt; <a class="el" href="namespaceetl_1_1chrono.html#a080788fed03294e645b6718a9063b197">etl::chrono::microseconds</a></td></tr>
 <tr class="memdesc:a6cefb6c59cd3f3c6fc3d7c87b547074c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms a <a class="el" href="structetl_1_1chrono_1_1duration.html" title="Class template etl::chrono::duration represents a time interval.">etl::chrono::duration</a> literal representing microseconds. Integer literal, returns exactly <a class="el" href="namespaceetl_1_1chrono.html#a080788fed03294e645b6718a9063b197" title="Signed integer type of at least 55 bits.">etl::chrono::microseconds(mins)</a>.  <br /></td></tr>
 <tr class="separator:a6cefb6c59cd3f3c6fc3d7c87b547074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21da7769abdcedec53e5522706dbe2d6" id="r_a21da7769abdcedec53e5522706dbe2d6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl_1_1literals_1_1chrono__literals.html#a21da7769abdcedec53e5522706dbe2d6">operator&quot;&quot;_y</a> (unsigned long long y) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1year.html">etl::chrono::year</a></td></tr>
+<tr class="memdesc:a21da7769abdcedec53e5522706dbe2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms a <a class="el" href="structetl_1_1chrono_1_1year.html">etl::chrono::year</a> literal representing a year in the proleptic Gregorian calendar.  <br /></td></tr>
+<tr class="separator:a21da7769abdcedec53e5522706dbe2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86219208a90a3dde7323cc44e0df0ef4" id="r_a86219208a90a3dde7323cc44e0df0ef4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8hpp.html#ac8b31cb9f07073943eca09b7e6030296">TETL_ALWAYS_INLINE</a> constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86219208a90a3dde7323cc44e0df0ef4">operator&amp;</a> (<a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a> lhs, <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a> rhs) noexcept -&gt; <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab">etl::byte</a></td></tr>
 <tr class="memdesc:a86219208a90a3dde7323cc44e0df0ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to: <code>return byte(static_cast&lt;unsigned int&gt;(lhs) &amp; static_cast&lt;unsigned int&gt;(rhs));</code>  <br /></td></tr>
 <tr class="separator:a86219208a90a3dde7323cc44e0df0ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8925,7 +8928,7 @@ template&lt;typename F , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -8959,7 +8962,7 @@ requires (<a class="el" href="#a79bb140a0b590bb8a6eadea52d880d17">etl::is_invoca
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -18998,7 +19001,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 17:18:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 17:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

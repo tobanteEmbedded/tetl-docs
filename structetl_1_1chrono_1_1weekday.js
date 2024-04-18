@@ -12,5 +12,6 @@ var structetl_1_1chrono_1_1weekday =
     [ "operator+=", "structetl_1_1chrono_1_1weekday.html#a6d777aa065fda57555df2792a2df6310", null ],
     [ "operator--", "structetl_1_1chrono_1_1weekday.html#a2c131dfbebb919909183a5f9a210a514", null ],
     [ "operator--", "structetl_1_1chrono_1_1weekday.html#a2b907ac361a9396d5f63eaa854cf2093", null ],
-    [ "operator-=", "structetl_1_1chrono_1_1weekday.html#acd0f3ef2867abffc510f38829b40c8e0", null ]
+    [ "operator-=", "structetl_1_1chrono_1_1weekday.html#acd0f3ef2867abffc510f38829b40c8e0", null ],
+    [ "operator==", "structetl_1_1chrono_1_1weekday.html#ad76fd119f7a9ce522ffe6e5b070ff5dc", null ]
 ];

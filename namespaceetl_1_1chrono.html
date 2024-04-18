@@ -348,8 +348,6 @@ requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="memitem:ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1time__point.html">time_point</a>&lt; Clock, Dur2 &gt; const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two time points. The comparison is done by comparing the results time_since_epoch() for the time points.  <br /></td></tr>
 <tr class="separator:ae5ce9e1c2a6217a3f1f7067b0255df9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76fd119f7a9ce522ffe6e5b070ff5dc" id="r_ad76fd119f7a9ce522ffe6e5b070ff5dc"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad76fd119f7a9ce522ffe6e5b070ff5dc">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1weekday.html">weekday</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1weekday.html">weekday</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
-<tr class="separator:ad76fd119f7a9ce522ffe6e5b070ff5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabdc39208f5d8880476996334141637" id="r_acabdc39208f5d8880476996334141637"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acabdc39208f5d8880476996334141637">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
 <tr class="separator:acabdc39208f5d8880476996334141637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a89ab5a236d8c7df00719999519c914" id="r_a0a89ab5a236d8c7df00719999519c914"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a89ab5a236d8c7df00719999519c914">operator==</a> (<a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a> const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a> const &amp;rhs) noexcept -&gt; bool</td></tr>
@@ -1882,7 +1880,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="a2d5290a63cd105557a4ccce46d8e6dd3" name="a2d5290a63cd105557a4ccce46d8e6dd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d5290a63cd105557a4ccce46d8e6dd3">&#9670;&#160;</a></span>operator==() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5290a63cd105557a4ccce46d8e6dd3">&#9670;&#160;</a></span>operator==() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1916,7 +1914,7 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div>
 </div>
 <a id="ae5ce9e1c2a6217a3f1f7067b0255df9f" name="ae5ce9e1c2a6217a3f1f7067b0255df9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">&#9670;&#160;</a></span>operator==() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ce9e1c2a6217a3f1f7067b0255df9f">&#9670;&#160;</a></span>operator==() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1949,38 +1947,8 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 
 </div>
 </div>
-<a id="ad76fd119f7a9ce522ffe6e5b070ff5dc" name="ad76fd119f7a9ce522ffe6e5b070ff5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76fd119f7a9ce522ffe6e5b070ff5dc">&#9670;&#160;</a></span>operator==() <span class="overload">[3/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1weekday.html">weekday</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1weekday.html">weekday</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="acabdc39208f5d8880476996334141637" name="acabdc39208f5d8880476996334141637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acabdc39208f5d8880476996334141637">&#9670;&#160;</a></span>operator==() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acabdc39208f5d8880476996334141637">&#9670;&#160;</a></span>operator==() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2010,7 +1978,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="a0a89ab5a236d8c7df00719999519c914" name="a0a89ab5a236d8c7df00719999519c914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a89ab5a236d8c7df00719999519c914">&#9670;&#160;</a></span>operator==() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a89ab5a236d8c7df00719999519c914">&#9670;&#160;</a></span>operator==() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2040,7 +2008,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="ac32363baa711060aeaa2d6141431dcfc" name="ac32363baa711060aeaa2d6141431dcfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32363baa711060aeaa2d6141431dcfc">&#9670;&#160;</a></span>operator==() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32363baa711060aeaa2d6141431dcfc">&#9670;&#160;</a></span>operator==() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2070,7 +2038,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 </div>
 </div>
 <a id="a6026fba75e86a4f5fa7f2d794e11f142" name="a6026fba75e86a4f5fa7f2d794e11f142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6026fba75e86a4f5fa7f2d794e11f142">&#9670;&#160;</a></span>operator==() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6026fba75e86a4f5fa7f2d794e11f142">&#9670;&#160;</a></span>operator==() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2660,7 +2628,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1chrono.html">chrono</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 17:18:23 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 17:40:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
