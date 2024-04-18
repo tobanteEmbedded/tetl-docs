@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"wcscspn_8hpp_source.html":[11,0,1,0,23,4],
 "wcslen_8hpp.html":[11,0,1,0,23,5],
 "wcslen_8hpp.html#ae76640f48ef8b4a03e9b81fd5ca4209a":[11,0,1,0,23,5,0],
 "wcslen_8hpp_source.html":[11,0,1,0,23,5],
