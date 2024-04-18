@@ -113,7 +113,7 @@ $(function(){initNavTree('structetl_1_1front__insert__iterator.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is an LegacyOutputIterator that prepends elements to a container for which it was constructed. The container's push_front() member function is called whenever the iterator (whether dereferenced or not) is assigned to. Incrementing the <a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is a no-op.  
+<p><a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is an LegacyOutputIterator that prepends elements to a container for which it was constructed.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="front__insert__iterator_8hpp_source.html">front_insert_iterator.hpp</a>&gt;</code></p>
@@ -159,13 +159,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aed0f611346aff4950378fefaf0ded3d2" id="r_aed0f611346aff4950378fefaf0ded3d2"><td class="memItemLeft" align="right" valign="top">Container *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed0f611346aff4950378fefaf0ded3d2">container_</a> = nullptr</td></tr>
-<tr class="separator:aed0f611346aff4950378fefaf0ded3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c92787d56c3637227a7f4d405e1613b" id="r_a4c92787d56c3637227a7f4d405e1613b"><td class="memItemLeft" align="right" valign="top">Container *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c92787d56c3637227a7f4d405e1613b">_container</a> = nullptr</td></tr>
+<tr class="separator:a4c92787d56c3637227a7f4d405e1613b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Container&gt;<br />
-struct etl::front_insert_iterator&lt; Container &gt;</div><p><a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is an LegacyOutputIterator that prepends elements to a container for which it was constructed. The container's push_front() member function is called whenever the iterator (whether dereferenced or not) is assigned to. Incrementing the <a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is a no-op. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add tests when a container with push_front has been implemented.</dd></dl>
+struct etl::front_insert_iterator&lt; Container &gt;</div><p><a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is an LegacyOutputIterator that prepends elements to a container for which it was constructed. </p>
+<p>The container's push_front() member function is called whenever the iterator (whether dereferenced or not) is assigned to. Incrementing the <a class="el" href="structetl_1_1front__insert__iterator.html" title="front_insert_iterator is an LegacyOutputIterator that prepends elements to a container for which it w...">front_insert_iterator</a> is a no-op. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9c2014b8eab41918aa55438cb370dd55" name="a9c2014b8eab41918aa55438cb370dd55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c2014b8eab41918aa55438cb370dd55">&#9670;&#160;</a></span>container_type</h2>
@@ -471,8 +471,8 @@ template&lt;typename Container &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aed0f611346aff4950378fefaf0ded3d2" name="aed0f611346aff4950378fefaf0ded3d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed0f611346aff4950378fefaf0ded3d2">&#9670;&#160;</a></span>container_</h2>
+<a id="a4c92787d56c3637227a7f4d405e1613b" name="a4c92787d56c3637227a7f4d405e1613b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c92787d56c3637227a7f4d405e1613b">&#9670;&#160;</a></span>_container</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +483,7 @@ template&lt;typename Container &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Container* container_ = nullptr</td>
+          <td class="memname">Container* _container = nullptr</td>
         </tr>
       </table>
   </td>
@@ -504,7 +504,7 @@ template&lt;typename Container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1front__insert__iterator.html">front_insert_iterator</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 23:47:30 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 02:12:06 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
