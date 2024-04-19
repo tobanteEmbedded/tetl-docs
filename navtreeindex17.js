@@ -1,5 +1,10 @@
 var NAVTREEINDEX17 =
 {
+"pointer__int__pair_8hpp.html":[11,0,1,0,40,11],
+"pointer__int__pair_8hpp_source.html":[11,0,1,0,40,11],
+"pointer__int__pair__info_8hpp.html":[11,0,1,0,40,12],
+"pointer__int__pair__info_8hpp_source.html":[11,0,1,0,40,12],
+"pointer__like__traits_8hpp.html":[11,0,1,0,40,13],
 "pointer__like__traits_8hpp_source.html":[11,0,1,0,40,13],
 "pointer__traits_8hpp.html":[11,0,1,0,40,14],
 "pointer__traits_8hpp_source.html":[11,0,1,0,40,14],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "sized__range_8hpp.html":[11,0,1,0,48,17],
 "sized__range_8hpp_source.html":[11,0,1,0,48,17],
 "small__ptr_8hpp.html":[11,0,1,0,40,18],
-"small__ptr_8hpp_source.html":[11,0,1,0,40,18],
-"smallest__size__t_8hpp.html":[11,0,1,0,61,116],
-"smallest__size__t_8hpp_source.html":[11,0,1,0,61,116],
-"sort_8hpp.html":[11,0,1,0,0,73],
-"sort_8hpp_source.html":[11,0,1,0,0,73],
-"sorted__equivalent_8hpp.html":[11,0,1,0,29,2]
+"small__ptr_8hpp_source.html":[11,0,1,0,40,18]
 };
