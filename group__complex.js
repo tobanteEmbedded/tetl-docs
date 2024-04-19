@@ -19,7 +19,9 @@ var group__complex =
       [ "operator=", "structetl_1_1complex.html#a9e8e5f62f8c48ae9a65dfc791c40fa7a", null ],
       [ "operator=", "structetl_1_1complex.html#aaaeae73b4f7dd691427aabfb19df2816", null ],
       [ "real", "structetl_1_1complex.html#ace1d877bddbfca2ea50055a1eb0bbaff", null ],
-      [ "real", "structetl_1_1complex.html#a6c6a39f0723b9a2d2de0b9e6cb0d9c01", null ]
+      [ "real", "structetl_1_1complex.html#a6c6a39f0723b9a2d2de0b9e6cb0d9c01", null ],
+      [ "operator==", "structetl_1_1complex.html#aa3ebd2568fc535cf061b1c09f81672c1", null ],
+      [ "operator==", "structetl_1_1complex.html#a8604ac9611597da04b67b96485076f70", null ]
     ] ],
     [ "abs", "group__complex.html#gabe732728abf637284509396f07e7e428", null ],
     [ "arg", "group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1", null ],

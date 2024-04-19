@@ -2,9 +2,6 @@ var __complex_2complex_8hpp =
 [
     [ "tuple_element< I, etl::complex< T > >", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4" ],
     [ "tuple_size< etl::complex< T > >", "structetl_1_1tuple__size_3_01etl_1_1complex_3_01T_01_4_01_4.html", null ],
-    [ "operator!=", "__complex_2complex_8hpp.html#a0c27b4cf9bc931994626a2ef5dccdd31", null ],
-    [ "operator!=", "__complex_2complex_8hpp.html#a21ed7f0af0742e1a5ac4571b8a0cb1f8", null ],
-    [ "operator!=", "__complex_2complex_8hpp.html#a87b2c8e96c56c4b8a13d0a122cf47b17", null ],
     [ "operator\"\"_i", "__complex_2complex_8hpp.html#ac2266f4104a4fb536c9a02bcb8fa139d", null ],
     [ "operator\"\"_i", "__complex_2complex_8hpp.html#a2f553b242808150befd3366a0aee09fc", null ],
     [ "operator\"\"_if", "__complex_2complex_8hpp.html#a480d031789767adfbb12ca58dd47dec7", null ],
@@ -24,8 +21,5 @@ var __complex_2complex_8hpp =
     [ "operator-", "__complex_2complex_8hpp.html#aaa390de4495e3c0ec93c4491c5639143", null ],
     [ "operator/", "__complex_2complex_8hpp.html#ac1b89ab01f9efe7650b6a97888f1e869", null ],
     [ "operator/", "__complex_2complex_8hpp.html#aafdc7ea9b09001e49518715162e70290", null ],
-    [ "operator/", "__complex_2complex_8hpp.html#a9660b9b2b46b561d976ffbf7dbde8d69", null ],
-    [ "operator==", "__complex_2complex_8hpp.html#a27742612e6861226707341546907da1e", null ],
-    [ "operator==", "__complex_2complex_8hpp.html#af746cebe9104d4847df63754ab19eeb7", null ],
-    [ "operator==", "__complex_2complex_8hpp.html#a32bab80e6235274bcc58d29d59d310a0", null ]
+    [ "operator/", "__complex_2complex_8hpp.html#a9660b9b2b46b561d976ffbf7dbde8d69", null ]
 ];
