@@ -219,9 +219,6 @@ requires <a class="el" href="#aa007b921bdf214f4132fdd20af8beaa4">string_view_lik
 <tr class="memitem:ab143ea1e2e52c9b635cb2c639dd89226"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab143ea1e2e52c9b635cb2c639dd89226">append</a> (StringView const &amp;view, <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a> pos, <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a> <a class="el" href="group__algorithm.html#gacf27092e22460faafdb958cac56c6fec">count</a>=<a class="el" href="#a29abf0eaf62dbe10174db67475599a1b">npos</a>) -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a> &amp;</td></tr>
 <tr class="memdesc:ab143ea1e2e52c9b635cb2c639dd89226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly converts view to a string_view sv then appends the characters from the subview [ pos, pos + count ) of sv.  <br /></td></tr>
 <tr class="separator:ab143ea1e2e52c9b635cb2c639dd89226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fcfd5d044441d38ba99d805052a50d" id="r_a79fcfd5d044441d38ba99d805052a50d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79fcfd5d044441d38ba99d805052a50d">assign</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a> &amp;&amp;str) noexcept -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a> &amp;</td></tr>
-<tr class="memdesc:a79fcfd5d044441d38ba99d805052a50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the contents with those of str using move semantics.  <br /></td></tr>
-<tr class="separator:a79fcfd5d044441d38ba99d805052a50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e9d67b454b2221f8b50033b37b7616" id="r_a61e9d67b454b2221f8b50033b37b7616"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61e9d67b454b2221f8b50033b37b7616">assign</a> (<a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a> const &amp;str) noexcept -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a> &amp;</td></tr>
 <tr class="memdesc:a61e9d67b454b2221f8b50033b37b7616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the contents with a copy of str.  <br /></td></tr>
 <tr class="separator:a61e9d67b454b2221f8b50033b37b7616"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1569,38 +1566,8 @@ requires <a class="el" href="#aa007b921bdf214f4132fdd20af8beaa4">string_view_lik
 
 </div>
 </div>
-<a id="a79fcfd5d044441d38ba99d805052a50d" name="a79fcfd5d044441d38ba99d805052a50d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fcfd5d044441d38ba99d805052a50d">&#9670;&#160;</a></span>assign() <span class="overload">[1/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> Capacity, typename Traits  = etl::char_traits&lt;Char&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto assign </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt; Char, Capacity, Traits &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp;
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Replaces the contents with those of str using move semantics. </p>
-
-</div>
-</div>
 <a id="a61e9d67b454b2221f8b50033b37b7616" name="a61e9d67b454b2221f8b50033b37b7616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e9d67b454b2221f8b50033b37b7616">&#9670;&#160;</a></span>assign() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e9d67b454b2221f8b50033b37b7616">&#9670;&#160;</a></span>assign() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1630,7 +1597,7 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
 </div>
 </div>
 <a id="a7b80dbf714c8ebc3ae4d1843e21d7bfe" name="a7b80dbf714c8ebc3ae4d1843e21d7bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b80dbf714c8ebc3ae4d1843e21d7bfe">&#9670;&#160;</a></span>assign() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b80dbf714c8ebc3ae4d1843e21d7bfe">&#9670;&#160;</a></span>assign() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1669,7 +1636,7 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
 </div>
 </div>
 <a id="ab440cb10f5de4b30a69d1369128cdb88" name="ab440cb10f5de4b30a69d1369128cdb88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab440cb10f5de4b30a69d1369128cdb88">&#9670;&#160;</a></span>assign() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab440cb10f5de4b30a69d1369128cdb88">&#9670;&#160;</a></span>assign() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1699,7 +1666,7 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
 </div>
 </div>
 <a id="ac6ba3e71e5919353c01a8d1e39afb24a" name="ac6ba3e71e5919353c01a8d1e39afb24a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ba3e71e5919353c01a8d1e39afb24a">&#9670;&#160;</a></span>assign() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ba3e71e5919353c01a8d1e39afb24a">&#9670;&#160;</a></span>assign() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1733,7 +1700,7 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
 </div>
 </div>
 <a id="a5f4d0144582cab35d290e0162363bc01" name="a5f4d0144582cab35d290e0162363bc01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f4d0144582cab35d290e0162363bc01">&#9670;&#160;</a></span>assign() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4d0144582cab35d290e0162363bc01">&#9670;&#160;</a></span>assign() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1770,7 +1737,7 @@ requires (detail::InputIterator&lt;InputIt&gt;)</div>
 </div>
 </div>
 <a id="a0e6b101e8c699dac06489f9ec4b63fd7" name="a0e6b101e8c699dac06489f9ec4b63fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e6b101e8c699dac06489f9ec4b63fd7">&#9670;&#160;</a></span>assign() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6b101e8c699dac06489f9ec4b63fd7">&#9670;&#160;</a></span>assign() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1804,7 +1771,7 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
 </div>
 </div>
 <a id="a66b89d61f6e8385e6bf782a5ccdc3e4d" name="a66b89d61f6e8385e6bf782a5ccdc3e4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b89d61f6e8385e6bf782a5ccdc3e4d">&#9670;&#160;</a></span>assign() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b89d61f6e8385e6bf782a5ccdc3e4d">&#9670;&#160;</a></span>assign() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1837,7 +1804,7 @@ requires <a class="el" href="#aa007b921bdf214f4132fdd20af8beaa4">string_view_lik
 </div>
 </div>
 <a id="a6fc5b5556c62c80afc70c7e3fbecc69a" name="a6fc5b5556c62c80afc70c7e3fbecc69a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc5b5556c62c80afc70c7e3fbecc69a">&#9670;&#160;</a></span>assign() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc5b5556c62c80afc70c7e3fbecc69a">&#9670;&#160;</a></span>assign() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1893,7 +1860,8 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto back </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a46484dd10898f79b9c304d4ae8801d84">const_reference</a> </td>
+          <td> const -&gt; <a class="el" href="#a46484dd10898f79b9c304d4ae8801d84">const_reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -1922,7 +1890,8 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto back </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a> </td>
+          <td> -&gt; <a class="el" href="#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -3824,7 +3793,8 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto front </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a46484dd10898f79b9c304d4ae8801d84">const_reference</a> </td>
+          <td> const -&gt; <a class="el" href="#a46484dd10898f79b9c304d4ae8801d84">const_reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -3853,7 +3823,8 @@ template&lt;typename Char , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto front </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a> </td>
+          <td> -&gt; <a class="el" href="#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -5640,7 +5611,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a></li>
-    <li class="footer">Generated on Fri Apr 19 2024 21:51:08 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 22:52:19 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -32,7 +32,6 @@ var structetl_1_1basic__inplace__string =
     [ "append", "structetl_1_1basic__inplace__string.html#a8da35b340c9a41233c5adb820f0d34bb", null ],
     [ "append", "structetl_1_1basic__inplace__string.html#a906cb7ac57a1a3413c1fd6755f9cd591", null ],
     [ "append", "structetl_1_1basic__inplace__string.html#ab143ea1e2e52c9b635cb2c639dd89226", null ],
-    [ "assign", "structetl_1_1basic__inplace__string.html#a79fcfd5d044441d38ba99d805052a50d", null ],
     [ "assign", "structetl_1_1basic__inplace__string.html#a61e9d67b454b2221f8b50033b37b7616", null ],
     [ "assign", "structetl_1_1basic__inplace__string.html#a7b80dbf714c8ebc3ae4d1843e21d7bfe", null ],
     [ "assign", "structetl_1_1basic__inplace__string.html#ab440cb10f5de4b30a69d1369128cdb88", null ],
