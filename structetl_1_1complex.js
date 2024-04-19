@@ -2,8 +2,8 @@ var structetl_1_1complex =
 [
     [ "value_type", "structetl_1_1complex.html#afb9ded5f49336ae503bb9f2035ea902b", null ],
     [ "complex", "structetl_1_1complex.html#a60ad43ee947342b36cd897c8d7098a65", null ],
-    [ "complex", "structetl_1_1complex.html#a8519e6743cdc5a41e97c74d85f7b9bcb", null ],
-    [ "complex", "structetl_1_1complex.html#a5834d5ebe98d3b4a2a082a2da98d14eb", null ],
+    [ "complex", "structetl_1_1complex.html#af8af837691cdf3a5714f3a7267b73d13", null ],
+    [ "explicit", "structetl_1_1complex.html#a01073830cc131664a6b50262e190d4f3", null ],
     [ "imag", "structetl_1_1complex.html#a50e99cbffede5f5c60b959e4beeb3912", null ],
     [ "imag", "structetl_1_1complex.html#a22b5fe3d1555eaa283226142f525d7ec", null ],
     [ "operator*=", "structetl_1_1complex.html#a0798fee75afdd322ebb49f0a140c623f", null ],
@@ -14,11 +14,15 @@ var structetl_1_1complex =
     [ "operator-=", "structetl_1_1complex.html#a4c2125f224b78e41102ab9b775f8c5fd", null ],
     [ "operator/=", "structetl_1_1complex.html#a450908c980bf73f5daf8ed63cfd27830", null ],
     [ "operator/=", "structetl_1_1complex.html#a27daebd8d0fdeb0355ce29717d0482b7", null ],
-    [ "operator=", "structetl_1_1complex.html#a4330c21c06b907ed72bde13cb741ecdb", null ],
+    [ "operator=", "structetl_1_1complex.html#afa208573f973fc33e14df2d2b693d7f8", null ],
     [ "operator=", "structetl_1_1complex.html#a9e8e5f62f8c48ae9a65dfc791c40fa7a", null ],
     [ "operator=", "structetl_1_1complex.html#aaaeae73b4f7dd691427aabfb19df2816", null ],
     [ "real", "structetl_1_1complex.html#ace1d877bddbfca2ea50055a1eb0bbaff", null ],
     [ "real", "structetl_1_1complex.html#a6c6a39f0723b9a2d2de0b9e6cb0d9c01", null ],
+    [ "get", "structetl_1_1complex.html#a650bfbb34b34046eee0a90462178afe0", null ],
+    [ "get", "structetl_1_1complex.html#a8ff14f3a28020abd7c031e979116512b", null ],
+    [ "get", "structetl_1_1complex.html#ada14086f24427efdf73165158351729f", null ],
+    [ "get", "structetl_1_1complex.html#ab983dbd86684b9a6bf02626b8e08dc27", null ],
     [ "operator==", "structetl_1_1complex.html#aa3ebd2568fc535cf061b1c09f81672c1", null ],
     [ "operator==", "structetl_1_1complex.html#a8604ac9611597da04b67b96485076f70", null ]
 ];

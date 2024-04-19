@@ -2,6 +2,10 @@ var __complex_2complex_8hpp =
 [
     [ "tuple_element< I, etl::complex< T > >", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4.html", "structetl_1_1tuple__element_3_01I_00_01etl_1_1complex_3_01T_01_4_01_4" ],
     [ "tuple_size< etl::complex< T > >", "structetl_1_1tuple__size_3_01etl_1_1complex_3_01T_01_4_01_4.html", null ],
+    [ "get", "__complex_2complex_8hpp.html#aedf534ff0e6dbe72a691b7cd682f5158", null ],
+    [ "get", "__complex_2complex_8hpp.html#a495c0bdb5315c51800c688506d62512f", null ],
+    [ "get", "__complex_2complex_8hpp.html#aa02362f5e0bf51e1d26f37e6a6249b4e", null ],
+    [ "get", "__complex_2complex_8hpp.html#a0071fce788b99307ce48fd9747fe5b38", null ],
     [ "operator\"\"_i", "__complex_2complex_8hpp.html#ac2266f4104a4fb536c9a02bcb8fa139d", null ],
     [ "operator\"\"_i", "__complex_2complex_8hpp.html#a2f553b242808150befd3366a0aee09fc", null ],
     [ "operator\"\"_if", "__complex_2complex_8hpp.html#a480d031789767adfbb12ca58dd47dec7", null ],

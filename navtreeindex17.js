@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"pointer__like__traits_8hpp.html":[11,0,1,0,40,13],
+"pointer__like__traits_8hpp_source.html":[11,0,1,0,40,13],
+"pointer__traits_8hpp.html":[11,0,1,0,40,14],
+"pointer__traits_8hpp_source.html":[11,0,1,0,40,14],
+"polar_8hpp.html":[11,0,1,0,12,10],
+"polar_8hpp_source.html":[11,0,1,0,12,10],
+"popcount_8hpp.html":[11,0,1,0,2,13],
+"popcount_8hpp_source.html":[11,0,1,0,2,13],
 "pow_8hpp.html":[11,0,1,0,10,33],
 "pow_8hpp_source.html":[11,0,1,0,10,33],
 "predicate_8hpp.html":[11,0,1,0,13,22],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "smallest__size__t_8hpp.html":[11,0,1,0,61,116],
 "smallest__size__t_8hpp_source.html":[11,0,1,0,61,116],
 "sort_8hpp.html":[11,0,1,0,0,73],
-"sort_8hpp_source.html":[11,0,1,0,0,73],
-"sorted__equivalent_8hpp.html":[11,0,1,0,29,2],
-"sorted__equivalent_8hpp.html#af673e154dd31571c156f5a6119275436":[11,0,1,0,29,2,1],
-"sorted__equivalent_8hpp_source.html":[11,0,1,0,29,2],
-"sorted__unique_8hpp.html":[11,0,1,0,29,3],
-"sorted__unique_8hpp.html#aba873a97be10ad8146b06a01a9694b9c":[11,0,1,0,29,3,1],
-"sorted__unique_8hpp_source.html":[11,0,1,0,29,3],
-"source__location_8hpp.html":[11,0,1,0,117],
-"source__location_8hpp_source.html":[11,0,1,0,117]
+"sort_8hpp_source.html":[11,0,1,0,0,73]
 };

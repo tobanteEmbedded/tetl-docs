@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"__span_2span_8hpp.html#abb44c67bac9ad6e8a4e43a5d921d2611":[11,0,1,0,53,1,2],
+"__span_2span_8hpp.html#af9214041f67ff9be97582e117bd91449":[11,0,1,0,53,1,3],
+"__span_2span_8hpp_source.html":[11,0,1,0,53,1],
+"__stack_2stack_8hpp.html":[11,0,1,0,54,0],
 "__stack_2stack_8hpp.html#a49bec9d408f2060c687550beff2bc22a":[11,0,1,0,54,0,1],
 "__stack_2stack_8hpp.html#aaa1582db8c501fc2a0866681ff10eeef":[11,0,1,0,54,0,0],
 "__stack_2stack_8hpp_source.html":[11,0,1,0,54,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "bit__ceil_8hpp.html":[11,0,1,0,2,1],
 "bit__ceil_8hpp_source.html":[11,0,1,0,2,1],
 "bit__floor_8hpp.html":[11,0,1,0,2,2],
-"bit__floor_8hpp_source.html":[11,0,1,0,2,2],
-"bit__not_8hpp.html":[11,0,1,0,31,2],
-"bit__not_8hpp_source.html":[11,0,1,0,31,2],
-"bit__or_8hpp.html":[11,0,1,0,31,3],
-"bit__or_8hpp_source.html":[11,0,1,0,31,3]
+"bit__floor_8hpp_source.html":[11,0,1,0,2,2]
 };

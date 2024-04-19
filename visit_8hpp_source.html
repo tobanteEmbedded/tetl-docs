@@ -187,7 +187,7 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">get</a>(T&amp;&amp; t) -&gt; <span class="keyword">decltype</span>(<span class="keyword">auto</span>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a495c0bdb5315c51800c688506d62512f">get</a>(T&amp;&amp; t) -&gt; <span class="keyword">decltype</span>(<span class="keyword">auto</span>)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_variant_v&lt;T&gt;) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> etl::unchecked_get&lt;I&gt;(etl::forward&lt;T&gt;(t));</div>
@@ -290,8 +290,8 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="ais__reference_8hpp_html"><div class="ttname"><a href="is__reference_8hpp.html">is_reference.hpp</a></div></div>
 <div class="ttc" id="ais__rvalue__reference_8hpp_html"><div class="ttname"><a href="is__rvalue__reference_8hpp.html">is_rvalue_reference.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a495c0bdb5315c51800c688506d62512f"><div class="ttname"><a href="namespaceetl.html#a495c0bdb5315c51800c688506d62512f">etl::get</a></div><div class="ttdeci">constexpr auto get(complex&lt; X &gt; &amp;z) noexcept -&gt; X &amp;</div><div class="ttdef"><b>Definition</b> complex.hpp:92</div></div>
 <div class="ttc" id="anamespaceetl_html_a6c41ad6b9af06544b52833e235bb14dd"><div class="ttname"><a href="namespaceetl.html#a6c41ad6b9af06544b52833e235bb14dd">etl::index_sequence</a></div><div class="ttdeci">etl::integer_sequence&lt; etl::size_t, Ints... &gt; index_sequence</div><div class="ttdef"><b>Definition</b> index_sequence.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_html_a8214f25116b3dd5ee4ecd4605b8e5cf8"><div class="ttname"><a href="namespaceetl.html#a8214f25116b3dd5ee4ecd4605b8e5cf8">etl::get</a></div><div class="ttdeci">constexpr auto get(tuple&lt; Ts... &gt; &amp;t) -&gt; auto &amp;</div><div class="ttdef"><b>Definition</b> tuple.hpp:199</div></div>
 <div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
@@ -307,7 +307,7 @@ $(function(){initNavTree('visit_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_22f95e725ac636237aa807414a1d3bfe.html">_variant</a></li><li class="navelem"><a class="el" href="visit_8hpp.html">visit.hpp</a></li>
-    <li class="footer">Generated on Fri Apr 19 2024 15:05:08 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 17:06:30 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

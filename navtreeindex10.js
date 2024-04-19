@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"is__nothrow__constructible_8hpp.html#ac00c953e4e3f962b130f431bc25d6101":[11,0,1,0,61,64,1],
+"is__nothrow__constructible_8hpp_source.html":[11,0,1,0,61,64],
+"is__nothrow__convertible_8hpp.html":[11,0,1,0,61,65],
+"is__nothrow__convertible_8hpp.html#af70f6258c3e925eeb2d27b652374660d":[11,0,1,0,61,65,2],
 "is__nothrow__convertible_8hpp_source.html":[11,0,1,0,61,65],
 "is__nothrow__copy__assignable_8hpp.html":[11,0,1,0,61,66],
 "is__nothrow__copy__assignable_8hpp.html#a3322351bf5068346b84b6b19717f525c":[11,0,1,0,61,66,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "legacy__bidirectional__iterator_8hpp.html":[11,0,1,0,34,25],
 "legacy__bidirectional__iterator_8hpp_source.html":[11,0,1,0,34,25],
 "legacy__forward__iterator_8hpp.html":[11,0,1,0,34,26],
-"legacy__forward__iterator_8hpp_source.html":[11,0,1,0,34,26],
-"legacy__input__iterator_8hpp.html":[11,0,1,0,34,27],
-"legacy__input__iterator_8hpp_source.html":[11,0,1,0,34,27],
-"legacy__iterator_8hpp.html":[11,0,1,0,34,28],
-"legacy__iterator_8hpp_source.html":[11,0,1,0,34,28]
+"legacy__forward__iterator_8hpp_source.html":[11,0,1,0,34,26]
 };
