@@ -56,7 +56,7 @@ var group__chrono =
     [ "local_t", "structetl_1_1chrono_1_1local__t.html", null ],
     [ "month", "structetl_1_1chrono_1_1month.html", [
       [ "month", "structetl_1_1chrono_1_1month.html#a12e82dd14d04e083c480ee1a464756de", null ],
-      [ "month", "structetl_1_1chrono_1_1month.html#a27e0c864dfb2c79d0e3a21f09b2c777f", null ],
+      [ "month", "structetl_1_1chrono_1_1month.html#a35c9a6fe531db2331c2e96663adb3ff6", null ],
       [ "ok", "structetl_1_1chrono_1_1month.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
       [ "operator unsigned", "structetl_1_1chrono_1_1month.html#a2da3175019a03f49949c36396b318de1", null ],
       [ "operator++", "structetl_1_1chrono_1_1month.html#abb6c5796c012e14f8ddefaa9a85e58df", null ],
