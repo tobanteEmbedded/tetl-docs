@@ -1,9 +1,9 @@
 var structetl_1_1chrono_1_1day =
 [
     [ "day", "structetl_1_1chrono_1_1day.html#a39549afaefbfe21303c9ba15a252e820", null ],
-    [ "day", "structetl_1_1chrono_1_1day.html#ad1287a3d7907baeac227772cd5f762a2", null ],
+    [ "day", "structetl_1_1chrono_1_1day.html#aab3fc179fd05df93bb4a3547bd4634be", null ],
     [ "ok", "structetl_1_1chrono_1_1day.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-    [ "uint32_t", "structetl_1_1chrono_1_1day.html#ac21bcec47668626583d7a095ae23cc1a", null ],
+    [ "operator unsigned", "structetl_1_1chrono_1_1day.html#a2da3175019a03f49949c36396b318de1", null ],
     [ "operator++", "structetl_1_1chrono_1_1day.html#a87aec22f5175fbf553594d106dadc444", null ],
     [ "operator++", "structetl_1_1chrono_1_1day.html#a94611b80dc877f65a04eac1d18bbdf94", null ],
     [ "operator+=", "structetl_1_1chrono_1_1day.html#ac4ffd6d5e0e560d60bfe9c02fca2e1cc", null ],

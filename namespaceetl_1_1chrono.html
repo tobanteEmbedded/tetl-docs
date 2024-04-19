@@ -320,18 +320,40 @@ requires (detail::is_duration_v&lt;To&gt;)</td></tr>
 <tr class="separator:a014b551a2f989d4ecb0c3c3a9f2b58f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bc10ffa395cd490053b3c6558d6e33" id="r_a26bc10ffa395cd490053b3c6558d6e33"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26bc10ffa395cd490053b3c6558d6e33">operator-</a> (<a class="el" href="structetl_1_1chrono_1_1year__month__weekday.html">year_month_weekday</a> const &amp;lhs, <a class="el" href="#a82ba87d03270adcab228724292ece3ff">years</a> const &amp;rhs) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1year__month__weekday.html">year_month_weekday</a></td></tr>
 <tr class="separator:a26bc10ffa395cd490053b3c6558d6e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cff93edb16d3352be53edad33429e3" id="r_ae5cff93edb16d3352be53edad33429e3"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5cff93edb16d3352be53edad33429e3">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;d, int m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
+<tr class="separator:ae5cff93edb16d3352be53edad33429e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39aeb7f944f21197926e7b5f988b797" id="r_ae39aeb7f944f21197926e7b5f988b797"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae39aeb7f944f21197926e7b5f988b797">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;d, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
+<tr class="separator:ae39aeb7f944f21197926e7b5f988b797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791534ccf8c4299afbbce84abe66bd51" id="r_a791534ccf8c4299afbbce84abe66bd51"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a791534ccf8c4299afbbce84abe66bd51"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a791534ccf8c4299afbbce84abe66bd51">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; <a class="el" href="namespaceetl.html#ac0f7a81113943dc723a4e4751c342144">common_type_t</a>&lt; Rep1, Rep2 &gt;</td></tr>
 <tr class="memdesc:a791534ccf8c4299afbbce84abe66bd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs basic arithmetic operations between two durations or between a duration and a tick count.  <br /></td></tr>
 <tr class="separator:a791534ccf8c4299afbbce84abe66bd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea66e3b776412b883225e8137f51a813" id="r_aea66e3b776412b883225e8137f51a813"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea66e3b776412b883225e8137f51a813">operator/</a> (int m, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;d) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
+<tr class="separator:aea66e3b776412b883225e8137f51a813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a728b57839465263f27971ba848389" id="r_a65a728b57839465263f27971ba848389"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65a728b57839465263f27971ba848389">operator/</a> (int m, <a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a></td></tr>
+<tr class="separator:a65a728b57839465263f27971ba848389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3f2794ceacee49ec05b52ddd37049a2" id="r_af3f2794ceacee49ec05b52ddd37049a2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3f2794ceacee49ec05b52ddd37049a2">operator/</a> (int m, <a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;wdi) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__weekday.html">month_weekday</a></td></tr>
 <tr class="separator:af3f2794ceacee49ec05b52ddd37049a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd39fec96a1dd25ab6d7c47935224ba" id="r_accd39fec96a1dd25ab6d7c47935224ba"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accd39fec96a1dd25ab6d7c47935224ba">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>, int m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a></td></tr>
+<tr class="separator:accd39fec96a1dd25ab6d7c47935224ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d909feec53842657ed1a617c9b34a07" id="r_a1d909feec53842657ed1a617c9b34a07"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d909feec53842657ed1a617c9b34a07">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a></td></tr>
+<tr class="separator:a1d909feec53842657ed1a617c9b34a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bfc5af01bc3b26554f2233c4f45830" id="r_a00bfc5af01bc3b26554f2233c4f45830"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00bfc5af01bc3b26554f2233c4f45830">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m, <a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;d) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
+<tr class="separator:a00bfc5af01bc3b26554f2233c4f45830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f72609719c45acf3c293c048c750ad" id="r_a01f72609719c45acf3c293c048c750ad"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f72609719c45acf3c293c048c750ad">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m, int d) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a></td></tr>
+<tr class="separator:a01f72609719c45acf3c293c048c750ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e33878a8b46365594ab2befabf1f45f" id="r_a8e33878a8b46365594ab2befabf1f45f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e33878a8b46365594ab2befabf1f45f">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m, <a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a>) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a></td></tr>
+<tr class="separator:a8e33878a8b46365594ab2befabf1f45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a825ad07c5a49e93d73835aa8da657d" id="r_a5a825ad07c5a49e93d73835aa8da657d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a825ad07c5a49e93d73835aa8da657d">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m, <a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;wdi) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__weekday.html">month_weekday</a></td></tr>
 <tr class="separator:a5a825ad07c5a49e93d73835aa8da657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7da605d84b7d5b6a7d76b1f5726c61b" id="r_af7da605d84b7d5b6a7d76b1f5726c61b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7da605d84b7d5b6a7d76b1f5726c61b">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;wdi, int m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__weekday.html">month_weekday</a></td></tr>
 <tr class="separator:af7da605d84b7d5b6a7d76b1f5726c61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089fc16dd7f515feba8bd07a7ab702ab" id="r_a089fc16dd7f515feba8bd07a7ab702ab"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a089fc16dd7f515feba8bd07a7ab702ab">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1weekday__indexed.html">weekday_indexed</a> const &amp;wdi, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1month__weekday.html">month_weekday</a></td></tr>
 <tr class="separator:a089fc16dd7f515feba8bd07a7ab702ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e5c4a8afcc8ee5763ebbd7a8d2bedd" id="r_a88e5c4a8afcc8ee5763ebbd7a8d2bedd"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e5c4a8afcc8ee5763ebbd7a8d2bedd">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> const &amp;y, int m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a></td></tr>
+<tr class="separator:a88e5c4a8afcc8ee5763ebbd7a8d2bedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b9de441e492a759f0a786ef96d2f49" id="r_a73b9de441e492a759f0a786ef96d2f49"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73b9de441e492a759f0a786ef96d2f49">operator/</a> (<a class="el" href="structetl_1_1chrono_1_1year.html">year</a> const &amp;y, <a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;m) noexcept -&gt; <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a></td></tr>
+<tr class="separator:a73b9de441e492a759f0a786ef96d2f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ffbbb28a4ed0a8f2e355277f46c296" id="r_a15ffbbb28a4ed0a8f2e355277f46c296"><td class="memTemplParams" colspan="2">template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 &gt; </td></tr>
 <tr class="memitem:a15ffbbb28a4ed0a8f2e355277f46c296"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a15ffbbb28a4ed0a8f2e355277f46c296">operator&lt;</a> (<a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep1, Period1 &gt; const &amp;lhs, <a class="el" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt; Rep2, Period2 &gt; const &amp;rhs) -&gt; bool</td></tr>
 <tr class="memdesc:a15ffbbb28a4ed0a8f2e355277f46c296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two durations. Compares lhs to rhs, i.e. compares the number of ticks for the type common to both durations.  <br /></td></tr>
@@ -1711,8 +1733,67 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
+<a id="ae5cff93edb16d3352be53edad33429e3" name="ae5cff93edb16d3352be53edad33429e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cff93edb16d3352be53edad33429e3">&#9670;&#160;</a></span>operator/() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae39aeb7f944f21197926e7b5f988b797" name="ae39aeb7f944f21197926e7b5f988b797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39aeb7f944f21197926e7b5f988b797">&#9670;&#160;</a></span>operator/() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a791534ccf8c4299afbbce84abe66bd51" name="a791534ccf8c4299afbbce84abe66bd51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a791534ccf8c4299afbbce84abe66bd51">&#9670;&#160;</a></span>operator/() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a791534ccf8c4299afbbce84abe66bd51">&#9670;&#160;</a></span>operator/() <span class="overload">[3/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1747,8 +1828,68 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
+<a id="aea66e3b776412b883225e8137f51a813" name="aea66e3b776412b883225e8137f51a813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea66e3b776412b883225e8137f51a813">&#9670;&#160;</a></span>operator/() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65a728b57839465263f27971ba848389" name="a65a728b57839465263f27971ba848389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a728b57839465263f27971ba848389">&#9670;&#160;</a></span>operator/() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af3f2794ceacee49ec05b52ddd37049a2" name="af3f2794ceacee49ec05b52ddd37049a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f2794ceacee49ec05b52ddd37049a2">&#9670;&#160;</a></span>operator/() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f2794ceacee49ec05b52ddd37049a2">&#9670;&#160;</a></span>operator/() <span class="overload">[6/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1777,8 +1918,157 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 
 </div>
 </div>
+<a id="accd39fec96a1dd25ab6d7c47935224ba" name="accd39fec96a1dd25ab6d7c47935224ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd39fec96a1dd25ab6d7c47935224ba">&#9670;&#160;</a></span>operator/() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d909feec53842657ed1a617c9b34a07" name="a1d909feec53842657ed1a617c9b34a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d909feec53842657ed1a617c9b34a07">&#9670;&#160;</a></span>operator/() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00bfc5af01bc3b26554f2233c4f45830" name="a00bfc5af01bc3b26554f2233c4f45830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00bfc5af01bc3b26554f2233c4f45830">&#9670;&#160;</a></span>operator/() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1day.html">day</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01f72609719c45acf3c293c048c750ad" name="a01f72609719c45acf3c293c048c750ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f72609719c45acf3c293c048c750ad">&#9670;&#160;</a></span>operator/() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day.html">month_day</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e33878a8b46365594ab2befabf1f45f" name="a8e33878a8b46365594ab2befabf1f45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e33878a8b46365594ab2befabf1f45f">&#9670;&#160;</a></span>operator/() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1last__spec.html">last_spec</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__day__last.html">month_day_last</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5a825ad07c5a49e93d73835aa8da657d" name="a5a825ad07c5a49e93d73835aa8da657d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a825ad07c5a49e93d73835aa8da657d">&#9670;&#160;</a></span>operator/() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a825ad07c5a49e93d73835aa8da657d">&#9670;&#160;</a></span>operator/() <span class="overload">[12/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1808,7 +2098,7 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div>
 </div>
 <a id="af7da605d84b7d5b6a7d76b1f5726c61b" name="af7da605d84b7d5b6a7d76b1f5726c61b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7da605d84b7d5b6a7d76b1f5726c61b">&#9670;&#160;</a></span>operator/() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af7da605d84b7d5b6a7d76b1f5726c61b">&#9670;&#160;</a></span>operator/() <span class="overload">[13/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1838,7 +2128,7 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
 </div>
 </div>
 <a id="a089fc16dd7f515feba8bd07a7ab702ab" name="a089fc16dd7f515feba8bd07a7ab702ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089fc16dd7f515feba8bd07a7ab702ab">&#9670;&#160;</a></span>operator/() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a089fc16dd7f515feba8bd07a7ab702ab">&#9670;&#160;</a></span>operator/() <span class="overload">[14/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1855,6 +2145,66 @@ template&lt;typename Rep1 , typename Period1 , typename Rep2 , typename Period2 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1month__weekday.html">month_weekday</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88e5c4a8afcc8ee5763ebbd7a8d2bedd" name="a88e5c4a8afcc8ee5763ebbd7a8d2bedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e5c4a8afcc8ee5763ebbd7a8d2bedd">&#9670;&#160;</a></span>operator/() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73b9de441e492a759f0a786ef96d2f49" name="a73b9de441e492a759f0a786ef96d2f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b9de441e492a759f0a786ef96d2f49">&#9670;&#160;</a></span>operator/() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1year.html">year</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1chrono_1_1month.html">month</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1chrono_1_1year__month.html">year_month</a>
 </td>
         </tr>
       </table>
@@ -2692,7 +3042,7 @@ template&lt;typename Clock , typename Dur1 , typename Dur2 &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1chrono.html">chrono</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 21:34:02 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 00:27:01 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

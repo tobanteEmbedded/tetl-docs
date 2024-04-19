@@ -1,12 +1,12 @@
 var structetl_1_1chrono_1_1year =
 [
     [ "year", "structetl_1_1chrono_1_1year.html#afa94ab3aaa450f5c2f00fbd37260a2f7", null ],
-    [ "year", "structetl_1_1chrono_1_1year.html#a8d32994ff0dab29c3848f4d28f8f1a4b", null ],
+    [ "year", "structetl_1_1chrono_1_1year.html#a328f72ebfe17314b0f47fbf099b850c9", null ],
     [ "is_leap", "structetl_1_1chrono_1_1year.html#a575089f776754c851364d604d0a5ed13", null ],
     [ "max", "structetl_1_1chrono_1_1year.html#a30b06c97480cef13872804675212ce2e", null ],
     [ "min", "structetl_1_1chrono_1_1year.html#a131dd2a0a0eb9c2d3b316e2bc9db9e54", null ],
     [ "ok", "structetl_1_1chrono_1_1year.html#a2fca511e0ae30036fb6cc95454d1c185", null ],
-    [ "operator int32_t", "structetl_1_1chrono_1_1year.html#ae6f722b19003f81b4f25afe7c33b2560", null ],
+    [ "operator int", "structetl_1_1chrono_1_1year.html#a6599b41959fd1c8dec417e5b3e565694", null ],
     [ "operator+", "structetl_1_1chrono_1_1year.html#af87ff78b6e868071dc4d270eac903a30", null ],
     [ "operator++", "structetl_1_1chrono_1_1year.html#a4af27ec7c7af4911fce855f34795c26a", null ],
     [ "operator++", "structetl_1_1chrono_1_1year.html#a3df70e2873132bb0bca97fa56b2bbc47", null ],
