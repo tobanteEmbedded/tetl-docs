@@ -8,7 +8,7 @@ var searchData=
   ['fdim_2ehpp_5',['fdim.hpp',['../fdim_8hpp.html',1,'']]],
   ['fdimf_6',['fdimf',['../group__cmath.html#gab067c004a5ee6f46a9a6f7f86654154a',1,'etl']]],
   ['fdiml_7',['fdiml',['../group__cmath.html#ga0acecfd8db84e93791424bbc3d94714f',1,'etl']]],
-  ['features_8',['Features',['../md_docs_2roadmap.html#autotoc_md34',1,'']]],
+  ['features_8',['Features',['../md_docs_2roadmap.html#autotoc_md32',1,'']]],
   ['february_9',['February',['../namespaceetl_1_1chrono.html#a0630a7ae2e3ec7d142a6675541bacd5d',1,'etl::chrono']]],
   ['femto_10',['femto',['../namespaceetl.html#a626e7a2087ed63adf28928bc61505210',1,'etl']]],
   ['file_11',['file',['../structetl_1_1assert__msg.html#a5177d780470a1e88ba0cc4405b4efbb9',1,'etl::assert_msg']]],
