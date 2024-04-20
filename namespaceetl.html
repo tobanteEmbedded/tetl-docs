@@ -2047,36 +2047,30 @@ requires (detail::bit_castable_types&lt;To, From&gt;)</td></tr>
 <tr class="memitem:gab385b9f70c785ceb3a5b986f745ca81d" id="r_gab385b9f70c785ceb3a5b986f745ca81d"><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
 <tr class="memitem:gab385b9f70c785ceb3a5b986f745ca81d"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__iterator.html#gab385b9f70c785ceb3a5b986f745ca81d">cend</a> (C const &amp;c) noexcept(noexcept(<a class="el" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(c))) -&gt; decltype(<a class="el" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>(c))</td></tr>
 <tr class="separator:gab385b9f70c785ceb3a5b986f745ca81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc67214aa9016de19ce8c56cacf050f" id="r_affc67214aa9016de19ce8c56cacf050f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:affc67214aa9016de19ce8c56cacf050f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#affc67214aa9016de19ce8c56cacf050f">cmp_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:affc67214aa9016de19ce8c56cacf050f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:affc67214aa9016de19ce8c56cacf050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f8a2ce45cfed83d620b12d6271272f" id="r_ad7f8a2ce45cfed83d620b12d6271272f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:ad7f8a2ce45cfed83d620b12d6271272f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad7f8a2ce45cfed83d620b12d6271272f">cmp_greater</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ad7f8a2ce45cfed83d620b12d6271272f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:ad7f8a2ce45cfed83d620b12d6271272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fdcd304a94bdadbaa2c7d6fb267e05b" id="r_a6fdcd304a94bdadbaa2c7d6fb267e05b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:a6fdcd304a94bdadbaa2c7d6fb267e05b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6fdcd304a94bdadbaa2c7d6fb267e05b">cmp_greater_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a6fdcd304a94bdadbaa2c7d6fb267e05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:a6fdcd304a94bdadbaa2c7d6fb267e05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af465587d2f32a80939be1fad202d81a8" id="r_af465587d2f32a80939be1fad202d81a8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:af465587d2f32a80939be1fad202d81a8"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af465587d2f32a80939be1fad202d81a8">cmp_less</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:af465587d2f32a80939be1fad202d81a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:af465587d2f32a80939be1fad202d81a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae910ff92e0c20546b3798e7acf0f62a4" id="r_ae910ff92e0c20546b3798e7acf0f62a4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:ae910ff92e0c20546b3798e7acf0f62a4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae910ff92e0c20546b3798e7acf0f62a4">cmp_less_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ae910ff92e0c20546b3798e7acf0f62a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:ae910ff92e0c20546b3798e7acf0f62a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693945b83d4561846bbf0b5944d0296e" id="r_a693945b83d4561846bbf0b5944d0296e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</td></tr>
-<tr class="memitem:a693945b83d4561846bbf0b5944d0296e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a693945b83d4561846bbf0b5944d0296e">cmp_not_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a693945b83d4561846bbf0b5944d0296e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
-<tr class="separator:a693945b83d4561846bbf0b5944d0296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6782a5c3b874542f8c803e4b1fabaf3e" id="r_ga6782a5c3b874542f8c803e4b1fabaf3e"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:ga6782a5c3b874542f8c803e4b1fabaf3e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga6782a5c3b874542f8c803e4b1fabaf3e">cmp_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ga6782a5c3b874542f8c803e4b1fabaf3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:ga6782a5c3b874542f8c803e4b1fabaf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebf5db07d40ed67813269672bd19660a" id="r_gaebf5db07d40ed67813269672bd19660a"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:gaebf5db07d40ed67813269672bd19660a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gaebf5db07d40ed67813269672bd19660a">cmp_greater</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:gaebf5db07d40ed67813269672bd19660a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:gaebf5db07d40ed67813269672bd19660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2881d9071b843271d6e0a557049ff327" id="r_ga2881d9071b843271d6e0a557049ff327"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:ga2881d9071b843271d6e0a557049ff327"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga2881d9071b843271d6e0a557049ff327">cmp_greater_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ga2881d9071b843271d6e0a557049ff327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:ga2881d9071b843271d6e0a557049ff327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdf1ab07ba48bb89aa8db68eff58328e" id="r_gafdf1ab07ba48bb89aa8db68eff58328e"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:gafdf1ab07ba48bb89aa8db68eff58328e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">cmp_less</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:gafdf1ab07ba48bb89aa8db68eff58328e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:gafdf1ab07ba48bb89aa8db68eff58328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a6b773ae3666ba064d2fb4e5e529574" id="r_ga3a6b773ae3666ba064d2fb4e5e529574"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:ga3a6b773ae3666ba064d2fb4e5e529574"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga3a6b773ae3666ba064d2fb4e5e529574">cmp_less_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ga3a6b773ae3666ba064d2fb4e5e529574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:ga3a6b773ae3666ba064d2fb4e5e529574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e7fceb08eefe99eafc0325a8ec3b16e" id="r_ga9e7fceb08eefe99eafc0325a8ec3b16e"><td class="memTemplParams" colspan="2">template&lt;builtin_integer T, builtin_integer U&gt; </td></tr>
+<tr class="memitem:ga9e7fceb08eefe99eafc0325a8ec3b16e"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga9e7fceb08eefe99eafc0325a8ec3b16e">cmp_not_equal</a> (T t, U u) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ga9e7fceb08eefe99eafc0325a8ec3b16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion.  <br /></td></tr>
+<tr class="separator:ga9e7fceb08eefe99eafc0325a8ec3b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacdff3d2b9cf188d6aa0ab6981b9b2463" id="r_gacdff3d2b9cf188d6aa0ab6981b9b2463"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gacdff3d2b9cf188d6aa0ab6981b9b2463"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex.html#gacdff3d2b9cf188d6aa0ab6981b9b2463">conj</a> (<a class="el" href="structetl_1_1complex.html">complex</a>&lt; T &gt; const &amp;z) noexcept -&gt; <a class="el" href="structetl_1_1complex.html">complex</a>&lt; T &gt;</td></tr>
 <tr class="separator:gacdff3d2b9cf188d6aa0ab6981b9b2463"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2462,11 +2456,10 @@ requires (not same_as&lt;Int, bool&gt;)</td></tr>
 <tr class="memitem:ga0aee87424a681f33d80df9fdd70c16bc" id="r_ga0aee87424a681f33d80df9fdd70c16bc"><td class="memTemplParams" colspan="2">template&lt;integral Integer&gt; </td></tr>
 <tr class="memitem:ga0aee87424a681f33d80df9fdd70c16bc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex.html#ga0aee87424a681f33d80df9fdd70c16bc">imag</a> (Integer) noexcept -&gt; double</td></tr>
 <tr class="separator:ga0aee87424a681f33d80df9fdd70c16bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06254a010da20091fb04d67702c29da3" id="r_a06254a010da20091fb04d67702c29da3"><td class="memTemplParams" colspan="2">template&lt;typename R , typename T &gt; <br />
-requires etl::detail::integer_and_not_char&lt;T&gt;</td></tr>
-<tr class="memitem:a06254a010da20091fb04d67702c29da3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a06254a010da20091fb04d67702c29da3">in_range</a> (T t) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a06254a010da20091fb04d67702c29da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the value of t is in the range of values that can be represented in R, that is, if t can be converted to R without data loss.  <br /></td></tr>
-<tr class="separator:a06254a010da20091fb04d67702c29da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0df02c0519638aa3ebd8410423a5b748" id="r_ga0df02c0519638aa3ebd8410423a5b748"><td class="memTemplParams" colspan="2">template&lt;builtin_integer R, builtin_integer T&gt; </td></tr>
+<tr class="memitem:ga0df02c0519638aa3ebd8410423a5b748"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utility.html#ga0df02c0519638aa3ebd8410423a5b748">in_range</a> (T t) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ga0df02c0519638aa3ebd8410423a5b748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the value of t is in the range of values that can be represented in R, that is, if t can be converted to R without data loss.  <br /></td></tr>
+<tr class="separator:ga0df02c0519638aa3ebd8410423a5b748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0d74dfc016d11d54f60ad30618fc276" id="r_gae0d74dfc016d11d54f60ad30618fc276"><td class="memTemplParams" colspan="2">template&lt;typename InputIt1 , typename InputIt2 &gt; </td></tr>
 <tr class="memitem:gae0d74dfc016d11d54f60ad30618fc276"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithm.html#gae0d74dfc016d11d54f60ad30618fc276">includes</a> (InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2) -&gt; bool</td></tr>
 <tr class="separator:gae0d74dfc016d11d54f60ad30618fc276"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7318,227 +7311,6 @@ bound_args...)(call_args...) is equivalent to invoke(f, bound_args..., call_args
 
 </div>
 </div>
-<a id="affc67214aa9016de19ce8c56cacf050f" name="affc67214aa9016de19ce8c56cacf050f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affc67214aa9016de19ce8c56cacf050f">&#9670;&#160;</a></span>cmp_equal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_equal </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type). <a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="utility_8cpp-example.html#a5">utility.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ad7f8a2ce45cfed83d620b12d6271272f" name="ad7f8a2ce45cfed83d620b12d6271272f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f8a2ce45cfed83d620b12d6271272f">&#9670;&#160;</a></span>cmp_greater()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_greater </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type). <a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-
-</div>
-</div>
-<a id="a6fdcd304a94bdadbaa2c7d6fb267e05b" name="a6fdcd304a94bdadbaa2c7d6fb267e05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fdcd304a94bdadbaa2c7d6fb267e05b">&#9670;&#160;</a></span>cmp_greater_equal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_greater_equal </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type). <a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-
-</div>
-</div>
-<a id="af465587d2f32a80939be1fad202d81a8" name="af465587d2f32a80939be1fad202d81a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af465587d2f32a80939be1fad202d81a8">&#9670;&#160;</a></span>cmp_less()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_less </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type).</p>
-<p><a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-
-</div>
-</div>
-<a id="ae910ff92e0c20546b3798e7acf0f62a4" name="ae910ff92e0c20546b3798e7acf0f62a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae910ff92e0c20546b3798e7acf0f62a4">&#9670;&#160;</a></span>cmp_less_equal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_less_equal </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type). <a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-
-</div>
-</div>
-<a id="a693945b83d4561846bbf0b5944d0296e" name="a693945b83d4561846bbf0b5944d0296e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a693945b83d4561846bbf0b5944d0296e">&#9670;&#160;</a></span>cmp_not_equal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; <br />
-requires etl::detail::comparable_integers&lt;T, U&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto cmp_not_equal </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>u</em></span>&#160;) -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed integers always compare less than (and not equal to) unsigned integers: the comparison is safe against lossy integer conversion. </p>
-<p>It is a compile-time error if either T or U is not a signed or unsigned integer type (including standard integer type and extended integer type). <a href="https://en.cppreference.com/w/cpp/utility/intcmp">https://en.cppreference.com/w/cpp/utility/intcmp</a> </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="utility_8cpp-example.html#a6">utility.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
 <a id="a7f5ec2df5d7caffa501049e08c135fc1" name="a7f5ec2df5d7caffa501049e08c135fc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f5ec2df5d7caffa501049e08c135fc1">&#9670;&#160;</a></span>construct_at()</h2>
 
@@ -8969,39 +8741,6 @@ template&lt;integral Int&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a06254a010da20091fb04d67702c29da3" name="a06254a010da20091fb04d67702c29da3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06254a010da20091fb04d67702c29da3">&#9670;&#160;</a></span>in_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R , typename T &gt; <br />
-requires etl::detail::integer_and_not_char&lt;T&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto in_range </td>
-          <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
-          <td> -&gt; bool
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the value of t is in the range of values that can be represented in R, that is, if t can be converted to R without data loss. </p>
-<p>It is a compile-time error if either T or R is not a signed or unsigned integer type (including standard integer type and extended integer type). This function cannot be used with <a class="el" href="#ae88c83d30ae1d2a54dd8438da2038aab" title="etl::byte is a distinct type that implements the concept of byte as specified in the C++ language def...">etl::byte</a>, char, char8_t, char16_t, char32_t, wchar_t and bool.</p>
-<p><a href="https://en.cppreference.com/w/cpp/utility/in_range">https://en.cppreference.com/w/cpp/utility/in_range</a> </p>
 
 </div>
 </div>
@@ -18915,7 +18654,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 09:23:50 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

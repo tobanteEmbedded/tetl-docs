@@ -112,35 +112,34 @@ $(function(){initNavTree('cmp__greater_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef TETL_UTILITY_CMP_GREATER_HPP</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define TETL_UTILITY_CMP_GREATER_HPP</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="cmp__less_8hpp.html">etl/_utility/cmp_less.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="comparable__integers_8hpp.html">etl/_utility/comparable_integers.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="builtin__integer_8hpp.html">etl/_concepts/builtin_integer.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="cmp__less_8hpp.html">etl/_utility/cmp_less.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">requires</span> etl::detail::comparable_integers&lt;T, U&gt;</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespaceetl.html#ad7f8a2ce45cfed83d620b12d6271272f">   21</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ad7f8a2ce45cfed83d620b12d6271272f">cmp_greater</a>(T t, U u) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#af465587d2f32a80939be1fad202d81a8">etl::cmp_less</a>(u, t);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;builtin_<span class="keywordtype">int</span>eger T, builtin_<span class="keywordtype">int</span>eger U&gt;</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__utility.html#gaebf5db07d40ed67813269672bd19660a">   20</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__utility.html#gaebf5db07d40ed67813269672bd19660a">cmp_greater</a>(T t, U u) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a>(u, t);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">// TETL_UTILITY_CMP_GREATER_HPP</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// TETL_UTILITY_CMP_GREATER_HPP</span></div>
+<div class="ttc" id="abuiltin__integer_8hpp_html"><div class="ttname"><a href="builtin__integer_8hpp.html">builtin_integer.hpp</a></div></div>
 <div class="ttc" id="acmp__less_8hpp_html"><div class="ttname"><a href="cmp__less_8hpp.html">cmp_less.hpp</a></div></div>
-<div class="ttc" id="acomparable__integers_8hpp_html"><div class="ttname"><a href="comparable__integers_8hpp.html">comparable_integers.hpp</a></div></div>
+<div class="ttc" id="agroup__utility_html_gaebf5db07d40ed67813269672bd19660a"><div class="ttname"><a href="group__utility.html#gaebf5db07d40ed67813269672bd19660a">etl::cmp_greater</a></div><div class="ttdeci">constexpr auto cmp_greater(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_greater.hpp:20</div></div>
+<div class="ttc" id="agroup__utility_html_gafdf1ab07ba48bb89aa8db68eff58328e"><div class="ttname"><a href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_ad7f8a2ce45cfed83d620b12d6271272f"><div class="ttname"><a href="namespaceetl.html#ad7f8a2ce45cfed83d620b12d6271272f">etl::cmp_greater</a></div><div class="ttdeci">constexpr auto cmp_greater(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_greater.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html_af465587d2f32a80939be1fad202d81a8"><div class="ttname"><a href="namespaceetl.html#af465587d2f32a80939be1fad202d81a8">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="cmp__greater_8hpp.html">cmp_greater.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 09:23:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

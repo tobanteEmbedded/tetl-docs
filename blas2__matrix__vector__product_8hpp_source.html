@@ -127,9 +127,9 @@ $(function(){initNavTree('blas2__matrix__vector__product_8hpp_source.html',''); 
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">using </span>size_type = detail::common_size_type_t&lt;InMat, InVec, OutVec&gt;;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (size_type i(0); <a class="code hl_function" href="namespaceetl.html#af465587d2f32a80939be1fad202d81a8">etl::cmp_less</a>(i, a.extent(0)); ++i) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (size_type i(0); <a class="code hl_function" href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a>(i, a.extent(0)); ++i) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        y(i) = <span class="keyword">typename</span> OutVec::element_type{};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">for</span> (size_type j(0); <a class="code hl_function" href="namespaceetl.html#af465587d2f32a80939be1fad202d81a8">etl::cmp_less</a>(j, a.extent(1)); ++j) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">for</span> (size_type j(0); <a class="code hl_function" href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a>(j, a.extent(1)); ++j) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            y(i) += a(i, j) * x(j);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
@@ -144,15 +144,15 @@ $(function(){initNavTree('blas2__matrix__vector__product_8hpp_source.html',''); 
 <div class="ttc" id="acheck_8hpp_html_ac92901699a8c18f0024c6668eba14185"><div class="ttname"><a href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a></div><div class="ttdeci">#define TETL_PRECONDITION(...)</div><div class="ttdef"><b>Definition</b> check.hpp:16</div></div>
 <div class="ttc" id="acmp__less_8hpp_html"><div class="ttname"><a href="cmp__less_8hpp.html">cmp_less.hpp</a></div></div>
 <div class="ttc" id="agroup__linalg_html_ga55f018664141af1c83938eb0f4f95137"><div class="ttname"><a href="group__linalg.html#ga55f018664141af1c83938eb0f4f95137">etl::linalg::matrix_vector_product</a></div><div class="ttdeci">constexpr auto matrix_vector_product(InMat a, InVec x, OutVec y) noexcept -&gt; void</div><div class="ttdef"><b>Definition</b> blas2_matrix_vector_product.hpp:14</div></div>
+<div class="ttc" id="agroup__utility_html_gafdf1ab07ba48bb89aa8db68eff58328e"><div class="ttname"><a href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
-<div class="ttc" id="anamespaceetl_html_af465587d2f32a80939be1fad202d81a8"><div class="ttname"><a href="namespaceetl.html#af465587d2f32a80939be1fad202d81a8">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="blas2__matrix__vector__product_8hpp.html">blas2_matrix_vector_product.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 09:23:49 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

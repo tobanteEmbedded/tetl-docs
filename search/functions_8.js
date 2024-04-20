@@ -8,7 +8,7 @@ var searchData=
   ['in_5fplace_5findex_5ft_5',['in_place_index_t',['../structetl_1_1in__place__index__t.html#ad252ed40c9275770d4cc4851148561e9',1,'etl::in_place_index_t']]],
   ['in_5fplace_5ft_6',['in_place_t',['../structetl_1_1in__place__t.html#a19520fdea67ebcff050bdc69adcc89b8',1,'etl::in_place_t']]],
   ['in_5fplace_5ftype_5ft_7',['in_place_type_t',['../structetl_1_1in__place__type__t.html#aae952d4960e4d063d0262797fc9c7266',1,'etl::in_place_type_t']]],
-  ['in_5frange_8',['in_range',['../namespaceetl.html#a06254a010da20091fb04d67702c29da3',1,'etl']]],
+  ['in_5frange_8',['in_range',['../group__utility.html#ga0df02c0519638aa3ebd8410423a5b748',1,'etl']]],
   ['includes_9',['includes',['../group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa',1,'etl::includes(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Compare comp) -&gt; bool'],['../group__algorithm.html#gae0d74dfc016d11d54f60ad30618fc276',1,'etl::includes(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2) -&gt; bool']]],
   ['index_10',['index',['../structetl_1_1chrono_1_1weekday__indexed.html#a169107780d352cc8372d27ad25cd5724',1,'etl::chrono::weekday_indexed::index()'],['../structetl_1_1chrono_1_1year__month__weekday.html#a169107780d352cc8372d27ad25cd5724',1,'etl::chrono::year_month_weekday::index()'],['../structetl_1_1variant.html#aad02e9250af89295f0eb00cba0094069',1,'etl::variant::index()']]],
   ['index_5fcast_11',['index_cast',['../structetl_1_1extents.html#a3d5aaa413f483c90e8065f696ed3cb6b',1,'etl::extents']]],

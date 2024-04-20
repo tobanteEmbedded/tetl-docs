@@ -7,7 +7,6 @@ var dir_15507268755a352c739af494168e9f53 =
     [ "cmp_less.hpp", "cmp__less_8hpp.html", "cmp__less_8hpp" ],
     [ "cmp_less_equal.hpp", "cmp__less__equal_8hpp.html", "cmp__less__equal_8hpp" ],
     [ "cmp_not_equal.hpp", "cmp__not__equal_8hpp.html", "cmp__not__equal_8hpp" ],
-    [ "comparable_integers.hpp", "comparable__integers_8hpp.html", null ],
     [ "exchange.hpp", "exchange_8hpp.html", "exchange_8hpp" ],
     [ "forward.hpp", "forward_8hpp.html", "forward_8hpp" ],
     [ "forward_like.hpp", "forward__like_8hpp.html", "forward__like_8hpp" ],

@@ -30,7 +30,7 @@ var searchData=
   ['in_5fplace_5ftype_27',['in_place_type',['../structetl_1_1in__place__type__t.html#ab05d8cef9523e5e2de494ccd7e3784d5',1,'etl::in_place_type_t']]],
   ['in_5fplace_5ftype_2ehpp_28',['in_place_type.hpp',['../in__place__type_8hpp.html',1,'']]],
   ['in_5fplace_5ftype_5ft_29',['in_place_type_t',['../structetl_1_1in__place__type__t.html',1,'in_place_type_t&lt; T &gt;'],['../structetl_1_1in__place__type__t.html#aae952d4960e4d063d0262797fc9c7266',1,'etl::in_place_type_t::in_place_type_t()']]],
-  ['in_5frange_30',['in_range',['../namespaceetl.html#a06254a010da20091fb04d67702c29da3',1,'etl']]],
+  ['in_5frange_30',['in_range',['../group__utility.html#ga0df02c0519638aa3ebd8410423a5b748',1,'etl']]],
   ['in_5frange_2ehpp_31',['in_range.hpp',['../in__range_8hpp.html',1,'']]],
   ['inappropriate_5fio_5fcontrol_5foperation_32',['inappropriate_io_control_operation',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a45fe7da1767194b580aeba752d7b44ae',1,'etl']]],
   ['includes_33',['includes',['../group__algorithm.html#ga5f0d5db89d1e54d2ccb479a559df46aa',1,'etl::includes(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2, Compare comp) -&gt; bool'],['../group__algorithm.html#gae0d74dfc016d11d54f60ad30618fc276',1,'etl::includes(InputIt1 first1, InputIt1 last1, InputIt2 first2, InputIt2 last2) -&gt; bool']]],

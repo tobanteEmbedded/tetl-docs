@@ -26,5 +26,12 @@ var group__utility =
       [ "second", "structetl_1_1pair.html#a168c067a27acf16ec92cf4df7e4406d6", null ],
       [ "t2", "structetl_1_1pair.html#a14776f619782ff22643a7cd12c2b8535", null ],
       [ "y", "structetl_1_1pair.html#a035692c911e5093bc662dad1820ea5db", null ]
-    ] ]
+    ] ],
+    [ "cmp_equal", "group__utility.html#ga6782a5c3b874542f8c803e4b1fabaf3e", null ],
+    [ "cmp_greater", "group__utility.html#gaebf5db07d40ed67813269672bd19660a", null ],
+    [ "cmp_greater_equal", "group__utility.html#ga2881d9071b843271d6e0a557049ff327", null ],
+    [ "cmp_less", "group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e", null ],
+    [ "cmp_less_equal", "group__utility.html#ga3a6b773ae3666ba064d2fb4e5e529574", null ],
+    [ "cmp_not_equal", "group__utility.html#ga9e7fceb08eefe99eafc0325a8ec3b16e", null ],
+    [ "in_range", "group__utility.html#ga0df02c0519638aa3ebd8410423a5b748", null ]
 ];
