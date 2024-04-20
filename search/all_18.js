@@ -86,13 +86,14 @@ var searchData=
   ['upper_5fbound_2ehpp_83',['upper_bound.hpp',['../upper__bound_8hpp.html',1,'']]],
   ['upper_5ftriangle_84',['upper_triangle',['../structetl_1_1linalg_1_1upper__triangle__t.html#a1ebc9641237c64f94205d7c763f6aefd',1,'etl::linalg::upper_triangle_t']]],
   ['upper_5ftriangle_5ft_85',['upper_triangle_t',['../structetl_1_1linalg_1_1upper__triangle__t.html',1,'upper_triangle_t'],['../structetl_1_1linalg_1_1upper__triangle__t.html#ab643bf944fffc88b84bbebb0d95e736d',1,'etl::linalg::upper_triangle_t::upper_triangle_t()']]],
-  ['user_2ehpp_86',['user.hpp',['../user_8hpp.html',1,'']]],
-  ['uses_5fallocator_87',['uses_allocator',['../structetl_1_1uses__allocator.html',1,'etl']]],
-  ['uses_5fallocator_2ehpp_88',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
-  ['uses_5fallocator_5fv_89',['uses_allocator_v',['../namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764',1,'etl']]],
-  ['ushrt_5fmax_90',['USHRT_MAX',['../__climits_2defines_8hpp.html#a689b119da994dece91d44b5aeac643ed',1,'defines.hpp']]],
-  ['utilities_20library_91',['Utilities Library',['../group__utilities-library.html',1,'']]],
-  ['utility_92',['utility',['../group__utility.html',1,'']]],
-  ['utility_2ehpp_93',['utility.hpp',['../utility_8hpp.html',1,'']]],
-  ['uxqueuemessageswaiting_94',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
+  ['use_20namesapce_20std_86',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md27',1,'']]],
+  ['user_2ehpp_87',['user.hpp',['../user_8hpp.html',1,'']]],
+  ['uses_5fallocator_88',['uses_allocator',['../structetl_1_1uses__allocator.html',1,'etl']]],
+  ['uses_5fallocator_2ehpp_89',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],
+  ['uses_5fallocator_5fv_90',['uses_allocator_v',['../namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764',1,'etl']]],
+  ['ushrt_5fmax_91',['USHRT_MAX',['../__climits_2defines_8hpp.html#a689b119da994dece91d44b5aeac643ed',1,'defines.hpp']]],
+  ['utilities_20library_92',['Utilities Library',['../group__utilities-library.html',1,'']]],
+  ['utility_93',['utility',['../group__utility.html',1,'']]],
+  ['utility_2ehpp_94',['utility.hpp',['../utility_8hpp.html',1,'']]],
+  ['uxqueuemessageswaiting_95',['uxQueueMessagesWaiting',['../stubs_8hpp.html#a8aa1b7f582cd73da676926c05fd0d8ab',1,'stubs.hpp']]]
 ];

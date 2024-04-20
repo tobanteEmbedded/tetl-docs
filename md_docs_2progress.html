@@ -107,8 +107,8 @@ $(function(){initNavTree('md_docs_2progress.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Progress</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md26"></a> Unless stated otherwise, all papers are implemented to work with the minimum C++ standard (currently C++20).</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md35"></a> Unless stated otherwise, all papers are implemented to work with the minimum C++ standard (currently C++20).</p>
+<h1><a class="anchor" id="autotoc_md36"></a>
 Proposal</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -122,17 +122,25 @@ Proposal</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P0843R10">P0843R10</a>   </td><td class="markdownTableBodyCenter"><code>&lt;inplace_vector&gt;</code>   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md37"></a>
 C++26</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Paper   </th><th class="markdownTableHeadCenter">Name   </th><th class="markdownTableHeadCenter">Status   </th><th class="markdownTableHeadRight">Comment    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2937R0">P2937R0</a>   </td><td class="markdownTableBodyCenter">Freestanding: removing <code>std::strtok</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2937R0">P2937R0</a>   </td><td class="markdownTableBodyCenter">Freestanding: removing <code>std::strtok</code>   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2918R2">P2918R2</a>   </td><td class="markdownTableBodyCenter">Runtime format strings   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2868R1">P2868R1</a>   </td><td class="markdownTableBodyCenter">Removing deprecated typedef <code>std::allocator::is_always_equal</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2821R5">P2821R5</a>   </td><td class="markdownTableBodyCenter"><code>std::span::at()</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2819R2">P2819R2</a>   </td><td class="markdownTableBodyCenter">Added tuple protocol to <code>std::complex</code>   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2819R2">P2819R2</a>   </td><td class="markdownTableBodyCenter">Added tuple protocol to <code>std::complex</code>   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2757R3">P2757R3</a>   </td><td class="markdownTableBodyCenter">Type checking format args   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2734R0">P2734R0</a>   </td><td class="markdownTableBodyCenter">Adding the new 2022 SI prefixes on ratios: <code>std::quecto</code>, <code>std::ronto</code>, <code>std::ronna</code>, and <code>std::quetta</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2714R1">P2714R1</a>   </td><td class="markdownTableBodyCenter"><code>std::bind_front</code>, <code>std::bind_back</code>, and <code>std::not_fn</code> to NTTP callables   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
@@ -146,29 +154,51 @@ C++26</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2592R3">P2592R3</a>   </td><td class="markdownTableBodyCenter">Hashing support for <code>std::chrono</code> value classes   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2587R3">P2587R3</a>   </td><td class="markdownTableBodyCenter">Arithmetic overloads of <code>std::to_string</code> and <code>std::to_wstring</code> use <code>std::format</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2562R1">P2562R1</a>   </td><td class="markdownTableBodyCenter">constexpr stable sorting   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2548R6">P2548R6</a>   </td><td class="markdownTableBodyCenter"><code>std::copyable_function</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2546R5">P2546R5</a>   </td><td class="markdownTableBodyCenter"><code>&lt;debugging&gt;</code>: Debugging Support   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2538R1">P2538R1</a>   </td><td class="markdownTableBodyCenter">ADL-proof <code>std::projected</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2545R4">P2545R4</a>   </td><td class="markdownTableBodyCenter">Read-Copy Update   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2538R1">P2538R1</a>   </td><td class="markdownTableBodyCenter">ADL-proof <code>std::projected</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2530R3">P2530R3</a>   </td><td class="markdownTableBodyCenter">Hazard Pointers   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2510R3">P2510R3</a>   </td><td class="markdownTableBodyCenter">Formatting pointers   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2497R0">P2497R0</a>   </td><td class="markdownTableBodyCenter">Testing for success or failure of <code>&lt;charconv&gt;</code> functions   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2495R3">P2495R3</a>   </td><td class="markdownTableBodyCenter">Interfacing string streams with <code>std::string_view</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2447R4">P2447R4</a>   </td><td class="markdownTableBodyCenter"><code>std::span</code> over an initializer list   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P2363R5">P2363R5</a>   </td><td class="markdownTableBodyCenter">Extending associative containers with the remaining heterogeneous overloads   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2264R7">P2264R7</a>   </td><td class="markdownTableBodyCenter">Make <code><a class="el" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert()</a></code> macro user friendly for C and C++   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P2013R5">P2013R5</a>   </td><td class="markdownTableBodyCenter">Freestanding Language: Optional <code><a class="el" href="operator_8hpp.html#a522458e13fc259cf6d28015c387bef0e" title="Called by the standard single-object placement new expression. The standard library implementation pe...">operator new</a></code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P1901R2">P1901R2</a>   </td><td class="markdownTableBodyCenter">Enabling the use of std::weak_ptr as keys in unordered associative containers   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P1885R12">P1885R12</a>   </td><td class="markdownTableBodyCenter"><code>std::text_encoding</code>: text encodings identification   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P1759R6">P1759R6</a>   </td><td class="markdownTableBodyCenter">Native handles in file streams   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P1673R13">P1673R13</a>   </td><td class="markdownTableBodyCenter"><code>&lt;linalg&gt;</code>: A free function linear algebra interface based on the BLAS   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P1383R2">P1383R2</a>   </td><td class="markdownTableBodyCenter">More constexpr for <code>&lt;cmath&gt;</code> and <code>&lt;complex&gt;</code>   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><a href="https://wg21.link/P0952R1">P0952R1</a>   </td><td class="markdownTableBodyCenter">A new specification for <code>std::generate_canonical</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><a href="https://wg21.link/P0792R14">P0792R14</a>   </td><td class="markdownTableBodyCenter"><code>std::function_ref</code>: type-erased callable reference   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P0952R1">P0952R1</a>   </td><td class="markdownTableBodyCenter">A new specification for <code>std::generate_canonical</code>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyRight"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a href="https://wg21.link/P0792R14">P0792R14</a>   </td><td class="markdownTableBodyCenter"><code>std::function_ref</code>: type-erased callable reference   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P0543R3">P0543R3</a>   </td><td class="markdownTableBodyCenter">Saturation Arithmetic   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md29"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 C++23</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -224,7 +254,7 @@ C++23</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P0323R12">P0323R12</a>   </td><td class="markdownTableBodyCenter"><code>&lt;expected&gt;</code>   </td><td class="markdownTableBodyCenter"><em>WIP</em>   </td><td class="markdownTableBodyRight"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 C++20</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -320,7 +350,7 @@ C++20</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/P0122R7">P0122R7</a>   </td><td class="markdownTableBodyCenter"><code>std::span</code>   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md31"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 C++17</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -394,7 +424,7 @@ C++17</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a href="https://wg21.link/N3911">N3911</a>   </td><td class="markdownTableBodyCenter"><code>std::void_t</code>   </td><td class="markdownTableBodyCenter"><b>Done</b>   </td><td class="markdownTableBodyRight"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md32"></a>
+<h1><a class="anchor" id="autotoc_md41"></a>
 C++14</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -442,7 +472,7 @@ C++14</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 20 2024 03:31:09 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 06:26:13 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
