@@ -8,7 +8,7 @@ var searchData=
   ['fdim_2ehpp_5',['fdim.hpp',['../fdim_8hpp.html',1,'']]],
   ['fdimf_6',['fdimf',['../group__cmath.html#gab067c004a5ee6f46a9a6f7f86654154a',1,'etl']]],
   ['fdiml_7',['fdiml',['../group__cmath.html#ga0acecfd8db84e93791424bbc3d94714f',1,'etl']]],
-  ['features_8',['Features',['../md_docs_2roadmap.html#autotoc_md29',1,'']]],
+  ['features_8',['Features',['../md_docs_2roadmap.html#autotoc_md37',1,'']]],
   ['february_9',['February',['../namespaceetl_1_1chrono.html#a0630a7ae2e3ec7d142a6675541bacd5d',1,'etl::chrono']]],
   ['femto_10',['femto',['../namespaceetl.html#a626e7a2087ed63adf28928bc61505210',1,'etl']]],
   ['file_11',['file',['../structetl_1_1assert__msg.html#a5177d780470a1e88ba0cc4405b4efbb9',1,'etl::assert_msg']]],
@@ -156,5 +156,6 @@ var searchData=
   ['function_5fref_3c_20r_28args_2e_2e_2e_29_20noexcept_20_3e_153',['function_ref&lt; R(Args...) noexcept &gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html',1,'etl']]],
   ['function_5fref_3c_20r_28args_2e_2e_2e_29_3e_154',['function_ref&lt; R(Args...)&gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html',1,'etl']]],
   ['functional_155',['functional',['../group__functional.html',1,'']]],
-  ['functional_2ehpp_156',['functional.hpp',['../functional_8hpp.html',1,'']]]
+  ['functional_2ehpp_156',['functional.hpp',['../functional_8hpp.html',1,'']]],
+  ['fwd_5fprod_5fof_5fextents_157',['fwd_prod_of_extents',['../structetl_1_1extents.html#a735a050ab6d7c38fc6a046299e66786e',1,'etl::extents']]]
 ];

@@ -2,8 +2,8 @@ var searchData=
 [
   ['named_5ffunctions_2ehpp_0',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
   ['namesapce_20std_1',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md27',1,'']]],
-  ['nan_2',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
-  ['nan_3',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
+  ['nan_2',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
+  ['nan_3',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
   ['nan_2ehpp_4',['nan.hpp',['../nan_8hpp.html',1,'']]],
   ['nanf_5',['nanf',['../group__cmath.html#ga92b23f23746d65434dd57cbf03dde471',1,'etl']]],
   ['nanl_6',['nanl',['../group__cmath.html#gab2ef6ce5627884455b58fbf76bd8c8ea',1,'etl']]],
