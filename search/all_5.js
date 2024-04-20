@@ -58,7 +58,7 @@ var searchData=
   ['bit_5fand_55',['bit_and',['../structetl_1_1bit__and.html',1,'etl']]],
   ['bit_5fand_2ehpp_56',['bit_and.hpp',['../bit__and_8hpp.html',1,'']]],
   ['bit_5fand_3c_20void_20_3e_57',['bit_and&lt; void &gt;',['../structetl_1_1bit__and_3_01void_01_4.html',1,'etl']]],
-  ['bit_5fcast_58',['bit_cast',['../group__bit.html#ga2498c6989c510ee8806df8ac266b6305',1,'etl']]],
+  ['bit_5fcast_58',['bit_cast',['../group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254',1,'etl']]],
   ['bit_5fcast_2ehpp_59',['bit_cast.hpp',['../bit__cast_8hpp.html',1,'']]],
   ['bit_5fceil_60',['bit_ceil',['../group__bit.html#ga5006351c988afecab30821e1ee41f2ed',1,'etl']]],
   ['bit_5fceil_2ehpp_61',['bit_ceil.hpp',['../bit__ceil_8hpp.html',1,'']]],

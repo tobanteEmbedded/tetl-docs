@@ -125,11 +125,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2498c6989c510ee8806df8ac266b6305" id="r_ga2498c6989c510ee8806df8ac266b6305"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; <br />
-requires (detail::bit_castable_types&lt;To, From&gt;)</td></tr>
-<tr class="memitem:ga2498c6989c510ee8806df8ac266b6305"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga2498c6989c510ee8806df8ac266b6305">bit_cast</a> (From const &amp;src) noexcept -&gt; To</td></tr>
-<tr class="memdesc:ga2498c6989c510ee8806df8ac266b6305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
-<tr class="separator:ga2498c6989c510ee8806df8ac266b6305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8345e9aa2cae9bfb32b62f761780c254" id="r_ga8345e9aa2cae9bfb32b62f761780c254"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; <br />
+requires detail::bitcastable&lt;To, From&gt;</td></tr>
+<tr class="memitem:ga8345e9aa2cae9bfb32b62f761780c254"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga8345e9aa2cae9bfb32b62f761780c254">bit_cast</a> (From const &amp;src) noexcept -&gt; To</td></tr>
+<tr class="memdesc:ga8345e9aa2cae9bfb32b62f761780c254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
+<tr class="separator:ga8345e9aa2cae9bfb32b62f761780c254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5006351c988afecab30821e1ee41f2ed" id="r_ga5006351c988afecab30821e1ee41f2ed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
 <tr class="memitem:ga5006351c988afecab30821e1ee41f2ed"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga5006351c988afecab30821e1ee41f2ed">bit_ceil</a> (UInt x) noexcept -&gt; UInt</td></tr>
 <tr class="memdesc:ga5006351c988afecab30821e1ee41f2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the smallest integral power of two that is not smaller than x. If that value is not representable in UInt, the behavior is undefined. Call to this function is permitted in constant evaluation only if the undefined behavior does not occur.  <br /></td></tr>
@@ -255,14 +255,14 @@ requires (detail::bit_castable_types&lt;To, From&gt;)</td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga2498c6989c510ee8806df8ac266b6305" name="ga2498c6989c510ee8806df8ac266b6305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2498c6989c510ee8806df8ac266b6305">&#9670;&#160;</a></span>bit_cast()</h2>
+<a id="ga8345e9aa2cae9bfb32b62f761780c254" name="ga8345e9aa2cae9bfb32b62f761780c254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8345e9aa2cae9bfb32b62f761780c254">&#9670;&#160;</a></span>bit_cast()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename To , typename From &gt; <br />
-requires (detail::bit_castable_types&lt;To, From&gt;)</div>
+requires detail::bitcastable&lt;To, From&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1023,7 +1023,7 @@ template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">e
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:38:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -23,7 +23,7 @@ var searchData=
   ['betal_20',['betal',['../group__cmath.html#gad6feea40ab25c49385c9da90776c9181',1,'etl']]],
   ['binary_5fsearch_21',['binary_search',['../group__algorithm.html#ga518c4f26f6b475c9ba5b742ca6202a05',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value, Compare comp) -&gt; bool'],['../group__algorithm.html#ga5bd7d82f1e1253083d060c08049cb64b',1,'etl::binary_search(ForwardIt first, ForwardIt last, T const &amp;value) -&gt; bool']]],
   ['bind_5ffront_22',['bind_front',['../namespaceetl.html#aa615187d5a248ab9e6493944c709279e',1,'etl']]],
-  ['bit_5fcast_23',['bit_cast',['../group__bit.html#ga2498c6989c510ee8806df8ac266b6305',1,'etl']]],
+  ['bit_5fcast_23',['bit_cast',['../group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254',1,'etl']]],
   ['bit_5fceil_24',['bit_ceil',['../group__bit.html#ga5006351c988afecab30821e1ee41f2ed',1,'etl']]],
   ['bit_5ffloor_25',['bit_floor',['../group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d',1,'etl']]],
   ['bit_5fwidth_26',['bit_width',['../group__bit.html#gae31295beb3cd3da128d5df9392b56816',1,'etl']]],

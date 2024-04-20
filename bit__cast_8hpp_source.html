@@ -122,37 +122,33 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>detail {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> bit_castable_types =</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        (<span class="keyword">sizeof</span>(To) == <span class="keyword">sizeof</span>(From))</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    and is_trivially_copyable_v&lt;From&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    and is_trivially_copyable_v&lt;To&gt;;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From&gt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">requires</span>(detail::bit_castable_types&lt;To, From&gt;)</div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">   42</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">bit_cast</a>(From <span class="keyword">const</span>&amp; src) <span class="keyword">noexcept</span> -&gt; To</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if __has_builtin(__builtin_bit_cast) or (defined(_MSC_VER) and not defined(__clang__))</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> __builtin_bit_cast(To, src);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    To dst{};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    etl::detail::memcpy&lt;char, etl::size_t&gt;(&amp;dst, &amp;src, <span class="keyword">sizeof</span>(To));</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> dst;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">concept </span>bitcastable = (<span class="keyword">sizeof</span>(To) == <span class="keyword">sizeof</span>(From)) and is_trivially_copyable_v&lt;From&gt; and is_trivially_copyable_v&lt;To&gt;;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace detail</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">requires</span> detail::bitcastable&lt;To, From&gt;</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">   38</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">bit_cast</a>(From <span class="keyword">const</span>&amp; src) <span class="keyword">noexcept</span> -&gt; To</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if __has_builtin(__builtin_bit_cast) or (defined(_MSC_VER) and not defined(__clang__))</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> __builtin_bit_cast(To, src);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    To dst{};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    etl::detail::memcpy&lt;char, etl::size_t&gt;(&amp;dst, &amp;src, <span class="keyword">sizeof</span>(To));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> dst;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_BIT_CAST_HPP</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// TETL_BIT_BIT_CAST_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="acstr_8hpp_html"><div class="ttname"><a href="cstr_8hpp.html">cstr.hpp</a></div></div>
-<div class="ttc" id="agroup__bit_html_ga2498c6989c510ee8806df8ac266b6305"><div class="ttname"><a href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:42</div></div>
+<div class="ttc" id="agroup__bit_html_ga8345e9aa2cae9bfb32b62f761780c254"><div class="ttname"><a href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:38</div></div>
 <div class="ttc" id="ais__trivially__constructible_8hpp_html"><div class="ttname"><a href="is__trivially__constructible_8hpp.html">is_trivially_constructible.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__copyable_8hpp_html"><div class="ttname"><a href="is__trivially__copyable_8hpp.html">is_trivially_copyable.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
@@ -163,7 +159,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a0e972f307317c01cd5f823260660e0a.html">_bit</a></li><li class="navelem"><a class="el" href="bit__cast_8hpp.html">bit_cast.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:38:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

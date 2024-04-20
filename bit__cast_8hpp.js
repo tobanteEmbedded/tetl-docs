@@ -1,4 +1,4 @@
 var bit__cast_8hpp =
 [
-    [ "bit_cast", "bit__cast_8hpp.html#ga2498c6989c510ee8806df8ac266b6305", null ]
+    [ "bit_cast", "bit__cast_8hpp.html#ga8345e9aa2cae9bfb32b62f761780c254", null ]
 ];

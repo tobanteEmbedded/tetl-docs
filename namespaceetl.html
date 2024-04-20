@@ -2014,11 +2014,11 @@ requires (not <a class="el" href="#a6e0edf4d9cccfbffc3b8744b2c7bcfe9">is_object_
 <tr class="memdesc:aa615187d5a248ab9e6493944c709279e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function template bind_front generates a forwarding call wrapper for f. Calling this wrapper is equivalent to invoking f with its first sizeof...(Args) parameters bound to args. In other words, bind_front(f,
 bound_args...)(call_args...) is equivalent to invoke(f, bound_args..., call_args....).  <br /></td></tr>
 <tr class="separator:aa615187d5a248ab9e6493944c709279e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2498c6989c510ee8806df8ac266b6305" id="r_ga2498c6989c510ee8806df8ac266b6305"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; <br />
-requires (detail::bit_castable_types&lt;To, From&gt;)</td></tr>
-<tr class="memitem:ga2498c6989c510ee8806df8ac266b6305"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit.html#ga2498c6989c510ee8806df8ac266b6305">bit_cast</a> (From const &amp;src) noexcept -&gt; To</td></tr>
-<tr class="memdesc:ga2498c6989c510ee8806df8ac266b6305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
-<tr class="separator:ga2498c6989c510ee8806df8ac266b6305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8345e9aa2cae9bfb32b62f761780c254" id="r_ga8345e9aa2cae9bfb32b62f761780c254"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From &gt; <br />
+requires detail::bitcastable&lt;To, From&gt;</td></tr>
+<tr class="memitem:ga8345e9aa2cae9bfb32b62f761780c254"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">bit_cast</a> (From const &amp;src) noexcept -&gt; To</td></tr>
+<tr class="memdesc:ga8345e9aa2cae9bfb32b62f761780c254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value representation of the returned To object is equal to the corresponding bit in the object representation of from.  <br /></td></tr>
+<tr class="separator:ga8345e9aa2cae9bfb32b62f761780c254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5006351c988afecab30821e1ee41f2ed" id="r_ga5006351c988afecab30821e1ee41f2ed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1builtin__unsigned__integer.html">etl::builtin_unsigned_integer</a> UInt&gt; </td></tr>
 <tr class="memitem:ga5006351c988afecab30821e1ee41f2ed"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bit.html#ga5006351c988afecab30821e1ee41f2ed">bit_ceil</a> (UInt x) noexcept -&gt; UInt</td></tr>
 <tr class="memdesc:ga5006351c988afecab30821e1ee41f2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the smallest integral power of two that is not smaller than x. If that value is not representable in UInt, the behavior is undefined. Call to this function is permitted in constant evaluation only if the undefined behavior does not occur.  <br /></td></tr>
@@ -18654,7 +18654,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:38:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

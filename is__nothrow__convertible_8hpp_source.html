@@ -125,29 +125,25 @@ $(function(){initNavTree('is__nothrow__convertible_8hpp_source.html',''); initRe
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__convertible.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__convertible.html">is_nothrow_convertible</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">bool_constant</a>&lt;is_void_v&lt;From&gt; &amp;&amp; is_void_v&lt;To&gt;&gt; { };</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">requires</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">requires</span> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">static_cast&lt;</span>To(*)()<span class="keyword">&gt;</span>(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        { declval&lt;void(&amp;)(To) noexcept&gt;()(declval&lt;From&gt;()) } <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__convertible_3_01From_00_01To_01_4.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__convertible.html">is_nothrow_convertible</a>&lt;From, To&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">true_type</a> {};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">   30</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">is_nothrow_convertible_v</a> = <a class="code hl_struct" href="structetl_1_1is__nothrow__convertible.html">is_nothrow_convertible&lt;From, To&gt;::value</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_NOTHROW_CONVERTIBLE_HPP</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">requires</span> <span class="keyword">requires</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">static_cast&lt;</span>To (*)()<span class="keyword">&gt;</span>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        { declval&lt;void (&amp;)(To) noexcept&gt;()(declval&lt;From&gt;()) } <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__convertible_3_01From_00_01To_01_4.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__convertible.html">is_nothrow_convertible</a>&lt;From, To&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">   26</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">is_nothrow_convertible_v</a> = <a class="code hl_struct" href="structetl_1_1is__nothrow__convertible.html">is_nothrow_convertible&lt;From, To&gt;::value</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">// TETL_TYPE_TRAITS_IS_NOTHROW_CONVERTIBLE_HPP</span></div>
 <div class="ttc" id="aall_8hpp_html"><div class="ttname"><a href="all_8hpp.html">all.hpp</a></div></div>
 <div class="ttc" id="abool__constant_8hpp_html"><div class="ttname"><a href="bool__constant_8hpp.html">bool_constant.hpp</a></div></div>
 <div class="ttc" id="aconjunction_8hpp_html"><div class="ttname"><a href="conjunction_8hpp.html">conjunction.hpp</a></div></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="anamespaceetl_html_af70f6258c3e925eeb2d27b652374660d"><div class="ttname"><a href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">etl::is_nothrow_convertible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_convertible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_convertible.hpp:30</div></div>
+<div class="ttc" id="anamespaceetl_html_af70f6258c3e925eeb2d27b652374660d"><div class="ttname"><a href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">etl::is_nothrow_convertible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_convertible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_convertible.hpp:26</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:9</div></div>
 <div class="ttc" id="astructetl_1_1is__nothrow__convertible_html"><div class="ttname"><a href="structetl_1_1is__nothrow__convertible.html">etl::is_nothrow_convertible</a></div><div class="ttdef"><b>Definition</b> is_nothrow_convertible.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -156,7 +152,7 @@ $(function(){initNavTree('is__nothrow__convertible_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__nothrow__convertible_8hpp.html">is_nothrow_convertible.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:38:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

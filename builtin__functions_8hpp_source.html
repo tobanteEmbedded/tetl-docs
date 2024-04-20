@@ -218,22 +218,20 @@ $(function(){initNavTree('builtin__functions_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="builtin__functions_8hpp.html#a5387b78c275d80eb49437ab84974cce6">  107</a></span><span class="preprocessor">    #define TETL_BUILTIN_HUGE_VALL (1.0L / 0.0L)</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#if defined(TETL_COMPILER_CLANG) or defined(TETL_COMPILER_MSVC)</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">    #define TETL_BUILTIN_INT_SEQ(T, N) __make_integer_seq&lt;integer_sequence, T, N&gt;</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">  114</a></span><span class="preprocessor">    #define TETL_BUILTIN_INT_SEQ(T, N) integer_sequence&lt;T, __integer_pack(N)...&gt;</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_BUILTIN_FUNCTIONS_HPP</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#if defined(TETL_COMPILER_CLANG) or defined(TETL_COMPILER_MSVC)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">    #define TETL_BUILTIN_INT_SEQ(T, N) __make_integer_seq&lt;integer_sequence, T, N&gt;</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="builtin__functions_8hpp.html#a303c6144751de3e45c44990112e8b1cb">  113</a></span><span class="preprocessor">    #define TETL_BUILTIN_INT_SEQ(T, N) integer_sequence&lt;T, __integer_pack(N)...&gt;</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CONFIG_BUILTIN_FUNCTIONS_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_438876e5be62782f3d0ca70589e6c654.html">_config</a></li><li class="navelem"><a class="el" href="builtin__functions_8hpp.html">builtin_functions.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 11:12:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 11:38:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -940,7 +940,7 @@ var namespaceetl =
     [ "binary_search", "group__algorithm.html#ga5bd7d82f1e1253083d060c08049cb64b", null ],
     [ "binary_search", "group__algorithm.html#ga518c4f26f6b475c9ba5b742ca6202a05", null ],
     [ "bind_front", "namespaceetl.html#aa615187d5a248ab9e6493944c709279e", null ],
-    [ "bit_cast", "group__bit.html#ga2498c6989c510ee8806df8ac266b6305", null ],
+    [ "bit_cast", "group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254", null ],
     [ "bit_ceil", "group__bit.html#ga5006351c988afecab30821e1ee41f2ed", null ],
     [ "bit_floor", "group__bit.html#gaa305e9d1d725f6dfaebce56120c9f45d", null ],
     [ "bit_width", "group__bit.html#gae31295beb3cd3da128d5df9392b56816", null ],
