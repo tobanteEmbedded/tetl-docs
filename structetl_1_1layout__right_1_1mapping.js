@@ -20,6 +20,6 @@ var structetl_1_1layout__right_1_1mapping =
     [ "operator()", "structetl_1_1layout__right_1_1mapping.html#a01d1d2435f19c3b878376ce2fa9e9acf", null ],
     [ "operator=", "structetl_1_1layout__right_1_1mapping.html#aff002d5ef8f2bd5144d9d4d258171bd2", null ],
     [ "required_span_size", "structetl_1_1layout__right_1_1mapping.html#afc063f067f1a060261979b3ec3a1aae4", null ],
-    [ "stride", "structetl_1_1layout__right_1_1mapping.html#ab12dbf09e48e5ea776b91a96e8fd2cb6", null ],
+    [ "stride", "structetl_1_1layout__right_1_1mapping.html#ab38ddf7bbb53231f5aa10b46d0f7fa82", null ],
     [ "operator==", "structetl_1_1layout__right_1_1mapping.html#a3bae19e9dae21c88a977f22a3201dd4c", null ]
 ];

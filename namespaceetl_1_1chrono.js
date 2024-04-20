@@ -83,6 +83,7 @@ var namespaceetl_1_1chrono =
     [ "operator-", "namespaceetl_1_1chrono.html#ad1030efa95a9e6434036e7651da951b1", null ],
     [ "operator-", "namespaceetl_1_1chrono.html#ade3ba7b63078a8f65265f47c634f169f", null ],
     [ "operator-", "namespaceetl_1_1chrono.html#a370e3ed562d125bf5fbcf7f88f6855ac", null ],
+    [ "operator-", "namespaceetl_1_1chrono.html#a563a8cea6c9b7c1bc2b46d8c3b3e2803", null ],
     [ "operator-", "namespaceetl_1_1chrono.html#ab03b328819f8656edea0c3ddac1464a5", null ],
     [ "operator-", "namespaceetl_1_1chrono.html#a9cfe118e5cf4503035c55727b702cd80", null ],
     [ "operator-", "namespaceetl_1_1chrono.html#a014b551a2f989d4ecb0c3c3a9f2b58f5", null ],

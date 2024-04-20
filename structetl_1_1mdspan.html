@@ -180,6 +180,14 @@ requires ( (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510a
 requires ( (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexTypes, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; &amp;&amp; ...) and (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexTypes&gt; &amp;&amp; ...) and sizeof...(OtherIndexTypes) == <a class="el" href="structetl_1_1rank.html">rank</a>() )</td></tr>
 <tr class="memitem:a16ed13766c335fe29bad18b297ba5b9a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a16ed13766c335fe29bad18b297ba5b9a">operator()</a> (OtherIndexTypes... indices) const -&gt; <a class="el" href="#a660aa07ec215f7ed015d668a24ef86b1">reference</a></td></tr>
 <tr class="separator:a16ed13766c335fe29bad18b297ba5b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5b0b99da772cabf3df83159f04e191" id="r_a9b5b0b99da772cabf3df83159f04e191"><td class="memTemplParams" colspan="2">template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</td></tr>
+<tr class="memitem:a9b5b0b99da772cabf3df83159f04e191"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9b5b0b99da772cabf3df83159f04e191">operator[]</a> (<a class="el" href="structetl_1_1array.html">array</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a>()&gt; const &amp;indices) const -&gt; <a class="el" href="#a660aa07ec215f7ed015d668a24ef86b1">reference</a></td></tr>
+<tr class="separator:a9b5b0b99da772cabf3df83159f04e191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16907146cbdc173715fb85a3fe2be71" id="r_aa16907146cbdc173715fb85a3fe2be71"><td class="memTemplParams" colspan="2">template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</td></tr>
+<tr class="memitem:aa16907146cbdc173715fb85a3fe2be71"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa16907146cbdc173715fb85a3fe2be71">operator[]</a> (<a class="el" href="structetl_1_1span.html">span</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a>()&gt; indices) const -&gt; <a class="el" href="#a660aa07ec215f7ed015d668a24ef86b1">reference</a></td></tr>
+<tr class="separator:aa16907146cbdc173715fb85a3fe2be71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda399ad0b26aa2d0116f45b2a4c6ca0" id="r_aeda399ad0b26aa2d0116f45b2a4c6ca0"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a> () const noexcept -&gt; <a class="el" href="#a921f28284bd72648875e6e8ae56a8c8d">size_type</a></td></tr>
 <tr class="separator:aeda399ad0b26aa2d0116f45b2a4c6ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d97d99c02c8246444486601ab8086f" id="r_a27d97d99c02c8246444486601ab8086f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27d97d99c02c8246444486601ab8086f">stride</a> (<a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a> r) const -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
@@ -948,6 +956,68 @@ requires ( (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510a
 
 </div>
 </div>
+<a id="a9b5b0b99da772cabf3df83159f04e191" name="a9b5b0b99da772cabf3df83159f04e191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5b0b99da772cabf3df83159f04e191">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType , typename Extents , typename LayoutPolicy  = layout_right, typename AccessorPolicy  = default_accessor&lt;ElementType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a>()&gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>indices</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a660aa07ec215f7ed015d668a24ef86b1">reference</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa16907146cbdc173715fb85a3fe2be71" name="aa16907146cbdc173715fb85a3fe2be71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16907146cbdc173715fb85a3fe2be71">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType , typename Extents , typename LayoutPolicy  = layout_right, typename AccessorPolicy  = default_accessor&lt;ElementType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1span.html">span</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>indices</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a660aa07ec215f7ed015d668a24ef86b1">reference</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a10e4b29c349a013c6024b3ca64e46298" name="a10e4b29c349a013c6024b3ca64e46298"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10e4b29c349a013c6024b3ca64e46298">&#9670;&#160;</a></span>rank()</h2>
 
@@ -1094,7 +1164,7 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy  = l
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1mdspan.html">mdspan</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 01:25:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 02:44:39 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

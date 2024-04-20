@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"placeholder_8hpp.html#a9489e3b1a1800fcd519b5949ebd49339":[11,0,1,0,31,28,27],
 "placeholder_8hpp.html#aa5f1dd5bb68334297479abab45977efd":[11,0,1,0,31,28,21],
 "placeholder_8hpp.html#aac64243415664744bd4b7e78e5d812b1":[11,0,1,0,31,28,12],
 "placeholder_8hpp.html#ab1acb2f6e47625a4bade05b1529a3ffd":[11,0,1,0,31,28,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "set__intersection_8hpp.html":[11,0,1,0,0,68],
 "set__intersection_8hpp_source.html":[11,0,1,0,0,68],
 "set__symmetric__difference_8hpp.html":[11,0,1,0,0,69],
-"set__symmetric__difference_8hpp_source.html":[11,0,1,0,0,69],
-"set__union_8hpp.html":[11,0,1,0,0,70]
+"set__symmetric__difference_8hpp_source.html":[11,0,1,0,0,69]
 };

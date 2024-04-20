@@ -156,8 +156,8 @@ requires (sizeof...(Indices) == extents_type::rank()) and (<a class="el" href="n
 <tr class="separator:aff002d5ef8f2bd5144d9d4d258171bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc063f067f1a060261979b3ec3a1aae4" id="r_afc063f067f1a060261979b3ec3a1aae4"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc063f067f1a060261979b3ec3a1aae4">required_span_size</a> () const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
 <tr class="separator:afc063f067f1a060261979b3ec3a1aae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab12dbf09e48e5ea776b91a96e8fd2cb6" id="r_ab12dbf09e48e5ea776b91a96e8fd2cb6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12dbf09e48e5ea776b91a96e8fd2cb6">stride</a> (<a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a>) const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
-<tr class="separator:ab12dbf09e48e5ea776b91a96e8fd2cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38ddf7bbb53231f5aa10b46d0f7fa82" id="r_ab38ddf7bbb53231f5aa10b46d0f7fa82"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab38ddf7bbb53231f5aa10b46d0f7fa82">stride</a> (<a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a> r) const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a> requires(extents_type::rank() &gt; 0)</td></tr>
+<tr class="separator:ab38ddf7bbb53231f5aa10b46d0f7fa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -681,8 +681,8 @@ template&lt;typename Extents &gt; </div>
 
 </div>
 </div>
-<a id="ab12dbf09e48e5ea776b91a96e8fd2cb6" name="ab12dbf09e48e5ea776b91a96e8fd2cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab12dbf09e48e5ea776b91a96e8fd2cb6">&#9670;&#160;</a></span>stride()</h2>
+<a id="ab38ddf7bbb53231f5aa10b46d0f7fa82" name="ab38ddf7bbb53231f5aa10b46d0f7fa82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38ddf7bbb53231f5aa10b46d0f7fa82">&#9670;&#160;</a></span>stride()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,13 +695,15 @@ template&lt;typename Extents &gt; </div>
         <tr>
           <td class="memname">auto stride </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td>
+          <td class="paramtype"><a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>
+        requires(extents_type::rank() &gt; 0)
+    </td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -753,7 +755,7 @@ template&lt;typename OtherExtents &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__right.html">layout_right</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__right_1_1mapping.html">mapping</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 01:25:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Apr 20 2024 02:44:39 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
