@@ -125,7 +125,7 @@ $(function(){initNavTree('boolean__testable_8hpp_source.html',''); initResizable
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="conceptetl_1_1boolean__testable.html">   20</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1boolean__testable.html">boolean_testable</a> = etl::detail::boolean_testable_impl&lt;T&gt; and <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    { not etl::forward&lt;T&gt;(t) } -&gt; etl::detail::boolean_testable_impl;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    { not <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;T&gt;</a>(t) } -&gt; etl::detail::boolean_testable_impl;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
 </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -136,13 +136,14 @@ $(function(){initNavTree('boolean__testable_8hpp_source.html',''); initResizable
 <div class="ttc" id="aconvertible__to_8hpp_html"><div class="ttname"><a href="convertible__to_8hpp.html">convertible_to.hpp</a></div></div>
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_50bbc87141e63d62cafe38626bd86057.html">_concepts</a></li><li class="navelem"><a class="el" href="boolean__testable_8hpp.html">boolean_testable.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -124,7 +124,7 @@ $(function(){initNavTree('div__sat_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__numeric.html#ga5c10cdbbd78f2e34e1b00165692b1d2c">   16</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga5c10cdbbd78f2e34e1b00165692b1d2c">div_sat</a>(Int x, Int y) <span class="keyword">noexcept</span> -&gt; Int</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_define" href="check_8hpp.html#ac92901699a8c18f0024c6668eba14185">TETL_PRECONDITION</a>(y != 0);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_signed_v&lt;Int&gt;) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v&lt;Int&gt;</a>) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> (x == <a class="code hl_struct" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;Int&gt;::min</a>() and y == Int(-1)) {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits&lt;Int&gt;::max</a>();</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
@@ -142,6 +142,7 @@ $(function(){initNavTree('div__sat_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="agroup__numeric_html_ga5c10cdbbd78f2e34e1b00165692b1d2c"><div class="ttname"><a href="group__numeric.html#ga5c10cdbbd78f2e34e1b00165692b1d2c">etl::div_sat</a></div><div class="ttdeci">constexpr auto div_sat(Int x, Int y) noexcept -&gt; Int</div><div class="ttdoc">Computes the saturating division x / y.</div><div class="ttdef"><b>Definition</b> div_sat.hpp:16</div></div>
 <div class="ttc" id="ais__signed_8hpp_html"><div class="ttname"><a href="is__signed_8hpp.html">is_signed.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a05c78609bb9e06b42e0a4c0c4409b0a1"><div class="ttname"><a href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v</a></div><div class="ttdeci">constexpr bool is_signed_v</div><div class="ttdef"><b>Definition</b> is_signed.hpp:30</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:17</div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html_a76345fc065018c3299fc84601b968329"><div class="ttname"><a href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits::max</a></div><div class="ttdeci">static constexpr auto max() noexcept</div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:21</div></div>
@@ -151,7 +152,7 @@ $(function(){initNavTree('div__sat_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_e755c22006577f029332e1bd80389811.html">_numeric</a></li><li class="navelem"><a class="el" href="div__sat_8hpp.html">div_sat.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

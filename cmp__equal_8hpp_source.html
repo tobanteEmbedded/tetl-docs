@@ -125,9 +125,9 @@ $(function(){initNavTree('cmp__equal_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">using </span>UT = <a class="code hl_typedef" href="namespaceetl.html#aabeda2fce2dea6fa29533488400dd386">etl::make_unsigned_t&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">using </span>UU = <a class="code hl_typedef" href="namespaceetl.html#aabeda2fce2dea6fa29533488400dd386">etl::make_unsigned_t&lt;U&gt;</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_signed_v&lt;T&gt; == etl::is_signed_v&lt;U&gt;) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v&lt;T&gt;</a> == <a class="code hl_variable" href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v&lt;U&gt;</a>) {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> t == u;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_signed_v&lt;T&gt;) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v&lt;T&gt;</a>) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> t &lt; 0 ? false : UT(t) == u;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> u &lt; 0 ? false : t == UU(u);</div>
@@ -143,6 +143,7 @@ $(function(){initNavTree('cmp__equal_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="ais__signed_8hpp_html"><div class="ttname"><a href="is__signed_8hpp.html">is_signed.hpp</a></div></div>
 <div class="ttc" id="amake__unsigned_8hpp_html"><div class="ttname"><a href="make__unsigned_8hpp.html">make_unsigned.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a05c78609bb9e06b42e0a4c0c4409b0a1"><div class="ttname"><a href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">etl::is_signed_v</a></div><div class="ttdeci">constexpr bool is_signed_v</div><div class="ttdef"><b>Definition</b> is_signed.hpp:30</div></div>
 <div class="ttc" id="anamespaceetl_html_aabeda2fce2dea6fa29533488400dd386"><div class="ttname"><a href="namespaceetl.html#aabeda2fce2dea6fa29533488400dd386">etl::make_unsigned_t</a></div><div class="ttdeci">typename make_unsigned&lt; T &gt;::type make_unsigned_t</div><div class="ttdef"><b>Definition</b> make_unsigned.hpp:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -150,7 +151,7 @@ $(function(){initNavTree('cmp__equal_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="cmp__equal_8hpp.html">cmp_equal.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

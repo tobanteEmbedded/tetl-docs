@@ -200,7 +200,7 @@ $(function(){initNavTree('basic__format__arg_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Context, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> make_arg(T&amp;&amp; value) -&gt; basic_format_arg&lt;Context&gt;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> {etl::forward&lt;T&gt;(value)};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> {<a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;T&gt;</a>(value)};</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
@@ -214,6 +214,7 @@ $(function(){initNavTree('basic__format__arg_8hpp_source.html',''); initResizabl
 <div class="ttc" id="aforward_8hpp_html"><div class="ttname"><a href="forward_8hpp.html">forward.hpp</a></div></div>
 <div class="ttc" id="amonostate_8hpp_html"><div class="ttname"><a href="monostate_8hpp.html">monostate.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
 <div class="ttc" id="anamespaceetl_html_afb2c9350d32e78a0e4c960b9859ccb40"><div class="ttname"><a href="namespaceetl.html#afb2c9350d32e78a0e4c960b9859ccb40">etl::nullptr_t</a></div><div class="ttdeci">decltype(nullptr) nullptr_t</div><div class="ttdoc">etl::nullptr_t is the type of the null pointer literal, nullptr. It is a distinct type that is not it...</div><div class="ttdef"><b>Definition</b> nullptr_t.hpp:13</div></div>
 <div class="ttc" id="anullptr__t_8hpp_html"><div class="ttname"><a href="nullptr__t_8hpp.html">nullptr_t.hpp</a></div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
@@ -242,7 +243,7 @@ $(function(){initNavTree('basic__format__arg_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_16b7d14cc1ebca4125843589b43c6666.html">_format</a></li><li class="navelem"><a class="el" href="basic__format__arg_8hpp.html">basic_format_arg.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

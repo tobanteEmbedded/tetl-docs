@@ -128,7 +128,7 @@ $(function(){initNavTree('is__convertible_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">auto</span> test_returnable(...) -&gt; <a class="code hl_typedef" href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">auto</span> test_nonvoid_convertible(<span class="keywordtype">int</span>) -&gt; true_type_for&lt;decltype(etl::declval&lt;void (&amp;)(To)&gt;()(etl::declval&lt;From&gt;()))&gt;;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">auto</span> test_nonvoid_convertible(<span class="keywordtype">int</span>) -&gt; true_type_for&lt;decltype(etl::declval&lt;void (&amp;)(To)&gt;()(<a class="code hl_function" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">etl::declval&lt;From&gt;</a>()))&gt;;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>, <span class="keyword">typename</span>&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">auto</span> test_nonvoid_convertible(...) -&gt; <a class="code hl_typedef" href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -153,6 +153,7 @@ $(function(){initNavTree('is__convertible_8hpp_source.html',''); initResizable(t
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
 <div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a22b47f7719fd7b8373b49b15d5f701fb"><div class="ttname"><a href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">etl::declval</a></div><div class="ttdeci">auto declval() noexcept -&gt; add_rvalue_reference_t&lt; T &gt;</div></div>
 <div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
@@ -164,7 +165,7 @@ $(function(){initNavTree('is__convertible_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__convertible_8hpp.html">is_convertible.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

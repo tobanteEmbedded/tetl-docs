@@ -124,7 +124,7 @@ $(function(){initNavTree('move__if__noexcept_8hpp_source.html',''); initResizabl
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae197a91f87223433229090889ab96734">   20</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ae197a91f87223433229090889ab96734">move_if_noexcept</a>(T&amp; x) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    -&gt; <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t&lt;!etl::is_nothrow_move_constructible_v&lt;T&gt;</a> and etl::is_copy_constructible_v&lt;T&gt;, T <span class="keyword">const</span>&amp;, T&amp;&amp;&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    -&gt; <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t&lt;!etl::is_nothrow_move_constructible_v&lt;T&gt;</a> and <a class="code hl_variable" href="namespaceetl.html#a03f5da2852be4424089f4235ef44dec2">etl::is_copy_constructible_v&lt;T&gt;</a>, T <span class="keyword">const</span>&amp;, T&amp;&amp;&gt;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(x);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
@@ -139,6 +139,7 @@ $(function(){initNavTree('move__if__noexcept_8hpp_source.html',''); initResizabl
 <div class="ttc" id="ais__copy__constructible_8hpp_html"><div class="ttname"><a href="is__copy__constructible_8hpp.html">is_copy_constructible.hpp</a></div></div>
 <div class="ttc" id="ais__nothrow__move__constructible_8hpp_html"><div class="ttname"><a href="is__nothrow__move__constructible_8hpp.html">is_nothrow_move_constructible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a03f5da2852be4424089f4235ef44dec2"><div class="ttname"><a href="namespaceetl.html#a03f5da2852be4424089f4235ef44dec2">etl::is_copy_constructible_v</a></div><div class="ttdeci">constexpr bool is_copy_constructible_v</div><div class="ttdef"><b>Definition</b> is_copy_constructible.hpp:30</div></div>
 <div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_ae197a91f87223433229090889ab96734"><div class="ttname"><a href="namespaceetl.html#ae197a91f87223433229090889ab96734">etl::move_if_noexcept</a></div><div class="ttdeci">constexpr auto move_if_noexcept(T &amp;x) noexcept -&gt; etl::conditional_t&lt;!etl::is_nothrow_move_constructible_v&lt; T &gt; and etl::is_copy_constructible_v&lt; T &gt;, T const &amp;, T &amp;&amp; &gt;</div><div class="ttdoc">Conditionally convert a value to an rvalue.</div><div class="ttdef"><b>Definition</b> move_if_noexcept.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -147,7 +148,7 @@ $(function(){initNavTree('move__if__noexcept_8hpp_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="move__if__noexcept_8hpp.html">move_if_noexcept.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

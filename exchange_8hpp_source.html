@@ -122,10 +122,10 @@ $(function(){initNavTree('exchange_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U = T&gt;</div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7c1576e57ae3b113a38b8a9793bb4074">   16</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a7c1576e57ae3b113a38b8a9793bb4074">exchange</a>(T&amp; obj, U&amp;&amp; newValue)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">noexcept</span>(etl::is_nothrow_move_constructible_v&lt;T&gt; and etl::is_nothrow_assignable_v&lt;T&amp;, U&gt;) -&gt; T</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">noexcept</span>(<a class="code hl_variable" href="namespaceetl.html#a34e3584e54b63fd9e6a35fffd41080bd">etl::is_nothrow_move_constructible_v&lt;T&gt;</a> and <a class="code hl_variable" href="namespaceetl.html#ac0c249b3afd84019ec11170a1e06d267">etl::is_nothrow_assignable_v&lt;T&amp;, U&gt;</a>) -&gt; T</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    T oldValue = <a class="code hl_function" href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a>(obj);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    obj        = etl::forward&lt;U&gt;(newValue);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    obj        = <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;U&gt;</a>(newValue);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> oldValue;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
@@ -139,14 +139,17 @@ $(function(){initNavTree('exchange_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="ais__nothrow__move__assignable_8hpp_html"><div class="ttname"><a href="is__nothrow__move__assignable_8hpp.html">is_nothrow_move_assignable.hpp</a></div></div>
 <div class="ttc" id="ais__nothrow__move__constructible_8hpp_html"><div class="ttname"><a href="is__nothrow__move__constructible_8hpp.html">is_nothrow_move_constructible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a34e3584e54b63fd9e6a35fffd41080bd"><div class="ttname"><a href="namespaceetl.html#a34e3584e54b63fd9e6a35fffd41080bd">etl::is_nothrow_move_constructible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_move_constructible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_move_constructible.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html_a7c1576e57ae3b113a38b8a9793bb4074"><div class="ttname"><a href="namespaceetl.html#a7c1576e57ae3b113a38b8a9793bb4074">etl::exchange</a></div><div class="ttdeci">constexpr auto exchange(T &amp;obj, U &amp;&amp;newValue) noexcept(etl::is_nothrow_move_constructible_v&lt; T &gt; and etl::is_nothrow_assignable_v&lt; T &amp;, U &gt;) -&gt; T</div><div class="ttdoc">Replaces the value of obj with new_value and returns the old value of obj.</div><div class="ttdef"><b>Definition</b> exchange.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_ac0c249b3afd84019ec11170a1e06d267"><div class="ttname"><a href="namespaceetl.html#ac0c249b3afd84019ec11170a1e06d267">etl::is_nothrow_assignable_v</a></div><div class="ttdeci">constexpr bool is_nothrow_assignable_v</div><div class="ttdef"><b>Definition</b> is_nothrow_assignable.hpp:24</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="exchange_8hpp.html">exchange.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -114,8 +114,10 @@ $(function(){initNavTree('conceptetl_1_1derived__from.html',''); initResizable(t
 <p><code>#include &lt;<a class="el" href="derived__from_8hpp_source.html">derived_from.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">etl::derived_from</a> =  is_base_of_v&lt;Base, Derived&gt; and is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1derived__from.html">etl::derived_from</a> =  <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of_v&lt;Base, Derived&gt;</a> and <a class="code hl_variable" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v&lt;Derived const volatile*, Base const volatile*&gt;</a></div>
 <div class="ttc" id="aconceptetl_1_1derived__from_html"><div class="ttname"><a href="conceptetl_1_1derived__from.html">etl::derived_from</a></div><div class="ttdoc">The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is eith...</div><div class="ttdef"><b>Definition</b> derived_from.hpp:17</div></div>
+<div class="ttc" id="anamespaceetl_html_a096bf5b121d9f427c8027f2949e8198e"><div class="ttname"><a href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">etl::is_base_of_v</a></div><div class="ttdeci">constexpr bool is_base_of_v</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:39</div></div>
+<div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The concept derived_from&lt;Derived, Base&gt; is satisfied if and only if Base is a class type that is either Derived or a public and unambiguous base of Derived, ignoring cv-qualifiers. Note that this behaviour is different to is_base_of when Base is a private or protected base of Derived. </p>
 </div></div><!-- contents -->
@@ -124,7 +126,7 @@ $(function(){initNavTree('conceptetl_1_1derived__from.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="conceptetl_1_1derived__from.html">derived_from</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:28 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

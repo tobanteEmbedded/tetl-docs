@@ -112,8 +112,9 @@ $(function(){initNavTree('conceptetl_1_1linalg_1_1inout__object.html',''); initR
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1linalg_1_1inout__object.html">etl::linalg::inout_object</a> =  <a class="code hl_variable" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">detail::is_mdspan&lt;T&gt;::value</a> &amp;&amp; (T::rank() == 1 || T::rank() == 2)</div>
-<div class="line">   &amp;&amp; <a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a>&lt;remove_const_t&lt;typename T::element_type&gt;, <span class="keyword">typename</span> T::element_type&gt; &amp;&amp; T::is_always_unique()</div>
+<div class="line">   &amp;&amp; <a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a>&lt;<a class="code hl_typedef" href="namespaceetl.html#a75ab6c9a804ec997a6e8cb9c5b36c3e4">remove_const_t&lt;typename T::element_type&gt;</a>, <span class="keyword">typename</span> T::element_type&gt; &amp;&amp; T::is_always_unique()</div>
 <div class="ttc" id="aconceptetl_1_1linalg_1_1inout__object_html"><div class="ttname"><a href="conceptetl_1_1linalg_1_1inout__object.html">etl::linalg::inout_object</a></div><div class="ttdef"><b>Definition</b> concepts.hpp:175</div></div>
+<div class="ttc" id="anamespaceetl_html_a75ab6c9a804ec997a6e8cb9c5b36c3e4"><div class="ttname"><a href="namespaceetl.html#a75ab6c9a804ec997a6e8cb9c5b36c3e4">etl::remove_const_t</a></div><div class="ttdeci">typename remove_const&lt; T &gt;::type remove_const_t</div><div class="ttdef"><b>Definition</b> remove_const.hpp:23</div></div>
 <div class="ttc" id="anamespaceetl_html_aa6c6bde5fd020a928e6d7b5fe8db7bb0"><div class="ttname"><a href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html_a9aa864e6c9ea467ce3878df4ca8e8571"><div class="ttname"><a href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">etl::integral_constant::value</a></div><div class="ttdeci">static constexpr Type value</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -122,7 +123,7 @@ $(function(){initNavTree('conceptetl_1_1linalg_1_1inout__object.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1linalg.html">linalg</a></li><li class="navelem"><a class="el" href="conceptetl_1_1linalg_1_1inout__object.html">inout_object</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:28 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

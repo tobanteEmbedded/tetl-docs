@@ -146,9 +146,9 @@ $(function(){initNavTree('layout__right_8hpp_source.html',''); initResizable(tru
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OtherExtents&gt;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">requires</span> is_constructible_v&lt;extents_type, OtherExtents&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">requires</span> <a class="code hl_variable" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v&lt;extents_type, OtherExtents&gt;</a></div>
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structetl_1_1layout__right_1_1mapping.html#ab6b4df124d0571899d08c0d3c0f5d0cc">   38</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span>(!is_convertible_v&lt;OtherExtents, extents_type&gt;)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structetl_1_1layout__right_1_1mapping.html#ab6b4df124d0571899d08c0d3c0f5d0cc">   38</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span>(!<a class="code hl_variable" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v&lt;OtherExtents, extents_type&gt;</a>)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_function" href="structetl_1_1layout__right_1_1mapping.html#a05ccaf34b7f0fd32b2d957ef5d8fad10">mapping</a>(<a class="code hl_struct" href="structetl_1_1layout__right_1_1mapping.html">mapping&lt;OtherExtents&gt;</a> <span class="keyword">const</span>&amp; other) noexcept</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        : _extents{other.<a class="code hl_function" href="structetl_1_1layout__right_1_1mapping.html#aece775793b34991b496a8f2e18e2f13a">extents</a>()}</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
@@ -156,9 +156,9 @@ $(function(){initNavTree('layout__right_8hpp_source.html',''); initResizable(tru
 </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OtherExtents&gt;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">requires</span>(extents_type::rank() &lt;= 1) &amp;&amp; is_constructible_v&lt;extents_type, OtherExtents&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">requires</span>(extents_type::rank() &lt;= 1) &amp;&amp; <a class="code hl_variable" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v&lt;extents_type, OtherExtents&gt;</a></div>
 <div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structetl_1_1layout__right_1_1mapping.html#a4a4ae4406dfcbab3f110f0d96242b5c1">   46</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span>(!is_convertible_v&lt;OtherExtents, extents_type&gt;)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structetl_1_1layout__right_1_1mapping.html#a4a4ae4406dfcbab3f110f0d96242b5c1">   46</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span>(!<a class="code hl_variable" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v&lt;OtherExtents, extents_type&gt;</a>)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="structetl_1_1layout__right_1_1mapping.html#a05ccaf34b7f0fd32b2d957ef5d8fad10">mapping</a>(<a class="code hl_struct" href="structetl_1_1layout__left_1_1mapping.html">layout_left::mapping&lt;OtherExtents&gt;</a> <span class="keyword">const</span>&amp; other) noexcept</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        : _extents{other.<a class="code hl_function" href="structetl_1_1layout__right_1_1mapping.html#aece775793b34991b496a8f2e18e2f13a">extents</a>()}</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
@@ -181,8 +181,8 @@ $(function(){initNavTree('layout__right_8hpp_source.html',''); initResizable(tru
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Indices&gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">requires</span>(<span class="keyword">sizeof</span>...(Indices) == extents_type::rank()) and (is_convertible_v&lt;Indices, index_type&gt; and ...)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                and (is_nothrow_constructible_v&lt;index_type, Indices&gt; and ...)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">requires</span>(<span class="keyword">sizeof</span>...(Indices) == extents_type::rank()) and (<a class="code hl_variable" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v&lt;Indices, index_type&gt;</a> and ...)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                and (<a class="code hl_variable" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v&lt;index_type, Indices&gt;</a> and ...)</div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structetl_1_1layout__right_1_1mapping.html#a01d1d2435f19c3b878376ce2fa9e9acf">   68</a></span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1layout__right_1_1mapping.html#a01d1d2435f19c3b878376ce2fa9e9acf">operator()</a>(Indices... indices) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; <a class="code hl_typedef" href="structetl_1_1layout__right_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
@@ -258,7 +258,10 @@ $(function(){initNavTree('layout__right_8hpp_source.html',''); initResizable(tru
 <div class="ttc" id="ais__nothrow__constructible_8hpp_html"><div class="ttname"><a href="is__nothrow__constructible_8hpp.html">is_nothrow_constructible.hpp</a></div></div>
 <div class="ttc" id="alayout_8hpp_html"><div class="ttname"><a href="layout_8hpp.html">layout.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a123009e89543c37bab698abc5f4221a0"><div class="ttname"><a href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">etl::is_constructible_v</a></div><div class="ttdeci">constexpr bool is_constructible_v</div><div class="ttdef"><b>Definition</b> is_constructible.hpp:24</div></div>
 <div class="ttc" id="anamespaceetl_html_a26496b89801597f0e24f146bc25bb3ca"><div class="ttname"><a href="namespaceetl.html#a26496b89801597f0e24f146bc25bb3ca">etl::index_sequence_for</a></div><div class="ttdeci">etl::make_index_sequence&lt; sizeof...(T)&gt; index_sequence_for</div><div class="ttdef"><b>Definition</b> index_sequence.hpp:18</div></div>
+<div class="ttc" id="anamespaceetl_html_ac00c953e4e3f962b130f431bc25d6101"><div class="ttname"><a href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_constructible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_constructible.hpp:50</div></div>
+<div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
 <div class="ttc" id="astructetl_1_1integer__sequence_html"><div class="ttname"><a href="structetl_1_1integer__sequence.html">etl::integer_sequence</a></div><div class="ttdef"><b>Definition</b> integer_sequence.hpp:14</div></div>
 <div class="ttc" id="astructetl_1_1layout__left_1_1mapping_html"><div class="ttname"><a href="structetl_1_1layout__left_1_1mapping.html">etl::layout_left::mapping</a></div><div class="ttdef"><b>Definition</b> layout_left.hpp:19</div></div>
 <div class="ttc" id="astructetl_1_1layout__right_1_1mapping_html"><div class="ttname"><a href="structetl_1_1layout__right_1_1mapping.html">etl::layout_right::mapping</a></div><div class="ttdef"><b>Definition</b> layout_right.hpp:20</div></div>
@@ -289,7 +292,7 @@ $(function(){initNavTree('layout__right_8hpp_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_af9b918ea0ffb9889c3ed575d2f154ce.html">_mdspan</a></li><li class="navelem"><a class="el" href="layout__right_8hpp.html">layout_right.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

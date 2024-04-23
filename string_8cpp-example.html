@@ -178,8 +178,8 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="line">    <span class="comment">// TODO: find &amp; friends</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// to_string</span></div>
-<div class="line">    ::printf(<span class="stringliteral">&quot;to_string&lt;8&gt;(1): &#39;%s&#39;\n&quot;</span>, etl::to_string&lt;8&gt;(1).c_str());</div>
-<div class="line">    ::printf(<span class="stringliteral">&quot;to_string&lt;8&gt;(16384): &#39;%s&#39;\n&quot;</span>, etl::to_string&lt;8&gt;(16384).c_str());</div>
+<div class="line">    ::printf(<span class="stringliteral">&quot;to_string&lt;8&gt;(1): &#39;%s&#39;\n&quot;</span>, <a id="a6" name="a6"></a><a class="code hl_function" href="namespaceetl.html#acabe21e30e1c4a3fe9d4b236c80b7bb1">etl::to_string&lt;8&gt;</a>(1).c_str());</div>
+<div class="line">    ::printf(<span class="stringliteral">&quot;to_string&lt;8&gt;(16384): &#39;%s&#39;\n&quot;</span>, <a class="code hl_function" href="namespaceetl.html#acabe21e30e1c4a3fe9d4b236c80b7bb1">etl::to_string&lt;8&gt;</a>(16384).c_str());</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -189,6 +189,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
 <div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:24</div></div>
 <div class="ttc" id="agroup__cctype_html_gabf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="group__cctype.html#gabf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:26</div></div>
+<div class="ttc" id="anamespaceetl_html_acabe21e30e1c4a3fe9d4b236c80b7bb1"><div class="ttname"><a href="namespaceetl.html#acabe21e30e1c4a3fe9d4b236c80b7bb1">etl::to_string</a></div><div class="ttdeci">constexpr auto to_string(int value) noexcept -&gt; etl::inplace_string&lt; Capacity &gt;</div><div class="ttdoc">Converts a numeric value to etl::inplace_string.</div><div class="ttdef"><b>Definition</b> to_string.hpp:28</div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1basic__inplace__string_html"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html">etl::basic_inplace_string</a></div><div class="ttdoc">basic_inplace_string class with fixed size capacity.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:41</div></div>
 <div class="ttc" id="astructetl_1_1basic__string__view_html"><div class="ttname"><a href="structetl_1_1basic__string__view.html">etl::basic_string_view</a></div><div class="ttdoc">The class template basic_string_view describes an object that can refer to a constant contiguous sequ...</div><div class="ttdef"><b>Definition</b> basic_string_view.hpp:34</div></div>
@@ -198,7 +199,7 @@ $(function(){initNavTree('string_8cpp-example.html',''); initResizable(true); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

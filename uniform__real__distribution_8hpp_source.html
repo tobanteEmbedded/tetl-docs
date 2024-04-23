@@ -208,7 +208,7 @@ $(function(){initNavTree('uniform__real__distribution_8hpp_source.html',''); ini
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// x = a + u * (b - a)</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_function" href="structetl_1_1uniform__real__distribution.html#a4acae4ac584c352a7b6d5dd293fb40a8">a</a> = parm.a();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_function" href="structetl_1_1uniform__real__distribution.html#acdf110c1aadbec09207e8563793f78d6">b</a> = parm.b();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">auto</span> <span class="keyword">const</span> u = etl::generate_canonical&lt;RealType, minBits&gt;(g);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">auto</span> <span class="keyword">const</span> u = <a class="code hl_function" href="group__random.html#ga476438c577a79ab5e228c05ea53e8986">etl::generate_canonical&lt;RealType, minBits&gt;</a>(g);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structetl_1_1uniform__real__distribution.html#a4acae4ac584c352a7b6d5dd293fb40a8">a</a> + u * (<a class="code hl_function" href="structetl_1_1uniform__real__distribution.html#acdf110c1aadbec09207e8563793f78d6">b</a> - <a class="code hl_function" href="structetl_1_1uniform__real__distribution.html#a4acae4ac584c352a7b6d5dd293fb40a8">a</a>);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 </div>
@@ -229,6 +229,7 @@ $(function(){initNavTree('uniform__real__distribution_8hpp_source.html',''); ini
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">// TETL_RANDOM_UNIFORM_REAL_DISTRIBUTION_HPP</span></div>
 <div class="ttc" id="agenerate__canonical_8hpp_html"><div class="ttname"><a href="generate__canonical_8hpp.html">generate_canonical.hpp</a></div></div>
+<div class="ttc" id="agroup__random_html_ga476438c577a79ab5e228c05ea53e8986"><div class="ttname"><a href="group__random.html#ga476438c577a79ab5e228c05ea53e8986">etl::generate_canonical</a></div><div class="ttdeci">constexpr auto generate_canonical(RNG &amp;g) noexcept(noexcept(g())) -&gt; Real</div><div class="ttdoc">Generates a random floating point number in range [0,1).</div><div class="ttdef"><b>Definition</b> generate_canonical.hpp:44</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
@@ -259,7 +260,7 @@ $(function(){initNavTree('uniform__real__distribution_8hpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_b231c524d21ceb1b2bc93ec7805c27d6.html">_random</a></li><li class="navelem"><a class="el" href="uniform__real__distribution_8hpp.html">uniform_real_distribution.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

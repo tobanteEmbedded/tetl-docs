@@ -124,7 +124,7 @@ $(function(){initNavTree('blas1__vector__idx__abs__max_8hpp_source.html',''); in
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__linalg.html#gaa1d6eae27b2281c3a966c843b2c26291">   15</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#gaa1d6eae27b2281c3a966c843b2c26291">idx_abs_max</a>(InVec v) -&gt; <span class="keyword">typename</span> InVec::size_type</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> getValue = [](<span class="keyword">auto</span> val) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_arithmetic_v&lt;typename InVec::value_type&gt;) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v&lt;typename InVec::value_type&gt;</a>) {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> detail::abs_if_needed(val);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keyword">auto</span> <span class="keyword">const</span> re = detail::abs_if_needed(detail::real_if_needed(val));</div>
@@ -157,6 +157,7 @@ $(function(){initNavTree('blas1__vector__idx__abs__max_8hpp_source.html',''); in
 <div class="ttc" id="agroup__utility_html_gafdf1ab07ba48bb89aa8db68eff58328e"><div class="ttname"><a href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:21</div></div>
 <div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
+<div class="ttc" id="anamespaceetl_html_abf2224be65b8fb8794372d049a1d37d9"><div class="ttname"><a href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">etl::is_arithmetic_v</a></div><div class="ttdeci">constexpr bool is_arithmetic_v</div><div class="ttdef"><b>Definition</b> is_arithmetic.hpp:21</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html"><div class="ttname"><a href="structetl_1_1numeric__limits.html">etl::numeric_limits</a></div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:17</div></div>
 <div class="ttc" id="astructetl_1_1numeric__limits_html_a76345fc065018c3299fc84601b968329"><div class="ttname"><a href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits::max</a></div><div class="ttdeci">static constexpr auto max() noexcept</div><div class="ttdef"><b>Definition</b> numeric_limits.hpp:21</div></div>
@@ -166,7 +167,7 @@ $(function(){initNavTree('blas1__vector__idx__abs__max_8hpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="blas1__vector__idx__abs__max_8hpp.html">blas1_vector_idx_abs_max.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

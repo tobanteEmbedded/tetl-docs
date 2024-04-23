@@ -42,26 +42,26 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
     ] ],
     [ "Design", "md_docs_2design.html", [
-      [ "Issues", "md_docs_2design.html#autotoc_md26", [
-        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md27", null ]
+      [ "Issues", "md_docs_2design.html#autotoc_md40", [
+        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md41", null ]
       ] ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md36", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md37", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md38", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md39", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md40", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md41", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md27", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md28", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md29", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md30", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md31", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md32", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md30", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md31", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md35", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md36", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md32", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md33", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md34", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md37", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md38", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md39", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],

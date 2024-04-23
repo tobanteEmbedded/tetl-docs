@@ -133,12 +133,12 @@ $(function(){initNavTree('copysign_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> copysign(T x, T y) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a>()) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_same_v&lt;T, float&gt;) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v&lt;T, float&gt;</a>) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#if __has_builtin(__builtin_copysignf)</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span> __builtin_copysignf(x, y);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_same_v&lt;T, double&gt;) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v&lt;T, double&gt;</a>) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#if __has_builtin(__builtin_copysign)</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> __builtin_copysign(x, y);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
@@ -179,13 +179,14 @@ $(function(){initNavTree('copysign_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="ais__same_8hpp_html"><div class="ttname"><a href="is__same_8hpp.html">is_same.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a135ea1c61ce77c9bf27e83df6a1fec64"><div class="ttname"><a href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">etl::is_constant_evaluated</a></div><div class="ttdeci">constexpr auto is_constant_evaluated() noexcept -&gt; bool</div><div class="ttdoc">Detects whether the function call occurs within a constant-evaluated context. Returns true if the eva...</div><div class="ttdef"><b>Definition</b> is_constant_evaluated.hpp:16</div></div>
+<div class="ttc" id="anamespaceetl_html_aa6c6bde5fd020a928e6d7b5fe8db7bb0"><div class="ttname"><a href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_0a8451822ead037db42f7b180ec45725.html">_cmath</a></li><li class="navelem"><a class="el" href="copysign_8hpp.html">copysign.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

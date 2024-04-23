@@ -162,7 +162,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceetl.html#a1f7a4153c0b6a56949cfa7691169049b">   48</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a1f7a4153c0b6a56949cfa7691169049b">isfinite</a>(<a class="code hl_struct" href="structetl_1_1half.html">half</a> <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">using </span>uint_t = <a class="code hl_typedef" href="structetl_1_1half.html#a20cfb49a183f033cecb34e614d624bf8">half::storage_type</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> (etl::bit_cast&lt;uint_t&gt;(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::exp_mask) != detail::exp_mask;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;uint_t&gt;</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::exp_mask) != detail::exp_mask;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -170,7 +170,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespaceetl.html#a25b70d7be5ca34b77def3ff9950ef1cc">   54</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a25b70d7be5ca34b77def3ff9950ef1cc">isinf</a>(<a class="code hl_struct" href="structetl_1_1half.html">half</a> <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">using </span>uint_t = <a class="code hl_typedef" href="structetl_1_1half.html#a20cfb49a183f033cecb34e614d624bf8">half::storage_type</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> (etl::bit_cast&lt;uint_t&gt;(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::inf_mask) == detail::exp_mask;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;uint_t&gt;</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::inf_mask) == detail::exp_mask;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespaceetl.html#ab8986c9bc042cb46d1874b992a453180">   60</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#ab8986c9bc042cb46d1874b992a453180">isnan</a>(<a class="code hl_struct" href="structetl_1_1half.html">half</a> <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">using </span>uint_t = <a class="code hl_typedef" href="structetl_1_1half.html#a20cfb49a183f033cecb34e614d624bf8">half::storage_type</a>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> (etl::bit_cast&lt;uint_t&gt;(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::inf_mask) &gt; detail::exp_mask;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;uint_t&gt;</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::inf_mask) &gt; detail::exp_mask;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
@@ -187,7 +187,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">using </span>uint_t    = <a class="code hl_typedef" href="structetl_1_1half.html#a20cfb49a183f033cecb34e614d624bf8">half::storage_type</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span> <span class="keyword">const</span> mask = detail::exp_mask;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">auto</span> <span class="keyword">const</span> bits = etl::bit_cast&lt;uint_t&gt;(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">auto</span> <span class="keyword">const</span> bits = <a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;uint_t&gt;</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> ((bits &amp; mask) != 0) &amp; ((bits &amp; mask) != mask); <span class="comment">// NOLINT</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div>
@@ -196,7 +196,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespaceetl.html#a7f4da52394b4be08dc83783c505ddc3a">   74</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a7f4da52394b4be08dc83783c505ddc3a">signbit</a>(<a class="code hl_struct" href="structetl_1_1half.html">half</a> <a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">using </span>uint_t = <a class="code hl_typedef" href="structetl_1_1half.html#a20cfb49a183f033cecb34e614d624bf8">half::storage_type</a>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> (etl::bit_cast&lt;uint_t&gt;(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::sign_mask) != 0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;uint_t&gt;</a>(<a class="code hl_function" href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">arg</a>) &amp; detail::sign_mask) != 0;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
@@ -204,6 +204,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CFLOAT_HALF_HPP</span></div>
 <div class="ttc" id="abit__cast_8hpp_html"><div class="ttname"><a href="bit__cast_8hpp.html">bit_cast.hpp</a></div></div>
+<div class="ttc" id="agroup__bit_html_ga8345e9aa2cae9bfb32b62f761780c254"><div class="ttname"><a href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:38</div></div>
 <div class="ttc" id="agroup__complex_html_ga0c18e9f715e3983b7a71347ce6e0e2c1"><div class="ttname"><a href="group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1">etl::arg</a></div><div class="ttdeci">constexpr auto arg(complex&lt; T &gt; const &amp;z) noexcept -&gt; T</div><div class="ttdef"><b>Definition</b> arg.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a1f7a4153c0b6a56949cfa7691169049b"><div class="ttname"><a href="namespaceetl.html#a1f7a4153c0b6a56949cfa7691169049b">etl::isfinite</a></div><div class="ttdeci">constexpr auto isfinite(half arg) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> half.hpp:48</div></div>
@@ -224,7 +225,7 @@ $(function(){initNavTree('half_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_21813cef345bc5fd6e476cec33329d3b.html">_cfloat</a></li><li class="navelem"><a class="el" href="half_8hpp.html">half.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

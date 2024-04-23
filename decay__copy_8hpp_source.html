@@ -120,9 +120,9 @@ $(function(){initNavTree('decay__copy_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">   14</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">decay_copy</a>(T&amp;&amp; t) <span class="keyword">noexcept</span>(is_nothrow_convertible_v&lt;T, decay_t&lt;T&gt;&gt;) -&gt; <a class="code hl_typedef" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t&lt;T&gt;</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">   14</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">decay_copy</a>(T&amp;&amp; t) <span class="keyword">noexcept</span>(<a class="code hl_variable" href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">is_nothrow_convertible_v&lt;T, decay_t&lt;T&gt;</a>&gt;) -&gt; <a class="code hl_typedef" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">decay_t&lt;T&gt;</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> etl::forward&lt;T&gt;(t);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;T&gt;</a>(t);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -135,13 +135,15 @@ $(function(){initNavTree('decay__copy_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="ais__nothrow__convertible_8hpp_html"><div class="ttname"><a href="is__nothrow__convertible_8hpp.html">is_nothrow_convertible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a24f3c9ab2c53f9192c2899fc8efb263d"><div class="ttname"><a href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a></div><div class="ttdeci">typename etl::decay&lt; T &gt;::type decay_t</div><div class="ttdef"><b>Definition</b> decay.hpp:32</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
+<div class="ttc" id="anamespaceetl_html_af70f6258c3e925eeb2d27b652374660d"><div class="ttname"><a href="namespaceetl.html#af70f6258c3e925eeb2d27b652374660d">etl::is_nothrow_convertible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_convertible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_convertible.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_765abac2ba11e7762dcb3a96b740b442.html">_ranges</a></li><li class="navelem"><a class="el" href="decay__copy_8hpp.html">decay_copy.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

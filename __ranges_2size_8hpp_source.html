@@ -127,13 +127,13 @@ $(function(){initNavTree('__ranges_2size_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">auto</span> <a class="code hl_variable" href="group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c">size</a>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp;) -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">concept </span>has_member_size = not etl::ranges::disable_sized_range&lt;etl::remove_cv_t&lt;T&gt;&gt; and <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">concept </span>has_member_size = not <a class="code hl_variable" href="group__ranges.html#ga335083e97a19531572222dc1b5c44c9e">etl::ranges::disable_sized_range&lt;etl::remove_cv_t&lt;T&gt;</a>&gt; and <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    { <a class="code hl_function" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">decay_copy</a>(t.size()) } -&gt; <a class="code hl_concept" href="conceptetl_1_1integral.html">etl::integral</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// clang-format off</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">concept </span>has_adl_size = not has_member_size&lt;T&gt; and not etl::ranges::disable_sized_range&lt;etl::remove_cv_t&lt;T&gt;&gt; and <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">concept </span>has_adl_size = not has_member_size&lt;T&gt; and not <a class="code hl_variable" href="group__ranges.html#ga335083e97a19531572222dc1b5c44c9e">etl::ranges::disable_sized_range&lt;etl::remove_cv_t&lt;T&gt;</a>&gt; and <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    { <a class="code hl_function" href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">decay_copy</a>(<a class="code hl_variable" href="group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c">size</a>(t)) } -&gt; <a class="code hl_concept" href="conceptetl_1_1integral.html">etl::integral</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// clang-format on</span></div>
@@ -180,6 +180,7 @@ $(function(){initNavTree('__ranges_2size_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="adecay__copy_8hpp_html"><div class="ttname"><a href="decay__copy_8hpp.html">decay_copy.hpp</a></div></div>
 <div class="ttc" id="adisable__sized__range_8hpp_html"><div class="ttname"><a href="disable__sized__range_8hpp.html">disable_sized_range.hpp</a></div></div>
 <div class="ttc" id="agroup__array_html_ga1693d67d03475372752f9e6973d67a8d"><div class="ttname"><a href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">etl::c_array</a></div><div class="ttdeci">ValueType[Size] c_array</div><div class="ttdef"><b>Definition</b> c_array.hpp:12</div></div>
+<div class="ttc" id="agroup__ranges_html_ga335083e97a19531572222dc1b5c44c9e"><div class="ttname"><a href="group__ranges.html#ga335083e97a19531572222dc1b5c44c9e">etl::ranges::disable_sized_range</a></div><div class="ttdeci">constexpr auto disable_sized_range</div><div class="ttdef"><b>Definition</b> disable_sized_range.hpp:10</div></div>
 <div class="ttc" id="agroup__ranges_html_ga634128d2b51dd1677291370fa7276399"><div class="ttname"><a href="group__ranges.html#ga634128d2b51dd1677291370fa7276399">etl::decay_copy</a></div><div class="ttdeci">constexpr auto decay_copy(T &amp;&amp;t) noexcept(is_nothrow_convertible_v&lt; T, decay_t&lt; T &gt; &gt;) -&gt; decay_t&lt; T &gt;</div><div class="ttdef"><b>Definition</b> decay_copy.hpp:14</div></div>
 <div class="ttc" id="agroup__ranges_html_ga95d3fe103aa2ab8634a824562dd8390c"><div class="ttname"><a href="group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c">etl::ranges::cpo::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdef"><b>Definition</b> size.hpp:64</div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
@@ -192,7 +193,7 @@ $(function(){initNavTree('__ranges_2size_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_765abac2ba11e7762dcb3a96b740b442.html">_ranges</a></li><li class="navelem"><a class="el" href="__ranges_2size_8hpp.html">size.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

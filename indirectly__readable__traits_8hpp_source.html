@@ -126,7 +126,7 @@ $(function(){initNavTree('indirectly__readable__traits_8hpp_source.html',''); in
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>maybe_value_type { };</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">requires</span> etl::is_object_v&lt;T&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">requires</span> <a class="code hl_variable" href="namespaceetl.html#a6e0edf4d9cccfbffc3b8744b2c7bcfe9">etl::is_object_v&lt;T&gt;</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">struct </span>maybe_value_type&lt;T&gt; {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>value_type = <a class="code hl_typedef" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">etl::remove_cv_t&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
@@ -149,7 +149,7 @@ $(function(){initNavTree('indirectly__readable__traits_8hpp_source.html',''); in
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structetl_1_1indirectly__readable__traits_3_01T_01_5_01_4.html">   40</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1indirectly__readable__traits.html">indirectly_readable_traits</a>&lt;T*&gt; : detail::maybe_value_type&lt;T&gt; { };</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> I&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">requires</span> etl::is_array_v&lt;I&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">requires</span> <a class="code hl_variable" href="namespaceetl.html#a8b0e44222b6a1dc103286f3c5225ad93">etl::is_array_v&lt;I&gt;</a></div>
 <div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structetl_1_1indirectly__readable__traits_3_01I_01_4.html">   44</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1indirectly__readable__traits.html">indirectly_readable_traits</a>&lt;I&gt; {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structetl_1_1indirectly__readable__traits_3_01I_01_4.html#a37944fa5d2ce7989f795762950d90605">   45</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1indirectly__readable__traits_3_01I_01_4.html#a37944fa5d2ce7989f795762950d90605">value_type</a> = <a class="code hl_typedef" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">etl::remove_cv_t&lt;etl::remove_extent_t&lt;I&gt;</a>&gt;;</div>
@@ -178,6 +178,8 @@ $(function(){initNavTree('indirectly__readable__traits_8hpp_source.html',''); in
 <div class="ttc" id="ais__object_8hpp_html"><div class="ttname"><a href="is__object_8hpp.html">is_object.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a57d58de8ee9130049557265efc11802c"><div class="ttname"><a href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">etl::remove_cv_t</a></div><div class="ttdeci">remove_const_t&lt; remove_volatile_t&lt; T &gt; &gt; remove_cv_t</div><div class="ttdef"><b>Definition</b> remove_cv.hpp:22</div></div>
+<div class="ttc" id="anamespaceetl_html_a6e0edf4d9cccfbffc3b8744b2c7bcfe9"><div class="ttname"><a href="namespaceetl.html#a6e0edf4d9cccfbffc3b8744b2c7bcfe9">etl::is_object_v</a></div><div class="ttdeci">constexpr bool is_object_v</div><div class="ttdef"><b>Definition</b> is_object.hpp:35</div></div>
+<div class="ttc" id="anamespaceetl_html_a8b0e44222b6a1dc103286f3c5225ad93"><div class="ttname"><a href="namespaceetl.html#a8b0e44222b6a1dc103286f3c5225ad93">etl::is_array_v</a></div><div class="ttdeci">constexpr bool is_array_v</div><div class="ttdef"><b>Definition</b> is_array.hpp:26</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 <div class="ttc" id="aremove__extent_8hpp_html"><div class="ttname"><a href="remove__extent_8hpp.html">remove_extent.hpp</a></div></div>
 <div class="ttc" id="asame__as_8hpp_html"><div class="ttname"><a href="same__as_8hpp.html">same_as.hpp</a></div></div>
@@ -189,7 +191,7 @@ $(function(){initNavTree('indirectly__readable__traits_8hpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="indirectly__readable__traits_8hpp.html">indirectly_readable_traits.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

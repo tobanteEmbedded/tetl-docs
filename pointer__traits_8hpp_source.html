@@ -140,7 +140,7 @@ $(function(){initNavTree('pointer__traits_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structetl_1_1pointer__traits_3_01T_01_5_01_4.html#a5ae1679b4d59098ebd5dd6c5dbafb3b5">   54</a></span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1pointer__traits_3_01T_01_5_01_4.html#a5ae1679b4d59098ebd5dd6c5dbafb3b5">pointer_to</a>(T&amp; r) -&gt; <a class="code hl_typedef" href="structetl_1_1pointer__traits_3_01T_01_5_01_4.html#ab088798d28525c0befe3c707b95c5bc2">pointer</a></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">requires</span>(not etl::is_void_v&lt;T&gt;)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">requires</span>(not <a class="code hl_variable" href="namespaceetl.html#a4414ccc8655262f0522dc640003d64b7">etl::is_void_v&lt;T&gt;</a>)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(r);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
@@ -155,6 +155,7 @@ $(function(){initNavTree('pointer__traits_8hpp_source.html',''); initResizable(t
 <div class="ttc" id="ais__void_8hpp_html"><div class="ttname"><a href="is__void_8hpp.html">is_void.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a21ae02f44cb9f415d79d030c8ceb8c16"><div class="ttname"><a href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a></div><div class="ttdeci">constexpr auto addressof(T &amp;arg) noexcept -&gt; T *</div><div class="ttdoc">Obtains the actual address of the object or function arg, even in presence of overloaded operator&amp;.</div><div class="ttdef"><b>Definition</b> addressof.hpp:15</div></div>
+<div class="ttc" id="anamespaceetl_html_a4414ccc8655262f0522dc640003d64b7"><div class="ttname"><a href="namespaceetl.html#a4414ccc8655262f0522dc640003d64b7">etl::is_void_v</a></div><div class="ttdeci">constexpr bool is_void_v</div><div class="ttdef"><b>Definition</b> is_void.hpp:16</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
 <div class="ttc" id="aptrdiff__t_8hpp_html"><div class="ttname"><a href="ptrdiff__t_8hpp.html">ptrdiff_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1pointer__traits_3_01T_01_5_01_4_html_a29e944fa5daa48626a949db4d9d55c50"><div class="ttname"><a href="structetl_1_1pointer__traits_3_01T_01_5_01_4.html#a29e944fa5daa48626a949db4d9d55c50">etl::pointer_traits&lt; T * &gt;::difference_type</a></div><div class="ttdeci">etl::ptrdiff_t difference_type</div><div class="ttdef"><b>Definition</b> pointer_traits.hpp:43</div></div>
@@ -173,7 +174,7 @@ $(function(){initNavTree('pointer__traits_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="pointer__traits_8hpp.html">pointer_traits.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

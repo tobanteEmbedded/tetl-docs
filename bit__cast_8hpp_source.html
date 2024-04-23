@@ -124,7 +124,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> To, <span class="keyword">typename</span> From&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">concept </span>bitcastable = (<span class="keyword">sizeof</span>(To) == <span class="keyword">sizeof</span>(From)) and is_trivially_copyable_v&lt;From&gt; and is_trivially_copyable_v&lt;To&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">concept </span>bitcastable = (<span class="keyword">sizeof</span>(To) == <span class="keyword">sizeof</span>(From)) and <a class="code hl_variable" href="namespaceetl.html#af94b442e8b9fb5a0de351b1b84d6f703">is_trivially_copyable_v&lt;From&gt;</a> and <a class="code hl_variable" href="namespaceetl.html#af94b442e8b9fb5a0de351b1b84d6f703">is_trivially_copyable_v&lt;To&gt;</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -152,6 +152,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div class="ttc" id="ais__trivially__constructible_8hpp_html"><div class="ttname"><a href="is__trivially__constructible_8hpp.html">is_trivially_constructible.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__copyable_8hpp_html"><div class="ttname"><a href="is__trivially__copyable_8hpp.html">is_trivially_copyable.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_af94b442e8b9fb5a0de351b1b84d6f703"><div class="ttname"><a href="namespaceetl.html#af94b442e8b9fb5a0de351b1b84d6f703">etl::is_trivially_copyable_v</a></div><div class="ttdeci">constexpr bool is_trivially_copyable_v</div><div class="ttdef"><b>Definition</b> is_trivially_copyable.hpp:21</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -159,7 +160,7 @@ $(function(){initNavTree('bit__cast_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a0e972f307317c01cd5f823260660e0a.html">_bit</a></li><li class="navelem"><a class="el" href="bit__cast_8hpp.html">bit_cast.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

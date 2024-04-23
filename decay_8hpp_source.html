@@ -130,7 +130,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structetl_1_1decay.html#acb0ece98c8acefaf9568a99493769e96">   25</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structetl_1_1decay.html#acb0ece98c8acefaf9568a99493769e96">type</a> = <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">conditional_t</a>&lt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        is_array_v&lt;U&gt;,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_variable" href="namespaceetl.html#a8b0e44222b6a1dc103286f3c5225ad93">is_array_v&lt;U&gt;</a>,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_typedef" href="namespaceetl.html#aff3a021106d8984e6a7283adfcae4117">remove_extent_t&lt;U&gt;</a>*,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">conditional_t&lt;is_function_v&lt;U&gt;</a>, add_pointer_t&lt;U&gt;, <a class="code hl_typedef" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">remove_cv_t&lt;U&gt;</a>&gt;&gt;;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
@@ -151,6 +151,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_a24f3c9ab2c53f9192c2899fc8efb263d"><div class="ttname"><a href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a></div><div class="ttdeci">typename etl::decay&lt; T &gt;::type decay_t</div><div class="ttdef"><b>Definition</b> decay.hpp:32</div></div>
 <div class="ttc" id="anamespaceetl_html_a57d58de8ee9130049557265efc11802c"><div class="ttname"><a href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">etl::remove_cv_t</a></div><div class="ttdeci">remove_const_t&lt; remove_volatile_t&lt; T &gt; &gt; remove_cv_t</div><div class="ttdef"><b>Definition</b> remove_cv.hpp:22</div></div>
+<div class="ttc" id="anamespaceetl_html_a8b0e44222b6a1dc103286f3c5225ad93"><div class="ttname"><a href="namespaceetl.html#a8b0e44222b6a1dc103286f3c5225ad93">etl::is_array_v</a></div><div class="ttdeci">constexpr bool is_array_v</div><div class="ttdef"><b>Definition</b> is_array.hpp:26</div></div>
 <div class="ttc" id="anamespaceetl_html_aff3a021106d8984e6a7283adfcae4117"><div class="ttname"><a href="namespaceetl.html#aff3a021106d8984e6a7283adfcae4117">etl::remove_extent_t</a></div><div class="ttdeci">typename remove_extent&lt; T &gt;::type remove_extent_t</div><div class="ttdef"><b>Definition</b> remove_extent.hpp:30</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 <div class="ttc" id="aremove__extent_8hpp_html"><div class="ttname"><a href="remove__extent_8hpp.html">remove_extent.hpp</a></div></div>
@@ -163,7 +164,7 @@ $(function(){initNavTree('decay_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="decay_8hpp.html">decay.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

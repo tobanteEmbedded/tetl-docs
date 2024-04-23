@@ -146,7 +146,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">requires</span>(I &gt; 0)</div>
 <div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#a351149022a6fb5c848323d649f35717b">   33</a></span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html#a351149022a6fb5c848323d649f35717b">variadic_union</a>(<a class="code hl_class" href="structetl_1_1integral__constant.html">index_constant&lt;I&gt;</a> <span class="comment">/*index*/</span>, Args&amp;&amp;... args)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : tail(index_v&lt;I - 1&gt;, etl::forward&lt;Args&gt;(args)...)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : tail(index_v&lt;I - 1&gt;, <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;Args&gt;</a>(args)...)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
@@ -256,7 +256,7 @@ $(function(){initNavTree('variadic__union_8hpp_source.html',''); initResizable(t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_22f95e725ac636237aa807414a1d3bfe.html">_variant</a></li><li class="navelem"><a class="el" href="variadic__union_8hpp.html">variadic_union.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

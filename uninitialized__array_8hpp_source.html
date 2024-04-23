@@ -125,7 +125,7 @@ $(function(){initNavTree('uninitialized__array_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">concept </span>sufficiently_trivial = etl::is_trivially_default_constructible_v&lt;T&gt; and etl::is_trivially_destructible_v&lt;T&gt;;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">concept </span>sufficiently_trivial = <a class="code hl_variable" href="namespaceetl.html#aadf6d7f246062eff8288873db7382e49">etl::is_trivially_default_constructible_v&lt;T&gt;</a> and <a class="code hl_variable" href="namespaceetl.html#a63c5a91c590beb77cbc056cb9327956f">etl::is_trivially_destructible_v&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, etl::<span class="keywordtype">size_t</span> Size&gt;</div>
@@ -191,6 +191,8 @@ $(function(){initNavTree('uninitialized__array_8hpp_source.html',''); initResiza
 <div class="ttc" id="ais__trivially__default__constructible_8hpp_html"><div class="ttname"><a href="is__trivially__default__constructible_8hpp.html">is_trivially_default_constructible.hpp</a></div></div>
 <div class="ttc" id="ais__trivially__destructible_8hpp_html"><div class="ttname"><a href="is__trivially__destructible_8hpp.html">is_trivially_destructible.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a63c5a91c590beb77cbc056cb9327956f"><div class="ttname"><a href="namespaceetl.html#a63c5a91c590beb77cbc056cb9327956f">etl::is_trivially_destructible_v</a></div><div class="ttdeci">constexpr bool is_trivially_destructible_v</div><div class="ttdef"><b>Definition</b> is_trivially_destructible.hpp:33</div></div>
+<div class="ttc" id="anamespaceetl_html_aadf6d7f246062eff8288873db7382e49"><div class="ttname"><a href="namespaceetl.html#aadf6d7f246062eff8288873db7382e49">etl::is_trivially_default_constructible_v</a></div><div class="ttdeci">constexpr bool is_trivially_default_constructible_v</div><div class="ttdef"><b>Definition</b> is_trivially_default_constructible.hpp:26</div></div>
 <div class="ttc" id="asize__t_8hpp_html"><div class="ttname"><a href="size__t_8hpp.html">size_t.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1uninitialized__array_3_01T_00_01Size_01_4_html_a01b3dbac2a4a3aca796097302c9613e4"><div class="ttname"><a href="structetl_1_1uninitialized__array_3_01T_00_01Size_01_4.html#a01b3dbac2a4a3aca796097302c9613e4">etl::uninitialized_array&lt; T, Size &gt;::uninitialized_array</a></div><div class="ttdeci">constexpr uninitialized_array()=default</div></div>
 <div class="ttc" id="astructetl_1_1uninitialized__array_3_01T_00_01Size_01_4_html_a0e5dc7926555f6d21d27c4681185b823"><div class="ttname"><a href="structetl_1_1uninitialized__array_3_01T_00_01Size_01_4.html#a0e5dc7926555f6d21d27c4681185b823">etl::uninitialized_array&lt; T, Size &gt;::data</a></div><div class="ttdeci">constexpr auto data() const noexcept -&gt; T const *</div><div class="ttdef"><b>Definition</b> uninitialized_array.hpp:47</div></div>
@@ -209,7 +211,7 @@ $(function(){initNavTree('uninitialized__array_8hpp_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_2d008c465bf677034825632487fc545c.html">_array</a></li><li class="navelem"><a class="el" href="uninitialized__array_8hpp.html">uninitialized_array.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

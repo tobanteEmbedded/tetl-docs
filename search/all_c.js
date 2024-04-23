@@ -551,7 +551,7 @@ var searchData=
   ['isr_5fids_548',['isr_ids',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a8a118237a65e34a17e7c75dd3d91ca31',1,'etl::experimental::hardware::stm32']]],
   ['isspace_549',['isspace',['../group__cctype.html#ga9d797fc03c5126b24a821bd1fc122b3a',1,'etl']]],
   ['isspace_2ehpp_550',['isspace.hpp',['../isspace_8hpp.html',1,'']]],
-  ['issues_551',['Issues',['../md_docs_2design.html#autotoc_md26',1,'']]],
+  ['issues_551',['Issues',['../md_docs_2design.html#autotoc_md40',1,'']]],
   ['isupper_552',['isupper',['../group__cctype.html#ga060875a823b3d041865221eecc9b93de',1,'etl']]],
   ['isupper_2ehpp_553',['isupper.hpp',['../isupper_8hpp.html',1,'']]],
   ['iswalnum_554',['iswalnum',['../group__cwctype.html#gadcd605e16e8fe82cfcbe722d1cc32531',1,'etl']]],

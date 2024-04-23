@@ -123,7 +123,7 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">conjugated</a>(<a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a> a)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_arithmetic_v&lt;remove_cv_t&lt;ElementType&gt;&gt;) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v&lt;remove_cv_t&lt;ElementType&gt;</a>&gt;) {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1mdspan.html">mdspan&lt;ElementType, Extents, Layout, Accessor&gt;</a>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            a.data_handle(),</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            a.mapping(),</div>
@@ -165,6 +165,7 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="agroup__linalg_html_ga6429923716f8ef49947c0b82bb76bc63"><div class="ttname"><a href="group__linalg.html#ga6429923716f8ef49947c0b82bb76bc63">etl::linalg::conjugated</a></div><div class="ttdeci">constexpr auto conjugated(mdspan&lt; ElementType, Extents, Layout, Accessor &gt; a)</div><div class="ttdef"><b>Definition</b> conjugated.hpp:15</div></div>
 <div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_1_1linalg_html"><div class="ttname"><a href="namespaceetl_1_1linalg.html">etl::linalg</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:12</div></div>
+<div class="ttc" id="anamespaceetl_html_abf2224be65b8fb8794372d049a1d37d9"><div class="ttname"><a href="namespaceetl.html#abf2224be65b8fb8794372d049a1d37d9">etl::is_arithmetic_v</a></div><div class="ttdeci">constexpr bool is_arithmetic_v</div><div class="ttdef"><b>Definition</b> is_arithmetic.hpp:21</div></div>
 <div class="ttc" id="aremove__cv_8hpp_html"><div class="ttname"><a href="remove__cv_8hpp.html">remove_cv.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html">etl::linalg::accessor_conjugate</a></div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:16</div></div>
 <div class="ttc" id="astructetl_1_1linalg_1_1accessor__conjugate_html_a492b6c1f36167694cb80483e11d0da48"><div class="ttname"><a href="structetl_1_1linalg_1_1accessor__conjugate.html#a492b6c1f36167694cb80483e11d0da48">etl::linalg::accessor_conjugate::element_type</a></div><div class="ttdeci">add_const_t&lt; conditional_t&lt; is_arithmetic_v&lt; remove_cv_t&lt; typename Accessor::element_type &gt; &gt;, typename Accessor::element_type, typename reference::value_type &gt; &gt; element_type</div><div class="ttdef"><b>Definition</b> accessor_conjugate.hpp:21</div></div>
@@ -175,7 +176,7 @@ $(function(){initNavTree('conjugated_8hpp_source.html',''); initResizable(true);
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="conjugated_8hpp.html">conjugated.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

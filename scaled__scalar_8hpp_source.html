@@ -118,13 +118,13 @@ $(function(){initNavTree('scaled__scalar_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>etl::linalg::detail {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScalingFactor, <span class="keyword">typename</span> ReferenceValue&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">concept </span>scalable = <span class="keyword">requires</span> { declval&lt;ScalingFactor&gt;() * declval&lt;ReferenceValue&gt;(); };</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">concept </span>scalable = <span class="keyword">requires</span> { <a class="code hl_function" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval&lt;ScalingFactor&gt;</a>() * <a class="code hl_function" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval&lt;ReferenceValue&gt;</a>(); };</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScalingFactor, <span class="keyword">typename</span> Reference, <span class="keyword">typename</span> ReferenceValue&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">requires</span>(scalable&lt;ScalingFactor, ReferenceValue&gt;)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct</span> scaled_scalar</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    : proxy_reference&lt;Reference, ReferenceValue, scaled_scalar&lt;ScalingFactor, Reference, ReferenceValue&gt;&gt; {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>value_type = <span class="keyword">decltype</span>(declval&lt;ScalingFactor&gt;() * ReferenceValue(declval&lt;Reference&gt;()));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>value_type = <span class="keyword">decltype</span>(<a class="code hl_function" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval&lt;ScalingFactor&gt;</a>() * ReferenceValue(<a class="code hl_function" href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">declval&lt;Reference&gt;</a>()));</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> scaled_scalar(ScalingFactor <span class="keyword">const</span>&amp; scalingFactor, Reference <span class="keyword">const</span>&amp; reference)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        : proxy_reference&lt;Reference, ReferenceValue, scaled_scalar&lt;ScalingFactor, Reference, ReferenceValue&gt;&gt;{reference}</div>
@@ -145,6 +145,7 @@ $(function(){initNavTree('scaled__scalar_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_SCALED_SCALAR_HPP</span></div>
 <div class="ttc" id="adeclval_8hpp_html"><div class="ttname"><a href="declval_8hpp.html">declval.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html_a22b47f7719fd7b8373b49b15d5f701fb"><div class="ttname"><a href="namespaceetl.html#a22b47f7719fd7b8373b49b15d5f701fb">etl::declval</a></div><div class="ttdeci">auto declval() noexcept -&gt; add_rvalue_reference_t&lt; T &gt;</div></div>
 <div class="ttc" id="aproxy__reference_8hpp_html"><div class="ttname"><a href="proxy__reference_8hpp.html">proxy_reference.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -152,7 +153,7 @@ $(function(){initNavTree('scaled__scalar_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_89a32bea540a96cd801bedef6c6d634c.html">_linalg</a></li><li class="navelem"><a class="el" href="scaled__scalar_8hpp.html">scaled_scalar.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -364,7 +364,7 @@ $(function(){initNavTree('hash_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00177" data-start="{" data-end="};">
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="structetl_1_1hash_3_01T_01_5_01_4.html">  177</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1hash.html">hash</a>&lt;T*&gt; {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="structetl_1_1hash_3_01T_01_5_01_4.html#a90ede39fc8b80424282d9d60fe969df0">  178</a></span>    [[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1hash_3_01T_01_5_01_4.html#a90ede39fc8b80424282d9d60fe969df0">operator()</a>(T* val) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> { <span class="keywordflow">return</span> etl::bit_cast&lt;etl::size_t&gt;(val); }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="structetl_1_1hash_3_01T_01_5_01_4.html#a90ede39fc8b80424282d9d60fe969df0">  178</a></span>    [[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1hash_3_01T_01_5_01_4.html#a90ede39fc8b80424282d9d60fe969df0">operator()</a>(T* val) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; <a class="code hl_typedef" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> { <span class="keywordflow">return</span> <a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;etl::size_t&gt;</a>(val); }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>};</div>
 </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
@@ -372,6 +372,7 @@ $(function(){initNavTree('hash_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#endif </span><span class="comment">// TETL_FUNCTIONAL_HASH_HPP</span></div>
 <div class="ttc" id="abit__cast_8hpp_html"><div class="ttname"><a href="bit__cast_8hpp.html">bit_cast.hpp</a></div></div>
+<div class="ttc" id="agroup__bit_html_ga8345e9aa2cae9bfb32b62f761780c254"><div class="ttname"><a href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:38</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_afb2c9350d32e78a0e4c960b9859ccb40"><div class="ttname"><a href="namespaceetl.html#afb2c9350d32e78a0e4c960b9859ccb40">etl::nullptr_t</a></div><div class="ttdeci">decltype(nullptr) nullptr_t</div><div class="ttdoc">etl::nullptr_t is the type of the null pointer literal, nullptr. It is a distinct type that is not it...</div><div class="ttdef"><b>Definition</b> nullptr_t.hpp:13</div></div>
@@ -405,7 +406,7 @@ $(function(){initNavTree('hash_8hpp_source.html',''); initResizable(true); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="hash_8hpp.html">hash.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

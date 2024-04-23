@@ -124,9 +124,9 @@ $(function(){initNavTree('forward__like_8hpp_source.html',''); initResizable(tru
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a881439150ce3ae249968cc8b15d6e31d">   15</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a881439150ce3ae249968cc8b15d6e31d">forward_like</a>(U&amp;&amp; x) <span class="keyword">noexcept</span> -&gt; <span class="keyword">auto</span>&amp;&amp;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isAddingConst = etl::is_const_v&lt;etl::remove_reference_t&lt;T&gt;&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> isAddingConst = <a class="code hl_variable" href="namespaceetl.html#a0bf567b7866a96e4005d64743e0859b0">etl::is_const_v&lt;etl::remove_reference_t&lt;T&gt;</a>&gt;;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (etl::is_lvalue_reference_v&lt;T&amp;&amp;&gt;) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a0a3172a26a55cf95dbe3c85e6611ebc0">etl::is_lvalue_reference_v&lt;T&amp;&amp;&gt;</a>) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (isAddingConst) {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceetl.html#a087e608dcade676ed1707b2780820b4b">etl::as_const</a>(x);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        } <span class="keywordflow">else</span> {</div>
@@ -152,6 +152,8 @@ $(function(){initNavTree('forward__like_8hpp_source.html',''); initResizable(tru
 <div class="ttc" id="ais__lvalue__reference_8hpp_html"><div class="ttname"><a href="is__lvalue__reference_8hpp.html">is_lvalue_reference.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a087e608dcade676ed1707b2780820b4b"><div class="ttname"><a href="namespaceetl.html#a087e608dcade676ed1707b2780820b4b">etl::as_const</a></div><div class="ttdeci">constexpr auto as_const(T &amp;t) noexcept -&gt; add_const_t&lt; T &gt; &amp;</div><div class="ttdoc">Forms lvalue reference to const type of t.</div><div class="ttdef"><b>Definition</b> as_const.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_a0a3172a26a55cf95dbe3c85e6611ebc0"><div class="ttname"><a href="namespaceetl.html#a0a3172a26a55cf95dbe3c85e6611ebc0">etl::is_lvalue_reference_v</a></div><div class="ttdeci">constexpr bool is_lvalue_reference_v</div><div class="ttdef"><b>Definition</b> is_lvalue_reference.hpp:20</div></div>
+<div class="ttc" id="anamespaceetl_html_a0bf567b7866a96e4005d64743e0859b0"><div class="ttname"><a href="namespaceetl.html#a0bf567b7866a96e4005d64743e0859b0">etl::is_const_v</a></div><div class="ttdeci">constexpr bool is_const_v</div><div class="ttdef"><b>Definition</b> is_const.hpp:20</div></div>
 <div class="ttc" id="anamespaceetl_html_a881439150ce3ae249968cc8b15d6e31d"><div class="ttname"><a href="namespaceetl.html#a881439150ce3ae249968cc8b15d6e31d">etl::forward_like</a></div><div class="ttdeci">constexpr auto forward_like(U &amp;&amp;x) noexcept -&gt; auto &amp;&amp;</div><div class="ttdef"><b>Definition</b> forward_like.hpp:15</div></div>
 <div class="ttc" id="aremove__reference_8hpp_html"><div class="ttname"><a href="remove__reference_8hpp.html">remove_reference.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -160,7 +162,7 @@ $(function(){initNavTree('forward__like_8hpp_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_15507268755a352c739af494168e9f53.html">_utility</a></li><li class="navelem"><a class="el" href="forward__like_8hpp.html">forward_like.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

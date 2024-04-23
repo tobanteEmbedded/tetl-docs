@@ -141,7 +141,7 @@ $(function(){initNavTree('shift__right_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Elements outside the new range should be left in a valid but unspecified state.</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// If the value type has a default constructor we do a little cleanup.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">using </span>value_type = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">etl::iterator_traits&lt;BidiIt&gt;::value_type</a>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_default_constructible_v&lt;value_type&gt;) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a5d1a93c5d7a09590573ceccfb239a590">is_default_constructible_v&lt;value_type&gt;</a>) {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">for</span> (; dest != first; --dest) {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            *dest = value_type{};</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
@@ -164,6 +164,7 @@ $(function(){initNavTree('shift__right_8hpp_source.html',''); initResizable(true
 <div class="ttc" id="agroup__iterator_html_gaba994bcf39b8b428fec5852ea0cc728c"><div class="ttname"><a href="group__iterator.html#gaba994bcf39b8b428fec5852ea0cc728c">etl::distance</a></div><div class="ttdeci">constexpr auto distance(It first, It last) -&gt; typename iterator_traits&lt; It &gt;::difference_type</div><div class="ttdoc">Returns the number of hops from first to last.</div><div class="ttdef"><b>Definition</b> distance.hpp:16</div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a5d1a93c5d7a09590573ceccfb239a590"><div class="ttname"><a href="namespaceetl.html#a5d1a93c5d7a09590573ceccfb239a590">etl::is_default_constructible_v</a></div><div class="ttdeci">constexpr bool is_default_constructible_v</div><div class="ttdef"><b>Definition</b> is_default_constructible.hpp:26</div></div>
 <div class="ttc" id="anext_8hpp_html"><div class="ttname"><a href="next_8hpp.html">next.hpp</a></div></div>
 <div class="ttc" id="aprev_8hpp_html"><div class="ttname"><a href="prev_8hpp.html">prev.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
@@ -173,7 +174,7 @@ $(function(){initNavTree('shift__right_8hpp_source.html',''); initResizable(true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_f25a8a4ec1c10c8b73f88dd881d1f689.html">_algorithm</a></li><li class="navelem"><a class="el" href="shift__right_8hpp.html">shift_right.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

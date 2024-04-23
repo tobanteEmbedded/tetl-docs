@@ -112,20 +112,22 @@ $(function(){initNavTree('conceptetl_1_1assignable__from.html',''); initResizabl
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LHS, <span class="keyword">typename</span> RHS&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1assignable__from.html">etl::assignable_from</a> = </div>
-<div class="line">        is_lvalue_reference_v&lt;LHS&gt;</div>
+<div class="line">        <a class="code hl_variable" href="namespaceetl.html#a0a3172a26a55cf95dbe3c85e6611ebc0">is_lvalue_reference_v&lt;LHS&gt;</a></div>
 <div class="line">    </div>
 <div class="line">    and <span class="keyword">requires</span>(LHS lhs, RHS&amp;&amp; rhs) {</div>
-<div class="line">        { lhs = etl::forward&lt;RHS&gt;(rhs) } -&gt; <a class="code hl_concept" href="conceptetl_1_1same__as.html">same_as&lt;LHS&gt;</a>;</div>
+<div class="line">        { lhs = <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;RHS&gt;</a>(rhs) } -&gt; <a class="code hl_concept" href="conceptetl_1_1same__as.html">same_as&lt;LHS&gt;</a>;</div>
 <div class="line">    }</div>
 <div class="ttc" id="aconceptetl_1_1assignable__from_html"><div class="ttname"><a href="conceptetl_1_1assignable__from.html">etl::assignable_from</a></div><div class="ttdef"><b>Definition</b> assignable_from.hpp:19</div></div>
 <div class="ttc" id="aconceptetl_1_1same__as_html"><div class="ttname"><a href="conceptetl_1_1same__as.html">etl::same_as</a></div><div class="ttdoc">The concept same_as&lt;T, U&gt; is satisfied if and only if T and U denote the same type....</div><div class="ttdef"><b>Definition</b> same_as.hpp:19</div></div>
+<div class="ttc" id="anamespaceetl_html_a0a3172a26a55cf95dbe3c85e6611ebc0"><div class="ttname"><a href="namespaceetl.html#a0a3172a26a55cf95dbe3c85e6611ebc0">etl::is_lvalue_reference_v</a></div><div class="ttdeci">constexpr bool is_lvalue_reference_v</div><div class="ttdef"><b>Definition</b> is_lvalue_reference.hpp:20</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="conceptetl_1_1assignable__from.html">assignable_from</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:28 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

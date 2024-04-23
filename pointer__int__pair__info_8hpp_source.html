@@ -144,7 +144,7 @@ $(function(){initNavTree('pointer__int__pair__info_8hpp_source.html',''); initRe
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structetl_1_1pointer__int__pair__info.html#af36e548ca812094276c504b4ddaa9851">   40</a></span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1pointer__int__pair__info.html#af36e548ca812094276c504b4ddaa9851">get_pointer</a>(<a class="code hl_typedef" href="namespaceetl.html#a3fd46e49593ca8eb7a2a60667662abf4">etl::intptr_t</a> value) -&gt; <a class="code hl_typedef" href="structetl_1_1pointer__int__pair__info.html#a4edb1d6366f0bbfd1ad673e3a2cec95c">pointer_type</a></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> pointer_traits::get_from_void_pointer(etl::bit_cast&lt;void*&gt;(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43">etl::uintptr_t</a><span class="keyword">&gt;</span>(value) &amp; <a class="code hl_variable" href="structetl_1_1pointer__int__pair__info.html#a757cd05b801b912c1836d0719aaf605e">ptr_mask</a>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> pointer_traits::get_from_void_pointer(<a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;void*&gt;</a>(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43">etl::uintptr_t</a><span class="keyword">&gt;</span>(value) &amp; <a class="code hl_variable" href="structetl_1_1pointer__int__pair__info.html#a757cd05b801b912c1836d0719aaf605e">ptr_mask</a>)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 </div>
@@ -161,7 +161,7 @@ $(function(){initNavTree('pointer__int__pair__info_8hpp_source.html',''); initRe
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">// Preserve all low bits, just update the pointer.</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">auto</span>* voidPtr = pointer_traits::get_as_void_pointer(ptr);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> ptrWord  = etl::bit_cast&lt;etl::uintptr_t&gt;(voidPtr);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> ptrWord  = <a class="code hl_function" href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast&lt;etl::uintptr_t&gt;</a>(voidPtr);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a3fd46e49593ca8eb7a2a60667662abf4">etl::intptr_t</a><span class="keyword">&gt;</span>(ptrWord | (<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43">etl::uintptr_t</a><span class="keyword">&gt;</span>(value) &amp; ~<a class="code hl_variable" href="structetl_1_1pointer__int__pair__info.html#a757cd05b801b912c1836d0719aaf605e">ptr_mask</a>));</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
@@ -183,6 +183,7 @@ $(function(){initNavTree('pointer__int__pair__info_8hpp_source.html',''); initRe
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">// TETL_MEMORY_POINTER_INT_PAIR_INFO_HPP</span></div>
 <div class="ttc" id="abit__cast_8hpp_html"><div class="ttname"><a href="bit__cast_8hpp.html">bit_cast.hpp</a></div></div>
+<div class="ttc" id="agroup__bit_html_ga8345e9aa2cae9bfb32b62f761780c254"><div class="ttname"><a href="group__bit.html#ga8345e9aa2cae9bfb32b62f761780c254">etl::bit_cast</a></div><div class="ttdeci">constexpr auto bit_cast(From const &amp;src) noexcept -&gt; To</div><div class="ttdoc">Obtain a value of type To by reinterpreting the object representation of from. Every bit in the value...</div><div class="ttdef"><b>Definition</b> bit_cast.hpp:38</div></div>
 <div class="ttc" id="aintptr__t_8hpp_html"><div class="ttname"><a href="intptr__t_8hpp.html">intptr_t.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a1d944a371245d51e3b9ea011f7b97f43"><div class="ttname"><a href="namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43">etl::uintptr_t</a></div><div class="ttdeci">TETL_BUILTIN_UINTPTR uintptr_t</div><div class="ttdoc">Unsigned integer type capable of holding a pointer.</div><div class="ttdef"><b>Definition</b> uintptr_t.hpp:11</div></div>
@@ -209,7 +210,7 @@ $(function(){initNavTree('pointer__int__pair__info_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a558ea7a8f8187b7932e40c4cd21a39a.html">_memory</a></li><li class="navelem"><a class="el" href="pointer__int__pair__info_8hpp.html">pointer_int_pair_info.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

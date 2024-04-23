@@ -129,7 +129,7 @@ $(function(){initNavTree('legacy__forward__iterator_8hpp_source.html',''); initR
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="conceptetl_1_1legacy__forward__iterator.html">   23</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptetl_1_1legacy__forward__iterator.html">legacy_forward_iterator</a> = <a class="code hl_concept" href="conceptetl_1_1legacy__input__iterator.html">legacy_input_iterator&lt;Iter&gt;</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    and <a class="code hl_concept" href="conceptetl_1_1constructible__from.html">etl::constructible_from&lt;Iter&gt;</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    and etl::is_reference_v&lt;etl::iter_reference_t&lt;Iter&gt;&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    and <a class="code hl_variable" href="namespaceetl.html#a8301cd1745fa1701a4f9d6045f15a2e0">etl::is_reference_v&lt;etl::iter_reference_t&lt;Iter&gt;</a>&gt;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    and <a class="code hl_concept" href="conceptetl_1_1same__as.html">etl::same_as&lt;etl::remove_cvref_t&lt;etl::iter_reference_t&lt;Iter&gt;</a>&gt;, <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1indirectly__readable__traits.html">etl::indirectly_readable_traits&lt;Iter&gt;::value_type</a>&gt;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    and <span class="keyword">requires</span>(Iter it) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>          { it++ } -&gt; <a class="code hl_concept" href="conceptetl_1_1convertible__to.html">etl::convertible_to&lt;Iter const&amp;&gt;</a>;</div>
@@ -154,6 +154,7 @@ $(function(){initNavTree('legacy__forward__iterator_8hpp_source.html',''); initR
 <div class="ttc" id="aiter__reference__t_8hpp_html"><div class="ttname"><a href="iter__reference__t_8hpp.html">iter_reference_t.hpp</a></div></div>
 <div class="ttc" id="alegacy__input__iterator_8hpp_html"><div class="ttname"><a href="legacy__input__iterator_8hpp.html">legacy_input_iterator.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a8301cd1745fa1701a4f9d6045f15a2e0"><div class="ttname"><a href="namespaceetl.html#a8301cd1745fa1701a4f9d6045f15a2e0">etl::is_reference_v</a></div><div class="ttdeci">constexpr bool is_reference_v</div><div class="ttdef"><b>Definition</b> is_reference.hpp:24</div></div>
 <div class="ttc" id="aremove__cvref_8hpp_html"><div class="ttname"><a href="remove__cvref_8hpp.html">remove_cvref.hpp</a></div></div>
 <div class="ttc" id="asame__as_8hpp_html"><div class="ttname"><a href="same__as_8hpp.html">same_as.hpp</a></div></div>
 <div class="ttc" id="astructetl_1_1indirectly__readable__traits_html"><div class="ttname"><a href="structetl_1_1indirectly__readable__traits.html">etl::indirectly_readable_traits</a></div><div class="ttdef"><b>Definition</b> indirectly_readable_traits.hpp:34</div></div>
@@ -163,7 +164,7 @@ $(function(){initNavTree('legacy__forward__iterator_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="legacy__forward__iterator_8hpp.html">legacy_forward_iterator.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

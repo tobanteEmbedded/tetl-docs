@@ -258,7 +258,7 @@ $(function(){initNavTree('inplace__function_8hpp_source.html',''); initResizable
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> vtable_t <span class="keyword">const</span> vt{detail::wrapper&lt;C&gt;{}};</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        _vtable = <a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(vt);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        ::new (<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(_storage)) C{etl::forward&lt;T&gt;(closure)};</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        ::new (<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(_storage)) C{<a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;T&gt;</a>(closure)};</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
 </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
@@ -334,7 +334,7 @@ $(function(){initNavTree('inplace__function_8hpp_source.html',''); initResizable
 <div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html#a00f50521b77d55e0338c1866a39318c6">  209</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1inplace__function_3_01R_07Args_8_8_8_08_00_01Capacity_00_01Alignment_01_4.html#a00f50521b77d55e0338c1866a39318c6">operator()</a>(Args... args) <span class="keyword">const</span> -&gt; R</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> _vtable-&gt;invoke_ptr(<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(_storage), etl::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> _vtable-&gt;invoke_ptr(<a class="code hl_function" href="namespaceetl.html#a21ae02f44cb9f415d79d030c8ceb8c16">etl::addressof</a>(_storage), <a class="code hl_function" href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward&lt;Args&gt;</a>(args)...);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
 </div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
@@ -437,6 +437,7 @@ $(function(){initNavTree('inplace__function_8hpp_source.html',''); initResizable
 <div class="ttc" id="anamespaceetl_html_a7c1576e57ae3b113a38b8a9793bb4074"><div class="ttname"><a href="namespaceetl.html#a7c1576e57ae3b113a38b8a9793bb4074">etl::exchange</a></div><div class="ttdeci">constexpr auto exchange(T &amp;obj, U &amp;&amp;newValue) noexcept(etl::is_nothrow_move_constructible_v&lt; T &gt; and etl::is_nothrow_assignable_v&lt; T &amp;, U &gt;) -&gt; T</div><div class="ttdoc">Replaces the value of obj with new_value and returns the old value of obj.</div><div class="ttdef"><b>Definition</b> exchange.hpp:16</div></div>
 <div class="ttc" id="anamespaceetl_html_ac15165afbf59de637ccf27b635458ece"><div class="ttname"><a href="namespaceetl.html#ac15165afbf59de637ccf27b635458ece">etl::swap</a></div><div class="ttdeci">auto swap(inplace_function&lt; R(Args...), Capacity, Alignment &gt; &amp;lhs, inplace_function&lt; R(Args...), Capacity, Alignment &gt; &amp;rhs) noexcept -&gt; void</div><div class="ttdoc">Overloads the etl::swap algorithm for etl::inplace_function. Exchanges the state of lhs with that of ...</div><div class="ttdef"><b>Definition</b> inplace_function.hpp:249</div></div>
 <div class="ttc" id="anamespaceetl_html_ae1bfcd9586bbb9936d7eb2d2ea32bc8e"><div class="ttname"><a href="namespaceetl.html#ae1bfcd9586bbb9936d7eb2d2ea32bc8e">etl::aligned_storage_t</a></div><div class="ttdeci">typename aligned_storage&lt; Len, Align &gt;::type aligned_storage_t</div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:57</div></div>
+<div class="ttc" id="anamespaceetl_html_aea04c6a544a650bcf6a7f88ff623c80f"><div class="ttname"><a href="namespaceetl.html#aea04c6a544a650bcf6a7f88ff623c80f">etl::forward</a></div><div class="ttdeci">constexpr auto forward(remove_reference_t&lt; T &gt; &amp;param) noexcept -&gt; T &amp;&amp;</div><div class="ttdoc">Forwards lvalues as either lvalues or as rvalues, depending on T. When t is a forwarding reference (a...</div><div class="ttdef"><b>Definition</b> forward.hpp:18</div></div>
 <div class="ttc" id="anamespaceetl_html_afb2c9350d32e78a0e4c960b9859ccb40"><div class="ttname"><a href="namespaceetl.html#afb2c9350d32e78a0e4c960b9859ccb40">etl::nullptr_t</a></div><div class="ttdeci">decltype(nullptr) nullptr_t</div><div class="ttdoc">etl::nullptr_t is the type of the null pointer literal, nullptr. It is a distinct type that is not it...</div><div class="ttdef"><b>Definition</b> nullptr_t.hpp:13</div></div>
 <div class="ttc" id="anullptr__t_8hpp_html"><div class="ttname"><a href="nullptr__t_8hpp.html">nullptr_t.hpp</a></div></div>
 <div class="ttc" id="aoperator_8hpp_html"><div class="ttname"><a href="operator_8hpp.html">operator.hpp</a></div></div>
@@ -468,7 +469,7 @@ $(function(){initNavTree('inplace__function_8hpp_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="inplace__function_8hpp.html">inplace_function.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

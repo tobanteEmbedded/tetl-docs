@@ -123,17 +123,17 @@ $(function(){initNavTree('advance_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__iterator.html#gaad815b7c902d91f337c10cb8c6876e87">   22</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gaad815b7c902d91f337c10cb8c6876e87">advance</a>(It&amp; it, Distance n) -&gt; <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">using </span>category = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::iterator_category</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static_assert</span>(is_base_of_v&lt;input_iterator_tag, category&gt;);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of_v&lt;input_iterator_tag, category&gt;</a>);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span> dist = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1iterator__traits.html">iterator_traits&lt;It&gt;::difference_type</a>(n);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_base_of_v&lt;random_access_iterator_tag, category&gt;) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of_v&lt;random_access_iterator_tag, category&gt;</a>) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        it += dist;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">while</span> (dist &gt; 0) {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            --dist;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            ++it;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_base_of_v&lt;bidirectional_iterator_tag, category&gt;) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of_v&lt;bidirectional_iterator_tag, category&gt;</a>) {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">while</span> (dist &lt; 0) {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                ++dist;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                --it;</div>
@@ -151,6 +151,7 @@ $(function(){initNavTree('advance_8hpp_source.html',''); initResizable(true); })
 <div class="ttc" id="ais__base__of_8hpp_html"><div class="ttname"><a href="is__base__of_8hpp.html">is_base_of.hpp</a></div></div>
 <div class="ttc" id="aiterator__traits_8hpp_html"><div class="ttname"><a href="iterator__traits_8hpp.html">iterator_traits.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a096bf5b121d9f427c8027f2949e8198e"><div class="ttname"><a href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">etl::is_base_of_v</a></div><div class="ttdeci">constexpr bool is_base_of_v</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:39</div></div>
 <div class="ttc" id="astructetl_1_1iterator__traits_html"><div class="ttname"><a href="structetl_1_1iterator__traits.html">etl::iterator_traits</a></div><div class="ttdoc">iterator_traits is the type trait class that provides uniform interface to the properties of LegacyIt...</div><div class="ttdef"><b>Definition</b> iterator_traits.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +159,7 @@ $(function(){initNavTree('advance_8hpp_source.html',''); initResizable(true); })
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="advance_8hpp.html">advance.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

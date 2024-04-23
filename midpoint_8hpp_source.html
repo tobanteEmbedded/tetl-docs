@@ -123,7 +123,7 @@ $(function(){initNavTree('midpoint_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Int&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">requires</span>(etl::is_integral_v&lt;Int&gt; and not etl::is_same_v&lt;Int, bool&gt;)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">requires</span>(<a class="code hl_variable" href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">etl::is_integral_v&lt;Int&gt;</a> and not <a class="code hl_variable" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v&lt;Int, bool&gt;</a>)</div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__numeric.html#ga95add6b4d15835797abab298377b728a">   28</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga95add6b4d15835797abab298377b728a">midpoint</a>(Int a, Int b) <span class="keyword">noexcept</span> -&gt; Int</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
@@ -160,7 +160,7 @@ $(function(){initNavTree('midpoint_8hpp_source.html',''); initResizable(true); }
 </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Ptr&gt;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">requires</span> etl::is_pointer_v&lt;Ptr&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">requires</span> <a class="code hl_variable" href="namespaceetl.html#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer_v&lt;Ptr&gt;</a></div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group__numeric.html#ga06ecea7106161c23a577360c57654c08">   63</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__numeric.html#ga95add6b4d15835797abab298377b728a">midpoint</a>(Ptr a, Ptr b) <span class="keyword">noexcept</span> -&gt; Ptr</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
@@ -180,6 +180,9 @@ $(function(){initNavTree('midpoint_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="ais__same_8hpp_html"><div class="ttname"><a href="is__same_8hpp.html">is_same.hpp</a></div></div>
 <div class="ttc" id="amake__unsigned_8hpp_html"><div class="ttname"><a href="make__unsigned_8hpp.html">make_unsigned.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="ttc" id="anamespaceetl_html_a396e4b8c756441b942c1619de108e56a"><div class="ttname"><a href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">etl::is_integral_v</a></div><div class="ttdeci">constexpr bool is_integral_v</div><div class="ttdef"><b>Definition</b> is_integral.hpp:28</div></div>
+<div class="ttc" id="anamespaceetl_html_a60d8a43ca3d5d473f1651ef5114c2628"><div class="ttname"><a href="namespaceetl.html#a60d8a43ca3d5d473f1651ef5114c2628">etl::is_pointer_v</a></div><div class="ttdeci">constexpr bool is_pointer_v</div><div class="ttdef"><b>Definition</b> is_pointer.hpp:30</div></div>
+<div class="ttc" id="anamespaceetl_html_aa6c6bde5fd020a928e6d7b5fe8db7bb0"><div class="ttname"><a href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">etl::is_same_v</a></div><div class="ttdeci">constexpr bool is_same_v</div><div class="ttdef"><b>Definition</b> is_same.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_html_aabeda2fce2dea6fa29533488400dd386"><div class="ttname"><a href="namespaceetl.html#aabeda2fce2dea6fa29533488400dd386">etl::make_unsigned_t</a></div><div class="ttdeci">typename make_unsigned&lt; T &gt;::type make_unsigned_t</div><div class="ttdef"><b>Definition</b> make_unsigned.hpp:75</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
@@ -194,7 +197,7 @@ $(function(){initNavTree('midpoint_8hpp_source.html',''); initResizable(true); }
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_e755c22006577f029332e1bd80389811.html">_numeric</a></li><li class="navelem"><a class="el" href="midpoint_8hpp.html">midpoint.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 20 2024 12:06:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
