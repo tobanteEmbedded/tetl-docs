@@ -50,5 +50,5 @@ var structetl_1_1array =
     [ "swap", "structetl_1_1array.html#ab3ec4a357ac52e581d45047576bd002e", null ],
     [ "to_array", "structetl_1_1array.html#a206fb932614fa86d56d410c37f786760", null ],
     [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ],
-    [ "_buf", "structetl_1_1array.html#a28ea6c0f34811981fe3f02b5e5f70995", null ]
+    [ "_buf", "structetl_1_1array.html#a6c4aa934afdb52737ff3dec420327159", null ]
 ];
