@@ -27,19 +27,19 @@ var NAVTREE =
   [ "tetl", "index.html", [
     [ "Embedded Template Library", "index.html", "index" ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md13", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md14", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md6", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "coverage", "md_CONTRIBUTING.html#autotoc_md10", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md11", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md12", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md13", null ]
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md15", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md16", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md17", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md18", null ],
+        [ "coverage", "md_CONTRIBUTING.html#autotoc_md19", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md20", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md21", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md22", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md15", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md23", null ]
     ] ],
     [ "Design", "md_docs_2design.html", [
       [ "Issues", "md_docs_2design.html#autotoc_md26", [
