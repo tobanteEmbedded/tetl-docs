@@ -14,6 +14,5 @@ var searchData=
   ['year_5fmonth_5fweekday_5flast_11',['year_month_weekday_last',['../structetl_1_1chrono_1_1year__month__weekday__last.html',1,'year_month_weekday_last'],['../structetl_1_1chrono_1_1year__month__weekday__last.html#a823d9b62eac5c4d70b0fb8e417b84f1c',1,'etl::chrono::year_month_weekday_last::year_month_weekday_last()']]],
   ['year_5fmonth_5fweekday_5flast_2ehpp_12',['year_month_weekday_last.hpp',['../year__month__weekday__last_8hpp.html',1,'']]],
   ['years_13',['years',['../namespaceetl_1_1chrono.html#a82ba87d03270adcab228724292ece3ff',1,'etl::chrono']]],
-  ['yes_14',['yes',['../namespaceetl_1_1strings.html#abe33c9fd6436aecdb4d123423eb1fcc9aa6105c0a611b41b08f1209506350279e',1,'etl::strings']]],
-  ['yield_15',['yield',['../namespaceetl_1_1experimental_1_1freertos_1_1this__task.html#ad2249f2577e442471ff9f4923d0c81f3',1,'etl::experimental::freertos::this_task']]]
+  ['yield_14',['yield',['../namespaceetl_1_1experimental_1_1freertos_1_1this__task.html#ad2249f2577e442471ff9f4923d0c81f3',1,'etl::experimental::freertos::this_task']]]
 ];

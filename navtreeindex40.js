@@ -1,11 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"unique__copy_8hpp.html":[12,0,1,0,0,79],
-"unique__copy_8hpp_source.html":[12,0,1,0,0,79],
-"unique__lock_8hpp.html":[12,0,1,0,42,2],
-"unique__lock_8hpp_source.html":[12,0,1,0,42,2],
-"unreachable_8hpp.html":[12,0,1,0,62,24],
-"unreachable_8hpp.html#abb16b244632f4ab5f6fd117e5a75473e":[12,0,1,0,62,24,0],
 "unreachable_8hpp_source.html":[12,0,1,0,62,24],
 "unsequenced__policy_8hpp.html":[12,0,1,0,27,3],
 "unsequenced__policy_8hpp_source.html":[12,0,1,0,27,3],
