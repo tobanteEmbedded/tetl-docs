@@ -555,7 +555,7 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">auto</span> <span class="keyword">const</span> ext = array&lt;<a class="code hl_typedef" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a>, <span class="keyword">sizeof</span>...(OtherSizeTypes)&gt;{<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a><span class="keyword">&gt;</span>(es)...};</div>
 <div class="line">        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>() != 0) {</div>
-<div class="line">            <a class="code hl_function" href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">copy</a>(ext.begin(), ext.end(), _extents.begin());</div>
+<div class="line">            <a class="code hl_function" href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">copy</a>(ext.begin(), ext.end(), _extents.<a class="code hl_function" href="structetl_1_1array.html#a773a7036d91b150864530b3c86f8946c">begin</a>());</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -566,6 +566,7 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 <div class="ttc" id="anamespaceetl_html_abb44c67bac9ad6e8a4e43a5d921d2611"><div class="ttname"><a href="namespaceetl.html#abb44c67bac9ad6e8a4e43a5d921d2611">etl::span</a></div><div class="ttdeci">span(c_array&lt; Type, Extent &gt; &amp;) -&gt; span&lt; Type, Extent &gt;</div></div>
 <div class="ttc" id="anamespaceetl_html_ac00c953e4e3f962b130f431bc25d6101"><div class="ttname"><a href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_constructible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_constructible.hpp:50</div></div>
 <div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
+<div class="ttc" id="astructetl_1_1array_html_a773a7036d91b150864530b3c86f8946c"><div class="ttname"><a href="structetl_1_1array.html#a773a7036d91b150864530b3c86f8946c">etl::array::begin</a></div><div class="ttdeci">constexpr auto begin() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the beginning.</div><div class="ttdef"><b>Definition</b> array.hpp:105</div></div>
 <div class="ttc" id="astructetl_1_1extents_html_a10e4b29c349a013c6024b3ca64e46298"><div class="ttname"><a href="#a10e4b29c349a013c6024b3ca64e46298">etl::extents::rank</a></div><div class="ttdeci">static constexpr auto rank() noexcept -&gt; rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:53</div></div>
 <div class="ttc" id="astructetl_1_1extents_html_a6df0ea5ffa7e130b9cadda5aff2fca40"><div class="ttname"><a href="#a6df0ea5ffa7e130b9cadda5aff2fca40">etl::extents::rank_type</a></div><div class="ttdeci">etl::size_t rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:25</div></div>
 <div class="ttc" id="astructetl_1_1extents_html_aaa5fcb45f9ab95da5b425d850d295842"><div class="ttname"><a href="#aaa5fcb45f9ab95da5b425d850d295842">etl::extents::rank_dynamic</a></div><div class="ttdeci">static constexpr auto rank_dynamic() noexcept -&gt; rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:55</div></div>
@@ -600,7 +601,7 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1extents.html">extents</a></li>
-    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 02:00:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -107,6 +107,7 @@ $(function(){initNavTree('structetl_1_1array.html',''); initResizable(true); });
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="#related">Related Symbols</a> &#124;
 <a href="structetl_1_1array-members.html">List of all members</a>  </div>
@@ -222,6 +223,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adca8c985ca49cb07565ce2a9995a3855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchanges the contents of the container with those of other. Does not cause iterators and references to associate with the other container.  <br /></td></tr>
 <tr class="separator:adca8c985ca49cb07565ce2a9995a3855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a28ea6c0f34811981fe3f02b5e5f70995" id="r_a28ea6c0f34811981fe3f02b5e5f70995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">TETL_NO_UNIQUE_ADDRESS</a> <a class="el" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">conditional_t</a>&lt; Size==0, <a class="el" href="structetl_1_1empty__c__array.html">empty_c_array</a>, <a class="el" href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">c_array</a>&lt; Type, Size+(Size==0)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ea6c0f34811981fe3f02b5e5f70995">_buf</a></td></tr>
+<tr class="separator:a28ea6c0f34811981fe3f02b5e5f70995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a55f0902fb41c93ffc3cfb1faca46e084" id="r_a55f0902fb41c93ffc3cfb1faca46e084"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55f0902fb41c93ffc3cfb1faca46e084">operator&lt;</a> (<a class="el" href="structetl_1_1array.html">array</a> const &amp;lhs, <a class="el" href="structetl_1_1array.html">array</a> const &amp;rhs) -&gt; bool</td></tr>
@@ -307,8 +313,8 @@ struct etl::array&lt; Type, Size &gt;</div><p>A container that encapsulates fixe
 <div class="ttc" id="agroup__algorithm_html_ga068d12997d2db7789f5feeee67ba6632"><div class="ttname"><a href="group__algorithm.html#ga068d12997d2db7789f5feeee67ba6632">etl::all_of</a></div><div class="ttdeci">constexpr auto all_of(InputIt first, InputIt last, Predicate p) -&gt; bool</div><div class="ttdoc">Checks if unary predicate p returns true for all elements in the range [first, last).</div><div class="ttdef"><b>Definition</b> all_of.hpp:15</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:18</div></div>
 <div class="ttc" id="aiterator_8hpp_html"><div class="ttname"><a href="iterator_8hpp.html">iterator.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:40</div></div>
-<div class="ttc" id="astructetl_1_1array_html_a12c40a981febdecebe60c5a612ff21aa"><div class="ttname"><a href="#a12c40a981febdecebe60c5a612ff21aa">etl::array::fill</a></div><div class="ttdeci">constexpr auto fill(const_reference value) -&gt; void</div><div class="ttdoc">Assigns the given value value to all elements in the container.</div><div class="ttdef"><b>Definition</b> array.hpp:163</div></div>
+<div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:45</div></div>
+<div class="ttc" id="astructetl_1_1array_html_a12c40a981febdecebe60c5a612ff21aa"><div class="ttname"><a href="#a12c40a981febdecebe60c5a612ff21aa">etl::array::fill</a></div><div class="ttdeci">constexpr auto fill(const_reference value) -&gt; void</div><div class="ttdoc">Assigns the given value value to all elements in the container.</div><div class="ttdef"><b>Definition</b> array.hpp:204</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_8cpp-example.html#_a0">array.cpp</a>, <a class="el" href="numeric_8cpp-example.html#_a1">numeric.cpp</a>, and <a class="el" href="set_8cpp-example.html#_a7">set.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -562,7 +568,8 @@ template&lt;typename Type , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a02ebba00b3b626b44bc501f02c7b689c">const_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="#a02ebba00b3b626b44bc501f02c7b689c">const_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -591,7 +598,8 @@ template&lt;typename Type , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#a799fe75330fc88c535e6ed12ab10b34f">iterator</a> </td>
+          <td> -&gt; <a class="el" href="#a799fe75330fc88c535e6ed12ab10b34f">iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -823,7 +831,8 @@ template&lt;typename Type , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto end </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#a02ebba00b3b626b44bc501f02c7b689c">const_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="#a02ebba00b3b626b44bc501f02c7b689c">const_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -852,7 +861,8 @@ template&lt;typename Type , <a class="el" href="namespaceetl.html#aee50235c04ef6
           <td class="memname">auto end </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#a799fe75330fc88c535e6ed12ab10b34f">iterator</a> </td>
+          <td> -&gt; <a class="el" href="#a799fe75330fc88c535e6ed12ab10b34f">iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -1646,6 +1656,23 @@ template&lt;typename T , <a class="el" href="namespaceetl.html#aee50235c04ef643c
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a28ea6c0f34811981fe3f02b5e5f70995" name="a28ea6c0f34811981fe3f02b5e5f70995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ea6c0f34811981fe3f02b5e5f70995">&#9670;&#160;</a></span>_buf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="attributes_8hpp.html#aefe1f8fe28785a4006b5ec587c7ec6d8">TETL_NO_UNIQUE_ADDRESS</a> <a class="el" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">conditional_t</a>&lt;Size == 0, <a class="el" href="structetl_1_1empty__c__array.html">empty_c_array</a>, <a class="el" href="group__array.html#ga1693d67d03475372752f9e6973d67a8d">c_array</a>&lt;Type, Size + (Size == 0)&gt; &gt; _buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/etl/_array/<a class="el" href="__array_2array_8hpp_source.html">array.hpp</a></li>
 </ul>
@@ -1655,7 +1682,7 @@ template&lt;typename T , <a class="el" href="namespaceetl.html#aee50235c04ef643c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1array.html">array</a></li>
-    <li class="footer">Generated on Tue Apr 23 2024 01:13:35 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 02:00:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

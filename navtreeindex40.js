@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"unique__copy_8hpp.html":[12,0,1,0,0,79],
 "unique__copy_8hpp_source.html":[12,0,1,0,0,79],
 "unique__lock_8hpp.html":[12,0,1,0,42,2],
 "unique__lock_8hpp_source.html":[12,0,1,0,42,2],

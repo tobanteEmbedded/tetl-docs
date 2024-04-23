@@ -50,7 +50,8 @@ var group__array =
       [ "operator>=", "structetl_1_1array.html#ad769293a87a5c718994c15a283597aba", null ],
       [ "swap", "structetl_1_1array.html#ab3ec4a357ac52e581d45047576bd002e", null ],
       [ "to_array", "structetl_1_1array.html#a206fb932614fa86d56d410c37f786760", null ],
-      [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ]
+      [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ],
+      [ "_buf", "structetl_1_1array.html#a28ea6c0f34811981fe3f02b5e5f70995", null ]
     ] ],
     [ "dynamic_array< T, Allocator >", "structetl_1_1dynamic__array.html", [
       [ "allocator_type", "structetl_1_1dynamic__array.html#a1b9340a5b56dce81fa182aee8c64e363", null ],
