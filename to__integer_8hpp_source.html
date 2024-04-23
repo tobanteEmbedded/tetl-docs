@@ -217,9 +217,9 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">if</span> (wouldOverflow(value, digit)) {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">return</span> {.end = str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>(), .error = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73">to_integer_error::overflow</a>, .value = Int{}};</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base + digit);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base + digit);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespaceetl.html#a05c78609bb9e06b42e0a4c0c4409b0a1">is_signed_v&lt;Int&gt;</a>) {</div>
@@ -277,7 +277,7 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_ac1289053c60d7d57e43725f5379b917.html">_strings</a></li><li class="navelem"><a class="el" href="to__integer_8hpp.html">to_integer.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 23 2024 03:12:28 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Apr 23 2024 04:14:50 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
