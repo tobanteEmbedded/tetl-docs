@@ -109,7 +109,6 @@ $(function(){initNavTree('structetl_1_1extents.html',''); initResizable(true); }
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="structetl_1_1extents-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">extents&lt; IndexType, Extents &gt; Struct Template Reference</div></div>
 </div><!--header-->
@@ -130,25 +129,15 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adb577ec73392e4ed1579e4e923a1977f" id="r_adb577ec73392e4ed1579e4e923a1977f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb577ec73392e4ed1579e4e923a1977f">extents</a> () <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a>=default</td></tr>
 <tr class="separator:adb577ec73392e4ed1579e4e923a1977f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19be1fb5e9c5ecf82f078c227d7b5cf4" id="r_a19be1fb5e9c5ecf82f078c227d7b5cf4"><td class="memTemplParams" colspan="2">template&lt;typename OtherSizeType , etl::size_t... OtherExtents&gt; <br />
-requires requires { sizeof...(OtherExtents) == <a class="el" href="structetl_1_1rank.html">rank</a>(); ((OtherExtents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> || Extents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> || OtherExtents == Extents) &amp;&amp; ...); }</td></tr>
-<tr class="memitem:a19be1fb5e9c5ecf82f078c227d7b5cf4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a19be1fb5e9c5ecf82f078c227d7b5cf4">explicit</a> ((((Extents !=<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>) &amp;&amp;(OtherExtents==<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>))||...)||(<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a> &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()&lt; <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; OtherSizeType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>())) const expr <a class="el" href="structetl_1_1extents.html">extents</a>(<a class="el" href="structetl_1_1extents.html">extents</a>&lt; OtherSizeType</td></tr>
-<tr class="separator:a19be1fb5e9c5ecf82f078c227d7b5cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5a7545c3d0403e82d18d15dfdb7327" id="r_a9d5a7545c3d0403e82d18d15dfdb7327"><td class="memTemplParams" colspan="2">template&lt;typename OtherSizeType , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N&gt; </td></tr>
-<tr class="memitem:a9d5a7545c3d0403e82d18d15dfdb7327"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9d5a7545c3d0403e82d18d15dfdb7327">explicit</a> (N !=<a class="el" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>()) const expr <a class="el" href="structetl_1_1extents.html">extents</a>(<a class="el" href="structetl_1_1array.html">array</a>&lt; OtherSizeType</td></tr>
-<tr class="separator:a9d5a7545c3d0403e82d18d15dfdb7327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f0573272eb6a906db8fa1ee4d843d7" id="r_a54f0573272eb6a906db8fa1ee4d843d7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f0573272eb6a906db8fa1ee4d843d7">extent</a> (<a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a> i) const <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a></td></tr>
-<tr class="separator:a54f0573272eb6a906db8fa1ee4d843d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735a050ab6d7c38fc6a046299e66786e" id="r_a735a050ab6d7c38fc6a046299e66786e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a735a050ab6d7c38fc6a046299e66786e">fwd_prod_of_extents</a> (<a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a> i) const <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a></td></tr>
-<tr class="separator:a735a050ab6d7c38fc6a046299e66786e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda2158a3356367c03a54d155b5d94c4" id="r_acda2158a3356367c03a54d155b5d94c4"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acda2158a3356367c03a54d155b5d94c4">rev_prod_of_extents</a> (<a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a> i) const <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a></td></tr>
-<tr class="separator:acda2158a3356367c03a54d155b5d94c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee703bbda3a3db7fd3ed6660504b769" id="r_a4ee703bbda3a3db7fd3ed6660504b769"><td class="memTemplParams" colspan="2">template&lt;typename OtherIndexType , etl::size_t... OtherExtents&gt; <br />
+requires ( sizeof...(OtherExtents) == <a class="el" href="structetl_1_1rank.html">rank</a>() and ((OtherExtents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> or Extents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> or OtherExtents == Extents) and ...) )</td></tr>
+<tr class="memitem:a4ee703bbda3a3db7fd3ed6660504b769"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4ee703bbda3a3db7fd3ed6660504b769">explicit</a> (((Extents !=<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> and OtherExtents==<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>) or ...) or(<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; IndexType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()&lt; <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; OtherIndexType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>())) const expr <a class="el" href="structetl_1_1extents.html">extents</a>(<a class="el" href="structetl_1_1extents.html">extents</a>&lt; OtherIndexType</td></tr>
+<tr class="separator:a4ee703bbda3a3db7fd3ed6660504b769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add05cb6bf79870ab1cb3f8e373dd69e1" id="r_add05cb6bf79870ab1cb3f8e373dd69e1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add05cb6bf79870ab1cb3f8e373dd69e1">extent</a> (<a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a> i) const <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="#a2eaac791c05f06627d44f9438059b1ab">index_type</a></td></tr>
+<tr class="separator:add05cb6bf79870ab1cb3f8e373dd69e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d5aaa413f483c90e8065f696ed3cb6b" id="r_a3d5aaa413f483c90e8065f696ed3cb6b"><td class="memTemplParams" colspan="2">template&lt;typename OtherSizeType &gt; </td></tr>
-<tr class="memitem:a3d5aaa413f483c90e8065f696ed3cb6b"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d5aaa413f483c90e8065f696ed3cb6b">index_cast</a> (OtherSizeType &amp;&amp;i) <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a></td></tr>
-<tr class="separator:a3d5aaa413f483c90e8065f696ed3cb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e4b29c349a013c6024b3ca64e46298" id="r_a10e4b29c349a013c6024b3ca64e46298"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e4b29c349a013c6024b3ca64e46298">rank</a> () <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a></td></tr>
 <tr class="separator:a10e4b29c349a013c6024b3ca64e46298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5fcb45f9ab95da5b425d850d295842" id="r_aaa5fcb45f9ab95da5b425d850d295842"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a> () <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; <a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a></td></tr>
@@ -160,14 +149,6 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac467bd3dc5782412f0df7177a844474d" id="r_ac467bd3dc5782412f0df7177a844474d"><td class="memItemLeft" align="right" valign="top">OtherExtents const  &amp;e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a></td></tr>
 <tr class="separator:ac467bd3dc5782412f0df7177a844474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02c18016c47df2b6128f4e43f9f08d8" id="r_ab02c18016c47df2b6128f4e43f9f08d8"><td class="memItemLeft" align="right" valign="top">N const  &amp;e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab02c18016c47df2b6128f4e43f9f08d8">noexcept</a></td></tr>
-<tr class="separator:ab02c18016c47df2b6128f4e43f9f08d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a16b87ffbf564079d7d33fc8e2d602024" id="r_a16b87ffbf564079d7d33fc8e2d602024"><td class="memTemplParams" colspan="2">template&lt;typename OtherSizeType , etl::size_t... OtherExtents&gt; </td></tr>
-<tr class="memitem:a16b87ffbf564079d7d33fc8e2d602024"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a16b87ffbf564079d7d33fc8e2d602024">operator==</a> (<a class="el" href="structetl_1_1extents.html">extents</a> const &amp;lhs, <a class="el" href="structetl_1_1extents.html">extents</a>&lt; OtherSizeType, OtherExtents... &gt; const &amp;rhs) <a class="el" href="#ac467bd3dc5782412f0df7177a844474d">noexcept</a> -&gt; bool</td></tr>
-<tr class="separator:a16b87ffbf564079d7d33fc8e2d602024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2eaac791c05f06627d44f9438059b1ab" name="a2eaac791c05f06627d44f9438059b1ab"></a>
@@ -247,21 +228,21 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19be1fb5e9c5ecf82f078c227d7b5cf4" name="a19be1fb5e9c5ecf82f078c227d7b5cf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19be1fb5e9c5ecf82f078c227d7b5cf4">&#9670;&#160;</a></span>explicit() <span class="overload">[1/2]</span></h2>
+<a id="a4ee703bbda3a3db7fd3ed6660504b769" name="a4ee703bbda3a3db7fd3ed6660504b769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee703bbda3a3db7fd3ed6660504b769">&#9670;&#160;</a></span>explicit()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename IndexType , size_t... Extents&gt; </div>
 <div class="memtemplate">
-template&lt;typename OtherSizeType , etl::size_t... OtherExtents&gt; <br />
-requires requires { sizeof...(OtherExtents) == <a class="el" href="structetl_1_1rank.html">rank</a>(); ((OtherExtents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> || Extents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> || OtherExtents == Extents) &amp;&amp; ...); }</div>
+template&lt;typename OtherIndexType , etl::size_t... OtherExtents&gt; <br />
+requires ( sizeof...(OtherExtents) == <a class="el" href="structetl_1_1rank.html">rank</a>() and ((OtherExtents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> or Extents == <a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> or OtherExtents == Extents) and ...) )</div>
       <table class="memname">
         <tr>
           <td class="memname">explicit </td>
           <td>(</td>
-          <td class="paramtype">(((Extents !=<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>) &amp;&amp;(OtherExtents==<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>))||...)||(<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a> &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()&lt; <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; OtherSizeType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>())</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">((Extents !=<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a> and OtherExtents==<a class="el" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>) or ...) or(<a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; IndexType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()&lt; <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt; OtherIndexType &gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>())</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -269,29 +250,8 @@ requires requires { sizeof...(OtherExtents) == <a class="el" href="structetl_1_1
 
 </div>
 </div>
-<a id="a9d5a7545c3d0403e82d18d15dfdb7327" name="a9d5a7545c3d0403e82d18d15dfdb7327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d5a7545c3d0403e82d18d15dfdb7327">&#9670;&#160;</a></span>explicit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-<div class="memtemplate">
-template&lt;typename OtherSizeType , <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">explicit </td>
-          <td>(</td>
-          <td class="paramtype">N !</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>()</span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54f0573272eb6a906db8fa1ee4d843d7" name="a54f0573272eb6a906db8fa1ee4d843d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54f0573272eb6a906db8fa1ee4d843d7">&#9670;&#160;</a></span>extent()</h2>
+<a id="add05cb6bf79870ab1cb3f8e373dd69e1" name="add05cb6bf79870ab1cb3f8e373dd69e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add05cb6bf79870ab1cb3f8e373dd69e1">&#9670;&#160;</a></span>extent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,71 +265,13 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
           <td class="memname">auto <a class="el" href="structetl_1_1extent.html">extent</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a>
+          <td> const -&gt; <a class="el" href="#a2eaac791c05f06627d44f9438059b1ab">index_type</a>
     </td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a735a050ab6d7c38fc6a046299e66786e" name="a735a050ab6d7c38fc6a046299e66786e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a735a050ab6d7c38fc6a046299e66786e">&#9670;&#160;</a></span>fwd_prod_of_extents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto fwd_prod_of_extents </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d5aaa413f483c90e8065f696ed3cb6b" name="a3d5aaa413f483c90e8065f696ed3cb6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d5aaa413f483c90e8065f696ed3cb6b">&#9670;&#160;</a></span>index_cast()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-<div class="memtemplate">
-template&lt;typename OtherSizeType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto index_cast </td>
-          <td>(</td>
-          <td class="paramtype">OtherSizeType &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a>
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -430,34 +332,6 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 
 </div>
 </div>
-<a id="acda2158a3356367c03a54d155b5d94c4" name="acda2158a3356367c03a54d155b5d94c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acda2158a3356367c03a54d155b5d94c4">&#9670;&#160;</a></span>rev_prod_of_extents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto rev_prod_of_extents </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1ef5abfdf62eaccbad4371388e16243d" name="a1ef5abfdf62eaccbad4371388e16243d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ef5abfdf62eaccbad4371388e16243d">&#9670;&#160;</a></span>static_extent()</h2>
 
@@ -486,107 +360,27 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a16b87ffbf564079d7d33fc8e2d602024" name="a16b87ffbf564079d7d33fc8e2d602024"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b87ffbf564079d7d33fc8e2d602024">&#9670;&#160;</a></span>operator==</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac467bd3dc5782412f0df7177a844474d" name="ac467bd3dc5782412f0df7177a844474d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac467bd3dc5782412f0df7177a844474d">&#9670;&#160;</a></span>noexcept</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename IndexType , size_t... Extents&gt; </div>
-<div class="memtemplate">
-template&lt;typename OtherSizeType , etl::size_t... OtherExtents&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structetl_1_1extents.html">extents</a>&lt; IndexType, Extents &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structetl_1_1extents.html">extents</a>&lt; OtherSizeType, OtherExtents... &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;) -&gt; bool
-    </td>
+          <td class="memname">OtherExtents const&amp; e noexcept</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac467bd3dc5782412f0df7177a844474d" name="ac467bd3dc5782412f0df7177a844474d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac467bd3dc5782412f0df7177a844474d">&#9670;&#160;</a></span>noexcept <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">OtherExtents const&amp; e noexcept</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>() &gt; 0) {</div>
-<div class="line">            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="#a6df0ea5ffa7e130b9cadda5aff2fca40">rank_type</a> i{0}; i &lt; <a class="code hl_function" href="#a10e4b29c349a013c6024b3ca64e46298">rank</a>(); ++i) {</div>
-<div class="line">                <span class="keywordflow">if</span> (e.static_extent(i) == <a class="code hl_variable" href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">dynamic_extent</a>) {</div>
-<div class="line">                    _extents[_dynamic_index(i)] = e.extent(i);</div>
-<div class="line">                }</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... OtherSizeTypes&gt;</div>
-<div class="line">        <span class="keyword">requires</span> <span class="keyword">requires</span> {</div>
-<div class="line">            (<a class="code hl_variable" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v&lt;OtherSizeTypes, size_type&gt;</a> &amp;&amp; ...);</div>
-<div class="line">            (<a class="code hl_variable" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v&lt;size_type, OtherSizeTypes&gt;</a> &amp;&amp; ...)</div>
-<div class="line">                and (<span class="keyword">sizeof</span>...(OtherSizeTypes) == <a class="code hl_function" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>() || <span class="keyword">sizeof</span>...(OtherSizeTypes) == <a class="code hl_function" href="#a10e4b29c349a013c6024b3ca64e46298">rank</a>());</div>
-<div class="line">        }</div>
-<div class="line">    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_function" href="#adb577ec73392e4ed1579e4e923a1977f">extents</a>(OtherSizeTypes... es) <span class="keyword">noexcept</span></div>
-<div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> <span class="keyword">const</span> ext = array&lt;<a class="code hl_typedef" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a>, <span class="keyword">sizeof</span>...(OtherSizeTypes)&gt;{<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="#abb7d26f0e216c000f490d57385ef3637">size_type</a><span class="keyword">&gt;</span>(es)...};</div>
-<div class="line">        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>() != 0) {</div>
-<div class="line">            <a class="code hl_function" href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">copy</a>(ext.begin(), ext.end(), _extents.<a class="code hl_function" href="structetl_1_1array.html#a773a7036d91b150864530b3c86f8946c">begin</a>());</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OtherSizeType, etl::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line">    <span class="keyword">explicit</span>(N != <a class="code hl_function" href="#aaa5fcb45f9ab95da5b425d850d295842">rank_dynamic</a>()) <span class="keyword">constexpr</span> <a class="code hl_function" href="#adb577ec73392e4ed1579e4e923a1977f">extents</a>(<a class="code hl_function" href="namespaceetl.html#abb44c67bac9ad6e8a4e43a5d921d2611">span&lt;OtherSizeType, N&gt;</a> e) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="agroup__algorithm_html_ga9f9b625e56c5ddcc87c1b813687215cd"><div class="ttname"><a href="group__algorithm.html#ga9f9b625e56c5ddcc87c1b813687215cd">etl::copy</a></div><div class="ttdeci">constexpr auto copy(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Copies the elements in the range, defined by [first, last), to another range beginning at destination...</div><div class="ttdef"><b>Definition</b> copy.hpp:18</div></div>
-<div class="ttc" id="agroup__span_html_ga22e7be40fea564f0c1fe3d11229ef0f8"><div class="ttname"><a href="group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8">etl::dynamic_extent</a></div><div class="ttdeci">constexpr auto dynamic_extent</div><div class="ttdoc">etl::dynamic_extent is a constant of type etl::size_t that is used to differentiate etl::span of stat...</div><div class="ttdef"><b>Definition</b> dynamic_extent.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_abb44c67bac9ad6e8a4e43a5d921d2611"><div class="ttname"><a href="namespaceetl.html#abb44c67bac9ad6e8a4e43a5d921d2611">etl::span</a></div><div class="ttdeci">span(c_array&lt; Type, Extent &gt; &amp;) -&gt; span&lt; Type, Extent &gt;</div></div>
-<div class="ttc" id="anamespaceetl_html_ac00c953e4e3f962b130f431bc25d6101"><div class="ttname"><a href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">etl::is_nothrow_constructible_v</a></div><div class="ttdeci">constexpr bool is_nothrow_constructible_v</div><div class="ttdef"><b>Definition</b> is_nothrow_constructible.hpp:50</div></div>
-<div class="ttc" id="anamespaceetl_html_adf5e75c4b12aa7982c5a97a14510ab35"><div class="ttname"><a href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">etl::is_convertible_v</a></div><div class="ttdeci">constexpr bool is_convertible_v</div><div class="ttdef"><b>Definition</b> is_convertible.hpp:46</div></div>
-<div class="ttc" id="astructetl_1_1array_html_a773a7036d91b150864530b3c86f8946c"><div class="ttname"><a href="structetl_1_1array.html#a773a7036d91b150864530b3c86f8946c">etl::array::begin</a></div><div class="ttdeci">constexpr auto begin() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the beginning.</div><div class="ttdef"><b>Definition</b> array.hpp:108</div></div>
-<div class="ttc" id="astructetl_1_1extents_html_a10e4b29c349a013c6024b3ca64e46298"><div class="ttname"><a href="#a10e4b29c349a013c6024b3ca64e46298">etl::extents::rank</a></div><div class="ttdeci">static constexpr auto rank() noexcept -&gt; rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:53</div></div>
-<div class="ttc" id="astructetl_1_1extents_html_a6df0ea5ffa7e130b9cadda5aff2fca40"><div class="ttname"><a href="#a6df0ea5ffa7e130b9cadda5aff2fca40">etl::extents::rank_type</a></div><div class="ttdeci">etl::size_t rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:25</div></div>
-<div class="ttc" id="astructetl_1_1extents_html_aaa5fcb45f9ab95da5b425d850d295842"><div class="ttname"><a href="#aaa5fcb45f9ab95da5b425d850d295842">etl::extents::rank_dynamic</a></div><div class="ttdeci">static constexpr auto rank_dynamic() noexcept -&gt; rank_type</div><div class="ttdef"><b>Definition</b> extents.hpp:55</div></div>
-<div class="ttc" id="astructetl_1_1extents_html_abb7d26f0e216c000f490d57385ef3637"><div class="ttname"><a href="#abb7d26f0e216c000f490d57385ef3637">etl::extents::size_type</a></div><div class="ttdeci">make_unsigned_t&lt; IndexType &gt; size_type</div><div class="ttdef"><b>Definition</b> extents.hpp:24</div></div>
-<div class="ttc" id="astructetl_1_1extents_html_adb577ec73392e4ed1579e4e923a1977f"><div class="ttname"><a href="#adb577ec73392e4ed1579e4e923a1977f">etl::extents::extents</a></div><div class="ttdeci">constexpr extents() noexcept=default</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab02c18016c47df2b6128f4e43f9f08d8" name="ab02c18016c47df2b6128f4e43f9f08d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab02c18016c47df2b6128f4e43f9f08d8">&#9670;&#160;</a></span>noexcept <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndexType , size_t... Extents&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">N const&amp; e noexcept</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -601,7 +395,7 @@ template&lt;typename IndexType , size_t... Extents&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1extents.html">extents</a></li>
-    <li class="footer">Generated on Wed Apr 24 2024 11:26:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed Apr 24 2024 12:40:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

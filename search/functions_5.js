@@ -56,6 +56,5 @@ var searchData=
   ['full_53',['full',['../structetl_1_1static__set.html#ab422f37cdda3f8c4b4f19c41640ed393',1,'etl::static_set::full()'],['../structetl_1_1basic__inplace__string.html#ab422f37cdda3f8c4b4f19c41640ed393',1,'etl::basic_inplace_string::full()'],['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#abebd18e9f8a074b07dc67383f5957a78',1,'etl::experimental::freertos::stream_buffer::full()'],['../group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e',1,'etl::full(C const &amp;c) noexcept(noexcept(c.full())) -&gt; decltype(c.full())'],['../group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4',1,'etl::full(T(&amp;array)[N]) noexcept -&gt; bool']]],
   ['full_5fextent_5ft_54',['full_extent_t',['../structetl_1_1full__extent__t.html#a7989114b625de1783860d9ba9cd295e4',1,'etl::full_extent_t']]],
   ['function_5fname_55',['function_name',['../structetl_1_1source__location.html#a7d3e32bc7888d35bc6b6096f16472644',1,'etl::source_location']]],
-  ['function_5fref_56',['function_ref',['../namespaceetl.html#abdcfb06e9497d99667ce90201fa5c056',1,'etl']]],
-  ['fwd_5fprod_5fof_5fextents_57',['fwd_prod_of_extents',['../structetl_1_1extents.html#a735a050ab6d7c38fc6a046299e66786e',1,'etl::extents']]]
+  ['function_5fref_56',['function_ref',['../namespaceetl.html#abdcfb06e9497d99667ce90201fa5c056',1,'etl']]]
 ];
