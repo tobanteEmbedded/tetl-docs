@@ -104,11 +104,684 @@ $(function(){initNavTree('structetl_1_1layout__stride_1_1mapping.html',''); init
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="structetl_1_1layout__stride_1_1mapping-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">layout_stride::mapping&lt; Extents &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p><code>#include &lt;<a class="el" href="layout__stride_8hpp_source.html">layout_stride.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a287c7bbcb051d98553d623934f63cb46" id="r_a287c7bbcb051d98553d623934f63cb46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> = Extents</td></tr>
+<tr class="separator:a287c7bbcb051d98553d623934f63cb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a16267e975b03d8e74bc5ac281ca2f3" id="r_a1a16267e975b03d8e74bc5ac281ca2f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a> = typename extents_type::index_type</td></tr>
+<tr class="separator:a1a16267e975b03d8e74bc5ac281ca2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e524589e23f661f56ee6c894f1d649" id="r_aa3e524589e23f661f56ee6c894f1d649"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e524589e23f661f56ee6c894f1d649">layout_type</a> = <a class="el" href="structetl_1_1layout__stride.html">layout_stride</a></td></tr>
+<tr class="separator:aa3e524589e23f661f56ee6c894f1d649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0832497c317d58c52b434e6db2cfa438" id="r_a0832497c317d58c52b434e6db2cfa438"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a> = typename extents_type::rank_type</td></tr>
+<tr class="separator:a0832497c317d58c52b434e6db2cfa438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921f28284bd72648875e6e8ae56a8c8d" id="r_a921f28284bd72648875e6e8ae56a8c8d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921f28284bd72648875e6e8ae56a8c8d">size_type</a> = typename extents_type::size_type</td></tr>
+<tr class="separator:a921f28284bd72648875e6e8ae56a8c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a05ccaf34b7f0fd32b2d957ef5d8fad10" id="r_a05ccaf34b7f0fd32b2d957ef5d8fad10"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05ccaf34b7f0fd32b2d957ef5d8fad10">mapping</a> () noexcept=default</td></tr>
+<tr class="separator:a05ccaf34b7f0fd32b2d957ef5d8fad10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860f943c463b8c4f4a88808ed616da4c" id="r_a860f943c463b8c4f4a88808ed616da4c"><td class="memTemplParams" colspan="2">template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</td></tr>
+<tr class="memitem:a860f943c463b8c4f4a88808ed616da4c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a860f943c463b8c4f4a88808ed616da4c">mapping</a> (<a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;ext, <a class="el" href="structetl_1_1array.html">array</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a> &gt; const &amp;s) noexcept</td></tr>
+<tr class="separator:a860f943c463b8c4f4a88808ed616da4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefba9b9e0a40cf859abef82714a69e5" id="r_abefba9b9e0a40cf859abef82714a69e5"><td class="memTemplParams" colspan="2">template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</td></tr>
+<tr class="memitem:abefba9b9e0a40cf859abef82714a69e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abefba9b9e0a40cf859abef82714a69e5">mapping</a> (<a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;ext, <a class="el" href="structetl_1_1span.html">span</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a> &gt; s) noexcept</td></tr>
+<tr class="separator:abefba9b9e0a40cf859abef82714a69e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6d50b125ee78ad8b857137dae8ff92" id="r_adb6d50b125ee78ad8b857137dae8ff92"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb6d50b125ee78ad8b857137dae8ff92">mapping</a> (<a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> const &amp;) noexcept=default</td></tr>
+<tr class="separator:adb6d50b125ee78ad8b857137dae8ff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac8a172be5793b5beca73d116c00f5e" id="r_adac8a172be5793b5beca73d116c00f5e"><td class="memTemplParams" colspan="2">template&lt;typename StridedLayoutMapping &gt; </td></tr>
+<tr class="memitem:adac8a172be5793b5beca73d116c00f5e"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adac8a172be5793b5beca73d116c00f5e">explicit</a> (false) <a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a>(StridedLayoutMapping const &amp;) noexcept</td></tr>
+<tr class="separator:adac8a172be5793b5beca73d116c00f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece775793b34991b496a8f2e18e2f13a" id="r_aece775793b34991b496a8f2e18e2f13a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aece775793b34991b496a8f2e18e2f13a">extents</a> () const noexcept -&gt; <a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;</td></tr>
+<tr class="separator:aece775793b34991b496a8f2e18e2f13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468ae71978d0bb0e752252f6f7e14e38" id="r_a468ae71978d0bb0e752252f6f7e14e38"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a468ae71978d0bb0e752252f6f7e14e38">is_exhaustive</a> () const noexcept -&gt; bool</td></tr>
+<tr class="separator:a468ae71978d0bb0e752252f6f7e14e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addebe0d75acdc92029e8f687b5a56188" id="r_addebe0d75acdc92029e8f687b5a56188"><td class="memTemplParams" colspan="2">template&lt;typename... Indices&gt; <br />
+requires ((sizeof...(Indices) == <a class="el" href="structetl_1_1rank.html">rank</a>) // and (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;Indices, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and ...) // and (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, Indices&gt; and ...))</td></tr>
+<tr class="memitem:addebe0d75acdc92029e8f687b5a56188"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#addebe0d75acdc92029e8f687b5a56188">operator()</a> (Indices... is) const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
+<tr class="separator:addebe0d75acdc92029e8f687b5a56188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4770f555edad1a34068967e9f3afd2bf" id="r_a4770f555edad1a34068967e9f3afd2bf"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4770f555edad1a34068967e9f3afd2bf">operator=</a> (<a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> const &amp;) noexcept -&gt; <a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> &amp;=default</td></tr>
+<tr class="separator:a4770f555edad1a34068967e9f3afd2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc063f067f1a060261979b3ec3a1aae4" id="r_afc063f067f1a060261979b3ec3a1aae4"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc063f067f1a060261979b3ec3a1aae4">required_span_size</a> () const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
+<tr class="separator:afc063f067f1a060261979b3ec3a1aae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c30d9c58ea8608d2d4257de92f401e8" id="r_a8c30d9c58ea8608d2d4257de92f401e8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c30d9c58ea8608d2d4257de92f401e8">stride</a> (<a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a> i) const noexcept -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
+<tr class="separator:a8c30d9c58ea8608d2d4257de92f401e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a456c96dc7a24671a7a08cf7370461" id="r_a10a456c96dc7a24671a7a08cf7370461"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10a456c96dc7a24671a7a08cf7370461">strides</a> () const noexcept -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, <a class="el" href="structetl_1_1rank.html">rank</a> &gt;</td></tr>
+<tr class="separator:a10a456c96dc7a24671a7a08cf7370461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a355ad136813a7221a074540dad2e8812" id="r_a355ad136813a7221a074540dad2e8812"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a355ad136813a7221a074540dad2e8812">is_always_exhaustive</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:a355ad136813a7221a074540dad2e8812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f28442c94cf949c2f59aea097952fa0" id="r_a5f28442c94cf949c2f59aea097952fa0"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f28442c94cf949c2f59aea097952fa0">is_always_strided</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:a5f28442c94cf949c2f59aea097952fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cf6685027605935386233ccaa88faa" id="r_a90cf6685027605935386233ccaa88faa"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90cf6685027605935386233ccaa88faa">is_always_unique</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:a90cf6685027605935386233ccaa88faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8143b9f36602a8192089e0c2d34c1f9a" id="r_a8143b9f36602a8192089e0c2d34c1f9a"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8143b9f36602a8192089e0c2d34c1f9a">is_strided</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:a8143b9f36602a8192089e0c2d34c1f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c797fc938e63d1565061c9e6943487" id="r_ad2c797fc938e63d1565061c9e6943487"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c797fc938e63d1565061c9e6943487">is_unique</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:ad2c797fc938e63d1565061c9e6943487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a83b8e39b725a3ac0a4e0ece34011319c" id="r_a83b8e39b725a3ac0a4e0ece34011319c"><td class="memTemplParams" colspan="2">template&lt;typename OtherMapping &gt; </td></tr>
+<tr class="memitem:a83b8e39b725a3ac0a4e0ece34011319c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a83b8e39b725a3ac0a4e0ece34011319c">operator==</a> (<a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> const &amp;, OtherMapping const &amp;) noexcept -&gt; bool</td></tr>
+<tr class="separator:a83b8e39b725a3ac0a4e0ece34011319c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a287c7bbcb051d98553d623934f63cb46" name="a287c7bbcb051d98553d623934f63cb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287c7bbcb051d98553d623934f63cb46">&#9670;&#160;</a></span>extents_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> = Extents</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a16267e975b03d8e74bc5ac281ca2f3" name="a1a16267e975b03d8e74bc5ac281ca2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a16267e975b03d8e74bc5ac281ca2f3">&#9670;&#160;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a> = typename extents_type::index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3e524589e23f661f56ee6c894f1d649" name="aa3e524589e23f661f56ee6c894f1d649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e524589e23f661f56ee6c894f1d649">&#9670;&#160;</a></span>layout_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa3e524589e23f661f56ee6c894f1d649">layout_type</a> = <a class="el" href="structetl_1_1layout__stride.html">layout_stride</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0832497c317d58c52b434e6db2cfa438" name="a0832497c317d58c52b434e6db2cfa438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0832497c317d58c52b434e6db2cfa438">&#9670;&#160;</a></span>rank_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a> = typename extents_type::rank_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a921f28284bd72648875e6e8ae56a8c8d" name="a921f28284bd72648875e6e8ae56a8c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921f28284bd72648875e6e8ae56a8c8d">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a921f28284bd72648875e6e8ae56a8c8d">size_type</a> = typename extents_type::size_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a05ccaf34b7f0fd32b2d957ef5d8fad10" name="a05ccaf34b7f0fd32b2d957ef5d8fad10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ccaf34b7f0fd32b2d957ef5d8fad10">&#9670;&#160;</a></span>mapping() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb6d50b125ee78ad8b857137dae8ff92" name="adb6d50b125ee78ad8b857137dae8ff92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6d50b125ee78ad8b857137dae8ff92">&#9670;&#160;</a></span>mapping() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a>&lt; Extents &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abefba9b9e0a40cf859abef82714a69e5" name="abefba9b9e0a40cf859abef82714a69e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abefba9b9e0a40cf859abef82714a69e5">&#9670;&#160;</a></span>mapping() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>ext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1span.html">span</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a860f943c463b8c4f4a88808ed616da4c" name="a860f943c463b8c4f4a88808ed616da4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860f943c463b8c4f4a88808ed616da4c">&#9670;&#160;</a></span>mapping() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherIndexType &gt; <br />
+requires (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexType const&amp;, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and <a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, OtherIndexType const&amp;&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>ext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1array.html">array</a>&lt; OtherIndexType, <a class="el" href="structetl_1_1rank.html">rank</a> &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adac8a172be5793b5beca73d116c00f5e" name="adac8a172be5793b5beca73d116c00f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac8a172be5793b5beca73d116c00f5e">&#9670;&#160;</a></span>explicit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<div class="memtemplate">
+template&lt;typename StridedLayoutMapping &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">explicit </td>
+          <td>(</td>
+          <td class="paramtype">false</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aece775793b34991b496a8f2e18e2f13a" name="aece775793b34991b496a8f2e18e2f13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece775793b34991b496a8f2e18e2f13a">&#9670;&#160;</a></span>extents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="structetl_1_1extents.html">extents</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a355ad136813a7221a074540dad2e8812" name="a355ad136813a7221a074540dad2e8812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355ad136813a7221a074540dad2e8812">&#9670;&#160;</a></span>is_always_exhaustive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto is_always_exhaustive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f28442c94cf949c2f59aea097952fa0" name="a5f28442c94cf949c2f59aea097952fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f28442c94cf949c2f59aea097952fa0">&#9670;&#160;</a></span>is_always_strided()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto is_always_strided </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90cf6685027605935386233ccaa88faa" name="a90cf6685027605935386233ccaa88faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cf6685027605935386233ccaa88faa">&#9670;&#160;</a></span>is_always_unique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto is_always_unique </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a468ae71978d0bb0e752252f6f7e14e38" name="a468ae71978d0bb0e752252f6f7e14e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468ae71978d0bb0e752252f6f7e14e38">&#9670;&#160;</a></span>is_exhaustive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto is_exhaustive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt;  bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8143b9f36602a8192089e0c2d34c1f9a" name="a8143b9f36602a8192089e0c2d34c1f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8143b9f36602a8192089e0c2d34c1f9a">&#9670;&#160;</a></span>is_strided()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto is_strided </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2c797fc938e63d1565061c9e6943487" name="ad2c797fc938e63d1565061c9e6943487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c797fc938e63d1565061c9e6943487">&#9670;&#160;</a></span>is_unique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto is_unique </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addebe0d75acdc92029e8f687b5a56188" name="addebe0d75acdc92029e8f687b5a56188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addebe0d75acdc92029e8f687b5a56188">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Indices&gt; <br />
+requires ((sizeof...(Indices) == <a class="el" href="structetl_1_1rank.html">rank</a>) // and (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;Indices, <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; and ...) // and (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, Indices&gt; and ...))</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator() </td>
+          <td>(</td>
+          <td class="paramtype">Indices...</td>          <td class="paramname"><span class="paramname"><em>is</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4770f555edad1a34068967e9f3afd2bf" name="a4770f555edad1a34068967e9f3afd2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4770f555edad1a34068967e9f3afd2bf">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a>&lt; Extents &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a> &amp;=default</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc063f067f1a060261979b3ec3a1aae4" name="afc063f067f1a060261979b3ec3a1aae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc063f067f1a060261979b3ec3a1aae4">&#9670;&#160;</a></span>required_span_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto required_span_size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt;  <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c30d9c58ea8608d2d4257de92f401e8" name="a8c30d9c58ea8608d2d4257de92f401e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c30d9c58ea8608d2d4257de92f401e8">&#9670;&#160;</a></span>stride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto stride </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0832497c317d58c52b434e6db2cfa438">rank_type</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10a456c96dc7a24671a7a08cf7370461" name="a10a456c96dc7a24671a7a08cf7370461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a456c96dc7a24671a7a08cf7370461">&#9670;&#160;</a></span>strides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto strides </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="structetl_1_1array.html">array</a>&lt;<a class="el" href="#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, <a class="el" href="structetl_1_1rank.html">rank</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a83b8e39b725a3ac0a4e0ece34011319c" name="a83b8e39b725a3ac0a4e0ece34011319c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b8e39b725a3ac0a4e0ece34011319c">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Extents &gt; </div>
+<div class="memtemplate">
+template&lt;typename OtherMapping &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a>&lt; Extents &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OtherMapping const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/etl/_mdspan/<a class="el" href="layout_8hpp_source.html">layout.hpp</a></li>
+<li>include/etl/_mdspan/<a class="el" href="layout__stride_8hpp_source.html">layout_stride.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -116,7 +789,7 @@ $(function(){initNavTree('structetl_1_1layout__stride_1_1mapping.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__stride.html">layout_stride</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__stride_1_1mapping.html">mapping</a></li>
-    <li class="footer">Generated on Thu Apr 25 2024 17:19:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Apr 25 2024 20:47:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

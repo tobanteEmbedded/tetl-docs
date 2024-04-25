@@ -237,6 +237,8 @@ var NAVTREEINDEX10 =
 "layout__mapping__alike_8hpp_source.html":[12,0,1,0,39,7],
 "layout__right_8hpp.html":[12,0,1,0,39,8],
 "layout__right_8hpp_source.html":[12,0,1,0,39,8],
+"layout__stride_8hpp.html":[12,0,1,0,39,9],
+"layout__stride_8hpp_source.html":[12,0,1,0,39,9],
 "layout__transpose_8hpp.html":[12,0,1,0,36,15],
 "layout__transpose_8hpp_source.html":[12,0,1,0,36,15],
 "lcm_8hpp.html":[12,0,1,0,45,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "ldiv_8hpp_source.html":[12,0,1,0,20,8],
 "legacy__bidirectional__iterator_8hpp.html":[12,0,1,0,34,25],
 "legacy__bidirectional__iterator_8hpp_source.html":[12,0,1,0,34,25],
-"legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26],
-"legacy__forward__iterator_8hpp_source.html":[12,0,1,0,34,26],
-"legacy__input__iterator_8hpp.html":[12,0,1,0,34,27]
+"legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26]
 };

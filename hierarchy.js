@@ -16,6 +16,7 @@ var hierarchy =
     [ "array< Type, Size >", "structetl_1_1array.html", null ],
     [ "array< Char, Capacity+1 >", "structetl_1_1array.html", null ],
     [ "array< etl::size_t, num_words >", "structetl_1_1array.html", null ],
+    [ "array< index_type, etl::rank >", "structetl_1_1array.html", null ],
     [ "array< OtherIndexType, N >", "structetl_1_1array.html", null ],
     [ "array< WordType, num_words >", "structetl_1_1array.html", null ],
     [ "assert_msg", "structetl_1_1assert__msg.html", null ],

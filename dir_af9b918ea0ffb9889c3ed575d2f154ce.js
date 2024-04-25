@@ -9,6 +9,7 @@ var dir_af9b918ea0ffb9889c3ed575d2f154ce =
     [ "layout_left.hpp", "layout__left_8hpp.html", "layout__left_8hpp" ],
     [ "layout_mapping_alike.hpp", "layout__mapping__alike_8hpp.html", null ],
     [ "layout_right.hpp", "layout__right_8hpp.html", "layout__right_8hpp" ],
+    [ "layout_stride.hpp", "layout__stride_8hpp.html", "layout__stride_8hpp" ],
     [ "mdspan.hpp", "__mdspan_2mdspan_8hpp.html", "__mdspan_2mdspan_8hpp" ],
     [ "strided_slice.hpp", "strided__slice_8hpp.html", "strided__slice_8hpp" ],
     [ "submdspan.hpp", "submdspan_8hpp.html", null ],
