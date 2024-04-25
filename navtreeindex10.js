@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"is__nothrow__constructible_8hpp_source.html":[12,0,1,0,61,64],
 "is__nothrow__convertible_8hpp.html":[12,0,1,0,61,65],
 "is__nothrow__convertible_8hpp.html#af70f6258c3e925eeb2d27b652374660d":[12,0,1,0,61,65,2],
 "is__nothrow__convertible_8hpp_source.html":[12,0,1,0,61,65],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "legacy__bidirectional__iterator_8hpp_source.html":[12,0,1,0,34,25],
 "legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26],
 "legacy__forward__iterator_8hpp_source.html":[12,0,1,0,34,26],
-"legacy__input__iterator_8hpp.html":[12,0,1,0,34,27],
-"legacy__input__iterator_8hpp_source.html":[12,0,1,0,34,27]
+"legacy__input__iterator_8hpp.html":[12,0,1,0,34,27]
 };

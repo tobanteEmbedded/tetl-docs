@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"namespaceetl_1_1placeholders.html#a0a5f4d2e256fcb452e6c4db6d9bcd7bb":[9,0,0,9,5],
 "namespaceetl_1_1placeholders.html#a149144aed24c50f69f9deba3b894150f":[9,0,0,9,29],
 "namespaceetl_1_1placeholders.html#a1e09361776f90555d8f975b082a69c74":[9,0,0,9,16],
 "namespaceetl_1_1placeholders.html#a1e10ffb5e538585265e5e195a83b0fa1":[9,0,0,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "placeholder_8hpp.html#aba29a18c59ee16753c10432fb663fcfa":[12,0,1,0,31,28,29],
 "placeholder_8hpp.html#aba810fc978b6fac85b22cca82bd107ba":[12,0,1,0,31,28,26],
 "placeholder_8hpp.html#abcd4e9d6d3a2b07a4f4f6ab43dea732e":[12,0,1,0,31,28,24],
-"placeholder_8hpp.html#abf00e85c88f34d692aa904c5ced21a3c":[12,0,1,0,31,28,15],
-"placeholder_8hpp.html#aca454ba125c52834a9dd6adbf06a8628":[12,0,1,0,31,28,31]
+"placeholder_8hpp.html#abf00e85c88f34d692aa904c5ced21a3c":[12,0,1,0,31,28,15]
 };

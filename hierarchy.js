@@ -16,6 +16,7 @@ var hierarchy =
     [ "array< Type, Size >", "structetl_1_1array.html", null ],
     [ "array< Char, Capacity+1 >", "structetl_1_1array.html", null ],
     [ "array< etl::size_t, num_words >", "structetl_1_1array.html", null ],
+    [ "array< OtherIndexType, N >", "structetl_1_1array.html", null ],
     [ "array< WordType, num_words >", "structetl_1_1array.html", null ],
     [ "assert_msg", "structetl_1_1assert__msg.html", null ],
     [ "at< I, List >", "structetl_1_1meta_1_1at.html", null ],
@@ -615,6 +616,7 @@ var hierarchy =
     [ "span< T, Extent >", "structetl_1_1span.html", null ],
     [ "span< etl::basic_format_arg< Context > const >", "structetl_1_1span.html", null ],
     [ "span< etl::byte >", "structetl_1_1span.html", null ],
+    [ "span< OtherIndexType, N >", "structetl_1_1span.html", null ],
     [ "stack< T, Container >", "structetl_1_1stack.html", null ],
     [ "static_set< Key, Capacity, Compare >", "structetl_1_1static__set.html", null ],
     [ "static_vector_storage_type", null, [
