@@ -4731,6 +4731,12 @@ Variables</h2></td></tr>
 <tr class="memitem:a4b43ce4d692cabf9e9e569bc813f910e" id="r_a4b43ce4d692cabf9e9e569bc813f910e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4b43ce4d692cabf9e9e569bc813f910e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4b43ce4d692cabf9e9e569bc813f910e">is_enum_v</a> = __is_enum(T)</td></tr>
 <tr class="separator:a4b43ce4d692cabf9e9e569bc813f910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959d90905f2e3cc9489dab5072ae5d71" id="r_a959d90905f2e3cc9489dab5072ae5d71"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a959d90905f2e3cc9489dab5072ae5d71"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a959d90905f2e3cc9489dab5072ae5d71">is_etl_array</a> = false</td></tr>
+<tr class="separator:a959d90905f2e3cc9489dab5072ae5d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6287ca87bfb8d3d5c34ea3917af306f0" id="r_a6287ca87bfb8d3d5c34ea3917af306f0"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe">size_t</a> Size&gt; </td></tr>
+<tr class="memitem:a6287ca87bfb8d3d5c34ea3917af306f0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6287ca87bfb8d3d5c34ea3917af306f0">is_etl_array&lt; array&lt; T, Size &gt; &gt;</a> = true</td></tr>
+<tr class="separator:a6287ca87bfb8d3d5c34ea3917af306f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c97574ef59ab15ea9cff1856487d66" id="r_a98c97574ef59ab15ea9cff1856487d66"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a98c97574ef59ab15ea9cff1856487d66"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a98c97574ef59ab15ea9cff1856487d66">is_final_v</a> = __is_final(T)</td></tr>
 <tr class="separator:a98c97574ef59ab15ea9cff1856487d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8775,7 +8781,7 @@ template&lt;typename F , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_v&lt;F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -8809,7 +8815,7 @@ requires (<a class="el" href="#a79bb140a0b590bb8a6eadea52d880d17">etl::is_invoca
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Add noexcept(is_nothrow_invocable_r_v&lt;R, F, Args...&gt;) </dd></dl>
 
 </div>
 </div>
@@ -17020,6 +17026,54 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a959d90905f2e3cc9489dab5072ae5d71" name="a959d90905f2e3cc9489dab5072ae5d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959d90905f2e3cc9489dab5072ae5d71">&#9670;&#160;</a></span>is_etl_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto is_etl_array = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6287ca87bfb8d3d5c34ea3917af306f0" name="a6287ca87bfb8d3d5c34ea3917af306f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6287ca87bfb8d3d5c34ea3917af306f0">&#9670;&#160;</a></span>is_etl_array&lt; array&lt; T, Size &gt; &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="#aee50235c04ef643cb7502785393220fe">size_t</a> Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="#a959d90905f2e3cc9489dab5072ae5d71">is_etl_array</a>&lt; <a class="el" href="structetl_1_1array.html">array</a>&lt; T, Size &gt; &gt; = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a98c97574ef59ab15ea9cff1856487d66" name="a98c97574ef59ab15ea9cff1856487d66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98c97574ef59ab15ea9cff1856487d66">&#9670;&#160;</a></span>is_final_v</h2>
 
@@ -18658,7 +18712,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li>
-    <li class="footer">Generated on Thu Apr 25 2024 20:47:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 26 2024 00:11:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

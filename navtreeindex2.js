@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"bit__floor_8hpp.html":[12,0,1,0,2,2],
+"bit__floor_8hpp_source.html":[12,0,1,0,2,2],
 "bit__not_8hpp.html":[12,0,1,0,31,2],
 "bit__not_8hpp_source.html":[12,0,1,0,31,2],
 "bit__or_8hpp.html":[12,0,1,0,31,3],
@@ -234,10 +236,10 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1indirectly__readable.html":[10,0,39],
 "conceptetl_1_1indirectly__regular__unary__invocable.html":[9,0,0,521],
 "conceptetl_1_1indirectly__regular__unary__invocable.html":[10,0,40],
-"conceptetl_1_1indirectly__unary__invocable.html":[9,0,0,522],
 "conceptetl_1_1indirectly__unary__invocable.html":[10,0,41],
-"conceptetl_1_1input__or__output__iterator.html":[10,0,42],
+"conceptetl_1_1indirectly__unary__invocable.html":[9,0,0,522],
 "conceptetl_1_1input__or__output__iterator.html":[9,0,0,523],
+"conceptetl_1_1input__or__output__iterator.html":[10,0,42],
 "conceptetl_1_1integral.html":[8,0,0,17],
 "conceptetl_1_1invocable.html":[8,0,0,18],
 "conceptetl_1_1legacy__bidirectional__iterator.html":[8,8,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "conceptetl_1_1linalg_1_1in__matrix.html":[8,11,3,3],
 "conceptetl_1_1linalg_1_1in__object.html":[8,11,3,6],
 "conceptetl_1_1linalg_1_1in__vector.html":[8,11,3,0],
-"conceptetl_1_1linalg_1_1inout__matrix.html":[8,11,3,5],
-"conceptetl_1_1linalg_1_1inout__object.html":[8,11,3,8],
-"conceptetl_1_1linalg_1_1inout__vector.html":[8,11,3,2]
+"conceptetl_1_1linalg_1_1inout__matrix.html":[8,11,3,5]
 };

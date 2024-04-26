@@ -378,9 +378,15 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
 </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ARRAY_ARRAY_HPP</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="namespaceetl.html#a959d90905f2e3cc9489dab5072ae5d71">  331</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a959d90905f2e3cc9489dab5072ae5d71">is_etl_array</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> Size&gt;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="namespaceetl.html#a6287ca87bfb8d3d5c34ea3917af306f0">  334</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a959d90905f2e3cc9489dab5072ae5d71">is_etl_array&lt;array&lt;T, Size&gt;</a>&gt; = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="preprocessor">#endif </span><span class="comment">// TETL_ARRAY_ARRAY_HPP</span></div>
 <div class="ttc" id="a__iterator_2begin_8hpp_html"><div class="ttname"><a href="__iterator_2begin_8hpp.html">begin.hpp</a></div></div>
 <div class="ttc" id="a__iterator_2end_8hpp_html"><div class="ttname"><a href="__iterator_2end_8hpp.html">end.hpp</a></div></div>
 <div class="ttc" id="a__iterator_2size_8hpp_html"><div class="ttname"><a href="__iterator_2size_8hpp.html">size.hpp</a></div></div>
@@ -411,6 +417,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_a3c526d8179a55ec15611d7627272e067"><div class="ttname"><a href="namespaceetl.html#a3c526d8179a55ec15611d7627272e067">etl::make_index_sequence</a></div><div class="ttdeci">etl::make_integer_sequence&lt; etl::size_t, Size &gt; make_index_sequence</div><div class="ttdef"><b>Definition</b> index_sequence.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_a5ad99d6adeb2c1d8530bf9204f34aab4"><div class="ttname"><a href="namespaceetl.html#a5ad99d6adeb2c1d8530bf9204f34aab4">etl::is_tuple_like</a></div><div class="ttdeci">constexpr auto is_tuple_like</div><div class="ttdef"><b>Definition</b> is_tuple_like.hpp:9</div></div>
+<div class="ttc" id="anamespaceetl_html_a959d90905f2e3cc9489dab5072ae5d71"><div class="ttname"><a href="namespaceetl.html#a959d90905f2e3cc9489dab5072ae5d71">etl::is_etl_array</a></div><div class="ttdeci">constexpr auto is_etl_array</div><div class="ttdef"><b>Definition</b> array.hpp:331</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
 <div class="ttc" id="anamespaceetl_html_abb16b244632f4ab5f6fd117e5a75473e"><div class="ttname"><a href="namespaceetl.html#abb16b244632f4ab5f6fd117e5a75473e">etl::unreachable</a></div><div class="ttdeci">auto unreachable() -&gt; void</div><div class="ttdef"><b>Definition</b> unreachable.hpp:10</div></div>
 <div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
@@ -489,7 +496,7 @@ $(function(){initNavTree('__array_2array_8hpp_source.html',''); initResizable(tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_2d008c465bf677034825632487fc545c.html">_array</a></li><li class="navelem"><a class="el" href="__array_2array_8hpp.html">array.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 25 2024 20:47:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 26 2024 00:11:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

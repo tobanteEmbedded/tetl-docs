@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"legacy__bidirectional__iterator_8hpp_source.html":[12,0,1,0,34,25],
+"legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26],
 "legacy__forward__iterator_8hpp_source.html":[12,0,1,0,34,26],
 "legacy__input__iterator_8hpp.html":[12,0,1,0,34,27],
 "legacy__input__iterator_8hpp_source.html":[12,0,1,0,34,27],
@@ -141,14 +143,14 @@ var NAVTREEINDEX11 =
 "mcp23017_8hpp.html#aec2353a1075a289a6df311ae8794765ca92eb5ffee6ae2fec3ad71c777531578f":[12,0,1,0,66,1,0,0,4,1],
 "mcp23017_8hpp_source.html":[12,0,1,0,66,1,0,0],
 "md_CONTRIBUTING.html":[1],
-"md_CONTRIBUTING.html#autotoc_md1":[1,0],
 "md_CONTRIBUTING.html#autotoc_md10":[1,2,4],
 "md_CONTRIBUTING.html#autotoc_md11":[1,2,5],
 "md_CONTRIBUTING.html#autotoc_md12":[1,3],
-"md_CONTRIBUTING.html#autotoc_md2":[1,0,0],
-"md_CONTRIBUTING.html#autotoc_md3":[1,1],
-"md_CONTRIBUTING.html#autotoc_md4":[1,2],
-"md_CONTRIBUTING.html#autotoc_md5":[1,2,0],
+"md_CONTRIBUTING.html#autotoc_md2":[1,0],
+"md_CONTRIBUTING.html#autotoc_md3":[1,0,0],
+"md_CONTRIBUTING.html#autotoc_md4":[1,1],
+"md_CONTRIBUTING.html#autotoc_md5":[1,2],
+"md_CONTRIBUTING.html#autotoc_md6":[1,2,0],
 "md_CONTRIBUTING.html#autotoc_md7":[1,2,1],
 "md_CONTRIBUTING.html#autotoc_md8":[1,2,2],
 "md_CONTRIBUTING.html#autotoc_md9":[1,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "month__day_8hpp_source.html":[12,0,1,0,8,11],
 "month__day__last_8hpp.html":[12,0,1,0,8,12],
 "month__day__last_8hpp.html#a1d909feec53842657ed1a617c9b34a07":[12,0,1,0,8,12,2],
-"month__day__last_8hpp.html#a65a728b57839465263f27971ba848389":[12,0,1,0,8,12,0],
-"month__day__last_8hpp.html#a8e33878a8b46365594ab2befabf1f45f":[12,0,1,0,8,12,3],
-"month__day__last_8hpp.html#accd39fec96a1dd25ab6d7c47935224ba":[12,0,1,0,8,12,1]
+"month__day__last_8hpp.html#a65a728b57839465263f27971ba848389":[12,0,1,0,8,12,0]
 };

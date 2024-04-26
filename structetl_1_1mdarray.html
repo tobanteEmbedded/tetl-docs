@@ -152,10 +152,18 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af8ec96f758821a480be2a772bdb01511" id="r_af8ec96f758821a480be2a772bdb01511"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8ec96f758821a480be2a772bdb01511">mdarray</a> ()=default</td></tr>
 <tr class="separator:af8ec96f758821a480be2a772bdb01511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab720ca2ab002f899dd412b5cf39b46ab" id="r_ab720ca2ab002f899dd412b5cf39b46ab"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab720ca2ab002f899dd412b5cf39b46ab">mdarray</a> (<a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;ext)</td></tr>
+<tr class="separator:ab720ca2ab002f899dd412b5cf39b46ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51b4c35d3e0ae4bd21b2b3ca3bd2e72" id="r_ad51b4c35d3e0ae4bd21b2b3ca3bd2e72"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51b4c35d3e0ae4bd21b2b3ca3bd2e72">mdarray</a> (<a class="el" href="#ae20431e0b4ea55c809e5e3d5c399639a">mapping_type</a> const &amp;m)</td></tr>
+<tr class="separator:ad51b4c35d3e0ae4bd21b2b3ca3bd2e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09f1bc52bc877d6c54a08899f64f068" id="r_ae09f1bc52bc877d6c54a08899f64f068"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae09f1bc52bc877d6c54a08899f64f068">mdarray</a> (<a class="el" href="structetl_1_1mdarray.html">mdarray</a> &amp;&amp;rhs)=default</td></tr>
 <tr class="separator:ae09f1bc52bc877d6c54a08899f64f068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93346e78559b242c21fd43d2edcf489" id="r_ac93346e78559b242c21fd43d2edcf489"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac93346e78559b242c21fd43d2edcf489">mdarray</a> (<a class="el" href="structetl_1_1mdarray.html">mdarray</a> const &amp;rhs)=default</td></tr>
 <tr class="separator:ac93346e78559b242c21fd43d2edcf489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadad1fbfbaa67df9be27ee095e4aee8" id="r_afadad1fbfbaa67df9be27ee095e4aee8"><td class="memTemplParams" colspan="2">template&lt;typename... OtherIndexTypes&gt; <br />
+requires ( (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexTypes, <a class="el" href="#a178c74cd41ea1e0c22ca06362fcbe05c">index_type</a>&gt; and ...) and (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a178c74cd41ea1e0c22ca06362fcbe05c">index_type</a>, OtherIndexTypes&gt; and ...) and (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherIndexTypes...&gt;) and (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="#ae20431e0b4ea55c809e5e3d5c399639a">mapping_type</a>, <a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a>&gt;) and (array_or_constructible_from&lt;Container, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&gt;) )</td></tr>
+<tr class="memitem:afadad1fbfbaa67df9be27ee095e4aee8"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afadad1fbfbaa67df9be27ee095e4aee8">mdarray</a> (OtherIndexTypes... exts)</td></tr>
+<tr class="separator:afadad1fbfbaa67df9be27ee095e4aee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da06cb6428038b829b3366fabcc73fe" id="r_a3da06cb6428038b829b3366fabcc73fe"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3da06cb6428038b829b3366fabcc73fe">container_data</a> () -&gt; <a class="el" href="#a52a40dd5e8030c4a445414d5d918dfbb">pointer</a></td></tr>
 <tr class="separator:a3da06cb6428038b829b3366fabcc73fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd57f54f573f1bc8c49aefd67ddbc8da" id="r_acd57f54f573f1bc8c49aefd67ddbc8da"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd57f54f573f1bc8c49aefd67ddbc8da">container_data</a> () const -&gt; <a class="el" href="#ac68314718def2dcf91d64a65b016bb94">const_pointer</a></td></tr>
@@ -437,7 +445,7 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy , ty
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8ec96f758821a480be2a772bdb01511" name="af8ec96f758821a480be2a772bdb01511"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8ec96f758821a480be2a772bdb01511">&#9670;&#160;</a></span>mdarray() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ec96f758821a480be2a772bdb01511">&#9670;&#160;</a></span>mdarray() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,7 +472,7 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy , ty
 </div>
 </div>
 <a id="ac93346e78559b242c21fd43d2edcf489" name="ac93346e78559b242c21fd43d2edcf489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac93346e78559b242c21fd43d2edcf489">&#9670;&#160;</a></span>mdarray() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93346e78559b242c21fd43d2edcf489">&#9670;&#160;</a></span>mdarray() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,7 +499,7 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy , ty
 </div>
 </div>
 <a id="ae09f1bc52bc877d6c54a08899f64f068" name="ae09f1bc52bc877d6c54a08899f64f068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae09f1bc52bc877d6c54a08899f64f068">&#9670;&#160;</a></span>mdarray() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09f1bc52bc877d6c54a08899f64f068">&#9670;&#160;</a></span>mdarray() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,6 +519,90 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy , ty
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afadad1fbfbaa67df9be27ee095e4aee8" name="afadad1fbfbaa67df9be27ee095e4aee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadad1fbfbaa67df9be27ee095e4aee8">&#9670;&#160;</a></span>mdarray() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType , typename Extents , typename LayoutPolicy , typename Container &gt; </div>
+<div class="memtemplate">
+template&lt;typename... OtherIndexTypes&gt; <br />
+requires ( (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;OtherIndexTypes, <a class="el" href="#a178c74cd41ea1e0c22ca06362fcbe05c">index_type</a>&gt; and ...) and (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="#a178c74cd41ea1e0c22ca06362fcbe05c">index_type</a>, OtherIndexTypes&gt; and ...) and (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherIndexTypes...&gt;) and (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="#ae20431e0b4ea55c809e5e3d5c399639a">mapping_type</a>, <a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a>&gt;) and (array_or_constructible_from&lt;Container, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&gt;) )</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1mdarray.html">mdarray</a> </td>
+          <td>(</td>
+          <td class="paramtype">OtherIndexTypes...</td>          <td class="paramname"><span class="paramname"><em>exts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab720ca2ab002f899dd412b5cf39b46ab" name="ab720ca2ab002f899dd412b5cf39b46ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab720ca2ab002f899dd412b5cf39b46ab">&#9670;&#160;</a></span>mdarray() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType , typename Extents , typename LayoutPolicy , typename Container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1mdarray.html">mdarray</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a287c7bbcb051d98553d623934f63cb46">extents_type</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>ext</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad51b4c35d3e0ae4bd21b2b3ca3bd2e72" name="ad51b4c35d3e0ae4bd21b2b3ca3bd2e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51b4c35d3e0ae4bd21b2b3ca3bd2e72">&#9670;&#160;</a></span>mdarray() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ElementType , typename Extents , typename LayoutPolicy , typename Container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1mdarray.html">mdarray</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae20431e0b4ea55c809e5e3d5c399639a">mapping_type</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -987,7 +1079,7 @@ template&lt;typename ElementType , typename Extents , typename LayoutPolicy , ty
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1mdarray.html">mdarray</a></li>
-    <li class="footer">Generated on Thu Apr 25 2024 20:47:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Apr 26 2024 00:11:52 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

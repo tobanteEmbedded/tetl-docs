@@ -1760,6 +1760,8 @@ var namespaceetl =
     [ "is_destructible_v", "namespaceetl.html#ad9b3cd3fa2118be96d3b81105df490f8", null ],
     [ "is_empty_v", "namespaceetl.html#a91bd4405b77f18a1a21a5b886c3e335d", null ],
     [ "is_enum_v", "namespaceetl.html#a4b43ce4d692cabf9e9e569bc813f910e", null ],
+    [ "is_etl_array", "namespaceetl.html#a959d90905f2e3cc9489dab5072ae5d71", null ],
+    [ "is_etl_array< array< T, Size > >", "namespaceetl.html#a6287ca87bfb8d3d5c34ea3917af306f0", null ],
     [ "is_final_v", "namespaceetl.html#a98c97574ef59ab15ea9cff1856487d66", null ],
     [ "is_floating_point_v", "namespaceetl.html#a8a70da46bf8635132fd3757deb2fff94", null ],
     [ "is_function_v", "namespaceetl.html#abffc77cc5069dfe2c648737671e340d9", null ],

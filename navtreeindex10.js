@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"is__nothrow__constructible_8hpp.html":[12,0,1,0,61,64],
+"is__nothrow__constructible_8hpp.html#ac00c953e4e3f962b130f431bc25d6101":[12,0,1,0,61,64,1],
 "is__nothrow__constructible_8hpp_source.html":[12,0,1,0,61,64],
 "is__nothrow__convertible_8hpp.html":[12,0,1,0,61,65],
 "is__nothrow__convertible_8hpp.html#af70f6258c3e925eeb2d27b652374660d":[12,0,1,0,61,65,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "ldiv_8hpp.html#a817f60653f2167239f303e63ec82d4d8":[12,0,1,0,20,8,2],
 "ldiv_8hpp.html#afe969af8a9f77fea0bb9e0d7a82c5b3f":[12,0,1,0,20,8,1],
 "ldiv_8hpp_source.html":[12,0,1,0,20,8],
-"legacy__bidirectional__iterator_8hpp.html":[12,0,1,0,34,25],
-"legacy__bidirectional__iterator_8hpp_source.html":[12,0,1,0,34,25],
-"legacy__forward__iterator_8hpp.html":[12,0,1,0,34,26]
+"legacy__bidirectional__iterator_8hpp.html":[12,0,1,0,34,25]
 };
