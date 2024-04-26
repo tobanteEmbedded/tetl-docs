@@ -36,6 +36,8 @@ var group__mdarray =
       [ "is_strided", "structetl_1_1mdarray.html#ad12d65fb1c816bb634d36f36f70972f4", null ],
       [ "is_unique", "structetl_1_1mdarray.html#ab3b8b999fe6cd78fe95187e08bf80403", null ],
       [ "mapping", "structetl_1_1mdarray.html#a127235cac64dba5227a6ba572059761d", null ],
+      [ "operator mdspan< OtherElement, OtherExtents, OtherLayout, OtherAccessor >", "structetl_1_1mdarray.html#aef0dab96aebcb426cf8fb93b0391703d", null ],
+      [ "operator mdspan< OtherElement, OtherExtents, OtherLayout, OtherAccessor >", "structetl_1_1mdarray.html#af4e020b7162409e0e2d1999dac4596ee", null ],
       [ "operator()", "structetl_1_1mdarray.html#a1c79e13f783b40cff54e1d0f3db45a4a", null ],
       [ "operator()", "structetl_1_1mdarray.html#a5ac8b889d1b2b9bbe7618867657f0616", null ],
       [ "operator=", "structetl_1_1mdarray.html#a0dbf5a31cc138c541f74b5d04e56d4bf", null ],
@@ -49,6 +51,8 @@ var group__mdarray =
       [ "size", "structetl_1_1mdarray.html#a620b82e4a90e06ef2b816a5ad68454f2", null ],
       [ "static_extent", "structetl_1_1mdarray.html#adc1f6cd2a5d74b743e920442cac589d4", null ],
       [ "stride", "structetl_1_1mdarray.html#a345cddf9fbca4aaded07d8f804597b70", null ],
+      [ "to_mdspan", "structetl_1_1mdarray.html#a02e7ea1e9838ed4729aefb57909b1731", null ],
+      [ "to_mdspan", "structetl_1_1mdarray.html#abf4b4227890100bfc6b1ba3e6d6223ab", null ],
       [ "swap", "structetl_1_1mdarray.html#a47729964e7f2656d7d4842dfaa428b8d", null ]
     ] ]
 ];

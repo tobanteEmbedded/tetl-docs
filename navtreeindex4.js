@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"disjunction_8hpp_source.html":[12,0,1,0,61,19],
 "distance_8hpp.html":[12,0,1,0,34,6],
 "distance_8hpp_source.html":[12,0,1,0,34,6],
 "div_8hpp.html":[12,0,1,0,20,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "format__to_8hpp_source.html":[12,0,1,0,30,8],
 "formatter_8hpp.html":[12,0,1,0,30,9],
 "formatter_8hpp_source.html":[12,0,1,0,30,9],
-"forward_8hpp.html":[12,0,1,0,62,8],
-"forward_8hpp.html#a6a7e67893a6b3c341ea0624e30e1d89d":[12,0,1,0,62,8,0]
+"forward_8hpp.html":[12,0,1,0,62,8]
 };
