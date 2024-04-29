@@ -102,7 +102,7 @@ var searchData=
   ['already_5fconnected_99',['already_connected',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243ab5580b198f691ab2df12f5e2ab974373',1,'etl']]],
   ['always_5ffalse_100',['always_false',['../namespaceetl.html#a92b52772010dec87f8867320a8b03dfc',1,'etl']]],
   ['always_5ffalse_2ehpp_101',['always_false.hpp',['../always__false_8hpp.html',1,'']]],
-  ['analysis_102',['Analysis',['../index.html#autotoc_md17',1,'']]],
+  ['analysis_102',['Analysis',['../index.html#autotoc_md5',1,'']]],
   ['and_5fthen_103',['and_then',['../structetl_1_1expected.html#a060a47d37d7a5ee075549fb89574e115',1,'etl::expected::and_then(F &amp;&amp;f) &amp;'],['../structetl_1_1expected.html#a43f16e1bdaacd9ff4d66eef5bcb70967',1,'etl::expected::and_then(F &amp;&amp;f) &amp;&amp;'],['../structetl_1_1expected.html#a4fcf0db40d3fe5c7807afa3aa69306eb',1,'etl::expected::and_then(F &amp;&amp;f) const &amp;'],['../structetl_1_1expected.html#ad7d463a173851b14aaab3d843ea8d2d5',1,'etl::expected::and_then(F &amp;&amp;f) const &amp;&amp;'],['../structetl_1_1optional.html#a62819f8ee94f18955aa983370e6f8d57',1,'etl::optional::and_then(F &amp;&amp;f) &amp;'],['../structetl_1_1optional.html#adabc593e326c7a64748c51b9d549f75a',1,'etl::optional::and_then(F &amp;&amp;f) const &amp;'],['../structetl_1_1optional.html#a2146246884225b7a1dd569cb3ecb3491',1,'etl::optional::and_then(F &amp;&amp;f) &amp;&amp;'],['../structetl_1_1optional.html#ad8d6cb036f0179ae2333a4f469de86b6',1,'etl::optional::and_then(F &amp;&amp;f) const &amp;&amp;']]],
   ['any_104',['any',['../structetl_1_1basic__bitset.html#a27ebbdb92df6f4be6891d382894140c7',1,'etl::basic_bitset::any()'],['../structetl_1_1bitset.html#a27ebbdb92df6f4be6891d382894140c7',1,'etl::bitset::any()']]],
   ['any_5fof_105',['any_of',['../group__algorithm.html#gaeab7423807619552d4187d28ced39b9a',1,'etl']]],
@@ -171,7 +171,8 @@ var searchData=
   ['atto_168',['atto',['../namespaceetl.html#ac437d8206f0e17da3a896c5f4d17f95a',1,'etl']]],
   ['attributes_2ehpp_169',['attributes.hpp',['../attributes_8hpp.html',1,'']]],
   ['august_170',['August',['../namespaceetl_1_1chrono.html#a42637db1ac5e2c4ba851ef68084a1451',1,'etl::chrono']]],
-  ['await_5fready_171',['await_ready',['../structetl_1_1suspend__always.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_always::await_ready()'],['../structetl_1_1suspend__never.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_never::await_ready()']]],
-  ['await_5fresume_172',['await_resume',['../structetl_1_1suspend__always.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_always::await_resume()'],['../structetl_1_1suspend__never.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_never::await_resume()']]],
-  ['await_5fsuspend_173',['await_suspend',['../structetl_1_1suspend__always.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_always::await_suspend()'],['../structetl_1_1suspend__never.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_never::await_suspend()']]]
+  ['avr_171',['AVR',['../md_docs_2design.html#autotoc_md27',1,'']]],
+  ['await_5fready_172',['await_ready',['../structetl_1_1suspend__always.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_always::await_ready()'],['../structetl_1_1suspend__never.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_never::await_ready()']]],
+  ['await_5fresume_173',['await_resume',['../structetl_1_1suspend__always.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_always::await_resume()'],['../structetl_1_1suspend__never.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_never::await_resume()']]],
+  ['await_5fsuspend_174',['await_suspend',['../structetl_1_1suspend__always.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_always::await_suspend()'],['../structetl_1_1suspend__never.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_never::await_suspend()']]]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"placeholder_8hpp.html#a906869e564fbca4c9ca142f8c9628d12":[12,0,1,0,31,28,13],
+"placeholder_8hpp.html#a93153b9c29772d50e97ece55ffa22544":[12,0,1,0,31,28,23],
 "placeholder_8hpp.html#a9489e3b1a1800fcd519b5949ebd49339":[12,0,1,0,31,28,27],
 "placeholder_8hpp.html#aa5f1dd5bb68334297479abab45977efd":[12,0,1,0,31,28,21],
 "placeholder_8hpp.html#aac64243415664744bd4b7e78e5d812b1":[12,0,1,0,31,28,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "set__difference_8hpp.html":[12,0,1,0,0,67],
 "set__difference_8hpp_source.html":[12,0,1,0,0,67],
 "set__intersection_8hpp.html":[12,0,1,0,0,68],
-"set__intersection_8hpp_source.html":[12,0,1,0,0,68],
-"set__symmetric__difference_8hpp.html":[12,0,1,0,0,69],
-"set__symmetric__difference_8hpp_source.html":[12,0,1,0,0,69]
+"set__intersection_8hpp_source.html":[12,0,1,0,0,68]
 };
