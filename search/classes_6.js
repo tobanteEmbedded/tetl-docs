@@ -20,10 +20,11 @@ var searchData=
   ['formatter_3c_20unsigned_2c_20char_20_3e_17',['formatter&lt; unsigned, char &gt;',['../structetl_1_1formatter_3_01unsigned_00_01char_01_4.html',1,'etl']]],
   ['forward_5fiterator_5ftag_18',['forward_iterator_tag',['../structetl_1_1forward__iterator__tag.html',1,'etl']]],
   ['from_5fchars_5fresult_19',['from_chars_result',['../structetl_1_1from__chars__result.html',1,'etl']]],
-  ['from_5finteger_5fresult_20',['from_integer_result',['../structetl_1_1strings_1_1from__integer__result.html',1,'etl::strings']]],
-  ['front_5finsert_5fiterator_21',['front_insert_iterator',['../structetl_1_1front__insert__iterator.html',1,'etl']]],
-  ['full_5fextent_5ft_22',['full_extent_t',['../structetl_1_1full__extent__t.html',1,'etl']]],
-  ['function_5fref_23',['function_ref',['../structetl_1_1function__ref.html',1,'etl']]],
-  ['function_5fref_3c_20r_28args_2e_2e_2e_29_20noexcept_20_3e_24',['function_ref&lt; R(Args...) noexcept &gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html',1,'etl']]],
-  ['function_5fref_3c_20r_28args_2e_2e_2e_29_3e_25',['function_ref&lt; R(Args...)&gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html',1,'etl']]]
+  ['from_5finteger_5foptions_20',['from_integer_options',['../structetl_1_1strings_1_1from__integer__options.html',1,'etl::strings']]],
+  ['from_5finteger_5fresult_21',['from_integer_result',['../structetl_1_1strings_1_1from__integer__result.html',1,'etl::strings']]],
+  ['front_5finsert_5fiterator_22',['front_insert_iterator',['../structetl_1_1front__insert__iterator.html',1,'etl']]],
+  ['full_5fextent_5ft_23',['full_extent_t',['../structetl_1_1full__extent__t.html',1,'etl']]],
+  ['function_5fref_24',['function_ref',['../structetl_1_1function__ref.html',1,'etl']]],
+  ['function_5fref_3c_20r_28args_2e_2e_2e_29_20noexcept_20_3e_25',['function_ref&lt; R(Args...) noexcept &gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html',1,'etl']]],
+  ['function_5fref_3c_20r_28args_2e_2e_2e_29_3e_26',['function_ref&lt; R(Args...)&gt;',['../structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html',1,'etl']]]
 ];

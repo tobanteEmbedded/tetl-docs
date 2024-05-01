@@ -1,5 +1,6 @@
 var namespaceetl_1_1strings =
 [
+    [ "from_integer_options", "structetl_1_1strings_1_1from__integer__options.html", "structetl_1_1strings_1_1from__integer__options" ],
     [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", "structetl_1_1strings_1_1from__integer__result" ],
     [ "to_floating_point_result", "structetl_1_1strings_1_1to__floating__point__result.html", "structetl_1_1strings_1_1to__floating__point__result" ],
     [ "to_integer_options", "structetl_1_1strings_1_1to__integer__options.html", "structetl_1_1strings_1_1to__integer__options" ],
@@ -23,5 +24,5 @@ var namespaceetl_1_1strings =
     [ "rfind", "namespaceetl_1_1strings.html#af61d4af12c5135a1020cb458044c5a97", null ],
     [ "rfind", "namespaceetl_1_1strings.html#a51b4cfba87a0d4089a7bea28400907c8", null ],
     [ "to_floating_point", "namespaceetl_1_1strings.html#a31d25f31f6487964390d841ea26025e1", null ],
-    [ "to_integer", "namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775", null ]
+    [ "to_integer", "namespaceetl_1_1strings.html#acf1d0a5ef9247869c1bb7f9485aab2a8", null ]
 ];

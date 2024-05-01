@@ -93,6 +93,7 @@ var annotated_dup =
         [ "in_fun_result", "structetl_1_1ranges_1_1in__fun__result.html", "structetl_1_1ranges_1_1in__fun__result" ]
       ] ],
       [ "strings", "namespaceetl_1_1strings.html", [
+        [ "from_integer_options", "structetl_1_1strings_1_1from__integer__options.html", "structetl_1_1strings_1_1from__integer__options" ],
         [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", "structetl_1_1strings_1_1from__integer__result" ],
         [ "to_floating_point_result", "structetl_1_1strings_1_1to__floating__point__result.html", "structetl_1_1strings_1_1to__floating__point__result" ],
         [ "to_integer_options", "structetl_1_1strings_1_1to__integer__options.html", "structetl_1_1strings_1_1to__integer__options" ],
@@ -250,6 +251,7 @@ var annotated_dup =
       [ "hash< unsigned short >", "structetl_1_1hash_3_01unsigned_01short_01_4.html", "structetl_1_1hash_3_01unsigned_01short_01_4" ],
       [ "hash< wchar_t >", "structetl_1_1hash_3_01wchar__t_01_4.html", "structetl_1_1hash_3_01wchar__t_01_4" ],
       [ "identity", "structetl_1_1identity.html", "structetl_1_1identity" ],
+      [ "idiv_result", "structetl_1_1idiv__result.html", "structetl_1_1idiv__result" ],
       [ "ignore", "structetl_1_1ignore.html", "structetl_1_1ignore" ],
       [ "imaxdiv_t", "structetl_1_1imaxdiv__t.html", "structetl_1_1imaxdiv__t" ],
       [ "in_place_index_t", "structetl_1_1in__place__index__t.html", "structetl_1_1in__place__index__t" ],

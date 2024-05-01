@@ -117,7 +117,16 @@ $(function(){initNavTree('div_8hpp.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1div__t.html">div_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for div, ldiv, lldiv &amp; imaxdiv.  <a href="structetl_1_1div__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for div.  <a href="structetl_1_1div__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1imaxdiv__t.html">imaxdiv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for imaxdiv.  <a href="structetl_1_1imaxdiv__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1ldiv__t.html">ldiv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for ldiv.  <a href="structetl_1_1ldiv__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1lldiv__t.html">lldiv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for lldiv.  <a href="structetl_1_1lldiv__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -128,8 +137,23 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2a2d6bdea1596be40cc1f1965d14d3a7" id="r_a2a2d6bdea1596be40cc1f1965d14d3a7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a2a2d6bdea1596be40cc1f1965d14d3a7">div</a> (int x, int y) noexcept -&gt; <a class="el" href="structetl_1_1div__t.html">div_t</a></td></tr>
-<tr class="memdesc:a2a2d6bdea1596be40cc1f1965d14d3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator x by the denominator y. The quotient is the result of the expression x/y. The remainder is the result of the expression xy.  <br /></td></tr>
+<tr class="memdesc:a2a2d6bdea1596be40cc1f1965d14d3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
 <tr class="separator:a2a2d6bdea1596be40cc1f1965d14d3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6482fb76727697ae2e8c3d2da7de28d7" id="r_a6482fb76727697ae2e8c3d2da7de28d7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a6482fb76727697ae2e8c3d2da7de28d7">div</a> (long long x, long long y) noexcept -&gt; <a class="el" href="structetl_1_1lldiv__t.html">lldiv_t</a></td></tr>
+<tr class="memdesc:a6482fb76727697ae2e8c3d2da7de28d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
+<tr class="separator:a6482fb76727697ae2e8c3d2da7de28d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe969af8a9f77fea0bb9e0d7a82c5b3f" id="r_afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#afe969af8a9f77fea0bb9e0d7a82c5b3f">div</a> (long x, long y) noexcept -&gt; <a class="el" href="structetl_1_1ldiv__t.html">ldiv_t</a></td></tr>
+<tr class="memdesc:afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
+<tr class="separator:afe969af8a9f77fea0bb9e0d7a82c5b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666d88e13ebe66077d9c995608b3d0ce" id="r_a666d88e13ebe66077d9c995608b3d0ce"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a666d88e13ebe66077d9c995608b3d0ce">imaxdiv</a> (<a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> x, <a class="el" href="namespaceetl.html#a64887361e0411caef7d81a411f3a6868">intmax_t</a> y) noexcept -&gt; <a class="el" href="structetl_1_1imaxdiv__t.html">imaxdiv_t</a></td></tr>
+<tr class="memdesc:a666d88e13ebe66077d9c995608b3d0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
+<tr class="separator:a666d88e13ebe66077d9c995608b3d0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817f60653f2167239f303e63ec82d4d8" id="r_a817f60653f2167239f303e63ec82d4d8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a817f60653f2167239f303e63ec82d4d8">ldiv</a> (long x, long y) noexcept -&gt; <a class="el" href="structetl_1_1ldiv__t.html">ldiv_t</a></td></tr>
+<tr class="memdesc:a817f60653f2167239f303e63ec82d4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
+<tr class="separator:a817f60653f2167239f303e63ec82d4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540df0e14af1fb716877eb210bd107b5" id="r_a540df0e14af1fb716877eb210bd107b5"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceetl.html#a540df0e14af1fb716877eb210bd107b5">lldiv</a> (long long x, long long y) noexcept -&gt; <a class="el" href="structetl_1_1lldiv__t.html">lldiv_t</a></td></tr>
+<tr class="memdesc:a540df0e14af1fb716877eb210bd107b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes both the quotient and the remainder of the division of the numerator <code>x</code> by the denominator <code>y</code>. The quotient is the result of the expression <code>x/y</code>. The remainder is the result of the expression <code>xy</code>.  <br /></td></tr>
+<tr class="separator:a540df0e14af1fb716877eb210bd107b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +161,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_3a022cac8da00b5a272620abcabe51fb.html">_cstdlib</a></li><li class="navelem"><a class="el" href="div_8hpp.html">div.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 29 2024 10:27:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed May 1 2024 13:00:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

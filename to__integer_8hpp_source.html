@@ -129,14 +129,14 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">struct </span>nop_overflow_checker {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> nop_overflow_checker(Int <span class="comment">/*base*/</span>) <span class="keyword">noexcept</span> { }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(Int <span class="comment">/*value*/</span>, Int <span class="comment">/*digit*/</span>) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">struct </span>unsigned_overflow_checker {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> unsigned_overflow_checker(Int base) noexcept</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        : _base{base}</div>
@@ -150,11 +150,11 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Int _base;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Int _maxDivBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits&lt;Int&gt;::max</a>() / _base)};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Int _maxModBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits&lt;Int&gt;::max</a>() % _base)};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Int _maxDivBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">numeric_limits&lt;Int&gt;::max</a>() / _base)};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Int _maxModBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">numeric_limits&lt;Int&gt;::max</a>() % _base)};</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">struct </span>signed_overflow_checker {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">explicit</span> <span class="keyword">constexpr</span> signed_overflow_checker(Int base) noexcept</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        : _base{base}</div>
@@ -168,14 +168,14 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    Int _base;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    Int _minDivBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#aff08e95689a248ff87097f80ddbe4f38">etl::numeric_limits&lt;Int&gt;::min</a>() / _base)};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    Int _minModBase{<a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">etl::abs</a>(<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_struct" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;Int&gt;::min</a>() % _base))};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    Int _minDivBase{<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#aff08e95689a248ff87097f80ddbe4f38">numeric_limits&lt;Int&gt;::min</a>() / _base)};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    Int _minModBase{<a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">abs</a>(<span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(<a class="code hl_function" href="structetl_1_1numeric__limits.html#aff08e95689a248ff87097f80ddbe4f38">numeric_limits&lt;Int&gt;::min</a>() % _base))};</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int, <span class="keywordtype">bool</span> Check&gt;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">using </span>overflow_checker = <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a>&lt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int, <span class="keywordtype">bool</span> Check&gt;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">using </span>overflow_checker = conditional_t&lt;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    Check,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_typedef" href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t&lt;signed_integral&lt;Int&gt;</a>, signed_overflow_checker&lt;Int&gt;, unsigned_overflow_checker&lt;Int&gt;&gt;,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    conditional_t&lt;signed_integral&lt;Int&gt;, signed_overflow_checker&lt;Int&gt;, unsigned_overflow_checker&lt;Int&gt;&gt;,</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    nop_overflow_checker&lt;Int&gt;&gt;;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace detail</span></div>
@@ -195,7 +195,7 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span> &lt;etl::<span class="keywordtype">int</span>egral Int&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span>egral Int&gt;</div>
 <div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structetl_1_1strings_1_1to__integer__result.html">   86</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result</a> {</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structetl_1_1strings_1_1to__integer__result.html#ae41837cbc5bd9ec94629db7fb05f9901">   87</a></span>    <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code hl_variable" href="structetl_1_1strings_1_1to__integer__result.html#ae41837cbc5bd9ec94629db7fb05f9901">end</a>{<span class="keyword">nullptr</span>};</div>
@@ -204,9 +204,9 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
 </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span> &lt;<a class="code hl_concept" href="conceptetl_1_1integral.html">etl::integral</a> Int, to_integer_options Options = to_integer_options{}&gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span> &lt;<a class="code hl_concept" href="conceptetl_1_1integral.html">integral</a> Int, to_integer_options Options = to_integer_options{}&gt;</div>
 <div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775">   93</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775">to_integer</a>(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">etl::string_view</a> str, Int base = Int(10)) noexcept -&gt; <a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result</a>&lt;Int&gt;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespaceetl_1_1strings.html#acf1d0a5ef9247869c1bb7f9485aab2a8">   93</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1strings.html#acf1d0a5ef9247869c1bb7f9485aab2a8">to_integer</a>(<a class="code hl_struct" href="structetl_1_1basic__string__view.html">string_view</a> str, Int base = Int(10)) noexcept -&gt; <a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result</a>&lt;Int&gt;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">auto</span> <span class="keyword">const</span> length        = str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">auto</span> <span class="keyword">const</span> wouldOverflow = detail::overflow_checker&lt;Int, Options.check_overflow&gt;{base};</div>
@@ -280,7 +280,7 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">if</span> (positive) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">if</span> (value == <a class="code hl_struct" href="structetl_1_1numeric__limits.html">etl::numeric_limits&lt;Int&gt;::min</a>()) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">if</span> (value == <a class="code hl_struct" href="structetl_1_1numeric__limits.html">numeric_limits&lt;Int&gt;::min</a>()) {</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73">to_integer_error::overflow</a>);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            }</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            value *= Int(-1);</div>
@@ -318,9 +318,8 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div class="ttc" id="anamespaceetl_1_1strings_html_a3130abd810b9657a9ca9b3449de3a192a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a334c4a4c42fdb79d7ebc3e73b517e6f8">etl::strings::to_integer_error::none</a></div><div class="ttdeci">@ none</div></div>
 <div class="ttc" id="anamespaceetl_1_1strings_html_a45b29152e0ff3e6bf2761172cc23f9a1a0bd9f6dd716003f3818d15d2e211ee73"><div class="ttname"><a href="namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a0bd9f6dd716003f3818d15d2e211ee73">etl::strings::from_integer_error::overflow</a></div><div class="ttdeci">@ overflow</div></div>
 <div class="ttc" id="anamespaceetl_1_1strings_html_a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8">etl::strings::from_integer_error::none</a></div><div class="ttdeci">@ none</div></div>
-<div class="ttc" id="anamespaceetl_1_1strings_html_ab3ea3d8ba50bb60cecd43e5a6773a775"><div class="ttname"><a href="namespaceetl_1_1strings.html#ab3ea3d8ba50bb60cecd43e5a6773a775">etl::strings::to_integer</a></div><div class="ttdeci">constexpr auto to_integer(etl::string_view str, Int base=Int(10)) noexcept -&gt; to_integer_result&lt; Int &gt;</div><div class="ttdef"><b>Definition</b> to_integer.hpp:93</div></div>
+<div class="ttc" id="anamespaceetl_1_1strings_html_acf1d0a5ef9247869c1bb7f9485aab2a8"><div class="ttname"><a href="namespaceetl_1_1strings.html#acf1d0a5ef9247869c1bb7f9485aab2a8">etl::strings::to_integer</a></div><div class="ttdeci">constexpr auto to_integer(string_view str, Int base=Int(10)) noexcept -&gt; to_integer_result&lt; Int &gt;</div><div class="ttdef"><b>Definition</b> to_integer.hpp:93</div></div>
 <div class="ttc" id="anamespaceetl_1_1strings_html_ae7104c48ed7b2dfabf112aa5eb629bb5a1080ed39e08a161dc545804658700e33"><div class="ttname"><a href="namespaceetl_1_1strings.html#ae7104c48ed7b2dfabf112aa5eb629bb5a1080ed39e08a161dc545804658700e33">etl::strings::to_floating_point_error::invalid_input</a></div><div class="ttdeci">@ invalid_input</div></div>
-<div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
 <div class="ttc" id="anext_8hpp_html"><div class="ttname"><a href="next_8hpp.html">next.hpp</a></div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
@@ -346,7 +345,7 @@ $(function(){initNavTree('to__integer_8hpp_source.html',''); initResizable(true)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_ac1289053c60d7d57e43725f5379b917.html">_strings</a></li><li class="navelem"><a class="el" href="to__integer_8hpp.html">to_integer.hpp</a></li>
-    <li class="footer">Generated on Mon Apr 29 2024 10:27:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed May 1 2024 13:00:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

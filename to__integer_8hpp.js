@@ -7,5 +7,5 @@ var to__integer_8hpp =
       [ "invalid_input", "to__integer_8hpp.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33", null ],
       [ "overflow", "to__integer_8hpp.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73", null ]
     ] ],
-    [ "to_integer", "to__integer_8hpp.html#ab3ea3d8ba50bb60cecd43e5a6773a775", null ]
+    [ "to_integer", "to__integer_8hpp.html#acf1d0a5ef9247869c1bb7f9485aab2a8", null ]
 ];

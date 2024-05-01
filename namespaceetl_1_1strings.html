@@ -114,6 +114,8 @@ $(function(){initNavTree('namespaceetl_1_1strings.html',''); initResizable(true)
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__integer__options.html">from_integer_options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__integer__result.html">from_integer_result</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1to__floating__point__result.html">to_floating_point_result</a></td></tr>
@@ -145,7 +147,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a3d53ea21c634134f65be30fcfb775bf4" id="r_a3d53ea21c634134f65be30fcfb775bf4"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits &gt; </td></tr>
 <tr class="memitem:a3d53ea21c634134f65be30fcfb775bf4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d53ea21c634134f65be30fcfb775bf4">find</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; haystack, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; needle, typename <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;::size_type pos=0) noexcept -&gt; typename <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;::size_type</td></tr>
 <tr class="separator:a3d53ea21c634134f65be30fcfb775bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ae04c3ae3ee1d65d83249c70eeb654" id="r_a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memTemplParams" colspan="2">template&lt;typename Int , bool TerminateWithNull = true&gt; </td></tr>
+<tr class="memitem:a54ae04c3ae3ee1d65d83249c70eeb654" id="r_a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memTemplParams" colspan="2">template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1from__integer__options.html">from_integer_options</a> Options = from_integer_options{}&gt; </td></tr>
 <tr class="memitem:a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a54ae04c3ae3ee1d65d83249c70eeb654">from_integer</a> (Int num, char *str, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> length, int base) -&gt; <a class="el" href="structetl_1_1strings_1_1from__integer__result.html">from_integer_result</a></td></tr>
 <tr class="separator:a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61d4af12c5135a1020cb458044c5a97" id="r_af61d4af12c5135a1020cb458044c5a97"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
@@ -157,9 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a31d25f31f6487964390d841ea26025e1" id="r_a31d25f31f6487964390d841ea26025e1"><td class="memTemplParams" colspan="2">template&lt;typename Float &gt; </td></tr>
 <tr class="memitem:a31d25f31f6487964390d841ea26025e1"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a31d25f31f6487964390d841ea26025e1">to_floating_point</a> (<a class="el" href="group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f">etl::string_view</a> str) noexcept -&gt; <a class="el" href="structetl_1_1strings_1_1to__floating__point__result.html">to_floating_point_result</a>&lt; Float &gt;</td></tr>
 <tr class="separator:a31d25f31f6487964390d841ea26025e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ea3d8ba50bb60cecd43e5a6773a775" id="r_ab3ea3d8ba50bb60cecd43e5a6773a775"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> Int, <a class="el" href="structetl_1_1strings_1_1to__integer__options.html">to_integer_options</a> Options = to_integer_options{}&gt; </td></tr>
-<tr class="memitem:ab3ea3d8ba50bb60cecd43e5a6773a775"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab3ea3d8ba50bb60cecd43e5a6773a775">to_integer</a> (<a class="el" href="group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f">etl::string_view</a> str, Int base=Int(10)) noexcept -&gt; <a class="el" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result</a>&lt; Int &gt;</td></tr>
-<tr class="separator:ab3ea3d8ba50bb60cecd43e5a6773a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1d0a5ef9247869c1bb7f9485aab2a8" id="r_acf1d0a5ef9247869c1bb7f9485aab2a8"><td class="memTemplParams" colspan="2">template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1to__integer__options.html">to_integer_options</a> Options = to_integer_options{}&gt; </td></tr>
+<tr class="memitem:acf1d0a5ef9247869c1bb7f9485aab2a8"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acf1d0a5ef9247869c1bb7f9485aab2a8">to_integer</a> (<a class="el" href="group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f">string_view</a> str, Int base=Int(10)) noexcept -&gt; <a class="el" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result</a>&lt; Int &gt;</td></tr>
+<tr class="separator:acf1d0a5ef9247869c1bb7f9485aab2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a45b29152e0ff3e6bf2761172cc23f9a1" name="a45b29152e0ff3e6bf2761172cc23f9a1"></a>
@@ -286,7 +288,7 @@ template&lt;typename Char , typename Traits &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Int , bool TerminateWithNull = true&gt; </div>
+template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1from__integer__options.html">from_integer_options</a> Options = from_integer_options{}&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -424,13 +426,13 @@ template&lt;typename Float &gt; </div>
 
 </div>
 </div>
-<a id="ab3ea3d8ba50bb60cecd43e5a6773a775" name="ab3ea3d8ba50bb60cecd43e5a6773a775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3ea3d8ba50bb60cecd43e5a6773a775">&#9670;&#160;</a></span>to_integer()</h2>
+<a id="acf1d0a5ef9247869c1bb7f9485aab2a8" name="acf1d0a5ef9247869c1bb7f9485aab2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1d0a5ef9247869c1bb7f9485aab2a8">&#9670;&#160;</a></span>to_integer()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> Int, <a class="el" href="structetl_1_1strings_1_1to__integer__options.html">to_integer_options</a> Options = to_integer_options{}&gt; </div>
+template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1to__integer__options.html">to_integer_options</a> Options = to_integer_options{}&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -438,7 +440,7 @@ template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> I
         <tr>
           <td class="memname">auto to_integer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f">etl::string_view</a></td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f">string_view</a></td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -462,7 +464,7 @@ template&lt;<a class="el" href="conceptetl_1_1integral.html">etl::integral</a> I
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1strings.html">strings</a></li>
-    <li class="footer">Generated on Mon Apr 29 2024 10:27:37 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Wed May 1 2024 13:00:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
