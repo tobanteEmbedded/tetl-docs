@@ -114,6 +114,10 @@ $(function(){initNavTree('namespaceetl_1_1strings.html',''); initResizable(true)
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__floating__point__options.html">from_floating_point_options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__floating__point__result.html">from_floating_point_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__integer__options.html">from_integer_options</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1strings_1_1from__integer__result.html">from_integer_result</a></td></tr>
@@ -127,6 +131,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ab54b94895bf24df3d0ff4adce2836e9b" id="r_ab54b94895bf24df3d0ff4adce2836e9b"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab54b94895bf24df3d0ff4adce2836e9b">from_floating_point_error</a> : unsigned char { <a class="el" href="#ab54b94895bf24df3d0ff4adce2836e9ba334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="#ab54b94895bf24df3d0ff4adce2836e9ba0bd9f6dd716003f3818d15d2e211ee73">overflow</a>
+ }</td></tr>
+<tr class="separator:ab54b94895bf24df3d0ff4adce2836e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45b29152e0ff3e6bf2761172cc23f9a1" id="r_a45b29152e0ff3e6bf2761172cc23f9a1"><td class="memItemLeft" align="right" valign="top">enum struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45b29152e0ff3e6bf2761172cc23f9a1">from_integer_error</a> : unsigned char { <a class="el" href="#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="#a45b29152e0ff3e6bf2761172cc23f9a1a0bd9f6dd716003f3818d15d2e211ee73">overflow</a>
  }</td></tr>
@@ -147,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3d53ea21c634134f65be30fcfb775bf4" id="r_a3d53ea21c634134f65be30fcfb775bf4"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Traits &gt; </td></tr>
 <tr class="memitem:a3d53ea21c634134f65be30fcfb775bf4"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d53ea21c634134f65be30fcfb775bf4">find</a> (<a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; haystack, <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt; needle, typename <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;::size_type pos=0) noexcept -&gt; typename <a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a>&lt; Char, Traits &gt;::size_type</td></tr>
 <tr class="separator:a3d53ea21c634134f65be30fcfb775bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940c01b5d0b0ae322ac2a9ca7a8e0bba" id="r_a940c01b5d0b0ae322ac2a9ca7a8e0bba"><td class="memTemplParams" colspan="2">template&lt;floating_point Float, <a class="el" href="structetl_1_1strings_1_1from__floating__point__options.html">from_floating_point_options</a> Options = from_floating_point_options{}&gt; </td></tr>
+<tr class="memitem:a940c01b5d0b0ae322ac2a9ca7a8e0bba"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a940c01b5d0b0ae322ac2a9ca7a8e0bba">from_floating_point</a> (Float val, <a class="el" href="structetl_1_1span.html">span</a>&lt; char &gt; out, int precision) -&gt; <a class="el" href="structetl_1_1strings_1_1from__floating__point__result.html">from_floating_point_result</a></td></tr>
+<tr class="separator:a940c01b5d0b0ae322ac2a9ca7a8e0bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ae04c3ae3ee1d65d83249c70eeb654" id="r_a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memTemplParams" colspan="2">template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1from__integer__options.html">from_integer_options</a> Options = from_integer_options{}&gt; </td></tr>
 <tr class="memitem:a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a54ae04c3ae3ee1d65d83249c70eeb654">from_integer</a> (Int num, char *str, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> length, int base) -&gt; <a class="el" href="structetl_1_1strings_1_1from__integer__result.html">from_integer_result</a></td></tr>
 <tr class="separator:a54ae04c3ae3ee1d65d83249c70eeb654"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +175,32 @@ Functions</h2></td></tr>
 <tr class="separator:acf1d0a5ef9247869c1bb7f9485aab2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ab54b94895bf24df3d0ff4adce2836e9b" name="ab54b94895bf24df3d0ff4adce2836e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54b94895bf24df3d0ff4adce2836e9b">&#9670;&#160;</a></span>from_floating_point_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum struct <a class="el" href="#ab54b94895bf24df3d0ff4adce2836e9b">from_floating_point_error</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab54b94895bf24df3d0ff4adce2836e9ba334c4a4c42fdb79d7ebc3e73b517e6f8" name="ab54b94895bf24df3d0ff4adce2836e9ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab54b94895bf24df3d0ff4adce2836e9ba0bd9f6dd716003f3818d15d2e211ee73" name="ab54b94895bf24df3d0ff4adce2836e9ba0bd9f6dd716003f3818d15d2e211ee73"></a>overflow&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a45b29152e0ff3e6bf2761172cc23f9a1" name="a45b29152e0ff3e6bf2761172cc23f9a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45b29152e0ff3e6bf2761172cc23f9a1">&#9670;&#160;</a></span>from_integer_error</h2>
 
@@ -276,6 +313,43 @@ template&lt;typename Char , typename Traits &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a940c01b5d0b0ae322ac2a9ca7a8e0bba" name="a940c01b5d0b0ae322ac2a9ca7a8e0bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940c01b5d0b0ae322ac2a9ca7a8e0bba">&#9670;&#160;</a></span>from_floating_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;floating_point Float, <a class="el" href="structetl_1_1strings_1_1from__floating__point__options.html">from_floating_point_options</a> Options = from_floating_point_options{}&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto from_floating_point </td>
+          <td>(</td>
+          <td class="paramtype">Float</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1span.html">span</a>&lt; char &gt;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>precision</em></span>&#160;) -&gt; <a class="el" href="structetl_1_1strings_1_1from__floating__point__result.html">from_floating_point_result</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -464,7 +538,7 @@ template&lt;integral Int, <a class="el" href="structetl_1_1strings_1_1to__intege
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="namespaceetl_1_1strings.html">strings</a></li>
-    <li class="footer">Generated on Wed May 1 2024 13:00:43 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri May 3 2024 02:24:27 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

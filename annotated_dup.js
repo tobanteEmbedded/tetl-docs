@@ -93,6 +93,8 @@ var annotated_dup =
         [ "in_fun_result", "structetl_1_1ranges_1_1in__fun__result.html", "structetl_1_1ranges_1_1in__fun__result" ]
       ] ],
       [ "strings", "namespaceetl_1_1strings.html", [
+        [ "from_floating_point_options", "structetl_1_1strings_1_1from__floating__point__options.html", "structetl_1_1strings_1_1from__floating__point__options" ],
+        [ "from_floating_point_result", "structetl_1_1strings_1_1from__floating__point__result.html", "structetl_1_1strings_1_1from__floating__point__result" ],
         [ "from_integer_options", "structetl_1_1strings_1_1from__integer__options.html", "structetl_1_1strings_1_1from__integer__options" ],
         [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", "structetl_1_1strings_1_1from__integer__result" ],
         [ "to_floating_point_result", "structetl_1_1strings_1_1to__floating__point__result.html", "structetl_1_1strings_1_1to__floating__point__result" ],

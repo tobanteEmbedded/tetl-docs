@@ -174,6 +174,8 @@ var hierarchy =
     [ "formatter< unsigned short, char >", "structetl_1_1formatter_3_01unsigned_01short_00_01char_01_4.html", null ],
     [ "formatter< unsigned, char >", "structetl_1_1formatter_3_01unsigned_00_01char_01_4.html", null ],
     [ "from_chars_result", "structetl_1_1from__chars__result.html", null ],
+    [ "from_floating_point_options", "structetl_1_1strings_1_1from__floating__point__options.html", null ],
+    [ "from_floating_point_result", "structetl_1_1strings_1_1from__floating__point__result.html", null ],
     [ "from_integer_options", "structetl_1_1strings_1_1from__integer__options.html", null ],
     [ "from_integer_result", "structetl_1_1strings_1_1from__integer__result.html", null ],
     [ "front_insert_iterator< Container >", "structetl_1_1front__insert__iterator.html", null ],

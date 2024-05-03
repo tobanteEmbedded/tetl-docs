@@ -30,10 +30,11 @@ var searchData=
   ['forward_5fas_5ftuple_2ehpp_27',['forward_as_tuple.hpp',['../forward__as__tuple_8hpp.html',1,'']]],
   ['forward_5flike_2ehpp_28',['forward_like.hpp',['../forward__like_8hpp.html',1,'']]],
   ['from_5fchars_2ehpp_29',['from_chars.hpp',['../from__chars_8hpp.html',1,'']]],
-  ['from_5finteger_2ehpp_30',['from_integer.hpp',['../from__integer_8hpp.html',1,'']]],
-  ['front_5finsert_5fiterator_2ehpp_31',['front_insert_iterator.hpp',['../front__insert__iterator_8hpp.html',1,'']]],
-  ['full_2ehpp_32',['full.hpp',['../full_8hpp.html',1,'']]],
-  ['full_5fextent_2ehpp_33',['full_extent.hpp',['../full__extent_8hpp.html',1,'']]],
-  ['function_5fref_2ehpp_34',['function_ref.hpp',['../function__ref_8hpp.html',1,'']]],
-  ['functional_2ehpp_35',['functional.hpp',['../functional_8hpp.html',1,'']]]
+  ['from_5ffloating_5fpoint_2ehpp_30',['from_floating_point.hpp',['../from__floating__point_8hpp.html',1,'']]],
+  ['from_5finteger_2ehpp_31',['from_integer.hpp',['../from__integer_8hpp.html',1,'']]],
+  ['front_5finsert_5fiterator_2ehpp_32',['front_insert_iterator.hpp',['../front__insert__iterator_8hpp.html',1,'']]],
+  ['full_2ehpp_33',['full.hpp',['../full_8hpp.html',1,'']]],
+  ['full_5fextent_2ehpp_34',['full_extent.hpp',['../full__extent_8hpp.html',1,'']]],
+  ['function_5fref_2ehpp_35',['function_ref.hpp',['../function__ref_8hpp.html',1,'']]],
+  ['functional_2ehpp_36',['functional.hpp',['../functional_8hpp.html',1,'']]]
 ];
