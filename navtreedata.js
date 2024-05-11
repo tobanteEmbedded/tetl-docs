@@ -51,20 +51,20 @@ var NAVTREE =
     ] ],
     [ "Header", "md_docs_2header.html", null ],
     [ "Progress", "md_docs_2progress.html", [
-      [ "Proposal", "md_docs_2progress.html#autotoc_md38", null ],
-      [ "C++26", "md_docs_2progress.html#autotoc_md39", null ],
-      [ "C++23", "md_docs_2progress.html#autotoc_md40", null ],
-      [ "C++20", "md_docs_2progress.html#autotoc_md41", null ],
-      [ "C++17", "md_docs_2progress.html#autotoc_md42", null ],
-      [ "C++14", "md_docs_2progress.html#autotoc_md43", null ]
+      [ "Proposal", "md_docs_2progress.html#autotoc_md32", null ],
+      [ "C++26", "md_docs_2progress.html#autotoc_md33", null ],
+      [ "C++23", "md_docs_2progress.html#autotoc_md34", null ],
+      [ "C++20", "md_docs_2progress.html#autotoc_md35", null ],
+      [ "C++17", "md_docs_2progress.html#autotoc_md36", null ],
+      [ "C++14", "md_docs_2progress.html#autotoc_md37", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md31", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md32", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md39", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md40", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md33", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md34", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md35", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md41", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md42", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md43", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],

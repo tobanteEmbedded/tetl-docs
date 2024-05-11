@@ -1,10 +1,10 @@
 var NAVTREEINDEX16 =
 {
-"namespaceetl_1_1literals_1_1string__view__literals.html#adedd6d6eb71fb889fe6c3342e5451aff":[9,0,0,6,2,2],
+"namespaceetl_1_1literals_1_1string__view__literals.html#adedd6d6eb71fb889fe6c3342e5451aff":[9,0,0,11,2],
+"namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,6,2,4],
+"namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,11,4],
 "namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,6,24],
 "namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,1168],
-"namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,11,4],
-"namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163":[9,0,0,6,2,4],
 "namespaceetl_1_1meta.html":[9,0,0,7],
 "namespaceetl_1_1meta.html#a28778869adf07e02443b9e8e77f1def5":[9,0,0,7,24],
 "namespaceetl_1_1meta.html#a600f8adca491196ab63f2b8ed64e61a5":[9,0,0,7,25],
