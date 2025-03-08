@@ -42,11 +42,11 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
     ] ],
     [ "Design", "md_docs_2design.html", [
-      [ "Builtin Types", "md_docs_2design.html#autotoc_md27", [
-        [ "AVR", "md_docs_2design.html#autotoc_md28", null ]
+      [ "Builtin Types", "md_docs_2design.html#autotoc_md26", [
+        [ "AVR", "md_docs_2design.html#autotoc_md27", null ]
       ] ],
-      [ "Issues", "md_docs_2design.html#autotoc_md29", [
-        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md30", null ]
+      [ "Issues", "md_docs_2design.html#autotoc_md28", [
+        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md29", null ]
       ] ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
@@ -59,12 +59,12 @@ var NAVTREE =
       [ "C++14", "md_docs_2progress.html#autotoc_md43", null ]
     ] ],
     [ "Roadmap", "md_docs_2roadmap.html", [
-      [ "Features", "md_docs_2roadmap.html#autotoc_md33", [
-        [ "Ranges", "md_docs_2roadmap.html#autotoc_md34", null ]
+      [ "Features", "md_docs_2roadmap.html#autotoc_md31", [
+        [ "Ranges", "md_docs_2roadmap.html#autotoc_md32", null ]
       ] ],
-      [ "Testing", "md_docs_2roadmap.html#autotoc_md35", [
-        [ "QEMU", "md_docs_2roadmap.html#autotoc_md36", null ],
-        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md37", null ]
+      [ "Testing", "md_docs_2roadmap.html#autotoc_md33", [
+        [ "QEMU", "md_docs_2roadmap.html#autotoc_md34", null ],
+        [ "clang-verify", "md_docs_2roadmap.html#autotoc_md35", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],

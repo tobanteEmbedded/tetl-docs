@@ -132,7 +132,7 @@ var searchData=
   ['static_5fvector_2ehpp_129',['static_vector.hpp',['../static__vector_8hpp.html',1,'']]],
   ['static_5fvector_3c_20key_2c_20capacity_20_3e_130',['static_vector&lt; Key, Capacity &gt;',['../structetl_1_1static__vector.html',1,'etl']]],
   ['status_131',['Status',['../index.html#autotoc_md14',1,'']]],
-  ['std_132',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md30',1,'']]],
+  ['std_132',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md29',1,'']]],
   ['stdexcept_133',['stdexcept',['../group__stdexcept.html',1,'']]],
   ['stdexcept_2ehpp_134',['stdexcept.hpp',['../stdexcept_8hpp.html',1,'']]],
   ['stod_135',['stod',['../group__string.html#gae2ef04cbec9181a661996527e875a00a',1,'etl']]],

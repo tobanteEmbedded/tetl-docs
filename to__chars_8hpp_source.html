@@ -144,15 +144,18 @@ $(function(){initNavTree('to__chars_8hpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">if</span> (res.error == <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a45b29152e0ff3e6bf2761172cc23f9a1a334c4a4c42fdb79d7ebc3e73b517e6f8">strings::from_integer_error::none</a>) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1to__chars__result.html">to_chars_result</a>{res.end, {}};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1to__chars__result.html">to_chars_result</a>{last, <a class="code hl_enumvalue" href="namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a143653b075bff946193644ba6d97fa5d">errc::value_too_large</a>};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1to__chars__result.html">to_chars_result</a>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        .ptr = last,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        .ec  = <a class="code hl_enumvalue" href="namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a143653b075bff946193644ba6d97fa5d">errc::value_too_large</a>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    };</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceetl.html#a76ada873a32749c139721424bd4a122d">   48</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a6d46a108541ea7e9e622ba37063518f9">to_chars</a>(<span class="keywordtype">char</span>*, <span class="keywordtype">char</span>*, <span class="keywordtype">bool</span>, <span class="keywordtype">int</span> = 10) -&gt; <a class="code hl_struct" href="structetl_1_1to__chars__result.html">to_chars_result</a> = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CHARCONV_TO_CHARS_HPP</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespaceetl.html#a76ada873a32749c139721424bd4a122d">   51</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl.html#a6d46a108541ea7e9e622ba37063518f9">to_chars</a>(<span class="keywordtype">char</span>*, <span class="keywordtype">char</span>*, <span class="keywordtype">bool</span>, <span class="keywordtype">int</span> = 10) -&gt; <a class="code hl_struct" href="structetl_1_1to__chars__result.html">to_chars_result</a> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">// TETL_CHARCONV_TO_CHARS_HPP</span></div>
 <div class="ttc" id="aconceptetl_1_1same__as_html"><div class="ttname"><a href="conceptetl_1_1same__as.html">etl::same_as</a></div><div class="ttdoc">The concept same_as&lt;T, U&gt; is satisfied if and only if T and U denote the same type....</div><div class="ttdef"><b>Definition</b> same_as.hpp:19</div></div>
 <div class="ttc" id="adistance_8hpp_html"><div class="ttname"><a href="distance_8hpp.html">distance.hpp</a></div></div>
 <div class="ttc" id="aerrc_8hpp_html"><div class="ttname"><a href="errc_8hpp.html">errc.hpp</a></div></div>
@@ -179,7 +182,7 @@ $(function(){initNavTree('to__chars_8hpp_source.html',''); initResizable(true); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_28bf191bf11fe8bb0374912a9d396ea7.html">_charconv</a></li><li class="navelem"><a class="el" href="to__chars_8hpp.html">to_chars.hpp</a></li>
-    <li class="footer">Generated on Sat Mar 8 2025 13:30:44 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+    <li class="footer">Generated on Sat Mar 8 2025 13:57:21 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
 </body>

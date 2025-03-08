@@ -174,7 +174,7 @@ var searchData=
   ['atto_171',['atto',['../namespaceetl.html#ac437d8206f0e17da3a896c5f4d17f95a',1,'etl']]],
   ['attributes_2ehpp_172',['attributes.hpp',['../attributes_8hpp.html',1,'']]],
   ['august_173',['August',['../namespaceetl_1_1chrono.html#a42637db1ac5e2c4ba851ef68084a1451',1,'etl::chrono']]],
-  ['avr_174',['AVR',['../md_docs_2design.html#autotoc_md28',1,'']]],
+  ['avr_174',['AVR',['../md_docs_2design.html#autotoc_md27',1,'']]],
   ['await_5fready_175',['await_ready',['../structetl_1_1suspend__always.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_always::await_ready()'],['../structetl_1_1suspend__never.html#aa5757287b87b8fea707cd71b1e8447be',1,'etl::suspend_never::await_ready()']]],
   ['await_5fresume_176',['await_resume',['../structetl_1_1suspend__always.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_always::await_resume()'],['../structetl_1_1suspend__never.html#a337dc28e531c436ece66747d8fdc6735',1,'etl::suspend_never::await_resume()']]],
   ['await_5fsuspend_177',['await_suspend',['../structetl_1_1suspend__always.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_always::await_suspend()'],['../structetl_1_1suspend__never.html#a202326c01224e9c879556916ba4e1334',1,'etl::suspend_never::await_suspend()']]]
