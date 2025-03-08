@@ -39,7 +39,7 @@ var structetl_1_1mdspan =
     [ "is_strided", "structetl_1_1mdspan.html#ad12d65fb1c816bb634d36f36f70972f4", null ],
     [ "is_unique", "structetl_1_1mdspan.html#ab3b8b999fe6cd78fe95187e08bf80403", null ],
     [ "mapping", "structetl_1_1mdspan.html#a796179fe759811053019c5c7505e503b", null ],
-    [ "operator()", "structetl_1_1mdspan.html#abfa3a364a37a9c19943ffc16dc164c9f", null ],
+    [ "operator()", "structetl_1_1mdspan.html#a16ed13766c335fe29bad18b297ba5b9a", null ],
     [ "operator[]", "structetl_1_1mdspan.html#a9b5b0b99da772cabf3df83159f04e191", null ],
     [ "operator[]", "structetl_1_1mdspan.html#aa16907146cbdc173715fb85a3fe2be71", null ],
     [ "rank", "structetl_1_1mdspan.html#a10e4b29c349a013c6024b3ca64e46298", null ],

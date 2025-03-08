@@ -18,6 +18,18 @@ var searchData=
   ['divides_3c_20void_20_3e_15',['divides&lt; void &gt;',['../structetl_1_1divides_3_01void_01_4.html',1,'etl']]],
   ['domain_5ferror_16',['domain_error',['../structetl_1_1domain__error.html',1,'etl']]],
   ['duration_17',['duration',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
-  ['duration_5fvalues_18',['duration_values',['../structetl_1_1chrono_1_1duration__values.html',1,'etl::chrono']]],
-  ['dynamic_5farray_19',['dynamic_array',['../structetl_1_1dynamic__array.html',1,'etl']]]
+  ['duration_3c_20common_5ftype_5ft_3c_20rep1_2c_20rep2_20_3e_2c_20ratio_3c_20num_2c_20den_20_3e_20_3e_18',['duration&lt; common_type_t&lt; Rep1, Rep2 &gt;, ratio&lt; num, den &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_202629746_20_3e_20_3e_19',['duration&lt; int_least32_t, ratio&lt; 2629746 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_2031556952_20_3e_20_3e_20',['duration&lt; int_least32_t, ratio&lt; 31556952 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_203600_20_3e_20_3e_21',['duration&lt; int_least32_t, ratio&lt; 3600 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_2060_20_3e_20_3e_22',['duration&lt; int_least32_t, ratio&lt; 60 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_20604800_20_3e_20_3e_23',['duration&lt; int_least32_t, ratio&lt; 604800 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast32_5ft_2c_20ratio_3c_2086400_20_3e_20_3e_24',['duration&lt; int_least32_t, ratio&lt; 86400 &gt; &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast64_5ft_20_3e_25',['duration&lt; int_least64_t &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast64_5ft_2c_20micro_20_3e_26',['duration&lt; int_least64_t, micro &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast64_5ft_2c_20milli_20_3e_27',['duration&lt; int_least64_t, milli &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20int_5fleast64_5ft_2c_20nano_20_3e_28',['duration&lt; int_least64_t, nano &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_3c_20rep_2c_20period_20_3e_29',['duration&lt; rep, period &gt;',['../structetl_1_1chrono_1_1duration.html',1,'etl::chrono']]],
+  ['duration_5fvalues_30',['duration_values',['../structetl_1_1chrono_1_1duration__values.html',1,'etl::chrono']]],
+  ['dynamic_5farray_31',['dynamic_array',['../structetl_1_1dynamic__array.html',1,'etl']]]
 ];

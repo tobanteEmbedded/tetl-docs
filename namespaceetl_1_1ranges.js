@@ -27,6 +27,8 @@ var namespaceetl_1_1ranges =
     [ "destroy_at", "namespaceetl_1_1ranges.html#a5a66c4f69ddfe66624910fd8b9134c8e", null ],
     [ "disable_sized_range", "group__ranges.html#ga335083e97a19531572222dc1b5c44c9e", null ],
     [ "enable_borrowed_range", "group__ranges.html#ga1ef5828b7322cb06fc27740f00cfeb34", null ],
+    [ "enable_borrowed_range< etl::basic_string_view< Char, Traits > >", "namespaceetl_1_1ranges.html#a35c1935b11c84bce44bfe7c44cdd2210", null ],
+    [ "enable_borrowed_range< etl::span< T, Extent > >", "namespaceetl_1_1ranges.html#a80134d05f169a605364d1fb1049d7693", null ],
     [ "end", "group__ranges.html#gad43eaed7106105b050de21ea023d9d3c", null ],
     [ "iter_move", "group__iterator.html#ga78d082ea4928d84830a8184d72aedca6", null ],
     [ "size", "group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c", null ]

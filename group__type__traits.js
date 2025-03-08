@@ -17,9 +17,11 @@ var group__type__traits =
       [ "type", "structetl_1_1remove__reference.html#a834c467da58ea1d81821952d3c473b64", null ]
     ] ],
     [ "remove_reference< T & >", "structetl_1_1remove__reference_3_01T_01_6_01_4.html", [
+      [ "type", "structetl_1_1remove__reference.html#a834c467da58ea1d81821952d3c473b64", null ],
       [ "type", "structetl_1_1remove__reference_3_01T_01_6_01_4.html#a834c467da58ea1d81821952d3c473b64", null ]
     ] ],
     [ "remove_reference< T && >", "structetl_1_1remove__reference_3_01T_01_6_6_01_4.html", [
+      [ "type", "structetl_1_1remove__reference.html#a834c467da58ea1d81821952d3c473b64", null ],
       [ "type", "structetl_1_1remove__reference_3_01T_01_6_6_01_4.html#a834c467da58ea1d81821952d3c473b64", null ]
     ] ],
     [ "remove_volatile< Type >", "structetl_1_1remove__volatile.html", [

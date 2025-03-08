@@ -1,6 +1,6 @@
 var group__variant =
 [
-    [ "variant< Types >", "structetl_1_1variant.html", [
+    [ "variant< Ts >", "structetl_1_1variant.html", [
       [ "variant", "structetl_1_1variant.html#adf79740b6f4cfdeaed4237785e568b0b", null ],
       [ "variant", "structetl_1_1variant.html#a74d14e9a01c95dcbf513d408c452ac0f", null ],
       [ "variant", "structetl_1_1variant.html#a52acaca66e395c70125dc92da1d737a1", null ],

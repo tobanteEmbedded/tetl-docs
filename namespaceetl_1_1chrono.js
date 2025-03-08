@@ -42,6 +42,7 @@ var namespaceetl_1_1chrono =
     [ "abs", "group__chrono.html#ga6d43204bc1c7eaae688e7aa706cd00a2", null ],
     [ "ceil", "group__chrono.html#gaa5344eaa1b0cbd9061bc7c3c30569dab", null ],
     [ "ceil", "group__chrono.html#ga071748f4942196365e7108fa5a2776c9", null ],
+    [ "duration_cast", "group__chrono.html#gaa2d8e96af604afd97412df1c887c7135", null ],
     [ "floor", "group__chrono.html#ga6ab9ba5ae885bda0f2e3f1727cf124d1", null ],
     [ "floor", "group__chrono.html#ga84ada2b3216d3ac09f48224ea4ceb100", null ],
     [ "operator!=", "namespaceetl_1_1chrono.html#a6337b3d2aca5ecd56da72b22c5f24851", null ],

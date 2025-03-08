@@ -1,4 +1,4 @@
 var remove__copy__if_8hpp =
 [
-    [ "remove_copy_if", "remove__copy__if_8hpp.html#ga8bdbbf4b495def4cb406f6af3ef25882", null ]
+    [ "remove_copy_if", "group__algorithm.html#ga8bdbbf4b495def4cb406f6af3ef25882", null ]
 ];

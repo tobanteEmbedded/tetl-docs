@@ -14,18 +14,12 @@ var hierarchy =
     [ "allocator_arg_t", "structetl_1_1allocator__arg__t.html", null ],
     [ "allocator_traits< Alloc >", "structetl_1_1allocator__traits.html", null ],
     [ "array< Type, Size >", "structetl_1_1array.html", null ],
-    [ "array< Char, Capacity+1 >", "structetl_1_1array.html", null ],
-    [ "array< etl::size_t, num_words >", "structetl_1_1array.html", null ],
-    [ "array< index_type, etl::rank >", "structetl_1_1array.html", null ],
-    [ "array< OtherIndexType, N >", "structetl_1_1array.html", null ],
-    [ "array< WordType, num_words >", "structetl_1_1array.html", null ],
     [ "assert_msg", "structetl_1_1assert__msg.html", null ],
     [ "at< I, List >", "structetl_1_1meta_1_1at.html", null ],
     [ "at< 0, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_010_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "at< I, list< Head, Tail... > >", "structetl_1_1meta_1_1at_3_01I_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ],
     [ "back_insert_iterator< Container >", "structetl_1_1back__insert__iterator.html", null ],
     [ "basic_bitset< Bits, WordType >", "structetl_1_1basic__bitset.html", null ],
-    [ "basic_bitset< Bits, etl::size_t >", "structetl_1_1basic__bitset.html", null ],
     [ "basic_common_reference< T, U, TQ, UQ >", "structetl_1_1basic__common__reference.html", null ],
     [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "structetl_1_1basic__common__reference_3_01pair_3_01T1_00_01T2_01_4_00_01pair_3_01U1_00_01U2_01_4_00_01TQual_00_01UQual_01_4.html", null ],
     [ "basic_format_arg< Context >", "structetl_1_1basic__format__arg.html", null ],
@@ -35,7 +29,6 @@ var hierarchy =
     [ "basic_format_string< CharT, Args >", "structetl_1_1basic__format__string.html", null ],
     [ "basic_inplace_string< Char, Capacity, Traits >", "structetl_1_1basic__inplace__string.html", null ],
     [ "basic_string_view< Char, Traits >", "structetl_1_1basic__string__view.html", null ],
-    [ "basic_string_view< CharT >", "structetl_1_1basic__string__view.html", null ],
     [ "bernoulli_distribution", "structetl_1_1bernoulli__distribution.html", null ],
     [ "binary_t", "structetl_1_1binary__t.html", null ],
     [ "bit_and< T >", "structetl_1_1bit__and.html", null ],
@@ -255,15 +248,14 @@ var hierarchy =
     ] ],
     [ "integer_sequence< T, Ints >", "structetl_1_1integer__sequence.html", null ],
     [ "integral_constant< Type, Val >", "structetl_1_1integral__constant.html", [
-      [ "is_member_function_pointer_helper< remove_cv_t< T > >", null, [
-        [ "is_member_function_pointer< T >", "structetl_1_1is__member__function__pointer.html", null ]
-      ] ],
-      [ "is_member_pointer_helper< remove_cv_t< T > >", null, [
-        [ "is_member_pointer< T >", "structetl_1_1is__member__pointer.html", null ]
-      ] ],
-      [ "is_pointer< etl::remove_cv_t< T > >", null, [
-        [ "is_pointer< T >", "structetl_1_1is__pointer.html", null ]
-      ] ],
+      [ "is_invocable< Fn, ArgTypes >", "structetl_1_1is__invocable.html", null ],
+      [ "is_invocable_r< R, Fn, ArgTypes >", "structetl_1_1is__invocable__r.html", null ],
+      [ "is_nothrow_constructible< T, Args >", "structetl_1_1is__nothrow__constructible.html", null ],
+      [ "is_signed< T >", "structetl_1_1is__signed.html", null ],
+      [ "is_unsigned< T >", "structetl_1_1is__unsigned.html", null ],
+      [ "uses_allocator< Type, Alloc >", "structetl_1_1uses__allocator.html", null ]
+    ] ],
+    [ "integral_constant< bool, B >", "structetl_1_1integral__constant.html", [
       [ "is_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__assignable.html", [
         [ "is_copy_assignable< T >", "structetl_1_1is__copy__assignable.html", null ]
       ] ],
@@ -273,12 +265,7 @@ var hierarchy =
       [ "is_floating_point< Rep >", "structetl_1_1is__floating__point.html", [
         [ "treat_as_floating_point< Rep >", "structetl_1_1chrono_1_1treat__as__floating__point.html", null ]
       ] ],
-      [ "is_nothrow_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__nothrow__assignable.html", [
-        [ "is_nothrow_copy_assignable< T >", "structetl_1_1is__nothrow__copy__assignable.html", null ]
-      ] ],
-      [ "is_nothrow_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__assignable.html", [
-        [ "is_nothrow_move_assignable< T >", "structetl_1_1is__nothrow__move__assignable.html", null ]
-      ] ],
+      [ "is_nothrow_convertible< From, To >", "structetl_1_1is__nothrow__convertible_3_01From_00_01To_01_4.html", null ],
       [ "is_same< nullptr_t, remove_cv_t< T > >", "structetl_1_1is__same.html", [
         [ "is_null_pointer< T >", "structetl_1_1is__null__pointer.html", null ]
       ] ],
@@ -301,15 +288,7 @@ var hierarchy =
         [ "is_trivially_move_constructible< T >", "structetl_1_1is__trivially__move__constructible.html", null ]
       ] ],
       [ "_swap_no_throw< T, U >", "structetl_1_1__swap__no__throw.html", null ],
-      [ "_swappable_with_helper< T, U, typename >", "structetl_1_1__swappable__with__helper.html", null ],
-      [ "_swappable_with_helper< T, U, void_t< decltype(swap(declval< T >(), declval< U >()))> >", "structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html", null ],
-      [ "is_clock< typename >", "structetl_1_1chrono_1_1is__clock.html", null ],
       [ "conjunction< B >", "structetl_1_1conjunction.html", null ],
-      [ "is_constructible_helper< typename, T, Args >", null, [
-        [ "is_copy_constructible< T >", "structetl_1_1is__copy__constructible.html", null ],
-        [ "is_default_constructible< T >", "structetl_1_1is__default__constructible.html", null ],
-        [ "is_move_constructible< T >", "structetl_1_1is__move__constructible.html", null ]
-      ] ],
       [ "is_empty< T >", null, [
         [ "is_empty< T >", "structetl_1_1is__empty.html", null ]
       ] ],
@@ -319,67 +298,29 @@ var hierarchy =
       [ "is_abstract< T >", "structetl_1_1is__abstract.html", null ],
       [ "is_aggregate< T >", "structetl_1_1is__aggregate.html", null ],
       [ "is_arithmetic< T >", "structetl_1_1is__arithmetic.html", null ],
-      [ "is_array< T >", "structetl_1_1is__array.html", null ],
-      [ "is_array< T[N]>", "structetl_1_1is__array_3_01T_0fN_0e_4.html", null ],
-      [ "is_array< T[]>", "structetl_1_1is__array_3_01T_0f_0e_4.html", null ],
       [ "is_assignable< T, U >", "structetl_1_1is__assignable.html", null ],
       [ "is_base_of< Base, Derived >", "structetl_1_1is__base__of.html", null ],
-      [ "is_bitmask_type< T >", "structetl_1_1is__bitmask__type.html", null ],
-      [ "is_bounded_array< T >", "structetl_1_1is__bounded__array.html", null ],
-      [ "is_bounded_array< T[N]>", "structetl_1_1is__bounded__array_3_01T_0fN_0e_4.html", null ],
       [ "is_builtin_integer< T >", "structetl_1_1is__builtin__integer.html", null ],
       [ "is_builtin_signed_integer< T >", "structetl_1_1is__builtin__signed__integer.html", null ],
       [ "is_builtin_unsigned_integer< T >", "structetl_1_1is__builtin__unsigned__integer.html", null ],
       [ "is_class< T >", "structetl_1_1is__class.html", null ],
       [ "is_compound< T >", "structetl_1_1is__compound.html", null ],
-      [ "is_const< T >", "structetl_1_1is__const.html", null ],
-      [ "is_const< T const >", "structetl_1_1is__const_3_01T_01const_01_4.html", null ],
       [ "is_convertible< From, To >", "structetl_1_1is__convertible.html", null ],
-      [ "is_destructible< Type[]>", "structetl_1_1is__destructible_3_01Type_0f_0e_4.html", null ],
-      [ "is_destructible< void >", "structetl_1_1is__destructible_3_01void_01_4.html", null ],
       [ "is_enum< T >", "structetl_1_1is__enum.html", null ],
-      [ "is_error_condition_enum< T >", "structetl_1_1is__error__condition__enum.html", null ],
-      [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
-      [ "is_execution_policy< T >", "structetl_1_1is__execution__policy.html", null ],
-      [ "is_execution_policy< etl::execution::sequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1sequenced__policy_01_4.html", null ],
-      [ "is_execution_policy< etl::execution::unsequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1unsequenced__policy_01_4.html", null ],
       [ "is_final< T >", "structetl_1_1is__final.html", null ],
       [ "is_floating_point< T >", "structetl_1_1is__floating__point.html", null ],
       [ "is_function< T >", "structetl_1_1is__function.html", null ],
       [ "is_fundamental< T >", "structetl_1_1is__fundamental.html", null ],
-      [ "is_implicit_default_constructible< T, typename, typename >", "structetl_1_1is__implicit__default__constructible.html", null ],
-      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), false_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html", null ],
-      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), true_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html", null ],
       [ "is_integral< T >", "structetl_1_1is__integral.html", null ],
-      [ "is_invocable< Fn, ArgTypes >", "structetl_1_1is__invocable.html", null ],
-      [ "is_invocable_r< R, Fn, ArgTypes >", "structetl_1_1is__invocable__r.html", null ],
-      [ "is_lvalue_reference< T >", "structetl_1_1is__lvalue__reference.html", null ],
-      [ "is_lvalue_reference< T & >", "structetl_1_1is__lvalue__reference_3_01T_01_6_01_4.html", null ],
       [ "is_member_object_pointer< T >", "structetl_1_1is__member__object__pointer.html", null ],
-      [ "is_nothrow_assignable< T, U >", "structetl_1_1is__nothrow__assignable.html", null ],
       [ "is_nothrow_assignable< T, U >", "structetl_1_1is__nothrow__assignable_3_01T_00_01U_01_4.html", null ],
-      [ "is_nothrow_constructible< T, Args >", "structetl_1_1is__nothrow__constructible.html", null ],
       [ "is_nothrow_convertible< From, To >", "structetl_1_1is__nothrow__convertible.html", null ],
-      [ "is_nothrow_convertible< From, To >", "structetl_1_1is__nothrow__convertible_3_01From_00_01To_01_4.html", null ],
-      [ "is_nothrow_destructible< Type & >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_01_4.html", null ],
-      [ "is_nothrow_destructible< Type && >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_6_01_4.html", null ],
       [ "is_nothrow_swappable_with< T, U >", "structetl_1_1is__nothrow__swappable__with.html", null ],
       [ "is_object< T >", "structetl_1_1is__object.html", null ],
       [ "is_polymorphic< T >", "structetl_1_1is__polymorphic.html", null ],
-      [ "is_reference< T >", "structetl_1_1is__reference.html", null ],
-      [ "is_reference< T & >", "structetl_1_1is__reference_3_01T_01_6_01_4.html", null ],
-      [ "is_reference< T && >", "structetl_1_1is__reference_3_01T_01_6_6_01_4.html", null ],
-      [ "is_reference_wrapper< T >", "structetl_1_1is__reference__wrapper.html", null ],
-      [ "is_reference_wrapper< reference_wrapper< U > >", "structetl_1_1is__reference__wrapper_3_01reference__wrapper_3_01U_01_4_01_4.html", null ],
-      [ "is_rvalue_reference< T >", "structetl_1_1is__rvalue__reference.html", null ],
-      [ "is_rvalue_reference< T && >", "structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ],
       [ "is_same< T, U >", "structetl_1_1is__same.html", null ],
       [ "is_scalar< T >", "structetl_1_1is__scalar.html", null ],
-      [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum.html", null ],
       [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum_3_01T_01_4.html", null ],
-      [ "is_signed< T >", "structetl_1_1is__signed.html", null ],
-      [ "is_specialized< typename, typename, typename >", "structetl_1_1is__specialized.html", null ],
-      [ "is_specialized< Template, T, void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
       [ "is_standard_layout< T >", "structetl_1_1is__standard__layout.html", null ],
       [ "is_swappable_with< T, U >", "structetl_1_1is__swappable__with.html", null ],
       [ "is_trivial< T >", "structetl_1_1is__trivial.html", null ],
@@ -387,17 +328,97 @@ var hierarchy =
       [ "is_trivially_constructible< T, Args >", "structetl_1_1is__trivially__constructible.html", null ],
       [ "is_trivially_copyable< T >", "structetl_1_1is__trivially__copyable.html", null ],
       [ "is_trivially_destructible< T >", "structetl_1_1is__trivially__destructible.html", null ],
-      [ "is_unbounded_array< T >", "structetl_1_1is__unbounded__array.html", null ],
-      [ "is_unbounded_array< T[]>", "structetl_1_1is__unbounded__array_3_01T_0f_0e_4.html", null ],
       [ "is_union< T >", "structetl_1_1is__union.html", null ],
-      [ "is_unsigned< T >", "structetl_1_1is__unsigned.html", null ],
-      [ "is_volatile< T >", "structetl_1_1is__volatile.html", null ],
-      [ "is_volatile< T volatile >", "structetl_1_1is__volatile_3_01T_01volatile_01_4.html", null ],
       [ "contains< Needle, list< Ts... > >", "structetl_1_1meta_1_1contains_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "negation< B >", "structetl_1_1negation.html", null ],
       [ "ratio_equal< R1, R2 >", "structetl_1_1ratio__equal.html", null ],
-      [ "ratio_not_equal< R1, R2 >", "structetl_1_1ratio__not__equal.html", null ],
-      [ "uses_allocator< Type, Alloc >", "structetl_1_1uses__allocator.html", null ]
+      [ "ratio_not_equal< R1, R2 >", "structetl_1_1ratio__not__equal.html", null ]
+    ] ],
+    [ "integral_constant< bool, B >< false >", "structetl_1_1integral__constant.html", [
+      [ "_swappable_with_helper< T, U, void_t< decltype(swap(declval< T >(), declval< U >()))> >", "structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html", null ],
+      [ "is_constructible_helper< void_t<>, T, Args... >", null, [
+        [ "is_copy_constructible< T >", "structetl_1_1is__copy__constructible.html", null ],
+        [ "is_default_constructible< T >", "structetl_1_1is__default__constructible.html", null ],
+        [ "is_move_constructible< T >", "structetl_1_1is__move__constructible.html", null ]
+      ] ],
+      [ "is_empty< T >", null, null ],
+      [ "is_member_function_pointer_helper< remove_cv_t< T > >", null, [
+        [ "is_member_function_pointer< T >", "structetl_1_1is__member__function__pointer.html", null ]
+      ] ],
+      [ "is_member_pointer_helper< remove_cv_t< T > >", null, [
+        [ "is_member_pointer< T >", "structetl_1_1is__member__pointer.html", null ]
+      ] ],
+      [ "is_pointer< etl::remove_cv_t< T > >", null, [
+        [ "is_pointer< T >", "structetl_1_1is__pointer.html", null ]
+      ] ],
+      [ "is_array< T[N]>", "structetl_1_1is__array_3_01T_0fN_0e_4.html", null ],
+      [ "is_array< T[]>", "structetl_1_1is__array_3_01T_0f_0e_4.html", null ],
+      [ "is_bounded_array< T[N]>", "structetl_1_1is__bounded__array_3_01T_0fN_0e_4.html", null ],
+      [ "is_const< T const >", "structetl_1_1is__const_3_01T_01const_01_4.html", null ],
+      [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::sequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1sequenced__policy_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::unsequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1unsequenced__policy_01_4.html", null ],
+      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), false_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html", null ],
+      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), true_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html", null ],
+      [ "is_lvalue_reference< T & >", "structetl_1_1is__lvalue__reference_3_01T_01_6_01_4.html", null ],
+      [ "is_nothrow_assignable< add_lvalue_reference_t< T >, add_lvalue_reference_t< T const > >", "structetl_1_1is__nothrow__assignable.html", [
+        [ "is_nothrow_copy_assignable< T >", "structetl_1_1is__nothrow__copy__assignable.html", null ]
+      ] ],
+      [ "is_nothrow_assignable< add_lvalue_reference_t< T >, add_rvalue_reference_t< T > >", "structetl_1_1is__nothrow__assignable.html", [
+        [ "is_nothrow_move_assignable< T >", "structetl_1_1is__nothrow__move__assignable.html", null ]
+      ] ],
+      [ "is_nothrow_assignable< T, U >", "structetl_1_1is__nothrow__assignable_3_01T_00_01U_01_4.html", null ],
+      [ "is_reference< T & >", "structetl_1_1is__reference_3_01T_01_6_01_4.html", null ],
+      [ "is_reference< T && >", "structetl_1_1is__reference_3_01T_01_6_6_01_4.html", null ],
+      [ "is_reference_wrapper< reference_wrapper< U > >", "structetl_1_1is__reference__wrapper_3_01reference__wrapper_3_01U_01_4_01_4.html", null ],
+      [ "is_rvalue_reference< T && >", "structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ],
+      [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum_3_01T_01_4.html", null ],
+      [ "is_specialized< Template, T, void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
+      [ "is_unbounded_array< T[]>", "structetl_1_1is__unbounded__array_3_01T_0f_0e_4.html", null ],
+      [ "is_volatile< T volatile >", "structetl_1_1is__volatile_3_01T_01volatile_01_4.html", null ],
+      [ "_swappable_with_helper< T, U, typename >", "structetl_1_1__swappable__with__helper.html", null ],
+      [ "is_clock< typename >", "structetl_1_1chrono_1_1is__clock.html", null ],
+      [ "is_array< T >", "structetl_1_1is__array.html", null ],
+      [ "is_bitmask_type< T >", "structetl_1_1is__bitmask__type.html", null ],
+      [ "is_bounded_array< T >", "structetl_1_1is__bounded__array.html", null ],
+      [ "is_const< T >", "structetl_1_1is__const.html", null ],
+      [ "is_destructible< Type[]>", "structetl_1_1is__destructible_3_01Type_0f_0e_4.html", null ],
+      [ "is_destructible< void >", "structetl_1_1is__destructible_3_01void_01_4.html", null ],
+      [ "is_error_condition_enum< T >", "structetl_1_1is__error__condition__enum.html", null ],
+      [ "is_execution_policy< T >", "structetl_1_1is__execution__policy.html", null ],
+      [ "is_implicit_default_constructible< T, typename, typename >", "structetl_1_1is__implicit__default__constructible.html", null ],
+      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), false_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_374fbed591f2848368bdbdd39f8c8e31.html", null ],
+      [ "is_lvalue_reference< T >", "structetl_1_1is__lvalue__reference.html", null ],
+      [ "is_nothrow_assignable< T, U >", "structetl_1_1is__nothrow__assignable.html", null ],
+      [ "is_reference< T >", "structetl_1_1is__reference.html", null ],
+      [ "is_reference_wrapper< T >", "structetl_1_1is__reference__wrapper.html", null ],
+      [ "is_rvalue_reference< T >", "structetl_1_1is__rvalue__reference.html", null ],
+      [ "is_scoped_enum< T >", "structetl_1_1is__scoped__enum.html", null ],
+      [ "is_specialized< typename, typename, typename >", "structetl_1_1is__specialized.html", null ],
+      [ "is_unbounded_array< T >", "structetl_1_1is__unbounded__array.html", null ],
+      [ "is_volatile< T >", "structetl_1_1is__volatile.html", null ]
+    ] ],
+    [ "integral_constant< bool, B >< true >", "structetl_1_1integral__constant.html", [
+      [ "_swappable_with_helper< T, U, void_t< decltype(swap(declval< T >(), declval< U >()))> >", "structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html", null ],
+      [ "is_array< T[N]>", "structetl_1_1is__array_3_01T_0fN_0e_4.html", null ],
+      [ "is_array< T[]>", "structetl_1_1is__array_3_01T_0f_0e_4.html", null ],
+      [ "is_bounded_array< T[N]>", "structetl_1_1is__bounded__array_3_01T_0fN_0e_4.html", null ],
+      [ "is_const< T const >", "structetl_1_1is__const_3_01T_01const_01_4.html", null ],
+      [ "is_error_condition_enum< errc >", "structetl_1_1is__error__condition__enum_3_01errc_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::sequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1sequenced__policy_01_4.html", null ],
+      [ "is_execution_policy< etl::execution::unsequenced_policy >", "structetl_1_1is__execution__policy_3_01etl_1_1execution_1_1unsequenced__policy_01_4.html", null ],
+      [ "is_implicit_default_constructible< T, decltype(test_implicit_default_constructible< T const & >({})), true_type >", "structetl_1_1is__implicit__default__constructible_3_01T_00_01decltype_07test__implicit__default_63505ad1d5845f9b40fca2dabe8d3bef.html", null ],
+      [ "is_lvalue_reference< T & >", "structetl_1_1is__lvalue__reference_3_01T_01_6_01_4.html", null ],
+      [ "is_nothrow_convertible< From, To >", "structetl_1_1is__nothrow__convertible_3_01From_00_01To_01_4.html", null ],
+      [ "is_nothrow_destructible< Type & >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_01_4.html", null ],
+      [ "is_nothrow_destructible< Type && >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_6_01_4.html", null ],
+      [ "is_reference< T & >", "structetl_1_1is__reference_3_01T_01_6_01_4.html", null ],
+      [ "is_reference< T && >", "structetl_1_1is__reference_3_01T_01_6_6_01_4.html", null ],
+      [ "is_reference_wrapper< reference_wrapper< U > >", "structetl_1_1is__reference__wrapper_3_01reference__wrapper_3_01U_01_4_01_4.html", null ],
+      [ "is_rvalue_reference< T && >", "structetl_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ],
+      [ "is_specialized< Template, T, void_t< decltype(Template< T >{})> >", "structetl_1_1is__specialized_3_01Template_00_01T_00_01void__t_3_01decltype_07Template_3_01T_01_4_02_03_08_4_01_4.html", null ],
+      [ "is_unbounded_array< T[]>", "structetl_1_1is__unbounded__array_3_01T_0f_0e_4.html", null ],
+      [ "is_volatile< T volatile >", "structetl_1_1is__volatile_3_01T_01volatile_01_4.html", null ]
     ] ],
     [ "integral_constant< etl::size_t, 0 >", "structetl_1_1integral__constant.html", [
       [ "index_of< Head, list< Head, Tail... > >", "structetl_1_1meta_1_1index__of_3_01Head_00_01list_3_01Head_00_01Tail_8_8_8_01_4_01_4.html", null ]
@@ -415,6 +436,9 @@ var hierarchy =
       [ "count< Needle, list< Ts... > >", "structetl_1_1meta_1_1count_3_01Needle_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant< int, 0 >", "structetl_1_1integral__constant.html", [
+      [ "is_placeholder< T const >", "structetl_1_1is__placeholder_3_01T_01const_01_4.html", null ],
+      [ "is_placeholder< T const volatile >", "structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html", null ],
+      [ "is_placeholder< T volatile >", "structetl_1_1is__placeholder_3_01T_01volatile_01_4.html", null ],
       [ "is_placeholder< T >", "structetl_1_1is__placeholder.html", null ]
     ] ],
     [ "integral_constant< int, N >", "structetl_1_1integral__constant.html", null ],
@@ -423,6 +447,12 @@ var hierarchy =
         [ "extent< T[I], N >", "structetl_1_1extent_3_01T_0fI_0e_00_01N_01_4.html", null ],
         [ "extent< T[], N >", "structetl_1_1extent_3_01T_0f_0e_00_01N_01_4.html", null ]
       ] ],
+      [ "extent< T[I], 0 >", "structetl_1_1extent_3_01T_0fI_0e_00_010_01_4.html", null ],
+      [ "extent< T[I], N >", "structetl_1_1extent_3_01T_0fI_0e_00_01N_01_4.html", null ],
+      [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ],
+      [ "extent< T[], N >", "structetl_1_1extent_3_01T_0f_0e_00_01N_01_4.html", null ],
+      [ "rank< T[N]>", "structetl_1_1rank_3_01T_0fN_0e_4.html", null ],
+      [ "rank< T[]>", "structetl_1_1rank_3_01T_0f_0e_4.html", null ],
       [ "extent< T, N >", "structetl_1_1extent.html", null ],
       [ "extent< T[], 0 >", "structetl_1_1extent_3_01T_0f_0e_00_010_01_4.html", null ],
       [ "rank< T >", "structetl_1_1rank.html", null ]
@@ -455,17 +485,22 @@ var hierarchy =
       [ "invoke_result< F, ArgTypes >", "structetl_1_1invoke__result.html", null ]
     ] ],
     [ "is_destructible_safe< T, bool, bool >", null, [
+      [ "is_destructible< Type[]>", "structetl_1_1is__destructible_3_01Type_0f_0e_4.html", null ],
+      [ "is_destructible< void >", "structetl_1_1is__destructible_3_01void_01_4.html", null ],
       [ "is_destructible< T >", "structetl_1_1is__destructible.html", null ]
     ] ],
     [ "is_nothrow_destructible_helper< is_destructible_v< Type >, Type >", null, [
+      [ "is_nothrow_destructible< Type & >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_01_4.html", null ],
+      [ "is_nothrow_destructible< Type && >", "structetl_1_1is__nothrow__destructible_3_01Type_01_6_6_01_4.html", null ],
+      [ "is_nothrow_destructible< Type[N]>", "structetl_1_1is__nothrow__destructible_3_01Type_0fN_0e_4.html", null ],
       [ "is_nothrow_destructible< Type >", "structetl_1_1is__nothrow__destructible.html", [
         [ "is_nothrow_destructible< Type[N]>", "structetl_1_1is__nothrow__destructible_3_01Type_0fN_0e_4.html", null ]
       ] ]
     ] ],
     [ "is_typename< T >", "structetl_1_1is__typename.html", null ],
     [ "isr", "structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html", null ],
-    [ "iterator_traits< T * >", "structetl_1_1iterator__traits_3_01T_01_5_01_4.html", null ],
     [ "iterator_traits_impl< Iter, typename >", null, [
+      [ "iterator_traits< T * >", "structetl_1_1iterator__traits_3_01T_01_5_01_4.html", null ],
       [ "iterator_traits< Iter >", "structetl_1_1iterator__traits.html", null ]
     ] ],
     [ "last_spec", "structetl_1_1chrono_1_1last__spec.html", null ],
@@ -475,7 +510,6 @@ var hierarchy =
     [ "layout_transpose< Layout >", "structetl_1_1linalg_1_1layout__transpose.html", null ],
     [ "ldiv_t", "structetl_1_1ldiv__t.html", null ],
     [ "less< T >", "structetl_1_1less.html", null ],
-    [ "less< Key >", "structetl_1_1less.html", null ],
     [ "less< void >", "structetl_1_1less_3_01void_01_4.html", null ],
     [ "less_equal< T >", "structetl_1_1less__equal.html", null ],
     [ "less_equal< void >", "structetl_1_1less__equal_3_01void_01_4.html", null ],
@@ -573,7 +607,6 @@ var hierarchy =
     [ "pointer_int_pair_info< PointerT, IntBits, PtrTraits >", "structetl_1_1pointer__int__pair__info.html", null ],
     [ "pointer_like_traits< T >", "structetl_1_1pointer__like__traits.html", null ],
     [ "pointer_like_traits< pointer_int_pair< PtrT, IntBits, IntT, PtrTraits > >", "structetl_1_1pointer__like__traits_3_01pointer__int__pair_3_01PtrT_00_01IntBits_00_01IntT_00_01PtrTraits_01_4_01_4.html", null ],
-    [ "pointer_like_traits< T * >", "structetl_1_1pointer__like__traits_3_01T_01_5_01_4.html", null ],
     [ "pointer_like_traits< T const * >", "structetl_1_1pointer__like__traits_3_01T_01const_01_5_01_4.html", null ],
     [ "pointer_like_traits< T const >", "structetl_1_1pointer__like__traits_3_01T_01const_01_4.html", null ],
     [ "pointer_like_traits< uintptr_t >", "structetl_1_1pointer__like__traits_3_01uintptr__t_01_4.html", null ],
@@ -619,9 +652,6 @@ var hierarchy =
     [ "sorted_unique_t", "structetl_1_1sorted__unique__t.html", null ],
     [ "source_location", "structetl_1_1source__location.html", null ],
     [ "span< T, Extent >", "structetl_1_1span.html", null ],
-    [ "span< etl::basic_format_arg< Context > const >", "structetl_1_1span.html", null ],
-    [ "span< etl::byte >", "structetl_1_1span.html", null ],
-    [ "span< OtherIndexType, N >", "structetl_1_1span.html", null ],
     [ "stack< T, Container >", "structetl_1_1stack.html", null ],
     [ "static_set< Key, Capacity, Compare >", "structetl_1_1static__set.html", null ],
     [ "static_vector_storage_type", null, [
@@ -695,7 +725,6 @@ var hierarchy =
     [ "uniform_int_distribution< IntType >", "structetl_1_1uniform__int__distribution.html", null ],
     [ "uniform_real_distribution< RealType >", "structetl_1_1uniform__real__distribution.html", null ],
     [ "uninitialized_array< T, Size >", "structetl_1_1uninitialized__array.html", null ],
-    [ "uninitialized_array< T, Capacity >", "structetl_1_1uninitialized__array.html", null ],
     [ "uninitialized_array< T, Size >", "structetl_1_1uninitialized__array_3_01T_00_01Size_01_4.html", null ],
     [ "uninitialized_union", "structetl_1_1uninitialized__union.html", null ],
     [ "unique_lock< Mutex >", "structetl_1_1unique__lock.html", null ],
@@ -705,11 +734,7 @@ var hierarchy =
     [ "upper_triangle_t", "structetl_1_1linalg_1_1upper__triangle__t.html", null ],
     [ "variadic_union< Ts >", "unionetl_1_1variadic__union.html", null ],
     [ "variadic_union< T, Ts... >", "unionetl_1_1variadic__union_3_01T_00_01Ts_8_8_8_01_4.html", null ],
-    [ "variadic_union< Ts... >", "unionetl_1_1variadic__union.html", null ],
-    [ "variant< Types >", "structetl_1_1variant.html", null ],
-    [ "variant< bool, char_type, int, unsigned int, long long int, unsigned long long int, float, double, long double, char_type const *, etl::basic_string_view< char_type >, void const *, etl::basic_format_arg::handle >", "structetl_1_1variant.html", null ],
-    [ "variant< etl::nullopt_t, T >", "structetl_1_1variant.html", null ],
-    [ "variant< T, E >", "structetl_1_1variant.html", null ],
+    [ "variant< Ts >", "structetl_1_1variant.html", null ],
     [ "variant_alternative< I, T >", "structetl_1_1variant__alternative.html", null ],
     [ "variant_alternative< Idx, T const >", "structetl_1_1variant__alternative_3_01Idx_00_01T_01const_01_4.html", null ],
     [ "variant_alternative< Idx, T const volatile >", "structetl_1_1variant__alternative_3_01Idx_00_01T_01const_01volatile_01_4.html", null ],

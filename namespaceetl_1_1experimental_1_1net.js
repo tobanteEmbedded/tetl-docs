@@ -19,5 +19,9 @@ var namespaceetl_1_1experimental_1_1net =
     [ "ntoh", "namespaceetl_1_1experimental_1_1net.html#a3101d03f86018a22168897f29a0099a7", null ],
     [ "ntoh", "namespaceetl_1_1experimental_1_1net.html#a232758b70190dc377f770aed204f45e7", null ],
     [ "ntoh", "namespaceetl_1_1experimental_1_1net.html#aa649cd1acdd2f57c63d7f54653b33c82", null ],
-    [ "ntoh", "namespaceetl_1_1experimental_1_1net.html#a8d882e30996338ba33f6b4d8d41fe8b4", null ]
+    [ "ntoh", "namespaceetl_1_1experimental_1_1net.html#a8d882e30996338ba33f6b4d8d41fe8b4", null ],
+    [ "operator+", "structetl_1_1experimental_1_1net_1_1const__buffer.html#a176839abc5458ca6b2456e4a06b19f1a", null ],
+    [ "operator+", "structetl_1_1experimental_1_1net_1_1const__buffer.html#a439fd85408fb8060b6d1c2eed4320bcc", null ],
+    [ "operator+", "structetl_1_1experimental_1_1net_1_1mutable__buffer.html#aab69adf088a5539ccee0158197fc5dee", null ],
+    [ "operator+", "structetl_1_1experimental_1_1net_1_1mutable__buffer.html#aad301fed174785013344437a0570ed9e", null ]
 ];

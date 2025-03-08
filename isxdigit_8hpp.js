@@ -1,4 +1,4 @@
 var isxdigit_8hpp =
 [
-    [ "isxdigit", "isxdigit_8hpp.html#gab501c4cabaa10c4b866b9c957ff5e16b", null ]
+    [ "isxdigit", "group__cctype.html#gab501c4cabaa10c4b866b9c957ff5e16b", null ]
 ];
