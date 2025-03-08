@@ -43,10 +43,10 @@ var NAVTREE =
     ] ],
     [ "Design", "md_docs_2design.html", [
       [ "Builtin Types", "md_docs_2design.html#autotoc_md26", [
-        [ "AVR", "md_docs_2design.html#autotoc_md27", null ]
+        [ "AVR", "md_docs_2design.html#autotoc_md28", null ]
       ] ],
-      [ "Issues", "md_docs_2design.html#autotoc_md28", [
-        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md29", null ]
+      [ "Issues", "md_docs_2design.html#autotoc_md29", [
+        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md30", null ]
       ] ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],
