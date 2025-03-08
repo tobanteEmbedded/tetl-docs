@@ -42,11 +42,11 @@ var NAVTREE =
       [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md11", null ]
     ] ],
     [ "Design", "md_docs_2design.html", [
-      [ "Builtin Types", "md_docs_2design.html#autotoc_md26", [
-        [ "AVR", "md_docs_2design.html#autotoc_md27", null ]
+      [ "Builtin Types", "md_docs_2design.html#autotoc_md27", [
+        [ "AVR", "md_docs_2design.html#autotoc_md28", null ]
       ] ],
-      [ "Issues", "md_docs_2design.html#autotoc_md28", [
-        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md29", null ]
+      [ "Issues", "md_docs_2design.html#autotoc_md29", [
+        [ "Forced to use namesapce std", "md_docs_2design.html#autotoc_md30", null ]
       ] ]
     ] ],
     [ "Header", "md_docs_2header.html", null ],

@@ -137,7 +137,7 @@ var searchData=
   ['tm_5fwday_134',['tm_wday',['../structetl_1_1tm.html#a4412571b90746a85cae9b8841c44c59c',1,'etl::tm']]],
   ['tm_5fyday_135',['tm_yday',['../structetl_1_1tm.html#a74938de584345413d1bf87c4d78d697c',1,'etl::tm']]],
   ['tm_5fyear_136',['tm_year',['../structetl_1_1tm.html#a994c4f4519ba57e186580d21cc86f9e5',1,'etl::tm']]],
-  ['to_20use_20namesapce_20std_137',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md29',1,'']]],
+  ['to_20use_20namesapce_20std_137',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md30',1,'']]],
   ['to_5faddress_138',['to_address',['../namespaceetl.html#aa171f5d95623a8a1268dc9134a02f972',1,'etl::to_address(Ptr const &amp;ptr) noexcept'],['../namespaceetl.html#a9487e53c09efc9a8837a2d074e441b99',1,'etl::to_address(T *ptr) noexcept -&gt; T *']]],
   ['to_5faddress_2ehpp_139',['to_address.hpp',['../to__address_8hpp.html',1,'']]],
   ['to_5farray_140',['to_array',['../structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104',1,'etl::array::to_array(T(&amp;a)[N]) -&gt; array&lt; remove_cv_t&lt; T &gt;, N &gt;'],['../structetl_1_1array.html#a206fb932614fa86d56d410c37f786760',1,'etl::array::to_array(T(&amp;&amp;a)[N])'],['../structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104',1,'etl::to_array(T(&amp;a)[N]) -&gt; array&lt; remove_cv_t&lt; T &gt;, N &gt;'],['../structetl_1_1array.html#a206fb932614fa86d56d410c37f786760',1,'etl::to_array(T(&amp;&amp;a)[N])']]],
@@ -237,5 +237,5 @@ var searchData=
   ['type_5ftraits_234',['type_traits',['../group__type__traits.html',1,'']]],
   ['type_5ftraits_2ehpp_235',['type_traits.hpp',['../type__traits_8hpp.html',1,'']]],
   ['typedefs_2ehpp_236',['typedefs.hpp',['../__cmath_2typedefs_8hpp.html',1,'(Global Namespace)'],['../__ios_2typedefs_8hpp.html',1,'(Global Namespace)']]],
-  ['types_237',['Builtin Types',['../md_docs_2design.html#autotoc_md26',1,'']]]
+  ['types_237',['Builtin Types',['../md_docs_2design.html#autotoc_md27',1,'']]]
 ];

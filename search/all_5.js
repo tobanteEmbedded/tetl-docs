@@ -127,7 +127,7 @@ var searchData=
   ['buffer_5fconst_2ehpp_124',['buffer_const.hpp',['../buffer__const_8hpp.html',1,'']]],
   ['buffer_5fmutable_2ehpp_125',['buffer_mutable.hpp',['../buffer__mutable_8hpp.html',1,'']]],
   ['bug_20list_126',['Bug List',['../bug.html',1,'']]],
-  ['builtin_20types_127',['Builtin Types',['../md_docs_2design.html#autotoc_md26',1,'']]],
+  ['builtin_20types_127',['Builtin Types',['../md_docs_2design.html#autotoc_md27',1,'']]],
   ['builtin_5ffunctions_2ehpp_128',['builtin_functions.hpp',['../builtin__functions_8hpp.html',1,'']]],
   ['builtin_5finteger_129',['builtin_integer',['../conceptetl_1_1builtin__integer.html',1,'etl']]],
   ['builtin_5finteger_2ehpp_130',['builtin_integer.hpp',['../builtin__integer_8hpp.html',1,'']]],
