@@ -1,4 +1,4 @@
 var ratio__subtract_8hpp =
 [
-    [ "ratio_subtract", "group__ratio.html#ga25bcee71a1ca1a48e5c5485d3aaad395", null ]
+    [ "etl::ratio_subtract", "group__ratio.html#ga2205780f6cbefb4ee7751d0adc90c335", null ]
 ];

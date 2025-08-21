@@ -86,5 +86,5 @@ var group__array =
       [ "data", "structetl_1_1uninitialized__array.html#a7b7d97467ef611e07918f8b493300f5c", null ],
       [ "size", "structetl_1_1uninitialized__array.html#ae65394ee0e86a1b91dd59f2e72aa907a", null ]
     ] ],
-    [ "c_array", "group__array.html#ga1693d67d03475372752f9e6973d67a8d", null ]
+    [ "etl::c_array", "group__array.html#ga1693d67d03475372752f9e6973d67a8d", null ]
 ];

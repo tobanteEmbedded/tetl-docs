@@ -37,7 +37,7 @@ var group__expected =
       [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
     ] ],
     [ "unexpected< E >", "structetl_1_1unexpected.html", [
-      [ "unexpected", "structetl_1_1unexpected.html#a2bba237693bc09f63b35931c1ac121da", null ],
+      [ "unexpected", "structetl_1_1unexpected.html#afa63ff521b77cec0fc76aa607b8a7e58", null ],
       [ "unexpected", "structetl_1_1unexpected.html#aa8e1eaa68d572351812a070b78261597", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a5e30973c509fb7640c6cc4f4152a6abf", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a1b7cc81c21ded672ac68ca17efc51bb5", null ],
@@ -51,5 +51,5 @@ var group__expected =
       [ "operator==", "structetl_1_1unexpected.html#ad0236e449e231fa98520bb18a3a6e5d8", null ],
       [ "swap", "structetl_1_1unexpected.html#abc29715f4aeff27c974030d748183c47", null ]
     ] ],
-    [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
+    [ "etl::unexpect_t::unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
 ];

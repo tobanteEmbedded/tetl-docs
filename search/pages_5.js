@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['library_0',['Embedded Template Library',['../index.html',1,'']]],
-  ['list_1',['List',['../bug.html',1,'Bug List'],['../todo.html',1,'Todo List']]]
+  ['design_0',['Design',['../md_docs_2design.html',1,'']]],
+  ['design_20goals_1',['Design Goals',['../index.html#autotoc_md18',1,'']]],
+  ['doxygen_2',['doxygen',['../md_CONTRIBUTING.html#autotoc_md9',1,'']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['named_5ffunctions_2ehpp_0',['named_functions.hpp',['../named__functions_8hpp.html',1,'']]],
-  ['namesapce_20std_1',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md30',1,'']]],
+  ['namesapce_20std_1',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md29',1,'']]],
   ['nan_2',['NAN',['../__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc',1,'typedefs.hpp']]],
   ['nan_3',['nan',['../group__cmath.html#ga08b0eae0f0faa4e81c4fdbb7ecb99f64',1,'etl']]],
   ['nan_2ehpp_4',['nan.hpp',['../nan_8hpp.html',1,'']]],

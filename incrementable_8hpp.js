@@ -1,4 +1,4 @@
 var incrementable_8hpp =
 [
-    [ "incrementable", "conceptetl_1_1incrementable.html", null ]
+    [ "etl::incrementable", "conceptetl_1_1incrementable.html", null ]
 ];

@@ -20,5 +20,6 @@ var searchData=
   ['uintptr_5ft_17',['uintptr_t',['../namespaceetl.html#a1d944a371245d51e3b9ea011f7b97f43',1,'etl']]],
   ['underlying_5ftype_5ft_18',['underlying_type_t',['../group__type__traits.html#ga23e4463cad64a4fb5f8e4cf7acafec27',1,'etl']]],
   ['unexpected_5ftype_19',['unexpected_type',['../structetl_1_1expected.html#a16020b46103d6b004562dd23cd3135c0',1,'etl::expected']]],
-  ['unwrap_5fref_5fdecay_5ft_20',['unwrap_ref_decay_t',['../namespaceetl.html#ab50d469d33ed56a0ce32f87d03ac5f10',1,'etl']]]
+  ['unwrap_5fref_5fdecay_5ft_20',['unwrap_ref_decay_t',['../namespaceetl.html#ab50d469d33ed56a0ce32f87d03ac5f10',1,'etl']]],
+  ['unwrap_5freference_5ft_21',['unwrap_reference_t',['../namespaceetl.html#a27b1c76a744b6271a4733a39e4717bda',1,'etl']]]
 ];

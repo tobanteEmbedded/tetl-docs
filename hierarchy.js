@@ -189,7 +189,7 @@ var hierarchy =
     [ "greater_equal< T >", "structetl_1_1greater__equal.html", null ],
     [ "greater_equal< void >", "structetl_1_1greater__equal_3_01void_01_4.html", null ],
     [ "half", "structetl_1_1half.html", null ],
-    [ "handle", "structetl_1_1basic__format__arg_1_1handle.html", null ],
+    [ "basic_format_arg< Context >::handle", "structetl_1_1basic__format__arg_1_1handle.html", null ],
     [ "hash< T >", "structetl_1_1hash.html", null ],
     [ "hash< bool >", "structetl_1_1hash_3_01bool_01_4.html", null ],
     [ "hash< char >", "structetl_1_1hash_3_01char_01_4.html", null ],
@@ -530,10 +530,10 @@ var hierarchy =
     [ "make_unsigned< Type >", null, [
       [ "make_unsigned< Type >", "structetl_1_1make__unsigned.html", null ]
     ] ],
-    [ "mapping< Extents >", "structetl_1_1layout__left_1_1mapping.html", null ],
-    [ "mapping< Extents >", "structetl_1_1layout__right_1_1mapping.html", null ],
-    [ "mapping< Extents >", "structetl_1_1layout__stride_1_1mapping.html", null ],
-    [ "mapping< Extents >", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html", null ],
+    [ "layout_left::mapping< Extents >", "structetl_1_1layout__left_1_1mapping.html", null ],
+    [ "layout_right::mapping< Extents >", "structetl_1_1layout__right_1_1mapping.html", null ],
+    [ "layout_stride::mapping< Extents >", "structetl_1_1layout__stride_1_1mapping.html", null ],
+    [ "layout_transpose< Layout >::mapping< Extents >", "structetl_1_1linalg_1_1layout__transpose_1_1mapping.html", null ],
     [ "max_align_t", "structetl_1_1max__align__t.html", null ],
     [ "maybe_value_type< T >", null, [
       [ "indirectly_readable_traits< T * >", "structetl_1_1indirectly__readable__traits_3_01T_01_5_01_4.html", null ]
@@ -596,9 +596,9 @@ var hierarchy =
     [ "optional< T & >", "structetl_1_1optional_3_01T_01_6_01_4.html", null ],
     [ "output_iterator_tag", "structetl_1_1output__iterator__tag.html", null ],
     [ "pair< T1, T2 >", "structetl_1_1pair.html", null ],
-    [ "param_type", "structetl_1_1bernoulli__distribution_1_1param__type.html", null ],
-    [ "param_type", "structetl_1_1uniform__int__distribution_1_1param__type.html", null ],
-    [ "param_type", "structetl_1_1uniform__real__distribution_1_1param__type.html", null ],
+    [ "bernoulli_distribution::param_type", "structetl_1_1bernoulli__distribution_1_1param__type.html", null ],
+    [ "uniform_int_distribution< IntType >::param_type", "structetl_1_1uniform__int__distribution_1_1param__type.html", null ],
+    [ "uniform_real_distribution< RealType >::param_type", "structetl_1_1uniform__real__distribution_1_1param__type.html", null ],
     [ "partial_ordering", "structetl_1_1partial__ordering.html", null ],
     [ "piecewise_construct_t", "structetl_1_1piecewise__construct__t.html", null ],
     [ "plus< T >", "structetl_1_1plus.html", null ],
@@ -619,7 +619,7 @@ var hierarchy =
     [ "push_front< T, list< Ts... > >", "structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "queue< T, Size >", "structetl_1_1experimental_1_1freertos_1_1queue.html", null ],
     [ "ratio< Num, Denom >", "structetl_1_1ratio.html", null ],
-    [ "reference", "structetl_1_1basic__bitset_1_1reference.html", null ],
+    [ "basic_bitset< Bits, WordType >::reference", "structetl_1_1basic__bitset_1_1reference.html", null ],
     [ "reference_wrapper< T >", "structetl_1_1reference__wrapper.html", null ],
     [ "remove_all_extents< T >", "structetl_1_1remove__all__extents.html", null ],
     [ "remove_all_extents< T[]>", "structetl_1_1remove__all__extents_3_01T_0f_0e_4.html", null ],
@@ -698,8 +698,8 @@ var hierarchy =
         [ "is_nothrow_move_constructible< T >", "structetl_1_1is__nothrow__move__constructible.html", null ]
       ] ]
     ] ],
-    [ "type", "structetl_1_1aligned__storage_1_1type.html", null ],
-    [ "type", "structetl_1_1aligned__union_1_1type.html", null ],
+    [ "aligned_storage< Len, Align >::type", "structetl_1_1aligned__storage_1_1type.html", null ],
+    [ "aligned_union< Len, Types >::type", "structetl_1_1aligned__union_1_1type.html", null ],
     [ "type", null, [
       [ "is_nothrow_swappable< T >", "structetl_1_1is__nothrow__swappable.html", null ]
     ] ],

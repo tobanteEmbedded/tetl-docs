@@ -1,4 +1,4 @@
 var uninitialized__move_8hpp =
 [
-    [ "uninitialized_move", "namespaceetl.html#af092ebf515a399cf1685d91ba2dbb6f7", null ]
+    [ "etl::uninitialized_move", "namespaceetl.html#af092ebf515a399cf1685d91ba2dbb6f7", null ]
 ];
