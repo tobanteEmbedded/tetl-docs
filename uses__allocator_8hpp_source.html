@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -120,7 +113,7 @@ $(function(){initNavTree('uses__allocator_8hpp_source.html','',''); });
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Alloc&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1uses__allocator.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1uses__allocator.html">uses_allocator</a> : detail::uses_allocator_impl&lt;Type, Alloc&gt;::type { };</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structetl_1_1uses__allocator.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1uses__allocator.html">uses_allocator</a> : detail::uses_allocator_impl&lt;Type, Alloc&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Alloc&gt;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764">   29</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764">uses_allocator_v</a> = <a class="code hl_variable" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">uses_allocator&lt;Type, Alloc&gt;::value</a>;</div>
@@ -135,6 +128,7 @@ $(function(){initNavTree('uses__allocator_8hpp_source.html','',''); });
 <div class="ttc" id="anamespaceetl_html_a2eb779f5e8046c7d141522c238bc2764"><div class="ttname"><a href="namespaceetl.html#a2eb779f5e8046c7d141522c238bc2764">etl::uses_allocator_v</a></div><div class="ttdeci">constexpr auto uses_allocator_v</div><div class="ttdoc">If T has a member typedef allocator_type which is convertible from Alloc, the member constant value i...</div><div class="ttdef"><b>Definition</b> uses_allocator.hpp:29</div></div>
 <div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html_a9aa864e6c9ea467ce3878df4ca8e8571"><div class="ttname"><a href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">etl::integral_constant::value</a></div><div class="ttdeci">static constexpr Type value</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:10</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html_ad0830418f11a1906f58f0f4d3c6603ef"><div class="ttname"><a href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">etl::integral_constant::type</a></div><div class="ttdeci">integral_constant&lt; Type, Val &gt; type</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1uses__allocator_html"><div class="ttname"><a href="structetl_1_1uses__allocator.html">etl::uses_allocator</a></div><div class="ttdoc">If T has a member typedef allocator_type which is convertible from Alloc, the member constant value i...</div><div class="ttdef"><b>Definition</b> uses_allocator.hpp:24</div></div>
 <div class="ttc" id="avoid__t_8hpp_html"><div class="ttname"><a href="void__t_8hpp.html">void_t.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -110,7 +103,7 @@ $(function(){initNavTree('is__invocable__r_8hpp_source.html','',''); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span> Fn, <span class="keyword">typename</span>... ArgTypes&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1is__invocable__r.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__invocable__r.html">is_invocable_r</a> : detail::is_invocable_impl&lt;invoke_result&lt;Fn, ArgTypes...&gt;, R&gt;::type { };</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1is__invocable__r.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__invocable__r.html">is_invocable_r</a> : detail::is_invocable_impl&lt;invoke_result&lt;Fn, ArgTypes...&gt;, R&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span> Fn, <span class="keyword">typename</span>... ArgTypes&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceetl.html#a79bb140a0b590bb8a6eadea52d880d17">   15</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a79bb140a0b590bb8a6eadea52d880d17">is_invocable_r_v</a> = <a class="code hl_struct" href="structetl_1_1is__invocable__r.html">is_invocable_r</a>&lt;R, Fn, ArgTypes...&gt;::value;</div>
@@ -122,6 +115,7 @@ $(function(){initNavTree('is__invocable__r_8hpp_source.html','',''); });
 <div class="ttc" id="ais__invocable_8hpp_html"><div class="ttname"><a href="is__invocable_8hpp.html">is_invocable.hpp</a></div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
 <div class="ttc" id="anamespaceetl_html_a79bb140a0b590bb8a6eadea52d880d17"><div class="ttname"><a href="namespaceetl.html#a79bb140a0b590bb8a6eadea52d880d17">etl::is_invocable_r_v</a></div><div class="ttdeci">constexpr auto is_invocable_r_v</div><div class="ttdef"><b>Definition</b> is_invocable_r.hpp:15</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html_ad0830418f11a1906f58f0f4d3c6603ef"><div class="ttname"><a href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">etl::integral_constant::type</a></div><div class="ttdeci">integral_constant&lt; Type, Val &gt; type</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1is__invocable__r_html"><div class="ttname"><a href="structetl_1_1is__invocable__r.html">etl::is_invocable_r</a></div><div class="ttdef"><b>Definition</b> is_invocable_r.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -142,7 +135,7 @@ $(function(){initNavTree('is__nothrow__constructible_8hpp_source.html','',''); }
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__constructible.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__constructible.html">is_nothrow_constructible</a> : detail::is_nothrow_constructible_helper&lt;T, Args...&gt;::type { };</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structetl_1_1is__nothrow__constructible.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__nothrow__constructible.html">is_nothrow_constructible</a> : detail::is_nothrow_constructible_helper&lt;T, Args...&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">   50</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a> = <a class="code hl_struct" href="structetl_1_1is__nothrow__constructible.html">is_nothrow_constructible</a>&lt;T, Args...&gt;::value;</div>
@@ -158,6 +151,7 @@ $(function(){initNavTree('is__nothrow__constructible_8hpp_source.html','',''); }
 <div class="ttc" id="anamespaceetl_html_ac5c90336c94cb0db8abdd10603a3c7cc"><div class="ttname"><a href="namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc">etl::bool_constant</a></div><div class="ttdeci">integral_constant&lt; bool, B &gt; bool_constant</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:11</div></div>
 <div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="aremove__all__extents_8hpp_html"><div class="ttname"><a href="remove__all__extents_8hpp.html">remove_all_extents.hpp</a></div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html_ad0830418f11a1906f58f0f4d3c6603ef"><div class="ttname"><a href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">etl::integral_constant::type</a></div><div class="ttdeci">integral_constant&lt; Type, Val &gt; type</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1is__nothrow__constructible_html"><div class="ttname"><a href="structetl_1_1is__nothrow__constructible.html">etl::is_nothrow_constructible</a></div><div class="ttdoc">The variable definition does not call any operation that is not trivial. For the purposes of this che...</div><div class="ttdef"><b>Definition</b> is_nothrow_constructible.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

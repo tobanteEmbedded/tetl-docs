@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -157,14 +150,14 @@ $(function(){initNavTree('function__ref_8hpp_source.html','',''); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structetl_1_1function__ref_3_01R_07Args_8_8_8_08_4.html">   61</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1function__ref.html">function_ref</a>&lt;R(Args...)&gt; : etl::detail::function_ref&lt;false, R(Args...)&gt; {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">using </span>etl::detail::function_ref&lt;<span class="keyword">false</span>, R(Args...)&gt;::function_ref;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">using </span>etl::detail::function_ref&lt;<span class="keyword">false</span>, R(Args...)&gt;<a class="code hl_struct" href="structetl_1_1function__ref.html">::function_ref</a>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structetl_1_1function__ref_3_01R_07Args_8_8_8_08_01noexcept_01_4.html">   66</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1function__ref.html">function_ref</a>&lt;R(Args...) noexcept&gt; : etl::detail::function_ref&lt;true, R(Args...)&gt; {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">using </span>etl::detail::function_ref&lt;<span class="keyword">true</span>, R(Args...)&gt;::function_ref;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">using </span>etl::detail::function_ref&lt;<span class="keyword">true</span>, R(Args...)&gt;<a class="code hl_struct" href="structetl_1_1function__ref.html">::function_ref</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
 </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>

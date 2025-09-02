@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -135,7 +128,7 @@ $(function(){initNavTree('is__invocable_8hpp_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Fn, <span class="keyword">typename</span>... ArgTypes&gt;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structetl_1_1is__invocable.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__invocable.html">is_invocable</a> : detail::is_invocable_impl&lt;invoke_result&lt;Fn, ArgTypes...&gt;, void&gt;::type { };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structetl_1_1is__invocable.html">   37</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__invocable.html">is_invocable</a> : detail::is_invocable_impl&lt;invoke_result&lt;Fn, ArgTypes...&gt;, void&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Fn, <span class="keyword">typename</span>... ArgTypes&gt;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a65073ba479a098a622312ecaaa89fa64">   40</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceetl.html#a65073ba479a098a622312ecaaa89fa64">is_invocable_v</a> = <a class="code hl_struct" href="structetl_1_1is__invocable.html">is_invocable</a>&lt;Fn, ArgTypes...&gt;::value;</div>

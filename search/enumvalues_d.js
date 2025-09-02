@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['permission_5fdenied_0',['permission_denied',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243ae8ee838822072f02738dbd7d97ea03fc',1,'etl']]],
+  ['permission_5fdenied_0',['permission_denied',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05bae8ee838822072f02738dbd7d97ea03fc',1,'etl']]],
   ['pin_5f0_1',['pin_0',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a83f8fea7ae39847bcef9a17417f82530',1,'etl::experimental::hardware::stm32']]],
   ['pin_5f1_2',['pin_1',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a47ccc9e3ee3a60c30dacaee70c24f5e6',1,'etl::experimental::hardware::stm32']]],
   ['pin_5f10_3',['pin_10',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a4770533c183b19baceacc33e0901fdb7',1,'etl::experimental::hardware::stm32']]],
@@ -17,6 +17,6 @@ var searchData=
   ['pin_5f7_14',['pin_7',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7af6825843dab0976bea4c1fa6fe25ba99',1,'etl::experimental::hardware::stm32']]],
   ['pin_5f8_15',['pin_8',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7abe3b09f53c24a47b1af755041a214b99',1,'etl::experimental::hardware::stm32']]],
   ['pin_5f9_16',['pin_9',['../namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a775cef7005836b2bb42db2c8cd98ebac',1,'etl::experimental::hardware::stm32']]],
-  ['protocol_5ferror_17',['protocol_error',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a9665c745d0a9132d8da6ed55e89a0564',1,'etl']]],
-  ['protocol_5fnot_5fsupported_18',['protocol_not_supported',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243aa2635acef8b9a3e1c40923829722d472',1,'etl']]]
+  ['protocol_5ferror_17',['protocol_error',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05ba9665c745d0a9132d8da6ed55e89a0564',1,'etl']]],
+  ['protocol_5fnot_5fsupported_18',['protocol_not_supported',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05baa2635acef8b9a3e1c40923829722d472',1,'etl']]]
 ];

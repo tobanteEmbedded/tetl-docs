@@ -218,12 +218,15 @@ struct etl::array&lt; Type, Size &gt;</div><p>A container that encapsulates fixe
 <p>This container is an aggregate type with the same semantics as a struct holding a C-style array Type[N] as its only non-static data member. Unlike a C-style array, it doesn't decay to Type* automatically. As an aggregate type, it can be initialized with aggregate-initialization given at most N initializers that are convertible to Type: <span class="tt"><a class="el" href="structetl_1_1array.html" title="A container that encapsulates fixed size arrays.">array</a>&lt;int, 3&gt; a = {1,2,3};</span></p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="array_8hpp.html">etl/array.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="iterator_8hpp.html">etl/iterator.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="array_8hpp.html">etl/array.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="iterator_8hpp.html">etl/iterator.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>

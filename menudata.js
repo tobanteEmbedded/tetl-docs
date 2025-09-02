@@ -261,7 +261,13 @@ var menudata={children:[
 {text:"v",url:"globals.html#index_v"},
 {text:"w",url:"globals.html#index_w"},
 {text:"x",url:"globals.html#index_x"}]},
-{text:"Functions",url:"globals_func.html"},
+{text:"Functions",url:"globals_func.html",children:[
+{text:"e",url:"globals_func.html#index_e"},
+{text:"o",url:"globals_func.html#index_o"},
+{text:"t",url:"globals_func.html#index_t"},
+{text:"u",url:"globals_func.html#index_u"},
+{text:"v",url:"globals_func.html#index_v"},
+{text:"x",url:"globals_func.html#index_x"}]},
 {text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[

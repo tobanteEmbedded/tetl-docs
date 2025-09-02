@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"namespacemembers_func_y.html":[9,1,1,20],
+"namespacemembers_g.html":[9,1,0,7],
 "namespacemembers_h.html":[9,1,0,8],
 "namespacemembers_i.html":[9,1,0,9],
 "namespacemembers_j.html":[9,1,0,10],
@@ -83,8 +85,10 @@ var NAVTREEINDEX14 =
 "numeric__limits_8hpp.html":[12,0,1,0,35,2],
 "numeric__limits_8hpp_source.html":[12,0,1,0,35,2],
 "operator_8hpp.html":[12,0,1,0,43,5],
-"operator_8hpp.html#a522458e13fc259cf6d28015c387bef0e":[12,0,1,0,43,5,0],
-"operator_8hpp.html#aa994729279323d9864d823944a24959c":[12,0,1,0,43,5,1],
+"operator_8hpp.html#a0754311d7293c038151eb3eb94e19199":[12,0,1,0,43,5,1],
+"operator_8hpp.html#a522458e13fc259cf6d28015c387bef0e":[12,0,1,0,43,5,2],
+"operator_8hpp.html#aa994729279323d9864d823944a24959c":[12,0,1,0,43,5,3],
+"operator_8hpp.html#accd5d49a583e623298be82fa497e9546":[12,0,1,0,43,5,0],
 "operator_8hpp_source.html":[12,0,1,0,43,5],
 "optional_8cpp-example.html":[13,7],
 "optional_8hpp.html":[12,0,1,0,111],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "remove__cv_8hpp_source.html":[12,0,1,0,61,110],
 "remove__cvref_8hpp.html":[12,0,1,0,61,111],
 "remove__cvref_8hpp_source.html":[12,0,1,0,61,111],
-"remove__extent_8hpp.html":[12,0,1,0,61,112],
-"remove__extent_8hpp_source.html":[12,0,1,0,61,112],
-"remove__if_8hpp.html":[12,0,1,0,0,58],
-"remove__if_8hpp_source.html":[12,0,1,0,0,58],
-"remove__pointer_8hpp.html":[12,0,1,0,61,113]
+"remove__extent_8hpp.html":[12,0,1,0,61,112]
 };

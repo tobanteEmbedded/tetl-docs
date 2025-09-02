@@ -109,13 +109,18 @@ $(function(){initNavTree('structetl_1_1enable__if.html','',''); });
 struct etl::enable_if&lt; bool, Type &gt;</div><p>Define a member typedef only if a boolean constant is true. </p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cstdint_8hpp.html">etl/cstdint.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="type__traits_8hpp.html">etl/type_traits.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="cstdint_8hpp.html">etl/cstdint.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="type__traits_8hpp.html">etl/type_traits.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>{</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">auto</span> func(T val) -&gt; <a class="code hl_typedef" href="namespaceetl.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">etl::enable_if_t&lt;etl::is_integral_v&lt;T&gt;</a>, <span class="keywordtype">int</span>&gt;</div>
+<div class="line">    <span class="keyword">requires</span>(<a class="code hl_variable" href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">etl::is_integral_v&lt;T&gt;</a>)</div>
+<div class="line"><span class="keyword">auto</span> func(T val) -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(val);</div>
 <div class="line">}</div>
@@ -132,8 +137,8 @@ struct etl::enable_if&lt; bool, Type &gt;</div><p>Define a member typedef only i
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="acstdint_8hpp_html"><div class="ttname"><a href="cstdint_8hpp.html">cstdint.hpp</a></div></div>
+<div class="ttc" id="anamespaceetl_html_a396e4b8c756441b942c1619de108e56a"><div class="ttname"><a href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">etl::is_integral_v</a></div><div class="ttdeci">constexpr bool is_integral_v</div><div class="ttdef"><b>Definition</b> is_integral.hpp:28</div></div>
 <div class="ttc" id="anamespaceetl_html_a46518a317507676ba5887e53ca4bf5bd"><div class="ttname"><a href="namespaceetl.html#a46518a317507676ba5887e53ca4bf5bd">etl::uint16_t</a></div><div class="ttdeci">TETL_BUILTIN_UINT16 uint16_t</div><div class="ttdoc">Unsigned integer type with width of exactly 16 bits.</div><div class="ttdef"><b>Definition</b> uint_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_a93e9cb7fadbcfaa2afb5b94058b8e34c"><div class="ttname"><a href="namespaceetl.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">etl::enable_if_t</a></div><div class="ttdeci">typename enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition</b> enable_if.hpp:19</div></div>
 <div class="ttc" id="atype__traits_8hpp_html"><div class="ttname"><a href="type__traits_8hpp.html">type_traits.hpp</a></div></div>
 </div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/etl/_type_traits/<a class="el" href="enable__if_8hpp_source.html">enable_if.hpp</a></li>

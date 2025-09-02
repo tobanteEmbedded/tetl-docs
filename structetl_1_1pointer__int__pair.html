@@ -152,18 +152,21 @@ struct etl::pointer_int_pair&lt; PointerT, IntBits, IntType, PtrTraits, Info &gt
 <p>Note that <a class="el" href="structetl_1_1pointer__int__pair.html" title="This struct implements a pair of a pointer and small integer. It is designed to represent this in the...">pointer_int_pair</a> always puts the IntVal part in the highest bits possible. For example, pointer_int_pair&lt;void*, 1, bool&gt; will put the bit for the bool into bit #2, not bit #0, which allows the low two bits to be used for something else. For example, this allows: <a class="el" href="structetl_1_1pointer__int__pair.html" title="This struct implements a pair of a pointer and small integer. It is designed to represent this in the...">pointer_int_pair</a>&lt;pointer_int_pair&lt;void*, 1, bool&gt;, 1, bool&gt; ... and the two bools will land in different bits.</p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span> <span class="comment">// for assert</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="memory_8hpp.html">etl/memory.hpp</a>&gt;</span>  <span class="comment">// for pointer_int_pair</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="memory_8hpp.html">etl/memory.hpp</a>&gt;</span> <span class="comment">// for pointer_int_pair</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
 <div class="line"><span class="preprocessor">#if not defined(TETL_WORKAROUND_AVR_BROKEN_TESTS)</span></div>
-<div class="line">    <span class="keyword">auto</span> ptr = <a class="code hl_struct" href="structetl_1_1pointer__int__pair.html">etl::pointer_int_pair&lt;double*, 2&gt;</a>{<span class="keyword">new</span> double(42.0), 1U};</div>
+<div class="line">    <span class="keyword">auto</span> val = 42.0;</div>
+<div class="line">    <span class="keyword">auto</span> ptr = <a class="code hl_struct" href="structetl_1_1pointer__int__pair.html">etl::pointer_int_pair&lt;double*, 2&gt;</a>{&amp;val, 1U};</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(*ptr.get_pointer() == 42.0);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(ptr.get_int() == 1U);</div>
-<div class="line">    <span class="keyword">delete</span> ptr.get_pointer();</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>

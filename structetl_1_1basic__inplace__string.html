@@ -429,7 +429,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a29abf0eaf62dbe10174db67475599a1b" id="r_a29abf0eaf62dbe10174db67475599a1b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29abf0eaf62dbe10174db67475599a1b">npos</a> = <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&gt;::max()</td></tr>
+<tr class="memitem:a29abf0eaf62dbe10174db67475599a1b" id="r_a29abf0eaf62dbe10174db67475599a1b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29abf0eaf62dbe10174db67475599a1b">npos</a> = <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()</td></tr>
 <tr class="memdesc:a29abf0eaf62dbe10174db67475599a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a special value equal to the maximum value representable by the type <a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>. The exact meaning depends on context, but it is generally used either as end of string indicator by the functions that expect a string index or as the error indicator by the functions that return a string index.  <br /></td></tr>
 <tr class="memitem:aa007b921bdf214f4132fdd20af8beaa4" id="r_aa007b921bdf214f4132fdd20af8beaa4"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:aa007b921bdf214f4132fdd20af8beaa4 template"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa007b921bdf214f4132fdd20af8beaa4">string_view_like</a></td></tr>
@@ -446,13 +446,15 @@ struct etl::basic_inplace_string&lt; Char, Capacity, Traits &gt;</div><p><a clas
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">etl/string.hpp</a>&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cctype_8hpp.html">etl/cctype.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="cctype_8hpp.html">etl/cctype.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="string_8hpp.html">etl/string.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
@@ -5134,7 +5136,7 @@ template&lt;typename Char, <a class="el" href="namespaceetl.html#aee50235c04ef64
 <p>Finds the last substring equal to the given character sequence. Search begins at pos, i.e. the found substring must not begin in a position following pos. If npos or any value not smaller than <a class="el" href="#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of characters.">size()</a>-1 is passed as pos, whole string will be searched. </p>
 <p><a href="https://en.cppreference.com/w/cpp/string/basic_string/rfind">https://en.cppreference.com/w/cpp/string/basic_string/rfind</a></p>
 <dl class="section return"><dt>Returns</dt><dd>Position of the first character of the found substring or npos if no such substring is found. Note that this is an offset from the start of the string, not the end.</dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug</a></b></dt><dd>See tests. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug</a></b></dt><dd>See tests. </dd></dl>
 
 </div>
 </div>
@@ -5400,7 +5402,7 @@ template&lt;typename Char, <a class="el" href="namespaceetl.html#aee50235c04ef64
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a> npos = <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&gt;::max()</td>
+          <td class="memname"><a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a> npos = <a class="el" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<a class="el" href="#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&gt;<a class="el" href="group__algorithm.html#gab9b79e7341165c49fa24ea2d66a761a5">::max</a>()</td>
         </tr>
       </table>
   </td>

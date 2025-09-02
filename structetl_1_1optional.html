@@ -107,6 +107,8 @@ $(function(){initNavTree('structetl_1_1optional.html','','structetl_1_1optional-
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a5f7d5c5d8204192caed7cac5a4aa184e" id="r_a5f7d5c5d8204192caed7cac5a4aa184e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a> = T const*</td></tr>
+<tr class="memitem:a4d1ca55c8c62d4fbf3ea42d9919125a0" id="r_a4d1ca55c8c62d4fbf3ea42d9919125a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a> = T*</td></tr>
 <tr class="memitem:afb9ded5f49336ae503bb9f2035ea902b" id="r_afb9ded5f49336ae503bb9f2035ea902b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb9ded5f49336ae503bb9f2035ea902b">value_type</a> = T</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -131,9 +133,13 @@ requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0
 <tr class="memitem:adabc593e326c7a64748c51b9d549f75a template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adabc593e326c7a64748c51b9d549f75a">and_then</a> (F &amp;&amp;f) const &amp;</td></tr>
 <tr class="memitem:ad8d6cb036f0179ae2333a4f469de86b6" id="r_ad8d6cb036f0179ae2333a4f469de86b6"><td class="memTemplParams" colspan="2">template&lt;typename F&gt; </td></tr>
 <tr class="memitem:ad8d6cb036f0179ae2333a4f469de86b6 template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8d6cb036f0179ae2333a4f469de86b6">and_then</a> (F &amp;&amp;f) const &amp;&amp;</td></tr>
+<tr class="memitem:a7c168a00590a06a5ee2acf2a3cdb4535" id="r_a7c168a00590a06a5ee2acf2a3cdb4535"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c168a00590a06a5ee2acf2a3cdb4535">begin</a> () const noexcept -&gt; <a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a></td></tr>
+<tr class="memitem:a773a7036d91b150864530b3c86f8946c" id="r_a773a7036d91b150864530b3c86f8946c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a773a7036d91b150864530b3c86f8946c">begin</a> () noexcept -&gt; <a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td></tr>
 <tr class="memitem:af874c082d6f6f9d72b111a835c1057fb" id="r_af874c082d6f6f9d72b111a835c1057fb"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:af874c082d6f6f9d72b111a835c1057fb template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af874c082d6f6f9d72b111a835c1057fb">emplace</a> (Args &amp;&amp;... args) -&gt; <a class="el" href="#afb9ded5f49336ae503bb9f2035ea902b">value_type</a> &amp;</td></tr>
 <tr class="memdesc:af874c082d6f6f9d72b111a835c1057fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the contained value in-place. If *this already contains a value before the call, the contained value is destroyed by calling its destructor.  <br /></td></tr>
+<tr class="memitem:ac0f1c50547264d3a0a125f5cc92e4fe4" id="r_ac0f1c50547264d3a0a125f5cc92e4fe4"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0f1c50547264d3a0a125f5cc92e4fe4">end</a> () const noexcept -&gt; <a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a></td></tr>
+<tr class="memitem:a7be357fc22f42093a431a1132b2c4b0c" id="r_a7be357fc22f42093a431a1132b2c4b0c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be357fc22f42093a431a1132b2c4b0c">end</a> () noexcept -&gt; <a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td></tr>
 <tr class="memitem:a5889b65ac9c400a00b0062c30893d416" id="r_a5889b65ac9c400a00b0062c30893d416"><td class="memTemplParams" colspan="2">template&lt;typename U&gt; <br />
 requires ( <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, U&amp;&amp;&gt; and not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a57d58de8ee9130049557265efc11802c">remove_cv_t</a>&lt;U&gt;, bool&gt; and not <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt;&amp;&gt; and not <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt; const&amp;&gt; and not <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt; &amp;&amp;&gt; and not <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;T, <a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt; const&amp;&amp;&gt; and not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt;&amp;, T&gt; and not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt; const&amp;, T&gt; and not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt;&amp;&amp;, T&gt; and not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1optional.html">optional</a>&lt;U&gt; const&amp;&amp;, T&gt; )</td></tr>
 <tr class="memitem:a5889b65ac9c400a00b0062c30893d416 template"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5889b65ac9c400a00b0062c30893d416">explicit</a> (not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; U &amp;&amp;, T &gt;) const expr <a class="el" href="structetl_1_1optional.html">optional</a>(<a class="el" href="structetl_1_1optional.html">optional</a>&lt; U &gt; &amp;&amp;other)</td></tr>
@@ -289,10 +295,13 @@ struct etl::optional&lt; T &gt;</div><p>The class template optional manages an o
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="optional_8hpp.html">etl/optional.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="optional_8hpp.html">etl/optional.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
@@ -343,12 +352,44 @@ struct etl::optional&lt; T &gt;</div><p>The class template optional manages an o
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
 <div class="ttc" id="aoptional_8hpp_html"><div class="ttname"><a href="optional_8hpp.html">optional.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1optional_html"><div class="ttname"><a href="structetl_1_1optional.html">etl::optional</a></div><div class="ttdoc">The class template optional manages an optional contained value, i.e. a value that may or may not be ...</div><div class="ttdef"><b>Definition</b> optional.hpp:89</div></div>
+<div class="ttc" id="astructetl_1_1optional_html"><div class="ttname"><a href="structetl_1_1optional.html">etl::optional</a></div><div class="ttdoc">The class template optional manages an optional contained value, i.e. a value that may or may not be ...</div><div class="ttdef"><b>Definition</b> optional.hpp:90</div></div>
 <div class="ttc" id="astructetl_1_1optional_html_a656aa74c72d602923ed13edff9402f74"><div class="ttname"><a href="#a656aa74c72d602923ed13edff9402f74">etl::optional::optional</a></div><div class="ttdeci">constexpr optional() noexcept=default</div><div class="ttdoc">Constructs an object that does not contain a value.</div></div>
-<div class="ttc" id="astructetl_1_1optional_html_ac1018dae8b7954ada4445cc24cc182f2"><div class="ttname"><a href="#ac1018dae8b7954ada4445cc24cc182f2">etl::optional::value_or</a></div><div class="ttdeci">constexpr auto value_or(U &amp;&amp;defaultValue) const &amp;-&gt; value_type</div><div class="ttdoc">Returns the contained value if *this has a value, otherwise returns default_value.</div><div class="ttdef"><b>Definition</b> optional.hpp:312</div></div>
+<div class="ttc" id="astructetl_1_1optional_html_ac1018dae8b7954ada4445cc24cc182f2"><div class="ttname"><a href="#ac1018dae8b7954ada4445cc24cc182f2">etl::optional::value_or</a></div><div class="ttdeci">constexpr auto value_or(U &amp;&amp;defaultValue) const &amp;-&gt; value_type</div><div class="ttdoc">Returns the contained value if *this has a value, otherwise returns default_value.</div><div class="ttdef"><b>Definition</b> optional.hpp:315</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="optional_8cpp-example.html#_a0">optional.cpp</a>.</dd>
 </dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="a5f7d5c5d8204192caed7cac5a4aa184e" name="a5f7d5c5d8204192caed7cac5a4aa184e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7d5c5d8204192caed7cac5a4aa184e">&#9670;&#160;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a> = T const*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d1ca55c8c62d4fbf3ea42d9919125a0" name="a4d1ca55c8c62d4fbf3ea42d9919125a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a> = T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afb9ded5f49336ae503bb9f2035ea902b" name="afb9ded5f49336ae503bb9f2035ea902b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb9ded5f49336ae503bb9f2035ea902b">&#9670;&#160;</a></span>value_type</h2>
 
@@ -636,6 +677,62 @@ template&lt;typename F&gt; </div>
 
 </div>
 </div>
+<a id="a7c168a00590a06a5ee2acf2a3cdb4535" name="a7c168a00590a06a5ee2acf2a3cdb4535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c168a00590a06a5ee2acf2a3cdb4535">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a773a7036d91b150864530b3c86f8946c" name="a773a7036d91b150864530b3c86f8946c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773a7036d91b150864530b3c86f8946c">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af874c082d6f6f9d72b111a835c1057fb" name="af874c082d6f6f9d72b111a835c1057fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af874c082d6f6f9d72b111a835c1057fb">&#9670;&#160;</a></span>emplace()</h2>
 
@@ -665,6 +762,62 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs the contained value in-place. If *this already contains a value before the call, the contained value is destroyed by calling its destructor. </p>
+
+</div>
+</div>
+<a id="ac0f1c50547264d3a0a125f5cc92e4fe4" name="ac0f1c50547264d3a0a125f5cc92e4fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f1c50547264d3a0a125f5cc92e4fe4">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7be357fc22f42093a431a1132b2c4b0c" name="a7be357fc22f42093a431a1132b2c4b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be357fc22f42093a431a1132b2c4b0c">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

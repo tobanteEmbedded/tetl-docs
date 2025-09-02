@@ -104,6 +104,8 @@ $(function(){initNavTree('structetl_1_1optional_3_01T_01_6_01_4.html','','struct
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a5f7d5c5d8204192caed7cac5a4aa184e" id="r_a5f7d5c5d8204192caed7cac5a4aa184e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1optional.html#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a></td></tr>
+<tr class="memitem:a4d1ca55c8c62d4fbf3ea42d9919125a0" id="r_a4d1ca55c8c62d4fbf3ea42d9919125a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td></tr>
 <tr class="memitem:a39ccab77232f593b549808ed33e586d2" id="r_a39ccab77232f593b549808ed33e586d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39ccab77232f593b549808ed33e586d2">value_type</a> = T&amp;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,9 +116,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cae2ddfae8a7a5f173dace748fb0c74" id="r_a9cae2ddfae8a7a5f173dace748fb0c74"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cae2ddfae8a7a5f173dace748fb0c74">optional</a> (<a class="el" href="structetl_1_1optional.html">optional</a> const &amp;other)=default</td></tr>
 <tr class="memitem:ac4c46934bf6e602eaf474f356718bdf8" id="r_ac4c46934bf6e602eaf474f356718bdf8"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4c46934bf6e602eaf474f356718bdf8">~optional</a> ()=default</td></tr>
 <tr class="memitem:a62819f8ee94f18955aa983370e6f8d57" id="r_a62819f8ee94f18955aa983370e6f8d57"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1optional.html#a62819f8ee94f18955aa983370e6f8d57">and_then</a> (F &amp;&amp;f) &amp;</td></tr>
+<tr class="memitem:a773a7036d91b150864530b3c86f8946c" id="r_a773a7036d91b150864530b3c86f8946c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1optional.html#a773a7036d91b150864530b3c86f8946c">begin</a> () noexcept -&gt; <a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td></tr>
 <tr class="memitem:a20c0d9ad169a6bd0ed938c0ecf5d8c0f" id="r_a20c0d9ad169a6bd0ed938c0ecf5d8c0f"><td class="memTemplParams" colspan="2">template&lt;typename U = T&gt; <br />
 requires (not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;U&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
 <tr class="memitem:a20c0d9ad169a6bd0ed938c0ecf5d8c0f template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c0d9ad169a6bd0ed938c0ecf5d8c0f">emplace</a> (U &amp;&amp;u) noexcept -&gt; <a class="el" href="structetl_1_1optional.html">optional</a> &amp;</td></tr>
+<tr class="memitem:a7be357fc22f42093a431a1132b2c4b0c" id="r_a7be357fc22f42093a431a1132b2c4b0c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1optional.html#a7be357fc22f42093a431a1132b2c4b0c">end</a> () noexcept -&gt; <a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td></tr>
 <tr class="memitem:a8c8704f745587070300ccb9086c75f5e" id="r_a8c8704f745587070300ccb9086c75f5e"><td class="memTemplParams" colspan="2">template&lt;typename U&gt; <br />
 requires (not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8db7bb0">is_same_v</a>&lt;<a class="el" href="namespaceetl.html#a13534b69c91b07e4add5cea854cfedd8">remove_cvref_t</a>&lt;U&gt;, <a class="el" href="structetl_1_1optional.html">optional</a>&gt;)</td></tr>
 <tr class="memitem:a8c8704f745587070300ccb9086c75f5e template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c8704f745587070300ccb9086c75f5e">explicit</a> (not <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; U, T &gt;) <a class="el" href="structetl_1_1optional.html">optional</a>(<a class="el" href="structetl_1_1optional.html">optional</a>&lt; U &gt; const &amp;rhs)</td></tr>
@@ -188,6 +192,34 @@ Related Symbols</h2></td></tr>
 <tr class="memdesc:ga9557503d3e688eaf3ca1fe3ff4056af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares opt with a value. The values are compared (using the corresponding operator of T) only if opt contains a value. Otherwise, opt is considered less than value. If the corresponding two-way comparison expression between *opt and value is not well-formed, or if its result is not convertible to bool, the program is ill-formed.  <br /></td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="a5f7d5c5d8204192caed7cac5a4aa184e" name="a5f7d5c5d8204192caed7cac5a4aa184e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7d5c5d8204192caed7cac5a4aa184e">&#9670;&#160;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structetl_1_1optional.html#a5f7d5c5d8204192caed7cac5a4aa184e">const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d1ca55c8c62d4fbf3ea42d9919125a0" name="a4d1ca55c8c62d4fbf3ea42d9919125a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1ca55c8c62d4fbf3ea42d9919125a0">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a39ccab77232f593b549808ed33e586d2" name="a39ccab77232f593b549808ed33e586d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39ccab77232f593b549808ed33e586d2">&#9670;&#160;</a></span>value_type</h2>
 
@@ -366,6 +398,32 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="a773a7036d91b150864530b3c86f8946c" name="a773a7036d91b150864530b3c86f8946c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773a7036d91b150864530b3c86f8946c">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a20c0d9ad169a6bd0ed938c0ecf5d8c0f" name="a20c0d9ad169a6bd0ed938c0ecf5d8c0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20c0d9ad169a6bd0ed938c0ecf5d8c0f">&#9670;&#160;</a></span>emplace()</h2>
 
@@ -391,6 +449,32 @@ requires (not <a class="el" href="namespaceetl.html#aa6c6bde5fd020a928e6d7b5fe8d
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7be357fc22f42093a431a1132b2c4b0c" name="a7be357fc22f42093a431a1132b2c4b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be357fc22f42093a431a1132b2c4b0c">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0">iterator</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

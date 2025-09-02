@@ -22,6 +22,6 @@ var searchData=
   ['wmemcpy_19',['wmemcpy',['../namespaceetl.html#af2ebfa659c54260fe5e6e06ee48a906b',1,'etl']]],
   ['wmemmove_20',['wmemmove',['../namespaceetl.html#a72695f43a1b04ada99db35bf2396de5a',1,'etl']]],
   ['wmemset_21',['wmemset',['../namespaceetl.html#a181b3459989bb776b4fde2be3f0ff339',1,'etl']]],
-  ['write_22',['write',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aaea6ef98b3b587108dbe50d1185a2aee',1,'etl::experimental::freertos::stream_buffer::write()'],['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#aa0c17ac8d56bd49eaa6ea4a1dfe8ee9d',1,'etl::experimental::hardware::stm32::port::write()']]],
-  ['write_5ffrom_5fisr_23',['write_from_isr',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a39d6f175456ecd0ddc1b3126bba8d86b',1,'etl::experimental::freertos::stream_buffer']]]
+  ['write_22',['write',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a96403418549af8858955461e73bb3c9c',1,'etl::experimental::freertos::stream_buffer::write()'],['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#aa0c17ac8d56bd49eaa6ea4a1dfe8ee9d',1,'etl::experimental::hardware::stm32::port::write()']]],
+  ['write_5ffrom_5fisr_23',['write_from_isr',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aa502e5fecf10ee158952a60e0d9d2ae2',1,'etl::experimental::freertos::stream_buffer']]]
 ];

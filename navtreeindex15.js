@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"remove__extent_8hpp_source.html":[12,0,1,0,61,112],
+"remove__if_8hpp.html":[12,0,1,0,0,58],
+"remove__if_8hpp_source.html":[12,0,1,0,0,58],
+"remove__pointer_8hpp.html":[12,0,1,0,61,113],
 "remove__pointer_8hpp_source.html":[12,0,1,0,61,113],
 "remove__reference_8hpp.html":[12,0,1,0,61,114],
 "remove__reference_8hpp_source.html":[12,0,1,0,61,114],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "structetl_1_1allocator__traits.html#a352f8914cbd593685bef6ed16ca48820":[11,0,0,21,8],
 "structetl_1_1allocator__traits.html#a7e43a5aef746723ebec1f481e2d1a62b":[9,0,0,27,9],
 "structetl_1_1allocator__traits.html#a7e43a5aef746723ebec1f481e2d1a62b":[11,0,0,21,9],
-"structetl_1_1allocator__traits.html#a85263a9e2d1f4da2cde00205ca6f8d08":[9,0,0,27,0],
-"structetl_1_1allocator__traits.html#a85263a9e2d1f4da2cde00205ca6f8d08":[11,0,0,21,0],
-"structetl_1_1allocator__traits.html#a906bccec79e59fb882527bb4dfd6f016":[9,0,0,27,5],
-"structetl_1_1allocator__traits.html#a906bccec79e59fb882527bb4dfd6f016":[11,0,0,21,5],
-"structetl_1_1allocator__traits.html#ae1851158ab5b9ae73da5ae7f989c81b3":[9,0,0,27,4]
+"structetl_1_1allocator__traits.html#a85263a9e2d1f4da2cde00205ca6f8d08":[9,0,0,27,0]
 };

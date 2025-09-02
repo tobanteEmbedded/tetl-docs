@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['identifier_5fremoved_0',['identifier_removed',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a054e5b4ff59331386872de744d661719',1,'etl']]],
-  ['illegal_5fbyte_5fsequence_1',['illegal_byte_sequence',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a53a9e57a679708b2d8ff0ccd8ec96b18',1,'etl']]],
-  ['inappropriate_5fio_5fcontrol_5foperation_2',['inappropriate_io_control_operation',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a45fe7da1767194b580aeba752d7b44ae',1,'etl']]],
+  ['identifier_5fremoved_0',['identifier_removed',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05ba054e5b4ff59331386872de744d661719',1,'etl']]],
+  ['illegal_5fbyte_5fsequence_1',['illegal_byte_sequence',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05ba53a9e57a679708b2d8ff0ccd8ec96b18',1,'etl']]],
+  ['inappropriate_5fio_5fcontrol_5foperation_2',['inappropriate_io_control_operation',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05ba45fe7da1767194b580aeba752d7b44ae',1,'etl']]],
   ['input_5fo0_3',['input_O0',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#adec947cf27ef0d70dce020edfcaab109a2cf8b6a3c3d16a0010202c653bcb9bdb',1,'etl::experimental::hardware::mcp23017']]],
   ['input_5fo1_4',['input_O1',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#adec947cf27ef0d70dce020edfcaab109a5f7465319d814549713c7397b4de95dc',1,'etl::experimental::hardware::mcp23017']]],
   ['input_5fo2_5',['input_O2',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#adec947cf27ef0d70dce020edfcaab109ab4750422878bdf76216fe6dad6c5eac5',1,'etl::experimental::hardware::mcp23017']]],
@@ -15,12 +15,12 @@ var searchData=
   ['intcapb_12',['INTCAPB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da387372365a3b34b98aca9d9707aeb8a8',1,'etl::experimental::hardware::mcp23017']]],
   ['intcona_13',['INTCONA',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da5238f9b2996229e6e4a2e6b184ba947a',1,'etl::experimental::hardware::mcp23017']]],
   ['intconb_14',['INTCONB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da8f94a42d1c1b210d0540cba799615bca',1,'etl::experimental::hardware::mcp23017']]],
-  ['interrupted_15',['interrupted',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243afadb76763385627e57ec386c9b6038f0',1,'etl']]],
+  ['interrupted_15',['interrupted',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05bafadb76763385627e57ec386c9b6038f0',1,'etl']]],
   ['intfa_16',['INTFA',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59dabccd7f7d0e7558172ffd8910c41c8e3e',1,'etl::experimental::hardware::mcp23017']]],
   ['intfb_17',['INTFB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da0e273e572ea29472a3e71eeb19eda140',1,'etl::experimental::hardware::mcp23017']]],
-  ['invalid_5fargument_18',['invalid_argument',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243ae55d43eabeefe5a8271b4a3c898bd18f',1,'etl']]],
+  ['invalid_5fargument_18',['invalid_argument',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05bae55d43eabeefe5a8271b4a3c898bd18f',1,'etl']]],
   ['invalid_5finput_19',['invalid_input',['../namespaceetl_1_1strings.html#ae7104c48ed7b2dfabf112aa5eb629bb5a1080ed39e08a161dc545804658700e33',1,'etl::strings::invalid_input'],['../namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33',1,'etl::strings::invalid_input']]],
-  ['invalid_5fseek_20',['invalid_seek',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243abd86a2c65caf6a270b916234ab321ce3',1,'etl']]],
+  ['invalid_5fseek_20',['invalid_seek',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05babd86a2c65caf6a270b916234ab321ce3',1,'etl']]],
   ['inverted_5fo0_21',['inverted_O0',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ac4514602b2567a4bfd5f2d6d4434328ba8006580efd5405cda1902a50522cf6cc',1,'etl::experimental::hardware::mcp23017']]],
   ['inverted_5fo1_22',['inverted_O1',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ac4514602b2567a4bfd5f2d6d4434328bafee0d089103b831007735cd41537556d',1,'etl::experimental::hardware::mcp23017']]],
   ['inverted_5fo2_23',['inverted_O2',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ac4514602b2567a4bfd5f2d6d4434328babae9dcdc660c67ec1f0f63f96b3fdb90',1,'etl::experimental::hardware::mcp23017']]],
@@ -31,8 +31,8 @@ var searchData=
   ['inverted_5fo7_28',['inverted_O7',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#ac4514602b2567a4bfd5f2d6d4434328ba424c45e59d7fe0fdd869e2f4289b9108',1,'etl::experimental::hardware::mcp23017']]],
   ['io_5fdirection_5fa_29',['io_direction_a',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da84c64f2e221e2c40fc4983af6b6aad50',1,'etl::experimental::hardware::mcp23017']]],
   ['io_5fdirection_5fb_30',['io_direction_b',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da780ac4d36a15bdd156387687f8c2d0fb',1,'etl::experimental::hardware::mcp23017']]],
-  ['io_5ferror_31',['io_error',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243acccc32f2a5f7dc7b87d2f85daea66789',1,'etl']]],
+  ['io_5ferror_31',['io_error',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05bacccc32f2a5f7dc7b87d2f85daea66789',1,'etl']]],
   ['ipola_32',['IPOLA',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da9e5298ed29a66e92c80ae80c5ab35d8e',1,'etl::experimental::hardware::mcp23017']]],
   ['ipolb_33',['IPOLB',['../namespaceetl_1_1experimental_1_1hardware_1_1mcp23017.html#aeb1980b0ba216613d2d748535dede59da86f025b3f0ba1169acfeb0ce5fc83095',1,'etl::experimental::hardware::mcp23017']]],
-  ['is_5fa_5fdirectory_34',['is_a_directory',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243af3c51d7ea75a76f26c0a2bdc00c4e006',1,'etl']]]
+  ['is_5fa_5fdirectory_34',['is_a_directory',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05baf3c51d7ea75a76f26c0a2bdc00c4e006',1,'etl']]]
 ];

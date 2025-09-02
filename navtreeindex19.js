@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"structetl_1_1chrono_1_1duration__values.html#ac43451617ebb73e4a1a1cc0c10fd2bc3":[8,2,1,2,2],
+"structetl_1_1chrono_1_1is__clock.html":[8,2,1,3],
+"structetl_1_1chrono_1_1last__spec.html":[8,2,1,4],
+"structetl_1_1chrono_1_1last__spec.html#ae8e9aaa239d32e5d9fd50b420ebaef40":[8,2,1,4,0],
 "structetl_1_1chrono_1_1local__t.html":[8,2,1,5],
 "structetl_1_1chrono_1_1month.html":[8,2,1,6],
 "structetl_1_1chrono_1_1month.html#a12e82dd14d04e083c480ee1a464756de":[8,2,1,6,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "structetl_1_1complex.html#a0328f1ad817738065b785737a0041069":[8,11,2,0,8],
 "structetl_1_1complex.html#a0798fee75afdd322ebb49f0a140c623f":[8,11,2,0,6],
 "structetl_1_1complex.html#a22b5fe3d1555eaa283226142f525d7ec":[8,11,2,0,5],
-"structetl_1_1complex.html#a27daebd8d0fdeb0355ce29717d0482b7":[8,11,2,0,13],
-"structetl_1_1complex.html#a3d412f95132e88661097feb669532588":[8,11,2,0,20],
-"structetl_1_1complex.html#a41971ffe6c6d1e320f01bda3d968dbd2":[8,11,2,0,21],
-"structetl_1_1complex.html#a450908c980bf73f5daf8ed63cfd27830":[8,11,2,0,12],
-"structetl_1_1complex.html#a4c2125f224b78e41102ab9b775f8c5fd":[8,11,2,0,11]
+"structetl_1_1complex.html#a27daebd8d0fdeb0355ce29717d0482b7":[8,11,2,0,13]
 };

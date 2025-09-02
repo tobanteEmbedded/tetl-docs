@@ -1,5 +1,7 @@
 var structetl_1_1optional =
 [
+    [ "const_iterator", "structetl_1_1optional.html#a5f7d5c5d8204192caed7cac5a4aa184e", null ],
+    [ "iterator", "structetl_1_1optional.html#a4d1ca55c8c62d4fbf3ea42d9919125a0", null ],
     [ "value_type", "structetl_1_1optional.html#afb9ded5f49336ae503bb9f2035ea902b", null ],
     [ "optional", "structetl_1_1optional.html#a656aa74c72d602923ed13edff9402f74", null ],
     [ "optional", "structetl_1_1optional.html#af94e1e8370f4ccce1e2178e73e73108d", null ],
@@ -10,7 +12,11 @@ var structetl_1_1optional =
     [ "and_then", "structetl_1_1optional.html#a2146246884225b7a1dd569cb3ecb3491", null ],
     [ "and_then", "structetl_1_1optional.html#adabc593e326c7a64748c51b9d549f75a", null ],
     [ "and_then", "structetl_1_1optional.html#ad8d6cb036f0179ae2333a4f469de86b6", null ],
+    [ "begin", "structetl_1_1optional.html#a7c168a00590a06a5ee2acf2a3cdb4535", null ],
+    [ "begin", "structetl_1_1optional.html#a773a7036d91b150864530b3c86f8946c", null ],
     [ "emplace", "structetl_1_1optional.html#af874c082d6f6f9d72b111a835c1057fb", null ],
+    [ "end", "structetl_1_1optional.html#ac0f1c50547264d3a0a125f5cc92e4fe4", null ],
+    [ "end", "structetl_1_1optional.html#a7be357fc22f42093a431a1132b2c4b0c", null ],
     [ "explicit", "structetl_1_1optional.html#a5889b65ac9c400a00b0062c30893d416", null ],
     [ "explicit", "structetl_1_1optional.html#aeda274a20488653d836324948f725ff9", null ],
     [ "explicit", "structetl_1_1optional.html#a0b272c5f993bfa8d2fbfd1b775083ebe", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a47ccc9e3ee3a60c30dacaee70c24f5e6":[9,0,0,4,1,1,4,1],
+"namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a498f4de8e1ab5621d375ae1c2075f960":[9,0,0,4,1,1,4,3],
 "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a51a86150ae48586ae39e99e65be4da6d":[9,0,0,4,1,1,4,4],
 "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a6b52b4b395f4aaf8c00385ab2937c38a":[9,0,0,4,1,1,4,15],
 "namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a775cef7005836b2bb42db2c8cd98ebac":[9,0,0,4,1,1,4,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "namespacemembers_func_t.html":[9,1,1,16],
 "namespacemembers_func_u.html":[9,1,1,17],
 "namespacemembers_func_v.html":[9,1,1,18],
-"namespacemembers_func_w.html":[9,1,1,19],
-"namespacemembers_func_y.html":[9,1,1,20],
-"namespacemembers_g.html":[9,1,0,7]
+"namespacemembers_func_w.html":[9,1,1,19]
 };

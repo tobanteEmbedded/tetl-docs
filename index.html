@@ -122,7 +122,7 @@ $(function(){initNavTree('index.html','',''); });
 </ul>
 </li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Quick Start</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="algorithm_8hpp.html">etl/algorithm.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="array_8hpp.html">etl/array.hpp</a>&gt;</span></div>
@@ -138,7 +138,7 @@ Quick Start</h1>
 <div class="ttc" id="astructetl_1_1array_html"><div class="ttname"><a href="structetl_1_1array.html">etl::array</a></div><div class="ttdoc">A container that encapsulates fixed size arrays.</div><div class="ttdef"><b>Definition</b> array.hpp:48</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line">g++ -Wall -Wextra -Wpedantic -std=c++20 -I path/to/tetl/include main.cpp</div>
 </div><!-- fragment --><p>For examples look at the <a href="./examples">examples</a> subdirectory or the test files in <a href="./tests">tests</a>. The <a href="https://tobanteembedded.github.io/tetl-docs/">API reference</a> is currently work in progress.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 Status</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -146,7 +146,7 @@ Status</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://github.com/tobanteEmbedded/tetl/blob/main/LICENSE.txt"><img src="https://img.shields.io/badge/License-Boost%201.0-lightblue.svg" alt="License" style="pointer-events: none;" class="inline"/></a>  </td><td class="markdownTableBodyNone"><img src="https://tokei.rs/b1/github/tobanteEmbedded/tetl" alt="LOC" class="inline"/>  </td><td class="markdownTableBodyNone"><a href="https://docs.google.com/spreadsheets/d/1-qwa7tFnjFdgY9XKBy2fAsDozAfG8lXsJXHwA_ITQqM/edit?usp=sharing">Spreadsheet</a> / <a class="el" href="md_docs_2progress.html">Papers</a>  </td><td class="markdownTableBodyNone"><a href="https://tobanteembedded.github.io/tetl-docs/">API Reference</a>  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 Hosted</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -160,7 +160,7 @@ Hosted</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter"><b>JS/WASM</b>  </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/emscripten.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/emscripten.yml/badge.svg" alt="Emscripten" style="pointer-events: none;" class="inline"/></a>  </td><td class="markdownTableBodyCenter">Emscripten Latest  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Freestanding</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -172,7 +172,7 @@ Freestanding</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter"><b>MSP430</b>  </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/freestanding-msp430.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/freestanding-msp430.yml/badge.svg" alt="MSP430" style="pointer-events: none;" class="inline"/></a>  </td><td class="markdownTableBodyCenter">GCC 14  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Analysis</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -185,7 +185,7 @@ Analysis</h2>
 <td class="markdownTableBodyCenter"><b>Clang-Tidy</b>  </td><td class="markdownTableBodyCenter"><a href="https://github.com/tobanteEmbedded/tetl/actions/workflows/clang-tidy.yml"><img src="https://github.com/tobanteEmbedded/tetl/actions/workflows/clang-tidy.yml/badge.svg" alt="Clang-Tidy" style="pointer-events: none;" class="inline"/></a>  </td><td class="markdownTableBodyCenter">Clang 20  </td></tr>
 </table>
 <dl class="section note"><dt>Note</dt><dd>All test are compiled in debug and release mode with at least <span class="tt">-Wall -Wextra -Wpedantic -Werror</span> or <span class="tt">/W3 /WX</span>. The full list of warning flags can be found in the CMake configuration: <a href="./cmake/compiler_warnings.cmake">cmake/compiler_warnings.cmake</a>. Hosted platforms run all tests &amp; examples, while freestanding builds only compile (ARM &amp; AVR) and link (AVR) the example files.</dd></dl>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Design Goals</h1>
 <ul>
 <li>100% portable (no STL headers required, minimum of C headers)</li>
@@ -213,28 +213,28 @@ Design Goals</h1>
 </ul>
 </li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 Error Handling</h2>
 <p>Since I assume that you might have exceptions disabled, I need a different way of reporting exceptional cases to you which occured deep inside the library. To keep the behavior of my library and actual STL implementations as close as possible, I've chosen to add a global assert/exception handler functions, which can be overriden by enabling the <span class="tt">TETL_ENABLE_CUSTOM_ASSERT_HANDLER</span> macro.</p>
 <p>For more details about the global assertion handler <span class="tt"><a class="el" href="namespaceetl.html#afcdd4cbf8740ceb15439f10eee6080ee">etl::assert_handler</a></span> &amp; the assertion macro <span class="tt"><a class="el" href="assert_8hpp.html#a0437873c880d530d0e43a83a0c413d95">TETL_ASSERT</a></span> see the <a href="./examples/cassert.cpp">examples/cassert.cpp</a> file.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Project Integration</h1>
 <p>The following steps explain how to add <span class="tt"><a class="el" href="namespaceetl.html">etl</a></span> to your project. Embedded or desktop.</p>
 <div class="fragment"><div class="line">cd path/to/your/project</div>
 <div class="line">mkdir 3rd_party</div>
 <div class="line">git submodule add https://github.com/tobanteEmbedded/tetl.git 3rd_party/tetl</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Command Line</h2>
 <div class="fragment"><div class="line">CXXFLAGS += -std=c++20 -I3rd_party/tetl/include</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 CMake</h2>
 <p>Add <span class="tt">tetl</span> as a git submodule, then add these lines to your <span class="tt">CMakeLists.txt</span>:</p>
-<div class="fragment"><div class="line"># tetl::etl_headers is an interface target.</div>
+<div class="fragment"><div class="line"># tetl::etl is an interface target.</div>
 <div class="line"># The target only sets the include path. No static library is created.</div>
 <div class="line"> </div>
 <div class="line">add_subdirectory(3rd_party/tetl/include EXCLUDE_FROM_ALL)</div>
-<div class="line">target_link_libraries(${YOUR_TARGET} tetl::etl_headers)</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<div class="line">target_link_libraries(${YOUR_TARGET} tetl::etl)</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 PlatformIO</h2>
 <p>Add <span class="tt">tetl</span> as a git submodule, then add these lines to your <span class="tt">platformio.ini</span>:</p>
 <div class="fragment"><div class="line">; Most Arduino code does not compile unless you have GNU extensions enabled.</div>

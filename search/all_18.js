@@ -88,7 +88,7 @@ var searchData=
   ['upper_5fbound_2ehpp_85',['upper_bound.hpp',['../upper__bound_8hpp.html',1,'']]],
   ['upper_5ftriangle_86',['upper_triangle',['../structetl_1_1linalg_1_1upper__triangle__t.html#a1ebc9641237c64f94205d7c763f6aefd',1,'etl::linalg::upper_triangle_t']]],
   ['upper_5ftriangle_5ft_87',['upper_triangle_t',['../structetl_1_1linalg_1_1upper__triangle__t.html',1,'upper_triangle_t'],['../structetl_1_1linalg_1_1upper__triangle__t.html#ab643bf944fffc88b84bbebb0d95e736d',1,'etl::linalg::upper_triangle_t::upper_triangle_t()']]],
-  ['use_20namesapce_20std_88',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md29',1,'']]],
+  ['use_20namesapce_20std_88',['Forced to use namesapce std',['../md_docs_2design.html#autotoc_md30',1,'']]],
   ['user_2ehpp_89',['user.hpp',['../user_8hpp.html',1,'']]],
   ['uses_5fallocator_90',['uses_allocator',['../structetl_1_1uses__allocator.html',1,'etl']]],
   ['uses_5fallocator_2ehpp_91',['uses_allocator.hpp',['../uses__allocator_8hpp.html',1,'']]],

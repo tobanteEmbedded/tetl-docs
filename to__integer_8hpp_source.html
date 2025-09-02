@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -202,8 +195,8 @@ $(function(){initNavTree('to__integer_8hpp_source.html','',''); });
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">auto</span> <span class="keyword">const</span> length        = str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0">size</a>();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">auto</span> <span class="keyword">const</span> wouldOverflow = detail::overflow_checker&lt;Int, Options.check_overflow&gt;{base};</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">auto</span> <span class="keyword">const</span> makeError     = [str](<span class="keyword">auto</span> err) { <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result&lt;Int&gt;</a>{.end = str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>(), .error = err}; };</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> <span class="keyword">const</span> parseDigit    = [](<span class="keywordtype">int</span> ch) -&gt; Int {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> <span class="keyword">const</span> parseDigit = [](<span class="keywordtype">int</span> ch) -&gt; Int {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="group__cctype.html#ga7ada684f4a3c41f99153164e5465e49c">etl::isdigit</a>(ch) != 0) {</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(ch - <span class="keywordtype">int</span>{<span class="charliteral">&#39;0&#39;</span>});</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
@@ -213,80 +206,102 @@ $(function(){initNavTree('to__integer_8hpp_source.html','',''); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">etl::numeric_limits&lt;Int&gt;::max</a>(); <span class="comment">// always greater than base</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    };</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">auto</span> pos = <span class="keywordtype">size_t</span>{};</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Options.skip_whitespace) {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">while</span> (pos != length and <a class="code hl_function" href="group__cctype.html#ga9d797fc03c5126b24a821bd1fc122b3a">etl::isspace</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos]))) {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            ++pos;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">auto</span> <span class="keyword">const</span> invalidInputError = [<a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a> = str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>()] {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result&lt;Int&gt;</a>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            .end   = <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            .error = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33">to_integer_error::invalid_input</a>,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        };</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    };</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// empty or only whitespace</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">if</span> (pos == length) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33">to_integer_error::invalid_input</a>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="comment">// optional minus for signed types</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    [[maybe_unused]] <span class="keyword">auto</span> positive = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span> (str[pos] == <span class="charliteral">&#39;-&#39;</span>) {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            positive = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">if</span> (++pos == length) {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="comment">// minus &quot;-&quot; was last character in string</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33">to_integer_error::invalid_input</a>);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// first digit</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">auto</span> value = [&amp;] {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">auto</span> <span class="keyword">const</span> ch    = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos++]);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">auto</span> <span class="keyword">const</span> digit = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(parseDigit(ch));</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(-digit);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">return</span> digit;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">etl::abs</a>(value) &gt;= base) {</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a1080ed39e08a161dc545804658700e33">to_integer_error::invalid_input</a>);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// loop over rest of digits</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">for</span> (; pos != length; ++pos) {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">auto</span> <span class="keyword">const</span> digit = parseDigit(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos]));</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">if</span> (digit &gt;= base) {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">auto</span> <span class="keyword">const</span> overflowError = [&amp;]&lt;<span class="keywordtype">bool</span> MatchRestOfPattern&gt;(<span class="keyword">auto</span> pos, <a class="code hl_typedef" href="namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc">bool_constant&lt;MatchRestOfPattern&gt;</a> <span class="comment">/*bc*/</span>) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (MatchRestOfPattern) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">for</span> (; pos != length; ++pos) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <span class="keyword">auto</span> <span class="keyword">const</span> digit = parseDigit(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos]));</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="keywordflow">if</span> (digit &gt;= base) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structetl_1_1strings_1_1to__integer__result.html">to_integer_result&lt;Int&gt;</a>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            .end   = <a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>(), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a><span class="keyword">&gt;</span>(pos)),</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            .error = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73">to_integer_error::overflow</a>,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        };</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    };</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">auto</span> pos = <span class="keywordtype">size_t</span>{};</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (Options.skip_whitespace) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">while</span> (pos != length and <a class="code hl_function" href="group__cctype.html#ga9d797fc03c5126b24a821bd1fc122b3a">etl::isspace</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos]))) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            ++pos;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// empty or only whitespace</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">if</span> (pos == length) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">return</span> invalidInputError();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">// optional minus for signed types</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    [[maybe_unused]] <span class="keyword">auto</span> positive = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span> (str[pos] == <span class="charliteral">&#39;-&#39;</span>) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            positive = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">if</span> (++pos == length) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="comment">// minus &quot;-&quot; was last character in string</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordflow">return</span> invalidInputError();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">if</span> (wouldOverflow(value, digit)) {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73">to_integer_error::overflow</a>);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">// first digit</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">auto</span> value = [&amp;] {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keyword">auto</span> <span class="keyword">const</span> ch    = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos++]);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keyword">auto</span> <span class="keyword">const</span> digit = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(parseDigit(ch));</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base - digit);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(-digit);</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base + digit);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">return</span> digit;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }();</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">if</span> (positive) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">if</span> (value == <a class="code hl_function" href="structetl_1_1numeric__limits.html#aff08e95689a248ff87097f80ddbe4f38">numeric_limits&lt;Int&gt;::min</a>()) {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keywordflow">return</span> makeError(<a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a0bd9f6dd716003f3818d15d2e211ee73">to_integer_error::overflow</a>);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            }</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            value *= Int(-1);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a> = <a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>(), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a><span class="keyword">&gt;</span>(pos));</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">return</span> {.end = <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>, .error = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a334c4a4c42fdb79d7ebc3e73b517e6f8">to_integer_error::none</a>, .value = value};</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
-</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>} <span class="comment">// namespace etl::strings</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="group__complex.html#gabe732728abf637284509396f07e7e428">etl::abs</a>(value) &gt;= base) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">return</span> invalidInputError();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// loop over rest of digits</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">for</span> (; pos != length; ++pos) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keyword">auto</span> <span class="keyword">const</span> digit = parseDigit(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(str[pos]));</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">if</span> (digit &gt;= base) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">if</span> (wouldOverflow(value, digit)) {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <span class="keywordflow">return</span> overflowError(pos, <a class="code hl_typedef" href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a>{});</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRINGS_TO_INTEGER_HPP</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base - digit);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            value = <span class="keyword">static_cast&lt;</span>Int<span class="keyword">&gt;</span>(value * base + digit);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_concept" href="conceptetl_1_1signed__integral.html">signed_integral&lt;Int&gt;</a>) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">if</span> (positive) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <span class="keywordflow">if</span> (value == <a class="code hl_function" href="structetl_1_1numeric__limits.html#aff08e95689a248ff87097f80ddbe4f38">numeric_limits&lt;Int&gt;::min</a>()) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keywordflow">return</span> overflowError(pos, <a class="code hl_typedef" href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a>{});</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            value *= Int(-1);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a> = <a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(str.<a class="code hl_function" href="structetl_1_1basic__string__view.html#addcf469e96bb82eab92925415b43e219">data</a>(), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a><span class="keyword">&gt;</span>(pos));</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">return</span> {.end = <a class="code hl_function" href="group__iterator.html#gaa26698de685cc42e99c0c560d05ca93c">end</a>, .error = <a class="code hl_enumvalue" href="namespaceetl_1_1strings.html#a3130abd810b9657a9ca9b3449de3a192a334c4a4c42fdb79d7ebc3e73b517e6f8">to_integer_error::none</a>, .value = value};</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>} <span class="comment">// namespace etl::strings</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif </span><span class="comment">// TETL_STRINGS_TO_INTEGER_HPP</span></div>
 <div class="ttc" id="a__numeric_2abs_8hpp_html"><div class="ttname"><a href="__numeric_2abs_8hpp.html">abs.hpp</a></div></div>
 <div class="ttc" id="abasic__string__view_8hpp_html"><div class="ttname"><a href="basic__string__view_8hpp.html">basic_string_view.hpp</a></div></div>
 <div class="ttc" id="aconceptetl_1_1integral_html"><div class="ttname"><a href="conceptetl_1_1integral.html">etl::integral</a></div><div class="ttdoc">The concept integral&lt;T&gt; is satisfied if and only if T is an integral type.</div><div class="ttdef"><b>Definition</b> integral.hpp:13</div></div>
@@ -314,7 +329,10 @@ $(function(){initNavTree('to__integer_8hpp_source.html','',''); });
 <div class="ttc" id="anamespaceetl_1_1strings_html_acf1d0a5ef9247869c1bb7f9485aab2a8"><div class="ttname"><a href="namespaceetl_1_1strings.html#acf1d0a5ef9247869c1bb7f9485aab2a8">etl::strings::to_integer</a></div><div class="ttdeci">constexpr auto to_integer(string_view str, Int base=Int(10)) noexcept -&gt; to_integer_result&lt; Int &gt;</div><div class="ttdef"><b>Definition</b> to_integer.hpp:93</div></div>
 <div class="ttc" id="anamespaceetl_1_1strings_html_ae7104c48ed7b2dfabf112aa5eb629bb5a1080ed39e08a161dc545804658700e33"><div class="ttname"><a href="namespaceetl_1_1strings.html#ae7104c48ed7b2dfabf112aa5eb629bb5a1080ed39e08a161dc545804658700e33">etl::strings::to_floating_point_error::invalid_input</a></div><div class="ttdeci">@ invalid_input</div><div class="ttdef"><b>Definition</b> to_floating_point.hpp:15</div></div>
 <div class="ttc" id="anamespaceetl_html_a09d091a01d0f719c0e795ed347e18a6d"><div class="ttname"><a href="namespaceetl.html#a09d091a01d0f719c0e795ed347e18a6d">etl::conditional_t</a></div><div class="ttdeci">typename conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition</b> conditional.hpp:21</div></div>
+<div class="ttc" id="anamespaceetl_html_aa4e9c28fa52ab73ef48e5cbed20c66fd"><div class="ttname"><a href="namespaceetl.html#aa4e9c28fa52ab73ef48e5cbed20c66fd">etl::true_type</a></div><div class="ttdeci">bool_constant&lt; true &gt; true_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:13</div></div>
 <div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_ac5c90336c94cb0db8abdd10603a3c7cc"><div class="ttname"><a href="namespaceetl.html#ac5c90336c94cb0db8abdd10603a3c7cc">etl::bool_constant</a></div><div class="ttdeci">integral_constant&lt; bool, B &gt; bool_constant</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:11</div></div>
+<div class="ttc" id="anamespaceetl_html_ad15d3ff5d80b8c8c22e9ce862353ba55"><div class="ttname"><a href="namespaceetl.html#ad15d3ff5d80b8c8c22e9ce862353ba55">etl::false_type</a></div><div class="ttdeci">bool_constant&lt; false &gt; false_type</div><div class="ttdef"><b>Definition</b> bool_constant.hpp:14</div></div>
 <div class="ttc" id="anext_8hpp_html"><div class="ttname"><a href="next_8hpp.html">next.hpp</a></div></div>
 <div class="ttc" id="anumeric__limits_8hpp_html"><div class="ttname"><a href="numeric__limits_8hpp.html">numeric_limits.hpp</a></div></div>
 <div class="ttc" id="asigned__integral_8hpp_html"><div class="ttname"><a href="signed__integral_8hpp.html">signed_integral.hpp</a></div></div>

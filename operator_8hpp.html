@@ -104,12 +104,72 @@ $(function(){initNavTree('operator_8hpp.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:accd5d49a583e623298be82fa497e9546" id="r_accd5d49a583e623298be82fa497e9546"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accd5d49a583e623298be82fa497e9546">operator delete</a> (void *, void *) noexcept -&gt; void</td></tr>
+<tr class="memitem:a0754311d7293c038151eb3eb94e19199" id="r_a0754311d7293c038151eb3eb94e19199"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0754311d7293c038151eb3eb94e19199">operator delete[]</a> (void *, void *) noexcept -&gt; void</td></tr>
 <tr class="memitem:a522458e13fc259cf6d28015c387bef0e" id="r_a522458e13fc259cf6d28015c387bef0e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a522458e13fc259cf6d28015c387bef0e">operator new</a> (<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> count, void *ptr) noexcept -&gt; void *</td></tr>
 <tr class="memdesc:a522458e13fc259cf6d28015c387bef0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the standard single-object placement new expression. The standard library implementation performs no action and returns ptr unmodified. The behavior is undefined if this function is called through a placement new expression and ptr is a null pointer.  <br /></td></tr>
 <tr class="memitem:aa994729279323d9864d823944a24959c" id="r_aa994729279323d9864d823944a24959c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa994729279323d9864d823944a24959c">operator new[]</a> (<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a> count, void *ptr) noexcept -&gt; void *</td></tr>
 <tr class="memdesc:aa994729279323d9864d823944a24959c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the standard array form placement new expression. The standard library implementation performs no action and returns ptr unmodified. The behavior is undefined if this function is called through a placement new expression and ptr is a null pointer.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="accd5d49a583e623298be82fa497e9546" name="accd5d49a583e623298be82fa497e9546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd5d49a583e623298be82fa497e9546">&#9670;&#160;</a></span>operator delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator delete </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt; void </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0754311d7293c038151eb3eb94e19199" name="a0754311d7293c038151eb3eb94e19199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0754311d7293c038151eb3eb94e19199">&#9670;&#160;</a></span>operator delete[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator delete[] </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt; void </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a522458e13fc259cf6d28015c387bef0e" name="a522458e13fc259cf6d28015c387bef0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a522458e13fc259cf6d28015c387bef0e">&#9670;&#160;</a></span>operator new()</h2>
 
@@ -133,7 +193,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -165,7 +225,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

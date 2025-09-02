@@ -103,8 +103,12 @@ $(function(){initNavTree('source_location_8cpp-example.html','',''); });
 <div class="ttc" id="asource__location_8hpp_html"><div class="ttname"><a href="source__location_8hpp.html">source_location.hpp</a></div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="source__location_8hpp.html">etl/source_location.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="string__view_8hpp.html">etl/string_view.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="source__location_8hpp.html">etl/source_location.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="string__view_8hpp.html">etl/string_view.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"> </div>

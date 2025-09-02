@@ -11,11 +11,11 @@ var structetl_1_1experimental_1_1freertos_1_1stream__buffer =
     [ "native_handle", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a6019c9cc5c094228e016dc6d595ff988", null ],
     [ "operator=", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aed430005bd11fd808a01cda5fa74cb5f", null ],
     [ "operator=", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aa31840886fdd970533613cd426bf8717", null ],
-    [ "read", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#ac7f52dd1d3d415ce319524ba68cae91e", null ],
-    [ "read_from_isr", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a91cf28705886cf1c224401b313eec875", null ],
+    [ "read", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#adf7554782a652525279140d6e82c83de", null ],
+    [ "read_from_isr", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a965f50cd50298482494a795be3c8952f", null ],
     [ "reset", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aac315b43ca34dcc6130ade24bd25036c", null ],
     [ "space_available", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a1ebf11a45a82f2096adcc35ddb1c5bb4", null ],
     [ "trigger_level", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a7660c41908364d6d11f196a77599f600", null ],
-    [ "write", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aaea6ef98b3b587108dbe50d1185a2aee", null ],
-    [ "write_from_isr", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a39d6f175456ecd0ddc1b3126bba8d86b", null ]
+    [ "write", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a96403418549af8858955461e73bb3c9c", null ],
+    [ "write_from_isr", "structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aa502e5fecf10ee158952a60e0d9d2ae2", null ]
 ];

@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -125,13 +118,13 @@ $(function(){initNavTree('placeholder_8hpp_source.html','',''); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;detail::placeholder_type&lt;N&gt;&gt; : <a class="code hl_struct" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;int, N&gt; { };</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01const_01_4.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T const&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;::type { };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01const_01_4.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T const&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01volatile_01_4.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T volatile&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;::type { };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01volatile_01_4.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T volatile&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T const volatile&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;::type { };</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structetl_1_1is__placeholder_3_01T_01const_01volatile_01_4.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T const volatile&gt; : <a class="code hl_struct" href="structetl_1_1is__placeholder.html">is_placeholder</a>&lt;T&gt;<a class="code hl_typedef" href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">::type</a> { };</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespaceetl.html#af6e287e878604ddef97548a69df3bb24">   36</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceetl.html#af6e287e878604ddef97548a69df3bb24">is_placeholder_v</a> = <a class="code hl_variable" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">is_placeholder&lt;T&gt;::value</a>;</div>
@@ -214,6 +207,7 @@ $(function(){initNavTree('placeholder_8hpp_source.html','',''); });
 <div class="ttc" id="anamespaceetl_html_af6e287e878604ddef97548a69df3bb24"><div class="ttname"><a href="namespaceetl.html#af6e287e878604ddef97548a69df3bb24">etl::is_placeholder_v</a></div><div class="ttdeci">constexpr int is_placeholder_v</div><div class="ttdef"><b>Definition</b> placeholder.hpp:36</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:9</div></div>
 <div class="ttc" id="astructetl_1_1integral__constant_html_a9aa864e6c9ea467ce3878df4ca8e8571"><div class="ttname"><a href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">etl::integral_constant&lt; int, 0 &gt;::value</a></div><div class="ttdeci">static constexpr int value</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:10</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html_ad0830418f11a1906f58f0f4d3c6603ef"><div class="ttname"><a href="structetl_1_1integral__constant.html#ad0830418f11a1906f58f0f4d3c6603ef">etl::integral_constant&lt; int, 0 &gt;::type</a></div><div class="ttdeci">integral_constant&lt; int, Val &gt; type</div><div class="ttdef"><b>Definition</b> integral_constant.hpp:12</div></div>
 <div class="ttc" id="astructetl_1_1is__placeholder_html"><div class="ttname"><a href="structetl_1_1is__placeholder.html">etl::is_placeholder</a></div><div class="ttdef"><b>Definition</b> placeholder.hpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

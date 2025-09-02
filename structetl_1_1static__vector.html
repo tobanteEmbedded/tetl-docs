@@ -225,10 +225,13 @@ requires (<a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a
 struct etl::static_vector&lt; T, Capacity &gt;</div><p>Dynamically-resizable fixed-capacity vector. </p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">etl/vector.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="vector_8hpp.html">etl/vector.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>Person {</div>
 <div class="line">    <span class="keyword">constexpr</span> Person(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> e) noexcept</div>

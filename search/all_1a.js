@@ -62,8 +62,8 @@ var searchData=
   ['wmemset_59',['wmemset',['../namespaceetl.html#a181b3459989bb776b4fde2be3f0ff339',1,'etl']]],
   ['wmemset_2ehpp_60',['wmemset.hpp',['../wmemset_8hpp.html',1,'']]],
   ['workarounds_2ehpp_61',['workarounds.hpp',['../workarounds_8hpp.html',1,'']]],
-  ['write_62',['write',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aaea6ef98b3b587108dbe50d1185a2aee',1,'etl::experimental::freertos::stream_buffer::write()'],['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#aa0c17ac8d56bd49eaa6ea4a1dfe8ee9d',1,'etl::experimental::hardware::stm32::port::write()']]],
-  ['write_5ffrom_5fisr_63',['write_from_isr',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a39d6f175456ecd0ddc1b3126bba8d86b',1,'etl::experimental::freertos::stream_buffer']]],
-  ['wrong_5fprotocol_5ftype_64',['wrong_protocol_type',['../namespaceetl.html#aa31f743d6273b64f3e8a3121813ea243a81cac28a38438710de9856af4a8bcd0b',1,'etl']]],
+  ['write_62',['write',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a96403418549af8858955461e73bb3c9c',1,'etl::experimental::freertos::stream_buffer::write()'],['../structetl_1_1experimental_1_1hardware_1_1stm32_1_1port.html#aa0c17ac8d56bd49eaa6ea4a1dfe8ee9d',1,'etl::experimental::hardware::stm32::port::write()']]],
+  ['write_5ffrom_5fisr_63',['write_from_isr',['../structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#aa502e5fecf10ee158952a60e0d9d2ae2',1,'etl::experimental::freertos::stream_buffer']]],
+  ['wrong_5fprotocol_5ftype_64',['wrong_protocol_type',['../namespaceetl.html#a7307dac40a73af1b5008fbf3fc6ab05ba81cac28a38438710de9856af4a8bcd0b',1,'etl']]],
   ['wstring_5fview_65',['wstring_view',['../group__string__view.html#gaa9b1a068b262624bb2acdd4a72fddb28',1,'etl']]]
 ];

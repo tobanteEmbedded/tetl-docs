@@ -103,10 +103,13 @@ $(function(){initNavTree('optional_8cpp-example.html','',''); });
 <div class="ttc" id="aoptional_8hpp_html"><div class="ttname"><a href="optional_8hpp.html">optional.hpp</a></div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#undef NDEBUG</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="optional_8hpp.html">etl/optional.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
+<div class="line"><span class="keyword">import</span> etl;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">    #include &lt;<a class="code" href="optional_8hpp.html">etl/optional.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> main() -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
@@ -156,7 +159,7 @@ $(function(){initNavTree('optional_8cpp-example.html','',''); });
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
 <div class="ttc" id="agroup__algorithm_html_ga9060e0931516472a88f4657d835684a9"><div class="ttname"><a href="group__algorithm.html#ga9060e0931516472a88f4657d835684a9">etl::move</a></div><div class="ttdeci">constexpr auto move(InputIt first, InputIt last, OutputIt destination) -&gt; OutputIt</div><div class="ttdoc">Moves the elements in the range [first, last), to another range beginning at destination,...</div><div class="ttdef"><b>Definition</b> move.hpp:26</div></div>
-<div class="ttc" id="astructetl_1_1optional_html"><div class="ttname"><a href="structetl_1_1optional.html">etl::optional</a></div><div class="ttdoc">The class template optional manages an optional contained value, i.e. a value that may or may not be ...</div><div class="ttdef"><b>Definition</b> optional.hpp:89</div></div>
+<div class="ttc" id="astructetl_1_1optional_html"><div class="ttname"><a href="structetl_1_1optional.html">etl::optional</a></div><div class="ttdoc">The class template optional manages an optional contained value, i.e. a value that may or may not be ...</div><div class="ttdef"><b>Definition</b> optional.hpp:90</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

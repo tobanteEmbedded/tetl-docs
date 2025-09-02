@@ -17,13 +17,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -126,7 +119,7 @@ $(function(){initNavTree('blas1__vector__idx__abs__max_8hpp_source.html','','');
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span> idx  = <a class="code hl_function" href="structetl_1_1numeric__limits.html#a76345fc065018c3299fc84601b968329">numeric_limits&lt;typename InVec::size_type&gt;::max</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span> maxV = <a class="code hl_struct" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<span class="keyword">decltype</span>(getValue(v(0)))&gt;::min();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span> maxV = <a class="code hl_struct" href="structetl_1_1numeric__limits.html">numeric_limits</a>&lt;<span class="keyword">decltype</span>(getValue(v(0)))&gt;<a class="code hl_function" href="group__algorithm.html#ga80c60a3adb053935acbf3c8a91a0a035">::min</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> InVec::size_type i{0}; <a class="code hl_function" href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a>(i, v.extent(0)); ++i) {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> (<span class="keyword">auto</span> <span class="keyword">const</span> val = getValue(v(i)); val &gt; maxV) {</div>
@@ -144,6 +137,7 @@ $(function(){initNavTree('blas1__vector__idx__abs__max_8hpp_source.html','','');
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// TETL_LINALG_BLAS1_VECTOR_IDX_ABS_MAX_HPP</span></div>
 <div class="ttc" id="a__linalg_2concepts_8hpp_html"><div class="ttname"><a href="__linalg_2concepts_8hpp.html">concepts.hpp</a></div></div>
 <div class="ttc" id="acmp__less_8hpp_html"><div class="ttname"><a href="cmp__less_8hpp.html">cmp_less.hpp</a></div></div>
+<div class="ttc" id="agroup__algorithm_html_ga80c60a3adb053935acbf3c8a91a0a035"><div class="ttname"><a href="group__algorithm.html#ga80c60a3adb053935acbf3c8a91a0a035">etl::min</a></div><div class="ttdeci">constexpr auto min(Type const &amp;a, Type const &amp;b, Compare comp) noexcept -&gt; Type const &amp;</div><div class="ttdoc">Returns the smaller of a and b, using a compare function.</div><div class="ttdef"><b>Definition</b> min.hpp:13</div></div>
 <div class="ttc" id="agroup__linalg_html_gaa1d6eae27b2281c3a966c843b2c26291"><div class="ttname"><a href="group__linalg.html#gaa1d6eae27b2281c3a966c843b2c26291">etl::linalg::idx_abs_max</a></div><div class="ttdeci">constexpr auto idx_abs_max(InVec v) -&gt; typename InVec::size_type</div><div class="ttdef"><b>Definition</b> blas1_vector_idx_abs_max.hpp:15</div></div>
 <div class="ttc" id="agroup__utility_html_gafdf1ab07ba48bb89aa8db68eff58328e"><div class="ttname"><a href="group__utility.html#gafdf1ab07ba48bb89aa8db68eff58328e">etl::cmp_less</a></div><div class="ttdeci">constexpr auto cmp_less(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_less.hpp:21</div></div>
 <div class="ttc" id="ais__arithmetic_8hpp_html"><div class="ttname"><a href="is__arithmetic_8hpp.html">is_arithmetic.hpp</a></div></div>
