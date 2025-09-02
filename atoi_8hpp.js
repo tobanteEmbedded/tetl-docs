@@ -1,4 +1,4 @@
 var atoi_8hpp =
 [
-    [ "etl::atoi", "namespaceetl.html#ae6b33a1df966c3e01d825b336211e3ef", null ]
+    [ "atoi", "atoi_8hpp.html#ae6b33a1df966c3e01d825b336211e3ef", null ]
 ];

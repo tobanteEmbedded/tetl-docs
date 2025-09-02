@@ -27,20 +27,20 @@ var NAVTREE =
   [ "tetl", "index.html", [
     [ "Embedded Template Library", "index.html", "index" ],
     [ "Contributing", "md_CONTRIBUTING.html", [
-      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md2", [
-        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md3", null ]
+      [ "Quick Start", "md_CONTRIBUTING.html#autotoc_md13", [
+        [ "Project Layout", "md_CONTRIBUTING.html#autotoc_md14", null ]
       ] ],
-      [ "Tests", "md_CONTRIBUTING.html#autotoc_md4", null ],
-      [ "Tools", "md_CONTRIBUTING.html#autotoc_md5", [
-        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md6", null ],
-        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md7", null ],
-        [ "coverage", "md_CONTRIBUTING.html#autotoc_md8", null ],
-        [ "libFuzzer", "md_CONTRIBUTING.html#autotoc_md9", null ],
-        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md10", null ],
-        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md11", null ],
-        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md12", null ]
+      [ "Tests", "md_CONTRIBUTING.html#autotoc_md15", null ],
+      [ "Tools", "md_CONTRIBUTING.html#autotoc_md16", [
+        [ "CMake Presets", "md_CONTRIBUTING.html#autotoc_md17", null ],
+        [ "clang-tidy", "md_CONTRIBUTING.html#autotoc_md18", null ],
+        [ "coverage", "md_CONTRIBUTING.html#autotoc_md19", null ],
+        [ "libFuzzer", "md_CONTRIBUTING.html#autotoc_md20", null ],
+        [ "pre-commit", "md_CONTRIBUTING.html#autotoc_md21", null ],
+        [ "doxygen", "md_CONTRIBUTING.html#autotoc_md22", null ],
+        [ "VS Code", "md_CONTRIBUTING.html#autotoc_md23", null ]
       ] ],
-      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md13", null ]
+      [ "Coding Style", "md_CONTRIBUTING.html#autotoc_md24", null ]
     ] ],
     [ "Design", "md_docs_2design.html", [
       [ "Builtin Types", "md_docs_2design.html#autotoc_md27", [
@@ -112,46 +112,48 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "001__avr__macros_8hpp.html",
-"allocator__arg__t_8hpp_source.html",
-"common__reference__with_8hpp_source.html",
-"dir_9546d4ce0294fc1f78ba6300191ec0a4.html",
-"functions_vars_a.html",
-"group__cmath.html#ga0968afe0e7ec491a982e2f849100400d",
-"group__complex.html#ga0c18e9f715e3983b7a71347ce6e0e2c1",
-"group__optional.html#ga86d4cbfad4362cf53ffd250086bee3a2",
-"is__bounded__array_8hpp.html",
-"layout__right_8hpp.html",
-"namespaceetl.html#a2461b338938a1fc7244f1c5fcc2efc21",
-"namespaceetl.html#a762a8e8750c01c04403086076b7bab1e",
-"namespaceetl.html#af3fd8976091aa72c12d7a7e5ee986400",
-"namespaceetl_1_1experimental_1_1hardware_1_1stm32.html#a67b127e8d0c54e75cd83844a7055e9f7a47ccc9e3ee3a60c30dacaee70c24f5e6",
-"namespacemembers_func_y.html",
-"remove__extent_8hpp_source.html",
-"structetl_1_1allocator__traits.html#a85263a9e2d1f4da2cde00205ca6f8d08",
-"structetl_1_1basic__inplace__string.html#a16217d6f6b3486d8f97f5ce43a6823c1",
-"structetl_1_1basic__inplace__string.html#ae30fa473f3c0b671b1bdbb315de22dbe",
-"structetl_1_1chrono_1_1duration__values.html#ac43451617ebb73e4a1a1cc0c10fd2bc3",
-"structetl_1_1complex.html#a3d412f95132e88661097feb669532588",
-"structetl_1_1experimental_1_1freertos_1_1stream__buffer.html#a7660c41908364d6d11f196a77599f600",
-"structetl_1_1flat__set.html#a4f7ebbc275e0cbbe7e3cc1588a86855e",
-"structetl_1_1hash_3_01bool_01_4.html#ae334cd68c63c3b7739926d38d8db10d9",
-"structetl_1_1inplace__vector_3_01T_00_010_01_4.html#a3607df244483b4018917334338d46833",
-"structetl_1_1is__scoped__enum_3_01T_01_4.html",
-"structetl_1_1linalg_1_1accessor__conjugate.html#ab5abd7afbc40f3e9419211253030ea84",
-"structetl_1_1meta_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html",
-"structetl_1_1numeric__limits.html#aacccb12bd15d0e947a0548530386ed38",
-"structetl_1_1numeric__limits_3_01char_01_4.html#a49722bc55d9a7580f3b8801c8e6c99b1",
-"structetl_1_1numeric__limits_3_01int_01_4.html#afa0f72a231c7ef28622d36ec39f1a012",
-"structetl_1_1numeric__limits_3_01short_01_4.html#ad8915ca97feb7066661158ad9b85a9bd",
-"structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html#a8a7083ae47792a97a0ece0b38cad5bba",
-"structetl_1_1optional_3_01T_01_6_01_4.html#ac6fef35c5a969de2cfb08f6e3e23f8f4",
-"structetl_1_1rank.html",
-"structetl_1_1static__set.html#a19076f1a393cd1bfb026e5ee39b2f583",
-"structetl_1_1to__chars__result.html",
-"structetl_1_1variant.html#aab2b00e9f330222976d8005c0e4fe514",
-"towlower_8hpp.html"
+"__span_2span_8hpp.html",
+"bit__or_8hpp.html",
+"conceptetl_1_1linalg_1_1out__vector.html",
+"div_8hpp.html#a6482fb76727697ae2e8c3d2da7de28d7",
+"forward_8hpp.html#aea04c6a544a650bcf6a7f88ff623c80f",
+"group__algorithm.html#ga9823f4c1911f50c9f7ac3b4a8be9f294",
+"group__cmath.html#ga8cba14d8fe2e4ab545185b18a751e4c5",
+"group__iterator.html#gad9728314a1814cd3fd1c7beaa6a54271",
+"in__place__type_8hpp.html",
+"is__move__assignable_8hpp.html",
+"layout__transpose_8hpp.html",
+"month__day_8hpp_source.html",
+"namespaceetl.html#a6a5c92ae723acdba8ce0f48be8530154aed920a9dd5bae2e1c4f11aab8f5784e1",
+"namespaceetl.html#abbffd4a8b5d0838ecc6a3f36cad3e3c6",
+"namespaceetl_1_1chrono.html#ae26bddc89ee76810a33e2da6d2a45b08",
+"namespaceetl_1_1placeholders.html#a8e47667422192e2d0c82d6cd887fd223",
+"placeholder_8hpp.html#ae8e67d2e0628597e1c046975fcc22c3c",
+"size__t_8hpp_source.html",
+"structetl_1_1array.html#ae3c2bc93013da8a1126d9a39c5086b60",
+"structetl_1_1basic__inplace__string.html#a5473c5daed3ced1a9a52e01914555190",
+"structetl_1_1basic__string__view.html#a58c36dc891b872577d09be4e65316b15",
+"structetl_1_1chrono_1_1time__point.html#ac8b650af0a017f75dd6d306cfb8f3d24",
+"structetl_1_1default__delete.html",
+"structetl_1_1experimental_1_1hardware_1_1stm32_1_1isr.html",
+"structetl_1_1formatter.html#ab9e8207f4da203344a65a25d6b0e6f63",
+"structetl_1_1incrementable__traits.html",
+"structetl_1_1is__copy__constructible.html",
+"structetl_1_1layout__right_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3",
+"structetl_1_1mdarray.html#a643a9c73766f847c533d151d0e7c89d5",
+"structetl_1_1numeric__limits.html#a7666b127ad5bb311e92ef107eb9a038a",
+"structetl_1_1numeric__limits_3_01double_01_4.html#a42031a35b3a28f54a080701b8aa5c82c",
+"structetl_1_1numeric__limits_3_01long_01_4.html#aea499c39d90a5b31c7545cd7becc6eba",
+"structetl_1_1numeric__limits_3_01signed_01char_01_4.html#acc255fd273cc0da6a74bfb5f536ac5cd",
+"structetl_1_1numeric__limits_3_01unsigned_01long_01long_01_4.html#a870a770d4698a6235ed112e26415fe1e",
+"structetl_1_1plus_3_01void_01_4.html#ab971394b088a2d71e75d8802238ac731",
+"structetl_1_1remove__extent_3_01T_0f_0e_4.html#a834c467da58ea1d81821952d3c473b64",
+"structetl_1_1static__vector.html#a398644ccb51f16fc1ae01744f51ca411",
+"structetl_1_1tuple__element_3_01I_00_01tuple_3_01Ts_8_8_8_01_4_01_4.html",
+"structetl_1_1vector.html#afc100f3629c27807b469d09123e3d42b",
+"uint__fast__t_8hpp_source.html",
+"year__month_8hpp.html#af3f8b1289e75336ab63a0401d2a4f510"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['xmessagebuffercreate_0',['xMessageBufferCreate',['../stubs_8hpp.html#aefa58eeb0fd73ae0b3163c20b76c8877',1,'stubs.hpp']]],
-  ['xorshift_1',['xorshift',['../structetl_1_1xorshift.html#a87ed37e66e0eacaa727950acf1577d32',1,'etl::xorshift::xorshift()=default'],['../structetl_1_1xorshift.html#a213b0910f16aa5fd0823cc3b8c1e3f5d',1,'etl::xorshift::xorshift(result_type seed) noexcept']]],
+  ['xorshift_1',['xorshift',['../structetl_1_1xorshift.html#a213b0910f16aa5fd0823cc3b8c1e3f5d',1,'etl::xorshift::xorshift(result_type seed) noexcept'],['../structetl_1_1xorshift.html#a87ed37e66e0eacaa727950acf1577d32',1,'etl::xorshift::xorshift()=default']]],
   ['xoshiro128plus_2',['xoshiro128plus',['../structetl_1_1xoshiro128plus.html#a60a1692d00618205d15aeb3607369e1d',1,'etl::xoshiro128plus::xoshiro128plus()=default'],['../structetl_1_1xoshiro128plus.html#a2d06fa7813b6393a3218d19746b84dc6',1,'etl::xoshiro128plus::xoshiro128plus(result_type seed) noexcept']]],
   ['xoshiro128plusplus_3',['xoshiro128plusplus',['../structetl_1_1xoshiro128plusplus.html#aac21033f5396b2d7099fb91753fac0ba',1,'etl::xoshiro128plusplus::xoshiro128plusplus()=default'],['../structetl_1_1xoshiro128plusplus.html#ad61756b50e258329ca1a6b06b6ee1997',1,'etl::xoshiro128plusplus::xoshiro128plusplus(result_type seed) noexcept']]],
   ['xoshiro128starstar_4',['xoshiro128starstar',['../structetl_1_1xoshiro128starstar.html#a516823b30850be16501ad5dd5bd039e5',1,'etl::xoshiro128starstar::xoshiro128starstar()=default'],['../structetl_1_1xoshiro128starstar.html#ac0478c79b0b9f10211be76e2cfd7638f',1,'etl::xoshiro128starstar::xoshiro128starstar(result_type seed) noexcept']]],

@@ -26,7 +26,7 @@ var searchData=
   ['bit_5for_2ehpp_23',['bit_or.hpp',['../bit__or_8hpp.html',1,'']]],
   ['bit_5fwidth_2ehpp_24',['bit_width.hpp',['../bit__width_8hpp.html',1,'']]],
   ['bit_5fxor_2ehpp_25',['bit_xor.hpp',['../bit__xor_8hpp.html',1,'']]],
-  ['bitset_2ehpp_26',['bitset.hpp',['../__bitset_2bitset_8hpp.html',1,'(Global Namespace)'],['../bitset_8hpp.html',1,'(Global Namespace)']]],
+  ['bitset_2ehpp_26',['bitset.hpp',['../bitset_8hpp.html',1,'(Global Namespace)'],['../__bitset_2bitset_8hpp.html',1,'(Global Namespace)']]],
   ['blas1_5fadd_2ehpp_27',['blas1_add.hpp',['../blas1__add_8hpp.html',1,'']]],
   ['blas1_5fcopy_2ehpp_28',['blas1_copy.hpp',['../blas1__copy_8hpp.html',1,'']]],
   ['blas1_5fmatrix_5ffrob_5fnorm_2ehpp_29',['blas1_matrix_frob_norm.hpp',['../blas1__matrix__frob__norm_8hpp.html',1,'']]],

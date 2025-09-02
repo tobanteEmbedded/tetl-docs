@@ -2,7 +2,7 @@ var searchData=
 [
   ['tags_2ehpp_0',['tags.hpp',['../__iterator_2tags_8hpp.html',1,'(Global Namespace)'],['../__linalg_2tags_8hpp.html',1,'(Global Namespace)'],['../__mutex_2tags_8hpp.html',1,'(Global Namespace)']]],
   ['tail_2ehpp_1',['tail.hpp',['../tail_8hpp.html',1,'']]],
-  ['tan_2ehpp_2',['tan.hpp',['../__cmath_2tan_8hpp.html',1,'(Global Namespace)'],['../__complex_2tan_8hpp.html',1,'(Global Namespace)']]],
+  ['tan_2ehpp_2',['tan.hpp',['../__complex_2tan_8hpp.html',1,'(Global Namespace)'],['../__cmath_2tan_8hpp.html',1,'(Global Namespace)']]],
   ['tanh_2ehpp_3',['tanh.hpp',['../__cmath_2tanh_8hpp.html',1,'(Global Namespace)'],['../__complex_2tanh_8hpp.html',1,'(Global Namespace)']]],
   ['task_2ehpp_4',['task.hpp',['../task_8hpp.html',1,'']]],
   ['test_5fbit_2ehpp_5',['test_bit.hpp',['../test__bit_8hpp.html',1,'']]],
@@ -35,5 +35,5 @@ var searchData=
   ['tuple_5fsize_2ehpp_32',['tuple_size.hpp',['../tuple__size_8hpp.html',1,'']]],
   ['type_5fidentity_2ehpp_33',['type_identity.hpp',['../type__identity_8hpp.html',1,'']]],
   ['type_5ftraits_2ehpp_34',['type_traits.hpp',['../type__traits_8hpp.html',1,'']]],
-  ['typedefs_2ehpp_35',['typedefs.hpp',['../__cmath_2typedefs_8hpp.html',1,'(Global Namespace)'],['../__ios_2typedefs_8hpp.html',1,'(Global Namespace)']]]
+  ['typedefs_2ehpp_35',['typedefs.hpp',['../__ios_2typedefs_8hpp.html',1,'(Global Namespace)'],['../__cmath_2typedefs_8hpp.html',1,'(Global Namespace)']]]
 ];

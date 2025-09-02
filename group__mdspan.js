@@ -23,11 +23,11 @@ var group__mdspan =
       [ "mdspan", "structetl_1_1mdspan.html#a853a34e339e06c04baee8f5a9d077e0d", null ],
       [ "mdspan", "structetl_1_1mdspan.html#afef2d8d7874385a78dfee74ad3a91d0a", null ],
       [ "mdspan", "structetl_1_1mdspan.html#ad0404a48dfb1576d06dd2f4bc231a573", null ],
-      [ "_acc", "structetl_1_1mdspan.html#a0c16524a05d1637da2a669f5f27f7393", null ],
       [ "_acc", "structetl_1_1mdspan.html#af0176152c5537a38e87baaffa8a62b70", null ],
+      [ "_acc", "structetl_1_1mdspan.html#a0c16524a05d1637da2a669f5f27f7393", null ],
       [ "_acc", "structetl_1_1mdspan.html#a88f622bf937dd9097b998b6ccf59b488", null ],
-      [ "_map", "structetl_1_1mdspan.html#ac7a0295dd31b76a7464ec3cf254f97a9", null ],
       [ "_map", "structetl_1_1mdspan.html#a587ee607ed55182e6889a0457377974d", null ],
+      [ "_map", "structetl_1_1mdspan.html#ac7a0295dd31b76a7464ec3cf254f97a9", null ],
       [ "_map", "structetl_1_1mdspan.html#aab5b895bf75c421dcff922917477bf33", null ],
       [ "accessor", "structetl_1_1mdspan.html#a114c7427c437c1f1d409e855f9de826e", null ],
       [ "data_handle", "structetl_1_1mdspan.html#a930979532ddfb5ec6e9b272e3d93db67", null ],
@@ -52,11 +52,11 @@ var group__mdspan =
       [ "size", "structetl_1_1mdspan.html#aeda399ad0b26aa2d0116f45b2a4c6ca0", null ],
       [ "static_extent", "structetl_1_1mdspan.html#adc1f6cd2a5d74b743e920442cac589d4", null ],
       [ "stride", "structetl_1_1mdspan.html#a27d97d99c02c8246444486601ab8086f", null ],
-      [ "exts", "structetl_1_1mdspan.html#a9d21ac4c0a5e46f34099a9af5ef6f90e", null ],
       [ "exts", "structetl_1_1mdspan.html#a8fc5f18754b7330eefadde7886d3471b", null ],
+      [ "exts", "structetl_1_1mdspan.html#a9d21ac4c0a5e46f34099a9af5ef6f90e", null ],
       [ "other", "structetl_1_1mdspan.html#a3ed47f7d98615057b356a5c5f021244a", null ],
       [ "OtherExtents", "structetl_1_1mdspan.html#a986cfdc9711076193ff450307c031970", null ],
       [ "OtherLayout", "structetl_1_1mdspan.html#a131ee9ed13d1f7b1f7819f929e2684c9", null ]
     ] ],
-    [ "etl::full_extent_t::full_extent", "group__mdspan.html#gadc2ae7417bbb31ee7329791e44cfe58f", null ]
+    [ "full_extent", "group__mdspan.html#gadc2ae7417bbb31ee7329791e44cfe58f", null ]
 ];

@@ -51,5 +51,5 @@ var group__expected =
       [ "operator==", "structetl_1_1unexpected.html#ad0236e449e231fa98520bb18a3a6e5d8", null ],
       [ "swap", "structetl_1_1unexpected.html#abc29715f4aeff27c974030d748183c47", null ]
     ] ],
-    [ "etl::unexpect_t::unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
+    [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
 ];

@@ -35,7 +35,7 @@ var group__span =
       [ "count", "structetl_1_1span.html#a63a9cbbcc6f14ca8d086c4b4eab5dedb", null ],
       [ "extent", "structetl_1_1span.html#a00742803104bb69f8f341b5999987144", null ]
     ] ],
-    [ "etl::span::as_bytes", "group__span.html#ga76f0f69b8c6ca92d82eef71a4c9f4056", null ],
-    [ "etl::span::as_writable_bytes", "group__span.html#ga782ff6f632fb48e1dc91dec240b5de82", null ],
-    [ "etl::dynamic_extent", "group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8", null ]
+    [ "as_bytes", "group__span.html#ga76f0f69b8c6ca92d82eef71a4c9f4056", null ],
+    [ "as_writable_bytes", "group__span.html#ga782ff6f632fb48e1dc91dec240b5de82", null ],
+    [ "dynamic_extent", "group__span.html#ga22e7be40fea564f0c1fe3d11229ef0f8", null ]
 ];

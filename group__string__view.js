@@ -83,9 +83,9 @@ var group__string__view =
       [ "swap", "structetl_1_1basic__string__view.html#ab78ad486e31042d00c223ccd25339651", null ],
       [ "npos", "structetl_1_1basic__string__view.html#a29abf0eaf62dbe10174db67475599a1b", null ]
     ] ],
-    [ "etl::string_view", "group__string__view.html#ga6f7f02db9e66eaec8dccdca2f4e98a2f", null ],
-    [ "etl::u16string_view", "group__string__view.html#ga78063dd4c433139e4a09048178b75cd7", null ],
-    [ "etl::u32string_view", "group__string__view.html#ga4c2c2ac5d94b74c5f40a8c3dab4bb4d8", null ],
-    [ "etl::u8string_view", "group__string__view.html#gaeb8937e6015b33fe342b1cc4bf300111", null ],
-    [ "etl::wstring_view", "group__string__view.html#gaa9b1a068b262624bb2acdd4a72fddb28", null ]
+    [ "string_view", "group__string__view.html#ga5c902cab175ea50e8880d944872336e4", null ],
+    [ "u16string_view", "group__string__view.html#gafc0fa43a3921a5ef15d04b5a1f0fdcce", null ],
+    [ "u32string_view", "group__string__view.html#gac76c0fec88e4be11d08160086f8d46f1", null ],
+    [ "u8string_view", "group__string__view.html#gadcf81725a11cdf03a64f91023d361394", null ],
+    [ "wstring_view", "group__string__view.html#ga4e6fc28a11c4319ec1fde242a3354de9", null ]
 ];

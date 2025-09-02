@@ -42,7 +42,7 @@ var group__array =
       [ "get", "structetl_1_1array.html#a7523a3dfaad4821bb37a62e49ae19564", null ],
       [ "get", "structetl_1_1array.html#a519806e08910c96f1f59dc84109b2c60", null ],
       [ "get", "structetl_1_1array.html#ab64420ef7894f5d9a1c2f33d35f3136e", null ],
-      [ "is_tuple_like< etl::array< T, Size > >", "structetl_1_1array.html#a3308811f6dd19ffe367e7f89daec1c05", null ],
+      [ "is_tuple_like", "structetl_1_1array.html#a52bce012c4b201c8f654c4eee78555ef", null ],
       [ "operator<", "structetl_1_1array.html#a55f0902fb41c93ffc3cfb1faca46e084", null ],
       [ "operator<=", "structetl_1_1array.html#ad79496c668b8897e66cba6fb437edd34", null ],
       [ "operator==", "structetl_1_1array.html#a8bd4e830b5de57b0d1c67280677c992a", null ],
@@ -86,5 +86,5 @@ var group__array =
       [ "data", "structetl_1_1uninitialized__array.html#a7b7d97467ef611e07918f8b493300f5c", null ],
       [ "size", "structetl_1_1uninitialized__array.html#ae65394ee0e86a1b91dd59f2e72aa907a", null ]
     ] ],
-    [ "etl::c_array", "group__array.html#ga1693d67d03475372752f9e6973d67a8d", null ]
+    [ "c_array", "group__array.html#ga1693d67d03475372752f9e6973d67a8d", null ]
 ];

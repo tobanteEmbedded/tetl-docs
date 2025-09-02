@@ -1,4 +1,4 @@
 var range__difference__t_8hpp =
 [
-    [ "etl::ranges::range_difference_t", "group__ranges.html#ga0350b8082850d48327cd739fc46091f4", null ]
+    [ "range_difference_t", "range__difference__t_8hpp.html#gabb7c4794bb3c31a04bf6ef72caada89c", null ]
 ];

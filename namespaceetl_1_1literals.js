@@ -1,7 +1,6 @@
 var namespaceetl_1_1literals =
 [
     [ "chrono_literals", "namespaceetl_1_1literals_1_1chrono__literals.html", [
-      [ "operator\"\"_d", "namespaceetl_1_1literals_1_1chrono__literals.html#aaaba1a7c447283c046a48394e74172ea", null ],
       [ "operator\"\"_h", "namespaceetl_1_1literals_1_1chrono__literals.html#ae4577bf7867d4337d8dd08dc3fc31900", null ],
       [ "operator\"\"_h", "namespaceetl_1_1literals_1_1chrono__literals.html#ab4723809483e46957434578efbbf37c8", null ],
       [ "operator\"\"_min", "namespaceetl_1_1literals_1_1chrono__literals.html#afffa7b6293471e52a5217851a25ed47f", null ],
@@ -13,8 +12,7 @@ var namespaceetl_1_1literals =
       [ "operator\"\"_s", "namespaceetl_1_1literals_1_1chrono__literals.html#a5b537721ce0895c51b93d53d4542d746", null ],
       [ "operator\"\"_s", "namespaceetl_1_1literals_1_1chrono__literals.html#accf39bd85cf926b2a54efaa5bfffe433", null ],
       [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a41f2fde9a4fd051a6bc050a417a1b859", null ],
-      [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a6cefb6c59cd3f3c6fc3d7c87b547074c", null ],
-      [ "operator\"\"_y", "namespaceetl_1_1literals_1_1chrono__literals.html#a21da7769abdcedec53e5522706dbe2d6", null ]
+      [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a6cefb6c59cd3f3c6fc3d7c87b547074c", null ]
     ] ],
     [ "complex_literals", "namespaceetl_1_1literals_1_1complex__literals.html", [
       [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ac2266f4104a4fb536c9a02bcb8fa139d", null ],
@@ -24,14 +22,7 @@ var namespaceetl_1_1literals =
       [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a853b7e0bec79c51fcf33f952a7415700", null ],
       [ "operator\"\"_il", "namespaceetl_1_1literals_1_1complex__literals.html#a394f12cefe14e96cca9da3af660a66b7", null ]
     ] ],
-    [ "string_view_literals", "namespaceetl_1_1literals_1_1string__view__literals.html", [
-      [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22", null ],
-      [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#acb2d0f43c8f2907a54ec77992f782674", null ],
-      [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#adedd6d6eb71fb889fe6c3342e5451aff", null ],
-      [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a3ace4e4371593e4f9ad337ea139ba6aa", null ],
-      [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163", null ]
-    ] ],
-    [ "operator\"\"_d", "namespaceetl_1_1literals_1_1chrono__literals.html#aaaba1a7c447283c046a48394e74172ea", null ],
+    [ "string_view_literals", "namespaceetl_1_1literals_1_1string__view__literals.html", null ],
     [ "operator\"\"_h", "namespaceetl_1_1literals_1_1chrono__literals.html#ae4577bf7867d4337d8dd08dc3fc31900", null ],
     [ "operator\"\"_h", "namespaceetl_1_1literals_1_1chrono__literals.html#ab4723809483e46957434578efbbf37c8", null ],
     [ "operator\"\"_i", "namespaceetl_1_1literals_1_1complex__literals.html#ac2266f4104a4fb536c9a02bcb8fa139d", null ],
@@ -48,12 +39,6 @@ var namespaceetl_1_1literals =
     [ "operator\"\"_ns", "namespaceetl_1_1literals_1_1chrono__literals.html#a5bbff174c4704c0334cf0614ef691012", null ],
     [ "operator\"\"_s", "namespaceetl_1_1literals_1_1chrono__literals.html#a5b537721ce0895c51b93d53d4542d746", null ],
     [ "operator\"\"_s", "namespaceetl_1_1literals_1_1chrono__literals.html#accf39bd85cf926b2a54efaa5bfffe433", null ],
-    [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a2624a1c2bc9ae10e7e77dddbc403bf22", null ],
-    [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#acb2d0f43c8f2907a54ec77992f782674", null ],
-    [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#adedd6d6eb71fb889fe6c3342e5451aff", null ],
-    [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#a3ace4e4371593e4f9ad337ea139ba6aa", null ],
-    [ "operator\"\"_sv", "namespaceetl_1_1literals_1_1string__view__literals.html#aef7939278c60a608bef4d15527431163", null ],
     [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a41f2fde9a4fd051a6bc050a417a1b859", null ],
-    [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a6cefb6c59cd3f3c6fc3d7c87b547074c", null ],
-    [ "operator\"\"_y", "namespaceetl_1_1literals_1_1chrono__literals.html#a21da7769abdcedec53e5522706dbe2d6", null ]
+    [ "operator\"\"_us", "namespaceetl_1_1literals_1_1chrono__literals.html#a6cefb6c59cd3f3c6fc3d7c87b547074c", null ]
 ];

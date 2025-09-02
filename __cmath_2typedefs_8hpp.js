@@ -5,6 +5,6 @@ var __cmath_2typedefs_8hpp =
     [ "HUGE_VALL", "__cmath_2typedefs_8hpp.html#ab8b359c356d4311bf5d4ae6c03f43182", null ],
     [ "INFINITY", "__cmath_2typedefs_8hpp.html#a956e2723d559858d08644ac99146e910", null ],
     [ "NAN", "__cmath_2typedefs_8hpp.html#a8abfcc76130f3f991d124dd22d7e69bc", null ],
-    [ "etl::double_t", "group__cmath.html#ga8b0daa9c087aab901d5a05c155b62581", null ],
-    [ "etl::float_t", "group__cmath.html#gaef34e23d4cca9aba8d78eeb0ae8fcd2e", null ]
+    [ "double_t", "__cmath_2typedefs_8hpp.html#ga8b0daa9c087aab901d5a05c155b62581", null ],
+    [ "float_t", "__cmath_2typedefs_8hpp.html#gaef34e23d4cca9aba8d78eeb0ae8fcd2e", null ]
 ];

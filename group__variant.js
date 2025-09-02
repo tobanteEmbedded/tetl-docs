@@ -11,8 +11,8 @@ var group__variant =
       [ "variant", "structetl_1_1variant.html#aab2b00e9f330222976d8005c0e4fe514", null ],
       [ "~variant", "structetl_1_1variant.html#a2329e00ae48c982fc8a4088401b6c29a", null ],
       [ "~variant", "structetl_1_1variant.html#adbf070ba0fb08941bec0b2b392405ce6", null ],
-      [ "emplace", "structetl_1_1variant.html#a436ca9c6ee35f6e8863b9fbbcccc3aec", null ],
       [ "emplace", "structetl_1_1variant.html#aa7e9d274a2ae04d131f81e0d70ee97a8", null ],
+      [ "emplace", "structetl_1_1variant.html#a436ca9c6ee35f6e8863b9fbbcccc3aec", null ],
       [ "index", "structetl_1_1variant.html#aad02e9250af89295f0eb00cba0094069", null ],
       [ "operator=", "structetl_1_1variant.html#a798dfaacfc798a786ad64e8a7693d3a4", null ],
       [ "operator=", "structetl_1_1variant.html#aa3e1873d3c7822573e90f07ba6a700b3", null ],
@@ -40,6 +40,6 @@ var group__variant =
       [ "visit", "group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a", null ],
       [ "visit_with_index", "group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5", null ]
     ] ],
-    [ "etl::variant::visit", "group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a", null ],
-    [ "etl::variant::visit_with_index", "group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5", null ]
+    [ "visit", "group__variant.html#ga2f45e7a98a49bac4a0e8006a9c784f8a", null ],
+    [ "visit_with_index", "group__variant.html#gadc0c6481c2192cc80ab2f7b38c248ed5", null ]
 ];

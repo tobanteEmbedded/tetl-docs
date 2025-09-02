@@ -46,7 +46,7 @@ var group__mutex =
       [ "unlock", "structetl_1_1unique__lock.html#a84005e8f9adbfdc21c822dc537019ee3", null ],
       [ "swap", "structetl_1_1unique__lock.html#ac6a8030bfe4a30bf4b992515491ff310", null ]
     ] ],
-    [ "etl::adopt_lock_t::adopt_lock", "group__mutex.html#gab4a6bf92fbcf6950dffc7eb95503c730", null ],
-    [ "etl::defer_lock_t::defer_lock", "group__mutex.html#ga92894de63ca98284fbc82b9581829955", null ],
-    [ "etl::try_to_lock_t::try_to_lock", "group__mutex.html#ga34536009f995f4c77fa042dcaa930802", null ]
+    [ "adopt_lock", "group__mutex.html#gab4a6bf92fbcf6950dffc7eb95503c730", null ],
+    [ "defer_lock", "group__mutex.html#ga92894de63ca98284fbc82b9581829955", null ],
+    [ "try_to_lock", "group__mutex.html#ga34536009f995f4c77fa042dcaa930802", null ]
 ];

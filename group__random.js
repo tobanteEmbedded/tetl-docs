@@ -123,8 +123,8 @@ var group__random =
       [ "operator==", "structetl_1_1xoshiro128starstar.html#a6d0ce0f6845b7ed0975e52d25cb415bd", null ],
       [ "default_seed", "structetl_1_1xoshiro128starstar.html#afe0170472aeefd0e86554654d580c534", null ]
     ] ],
-    [ "etl::xorshift::xorshift16", "group__random.html#gada939b7242c7b75587b14fd18c28522f", null ],
-    [ "etl::xorshift::xorshift32", "group__random.html#ga6ff7397215e7cc0c5460ecd5b8d3302b", null ],
-    [ "etl::xorshift::xorshift64", "group__random.html#ga0d9d40f06204cac3ddc6e91203718e03", null ],
-    [ "etl::generate_canonical", "group__random.html#ga476438c577a79ab5e228c05ea53e8986", null ]
+    [ "xorshift16", "group__random.html#gada939b7242c7b75587b14fd18c28522f", null ],
+    [ "xorshift32", "group__random.html#ga6ff7397215e7cc0c5460ecd5b8d3302b", null ],
+    [ "xorshift64", "group__random.html#ga0d9d40f06204cac3ddc6e91203718e03", null ],
+    [ "generate_canonical", "group__random.html#ga476438c577a79ab5e228c05ea53e8986", null ]
 ];

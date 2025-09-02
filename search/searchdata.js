@@ -12,8 +12,8 @@ var indexSectionsWithContent =
   9: "bgiost",
   10: "_acdefhilmnpstuw",
   11: "abcdefhilmnorstuv",
-  12: "12abcdefghilnpqrstuv",
-  13: "abcdefilmoprstuw"
+  12: "bcdehlprt",
+  13: "e"
 };
 
 var indexSectionNames =

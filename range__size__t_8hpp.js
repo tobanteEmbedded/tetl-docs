@@ -1,4 +1,4 @@
 var range__size__t_8hpp =
 [
-    [ "etl::ranges::range_size_t", "group__ranges.html#ga82dd991432fa25e80777cea181487f5d", null ]
+    [ "range_size_t", "range__size__t_8hpp.html#ga82dd991432fa25e80777cea181487f5d", null ]
 ];
