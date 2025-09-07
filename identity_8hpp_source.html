@@ -106,39 +106,40 @@ $(document).ready(function(){initNavTree('identity_8hpp_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="identity_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">forward</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// \brief etl::identity is a function object type whose operator() returns its</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// argument unchanged.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html">   12</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1identity.html">identity</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">   13</a></span>    <span class="keyword">using</span> is_transparent = <span class="keywordtype">void</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">   16</a></span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">operator</a>()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; T&amp;&amp;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::forward&lt;T&gt;(t);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
-<div class="ttc" id="astructetl_1_1identity_html"><div class="ttname"><a href="structetl_1_1identity.html">etl::identity</a></div><div class="ttdoc">etl::identity is a function object type whose operator() returns its argument unchanged.</div><div class="ttdef"><b>Definition</b> identity.hpp:12</div></div>
-<div class="ttc" id="astructetl_1_1identity_html_a139f060ad86e9afb79e37b916f7125e8"><div class="ttname"><a href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">etl::identity::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;t) const noexcept -&gt; T &amp;&amp;</div><div class="ttdef"><b>Definition</b> identity.hpp:16</div></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2019 Tobias Hienzsch</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">forward</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// \brief etl::identity is a function object type whose operator() returns its</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// argument unchanged.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html">   13</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1identity.html">identity</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a2fbeedf2fc9bbbe1f7c1df62798a28e8">   14</a></span>    <span class="keyword">using</span> is_transparent = <span class="keywordtype">void</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">   17</a></span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">operator</a>()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span> -&gt; T&amp;&amp;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::forward&lt;T&gt;(t);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_FUNCTIONAL_IDENTITY_HPP</span></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
+<div class="ttc" id="astructetl_1_1identity_html"><div class="ttname"><a href="structetl_1_1identity.html">etl::identity</a></div><div class="ttdoc">etl::identity is a function object type whose operator() returns its argument unchanged.</div><div class="ttdef"><b>Definition</b> identity.hpp:13</div></div>
+<div class="ttc" id="astructetl_1_1identity_html_a139f060ad86e9afb79e37b916f7125e8"><div class="ttname"><a href="structetl_1_1identity.html#a139f060ad86e9afb79e37b916f7125e8">etl::identity::operator()</a></div><div class="ttdeci">constexpr auto operator()(T &amp;&amp;t) const noexcept -&gt; T &amp;&amp;</div><div class="ttdef"><b>Definition</b> identity.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="identity_8hpp.html">identity.hpp</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:25 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

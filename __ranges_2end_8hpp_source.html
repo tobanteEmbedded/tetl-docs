@@ -106,77 +106,78 @@ $(document).ready(function(){initNavTree('__ranges_2end_8hpp_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <a href="__ranges_2end_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_RANGES_END_HPP</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_RANGES_END_HPP</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">input_or_output_iterator</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">sentinel_for</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">can_borrow</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">decay_copy</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">iterator_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace</span> end_cpo {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">auto</span> end(<span class="keyword">auto</span>&amp;) -&gt; <span class="keywordtype">void</span>       = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">auto</span> end(<span class="keyword">auto</span> <span class="keyword">const</span>&amp;) -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">concept</span> has_member_end = <a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::detail::can_borrow&lt;T&gt; <span class="keyword">and</span> <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    { decay_copy(t.end()) } -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::sentinel_for&lt;<a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::iterator_t&lt;T&gt;&gt;;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">concept</span> has_adl_end = <span class="keyword">not</span> has_member_end&lt;T&gt; <span class="keyword">and</span> <a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::detail::can_borrow&lt;T&gt; <span class="keyword">and</span> <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    { decay_copy(end(t)) } -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::sentinel_for&lt;<a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::iterator_t&lt;T&gt;&gt;;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">struct</span> fn {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <a class="code hl_namespace" href="namespaceetl.html">etl</a>::size_t Size&gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">requires</span>(<span class="keyword">sizeof</span>(T) &gt;= 0) <span class="comment">// NOLINT(bugprone-sizeof-expression)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T (&amp;t)[Size]) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> t + Size;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">template</span> &lt;has_member_end T&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(decay_copy(t.end())))</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> decay_copy(t.end());</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">template</span> &lt;has_adl_end T&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(decay_copy(end(t))))</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> decay_copy(end(t));</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">auto</span> operator()(<span class="keyword">auto</span>&amp;&amp;) <span class="keyword">const</span> -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace end_cpo</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">inline</span> <span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl_1_1ranges_1_1cpo.html">cpo</a> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/// \ingroup ranges</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">   56</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">end</a> = end_cpo::fn{};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace cpo</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace etl::ranges</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_RANGES_END_HPP</span></div>
-<div class="ttc" id="agroup__ranges_html_gad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:56</div></div>
-<div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html">etl::ranges::cpo</a></div><div class="ttdef"><b>Definition</b> ranges_iter_move.hpp:60</div></div>
-<div class="ttc" id="anamespaceetl_1_1ranges_html"><div class="ttname"><a href="namespaceetl_1_1ranges.html">etl::ranges</a></div><div class="ttdef"><b>Definition</b> ranges_in_fun_result.hpp:11</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2023 Tobias Hienzsch</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_RANGES_END_HPP</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_RANGES_END_HPP</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">input_or_output_iterator</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_iterator</span><span class="preprocessor">/</span><span class="preprocessor">sentinel_for</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">can_borrow</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">decay_copy</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_ranges</span><span class="preprocessor">/</span><span class="preprocessor">iterator_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace</span> end_cpo {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">auto</span> end(<span class="keyword">auto</span>&amp;) -&gt; <span class="keywordtype">void</span>       = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">auto</span> end(<span class="keyword">auto</span> <span class="keyword">const</span>&amp;) -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">concept</span> has_member_end = <a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::detail::can_borrow&lt;T&gt; <span class="keyword">and</span> <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    { decay_copy(t.end()) } -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::sentinel_for&lt;<a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::iterator_t&lt;T&gt;&gt;;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">concept</span> has_adl_end = <span class="keyword">not</span> has_member_end&lt;T&gt; <span class="keyword">and</span> <a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::detail::can_borrow&lt;T&gt; <span class="keyword">and</span> <span class="keyword">requires</span>(T&amp;&amp; t) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    { decay_copy(end(t)) } -&gt; <a class="code hl_namespace" href="namespaceetl.html">etl</a>::sentinel_for&lt;<a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1ranges.html">ranges</a>::iterator_t&lt;T&gt;&gt;;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">struct</span> fn {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <a class="code hl_namespace" href="namespaceetl.html">etl</a>::size_t Size&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">requires</span>(<span class="keyword">sizeof</span>(T) &gt;= 0) <span class="comment">// NOLINT(bugprone-sizeof-expression)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T (&amp;t)[Size]) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> t + Size;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">template</span> &lt;has_member_end T&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(decay_copy(t.end())))</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> decay_copy(t.end());</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">template</span> &lt;has_adl_end T&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    [[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(T&amp;&amp; t) <span class="keyword">const</span> <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(decay_copy(end(t))))</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> decay_copy(end(t));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">auto</span> operator()(<span class="keyword">auto</span>&amp;&amp;) <span class="keyword">const</span> -&gt; <span class="keywordtype">void</span> = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <span class="comment">// namespace end_cpo</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">inline</span> <span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl_1_1ranges_1_1cpo.html">cpo</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/// \ingroup ranges</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">   57</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">end</a> = end_cpo::fn{};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace cpo</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace etl::ranges</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_RANGES_END_HPP</span></div>
+<div class="ttc" id="agroup__ranges_html_gad43eaed7106105b050de21ea023d9d3c"><div class="ttname"><a href="group__ranges.html#gad43eaed7106105b050de21ea023d9d3c">etl::ranges::cpo::end</a></div><div class="ttdeci">constexpr auto end</div><div class="ttdef"><b>Definition</b> end.hpp:57</div></div>
+<div class="ttc" id="anamespaceetl_1_1ranges_1_1cpo_html"><div class="ttname"><a href="namespaceetl_1_1ranges_1_1cpo.html">etl::ranges::cpo</a></div><div class="ttdef"><b>Definition</b> ranges_iter_move.hpp:61</div></div>
+<div class="ttc" id="anamespaceetl_1_1ranges_html"><div class="ttname"><a href="namespaceetl_1_1ranges.html">etl::ranges</a></div><div class="ttdef"><b>Definition</b> ranges_in_fun_result.hpp:12</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_765abac2ba11e7762dcb3a96b740b442.html">_ranges</a></li><li class="navelem"><a class="el" href="__ranges_2end_8hpp.html">end.hpp</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:34 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:16 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

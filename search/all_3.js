@@ -38,11 +38,10 @@ var searchData=
   ['_5f_5fhas_5fextension_35',['__has_extension',['../preprocessor_8hpp.html#ae1ce1a4353334dd8968a94a98b4bf1dd',1,'preprocessor.hpp']]],
   ['_5f_5fhas_5ffeature_36',['__has_feature',['../preprocessor_8hpp.html#af989845e24678c452b9222afdac95e7f',1,'preprocessor.hpp']]],
   ['_5facc_37',['_acc',['../structetl_1_1mdspan.html#a88f622bf937dd9097b998b6ccf59b488',1,'etl::mdspan::_acc(other.accessor())'],['../structetl_1_1mdspan.html#a0c16524a05d1637da2a669f5f27f7393',1,'etl::mdspan::_acc()'],['../structetl_1_1mdspan.html#af0176152c5537a38e87baaffa8a62b70',1,'etl::mdspan::_acc()']]],
-  ['_5fbuf_38',['_buf',['../structetl_1_1array.html#a6c4aa934afdb52737ff3dec420327159',1,'etl::array']]],
-  ['_5fcontainer_39',['_container',['../structetl_1_1front__insert__iterator.html#a4c92787d56c3637227a7f4d405e1613b',1,'etl::front_insert_iterator']]],
-  ['_5fhandle_40',['_handle',['../structetl_1_1coroutine__handle_3_01void_01_4.html#af4a6d172f632c6c18774f45134c77900',1,'etl::coroutine_handle&lt; void &gt;']]],
-  ['_5fmap_41',['_map',['../structetl_1_1mdspan.html#aab5b895bf75c421dcff922917477bf33',1,'etl::mdspan::_map(other.mapping())'],['../structetl_1_1mdspan.html#ac7a0295dd31b76a7464ec3cf254f97a9',1,'etl::mdspan::_map(extents_type(exts))'],['../structetl_1_1mdspan.html#a587ee607ed55182e6889a0457377974d',1,'etl::mdspan::_map(extents_type(exts))']]],
-  ['_5fswap_5fno_5fthrow_42',['_swap_no_throw',['../structetl_1_1__swap__no__throw.html',1,'etl']]],
-  ['_5fswappable_5fwith_5fhelper_43',['_swappable_with_helper',['../structetl_1_1__swappable__with__helper.html',1,'etl']]],
-  ['_5fswappable_5fwith_5fhelper_3c_20t_2c_20u_2c_20void_5ft_3c_20decltype_28swap_28declval_3c_20t_20_3e_28_29_2c_20declval_3c_20u_20_3e_28_29_29_29_3e_20_3e_44',['_swappable_with_helper&lt; T, U, void_t&lt; decltype(swap(declval&lt; T &gt;(), declval&lt; U &gt;()))&gt; &gt;',['../structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html',1,'etl']]]
+  ['_5fcontainer_38',['_container',['../structetl_1_1front__insert__iterator.html#a4c92787d56c3637227a7f4d405e1613b',1,'etl::front_insert_iterator']]],
+  ['_5fhandle_39',['_handle',['../structetl_1_1coroutine__handle_3_01void_01_4.html#af4a6d172f632c6c18774f45134c77900',1,'etl::coroutine_handle&lt; void &gt;']]],
+  ['_5fmap_40',['_map',['../structetl_1_1mdspan.html#aab5b895bf75c421dcff922917477bf33',1,'etl::mdspan::_map(other.mapping())'],['../structetl_1_1mdspan.html#ac7a0295dd31b76a7464ec3cf254f97a9',1,'etl::mdspan::_map(extents_type(exts))'],['../structetl_1_1mdspan.html#a587ee607ed55182e6889a0457377974d',1,'etl::mdspan::_map(extents_type(exts))']]],
+  ['_5fswap_5fno_5fthrow_41',['_swap_no_throw',['../structetl_1_1__swap__no__throw.html',1,'etl']]],
+  ['_5fswappable_5fwith_5fhelper_42',['_swappable_with_helper',['../structetl_1_1__swappable__with__helper.html',1,'etl']]],
+  ['_5fswappable_5fwith_5fhelper_3c_20t_2c_20u_2c_20void_5ft_3c_20decltype_28swap_28declval_3c_20t_20_3e_28_29_2c_20declval_3c_20u_20_3e_28_29_29_29_3e_20_3e_43',['_swappable_with_helper&lt; T, U, void_t&lt; decltype(swap(declval&lt; T &gt;(), declval&lt; U &gt;()))&gt; &gt;',['../structetl_1_1__swappable__with__helper_3_01T_00_01U_00_01void__t_3_01decltype_07swap_07declval_3a85b88c6bbfa63467fd799de16a3d15b.html',1,'etl']]]
 ];

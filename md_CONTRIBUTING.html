@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: Contributing</title>
+<title>tetl: CONTRIBUTING</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,12 +97,13 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Contributing</div></div>
+  <div class="headertitle"><div class="title">CONTRIBUTING</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p>
-<h1><a class="anchor" id="autotoc_md13"></a>
-Quick Start</h1>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
+Contributing</h1>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Quick Start</h2>
 <div class="fragment"><div class="line"># Desktop</div>
 <div class="line">cmake -S . -B cmake-build-desktop -G &quot;Ninja Multi-Config&quot;</div>
 <div class="line">cmake --build cmake-build-desktop --config Debug</div>
@@ -114,8 +115,8 @@ Quick Start</h1>
 </div><!-- fragment --><div class="fragment"><div class="line"># AVR</div>
 <div class="line">cmake -S . -B cmake-build-avr-gcc -G &quot;Ninja Multi-Config&quot; -D CMAKE_TOOLCHAIN_FILE=&quot;cmake/toolchain/atmega2560.cmake&quot;</div>
 <div class="line">cmake --build cmake-build-avr-gcc --config Debug</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
-Project Layout</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md2"></a>
+Project Layout</h3>
 <div class="fragment"><div class="line">├── benchmarks  # Compile-time benchmarks</div>
 <div class="line">├── cmake       # Compiler config</div>
 <div class="line">├── docs        # Documentation</div>
@@ -124,8 +125,8 @@ Project Layout</h2>
 <div class="line">├── include     # Source code</div>
 <div class="line">├── scripts     # Coverage &amp; clang-tidy</div>
 <div class="line">└── tests       # Unit tests</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md15"></a>
-Tests</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
+Tests</h2>
 <p>Boilerplate for unit tests:</p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="utility_8hpp.html">etl/utility.hpp</a>&gt;</span></div>
@@ -179,23 +180,23 @@ Tests</h1>
 <div class="line">    <span class="comment">// CHECK(test_all());</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__utility_html_ga6782a5c3b874542f8c803e4b1fabaf3e"><div class="ttname"><a href="group__utility.html#ga6782a5c3b874542f8c803e4b1fabaf3e">etl::cmp_equal</a></div><div class="ttdeci">constexpr auto cmp_equal(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_equal.hpp:21</div></div>
+<div class="ttc" id="agroup__utility_html_ga6782a5c3b874542f8c803e4b1fabaf3e"><div class="ttname"><a href="group__utility.html#ga6782a5c3b874542f8c803e4b1fabaf3e">etl::cmp_equal</a></div><div class="ttdeci">constexpr auto cmp_equal(T t, U u) noexcept -&gt; bool</div><div class="ttdoc">Compare the values of two integers t and u. Unlike builtin comparison operators, negative signed inte...</div><div class="ttdef"><b>Definition</b> cmp_equal.hpp:22</div></div>
 <div class="ttc" id="autility_8hpp_html"><div class="ttname"><a href="utility_8hpp.html">utility.hpp</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
-Tools</h1>
-<h2><a class="anchor" id="autotoc_md17"></a>
-CMake Presets</h2>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+Tools</h2>
+<h3><a class="anchor" id="autotoc_md5"></a>
+CMake Presets</h3>
 <div class="fragment"><div class="line">cmake --list-presets=all .</div>
 <div class="line">cmake --preset desktop</div>
 <div class="line">cmake --build --preset desktop</div>
 <div class="line">ctest --preset desktop</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
-clang-tidy</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+clang-tidy</h3>
 <div class="fragment"><div class="line">cmake -S . -B cmake-build-tidy -G &quot;Unix Makefiles&quot; -D CMAKE_BUILD_TYPE=Debug</div>
 <div class="line">cmake --build cmake-build-tidy --parallel $(nproc)</div>
 <div class="line">run-clang-tidy -fix -j $(nproc) -quiet -p cmake-build-tidy -header-filter $(realpath .) $(realpath .)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md19"></a>
-coverage</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+coverage</h3>
 <div class="fragment"><div class="line"># build with coverage flags</div>
 <div class="line">cmake -S . -B cmake-build-coverage -G Ninja -D CMAKE_BUILD_TYPE=Debug -D CMAKE_CXX_STANDARD=23 -D CMAKE_CXX_FLAGS=&quot;--coverage&quot; -D CMAKE_EXE_LINKER_FLAGS=&quot;--coverage&quot;</div>
 <div class="line">cmake --build cmake-build-coverage --parallel $(nproc)</div>
@@ -206,25 +207,25 @@ coverage</h2>
 <div class="line"> </div>
 <div class="line"># or grcov (faster)</div>
 <div class="line">grcov . -s . --binary-path ./cmake-build-coverage/bin/ -t html --ignore-not-existing -o ./cmake-build-coverage/html/ --ignore &#39;*_3rd_party/*&#39; --threads $(nproc)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
-libFuzzer</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+libFuzzer</h3>
 <div class="fragment"><div class="line">MAXTIME=20 make -C fuzzing clean report</div>
 <div class="line">firefox fuzzing/lcov/index.html</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
-pre-commit</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+pre-commit</h3>
 <div class="fragment"><div class="line">pre-commit install</div>
 <div class="line">pre-commit run -a</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md22"></a>
-doxygen</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
+doxygen</h3>
 <div class="fragment"><div class="line">doxygen Doxyfile</div>
 <div class="line">open build-doxygen/html/index.html</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md23"></a>
-VS Code</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+VS Code</h3>
 <p>Enable one of the following options in <code>.vscode/settings.json</code>:</p>
 <div class="fragment"><div class="line">&quot;cmake.useCMakePresets&quot;: &quot;always&quot;</div>
 <div class="line">&quot;cmake.useCMakePresets&quot;: &quot;never&quot;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md24"></a>
-Coding Style</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md12"></a>
+Coding Style</h2>
 <ul>
 <li>Trailing return type is used <b>everywhere</b>:<ul>
 <li><code>auto func() {}</code></li>
@@ -255,7 +256,7 @@ Coding Style</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

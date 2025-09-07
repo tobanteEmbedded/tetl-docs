@@ -1,5 +1,6 @@
 var structetl_1_1array =
 [
+    [ "array_t", "structetl_1_1array.html#ab4db7d754a64eebc20fd9fcfef9efe54", null ],
     [ "const_iterator", "structetl_1_1array.html#a02ebba00b3b626b44bc501f02c7b689c", null ],
     [ "const_pointer", "structetl_1_1array.html#a23aa37fe48e9aafa9d6ae1d1b3052fc7", null ],
     [ "const_reference", "structetl_1_1array.html#ace40b54a3f43c5971305e904a30c108b", null ],
@@ -49,6 +50,5 @@ var structetl_1_1array =
     [ "operator>=", "structetl_1_1array.html#ad769293a87a5c718994c15a283597aba", null ],
     [ "swap", "structetl_1_1array.html#ab3ec4a357ac52e581d45047576bd002e", null ],
     [ "to_array", "structetl_1_1array.html#a206fb932614fa86d56d410c37f786760", null ],
-    [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ],
-    [ "_buf", "structetl_1_1array.html#a6c4aa934afdb52737ff3dec420327159", null ]
+    [ "to_array", "structetl_1_1array.html#ab473fe47c2383d723c9b37fa6af55104", null ]
 ];

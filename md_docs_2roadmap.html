@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tetl: Roadmap</title>
+<title>tetl: roadmap</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,21 +97,22 @@ $(document).ready(function(){initNavTree('md_docs_2roadmap.html',''); initResiza
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Roadmap</div></div>
+  <div class="headertitle"><div class="title">roadmap</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md39"></a> </p>
-<h1><a class="anchor" id="autotoc_md40"></a>
-Features</h1>
-<h2><a class="anchor" id="autotoc_md41"></a>
-Ranges</h2>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md39"></a>
+Roadmap</h1>
+<h2><a class="anchor" id="autotoc_md40"></a>
+Features</h2>
+<h3><a class="anchor" id="autotoc_md41"></a>
+Ranges</h3>
 <ul>
 <li><code>common_reference</code>: Needed for a lot of concepts</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md42"></a>
-Testing</h1>
-<h2><a class="anchor" id="autotoc_md43"></a>
-QEMU</h2>
+<h2><a class="anchor" id="autotoc_md42"></a>
+Testing</h2>
+<h3><a class="anchor" id="autotoc_md43"></a>
+QEMU</h3>
 <ul>
 <li>Run unit test &amp; examples on QEMU emulations.</li>
 <li>Via <code>CMAKE_CROSSCOMPILING_EMULATOR</code><ul>
@@ -119,8 +120,8 @@ QEMU</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md44"></a>
-clang-verify</h2>
+<h3><a class="anchor" id="autotoc_md44"></a>
+clang-verify</h3>
 <p>Test that static assertion fire when they should.</p>
 <ul>
 <li><a href="https://github.com/llvm/llvm-project/blob/main/libcxx/test/std/numerics/numeric.ops/numeric.ops.midpoint/midpoint.verify.cpp">libcxx: midpoint.verify.cpp</a></li>
@@ -131,15 +132,15 @@ clang-verify</h2>
 <div class="line"><span class="comment">// expected-error@*:* {{static assertion failed due to requirement &#39;2UL &lt; 2UL&#39;: array index out of range}}</span></div>
 <div class="line"><span class="keyword">auto</span> v = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::get&lt;2&gt;</a>(<a class="code hl_struct" href="structetl_1_1bitset.html">etl::array&lt;int, 2&gt;</a>{}); <span class="comment">// expected-note {{in instantiation of function template specialization &#39;etl::get&lt;2UL, int, 2UL&gt;&#39; requested here}}</span></div>
 <div class="ttc" id="aarray_8hpp_html"><div class="ttname"><a href="array_8hpp.html">array.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
-</div><!-- fragment --><div class="fragment"><div class="line">clang -Xclang -verify -c -std=c++20 -Iinclude test.cpp</div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
+</div><!-- fragment --><div class="fragment"><div class="line">clang -Xclang -verify -c -std=c++23 -Iinclude test.cpp</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

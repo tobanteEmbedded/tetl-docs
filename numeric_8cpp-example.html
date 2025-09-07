@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('numeric_8cpp-example.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<div class="line"><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2019 Tobias Hienzsch</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"> </div>
@@ -128,15 +129,30 @@ $(document).ready(function(){initNavTree('numeric_8cpp-example.html',''); initRe
 <div class="line"> </div>
 <div class="line">    fixed_audio_buffer() = <span class="keywordflow">default</span>;</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_channels() <span class="keyword">const</span> -&gt; size_type { <span class="keywordflow">return</span> Channels; }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_channels() <span class="keyword">const</span> -&gt; size_type</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> Channels;</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_frames() <span class="keyword">const</span> -&gt; size_type { <span class="keywordflow">return</span> Frames; }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_frames() <span class="keyword">const</span> -&gt; size_type</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> Frames;</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_samples() <span class="keyword">const</span> -&gt; size_type { <span class="keywordflow">return</span> size_channels() * size_frames(); }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> size_samples() <span class="keyword">const</span> -&gt; size_type</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> size_channels() * size_frames();</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> frame(size_type index) { <span class="keywordflow">return</span> make_frame(index); }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> frame(size_type index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> make_frame(index);</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> frame(size_type index)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> make_frame(index); }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> frame(size_type index)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">    </span>{</div>
+<div class="line">        <span class="keywordflow">return</span> make_frame(index);</div>
+<div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    [[nodiscard]] <span class="keyword">auto</span> channel(size_type ch)</div>
 <div class="line">    {</div>
@@ -148,9 +164,15 @@ $(document).ready(function(){initNavTree('numeric_8cpp-example.html',''); initRe
 <div class="line">        <span class="keywordflow">return</span> const_channel_type(<a class="code hl_function" href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a>(data(_buffer), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a><span class="keyword">&gt;</span>(ch * Frames)), Frames);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> operator()(size_type ch, size_type s) -&gt; value_type&amp; { <span class="keywordflow">return</span> channel(ch)[s]; }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> operator()(size_type ch, size_type s) -&gt; value_type&amp;</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> channel(ch)[s];</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    [[nodiscard]] <span class="keyword">auto</span> operator()(size_type ch, size_type s) <span class="keyword">const</span> -&gt; value_type <span class="keyword">const</span>&amp; { <span class="keywordflow">return</span> channel(ch)[s]; }</div>
+<div class="line">    [[nodiscard]] <span class="keyword">auto</span> operator()(size_type ch, size_type s) <span class="keyword">const</span> -&gt; value_type <span class="keyword">const</span>&amp;</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> channel(ch)[s];</div>
+<div class="line">    }</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">private</span>:</div>
 <div class="line">    [[nodiscard]] <span class="keyword">auto</span> make_frame(size_type s)<span class="keyword"> const</span></div>
@@ -182,24 +204,24 @@ $(document).ready(function(){initNavTree('numeric_8cpp-example.html',''); initRe
 <div class="line">}</div>
 <div class="ttc" id="aarray_8hpp_html"><div class="ttname"><a href="array_8hpp.html">array.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
-<div class="ttc" id="agroup__iterator_html_gab5e8085c3345374b117c1dc70edf9d9b"><div class="ttname"><a href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition</b> next.hpp:14</div></div>
-<div class="ttc" id="agroup__iterator_html_gae8701f2e299015f92e83f375a604ef61"><div class="ttname"><a href="group__iterator.html#gae8701f2e299015f92e83f375a604ef61">etl::size</a></div><div class="ttdeci">constexpr auto size(C const &amp;c) noexcept(noexcept(c.size())) -&gt; decltype(c.size())</div><div class="ttdoc">Returns the size of the given container c or array array. Returns c.size(), converted to the return t...</div><div class="ttdef"><b>Definition</b> size.hpp:18</div></div>
-<div class="ttc" id="agroup__numbers_html_gad172e8d1a294401209781f9aeaa77410"><div class="ttname"><a href="group__numbers.html#gad172e8d1a294401209781f9aeaa77410">etl::numbers::pi</a></div><div class="ttdeci">constexpr double pi</div><div class="ttdef"><b>Definition</b> constants.hpp:32</div></div>
-<div class="ttc" id="agroup__numeric_html_gabb8f915bbbbe802e8277bc6c7334bbd1"><div class="ttname"><a href="group__numeric.html#gabb8f915bbbbe802e8277bc6c7334bbd1">etl::accumulate</a></div><div class="ttdeci">constexpr auto accumulate(InputIt first, InputIt last, Type init) noexcept -&gt; Type</div><div class="ttdoc">Computes the sum of the given value init and the elements in the range [first, last).</div><div class="ttdef"><b>Definition</b> accumulate.hpp:13</div></div>
+<div class="ttc" id="agroup__iterator_html_gab5e8085c3345374b117c1dc70edf9d9b"><div class="ttname"><a href="group__iterator.html#gab5e8085c3345374b117c1dc70edf9d9b">etl::next</a></div><div class="ttdeci">constexpr auto next(InputIt it, typename iterator_traits&lt; InputIt &gt;::difference_type n=1) -&gt; InputIt</div><div class="ttdoc">Return the nth successor of iterator it.</div><div class="ttdef"><b>Definition</b> next.hpp:15</div></div>
+<div class="ttc" id="agroup__iterator_html_gae8701f2e299015f92e83f375a604ef61"><div class="ttname"><a href="group__iterator.html#gae8701f2e299015f92e83f375a604ef61">etl::size</a></div><div class="ttdeci">constexpr auto size(C const &amp;c) noexcept(noexcept(c.size())) -&gt; decltype(c.size())</div><div class="ttdoc">Returns the size of the given container c or array array. Returns c.size(), converted to the return t...</div><div class="ttdef"><b>Definition</b> size.hpp:19</div></div>
+<div class="ttc" id="agroup__numbers_html_gad172e8d1a294401209781f9aeaa77410"><div class="ttname"><a href="group__numbers.html#gad172e8d1a294401209781f9aeaa77410">etl::numbers::pi</a></div><div class="ttdeci">constexpr double pi</div><div class="ttdef"><b>Definition</b> constants.hpp:33</div></div>
+<div class="ttc" id="agroup__numeric_html_gabb8f915bbbbe802e8277bc6c7334bbd1"><div class="ttname"><a href="group__numeric.html#gabb8f915bbbbe802e8277bc6c7334bbd1">etl::accumulate</a></div><div class="ttdeci">constexpr auto accumulate(InputIt first, InputIt last, Type init) noexcept -&gt; Type</div><div class="ttdoc">Computes the sum of the given value init and the elements in the range [first, last).</div><div class="ttdef"><b>Definition</b> accumulate.hpp:14</div></div>
 <div class="ttc" id="aiterator_8hpp_html"><div class="ttname"><a href="iterator_8hpp.html">iterator.hpp</a></div></div>
-<div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:14</div></div>
-<div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:14</div></div>
+<div class="ttc" id="anamespaceetl_html_aac63559b08846022abfeabda8583ed87"><div class="ttname"><a href="namespaceetl.html#aac63559b08846022abfeabda8583ed87">etl::ptrdiff_t</a></div><div class="ttdeci">TETL_BUILTIN_PTRDIFF ptrdiff_t</div><div class="ttdoc">etl::ptrdiff_t is the signed integer type of the result of subtracting two pointers.</div><div class="ttdef"><b>Definition</b> ptrdiff_t.hpp:15</div></div>
+<div class="ttc" id="anamespaceetl_html_aee50235c04ef643cb7502785393220fe"><div class="ttname"><a href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">etl::size_t</a></div><div class="ttdeci">TETL_BUILTIN_SIZET size_t</div><div class="ttdoc">etl::size_t is the unsigned integer type of the result of the sizeof operator.</div><div class="ttdef"><b>Definition</b> size_t.hpp:15</div></div>
 <div class="ttc" id="anumbers_8hpp_html"><div class="ttname"><a href="numbers_8hpp.html">numbers.hpp</a></div></div>
 <div class="ttc" id="anumeric_8hpp_html"><div class="ttname"><a href="numeric_8hpp.html">numeric.hpp</a></div></div>
 <div class="ttc" id="aspan_8hpp_html"><div class="ttname"><a href="span_8hpp.html">span.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
 <div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:10 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:14:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

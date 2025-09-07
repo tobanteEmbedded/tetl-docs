@@ -184,6 +184,7 @@ Friends</h2></td></tr>
 struct etl::pointer_int_pair&lt; PointerT, IntBits, IntType, PtrTraits, Info &gt;</div><p>This struct implements a pair of a pointer and small integer. It is designed to represent this in the space required by one pointer by bitmangling the integer into the low part of the pointer. This can only be done for small integers: typically up to 3 bits, but it depends on the number of bits available according to <a class="el" href="structetl_1_1pointer__like__traits.html" title="A traits type that is used to handle pointer types and things that are just wrappers for pointers as ...">pointer_like_traits</a> for the type. </p>
 <p>Note that <a class="el" href="structetl_1_1pointer__int__pair.html" title="This struct implements a pair of a pointer and small integer. It is designed to represent this in the...">pointer_int_pair</a> always puts the IntVal part in the highest bits possible. For example, pointer_int_pair&lt;void*, 1, bool&gt; will put the bit for the bool into bit #2, not bit #0, which allows the low two bits to be used for something else. For example, this allows: <a class="el" href="structetl_1_1pointer__int__pair.html" title="This struct implements a pair of a pointer and small integer. It is designed to represent this in the...">pointer_int_pair</a>&lt;pointer_int_pair&lt;void*, 1, bool&gt;, 1, bool&gt; ... and the two bools will land in different bits.</p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<div class="line"><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2021 Tobias Hienzsch</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"> </div>
@@ -205,9 +206,9 @@ struct etl::pointer_int_pair&lt; PointerT, IntBits, IntType, PtrTraits, Info &gt
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
-<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:20</div></div>
 <div class="ttc" id="amemory_8hpp_html"><div class="ttname"><a href="memory_8hpp.html">memory.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9ae03ec9c08d5bcdb61bf3b40b0708ab" name="a9ae03ec9c08d5bcdb61bf3b40b0708ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ae03ec9c08d5bcdb61bf3b40b0708ab">&#9670;&#160;</a></span>int_type</h2>
@@ -383,7 +384,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get_addr_of_pointer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a4edb1d6366f0bbfd1ad673e3a2cec95c">pointer_type</a>* </td>
+          <td> -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a4edb1d6366f0bbfd1ad673e3a2cec95c">pointer_type</a>*
+    </td>
         </tr>
       </table>
   </td>
@@ -498,7 +500,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get_int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a9ae03ec9c08d5bcdb61bf3b40b0708ab">int_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a9ae03ec9c08d5bcdb61bf3b40b0708ab">int_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -525,7 +528,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get_opaque_value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>* </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>*
+    </td>
         </tr>
       </table>
   </td>
@@ -552,7 +556,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> get_pointer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a4edb1d6366f0bbfd1ad673e3a2cec95c">pointer_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1pointer__int__pair.html#a4edb1d6366f0bbfd1ad673e3a2cec95c">pointer_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -955,7 +960,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1pointer__int__pair.html">pointer_int_pair</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

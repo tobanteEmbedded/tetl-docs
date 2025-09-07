@@ -9,7 +9,7 @@ var group__utilities_library =
     [ "debugging", "group__debugging.html", "group__debugging" ],
     [ "expected", "group__expected.html", "group__expected" ],
     [ "functional", "group__functional.html", "group__functional" ],
-    [ "meta", "group__meta.html", "group__meta" ],
+    [ "mpl", "group__mpl.html", "group__mpl" ],
     [ "optional", "group__optional.html", "group__optional" ],
     [ "scope", "group__scope.html", null ],
     [ "source_location", "group__source__location.html", "group__source__location" ],

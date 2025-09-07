@@ -233,8 +233,7 @@ var menudata={children:[
 {text:"g",url:"functions_rela.html#index_g"},
 {text:"i",url:"functions_rela.html#index_i"},
 {text:"o",url:"functions_rela.html#index_o"},
-{text:"s",url:"functions_rela.html#index_s"},
-{text:"t",url:"functions_rela.html#index_t"}]}]}]},
+{text:"s",url:"functions_rela.html#index_s"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

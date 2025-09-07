@@ -605,6 +605,7 @@ struct etl::basic_inplace_string&lt; Char, Capacity, Traits &gt;</div><p><a clas
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<div class="line"><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2019 Tobias Hienzsch</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cassert_8hpp.html">etl/cassert.hpp</a>&gt;</span></div>
 <div class="line"> </div>
@@ -684,17 +685,17 @@ struct etl::basic_inplace_string&lt; Char, Capacity, Traits &gt;</div><p><a clas
 <div class="line">}</div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="acassert_8hpp_html"><div class="ttname"><a href="cassert_8hpp.html">cassert.hpp</a></div></div>
-<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:19</div></div>
+<div class="ttc" id="acassert_8hpp_html_a3d4ae9c092e117c836f52dc7d7cee574"><div class="ttname"><a href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a></div><div class="ttdeci">#define assert(...)</div><div class="ttdef"><b>Definition</b> cassert.hpp:20</div></div>
 <div class="ttc" id="acctype_8hpp_html"><div class="ttname"><a href="cctype_8hpp.html">cctype.hpp</a></div></div>
-<div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:24</div></div>
-<div class="ttc" id="agroup__cctype_html_gabf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="group__cctype.html#gabf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:26</div></div>
+<div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:25</div></div>
+<div class="ttc" id="agroup__cctype_html_gabf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="group__cctype.html#gabf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:27</div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a1cde71b30bd837e91a5f87b74d9bac55"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a1cde71b30bd837e91a5f87b74d9bac55">etl::basic_inplace_string::c_str</a></div><div class="ttdeci">constexpr auto c_str() const noexcept -&gt; const_pointer</div><div class="ttdoc">Returns a pointer to a null-terminated character array.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:383</div></div>
-<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a773a7036d91b150864530b3c86f8946c"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a773a7036d91b150864530b3c86f8946c">etl::basic_inplace_string::begin</a></div><div class="ttdeci">constexpr auto begin() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the beginning.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:257</div></div>
-<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a7be357fc22f42093a431a1132b2c4b0c"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a7be357fc22f42093a431a1132b2c4b0c">etl::basic_inplace_string::end</a></div><div class="ttdeci">constexpr auto end() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the end.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:266</div></div>
-<div class="ttc" id="astructetl_1_1basic__inplace__string_html_af56a4add1b162c6174278bef083babd2"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#af56a4add1b162c6174278bef083babd2">etl::basic_inplace_string::copy</a></div><div class="ttdeci">constexpr auto copy(pointer destination, size_type count, size_type pos=0) const -&gt; size_type</div><div class="ttdoc">Copies a substring [pos, pos+count) to character string pointed to by dest. If the requested substrin...</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:913</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html_a68960381f66fdfeb44116fe4337b5824"><div class="ttname"><a href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">etl::bitset::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_t</div><div class="ttdoc">Returns the number of bits that the bitset holds.</div><div class="ttdef"><b>Definition</b> bitset.hpp:198</div></div>
+<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a1cde71b30bd837e91a5f87b74d9bac55"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a1cde71b30bd837e91a5f87b74d9bac55">etl::basic_inplace_string::c_str</a></div><div class="ttdeci">constexpr auto c_str() const noexcept -&gt; const_pointer</div><div class="ttdoc">Returns a pointer to a null-terminated character array.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:441</div></div>
+<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a773a7036d91b150864530b3c86f8946c"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a773a7036d91b150864530b3c86f8946c">etl::basic_inplace_string::begin</a></div><div class="ttdeci">constexpr auto begin() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the beginning.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:264</div></div>
+<div class="ttc" id="astructetl_1_1basic__inplace__string_html_a7be357fc22f42093a431a1132b2c4b0c"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#a7be357fc22f42093a431a1132b2c4b0c">etl::basic_inplace_string::end</a></div><div class="ttdeci">constexpr auto end() noexcept -&gt; iterator</div><div class="ttdoc">Returns an iterator to the end.</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:282</div></div>
+<div class="ttc" id="astructetl_1_1basic__inplace__string_html_af56a4add1b162c6174278bef083babd2"><div class="ttname"><a href="structetl_1_1basic__inplace__string.html#af56a4add1b162c6174278bef083babd2">etl::basic_inplace_string::copy</a></div><div class="ttdeci">constexpr auto copy(pointer destination, size_type count, size_type pos=0) const -&gt; size_type</div><div class="ttdoc">Copies a substring [pos, pos+count) to character string pointed to by dest. If the requested substrin...</div><div class="ttdef"><b>Definition</b> basic_inplace_string.hpp:986</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html_a68960381f66fdfeb44116fe4337b5824"><div class="ttname"><a href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">etl::bitset::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_t</div><div class="ttdoc">Returns the number of bits that the bitset holds.</div><div class="ttdef"><b>Definition</b> bitset.hpp:211</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aab7601bb3f8522e0ed382dad778428b0" name="aab7601bb3f8522e0ed382dad778428b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab7601bb3f8522e0ed382dad778428b0">&#9670;&#160;</a></span>const_iterator</h2>
@@ -2044,7 +2045,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2073,7 +2075,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2102,7 +2105,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> c_str </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a87c19496b480e067ecbf1182c6194af8">const_pointer</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a87c19496b480e067ecbf1182c6194af8">const_pointer</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2132,7 +2136,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> capacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2161,7 +2166,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> cbegin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2190,7 +2196,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> cend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2838,7 +2845,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> crbegin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2867,7 +2875,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> crend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a3c9600e7a9cd61d5e0232703679c2300">const_reverse_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2896,7 +2905,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a87c19496b480e067ecbf1182c6194af8">const_pointer</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a87c19496b480e067ecbf1182c6194af8">const_pointer</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2926,7 +2936,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0aaa9b56085031ed0e7473c4b18ec553">pointer</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0aaa9b56085031ed0e7473c4b18ec553">pointer</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -2956,7 +2967,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -3015,7 +3027,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -3180,7 +3193,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html#aab7601bb3f8522e0ed382dad778428b0">const_iterator</a>&#160;</td>
           <td class="paramname"><em>position</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a0ac00f8dd602ee96ffa930098afa6294">iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -4215,7 +4229,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> full </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">bool</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -4573,7 +4588,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> length </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -4602,7 +4618,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> max_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -4661,7 +4678,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&lt; <a class="el" href="structetl_1_1bitset.html">Char</a>, <a class="el" href="structetl_1_1bitset.html">Capacity</a>, <a class="el" href="structetl_1_1bitset.html">Traits</a> &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp; </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp;
+    </td>
         </tr>
       </table>
   </td>
@@ -4691,7 +4709,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">Char</a>&#160;</td>
           <td class="paramname"><em>ch</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp; </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp;
+    </td>
         </tr>
       </table>
   </td>
@@ -4721,7 +4740,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html#a87c19496b480e067ecbf1182c6194af8">const_pointer</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp; </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a>&amp;
+    </td>
         </tr>
       </table>
   </td>
@@ -4969,7 +4989,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a46484dd10898f79b9c304d4ae8801d84">const_reference</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a46484dd10898f79b9c304d4ae8801d84">const_reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -4999,7 +5020,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9468d0cc5cdf4b9073e5fe23257b72f6">reference</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -5121,7 +5143,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> rbegin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -5180,7 +5203,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> rend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a9e6c0e236247745ac2f2212687803f3f">reverse_iterator</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -5634,7 +5658,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a> </td>
+          <td> -&gt; <a class="el" href="structetl_1_1bitset.html">void</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -5914,7 +5939,8 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a> </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1basic__inplace__string.html#a35a6612a3895e065eade0f7eb04868b6">size_type</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -6147,7 +6173,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <b>Initial value:</b><div class="fragment"><div class="line">=                        </div>
 <div class="line">        is_convertible_v&lt;T const&amp;, basic_string_view&lt;Char, Traits&gt;&gt; </div>
 <div class="line">        <a class="code hl_variable" href="namespaceetl.html#aa4705203ca4dca14ca83f3ac9f5b45f1">and</a> not is_convertible_v&lt;T const&amp;, Char const*&gt;</div>
-<div class="ttc" id="anamespaceetl_html_aa4705203ca4dca14ca83f3ac9f5b45f1"><div class="ttname"><a href="namespaceetl.html#aa4705203ca4dca14ca83f3ac9f5b45f1">etl::and</a></div><div class="ttdeci">and</div><div class="ttdef"><b>Definition</b> incrementable_traits.hpp:39</div></div>
+<div class="ttc" id="anamespaceetl_html_aa4705203ca4dca14ca83f3ac9f5b45f1"><div class="ttname"><a href="namespaceetl.html#aa4705203ca4dca14ca83f3ac9f5b45f1">etl::and</a></div><div class="ttdeci">and</div><div class="ttdef"><b>Definition</b> incrementable_traits.hpp:40</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6160,7 +6186,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__inplace__string.html">basic_inplace_string</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

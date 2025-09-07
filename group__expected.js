@@ -6,6 +6,10 @@ var group__expected =
       [ "unexpected_type", "structetl_1_1expected.html#a16020b46103d6b004562dd23cd3135c0", null ],
       [ "value_type", "structetl_1_1expected.html#afb9ded5f49336ae503bb9f2035ea902b", null ],
       [ "expected", "structetl_1_1expected.html#a1465a23e28691e316bb93b3a2fc74423", null ],
+      [ "expected", "structetl_1_1expected.html#ae014deda4d17e9ecc4311392a6c785ef", null ],
+      [ "expected", "structetl_1_1expected.html#a993a4f9fe283d9ddf2ff68b528ec1dcb", null ],
+      [ "expected", "structetl_1_1expected.html#af6935a4cebc2a9fca4f3d625c582f1ca", null ],
+      [ "expected", "structetl_1_1expected.html#a1addb69551d934f180400b60f5694dbe", null ],
       [ "expected", "structetl_1_1expected.html#a653fe2b81f2da20c3f6607592aadaa98", null ],
       [ "expected", "structetl_1_1expected.html#a4ce86390b2226ed3f0bc8b04127b287d", null ],
       [ "and_then", "structetl_1_1expected.html#a060a47d37d7a5ee075549fb89574e115", null ],
@@ -37,8 +41,8 @@ var group__expected =
       [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
     ] ],
     [ "unexpected< E >", "structetl_1_1unexpected.html", [
-      [ "unexpected", "structetl_1_1unexpected.html#afa63ff521b77cec0fc76aa607b8a7e58", null ],
-      [ "unexpected", "structetl_1_1unexpected.html#aa8e1eaa68d572351812a070b78261597", null ],
+      [ "unexpected", "structetl_1_1unexpected.html#a61a9e83ccf323f3a10e45d751956bfb7", null ],
+      [ "unexpected", "structetl_1_1unexpected.html#a7290cf32267d2fedc6fa5932159b23c0", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a5e30973c509fb7640c6cc4f4152a6abf", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a1b7cc81c21ded672ac68ca17efc51bb5", null ],
       [ "error", "structetl_1_1unexpected.html#ad7a8cdf3b26f9a19c92ebd1cf28520f1", null ],
@@ -47,9 +51,9 @@ var group__expected =
       [ "error", "structetl_1_1unexpected.html#a98df781df304e321a31ca9b691528f4c", null ],
       [ "operator=", "structetl_1_1unexpected.html#aed9f0db92742096717d05350390ed06d", null ],
       [ "operator=", "structetl_1_1unexpected.html#a8a20bfe720b043f6ac918f376281a479", null ],
-      [ "swap", "structetl_1_1unexpected.html#a4fe1120510dc1c04654e4864a3e34719", null ],
+      [ "swap", "structetl_1_1unexpected.html#aa6fc4fa6f1368c4dba99b744c4aa578e", null ],
       [ "operator==", "structetl_1_1unexpected.html#ad0236e449e231fa98520bb18a3a6e5d8", null ],
-      [ "swap", "structetl_1_1unexpected.html#abc29715f4aeff27c974030d748183c47", null ]
+      [ "swap", "structetl_1_1unexpected.html#a817efcd6bc1f15928fddb7dca6b4a598", null ]
     ] ],
     [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
 ];

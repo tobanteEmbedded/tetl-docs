@@ -72,8 +72,8 @@ var searchData=
   ['nothrow_5ft_69',['nothrow_t',['../structetl_1_1nothrow__t.html#ad64df1ce8ef2efc68aca6b12e7783b3b',1,'etl::nothrow_t::nothrow_t()'],['../structetl_1_1nothrow__t.html',1,'nothrow_t']]],
   ['november_70',['November',['../namespaceetl_1_1chrono.html#ac0a0297ab62ef2a24c3c0fcf4d3c57f6',1,'etl::chrono']]],
   ['now_71',['now',['../structetl_1_1chrono_1_1system__clock.html#a5887f3d7f1fbf017c41293646efccc7f',1,'etl::chrono::system_clock']]],
-  ['npos_72',['npos',['../structetl_1_1basic__inplace__string.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_inplace_string::npos'],['../structetl_1_1basic__string__view.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_string_view::npos']]],
-  ['nth_5felement_73',['nth_element',['../group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53',1,'etl::nth_element(RandomIt first, RandomIt nth, RandomIt last, Compare comp) -&gt; void'],['../namespaceetl.html#a477060cd9d79c15a82456242a3005517',1,'etl::nth_element(RandomIt first, RandomIt nth, RandomIt last) -&gt; void']]],
+  ['npos_72',['npos',['../structetl_1_1basic__string__view.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_string_view::npos'],['../structetl_1_1basic__inplace__string.html#a29abf0eaf62dbe10174db67475599a1b',1,'etl::basic_inplace_string::npos']]],
+  ['nth_5felement_73',['nth_element',['../namespaceetl.html#a477060cd9d79c15a82456242a3005517',1,'etl::nth_element(RandomIt first, RandomIt nth, RandomIt last) -&gt; void'],['../group__algorithm.html#ga8a975e8950c5e7cc4ff7f97638d34a53',1,'etl::nth_element(RandomIt first, RandomIt nth, RandomIt last, Compare comp) -&gt; void']]],
   ['nth_5felement_2ehpp_74',['nth_element.hpp',['../nth__element_8hpp.html',1,'']]],
   ['ntoh_75',['ntoh',['../namespaceetl_1_1experimental_1_1net.html#a3101d03f86018a22168897f29a0099a7',1,'etl::experimental::net::ntoh(T) -&gt; T=delete'],['../namespaceetl_1_1experimental_1_1net.html#a1be0f1919432af4dbcdc3ad16007b156',1,'etl::experimental::net::ntoh(char v) noexcept -&gt; char'],['../namespaceetl_1_1experimental_1_1net.html#a8d882e30996338ba33f6b4d8d41fe8b4',1,'etl::experimental::net::ntoh(uint8_t v) noexcept -&gt; uint8_t'],['../namespaceetl_1_1experimental_1_1net.html#a4b0cd7a29f9d97c143ade0d8a15a29b0',1,'etl::experimental::net::ntoh(int8_t v) noexcept -&gt; int8_t'],['../namespaceetl_1_1experimental_1_1net.html#a232758b70190dc377f770aed204f45e7',1,'etl::experimental::net::ntoh(uint16_t v) noexcept -&gt; uint16_t'],['../namespaceetl_1_1experimental_1_1net.html#aa649cd1acdd2f57c63d7f54653b33c82',1,'etl::experimental::net::ntoh(uint32_t v) noexcept -&gt; uint32_t']]],
   ['null_76',['NULL',['../null_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'null.hpp']]],
@@ -105,10 +105,11 @@ var searchData=
   ['numeric_5flimits_3c_20t_20const_20_3e_102',['numeric_limits&lt; T const &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01_4.html',1,'etl']]],
   ['numeric_5flimits_3c_20t_20const_20volatile_20_3e_103',['numeric_limits&lt; T const volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01const_01volatile_01_4.html',1,'etl']]],
   ['numeric_5flimits_3c_20t_20volatile_20_3e_104',['numeric_limits&lt; T volatile &gt;',['../structetl_1_1numeric__limits_3_01T_01volatile_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20char_20_3e_105',['numeric_limits&lt; unsigned char &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01char_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20int_20_3e_106',['numeric_limits&lt; unsigned int &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20long_20_3e_107',['numeric_limits&lt; unsigned long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20long_20long_20_3e_108',['numeric_limits&lt; unsigned long long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01long_01_4.html',1,'etl']]],
-  ['numeric_5flimits_3c_20unsigned_20short_20_3e_109',['numeric_limits&lt; unsigned short &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html',1,'etl']]],
-  ['numerics_20library_110',['Numerics Library',['../group__numerics-library.html',1,'']]]
+  ['numeric_5flimits_3c_20uint128_20_3e_105',['numeric_limits&lt; uint128 &gt;',['../structetl_1_1numeric__limits_3_01uint128_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20char_20_3e_106',['numeric_limits&lt; unsigned char &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01char_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20int_20_3e_107',['numeric_limits&lt; unsigned int &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01int_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20long_20_3e_108',['numeric_limits&lt; unsigned long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20long_20long_20_3e_109',['numeric_limits&lt; unsigned long long &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01long_01long_01_4.html',1,'etl']]],
+  ['numeric_5flimits_3c_20unsigned_20short_20_3e_110',['numeric_limits&lt; unsigned short &gt;',['../structetl_1_1numeric__limits_3_01unsigned_01short_01_4.html',1,'etl']]],
+  ['numerics_20library_111',['Numerics Library',['../group__numerics-library.html',1,'']]]
 ];

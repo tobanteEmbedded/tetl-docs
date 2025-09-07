@@ -131,6 +131,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing information about the source code, such as file names, line numbers, and function names. </p>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
+<div class="line"><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2021 Tobias Hienzsch</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(TETL_ENABLE_CXX_MODULES)</span></div>
 <div class="line"><span class="keyword">import</span> etl;</div>
@@ -163,15 +164,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="keyword">auto</span> main(<span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span> <span class="keyword">const</span>** <span class="comment">/*argv*/</span>) -&gt; <span class="keywordtype">int</span></div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_function" href="group__cmath.html#ga5a75b64172bc4772ae32459754e63768">log</a>(<span class="stringliteral">&quot;Hello world!&quot;</span>);</div>
-<div class="line">    fun(<span class="stringliteral">&quot;Hello C++20!&quot;</span>);</div>
+<div class="line">    fun(<span class="stringliteral">&quot;Hello C++23!&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__cmath_html_ga5a75b64172bc4772ae32459754e63768"><div class="ttname"><a href="group__cmath.html#ga5a75b64172bc4772ae32459754e63768">etl::log</a></div><div class="ttdeci">constexpr auto log(float v) noexcept -&gt; float</div><div class="ttdef"><b>Definition</b> log.hpp:44</div></div>
+<div class="ttc" id="agroup__cmath_html_ga5a75b64172bc4772ae32459754e63768"><div class="ttname"><a href="group__cmath.html#ga5a75b64172bc4772ae32459754e63768">etl::log</a></div><div class="ttdeci">constexpr auto log(float v) noexcept -&gt; float</div><div class="ttdef"><b>Definition</b> log.hpp:45</div></div>
 <div class="ttc" id="asource__location_8hpp_html"><div class="ttname"><a href="source__location_8hpp.html">source_location.hpp</a></div></div>
 <div class="ttc" id="astring__view_8hpp_html"><div class="ttname"><a href="string__view_8hpp.html">string_view.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:22</div></div>
-<div class="ttc" id="astructetl_1_1source__location_html"><div class="ttname"><a href="structetl_1_1source__location.html">etl::source_location</a></div><div class="ttdoc">A class representing information about the source code, such as file names, line numbers,...</div><div class="ttdef"><b>Definition</b> source_location.hpp:19</div></div>
-<div class="ttc" id="astructetl_1_1source__location_html_a53acf372b311e213942517d71b4bf8b8"><div class="ttname"><a href="structetl_1_1source__location.html#a53acf372b311e213942517d71b4bf8b8">etl::source_location::current</a></div><div class="ttdeci">static consteval auto current(uint_least32_t const line=TETL_BUILTIN_LINE(), uint_least32_t const column=TETL_BUILTIN_COLUMN(), char const *const file=TETL_BUILTIN_FILE(), char const *const function=TETL_BUILTIN_FUNCTION()) noexcept -&gt; source_location</div><div class="ttdef"><b>Definition</b> source_location.hpp:20</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
+<div class="ttc" id="astructetl_1_1source__location_html"><div class="ttname"><a href="structetl_1_1source__location.html">etl::source_location</a></div><div class="ttdoc">A class representing information about the source code, such as file names, line numbers,...</div><div class="ttdef"><b>Definition</b> source_location.hpp:20</div></div>
+<div class="ttc" id="astructetl_1_1source__location_html_a53acf372b311e213942517d71b4bf8b8"><div class="ttname"><a href="structetl_1_1source__location.html#a53acf372b311e213942517d71b4bf8b8">etl::source_location::current</a></div><div class="ttdeci">static consteval auto current(uint_least32_t const line=TETL_BUILTIN_LINE(), uint_least32_t const column=TETL_BUILTIN_COLUMN(), char const *const file=TETL_BUILTIN_FILE(), char const *const function=TETL_BUILTIN_FUNCTION()) noexcept -&gt; source_location</div><div class="ttdef"><b>Definition</b> source_location.hpp:21</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="source_location_8cpp-example.html#_a1">source_location.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -214,7 +215,8 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> column </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="namespaceetl.html#ad35f8b747d163b033b7d4bf5b18b2f61">etl::uint_least32_t</a> </td>
+          <td> const -&gt; <a class="el" href="namespaceetl.html#ad35f8b747d163b033b7d4bf5b18b2f61">etl::uint_least32_t</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -290,7 +292,8 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> file_name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a>* </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a>*
+    </td>
         </tr>
       </table>
   </td>
@@ -315,7 +318,8 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> function_name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a>* </td>
+          <td> const -&gt; <a class="el" href="structetl_1_1bitset.html">char</a> <a class="el" href="structetl_1_1bitset.html">const</a>*
+    </td>
         </tr>
       </table>
   </td>
@@ -340,7 +344,8 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> line </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="namespaceetl.html#ad35f8b747d163b033b7d4bf5b18b2f61">etl::uint_least32_t</a> </td>
+          <td> const -&gt; <a class="el" href="namespaceetl.html#ad35f8b747d163b033b7d4bf5b18b2f61">etl::uint_least32_t</a>
+    </td>
         </tr>
       </table>
   </td>
@@ -361,7 +366,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1source__location.html">source_location</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

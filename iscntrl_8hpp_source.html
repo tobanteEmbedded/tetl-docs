@@ -106,41 +106,42 @@ $(document).ready(function(){initNavTree('iscntrl_8hpp_source.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <a href="iscntrl_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CCTYPE_ISCNTRL_HPP</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CCTYPE_ISCNTRL_HPP</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// \brief Checks if the given character is a control character as classified by</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// the currently installed C locale. In the default, &quot;C&quot; locale, the control</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// characters are the characters with the codes 0x00-0x1F and 0x7F.</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">///</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// \param ch Character to classify.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">///</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/// \returns Non-zero value if the character is a control character, zero</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/// otherwise.</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">///</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/// https://en.cppreference.com/w/cpp/string/byte/iscntrl</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">///</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/// \ingroup cctype</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">   20</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">iscntrl</a>(<span class="keywordtype">int</span> ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;((ch &gt;= 0x00 <span class="keyword">and</span> ch &lt;= 0x1f) <span class="keyword">or</span> ch == 0x7F);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CCTYPE_ISCNTRL_HPP</span></div>
-<div class="ttc" id="agroup__cctype_html_ga368e8ddd21d388ae1504166640a1b80b"><div class="ttname"><a href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">etl::iscntrl</a></div><div class="ttdeci">constexpr auto iscntrl(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is a control character as classified by the currently installed C local...</div><div class="ttdef"><b>Definition</b> iscntrl.hpp:20</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2020 Tobias Hienzsch</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_CCTYPE_ISCNTRL_HPP</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_CCTYPE_ISCNTRL_HPP</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// \brief Checks if the given character is a control character as classified by</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// the currently installed C locale. In the default, &quot;C&quot; locale, the control</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// characters are the characters with the codes 0x00-0x1F and 0x7F.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">///</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/// \param ch Character to classify.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">///</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/// \returns Non-zero value if the character is a control character, zero</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/// otherwise.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">///</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/// https://en.cppreference.com/w/cpp/string/byte/iscntrl</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">///</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/// \ingroup cctype</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">   21</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">iscntrl</a>(<span class="keywordtype">int</span> ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;((ch &gt;= 0x00 <span class="keyword">and</span> ch &lt;= 0x1f) <span class="keyword">or</span> ch == 0x7F);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_CCTYPE_ISCNTRL_HPP</span></div>
+<div class="ttc" id="agroup__cctype_html_ga368e8ddd21d388ae1504166640a1b80b"><div class="ttname"><a href="group__cctype.html#ga368e8ddd21d388ae1504166640a1b80b">etl::iscntrl</a></div><div class="ttdeci">constexpr auto iscntrl(int ch) noexcept -&gt; int</div><div class="ttdoc">Checks if the given character is a control character as classified by the currently installed C local...</div><div class="ttdef"><b>Definition</b> iscntrl.hpp:21</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_9546d4ce0294fc1f78ba6300191ec0a4.html">_cctype</a></li><li class="navelem"><a class="el" href="iscntrl_8hpp.html">iscntrl.hpp</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:12 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:14:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

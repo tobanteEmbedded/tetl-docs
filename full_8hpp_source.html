@@ -106,44 +106,45 @@ $(document).ready(function(){initNavTree('full_8hpp_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="full_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-License-Identifier: BSL-1.0</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_FULL_HPP</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_FULL_HPP</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">ignore_unused</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// \brief Returns whether the given container is full.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// \ingroup iterator</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">   14</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">full</a>(C <span class="keyword">const</span>&amp; c) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">c</a>.<a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">full</a>())) -&gt; <span class="keyword">decltype</span>(c.full())</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> c.full();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/// \ingroup iterator</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, size_t N&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">   21</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">full</a>(T (&amp;array)[N]) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_namespace" href="namespaceetl.html">etl</a>::ignore_unused(&amp;array);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_FULL_HPP</span></div>
-<div class="ttc" id="agroup__iterator_html_gab6b5eb982170f3879c1af31e1f245e8e"><div class="ttname"><a href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">etl::full</a></div><div class="ttdeci">constexpr auto full(C const &amp;c) noexcept(noexcept(c.full())) -&gt; decltype(c.full())</div><div class="ttdoc">Returns whether the given container is full.</div><div class="ttdef"><b>Definition</b> full.hpp:14</div></div>
-<div class="ttc" id="agroup__iterator_html_gab6d0a38b0d0530c7cdcea3add44e91d4"><div class="ttname"><a href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">etl::full</a></div><div class="ttdeci">constexpr auto full(T(&amp;array)[N]) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> full.hpp:21</div></div>
-<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:8</div></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-FileCopyrightText: Copyright (C) 2021 Tobias Hienzsch</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">ifndef</span> <span class="preprocessor">TETL_ITERATOR_FULL_HPP</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">TETL_ITERATOR_FULL_HPP</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_cstddef</span><span class="preprocessor">/</span><span class="preprocessor">size_t</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">etl</span><span class="preprocessor">/</span><span class="preprocessor">_utility</span><span class="preprocessor">/</span><span class="preprocessor">ignore_unused</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// \brief Returns whether the given container is full.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/// \ingroup iterator</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">   15</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">full</a>(C <span class="keyword">const</span>&amp; c) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">c</a>.<a class="code hl_function" href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">full</a>())) -&gt; <span class="keyword">decltype</span>(c.full())</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> c.full();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/// \ingroup iterator</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, size_t N&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">   22</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">full</a>(T (&amp;array)[N]) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_namespace" href="namespaceetl.html">etl</a>::ignore_unused(&amp;array);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_ITERATOR_FULL_HPP</span></div>
+<div class="ttc" id="agroup__iterator_html_gab6b5eb982170f3879c1af31e1f245e8e"><div class="ttname"><a href="group__iterator.html#gab6b5eb982170f3879c1af31e1f245e8e">etl::full</a></div><div class="ttdeci">constexpr auto full(C const &amp;c) noexcept(noexcept(c.full())) -&gt; decltype(c.full())</div><div class="ttdoc">Returns whether the given container is full.</div><div class="ttdef"><b>Definition</b> full.hpp:15</div></div>
+<div class="ttc" id="agroup__iterator_html_gab6d0a38b0d0530c7cdcea3add44e91d4"><div class="ttname"><a href="group__iterator.html#gab6d0a38b0d0530c7cdcea3add44e91d4">etl::full</a></div><div class="ttdeci">constexpr auto full(T(&amp;array)[N]) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> full.hpp:22</div></div>
+<div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_546ee82740e2e3e97f0d4ba038351788.html">_iterator</a></li><li class="navelem"><a class="el" href="full_8hpp.html">full.hpp</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 19:55:26 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 7 2025 19:15:07 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

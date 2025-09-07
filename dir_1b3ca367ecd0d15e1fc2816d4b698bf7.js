@@ -16,6 +16,7 @@ var dir_1b3ca367ecd0d15e1fc2816d4b698bf7 =
     [ "common_type.hpp", "common__type_8hpp.html", "common__type_8hpp" ],
     [ "conditional.hpp", "conditional_8hpp.html", "conditional_8hpp" ],
     [ "conjunction.hpp", "conjunction_8hpp.html", "conjunction_8hpp" ],
+    [ "copy_cv.hpp", "copy__cv_8hpp.html", "copy__cv_8hpp" ],
     [ "decay.hpp", "decay_8hpp.html", "decay_8hpp" ],
     [ "decl.hpp", "decl_8hpp.html", "decl_8hpp" ],
     [ "declval.hpp", "declval_8hpp.html", "declval_8hpp" ],
