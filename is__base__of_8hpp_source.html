@@ -137,28 +137,32 @@ $(document).ready(function(){initNavTree('is__base__of_8hpp_source.html',''); in
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/// type; otherwise the behavior is undefined.</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">///</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/// https://en.cppreference.com/w/cpp/types/is_base_of</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span> Derived&gt;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structetl_1_1is__base__of.html">   34</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1is__base__of.html">is_base_of</a></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    : bool_constant&lt;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          is_class_v&lt;Base&gt; <span class="keyword">and</span> is_class_v&lt;Derived&gt;<span class="keyword">and</span> <span class="keyword">decltype</span>(detail::test_pre_is_base_of&lt;Base, Derived&gt;(0))::value</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      &gt; { };</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">Base</a>, <span class="keyword">typename</span> <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">Derived</a>&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">   40</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of_v</a> = <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">is_base_of</a>&lt;<a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">Base</a>, <a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">Derived</a>&gt;::<a class="code hl_variable" href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">value</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_IS_BASE_OF_HPP</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">///</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span> Derived&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structetl_1_1is__base__of.html">   36</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1is__base__of.html">is_base_of</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    : bool_constant&lt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>          is_class_v&lt;Base&gt; <span class="keyword">and</span> is_class_v&lt;Derived&gt;<span class="keyword">and</span> <span class="keyword">decltype</span>(detail::test_pre_is_base_of&lt;Base, Derived&gt;(0))::value</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      &gt; { };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/// \relates is_base_of</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">Base</a>, <span class="keyword">typename</span> <a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">Derived</a>&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">   44</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">is_base_of_v</a> = <a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">is_base_of</a>&lt;<a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">Base</a>, <a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">Derived</a>&gt;::<a class="code hl_variable" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">value</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_IS_BASE_OF_HPP</span></div>
+<div class="ttc" id="agroup__type__traits_html_ga096bf5b121d9f427c8027f2949e8198e"><div class="ttname"><a href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">etl::is_base_of::is_base_of_v</a></div><div class="ttdeci">constexpr bool is_base_of_v</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:44</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_html_a096bf5b121d9f427c8027f2949e8198e"><div class="ttname"><a href="namespaceetl.html#a096bf5b121d9f427c8027f2949e8198e">etl::is_base_of_v</a></div><div class="ttdeci">constexpr bool is_base_of_v</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:40</div></div>
-<div class="ttc" id="astructetl_1_1is__base__of_html"><div class="ttname"><a href="structetl_1_1is__base__of.html">etl::is_base_of</a></div><div class="ttdoc">If Derived is derived from Base or if both are the same non-union class (in both cases ignoring cv-qu...</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:37</div></div>
+<div class="ttc" id="astructetl_1_1is__base__of_html"><div class="ttname"><a href="structetl_1_1is__base__of.html">etl::is_base_of</a></div><div class="ttdoc">If Derived is derived from Base or if both are the same non-union class (in both cases ignoring cv-qu...</div><div class="ttdef"><b>Definition</b> is_base_of.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__base__of_8hpp.html">is_base_of.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:17 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('copysign_8hpp_source.html',''); initRe
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> copysign(T x, T y) <span class="keyword">noexcept</span> -&gt; T</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a><a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">(</a><a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">)</a>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (<span class="keyword">not</span> <a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">is_constant_evaluated</a><a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">(</a><a class="code hl_function" href="namespaceetl.html#a135ea1c61ce77c9bf27e83df6a1fec64">)</a>) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_same_v&lt;T, <span class="keywordtype">float</span>&gt;) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#</span><span class="preprocessor">if</span> <span class="preprocessor">__has_builtin</span><span class="preprocessor">(</span><span class="preprocessor">__builtin_copysignf</span><span class="preprocessor">)</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">return</span> __builtin_copysignf(x, y);</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('copysign_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_0a8451822ead037db42f7b180ec45725.html">_cmath</a></li><li class="navelem"><a class="el" href="copysign_8hpp.html">copysign.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:50 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:41 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

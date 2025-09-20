@@ -100,12 +100,13 @@ $(document).ready(function(){initNavTree('structetl_1_1aligned__union.html','');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#related">Related Symbols</a> &#124;
 <a href="structetl_1_1aligned__union-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">aligned_union&lt; Len, Types &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">aligned_union&lt; Len, Types &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__utilities-library.html">Utilities Library</a> &raquo; <a class="el" href="group__type__traits.html">type_traits</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types. The size of the storage is at least Len. <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> also determines the strictest (largest) alignment requirement among all Types and makes it available as the constant alignment_value. If sizeof...(Types) == 0 or if any of the types in Types is not a complete object type, the behavior is undefined. It is implementation-defined whether any extended alignment is supported. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> is undefined.  
+<p>Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types.  
  <a href="structetl_1_1aligned__union.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="aligned__union_8hpp_source.html">aligned_union.hpp</a>&gt;</code></p>
@@ -119,10 +120,20 @@ Classes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5d7691d42c1b1ac69e01407e2e749d63" id="r_a5d7691d42c1b1ac69e01407e2e749d63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">static</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union.html#a5d7691d42c1b1ac69e01407e2e749d63">alignment_value</a> = detail::vmax(<a class="el" href="structetl_1_1bitset.html">alignof</a>(<a class="el" href="structetl_1_1bitset.html">Types</a>)...)</td></tr>
 <tr class="separator:a5d7691d42c1b1ac69e01407e2e749d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="related" name="related"></a>
+Related Symbols</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member symbols.) </p>
+</td></tr>
+<tr class="memitem:gaaf5f392ace63d0a89352f050a2104edc" id="r_gaaf5f392ace63d0a89352f050a2104edc"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, typename... Types&gt; </td></tr>
+<tr class="memitem:gaaf5f392ace63d0a89352f050a2104edc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaaf5f392ace63d0a89352f050a2104edc">aligned_union_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1aligned__union.html">aligned_union</a>&lt; <a class="el" href="structetl_1_1bitset.html">Len</a>, Types... &gt;::type</td></tr>
+<tr class="separator:gaaf5f392ace63d0a89352f050a2104edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, typename... Types&gt;<br />
-struct etl::aligned_union&lt; Len, Types &gt;</div><p>Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types. The size of the storage is at least Len. <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> also determines the strictest (largest) alignment requirement among all Types and makes it available as the constant alignment_value. If sizeof...(Types) == 0 or if any of the types in Types is not a complete object type, the behavior is undefined. It is implementation-defined whether any extended alignment is supported. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> is undefined. </p>
+struct etl::aligned_union&lt; Len, Types &gt;</div><p>Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types. </p>
+<p>The size of the storage is at least Len. <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> also determines the strictest (largest) alignment requirement among all Types and makes it available as the constant alignment_value. If sizeof...(Types) == 0 or if any of the types in Types is not a complete object type, the behavior is undefined.</p>
+<p>It is implementation-defined whether any extended alignment is supported. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1aligned__union.html" title="Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitab...">aligned_union</a> is undefined. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a5d7691d42c1b1ac69e01407e2e749d63" name="a5d7691d42c1b1ac69e01407e2e749d63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d7691d42c1b1ac69e01407e2e749d63">&#9670;&#160;</a></span>alignment_value</h2>
@@ -157,7 +168,7 @@ template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb750278539322
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1aligned__union.html">aligned_union</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:51:11 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

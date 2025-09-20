@@ -129,11 +129,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b02cc74f13a05b6e8c659f3a3dccd6e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__optional.html#ga2b02cc74f13a05b6e8c659f3a3dccd6e">optional</a> (<a class="el" href="structetl_1_1bitset.html">T</a>) -&gt; <a class="el" href="structetl_1_1optional.html">optional</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;</td></tr>
 <tr class="separator:ga2b02cc74f13a05b6e8c659f3a3dccd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga676d3a9766e7187541dac0084ca9352d" id="r_ga676d3a9766e7187541dac0084ca9352d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:ga676d3a9766e7187541dac0084ca9352d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__optional.html#ga676d3a9766e7187541dac0084ca9352d">make_optional</a> (<a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... args) -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;</td></tr>
+<tr class="memitem:ga676d3a9766e7187541dac0084ca9352d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__optional.html#ga676d3a9766e7187541dac0084ca9352d">make_optional</a> (<a class="el" href="structetl_1_1bitset.html">Args</a> &amp;&amp;... <a class="el" href="structetl_1_1bitset.html">args</a>) -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;</td></tr>
 <tr class="memdesc:ga676d3a9766e7187541dac0084ca9352d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an optional object constructed in-place from args...  <br /></td></tr>
 <tr class="separator:ga676d3a9766e7187541dac0084ca9352d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac49c48774035c7f282eeaa3e6288dce8" id="r_gac49c48774035c7f282eeaa3e6288dce8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
-<tr class="memitem:gac49c48774035c7f282eeaa3e6288dce8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__optional.html#gac49c48774035c7f282eeaa3e6288dce8">make_optional</a> (<a class="el" href="structetl_1_1bitset.html">T</a> &amp;&amp;value) -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt; <a class="el" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt; &gt;</td></tr>
+<tr class="memitem:gac49c48774035c7f282eeaa3e6288dce8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__optional.html#gac49c48774035c7f282eeaa3e6288dce8">make_optional</a> (<a class="el" href="structetl_1_1bitset.html">T</a> &amp;&amp;value) -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt; <a class="el" href="group__type__traits.html#ga24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt; &gt;</td></tr>
 <tr class="memdesc:gac49c48774035c7f282eeaa3e6288dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an optional object from value.  <br /></td></tr>
 <tr class="separator:gac49c48774035c7f282eeaa3e6288dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6d6d7216975fa39b685f0a19a4fa276" id="r_gac6d6d7216975fa39b685f0a19a4fa276"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
@@ -293,7 +293,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">T</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt;<a class="el" href="namespaceetl.html#a24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;&gt;
+          <td> -&gt; <a class="el" href="structetl_1_1optional.html">etl::optional</a>&lt;<a class="el" href="group__type__traits.html#ga24f3c9ab2c53f9192c2899fc8efb263d">etl::decay_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;&gt;
 </td>
         </tr>
       </table>
@@ -1089,7 +1089,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:51:11 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

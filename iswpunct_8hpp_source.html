@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('iswpunct_8hpp_source.html',''); initRe
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">auto</span> <span class="keyword">const</span> sec2 = ch &gt;= L&#39;:&#39; <span class="keyword">and</span> ch &lt;= L&#39;@&#39;;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> sec3 = ch &gt;= L&#39;[&#39; <span class="keyword">and</span> ch &lt;= L&#39;`&#39;;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">auto</span> <span class="keyword">const</span> sec4 = ch &gt;= L&#39;{&#39; <span class="keyword">and</span> ch &lt;= L&#39;~&#39;;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(sec1 || sec2 || sec3 || sec4);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(sec1 <span class="keyword">or</span> sec2 <span class="keyword">or</span> sec3 <span class="keyword">or</span> sec4);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('iswpunct_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_883c3072c237bda7b2fc21c7d2dc0e9b.html">_cwctype</a></li><li class="navelem"><a class="el" href="iswpunct_8hpp.html">iswpunct.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

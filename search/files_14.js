@@ -8,7 +8,6 @@ var searchData=
   ['variant_5fsize_2ehpp_5',['variant_size.hpp',['../variant__size_8hpp.html',1,'']]],
   ['vector_2ehpp_6',['vector.hpp',['../__vector_2vector_8hpp.html',1,'(Global Namespace)'],['../vector_8hpp.html',1,'(Global Namespace)']]],
   ['version_2ehpp_7',['version.hpp',['../__config_2version_8hpp.html',1,'(Global Namespace)'],['../version_8hpp.html',1,'(Global Namespace)']]],
-  ['vformat_5fto_2ehpp_8',['vformat_to.hpp',['../vformat__to_8hpp.html',1,'']]],
-  ['visit_2ehpp_9',['visit.hpp',['../visit_8hpp.html',1,'']]],
-  ['void_5ft_2ehpp_10',['void_t.hpp',['../void__t_8hpp.html',1,'']]]
+  ['visit_2ehpp_8',['visit.hpp',['../visit_8hpp.html',1,'']]],
+  ['void_5ft_2ehpp_9',['void_t.hpp',['../void__t_8hpp.html',1,'']]]
 ];

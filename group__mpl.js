@@ -1,9 +1,12 @@
 var group__mpl =
 [
+    [ "at< I, List >", "structetl_1_1mpl_1_1at.html", null ],
+    [ "contains< Needle, Haystack >", "structetl_1_1mpl_1_1contains.html", null ],
+    [ "count< Needle, Haystack >", "structetl_1_1mpl_1_1count.html", null ],
+    [ "head< Ts >", "structetl_1_1mpl_1_1head.html", null ],
+    [ "index_of< T, List >", "structetl_1_1mpl_1_1index__of.html", null ],
     [ "list< Ts >", "structetl_1_1mpl_1_1list.html", null ],
     [ "push_back< T, List >", "structetl_1_1mpl_1_1push__back.html", null ],
-    [ "push_back< T, list< Ts... > >", "structetl_1_1mpl_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html", [
-      [ "type", "structetl_1_1mpl_1_1push__back_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html#a26188676caf71a355e1944f0c5d45205", null ]
-    ] ],
-    [ "push_back_t", "group__mpl.html#ga9517f3ad82b9d36b11ac8e8245de4727", null ]
+    [ "push_front< T, List >", "structetl_1_1mpl_1_1push__front.html", null ],
+    [ "tail< Ts >", "structetl_1_1mpl_1_1tail.html", null ]
 ];

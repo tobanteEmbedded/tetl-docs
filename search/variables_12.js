@@ -5,7 +5,7 @@ var searchData=
   ['september_2',['September',['../namespaceetl_1_1chrono.html#ac0a0e96c89f56ffccf9941f52ed741bc',1,'etl::chrono']]],
   ['seq_3',['seq',['../group__execution.html#ga4b98b2eae795e0565d27273a36e6bd50',1,'etl::execution::sequenced_policy']]],
   ['shifted_5fint_5fmask_4',['shifted_int_mask',['../structetl_1_1pointer__int__pair__info.html#ae8289808e6490d51a0c3449168a2792c',1,'etl::pointer_int_pair_info']]],
-  ['size_5',['size',['../structetl_1_1format__to__n__result.html#ae21db956a46fdb186874ab13636a3a18',1,'etl::format_to_n_result::size'],['../group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c',1,'etl::ranges::size'],['../group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c',1,'etl::ranges::cpo::size']]],
+  ['size_5',['size',['../group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c',1,'etl::ranges::size'],['../group__ranges.html#ga95d3fe103aa2ab8634a824562dd8390c',1,'etl::ranges::cpo::size']]],
   ['skip_5fwhitespace_6',['skip_whitespace',['../structetl_1_1strings_1_1to__integer__options.html#aca66f87af80ae244ef57fc7c31e93874',1,'etl::strings::to_integer_options']]],
   ['sorted_5fequivalent_7',['sorted_equivalent',['../namespaceetl.html#af673e154dd31571c156f5a6119275436',1,'etl']]],
   ['sorted_5funique_8',['sorted_unique',['../namespaceetl.html#aba873a97be10ad8146b06a01a9694b9c',1,'etl']]],

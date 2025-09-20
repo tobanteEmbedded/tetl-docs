@@ -18,6 +18,5 @@ var searchData=
   ['month_5fweekday_15',['month_weekday',['../structetl_1_1chrono_1_1month__weekday.html',1,'etl::chrono']]],
   ['month_5fweekday_5flast_16',['month_weekday_last',['../structetl_1_1chrono_1_1month__weekday__last.html',1,'etl::chrono']]],
   ['multiplies_17',['multiplies',['../structetl_1_1multiplies.html',1,'etl']]],
-  ['multiplies_3c_20void_20_3e_18',['multiplies&lt; void &gt;',['../structetl_1_1multiplies_3_01void_01_4.html',1,'etl']]],
-  ['mutable_5fbuffer_19',['mutable_buffer',['../structetl_1_1experimental_1_1net_1_1mutable__buffer.html',1,'etl::experimental::net']]]
+  ['multiplies_3c_20void_20_3e_18',['multiplies&lt; void &gt;',['../structetl_1_1multiplies_3_01void_01_4.html',1,'etl']]]
 ];

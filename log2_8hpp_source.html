@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('log2_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group__cmath.html#ga373d95b511f9ddc4d991f652eeac139f">   65</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_namespace" href="namespaceetl.html">log2</a>(<a class="code hl_namespace" href="namespaceetl.html">integral</a> <span class="keyword">auto</span> <a class="code hl_namespace" href="namespaceetl.html">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">double</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl.html">detail</a>::<a class="code hl_namespace" href="namespaceetl.html">log2</a>(<span class="keywordtype">double</span>(<a class="code hl_namespace" href="namespaceetl.html">arg</a>));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl.html">detail</a>::<a class="code hl_namespace" href="namespaceetl.html">log2</a>(<span class="keyword">static_cast</span>&lt;<span class="keywordtype">double</span>&gt;(<a class="code hl_namespace" href="namespaceetl.html">arg</a>));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/// @}</span></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('log2_8hpp_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_0a8451822ead037db42f7b180ec45725.html">_cmath</a></li><li class="navelem"><a class="el" href="log2_8hpp.html">log2.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:51 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

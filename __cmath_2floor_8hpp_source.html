@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('__cmath_2floor_8hpp_source.html',''); 
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__cmath.html#gaaa478a6f2a9aabe0513ff380f64c8378">   57</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cmath.html#gaaa478a6f2a9aabe0513ff380f64c8378">floor</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> arg) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::detail::gcem::floor(arg);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::detail::floor(arg);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="group__cmath.html#ga94649517d90ede186b90638c7db492a7">   61</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cmath.html#ga94649517d90ede186b90638c7db492a7">floorl</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> arg) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">long</span> <span class="keywordtype">double</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('__cmath_2floor_8hpp_source.html',''); 
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group__cmath.html#ga33d326f6fa30d2205b8ecfbb2e5b8a46">   65</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_namespace" href="namespaceetl.html">floor</a>(<a class="code hl_namespace" href="namespaceetl.html">integral</a> <span class="keyword">auto</span> <a class="code hl_namespace" href="namespaceetl.html">arg</a>) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">double</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl.html">detail</a>::<a class="code hl_namespace" href="namespaceetl.html">floor</a>(<span class="keywordtype">double</span>(<a class="code hl_namespace" href="namespaceetl.html">arg</a>));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl.html">detail</a>::<a class="code hl_namespace" href="namespaceetl.html">floor</a>(<span class="keyword">static_cast</span>&lt;<span class="keywordtype">double</span>&gt;(<a class="code hl_namespace" href="namespaceetl.html">arg</a>));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/// @}</span></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('__cmath_2floor_8hpp_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_0a8451822ead037db42f7b180ec45725.html">_cmath</a></li><li class="navelem"><a class="el" href="__cmath_2floor_8hpp.html">floor.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:50 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:42 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

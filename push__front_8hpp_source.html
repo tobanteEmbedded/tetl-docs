@@ -115,20 +115,25 @@ $(document).ready(function(){initNavTree('push__front_8hpp_source.html',''); ini
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::<a class="code hl_namespace" href="namespaceetl_1_1mpl.html">mpl</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front.html">   12</a></span><span class="keyword">struct</span> push_front;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// \ingroup mpl</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// @{</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html">   15</a></span><span class="keyword">struct</span> push_front&lt;T, <a class="code hl_struct" href="structetl_1_1mpl_1_1list.html">list</a>&lt;Ts...&gt;&gt; {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html#a252b4aa8b5037fccc16ea6030ca9b9ad">   16</a></span>    <span class="keyword">using</span> type = <a class="code hl_struct" href="structetl_1_1mpl_1_1list.html">list</a>&lt;T, Ts...&gt;;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl_1_1mpl.html#ae097bb8dee277fb5bede5765467fadc7">   20</a></span><span class="keyword">using</span> push_front_t = <span class="keyword">typename</span> push_front&lt;T, List&gt;::type;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front.html">   15</a></span><span class="keyword">struct</span> push_front;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html">   18</a></span><span class="keyword">struct</span> push_front&lt;T, <a class="code hl_struct" href="structetl_1_1mpl_1_1list.html">list</a>&lt;Ts...&gt;&gt; {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structetl_1_1mpl_1_1push__front_3_01T_00_01list_3_01Ts_8_8_8_01_4_01_4.html#a252b4aa8b5037fccc16ea6030ca9b9ad">   19</a></span>    <span class="keyword">using</span> type = <a class="code hl_struct" href="structetl_1_1mpl_1_1list.html">list</a>&lt;T, Ts...&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace etl::mpl</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MPL_PUSH_FRONT_HPP</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> List&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceetl_1_1mpl.html#ae097bb8dee277fb5bede5765467fadc7">   23</a></span><span class="keyword">using</span> push_front_t = <span class="keyword">typename</span> push_front&lt;T, List&gt;::type;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/// @}</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <span class="comment">// namespace etl::mpl</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_MPL_PUSH_FRONT_HPP</span></div>
 <div class="ttc" id="anamespaceetl_1_1mpl_html"><div class="ttname"><a href="namespaceetl_1_1mpl.html">etl::mpl</a></div><div class="ttdef"><b>Definition</b> at.hpp:10</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
 <div class="ttc" id="astructetl_1_1mpl_1_1list_html"><div class="ttname"><a href="structetl_1_1mpl_1_1list.html">etl::mpl::list</a></div><div class="ttdef"><b>Definition</b> list.hpp:11</div></div>
@@ -138,7 +143,7 @@ $(document).ready(function(){initNavTree('push__front_8hpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_9df8fcaf3de0faf6074eade9f9ad09c6.html">_mpl</a></li><li class="navelem"><a class="el" href="push__front_8hpp.html">push_front.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:15 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:56 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

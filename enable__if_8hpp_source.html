@@ -115,29 +115,31 @@ $(document).ready(function(){initNavTree('enable__if_8hpp_source.html',''); init
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// Define a member typedef only if a boolean constant is true.</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// \include type_traits.cpp</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>, <span class="keyword">typename</span> Type = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if.html">   12</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a> { };</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if_3_01true_00_01Type_01_4.html">   15</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a>&lt;<span class="keyword">true</span>, Type&gt; {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if_3_01true_00_01Type_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">   16</a></span>    <span class="keyword">using</span> type = Type;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> B, <span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceetl.html#a93e9cb7fadbcfaa2afb5b94058b8e34c">   20</a></span><span class="keyword">using</span> enable_if_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a>&lt;B, T&gt;::type;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>, <span class="keyword">typename</span> Type = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if.html">   13</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a> { };</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if_3_01true_00_01Type_01_4.html">   16</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a>&lt;<span class="keyword">true</span>, Type&gt; {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structetl_1_1enable__if_3_01true_00_01Type_01_4.html#aca8c309473ba6429aad9347ffbe7a9fb">   17</a></span>    <span class="keyword">using</span> type = Type;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> B, <span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga93e9cb7fadbcfaa2afb5b94058b8e34c">   22</a></span><span class="keyword">using</span> enable_if_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1enable__if.html">enable_if</a>&lt;B, T&gt;::type;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ENABLE_IF_HPP</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ENABLE_IF_HPP</span></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1enable__if_html"><div class="ttname"><a href="structetl_1_1enable__if.html">etl::enable_if</a></div><div class="ttdoc">Define a member typedef only if a boolean constant is true.</div><div class="ttdef"><b>Definition</b> enable_if.hpp:12</div></div>
+<div class="ttc" id="astructetl_1_1enable__if_html"><div class="ttname"><a href="structetl_1_1enable__if.html">etl::enable_if</a></div><div class="ttdoc">Define a member typedef only if a boolean constant is true.</div><div class="ttdef"><b>Definition</b> enable_if.hpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="enable__if_8hpp.html">enable_if.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:17 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

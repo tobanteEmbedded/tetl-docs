@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('iswgraph_8hpp_source.html',''); initRe
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isUpper = <a class="code hl_function" href="group__cwctype.html#ga597b876c6866c7f04154fcc066fd08ba">iswupper</a><a class="code hl_function" href="group__cwctype.html#ga597b876c6866c7f04154fcc066fd08ba">(</a>ch<a class="code hl_function" href="group__cwctype.html#ga597b876c6866c7f04154fcc066fd08ba">)</a> != 0;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isLower = <a class="code hl_function" href="group__cwctype.html#gacebca8a0e95d8a7c4b7fbe0022762b5c">iswlower</a><a class="code hl_function" href="group__cwctype.html#gacebca8a0e95d8a7c4b7fbe0022762b5c">(</a>ch<a class="code hl_function" href="group__cwctype.html#gacebca8a0e95d8a7c4b7fbe0022762b5c">)</a> != 0;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isPunct = <a class="code hl_function" href="group__cwctype.html#gafeae65f95769adaef057cef1e2072cf2">iswpunct</a><a class="code hl_function" href="group__cwctype.html#gafeae65f95769adaef057cef1e2072cf2">(</a>ch<a class="code hl_function" href="group__cwctype.html#gafeae65f95769adaef057cef1e2072cf2">)</a> != 0;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(isDigit || isLower || isUpper || isPunct);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(isDigit <span class="keyword">or</span> isLower <span class="keyword">or</span> isUpper <span class="keyword">or</span> isPunct);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('iswgraph_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_883c3072c237bda7b2fc21c7d2dc0e9b.html">_cwctype</a></li><li class="navelem"><a class="el" href="iswgraph_8hpp.html">iswgraph.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

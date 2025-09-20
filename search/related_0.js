@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_5fformat_5farg_3c_20context_20_3e_0',['basic_format_arg&lt; Context &gt;',['../structetl_1_1basic__format__arg_1_1handle.html#af15859366e88a7b5c6cc6f130a12a278',1,'etl::basic_format_arg::handle']]]
+  ['get_0',['get',['../structetl_1_1complex.html#a8ff14f3a28020abd7c031e979116512b',1,'etl::complex::get'],['../structetl_1_1complex.html#a650bfbb34b34046eee0a90462178afe0',1,'etl::complex::get'],['../structetl_1_1complex.html#ab983dbd86684b9a6bf02626b8e08dc27',1,'etl::complex::get'],['../structetl_1_1complex.html#ada14086f24427efdf73165158351729f',1,'etl::complex::get']]]
 ];

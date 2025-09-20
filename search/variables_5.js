@@ -13,6 +13,6 @@ var searchData=
   ['explicit_5fdiagonal_10',['explicit_diagonal',['../structetl_1_1linalg_1_1explicit__diagonal__t.html#a60c1a9bea7a7851ff98e7b2bf11dbd11',1,'etl::linalg::explicit_diagonal_t']]],
   ['expression_11',['expression',['../structetl_1_1assert__msg.html#a49d4365485834727e27083ee7b6e28a6',1,'etl::assert_msg']]],
   ['extent_12',['extent',['../structetl_1_1span.html#a00742803104bb69f8f341b5999987144',1,'etl::span::extent'],['../structetl_1_1strided__slice.html#a1b38315cfe5f4fc202ced6013625281c',1,'etl::strided_slice::extent']]],
-  ['extent_5fv_13',['extent_v',['../namespaceetl.html#a06332dc22e85765f2c195c703cc49068',1,'etl']]],
+  ['extent_5fv_13',['extent_v',['../group__type__traits.html#ga06332dc22e85765f2c195c703cc49068',1,'etl']]],
   ['exts_14',['exts',['../structetl_1_1mdspan.html#a9d21ac4c0a5e46f34099a9af5ef6f90e',1,'etl::mdspan::exts'],['../structetl_1_1mdspan.html#a8fc5f18754b7330eefadde7886d3471b',1,'etl::mdspan::exts']]]
 ];

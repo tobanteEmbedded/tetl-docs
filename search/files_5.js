@@ -20,7 +20,8 @@ var searchData=
   ['execution_5fpolicy_2ehpp_17',['execution_policy.hpp',['../execution__policy_8hpp.html',1,'']]],
   ['exit_2ehpp_18',['exit.hpp',['../exit_8hpp.html',1,'']]],
   ['exp_2ehpp_19',['exp.hpp',['../exp_8hpp.html',1,'']]],
-  ['expected_2ehpp_20',['expected.hpp',['../expected_8hpp.html',1,'(Global Namespace)'],['../__expected_2expected_8hpp.html',1,'(Global Namespace)']]],
-  ['extent_2ehpp_21',['extent.hpp',['../extent_8hpp.html',1,'']]],
-  ['extents_2ehpp_22',['extents.hpp',['../extents_8hpp.html',1,'']]]
+  ['expected_2ehpp_20',['expected.hpp',['../__expected_2expected_8hpp.html',1,'(Global Namespace)'],['../expected_8hpp.html',1,'(Global Namespace)']]],
+  ['exposition_2ehpp_21',['exposition.hpp',['../exposition_8hpp.html',1,'']]],
+  ['extent_2ehpp_22',['extent.hpp',['../extent_8hpp.html',1,'']]],
+  ['extents_2ehpp_23',['extents.hpp',['../extents_8hpp.html',1,'']]]
 ];

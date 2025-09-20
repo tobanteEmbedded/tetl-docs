@@ -9,6 +9,6 @@ var searchData=
   ['pointer_5ftype_6',['pointer_type',['../structetl_1_1pointer__int__pair__info.html#a4edb1d6366f0bbfd1ad673e3a2cec95c',1,'etl::pointer_int_pair_info::pointer_type'],['../structetl_1_1pointer__int__pair.html#a4edb1d6366f0bbfd1ad673e3a2cec95c',1,'etl::pointer_int_pair::pointer_type']]],
   ['projected_7',['projected',['../group__iterator.html#ga6729ebb98236f93b98f0492cb3415fb7',1,'etl']]],
   ['ptrdiff_5ft_8',['ptrdiff_t',['../namespaceetl.html#aac63559b08846022abfeabda8583ed87',1,'etl']]],
-  ['push_5fback_5ft_9',['push_back_t',['../group__mpl.html#ga9517f3ad82b9d36b11ac8e8245de4727',1,'etl::mpl']]],
+  ['push_5fback_5ft_9',['push_back_t',['../namespaceetl_1_1mpl.html#a9517f3ad82b9d36b11ac8e8245de4727',1,'etl::mpl']]],
   ['push_5ffront_5ft_10',['push_front_t',['../namespaceetl_1_1mpl.html#ae097bb8dee277fb5bede5765467fadc7',1,'etl::mpl']]]
 ];

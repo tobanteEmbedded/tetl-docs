@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('invoke_8hpp_source.html',''); initResi
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">return</span> ((*<a class="code hl_namespace" href="namespaceetl.html">etl</a>::forward&lt;T1&gt;(t1)).*f)(<a class="code hl_namespace" href="namespaceetl.html">etl</a>::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">static_assert</span>(is_object_v&lt;Pointed&gt; &amp;&amp; <span class="keyword">sizeof</span>...(args) == 0);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">static_assert</span>(is_object_v&lt;Pointed&gt; <span class="keyword">and</span> <span class="keyword">sizeof</span>...(args) == 0);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_base_of_v&lt;Class, decay_t&lt;T1&gt;&gt;) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a>::forward&lt;T1&gt;(t1).*f;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (is_reference_wrapper_v&lt;decay_t&lt;T1&gt;&gt;) {</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('invoke_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_5d827295ba6996e08243549f3a2020da.html">_functional</a></li><li class="navelem"><a class="el" href="invoke_8hpp.html">invoke.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:05 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

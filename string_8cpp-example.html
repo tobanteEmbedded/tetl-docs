@@ -135,13 +135,13 @@ $(document).ready(function(){initNavTree('string_8cpp-example.html',''); initRes
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hell&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    str.push_back(<span class="charliteral">&#39;o&#39;</span>);</div>
-<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(!str.empty());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(not str.empty());</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 5);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> other = <a class="code hl_struct" href="structetl_1_1bitset.html">etl::string_view</a>{<span class="stringliteral">&quot; World&quot;</span>};</div>
 <div class="line">    str.append(other, 0);</div>
-<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(!str.empty());</div>
+<div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(not str.empty());</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str.size() == 11);</div>
 <div class="line">    <a class="code hl_define" href="cassert_8hpp.html#a3d4ae9c092e117c836f52dc7d7cee574">assert</a>(str == <span class="stringliteral">&quot;Hello World&quot;</span>);</div>
 <div class="line"> </div>
@@ -186,14 +186,14 @@ $(document).ready(function(){initNavTree('string_8cpp-example.html',''); initRes
 <div class="ttc" id="agroup__algorithm_html_ga0d479673068495c0b88dcd93a99dfb57"><div class="ttname"><a href="group__algorithm.html#ga0d479673068495c0b88dcd93a99dfb57">etl::transform</a></div><div class="ttdeci">constexpr auto transform(InputIt first, InputIt last, OutputIt dest, UnaryOp op) -&gt; OutputIt</div><div class="ttdef"><b>Definition</b> transform.hpp:25</div></div>
 <div class="ttc" id="agroup__cctype_html_gabf5656409846cdb311fcc37acd590d9a"><div class="ttname"><a href="group__cctype.html#gabf5656409846cdb311fcc37acd590d9a">etl::toupper</a></div><div class="ttdeci">constexpr auto toupper(int ch) noexcept -&gt; int</div><div class="ttdoc">Converts the given character to uppercase according to the character conversion rules defined by the ...</div><div class="ttdef"><b>Definition</b> toupper.hpp:27</div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
-<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:23</div></div>
-<div class="ttc" id="astructetl_1_1bitset_html_a68960381f66fdfeb44116fe4337b5824"><div class="ttname"><a href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">etl::bitset::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_t</div><div class="ttdoc">Returns the number of bits that the bitset holds.</div><div class="ttdef"><b>Definition</b> bitset.hpp:211</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html"><div class="ttname"><a href="structetl_1_1bitset.html">etl::bitset</a></div><div class="ttdoc">The class template bitset represents a fixed-size sequence of Bits bits. Bitsets can be manipulated b...</div><div class="ttdef"><b>Definition</b> bitset.hpp:26</div></div>
+<div class="ttc" id="astructetl_1_1bitset_html_a68960381f66fdfeb44116fe4337b5824"><div class="ttname"><a href="structetl_1_1bitset.html#a68960381f66fdfeb44116fe4337b5824">etl::bitset::size</a></div><div class="ttdeci">constexpr auto size() const noexcept -&gt; size_t</div><div class="ttdoc">Returns the number of bits that the bitset holds.</div><div class="ttdef"><b>Definition</b> bitset.hpp:217</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:46 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:38 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

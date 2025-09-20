@@ -117,26 +117,28 @@ $(document).ready(function(){initNavTree('alignment__of_8hpp_source.html',''); i
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceetl.html">etl</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// \brief alignment_of</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structetl_1_1alignment__of.html">   14</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1alignment__of.html">alignment_of</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, <span class="keyword">alignof</span>(T)&gt; { };</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">T</a>&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">   17</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">size_t</a> <a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">alignment_of_v</a> = <a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">alignment_of</a>&lt;<a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">T</a>&gt;::<a class="code hl_variable" href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">value</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structetl_1_1alignment__of.html">   15</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1alignment__of.html">alignment_of</a> : <a class="code hl_struct" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;size_t, <span class="keyword">alignof</span>(T)&gt; { };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">T</a>&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">   19</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">size_t</a> <a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">alignment_of_v</a> = <a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">alignment_of</a>&lt;<a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">T</a>&gt;::<a class="code hl_variable" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">value</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ALIGNMENT_OF_HPP</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ALIGNMENT_OF_HPP</span></div>
+<div class="ttc" id="agroup__type__traits_html_gae7fde4c1b709be147fc5d8f4efc0c605"><div class="ttname"><a href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">etl::alignment_of_v</a></div><div class="ttdeci">constexpr size_t alignment_of_v</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:19</div></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
-<div class="ttc" id="anamespaceetl_html_ae7fde4c1b709be147fc5d8f4efc0c605"><div class="ttname"><a href="namespaceetl.html#ae7fde4c1b709be147fc5d8f4efc0c605">etl::alignment_of_v</a></div><div class="ttdeci">constexpr size_t alignment_of_v</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:17</div></div>
-<div class="ttc" id="astructetl_1_1alignment__of_html"><div class="ttname"><a href="structetl_1_1alignment__of.html">etl::alignment_of</a></div><div class="ttdoc">alignment_of</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:14</div></div>
-<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:10</div></div>
+<div class="ttc" id="astructetl_1_1alignment__of_html"><div class="ttname"><a href="structetl_1_1alignment__of.html">etl::alignment_of</a></div><div class="ttdoc">alignment_of</div><div class="ttdef"><b>Definition</b> alignment_of.hpp:15</div></div>
+<div class="ttc" id="astructetl_1_1integral__constant_html"><div class="ttname"><a href="structetl_1_1integral__constant.html">etl::integral_constant</a></div><div class="ttdef"><b>Definition</b> integral_constant.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="alignment__of_8hpp.html">alignment_of.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:17 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

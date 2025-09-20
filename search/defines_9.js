@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mb_5flen_5fmax_0',['MB_LEN_MAX',['../__climits_2defines_8hpp.html#a88a1b2d6ac46174ac7b571dca5b1f274',1,'defines.hpp']]]
+  ['null_0',['NULL',['../null_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'null.hpp']]]
 ];

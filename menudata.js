@@ -229,7 +229,6 @@ var menudata={children:[
 {text:"v",url:"functions_type_v.html#index_v"},
 {text:"x",url:"functions_type_x.html#index_x"}]},
 {text:"Related Symbols",url:"functions_rela.html",children:[
-{text:"b",url:"functions_rela.html#index_b"},
 {text:"g",url:"functions_rela.html#index_g"},
 {text:"i",url:"functions_rela.html#index_i"},
 {text:"o",url:"functions_rela.html#index_o"},

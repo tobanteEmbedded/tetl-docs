@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('is__nothrow__constructible_8hpp_source
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, size_t Size, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">struct</span> nothrow_constructible_impl&lt;<span class="keyword">true</span>, T[Size], Args...&gt;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    : bool_constant&lt;(nothrow_constructible_impl&lt;<span class="keyword">true</span>, T, Args&gt;::value &amp;&amp; ...)&gt; { };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    : bool_constant&lt;(nothrow_constructible_impl&lt;<span class="keyword">true</span>, T, Args&gt;::value <span class="keyword">and</span> ...)&gt; { };</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#</span><span class="preprocessor">endif</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('is__nothrow__constructible_8hpp_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="is__nothrow__constructible_8hpp.html">is_nothrow_constructible.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:17 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

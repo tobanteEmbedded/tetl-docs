@@ -125,10 +125,10 @@ $(document).ready(function(){initNavTree('iswxdigit_8hpp_source.html',''); initR
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/// \ingroup cwctype</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__cwctype.html#ga49d8adf51dcb6a599f5da613d2e32b5d">   19</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cwctype.html#ga49d8adf51dcb6a599f5da613d2e32b5d">iswxdigit</a>(wint_t ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isDigit    = ch &gt;= <span class="stringliteral">&#39;0&#39;</span> &amp;&amp; ch &lt;= <span class="stringliteral">&#39;9&#39;</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isHexLower = ch &gt;= <span class="stringliteral">&#39;a&#39;</span> &amp;&amp; ch &lt;= <span class="stringliteral">&#39;f&#39;</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isHexUpper = ch &gt;= <span class="stringliteral">&#39;A&#39;</span> &amp;&amp; ch &lt;= <span class="stringliteral">&#39;F&#39;</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(isDigit || isHexLower || isHexUpper);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isDigit    = ch &gt;= <span class="stringliteral">&#39;0&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;9&#39;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isHexLower = ch &gt;= <span class="stringliteral">&#39;a&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;f&#39;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> <span class="keyword">const</span> isHexUpper = ch &gt;= <span class="stringliteral">&#39;A&#39;</span> <span class="keyword">and</span> ch &lt;= <span class="stringliteral">&#39;F&#39;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(isDigit <span class="keyword">or</span> isHexLower <span class="keyword">or</span> isHexUpper);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('iswxdigit_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_883c3072c237bda7b2fc21c7d2dc0e9b.html">_cwctype</a></li><li class="navelem"><a class="el" href="iswxdigit_8hpp.html">iswxdigit.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

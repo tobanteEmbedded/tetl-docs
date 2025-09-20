@@ -130,20 +130,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a026004f8d87d8295ef3cb709b6c1477b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6d50b125ee78ad8b857137dae8ff92" id="r_adb6d50b125ee78ad8b857137dae8ff92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#adb6d50b125ee78ad8b857137dae8ff92">mapping</a> (<a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;) noexcept=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
 <tr class="separator:adb6d50b125ee78ad8b857137dae8ff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47790fae4cd6a1a75a0be040e318379e" id="r_a47790fae4cd6a1a75a0be040e318379e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExtents &gt; <br />
-requires (extents_type::rank() &lt;= 1) &amp;&amp; <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherExtents&gt;</td></tr>
-<tr class="memitem:a47790fae4cd6a1a75a0be040e318379e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a47790fae4cd6a1a75a0be040e318379e">explicit</a> (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; OtherExtents, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a> &gt;) <a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a>(<a class="el" href="structetl_1_1layout__right.html">layout_right</a></td></tr>
-<tr class="separator:a47790fae4cd6a1a75a0be040e318379e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795cbd7322669fb5fccd21996026767f" id="r_a795cbd7322669fb5fccd21996026767f"><td class="memTemplParams" colspan="2">template&lt;typename... Indices&gt; <br />
+requires (sizeof...(<a class="el" href="structetl_1_1bitset.html">Indices</a>) == extents_type::rank())</td></tr>
+<tr class="memitem:a795cbd7322669fb5fccd21996026767f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a795cbd7322669fb5fccd21996026767f">and</a> (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">Indices</a>, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a> &gt; and ...) and(<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
+<tr class="separator:a795cbd7322669fb5fccd21996026767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec80020ed2e102f3fdfbb10f5a79ef54" id="r_aec80020ed2e102f3fdfbb10f5a79ef54"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExtents &gt; <br />
+requires (extents_type::rank() &lt;= 1)</td></tr>
+<tr class="memitem:aec80020ed2e102f3fdfbb10f5a79ef54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a795cbd7322669fb5fccd21996026767f">and</a> <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherExtents &gt; <a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#aec80020ed2e102f3fdfbb10f5a79ef54">explicit</a> (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; OtherExtents, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a> &gt;) <a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a>(<a class="el" href="structetl_1_1layout__right.html">layout_right</a></td></tr>
+<tr class="separator:aec80020ed2e102f3fdfbb10f5a79ef54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf81f6d1458bc941775073070ce103c" id="r_afaf81f6d1458bc941775073070ce103c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExtents &gt; <br />
 requires <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherExtents&gt;</td></tr>
 <tr class="memitem:afaf81f6d1458bc941775073070ce103c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#afaf81f6d1458bc941775073070ce103c">explicit</a> (<a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; OtherExtents, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a> &gt;) <a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a>(<a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a>&lt; OtherExtents &gt; <a class="el" href="structetl_1_1bitset.html">const</a> &amp;other) noexcept</td></tr>
 <tr class="separator:afaf81f6d1458bc941775073070ce103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece775793b34991b496a8f2e18e2f13a" id="r_aece775793b34991b496a8f2e18e2f13a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#aece775793b34991b496a8f2e18e2f13a">extents</a> () <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;</td></tr>
 <tr class="separator:aece775793b34991b496a8f2e18e2f13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0326917c16e88c88564aa38a91aa8570" id="r_a0326917c16e88c88564aa38a91aa8570"><td class="memTemplParams" colspan="2">template&lt;typename... Indices&gt; <br />
-requires (sizeof...(<a class="el" href="structetl_1_1bitset.html">Indices</a>) == extents_type::rank()) &amp;&amp; (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">Indices</a>, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; &amp;&amp; ...) &amp;&amp; (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, <a class="el" href="structetl_1_1bitset.html">Indices</a>&gt; &amp;&amp; ...)</td></tr>
-<tr class="memitem:a0326917c16e88c88564aa38a91aa8570"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a0326917c16e88c88564aa38a91aa8570">operator()</a> (Indices... <a class="el" href="structetl_1_1bitset.html">indices</a>) <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
-<tr class="separator:a0326917c16e88c88564aa38a91aa8570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dfeef55704c13b077bddc5e8a528f0c" id="r_a0dfeef55704c13b077bddc5e8a528f0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">Indices</a> <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a795cbd7322669fb5fccd21996026767f">and</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a0dfeef55704c13b077bddc5e8a528f0c">operator()</a> (Indices... <a class="el" href="structetl_1_1bitset.html">indices</a>) <a class="el" href="structetl_1_1bitset.html">const</a> noexcept -&gt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a></td></tr>
+<tr class="separator:a0dfeef55704c13b077bddc5e8a528f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c32e96bb8def5e57d023f57ab9aa5c" id="r_a15c32e96bb8def5e57d023f57ab9aa5c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExtents &gt; </td></tr>
 <tr class="memitem:a15c32e96bb8def5e57d023f57ab9aa5c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#afaf81f6d1458bc941775073070ce103c">explicit</a>(extents_type::rank() &gt; 0) <a class="el" href="structetl_1_1bitset.html">const</a> <a class="el" href="structetl_1_1bitset.html">expr</a> <a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a>(<a class="el" href="structetl_1_1layout__stride.html">layout_stride</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a15c32e96bb8def5e57d023f57ab9aa5c">operator=</a> (<a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a> <a class="el" href="structetl_1_1bitset.html">const</a> &amp;) noexcept -&gt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a> &amp;=<a class="el" href="structetl_1_1bitset.html">default</a></td></tr>
 <tr class="separator:a15c32e96bb8def5e57d023f57ab9aa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,8 +341,31 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a47790fae4cd6a1a75a0be040e318379e" name="a47790fae4cd6a1a75a0be040e318379e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47790fae4cd6a1a75a0be040e318379e">&#9670;&#160;</a></span>explicit() <span class="overload">[1/2]</span></h2>
+<a id="a795cbd7322669fb5fccd21996026767f" name="a795cbd7322669fb5fccd21996026767f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795cbd7322669fb5fccd21996026767f">&#9670;&#160;</a></span>and()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Extents</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Indices&gt; <br />
+requires (sizeof...(<a class="el" href="structetl_1_1bitset.html">Indices</a>) == extents_type::rank())</div>
+      <table class="memname">
+        <tr>
+          <td class="memname">and </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; <a class="el" href="structetl_1_1bitset.html">Indices</a>, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>and ...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec80020ed2e102f3fdfbb10f5a79ef54" name="aec80020ed2e102f3fdfbb10f5a79ef54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec80020ed2e102f3fdfbb10f5a79ef54">&#9670;&#160;</a></span>explicit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,13 +373,13 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Extents</a> &gt; </div>
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExtents &gt; <br />
-requires (extents_type::rank() &lt;= 1) &amp;&amp; <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt;<a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherExtents&gt;</div>
+requires (extents_type::rank() &lt;= 1)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> explicit </td>
+          <td class="memname"><a class="el" href="structetl_1_1layout__left_1_1mapping.html#a795cbd7322669fb5fccd21996026767f">and</a> <a class="el" href="namespaceetl.html#a123009e89543c37bab698abc5f4221a0">is_constructible_v</a>&lt; <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a>, OtherExtents &gt; <a class="el" href="structetl_1_1bitset.html">constexpr</a> explicit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structetl_1_1bitset.html">not</a> <a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt; OtherExtents, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a287c7bbcb051d98553d623934f63cb46">extents_type</a> &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -597,22 +622,19 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 
 </div>
 </div>
-<a id="a0326917c16e88c88564aa38a91aa8570" name="a0326917c16e88c88564aa38a91aa8570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0326917c16e88c88564aa38a91aa8570">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a0dfeef55704c13b077bddc5e8a528f0c" name="a0dfeef55704c13b077bddc5e8a528f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dfeef55704c13b077bddc5e8a528f0c">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Extents</a> &gt; </div>
-<div class="memtemplate">
-template&lt;typename... Indices&gt; <br />
-requires (sizeof...(<a class="el" href="structetl_1_1bitset.html">Indices</a>) == extents_type::rank()) &amp;&amp; (<a class="el" href="namespaceetl.html#adf5e75c4b12aa7982c5a97a14510ab35">is_convertible_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">Indices</a>, <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>&gt; &amp;&amp; ...) &amp;&amp; (<a class="el" href="namespaceetl.html#ac00c953e4e3f962b130f431bc25d6101">is_nothrow_constructible_v</a>&lt;<a class="el" href="structetl_1_1layout__left_1_1mapping.html#a1a16267e975b03d8e74bc5ac281ca2f3">index_type</a>, <a class="el" href="structetl_1_1bitset.html">Indices</a>&gt; &amp;&amp; ...)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">Indices</a> <a class="el" href="structetl_1_1layout__left_1_1mapping.html#a795cbd7322669fb5fccd21996026767f">and</a> <a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>() </td>
           <td>(</td>
           <td class="paramtype">Indices...&#160;</td>
           <td class="paramname"><em>indices</em></td><td>)</td>
@@ -769,7 +791,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> OtherExte
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__left.html">layout_left</a></li><li class="navelem"><a class="el" href="structetl_1_1layout__left_1_1mapping.html">mapping</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:51:11 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('iswdigit_8hpp_source.html',''); initRe
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/// \ingroup cwctype</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__cwctype.html#gacd57dd6cbdd4676e575a985b16fc6c73">   19</a></span>[[<a class="code hl_namespace" href="namespaceetl.html">nodiscard</a>]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__cwctype.html#gacd57dd6cbdd4676e575a985b16fc6c73">iswdigit</a>(wint_t ch) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(ch &gt;= L&#39;0&#39; &amp;&amp; ch &lt;= L&#39;9&#39;);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast</span>&lt;<span class="keywordtype">int</span>&gt;(ch &gt;= L&#39;0&#39; <span class="keyword">and</span> ch &lt;= L&#39;9&#39;);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <span class="comment">// namespace etl</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('iswdigit_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_883c3072c237bda7b2fc21c7d2dc0e9b.html">_cwctype</a></li><li class="navelem"><a class="el" href="iswdigit_8hpp.html">iswdigit.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:54 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:45 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('duration_8hpp_source.html',''); initRe
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Rep1, <span class="keyword">typename</span> Period1, <span class="keyword">typename</span> Rep2, <span class="keyword">typename</span> Period2&gt;</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#a6337b3d2aca5ecd56da72b22c5f24851">  318</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1chrono.html#a6337b3d2aca5ecd56da72b22c5f24851">operator</a>!=(<a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep1, Period1&gt; <span class="keyword">const</span>&amp; lhs, <a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep2, Period2&gt; <span class="keyword">const</span>&amp; rhs) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">return</span> <span class="keyword">not</span>(lhs == rhs);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">/// Compares two durations. Compares lhs to rhs, i.e. compares the number</span></div>
@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('duration_8hpp_source.html',''); initRe
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Rep1, <span class="keyword">typename</span> Period1, <span class="keyword">typename</span> Rep2, <span class="keyword">typename</span> Period2&gt;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#a92d2b17214a938b8e6060ce463821b57">  335</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1chrono.html#a92d2b17214a938b8e6060ce463821b57">operator</a>&lt;=(<a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep1, Period1&gt; <span class="keyword">const</span>&amp; lhs, <a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep2, Period2&gt; <span class="keyword">const</span>&amp; rhs) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>{</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> !(rhs &lt; lhs);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> <span class="keyword">not</span>(rhs &lt; lhs);</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">/// Compares two durations. Compares lhs to rhs, i.e. compares the number</span></div>
@@ -457,7 +457,7 @@ $(document).ready(function(){initNavTree('duration_8hpp_source.html',''); initRe
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Rep1, <span class="keyword">typename</span> Period1, <span class="keyword">typename</span> Rep2, <span class="keyword">typename</span> Period2&gt;</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="namespaceetl_1_1chrono.html#ae34a001a47e74706725bffe10b5b2ab9">  351</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceetl_1_1chrono.html#ae34a001a47e74706725bffe10b5b2ab9">operator</a>&gt;=(<a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep1, Period1&gt; <span class="keyword">const</span>&amp; lhs, <a class="code hl_struct" href="structetl_1_1chrono_1_1duration.html">duration</a>&lt;Rep2, Period2&gt; <span class="keyword">const</span>&amp; rhs) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>{</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">return</span> !(lhs &lt; rhs);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">return</span> <span class="keyword">not</span>(lhs &lt; rhs);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">/// Signed integer type of at least 64 bits.</span></div>
@@ -658,7 +658,7 @@ $(document).ready(function(){initNavTree('duration_8hpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_a2f0e1630974749eeb51a13bacac0fde.html">_chrono</a></li><li class="navelem"><a class="el" href="duration_8hpp.html">duration.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:14:48 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:40 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

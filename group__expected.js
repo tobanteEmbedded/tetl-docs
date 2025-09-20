@@ -41,7 +41,7 @@ var group__expected =
       [ "unexpect", "group__expected.html#ga8ede73f6e8b0e147031608038da7de60", null ]
     ] ],
     [ "unexpected< E >", "structetl_1_1unexpected.html", [
-      [ "unexpected", "structetl_1_1unexpected.html#a61a9e83ccf323f3a10e45d751956bfb7", null ],
+      [ "unexpected", "structetl_1_1unexpected.html#a9ae149fb47bf3c1b0658ef579f38a3d0", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a7290cf32267d2fedc6fa5932159b23c0", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a5e30973c509fb7640c6cc4f4152a6abf", null ],
       [ "unexpected", "structetl_1_1unexpected.html#a1b7cc81c21ded672ac68ca17efc51bb5", null ],

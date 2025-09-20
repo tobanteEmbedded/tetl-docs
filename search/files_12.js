@@ -2,8 +2,8 @@ var searchData=
 [
   ['tags_2ehpp_0',['tags.hpp',['../__iterator_2tags_8hpp.html',1,'(Global Namespace)'],['../__linalg_2tags_8hpp.html',1,'(Global Namespace)'],['../__mutex_2tags_8hpp.html',1,'(Global Namespace)']]],
   ['tail_2ehpp_1',['tail.hpp',['../tail_8hpp.html',1,'']]],
-  ['tan_2ehpp_2',['tan.hpp',['../__complex_2tan_8hpp.html',1,'(Global Namespace)'],['../__cmath_2tan_8hpp.html',1,'(Global Namespace)']]],
-  ['tanh_2ehpp_3',['tanh.hpp',['../__cmath_2tanh_8hpp.html',1,'(Global Namespace)'],['../__complex_2tanh_8hpp.html',1,'(Global Namespace)']]],
+  ['tan_2ehpp_2',['tan.hpp',['../tan_8hpp.html',1,'']]],
+  ['tanh_2ehpp_3',['tanh.hpp',['../tanh_8hpp.html',1,'']]],
   ['task_2ehpp_4',['task.hpp',['../task_8hpp.html',1,'']]],
   ['test_5fbit_2ehpp_5',['test_bit.hpp',['../test__bit_8hpp.html',1,'']]],
   ['tgamma_2ehpp_6',['tgamma.hpp',['../tgamma_8hpp.html',1,'']]],

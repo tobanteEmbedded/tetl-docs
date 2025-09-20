@@ -154,30 +154,34 @@ $(document).ready(function(){initNavTree('aligned__storage_8hpp_source.html','')
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/// alignment requirement for any object whose size is at most Len. If the</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/// default value is not used, Align must be the value of alignof(T) for some</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/// type T, or the behavior is undefined.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;size_t Len, size_t Align = <span class="keyword">alignof</span>(detail::aligned_storage_impl&lt;Len&gt;)&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage.html">   51</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1aligned__storage.html">aligned_storage</a> {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage_1_1type.html">   52</a></span>    <span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1aligned__storage_1_1type.html">type</a> {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">   53</a></span>        <span class="keyword">alignas</span>(<a class="code hl_struct" href="structetl_1_1aligned__storage_1_1type.html">Align</a>) <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">data</a>[Len];</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    };</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span> &lt;size_t Len, size_t Align = <span class="keyword">alignof</span>(detail::aligned_storage_impl&lt;Len&gt;)&gt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespaceetl.html#ae1bfcd9586bbb9936d7eb2d2ea32bc8e">   58</a></span><span class="keyword">using</span> aligned_storage_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1aligned__storage.html">aligned_storage</a>&lt;Len, Align&gt;::type;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace etl</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ALIGNED_STORAGE_HPP</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">///</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;size_t Len, size_t Align = <span class="keyword">alignof</span>(detail::aligned_storage_impl&lt;Len&gt;)&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage.html">   53</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1aligned__storage.html">aligned_storage</a> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage_1_1type.html">   54</a></span>    <span class="keyword">struct</span> <a class="code hl_struct" href="structetl_1_1aligned__storage_1_1type.html">type</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">   55</a></span>        <span class="keyword">alignas</span>(<a class="code hl_struct" href="structetl_1_1aligned__storage_1_1type.html">Align</a>) <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">data</a>[Len];</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/// \relates aligned_storage</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/// \ingroup type_traits</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span> &lt;size_t Len, size_t Align = <span class="keyword">alignof</span>(detail::aligned_storage_impl&lt;Len&gt;)&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group__type__traits.html#gae1bfcd9586bbb9936d7eb2d2ea32bc8e">   62</a></span><span class="keyword">using</span> aligned_storage_t = <span class="keyword">typename</span> <a class="code hl_struct" href="structetl_1_1aligned__storage.html">aligned_storage</a>&lt;Len, Align&gt;::type;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace etl</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">// TETL_TYPE_TRAITS_ALIGNED_STORAGE_HPP</span></div>
 <div class="ttc" id="anamespaceetl_html"><div class="ttname"><a href="namespaceetl.html">etl</a></div><div class="ttdef"><b>Definition</b> adjacent_find.hpp:9</div></div>
-<div class="ttc" id="astructetl_1_1aligned__storage_1_1type_html"><div class="ttname"><a href="structetl_1_1aligned__storage_1_1type.html">etl::aligned_storage::type</a></div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:52</div></div>
-<div class="ttc" id="astructetl_1_1aligned__storage_1_1type_html_a7a9caeb269da5174688b7ba6380ca437"><div class="ttname"><a href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">etl::aligned_storage::type::data</a></div><div class="ttdeci">unsigned char data[Len]</div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:53</div></div>
-<div class="ttc" id="astructetl_1_1aligned__storage_html"><div class="ttname"><a href="structetl_1_1aligned__storage.html">etl::aligned_storage</a></div><div class="ttdoc">Provides the nested type type, which is a trivial standard-layout type suitable for use as uninitiali...</div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:51</div></div>
+<div class="ttc" id="astructetl_1_1aligned__storage_1_1type_html"><div class="ttname"><a href="structetl_1_1aligned__storage_1_1type.html">etl::aligned_storage::type</a></div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:54</div></div>
+<div class="ttc" id="astructetl_1_1aligned__storage_1_1type_html_a7a9caeb269da5174688b7ba6380ca437"><div class="ttname"><a href="structetl_1_1aligned__storage_1_1type.html#a7a9caeb269da5174688b7ba6380ca437">etl::aligned_storage::type::data</a></div><div class="ttdeci">unsigned char data[Len]</div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:55</div></div>
+<div class="ttc" id="astructetl_1_1aligned__storage_html"><div class="ttname"><a href="structetl_1_1aligned__storage.html">etl::aligned_storage</a></div><div class="ttdoc">Provides the nested type type, which is a trivial standard-layout type suitable for use as uninitiali...</div><div class="ttdef"><b>Definition</b> aligned_storage.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_088299f779bf7d891f9a291787866d6f.html">etl</a></li><li class="navelem"><a class="el" href="dir_1b3ca367ecd0d15e1fc2816d4b698bf7.html">_type_traits</a></li><li class="navelem"><a class="el" href="aligned__storage_8hpp.html">aligned_storage.hpp</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:17 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:50:58 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

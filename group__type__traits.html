@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('group__type__traits.html',''); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">type_traits<div class="ingroups"><a class="el" href="group__utilities-library.html">Utilities Library</a></div></div></div>
 </div><!--header-->
@@ -110,11 +111,94 @@ $(document).ready(function(){initNavTree('group__type__traits.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__const.html">add_const&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the member typedef type which is the same as T, except it has a cv-qualifier added (unless T is a function, a reference, or already has this cv-qualifier). Adds const.  <a href="structetl_1_1add__const.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__cv.html">add_cv&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the member typedef type which is the same as T, except it has a cv-qualifier added (unless T is a function, a reference, or already has this cv-qualifier). Adds both const and volatile.  <a href="structetl_1_1add__cv.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__lvalue__reference.html">add_lvalue_reference&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a lvalue reference type of T.  <a href="structetl_1_1add__lvalue__reference.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__pointer.html">add_pointer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is a reference type, then provides the member typedef type which is a pointer to the referred type. Otherwise, if T names an object type, a function type that is not cv- or ref-qualified, or a (possibly cv-qualified) void type, provides the member typedef type which is the type T*. Otherwise (if T is a cv- or ref-qualified function type), provides the member typedef type which is the type T. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1add__pointer.html" title="If T is a reference type, then provides the member typedef type which is a pointer to the referred ty...">add_pointer</a> is undefined.  <a href="structetl_1_1add__pointer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__rvalue__reference.html">add_rvalue_reference&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a rvalue reference type of T.  <a href="structetl_1_1add__rvalue__reference.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1add__volatile.html">add_volatile&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the member typedef type which is the same as T, except it has a cv-qualifier added (unless T is a function, a reference, or already has this cv-qualifier). Adds volatile.  <a href="structetl_1_1add__volatile.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__storage.html">aligned_storage&lt; Len, Align &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the nested type type, which is a trivial standard-layout type suitable for use as uninitialized storage for any object whose size is at most Len and whose alignment requirement is a divisor of Align. The default value of Align is the most stringent (the largest) alignment requirement for any object whose size is at most Len. If the default value is not used, Align must be the value of alignof(T) for some type T, or the behavior is undefined.  <a href="structetl_1_1aligned__storage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1aligned__union.html">aligned_union&lt; Len, Types &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the nested type type, which is a trivial standard-layout type of a size and alignment suitable for use as uninitialized storage for an object of any of the types listed in Types.  <a href="structetl_1_1aligned__union.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1alignment__of.html">alignment_of&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structetl_1_1alignment__of.html" title="alignment_of">alignment_of</a>  <a href="structetl_1_1alignment__of.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1basic__common__reference.html">basic_common_reference&lt; T, U, TQ, UQ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class template <a class="el" href="structetl_1_1basic__common__reference.html" title="The class template basic_common_reference is a customization point that allows users to influence the...">basic_common_reference</a> is a customization point that allows users to influence the result of <a class="el" href="structetl_1_1common__reference.html" title="Determines the common reference type of the types T..., that is, the type to which all the types in T...">common_reference</a> for user-defined types (typically proxy references). The primary template is empty.  <a href="structetl_1_1basic__common__reference.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1conditional.html">conditional&lt; B, T, F &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides member typedef type, which is defined as T if B is true at compile time, or as F if B is false.  <a href="structetl_1_1conditional.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1conjunction.html">conjunction&lt; B &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms the logical conjunction of the type traits B..., effectively performing a logical AND on the sequence of traits.  <a href="structetl_1_1conjunction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1copy__cv.html">copy_cv&lt; From, T0 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1decay.html">decay&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies lvalue-to-rvalue, array-to-pointer, and function-to-pointer implicit conversions to the type T, removes cv-qualifiers, and defines the resulting type as the member typedef type.  <a href="structetl_1_1decay.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1disjunction.html">disjunction&lt; B &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms the logical disjunction of the type traits B..., effectively performing a logical OR on the sequence of traits.  <a href="structetl_1_1disjunction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1enable__if.html">enable_if&lt; bool, Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a member typedef only if a boolean constant is true.  <a href="structetl_1_1enable__if.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1extent.html">extent&lt; T, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is an array type, provides the member constant value equal to the number of elements along the Nth dimension of the array, if N is in [0, rank_v&lt;T&gt;). For any other type, or if T is an array of unknown bound along its first dimension and N is 0, value is 0.  <a href="structetl_1_1extent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1has__unique__object__representations.html">has_unique_object_representations&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is TriviallyCopyable and if any two objects of type T with the same value have the same object representation, provides the member constant value equal true. For any other type, value is false.  <a href="structetl_1_1has__unique__object__representations.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1has__virtual__destructor.html">has_virtual_destructor&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/has_virtual_destructor">https://en.cppreference.com/w/cpp/types/has_virtual_destructor</a>  <a href="structetl_1_1has__virtual__destructor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1integral__constant.html">integral_constant&lt; Type, Val &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1invoke__result.html">invoke_result&lt; F, ArgTypes &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduces the return type of an INVOKE expression at compile time.  <a href="structetl_1_1invoke__result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__abstract.html">is_abstract&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__aggregate.html">is_aggregate&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__arithmetic.html">is_arithmetic&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If T is an arithmetic type (that is, an integral type or a floating-point type) or a cv-qualified version thereof, provides the member constant value equal true. For any other type, value is false. The behavior of a program that adds specializations for <a class="el" href="structetl_1_1is__arithmetic.html" title="If T is an arithmetic type (that is, an integral type or a floating-point type) or a cv-qualified ver...">is_arithmetic</a> or is_arithmetic_v (since C++17) is undefined.  <a href="structetl_1_1is__arithmetic.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__array.html">is_array&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether T is an array type. Provides the member constant value which is equal to true, if T is an array type. Otherwise, value is equal to false.  <a href="structetl_1_1is__array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__assignable.html">is_assignable&lt; T, U &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the expression <a class="el" href="group__type__traits.html#ga22b47f7719fd7b8373b49b15d5f701fb">etl::declval&lt;T&gt;()</a> = <a class="el" href="group__type__traits.html#ga22b47f7719fd7b8373b49b15d5f701fb">etl::declval&lt;U&gt;()</a> is well-formed in unevaluated context, provides the member constant value equal true. Otherwise, value is false. Access checks are performed as if from a context unrelated to either type.  <a href="structetl_1_1is__assignable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__base__of.html">is_base_of&lt; Base, Derived &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Derived is derived from Base or if both are the same non-union class (in both cases ignoring cv-qualification), provides the member constant value equal to true. Otherwise value is false.  <a href="structetl_1_1is__base__of.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__bounded__array.html">is_bounded_array&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether T is an array type of known bound. Provides the member constant value which is equal to true, if T is an array type of known bound. Otherwise, value is equal to false.  <a href="structetl_1_1is__bounded__array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__builtin__integer.html">is_builtin_integer&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__builtin__signed__integer.html">is_builtin_signed_integer&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__builtin__unsigned__integer.html">is_builtin_unsigned_integer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if T is <code>unsigned char</code> or <code>unsigned short</code> or <code>unsigned int</code> or <code>unsigned long</code> or <code>unsigned long long</code>  <a href="structetl_1_1is__builtin__unsigned__integer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__class.html">is_class&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with&lt; T, U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +233,50 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga9c558ffe7355932ea12b66ec6bcf06db" id="r_ga9c558ffe7355932ea12b66ec6bcf06db"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga9c558ffe7355932ea12b66ec6bcf06db"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga9c558ffe7355932ea12b66ec6bcf06db">add_const_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__const.html">add_const</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;<a class="el" href="structetl_1_1add__const.html#a7677c9273b6e1d61597e53b0586916f7">::type</a></td></tr>
+<tr class="separator:ga9c558ffe7355932ea12b66ec6bcf06db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd425af3389983b31809f14e839b0cff" id="r_gabd425af3389983b31809f14e839b0cff"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gabd425af3389983b31809f14e839b0cff"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gabd425af3389983b31809f14e839b0cff">add_cv_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__cv.html">add_cv</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;<a class="el" href="structetl_1_1add__cv.html#a90a393d8c3542eb26e807693c46d6bf8">::type</a></td></tr>
+<tr class="separator:gabd425af3389983b31809f14e839b0cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2664fdb8213cb778c89ce9546c0bbe3" id="r_gae2664fdb8213cb778c89ce9546c0bbe3"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gae2664fdb8213cb778c89ce9546c0bbe3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gae2664fdb8213cb778c89ce9546c0bbe3">add_lvalue_reference_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__lvalue__reference.html">add_lvalue_reference</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
+<tr class="separator:gae2664fdb8213cb778c89ce9546c0bbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga895a26b8692afd426fdc2d82c36a9951" id="r_ga895a26b8692afd426fdc2d82c36a9951"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga895a26b8692afd426fdc2d82c36a9951"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga895a26b8692afd426fdc2d82c36a9951">add_pointer_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__pointer.html">add_pointer</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
+<tr class="separator:ga895a26b8692afd426fdc2d82c36a9951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9cd8a9a867ba50bb151ddc08dffb5b7" id="r_gab9cd8a9a867ba50bb151ddc08dffb5b7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gab9cd8a9a867ba50bb151ddc08dffb5b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab9cd8a9a867ba50bb151ddc08dffb5b7">add_rvalue_reference_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__rvalue__reference.html">add_rvalue_reference</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
+<tr class="separator:gab9cd8a9a867ba50bb151ddc08dffb5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26cf51b3af2f725f40633e333332bc5a" id="r_ga26cf51b3af2f725f40633e333332bc5a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga26cf51b3af2f725f40633e333332bc5a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga26cf51b3af2f725f40633e333332bc5a">add_volatile_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__volatile.html">add_volatile</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;<a class="el" href="structetl_1_1add__volatile.html#ac8bfcda74d1a6fb55da9a019cefdea9f">::type</a></td></tr>
+<tr class="separator:ga26cf51b3af2f725f40633e333332bc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1bfcd9586bbb9936d7eb2d2ea32bc8e" id="r_gae1bfcd9586bbb9936d7eb2d2ea32bc8e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Align = alignof(detail::aligned_storage_impl&lt;Len&gt;)&gt; </td></tr>
+<tr class="memitem:gae1bfcd9586bbb9936d7eb2d2ea32bc8e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gae1bfcd9586bbb9936d7eb2d2ea32bc8e">aligned_storage_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1aligned__storage.html">aligned_storage</a>&lt; <a class="el" href="structetl_1_1bitset.html">Len</a>, <a class="el" href="structetl_1_1bitset.html">Align</a> &gt;::type</td></tr>
+<tr class="separator:gae1bfcd9586bbb9936d7eb2d2ea32bc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf5f392ace63d0a89352f050a2104edc" id="r_gaaf5f392ace63d0a89352f050a2104edc"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, typename... Types&gt; </td></tr>
+<tr class="memitem:gaaf5f392ace63d0a89352f050a2104edc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaaf5f392ace63d0a89352f050a2104edc">aligned_union_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1aligned__union.html">aligned_union</a>&lt; <a class="el" href="structetl_1_1bitset.html">Len</a>, Types... &gt;::type</td></tr>
+<tr class="separator:gaaf5f392ace63d0a89352f050a2104edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5c90336c94cb0db8abdd10603a3c7cc" id="r_gac5c90336c94cb0db8abdd10603a3c7cc"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B&gt; </td></tr>
+<tr class="memitem:gac5c90336c94cb0db8abdd10603a3c7cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a> = <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">B</a> &gt;</td></tr>
+<tr class="separator:gac5c90336c94cb0db8abdd10603a3c7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09d091a01d0f719c0e795ed347e18a6d" id="r_ga09d091a01d0f719c0e795ed347e18a6d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; </td></tr>
+<tr class="memitem:ga09d091a01d0f719c0e795ed347e18a6d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga09d091a01d0f719c0e795ed347e18a6d">conditional_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1conditional.html">conditional</a>&lt; <a class="el" href="structetl_1_1bitset.html">B</a>, <a class="el" href="structetl_1_1bitset.html">T</a>, <a class="el" href="structetl_1_1bitset.html">F</a> &gt;<a class="el" href="structetl_1_1conditional.html#a834c467da58ea1d81821952d3c473b64">::type</a></td></tr>
+<tr class="separator:ga09d091a01d0f719c0e795ed347e18a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0922ac8276d7d10d30a540c4284cb18" id="r_gaf0922ac8276d7d10d30a540c4284cb18"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">From</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">To</a> &gt; </td></tr>
+<tr class="memitem:gaf0922ac8276d7d10d30a540c4284cb18"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaf0922ac8276d7d10d30a540c4284cb18">copy_cv_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1copy__cv.html">copy_cv</a>&lt; <a class="el" href="structetl_1_1bitset.html">From</a>, <a class="el" href="structetl_1_1bitset.html">To</a> &gt;<a class="el" href="structetl_1_1copy__cv.html#a3874df71dd3ddbb727f1bf8dca0ab57f">::type</a></td></tr>
+<tr class="separator:gaf0922ac8276d7d10d30a540c4284cb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24f3c9ab2c53f9192c2899fc8efb263d" id="r_ga24f3c9ab2c53f9192c2899fc8efb263d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga24f3c9ab2c53f9192c2899fc8efb263d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1decay.html">etl::decay</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
+<tr class="separator:ga24f3c9ab2c53f9192c2899fc8efb263d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93e9cb7fadbcfaa2afb5b94058b8e34c" id="r_ga93e9cb7fadbcfaa2afb5b94058b8e34c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a>  = void&gt; </td></tr>
+<tr class="memitem:ga93e9cb7fadbcfaa2afb5b94058b8e34c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga93e9cb7fadbcfaa2afb5b94058b8e34c">enable_if_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1enable__if.html">enable_if</a>&lt; <a class="el" href="structetl_1_1bitset.html">B</a>, <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
+<tr class="separator:ga93e9cb7fadbcfaa2afb5b94058b8e34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad15d3ff5d80b8c8c22e9ce862353ba55" id="r_gad15d3ff5d80b8c8c22e9ce862353ba55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gad15d3ff5d80b8c8c22e9ce862353ba55">false_type</a> = <a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">false</a> &gt;</td></tr>
+<tr class="separator:gad15d3ff5d80b8c8c22e9ce862353ba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fc29a848c78949599ea12f9b9827fd3" id="r_ga0fc29a848c78949599ea12f9b9827fd3"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> I&gt; </td></tr>
+<tr class="memitem:ga0fc29a848c78949599ea12f9b9827fd3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga0fc29a848c78949599ea12f9b9827fd3">index_constant</a> = <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>, <a class="el" href="structetl_1_1bitset.html">I</a> &gt;</td></tr>
+<tr class="separator:ga0fc29a848c78949599ea12f9b9827fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga631cecedda7818c94112a75b0f9a751c" id="r_ga631cecedda7818c94112a75b0f9a751c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> , typename... ArgTypes&gt; </td></tr>
 <tr class="memitem:ga631cecedda7818c94112a75b0f9a751c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga631cecedda7818c94112a75b0f9a751c">invoke_result_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1invoke__result.html">invoke_result</a>&lt; <a class="el" href="structetl_1_1bitset.html">F</a>, ArgTypes... &gt;::type</td></tr>
 <tr class="separator:ga631cecedda7818c94112a75b0f9a751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +289,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gafa4bbf76c2d5d5c41d42a09d47094dd3" id="r_gafa4bbf76c2d5d5c41d42a09d47094dd3"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">unsigned</a> <a class="el" href="structetl_1_1bitset.html">long</a> <a class="el" href="structetl_1_1bitset.html">long</a> N&gt; </td></tr>
 <tr class="memitem:gafa4bbf76c2d5d5c41d42a09d47094dd3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gafa4bbf76c2d5d5c41d42a09d47094dd3">smallest_size_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1smallest__size.html">smallest_size</a>&lt; <a class="el" href="structetl_1_1bitset.html">N</a> &gt;::type</td></tr>
 <tr class="separator:gafa4bbf76c2d5d5c41d42a09d47094dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4e9c28fa52ab73ef48e5cbed20c66fd" id="r_gaa4e9c28fa52ab73ef48e5cbed20c66fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaa4e9c28fa52ab73ef48e5cbed20c66fd">true_type</a> = <a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">true</a> &gt;</td></tr>
+<tr class="separator:gaa4e9c28fa52ab73ef48e5cbed20c66fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca42c1976d1b12998afcabf8f39e8c23" id="r_gaca42c1976d1b12998afcabf8f39e8c23"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
 <tr class="memitem:gaca42c1976d1b12998afcabf8f39e8c23"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a> = <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1type__identity.html">type_identity</a>&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;::type</td></tr>
 <tr class="separator:gaca42c1976d1b12998afcabf8f39e8c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,11 +301,80 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> = <a class="el" href="structetl_1_1bitset.html">void</a></td></tr>
 <tr class="separator:gab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga22b47f7719fd7b8373b49b15d5f701fb" id="r_ga22b47f7719fd7b8373b49b15d5f701fb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga22b47f7719fd7b8373b49b15d5f701fb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga22b47f7719fd7b8373b49b15d5f701fb">declval</a> () noexcept -&gt; add_rvalue_reference_t&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;</td></tr>
+<tr class="separator:ga22b47f7719fd7b8373b49b15d5f701fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga677b4c86284624fe83dc36333e3d4212" id="r_ga677b4c86284624fe83dc36333e3d4212"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </td></tr>
+<tr class="memitem:ga677b4c86284624fe83dc36333e3d4212"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga677b4c86284624fe83dc36333e3d4212">operator!=</a> (<a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;, <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;) -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">L</a> !=<a class="el" href="structetl_1_1bitset.html">R</a> &gt;</td></tr>
+<tr class="separator:ga677b4c86284624fe83dc36333e3d4212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab218217c542cbcae689d277e927d360a" id="r_gab218217c542cbcae689d277e927d360a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </td></tr>
+<tr class="memitem:gab218217c542cbcae689d277e927d360a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab218217c542cbcae689d277e927d360a">operator+</a> (<a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;, <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;) -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="structetl_1_1bitset.html">L</a>+<a class="el" href="structetl_1_1bitset.html">R</a>), <a class="el" href="structetl_1_1bitset.html">L</a>+<a class="el" href="structetl_1_1bitset.html">R</a> &gt;</td></tr>
+<tr class="separator:gab218217c542cbcae689d277e927d360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49d3cf9c4f58fa9982c28bfa20adb0cb" id="r_ga49d3cf9c4f58fa9982c28bfa20adb0cb"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </td></tr>
+<tr class="memitem:ga49d3cf9c4f58fa9982c28bfa20adb0cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga49d3cf9c4f58fa9982c28bfa20adb0cb">operator==</a> (<a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;, <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;) -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">L</a>==<a class="el" href="structetl_1_1bitset.html">R</a> &gt;</td></tr>
+<tr class="separator:ga49d3cf9c4f58fa9982c28bfa20adb0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:gae7fde4c1b709be147fc5d8f4efc0c605" id="r_gae7fde4c1b709be147fc5d8f4efc0c605"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gae7fde4c1b709be147fc5d8f4efc0c605"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gae7fde4c1b709be147fc5d8f4efc0c605">alignment_of_v</a> = <a class="el" href="structetl_1_1alignment__of.html">alignment_of</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td></tr>
+<tr class="separator:gae7fde4c1b709be147fc5d8f4efc0c605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92b52772010dec87f8867320a8b03dfc" id="r_ga92b52772010dec87f8867320a8b03dfc"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:ga92b52772010dec87f8867320a8b03dfc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga92b52772010dec87f8867320a8b03dfc">always_false</a> = <a class="el" href="structetl_1_1bitset.html">false</a></td></tr>
+<tr class="separator:ga92b52772010dec87f8867320a8b03dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5672914b2f1f9c1c4c50ded53a8db2e3" id="r_ga5672914b2f1f9c1c4c50ded53a8db2e3"><td class="memTemplParams" colspan="2">template&lt;typename... B&gt; </td></tr>
+<tr class="memitem:ga5672914b2f1f9c1c4c50ded53a8db2e3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga5672914b2f1f9c1c4c50ded53a8db2e3">conjunction_v</a> = <a class="el" href="structetl_1_1conjunction.html">conjunction</a>&lt;B...&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:ga5672914b2f1f9c1c4c50ded53a8db2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb3abcd15bf9ea4a0629b7e03498e1e1" id="r_gabb3abcd15bf9ea4a0629b7e03498e1e1"><td class="memTemplParams" colspan="2">template&lt;typename... B&gt; </td></tr>
+<tr class="memitem:gabb3abcd15bf9ea4a0629b7e03498e1e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gabb3abcd15bf9ea4a0629b7e03498e1e1">disjunction_v</a> = <a class="el" href="structetl_1_1disjunction.html">disjunction</a>&lt;B...&gt;::value</td></tr>
+<tr class="separator:gabb3abcd15bf9ea4a0629b7e03498e1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06332dc22e85765f2c195c703cc49068" id="r_ga06332dc22e85765f2c195c703cc49068"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">unsigned</a> N = 0&gt; </td></tr>
+<tr class="memitem:ga06332dc22e85765f2c195c703cc49068"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga06332dc22e85765f2c195c703cc49068">extent_v</a> = <a class="el" href="structetl_1_1bitset.html">static_cast</a>&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&gt;(<a class="el" href="structetl_1_1extent.html">extent</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>, <a class="el" href="structetl_1_1bitset.html">N</a>&gt;::value)</td></tr>
+<tr class="separator:ga06332dc22e85765f2c195c703cc49068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c5a77036b20d94554de76a0879573e1" id="r_ga4c5a77036b20d94554de76a0879573e1"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga4c5a77036b20d94554de76a0879573e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga4c5a77036b20d94554de76a0879573e1">has_unique_object_representations_v</a> = <a class="el" href="structetl_1_1has__unique__object__representations.html">has_unique_object_representations</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td></tr>
+<tr class="separator:ga4c5a77036b20d94554de76a0879573e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e997395a99be7b3ac747230c82b51d2" id="r_ga7e997395a99be7b3ac747230c82b51d2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
 <tr class="memitem:ga7e997395a99be7b3ac747230c82b51d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga7e997395a99be7b3ac747230c82b51d2">has_virtual_destructor_v</a> = <a class="el" href="structetl_1_1bitset.html">__has_virtual_destructor</a>(<a class="el" href="structetl_1_1bitset.html">T</a>)</td></tr>
 <tr class="separator:ga7e997395a99be7b3ac747230c82b51d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d83619b037b662e5e0443f9d22fe3a" id="r_ga36d83619b037b662e5e0443f9d22fe3a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> I&gt; </td></tr>
+<tr class="memitem:ga36d83619b037b662e5e0443f9d22fe3a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga36d83619b037b662e5e0443f9d22fe3a">index_v</a> = <a class="el" href="group__type__traits.html#ga0fc29a848c78949599ea12f9b9827fd3">index_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">I</a>&gt;{}</td></tr>
+<tr class="separator:ga36d83619b037b662e5e0443f9d22fe3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10afef86eafa806bb7142657cfa37f79" id="r_ga10afef86eafa806bb7142657cfa37f79"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga10afef86eafa806bb7142657cfa37f79"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga10afef86eafa806bb7142657cfa37f79">is_abstract_v</a> = <a class="el" href="structetl_1_1bitset.html">__is_abstract</a>(<a class="el" href="structetl_1_1bitset.html">T</a>)</td></tr>
+<tr class="separator:ga10afef86eafa806bb7142657cfa37f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb0e64aa57f60e45754ac20ba126bbe3" id="r_gadb0e64aa57f60e45754ac20ba126bbe3"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gadb0e64aa57f60e45754ac20ba126bbe3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gadb0e64aa57f60e45754ac20ba126bbe3">is_aggregate_v</a> = <a class="el" href="structetl_1_1bitset.html">__is_aggregate</a>(<a class="el" href="namespaceetl.html#ace634e9b8a7cdea7d9d417477c2275d1">remove_cv_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;)</td></tr>
+<tr class="separator:gadb0e64aa57f60e45754ac20ba126bbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf2224be65b8fb8794372d049a1d37d9" id="r_gabf2224be65b8fb8794372d049a1d37d9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gabf2224be65b8fb8794372d049a1d37d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gabf2224be65b8fb8794372d049a1d37d9">is_arithmetic_v</a> = <a class="el" href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">is_integral_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt; <a class="el" href="structetl_1_1bitset.html">or</a> <a class="el" href="namespaceetl.html#a8a70da46bf8635132fd3757deb2fff94">is_floating_point_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;</td></tr>
+<tr class="separator:gabf2224be65b8fb8794372d049a1d37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b0e44222b6a1dc103286f3c5225ad93" id="r_ga8b0e44222b6a1dc103286f3c5225ad93"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga8b0e44222b6a1dc103286f3c5225ad93"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga8b0e44222b6a1dc103286f3c5225ad93">is_array_v</a> = <a class="el" href="structetl_1_1is__array.html">is_array</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td></tr>
+<tr class="separator:ga8b0e44222b6a1dc103286f3c5225ad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga762a8e8750c01c04403086076b7bab1e" id="r_ga762a8e8750c01c04403086076b7bab1e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </td></tr>
+<tr class="memitem:ga762a8e8750c01c04403086076b7bab1e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga762a8e8750c01c04403086076b7bab1e">is_assignable_v</a> = <a class="el" href="structetl_1_1bitset.html">__is_assignable</a>(<a class="el" href="structetl_1_1bitset.html">T</a>, U)</td></tr>
+<tr class="separator:ga762a8e8750c01c04403086076b7bab1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga096bf5b121d9f427c8027f2949e8198e" id="r_ga096bf5b121d9f427c8027f2949e8198e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Base</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Derived</a> &gt; </td></tr>
+<tr class="memitem:ga096bf5b121d9f427c8027f2949e8198e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga096bf5b121d9f427c8027f2949e8198e">is_base_of_v</a> = <a class="el" href="structetl_1_1is__base__of.html">is_base_of</a>&lt;<a class="el" href="structetl_1_1bitset.html">Base</a>, <a class="el" href="structetl_1_1bitset.html">Derived</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:ga096bf5b121d9f427c8027f2949e8198e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a699f9a94f5d0c71c5e85e84f7baeb4" id="r_ga7a699f9a94f5d0c71c5e85e84f7baeb4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:ga7a699f9a94f5d0c71c5e85e84f7baeb4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga7a699f9a94f5d0c71c5e85e84f7baeb4">is_bounded_array_v</a> = <a class="el" href="structetl_1_1is__bounded__array.html">is_bounded_array</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td></tr>
+<tr class="separator:ga7a699f9a94f5d0c71c5e85e84f7baeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab37be6df3156233ffb034d2833fcba81" id="r_gab37be6df3156233ffb034d2833fcba81"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gab37be6df3156233ffb034d2833fcba81"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab37be6df3156233ffb034d2833fcba81">is_builtin_integer_v</a> = <a class="el" href="structetl_1_1is__builtin__integer.html">is_builtin_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:gab37be6df3156233ffb034d2833fcba81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb068f2d42709bb8f4e34051af6249e2" id="r_gafb068f2d42709bb8f4e34051af6249e2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gafb068f2d42709bb8f4e34051af6249e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gafb068f2d42709bb8f4e34051af6249e2">is_builtin_signed_integer_v</a> = <a class="el" href="structetl_1_1is__builtin__signed__integer.html">is_builtin_signed_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:gafb068f2d42709bb8f4e34051af6249e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4505c091f15f466c044b6b11b890a7a" id="r_gae4505c091f15f466c044b6b11b890a7a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gae4505c091f15f466c044b6b11b890a7a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gae4505c091f15f466c044b6b11b890a7a">is_builtin_unsigned_integer_v</a> = <a class="el" href="structetl_1_1is__builtin__unsigned__integer.html">is_builtin_unsigned_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
+<tr class="separator:gae4505c091f15f466c044b6b11b890a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca38abc104326427a46bccfd27cbfe28" id="r_gaca38abc104326427a46bccfd27cbfe28"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </td></tr>
+<tr class="memitem:gaca38abc104326427a46bccfd27cbfe28"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaca38abc104326427a46bccfd27cbfe28">is_class_v</a> = <a class="el" href="structetl_1_1bitset.html">__is_class</a>(<a class="el" href="structetl_1_1bitset.html">T</a>)</td></tr>
+<tr class="separator:gaca38abc104326427a46bccfd27cbfe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa10bae03ee2ee7efc954c5553dfb34dd" id="r_gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </td></tr>
 <tr class="memitem:gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gaa10bae03ee2ee7efc954c5553dfb34dd">is_nothrow_swappable_with_v</a> = <a class="el" href="structetl_1_1is__nothrow__swappable__with.html">is_nothrow_swappable_with</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>, U&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td></tr>
 <tr class="separator:gaa10bae03ee2ee7efc954c5553dfb34dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +385,344 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compile-time type information. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9c558ffe7355932ea12b66ec6bcf06db" name="ga9c558ffe7355932ea12b66ec6bcf06db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c558ffe7355932ea12b66ec6bcf06db">&#9670;&#160;</a></span>add_const_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga9c558ffe7355932ea12b66ec6bcf06db">add_const_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__const.html">add_const</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1add__const.html#a7677c9273b6e1d61597e53b0586916f7">::type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabd425af3389983b31809f14e839b0cff" name="gabd425af3389983b31809f14e839b0cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd425af3389983b31809f14e839b0cff">&#9670;&#160;</a></span>add_cv_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gabd425af3389983b31809f14e839b0cff">add_cv_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__cv.html">add_cv</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1add__cv.html#a90a393d8c3542eb26e807693c46d6bf8">::type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae2664fdb8213cb778c89ce9546c0bbe3" name="gae2664fdb8213cb778c89ce9546c0bbe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2664fdb8213cb778c89ce9546c0bbe3">&#9670;&#160;</a></span>add_lvalue_reference_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gae2664fdb8213cb778c89ce9546c0bbe3">add_lvalue_reference_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__lvalue__reference.html">add_lvalue_reference</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga895a26b8692afd426fdc2d82c36a9951" name="ga895a26b8692afd426fdc2d82c36a9951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga895a26b8692afd426fdc2d82c36a9951">&#9670;&#160;</a></span>add_pointer_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga895a26b8692afd426fdc2d82c36a9951">add_pointer_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__pointer.html">add_pointer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab9cd8a9a867ba50bb151ddc08dffb5b7" name="gab9cd8a9a867ba50bb151ddc08dffb5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9cd8a9a867ba50bb151ddc08dffb5b7">&#9670;&#160;</a></span>add_rvalue_reference_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gab9cd8a9a867ba50bb151ddc08dffb5b7">add_rvalue_reference_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__rvalue__reference.html">add_rvalue_reference</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga26cf51b3af2f725f40633e333332bc5a" name="ga26cf51b3af2f725f40633e333332bc5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26cf51b3af2f725f40633e333332bc5a">&#9670;&#160;</a></span>add_volatile_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga26cf51b3af2f725f40633e333332bc5a">add_volatile_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1add__volatile.html">add_volatile</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1add__volatile.html#ac8bfcda74d1a6fb55da9a019cefdea9f">::type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae1bfcd9586bbb9936d7eb2d2ea32bc8e" name="gae1bfcd9586bbb9936d7eb2d2ea32bc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1bfcd9586bbb9936d7eb2d2ea32bc8e">&#9670;&#160;</a></span>aligned_storage_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Align = alignof(detail::aligned_storage_impl&lt;Len&gt;)&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Align = alignof(detail::aligned_storage_impl&lt;Len&gt;)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gae1bfcd9586bbb9936d7eb2d2ea32bc8e">aligned_storage_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1aligned__storage.html">aligned_storage</a>&lt;<a class="el" href="structetl_1_1bitset.html">Len</a>, <a class="el" href="structetl_1_1bitset.html">Align</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaaf5f392ace63d0a89352f050a2104edc" name="gaaf5f392ace63d0a89352f050a2104edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf5f392ace63d0a89352f050a2104edc">&#9670;&#160;</a></span>aligned_union_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> Len, typename... Types&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gaaf5f392ace63d0a89352f050a2104edc">aligned_union_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1aligned__union.html">aligned_union</a>&lt;<a class="el" href="structetl_1_1bitset.html">Len</a>, Types...&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac5c90336c94cb0db8abdd10603a3c7cc" name="gac5c90336c94cb0db8abdd10603a3c7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5c90336c94cb0db8abdd10603a3c7cc">&#9670;&#160;</a></span>bool_constant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a> =  <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">B</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga09d091a01d0f719c0e795ed347e18a6d" name="ga09d091a01d0f719c0e795ed347e18a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09d091a01d0f719c0e795ed347e18a6d">&#9670;&#160;</a></span>conditional_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">F</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga09d091a01d0f719c0e795ed347e18a6d">conditional_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1conditional.html">conditional</a>&lt;<a class="el" href="structetl_1_1bitset.html">B</a>, <a class="el" href="structetl_1_1bitset.html">T</a>, <a class="el" href="structetl_1_1bitset.html">F</a>&gt;<a class="el" href="structetl_1_1conditional.html#a834c467da58ea1d81821952d3c473b64">::type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf0922ac8276d7d10d30a540c4284cb18" name="gaf0922ac8276d7d10d30a540c4284cb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0922ac8276d7d10d30a540c4284cb18">&#9670;&#160;</a></span>copy_cv_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">From</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T0</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">From</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">To</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gaf0922ac8276d7d10d30a540c4284cb18">copy_cv_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1copy__cv.html">copy_cv</a>&lt;<a class="el" href="structetl_1_1bitset.html">From</a>, <a class="el" href="structetl_1_1bitset.html">To</a>&gt;<a class="el" href="structetl_1_1copy__cv.html#a3874df71dd3ddbb727f1bf8dca0ab57f">::type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga24f3c9ab2c53f9192c2899fc8efb263d" name="ga24f3c9ab2c53f9192c2899fc8efb263d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24f3c9ab2c53f9192c2899fc8efb263d">&#9670;&#160;</a></span>decay_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga24f3c9ab2c53f9192c2899fc8efb263d">decay_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1decay.html">etl::decay</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga93e9cb7fadbcfaa2afb5b94058b8e34c" name="ga93e9cb7fadbcfaa2afb5b94058b8e34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93e9cb7fadbcfaa2afb5b94058b8e34c">&#9670;&#160;</a></span>enable_if_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">bool</a> B, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a>  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga93e9cb7fadbcfaa2afb5b94058b8e34c">enable_if_t</a> =  <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1enable__if.html">enable_if</a>&lt;<a class="el" href="structetl_1_1bitset.html">B</a>, <a class="el" href="structetl_1_1bitset.html">T</a>&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad15d3ff5d80b8c8c22e9ce862353ba55" name="gad15d3ff5d80b8c8c22e9ce862353ba55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad15d3ff5d80b8c8c22e9ce862353ba55">&#9670;&#160;</a></span>false_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gad15d3ff5d80b8c8c22e9ce862353ba55">false_type</a> =  <a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">false</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0fc29a848c78949599ea12f9b9827fd3" name="ga0fc29a848c78949599ea12f9b9827fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fc29a848c78949599ea12f9b9827fd3">&#9670;&#160;</a></span>index_constant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> I&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#ga0fc29a848c78949599ea12f9b9827fd3">index_constant</a> =  <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>, <a class="el" href="structetl_1_1bitset.html">I</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga631cecedda7818c94112a75b0f9a751c" name="ga631cecedda7818c94112a75b0f9a751c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga631cecedda7818c94112a75b0f9a751c">&#9670;&#160;</a></span>invoke_result_t</h2>
 
@@ -260,6 +797,20 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">unsigned</a> <a class=
 
 </div>
 </div>
+<a id="gaa4e9c28fa52ab73ef48e5cbed20c66fd" name="gaa4e9c28fa52ab73ef48e5cbed20c66fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4e9c28fa52ab73ef48e5cbed20c66fd">&#9670;&#160;</a></span>true_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">using</a> <a class="el" href="group__type__traits.html#gaa4e9c28fa52ab73ef48e5cbed20c66fd">true_type</a> =  <a class="el" href="group__type__traits.html#gac5c90336c94cb0db8abdd10603a3c7cc">bool_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">true</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaca42c1976d1b12998afcabf8f39e8c23" name="gaca42c1976d1b12998afcabf8f39e8c23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaca42c1976d1b12998afcabf8f39e8c23">&#9670;&#160;</a></span>type_identity_t</h2>
 
@@ -308,7 +859,298 @@ template&lt;typename... &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga22b47f7719fd7b8373b49b15d5f701fb" name="ga22b47f7719fd7b8373b49b15d5f701fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22b47f7719fd7b8373b49b15d5f701fb">&#9670;&#160;</a></span>declval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">auto</a> declval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  add_rvalue_reference_t&lt; <a class="el" href="structetl_1_1bitset.html">T</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga677b4c86284624fe83dc36333e3d4212" name="ga677b4c86284624fe83dc36333e3d4212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga677b4c86284624fe83dc36333e3d4212">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">L</a> != <a class="el" href="structetl_1_1bitset.html">R</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab218217c542cbcae689d277e927d360a" name="gab218217c542cbcae689d277e927d360a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab218217c542cbcae689d277e927d360a">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">decltype</a>(<a class="el" href="structetl_1_1bitset.html">L</a> + <a class="el" href="structetl_1_1bitset.html">R</a>), <a class="el" href="structetl_1_1bitset.html">L</a> + <a class="el" href="structetl_1_1bitset.html">R</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga49d3cf9c4f58fa9982c28bfa20adb0cb" name="ga49d3cf9c4f58fa9982c28bfa20adb0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49d3cf9c4f58fa9982c28bfa20adb0cb">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Rhs</a> , <a class="el" href="structetl_1_1bitset.html">Rhs</a> R, <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Lhs</a> , <a class="el" href="structetl_1_1bitset.html">Lhs</a> L&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> <a class="el" href="structetl_1_1bitset.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Rhs</a>, <a class="el" href="structetl_1_1bitset.html">R</a> &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt; <a class="el" href="structetl_1_1bitset.html">Lhs</a>, <a class="el" href="structetl_1_1bitset.html">L</a> &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="structetl_1_1integral__constant.html">integral_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">bool</a>, <a class="el" href="structetl_1_1bitset.html">L</a> == <a class="el" href="structetl_1_1bitset.html">R</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="gae7fde4c1b709be147fc5d8f4efc0c605" name="gae7fde4c1b709be147fc5d8f4efc0c605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7fde4c1b709be147fc5d8f4efc0c605">&#9670;&#160;</a></span>alignment_of_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> alignment_of_v = <a class="el" href="structetl_1_1alignment__of.html">alignment_of</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga92b52772010dec87f8867320a8b03dfc" name="ga92b52772010dec87f8867320a8b03dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92b52772010dec87f8867320a8b03dfc">&#9670;&#160;</a></span>always_false</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> always_false = <a class="el" href="structetl_1_1bitset.html">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5672914b2f1f9c1c4c50ded53a8db2e3" name="ga5672914b2f1f9c1c4c50ded53a8db2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5672914b2f1f9c1c4c50ded53a8db2e3">&#9670;&#160;</a></span>conjunction_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... B&gt; </div>
+<div class="memtemplate">
+template&lt;typename... B&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> conjunction_v = <a class="el" href="structetl_1_1conjunction.html">conjunction</a>&lt;B...&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabb3abcd15bf9ea4a0629b7e03498e1e1" name="gabb3abcd15bf9ea4a0629b7e03498e1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb3abcd15bf9ea4a0629b7e03498e1e1">&#9670;&#160;</a></span>disjunction_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... B&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> disjunction_v = <a class="el" href="structetl_1_1disjunction.html">disjunction</a>&lt;B...&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga06332dc22e85765f2c195c703cc49068" name="ga06332dc22e85765f2c195c703cc49068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06332dc22e85765f2c195c703cc49068">&#9670;&#160;</a></span>extent_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">unsigned</a> N = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> extent_v = <a class="el" href="structetl_1_1bitset.html">static_cast</a>&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a>&gt;(<a class="el" href="structetl_1_1extent.html">extent</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>, <a class="el" href="structetl_1_1bitset.html">N</a>&gt;::value)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c5a77036b20d94554de76a0879573e1" name="ga4c5a77036b20d94554de76a0879573e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c5a77036b20d94554de76a0879573e1">&#9670;&#160;</a></span>has_unique_object_representations_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> has_unique_object_representations_v = <a class="el" href="structetl_1_1has__unique__object__representations.html">has_unique_object_representations</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga7e997395a99be7b3ac747230c82b51d2" name="ga7e997395a99be7b3ac747230c82b51d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7e997395a99be7b3ac747230c82b51d2">&#9670;&#160;</a></span>has_virtual_destructor_v</h2>
 
@@ -329,6 +1171,302 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga36d83619b037b662e5e0443f9d22fe3a" name="ga36d83619b037b662e5e0443f9d22fe3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36d83619b037b662e5e0443f9d22fe3a">&#9670;&#160;</a></span>index_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceetl.html#aee50235c04ef643cb7502785393220fe">size_t</a> I&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> index_v = <a class="el" href="group__type__traits.html#ga0fc29a848c78949599ea12f9b9827fd3">index_constant</a>&lt;<a class="el" href="structetl_1_1bitset.html">I</a>&gt;{}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga10afef86eafa806bb7142657cfa37f79" name="ga10afef86eafa806bb7142657cfa37f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10afef86eafa806bb7142657cfa37f79">&#9670;&#160;</a></span>is_abstract_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_abstract_v = <a class="el" href="structetl_1_1bitset.html">__is_abstract</a>(<a class="el" href="structetl_1_1bitset.html">T</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadb0e64aa57f60e45754ac20ba126bbe3" name="gadb0e64aa57f60e45754ac20ba126bbe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb0e64aa57f60e45754ac20ba126bbe3">&#9670;&#160;</a></span>is_aggregate_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_aggregate_v = <a class="el" href="structetl_1_1bitset.html">__is_aggregate</a>(<a class="el" href="namespaceetl.html#ace634e9b8a7cdea7d9d417477c2275d1">remove_cv_t</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabf2224be65b8fb8794372d049a1d37d9" name="gabf2224be65b8fb8794372d049a1d37d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf2224be65b8fb8794372d049a1d37d9">&#9670;&#160;</a></span>is_arithmetic_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_arithmetic_v = <a class="el" href="namespaceetl.html#a396e4b8c756441b942c1619de108e56a">is_integral_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt; <a class="el" href="structetl_1_1bitset.html">or</a> <a class="el" href="namespaceetl.html#a8a70da46bf8635132fd3757deb2fff94">is_floating_point_v</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8b0e44222b6a1dc103286f3c5225ad93" name="ga8b0e44222b6a1dc103286f3c5225ad93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b0e44222b6a1dc103286f3c5225ad93">&#9670;&#160;</a></span>is_array_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_array_v = <a class="el" href="structetl_1_1is__array.html">is_array</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga762a8e8750c01c04403086076b7bab1e" name="ga762a8e8750c01c04403086076b7bab1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga762a8e8750c01c04403086076b7bab1e">&#9670;&#160;</a></span>is_assignable_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_assignable_v = <a class="el" href="structetl_1_1bitset.html">__is_assignable</a>(<a class="el" href="structetl_1_1bitset.html">T</a>, U)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga096bf5b121d9f427c8027f2949e8198e" name="ga096bf5b121d9f427c8027f2949e8198e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga096bf5b121d9f427c8027f2949e8198e">&#9670;&#160;</a></span>is_base_of_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Base</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Base</a> , <a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_base_of_v = <a class="el" href="structetl_1_1is__base__of.html">is_base_of</a>&lt;<a class="el" href="structetl_1_1bitset.html">Base</a>, <a class="el" href="structetl_1_1bitset.html">Derived</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a699f9a94f5d0c71c5e85e84f7baeb4" name="ga7a699f9a94f5d0c71c5e85e84f7baeb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a699f9a94f5d0c71c5e85e84f7baeb4">&#9670;&#160;</a></span>is_bounded_array_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_bounded_array_v = <a class="el" href="structetl_1_1is__bounded__array.html">is_bounded_array</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab37be6df3156233ffb034d2833fcba81" name="gab37be6df3156233ffb034d2833fcba81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab37be6df3156233ffb034d2833fcba81">&#9670;&#160;</a></span>is_builtin_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> is_builtin_integer_v = <a class="el" href="structetl_1_1is__builtin__integer.html">is_builtin_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafb068f2d42709bb8f4e34051af6249e2" name="gafb068f2d42709bb8f4e34051af6249e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb068f2d42709bb8f4e34051af6249e2">&#9670;&#160;</a></span>is_builtin_signed_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> is_builtin_signed_integer_v = <a class="el" href="structetl_1_1is__builtin__signed__integer.html">is_builtin_signed_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae4505c091f15f466c044b6b11b890a7a" name="gae4505c091f15f466c044b6b11b890a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4505c091f15f466c044b6b11b890a7a">&#9670;&#160;</a></span>is_builtin_unsigned_integer_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">auto</a> is_builtin_unsigned_integer_v = <a class="el" href="structetl_1_1is__builtin__unsigned__integer.html">is_builtin_unsigned_integer</a>&lt;<a class="el" href="structetl_1_1bitset.html">T</a>&gt;<a class="el" href="structetl_1_1integral__constant.html#a9aa864e6c9ea467ce3878df4ca8e8571">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaca38abc104326427a46bccfd27cbfe28" name="gaca38abc104326427a46bccfd27cbfe28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca38abc104326427a46bccfd27cbfe28">&#9670;&#160;</a></span>is_class_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class="el" href="structetl_1_1bitset.html">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structetl_1_1bitset.html">constexpr</a> <a class="el" href="structetl_1_1bitset.html">bool</a> is_class_v = <a class="el" href="structetl_1_1bitset.html">__is_class</a>(<a class="el" href="structetl_1_1bitset.html">T</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -390,7 +1528,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:51:11 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

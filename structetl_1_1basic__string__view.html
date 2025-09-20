@@ -1486,7 +1486,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Checks if the string view ends with the given suffix, where the prefix is a string view. </p>
-<p>Effectively returns <a class="el" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of Char elements in the view, i.e. etl::distance(begin(), end()).">size()</a> &gt;= sv.size() &amp;&amp; compare(<a class="el" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of Char elements in the view, i.e. etl::distance(begin(), end()).">size()</a> - sv.size(), npos, sv) == 0 </p>
+<p>Effectively returns <a class="el" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of Char elements in the view, i.e. etl::distance(begin(), end()).">size()</a> &gt;= sv.size() and compare(<a class="el" href="structetl_1_1basic__string__view.html#aeda399ad0b26aa2d0116f45b2a4c6ca0" title="Returns the number of Char elements in the view, i.e. etl::distance(begin(), end()).">size()</a> - sv.size(), npos, sv) == 0 </p>
 
 </div>
 </div>
@@ -1518,7 +1518,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Checks if the string view ends with the given suffix, where the prefix is a single character. </p>
-<p>Effectively returns !empty() &amp;&amp; Traits::eq(back(), c) </p>
+<p>Effectively returns not <a class="el" href="structetl_1_1basic__string__view.html#a918aa2db77648f4bd28d098b2291208a" title="Checks if the view has no characters, i.e. whether size() == 0.">empty()</a> and Traits::eq(back(), c) </p>
 
 </div>
 </div>
@@ -2966,7 +2966,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 </div><div class="memdoc">
 
 <p>Checks if the string view begins with the given prefix, where the prefix is a single character. </p>
-<p>Effectively returns !empty() &amp;&amp; Traits::eq(front(), c) </p>
+<p>Effectively returns not <a class="el" href="structetl_1_1basic__string__view.html#a918aa2db77648f4bd28d098b2291208a" title="Checks if the view has no characters, i.e. whether size() == 0.">empty()</a> and Traits::eq(front(), c) </p>
 
 </div>
 </div>
@@ -3111,7 +3111,7 @@ template&lt;<a class="el" href="structetl_1_1bitset.html">typename</a> <a class=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceetl.html">etl</a></li><li class="navelem"><a class="el" href="structetl_1_1basic__string__view.html">basic_string_view</a></li>
-    <li class="footer">Generated on Sun Sep 7 2025 19:15:36 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sat Sep 20 2025 23:51:11 for tetl by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

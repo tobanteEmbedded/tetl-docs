@@ -17,7 +17,7 @@ var structetl_1_1layout__stride_1_1mapping =
     [ "is_exhaustive", "structetl_1_1layout__stride_1_1mapping.html#a468ae71978d0bb0e752252f6f7e14e38", null ],
     [ "is_strided", "structetl_1_1layout__stride_1_1mapping.html#a8143b9f36602a8192089e0c2d34c1f9a", null ],
     [ "is_unique", "structetl_1_1layout__stride_1_1mapping.html#ad2c797fc938e63d1565061c9e6943487", null ],
-    [ "operator()", "structetl_1_1layout__stride_1_1mapping.html#a4cf49e5cb88288a66192348a634e0490", null ],
+    [ "operator()", "structetl_1_1layout__stride_1_1mapping.html#a8856245ee66b14e3b33b2e736b8d7015", null ],
     [ "operator=", "structetl_1_1layout__stride_1_1mapping.html#a4770f555edad1a34068967e9f3afd2bf", null ],
     [ "required_span_size", "structetl_1_1layout__stride_1_1mapping.html#afc063f067f1a060261979b3ec3a1aae4", null ],
     [ "stride", "structetl_1_1layout__stride_1_1mapping.html#a8c30d9c58ea8608d2d4257de92f401e8", null ],
